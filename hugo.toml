@@ -1,0 +1,28 @@
+baseURL = 'https://jakes-tech-insights.pages.dev'
+languageCode = 'ko-kr'
+title = "Jake's Tech Insights"
+theme = 'PaperMod'
+
+[languages]
+  [languages.ko]
+    languageName = "Korean"
+    weight = 1
+    contentDir = "content"
+  
+  [languages.ja]
+    languageName = "Japanese"
+    weight = 2
+    contentDir = "content"
+  
+  [languages.en]
+    languageName = "English"
+    weight = 3
+    contentDir = "content"
+
+[params]
+  env = "production"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowBreadCrumbs = true
+  homeInfoParams.Title = "Welcome"
+  homeInfoParams.Content = "Tech insights and trends"

@@ -783,9 +783,15 @@
             <a href="#top">↑ Top</a>
             <div style="border-top: 1px solid var(--border); margin: 0.5rem 0; padding-top: 0.5rem;">
                 <div style="font-size: 0.75rem; color: var(--accent); padding: 0 1rem 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Categories</div>
+                {{ if eq .Site.Language.Lang "en" }}
+                <a href="/tech/">💻 Tech</a>
+                <a href="/business/">💼 Business</a>
+                <a href="/lifestyle/">🌟 Lifestyle</a>
+                {{ else }}
                 <a href="/{{ .Site.Language.Lang }}/tech/">💻 Tech</a>
                 <a href="/{{ .Site.Language.Lang }}/business/">💼 Business</a>
                 <a href="/{{ .Site.Language.Lang }}/lifestyle/">🌟 Lifestyle</a>
+                {{ end }}
             </div>
         </div>
     </div>

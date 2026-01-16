@@ -387,48 +387,49 @@
     <div class="container">
         <!-- Category Hero -->
         <div class="category-hero">
-            <div class="category-icon">
-                {{ if eq .Title "tech" }}💻
-                {{ else if eq .Title "business" }}💼
-                {{ else if eq .Title "lifestyle" }}🌟
-                {{ end }}
-            </div>
-            <h1 class="category-title">
-                {{ if eq .Title "tech" }}
+            {{ if or (in .RelPermalink "/tech/") (in .RelPermalink "/tech") }}
+                <div class="category-icon">💻</div>
+                <h1 class="category-title">
                     {{ if eq .Site.Language.Lang "ko" }}기술
                     {{ else if eq .Site.Language.Lang "ja" }}テクノロジー
                     {{ else }}Technology
                     {{ end }}
-                {{ else if eq .Title "business" }}
-                    {{ if eq .Site.Language.Lang "ko" }}비즈니스
-                    {{ else if eq .Site.Language.Lang "ja" }}ビジネス
-                    {{ else }}Business
-                    {{ end }}
-                {{ else if eq .Title "lifestyle" }}
-                    {{ if eq .Site.Language.Lang "ko" }}라이프스타일
-                    {{ else if eq .Site.Language.Lang "ja" }}ライフスタイル
-                    {{ else }}Lifestyle
-                    {{ end }}
-                {{ end }}
-            </h1>
-            <p class="category-description">
-                {{ if eq .Title "tech" }}
+                </h1>
+                <p class="category-description">
                     {{ if eq .Site.Language.Lang "ko" }}최신 IT 트렌드와 기술 인사이트를 만나보세요
                     {{ else if eq .Site.Language.Lang "ja" }}最新のITトレンドと技術インサイトをご覧ください
                     {{ else }}Discover cutting-edge tech trends and insights
                     {{ end }}
-                {{ else if eq .Title "business" }}
+                </p>
+            {{ else if or (in .RelPermalink "/business/") (in .RelPermalink "/business") }}
+                <div class="category-icon">💼</div>
+                <h1 class="category-title">
+                    {{ if eq .Site.Language.Lang "ko" }}비즈니스
+                    {{ else if eq .Site.Language.Lang "ja" }}ビジネス
+                    {{ else }}Business
+                    {{ end }}
+                </h1>
+                <p class="category-description">
                     {{ if eq .Site.Language.Lang "ko" }}비즈니스 전략과 성장 인사이트를 탐색하세요
                     {{ else if eq .Site.Language.Lang "ja" }}ビジネス戦略と成長インサイトを探る
                     {{ else }}Explore business strategies and growth insights
                     {{ end }}
-                {{ else if eq .Title "lifestyle" }}
+                </p>
+            {{ else if or (in .RelPermalink "/lifestyle/") (in .RelPermalink "/lifestyle") }}
+                <div class="category-icon">🌟</div>
+                <h1 class="category-title">
+                    {{ if eq .Site.Language.Lang "ko" }}라이프스타일
+                    {{ else if eq .Site.Language.Lang "ja" }}ライフスタイル
+                    {{ else }}Lifestyle
+                    {{ end }}
+                </h1>
+                <p class="category-description">
                     {{ if eq .Site.Language.Lang "ko" }}트렌디한 라이프스타일과 문화 이야기
                     {{ else if eq .Site.Language.Lang "ja" }}トレンディなライフスタイルと文化の話
                     {{ else }}Trending lifestyle and culture stories
                     {{ end }}
-                {{ end }}
-            </p>
+                </p>
+            {{ end }}
         </div>
 
         <!-- Featured Posts Grid -->

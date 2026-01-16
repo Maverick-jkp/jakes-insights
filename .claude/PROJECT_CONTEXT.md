@@ -969,10 +969,41 @@ Month 5+: 승인 후 자동화 점진 확대
 3. "Run workflow" 클릭
 4. 생성된 PR 확인
 
-**다음 단계 (Day 2-3)**:
-- [ ] `topic_queue.py` 구현 (state machine: pending → in_progress → completed)
-- [ ] `topics_queue.json` 초기 데이터 생성
-- [ ] Queue 테스트
+### Day 2: Topic Queue System ✅
+**생성된 파일**:
+- `scripts/topic_queue.py` - Queue 관리 로직
+- `data/topics_queue.json` - 초기 18개 토픽
+- `scripts/test_queue.py` - 테스트 스위트
+
+**State Machine 구현**:
+```
+pending → in_progress (reserve_topics)
+in_progress → completed (mark_completed)
+in_progress → pending (mark_failed, retry++)
+```
+
+**주요 기능**:
+- Priority-based selection (높은 우선순위 먼저)
+- Retry mechanism (실패 시 pending으로 롤백)
+- Stuck topic cleanup (24시간+ 자동 리셋)
+- Queue statistics (status, category, language별 집계)
+- CLI interface (`python topic_queue.py stats|cleanup|reserve`)
+
+**테스트 결과**:
+```
+✓ Reserve & Complete: 18 pending → 3 in_progress → 2 completed
+✓ Failure & Retry: retry_count 증가, pending으로 롤백 확인
+✓ Priority Ordering: Priority 8 토픽이 먼저 선택됨
+✓ Statistics: 18개 토픽 (3 카테고리 × 3 언어 × 2)
+```
+
+**커밋**: `dd3cd6d - feat: Implement topic queue system with state machine`
+
+**다음 단계 (Day 3-4)**:
+- [ ] `generate_posts.py` 구현 (Draft + Editor agents)
+- [ ] Claude API 연동
+- [ ] Hugo frontmatter 생성
+- [ ] 테스트 포스트 생성
 
 ---
 
@@ -980,14 +1011,12 @@ Month 5+: 승인 후 자동화 점진 확대
 
 **날짜**: 2026-01-16
 **작업자**: Jake + Claude Sonnet 4.5
-**버전**: v2.2 (자동화 구현 시작)
+**버전**: v2.3 (Queue System 완료)
 
-### 주요 변경사항 (v2.1 → v2.2)
-1. ✅ EN 언어 네비게이션 버그 수정
-2. ✅ 카테고리 히어로 섹션 버그 수정
-3. ✅ 자동화 전략 수립 (하루 3→9개 포스트 단계적 확대)
-4. ✅ ChatGPT 피드백 반영 (PR 워크플로우, 품질 게이트)
-5. ✅ Day 1 구현: 테스트 PR 워크플로우 생성
-6. ✅ GitHub Actions 기반 자동화 시작
+### 주요 변경사항 (v2.2 → v2.3)
+1. ✅ Day 1: 테스트 PR 워크플로우 생성
+2. ✅ Day 2: Topic Queue System 완료 (State Machine)
+3. ✅ 18개 초기 토픽 데이터 준비
+4. ✅ 테스트 스위트 작성 및 검증 완료
 
-**Next Step**: topic_queue.py 구현 (state machine) 🎯
+**Next Step**: generate_posts.py 구현 (Claude API 연동) 🎯

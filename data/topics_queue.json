@@ -1,0 +1,197 @@
+{
+  "topics": [
+    {
+      "id": "001-en-tech-ai-coding",
+      "keyword": "AI coding assistants 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-01-16T10:00:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.284449",
+      "completed_at": "2026-01-16T13:39:04.285315"
+    },
+    {
+      "id": "002-ko-tech-ai-coding",
+      "keyword": "AI 코딩 도우미 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-01-16T10:01:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.284449",
+      "completed_at": "2026-01-16T13:39:04.285696"
+    },
+    {
+      "id": "003-ja-tech-ai-coding",
+      "keyword": "AIコーディングアシスタント2025",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 8,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:02:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.284449"
+    },
+    {
+      "id": "004-en-business-remote-work",
+      "keyword": "Remote work productivity tips 2025",
+      "category": "business",
+      "lang": "en",
+      "priority": 7,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:03:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.287300"
+    },
+    {
+      "id": "005-ko-business-remote-work",
+      "keyword": "재택근무 생산성 팁 2025",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:04:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.287300"
+    },
+    {
+      "id": "006-ja-business-remote-work",
+      "keyword": "リモートワーク生産性のヒント2025",
+      "category": "business",
+      "lang": "ja",
+      "priority": 7,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:05:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.287300"
+    },
+    {
+      "id": "007-en-lifestyle-minimalism",
+      "keyword": "Digital minimalism lifestyle 2025",
+      "category": "lifestyle",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-16T10:06:00",
+      "retry_count": 0
+    },
+    {
+      "id": "008-ko-lifestyle-minimalism",
+      "keyword": "디지털 미니멀리즘 라이프스타일 2025",
+      "category": "lifestyle",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-16T10:07:00",
+      "retry_count": 0
+    },
+    {
+      "id": "009-ja-lifestyle-minimalism",
+      "keyword": "デジタルミニマリズムライフスタイル2025",
+      "category": "lifestyle",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-16T10:08:00",
+      "retry_count": 0
+    },
+    {
+      "id": "010-en-tech-cloud-computing",
+      "keyword": "Cloud computing trends 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-16T10:09:00",
+      "retry_count": 0
+    },
+    {
+      "id": "011-ko-tech-cloud-computing",
+      "keyword": "클라우드 컴퓨팅 트렌드 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-16T10:10:00",
+      "retry_count": 0
+    },
+    {
+      "id": "012-ja-tech-cloud-computing",
+      "keyword": "クラウドコンピューティングトレンド2025",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-16T10:11:00",
+      "retry_count": 0
+    },
+    {
+      "id": "013-en-business-startup-funding",
+      "keyword": "Startup funding strategies 2025",
+      "category": "business",
+      "lang": "en",
+      "priority": 8,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:12:00",
+      "retry_count": 1,
+      "last_error": "Simulated API error",
+      "last_failed_at": "2026-01-16T13:39:04.286567",
+      "reserved_at": "2026-01-16T13:39:04.286969"
+    },
+    {
+      "id": "014-ko-business-startup-funding",
+      "keyword": "스타트업 투자 전략 2025",
+      "category": "business",
+      "lang": "ko",
+      "priority": 8,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:13:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.287300"
+    },
+    {
+      "id": "015-ja-business-startup-funding",
+      "keyword": "スタートアップ資金調達戦略2025",
+      "category": "business",
+      "lang": "ja",
+      "priority": 8,
+      "status": "in_progress",
+      "created_at": "2026-01-16T10:14:00",
+      "retry_count": 0,
+      "reserved_at": "2026-01-16T13:39:04.287300"
+    },
+    {
+      "id": "016-en-lifestyle-work-life-balance",
+      "keyword": "Work-life balance tips 2025",
+      "category": "lifestyle",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-16T10:15:00",
+      "retry_count": 0
+    },
+    {
+      "id": "017-ko-lifestyle-work-life-balance",
+      "keyword": "워라밸 실천 방법 2025",
+      "category": "lifestyle",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-16T10:16:00",
+      "retry_count": 0
+    },
+    {
+      "id": "018-ja-lifestyle-work-life-balance",
+      "keyword": "ワークライフバランスのヒント2025",
+      "category": "lifestyle",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-16T10:17:00",
+      "retry_count": 0
+    }
+  ]
+}

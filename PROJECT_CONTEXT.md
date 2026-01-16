@@ -1,0 +1,272 @@
+# Jake's Tech Insights - Project Context
+
+## 📌 Project Overview
+
+**Jake's Tech Insights** is a fully automated, multilingual blog platform built with Hugo, powered by AI-generated content.
+
+- **Tech Stack**: Hugo (PaperMod theme), Python 3, Claude API, GitHub Actions, Cloudflare Pages
+- **Languages**: English, Korean (한국어), Japanese (日本語)
+- **Categories**: Tech, Business, Lifestyle
+- **Automation Level**: 95% automated (generation → quality check → review → PR creation)
+
+## 🎯 System Architecture
+
+```
+Topic Queue → Content Generation → Quality Gate → AI Review → GitHub PR → Human Approval → Deploy
+```
+
+### Key Components
+
+1. **Topic Queue System** (`scripts/topic_queue.py`)
+   - State machine: pending → in_progress → completed
+   - Priority-based reservation
+   - Automatic retry on failure
+   - Multi-language support
+
+2. **Content Generator** (`scripts/generate_posts.py`)
+   - Two-stage generation: Draft Agent + Editor Agent
+   - Language-specific prompts (EN/KO/JA)
+   - Auto-generate titles and meta descriptions
+   - Hugo frontmatter generation
+
+3. **Quality Gate** (`scripts/quality_gate.py`)
+   - Word count validation (900-1800 words)
+   - AI phrase detection
+   - Frontmatter completeness check
+   - SEO and readability metrics
+
+4. **AI Reviewer** (`scripts/ai_reviewer.py`)
+   - Self-review with 5 criteria scoring
+   - APPROVE/REVISE/REJECT recommendations
+   - Detailed suggestions for improvement
+   - JSON report generation
+
+5. **GitHub Actions Workflows**
+   - `test-pr.yml`: Manual PR testing
+   - `daily-content.yml`: Automated daily content generation
+
+## 📁 Directory Structure
+
+```
+jakes-tech-insights/
+├── .github/workflows/
+│   ├── test-pr.yml           # PR testing workflow
+│   └── daily-content.yml     # Daily content generation
+├── content/
+│   ├── en/                   # English posts
+│   ├── ko/                   # Korean posts
+│   └── ja/                   # Japanese posts
+├── data/
+│   └── topics_queue.json     # Topic queue state
+├── scripts/
+│   ├── topic_queue.py        # Queue management
+│   ├── generate_posts.py     # Content generation
+│   ├── quality_gate.py       # Quality validation
+│   ├── ai_reviewer.py        # AI self-review
+│   └── test_queue.py         # Queue system tests
+├── themes/PaperMod/          # Hugo theme
+├── config.yml                # Hugo configuration
+└── PROJECT_CONTEXT.md        # This file
+```
+
+## 🚀 Implementation Timeline
+
+### ✅ Day 1: PR Workflow Setup
+- Created `test-pr.yml` workflow
+- Manual trigger for testing
+- Basic Hugo build validation
+
+### ✅ Day 2: Topic Queue System
+- Implemented state machine pattern
+- Created queue management CLI
+- Added priority-based reservation
+- Retry mechanism for failures
+- Comprehensive test suite
+
+### ✅ Day 3: Content Generation
+- Two-stage generation (Draft + Editor)
+- Language-specific system prompts
+- Auto-generated metadata
+- Queue integration
+- Tested with Digital Minimalism post
+
+### ✅ Day 4-5: Quality & Automation
+- Quality gate with FAIL/WARN criteria
+- AI self-review agent (5-criteria scoring)
+- Daily content generation workflow
+- Automatic PR creation
+- Report artifacts upload
+
+## 🔧 Usage Guide
+
+### Generate Content Manually
+
+```bash
+# Generate 3 posts from queue
+python scripts/generate_posts.py --count 3
+
+# Generate specific topic
+python scripts/generate_posts.py --topic-id 001-en-tech-ai-coding
+```
+
+### Run Quality Checks
+
+```bash
+# Run quality gate
+python scripts/quality_gate.py
+
+# Strict mode (warnings become failures)
+python scripts/quality_gate.py --strict
+```
+
+### AI Review
+
+```bash
+# Review all generated files
+python scripts/ai_reviewer.py
+
+# Review specific file
+python scripts/ai_reviewer.py --file content/en/tech/2026-01-16-my-post.md
+```
+
+### Manage Topic Queue
+
+```bash
+# View queue statistics
+python scripts/topic_queue.py stats
+
+# Reserve topics
+python scripts/topic_queue.py reserve 3
+
+# Clean up stuck topics
+python scripts/topic_queue.py cleanup 24
+```
+
+### Test Queue System
+
+```bash
+python scripts/test_queue.py
+```
+
+## 📊 Quality Standards
+
+### Content Requirements
+- **Word count**: 900-1800 words
+- **Tone**: Professional but friendly
+- **Structure**: 3-5 H2 headings
+- **Links**: 2+ external references
+- **SEO**: Natural keyword integration (5-7 times)
+
+### Frontmatter Requirements
+```yaml
+title: "SEO-friendly title (50-60 chars)"
+date: 2026-01-16
+draft: false
+categories: ["tech"]
+tags: ["keyword", "tags"]
+description: "Meta description (120-160 chars)"
+```
+
+### AI Phrase Blacklist
+- English: "revolutionary", "game-changer", "cutting-edge", "it's important to note"
+- Korean: "물론", "혁신적", "게임체인저"
+- Japanese: "もちろん", "革新的", "ゲームチェンジャー"
+
+## 🤖 AI Review Criteria
+
+1. **Authenticity** (1-10): Natural human tone, no AI phrases
+2. **Value** (1-10): Practical, actionable insights
+3. **Engagement** (1-10): Interesting structure and flow
+4. **Technical Accuracy** (1-10): Correct facts and details
+5. **SEO Quality** (1-10): Good keyword usage and structure
+
+**Thresholds:**
+- APPROVE: Average score ≥ 8.0
+- REVISE: Average score 6.0-7.9
+- REJECT: Average score < 6.0
+
+## 🔄 Automated Workflow
+
+### Daily Schedule
+- **9 AM UTC** (6 PM KST): Auto-generate 3 posts
+- Quality gate runs automatically
+- AI review provides recommendations
+- Creates PR for human approval
+
+### Manual Trigger
+```bash
+# Via GitHub UI
+Actions → Daily Content Generation → Run workflow
+```
+
+### Workflow Inputs
+- `count`: Number of posts (default: 3)
+- `skip_review`: Skip AI review step (default: false)
+
+## 🔐 Required Secrets
+
+Set these in GitHub repository settings:
+
+```
+ANTHROPIC_API_KEY=your-claude-api-key
+```
+
+## 📈 Success Metrics
+
+### Generated Content Stats
+- **Test Generation**: 1 post (Digital Minimalism)
+- **Word Count**: ~1,200 words
+- **Character Length**: 8,291 chars (after editing)
+- **Quality**: No AI phrases detected
+
+### Queue Stats (Current)
+- **Total topics**: 18
+- **Completed**: 2
+- **In Progress**: 7
+- **Pending**: 9
+
+### Coverage
+- **Languages**: EN (6), KO (6), JA (6)
+- **Categories**: Tech (6), Business (6), Lifestyle (6)
+- **Priority Range**: 6-8
+
+## 🐛 Known Issues & Solutions
+
+### Issue 1: Hugo Server Not Showing New Content
+**Solution**: Restart Hugo server with `~/hugo_bin server -D`
+
+### Issue 2: Workflow Files Not Pushing
+**Cause**: GitHub requires workflow scope permission
+**Solution**: Push all files together or create workflow via GitHub UI
+
+### Issue 3: Stuck Topics in Queue
+**Solution**: Run cleanup command: `python scripts/topic_queue.py cleanup 24`
+
+## 🎉 Next Steps
+
+1. **Test Full Pipeline**: Run end-to-end test with manual workflow trigger
+2. **Review Generated Content**: Check AI-generated posts for quality
+3. **Git Commit & Push**: Push all Day 1-5 work to GitHub
+4. **Enable Daily Automation**: Set up daily cron schedule
+5. **Monitor & Iterate**: Track quality metrics and adjust prompts
+
+## 📝 Notes
+
+- All scripts support both CLI and programmatic usage
+- Queue state persists in `data/topics_queue.json`
+- Reports saved: `quality_report.json`, `ai_review_report.json`
+- Hugo theme: PaperMod (customizable via config.yml)
+- Deployment: Automatic via Cloudflare Pages on push to main
+
+## 🔗 Resources
+
+- **Hugo Documentation**: https://gohugo.io/documentation/
+- **PaperMod Theme**: https://github.com/adityatelange/hugo-PaperMod
+- **Claude API**: https://docs.anthropic.com/
+- **GitHub Actions**: https://docs.github.com/en/actions
+
+---
+
+**Last Updated**: 2026-01-16
+**Status**: Day 4-5 Complete ✅
+**Next Milestone**: Production deployment and monitoring

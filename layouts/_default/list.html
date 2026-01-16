@@ -1,0 +1,533 @@
+{{ define "main" }}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Instrument+Sans:wght@400;500;600&display=swap');
+
+        :root {
+            --bg: #1a1a1a;
+            --surface: #242424;
+            --border: #333333;
+            --text: #f5f5f5;
+            --text-dim: #b0b0b0;
+            --accent: #00ff88;
+        }
+
+        /* Category-specific colors */
+        .category-tech { --accent: #00ff88; }
+        .category-business { --accent: #00b4ff; }
+        .category-lifestyle { --accent: #ff6b9d; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Instrument Sans', sans-serif;
+            padding-top: 80px;
+        }
+
+        /* Grid Background */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(var(--border) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+            z-index: -1;
+            animation: gridMove 60s linear infinite;
+        }
+
+        @keyframes gridMove {
+            to { transform: translate(50px, 50px); }
+        }
+
+        /* Fixed Header */
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--bg);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .header-box {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo .apostrophe { color: var(--accent); }
+
+        .lang-switch {
+            display: flex;
+            gap: 0.5rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.875rem;
+        }
+
+        .lang-switch a {
+            color: var(--text-dim);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .lang-switch a:hover,
+        .lang-switch a.active {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: rgba(0, 255, 136, 0.1);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Category Hero Section */
+        .category-hero {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-title {
+            font-family: 'Space Mono', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .category-description {
+            font-size: 1.25rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grid Layout */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Featured Post Cards (3x3 columns) */
+        .post-card {
+            grid-column: span 3;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s;
+            min-height: 280px;
+        }
+
+        .post-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.15);
+        }
+
+        .post-card-date {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .post-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .post-card-excerpt {
+            font-size: 0.875rem;
+            color: var(--text-dim);
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .post-card-meta {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+
+        /* AdSense Widget (3 columns) */
+        .adsense-widget {
+            grid-column: span 3;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 2rem;
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .adsense-placeholder {
+            text-align: center;
+            color: var(--text-dim);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.875rem;
+        }
+
+        /* All Posts Section */
+        .all-posts-section {
+            margin-top: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .posts-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .post-list-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1.5rem 2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            transition: all 0.3s;
+        }
+
+        .post-list-item:hover {
+            border-color: var(--accent);
+            background: rgba(0, 255, 136, 0.05);
+            transform: translateX(8px);
+        }
+
+        .post-list-icon {
+            font-size: 2rem;
+            min-width: 40px;
+        }
+
+        .post-list-content {
+            flex: 1;
+        }
+
+        .post-list-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .post-list-meta {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.875rem;
+            color: var(--text-dim);
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .post-list-date {
+            color: var(--accent);
+        }
+
+        /* Middle AdSense */
+        .middle-ad {
+            margin: 3rem 0;
+            padding: 3rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            text-align: center;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-family: 'Space Mono', monospace;
+            margin-top: 3rem;
+            padding: 1rem 2rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .back-link:hover {
+            border-color: var(--accent);
+            transform: translateX(-4px);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .posts-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .post-card,
+            .adsense-widget {
+                grid-column: span 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body { padding-top: 70px; }
+            .header-box { padding: 1rem; }
+            .logo { font-size: 1.25rem; }
+            .container { padding: 1rem; }
+
+            .category-hero { padding: 2rem 0; }
+            .category-icon { font-size: 3rem; }
+            .category-title { font-size: 2rem; }
+            .category-description { font-size: 1rem; }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .post-card,
+            .adsense-widget {
+                grid-column: span 1;
+                min-height: auto;
+            }
+
+            .post-list-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .post-list-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="category-{{ .Title | lower }}">
+    <!-- Fixed Header -->
+    <div class="top-bar">
+        <div class="header-box">
+            <a href="/" class="logo">
+                JAKE<span class="apostrophe">'</span>S INSIGHTS
+            </a>
+            <div class="lang-switch">
+                <a href="/en/" class="{{ if eq .Site.Language.Lang "en" }}active{{ end }}">EN</a>
+                <a href="/ko/" class="{{ if eq .Site.Language.Lang "ko" }}active{{ end }}">KO</a>
+                <a href="/ja/" class="{{ if eq .Site.Language.Lang "ja" }}active{{ end }}">JA</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Category Hero -->
+        <div class="category-hero">
+            <div class="category-icon">
+                {{ if eq .Title "tech" }}💻
+                {{ else if eq .Title "business" }}💼
+                {{ else if eq .Title "lifestyle" }}🌟
+                {{ end }}
+            </div>
+            <h1 class="category-title">
+                {{ if eq .Title "tech" }}
+                    {{ if eq .Site.Language.Lang "ko" }}기술
+                    {{ else if eq .Site.Language.Lang "ja" }}テクノロジー
+                    {{ else }}Technology
+                    {{ end }}
+                {{ else if eq .Title "business" }}
+                    {{ if eq .Site.Language.Lang "ko" }}비즈니스
+                    {{ else if eq .Site.Language.Lang "ja" }}ビジネス
+                    {{ else }}Business
+                    {{ end }}
+                {{ else if eq .Title "lifestyle" }}
+                    {{ if eq .Site.Language.Lang "ko" }}라이프스타일
+                    {{ else if eq .Site.Language.Lang "ja" }}ライフスタイル
+                    {{ else }}Lifestyle
+                    {{ end }}
+                {{ end }}
+            </h1>
+            <p class="category-description">
+                {{ if eq .Title "tech" }}
+                    {{ if eq .Site.Language.Lang "ko" }}최신 IT 트렌드와 기술 인사이트를 만나보세요
+                    {{ else if eq .Site.Language.Lang "ja" }}最新のITトレンドと技術インサイトをご覧ください
+                    {{ else }}Discover cutting-edge tech trends and insights
+                    {{ end }}
+                {{ else if eq .Title "business" }}
+                    {{ if eq .Site.Language.Lang "ko" }}비즈니스 전략과 성장 인사이트를 탐색하세요
+                    {{ else if eq .Site.Language.Lang "ja" }}ビジネス戦略と成長インサイトを探る
+                    {{ else }}Explore business strategies and growth insights
+                    {{ end }}
+                {{ else if eq .Title "lifestyle" }}
+                    {{ if eq .Site.Language.Lang "ko" }}트렌디한 라이프스타일과 문화 이야기
+                    {{ else if eq .Site.Language.Lang "ja" }}トレンディなライフスタイルと文化の話
+                    {{ else }}Trending lifestyle and culture stories
+                    {{ end }}
+                {{ end }}
+            </p>
+        </div>
+
+        <!-- Featured Posts Grid -->
+        <div class="posts-grid">
+            {{ $pages := .Pages }}
+            {{ range first 3 $pages }}
+            <a href="{{ .Permalink }}" class="post-card">
+                <div class="post-card-date">
+                    {{ if eq $.Site.Language.Lang "ko" }}
+                        {{ .Date.Format "2006.01.02" }}
+                    {{ else if eq $.Site.Language.Lang "ja" }}
+                        {{ .Date.Format "2006.01.02" }}
+                    {{ else }}
+                        {{ .Date.Format "Jan 02, 2006" }}
+                    {{ end }}
+                </div>
+                <h3 class="post-card-title">{{ .Title }}</h3>
+                <p class="post-card-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
+                <div class="post-card-meta">
+                    {{ if eq $.Site.Language.Lang "ko" }}
+                        {{ .ReadingTime }}분 읽기
+                    {{ else if eq $.Site.Language.Lang "ja" }}
+                        {{ .ReadingTime }}分で読む
+                    {{ else }}
+                        {{ .ReadingTime }} min read
+                    {{ end }}
+                </div>
+            </a>
+            {{ end }}
+
+            <!-- AdSense Widget -->
+            <div class="adsense-widget">
+                <div class="adsense-placeholder">
+                    <p>Advertisement</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Posts Section -->
+        <div class="all-posts-section">
+            <h2 class="section-title">
+                {{ if eq .Site.Language.Lang "ko" }}전체 글
+                {{ else if eq .Site.Language.Lang "ja" }}すべての記事
+                {{ else }}All Posts
+                {{ end }}
+            </h2>
+
+            <div class="posts-list">
+                {{ $count := 0 }}
+                {{ range $pages }}
+                    <a href="{{ .Permalink }}" class="post-list-item">
+                        <div class="post-list-icon">📄</div>
+                        <div class="post-list-content">
+                            <h3 class="post-list-title">{{ .Title }}</h3>
+                            <div class="post-list-meta">
+                                <span class="post-list-date">
+                                    {{ if eq $.Site.Language.Lang "ko" }}
+                                        {{ .Date.Format "2006년 01월 02일" }}
+                                    {{ else if eq $.Site.Language.Lang "ja" }}
+                                        {{ .Date.Format "2006年01月02日" }}
+                                    {{ else }}
+                                        {{ .Date.Format "January 02, 2006" }}
+                                    {{ end }}
+                                </span>
+                                <span>
+                                    {{ if eq $.Site.Language.Lang "ko" }}
+                                        {{ .ReadingTime }}분
+                                    {{ else if eq $.Site.Language.Lang "ja" }}
+                                        {{ .ReadingTime }}分
+                                    {{ else }}
+                                        {{ .ReadingTime }} min
+                                    {{ end }}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Insert AdSense after 5th post -->
+                    {{ $count = add $count 1 }}
+                    {{ if eq $count 5 }}
+                    <div class="middle-ad">
+                        <div class="adsense-placeholder">
+                            <p>Advertisement</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <a href="/" class="back-link">
+            ←
+            {{ if eq .Site.Language.Lang "ko" }}홈으로
+            {{ else if eq .Site.Language.Lang "ja" }}ホームへ
+            {{ else }}Back to Home
+            {{ end }}
+        </a>
+    </div>
+</body>
+</html>
+{{ end }}

@@ -90,7 +90,7 @@ Write engaging, practical content that provides real value.""",
 - 과도한 이모지
 - 뻔한 결론
 
-⚠️ 다시 한 번 강조: 최소 1,200 단어 이상 작성하세요. 각 섹션을 상세하게!"""
+⚠️ 다시 한 번 강조: 최소 1,200 단어 이상 작성하세요. 각 섹션을 상세하게!""",
 
     "ja": """あなたはJake's Tech Insightsブログのプロライターです。
 

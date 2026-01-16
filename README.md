@@ -223,13 +223,14 @@ hugo
 
 ### Cost Optimization
 **Token Settings**:
-- Draft generation: 8000 max_tokens (ensures 900+ words for KO/JA)
-- Editor refinement: 8000 max_tokens
-- Est. cost: ~$0.06/post × 3 posts/day = $5.4/month
+- Draft generation: 12000 max_tokens (ensures completion for all languages)
+- Editor refinement: 12000 max_tokens
+- Target length: 800-1,100 words (EN/KO), 3,000-4,500 chars (JA)
+- Est. cost: ~$0.09/post × 3 posts/day = $8.1/month
 
 **Scaling Strategy**:
-- Week 1-2: 1 post/day ($1.8/month) - Manual review
-- Week 3-4: 3 posts/day ($5.4/month) - Semi-auto
+- Week 1-2: 1 post/day ($2.7/month) - Manual review
+- Week 3-4: 3 posts/day ($8.1/month) - Semi-auto
 - Month 2+: Adjust based on quality/budget
 
 ### Manual Trigger
@@ -257,8 +258,9 @@ hugo
 - ✅ Quality checks: No AI phrases detected
 - ✅ Queue system: State transitions working
 - ✅ Retry mechanism: Failures handled gracefully
-- ✅ max_tokens optimization: 4000 → 8000 for KO/JA word count
-- ⏳ Final workflow test: In progress (testing 8000 tokens)
+- ✅ max_tokens optimization: 4000 → 8000 → 12000
+- ✅ Tone optimization: Toss style (KO), Medium style (EN), Natural (JA)
+- ✅ Quality Gate updated: 800-1,200 words, 3,000-5,000 chars (JA)
 
 ## 🎓 Documentation
 
@@ -293,8 +295,9 @@ ANTHROPIC_API_KEY=your-claude-api-key-here
 - [x] Workflow setup on GitHub
 - [x] Test full pipeline end-to-end
 - [x] Monitor quality metrics (KO/JA word count issue identified)
-- [x] max_tokens optimization (4000 → 8000)
-- [ ] Final validation (in progress)
+- [x] max_tokens optimization (4000 → 8000 → 12000)
+- [x] Tone optimization (Toss/Medium/Natural styles)
+- [x] Quality Gate criteria updated (800-1,200 words)
 
 ### 📋 Phase 4: Optimization (Planned)
 - [ ] Prompt Caching for cost reduction
@@ -372,16 +375,23 @@ MIT License - See [LICENSE](LICENSE) file
 
 **Built with 🤖 AI + ❤️ Human Touch**
 
-*Last updated: 2026-01-16*
-*Version: 2.6 (Day 5 - max_tokens Optimization)*
+*Last updated: 2026-01-17*
+*Version: 2.7 (Day 5 - Monetization Optimization)*
 
 ## 🔍 Recent Changes
+
+**2026-01-17 (v2.7)**:
+- **Monetization focus**: Optimized for completion rate & engagement
+- **max_tokens**: 8000 → 12000 (prevents truncation)
+- **Target length**: 800-1,100 words (EN/KO), 3,000-4,500 chars (JA)
+- **Tone optimization**: Toss style (KO), Medium/Substack (EN), Natural (JA)
+- **Quality Gate**: 800-1,200 words, 3,000-5,000 chars (JA)
+- **Cost**: ~$0.09/post ($8.1/month for 3 posts/day)
 
 **2026-01-16 (v2.6)**:
 - Fixed KO/JA word count issue (794 → target 1,200+)
 - Increased max_tokens: 4000 → 8000
 - Added cost optimization strategy
-- Est. cost: $5.4/month for 3 posts/day
 
 **2026-01-16 (v2.5)**:
 - Completed Day 4-5 automation

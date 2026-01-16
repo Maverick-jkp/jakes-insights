@@ -65,8 +65,28 @@ jobs:
             generated_files.json
           retention-days: 30
 
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ -f generated_files.json ]; then
+            FILES_COUNT=$(jq length generated_files.json)
+            echo "files_count=$FILES_COUNT" >> $GITHUB_OUTPUT
+
+            if [ "$FILES_COUNT" -gt 0 ]; then
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+              echo "✅ Generated $FILES_COUNT file(s)"
+            else
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+              echo "⚠️ No files were generated"
+            fi
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "⚠️ generated_files.json not found"
+          fi
+
       - name: Create Pull Request
-        if: success()
+        if: steps.check_changes.outputs.has_changes == 'true'
+        id: create_pr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -74,6 +94,7 @@ jobs:
           author: Content Bot <noreply@github.com>
           commit-message: |
             🤖 Auto-generated content
+
             Quality Gate: ✅ PASSED
             AI Review: See artifacts for details
           branch: auto-content-${{ github.run_number }}
@@ -112,6 +133,25 @@ jobs:
             automated
             content
             needs-review
+          add-paths: |
+            content/**/*.md
+            data/topics_queue.json
+
+      - name: PR Creation Summary
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          if [ "${{ steps.create_pr.outputs.pull-request-number }}" != "" ]; then
+            echo "✅ PR #${{ steps.create_pr.outputs.pull-request-number }} created successfully"
+            echo "🔗 ${{ steps.create_pr.outputs.pull-request-url }}"
+          else
+            echo "⚠️ No changes detected or PR already exists"
+          fi
+
+      - name: Skip PR Notice
+        if: steps.check_changes.outputs.has_changes != 'true'
+        run: |
+          echo "⚠️ No PR created - no new content generated"
+          echo "Check generation logs for issues"
 
       - name: Cleanup on failure
         if: failure()

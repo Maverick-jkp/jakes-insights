@@ -531,21 +531,438 @@ cat hugo.toml
 
 ---
 
+## 최근 버그 수정 (2026-01-16) ⭐
+
+### 1. EN 언어 네비게이션 버그 수정
+**문제**: EN 언어에서 플로팅 메뉴 카테고리 링크 404 에러
+**원인**: Hugo의 `defaultContentLanguage = 'en'`은 EN에 대해 루트 레벨 URL 생성
+- EN: `/tech/`, `/business/`, `/lifestyle/` (언어 prefix 없음)
+- KO: `/ko/tech/`, `/ko/business/`, `/ko/lifestyle/`
+- JA: `/ja/tech/`, `/ja/business/`, `/ja/lifestyle/`
+
+**해결**: [layouts/index.html:786-794](layouts/index.html#L786-L794)
+```html
+{{ if eq .Site.Language.Lang "en" }}
+<a href="/tech/">💻 Tech</a>
+<a href="/business/">💼 Business</a>
+<a href="/lifestyle/">🌟 Lifestyle</a>
+{{ else }}
+<a href="/{{ .Site.Language.Lang }}/tech/">💻 Tech</a>
+<a href="/{{ .Site.Language.Lang }}/business/">💼 Business</a>
+<a href="/{{ .Site.Language.Lang }}/lifestyle/">🌟 Lifestyle</a>
+{{ end }}
+```
+
+### 2. 카테고리 히어로 섹션 버그 수정
+**문제**: 카테고리 랜딩 페이지에서 아이콘/제목/설명이 빈 값으로 표시
+**원인**: `.Title`, `.Type`, `.Section` 등 Hugo 템플릿 변수가 섹션 페이지에서 예상대로 작동하지 않음
+
+**해결**: [layouts/_default/list.html:388-433](layouts/_default/list.html#L388-L433)
+- URL 기반 감지로 변경: `in .RelPermalink "/tech/"`
+- 카테고리별로 직접 조건문 분기
+```html
+{{ if or (in .RelPermalink "/tech/") (in .RelPermalink "/tech") }}
+    <div class="category-icon">💻</div>
+    <h1 class="category-title">
+        {{ if eq .Site.Language.Lang "ko" }}기술
+        {{ else if eq .Site.Language.Lang "ja" }}テクノロジー
+        {{ else }}Technology
+        {{ end }}
+    </h1>
+    ...
+{{ else if or (in .RelPermalink "/business/") ... }}
+```
+
+**결과**: 모든 언어의 모든 카테고리 페이지에서 올바르게 표시됨
+
+**커밋**: `8d35359 - Fix navigation and category hero sections`
+
+---
+
+## 자동화 전략 계획 🚀 (2026-01-16)
+
+### 목표
+**하루 9개 포스트 자동 생성** (카테고리별 1개 × 3언어)
+- Tech: 3개 (EN/KO/JA)
+- Business: 3개 (EN/KO/JA)
+- Lifestyle: 3개 (EN/KO/JA)
+
+**월간 목표**: 270개 포스트 (9개/일 × 30일)
+
+### 비용 분석
+```
+Claude API (회사 계정):
+  - 하루 9개 draft 생성: ~450K tokens
+  - 월 13.5M tokens
+  - Prompt Caching 적용 시: $60-90/월 (개인 계정 기준)
+  - 회사 API 사용 시: $0
+
+GitHub Actions: $0 (2,000분/월 무료)
+Cloudflare Pages: $0 (무료)
+
+총 비용: $0 (회사 API) / $60-90 (개인 API)
+```
+
+### 자동화 아키텍처
+
+#### Option A: GitHub Actions (추천 - 시작용)
+```yaml
+# .github/workflows/daily-content.yml
+name: Daily Content Generation
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 매일 자정 UTC
+  workflow_dispatch:      # 수동 실행 가능
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - run: pip install anthropic requests
+      - run: python scripts/generate_content.py
+      - name: Commit and Push
+        run: |
+          git config user.name "Content Bot"
+          git config user.email "bot@jakes-tech-insights.pages.dev"
+          git add content/
+          git commit -m "Auto: Daily content $(date +%Y-%m-%d)"
+          git push
+```
+
+**장점:**
+- ✅ 완전 무료
+- ✅ Git 통합 (이미 사용 중)
+- ✅ 코드로 세밀한 제어
+- ✅ 로그 투명성
+- ✅ Cloudflare 자동 배포 연동
+
+**단점:**
+- ❌ GUI 없음 (코드만)
+- ❌ 실시간 모니터링 제한적
+
+#### Option B: n8n + GitHub Actions (향후 고려)
+```
+n8n (Self-hosted on Railway: $5/월)
+  ├─ Keyword Research (Reddit/Google Trends API)
+  ├─ Workflow 관리
+  ├─ 에러 알림 (Slack/Email)
+  └─ Webhook → GitHub Actions 트리거
+
+GitHub Actions
+  ├─ Python script 실행
+  ├─ Claude API 호출 (9개 draft 생성)
+  └─ Git commit & push
+```
+
+**장점:**
+- ✅ 시각적 워크플로우
+- ✅ 에러 핸들링 GUI
+- ✅ Slack 알림
+- ✅ 무거운 작업은 GitHub Actions로 오프로드
+
+**단점:**
+- ❌ n8n 서버 비용 ($5-20/월)
+- ❌ 초기 설정 복잡
+
+#### Option C: Make.com (비추천)
+- 무료 플랜: 월 1,000 operations (부족)
+- Core 플랜: $9/월 (10,000 ops)
+- Claude API 직접 커넥터 없음
+
+### 추천 타임라인
+```
+Week 1-2: GitHub Actions 구축
+Week 3-4: 테스트 및 최적화
+Month 2-3: 수익 발생 시 n8n 추가 고려
+```
+
+---
+
+## 콘텐츠 품질 전략
+
+### 1. AI 생성 콘텐츠의 위험
+**Google의 Helpful Content Update (2023~)**
+- ❌ 단순 AI 생성 글 → 패널티
+- ❌ 크롤링/재가공 → Thin Content 거절
+- ❌ 월 수백 개 자동 발행 → 명백한 자동화로 감지
+
+### 2. 품질 확보 방법
+
+#### A. 고품질 프롬프트 전략
+```python
+SYSTEM_PROMPT = """
+당신은 Jake's Tech Insights의 전문 작가입니다.
+
+[글쓰기 원칙]
+1. 첫 문단: 독자의 pain point 공감
+2. 구조: 문제 제기 → 해결책 → 실전 팁 → 결론
+3. 톤: 전문적이지만 친근한, 조언하는 선배 느낌
+4. 길이: 1,200-1,500 단어
+5. SEO: 키워드 "{keyword}"를 자연스럽게 5-7회
+6. 섹션: ## 헤딩 3-5개
+7. 끝: CTA - 질문이나 다음 단계 제안
+
+[스타일]
+- 능동태 위주
+- 짧은 문장 (2줄 이내)
+- 구체적 숫자/예시
+- 불릿 포인트 활용
+
+[금지]
+- AI 티: "물론", "~할 수 있습니다", "중요합니다"
+- 추상적: "혁신적", "게임체인저"
+- 과도한 이모지
+"""
+```
+
+#### B. AI Agent 체인
+```
+1. Research Agent: 키워드 + 최신 정보 수집
+   └─ Google Trends, Reddit API, YouTube Data API
+
+2. Draft Agent: Style Guide로 초안 작성
+   └─ Claude API (Prompt Caching 적용)
+
+3. SEO Agent: 키워드 밀도, 메타 태그 체크
+   └─ 자연스러운 키워드 분포 확인
+
+4. Proofreading Agent: 문법, 중복, AI 느낌 제거
+   └─ Claude API로 자가 검토
+
+5. Humanizer Agent: 개인화 요소 추가
+   └─ "내 경험상...", "실제로..." 등의 문장 삽입
+```
+
+#### C. 사람 Proofreading (10분/글)
+```
+체크리스트:
+□ 제목이 클릭 유도적인가?
+□ 첫 문단이 흥미로운가?
+□ 이상한 문장 1-2개 수정
+□ 개인 의견 1줄 추가
+□ 이미지 1개 추가 (Unsplash)
+□ Publish
+
+9개 × 10분 = 90분/일
+```
+
+### 3. 말투 학습 (Custom Style)
+
+#### 방법 A: Few-shot Learning (지금 당장)
+- Jake가 직접 쓴 글 5-10개 수집
+- Claude에게 분석 요청 → Style Guide 생성
+- 매 생성 시 Style Guide를 프롬프트에 포함
+
+#### 방법 B: Prompt Caching (Best)
+```python
+STYLE_GUIDE = """
+Jake's Writing DNA:
+
+[문장 구조]
+- 평균 길이: 12-18단어
+- 질문 빈도: 문단당 1개
+- 능동태: 85%
+
+[어휘]
+- 자주 쓰는 동사: 추천하다, 고민하다, 확인하다
+- 피하는 표현: 혁신적, 파괴적
+- 특징: "~인 거 같아", "어때?", "일단"
+
+[구조]
+1. 공감 질문
+2. 3-5개 섹션
+3. 각 섹션: 개념 → 예시 → 실천
+4. 마무리: 독자 질문
+
+[톤]
+- Formality: 6/10
+- Enthusiasm: 7/10
+- Technical: 7/10
+"""
+
+# Prompt Caching으로 토큰 90% 절약
+response = client.messages.create(
+    model="claude-sonnet-4",
+    system=[
+        {
+            "type": "text",
+            "text": STYLE_GUIDE,
+            "cache_control": {"type": "ephemeral"}
+        }
+    ],
+    messages=[...]
+)
+```
+
+**구현 단계:**
+```
+Week 1: Jake가 직접 글 5-10개 작성
+Week 2: Claude로 Style Guide 생성
+Week 3: Style Guide 테스트 & 피드백
+Week 4: 자동화 시작
+```
+
+#### 방법 C: Fine-tuning (나중에)
+- GPT-4 Fine-tuning: $8/M tokens (training)
+- Claude: 아직 미지원
+- 글 50-100개 수집 후 가능
+
+---
+
+## 키워드 소싱 전략
+
+### 추천: 롱테일 키워드 공략
+**트렌딩 키워드 ❌**
+- 경쟁 너무 높음
+- 대형 미디어 독점
+- 신생 블로그 불리
+
+**롱테일 키워드 ✅**
+- 경쟁 낮음
+- 구체적 의도
+- 전환율 높음
+
+### 키워드 소스
+
+#### 1. Reddit API (무료)
+```python
+import praw
+
+reddit = praw.Reddit(...)
+subreddit = reddit.subreddit("technology")
+for post in subreddit.hot(limit=10):
+    if post.score > 500:  # 인기 있는 토픽
+        keywords.append(post.title)
+```
+
+#### 2. Google Trends API
+```python
+from pytrends.request import TrendReq
+
+pytrends = TrendReq()
+pytrends.build_payload(['startup funding'], timeframe='today 7-d')
+trends = pytrends.interest_over_time()
+```
+
+#### 3. YouTube Data API
+```python
+# 조회수 높은 영상의 댓글 분석
+# "어떻게 ~?" 질문 패턴 추출
+```
+
+#### 4. Answer The Public (무료: 2회/일)
+- 실제 검색어 기반
+- 질문 형식 키워드
+
+### 추천 카테고리 재구조화 (향후)
+```
+현재: tech / business / lifestyle
+향후: make-money / how-to / reviews
+
+이유:
+- 수익화 의도 명확
+- 검색 의도 구체적
+- AdSense CPC 높음
+```
+
+---
+
+## AdSense 수익화 타임라인
+
+### 승인 조건 (2025 기준)
+```
+✅ 최소 20-30개 고품질 글 (수동 작성 추천)
+✅ 커스텀 도메인 (jakes-tech-insights.pages.dev는 서브도메인)
+✅ 일일 트래픽 100+ 방문자
+✅ 독창적 콘텐츠 (AI 감지 시 거절)
+✅ About, Contact, Privacy Policy 페이지
+✅ 도메인 등록 6개월+
+```
+
+### 현실적 타임라인
+```
+Month 1-2: 수동 30개 고품질 글 (하루 1개)
+  └─ 휴먼 터치 100%
+  └─ AI는 초안만
+
+Month 3: 커스텀 도메인 구입
+  └─ 예: jakesinsights.com ($12/년)
+  └─ Cloudflare DNS 설정
+
+Month 3-4: SEO 최적화
+  └─ 백링크 구축
+  └─ Guest posting
+  └─ SNS 공유
+
+Month 4: AdSense 신청
+  └─ 승인률 높은 시기
+
+Month 5+: 승인 후 자동화 점진 확대
+  └─ 하루 3개 → 6개 → 9개
+```
+
+### 주의사항
+**❌ 처음부터 하루 9개 위험:**
+- Google 패널티
+- AdSense 거절
+- 트래픽 없는 글 양산
+
+**✅ 추천: 점진적 확대**
+- Month 1-3: 1-2개/일
+- Month 4-6: 3-5개/일
+- Month 7+: 9개/일
+
+---
+
+## 다음 작업: 자동화 구현
+
+### Phase 1: Foundation (진행 중)
+```
+[✅] 사이트 구조 완성
+[✅] 카테고리 시스템
+[✅] 다국어 지원
+[✅] 버그 수정
+[ ] Style Guide 생성 (Jake의 글 5-10개 필요)
+[ ] GitHub Actions workflow 구축
+[ ] Content generation script (Python)
+[ ] Proofreading agent 구현
+```
+
+### Phase 2: Automation
+```
+[ ] Reddit/Google Trends API 연동
+[ ] 매일 자정 자동 실행
+[ ] Draft → Review → Publish 파이프라인
+[ ] 에러 알림 시스템
+```
+
+### Phase 3: Optimization
+```
+[ ] Prompt Caching 적용
+[ ] 이미지 자동 생성 (DALL-E)
+[ ] SEO 메타 자동 생성
+[ ] A/B 테스트
+```
+
+---
+
 ## 마지막 업데이트
 
 **날짜**: 2026-01-16
 **작업자**: Jake + Claude Sonnet 4.5
-**버전**: v2.0 (카테고리 기반 구조 완성 + 자동화 준비 완료)
+**버전**: v2.1 (버그 수정 + 자동화 전략 수립)
 
-### 주요 변경사항 (v1.0 → v2.0)
-1. ✅ 언어별 contentDir 완전 분리
-2. ✅ 카테고리 기반 폴더 구조 (tech/business/lifestyle)
-3. ✅ 카테고리 랜딩 페이지 추가
-4. ✅ 발췌문 렌더링 수정 (H1 태그 제거)
-5. ✅ 가독성 개선 (#999 → #b0b0b0)
-6. ✅ 언어별 날짜 로컬라이징
-7. ✅ 플로팅 메뉴 간소화 (Tags/About 제거)
-8. ✅ 샘플 콘텐츠 9개 추가
-9. ✅ 자동화 준비 완료
+### 주요 변경사항 (v2.0 → v2.1)
+1. ✅ EN 언어 네비게이션 버그 수정
+2. ✅ 카테고리 히어로 섹션 버그 수정
+3. ✅ 자동화 전략 수립 (하루 9개 포스트)
+4. ✅ 비용 분석 완료
+5. ✅ GitHub Actions vs n8n 비교
+6. ✅ 콘텐츠 품질 전략 수립
+7. ✅ 말투 학습 방법 정의
+8. ✅ 키워드 소싱 전략
+9. ✅ AdSense 타임라인 수립
 
-**Next Step**: 자동화 스크립트 개발 🚀
+**Next Step**: Style Guide 생성 & GitHub Actions 구축 🚀

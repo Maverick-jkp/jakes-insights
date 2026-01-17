@@ -87,6 +87,7 @@ class QualityGate:
         # WARNING checks (don't fail, just warn)
         self._check_links(body, checks)
         self._check_readability(body, checks)
+        self._check_image(frontmatter, checks)
 
         # Info
         self._add_info(body, frontmatter, checks)
@@ -265,6 +266,17 @@ class QualityGate:
         if avg_sentence_length > 25:
             checks['warnings'].append(
                 f"Sentences may be too long (avg: {avg_sentence_length:.1f} words)"
+            )
+
+    def _check_image(self, frontmatter: Dict, checks: Dict):
+        """Check for featured image (WARNING only)"""
+        has_image = 'image' in frontmatter and frontmatter['image']
+        checks['info']['has_image'] = has_image
+
+        # Warn if no image (not a failure)
+        if not has_image:
+            checks['warnings'].append(
+                "No featured image (recommended for better engagement)"
             )
 
     def _add_info(self, body: str, frontmatter: Dict, checks: Dict):

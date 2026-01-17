@@ -169,10 +169,12 @@
       "category": "business",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-16T10:14:00",
       "retry_count": 1,
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-01-17T05:40:49.724734",
+      "completed_at": "2026-01-17T05:42:36.385862"
     },
     {
       "id": "016-en-lifestyle-work-life-balance",

@@ -26,3 +26,6 @@ content_backup/
 *Resume*.html
 generate_resume_pdf*.py
 resume_project/
+
+# Downloaded images (tracked in git)
+# static/images/

@@ -1,73 +1,30 @@
 {
   "summary": {
-    "total_files": 3,
+    "total_files": 1,
     "total_failures": 0,
-    "total_warnings": 8
+    "total_warnings": 2
   },
   "results": [
     {
-      "file": "content/ja/tech/2026-01-17-ai\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30a2\u30b7\u30b9\u30bf\u30f3\u30c82025.md",
+      "file": "content/ja/business/2026-01-17-\u30b9\u30bf\u30fc\u30c8\u30a2\u30c3\u30d7\u8cc7\u91d1\u8abf\u9054\u6226\u75652025.md",
       "language": "ja",
       "critical_failures": [],
       "warnings": [
-        "AI phrases detected: \u6ce8\u76ee\u3059\u3079\u304d",
-        "Low link count: 0 (recommended: 2+)",
-        "Sentences may be too long (avg: 36.0 words)"
+        "AI phrases detected: \u91cd\u8981\u3067\u3059",
+        "Description length not optimal: 102 chars (ideal: 120-160)"
       ],
       "info": {
-        "char_count": 3085,
-        "word_count": "3085 chars",
+        "char_count": 3401,
+        "word_count": "3401 chars",
         "ai_phrases_found": [
-          "\u6ce8\u76ee\u3059\u3079\u304d"
+          "\u91cd\u8981\u3067\u3059"
         ],
-        "description_length": 127,
-        "link_count": 0,
-        "avg_sentence_length": 36.0,
+        "description_length": 102,
+        "link_count": 2,
+        "avg_sentence_length": 6.8,
+        "has_image": "/images/20260117-\u30b9\u30bf\u30fc\u30c8\u30a2\u30c3\u30d7\u8cc7\u91d1\u8abf\u9054\u6226\u75652025.jpg",
         "heading_count": 4,
-        "title": "AI\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30a2\u30b7\u30b9\u30bf\u30f3\u30c82025\u5e74\u6700\u65b0\u7248\uff1a\u958b\u767a\u52b9\u7387\u3092\u5287\u7684\u306b\u5411\u4e0a\u3055\u305b\u308b\u9769\u65b0\u7684\u30c4\u30fc\u30eb"
-      }
-    },
-    {
-      "file": "content/en/business/2026-01-17-startup-funding-strategies-2025.md",
-      "language": "en",
-      "critical_failures": [],
-      "warnings": [
-        "AI phrases detected: leverage",
-        "Low link count: 0 (recommended: 2+)"
-      ],
-      "info": {
-        "word_count": 1143,
-        "ai_phrases_found": [
-          "leverage"
-        ],
-        "description_length": 158,
-        "link_count": 0,
-        "avg_sentence_length": 13.2,
-        "heading_count": 5,
-        "title": "2025 Startup Funding: Top Strategies That Actually Work"
-      }
-    },
-    {
-      "file": "content/ko/business/2026-01-17-\uc2a4\ud0c0\ud2b8\uc5c5-\ud22c\uc790-\uc804\ub7b5-2025.md",
-      "language": "ko",
-      "critical_failures": [],
-      "warnings": [
-        "AI phrases detected: \ubb3c\ub860, \ud601\uc2e0\uc801",
-        "Description length not optimal: 93 chars (ideal: 120-160)",
-        "Low link count: 0 (recommended: 2+)"
-      ],
-      "info": {
-        "char_count": 2900,
-        "word_count": "2900 chars",
-        "ai_phrases_found": [
-          "\ubb3c\ub860",
-          "\ud601\uc2e0\uc801"
-        ],
-        "description_length": 93,
-        "link_count": 0,
-        "avg_sentence_length": 7.8,
-        "heading_count": 4,
-        "title": "2025\ub144 \uc2a4\ud0c0\ud2b8\uc5c5 \ud22c\uc790 \uc131\uacf5 \uc804\ub7b5: \ucd08\ubcf4\uc790\ub3c4 \ub530\ub77c\ud560 \uc218 \uc788\ub294 \uc644\ubcbd \uac00\uc774\ub4dc"
+        "title": "\u30102025\u5e74\u7248\u3011\u30b9\u30bf\u30fc\u30c8\u30a2\u30c3\u30d7\u8cc7\u91d1\u8abf\u9054\u6226\u7565\u5b8c\u5168\u30ac\u30a4\u30c9|\u6210\u529f\u4e8b\u4f8b\u3068\u6700\u65b0\u30c8\u30ec\u30f3\u30c9"
       }
     }
   ]

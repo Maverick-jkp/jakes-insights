@@ -33,11 +33,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install anthropic
+          pip install anthropic requests
 
       - name: Generate content
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           COUNT="${{ github.event.inputs.count || '3' }}"
           python scripts/generate_posts.py --count "$COUNT"
@@ -79,9 +80,10 @@ jobs:
               echo "has_changes=true" >> $GITHUB_OUTPUT
               echo "✅ Generated $FILES_COUNT file(s)"
               
-              # Add generated files
+              # Add generated files and images
               git add content/
               git add data/topics_queue.json
+              git add static/images/ || true
               
               # Check if there are actual changes
               if git diff --staged --quiet; then

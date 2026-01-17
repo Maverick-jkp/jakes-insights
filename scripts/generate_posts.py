@@ -31,6 +31,13 @@ except ImportError:
     print("Install with: pip install anthropic")
     sys.exit(1)
 
+try:
+    import requests
+except ImportError:
+    print("Error: requests package not installed")
+    print("Install with: pip install requests")
+    sys.exit(1)
+
 
 # System prompts for different languages
 SYSTEM_PROMPTS = {
@@ -163,8 +170,8 @@ SYSTEM_PROMPTS = {
 
 
 class ContentGenerator:
-    def __init__(self, api_key: Optional[str] = None):
-        """Initialize content generator with Claude API"""
+    def __init__(self, api_key: Optional[str] = None, unsplash_key: Optional[str] = None):
+        """Initialize content generator with Claude API and Unsplash API"""
         self.api_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
         if not self.api_key:
             raise ValueError(
@@ -179,6 +186,14 @@ class ContentGenerator:
             }
         )
         self.model = "claude-sonnet-4-20250514"
+
+        # Unsplash API (optional)
+        self.unsplash_key = unsplash_key or os.environ.get("UNSPLASH_ACCESS_KEY")
+        if self.unsplash_key:
+            print("  🖼️  Unsplash API enabled")
+        else:
+            print("  ⚠️  Unsplash API key not found (images will be skipped)")
+            print("     Set UNSPLASH_ACCESS_KEY environment variable to enable")
 
     def generate_draft(self, topic: Dict) -> str:
         """Generate initial draft using Draft Agent with Prompt Caching"""
@@ -444,7 +459,103 @@ Return improved version (body only, no title):""",
 
         return response.content[0].text.strip().strip('"').strip("'")
 
-    def save_post(self, topic: Dict, title: str, description: str, content: str) -> Path:
+    def fetch_featured_image(self, keyword: str, category: str) -> Optional[Dict]:
+        """Fetch featured image from Unsplash API"""
+        if not self.unsplash_key:
+            return None
+
+        try:
+            # Search query: combine keyword and category for better results
+            query = f"{keyword} {category}"
+
+            # Unsplash API endpoint
+            url = "https://api.unsplash.com/search/photos"
+            headers = {
+                "Authorization": f"Client-ID {self.unsplash_key}"
+            }
+            params = {
+                "query": query,
+                "per_page": 5,
+                "orientation": "landscape"
+            }
+
+            print(f"  🔍 Searching Unsplash for: {query}")
+
+            response = requests.get(url, headers=headers, params=params, timeout=10)
+            response.raise_for_status()
+
+            data = response.json()
+
+            if not data.get('results'):
+                print(f"  ⚠️  No images found for '{query}'")
+                return None
+
+            # Get first result
+            photo = data['results'][0]
+
+            image_info = {
+                'url': photo['urls']['regular'],
+                'download_url': photo['links']['download_location'],
+                'photographer': photo['user']['name'],
+                'photographer_url': photo['user']['links']['html'],
+                'unsplash_url': photo['links']['html']
+            }
+
+            print(f"  ✓ Found image by {image_info['photographer']}")
+            return image_info
+
+        except requests.exceptions.RequestException as e:
+            print(f"  ⚠️  Unsplash API error: {e}")
+            return None
+        except Exception as e:
+            print(f"  ⚠️  Image fetch failed: {e}")
+            return None
+
+    def download_image(self, image_info: Dict, keyword: str) -> Optional[str]:
+        """Download image to static/images/ directory"""
+        if not image_info:
+            return None
+
+        try:
+            # Create images directory
+            images_dir = Path("static/images")
+            images_dir.mkdir(parents=True, exist_ok=True)
+
+            # Generate filename
+            slug = keyword.lower()
+            slug = ''.join(c if c.isalnum() or c.isspace() else '' for c in slug)
+            slug = slug.replace(' ', '-')[:30]
+            date_str = datetime.now().strftime("%Y%m%d")
+            filename = f"{date_str}-{slug}.jpg"
+            filepath = images_dir / filename
+
+            # Download image
+            print(f"  📥 Downloading image...")
+            response = requests.get(image_info['url'], timeout=15)
+            response.raise_for_status()
+
+            # Save image
+            with open(filepath, 'wb') as f:
+                f.write(response.content)
+
+            print(f"  ✓ Image saved: {filepath}")
+
+            # Trigger Unsplash download tracking (required by API terms)
+            if image_info.get('download_url'):
+                requests.get(
+                    image_info['download_url'],
+                    headers={"Authorization": f"Client-ID {self.unsplash_key}"},
+                    timeout=5
+                )
+
+            # Return relative path for Hugo
+            return f"/images/{filename}"
+
+        except Exception as e:
+            print(f"  ⚠️  Image download failed: {e}")
+            return None
+
+    def save_post(self, topic: Dict, title: str, description: str, content: str, image_path: Optional[str] = None, image_credit: Optional[Dict] = None) -> Path:
         """Save post to Hugo content directory"""
         lang = topic['lang']
         category = topic['category']
@@ -465,7 +576,7 @@ Return improved version (body only, no title):""",
         filename = f"{date_str}-{slug}.md"
         filepath = content_dir / filename
 
-        # Hugo frontmatter
+        # Hugo frontmatter with optional image
         frontmatter = f"""---
 title: "{title}"
 date: {datetime.now().strftime("%Y-%m-%d")}
@@ -473,9 +584,18 @@ draft: false
 categories: ["{category}"]
 tags: {json.dumps(keyword.split()[:3])}
 description: "{description}"
----
-
 """
+
+        # Add image if available
+        if image_path:
+            frontmatter += f'image: "{image_path}"\n'
+
+        frontmatter += "---\n\n"
+
+        # Add image credit at the end of content if available
+        if image_credit:
+            credit_line = f"\n\n---\n\n*Photo by [{image_credit['photographer']}]({image_credit['photographer_url']}) on [Unsplash]({image_credit['unsplash_url']})*\n"
+            content += credit_line
 
         # Write file
         with open(filepath, 'w', encoding='utf-8') as f:
@@ -541,8 +661,17 @@ def main():
             title = generator.generate_title(final_content, topic['keyword'], topic['lang'])
             description = generator.generate_description(final_content, topic['keyword'], topic['lang'])
 
-            # Save post
-            filepath = generator.save_post(topic, title, description, final_content)
+            # Fetch featured image
+            image_path = None
+            image_credit = None
+            image_info = generator.fetch_featured_image(topic['keyword'], topic['category'])
+            if image_info:
+                image_path = generator.download_image(image_info, topic['keyword'])
+                if image_path:
+                    image_credit = image_info
+
+            # Save post with image
+            filepath = generator.save_post(topic, title, description, final_content, image_path, image_credit)
 
             # Mark as completed
             if not args.topic_id:

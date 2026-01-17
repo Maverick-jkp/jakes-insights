@@ -155,6 +155,80 @@
             border-color: var(--accent);
             transform: translateX(-4px);
         }
+
+        /* Floating Menu */
+        .floating-menu {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 90;
+        }
+
+        .menu-btn {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--bg);
+            box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+            transition: all 0.3s;
+        }
+
+        .menu-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(0, 255, 136, 0.6);
+        }
+
+        .menu-panel {
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            background: var(--surface);
+            border: 1px solid var(--accent);
+            border-radius: 1rem;
+            padding: 1rem;
+            min-width: 200px;
+            display: none;
+            box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        .menu-panel.active {
+            display: block;
+            animation: slideUp 0.3s;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .menu-panel a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.875rem;
+        }
+
+        .menu-panel a:hover {
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -179,6 +253,46 @@
         
         <a href="/{{ .Site.Language.Lang }}/" class="back-link">← Back to Home</a>
     </article>
+
+    <!-- Floating Menu -->
+    <div class="floating-menu">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div class="menu-panel" id="menuPanel">
+            <a href="#top">↑ Top</a>
+            <a href="{{ "/" | relLangURL }}" style="font-weight: 600;">🏠 Home</a>
+            <a href="{{ "all-posts" | relLangURL }}" style="color: var(--accent); font-weight: 600;">📋 All Posts</a>
+            <div style="border-top: 1px solid var(--border); margin: 0.5rem 0; padding-top: 0.5rem;">
+                <div style="font-size: 0.75rem; color: var(--accent); padding: 0 1rem 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Categories</div>
+                {{ if eq .Site.Language.Lang "en" }}
+                <a href="/categories/tech/">💻 Tech</a>
+                <a href="/categories/business/">💼 Business</a>
+                <a href="/categories/society/">🌍 Society</a>
+                <a href="/categories/entertainment/">🎬 Entertainment</a>
+                <a href="/categories/lifestyle/">🌟 Lifestyle</a>
+                {{ else }}
+                <a href="/{{ .Site.Language.Lang }}/categories/tech/">💻 Tech</a>
+                <a href="/{{ .Site.Language.Lang }}/categories/business/">💼 Business</a>
+                <a href="/{{ .Site.Language.Lang }}/categories/society/">🌍 Society</a>
+                <a href="/{{ .Site.Language.Lang }}/categories/entertainment/">🎬 Entertainment</a>
+                <a href="/{{ .Site.Language.Lang }}/categories/lifestyle/">🌟 Lifestyle</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const panel = document.getElementById('menuPanel');
+            panel.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.floating-menu');
+            if (!menu.contains(event.target)) {
+                document.getElementById('menuPanel').classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
 {{ end }}

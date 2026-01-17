@@ -383,7 +383,7 @@
     <div class="top-bar">
         <div class="header-box">
             <a href="{{ "/" | relLangURL }}" class="logo">
-                Jake<span class="apostrophe">'</span>s Tech Insights
+                JAKE<span class="apostrophe">'</span>S INSIGHTS
             </a>
             <div class="lang-switch">
                 <a href="/all-posts/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
@@ -433,7 +433,7 @@
                         <span class="post-card-category">{{ index .Params.categories 0 }}</span>
                     </div>
                     <h2 class="post-card-title">{{ .Title }}</h2>
-                    <div class="post-card-excerpt">{{ .Summary }}</div>
+                    <div class="post-card-excerpt">{{ .Summary | plainify | truncate 150 }}</div>
                     <div class="post-card-footer">
                         {{ $readingTime := div (add .WordCount 212) 212 }}
                         <span>{{ $readingTime }} {{ i18n "read_time" $readingTime }}</span>

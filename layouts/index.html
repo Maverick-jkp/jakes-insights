@@ -147,8 +147,8 @@
             gap: 1rem;
             position: relative;
             overflow: hidden;
-            min-height: 320px;
-            max-height: 320px;
+            min-height: 380px;
+            max-height: 380px;
         }
 
         .featured-thumbnail {
@@ -257,7 +257,8 @@
             border: 1px solid var(--border);
             border-radius: 1rem;
             padding: 1.5rem;
-            max-height: 320px;
+            min-height: 380px;
+            max-height: 380px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -276,7 +277,7 @@
 
         .latest-items-container {
             flex: 1;
-            overflow-y: auto;
+            overflow: hidden;
         }
 
         .latest-item {
@@ -365,7 +366,8 @@
             border: 1px solid var(--border);
             border-radius: 1rem;
             padding: 2rem;
-            min-height: 350px;
+            min-height: 380px;
+            max-height: 380px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -388,7 +390,8 @@
             transition: all 0.3s;
             text-decoration: none;
             display: block;
-            min-height: 240px;
+            min-height: 380px;
+            max-height: 380px;
         }
 
         .small-card:hover {
@@ -763,7 +766,7 @@
             <div class="latest-widget">
                 <h3 class="widget-title">Latest</h3>
                 <div class="latest-items-container">
-                    {{ range first 4 $currentLangPages }}
+                    {{ range first 3 $currentLangPages }}
                     <a href="{{ .Permalink }}" class="latest-item">
                         <div class="latest-thumbnail">
                             {{ if .Params.image }}

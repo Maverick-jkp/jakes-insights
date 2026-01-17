@@ -1,10 +1,11 @@
 ---
 title: "2025 Startup Funding: Top Strategies That Actually Work"
-date: 2026-01-17
+date: 2026-01-17T14:22:00
 draft: false
 categories: ["business"]
 tags: ["Startup", "funding", "strategies"]
 description: "Discover the top startup funding strategies for 2025, from AI-driven investors to new crowdfunding platforms. Expert tips to secure capital in today's market."
+image: "/images/placeholder-business.jpg"
 ---
 
 Raising money for your startup in 2025 feels like playing a completely different game than it did just two years ago. Interest rates are higher, VCs are pickier, and the "spray and pray" approach to funding is officially dead. But here's the thing: smart founders are still getting funded—they're just using radically different strategies than what worked before.

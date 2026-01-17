@@ -5,7 +5,7 @@ draft: false
 categories: ["lifestyle"]
 tags: ["デジタルノマド", "リモートワーク", "旅行"]
 description: "2025年のデジタルノマドライフスタイル：ヒントと目的地"
-image: "/images/placeholder-lifestyle.svg"
+image: "/images/20260117-digital-nomad-2025.jpg"
 ---
 
 デジタルノマドのライフスタイルは大きく成熟しました。2025年の様子を見てみましょう。

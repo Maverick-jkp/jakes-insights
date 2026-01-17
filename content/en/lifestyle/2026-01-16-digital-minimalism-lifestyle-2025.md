@@ -5,7 +5,7 @@ draft: false
 categories: ["lifestyle"]
 tags: ["Digital", "minimalism", "lifestyle"]
 description: "Discover digital minimalism in 2025: practical strategies to declutter your tech, reclaim focus, and build meaningful connections in our hyperconnected world."
-image: "/images/placeholder-lifestyle.svg"
+image: "/images/20260116-digital-minimalism-lifestyle-2.jpg"
 ---
 
 You're drowning in notifications. Your phone buzzes 67 times per day on average. Your desktop has 47 browser tabs open. Three streaming services compete for your evening attention while two work laptops demand your focus. Sound familiar? Welcome to modern life, where our devices have basically staged a coup against our attention spans.

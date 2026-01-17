@@ -43,10 +43,12 @@
       "category": "business",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-16T10:03:00",
       "retry_count": 1,
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-01-17T07:26:37.865132",
+      "completed_at": "2026-01-17T07:27:49.735674"
     },
     {
       "id": "005-ko-business-remote-work",
@@ -54,10 +56,12 @@
       "category": "business",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-16T10:04:00",
       "retry_count": 1,
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-01-17T07:26:37.865132",
+      "completed_at": "2026-01-17T07:29:29.617016"
     },
     {
       "id": "006-ja-business-remote-work",
@@ -65,10 +69,12 @@
       "category": "business",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-16T10:05:00",
       "retry_count": 1,
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-01-17T07:26:37.865132",
+      "completed_at": "2026-01-17T07:31:03.471503"
     },
     {
       "id": "007-en-lifestyle-minimalism",
@@ -287,13 +293,15 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-17T15:12:58.385002",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "업무나 프로젝트에 사용할 AI 도구를 선택하기 위해 성능을 비교하려고 함",
       "angle": "구체적 사용 사례별 성능 차이와 비용 효율성 분석",
-      "competition_level": "medium"
+      "competition_level": "medium",
+      "reserved_at": "2026-01-17T07:24:41.773491",
+      "completed_at": "2026-01-17T07:25:37.403058"
     },
     {
       "id": "025-en-business-remote-work-producti",
@@ -359,14 +367,16 @@
       "category": "business",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-17T15:12:58.385177",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "デジタルトランスフォーメーション導入を検討中に失敗リスクを把握したい",
       "angle": "日本企業特有のDX阻害要因と成功のための現実的アプローチ",
       "competition_level": "medium",
-      "expiry_days": 21
+      "expiry_days": 21,
+      "reserved_at": "2026-01-17T07:24:41.773491",
+      "completed_at": "2026-01-17T07:27:19.119307"
     },
     {
       "id": "030-ja-business-テレワーク-vs-オフィス勤務-生産性比",
@@ -418,13 +428,15 @@
       "category": "business",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-17T15:12:58.385207",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "Z世代部下の管理に苦戦している管理職が正しいアプローチを知りたい",
       "angle": "ステレオタイプではない実際のZ世代の価値観と効果的な関わり方",
-      "competition_level": "medium"
+      "competition_level": "medium",
+      "reserved_at": "2026-01-17T07:24:41.773491",
+      "completed_at": "2026-01-17T07:29:06.579966"
     }
   ]
 }

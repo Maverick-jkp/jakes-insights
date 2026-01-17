@@ -733,9 +733,25 @@
                 height: 50px;
             }
         }
+        /* Language-specific card heights */
+        body[lang="ko"] .featured-post,
+        body[lang="ko"] .latest-widget,
+        body[lang="ko"] .adsense-widget,
+        body[lang="ko"] .small-card {
+            min-height: 480px;
+            max-height: 480px;
+        }
+
+        body[lang="ja"] .featured-post,
+        body[lang="ja"] .latest-widget,
+        body[lang="ja"] .adsense-widget,
+        body[lang="ja"] .small-card {
+            min-height: 480px;
+            max-height: 480px;
+        }
     </style>
 </head>
-<body>
+<body lang="{{ .Site.Language.Lang }}">
     <!-- Fixed Header -->
     <div class="top-bar">
         <div class="header-box">

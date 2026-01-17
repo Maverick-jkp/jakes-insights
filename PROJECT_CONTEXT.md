@@ -356,7 +356,7 @@ ANTHROPIC_API_KEY=your-claude-api-key
 ---
 
 **Last Updated**: 2026-01-17
-**Status**: Day 6 Complete ✅ (Production bugs fixed + Writing quality upgraded)
+**Status**: Day 6 Complete ✅ (Production bugs fixed + Writing quality upgraded + UI/UX enhancements)
 
 ## 🐛 Recent Bug Fixes (2026-01-17)
 
@@ -404,3 +404,140 @@ ANTHROPIC_API_KEY=your-claude-api-key
 - Improved conversion (decision-stage content)
 
 **Next Milestone**: Phase 5 - Monetization preparation
+
+## 🎨 UI/UX Enhancements (2026-01-17) ✅ COMPLETE
+
+### Homepage Layout Improvements
+
+**Problem**:
+- Featured card too large (entire screen height)
+- Latest widget showing only 2 items instead of 3, with scrollbar
+- Featured thumbnail too small (left-side layout)
+- Small cards missing category badges
+- Second row not visible on first screen
+
+**Solution**:
+1. **Featured Card Redesign**:
+   - Changed from horizontal (thumbnail left) to vertical layout (thumbnail top)
+   - Featured thumbnail: 180px height, full width
+   - Featured card height: 420px (EN), 480px (KO/JA)
+   - Added green category badge matching small cards
+
+2. **Latest Widget Optimization**:
+   - Shows exactly 3 posts using `{{ range after 1 (first 4 $currentLangPages) }}`
+   - Skips Featured post to avoid duplication
+   - Compact spacing: 0.3rem gaps, 0.4rem padding, 60px thumbnails
+   - No scrollbar, all content visible
+
+3. **Language-Specific Heights**:
+   - English: 420px (optimal for Latin characters)
+   - Korean/Japanese: 480px (taller for CJK characters)
+   - Implemented via `body[lang="ko"]` and `body[lang="ja"]` CSS selectors
+
+4. **Small Cards Enhancement**:
+   - Added category badges (green style)
+   - Consistent height with Featured/Latest
+   - AdSense widget placeholder matches design
+
+**Files Modified**:
+- `layouts/index.html` - Homepage Bento grid layout
+
+### Category Landing Pages
+
+**Problem**:
+- All category pages broken (no styling)
+- Category descriptions missing
+- Full post content displaying in cards (extremely long)
+- Missing floating menu
+
+**Solution**:
+1. **Fixed CSS Class Conflict**:
+   - Renamed `.post-content` to `.card-content`
+   - Prevented custom.css image rules from affecting cards
+
+2. **Added Multilingual Descriptions**:
+   - Tech: "Exploring the essence of technology and designing the future"
+   - Business: "Discovering hidden principles of business and creating growth"
+   - Society: "Reading societal changes and imagining a better tomorrow"
+   - Entertainment: "Following cultural trends and discovering joy"
+   - Lifestyle: "Rediscovering everyday values and creating a better life"
+   - All descriptions available in EN/KO/JA
+
+3. **Fixed Content Display**:
+   - Used `{{ .Summary | plainify | truncate 120 }}` to show text-only excerpts
+   - Removed images from card previews
+
+4. **Added Floating Menu**:
+   - Menu button with hamburger icon
+   - Links to Home, All Posts, and all categories
+   - Language-aware URLs
+
+**Files Modified**:
+- `layouts/categories/list.html` - Category landing pages
+
+### All-Posts Page Fixes
+
+**Problem**:
+- Images displaying in card excerpts (extremely long cards)
+- Reading time showing incorrect values (33 min, 44 min)
+- Logo inconsistency ("Jake's Tech Insights" vs "Jake's Insights")
+
+**Solution**:
+1. **Fixed Content Display**:
+   - Changed to `{{ .Summary | plainify | truncate 150 }}`
+   - Removed all HTML/images from excerpts
+
+2. **Removed Reading Time**:
+   - Deleted entire `.post-card-footer` section
+   - Removed reading time CSS and HTML
+
+3. **Logo Standardization**:
+   - Changed to "JAKE'S INSIGHTS" across all pages
+   - Consistent with homepage branding
+
+**Files Modified**:
+- `layouts/_default/all-posts.html` - All posts listing page
+
+### Single Post Page Enhancements
+
+**Problem**:
+- Missing floating menu
+- Logo inconsistency
+
+**Solution**:
+- Added complete floating menu (same as category pages)
+- Standardized logo to "JAKE'S INSIGHTS"
+
+**Files Modified**:
+- `layouts/_default/single.html` - Individual post pages
+
+### Post Content Image Limits
+
+**Problem**:
+- Images in post content too large (full width)
+- Pushed content below the fold
+
+**Solution**:
+- Limited post content images to 500px max width
+- Centered images with auto margins
+- Responsive: 100% width on mobile (<768px)
+
+**Files Modified**:
+- `assets/css/extended/custom.css` - Image width overrides
+
+### Key Design Decisions
+
+1. **Language-Specific Sizing**: Korean and Japanese text requires 60px more vertical space than English due to character height differences
+2. **Vertical Featured Layout**: Thumbnail on top provides better visual hierarchy and larger image display
+3. **Green Category Badges**: Consistent accent color across all card types (Featured, Latest, Small, Category pages)
+4. **Text-Only Excerpts**: Using `plainify | truncate N` prevents layout breaks from HTML/images
+5. **Floating Menu Everywhere**: Provides consistent navigation across all page types
+
+### Testing Notes
+
+- Tested across all 3 languages (EN/KO/JA)
+- Verified on homepage, category pages, all-posts page, and single posts
+- Confirmed Featured thumbnail full-width display
+- Validated Latest showing exactly 3 items without scrollbar
+- Checked category descriptions in all languages
+- Verified floating menu on all page types

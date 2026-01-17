@@ -132,7 +132,7 @@
             object-fit: cover;
         }
 
-        .post-content {
+        .card-content {
             padding: 1.5rem;
         }
 
@@ -199,7 +199,7 @@
                     📰
                     {{ end }}
                 </div>
-                <div class="post-content">
+                <div class="card-content">
                     <div class="post-date">
                         {{ if eq $.Site.Language.Lang "ko" }}
                             {{ .Date.Format "2006.01.02" }}

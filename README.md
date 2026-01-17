@@ -264,6 +264,8 @@ hugo
 - ✅ Tone optimization: Toss style (KO), Medium style (EN), Natural (JA)
 - ✅ Quality Gate updated: 800-2,000 words, 3,000-7,500 chars (JA)
 - ✅ Structure-based constraints: 3-4 sections (removed strict word counts)
+- ✅ Prompt Caching: 20-25% cost reduction ($8.1 → $6.3/month)
+- ✅ Unsplash API: Featured images auto-generated with credits
 
 ## 🎓 Documentation
 
@@ -277,6 +279,7 @@ GitHub Repository Settings → Secrets → Actions:
 
 ```
 ANTHROPIC_API_KEY=your-claude-api-key-here
+UNSPLASH_ACCESS_KEY=your-unsplash-access-key-here
 ```
 
 ## 🚦 Development Roadmap
@@ -303,10 +306,10 @@ ANTHROPIC_API_KEY=your-claude-api-key-here
 - [x] Quality Gate criteria updated (800-2,000 words for flexibility)
 - [x] Structure-based prompts (removed strict word count limits)
 
-### 📋 Phase 4: Optimization (Planned)
-- [ ] Prompt Caching for cost reduction
+### 📋 Phase 4: Optimization (In Progress)
+- [x] Prompt Caching for cost reduction (20-25% cost savings)
+- [x] Image auto-generation (Unsplash API integration)
 - [ ] Keyword research automation (Reddit/Trends API)
-- [ ] Image auto-generation
 - [ ] A/B testing for titles
 - [ ] n8n integration for monitoring
 
@@ -380,9 +383,15 @@ MIT License - See [LICENSE](LICENSE) file
 **Built with 🤖 AI + ❤️ Human Touch**
 
 *Last updated: 2026-01-17*
-*Version: 2.8 (Day 5 - Structure-Based Constraints)*
+*Version: 2.9 (Day 6 - Phase 4: Optimization)*
 
 ## 🔍 Recent Changes
+
+**2026-01-17 (v2.9)**:
+- **Phase 4.1**: Prompt Caching (20-25% cost reduction)
+- **Phase 4.2**: Unsplash API integration (auto featured images + credits)
+- **Quality Gate**: Image check added (WARNING only)
+- **Cost**: $6.3/month (down from $8.1/month with caching)
 
 **2026-01-17 (v2.8)**:
 - **Structure-based prompts**: Removed strict word count limits → 3-4 sections structure

@@ -171,11 +171,17 @@ class ContentGenerator:
                 "ANTHROPIC_API_KEY not found. Set it as environment variable or pass to constructor."
             )
 
-        self.client = Anthropic(api_key=self.api_key)
+        # Initialize with Prompt Caching beta header
+        self.client = Anthropic(
+            api_key=self.api_key,
+            default_headers={
+                "anthropic-beta": "prompt-caching-2024-07-31"
+            }
+        )
         self.model = "claude-sonnet-4-20250514"
 
     def generate_draft(self, topic: Dict) -> str:
-        """Generate initial draft using Draft Agent"""
+        """Generate initial draft using Draft Agent with Prompt Caching"""
         keyword = topic['keyword']
         lang = topic['lang']
         category = topic['category']
@@ -187,10 +193,17 @@ class ContentGenerator:
 
         print(f"  📝 Generating draft for: {keyword}")
 
+        # Use Prompt Caching: cache the system prompt
         response = self.client.messages.create(
             model=self.model,
             max_tokens=12000,
-            system=system_prompt,
+            system=[
+                {
+                    "type": "text",
+                    "text": system_prompt,
+                    "cache_control": {"type": "ephemeral"}
+                }
+            ],
             messages=[{
                 "role": "user",
                 "content": user_prompt
@@ -198,29 +211,68 @@ class ContentGenerator:
         )
 
         draft = response.content[0].text
+
+        # Log cache performance
+        usage = response.usage
+        cache_read = getattr(usage, 'cache_read_input_tokens', 0)
+        cache_create = getattr(usage, 'cache_creation_input_tokens', 0)
+
+        # Always show cache status
+        if cache_read > 0:
+            print(f"  💾 Cache HIT: {cache_read} tokens saved!")
+        elif cache_create > 0:
+            print(f"  💾 Cache created: {cache_create} tokens")
+        else:
+            print(f"  ℹ️  No caching (usage: input={usage.input_tokens}, output={usage.output_tokens})")
+
         print(f"  ✓ Draft generated ({len(draft)} chars)")
         return draft
 
     def edit_draft(self, draft: str, topic: Dict) -> str:
-        """Refine draft using Editor Agent"""
+        """Refine draft using Editor Agent with Prompt Caching"""
         lang = topic['lang']
 
         print(f"  ✏️  Editing draft...")
 
         editor_prompt = self._get_editor_prompt(lang)
 
+        # Use Prompt Caching: cache the editor instructions
         response = self.client.messages.create(
             model=self.model,
             max_tokens=12000,
             messages=[
                 {
                     "role": "user",
-                    "content": f"{editor_prompt}\n\n---\n\n{draft}"
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": editor_prompt,
+                            "cache_control": {"type": "ephemeral"}
+                        },
+                        {
+                            "type": "text",
+                            "text": f"\n\n---\n\n{draft}"
+                        }
+                    ]
                 }
             ]
         )
 
         edited = response.content[0].text
+
+        # Log cache performance
+        usage = response.usage
+        cache_read = getattr(usage, 'cache_read_input_tokens', 0)
+        cache_create = getattr(usage, 'cache_creation_input_tokens', 0)
+
+        # Always show cache status
+        if cache_read > 0:
+            print(f"  💾 Cache HIT: {cache_read} tokens saved!")
+        elif cache_create > 0:
+            print(f"  💾 Cache created: {cache_create} tokens")
+        else:
+            print(f"  ℹ️  No caching (usage: input={usage.input_tokens}, output={usage.output_tokens})")
+
         print(f"  ✓ Draft edited ({len(edited)} chars)")
         return edited
 

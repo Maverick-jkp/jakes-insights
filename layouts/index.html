@@ -147,8 +147,8 @@
             gap: 1rem;
             position: relative;
             overflow: hidden;
-            min-height: 150px;
-            max-height: 220px;
+            min-height: 320px;
+            max-height: 320px;
         }
 
         .featured-thumbnail {
@@ -257,7 +257,7 @@
             border: 1px solid var(--border);
             border-radius: 1rem;
             padding: 1.5rem;
-            max-height: 220px;
+            max-height: 320px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -763,7 +763,7 @@
             <div class="latest-widget">
                 <h3 class="widget-title">Latest</h3>
                 <div class="latest-items-container">
-                    {{ range first 3 $currentLangPages }}
+                    {{ range first 4 $currentLangPages }}
                     <a href="{{ .Permalink }}" class="latest-item">
                         <div class="latest-thumbnail">
                             {{ if .Params.image }}

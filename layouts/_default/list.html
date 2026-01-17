@@ -65,7 +65,9 @@
 
 <article class="{{ $class }}">
   {{- $isHidden := false }}
-  {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  <a href="{{ .Permalink }}">
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+  </a>
   <header class="entry-header">
     <h2 class="entry-hint-parent">
       {{- .Title }}

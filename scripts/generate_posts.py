@@ -825,15 +825,22 @@ image: "{image_path}"
 
 """
 
+        # Add hero image at the top of content if available
+        hero_image = ""
+        if image_path and image_credit:
+            hero_image = f"![{keyword}]({image_path})\n\n"
+
         # Add image credit at the end of content if available
+        credit_line = ""
         if image_credit:
             credit_line = f"\n\n---\n\n*Photo by [{image_credit['photographer']}]({image_credit['photographer_url']}) on [Unsplash]({image_credit['unsplash_url']})*\n"
-            content += credit_line
 
-        # Write file
+        # Write file with hero image at top
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(frontmatter)
+            f.write(hero_image)
             f.write(content)
+            f.write(credit_line)
 
         print(f"  💾 Saved to: {filepath}")
         return filepath

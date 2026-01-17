@@ -334,6 +334,15 @@ Content Guidelines:
 - Mention current trends (2025-2026)
 - Be concise and impactful - avoid unnecessary explanations
 
+📚 REFERENCES SECTION (Required!):
+At the end of your post, add a "## References" section with 2-3 credible sources:
+- Format: `- [Source Title](URL) - Organization/Publisher`
+- Use real-looking references (tech blogs, research reports, industry publications)
+- Example format:
+  ## References
+  - [The State of AI in 2025](https://example.com/ai-report) - McKinsey & Company
+  - [Remote Work Statistics 2025](https://example.com/remote) - Buffer
+
 Write the complete blog post now (body only, no title or metadata):""",
 
             "ko": f"""다음 주제로 포괄적인 블로그 글을 작성하세요: {keyword}
@@ -376,6 +385,15 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 현재 트렌드 언급 (2025-2026년)
 - 간결하고 임팩트 있게 - 불필요한 설명 제거
 
+📚 참고자료 섹션 (필수!):
+글 마지막에 "## 참고자료" 섹션을 추가하고 2-3개의 신뢰할 수 있는 출처 표기:
+- 형식: `- [출처 제목](URL) - 조직/출판사`
+- 실제같은 참고자료 사용 (테크 블로그, 리서치 리포트, 산업 출판물)
+- 예시 형식:
+  ## 참고자료
+  - [2025 AI 현황 보고서](https://example.com/ai-report) - 맥킨지앤컴퍼니
+  - [원격 근무 통계 2025](https://example.com/remote) - Buffer
+
 지금 바로 완전한 블로그 글을 작성하세요 (본문만, 제목이나 메타데이터 제외):""",
 
             "ja": f"""次のトピックについて包括的なブログ記事を書いてください: {keyword}
@@ -417,6 +435,15 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 抽象的な概念より具体例
 - 現在のトレンドに言及 (2025-2026年)
 - 簡潔でインパクトのある内容 - 不要な説明を削除
+
+📚 参考資料セクション (必須!):
+記事の最後に"## 参考資料"セクションを追加し、信頼できる情報源を2-3個記載:
+- 形式: `- [情報源タイトル](URL) - 組織/出版社`
+- 本物らしい参考資料を使用 (テックブログ、調査レポート、業界出版物)
+- 例示形式:
+  ## 参考資料
+  - [2025年AI動向レポート](https://example.com/ai-report) - マッキンゼー・アンド・カンパニー
+  - [リモートワーク統計2025](https://example.com/remote) - Buffer
 
 今すぐ完全なブログ記事を書いてください（本文のみ、タイトルやメタデータなし）:"""
         }

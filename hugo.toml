@@ -142,6 +142,8 @@ googleAnalytics = 'G-3ML8CHS112'
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
   homeInfoParams.Title = "Welcome"
   homeInfoParams.Content = "Tech insights and trends"
 
@@ -175,3 +177,20 @@ googleAnalytics = 'G-3ML8CHS112'
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+  [[related.indices]]
+    name = "date"
+    weight = 10

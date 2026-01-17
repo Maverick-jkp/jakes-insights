@@ -224,9 +224,9 @@
             font-size: 0.875rem;
             color: var(--text-dim) !important;
             line-height: 1.5;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -278,10 +278,10 @@
 
         .latest-items-container {
             flex: 1;
-            overflow: hidden;
+            overflow: visible;
             display: flex;
             flex-direction: column;
-            gap: 0.25rem;
+            gap: 0.3rem;
         }
 
         .latest-item {
@@ -407,8 +407,21 @@
             font-family: 'Space Mono', monospace;
             font-size: 0.75rem;
             color: var(--accent);
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             font-weight: 600;
+        }
+
+        .small-card-category {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(0, 255, 136, 0.1);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 0.25rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.65rem;
+            text-transform: lowercase;
+            margin-left: 0.5rem;
         }
 
         .small-card-title {
@@ -814,6 +827,11 @@
                         {{ .Date.Format "2006.01.02" }}
                     {{ else }}
                         {{ .Date.Format "Jan 02, 2006" }}
+                    {{ end }}
+                    {{ with .Params.categories }}
+                        {{ range first 1 . }}
+                        <span class="small-card-category">{{ . }}</span>
+                        {{ end }}
                     {{ end }}
                 </div>
                 <h3 class="small-card-title">{{ .Title }}</h3>

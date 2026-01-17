@@ -5,7 +5,7 @@ draft: false
 categories: ["lifestyle"]
 tags: ["디지털노마드", "원격근무", "여행"]
 description: "2025년 디지털 노마드 생활: 팁과 추천 목적지"
-image: "/images/placeholder-lifestyle.jpg"
+image: "/images/placeholder-lifestyle.svg"
 ---
 
 디지털 노마드 라이프스타일이 크게 성숙했습니다. 2025년의 모습을 살펴봅시다.

@@ -5,7 +5,7 @@ draft: false
 categories: ["business"]
 tags: ["startup", "funding", "investment"]
 description: "Complete guide to raising startup capital in 2025"
-image: "/images/placeholder-business.jpg"
+image: "/images/placeholder-business.svg"
 ---
 
 Raising capital for your startup has never been more complex. Here's what you need to know in 2025.

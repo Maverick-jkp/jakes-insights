@@ -5,7 +5,7 @@ draft: false
 categories: ["business"]
 tags: ["スタートアップ", "資金調達", "投資"]
 description: "2025年のスタートアップ資金調達完全ガイド"
-image: "/images/placeholder-business.jpg"
+image: "/images/placeholder-business.svg"
 ---
 
 スタートアップの資金調達はかつてないほど複雑になっています。2025年に知っておくべき重要なポイントです。

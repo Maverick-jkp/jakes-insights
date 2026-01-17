@@ -5,7 +5,7 @@ draft: false
 categories: ["lifestyle"]
 tags: ["digital nomad", "remote work", "travel"]
 description: "Living the digital nomad lifestyle in 2025: tips and destinations"
-image: "/images/placeholder-lifestyle.jpg"
+image: "/images/placeholder-lifestyle.svg"
 ---
 
 The digital nomad lifestyle has matured significantly. Here's what it looks like in 2025.

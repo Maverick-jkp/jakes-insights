@@ -3,6 +3,7 @@ defaultContentLanguage = 'en'
 title = "Jake's Tech Insights"
 theme = 'PaperMod'
 timeZone = 'Asia/Seoul'
+googleAnalytics = 'G-3ML8CHS112'
 
 [languages]
   [languages.en]

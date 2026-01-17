@@ -1,6 +1,6 @@
 ---
 title: "Digital Minimalism Lifestyle 2025: Simplify Your Tech Life"
-date: 2026-01-16T10:30:00
+date: 2026-01-16T10:30:00+09:00
 draft: false
 categories: ["lifestyle"]
 tags: ["Digital", "minimalism", "lifestyle"]

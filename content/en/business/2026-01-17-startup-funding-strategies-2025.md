@@ -1,6 +1,6 @@
 ---
 title: "2025 Startup Funding: Top Strategies That Actually Work"
-date: 2026-01-17T14:22:00
+date: 2026-01-17T14:22:00+09:00
 draft: false
 categories: ["business"]
 tags: ["Startup", "funding", "strategies"]

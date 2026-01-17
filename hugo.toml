@@ -2,6 +2,7 @@ baseURL = 'https://jakes-tech-insights.pages.dev'
 defaultContentLanguage = 'en'
 title = "Jake's Tech Insights"
 theme = 'PaperMod'
+timeZone = 'Asia/Seoul'
 
 [languages]
   [languages.en]

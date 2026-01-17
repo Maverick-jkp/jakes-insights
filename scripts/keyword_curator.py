@@ -52,7 +52,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 5. 1–3개월 후 검색될 가능성이 높은 후행 키워드
 
 출력 형식:
-언어별로 5개씩 제안하라. 반드시 JSON 형식으로만 응답하라.
+반드시 JSON 형식으로만 응답하라.
 
 [
   {{
@@ -70,15 +70,18 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 중요:
 - keyword_type은 "trend" 또는 "evergreen" 중 하나
-- category는 "tech", "business", "lifestyle", "society", "entertainment" 중 하나
-- language는 "en", "ko", "ja" 중 하나
+- category는 "tech", "business", "lifestyle", "society", "entertainment" 중 하나 (5개 카테고리를 균등하게 분배할 것)
+- language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
 - competition_level은 "low", "medium", "high" 중 하나
 - priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
 - 지금 시점(2026년 1월)에서 현실적인 키워드만 제안
 - 예시는 절대 사용하지 말고, 실제 검색 가능성이 높은 키워드만 제안
 - 위 실시간 트렌드 데이터를 반드시 참고하여 키워드 제안
+- **중요**: 5개 카테고리(tech, business, lifestyle, society, entertainment)를 반드시 고르게 분배할 것
 
-각 언어별 5개씩 총 15개를 JSON 배열로 출력하라."""
+총 {count}개의 키워드를 JSON 배열로 출력하라.
+- 각 언어당 {per_lang}개씩 생성
+- 각 카테고리를 최대한 균등하게 분배 (예: tech 2개, business 2개, society 2개, entertainment 2개, lifestyle 2개)"""
 
 
 class KeywordCurator:
@@ -192,12 +195,19 @@ class KeywordCurator:
         # Fetch trending topics from Google
         trends_data = self.fetch_trending_topics()
 
+        # Calculate per-language count
+        per_lang = count // 3  # Distribute evenly across 3 languages
+
         # Generate prompt with trending data
-        prompt = CURATION_PROMPT_WITH_TRENDS.format(trends_data=trends_data)
+        prompt = CURATION_PROMPT_WITH_TRENDS.format(
+            trends_data=trends_data,
+            count=count,
+            per_lang=per_lang
+        )
 
         response = self.client.messages.create(
             model=self.model,
-            max_tokens=4000,
+            max_tokens=8000,  # Increased for larger outputs
             messages=[{
                 "role": "user",
                 "content": prompt

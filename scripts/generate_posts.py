@@ -656,7 +656,7 @@ Return improved version (body only, no title):""",
 
         frontmatter = f"""---
 title: "{title}"
-date: {datetime.now().strftime("%Y-%m-%d")}
+date: {datetime.now().strftime("%Y-%m-%dT%H:%M:%S")}
 draft: false
 categories: ["{category}"]
 tags: {json.dumps(keyword.split()[:3])}

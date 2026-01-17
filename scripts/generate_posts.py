@@ -304,11 +304,34 @@ Category: {category}
 - Short paragraphs (2-4 sentences each)
 - End with a thought-provoking question
 
+🎯 HOOKING STRATEGY (Critical!):
+1. **Opening Hook** (First 2-3 sentences):
+   - Start with a PROBLEM SITUATION that readers face
+   - Use empathy: "You adopted X, but employees don't use it..."
+   - Include specific failure stat: "60% of X projects fail because..."
+   - NOT generic intro like "X is becoming popular..."
+
+2. **Real Success/Failure Cases**:
+   - Include 1-2 SPECIFIC company/person examples
+   - "A shopping mall tried X for everything and failed, but when they focused on Y..."
+   - Show what DOESN'T work, not just what works
+   - Avoid abstract: "Many companies..." → Use: "One e-commerce startup..."
+
+3. **Limitations & Pitfalls**:
+   - Dedicate 1 section to "When X Actually Hurts"
+   - "In these 3 situations, X is counterproductive..."
+   - This makes content feel authentic and trustworthy
+
+4. **Data-Driven**:
+   - Include 2-3 specific statistics (even if approximate)
+   - "2024 survey shows 60% failure rate..."
+   - "Companies saw 35% productivity increase..."
+
 Content Guidelines:
-- Target audience: Tech-savvy professionals and enthusiasts
-- Include 1-2 practical examples (be selective)
-- Mention current trends (2025)
-- Use specific numbers when relevant
+- Target audience: Decision-makers seeking practical advice
+- Focus on "What to avoid" as much as "What to do"
+- Concrete examples over abstract concepts
+- Mention current trends (2025-2026)
 - Be concise and impactful - avoid unnecessary explanations
 
 Write the complete blog post now (body only, no title or metadata):""",
@@ -323,11 +346,34 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 짧은 문단 사용 (2-4 문장씩)
 - 생각을 자극하는 질문으로 마무리
 
+🎯 후킹 전략 (필수!):
+1. **오프닝 후킹** (첫 2-3문장):
+   - 독자가 직면한 문제 상황으로 시작
+   - 공감 유도: "회사에서 X를 도입했는데 직원들이 쓰지 않고..."
+   - 구체적 실패 통계 포함: "X 프로젝트의 60%가 실패하는 이유는..."
+   - 일반적 시작 금지: "X가 인기를 끌고 있습니다..." ❌
+
+2. **실제 성공/실패 사례**:
+   - 구체적인 회사/사람 사례 1-2개 포함
+   - "한 쇼핑몰은 X를 모든 것에 적용했다가 실패했지만, Y에만 집중하니까..."
+   - 안 되는 것도 보여주기 (성공만 말하지 말기)
+   - 추상적 표현 금지: "많은 기업들..." → "한 스타트업은..." ✅
+
+3. **한계점과 함정**:
+   - "X가 오히려 역효과인 경우" 섹션 1개 할애
+   - "이 3가지 상황에서는 X가 비효율적..."
+   - 이것이 진정성과 신뢰를 만듦
+
+4. **데이터 기반**:
+   - 구체적 통계 2-3개 포함 (대략적이어도 OK)
+   - "2024년 조사에 따르면 60% 실패율..."
+   - "기업들이 35% 생산성 증가 경험..."
+
 콘텐츠 가이드라인:
-- 대상 독자: 기술에 관심있는 전문가와 얼리어답터
-- 실용적인 예시 1-2개 포함 (선택적으로)
-- 현재 트렌드 언급 (2025년)
-- 관련성 있는 구체적 숫자 사용
+- 대상 독자: 실용적 조언을 찾는 의사결정자
+- "피해야 할 것"을 "해야 할 것"만큼 강조
+- 추상적 개념보다 구체적 예시
+- 현재 트렌드 언급 (2025-2026년)
 - 간결하고 임팩트 있게 - 불필요한 설명 제거
 
 지금 바로 완전한 블로그 글을 작성하세요 (본문만, 제목이나 메타데이터 제외):""",
@@ -342,11 +388,34 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 短い段落を使用 (2-4文ずつ)
 - 考えさせる質問で締めくくる
 
+🎯 フッキング戦略 (必須!):
+1. **オープニングフック** (最初の2-3文):
+   - 読者が直面する問題状況から始める
+   - 共感を誘う: "会社でXを導入したのに社員が使わない..."
+   - 具体的な失敗統計を含む: "Xプロジェクトの60%が失敗する理由は..."
+   - 一般的な始まり方禁止: "Xが人気になっています..." ❌
+
+2. **実際の成功/失敗事例**:
+   - 具体的な会社/人物の例を1-2個含む
+   - "あるECサイトはXを全てに適用して失敗したが、Yだけに集中したら..."
+   - うまくいかないことも見せる (成功だけ語らない)
+   - 抽象的表現禁止: "多くの企業が..." → "あるスタートアップは..." ✅
+
+3. **限界点と落とし穴**:
+   - "Xがかえって逆効果になる場合" セクションを1つ設ける
+   - "この3つの状況ではXは非効率的..."
+   - これが真実味と信頼を生む
+
+4. **データドリブン**:
+   - 具体的な統計を2-3個含む (おおよそでもOK)
+   - "2024年の調査では60%の失敗率..."
+   - "企業は35%の生産性向上を経験..."
+
 コンテンツガイドライン:
-- 対象読者: 技術に精通した専門家と愛好家
-- 実践的な例を1-2個含める (選択的に)
-- 現在のトレンドに言及 (2025年)
-- 関連性のある具体的な数字を使用
+- 対象読者: 実用的なアドバイスを求める意思決定者
+- "避けるべきこと"を"すべきこと"と同じくらい強調
+- 抽象的な概念より具体例
+- 現在のトレンドに言及 (2025-2026年)
 - 簡潔でインパクトのある内容 - 不要な説明を削除
 
 今すぐ完全なブログ記事を書いてください（本文のみ、タイトルやメタデータなし）:"""
@@ -357,13 +426,34 @@ Write the complete blog post now (body only, no title or metadata):""",
     def _get_editor_prompt(self, lang: str) -> str:
         """Get editor prompt based on language"""
         prompts = {
-            "en": """You are an expert editor. Transform this into Medium-style content:
+            "en": """You are an expert editor. Transform this into Medium-style content with authentic human touch:
 
 📏 Length Requirements (Target: 700-1200 words for 5-7 min read):
 - If draft is under 700 words: EXPAND with examples, explanations, context to reach 700-1200 words
 - If draft is 700-1200 words: MAINTAIN the same length (ideal range)
 - If draft is 1200-1800 words: COMPRESS to 1100-1300 words by removing redundancy
 - If draft is over 1800 words: COMPRESS aggressively to 1100-1300 words
+
+🎯 CRITICAL ENHANCEMENTS:
+1. **Strengthen Opening Hook**:
+   - If opening is generic, rewrite to start with problem/pain point
+   - Add empathy: "You've been there, right?"
+   - Make it personal and relatable
+
+2. **Add Authenticity Markers**:
+   - Include phrases like "In my experience...", "Here's what surprised me..."
+   - Add failure acknowledgment: "I thought X would work, but..."
+   - Show vulnerability: "This isn't always the answer..."
+
+3. **Enhance Examples**:
+   - Make vague examples specific: "Many companies" → "A fintech startup I worked with"
+   - Add concrete details: names, numbers, outcomes
+   - Include what went WRONG, not just success stories
+
+4. **Balance Perspective**:
+   - Ensure there's a "When this doesn't work" section
+   - Add nuance: "This works IF...", "But in these cases..."
+   - Avoid absolute claims: "always", "never", "guaranteed"
 
 Tasks:
 1. **Medium style conversion**: Add "you/I", conversational tone
@@ -377,13 +467,34 @@ Tasks:
 
 Return improved version (body only, no title):""",
 
-            "ko": """당신은 전문 에디터입니다. 이 블로그 글을 토스(Toss) 스타일로 개선하세요:
+            "ko": """당신은 전문 에디터입니다. 이 블로그 글을 진짜 사람이 쓴 것 같은 토스 스타일로 개선하세요:
 
 📏 길이 요구사항 (목표: 5-7분 읽기 = 700-1,200단어):
 - 초안이 700단어 미만: 예시, 설명, 맥락 추가로 700-1,200단어까지 확장
 - 초안이 700-1,200단어: 같은 길이 유지 (이상적 범위)
 - 초안이 1,200-1,800단어: 1,100-1,300단어로 압축 (중복 제거)
 - 초안이 1,800단어 초과: 1,100-1,300단어로 대폭 압축
+
+🎯 핵심 개선사항:
+1. **오프닝 강화**:
+   - 일반적 시작이면 문제/고민 상황으로 재작성
+   - 공감 추가: "이런 경험 있으시죠?"
+   - 개인적이고 공감 가능하게
+
+2. **진정성 마커 추가**:
+   - "제 경험상...", "의외로...", "놀랍게도..." 같은 표현
+   - 실패 인정: "처음엔 X가 될 줄 알았는데..."
+   - 한계 언급: "항상 답은 아니에요..."
+
+3. **예시 구체화**:
+   - 추상적 예시를 구체적으로: "많은 회사들" → "한 핀테크 스타트업은"
+   - 구체적 디테일: 이름, 숫자, 결과
+   - 실패한 것도 포함: 성공만 말하지 말기
+
+4. **균형잡힌 관점**:
+   - "이런 경우엔 안 통해요" 섹션 확인/추가
+   - 뉘앙스: "이게 통하려면...", "하지만 이런 경우엔..."
+   - 절대적 표현 피하기: "항상", "절대", "무조건"
 
 작업:
 1. **토스 말투로 변환**: "~습니다" → "~해요", 친근한 질문형 추가
@@ -397,13 +508,34 @@ Return improved version (body only, no title):""",
 
 개선된 버전을 반환하세요 (본문만, 제목 제외):""",
 
-            "ja": """あなたは専門エディターです。このブログ記事を自然な会話調に改善してください:
+            "ja": """あなたは専門エディターです。このブログ記事を本物の人間が書いたような自然な会話調に改善してください:
 
 📏 文字数要件 (目標: 5-7分 = 2,800-4,200文字):
 - 下書きが2,800文字未満: 例、説明、文脈を追加して2,800-4,200文字に拡張
 - 下書きが2,800-4,200文字: 同じ長さを維持 (理想的な範囲)
 - 下書きが4,200-7,000文字: 3,500-4,000文字に圧縮 (冗長性削除)
 - 下書きが7,000文字超: 3,500-4,000文字に大幅圧縮
+
+🎯 重要な改善点:
+1. **オープニングの強化**:
+   - 一般的な始まりなら問題/悩み状況に書き直し
+   - 共感を追加: "こんな経験ありませんか？"
+   - 個人的で共感できるように
+
+2. **真実味マーカーの追加**:
+   - "私の経験では...", "意外にも...", "驚いたことに..." のような表現
+   - 失敗の認識: "最初はXがうまくいくと思ったのですが..."
+   - 限界の言及: "これが常に答えとは限りません..."
+
+3. **例の具体化**:
+   - 曖昧な例を具体的に: "多くの企業" → "あるフィンテック企業では"
+   - 具体的な詳細: 名前、数字、結果
+   - 失敗したことも含める: 成功だけ語らない
+
+4. **バランスの取れた視点**:
+   - "こういう場合はうまくいきません" セクションを確認/追加
+   - ニュアンス: "これがうまくいくには...", "ただしこんな場合は..."
+   - 絶対的な表現を避ける: "常に", "絶対に", "必ず"
 
 タスク:
 1. **会話調に変換**: "〜ですね", "〜ますよね", "〜でしょう" など柔らかい語尾に

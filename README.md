@@ -403,9 +403,16 @@ MIT License - See [LICENSE](LICENSE) file
 **Built with 🤖 AI + ❤️ Human Touch**
 
 *Last updated: 2026-01-17*
-*Version: 3.1 (Day 6 - Bug Fixes: Timezone & Images)*
+*Version: 3.2 (Day 6 - Human-Touch Writing Upgrade)*
 
 ## 🔍 Recent Changes
+
+**2026-01-17 (v3.2)**:
+- **Writing Quality Upgrade**: Enhanced prompts with ChatGPT's "human-touch" strategies
+- **Hooking Elements**: Problem-driven openings, failure cases, authenticity markers
+- **Decision-Stage Focus**: "What to avoid" as much as "What to do"
+- **Real Examples**: Specific companies/stats, not abstract "many companies..."
+- **All Languages**: EN/KO/JA prompts upgraded with same strategies
 
 **2026-01-17 (v3.1)**:
 - **Bug Fix**: Added timezone (+09:00) to all post dates - fixed "future post" issue on production

@@ -266,7 +266,8 @@ class KeywordCurator:
                             "signals": signals,  # Add intent signals
                             "title": item.get("title", ""),
                             "snippet": item.get("snippet", ""),
-                            "link": item.get("link", "")
+                            "link": item.get("link", ""),
+                            "source": item.get("displayLink", "")  # Add source domain
                         })
 
                 print(f"  ✓ Fetched {len(data.get('items', []))} results for: {query}")
@@ -276,6 +277,9 @@ class KeywordCurator:
                 continue
 
         print(f"\n✅ Total {len(all_results)} trending topics fetched\n")
+
+        # Store results for reference extraction
+        self.search_results = all_results
 
         # Format results for Claude
         trends_summary = "\n\n".join([
@@ -309,13 +313,54 @@ class KeywordCurator:
 
         return safe_candidates
 
+    def extract_references(self, all_results: List[Dict], keyword: str, lang: str) -> List[Dict]:
+        """Extract top 3 references for a keyword based on search results"""
+        # Find relevant results for this keyword
+        # Match by language and keyword similarity
+        relevant = []
+
+        for result in all_results:
+            query = result.get("query", "").lower()
+            # Simple matching: if keyword words appear in query
+            keyword_words = set(keyword.lower().split())
+            query_words = set(query.split())
+
+            # Check language match (simple heuristic)
+            is_relevant = len(keyword_words & query_words) > 0
+
+            if is_relevant:
+                relevant.append(result)
+
+        # Take top 3 unique sources
+        references = []
+        seen_domains = set()
+
+        for result in relevant[:10]:  # Check first 10 relevant results
+            link = result.get("link", "")
+            source = result.get("source", "")
+            title = result.get("title", "")
+
+            if link and source and source not in seen_domains:
+                references.append({
+                    "title": title[:100],  # Truncate long titles
+                    "url": link,
+                    "source": source
+                })
+                seen_domains.add(source)
+
+            if len(references) >= 3:
+                break
+
+        return references
+
     def generate_candidates(self, count: int = 15) -> List[Dict]:
         """Generate keyword candidates using Claude API with trending data"""
         print(f"\n{'='*60}")
         print(f"  🔍 Generating {count} keyword candidates...")
         print(f"{'='*60}\n")
 
-        # Fetch trending topics from Google
+        # Fetch trending topics from Google (store for reference extraction)
+        self.search_results = []  # Store search results
         trends_data = self.fetch_trending_topics()
 
         # Calculate per-language count
@@ -358,6 +403,17 @@ class KeywordCurator:
         # Apply risk filtering
         filtered_candidates = self.filter_by_risk(candidates)
 
+        # Extract references for each candidate
+        print(f"📚 Extracting references for {len(filtered_candidates)} candidates...\n")
+        for candidate in filtered_candidates:
+            keyword = candidate.get("keyword", "")
+            lang = candidate.get("language", "en")
+            references = self.extract_references(self.search_results, keyword, lang)
+            candidate["references"] = references
+            if references:
+                print(f"  ✓ {len(references)} refs for: {keyword[:50]}...")
+
+        print()
         return filtered_candidates
 
     def display_candidates(self, candidates: List[Dict]):

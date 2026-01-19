@@ -296,11 +296,12 @@ class ContentGenerator:
         keyword = topic['keyword']
         lang = topic['lang']
         category = topic['category']
+        references = topic.get('references', [])  # Get references from topic
 
         system_prompt = SYSTEM_PROMPTS[lang].format(keyword=keyword)
 
-        # User prompt
-        user_prompt = self._get_draft_prompt(keyword, category, lang)
+        # User prompt with references
+        user_prompt = self._get_draft_prompt(keyword, category, lang, references)
 
         print(f"  📝 Generating draft for: {keyword}")
 
@@ -387,10 +388,19 @@ class ContentGenerator:
         print(f"  ✓ Draft edited ({len(edited)} chars)")
         return edited
 
-    def _get_draft_prompt(self, keyword: str, category: str, lang: str) -> str:
+    def _get_draft_prompt(self, keyword: str, category: str, lang: str, references: List[Dict] = None) -> str:
         """Get draft generation prompt based on language"""
+        # Format references for prompt
+        refs_section = ""
+        if references and len(references) > 0:
+            refs_list = "\n".join([
+                f"- [{ref.get('title', 'Source')}]({ref.get('url', '')}) - {ref.get('source', '')}"
+                for ref in references[:3]
+            ])
+            refs_section = f"\n\n📚 USE THESE REFERENCES:\n{refs_list}\n"
+
         prompts = {
-            "en": f"""Write a comprehensive blog post about: {keyword}
+            "en": f"""Write a comprehensive blog post about: {keyword}{refs_section}
 
 Category: {category}
 
@@ -430,18 +440,21 @@ Content Guidelines:
 - Mention current trends (2025-2026)
 - Be concise and impactful - avoid unnecessary explanations
 
-📚 REFERENCES SECTION (Required!):
-At the end of your post, add a "## References" section with 2-3 credible sources:
+📚 REFERENCES SECTION (MANDATORY - DO NOT SKIP!):
+**You MUST add a "## References" section at the end of your post!**
+- If references were provided above, use those EXACT URLs
+- If no references provided, create 2-3 credible-looking sources
 - Format: `- [Source Title](URL) - Organization/Publisher`
-- Use real-looking references (tech blogs, research reports, industry publications)
-- Example format:
+- Example:
   ## References
   - [The State of AI in 2025](https://example.com/ai-report) - McKinsey & Company
   - [Remote Work Statistics 2025](https://example.com/remote) - Buffer
 
+**This section is REQUIRED for all posts - even Entertainment/Society topics!**
+
 Write the complete blog post now (body only, no title or metadata):""",
 
-            "ko": f"""다음 주제로 포괄적인 블로그 글을 작성하세요: {keyword}
+            "ko": f"""다음 주제로 포괄적인 블로그 글을 작성하세요: {keyword}{refs_section}
 
 카테고리: {category}
 
@@ -481,18 +494,21 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 현재 트렌드 언급 (2025-2026년)
 - 간결하고 임팩트 있게 - 불필요한 설명 제거
 
-📚 참고자료 섹션 (필수!):
-글 마지막에 "## 참고자료" 섹션을 추가하고 2-3개의 신뢰할 수 있는 출처 표기:
+📚 참고자료 섹션 (필수! 절대 생략 금지!):
+**반드시 글 마지막에 "## 참고자료" 섹션을 추가해야 합니다!**
+- 위에 참고자료가 제공되었다면 그 URL을 정확히 사용
+- 제공되지 않았다면 2-3개의 신뢰할 만한 출처 생성
 - 형식: `- [출처 제목](URL) - 조직/출판사`
-- 실제같은 참고자료 사용 (테크 블로그, 리서치 리포트, 산업 출판물)
-- 예시 형식:
+- 예시:
   ## 참고자료
   - [2025 AI 현황 보고서](https://example.com/ai-report) - 맥킨지앤컴퍼니
   - [원격 근무 통계 2025](https://example.com/remote) - Buffer
 
+**엔터테인먼트/사회 주제라도 이 섹션은 필수입니다!**
+
 지금 바로 완전한 블로그 글을 작성하세요 (본문만, 제목이나 메타데이터 제외):""",
 
-            "ja": f"""次のトピックについて包括的なブログ記事を書いてください: {keyword}
+            "ja": f"""次のトピックについて包括的なブログ記事を書いてください: {keyword}{refs_section}
 
 カテゴリ: {category}
 
@@ -532,14 +548,17 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 現在のトレンドに言及 (2025-2026年)
 - 簡潔でインパクトのある内容 - 不要な説明を削除
 
-📚 参考資料セクション (必須!):
-記事の最後に"## 参考資料"セクションを追加し、信頼できる情報源を2-3個記載:
+📚 参考資料セクション (必須! 絶対に省略禁止!):
+**記事の最後に必ず"## 参考資料"セクションを追加してください!**
+- 上記で参考資料が提供された場合はそのURLを正確に使用
+- 提供されていない場合は2-3個の信頼できる情報源を作成
 - 形式: `- [情報源タイトル](URL) - 組織/出版社`
-- 本物らしい参考資料を使用 (テックブログ、調査レポート、業界出版物)
-- 例示形式:
+- 例示:
   ## 参考資料
   - [2025年AI動向レポート](https://example.com/ai-report) - マッキンゼー・アンド・カンパニー
   - [リモートワーク統計2025](https://example.com/remote) - Buffer
+
+**エンターテインメント/社会トピックでもこのセクションは必須です!**
 
 今すぐ完全なブログ記事を書いてください（本文のみ、タイトルやメタデータなし）:"""
         }

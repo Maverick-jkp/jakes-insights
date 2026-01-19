@@ -197,48 +197,94 @@ class KeywordCurator:
         return signals if signals else ["GENERAL"]
 
     def fetch_trending_topics(self) -> str:
-        """Fetch trending topics using Google Custom Search API"""
-        if not self.google_api_key or not self.google_cx:
-            return "No trending data available (Google API not configured)"
-
+        """Fetch trending topics using pytrends (real-time trending searches)"""
         print(f"\n{'='*60}")
-        print(f"  🔍 Fetching trending topics from Google...")
+        print(f"  🔥 Fetching REAL-TIME trending topics from Google Trends...")
         print(f"{'='*60}\n")
 
-        # Search queries for high-CPC, emotion-driven keywords
-        # Strategy: STATE TRANSITIONS (상태 전환) + EXPECTATION COLLAPSE (기대 붕괴)
-        # Focus: "after X", "but Y", "suddenly Z", "no response", "others got"
-        search_queries = [
-            # Tech - State Transition + Silence (상태 전환 + 침묵)
-            "account banned after update no response",
-            "service outage promised compensation denied",
-            "앱 업데이트 후 갑자기 먹통",
-            "アカウント停止 理由説明なし",
+        # Try pytrends first for real trending keywords
+        search_queries = []
+        try:
+            from pytrends.request import TrendReq
+            import time
 
-            # Business - Deadline Loss + Others Got (시간 손실 + 비교 분노)
-            "class action deadline passed too late",
-            "refund promised but denied suddenly",
-            "집단소송 신청 마감 놓침",
-            "返金約束したが 拒否された",
+            print("  📊 Using pytrends for real-time trends...")
 
-            # Society - Expectation Collapse (기대 붕괴)
-            "government support supposed to but denied",
-            "new policy suddenly stricter than announced",
-            "정부지원 조건 발표와 다름",
-            "政府支援 突然 条件厳しく",
+            # South Korea trends
+            pytrends_kr = TrendReq(hl='ko-KR', tz=540)
+            trending_kr = pytrends_kr.trending_searches(pn='south_korea')
+            time.sleep(2)  # Avoid rate limiting
 
-            # Entertainment - Action → Rejection (행동 → 거부)
-            "celebrity apology issued but backlash continues",
-            "idol agency promised explanation ignored fans",
-            "사과문 냈지만 논란 계속",
-            "謝罪文出したが 炎上続く",
+            # Get top 10 Korean trends
+            if not trending_kr.empty:
+                kr_trends = trending_kr.head(10)[0].tolist()
+                search_queries.extend(kr_trends)
+                print(f"  ✓ Found {len(kr_trends)} Korean trends")
 
-            # Lifestyle - Safety Promise Broken (안전 약속 붕괴)
-            "product recall announced but no refund",
-            "food contamination others got compensated only me",
-            "리콜 발표했는데 환불 거부",
-            "リコール発表 返金対応なし"
-        ]
+            # US trends (for English keywords)
+            pytrends_us = TrendReq(hl='en-US', tz=360)
+            trending_us = pytrends_us.trending_searches(pn='united_states')
+            time.sleep(2)
+
+            if not trending_us.empty:
+                us_trends = trending_us.head(10)[0].tolist()
+                search_queries.extend(us_trends)
+                print(f"  ✓ Found {len(us_trends)} US trends")
+
+            # Japan trends
+            pytrends_jp = TrendReq(hl='ja-JP', tz=540)
+            trending_jp = pytrends_jp.trending_searches(pn='japan')
+            time.sleep(2)
+
+            if not trending_jp.empty:
+                jp_trends = trending_jp.head(10)[0].tolist()
+                search_queries.extend(jp_trends)
+                print(f"  ✓ Found {len(jp_trends)} Japan trends")
+
+            print(f"\n  🎉 Total {len(search_queries)} real-time trending topics!\n")
+
+        except ImportError:
+            print("  ⚠️  pytrends not installed. Install: pip install pytrends")
+            print("  📌 Falling back to pattern-based queries...\n")
+            # Fallback to original queries
+            search_queries = [
+                "account banned after update no response",
+                "service outage promised compensation denied",
+                "앱 업데이트 후 갑자기 먹통",
+                "アカウント停止 理由説明なし",
+                "class action deadline passed too late",
+                "refund promised but denied suddenly",
+                "집단소송 신청 마감 놓침",
+                "返金約束したが 拒否された",
+                "government support supposed to but denied",
+                "new policy suddenly stricter than announced",
+                "정부지원 조건 발표와 다름",
+                "政府支援 突然 条件厳しく",
+                "celebrity apology issued but backlash continues",
+                "idol agency promised explanation ignored fans",
+                "사과문 냈지만 논란 계속",
+                "謝罪文出したが 炎上続く",
+                "product recall announced but no refund",
+                "food contamination others got compensated only me",
+                "리콜 발표했는데 환불 거부",
+                "リコール発表 返金対応なし"
+            ]
+        except Exception as e:
+            print(f"  ⚠️  pytrends error: {e}")
+            print("  📌 Falling back to pattern-based queries...\n")
+            # Fallback
+            search_queries = [
+                "account banned after update no response",
+                "celebrity apology issued but backlash continues",
+                "정부지원 조건 발표와 다름"
+            ]
+
+        # If no Google Custom Search API, skip search results
+        if not self.google_api_key or not self.google_cx:
+            print("  ⚠️  Google Custom Search not configured")
+            print("  📌 Will use trending keywords directly\n")
+            self.search_results = []
+            return "\n\n".join([f"Trending: {q}" for q in search_queries[:30]])
 
         all_results = []
         for query in search_queries:

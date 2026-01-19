@@ -329,6 +329,19 @@ Daily-content workflow runs 1 hour after daily-keywords to ensure fresh keywords
 
 ## 8. Recent Changes Log
 
+### 2026-01-19 (Evening Continued): URL Validation for Fake References
+- **URL Validation System**: Added automatic detection and removal of fake reference URLs
+  - Created `has_fake_reference_url()` function in [generate_posts.py:1033-1047](../scripts/generate_posts.py)
+  - Detects patterns: example.com, .gov/[text]-202X, .org/[text]-survey, .gov/[text]-compliance
+  - Automatically removes entire References section if fake URLs detected
+  - Prevents Claude API from generating plausible-looking but non-existent URLs
+  - Tested with 7 test cases including real IRS, GitHub, Unsplash URLs
+- **Manual Cleanup**: Removed fake references from 4 existing posts
+  - Cryptocurrency Tax Trap 2026: 3 fake .gov URLs
+  - MLK Day Market Closure: Fixed missing image (added 166KB cryptocurrency image)
+  - Japanese lifestyle post: 3 example.com URLs
+  - AI Supercomputing Platform: 3 example.com URLs
+
 ### 2026-01-19 (Evening): Image Search & References Improvements
 - **Keyword-Based Image Search**: Changed from generic category queries to contextual keyword extraction
   - Added Korean/Japanese → English translation dictionary

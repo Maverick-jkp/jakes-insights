@@ -2,8 +2,8 @@ name: Daily Keyword Curation
 
 on:
   schedule:
-    # Run every day at 8 AM UTC (5 PM KST) - 1 hour before content generation
-    - cron: '0 8 * * *'
+    # Run every day at 8:05 AM UTC (5:05 PM KST) - 5min buffer after API reset
+    - cron: '5 8 * * *'
   workflow_dispatch:
     inputs:
       count:
@@ -42,7 +42,7 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_CX: ${{ secrets.GOOGLE_CX }}
         run: |
-          COUNT="${{ github.event.inputs.count || '10' }}"
+          COUNT="${{ github.event.inputs.count || '20' }}"
           echo "📝 Generating $COUNT new keywords..."
           python scripts/keyword_curator.py --count "$COUNT"
 

@@ -59,7 +59,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
     "editorial_title": "기사 제목 형식의 독자 친화적 제목",
     "core_fear_question": "사용자의 핵심 두려움을 담은 질문 한 문장",
     "language": "ko",
-    "category": "tech",
+    "category": "tech",  # or: business, lifestyle, society, entertainment, sports, finance, education
     "search_intent": "사용자가 지금 당장 검색하는 이유 (행동하지 않으면 무엇을 잃는지)",
     "angle": "이 키워드를 다룰 때의 관점",
     "competition_level": "low",
@@ -75,7 +75,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 중요:
 - keyword_type은 "trend" 또는 "evergreen" 중 하나
-- category는 "tech", "business", "lifestyle", "society", "entertainment" 중 하나 (5개 카테고리를 균등하게 분배할 것)
+- category는 "tech", "business", "lifestyle", "society", "entertainment", "sports", "finance", "education" 중 하나 (8개 카테고리를 균등하게 분배할 것)
 - language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
 - competition_level은 "low", "medium", "high" 중 하나
 - priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
@@ -85,7 +85,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - 지금 시점(2026년 1월)에서 현실적인 키워드만 제안
 - 예시는 절대 사용하지 말고, 실제 검색 가능성이 높은 키워드만 제안
 - 위 실시간 트렌드 데이터를 반드시 참고하여 키워드 제안
-- **중요**: 5개 카테고리(tech, business, lifestyle, society, entertainment)를 반드시 고르게 분배할 것
+- **중요**: 8개 카테고리(tech, business, lifestyle, society, entertainment, sports, finance, education)를 반드시 고르게 분배할 것
 
 언어별 톤 차이:
 - 🇺🇸 English: rights, compensation, legal leverage, lawsuits 중심

@@ -51,6 +51,21 @@ pagerSize = 50
       url = "/categories/lifestyle/"
       weight = 7
 
+    [[languages.en.menu.main]]
+      name = "⚽ Sports"
+      url = "/categories/sports/"
+      weight = 8
+
+    [[languages.en.menu.main]]
+      name = "💰 Finance"
+      url = "/categories/finance/"
+      weight = 9
+
+    [[languages.en.menu.main]]
+      name = "📖 Education"
+      url = "/categories/education/"
+      weight = 10
+
   [languages.ko]
     languageName = "한국어"
     languageCode = "ko-kr"
@@ -92,6 +107,21 @@ pagerSize = 50
       name = "🌱 라이프"
       url = "/ko/categories/lifestyle/"
       weight = 7
+
+    [[languages.ko.menu.main]]
+      name = "⚽ 스포츠"
+      url = "/ko/categories/sports/"
+      weight = 8
+
+    [[languages.ko.menu.main]]
+      name = "💰 금융"
+      url = "/ko/categories/finance/"
+      weight = 9
+
+    [[languages.ko.menu.main]]
+      name = "📖 교육"
+      url = "/ko/categories/education/"
+      weight = 10
 
   [languages.ja]
     languageName = "日本語"
@@ -135,6 +165,21 @@ pagerSize = 50
       url = "/ja/categories/lifestyle/"
       weight = 7
 
+    [[languages.ja.menu.main]]
+      name = "⚽ スポーツ"
+      url = "/ja/categories/sports/"
+      weight = 8
+
+    [[languages.ja.menu.main]]
+      name = "💰 金融"
+      url = "/ja/categories/finance/"
+      weight = 9
+
+    [[languages.ja.menu.main]]
+      name = "📖 教育"
+      url = "/ja/categories/education/"
+      weight = 10
+
 [params]
   env = "production"
   description = "AI-powered tech, business, and lifestyle insights in English, Korean, and Japanese"
@@ -176,6 +221,18 @@ pagerSize = 50
 [[params.profileMode.buttons]]
   name = "🌱 Lifestyle"
   url = "/categories/lifestyle"
+
+[[params.profileMode.buttons]]
+  name = "⚽ Sports"
+  url = "/categories/sports"
+
+[[params.profileMode.buttons]]
+  name = "💰 Finance"
+  url = "/categories/finance"
+
+[[params.profileMode.buttons]]
+  name = "📖 Education"
+  url = "/categories/education"
 
 [taxonomies]
   category = "categories"

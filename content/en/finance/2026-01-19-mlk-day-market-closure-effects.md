@@ -82,7 +82,3 @@ The real question isn't whether these closures affect your portfolio—they do. 
 
 How will you adjust your trading approach for the next MLK Day closure to capitalize on these predictable market patterns? Because ignoring them means leaving money on the table or, worse, watching preventable losses pile up while you wait for Tuesday morning.
 
-## References
-- [Industry Report 2026](https://example.com/report) - Industry Analysis
-- [Market Research](https://example.com/research) - Market Insights
-- [Expert Analysis](https://example.com/analysis) - Professional Review

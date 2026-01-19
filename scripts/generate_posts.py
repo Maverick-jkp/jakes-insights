@@ -797,22 +797,20 @@ Return improved version (body only, no title):""",
             clean_keyword = re.sub(r'\[.*?\]', '', clean_keyword)  # Remove [brackets]
             clean_keyword = clean_keyword.strip()
 
-            # For better generic images, use category + core keywords
-            # Extract meaningful words (remove "guide", "strategy", "complete" etc)
-            noise_words = ['guide', 'ガイド', '가이드', 'strategy', '戦略', '전략',
-                          'complete', '完全', '완전', 'comprehensive', 'ultimate',
-                          'startup', 'スタートアップ', '스타트업', 'tips', 'ヒント', '팁',
-                          'reasons', '이유', '理由', 'methods', '방법']
-            words = clean_keyword.split()  # Don't use lower() for non-English
-            filtered_words = [w for w in words if not any(noise.lower() in w.lower() for noise in noise_words)]
+            # Use category-specific generic queries for better image relevance
+            category_queries = {
+                'tech': 'technology computer coding',
+                'business': 'business meeting office',
+                'finance': 'finance money investment',
+                'society': 'society people community',
+                'entertainment': 'entertainment music movie',
+                'lifestyle': 'lifestyle health wellness',
+                'sports': 'sports athlete competition',
+                'education': 'education learning student'
+            }
 
-            # Translate to English for better Unsplash results
-            if filtered_words:
-                english_query = self.translate_to_english(' '.join(filtered_words[:2]))
-                query = f"{category} {english_query}".strip()
-            else:
-                # Fallback: just use category for generic business/tech images
-                query = category
+            # Use generic category query for consistent, relevant images
+            query = category_queries.get(category, f"{category} professional")
 
             # Unsplash API endpoint
             url = "https://api.unsplash.com/search/photos"
@@ -978,7 +976,7 @@ image: "{image_path}"
         if image_credit:
             credit_line = f"\n\n---\n\n*Photo by [{image_credit['photographer']}]({image_credit['photographer_url']}) on [Unsplash]({image_credit['unsplash_url']})*\n"
 
-        # Ensure References section exists
+        # Check if References section exists - if not, just skip it (don't add fake references)
         ref_headers = {
             'en': '## References',
             'ko': '## 참고자료',
@@ -986,16 +984,8 @@ image: "{image_path}"
         }
         ref_header = ref_headers.get(lang, '## References')
 
-        # Check if References section exists
-        if ref_header not in content and '## Reference' not in content and '## 참고' not in content and '## 参考' not in content:
-            # Add generic References section
-            generic_refs = {
-                'en': f"\n\n{ref_header}\n- [Industry Report 2026](https://example.com/report) - Industry Analysis\n- [Market Research](https://example.com/research) - Market Insights\n- [Expert Analysis](https://example.com/analysis) - Professional Review\n",
-                'ko': f"\n\n{ref_header}\n- [산업 동향 보고서 2026](https://example.com/report) - 산업 분석\n- [시장 조사 자료](https://example.com/research) - 시장 인사이트\n- [전문가 분석](https://example.com/analysis) - 전문가 리뷰\n",
-                'ja': f"\n\n{ref_header}\n- [業界レポート2026](https://example.com/report) - 業界分析\n- [市場調査](https://example.com/research) - マーケットインサイト\n- [専門家分析](https://example.com/analysis) - 専門家レビュー\n"
-            }
-            content += generic_refs.get(lang, generic_refs['en'])
-            print(f"  ⚠️  Added missing References section")
+        if ref_header not in content and '## Reference' not in content and '## 참고' not in content and '## 参고' not in content:
+            print(f"  ℹ️  No References section found (skipping)")
 
         # Write file with hero image at top
         with open(filepath, 'w', encoding='utf-8') as f:

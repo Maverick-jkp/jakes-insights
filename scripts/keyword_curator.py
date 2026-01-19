@@ -219,12 +219,12 @@ class KeywordCurator:
                 # Find all items (trending topics)
                 items = root.findall('.//item')
 
-                for item in items[:10]:  # Top 10 per region
+                for item in items[:5]:  # Top 5 per region (optimized for API limit)
                     title_elem = item.find('title')
                     if title_elem is not None and title_elem.text:
                         trending_queries.append(title_elem.text.strip())
 
-                print(f"  ✓ Found {min(len(items), 10)} trends from {geo}")
+                print(f"  ✓ Found {min(len(items), 5)} trends from {geo}")
 
             except Exception as e:
                 print(f"  ⚠️  RSS fetch error for {geo}: {e}")
@@ -284,7 +284,7 @@ class KeywordCurator:
                     "key": self.google_api_key,
                     "cx": self.google_cx,
                     "q": query,
-                    "num": 5,  # Get top 5 results per query
+                    "num": 3,  # Get top 3 results per query (optimized for API limit)
                     "dateRestrict": "d7",  # Last 7 days only (최신 뉴스)
                     "sort": "date"  # Sort by date (최신순)
                 }

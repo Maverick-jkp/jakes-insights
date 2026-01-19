@@ -40,14 +40,16 @@
       "category": "finance",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.524470",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "지원 조건을 모르면 보증료를 전액 본인이 부담해야 함",
       "angle": "전세 임차인 지원제도 활용법",
       "competition_level": "low",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:23:35.521018"
     },
     {
       "id": "004-ko-society-한국콘텐츠진흥원장-인사-논란",
@@ -149,14 +151,16 @@
       "category": "finance",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.524510",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "Preparing for market reopening after holiday closure",
       "angle": "Holiday trading strategy and market preparation",
       "competition_level": "medium",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:24:53.646864"
     },
     {
       "id": "011-ja-business-食料品消費税ゼロ選挙公約",
@@ -228,14 +232,16 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.524535",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "アーティストの新たな分野での成功を文化的観点で理解したい",
       "angle": "クロスオーバーアーティストの評価と文化的意義",
       "competition_level": "low",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:26:17.295828"
     },
     {
       "id": "016-ko-tech-실시간-김형석-관장-논란",
@@ -260,14 +266,16 @@
       "category": "business",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.524546",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "연령 제한을 잘못 알고 있어서 혜택을 놓치고 있을 수 있음",
       "angle": "정부 혜택 제도의 숨겨진 조건들",
       "competition_level": "medium",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:27:46.807628"
     },
     {
       "id": "018-ko-entertainment-SixTONES-숨겨진-일화",
@@ -290,13 +298,15 @@
       "category": "lifestyle",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.527940",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "일상적으로 사용하는 기기의 건강 영향을 모르고 있을 위험성",
       "angle": "디지털 기기 사용과 건강 관리의 균형",
-      "competition_level": "medium"
+      "competition_level": "medium",
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:29:17.920073"
     },
     {
       "id": "020-ko-education-대학생-학자금-대출-함정",
@@ -320,13 +330,15 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.527969",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "Understanding how algorithmic bias affects personal information consumption",
       "angle": "Digital literacy and algorithm awareness",
-      "competition_level": "high"
+      "competition_level": "high",
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:17:28.888081"
     },
     {
       "id": "022-en-lifestyle-remote-work-producti",
@@ -348,13 +360,15 @@
       "category": "education",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.527984",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "Verifying eligibility for financial aid programs before it's too late",
       "angle": "Financial aid program complexity and qualification requirements",
-      "competition_level": "low"
+      "competition_level": "low",
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:30:38.571168"
     },
     {
       "id": "024-en-finance-cryptocurrency-tax-t",
@@ -362,14 +376,16 @@
       "category": "finance",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.527989",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "Avoiding tax penalties from new cryptocurrency regulations",
       "angle": "Regulatory compliance and financial penalty avoidance",
       "competition_level": "medium",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:18:37.131172"
     },
     {
       "id": "025-en-lifestyle-self-improvement-ind",
@@ -421,13 +437,15 @@
       "category": "education",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.528013",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "返済免除制度を知らないと不要な返済を続けることになる",
       "angle": "教育ローン制度の活用と経済的負担軽減",
-      "competition_level": "low"
+      "competition_level": "low",
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:20:15.474463"
     },
     {
       "id": "029-ja-tech-AI投資詐欺急増中",
@@ -435,14 +453,16 @@
       "category": "tech",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.528017",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "AI投資詐欺の手口を知らないと金銭的被害を受ける危険性",
       "angle": "新技術を悪用した詐欺の識別と対策",
       "competition_level": "medium",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T10:16:04.060924",
+      "completed_at": "2026-01-19T10:21:57.654233"
     },
     {
       "id": "030-ja-finance-年金受給額減少リスク",

@@ -57,14 +57,16 @@
       "category": "society",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.524477",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "공공기관 인사의 투명성과 공정성에 대한 의문 해소",
       "angle": "공공기관 인사 정치화 문제점",
       "competition_level": "medium",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T21:13:04.219134",
+      "completed_at": "2026-01-19T21:16:19.115531"
     },
     {
       "id": "005-ko-entertainment-배우-추모-방문-화제",
@@ -121,14 +123,16 @@
       "category": "sports",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.524500",
       "retry_count": 0,
       "keyword_type": "trend",
       "search_intent": "Tracking major upsets and emerging tennis talents",
       "angle": "Tennis hierarchy disruption and new talent emergence",
       "competition_level": "medium",
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-19T21:13:04.219134",
+      "completed_at": "2026-01-19T21:17:28.950709"
     },
     {
       "id": "009-en-entertainment-walking-dead-gaming-",
@@ -407,13 +411,15 @@
       "category": "lifestyle",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-19T18:40:01.528002",
       "retry_count": 0,
       "keyword_type": "evergreen",
       "search_intent": "スマホ依存の深刻さを認識して対策を講じないと時間を浪費し続ける",
       "angle": "デジタルデトックスと時間管理の重要性",
-      "competition_level": "medium"
+      "competition_level": "medium",
+      "reserved_at": "2026-01-19T21:13:04.219134",
+      "completed_at": "2026-01-19T21:14:35.169819"
     },
     {
       "id": "027-ja-business-副業詐欺見分け方",

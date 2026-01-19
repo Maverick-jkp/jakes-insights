@@ -15,6 +15,7 @@ import os
 import sys
 import json
 import argparse
+import re
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional
@@ -1029,6 +1030,22 @@ image: "{image_path}"
         if image_credit:
             credit_line = f"\n\n---\n\n*Photo by [{image_credit['photographer']}]({image_credit['photographer_url']}) on [Unsplash]({image_credit['unsplash_url']})*\n"
 
+        # Validate References section and remove if it contains fake URLs
+        def has_fake_reference_url(url: str) -> bool:
+            """Check if URL is a fake reference"""
+            fake_patterns = [
+                r'example\.com',
+                r'example\.org',
+                r'\.gov/[a-z-]+-202[0-9]',
+                r'\.org/[a-z-]+-survey',
+                r'\.gov/[a-z-]+-compliance',
+                r'\.gov/[a-z-]+-report',
+            ]
+            for pattern in fake_patterns:
+                if re.search(pattern, url, re.IGNORECASE):
+                    return True
+            return False
+
         # Check if References section exists - if not, just skip it (don't add fake references)
         ref_headers = {
             'en': '## References',
@@ -1037,7 +1054,30 @@ image: "{image_path}"
         }
         ref_header = ref_headers.get(lang, '## References')
 
-        if ref_header not in content and '## Reference' not in content and '## 참고' not in content and '## 参고' not in content:
+        # Extract References section if exists
+        has_references = ref_header in content or '## Reference' in content or '## 참고' in content or '## 参考' in content
+
+        if has_references:
+            # Extract URLs from References section using regex
+            # Pattern: [text](url) or bare URLs
+            url_pattern = r'https?://[^\s\)\]<>"]+'  
+            urls_in_content = re.findall(url_pattern, content)
+
+            # Check if any URLs are fake
+            fake_urls = [url for url in urls_in_content if has_fake_reference_url(url)]
+
+            if fake_urls:
+                print(f"  ⚠️  Fake reference URLs detected: {len(fake_urls)} found")
+                print(f"      Examples: {fake_urls[:3]}")
+
+                # Remove References section entirely
+                # Match from any References header to the next ## header or end of content
+                ref_pattern = r'\n## (?:References?|参考(?:文献|資料)|참고자료)\n.*?(?=\n## |\Z)'
+                content = re.sub(ref_pattern, '', content, flags=re.DOTALL)
+                print(f"  🗑️  Removed References section with fake URLs")
+            else:
+                print(f"  ✅ References section validated ({len(urls_in_content)} URLs)")
+        else:
             print(f"  ℹ️  No References section found (skipping)")
 
         # Write file with hero image at top

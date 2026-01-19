@@ -294,7 +294,9 @@ class KeywordCurator:
                     "key": self.google_api_key,
                     "cx": self.google_cx,
                     "q": query,
-                    "num": 5  # Get top 5 results per query
+                    "num": 5,  # Get top 5 results per query
+                    "dateRestrict": "d7",  # Last 7 days only (최신 뉴스)
+                    "sort": "date"  # Sort by date (최신순)
                 }
 
                 response = requests.get(url, params=params)

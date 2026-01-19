@@ -30,3 +30,6 @@ resume_project/
 # Downloaded images (tracked in git)
 # static/images/
 .env
+
+# Work log (personal notes, not for git)
+docs/WORK_LOG.md

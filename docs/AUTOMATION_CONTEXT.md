@@ -133,7 +133,8 @@ params = {
 }
 
 # Rate limit: 100 queries/day
-# 9 posts/day × 5 references each = 45 queries/day (safe margin)
+# Used for keyword curation: ~20 topics × 5 refs = 100 queries/day
+# Content generation uses 0 Google API queries (only Claude API)
 ```
 
 ### Floating Widget Grid Layout

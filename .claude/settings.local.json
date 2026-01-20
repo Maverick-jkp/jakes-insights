@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh run list:*)",
+      "Bash(where:*)",
+      "Bash(powershell -Command \"Get-Command gh -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(if exist \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" echo Found)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" --version)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command \"Test-Path ''C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe''\")",
+      "Bash(powershell -Command \"& ''C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe'' run list --workflow=daily-keywords.yml --limit 5\")",
+      "Bash(powershell -Command \"cd ''c:\\\\Users\\\\user\\\\Desktop\\\\jakes-insights''; gh run list --workflow=daily-content.yml --limit 5\")",
+      "Bash(powershell -Command \"cd ''c:\\\\Users\\\\user\\\\Desktop\\\\jakes-insights''; & ''C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe'' run list --workflow=daily-content.yml --limit 5\")",
+      "Bash(powershell -Command \"cd ''c:\\\\Users\\\\user\\\\Desktop\\\\jakes-insights''; & ''C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe'' run view 21166393082 --log\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(powershell -Command \"Get-Content PROJECT_CONTEXT.md | Select-String -Pattern ''^## '' | Select-Object -Last 10\")",
+      "Bash(git checkout:*)",
+      "Bash(wc:*)",
+      "Bash(python -c:*)",
+      "Bash(python scripts/ai_reviewer.py:*)",
+      "Bash(git restore:*)",
+      "Bash(if not exist \".claude\\\\reports\\\\active\" mkdir .claudereportsactive)",
+      "Bash(git stash:*)",
+      "Bash(git merge:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(hugo server:*)",
+      "Bash(~/hugo_bin:*)",
+      "Bash(hugo:*)",
+      "Bash(git rm:*)"
+    ]
+  }
+}

@@ -409,6 +409,101 @@ def test_reserve_topics_exceeds_available():
 
 ## 📝 Communication Templates
 
+### ⚠️ 작업 완료 후 필수 절차
+
+**모든 작업 완료 시 다음을 반드시 수행하세요**:
+
+1. **작업 결과 리포트 생성 (영어로 작성)**
+   - 파일 경로: `.claude/reports/active/qa-{task-name}-{YYYY-MM-DD}.md`
+   - 작업 내용, 테스트 결과, Coverage 등을 **영어로** 상세히 기록
+   - 리포트는 Master 에이전트가 읽기 위한 것이므로 영어 사용 필수
+
+2. **Master 에이전트에게 전달**
+   - 리포트 작성 후 다음 메시지를 사용자에게 전달:
+   ```
+   작업이 완료되었습니다.
+
+   📋 작업 결과 리포트: .claude/reports/active/qa-{task-name}-{YYYY-MM-DD}.md
+
+   이 리포트를 Master 에이전트에게 전달하여 커밋 및 푸시 여부를 결정해 주세요.
+   ```
+
+3. **리포트 디렉토리 구조**:
+```
+.claude/reports/
+├── active/              # 현재 진행중인 작업 (커밋 전)
+│   ├── cto-*.md
+│   ├── designer-*.md
+│   └── qa-*.md
+├── archive/             # 완료된 작업 (커밋 후)
+│   ├── 2026-01/
+│   ├── 2026-02/
+│   └── ...
+└── .gitignore           # reports/ 전체를 gitignore
+```
+
+4. **리포트 형식 (영어)**:
+```markdown
+# QA Work Report: {Task Name}
+
+**Date**: {YYYY-MM-DD}
+**Agent**: QA Agent
+
+## Summary
+{One-line summary of the work completed}
+
+## Changes Made
+### Added Tests
+- `{test file}`: {N} tests added
+
+### Modified Tests
+- `{test file}`: {description of modifications}
+
+## Test Results
+### Execution Results
+- Total tests: {N}
+- Passed: {N} (100%)
+- Failed: 0
+- Execution time: {X}s
+
+### Coverage
+- Overall coverage: {X}%
+- `{module}`: {Y}% (+{increase}%)
+- Untested lines: `{file}:{line numbers}`
+
+## Test Cases
+### Happy Path
+- {case description}
+
+### Edge Cases
+- {case 1}
+- {case 2}
+
+### Error Handling
+- {exception 1}
+- {exception 2}
+
+## Important Notes
+{Critical information Master needs to know}
+
+## Recommended Commit Message
+```
+{type}: {summary}
+
+{detailed description}
+```
+
+## Next Steps
+{Follow-up tasks if any}
+```
+
+5. **리포트 라이프사이클**:
+   - **작업 중**: `active/` 디렉토리에 리포트 생성
+   - **커밋 후**: Master가 `archive/YYYY-MM/`로 이동
+   - **정리**: 3개월 이상 된 archive는 주기적 삭제
+
+---
+
 ### 테스트 구현 완료
 
 ```markdown

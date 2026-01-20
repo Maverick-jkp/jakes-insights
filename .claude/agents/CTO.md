@@ -390,6 +390,85 @@ safe_print(f"Processing topic: {topic_id}")  # API key 자동 마스킹
 
 ## 📝 Communication Templates
 
+### ⚠️ 작업 완료 후 필수 절차
+
+**모든 작업 완료 시 다음을 반드시 수행하세요**:
+
+1. **작업 결과 리포트 생성 (영어로 작성)**
+   - 파일 경로: `.claude/reports/active/cto-{task-name}-{YYYY-MM-DD}.md`
+   - 작업 내용, 변경 사항, 테스트 결과 등을 **영어로** 상세히 기록
+   - 리포트는 Master 에이전트가 읽기 위한 것이므로 영어 사용 필수
+
+2. **Master 에이전트에게 전달**
+   - 리포트 작성 후 다음 메시지를 사용자에게 전달:
+   ```
+   작업이 완료되었습니다.
+
+   📋 작업 결과 리포트: .claude/reports/active/cto-{task-name}-{YYYY-MM-DD}.md
+
+   이 리포트를 Master 에이전트에게 전달하여 커밋 및 푸시 여부를 결정해 주세요.
+   ```
+
+3. **리포트 디렉토리 구조**:
+```
+.claude/reports/
+├── active/              # 현재 진행중인 작업 (커밋 전)
+│   ├── cto-*.md
+│   ├── designer-*.md
+│   └── qa-*.md
+├── archive/             # 완료된 작업 (커밋 후)
+│   ├── 2026-01/
+│   ├── 2026-02/
+│   └── ...
+└── .gitignore           # reports/ 전체를 gitignore
+```
+
+4. **리포트 형식 (영어)**:
+```markdown
+# CTO Work Report: {Task Name}
+
+**Date**: {YYYY-MM-DD}
+**Agent**: CTO Agent
+
+## Summary
+{One-line summary of the work completed}
+
+## Changes Made
+### Modified Files
+- `{file path}`: {description of changes}
+
+### Added Files
+- `{file path}`: {reason for addition}
+
+### Deleted Files
+- `{file path}`: {reason for deletion}
+
+## Test Results
+- Build: {Success/Failed}
+- Tests: {Passed/Failed}
+- Performance: {improvements if any}
+
+## Important Notes
+{Critical information Master needs to know}
+
+## Recommended Commit Message
+```
+{type}: {summary}
+
+{detailed description}
+```
+
+## Next Steps
+{Follow-up tasks if any}
+```
+
+5. **리포트 라이프사이클**:
+   - **작업 중**: `active/` 디렉토리에 리포트 생성
+   - **커밋 후**: Master가 `archive/YYYY-MM/`로 이동
+   - **정리**: 3개월 이상 된 archive는 주기적 삭제
+
+---
+
 ### 기술 검토 보고서
 
 ```markdown

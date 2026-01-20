@@ -85,16 +85,28 @@ def fetch_unsplash_image(keyword: str, category: str, api_key: str) -> Optional[
         data = response.json()
 
         if not data.get('results'):
-            # Fallback to category only
-            print(f"    ⚠️  No results, trying category only")
-            params['query'] = category
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
+            # Fallback 1: Try progressively shorter queries
+            words = query.split()
+            while len(words) > 1 and not data.get('results'):
+                words = words[:-1]  # Remove last word
+                fallback_query = ' '.join(words)
+                print(f"    ⚠️  No results, trying: {fallback_query}")
+                params['query'] = fallback_query
+                response = requests.get(url, headers=headers, params=params, timeout=10)
+                response.raise_for_status()
+                data = response.json()
 
+            # Fallback 2: If still no results, try category only
             if not data.get('results'):
-                print(f"    ❌ No images found")
-                return None
+                print(f"    ⚠️  No results, trying category only: {category}")
+                params['query'] = category
+                response = requests.get(url, headers=headers, params=params, timeout=10)
+                response.raise_for_status()
+                data = response.json()
+
+                if not data.get('results'):
+                    print(f"    ❌ No images found")
+                    return None
 
         # Load used images tracking
         used_images_file = Path("data/used_images.json")

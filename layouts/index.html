@@ -702,7 +702,8 @@
     <!-- Main Content -->
     <div class="container">
         <div class="bento-grid">
-            {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+            {{ $allPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+            {{ $currentLangPages := where $allPages "Type" "!=" "page" }}
 
             <!-- Hero Featured Post (12 columns, full width) -->
             {{ $featured := index $currentLangPages 0 }}

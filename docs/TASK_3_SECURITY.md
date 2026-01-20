@@ -387,33 +387,43 @@ pip install -r requirements.txt
 
 ---
 
-## Task 3.3: Pre-commit Hook (Optional, Day 2 오후)
+## Task 3.3: Pre-commit Hook (Optional, Day 2 오후) - 완료 ✅
 
-**파일**: `.git/hooks/pre-commit` (신규 생성)
+**파일**: `.git/hooks/pre-commit` (생성 완료)
 
 ```bash
 #!/bin/bash
 # Pre-commit hook to validate topics_queue.json
+# This hook prevents committing invalid data to the repository
 
-echo "Running pre-commit validation..."
+echo "🔍 Running pre-commit validation..."
 
-# Validate topics_queue.json syntax
-if ! python -m json.tool data/topics_queue.json > /dev/null 2>&1; then
-    echo "❌ Error: topics_queue.json is not valid JSON"
-    exit 1
+# Check if topics_queue.json is being committed
+if git diff --cached --name-only | grep -q "data/topics_queue.json"; then
+    echo "📋 Validating topics_queue.json..."
+
+    # Validate JSON syntax
+    if ! python3 -m json.tool data/topics_queue.json > /dev/null 2>&1; then
+        echo "❌ Error: topics_queue.json is not valid JSON"
+        echo "   Fix the JSON syntax before committing"
+        exit 1
+    fi
+
+    # Run Python validation script
+    if ! python3 scripts/utils/validate_queue.py; then
+        echo "❌ Error: topics_queue.json validation failed"
+        echo "   Check the validation errors above and fix them"
+        exit 1
+    fi
+
+    echo "✅ topics_queue.json validation passed"
 fi
 
-# Run Python validation
-if ! python scripts/utils/validate_queue.py; then
-    echo "❌ Error: topics_queue.json validation failed"
-    exit 1
-fi
-
-echo "✅ Pre-commit validation passed"
+echo "✅ Pre-commit validation complete"
 exit 0
 ```
 
-**파일**: `scripts/utils/validate_queue.py` (신규 생성)
+**파일**: `scripts/utils/validate_queue.py` (이미 생성됨 - Task 3.2)
 
 ```python
 #!/usr/bin/env python3
@@ -489,6 +499,27 @@ if __name__ == '__main__':
 ✅ Correctly blocked: Invalid keyword: Keyword contains invalid characters
 ✅ Path traversal prevented
 ✅ Length limits enforced
+```
+
+### Task 3.3: Pre-commit Hook - 완료 ✅
+
+**구현 완료:**
+- ✅ `.git/hooks/pre-commit` 생성 완료
+- ✅ topics_queue.json 자동 검증 활성화
+- ✅ JSON 문법 체크 추가
+- ✅ Python validation 자동 실행
+
+**검증 결과:**
+```bash
+# 잘못된 데이터 커밋 시도 (path traversal)
+❌ Topic '999-ko-test-invalid' has errors:
+   - Invalid keyword: Keyword contains invalid characters
+❌ Error: topics_queue.json validation failed
+   # 커밋 차단됨!
+
+# 정상 데이터 커밋
+✅ topics_queue.json validation passed
+✅ Pre-commit validation complete
 ```
 
 ---

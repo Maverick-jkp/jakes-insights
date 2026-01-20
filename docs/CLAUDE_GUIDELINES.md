@@ -201,6 +201,12 @@ Claude: "확인하겠습니다"
    - **반드시 WORK_LOG.md에도 기록**
    - AUTOMATION_CONTEXT.md만 업데이트하고 끝내지 말 것
 
+7. **배포 환경 이해**
+   - **Cloudflare Pages 프로젝트 = 로컬 Hugo 서버 불필요**
+   - Git Push → Cloudflare 자동 Hugo 빌드 → 자동 배포
+   - `hugo server` 실행 시도 절대 금지 (이전에도 같은 실수)
+   - 파일 수정 → 커밋 → 푸시 → Cloudflare 확인
+
 ---
 
 ## 📝 문서화 규칙
@@ -223,7 +229,191 @@ Claude: "확인하겠습니다"
 
 ---
 
-**마지막 업데이트**: 2026-01-19 (개정 3회)
-**작성 이유**: 속도에 치중해 부정확한 답변을 반복한 문제 해결
+## 🚫 절대 금지 사항
+
+### Hugo 로컬 서버 실행 시도
+
+이 프로젝트는 **Cloudflare Pages**에 배포되어 있습니다.
+
+**절대 하지 말 것:**
+- `hugo server -D` 실행 시도
+- `hugo` 명령어 실행 시도
+- "로컬에서 확인해야 한다" 발언
+- Hugo 설치 여부 확인
+
+**올바른 워크플로우:**
+1. 파일 수정 (layouts, content, scripts 등)
+2. Git 커밋 및 푸시
+3. Cloudflare Pages가 자동으로 Hugo 빌드
+4. 사용자가 배포된 사이트에서 확인
+
+**이전 실수:**
+- 사용자: "전에도 한 번 로컬서버 시도했었는데 니가 필요없다고 했었어"
+- Claude가 같은 실수를 반복함
+- 이번에 다시 `hugo server` 실행 시도 → Hugo 미설치 에러
+
+**기억할 것:**
+- Cloudflare Pages = Serverless 빌드 플랫폼
+- Git Push = 자동 배포 트리거
+- 로컬 Hugo 서버 = 완전히 불필요
+
+---
+
+## 🖼️ Unsplash 이미지 관리
+
+### 중복 방지 시스템
+
+**핵심 원칙:**
+- **절대 같은 이미지를 재사용하지 않음**
+- `data/used_images.json`에 사용된 이미지 ID 추적
+- Unsplash API 결과에서 미사용 이미지만 선택
+
+**로직 위치**: [scripts/generate_posts.py:887-915](scripts/generate_posts.py:887-915)
+
+```python
+# 1. used_images.json 로드
+used_images = set(json.load("data/used_images.json"))
+
+# 2. Unsplash API 결과에서 미사용 이미지 찾기
+for result in data['results']:
+    if result['id'] not in used_images:
+        photo = result
+        used_images.add(result['id'])
+        break
+
+# 3. 모두 사용됐으면 랜덤 선택
+if photo is None:
+    photo = random.choice(data['results'])
+    used_images.add(photo['id'])
+```
+
+### Placeholder 이미지 문제
+
+**문제 상황:**
+- Unsplash fetch 실패 시 → `image: "/images/placeholder-{category}.jpg"` 사용
+- **그러나 placeholder 파일은 실제로 존재하지 않음** → 썸네일 깨짐
+
+**Fallback 로직**: [scripts/generate_posts.py:1003-1005](scripts/generate_posts.py:1003-1005)
+```python
+if not image_path:
+    # Use category-based placeholder
+    image_path = f"/images/placeholder-{category}.jpg"
+```
+
+**해결 방법:**
+1. **자동 수정 워크플로우**: `.github/workflows/fix-placeholder-images.yml`
+   ```bash
+   GitHub Actions → Fix Placeholder Images → Run workflow
+   ```
+
+2. **수동 삭제 & 재생성**:
+   ```bash
+   git rm "content/xxx/problem-post.md"
+   git commit -m "Remove placeholder post for regeneration"
+   git push
+   ```
+
+**왜 Placeholder가 발생하나?**
+1. Unsplash API가 제한된 결과 반환 (예: 일본어 "大相撲" → 10개 결과)
+2. 10개 모두 `used_images.json`에 이미 존재
+3. 랜덤 선택 → 다운로드 실패
+4. Fallback → placeholder 경로 사용
+5. 파일 없음 → 썸네일 깨짐
+
+**예방책:**
+- `per_page` 값 증가 (5 → 10 이상)
+- 더 넓은 검색어 사용 (카테고리만으로 검색)
+- 키워드 번역 품질 개선
+
+### API 키 설정 확인
+
+**환경 변수:**
+- `UNSPLASH_ACCESS_KEY`: GitHub Secrets에 설정됨
+- GitHub Actions 워크플로우에서 자동 주입
+- 로컬 실행 시에는 별도 설정 필요 (선택사항)
+
+**확인 방법:**
+```bash
+# GitHub Actions 로그에서 확인
+🖼️ Unsplash API enabled  # ← 정상
+⚠️ Unsplash API key not found  # ← 문제
+```
+
+### 이미지 파일 배포 흐름
+
+**올바른 흐름:**
+```
+1. generate_posts.py 실행
+   → Unsplash에서 이미지 다운로드
+   → static/images/에 저장
+
+2. Git 커밋 & 푸시
+   → static/images/*.jpg 포함
+
+3. Cloudflare Pages 자동 빌드
+   → Hugo가 static/ 폴더 복사
+
+4. 배포 완료
+   → https://jakes-tech-insights.pages.dev/images/*.jpg 접근 가능
+```
+
+**잘못된 이해 (착각하지 말 것):**
+- ❌ "로컬에는 있는데 Cloudflare에 없네요"
+  - → 파일이 git에 있으면 Cloudflare에도 있음
+  - → 실제 문제: placeholder **경로**는 있지만 **파일**이 없음
+
+- ❌ "API 키가 없어서 이미지를 못 가져왔나봐요"
+  - → 먼저 워크플로우 로그 확인
+  - → "🖼️ Unsplash API enabled" 메시지 확인
+
+**디버깅 순서:**
+1. 게시물 frontmatter 확인: `image: "/images/xxx.jpg"`
+2. 파일 존재 확인: `git ls-files static/images/xxx.jpg`
+3. 원격 배포 확인: `curl -I https://jakes-tech-insights.pages.dev/images/xxx.jpg`
+4. Placeholder 여부: `grep -r "placeholder" content/`
+
+---
+
+## 🔄 토큰 효율성
+
+### 중복 로직 방지
+
+**문제:**
+- 같은 로직을 반복 설명 → 토큰 낭비
+- 가이드라인에 이미 기록된 내용을 재설명
+
+**해결:**
+1. **먼저 가이드라인 확인**
+   - `docs/CLAUDE_GUIDELINES.md`
+   - `docs/AUTOMATION_CONTEXT.md`
+   - `docs/WORK_LOG.md`
+
+2. **가이드라인에 있으면 참조만**
+   ```
+   ✅ "중복 이미지 방지는 CLAUDE_GUIDELINES.md의 '🖼️ Unsplash 이미지 관리' 섹션을 참고하세요"
+
+   ❌ [중복 로직 전체를 다시 설명하는 긴 답변]
+   ```
+
+3. **새로운 발견은 즉시 기록**
+   - 가이드라인에 없는 내용 발견 시
+   - 즉시 해당 섹션에 추가
+   - 다음번에는 참조만 하면 됨
+
+**기록해야 할 것들:**
+- 반복되는 질문의 답변
+- 자주 발생하는 문제의 해결법
+- 시스템 동작 원리
+- 디버깅 체크리스트
+
+---
+
+**마지막 업데이트**: 2026-01-20 (개정 5회)
+**작성 이유**:
+1. 속도에 치중해 부정확한 답변을 반복한 문제 해결
+2. 배포 환경 이해 부족으로 불필요한 로컬 서버 시도 반복
+3. Unsplash 이미지 중복 방지 로직 문서화
+4. Placeholder 이미지 문제 해결 방법 추가
+5. 토큰 효율성 개선 (중복 설명 방지)
 
 **이 가이드라인을 위반하면 사용자의 시간과 노력을 낭비하게 됩니다.**

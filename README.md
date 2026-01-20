@@ -204,6 +204,28 @@ hugo
 # View at http://localhost:1313
 ```
 
+### Pre-commit Hook (Automatic Validation)
+
+A Git pre-commit hook automatically validates `topics_queue.json` before each commit:
+
+```bash
+# The hook runs automatically when you commit
+git commit -m "Update topics"
+
+# If validation fails, commit is blocked:
+🔍 Running pre-commit validation...
+📋 Validating topics_queue.json...
+❌ Topic 'invalid-topic' has errors:
+   - Invalid keyword: Keyword contains invalid characters
+❌ Error: topics_queue.json validation failed
+
+# Fix issues and try again
+```
+
+**Hook location**: `.git/hooks/pre-commit` (already installed)
+
+**To bypass** (emergency only): `git commit --no-verify`
+
 ## 📊 Quality Standards
 
 ### Content Requirements

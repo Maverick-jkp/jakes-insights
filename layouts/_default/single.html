@@ -12,7 +12,7 @@
 
     <!-- SEO Meta Tags -->
     <meta name="author" content="Jake Park">
-    <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+    {{ with .Params.tags }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
     <link rel="canonical" href="{{ .Permalink }}">
 
     <!-- Open Graph / Facebook -->
@@ -331,6 +331,34 @@
     </header>
     
     <article>
+        {{/* Hero Image - Responsive WebP with fallback */}}
+        {{ with .Resources.GetMatch "cover.*" }}
+          {{ $small := .Resize "400x webp q85" }}
+          {{ $medium := .Resize "800x webp q85" }}
+          {{ $large := .Resize "1200x webp q85" }}
+          {{ $fallback := .Resize "800x jpg q85" }}
+
+          <picture style="margin-bottom: 2rem; display: block;">
+            <source
+              srcset="{{ $small.RelPermalink }} 400w,
+                      {{ $medium.RelPermalink }} 800w,
+                      {{ $large.RelPermalink }} 1200w"
+              sizes="(max-width: 600px) 400px,
+                     (max-width: 1200px) 800px,
+                     1200px"
+              type="image/webp"
+            >
+            <img
+              src="{{ $fallback.RelPermalink }}"
+              alt="{{ $.Title }}"
+              loading="lazy"
+              width="{{ $medium.Width }}"
+              height="{{ $medium.Height }}"
+              style="width: 100%; height: auto; object-fit: cover; border-radius: 0.5rem;"
+            >
+          </picture>
+        {{ end }}
+
         <div class="article-header">
             <h1>{{ .Title }}</h1>
             <div class="meta">
@@ -338,7 +366,7 @@
                 <span>{{ .ReadingTime }} min read</span>
             </div>
         </div>
-        
+
         <div class="content">
             {{ .Content }}
         </div>

@@ -33,3 +33,15 @@ resume_project/
 
 # Work log (personal notes, not for git)
 docs/WORK_LOG.md
+
+# Testing
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover

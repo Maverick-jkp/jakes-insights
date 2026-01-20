@@ -5,7 +5,7 @@ draft: false
 categories: ["tech"]
 tags: ["domain-specific", "LLM", "vs"]
 description: "Discover the key differences between domain-specific and general LLMs. Learn which AI model type delivers better accuracy, efficiency, and ROI for your needs."
-image: "/images/placeholder-tech.jpg"
+image: "/images/2026-01-17-domainspecific-llm-vs-general-llm.jpg"
 ---
 
 You've deployed a general AI model across your organization, expecting game-changing results. Three months later, your legal team is still drowning in contract reviews, your customer service can't handle technical queries, and your medical coding department gave up entirely. 
@@ -88,3 +88,6 @@ What specific challenges in your organization could benefit from this hybrid app
 - Enterprise AI Implementation Report 2024 - Deloitte Technology Survey  
 - Domain-Specific AI Performance Analysis - MIT Technology Review
 - The Cost of AI Specialization in Business - Harvard Business Review
+
+
+*Photo by [Ian Talmacs](https://unsplash.com/@iantalmacs) on [Unsplash](https://unsplash.com/photos/a-black-and-a-white-chess-piece-on-a-checkered-board-wr4CnlEg_5s)*

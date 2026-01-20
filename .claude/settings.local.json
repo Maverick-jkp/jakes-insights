@@ -30,7 +30,8 @@
       "Bash(hugo server:*)",
       "Bash(~/hugo_bin:*)",
       "Bash(hugo:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(ls -la \"c:\\\\Users\\\\user\\\\Desktop\\\\jakes-insights\\\\.claude\\\\agents\"\" && ls -la \"c:UsersuserDesktopjakes-insights.claudetemplates\"\")"
     ]
   }
 }

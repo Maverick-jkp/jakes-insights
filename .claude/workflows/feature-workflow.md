@@ -74,28 +74,21 @@ find . -name "*관련_파일명*"
 
 ### 2.2 브랜치 전략 결정
 
-```markdown
-병렬 작업 조건:
-✓ 서로 다른 파일 수정
-✓ 의존성 없음
-✓ 독립적으로 테스트 가능
+**See**: [branching-strategy.md](branching-strategy.md) for complete branch strategy.
 
-순차 작업 조건:
-⚠️ 같은 파일 수정
-⚠️ A의 결과를 B가 사용
-⚠️ 통합 테스트 필요
+**Quick Reference**:
+- **Parallel**: Different files, no dependencies → Separate branches
+- **Sequential**: Same files or A→B dependency → Sequential branches
+
+**Example**:
 ```
+Task 1: Dark Mode UI (independent) → feature/dark-mode
+Task 2: Performance (independent) → feature/performance
+Task 3: Integration Tests (dependent) → feature/integration-tests
 
-**예시:**
-
-```
-Task 1: 다크모드 UI (독립) → feature/dark-mode
-Task 2: 성능 최적화 (독립) → feature/performance
-Task 3: 통합 테스트 (의존) → feature/integration-tests
-
-실행 계획:
-Phase 1: Task 1, 2 병렬 실행
-Phase 2: Task 3 순차 실행 (1, 2 완료 후)
+Execution Plan:
+Phase 1: Task 1, 2 parallel
+Phase 2: Task 3 sequential (after 1, 2 complete)
 ```
 
 ---
@@ -365,16 +358,7 @@ git push
 
 ## 📊 Decision Matrix
 
-### 병렬 vs. 순차 결정
-
-| 조건 | 병렬 | 순차 |
-|------|------|------|
-| 서로 다른 파일 수정 | ✓ | |
-| 같은 파일 수정 | | ✓ |
-| 의존성 없음 | ✓ | |
-| A → B 의존성 | | ✓ |
-| 독립 테스트 가능 | ✓ | |
-| 통합 테스트 필요 | | ✓ |
+**See**: [branching-strategy.md](branching-strategy.md) for parallel vs sequential decision matrix.
 
 ### 에이전트 할당 기준
 

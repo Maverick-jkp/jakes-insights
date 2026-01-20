@@ -3,6 +3,8 @@ title: "Privacy Policy"
 date: 2026-01-20
 type: page
 layout: single
+_build:
+  list: false
 ---
 
 # Privacy Policy

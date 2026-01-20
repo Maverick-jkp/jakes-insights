@@ -3,6 +3,8 @@ title: "Jake's Insightsについて"
 date: 2026-01-20
 type: page
 layout: single
+_build:
+  list: false
 ---
 
 # Jake's Insightsについて

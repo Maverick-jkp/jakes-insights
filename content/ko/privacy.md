@@ -3,6 +3,8 @@ title: "개인정보 처리방침"
 date: 2026-01-20
 type: page
 layout: single
+_build:
+  list: false
 ---
 
 # 개인정보 처리방침

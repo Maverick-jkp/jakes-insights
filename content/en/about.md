@@ -3,6 +3,8 @@ title: "About Jake's Insights"
 date: 2026-01-20
 type: page
 layout: single
+_build:
+  list: false
 ---
 
 # About Jake's Insights

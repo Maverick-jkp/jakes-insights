@@ -56,11 +56,18 @@ def fetch_unsplash_image(keyword: str, category: str, api_key: str) -> Optional[
     for foreign, english in translations.items():
         english_query = english_query.replace(foreign, english)
 
+    # Remove all non-ASCII characters (Japanese/Korean remaining after translation)
+    english_query = re.sub(r'[^\x00-\x7F]+', ' ', english_query)
+
     # Clean up the query
-    english_query = re.sub(r'[【】\[\]「」]', '', english_query)
+    english_query = re.sub(r'[【】\[\]「」！？]', '', english_query)
     english_query = ' '.join(english_query.split())
 
-    query = f"{category} {english_query}".strip()
+    # If query is empty after cleaning, use category only
+    if not english_query.strip():
+        query = category
+    else:
+        query = f"{category} {english_query}".strip()
 
     url = "https://api.unsplash.com/search/photos"
     headers = {"Authorization": f"Client-ID {api_key}"}

@@ -34,14 +34,14 @@ def mask_secrets(text: str) -> str:
     # Mask API key patterns (sk-ant-..., sk-proj-..., or other common formats)
     # Order matters: specific patterns first, then generic
     masked = re.sub(r'sk-ant-[\w-]{10,}', '***MASKED_API_KEY***', masked)
-    masked = re.sub(r'sk-proj-[\w-]{10,}', '***MASKED_API_KEY***', masked)
+    masked = re.sub(r'sk-proj-[\w-]{8,}', '***MASKED_API_KEY***', masked)  # Shorter threshold for sk-proj
     masked = re.sub(r'sk-[\w-]{20,}', '***MASKED_API_KEY***', masked)  # Catch any other sk-... pattern
 
     # Mask bearer tokens (including shorter ones like sk-proj-...)
     masked = re.sub(r'Bearer\s+[a-zA-Z0-9-_]{10,}', 'Bearer ***MASKED***', masked)
 
     # Mask access tokens in URLs
-    masked = re.sub(r'access_token=[a-zA-Z0-9-_]{20,}', 'access_token=***MASKED***', masked)
+    masked = re.sub(r'access_token=[a-zA-Z0-9-_]{15,}', 'access_token=***MASKED***', masked)
 
     return masked
 

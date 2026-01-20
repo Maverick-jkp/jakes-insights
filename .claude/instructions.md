@@ -145,18 +145,27 @@ test/[test-name]       - Testing
 - `docs/update-readme`
 
 ### After Work Completion
+
+**CRITICAL - Cross-Platform Environment**:
+User switches between Mac and Windows. ALL agents must commit+push to preserve work across environments.
+
 ```bash
 # 1. Commit
 git add -A
 git commit -m "feat: description"
 
-# 2. Push
+# 2. Push to feature branch
 git push origin feature/[branch-name]
 
 # 3. Notify user
 "Pushed to feature/[branch-name].
+Work is saved and accessible on all platforms.
 Merge to main?"
 ```
+
+**Who commits**:
+- ✅ **ALL agents** (MASTER, CTO, DESIGNER, QA) commit+push to their feature branches
+- ✅ **MASTER agent** additionally handles final merge to main after integration
 
 ### Exceptions
 - **Urgent fixes**: Only when user explicitly says "work on main directly"

@@ -194,7 +194,7 @@ You are the DESIGNER agent. Read your role definition from `.claude/agents/DESIG
 - [ ] {Criterion 2}
 - [ ] Test locally with `hugo server`
 
-**Important**: Work on the branch. DO NOT commit or push - report back when done.
+**Important**: When done, commit and push to your feature branch, then report back.
 ```
 
 ### CTO Prompt Template
@@ -209,7 +209,7 @@ You are the CTO agent. Read your role definition from `.claude/agents/CTO.md`.
 
 **Branch**: `feature/{branch-name}`
 
-Report back with changes and considerations.
+**Important**: When done, commit and push to your feature branch, then report back with changes and considerations.
 ```
 
 ### QA Prompt Template
@@ -225,7 +225,7 @@ You are the QA agent. Read your role definition from `.claude/agents/QA.md`.
 - [ ] All tests pass
 - [ ] Coverage report generated
 
-Report back with test results.
+**Important**: When done, commit and push to your feature branch, then report back with test results.
 ```
 
 ---

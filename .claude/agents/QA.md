@@ -231,13 +231,16 @@ See [QA_EXAMPLES.md](QA_EXAMPLES.md) for detailed code examples.
    Work completed.
 
    Report: .claude/reports/active/qa-{task-name}-{YYYY-MM-DD}.md
-
-   Please pass this report to Master agent to decide on commit/push.
    ```
 
-3. **Report lifecycle**:
+3. **Work completion protocol**:
+   - Commit and push your changes to the feature branch
+   - Create completion report in `.claude/reports/active/`
+   - Notify user that work is complete and pushed
+
+4. **Report lifecycle**:
    - During work: Create in `active/`
-   - After commit: Master moves to `archive/YYYY-MM/`
+   - After Master integration: Master moves to `archive/YYYY-MM/`
 
 ---
 

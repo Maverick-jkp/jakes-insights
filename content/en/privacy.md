@@ -63,13 +63,12 @@ If you have questions about this Privacy Policy, please contact us at:
 
 ## Your Rights
 
-Depending on your location, you may have the right to:
-- Access your personal data
-- Correct inaccurate data
-- Request deletion of your data
-- Opt out of certain data processing
+You have the right to:
+- Opt out of Google Analytics tracking (see above)
+- Opt out of personalized advertising (see Advertising Partners section)
+- Control cookies through your browser settings
 
-For EU residents, we comply with GDPR requirements. For California residents, we comply with CCPA requirements.
+Note: This website does not collect or store personal data directly. All data collection is performed by third-party services (Google Analytics, Google AdSense) as described in this policy.
 
 ## Advertising Partners
 

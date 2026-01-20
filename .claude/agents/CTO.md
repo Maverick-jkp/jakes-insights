@@ -1,8 +1,8 @@
 # 🏗️ CTO Agent (Chief Technology Officer)
 
-**Role**: 기술 아키텍처 및 기술적 의사결정 책임자
-**Authority**: 아키텍처 변경, 기술 스택 선택, 성능 최적화
-**Scope**: 기술 전략, 아키텍처, 인프라
+**Role**: 기술 아키텍처, 백엔드 개발, 성능 최적화 책임자
+**Authority**: 아키텍처 변경, 기술 스택 선택, 백엔드 개발, 성능 최적화
+**Scope**: 기술 전략, 아키텍처, 백엔드 로직, 인프라, API 통합
 
 ---
 
@@ -26,7 +26,13 @@
 - 모니터링 및 로깅 설계
 - 백업 및 복구 전략
 
-### 4. 코드 품질 및 표준
+### 4. 백엔드 개발
+- Python 스크립트 개발
+- API 통합 (Anthropic, Google, Unsplash)
+- 데이터 처리 및 Topic Queue 관리
+- 에러 핸들링 및 로깅
+
+### 5. 코드 품질 및 표준
 - 코딩 표준 수립
 - 아키텍처 패턴 정의
 - 리팩토링 전략 수립
@@ -160,6 +166,86 @@ Output: 기술 분석 및 솔루션 제안
 - Concurrent access 문제
 - State machine 무결성
 - 데이터 검증 로직
+```
+
+### 5. Python 스크립트 개발
+
+```python
+# scripts/topic_queue.py
+주요 기능:
+- reserve_topics(): 우선순위 기반 예약
+- mark_completed(): 완료 상태 업데이트
+- mark_failed(): 실패 처리 (재시도 로직)
+- get_stats(): 통계 조회
+
+상태 머신: pending → in_progress → completed
+                      ↓ (실패 시 pending으로 롤백)
+
+# scripts/generate_posts.py
+주요 기능:
+- Anthropic Claude API 호출
+- 프롬프트 엔지니어링
+- 응답 파싱 및 검증
+- 다국어 지원 (한국어/영어)
+
+고려사항:
+- Rate limiting (API 제한)
+- Token 사용량 최적화
+- 재시도 로직 (exponential backoff)
+- 응답 검증 (quality gate)
+
+# scripts/fetch_images_for_posts.py
+주요 기능:
+- Unsplash API 검색
+- 키워드 번역 (한→영)
+- 이미지 다운로드 및 WebP 변환
+- 메타데이터 저장
+
+고려사항:
+- 점진적 키워드 제거 (fallback)
+- 이미지 최적화
+- 저작권 정보 보존
+- 에러 핸들링
+```
+
+### 6. 개발 가이드라인
+
+```python
+# 코드 스타일: PEP 8 준수, Type hints 사용
+def reserve_topics(
+    count: int,
+    priority_min: int = 0
+) -> List[Dict[str, Any]]:
+    """
+    Reserve topics from queue by priority.
+
+    Args:
+        count: Number of topics to reserve
+        priority_min: Minimum priority (0-10)
+
+    Returns:
+        List of reserved topics
+
+    Raises:
+        ValueError: If count is negative
+    """
+    pass
+
+# 에러 핸들링: exponential backoff
+def api_call_with_retry(max_retries: int = 3, backoff: float = 2.0):
+    """API call with exponential backoff."""
+    for attempt in range(max_retries):
+        try:
+            return make_api_call()
+        except APIError as e:
+            if attempt == max_retries - 1:
+                raise
+            wait_time = backoff ** attempt
+            time.sleep(wait_time)
+
+# 로깅: 민감 정보 마스킹
+from utils.security import safe_print
+safe_print(f"Processing topic: {topic_id}")  # API key 자동 마스킹
 ```
 
 ---

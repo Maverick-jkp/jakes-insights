@@ -67,9 +67,9 @@ find . -name "*관련_파일명*"
 
 3. 에이전트 할당
    - UI 변경 → DESIGNER
-   - Python 로직 → DEV_BACKEND
+   - Python 로직 → CTO
    - 아키텍처 결정 → CTO
-   - 테스트 → DEV_TESTING
+   - 테스트 → QA
 ```
 
 ### 2.2 브랜치 전략 결정
@@ -167,7 +167,7 @@ Phase 2: Task 3 순차 실행 (1, 2 완료 후)
 사용자가 수행:
 1. 세션 1 (Master): 대기 (모니터링)
 2. 세션 2 (DESIGNER): "TASK_001_dark_mode.md 읽고 작업 시작해"
-3. 세션 3 (DEV_BACKEND): "TASK_002_performance.md 읽고 작업 시작해"
+3. 세션 3 (CTO): "TASK_002_performance.md 읽고 작업 시작해"
 
 각 세션에서:
 1. 티켓 읽기
@@ -206,7 +206,7 @@ git push -u origin feature/dark-mode
 "feature/dark-mode 작업 완료했습니다!"
 ```
 
-**DEV_BACKEND (예시):**
+**CTO (예시):**
 
 ```bash
 # 1. 티켓 읽기
@@ -382,12 +382,12 @@ git push
 |-----------|---------------|
 | UI/UX 디자인 | DESIGNER |
 | 레이아웃 변경 | DESIGNER |
-| Python 로직 | DEV_BACKEND |
-| API 통합 | DEV_BACKEND |
+| Python 로직 | CTO |
+| API 통합 | CTO |
 | 아키텍처 변경 | CTO |
-| 성능 최적화 | CTO + DEV_BACKEND |
-| 테스트 작성 | DEV_TESTING |
-| 테스트 커버리지 | DEV_TESTING |
+| 성능 최적화 | CTO + CTO |
+| 테스트 작성 | QA |
+| 테스트 커버리지 | QA |
 
 ---
 
@@ -422,7 +422,7 @@ git push
 
 ```markdown
 ❌ 문제:
-- DEV_BACKEND가 자신의 브랜치를 main에 머지
+- CTO가 자신의 브랜치를 main에 머지
 - 통합 검증 없이 배포
 
 ✓ 해결:
@@ -447,7 +447,7 @@ git push
 **Phase 1: 분석 (Master)**
 ```
 복잡도: 높음
-에이전트 필요: CTO, DEV_BACKEND, DEV_TESTING
+에이전트 필요: CTO, CTO, QA
 병렬 가능: 부분적
 ```
 
@@ -457,11 +457,11 @@ TASK_001: 아키텍처 설계 (CTO)
   - 브랜치: feature/auth-architecture
   - 문서화만 (코드 없음)
 
-TASK_002: Backend API (DEV_BACKEND) - TASK_001 후
+TASK_002: Backend API (CTO) - TASK_001 후
   - 브랜치: feature/auth-backend
   - 의존: TASK_001 설계 참고
 
-TASK_003: 테스트 (DEV_TESTING) - TASK_002 후
+TASK_003: 테스트 (QA) - TASK_002 후
   - 브랜치: feature/auth-tests
   - 의존: TASK_002 API
 ```
@@ -472,10 +472,10 @@ TASK_003: 테스트 (DEV_TESTING) - TASK_002 후
 세션 2 (CTO): TASK_001 (문서화)
   → 완료 후 세션 2 종료
 
-세션 3 (DEV_BACKEND): TASK_002 (API 구현)
+세션 3 (CTO): TASK_002 (API 구현)
   → 완료 후 세션 3 종료
 
-세션 4 (DEV_TESTING): TASK_003 (테스트)
+세션 4 (QA): TASK_003 (테스트)
   → 완료 후 세션 4 종료
 ```
 

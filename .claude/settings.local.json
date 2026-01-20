@@ -31,7 +31,20 @@
       "Bash(~/hugo_bin:*)",
       "Bash(hugo:*)",
       "Bash(git rm:*)",
-      "Bash(ls -la \"c:\\\\Users\\\\user\\\\Desktop\\\\jakes-insights\\\\.claude\\\\agents\"\" && ls -la \"c:UsersuserDesktopjakes-insights.claudetemplates\"\")"
+      "Bash(ls -la \"c:\\\\Users\\\\user\\\\Desktop\\\\jakes-insights\\\\.claude\\\\agents\"\" && ls -la \"c:UsersuserDesktopjakes-insights.claudetemplates\"\")",
+      "Bash(python scripts/topic_queue.py:*)",
+      "Bash(test:*)",
+      "Bash(python scripts/keyword_curator.py:*)",
+      "Bash(timeout /t 5 /nobreak)",
+      "Bash(if not exist layoutspartials mkdir layoutspartials)",
+      "Bash(timeout /t 3 /nobreak)",
+      "Bash(gh pr create:*)",
+      "Bash(git branch:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(taskkill:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)"
     ]
   }
 }

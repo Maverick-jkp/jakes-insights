@@ -2,6 +2,43 @@
 
 > 이 파일은 Claude가 작업 시작 전 **반드시** 읽어야 하는 필수 지침입니다.
 
+## 🚨 CRITICAL - NEVER FORGET
+
+### Hugo Local Server - ALWAYS AVAILABLE
+
+```
+╔════════════════════════════════════════════════╗
+║  Hugo Binary: /opt/homebrew/bin/hugo          ║
+║  Version: 0.154.5+extended                     ║
+║  Local Testing: MANDATORY before deployment   ║
+║  Default Port: 1313                            ║
+╚════════════════════════════════════════════════╝
+```
+
+**Commands:**
+```bash
+# Start Hugo server
+/opt/homebrew/bin/hugo server --port 1313 --bind 0.0.0.0
+
+# Test URL examples
+http://localhost:1313/ko/categories/tech/
+http://localhost:1313/ko/categories/business/
+http://localhost:1313/
+```
+
+**QA Process (REQUIRED for UI/Layout changes):**
+1. Start Hugo local server
+2. Test changes visually in browser
+3. Document results in QA docs
+4. THEN commit and push
+
+**Why This Matters:**
+- UI changes CANNOT be validated by reading code alone
+- Thumbnails, layouts, and styling must be tested visually
+- "I cannot run Hugo locally" is NEVER an acceptable response
+
+---
+
 ## 🚨 작업 시작 전 필수 체크리스트
 
 모든 작업 시작 전에 다음을 **순서대로** 확인:
@@ -147,7 +184,7 @@ main 브랜치에 merge하시겠습니까?"
 5. ❌ "~일 것 같습니다" 발언
 6. ❌ **"할 수 없습니다" 단정 짓기**
    - **GitHub CLI**: `/opt/homebrew/bin/gh`
-   - **Hugo**: `/opt/homebrew/Cellar/hugo/0.154.5/bin/hugo`
+   - **Hugo**: See "🚨 CRITICAL - NEVER FORGET" section at top
    - 명령어 실패 시 → PATH 확인 → 전체 경로로 재시도
    - "안 된다"가 아니라 "방법을 찾겠습니다"
 7. ❌ **사용자가 브랜치를 명시하지 않았는데 main 브랜치에서 바로 작업**

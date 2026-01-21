@@ -139,13 +139,19 @@ class KeywordCurator:
             safe_print("   Example: export ANTHROPIC_API_KEY='your-key-here'")
             raise ValueError("ANTHROPIC_API_KEY not found")
 
+        # Brave Search API (replacing Google Custom Search)
+        self.brave_api_key = os.environ.get("BRAVE_API_KEY")
+
+        # Keep Google API keys for backward compatibility (deprecated)
         self.google_api_key = google_api_key or os.environ.get("GOOGLE_API_KEY")
         self.google_cx = google_cx or os.environ.get("GOOGLE_CX")
 
-        if not self.google_api_key or not self.google_cx:
-            safe_print("⚠️  Google Custom Search credentials not found")
-            safe_print("   Set GOOGLE_API_KEY and GOOGLE_CX environment variables")
+        if not self.brave_api_key:
+            safe_print("⚠️  Brave Search API key not found")
+            safe_print("   Set BRAVE_API_KEY environment variable")
             safe_print("   Falling back to Claude-only mode")
+            if self.google_api_key and self.google_cx:
+                safe_print("   Note: Google Custom Search API is deprecated for new users")
 
         try:
             self.client = Anthropic(api_key=self.api_key)
@@ -302,52 +308,57 @@ class KeywordCurator:
                 "リコール発表 返金対応なし"
             ]
 
-        # If no Google Custom Search API, skip search results
-        if not self.google_api_key or not self.google_cx:
-            safe_print("  🚨 CRITICAL WARNING: Google Custom Search not configured")
+        # If no Brave Search API, skip search results
+        if not self.brave_api_key:
+            safe_print("  🚨 CRITICAL WARNING: Brave Search API not configured")
             safe_print("  📌 References will NOT be generated for keywords!")
-            safe_print("  📌 Set GOOGLE_API_KEY and GOOGLE_CX environment variables")
-            safe_print("  📌 OR: Add them as GitHub Secrets for automated workflows\n")
+            safe_print("  📌 Set BRAVE_API_KEY environment variable")
+            safe_print("  📌 OR: Add it as GitHub Secret for automated workflows\n")
             self.search_results = []
             return "\n\n".join([f"Trending: {q}" for q in search_queries[:30]])
 
         all_results = []
         for query in search_queries:
             try:
-                url = "https://www.googleapis.com/customsearch/v1"
+                # Brave Search API endpoint
+                url = "https://api.search.brave.com/res/v1/web/search"
+                headers = {
+                    "Accept": "application/json",
+                    "X-Subscription-Token": self.brave_api_key
+                }
                 params = {
-                    "key": self.google_api_key,
-                    "cx": self.google_cx,
                     "q": query,
-                    "num": 2,  # Get top 2 results per query (21 × 2 = 42 queries)
-                    "dateRestrict": "d7",  # Last 7 days only (최신 뉴스)
-                    "sort": "date"  # Sort by date (최신순)
+                    "count": 2,  # Get top 2 results per query
+                    "freshness": "pw"  # Past week (최신 뉴스)
                 }
 
-                # Add delay to avoid rate limiting (max 1 QPS)
-                time.sleep(1.0)
+                # Add delay to avoid rate limiting
+                time.sleep(0.5)
 
                 verify_ssl = certifi.where() if certifi else True
-                response = requests.get(url, params=params, verify=verify_ssl)
+                response = requests.get(url, headers=headers, params=params, verify=verify_ssl)
                 response.raise_for_status()
 
                 data = response.json()
 
-                if "items" in data:
+                # Brave API returns results in "web" -> "results" structure
+                web_results = data.get("web", {}).get("results", [])
+
+                if web_results:
                     # Detect intent signals for this query
                     signals = self.detect_intent_signals(query)
 
-                    for item in data["items"]:
+                    for item in web_results:
                         all_results.append({
                             "query": query,
                             "signals": signals,  # Add intent signals
                             "title": item.get("title", ""),
-                            "snippet": item.get("snippet", ""),
-                            "link": item.get("link", ""),
-                            "source": item.get("displayLink", "")  # Add source domain
+                            "snippet": item.get("description", ""),  # Brave uses "description" not "snippet"
+                            "link": item.get("url", ""),  # Brave uses "url" not "link"
+                            "source": item.get("url", "").split("/")[2] if item.get("url") else ""  # Extract domain
                         })
 
-                safe_print(f"  ✓ Fetched {len(data.get('items', []))} results for: {query}")
+                safe_print(f"  ✓ Fetched {len(web_results)} results for: {query}")
 
             except requests.exceptions.Timeout:
                 safe_print(f"  ⚠️  Timeout fetching results for '{query[:50]}...'")
@@ -356,9 +367,9 @@ class KeywordCurator:
                 status_code = e.response.status_code if e.response else 'unknown'
                 safe_print(f"  ⚠️  HTTP error ({status_code}) for '{query[:50]}...'")
                 if status_code == 403:
-                    safe_print(f"     ⚠️  Google API Access Forbidden - check API key and billing status")
+                    safe_print(f"     ⚠️  Brave API Access Forbidden - check API key")
                 elif status_code == 429:
-                    safe_print(f"     Rate limit exceeded - consider adding longer delays")
+                    safe_print(f"     Rate limit exceeded (2000/month limit)")
                 continue
             except json.JSONDecodeError:
                 safe_print(f"  ⚠️  Invalid JSON response for '{query[:50]}...'")

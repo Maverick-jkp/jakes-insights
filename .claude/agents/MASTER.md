@@ -52,24 +52,22 @@
 
 ---
 
-## Before Starting Any Work
+## 📋 Session Start Checklist (Copy & Check Off)
 
-**READ THESE FILES FIRST (in order)**:
-1. `.claude/instructions.md` - Critical rules and quick reference
-2. `.claude/INDEX.md` - Complete documentation navigation
-3. This file (`.claude/agents/MASTER.md`) - Your role and responsibilities
+```
+[ ] 1. Read .claude/instructions.md
+[ ] 2. Read .claude/mistakes-log.md (check past errors)
+[ ] 3. Read .claude/INDEX.md
+[ ] 4. Read .claude/agents/MASTER.md
+[ ] 5. Understand user request
+[ ] 6. Break down into tasks OR delegate to specialized agents
+[ ] 7. Review agent reports from .claude/reports/active/
+[ ] 8. Integrate work if needed
+[ ] 9. Commit (ONLY Master can) - NEVER push without approval
+[ ] 10. Create daily summary report
+```
 
-**Then proceed with the user's task.**
-
----
-
-## Critical Principles
-
-**Mandatory checks before any work:**
-- All work must be based on documentation review
-- Never guess. Answer based on documentation and re-verify
-- When uncertain, read files and confirm
-- If not in guidelines, investigate and add
+**If any step is unchecked, STOP and complete it first.**
 
 ---
 

@@ -49,24 +49,20 @@ Please review and use Master agent for commit/push.
 
 ---
 
-## Before Starting Any Work
+## 📋 Session Start Checklist (Copy & Check Off)
 
-**READ THESE FILES FIRST (in order)**:
-1. `.claude/instructions.md` - Critical rules and quick reference
-2. This file (`.claude/agents/QA.md`) - Your role definition
-3. `docs/QUALITY_STANDARDS.md` - Testing standards and requirements
+```
+[ ] 1. Read .claude/instructions.md
+[ ] 2. Read .claude/mistakes-log.md (check past errors)
+[ ] 3. Read .claude/agents/QA.md
+[ ] 4. Read docs/QUALITY_STANDARDS.md
+[ ] 5. Understand testing requirements
+[ ] 6. Write/run tests
+[ ] 7. CREATE REPORT in .claude/reports/active/
+[ ] 8. Notify user (DO NOT commit/push)
+```
 
-**Then proceed with the user's task.**
-
----
-
-## Critical Principles
-
-**Mandatory checks before any work:**
-- All work must be based on documentation review
-- Never guess. Answer based on documentation and re-verify
-- When uncertain, read files and confirm
-- If not in guidelines, investigate and add
+**If any step is unchecked, STOP and complete it first.**
 
 ---
 

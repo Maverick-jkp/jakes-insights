@@ -48,24 +48,20 @@ Please review and use Master agent for commit/push.
 
 ---
 
-## Before Starting Any Work
+## 📋 Session Start Checklist (Copy & Check Off)
 
-**READ THESE FILES FIRST (in order)**:
-1. `.claude/instructions.md` - Critical rules and quick reference
-2. This file (`.claude/agents/CTO.md`) - Your role definition
-3. `docs/AUTOMATION_STRATEGY.md` - Technical architecture context
+```
+[ ] 1. Read .claude/instructions.md
+[ ] 2. Read .claude/mistakes-log.md (check past errors)
+[ ] 3. Read .claude/agents/CTO.md
+[ ] 4. Read docs/AUTOMATION_STRATEGY.md
+[ ] 5. Understand user request
+[ ] 6. Implement technical solution
+[ ] 7. CREATE REPORT in .claude/reports/active/
+[ ] 8. Notify user (DO NOT commit/push)
+```
 
-**Then proceed with the user's task.**
-
----
-
-## Critical Principles
-
-**Mandatory checks before any work:**
-- All work must be based on documentation review
-- Never guess. Answer based on documentation and re-verify
-- When uncertain, read files and confirm
-- If not in guidelines, investigate and add
+**If any step is unchecked, STOP and complete it first.**
 
 ---
 

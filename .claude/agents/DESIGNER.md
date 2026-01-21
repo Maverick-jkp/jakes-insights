@@ -48,24 +48,28 @@ Please review and use Master agent for commit/push.
 
 ---
 
-## Before Starting Any Work
+## 📋 Session Start Checklist (Copy & Check Off)
 
-**READ THESE FILES FIRST (in order)**:
-1. `.claude/instructions.md` - Critical rules and quick reference
-2. This file (`.claude/agents/DESIGNER.md`) - Your role definition
-3. `docs/DESIGN_SYSTEM.md` - Design standards and guidelines
+```
+[ ] 1. Read .claude/instructions.md
+[ ] 2. Read .claude/agents/DESIGNER.md
+[ ] 3. Read docs/DESIGN_SYSTEM.md
+[ ] 4. Understand user request
+[ ] 5. Implement changes
+[ ] 6. CREATE REPORT in .claude/reports/active/
+[ ] 7. Notify user (DO NOT commit/push)
+```
 
-**Then proceed with the user's task.**
+**If any step is unchecked, STOP and complete it first.**
 
 ---
 
 ## Critical Principles
 
-**Mandatory checks before any work:**
-- All work must be based on documentation review
-- Never guess. Answer based on documentation and re-verify
-- When uncertain, read files and confirm
-- If not in guidelines, investigate and add
+**Never guess - always verify:**
+- Use WebFetch for actual website
+- Use Bash/Glob for file counts
+- Never say "probably" or "usually" without checking
 
 ### Website Analysis Protocol
 
@@ -244,75 +248,17 @@ Please review and use Master agent for commit/push.
 
 ---
 
-## Critical Rules
+## Quality Standards
 
-### Agent Work Principles
+### Design
+- **Consistency**: Reuse patterns, follow design tokens
+- **Accessibility**: WCAG 2.1 AA minimum
+- **Performance**: Lighthouse >90, CLS <0.1
 
-1. **No Commit or Push**
-   - Designer agent never commits or pushes
-   - After work completion, report to user and guide to use Master for commit/push
-
-2. **Follow Guidelines**
-   - Always review instructions.md and guidelines before work
-   - Follow design system guidelines
-
-3. **Ask When Uncertain**
-   - Don't work around conflicts - ask first
-   - Confirm with user when design decisions are uncertain
-
-4. **Document Error Patterns**
-   - Record repeated mistakes in instructions.md and guidelines
-   - Reflect design lessons in design system documentation
-
-### Design Changes
-
-1. **Consider User Impact**
-   - Minimize breaking changes
-   - Progressive enhancement
-   - Browser compatibility check
-
-2. **Performance First**
-   - Evaluate performance impact of all design decisions
-   - Maintain Lighthouse score (>90)
-   - Image optimization required
-
-3. **Accessibility Required**
-   - Never convey information by color alone
-   - Sufficient color contrast
-   - Keyboard navigation support
-
-### Code Quality
-
-- **HTML**: Semantic tags, meaningful classes, proper ARIA
-- **CSS**: BEM/utility classes, minimal duplication, avoid !important
-- **Responsive**: Test on all devices, verify touch interactions
-
----
-
-## Work Report Requirements
-
-**After completing all work, you must**:
-
-1. **Create work report (in English)**
-   - File path: `.claude/reports/active/designer-{task-name}-{YYYY-MM-DD}.md`
-   - Document work details, changes, design validation results in English
-   - See template: `.claude/templates/agent-report-template.md`
-
-2. **Notify user**:
-   ```
-   Work completed.
-
-   Report: .claude/reports/active/designer-{task-name}-{YYYY-MM-DD}.md
-   ```
-
-3. **Work completion protocol**:
-   - Create completion report in `.claude/reports/active/` FIRST
-   - Notify user with report location
-   - DO NOT commit or push (User or Master handles this)
-
-4. **Report lifecycle**:
-   - During work: Create in `active/`
-   - After Master integration: Master moves to `archive/YYYY-MM/`
+### Code
+- **HTML**: Semantic, proper ARIA
+- **CSS**: Minimal duplication, no !important
+- **Responsive**: Test all breakpoints
 
 ---
 

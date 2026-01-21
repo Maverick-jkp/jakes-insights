@@ -102,6 +102,7 @@ jobs:
 
       - name: AI Review
         if: github.event.inputs.skip_review != 'true'
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |

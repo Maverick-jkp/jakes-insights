@@ -1208,10 +1208,25 @@ image: "{image_path}"
                 ref_pattern = r'\n## (?:References?|参考(?:文献|資料)|참고자료)\n.*?(?=\n## |\Z)'
                 content = re.sub(ref_pattern, '', content, flags=re.DOTALL)
                 safe_print(f"  🗑️  Removed References section with fake URLs")
+                has_references = False  # Mark as no valid references
             else:
                 safe_print(f"  ✅ References section validated ({len(urls_in_content)} URLs)")
-        else:
-            safe_print(f"  ℹ️  No References section found (skipping)")
+
+        # If no valid References section exists, add from queue
+        if not has_references and topic.get('references'):
+            references = topic['references']
+            safe_print(f"  ℹ️  No References section in content, adding from queue ({len(references)} refs)")
+
+            # Build References section
+            ref_section = f"\n\n{ref_header}\n\n"
+            for i, ref in enumerate(references, 1):
+                ref_section += f"{i}. [{ref['title']}]({ref['url']})\n"
+
+            # Append to content
+            content = content.rstrip() + ref_section
+            safe_print(f"  ✅ Added {len(references)} references from queue")
+        elif not has_references:
+            safe_print(f"  ℹ️  No references available (neither in content nor queue)")
 
         # Write file with hero image at top
         with open(filepath, 'w', encoding='utf-8') as f:

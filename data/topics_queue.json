@@ -6,7 +6,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 5,
-      "status": "in_progress",
+      "status": "completed",
       "created_at": "2026-01-22T01:48:08.506572",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -26,7 +26,8 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T16:48:57.668000+00:00"
+      "reserved_at": "2026-01-21T16:48:57.668000+00:00",
+      "completed_at": "2026-01-21T17:26:51.754830+00:00"
     },
     {
       "id": "115-ko-entertainment-전민기",
@@ -34,7 +35,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 5,
-      "status": "in_progress",
+      "status": "completed",
       "created_at": "2026-01-22T01:48:08.506579",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -54,7 +55,8 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T16:48:57.668000+00:00"
+      "reserved_at": "2026-01-21T16:48:57.668000+00:00",
+      "completed_at": "2026-01-21T17:28:09.588482+00:00"
     },
     {
       "id": "119-ja-lifestyle-しゃぶ葉",
@@ -62,7 +64,7 @@
       "category": "lifestyle",
       "lang": "ja",
       "priority": 5,
-      "status": "in_progress",
+      "status": "completed",
       "created_at": "2026-01-22T01:48:08.506606",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82,7 +84,8 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T16:48:57.668000+00:00"
+      "reserved_at": "2026-01-21T16:48:57.668000+00:00",
+      "completed_at": "2026-01-21T17:29:23.457368+00:00"
     },
     {
       "id": "120-ja-entertainment-SixTONES",

@@ -57,7 +57,11 @@
       "Bash(kill:*)",
       "Bash(chmod:*)",
       "Bash(xargs rm:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(xargs:*)",
+      "Bash(git log:*)",
+      "Bash(gh api:*)",
+      "Bash(cat:*)"
     ]
   }
 }

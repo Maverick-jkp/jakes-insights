@@ -144,9 +144,9 @@ jobs:
                 # Commit locally first
                 git commit -m "🤖 Auto-generated content: $FILES_COUNT posts - Quality Gate PASSED"
 
-                # Pull latest changes and rebase to avoid conflicts
+                # Pull latest changes with merge strategy (not rebase) to avoid conflicts
                 echo "🔄 Pulling latest changes before push..."
-                git pull --rebase origin main
+                git pull --no-rebase origin main || true
 
                 # Push to main with retry logic
                 MAX_RETRIES=3

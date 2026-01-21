@@ -73,6 +73,13 @@ class TopicQueue:
         """
         data = self._load_queue()
 
+        # Get completed keywords to prevent duplicates
+        completed_keywords = {
+            (t['keyword'].lower(), t['lang']): t['id']
+            for t in data['topics']
+            if t['status'] == 'completed'
+        }
+
         # Find pending topics sorted by priority (high to low) and created_at
         pending = [
             t for t in data['topics']
@@ -84,7 +91,13 @@ class TopicQueue:
         reserved = []
         now = datetime.now(timezone.utc).isoformat()
 
-        for topic in pending[:count]:
+        for topic in pending[:count * 2]:  # Check more topics to account for duplicates
+            # Skip if already completed for same keyword+lang
+            topic_key = (topic['keyword'].lower(), topic['lang'])
+            if topic_key in completed_keywords:
+                print(f"⚠️  Skipping duplicate: {topic['keyword']} ({topic['lang']}) - already completed as {completed_keywords[topic_key]}")
+                continue
+
             # Validate topic data before reserving
             errors = validate_topic_data(topic)
             if errors:
@@ -96,6 +109,10 @@ class TopicQueue:
             topic['reserved_at'] = now
             topic['retry_count'] = topic.get('retry_count', 0)
             reserved.append(topic)
+
+            # Stop when we have enough topics
+            if len(reserved) >= count:
+                break
 
         self._save_queue(data)
         return reserved

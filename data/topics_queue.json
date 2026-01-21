@@ -93,7 +93,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 4,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T01:48:08.506613",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -112,7 +112,8 @@
           "source": "www.youtube.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "completed_at": "2026-01-22T03:04:20+09:00"
     },
     {
       "id": "123-en-lifestyle-james-beard-semifina",
@@ -969,6 +970,33 @@
           "title": "しゃぶ葉、リュウジさん＆安元洋貴さんとコラボ「背徳 至高のグルメフェア」を実施",
           "url": "https://gourmet.watch.impress.co.jp/docs/news/2079600.html",
           "source": "gourmet.watch.impress.co.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "154-ko-society-장동혁",
+      "keyword": "장동혁",
+      "category": "society",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-22T03:41:48.041141",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "당대표의 위험한 단식 상황을 확인하지 않으면 정치적 혼란과 책임 공방을 놓칠 수 있음",
+      "angle": "정치적 극단주의와 건강 위험성의 관점에서 접근",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "장동혁 (정치인) - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EB%8F%99%ED%98%81_(%EC%A0%95%EC%B9%98%EC%9D%B8)",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "장동혁 단식 7일째 … 의총서 중단 권고 뜻 모았지만 끝내 거부 | Save Internet 뉴데일리",
+          "url": "https://www.newdaily.co.kr/site/data/html/2026/01/21/2026012100351.html",
+          "source": "www.newdaily.co.kr"
         }
       ],
       "expiry_days": 3

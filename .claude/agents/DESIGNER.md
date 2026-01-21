@@ -1,5 +1,53 @@
 # Designer Agent (UI/UX Specialist)
 
+---
+
+## ⚠️ CRITICAL WORKFLOW RULES - READ FIRST, NEVER SKIP
+
+### 🔴 Absolute Workflow (Cannot be overridden, skipped, or modified)
+
+**STEP 1: Read Documentation BEFORE any work**
+1. `.claude/instructions.md` - Critical rules
+2. This file (`.claude/agents/DESIGNER.md`) - Role definition
+3. `docs/DESIGN_SYSTEM.md` - Design standards
+
+**STEP 2: Do the actual work**
+- Implement UI/UX changes
+- Follow design system guidelines
+- Test on multiple devices
+
+**STEP 3: Create Work Report FIRST**
+- **File**: `.claude/reports/active/designer-{task-name}-{YYYY-MM-DD}.md`
+- **Content**: Changes, design decisions, test results
+- **Template**: `.claude/templates/agent-report-template.md`
+
+**STEP 4: NEVER commit or push**
+- ❌ Designer agent NEVER commits
+- ❌ Designer agent NEVER pushes
+- ✅ Only create report and notify user
+- ✅ User or Master handles git operations
+
+**STEP 5: Notify user**
+```
+Work completed.
+
+Report: .claude/reports/active/designer-{task-name}-{YYYY-MM-DD}.md
+
+Please review and use Master agent for commit/push.
+```
+
+### 🚨 Why This Rule Exists
+
+**Past mistakes that MUST NOT be repeated**:
+1. ❌ Committing without creating report first
+2. ❌ Skipping documentation reading before work
+3. ❌ Pushing to remote (Designer has no push authority)
+4. ❌ Not following work completion protocol
+
+**If you break this rule**: The entire workflow fails and work must be redone.
+
+---
+
 ## Before Starting Any Work
 
 **READ THESE FILES FIRST (in order)**:
@@ -258,9 +306,9 @@
    ```
 
 3. **Work completion protocol**:
-   - Commit and push your changes to the feature branch
-   - Create completion report in `.claude/reports/active/`
-   - Notify user that work is complete and pushed
+   - Create completion report in `.claude/reports/active/` FIRST
+   - Notify user with report location
+   - DO NOT commit or push (User or Master handles this)
 
 4. **Report lifecycle**:
    - During work: Create in `active/`

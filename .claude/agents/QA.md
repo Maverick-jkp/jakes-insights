@@ -1,5 +1,54 @@
 # QA Agent (Quality Assurance)
 
+---
+
+## ⚠️ CRITICAL WORKFLOW RULES - READ FIRST, NEVER SKIP
+
+### 🔴 Absolute Workflow (Cannot be overridden, skipped, or modified)
+
+**STEP 1: Read Documentation BEFORE any work**
+1. `.claude/instructions.md` - Critical rules
+2. This file (`.claude/agents/QA.md`) - Role definition
+3. `docs/QUALITY_STANDARDS.md` - Testing standards
+
+**STEP 2: Do the actual work**
+- Write/update tests
+- Run test suites
+- Analyze coverage
+- Identify quality issues
+
+**STEP 3: Create Work Report FIRST**
+- **File**: `.claude/reports/active/qa-{task-name}-{YYYY-MM-DD}.md`
+- **Content**: Test results, coverage metrics, issues found
+- **Template**: `.claude/templates/agent-report-template.md`
+
+**STEP 4: NEVER commit or push**
+- ❌ QA agent NEVER commits
+- ❌ QA agent NEVER pushes
+- ✅ Only create report and notify user
+- ✅ User or Master handles git operations
+
+**STEP 5: Notify user**
+```
+Work completed.
+
+Report: .claude/reports/active/qa-{task-name}-{YYYY-MM-DD}.md
+
+Please review and use Master agent for commit/push.
+```
+
+### 🚨 Why This Rule Exists
+
+**Past mistakes that MUST NOT be repeated**:
+1. ❌ Committing without creating report first
+2. ❌ Skipping documentation reading before work
+3. ❌ Pushing to remote (QA has no push authority)
+4. ❌ Not following work completion protocol
+
+**If you break this rule**: The entire workflow fails and work must be redone.
+
+---
+
 ## Before Starting Any Work
 
 **READ THESE FILES FIRST (in order)**:

@@ -59,5 +59,64 @@ All agents MUST review this file at session start.
 
 ---
 
+## 2026-01-22: System Overhaul - Documentation Consolidation
+
+**What happened**: After web research on AI agent best practices, discovered that our multi-session collaboration kept failing despite extensive documentation (~1500+ lines).
+
+**Rule violations pattern**:
+- Designer committed without report (2026-01-22)
+- Agents repeatedly skipped "Before Work" sections
+- Session start checklists added but compliance uncertain
+- Parallel sessions caused incompatible work
+
+**Root cause analysis**:
+1. **Cognitive overload**: ~1500+ lines of documentation too long (industry standard: < 500 lines)
+2. **Documentation-based enforcement**: Relying on agents to voluntarily read files (unreliable)
+3. **No persistent memory**: Each session starts fresh, agents forget context
+4. **Parallel sessions**: Without shared memory, multiple agents produce incompatible work
+
+**Industry best practices research findings**:
+- Claude Memory Tool: 39% performance improvement with persistent memory
+- CLAUDE.md pattern: Single file < 500 lines, auto-loaded by system
+- Sequential workflow: Master orchestrates one agent at a time
+- Explicit context passing: Master tells agents what they need (don't rely on reading)
+
+**Major system changes implemented**:
+1. ✅ Created `/CLAUDE.md` (450 lines) - single source of truth
+2. ✅ Archived old agent docs (~1500 lines) to `.claude/archive/agents-v3/`
+3. ✅ Established sequential workflow pattern (Master → Agent → Master)
+4. ✅ Created `.claude/session-state.json` for session continuity
+5. ✅ Added git pre-commit hook (warns if no reports exist)
+6. ✅ Defined explicit context passing protocol
+
+**What changed for agents**:
+
+**Master Agent**:
+- MUST read: `/CLAUDE.md`, `.claude/mistakes-log.md`, `.claude/session-state.json`
+- MUST pass explicit context to subagents (don't rely on them reading)
+- MUST orchestrate sequentially (one agent at a time)
+- ONLY agent with commit authority
+
+**Specialized Agents (Designer/CTO/QA)**:
+- Will RECEIVE explicit context from Master (don't read docs independently)
+- Focus on assigned task only
+- Create report and return to Master
+- NEVER commit or push
+
+**Lesson learned**:
+- **Documentation length matters**: 1500 lines → 450 lines
+- **System enforcement > agent discipline**: Git hooks + explicit context > hoping agents read
+- **Sequential > parallel**: Without shared memory, sequential prevents conflicts
+- **Less is more**: Consolidation improves compliance
+
+**Success metrics** (30-day evaluation):
+- Target: 100% report creation compliance
+- Target: Zero unauthorized commits
+- Target: 100% sequential workflow adherence
+- Current: System just implemented (2026-01-22)
+
+---
+
 **Last Updated**: 2026-01-22
 **Maintained By**: All agents
+**System Version**: 4.0

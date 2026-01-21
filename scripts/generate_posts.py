@@ -20,6 +20,10 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional
 
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
 # Add scripts to path
 sys.path.insert(0, str(Path(__file__).parent))
 

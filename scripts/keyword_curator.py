@@ -19,6 +19,10 @@ from pathlib import Path
 from typing import Dict, List
 import requests
 
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
 try:
     import certifi
 except ImportError:

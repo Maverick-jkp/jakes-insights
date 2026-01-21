@@ -106,8 +106,8 @@ Tested with non-controversial query:
 Confirmed .env loaded:
 ```bash
 export $(cat .env | grep -v '^#' | xargs)
-echo $GOOGLE_API_KEY  # Shows: AIzaSyAY5nSO_OHR6SmFgNx6mnGlVXfygre720o
-echo $GOOGLE_CX       # Shows: 832db2b9e44a74210
+echo $GOOGLE_API_KEY  # Shows: AIza...REDACTED
+echo $GOOGLE_CX       # Shows: 832db...REDACTED
 ```
 
 **Result**: Keys present and valid format

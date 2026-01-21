@@ -40,6 +40,13 @@ except ImportError:
     safe_print("Install with: pip install requests")
     sys.exit(1)
 
+try:
+    import certifi
+except ImportError:
+    safe_print("Warning: certifi not installed - SSL verification may fail on Windows")
+    safe_print("Install with: pip install certifi")
+    certifi = None
+
 
 # System prompts for different languages
 SYSTEM_PROMPTS = {
@@ -955,7 +962,9 @@ Return improved version (body only, no title):""",
 
             safe_print(f"  🔍 Searching Unsplash for: {query}")
 
-            response = requests.get(url, headers=headers, params=params, timeout=10)
+            # Use certifi for SSL verification (Windows compatibility)
+            verify_ssl = certifi.where() if certifi else True
+            response = requests.get(url, headers=headers, params=params, timeout=10, verify=verify_ssl)
             response.raise_for_status()
 
             data = response.json()
@@ -1052,19 +1061,27 @@ Return improved version (body only, no title):""",
 
             # Trigger Unsplash download tracking (required by API terms)
             if image_info.get('download_url'):
+                verify_ssl = certifi.where() if certifi else True
                 requests.get(
                     image_info['download_url'],
                     headers={"Authorization": f"Client-ID {self.unsplash_key}"},
-                    timeout=5
+                    timeout=5,
+                    verify=verify_ssl
                 )
 
             # Download optimized image (1200px width, quality 85)
-            # Use Unsplash's image optimization parameters
-            photo_id = image_info.get('image_id', '')
-            optimized_url = f"https://images.unsplash.com/{photo_id}?w=1200&q=85&fm=jpg"
+            # Use Unsplash's regular URL which already includes optimization
+            download_url = image_info.get('url', '')
+            # Add additional optimization parameters
+            if '?' in download_url:
+                optimized_url = f"{download_url}&w=1200&q=85&fm=jpg"
+            else:
+                optimized_url = f"{download_url}?w=1200&q=85&fm=jpg"
 
             safe_print(f"  📥 Downloading optimized image (1200px, q85)...")
-            response = requests.get(optimized_url, timeout=15)
+            # Use certifi for SSL verification (Windows compatibility)
+            verify_ssl = certifi.where() if certifi else True
+            response = requests.get(optimized_url, timeout=15, verify=verify_ssl)
             response.raise_for_status()
 
             # Save image

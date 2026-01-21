@@ -836,7 +836,22 @@ Return improved version (body only, no title):""",
 
             # Translation dictionary for meaningful keywords
             keyword_translations = {
-                # Korean
+                # Korean - AI/Jobs/Employment
+                'AI': 'artificial intelligence',
+                '인공지능': 'artificial intelligence',
+                '대체': 'replacement automation',
+                '일자리': 'job employment work',
+                '실업': 'unemployment jobless',
+                '직업': 'occupation career profession',
+                '취업': 'employment hiring recruitment',
+                '자동화': 'automation robot',
+                '기술': 'technology tech',
+                '디지털': 'digital technology',
+                '로봇': 'robot automation',
+                '미래': 'future',
+                '변화': 'change transformation',
+                '위험': 'risk danger',
+                # Korean - Finance/Business
                 '나라사랑카드': 'patriot card credit card',
                 '카드': 'card credit',
                 '연령': 'age limit',
@@ -851,12 +866,25 @@ Return improved version (body only, no title):""",
                 '정부': 'government policy',
                 '신청': 'application registration',
                 '혜택': 'benefit advantage',
+                # Korean - Entertainment/Society
                 '사과문': 'apology statement',
                 '팬': 'fan supporter',
                 '등돌림': 'backlash criticism',
                 '스마트폰': 'smartphone mobile',
                 '건강': 'health wellness',
-                # Japanese
+                # Japanese - AI/Jobs/Employment
+                '人工知能': 'artificial intelligence',
+                '失業': 'unemployment jobless',
+                'リスク': 'risk danger threat',
+                '職業': 'occupation job',
+                '代替': 'replacement substitute',
+                '雇用': 'employment hiring',
+                '自動化': 'automation robot',
+                'デジタル': 'digital technology',
+                'ロボット': 'robot automation',
+                '未来': 'future',
+                '変化': 'change transformation',
+                # Japanese - Finance/Business
                 '奨学金': 'scholarship student loan',
                 '返済': 'repayment debt',
                 '免除': 'exemption forgiveness',
@@ -878,11 +906,18 @@ Return improved version (body only, no title):""",
                 if ko_word in clean_keyword:
                     translated_keywords.append(en_translation)
 
-            # If no translation found, extract meaningful words (skip common noise)
+            # If no translation found, extract meaningful words (skip common noise and non-ASCII)
             if not translated_keywords:
                 noise_words = ['the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for']
                 for word in title_words[:3]:  # Take first 3 words
-                    if len(word) > 2 and word.lower() not in noise_words:
+                    # Filter out non-ASCII words to prevent non-English queries
+                    try:
+                        word.encode('ascii')
+                        is_ascii = True
+                    except UnicodeEncodeError:
+                        is_ascii = False
+
+                    if is_ascii and len(word) > 2 and word.lower() not in noise_words:
                         translated_keywords.append(word)
 
             # Add category context
@@ -898,7 +933,12 @@ Return improved version (body only, no title):""",
             }
 
             # Build flexible, contextual query
-            base_keywords = ' '.join(translated_keywords[:2]) if translated_keywords else clean_keyword
+            if translated_keywords:
+                base_keywords = ' '.join(translated_keywords[:2])
+            else:
+                # Fallback to pure category context if no English keywords found
+                base_keywords = category_context.get(category, 'technology')
+
             context = category_context.get(category, category)
             query = f"{base_keywords} {context}".strip()
 

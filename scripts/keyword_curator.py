@@ -45,10 +45,23 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 너는 광고 수익 최적화를 위한 키워드 큐레이터다.
 아래 실시간 트렌드 검색 결과를 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
 
-실시간 트렌드 데이터:
-{trends_data}
+실시간 트렌드 데이터 (언어별로 구분됨):
 
-**중요: 위 트렌드 데이터의 Query를 그대로 keyword로 사용하라. 절대 재해석하거나 재작성하지 말 것.**
+🇺🇸 English (US) Trends:
+{trends_en}
+
+🇰🇷 Korean (KR) Trends:
+{trends_ko}
+
+🇯🇵 Japanese (JP) Trends:
+{trends_ja}
+
+**🔴 중요 규칙: 언어-키워드 매칭**
+1. English (US) 트렌드의 Query → language: "en"으로만 사용
+2. Korean (KR) 트렌드의 Query → language: "ko"로만 사용
+3. Japanese (JP) 트렌드의 Query → language: "ja"로만 사용
+4. **절대로 일본어 키워드를 한국어 게시물에 사용하거나, 한국어 키워드를 일본어 게시물에 사용하지 말 것**
+5. 위 트렌드 데이터의 Query를 그대로 keyword로 사용하라. 절대 재해석하거나 재작성하지 말 것.
 
 목표:
 한국어 / 영어 / 일본어 각각에서
@@ -228,8 +241,8 @@ class KeywordCurator:
 
         return signals if signals else ["GENERAL"]
 
-    def fetch_trending_from_rss(self) -> List[str]:
-        """Fetch trending topics from Google Trends RSS feeds"""
+    def fetch_trending_from_rss(self) -> Dict[str, List[str]]:
+        """Fetch trending topics from Google Trends RSS feeds grouped by language"""
         import xml.etree.ElementTree as ET
 
         rss_urls = {
@@ -238,7 +251,15 @@ class KeywordCurator:
             "JP": "https://trends.google.co.kr/trending/rss?geo=JP"
         }
 
-        trending_queries = []
+        # Map region to language
+        region_to_lang = {
+            "KR": "ko",
+            "US": "en",
+            "JP": "ja"
+        }
+
+        # Group trends by language
+        trends_by_lang = {"ko": [], "en": [], "ja": []}
 
         for geo, url in rss_urls.items():
             try:
@@ -252,12 +273,13 @@ class KeywordCurator:
                 # Find all items (trending topics)
                 items = root.findall('.//item')
 
+                lang = region_to_lang[geo]
                 for item in items[:5]:  # Top 5 per region (15 total)
                     title_elem = item.find('title')
                     if title_elem is not None and title_elem.text:
-                        trending_queries.append(title_elem.text.strip())
+                        trends_by_lang[lang].append(title_elem.text.strip())
 
-                safe_print(f"  ✓ Found {min(len(items), 5)} trends from {geo}")
+                safe_print(f"  ✓ Found {min(len(items), 5)} trends from {geo} → {lang}")
 
             except requests.exceptions.Timeout:
                 safe_print(f"  ⚠️  RSS fetch timeout for {geo}: Request took too long")
@@ -273,44 +295,57 @@ class KeywordCurator:
                 safe_print(f"  ⚠️  RSS fetch error for {geo}: {mask_secrets(str(e))}")
                 continue
 
-        return trending_queries
+        return trends_by_lang
 
-    def fetch_trending_topics(self) -> str:
-        """Fetch trending topics using Google Trends RSS feeds"""
+    def fetch_trending_topics(self) -> Dict[str, str]:
+        """Fetch trending topics using Google Trends RSS feeds, grouped by language"""
         safe_print(f"\n{'='*60}")
         safe_print(f"  🔥 Fetching REAL-TIME trending topics from Google Trends RSS...")
         safe_print(f"{'='*60}\n")
 
         # Try RSS feeds first (most reliable method)
-        search_queries = self.fetch_trending_from_rss()
+        trends_by_lang = self.fetch_trending_from_rss()
 
-        if search_queries:
-            safe_print(f"\n  🎉 Total {len(search_queries)} real-time trending topics from RSS!\n")
+        # Check if we got any trends
+        total_trends = sum(len(trends) for trends in trends_by_lang.values())
+
+        if total_trends > 0:
+            safe_print(f"\n  🎉 Total {total_trends} real-time trending topics from RSS!")
+            safe_print(f"     EN: {len(trends_by_lang['en'])}, KO: {len(trends_by_lang['ko'])}, JA: {len(trends_by_lang['ja'])}\n")
         else:
             safe_print("  ⚠️  RSS feeds failed. Falling back to pattern-based queries...\n")
-            # Fallback to pattern queries
-            search_queries = [
-                "account banned after update no response",
-                "service outage promised compensation denied",
-                "앱 업데이트 후 갑자기 먹통",
-                "アカウント停止 理由説明なし",
-                "class action deadline passed too late",
-                "refund promised but denied suddenly",
-                "집단소송 신청 마감 놓침",
-                "返金約束したが 拒否された",
-                "government support supposed to but denied",
-                "new policy suddenly stricter than announced",
-                "정부지원 조건 발표와 다름",
-                "政府支援 突然 条件厳しく",
-                "celebrity apology issued but backlash continues",
-                "idol agency promised explanation ignored fans",
-                "사과문 냈지만 논란 계속",
-                "謝罪文出したが 炎上続く",
-                "product recall announced but no refund",
-                "food contamination others got compensated only me",
-                "리콜 발표했는데 환불 거부",
-                "リコール発表 返金対応なし"
-            ]
+            # Fallback to pattern queries (grouped by language)
+            trends_by_lang = {
+                "en": [
+                    "account banned after update no response",
+                    "service outage promised compensation denied",
+                    "class action deadline passed too late",
+                    "refund promised but denied suddenly",
+                    "government support supposed to but denied",
+                    "new policy suddenly stricter than announced",
+                    "celebrity apology issued but backlash continues"
+                ],
+                "ko": [
+                    "앱 업데이트 후 갑자기 먹통",
+                    "집단소송 신청 마감 놓침",
+                    "정부지원 조건 발표와 다름",
+                    "사과문 냈지만 논란 계속",
+                    "리콜 발표했는데 환불 거부"
+                ],
+                "ja": [
+                    "アカウント停止 理由説明なし",
+                    "返金約束したが 拒否された",
+                    "政府支援 突然 条件厳しく",
+                    "謝罪文出したが 炎上続く",
+                    "リコール発表 返金対応なし"
+                ]
+            }
+
+        # Flatten for search queries (but keep language tracking)
+        all_queries = []
+        for lang, queries in trends_by_lang.items():
+            for query in queries:
+                all_queries.append((query, lang))
 
         # If no Brave Search API, skip search results
         if not self.brave_api_key:
@@ -319,10 +354,16 @@ class KeywordCurator:
             safe_print("  📌 Set BRAVE_API_KEY environment variable")
             safe_print("  📌 OR: Add it as GitHub Secret for automated workflows\n")
             self.search_results = []
-            return "\n\n".join([f"Trending: {q}" for q in search_queries[:30]])
+
+            # Format trends by language for prompt
+            trends_formatted = {}
+            for lang, queries in trends_by_lang.items():
+                trends_formatted[lang] = "\n".join([f"Query: {q}" for q in queries[:10]])
+
+            return trends_formatted
 
         all_results = []
-        for query in search_queries:
+        for query, query_lang in all_queries:
             try:
                 # Brave Search API endpoint
                 url = "https://api.search.brave.com/res/v1/web/search"
@@ -355,6 +396,7 @@ class KeywordCurator:
                     for item in web_results:
                         all_results.append({
                             "query": query,
+                            "query_lang": query_lang,  # Track which language this query belongs to
                             "signals": signals,  # Add intent signals
                             "title": item.get("title", ""),
                             "snippet": item.get("description", ""),  # Brave uses "description" not "snippet"
@@ -390,13 +432,20 @@ class KeywordCurator:
         # Store results for reference extraction
         self.search_results = all_results
 
-        # Format results for Claude
-        trends_summary = "\n\n".join([
-            f"Query: {r['query']}\nTitle: {r['title']}\nSnippet: {r['snippet']}\n"
-            for r in all_results
-        ])
+        # Format results for Claude, grouped by language
+        trends_by_lang_formatted = {"en": [], "ko": [], "ja": []}
+        for r in all_results:
+            lang = r.get('query_lang', 'en')
+            trends_by_lang_formatted[lang].append(
+                f"Query: {r['query']}\nTitle: {r['title']}\nSnippet: {r['snippet']}\n"
+            )
 
-        return trends_summary
+        # Convert to string format per language
+        trends_formatted = {}
+        for lang in ["en", "ko", "ja"]:
+            trends_formatted[lang] = "\n\n".join(trends_by_lang_formatted[lang][:10])  # Top 10 per language
+
+        return trends_formatted
 
     def filter_by_risk(self, candidates: List[Dict]) -> List[Dict]:
         """Filter out high-risk keywords automatically"""
@@ -470,14 +519,16 @@ class KeywordCurator:
 
         # Fetch trending topics from Google (store for reference extraction)
         self.search_results = []  # Store search results
-        trends_data = self.fetch_trending_topics()
+        trends_by_lang = self.fetch_trending_topics()
 
         # Calculate per-language count
         per_lang = count // 3  # Distribute evenly across 3 languages
 
-        # Generate prompt with trending data
+        # Generate prompt with trending data (grouped by language)
         prompt = CURATION_PROMPT_WITH_TRENDS.format(
-            trends_data=trends_data,
+            trends_en=trends_by_lang.get('en', 'No English trends available'),
+            trends_ko=trends_by_lang.get('ko', 'No Korean trends available'),
+            trends_ja=trends_by_lang.get('ja', 'No Japanese trends available'),
             count=count,
             per_lang=per_lang
         )
@@ -626,8 +677,41 @@ class KeywordCurator:
             except ValueError:
                 safe_print("⚠️  잘못된 형식입니다. 예: 1,3,5\n")
 
+    def _validate_keyword_language(self, keyword: str, language: str) -> bool:
+        """Validate that keyword matches the specified language"""
+        import unicodedata
+
+        def has_hangul(text):
+            """Check if text contains Korean characters"""
+            return any('\uac00' <= char <= '\ud7a3' for char in text)
+
+        def has_hiragana_katakana(text):
+            """Check if text contains Japanese characters"""
+            return any(
+                ('\u3040' <= char <= '\u309f') or  # Hiragana
+                ('\u30a0' <= char <= '\u30ff')     # Katakana
+                for char in text
+            )
+
+        def has_kanji_only(text):
+            """Check if text contains only Kanji/Chinese characters (could be Japanese)"""
+            return any('\u4e00' <= char <= '\u9fff' for char in text)
+
+        # Validation rules
+        if language == 'ko':
+            if has_hiragana_katakana(text) or (has_kanji_only(keyword) and not has_hangul(keyword)):
+                return False
+        elif language == 'ja':
+            if has_hangul(keyword):
+                return False
+        elif language == 'en':
+            if has_hangul(keyword) or has_hiragana_katakana(keyword):
+                return False
+
+        return True
+
     def add_to_queue(self, selected: List[Dict]):
-        """Add selected keywords to topic queue"""
+        """Add selected keywords to topic queue with language and duplicate validation"""
         if not selected:
             safe_print("선택된 키워드가 없습니다.")
             return
@@ -636,12 +720,35 @@ class KeywordCurator:
         safe_print(f"  💾 큐에 {len(selected)}개 키워드 추가 중...")
         safe_print(f"{'='*60}\n")
 
+        # Get existing keywords for duplicate check (case-insensitive)
+        existing_keywords = {t['keyword'].lower() for t in self.queue_data['topics']}
+
         # Get next ID
         existing_ids = [int(t['id'].split('-')[0]) for t in self.queue_data['topics'] if t['id'].split('-')[0].isdigit()]
         next_id = max(existing_ids) + 1 if existing_ids else 1
 
         added_count = 0
+        rejected_count = 0
         for candidate in selected:
+            # Validate keyword-language match
+            keyword = candidate.get('keyword', '')
+            language = candidate.get('language', 'en')
+
+            # Check for duplicate keyword
+            if keyword.lower() in existing_keywords:
+                safe_print(f"  🔴 REJECTED: Duplicate keyword")
+                safe_print(f"     Keyword: {keyword}")
+                safe_print(f"     Reason: Keyword already exists in queue")
+                rejected_count += 1
+                continue
+
+            if not self._validate_keyword_language(keyword, language):
+                safe_print(f"  🔴 REJECTED: Keyword-language mismatch")
+                safe_print(f"     Keyword: {keyword}")
+                safe_print(f"     Language: {language}")
+                safe_print(f"     Reason: Keyword contains characters from different language")
+                rejected_count += 1
+                continue
             # Generate topic ID
             topic_id = f"{next_id:03d}-{candidate['language']}-{candidate['category']}-{candidate['keyword'][:20].replace(' ', '-')}"
 
@@ -678,6 +785,8 @@ class KeywordCurator:
         self._save_queue()
 
         safe_print(f"\n✅ {added_count}개 키워드가 큐에 추가되었습니다!")
+        if rejected_count > 0:
+            safe_print(f"🔴 {rejected_count}개 키워드가 언어 불일치로 거부되었습니다!")
         safe_print(f"📊 Total topics in queue: {len(self.queue_data['topics'])}")
 
         # Show statistics

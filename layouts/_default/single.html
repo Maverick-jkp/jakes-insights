@@ -288,6 +288,7 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            border-radius: 0.5rem;
         }
 
         .related-card h4 {
@@ -622,9 +623,9 @@
                 {{ range . }}
                 <a href="{{ .Permalink }}" class="related-card">
                     <div class="related-thumbnail">
-                        {{ with .Resources.GetMatch "cover.*" }}
-                            {{ $thumb := .Fill "300x150 webp q85" }}
-                            <img src="{{ $thumb.RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+                        {{ $relatedPost := . }}
+                        {{ with $relatedPost.Params.image }}
+                            <img src="{{ . }}" alt="{{ $relatedPost.Title }}" loading="lazy">
                         {{ else }}
                             📄
                         {{ end }}

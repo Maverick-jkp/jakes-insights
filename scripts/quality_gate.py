@@ -125,6 +125,7 @@ class QualityGate:
         self._check_word_count(body, checks)
         self._check_ai_phrases(body, lang, checks)
         self._check_frontmatter(frontmatter, checks)
+        self._check_date_consistency(frontmatter, filepath, checks)
 
         # WARNING checks (don't fail, just warn)
         self._check_links(body, checks)
@@ -277,6 +278,65 @@ class QualityGate:
                 checks['warnings'].append(
                     f"Description length not optimal: {desc_len} chars (ideal: 120-160)"
                 )
+
+    def _check_date_consistency(self, frontmatter: Dict, filepath: Path, checks: Dict):
+        """Check year consistency between filename, frontmatter, and title"""
+        # Extract year from filename (format: YYYY-MM-DD-*.md)
+        filename = filepath.name
+        filename_year_match = re.match(r'(\d{4})-\d{2}-\d{2}', filename)
+
+        if not filename_year_match:
+            # No date in filename, skip this check
+            return
+
+        filename_year = int(filename_year_match.group(1))
+
+        # Extract year from frontmatter date
+        frontmatter_year = None
+        if 'date' in frontmatter:
+            date_str = frontmatter['date']
+            # Try to extract year from various date formats
+            date_year_match = re.match(r'(\d{4})', date_str)
+            if date_year_match:
+                frontmatter_year = int(date_year_match.group(1))
+
+        # Extract years from title
+        title_years = []
+        if 'title' in frontmatter:
+            title = frontmatter['title']
+            # Match 4-digit years (2020-2030 range)
+            title_year_matches = re.findall(r'20[2-3][0-9]', title)
+            title_years = [int(y) for y in title_year_matches]
+
+        # Validate consistency
+        errors = []
+
+        # Check if title years are older than filename year
+        if title_years:
+            oldest_title_year = min(title_years)
+            if oldest_title_year < filename_year:
+                errors.append(
+                    f"Title contains outdated year {oldest_title_year} "
+                    f"(e.g., '{oldest_title_year}年最新' or 'Latest {oldest_title_year}') "
+                    f"but filename is dated {filename_year}. "
+                    f"Update title to use {filename_year}."
+                )
+
+        # Check if frontmatter year mismatches filename year
+        if frontmatter_year and frontmatter_year != filename_year:
+            errors.append(
+                f"Frontmatter date year {frontmatter_year} doesn't match "
+                f"filename year {filename_year}"
+            )
+
+        # Add errors as critical failures
+        for error in errors:
+            checks['critical_failures'].append(f"Date mismatch: {error}")
+
+        # Add info
+        checks['info']['filename_year'] = filename_year
+        checks['info']['title_years'] = title_years if title_years else None
+        checks['info']['frontmatter_year'] = frontmatter_year
 
     def _check_links(self, body: str, checks: Dict):
         """Check for external links (WARNING only)"""

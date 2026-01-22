@@ -1119,7 +1119,7 @@
       "category": "lifestyle",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405295",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1138,7 +1138,9 @@
           "source": "www.bbc.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:22:11.800095+00:00"
     },
     {
       "id": "159-en-sports-sl-vs-eng",
@@ -1146,7 +1148,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405305",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1165,7 +1167,9 @@
           "source": "www.lokmattimes.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:18:14.232694+00:00"
     },
     {
       "id": "160-ko-sports-김진성",
@@ -1231,7 +1235,7 @@
       "category": "education",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405347",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1245,7 +1249,9 @@
           "source": "www.naewoeilbo.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:19:30.950647+00:00"
     },
     {
       "id": "163-ko-finance-우리은행",
@@ -1282,7 +1288,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405366",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1290,7 +1296,9 @@
       "angle": "사회 계층간 차별과 특권 문제",
       "competition_level": "low",
       "references": [],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:23:36.234682+00:00"
     },
     {
       "id": "165-ja-sports-熱海富士",
@@ -1298,7 +1306,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405375",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1317,7 +1325,9 @@
           "source": "www.youtube.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:21:01.148194+00:00"
     },
     {
       "id": "166-ja-entertainment-若隆景",
@@ -1325,7 +1335,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405384",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1344,7 +1354,9 @@
           "source": "www.youtube.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:25:25.948060+00:00"
     },
     {
       "id": "167-ja-lifestyle-sorana-cîrstea",
@@ -1352,7 +1364,7 @@
       "category": "lifestyle",
       "lang": "ja",
       "priority": 5,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405394",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1371,7 +1383,9 @@
           "source": "www.smh.com.au"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:28:22.612726+00:00"
     },
     {
       "id": "168-ja-sports-sl-vs-eng",
@@ -1379,7 +1393,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-22T17:56:05.405403",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1398,7 +1412,9 @@
           "source": "www.lokmattimes.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
+      "completed_at": "2026-01-22T10:26:56.078802+00:00"
     },
     {
       "id": "169-ja-finance-current-interest-rat",

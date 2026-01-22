@@ -769,10 +769,15 @@ Return improved version (body only, no title):""",
 
     def generate_title(self, content: str, keyword: str, lang: str) -> str:
         """Generate SEO-friendly title"""
+        # Get current year in KST
+        from datetime import datetime, timezone, timedelta
+        kst = timezone(timedelta(hours=9))
+        current_year = datetime.now(kst).year
+
         prompts = {
-            "en": f"Generate a catchy, SEO-friendly blog title (50-60 chars) for a post about '{keyword}'. Return ONLY the title, nothing else.",
-            "ko": f"'{keyword}'에 대한 블로그 글의 매력적이고 SEO 친화적인 제목을 생성하세요 (50-60자). 제목만 반환하세요.",
-            "ja": f"'{keyword}'に関するブログ記事の魅力的でSEOフレンドリーなタイトルを生成してください（50-60文字）。タイトルのみを返してください。"
+            "en": f"Generate a catchy, SEO-friendly blog title (50-60 chars) for a post about '{keyword}'. Return ONLY the title, nothing else.\n\nCRITICAL: Current year is {current_year}. If title includes year reference (like 'Latest YYYY' or 'YYYY Update'), use {current_year}, NOT past years like 2024 or 2025.",
+            "ko": f"'{keyword}'에 대한 블로그 글의 매력적이고 SEO 친화적인 제목을 생성하세요 (50-60자). 제목만 반환하세요.\n\n중요: 현재 연도는 {current_year}년입니다. 제목에 연도 표기(예: 'YYYY년 최신', 'YYYY년판')가 포함된다면, 반드시 {current_year}년을 사용하세요. 2024년이나 2025년 같은 과거 연도를 사용하지 마세요.",
+            "ja": f"'{keyword}'に関するブログ記事の魅力的でSEOフレンドリーなタイトルを生成してください（50-60文字）。タイトルのみを返してください。\n\n重要: 現在の年は{current_year}年です。タイトルに年の記載（例: 'YYYY年最新'や'YYYY年版'）を含む場合、必ず{current_year}年を使用してください。2024年や2025年のような過去の年を使用しないでください。"
         }
 
         response = self.client.messages.create(

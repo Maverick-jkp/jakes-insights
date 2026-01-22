@@ -1009,8 +1009,8 @@
             </a>
             {{ end }}
 
-            <!-- Post Cards Grid (6 cards, 3x2 grid) -->
-            {{ range after 1 (first 7 $currentLangPages) }}
+            <!-- Post Cards Grid (6 cards, 3x2 grid, skip Featured post) -->
+            {{ range after 1 $currentLangPages | first 6 }}
             <a href="{{ .Permalink }}" class="post-card">
                 <div class="post-card-thumbnail">
                     {{ with .Resources.GetMatch "cover.*" }}

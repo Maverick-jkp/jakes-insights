@@ -654,15 +654,17 @@ Write the complete blog post now (body only, no title or metadata):""",
    - Add empathy: "You've been there, right?"
    - Make it personal and relatable
 
-2. **Add Authenticity Markers**:
-   - Include phrases like "In my experience...", "Here's what surprised me..."
-   - Add failure acknowledgment: "I thought X would work, but..."
-   - Show vulnerability: "This isn't always the answer..."
+2. **Add Authenticity Markers** (NO personal anecdotes):
+   - Use authoritative references: "Industry reports show...", "According to recent data..."
+   - Add failure acknowledgment: "This approach can fail when..."
+   - Show balanced perspective: "This isn't always the answer..."
+   - AVOID: "In my experience...", "I spoke with...", "I thought..." (credibility issues on anonymous blogs)
 
 3. **Enhance Examples**:
-   - Make vague examples specific: "Many companies" → "A fintech startup I worked with"
-   - Add concrete details: names, numbers, outcomes
+   - Make vague examples specific: "Many companies" → "One fintech startup" or "A Silicon Valley tech company"
+   - Add concrete details: numbers, outcomes, timelines
    - Include what went WRONG, not just success stories
+   - AVOID: "I worked with", "I spoke to" → Use: "Case studies show", "Reports indicate"
 
 4. **Balance Perspective**:
    - Ensure there's a "When this doesn't work" section
@@ -695,15 +697,17 @@ Return improved version (body only, no title):""",
    - 공감 추가: "이런 경험 있으시죠?"
    - 개인적이고 공감 가능하게
 
-2. **진정성 마커 추가**:
-   - "제 경험상...", "의외로...", "놀랍게도..." 같은 표현
-   - 실패 인정: "처음엔 X가 될 줄 알았는데..."
+2. **정보 밀도 최우선** (한국 독자 = 빠른 정보 선호):
+   - 핵심 정보 먼저: 수치, 단계, 방법
+   - 실용 정보 즉시 제공: "계산법: 1) ~ 2) ~"
+   - "의외로...", "놀랍게도..." 같은 자연스러운 표현
    - 한계 언급: "항상 답은 아니에요..."
 
-3. **예시 구체화**:
-   - 추상적 예시를 구체적으로: "많은 회사들" → "한 핀테크 스타트업은"
-   - 구체적 디테일: 이름, 숫자, 결과
+3. **예시 구체화** (개인 경험 배제):
+   - 추상적 예시를 구체적으로: "많은 회사들" → "한 핀테크 스타트업은" 또는 "토스의 경우"
+   - 구체적 디테일: 숫자, 결과, 타임라인
    - 실패한 것도 포함: 성공만 말하지 말기
+   - 피할 것: "제 경험상", "제가 봤을 때" → 대신: "사례 연구에 따르면", "데이터는 보여줍니다"
 
 4. **균형잡힌 관점**:
    - "이런 경우엔 안 통해요" 섹션 확인/추가
@@ -736,15 +740,17 @@ Return improved version (body only, no title):""",
    - 共感を追加: "こんな経験ありませんか？"
    - 個人的で共感できるように
 
-2. **真実味マーカーの追加**:
-   - "私の経験では...", "意外にも...", "驚いたことに..." のような表現
-   - 失敗の認識: "最初はXがうまくいくと思ったのですが..."
+2. **結論ファースト + スペック優先** (日本読者の好み):
+   - 最初に結論: "結論：〇〇を選ぶべき理由"
+   - スペック表必須（Tech/Finance）: 比較表、数値データ
+   - "意外にも...", "驚いたことに..." のような自然な表現
    - 限界の言及: "これが常に答えとは限りません..."
 
-3. **例の具体化**:
-   - 曖昧な例を具体的に: "多くの企業" → "あるフィンテック企業では"
-   - 具体的な詳細: 名前、数字、結果
+3. **例の具体化** (個人経験排除):
+   - 曖昧な例を具体的に: "多くの企業" → "あるフィンテック企業" または "メルカリの事例"
+   - 具体的な詳細: 数字、結果、タイムライン
    - 失敗したことも含める: 成功だけ語らない
+   - 避けるべき: "私の経験では", "私が見たところ" → 代わりに: "ケーススタディによると", "データが示しています"
 
 4. **バランスの取れた視点**:
    - "こういう場合はうまくいきません" セクションを確認/追加

@@ -5,7 +5,7 @@ draft: false
 categories: ["lifestyle"]
 tags: ["casper", "ruud"]
 description: "Discover Casper Ruud's journey from promising junior to ATP star. Learn about the Norwegian tennis sensation's clay court mastery and Grand Slam success."
-image: "/images/placeholder-lifestyle.jpg"
+image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1200&h=630&fit=crop"
 ---
 
 You're watching tennis highlights and notice something different about Casper Ruud lately. The Norwegian star who once dominated clay courts is making headlines for reasons that have nothing to do with his backhand. In January 2026, Ruud made a decision that stunned the tennis world: he withdrew early from the Australian Open to be with his pregnant wife Maria.

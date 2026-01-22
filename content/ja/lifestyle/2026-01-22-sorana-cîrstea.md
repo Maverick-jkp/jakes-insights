@@ -5,7 +5,7 @@ draft: false
 categories: ["lifestyle"]
 tags: ["sorana", "c\u00eerstea"]
 description: "ルーマニア出身のプロテニス選手ソラナ・クルステアの魅力に迫ります。WTAツアーでの活躍、技術的な特徴、そして彼女のテニス人生における重要な瞬間を詳しく解説。ファン必見の最新情報とキャリアハイ"
-image: "/images/placeholder-lifestyle.jpg"
+image: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?w=1200&h=630&fit=crop"
 ---
 
 テニスファンなら、こんな経験ありませんか？好きな選手が30代に入ると「そろそろ引退かな…」と心配になること。でも最近のオーストラリアン・オープンを見て、その考えが変わりそうです。

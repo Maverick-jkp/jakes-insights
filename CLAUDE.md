@@ -277,15 +277,20 @@ jakes-tech-insights/
 
 ### Hugo Commands
 
+**CRITICAL: Hugo is installed at `/opt/homebrew/bin/hugo`**
+**Always use full path: `/opt/homebrew/bin/hugo` (not just `hugo`)**
+
 ```bash
 # Local development
-hugo server -D
+/opt/homebrew/bin/hugo server -D
 
 # Build for production
-hugo --minify
+/opt/homebrew/bin/hugo --minify
 
 # Check version
-hugo version
+/opt/homebrew/bin/hugo version
+
+# NEVER use just "hugo" - it won't be found in PATH
 ```
 
 ### Git Workflow (Master Only)

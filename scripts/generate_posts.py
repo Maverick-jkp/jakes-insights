@@ -1013,11 +1013,29 @@ Return improved version (body only, no title):""",
                     used_images.add(image_id)
                     break
 
-            # If all images are used, use random from top 5
+            # If all images are used, try with generic category query
             if photo is None:
-                import random
-                photo = random.choice(data['results'][:5])
-                used_images.add(photo['id'])
+                safe_print(f"  ⚠️  All images for '{query}' already used, trying generic category search...")
+                generic_query = category_context.get(category, 'technology')
+                params['query'] = generic_query
+
+                response = requests.get(url, headers=headers, params=params, timeout=10, verify=verify_ssl)
+                response.raise_for_status()
+                data = response.json()
+
+                if data.get('results'):
+                    for result in data['results']:
+                        image_id = result['id']
+                        if image_id not in used_images:
+                            photo = result
+                            used_images.add(image_id)
+                            safe_print(f"  ✓ Found unused image with generic search: {generic_query}")
+                            break
+
+                # If still no unused image found, return None (use placeholder)
+                if photo is None:
+                    safe_print(f"  ❌ No unused images available for category '{category}'")
+                    return None
 
             # Save used images
             used_images_file.parent.mkdir(parents=True, exist_ok=True)
@@ -1076,7 +1094,10 @@ Return improved version (body only, no title):""",
             slug = keyword.lower()
             slug = ''.join(c if c.isalnum() or c.isspace() else '' for c in slug)
             slug = slug.replace(' ', '-')[:30]
-            date_str = datetime.now().strftime("%Y%m%d")
+            # Use KST for image filename
+            from datetime import timezone, timedelta
+            kst = timezone(timedelta(hours=9))
+            date_str = datetime.now(kst).strftime("%Y%m%d")
             filename = f"{date_str}-{slug}.jpg"
             filepath = images_dir / filename
 
@@ -1151,8 +1172,10 @@ Return improved version (body only, no title):""",
         content_dir = Path(f"content/{lang}/{category}")
         content_dir.mkdir(parents=True, exist_ok=True)
 
-        # Generate filename with date
-        date_str = datetime.now().strftime("%Y-%m-%d")
+        # Generate filename with date in KST
+        from datetime import timezone, timedelta
+        kst = timezone(timedelta(hours=9))
+        date_str = datetime.now(kst).strftime("%Y-%m-%d")
         filename = f"{date_str}-{slug}.md"
         filepath = content_dir / filename
 
@@ -1162,9 +1185,14 @@ Return improved version (body only, no title):""",
             # Use category-based placeholder
             image_path = f"/images/placeholder-{category}.jpg"
 
+        # Use KST timezone for date
+        from datetime import timezone, timedelta
+        kst = timezone(timedelta(hours=9))
+        now_kst = datetime.now(kst)
+
         frontmatter = f"""---
 title: "{title}"
-date: {datetime.now().strftime("%Y-%m-%dT%H:%M:%S")}
+date: {now_kst.strftime("%Y-%m-%dT%H:%M:%S%z")}
 draft: false
 categories: ["{category}"]
 tags: {json.dumps(keyword.split()[:3])}

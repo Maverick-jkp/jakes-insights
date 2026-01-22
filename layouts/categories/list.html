@@ -16,7 +16,7 @@
     <!-- Theme Toggle Script (inline to prevent FOUC) -->
     <script>
         (function() {
-            const theme = localStorage.getItem('theme') || 'dark';
+            const theme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', theme);
         })();
     </script>
@@ -562,7 +562,7 @@
 
         // Theme toggle function
         function toggleTheme() {
-            const currentTheme = localStorage.getItem('theme') || 'dark';
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             localStorage.setItem('theme', newTheme);
             document.documentElement.setAttribute('data-theme', newTheme);
@@ -574,7 +574,7 @@
 
         // Initialize theme on load
         (function() {
-            const theme = localStorage.getItem('theme') || 'dark';
+            const theme = localStorage.getItem('theme') || 'light';
             const toggleBtn = document.getElementById('theme-toggle');
             if (toggleBtn) {
                 toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';

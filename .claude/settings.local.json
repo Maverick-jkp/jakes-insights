@@ -84,7 +84,21 @@
       "Bash(/opt/homebrew/bin/gh pr checkout 4)",
       "Bash(python:*)",
       "Bash(/opt/homebrew/bin/gh run watch)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(bash -x .git/hooks/pre-commit)",
+      "Bash(if ! python scripts/topic_queue.py stats)",
+      "Bash(then echo \"Failed\")",
+      "Bash(else echo \"Success\")",
+      "Bash(set -eo pipefail)",
+      "Bash(then echo \"FAILED\")",
+      "Bash(exit 1)",
+      "Bash(else echo \"PASSED\")",
+      "Bash(bash:*)",
+      "Bash(else echo \"SUCCESS\")",
+      "Bash(source .env)",
+      "Bash(for:*)",
+      "Bash(do)",
+      "Bash(done)"
     ]
   }
 }

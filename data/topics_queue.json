@@ -1030,6 +1030,391 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-21T19:40:22.305452+00:00",
       "completed_at": "2026-01-21T19:41:46.763735+00:00"
+    },
+    {
+      "id": "155-en-entertainment-sydney-sweeney",
+      "keyword": "sydney sweeney",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-01-22T17:56:05.405219",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fear of missing out on celebrity scandals and hidden career details",
+      "angle": "Uncovering hidden celebrity past that challenges public image",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Fans shocked to discover Sydney Sweeney's raunchiest role ever in little-known erotic thriller The V",
+          "url": "https://www.dailymail.co.uk/tvshowbiz/article-15478067/sydney-sweeney-voyeurs-erotic-thriller.html",
+          "source": "www.dailymail.co.uk"
+        },
+        {
+          "title": "Sydney Sweeney Is Not Even 30, But Her Net Worth Is Already Incredible",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/sydney-sweeney-not-even-30-230600515.html",
+          "source": "www.yahoo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T08:56:11.767147+00:00",
+      "completed_at": "2026-01-22T08:59:40.319012+00:00"
+    },
+    {
+      "id": "156-en-finance-current-interest-rat",
+      "keyword": "current interest rates",
+      "category": "finance",
+      "lang": "en",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-01-22T17:56:05.405269",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Panic about missing mortgage opportunities before rates get worse",
+      "angle": "Urgent financial decision-making under rate pressure",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "What are today's mortgage interest rates: January 20, 2026? - CBS News",
+          "url": "https://www.cbsnews.com/news/todays-mortgage-interest-rates-january-20-2026/",
+          "source": "www.cbsnews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T08:56:11.767147+00:00",
+      "completed_at": "2026-01-22T08:57:17.949971+00:00"
+    },
+    {
+      "id": "157-en-sports-jannik-sinner",
+      "keyword": "jannik sinner",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405283",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Concern about sport competitiveness and entertainment value decline",
+      "angle": "Analyzing dominance impact on sport's future appeal",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Jannik Sinner - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jannik_Sinner",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Jannik Sinner powers into Australian Open second round while Monfils says goodbye | Australian Open ",
+          "url": "https://www.theguardian.com/sport/2026/jan/20/jannik-sinner-australian-open-2026-gael-monfils-goodbye-tennis",
+          "source": "www.theguardian.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "158-en-lifestyle-casper-ruud",
+      "keyword": "casper ruud",
+      "category": "lifestyle",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405295",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Anxiety about work-life balance and missing important family moments",
+      "angle": "Professional sacrifice versus personal priorities conflict",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Casper Ruud - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Casper_Ruud",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Australian Open 2026: Casper Ruud will leave early to be with pregnant wife Maria - BBC Sport",
+          "url": "https://www.bbc.com/sport/tennis/articles/c79rxznj1ljo",
+          "source": "www.bbc.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "159-en-sports-sl-vs-eng",
+      "keyword": "sl vs eng",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405305",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Concern about national team performance and international reputation",
+      "angle": "Traditional cricket power dynamics being challenged",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Sri Lanka vs England Live Streaming: When, where to watch SL vs ENG 1st ODI match today in India?",
+          "url": "https://indianexpress.com/article/sports/cricket/sri-lanka-vs-england-live-streaming-sl-vs-eng-1st-odi-10487139/",
+          "source": "indianexpress.com"
+        },
+        {
+          "title": "SL vs ENG: Sri Lanka Squad for ODI Series Against England Announced; Charith Asalanka To Lead | Late",
+          "url": "https://www.lokmattimes.com/cricket/news/sl-vs-eng-sri-lanka-squad-for-odi-series-against-england-announced-charith-asalanka-to-lead-a507/",
+          "source": "www.lokmattimes.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "160-ko-sports-김진성",
+      "keyword": "김진성",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405327",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "나이로 인한 직장 내 차별과 은퇴 압박에 대한 불안",
+      "angle": "중년 직장인의 생존과 연령 차별 문제",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "마흔 넘긴 '투혼좌' 김진성, LG 최초 다년 계약...2+1년 최대 16억",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=04011446645320344&mediaCodeNo=257",
+          "source": "www.edaily.co.kr"
+        },
+        {
+          "title": "김진성, LG와 다년 계약 체결",
+          "url": "https://alphabiz.co.kr/news/view/1065595391062632",
+          "source": "alphabiz.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "161-ko-finance-국민연금",
+      "keyword": "국민연금",
+      "category": "finance",
+      "lang": "ko",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-01-22T17:56:05.405337",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "노후 보장 불안과 연금 투자 리스크에 대한 공포",
+      "angle": "개인 노후 안정성에 대한 직접적 위협",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "[사설]국민연금, ‘증시 부양-환율 방어’ 선 넘지 말아야",
+          "url": "https://www.donga.com/news/Opinion/article/all/20260119/133188961/2",
+          "source": "www.donga.com"
+        },
+        {
+          "title": "국민연금 1월 기금위 이례적 소집…국내주식 비중 조절 검토 - 이투데이",
+          "url": "https://www.etoday.co.kr/news/view/2547882",
+          "source": "www.etoday.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-22T08:56:11.767147+00:00",
+      "completed_at": "2026-01-22T08:58:43.401846+00:00"
+    },
+    {
+      "id": "162-ko-education-전남대",
+      "keyword": "전남대",
+      "category": "education",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405347",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "지방대학 학위의 취업 경쟁력과 미래 전망에 대한 불안",
+      "angle": "지방대학의 현실과 취업시장에서의 불리함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "전남대, 전공 지식으로 사회 문제 해결하다 - 내외일보",
+          "url": "https://www.naewoeilbo.com/news/articleView.html?idxno=2295765",
+          "source": "www.naewoeilbo.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "163-ko-finance-우리은행",
+      "keyword": "우리은행",
+      "category": "finance",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405356",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "예금 안전성과 은행 투자 리스크에 대한 우려",
+      "angle": "개인 자산 보호와 은행 신뢰성 문제",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "우리은행, 6억 달러 외화 선순위채권 발행 | FORTUNE Korea",
+          "url": "https://view.nate.com/economy/view/350811/",
+          "source": "view.nate.com"
+        },
+        {
+          "title": "우리은행",
+          "url": "https://archive.ph/MAdOO",
+          "source": "archive.ph"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "164-ko-society-대상撲-관전-유명인",
+      "keyword": "대상撲 관전 유명인",
+      "category": "society",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405366",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "사회적 불평등과 유명인 특혜에 대한 분노",
+      "angle": "사회 계층간 차별과 특권 문제",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3
+    },
+    {
+      "id": "165-ja-sports-熱海富士",
+      "keyword": "熱海富士",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405375",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "伝統スポーツの変化と既存システムの不安定化への懸念",
+      "angle": "伝統システムの変化による不確実性",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "熱海富士朔太郎 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E7%86%B1%E6%B5%B7%E5%AF%8C%E5%A3%AB%E6%9C%94%E5%A4%AA%E9%83%8E",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "大相撲 横綱 豊昇龍ー熱海富士＜令和８年一月場所・９日目＞SUMO - YouTube",
+          "url": "https://www.youtube.com/watch?v=5rujAaQ6hjY",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "166-ja-entertainment-若隆景",
+      "keyword": "若隆景",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405384",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "伝統文化の質的低下と継承問題への不安",
+      "angle": "文化的価値の劣化と継承の危機",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "若隆景渥 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E9%9A%86%E6%99%AF%E6%B8%A5",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "大相撲 若隆景ー横綱 大の里＜令和８年一月場所・６日目＞SUMO - YouTube",
+          "url": "https://www.youtube.com/watch?v=wI2Vpk7gtMI",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "167-ja-lifestyle-sorana-cîrstea",
+      "keyword": "sorana cîrstea",
+      "category": "lifestyle",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405394",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "キャリア終盤の不安と将来設計の不確実性",
+      "angle": "職業寿命の短さと将来への備えの問題",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Sorana Cîrstea - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sorana_C%C3%AErstea",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Video: Australian Open Highlights: Sorana Cirstea vs Eva Lys",
+          "url": "https://www.smh.com.au/sport/tennis/australian-open-highlights-sorana-cirstea-vs-eva-lys-20260121-p5nvmx.html",
+          "source": "www.smh.com.au"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "168-ja-sports-sl-vs-eng",
+      "keyword": "sl vs eng",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405403",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "国際競技での立場変化と威信低下への懸念",
+      "angle": "国際的な競技力バランスの変化",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Sri Lanka vs England Live Streaming: When, where to watch SL vs ENG 1st ODI match today in India?",
+          "url": "https://indianexpress.com/article/sports/cricket/sri-lanka-vs-england-live-streaming-sl-vs-eng-1st-odi-10487139/",
+          "source": "indianexpress.com"
+        },
+        {
+          "title": "SL vs ENG: Sri Lanka Squad for ODI Series Against England Announced; Charith Asalanka To Lead | Late",
+          "url": "https://www.lokmattimes.com/cricket/news/sl-vs-eng-sri-lanka-squad-for-odi-series-against-england-announced-charith-asalanka-to-lead-a507/",
+          "source": "www.lokmattimes.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "169-ja-finance-current-interest-rat",
+      "keyword": "current interest rates",
+      "category": "finance",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-22T17:56:05.405413",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "金利変動による個人財政への直接的影響への不安",
+      "angle": "経済政策変化が個人生活に与える脅威",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "What are today's mortgage interest rates: January 20, 2026? - CBS News",
+          "url": "https://www.cbsnews.com/news/todays-mortgage-interest-rates-january-20-2026/",
+          "source": "www.cbsnews.com"
+        }
+      ],
+      "expiry_days": 3
     }
   ]
 }

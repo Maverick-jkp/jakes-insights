@@ -1,564 +1,920 @@
-# Claude Agent System - Project Instructions
+# CLAUDE.md
 
-**Version**: 4.0
-**Last Updated**: 2026-01-22
-**Total Length**: ~450 lines (optimized for cognitive load)
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ---
 
-## 🔴 CRITICAL WORKFLOW RULES (READ FIRST)
+# ⚠️ STOP - MANDATORY FIRST ACTION ⚠️
 
-### Sequential Workflow Pattern
+**Before doing ANYTHING in this repository, you MUST read these files IN ORDER:**
 
 ```
-User Request
-    ↓
-Master Agent (Orchestrates)
-    ↓
-    ├→ Designer Agent → Creates Report → Returns to Master
-    ├→ CTO Agent → Creates Report → Returns to Master
-    └→ QA Agent → Creates Report → Returns to Master
-         ↓
-Master Reviews Reports
-    ↓
-Master Commits & Pushes
-    ↓
-Complete
+☐ 1. CLAUDE.md (this file) - Technical architecture & commands
+☐ 2. .claude/WORKFLOW.md - Multi-agent workflow rules (if applicable)
+☐ 3. .claude/session-state.json - Current project state & recent changes
+☐ 4. .claude/mistakes-log.md - Past errors to avoid
 ```
 
-### Absolute Rules (NEVER Override)
+**This is NOT optional. This is NOT negotiable.**
 
-1. **Master orchestrates everything** - All work flows through Master
-2. **Sequential, not parallel** - One agent at a time
-3. **Report first, commit never** - Specialized agents ONLY create reports
-4. **Master commits only** - Only Master has commit authority
-5. **Explicit context passing** - Master passes context to subagents
+**Why this matters:**
+- Skipping = Breaking workflow = Repeating past mistakes = Wasting user's time
+- Takes 5-10 minutes but saves hours of rework
+- System enforcement exists but reading is YOUR responsibility
+
+**After reading all 4 files, announce:**
+```
+✅ Checklist complete:
+   - Read CLAUDE.md
+   - Read WORKFLOW.md
+   - Read session-state.json
+   - Read mistakes-log.md
+   Ready to proceed with: [task description]
+```
+
+**DO NOT proceed until you announce checklist completion.**
 
 ---
 
-## 📋 Master Agent Session Start Checklist
+## Project Overview
 
-```
-[ ] 1. Read this CLAUDE.md file
-[ ] 2. Read .claude/mistakes-log.md (past errors)
-[ ] 3. Read .claude/session-state.json (current state)
-[ ] 4. Understand user request
-[ ] 5. Decide which agent(s) needed
-[ ] 6. Pass explicit context to subagent
-[ ] 7. Receive report from subagent
-[ ] 8. Review report quality
-[ ] 9. Integrate changes if approved
-[ ] 10. Commit with proper message
-```
+**Jake's Tech Insights** is an AI-powered multilingual blog system that generates content automatically using Claude API. The system handles everything from keyword curation to content generation, quality validation, and deployment.
 
-**If any step is unchecked, STOP and complete it first.**
+- **Tech Stack**: Hugo (static site generator), Python 3.x, Claude API (Sonnet 4.5), GitHub Actions
+- **Languages**: English, Korean (한국어), Japanese (日本語)
+- **Deployment**: Cloudflare Pages (https://jakes-tech-insights.pages.dev)
+- **Automation**: 3x daily content generation (6 AM, 12 PM, 6 PM KST)
 
 ---
 
-## 📋 Specialized Agent Session Start Checklist
-
-**For Designer, CTO, QA agents:**
-
-```
-[ ] 1. Receive task and context from Master
-[ ] 2. Read .claude/mistakes-log.md
-[ ] 3. Implement assigned task only
-[ ] 4. CREATE REPORT in .claude/reports/active/
-[ ] 5. Return to Master (NEVER commit/push)
-```
-
-**CRITICAL**: Steps 4-5 cannot be skipped or reordered.
-
----
-
-## Agent Roles & Responsibilities
-
-### Master Agent (Orchestrator)
-
-**Authority**:
-- Task planning and delegation
-- Git commits and pushes
-- Final integration decisions
-- Cross-agent coordination
-
-**Workflow**:
-1. Receives user request
-2. Analyzes scope and complexity
-3. Breaks down into agent-specific tasks
-4. Delegates to ONE agent at a time
-5. Reviews report from agent
-6. Integrates changes
-7. Commits with co-authored message
-8. Creates daily summary report
-
-**Report Location**: `.claude/reports/active/master-summary-{YYYY-MM-DD}.md`
-
-**Commit Message Format**:
-```bash
-git commit -m "$(cat <<'EOF'
-[type]: [concise description]
-
-[Optional detailed explanation]
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
-EOF
-)"
-```
-
-### Designer Agent (UI/UX Specialist)
-
-**Authority**:
-- UI/UX design and implementation
-- Layout and visual elements
-- Responsive design
-- Accessibility compliance
-
-**Scope**:
-- Hugo templates (`layouts/`)
-- CSS/SCSS (`assets/css/`)
-- Design system updates
-- Visual testing
-
-**Workflow**:
-1. Receives design task from Master with context
-2. Reads `.claude/mistakes-log.md`
-3. Implements UI/UX changes
-4. Tests responsiveness (mobile/tablet/desktop)
-5. Creates detailed report
-6. Returns to Master
-
-**Report Location**: `.claude/reports/active/designer-{task-name}-{YYYY-MM-DD}.md`
-
-**Report Must Include**:
-- Changes made (specific files and line numbers)
-- Design decisions and rationale
-- Responsive testing results
-- Accessibility considerations
-- Screenshots/visual verification (if applicable)
-
-**NEVER**:
-- ❌ Commit or push changes
-- ❌ Work on backend/architecture
-- ❌ Skip report creation
-
-### CTO Agent (Technical Architect)
-
-**Authority**:
-- System architecture
-- Backend implementation
-- Performance optimization
-- Technical standards
-
-**Scope**:
-- Hugo configuration
-- Data structures
-- Build optimization
-- Technical documentation
-
-**Workflow**:
-1. Receives technical task from Master with context
-2. Reads `.claude/mistakes-log.md`
-3. Implements technical changes
-4. Verifies build success
-5. Creates technical report
-6. Returns to Master
-
-**Report Location**: `.claude/reports/active/cto-{task-name}-{YYYY-MM-DD}.md`
-
-**Report Must Include**:
-- Technical changes and rationale
-- Performance impact analysis
-- Build/test results
-- Migration steps (if applicable)
-- Risks and considerations
-
-**NEVER**:
-- ❌ Commit or push changes
-- ❌ Work on UI/design
-- ❌ Skip report creation
-
-### QA Agent (Quality Assurance)
-
-**Authority**:
-- Testing and validation
-- Quality standards enforcement
-- Bug identification
-- Documentation review
-
-**Scope**:
-- Functional testing
-- Regression testing
-- Performance testing
-- Accessibility testing
-- Documentation quality
-
-**Workflow**:
-1. Receives QA task from Master with context
-2. Reads `.claude/mistakes-log.md`
-3. Executes test plan
-4. Documents all findings
-5. Creates QA report
-6. Returns to Master
-
-**Report Location**: `.claude/reports/active/qa-{task-name}-{YYYY-MM-DD}.md`
-
-**Report Must Include**:
-- Test scenarios executed
-- Pass/fail results
-- Bugs found (with reproduction steps)
-- Performance metrics
-- Recommendations
-
-**NEVER**:
-- ❌ Commit or push changes
-- ❌ Implement fixes directly
-- ❌ Skip report creation
-
----
-
-## Master's Context Passing Protocol
-
-When delegating to a subagent, Master MUST provide explicit context:
-
-```markdown
-You are [AGENT_NAME].
-
-Task: [SPECIFIC_TASK_DESCRIPTION]
-
-Context:
-- Current state: [BRIEF_STATE_SUMMARY]
-- Relevant files: [FILE_LIST]
-- Related work: [PREVIOUS_WORK_IF_ANY]
-- Constraints: [TECHNICAL_OR_DESIGN_CONSTRAINTS]
-
-Expected output:
-- Report in .claude/reports/active/[agent]-[task]-{YYYY-MM-DD}.md
-- Following template in .claude/templates/agent-report-template.md
-
-Critical reminders:
-1. Create report FIRST before returning
-2. NEVER commit or push
-3. Return to Master when complete
-```
-
-**Why this matters**: Don't rely on agents reading documentation - explicitly pass what they need.
-
----
-
-## Project Structure
-
-```
-jakes-tech-insights/
-├── CLAUDE.md                    # This file (single source of truth)
-├── content/                     # Blog posts (Markdown)
-│   ├── posts/                   # English posts
-│   ├── ko/posts/               # Korean posts
-│   └── ja/posts/               # Japanese posts
-├── layouts/                     # Hugo templates
-│   ├── _default/
-│   ├── partials/
-│   └── index.html              # Homepage layout
-├── assets/
-│   └── css/                    # Stylesheets
-├── static/                     # Static assets
-├── .claude/
-│   ├── agents/                 # ARCHIVED (no longer primary reference)
-│   ├── reports/
-│   │   └── active/            # Current work reports
-│   ├── mistakes-log.md        # Past violations log
-│   ├── session-state.json     # Current session state
-│   └── templates/             # Report templates
-└── docs/                      # Design system docs
-```
-
----
-
-## Quick Reference
+## Quick Command Reference
 
 ### Hugo Commands
-
-**CRITICAL: Hugo is installed at `/opt/homebrew/bin/hugo`**
-**Always use full path: `/opt/homebrew/bin/hugo` (not just `hugo`)**
+**CRITICAL**: Hugo is installed at `/opt/homebrew/bin/hugo` (not in PATH).
+Always use the full path:
 
 ```bash
-# Local development
+# Start development server (with drafts)
 /opt/homebrew/bin/hugo server -D
 
-# Build for production
+# Production build
 /opt/homebrew/bin/hugo --minify
 
 # Check version
 /opt/homebrew/bin/hugo version
 
-# NEVER use just "hugo" - it won't be found in PATH
+# Build and check errors
+/opt/homebrew/bin/hugo --minify 2>&1 | grep -i error
 ```
 
-### Git Workflow (Master Only)
+### Python Environment
 
 ```bash
-# Check status
-git status
+# Install dependencies
+pip install -r requirements.txt
 
-# Stage files
-git add [files]
+# Required environment variables
+export ANTHROPIC_API_KEY='your-key'
+export UNSPLASH_ACCESS_KEY='your-key'  # For featured images
 
-# Commit with message
-git commit -m "$(cat <<'EOF'
-[message here]
-
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
-EOF
-)"
-
-# Push to remote
-git push origin main
+# Load from .env file (recommended)
+# File location: /Users/jakepark/projects/jakes-tech-insights/.env
+python -c "from dotenv import load_dotenv; load_dotenv()"
 ```
 
-### Design System Basics
+### Testing
 
-**Color Palette**:
+```bash
+# Run all tests with coverage
+pytest
+
+# Run specific test file
+pytest tests/test_topic_queue.py
+
+# Run with verbose output
+pytest -v
+
+# Coverage report (HTML)
+pytest --cov=scripts --cov-report=html
+# View at htmlcov/index.html
+
+# Quick validation (no API calls)
+python scripts/topic_queue.py stats
+```
+
+### Content Generation Pipeline
+
+```bash
+# 1. Curate keywords (weekly, ~5 min manual filtering)
+python scripts/keyword_curator.py --count 15
+
+# 2. Generate posts (automated, uses topic queue)
+python scripts/generate_posts.py --count 3
+
+# 3. Run quality checks (automated in CI)
+python scripts/quality_gate.py
+
+# 4. AI review (optional, recommendation only)
+python scripts/ai_reviewer.py
+
+# 5. Local preview
+/opt/homebrew/bin/hugo server -D
+# Visit http://localhost:1313
+```
+
+---
+
+## System Architecture
+
+### Content Generation Flow
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     Topic Queue State Machine                    │
+│                   (data/topics_queue.json)                       │
+│                                                                   │
+│   pending → in_progress → completed                              │
+│                ↓                                                  │
+│              failed (retry)                                       │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│              Draft Agent (Claude API - Sonnet 4.5)              │
+│                  System Prompt: EN/KO/JA specific               │
+│                  max_tokens: 12000                              │
+│                  Prompt Caching: Enabled (20% cost reduction)   │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│             Editor Agent (Claude API - Sonnet 4.5)              │
+│                  Refinement: Tone, Structure, SEO               │
+│                  max_tokens: 12000                              │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    Quality Gate (quality_gate.py)                │
+│   - Word count: 800-2000 (EN/KO), 3000-7500 chars (JA)         │
+│   - AI phrase blacklist check                                   │
+│   - SEO validation (meta description, keywords)                 │
+│   - Image check (WARNING only)                                  │
+│   - References check                                            │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                 AI Reviewer (ai_reviewer.py)                     │
+│   5-Criteria Scoring:                                           │
+│   - Authenticity (human tone)                                   │
+│   - Value (practical insights)                                  │
+│   - Engagement (structure)                                      │
+│   - Technical Accuracy                                          │
+│   - SEO Quality                                                 │
+│   Result: APPROVE (≥8.0) / REVISE (6.0-7.9) / REJECT (<6.0)    │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│                    Git Commit (Markdown Files)                   │
+│   Location: content/{en,ko,ja}/{category}/{date}-{slug}.md     │
+│   Frontmatter: title, date, categories, tags, image, etc.      │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│          GitHub Actions (.github/workflows/daily-content.yml)   │
+│   Schedule: 6 AM, 12 PM, 6 PM KST (may delay 15-60 min)        │
+│   Steps: pytest → generate → quality gate → create PR          │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────────┐
+│              Cloudflare Pages (Auto-deploy on merge)            │
+│   URL: https://jakes-tech-insights.pages.dev                   │
+│   Build: hugo --minify                                          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Topic Queue State Machine
+
+Topics in `data/topics_queue.json` flow through these states:
+
+1. **pending** - Ready to be processed (default for new topics)
+2. **in_progress** - Currently being generated (reserved by `reserve_topics()`)
+3. **completed** - Successfully published (marked by `mark_completed()`)
+4. **failed** - Generation failed (marked by `mark_failed()`, will retry)
+
+**Key Functions** (in `scripts/topic_queue.py`):
+- `reserve_topics(count=3)` - Move pending → in_progress, return reserved topics
+- `mark_completed(topic_id)` - Move in_progress → completed
+- `mark_failed(topic_id, error)` - Move in_progress → failed (auto-retry later)
+- `cleanup(hours=24)` - Reset stuck in_progress topics (manual recovery)
+
+**Duplicate Prevention**: Queue automatically skips keywords already completed for same language.
+
+---
+
+## File Structure & Key Components
+
+### Content Files
+```
+content/
+├── en/          # English posts
+│   ├── tech/
+│   ├── business/
+│   ├── lifestyle/
+│   ├── society/
+│   ├── entertainment/
+│   ├── sports/
+│   ├── finance/
+│   └── education/
+├── ko/          # Korean posts (same structure)
+└── ja/          # Japanese posts (same structure)
+```
+
+**Post Format**: Markdown with YAML frontmatter
+```yaml
+---
+title: "Post Title"
+date: 2026-01-22T18:00:00+09:00  # KST timezone required
+categories: ["tech"]
+tags: ["keyword1", "keyword2"]
+description: "120-160 char meta description"
+image: "https://images.unsplash.com/photo-..."
+imageCredit: "Photo by [Name](https://unsplash.com/@username)"
+lang: "en"
+---
+
+Content here...
+```
+
+### Python Scripts
+
+| Script | Purpose | Key Functions | When to Run |
+|--------|---------|---------------|-------------|
+| `topic_queue.py` | Topic state management | `reserve_topics()`, `mark_completed()`, `cleanup()` | Always (imported by others) |
+| `generate_posts.py` | Content generation | `generate_post()` (Draft + Editor agents) | Manual or automated (3x daily) |
+| `quality_gate.py` | Validation checks | `validate_content()`, `check_ai_phrases()` | After generation (automated) |
+| `ai_reviewer.py` | 5-criteria scoring | `review_content()`, provides recommendations | Optional (manual review) |
+| `keyword_curator.py` | Keyword research | Fetches Google Trends, human filtering required | Weekly (Fridays 5 PM KST) |
+| `affiliate_config.py` | Affiliate link management | `detect_product_mentions()`, `generate_affiliate_link()` | Imported by generate_posts.py |
+
+### Hugo Templates
+
+```
+layouts/
+├── index.html                    # Homepage (Bento grid, theme toggle)
+├── _default/
+│   ├── single.html              # Article page (TOC, related posts, references)
+│   ├── list.html                # Generic list page
+│   └── baseof.html              # Base template
+├── categories/
+│   └── list.html                # Category-specific list (thumbnails)
+├── partials/
+│   ├── head.html                # <head> section (meta tags, SEO)
+│   ├── footer.html              # Footer
+│   └── ...
+└── shortcodes/                  # Custom shortcodes (if any)
+```
+
+**Theme**: PaperMod (in `themes/PaperMod/`, Git submodule)
+- **Do NOT modify theme directly**
+- Override by creating matching file in `layouts/`
+- Example: `layouts/_default/single.html` overrides theme's single.html
+
+### Data Files
+
+- **`data/topics_queue.json`** - Topic queue with state machine (main data source)
+- **`generated_files.json`** - Tracks files created by automation (for cleanup)
+- **`quality_report.json`** - Latest quality gate results (pass/fail details)
+- **`ai_review_report.json`** - Latest AI review scores and recommendations
+
+### Configuration Files
+
+- **`hugo.toml`** - Hugo config (languages, menus, params, SEO)
+- **`requirements.txt`** - Python dependencies
+- **`.env`** - API keys (NOT in git, see `.env.example`)
+- **`pytest.ini`** - Test configuration (coverage threshold: 48%)
+- **`.coveragerc`** - Coverage.py settings
+
+### GitHub Actions Workflows
+
+- **`.github/workflows/daily-content.yml`** - Main automation (3x daily generation)
+- **`.github/workflows/daily-keywords.yml`** - Keyword curation (Fridays 5 PM KST)
+- **`.github/workflows/test.yml`** - CI testing on PR
+
+---
+
+## Content Quality Standards
+
+### Word Count Requirements
+
+| Language | Minimum | Target | Maximum |
+|----------|---------|--------|---------|
+| English  | 800     | 900-1,200 | 2,000 |
+| Korean   | 800     | 900-1,200 | 2,000 |
+| Japanese | 3,000 chars | 4,000-5,000 chars | 7,500 chars |
+
+**Structure Requirements**:
+- 3-4 main sections (## headings)
+- Introduction: 80-100 words (strong hook)
+- Each section: 120-180 words (core insights only)
+- Conclusion: 60-80 words (clear CTA)
+- Must finish completely (no mid-sentence cutoffs)
+
+### AI Phrase Blacklist
+
+Quality gate **fails** if these phrases appear:
+
+**English**:
+- "revolutionary", "game-changer", "cutting-edge"
+- "it's important to note", "in today's digital landscape"
+- "in conclusion", "in summary" (unless in actual conclusion)
+
+**Korean**:
+- "물론", "혁신적", "게임체인저"
+- "디지털 시대", "중요한 점은"
+
+**Japanese**:
+- "もちろん", "革新的", "ゲームチェンジャー"
+- "重要なのは", "結論として"
+
+Full list: `scripts/quality_gate.py` lines ~50-100
+
+### SEO Requirements
+
+- **Meta description**: 120-160 characters
+- **Keyword density**: 5-7 natural mentions (not forced)
+- **Featured image**: Required (auto-fetched from Unsplash)
+- **Image alt text**: Required (describes image content)
+- **References section**: 2+ external links (reputable sources)
+- **Internal links**: Related posts (Hugo template handles automatically)
+
+### Image Requirements
+
+- **Source**: Unsplash API (auto-generated with credits)
+- **Format**: JPEG/PNG, optimized
+- **Alt text**: Descriptive, includes keyword naturally
+- **Credit**: Photo by [Name](https://unsplash.com/@username)
+
+---
+
+## Common Development Tasks
+
+### 1. Generate Content for Specific Keyword
+
+```bash
+# Add topic to queue
+python3 << 'EOF'
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path('scripts')))
+from topic_queue import add_topic
+
+add_topic(
+    keyword="Your Keyword",
+    category="tech",
+    language="en",
+    priority=8
+)
+print("✅ Topic added to queue")
+EOF
+
+# View queue
+python scripts/topic_queue.py stats
+
+# Generate (will pick highest priority pending)
+python scripts/generate_posts.py --count 1
+```
+
+### 2. Fix Stuck Topics
+
+If topics are stuck in `in_progress` for 24+ hours:
+
+```bash
+# View stuck topics
+python scripts/topic_queue.py stats
+
+# Reset stuck topics (24+ hours)
+python scripts/topic_queue.py cleanup 24
+
+# Verify
+python scripts/topic_queue.py stats
+```
+
+### 3. Test Content Generation Locally
+
+```bash
+# Set API key
+export ANTHROPIC_API_KEY='your-key'
+
+# Generate 1 post
+python scripts/generate_posts.py --count 1
+
+# Check quality
+python scripts/quality_gate.py
+
+# Preview
+/opt/homebrew/bin/hugo server -D
+```
+
+### 4. Update System Prompts
+
+Prompts are in `scripts/generate_posts.py`:
+
+- **English**: Lines ~63-450
+- **Korean**: Lines ~450-850
+- **Japanese**: Lines ~850-1250
+
+After editing:
+```bash
+# Test with 1 post
+python scripts/generate_posts.py --count 1
+
+# Check output quality
+cat content/en/tech/2026-01-22-*.md
+
+# Run quality gate
+python scripts/quality_gate.py
+```
+
+### 5. Add New Category
+
+1. **Update `hugo.toml`**: Add menu items for EN/KO/JA (lines ~30-180)
+   ```toml
+   [[languages.en.menu.main]]
+     name = "🆕 NewCategory"
+     url = "/categories/newcategory/"
+     weight = 11
+   ```
+
+2. **Update validation**: Edit `scripts/utils/validation.py`
+   ```python
+   VALID_CATEGORIES = [
+       "tech", "business", "lifestyle",
+       "society", "entertainment", "sports",
+       "finance", "education", "newcategory"  # Add here
+   ]
+   ```
+
+3. **Create directories**:
+   ```bash
+   mkdir -p content/en/newcategory
+   mkdir -p content/ko/newcategory
+   mkdir -p content/ja/newcategory
+   ```
+
+4. **Test**:
+   ```bash
+   /opt/homebrew/bin/hugo server -D
+   ```
+
+### 6. Run Full Pipeline Test
+
+```bash
+# 1. Check queue
+python scripts/topic_queue.py stats
+
+# 2. Generate
+python scripts/generate_posts.py --count 1
+
+# 3. Quality gate
+python scripts/quality_gate.py
+
+# 4. AI review (optional)
+python scripts/ai_reviewer.py
+
+# 5. Hugo build
+/opt/homebrew/bin/hugo --minify
+
+# 6. Preview
+/opt/homebrew/bin/hugo server -D
+```
+
+### 7. Manually Trigger GitHub Actions
+
+1. Go to **Actions** tab on GitHub
+2. Select **Daily Content Generation**
+3. Click **Run workflow**
+4. Set parameters:
+   - count: 3 (default)
+   - skip_review: false
+5. Click **Run workflow**
+6. Wait for completion (~5 min)
+7. Review PR created by workflow
+
+---
+
+## Troubleshooting
+
+### Hugo Not Found
+
+**Error**: `hugo: command not found`
+
+**Solution**: Use full path
+```bash
+/opt/homebrew/bin/hugo server -D
+
+# Or add to PATH (in ~/.zshrc or ~/.bashrc)
+export PATH="/opt/homebrew/bin:$PATH"
+```
+
+### API Key Issues
+
+**Error**: `anthropic.APIKeyError`
+
+**Solution**: Check API key is set
+```bash
+# Verify key is set (shows first 10 chars only)
+echo $ANTHROPIC_API_KEY | head -c 10
+
+# Load from .env file
+python -c "from dotenv import load_dotenv; load_dotenv(); import os; print('✅ OK' if os.getenv('ANTHROPIC_API_KEY') else '❌ MISSING')"
+
+# Set manually (temporary)
+export ANTHROPIC_API_KEY='sk-ant-...'
+```
+
+### Queue Stuck
+
+**Symptom**: Topics stay in `in_progress` for hours
+
+**Solution**: Reset stuck topics
+```bash
+# View current state
+python scripts/topic_queue.py stats
+
+# OR check JSON directly
+cat data/topics_queue.json | python -m json.tool | grep -A 5 "in_progress"
+
+# Reset topics stuck for 24+ hours
+python scripts/topic_queue.py cleanup 24
+
+# Verify reset
+python scripts/topic_queue.py stats
+```
+
+### Quality Gate Failures
+
+#### Word count too low
+
+**Error**: `Word count 650 below minimum 800`
+
+**Solution**: Increase `max_tokens` in `generate_posts.py`
+```python
+# Currently at line ~1100
+max_tokens=12000  # Increase to 14000 if needed
+```
+
+#### AI phrases detected
+
+**Error**: `Found blacklisted phrase: "revolutionary"`
+
+**Solution**: Update system prompt to avoid phrase
+```python
+# In generate_posts.py, add to prompt:
+"Never use these words: revolutionary, game-changer, cutting-edge"
+```
+
+#### Missing references
+
+**Error**: `No References section found`
+
+**Solution**: Editor agent prompt includes references
+```python
+# In generate_posts.py, Editor agent section:
+"Ensure ## References section with 2+ external links"
+```
+
+### GitHub Actions Delays
+
+**Symptom**: Scheduled workflow runs 15-60 min late
+
+**Explanation**: This is **normal GitHub Actions behavior**
+- High load periods cause delays (esp. 12 PM KST slot)
+- Content is not time-sensitive, delays are acceptable
+- Historical data: 6 AM slot = 25 min delay, 12 PM = 57 min delay
+
+**Solution**: Accept delays or reschedule to off-peak times (e.g., 3 AM UTC)
+
+See `.claude/session-state.json` → `automation_issues` for detailed analysis.
+
+### Hugo Build Errors
+
+**Error**: `WARN: found no layout file for "HTML" for kind "page"`
+
+**Solution**: Check template exists
+```bash
+# List available templates
+ls -la layouts/_default/
+
+# Verify template syntax
+/opt/homebrew/bin/hugo --debug
+```
+
+**Error**: `Error: error building site: failed to render pages`
+
+**Solution**: Check frontmatter YAML syntax
+```bash
+# Validate YAML in recent posts
+python -c "
+import yaml
+from pathlib import Path
+for f in Path('content/en/tech').glob('*.md'):
+    with open(f) as file:
+        content = file.read()
+        if '---' in content:
+            frontmatter = content.split('---')[1]
+            try:
+                yaml.safe_load(frontmatter)
+            except Exception as e:
+                print(f'❌ {f}: {e}')
+"
+```
+
+---
+
+## Design System
+
+### Colors
+
+**Dark Theme** (default):
 - Background: `#0a0a0a`
 - Surface: `#151515`
 - Border: `#2a2a2a`
 - Text: `#e8e8e8`
 - Accent: `#00ff88`
 
-**Typography**:
-- Headings: `Space Mono` (monospace)
-- Body: `Instrument Sans` (sans-serif)
-- Code: `Space Mono`
+**Light Theme**:
+- Background: `#ffffff`
+- Surface: `#f5f5f5`
+- Border: `#e0e0e0`
+- Text: `#1a1a1a`
+- Accent: `#00dd77`
 
-**Breakpoints**:
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
-
-**Grid System**:
-- 12-column Bento grid
-- Gap: 1rem
-- Max-width: 1400px
-
----
-
-## Mistakes Log Summary
-
-### 2026-01-22: Designer Committed Without Report
-
-**What happened**: Designer completed work but committed directly without creating report.
-
-**Root cause**:
-1. Did not read DESIGNER.md before starting
-2. Skipped documentation review
-3. No system-level enforcement
-
-**Prevention**:
-1. ✅ Created this consolidated CLAUDE.md
-2. ✅ Sequential workflow (Master orchestrates)
-3. ✅ Explicit context passing
-4. ✅ Session start checklists
-5. ⏳ Git pre-commit hook (coming)
-
-**Lesson**: Documentation alone doesn't work - need system enforcement + explicit context passing.
-
-Full details: `.claude/mistakes-log.md`
-
----
-
-## Session State Management
-
-### .claude/session-state.json
-
-Master MUST update this file at session end:
-
-```json
-{
-  "session_date": "2026-01-22",
-  "active_agent": "master",
-  "workflow_step": "complete",
-  "last_task": "Multi-session collaboration analysis",
-  "pending_reports": [],
-  "last_commit": "54592bf",
-  "rules_version": "4.0",
-  "next_session_notes": "Implement Phase 1 fixes from master report"
+**CSS Variables** (in theme, check `assets/css/`):
+```css
+:root {
+    --bg: #0a0a0a;
+    --fg: #e8e8e8;
+    --accent: #00ff88;
 }
 ```
 
-Purpose: Provides continuity between sessions without relying on agent memory.
+### Typography
 
----
+- **Headings**: Space Mono (monospace)
+- **Body**: Instrument Sans (sans-serif)
+- **Code**: Space Mono (monospace)
 
-## Report Template Structure
+**Font Loading**: Google Fonts (preconnect in `layouts/partials/head.html`)
 
-All agent reports MUST follow this structure:
+### Breakpoints
 
-```markdown
-# [Task Name]
-
-**Date**: YYYY-MM-DD
-**Agent**: [Agent Name]
-**Status**: ✅ Complete / ⏳ In Progress / ❌ Blocked
-
----
-
-## Summary
-[2-3 sentence overview]
-
----
-
-## Changes Made
-[Detailed list with file paths and line numbers]
-
----
-
-## Testing/Validation
-[What was tested and results]
-
----
-
-## Considerations
-[Risks, tradeoffs, future work]
-
----
-
-**Report Created**: YYYY-MM-DD HH:MM KST
-**Next Steps**: [What Master should do next]
+```css
+/* Mobile-first approach */
+@media (min-width: 768px) { /* Tablet */ }
+@media (min-width: 1024px) { /* Desktop */ }
 ```
 
----
+### Grid System
 
-## Common Pitfalls (DON'T DO THIS)
-
-### ❌ Antipatterns
-
-1. **Parallel agent sessions** - Causes incompatible work
-2. **Agents committing directly** - Violates single source of truth
-3. **Skipping report creation** - No documentation of work
-4. **Not reading mistakes-log** - Repeating past errors
-5. **Agents reading documentation on their own** - Unreliable
-6. **Master delegating without context** - Agents lack information
-
-### ✅ Correct Patterns
-
-1. **Sequential workflow** - One agent at a time through Master
-2. **Master commits only** - Single source of truth
-3. **Report before return** - Always document work
-4. **Review mistakes-log** - Learn from past errors
-5. **Master passes explicit context** - Don't rely on agents reading
-6. **Clear handoff protocol** - Master → Agent → Master
+Homepage uses **12-column Bento grid**:
+- Gap: 1rem
+- Max-width: 1400px
+- Responsive: 1 col (mobile), 2 cols (tablet), 3-4 cols (desktop)
 
 ---
 
-## System Enforcement (Coming Soon)
+## Git Workflow
 
-### Git Pre-Commit Hook
+### Pre-commit Hook
 
-Located at `.git/hooks/pre-commit`:
+A Git hook validates changes before commits:
+
+**Location**: `.git/hooks/pre-commit`
+
+**Checks**:
+1. `topics_queue.json` structure (if modified)
+2. Recent reports exist (warns if missing)
+3. No hardcoded API keys (recommended, not enforced)
+
+**Bypass** (emergency only):
+```bash
+git commit --no-verify -m "Emergency fix"
+```
+
+### Commit Message Format
 
 ```bash
-#!/bin/bash
-# Check if report exists before allowing commit
-AGENT=$(git config user.name)
-if [ "$AGENT" != "Master" ]; then
-    echo "ERROR: Only Master agent can commit"
-    exit 1
-fi
+git commit -m "$(cat <<'EOF'
+type: Brief description
 
-if [ ! -f .claude/reports/active/*.md ]; then
-    echo "ERROR: No report found"
-    echo "Create report before committing"
+Optional detailed explanation of changes.
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+EOF
+)"
+```
+
+**Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+
+**Example**:
+```bash
+git commit -m "$(cat <<'EOF'
+feat: Add Society category for broader content coverage
+
+- Updated hugo.toml with Society menu items (EN/KO/JA)
+- Created content/{en,ko,ja}/society/ directories
+- Updated validation to include 'society' category
+- Tested local build and navigation
+
+Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+EOF
+)"
+```
+
+### Branch Strategy
+
+- **main**: Production branch (auto-deploys to Cloudflare)
+- **auto-content-***: Automated PR branches from GitHub Actions
+- **feature/***: Manual feature branches
+
+**Workflow**:
+1. GitHub Actions creates `auto-content-{N}` branch
+2. Creates PR with quality reports
+3. Human reviews and merges
+4. Cloudflare auto-deploys on merge to main
+
+---
+
+## Cost Optimization
+
+### Claude API
+
+- **Cost per post**: ~$0.09 (with prompt caching)
+- **Daily cost**: $0.27 (3 posts/day)
+- **Monthly cost**: ~$8.10
+
+**Optimization**:
+- Prompt caching enabled (20-25% reduction)
+- `max_tokens=12000` (prevents truncation, minimizes retries)
+- Structure-based prompts (3-4 sections, not strict word counts)
+
+### Unsplash API
+
+- **Free tier**: 50 requests/hour
+- **Usage**: 9 requests/day (3 posts × 3 languages)
+- **Cost**: $0/month
+
+### Cloudflare Pages
+
+- **Free tier**: Unlimited bandwidth, 500 builds/month
+- **Usage**: ~90 builds/month (3 daily deploys)
+- **Cost**: $0/month
+
+**Total**: ~$8.10/month
+
+---
+
+## Security
+
+### API Keys
+
+**Storage**:
+- Local: `.env` file (NOT in git, see `.env.example`)
+- GitHub Actions: Repository Secrets
+
+**Required Secrets** (GitHub Settings → Secrets → Actions):
+```
+ANTHROPIC_API_KEY=sk-ant-...
+UNSPLASH_ACCESS_KEY=...
+```
+
+### Pre-commit Validation
+
+Recommended pattern checks (add to `.git/hooks/pre-commit`):
+```bash
+# Check for hardcoded keys
+if git diff --cached | grep -E "(sk-ant-|ANTHROPIC_API_KEY=sk)"; then
+    echo "❌ ERROR: API key detected in commit"
     exit 1
 fi
 ```
 
----
+### Past Incidents
 
-## Success Metrics
+See `.claude/session-state.json` → `security_incidents` for history.
 
-**Target (30-day measurement)**:
-- ✅ 100% report creation compliance
-- ✅ Zero unauthorized commits
-- ✅ 100% sequential workflow adherence
-- ✅ All sessions start with checklist completion
-
-**Current Status**:
-- ⏳ Implementing new system (2026-01-22)
+**2026-01-22**: BRAVE_API_KEY exposed in git history (resolved, key rotated)
 
 ---
 
-## Language Support
+## Multi-Agent Workflow
 
-Website supports three languages:
-- **English** (EN): Primary language
-- **Korean** (KO): 한국어
-- **Japanese** (JA): 日本語
+**If you're working with multiple agents (Master, Designer, CTO, QA), see:**
+- **`.claude/WORKFLOW.md`** - Sequential workflow rules, agent roles, report requirements
 
-All content, templates, and reports must consider multilingual support.
+**For standard single-agent Claude Code usage, you can ignore multi-agent workflow.**
 
----
-
-## Design Principles
-
-1. **Consistency**: Follow design system, reuse patterns
-2. **Accessibility**: WCAG 2.1 AA minimum (4.5:1 contrast)
-3. **Performance**: Lighthouse >90, FCP <1.8s, CLS <0.1
-4. **Simplicity**: Clear hierarchy, sufficient whitespace
-5. **Mobile-first**: Design for mobile, enhance for desktop
+Key points:
+- Master orchestrates all work
+- Specialized agents (Designer/CTO/QA) create reports, never commit
+- Only Master has commit authority
+- Sequential workflow (one agent at a time)
 
 ---
 
-## Quality Standards
+## Important Files to Review
 
-### Code Quality
-- **HTML**: Semantic elements, proper ARIA attributes
-- **CSS**: Minimal duplication, no `!important` abuse
-- **Hugo**: Follow template best practices
-- **Performance**: Optimized assets, lazy loading
+**Before starting work, read these:**
 
-### Documentation Quality
-- **Reports**: Complete, accurate, actionable
-- **Commit messages**: Clear, follows format
-- **Code comments**: Only where logic is non-obvious
-- **Mistakes log**: Detailed root cause analysis
+1. **`CLAUDE.md`** (this file) - Technical architecture
+2. **`.claude/WORKFLOW.md`** - Multi-agent workflow (if applicable)
+3. **`.claude/session-state.json`** - Current project state, recent changes
+4. **`.claude/mistakes-log.md`** - Past errors to avoid
 
----
-
-## Emergency Procedures
-
-### If Workflow Is Broken
-
-1. **Stop immediately** - Don't make it worse
-2. **Document what happened** - Add to mistakes-log.md
-3. **Notify user** - Explain situation clearly
-4. **Wait for guidance** - Don't try to fix on your own
-
-### If Agent Violates Rules
-
-1. **Master reviews violation** - Understand what happened
-2. **Update mistakes-log.md** - Document for future prevention
-3. **Redo work if needed** - Follow correct workflow
-4. **Update enforcement** - Add system-level checks
+**For context:**
+- **`README.md`** - Project overview, setup instructions
+- **`PROJECT_CONTEXT.md`** - Detailed system docs, bug history
+- **`hugo.toml`** - Hugo configuration
+- **`docs/KEYWORD_STRATEGY.md`** - SEO and keyword strategy
 
 ---
 
-## References
+## Testing
 
-- **Mistakes Log**: `.claude/mistakes-log.md`
-- **Session State**: `.claude/session-state.json`
-- **Report Templates**: `.claude/templates/`
-- **Design System**: `docs/DESIGN_SYSTEM.md`
+### Run All Tests
+
+```bash
+pytest
+```
+
+### Run with Coverage
+
+```bash
+pytest --cov=scripts --cov-report=html
+open htmlcov/index.html
+```
+
+### Run Specific Tests
+
+```bash
+# Topic queue tests
+pytest tests/test_topic_queue.py -v
+
+# Validation tests
+pytest tests/test_validation.py -v
+
+# Quality gate tests
+pytest tests/test_quality_gate.py -v
+```
+
+### Test Coverage Requirements
+
+- **Minimum**: 48% (enforced in `pytest.ini`)
+- **Ideal**: 70%+
+
+**Low coverage is acceptable for**:
+- Scripts with heavy API dependencies (`generate_posts.py`)
+- One-off utilities (`fetch_images_for_posts.py`)
+
+---
+
+## Links & Resources
+
+- **Live Site**: https://jakes-tech-insights.pages.dev
+- **GitHub Repo**: https://github.com/Maverick-jkp/jakes-tech-insights
 - **Hugo Docs**: https://gohugo.io/documentation/
-- **WCAG Guidelines**: https://www.w3.org/WAI/WCAG21/quickref/
+- **Claude API**: https://docs.anthropic.com/en/api/
+- **PaperMod Theme**: https://github.com/adityatelange/hugo-PaperMod
+- **Unsplash API**: https://unsplash.com/developers
+
+---
+
+## Quick Wins for New Contributors
+
+**5-minute tasks**:
+- Add new keywords to queue (`topic_queue.py`)
+- Fix typos in existing posts
+- Update `hugo.toml` menu items
+
+**30-minute tasks**:
+- Generate content for new keyword
+- Update system prompts (tone adjustments)
+- Add new AI phrase to blacklist
+
+**2-hour tasks**:
+- Add new category
+- Implement new quality check
+- Create custom Hugo shortcode
+
+---
+
+**Last Updated**: 2026-01-23
+**System Version**: 5.0 (Technical Architecture Split)
 
 ---
 
 ## Version History
 
-- **4.0** (2026-01-22): Consolidated from multiple files, reduced from ~1500 to ~450 lines
+- **5.0** (2026-01-23): Split from multi-agent docs, focus on technical architecture
+- **4.0** (2026-01-22): Consolidated multi-agent workflow rules
 - **3.0** (2026-01-20): Added session checklists and mistakes log
 - **2.0** (2026-01-18): Split into separate agent files
 - **1.0** (2026-01-15): Initial version
-
----
-
-**This is the single source of truth for all agent instructions.**
-**If other agent documentation conflicts with this file, this file takes precedence.**

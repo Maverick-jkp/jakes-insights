@@ -1,25 +1,78 @@
 {
-  "session_date": "2026-01-22",
+  "session_date": "2026-01-23",
   "active_agent": "master",
   "workflow_step": "complete",
-  "last_task": "Date mismatch fix: Japanese post title year correction (2024→2026)",
+  "last_task": "Documentation restructure: Split CLAUDE.md into technical guide + WORKFLOW.md, upgraded enforcement",
   "pending_reports": [],
-  "last_commit": "656e140",
-  "rules_version": "4.0",
-  "next_session_notes": "NEXT SESSION: Implement writing style improvements from content-strategy-analysis report (Tier 1 actions). Monitor tomorrow 17:05 KST keyword automation (python-dotenv fix). Monitor 18:00 KST automation (timezone fix verification). Content strategy report at .claude/reports/active/master-content-strategy-analysis-2026-01-22.md contains detailed recommendations.",
+  "last_commit": "069c631",
+  "rules_version": "5.0",
+  "documentation_structure": {
+    "version": "5.0",
+    "date": "2026-01-23",
+    "files": {
+      "CLAUDE.md": {
+        "purpose": "Technical architecture and development guide",
+        "audience": "All Claude Code instances (single or multi-agent)",
+        "sections": [
+          "Mandatory reading checklist",
+          "Quick command reference (Hugo, Python, Testing)",
+          "System architecture (content pipeline)",
+          "File structure and key components",
+          "Common development tasks",
+          "Troubleshooting guide",
+          "Design system, Git workflow, Security"
+        ],
+        "must_read": true,
+        "read_time": "5-10 minutes"
+      },
+      ".claude/WORKFLOW.md": {
+        "purpose": "Multi-agent workflow orchestration rules",
+        "audience": "Master, Designer, CTO, QA agents (multi-agent sessions only)",
+        "sections": [
+          "Sequential workflow pattern",
+          "Agent roles and responsibilities",
+          "Report requirements",
+          "Context passing protocol",
+          "Mistakes log integration"
+        ],
+        "must_read": "only for multi-agent sessions",
+        "read_time": "3-5 minutes"
+      },
+      ".claude/session-state.json": {
+        "purpose": "Current project state and recent changes",
+        "must_read": true,
+        "read_time": "2 minutes"
+      },
+      ".claude/mistakes-log.md": {
+        "purpose": "Past workflow violations to avoid",
+        "must_read": true,
+        "read_time": "2 minutes"
+      }
+    },
+    "reading_order": [
+      "CLAUDE.md (technical foundation)",
+      ".claude/WORKFLOW.md (if multi-agent)",
+      ".claude/session-state.json (current state)",
+      ".claude/mistakes-log.md (lessons learned)"
+    ]
+  },
+  "next_session_notes": "NEXT SESSION: Implement writing style improvements from content-strategy-analysis report (Tier 1 actions). Monitor keyword automation (python-dotenv fix). Content strategy report at .claude/reports/active/master-content-strategy-analysis-2026-01-22.md contains detailed recommendations.",
   "system_changes": [
-    "✅ Created CLAUDE.md (450 lines) - single source of truth",
-    "✅ Created .claude/session-state.json for continuity",
-    "✅ Reduced total documentation from ~1500 to ~450 lines",
+    "✅ Created CLAUDE.md (920 lines) - Technical architecture guide",
+    "✅ Created .claude/WORKFLOW.md (450 lines) - Multi-agent rules",
+    "✅ Split documentation by use case (development vs collaboration)",
+    "✅ Added mandatory reading checklist to both files",
+    "✅ Upgraded pre-commit hook (topics validation, report check, API key detection, Python syntax)",
+    "✅ Updated session-state.json with documentation structure v5.0",
     "✅ Established sequential workflow pattern",
     "✅ Defined explicit context passing protocol",
-    "✅ Added git pre-commit hook",
-    "✅ Archived old docs to .claude/archive/agents-v3/",
-    "✅ Updated mistakes-log.md with system overhaul entry",
     "✅ Added Hugo full path to CLAUDE.md (/opt/homebrew/bin/hugo)"
   ],
   "completed_system_enforcement": [
-    "✅ Git pre-commit hook installed and tested"
+    "✅ Git pre-commit hook v2.0 (enhanced with 4 checks)",
+    "✅ Mandatory reading blocks in CLAUDE.md and WORKFLOW.md",
+    "✅ API key detection in pre-commit",
+    "✅ Python syntax validation in pre-commit"
   ],
   "pending_system_enforcement": [
     "Automated session checklist verification (Phase 2)",
@@ -167,6 +220,8 @@
     "✅ Related posts thumbnails display correctly (tested locally)",
     "✅ Keyword automation fix deployed (python-dotenv added)",
     "✅ 18:00 KST automation verified (3 posts generated, PR merged)",
+    "✅ Theme toggle implemented on all pages (homepage, category, articles)",
+    "✅ Theme persistence working via localStorage",
     "⏳ Monitor 30-day SEO success metrics",
     "⏳ Verify tomorrow 17:05 KST keyword automation (python-dotenv fix)",
     "⏳ Google Search Console sitemap crawl (24-48 hours)"
@@ -310,5 +365,41 @@
     ],
     "status": "✅ Fixed and prevented",
     "future_occurrences": "Zero expected (multi-layer defense in place)"
+  },
+  "theme_toggle_improvements": {
+    "date": "2026-01-23",
+    "session_time": "Afternoon KST",
+    "issue_summary": "Theme toggle not working properly across all page types",
+    "problems_identified": [
+      "Language switcher overlapping theme toggle on homepage",
+      "Category pages missing theme toggle button",
+      "Category pages reverting to dark mode on entry",
+      "Category page header background hardcoded (black in light mode)",
+      "Category page thumbnails showing placeholder emoji"
+    ],
+    "files_modified": [
+      "layouts/index.html",
+      "layouts/categories/list.html"
+    ],
+    "changes_made": [
+      "Added margin-right: 5rem to .lang-switch (homepage)",
+      "Added theme toggle button to category pages",
+      "Added FOUC prevention script to category pages",
+      "Added light mode CSS variables to category pages",
+      "Fixed .top-bar background: rgba(26,26,26,0.95) → var(--bg)",
+      "Added .Params.image fallback for thumbnails"
+    ],
+    "commits": ["07787ac", "069c631"],
+    "testing_status": "✅ User confirmed all issues resolved",
+    "user_feedback": [
+      "Screenshot revealed header staying black in light mode",
+      "User confirmed fix with '그래 됐으니까 세션종료해' (Okay it's done, end the session)"
+    ],
+    "technical_details": {
+      "template_discovery": "layouts/categories/list.html separate from _default/list.html",
+      "z_index_hierarchy": "category (1001) > homepage (200) > article (100)",
+      "theme_storage": "localStorage with key 'theme' (values: 'dark'/'light')",
+      "fouc_prevention": "Inline script before page render"
+    }
   }
 }

@@ -403,9 +403,11 @@ class QualityGate:
         if not content_dir.exists():
             return
 
-        # Get current file date
+        # Get current file date and title
         current_date = frontmatter.get('date', '')
-        if not current_date:
+        current_title = frontmatter.get('title', '').lower()
+
+        if not current_date or not current_title:
             return
 
         from datetime import datetime, timedelta
@@ -416,7 +418,9 @@ class QualityGate:
             return
 
         # Check for duplicates
-        duplicates = []
+        keyword_duplicates = []
+        title_duplicates = []
+
         for md_file in content_dir.rglob('*.md'):
             if md_file == filepath:
                 continue
@@ -439,19 +443,74 @@ class QualityGate:
                     # Extract frontmatter date
                     if content.startswith('---'):
                         fm_match = re.search(r'date:\s*(.+)', content)
+                        title_match = re.search(r'title:\s*["\']?(.+?)["\']?\s*$', content, re.MULTILINE)
+
                         if fm_match:
                             other_date = fm_match.group(1).strip().strip('"').strip("'")
                             other_dt = datetime.fromisoformat(other_date.replace('Z', '+00:00'))
 
                             if other_dt >= cutoff_date:
-                                duplicates.append(str(md_file))
+                                keyword_duplicates.append(str(md_file))
+
+                                # Check title similarity
+                                if title_match:
+                                    other_title = title_match.group(1).strip().lower()
+                                    similarity = self._calculate_title_similarity(current_title, other_title)
+
+                                    # If titles are >70% similar, it's likely a duplicate
+                                    if similarity > 0.7:
+                                        title_duplicates.append((str(md_file), similarity))
                 except Exception:
                     continue
 
-        if duplicates:
+        if keyword_duplicates:
             checks['critical_failures'].append(
-                f"Duplicate topic '{keyword}' found in recent posts (last 7 days): {', '.join([Path(d).name for d in duplicates])}"
+                f"Duplicate keyword '{keyword}' found in recent posts (last 7 days): {', '.join([Path(d).name for d in keyword_duplicates])}"
             )
+
+        if title_duplicates:
+            dup_details = ', '.join([f"{Path(d).name} ({sim*100:.0f}% similar)" for d, sim in title_duplicates])
+            checks['critical_failures'].append(
+                f"Similar title detected: {dup_details}"
+            )
+
+    def _calculate_title_similarity(self, title1: str, title2: str) -> float:
+        """Calculate similarity between two titles using Levenshtein distance"""
+        # Normalize titles
+        t1 = title1.lower().strip()
+        t2 = title2.lower().strip()
+
+        if t1 == t2:
+            return 1.0
+
+        # Levenshtein distance
+        len1, len2 = len(t1), len(t2)
+        if len1 == 0 or len2 == 0:
+            return 0.0
+
+        # Create distance matrix
+        distances = [[0] * (len2 + 1) for _ in range(len1 + 1)]
+
+        for i in range(len1 + 1):
+            distances[i][0] = i
+        for j in range(len2 + 1):
+            distances[0][j] = j
+
+        for i in range(1, len1 + 1):
+            for j in range(1, len2 + 1):
+                cost = 0 if t1[i-1] == t2[j-1] else 1
+                distances[i][j] = min(
+                    distances[i-1][j] + 1,      # deletion
+                    distances[i][j-1] + 1,      # insertion
+                    distances[i-1][j-1] + cost  # substitution
+                )
+
+        max_len = max(len1, len2)
+        distance = distances[len1][len2]
+
+        # Convert to similarity (0-1)
+        similarity = 1 - (distance / max_len)
+        return similarity
 
     def _check_title_content_consistency(self, frontmatter: Dict, body: str, checks: Dict):
         """Check if title matches content (CRITICAL)"""

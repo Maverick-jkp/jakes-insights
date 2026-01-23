@@ -2,16 +2,14 @@ name: Daily Content Generation
 
 on:
   schedule:
-    # Run 3 times a day: 6PM, 6AM next day, 12PM next day (KST)
-    - cron: '0 9 * * *'    # 6:00 PM KST (55min after keyword curation)
-    - cron: '0 21 * * *'   # 6:00 AM KST (next morning)
-    - cron: '0 3 * * *'    # 12:00 PM KST (noon)
+    # Run once daily at 6PM KST (55min after keyword curation at 5:05 PM)
+    - cron: '0 9 * * *'    # 6:00 PM KST
   workflow_dispatch:
     inputs:
       count:
         description: 'Number of posts to generate'
         required: false
-        default: '3'
+        default: '9'
       skip_review:
         description: 'Skip AI review step'
         required: false
@@ -86,7 +84,7 @@ jobs:
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.UNSPLASH_ACCESS_KEY }}"
 
-          COUNT="${{ github.event.inputs.count || '3' }}"
+          COUNT="${{ github.event.inputs.count || '9' }}"
           python scripts/generate_posts.py --count "$COUNT"
 
       - name: Run quality gate

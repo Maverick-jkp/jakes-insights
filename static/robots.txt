@@ -3,9 +3,6 @@ Allow: /
 
 # Sitemap
 Sitemap: https://jakes-tech-insights.pages.dev/sitemap.xml
-Sitemap: https://jakes-tech-insights.pages.dev/en/sitemap.xml
-Sitemap: https://jakes-tech-insights.pages.dev/ko/sitemap.xml
-Sitemap: https://jakes-tech-insights.pages.dev/ja/sitemap.xml
 
 # Search engines
 User-agent: Googlebot

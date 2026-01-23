@@ -93,7 +93,14 @@ jobs:
         id: quality_gate
         run: |
           python scripts/quality_gate.py
-          echo "quality_gate_passed=$?" >> $GITHUB_OUTPUT
+          GATE_EXIT_CODE=$?
+          echo "quality_gate_passed=$GATE_EXIT_CODE" >> $GITHUB_OUTPUT
+
+          if [ $GATE_EXIT_CODE -ne 0 ]; then
+            echo "❌ Quality Gate FAILED - Stopping workflow"
+            echo "::error::Quality gate checks failed. Content does not meet quality standards."
+            exit 1
+          fi
 
       - name: Validate content quality (references & images)
         id: content_quality

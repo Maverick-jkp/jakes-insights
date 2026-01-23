@@ -126,6 +126,9 @@ class QualityGate:
         self._check_ai_phrases(body, lang, checks)
         self._check_frontmatter(frontmatter, checks)
         self._check_date_consistency(frontmatter, filepath, checks)
+        self._check_duplicate_topic(frontmatter, filepath, checks)
+        self._check_title_content_consistency(frontmatter, body, checks)
+        self._check_clickbait(frontmatter, body, checks)
 
         # WARNING checks (don't fail, just warn)
         self._check_links(body, checks)
@@ -380,6 +383,171 @@ class QualityGate:
             checks['warnings'].append(
                 "No featured image (recommended for better engagement)"
             )
+
+    def _check_duplicate_topic(self, frontmatter: Dict, filepath: Path, checks: Dict):
+        """Check for duplicate topics in recent posts (CRITICAL)"""
+        # Extract keyword from current file
+        filename = filepath.stem
+        # Remove YYYY-MM-DD- prefix to get keyword
+        parts = filename.split('-')
+        if len(parts) >= 4:
+            keyword = '-'.join(parts[3:])
+        else:
+            keyword = filename
+
+        # Get language from filepath
+        lang = checks['language']
+
+        # Find all posts in the same language from the last 7 days
+        content_dir = Path(f"content/{lang}")
+        if not content_dir.exists():
+            return
+
+        # Get current file date
+        current_date = frontmatter.get('date', '')
+        if not current_date:
+            return
+
+        from datetime import datetime, timedelta
+        try:
+            current_dt = datetime.fromisoformat(current_date.replace('Z', '+00:00'))
+            cutoff_date = current_dt - timedelta(days=7)
+        except (ValueError, AttributeError):
+            return
+
+        # Check for duplicates
+        duplicates = []
+        for md_file in content_dir.rglob('*.md'):
+            if md_file == filepath:
+                continue
+
+            # Extract keyword from other file
+            other_filename = md_file.stem
+            other_parts = other_filename.split('-')
+            if len(other_parts) >= 4:
+                other_keyword = '-'.join(other_parts[3:])
+            else:
+                other_keyword = other_filename
+
+            # Check if keywords match
+            if other_keyword == keyword:
+                # Check date to see if it's within 7 days
+                try:
+                    with open(md_file, 'r', encoding='utf-8') as f:
+                        content = f.read()
+
+                    # Extract frontmatter date
+                    if content.startswith('---'):
+                        fm_match = re.search(r'date:\s*(.+)', content)
+                        if fm_match:
+                            other_date = fm_match.group(1).strip().strip('"').strip("'")
+                            other_dt = datetime.fromisoformat(other_date.replace('Z', '+00:00'))
+
+                            if other_dt >= cutoff_date:
+                                duplicates.append(str(md_file))
+                except Exception:
+                    continue
+
+        if duplicates:
+            checks['critical_failures'].append(
+                f"Duplicate topic '{keyword}' found in recent posts (last 7 days): {', '.join([Path(d).name for d in duplicates])}"
+            )
+
+    def _check_title_content_consistency(self, frontmatter: Dict, body: str, checks: Dict):
+        """Check if title matches content (CRITICAL)"""
+        title = frontmatter.get('title', '').lower()
+        body_lower = body.lower()
+
+        if not title:
+            return
+
+        # Extract main keywords from title (remove common words)
+        common_words = {
+            'en': {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'up', 'about', 'into', 'through', 'during'},
+            'ko': {'의', '이', '가', '을', '를', '에', '와', '과', '도', '는', '은', '까지', '부터', '에서'},
+            'ja': {'の', 'に', 'を', 'は', 'が', 'で', 'と', 'から', 'まで', 'より', 'へ'}
+        }
+
+        lang = checks['language']
+        stop_words = common_words.get(lang, set())
+
+        # Split title into words and filter
+        title_words = re.findall(r'\w+', title)
+        significant_words = [w for w in title_words if w not in stop_words and len(w) > 2]
+
+        if not significant_words:
+            return
+
+        # Check if at least 30% of title keywords appear in body
+        matches = sum(1 for word in significant_words if word in body_lower)
+        match_ratio = matches / len(significant_words)
+
+        if match_ratio < 0.3:
+            checks['critical_failures'].append(
+                f"Title-content mismatch: Only {match_ratio*100:.0f}% of title keywords found in body (expected >30%)"
+            )
+
+        # Additional check: detect obvious topic mismatch using category
+        category = frontmatter.get('categories', [''])[0] if 'categories' in frontmatter else ''
+        description = frontmatter.get('description', '').lower()
+
+        # If title suggests one topic but description/content suggests another
+        # Example: Title mentions celebrity name but content is about finance
+        if category == 'finance' and any(keyword in title for keyword in ['음악', 'music', '아이돌', 'idol', '가수', 'singer']):
+            if '암호화폐' in body_lower or 'crypto' in body_lower or '투자' in body_lower or 'trading' in body_lower:
+                checks['critical_failures'].append(
+                    "Suspected clickbait: Title suggests entertainment/celebrity content but body is about finance/crypto"
+                )
+
+    def _check_clickbait(self, frontmatter: Dict, body: str, checks: Dict):
+        """Detect clickbait and SEO manipulation (CRITICAL)"""
+        title = frontmatter.get('title', '')
+        description = frontmatter.get('description', '')
+
+        # Pattern 1: Title mentions person/celebrity but content doesn't
+        celebrity_patterns = {
+            'ko': r'(강타|김연아|김연경|손흥민|아이유|방탄소년단)',
+            'ja': r'(芸能人|アイドル|歌手)',
+            'en': r'(celebrity|star|singer|idol)'
+        }
+
+        lang = checks['language']
+        pattern = celebrity_patterns.get(lang)
+
+        if pattern and re.search(pattern, title, re.IGNORECASE):
+            # Check if the mentioned entity appears in body
+            matches = re.findall(pattern, title, re.IGNORECASE)
+            for match in matches:
+                # If title mentions celebrity but body doesn't discuss them
+                if match not in body and len(body) > 500:
+                    # Exception: if it's actually about that person
+                    body_lower = body.lower()
+                    match_lower = match.lower()
+
+                    # Count occurrences in body
+                    occurrences = body_lower.count(match_lower)
+
+                    if occurrences < 2:  # Should mention at least twice if title is about them
+                        checks['critical_failures'].append(
+                            f"Clickbait detected: Title mentions '{match}' but content barely discusses this topic"
+                        )
+
+        # Pattern 2: Meta description doesn't match content
+        if description and len(body) > 300:
+            # Extract first 300 chars of body
+            body_preview = body[:300].lower()
+            desc_lower = description.lower()
+
+            # Get significant words from description
+            desc_words = re.findall(r'\w+', desc_lower)
+            desc_words = [w for w in desc_words if len(w) > 3][:5]  # Top 5 significant words
+
+            if desc_words:
+                matches = sum(1 for word in desc_words if word in body_preview)
+                if matches < len(desc_words) * 0.3:
+                    checks['warnings'].append(
+                        "Meta description may not accurately reflect content"
+                    )
 
     def _add_info(self, body: str, frontmatter: Dict, checks: Dict):
         """Add additional info"""

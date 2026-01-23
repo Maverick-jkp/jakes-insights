@@ -94,13 +94,22 @@ jobs:
         run: |
           python scripts/quality_gate.py
           GATE_EXIT_CODE=$?
-          echo "quality_gate_passed=$GATE_EXIT_CODE" >> $GITHUB_OUTPUT
 
-          if [ $GATE_EXIT_CODE -ne 0 ]; then
-            echo "❌ Quality Gate FAILED - Stopping workflow"
-            echo "::error::Quality gate checks failed. Content does not meet quality standards."
-            exit 1
+          # Check if any files passed
+          if [ -f passed_files.json ]; then
+            PASSED_COUNT=$(jq length passed_files.json 2>/dev/null || echo "0")
+            echo "passed_count=$PASSED_COUNT" >> $GITHUB_OUTPUT
+
+            if [ "$PASSED_COUNT" -gt 0 ]; then
+              echo "✅ Quality Gate: $PASSED_COUNT file(s) passed"
+              exit 0
+            fi
           fi
+
+          # All files failed
+          echo "❌ Quality Gate FAILED - All files failed quality checks"
+          echo "::error::Quality gate checks failed. No content meets quality standards."
+          exit 1
 
       - name: Validate content quality (references & images)
         id: content_quality
@@ -126,6 +135,7 @@ jobs:
             quality_report.json
             ai_review_report.json
             generated_files.json
+            passed_files.json
           retention-days: 30
 
       - name: Commit and push to main
@@ -134,14 +144,14 @@ jobs:
           git config user.name "Content Bot"
           git config user.email "bot@jakes-tech-insights.com"
 
-          # Check if there are generated files
-          if [ -f generated_files.json ]; then
-            FILES_COUNT=$(jq length generated_files.json)
+          # Check if there are passed files (quality gate filtered)
+          if [ -f passed_files.json ]; then
+            PASSED_COUNT=$(jq length passed_files.json)
 
-            if [ "$FILES_COUNT" -gt 0 ]; then
-              echo "✅ Generated $FILES_COUNT file(s)"
+            if [ "$PASSED_COUNT" -gt 0 ]; then
+              echo "✅ $PASSED_COUNT file(s) passed quality gate"
 
-              # Add all generated content
+              # Add all content (including updated topics_queue.json after failures)
               git add content/
               git add data/topics_queue.json
               git add data/used_images.json
@@ -150,7 +160,7 @@ jobs:
               # Check if there are actual changes to commit
               if ! git diff --staged --quiet; then
                 # Commit locally first
-                git commit -m "🤖 Auto-generated content: $FILES_COUNT posts - Quality Gate PASSED"
+                git commit -m "🤖 Auto-generated content: $PASSED_COUNT posts - Quality Gate PASSED"
 
                 # Pull latest changes with merge strategy (not rebase) to avoid conflicts
                 echo "🔄 Pulling latest changes before push..."
@@ -164,7 +174,7 @@ jobs:
                 while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
                   if git push origin main; then
                     PUSH_SUCCESS=true
-                    echo "✅ Successfully pushed $FILES_COUNT posts to main branch"
+                    echo "✅ Successfully pushed $PASSED_COUNT posts to main branch"
                     break
                   else
                     RETRY_COUNT=$((RETRY_COUNT + 1))
@@ -188,11 +198,11 @@ jobs:
                 echo "pushed=false" >> $GITHUB_OUTPUT
               fi
             else
-              echo "⚠️ No files were generated"
+              echo "⚠️ No files passed quality gate"
               echo "pushed=false" >> $GITHUB_OUTPUT
             fi
           else
-            echo "⚠️ generated_files.json not found"
+            echo "⚠️ passed_files.json not found"
             echo "pushed=false" >> $GITHUB_OUTPUT
           fi
 

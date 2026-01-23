@@ -559,6 +559,59 @@ class QualityGate:
         checks['info']['title'] = frontmatter.get('title', 'N/A')
 
 
+def return_failed_topics_to_queue(failed_files: List[str]):
+    """Return failed topics back to available status in the queue"""
+    queue_path = Path("data/topics_queue.json")
+
+    if not queue_path.exists():
+        return
+
+    try:
+        with open(queue_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        queue = data.get('topics', [])
+
+        # Extract topic IDs from failed files
+        for filepath in failed_files:
+            path = Path(filepath)
+            filename = path.stem
+
+            # Extract keyword from filename (YYYY-MM-DD-keyword)
+            parts = filename.split('-')
+            if len(parts) >= 4:
+                keyword = '-'.join(parts[3:])
+
+                # Get language from filepath
+                if '/en/' in str(filepath):
+                    lang = 'en'
+                elif '/ko/' in str(filepath):
+                    lang = 'ko'
+                elif '/ja/' in str(filepath):
+                    lang = 'ja'
+                else:
+                    continue
+
+                # Find and reset the topic
+                for topic in queue:
+                    if (topic.get('keyword') == keyword and
+                        topic.get('lang') == lang and
+                        topic.get('status') in ['in_progress', 'completed']):
+
+                        topic['status'] = 'available'
+                        topic['reserved_at'] = None
+                        if 'completed_at' in topic:
+                            del topic['completed_at']
+                        break
+
+        # Save updated queue
+        with open(queue_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+    except Exception as e:
+        safe_print(f"     ⚠️ Error returning topics to queue: {str(e)}")
+
+
 def main():
     import argparse
 
@@ -601,6 +654,8 @@ def main():
     safe_print(f"{'='*60}\n")
 
     all_results = []
+    passed_files = []
+    failed_files = []
     total_failures = 0
     total_warnings = 0
 
@@ -619,9 +674,12 @@ def main():
         # Print results
         if result['critical_failures']:
             total_failures += len(result['critical_failures'])
+            failed_files.append(filepath)
             safe_print(f"  ❌ FAILURES:")
             for failure in result['critical_failures']:
                 safe_print(f"     - {failure}")
+        else:
+            passed_files.append(filepath)
 
         if result['warnings']:
             total_warnings += len(result['warnings'])
@@ -637,13 +695,63 @@ def main():
         safe_print(f"  📊 Info: {info['word_count']} words, {info['heading_count']} headings, {info.get('link_count', 0)} links")
         safe_print("")
 
+    # Handle failed files
+    if failed_files:
+        safe_print(f"\n{'='*60}")
+        safe_print(f"  ⚠️ Processing Failed Files")
+        safe_print(f"{'='*60}\n")
+
+        for filepath in failed_files:
+            path = Path(filepath)
+            safe_print(f"  🗑️ Deleting: {path.name}")
+
+            # Delete the markdown file
+            try:
+                if path.exists():
+                    path.unlink()
+                    safe_print(f"     ✓ Deleted {path.name}")
+            except Exception as e:
+                safe_print(f"     ⚠️ Failed to delete {path.name}: {str(e)}")
+
+            # Delete associated image
+            try:
+                # Extract date and keyword from filename
+                filename = path.stem
+                parts = filename.split('-')
+                if len(parts) >= 4:
+                    date_keyword = filename  # e.g., "2026-01-24-keyword"
+                    image_path = Path(f"static/images/{date_keyword}.jpg")
+                    if image_path.exists():
+                        image_path.unlink()
+                        safe_print(f"     ✓ Deleted image: {image_path.name}")
+            except Exception as e:
+                safe_print(f"     ⚠️ Failed to delete image: {str(e)}")
+
+        # Return failed topics to queue
+        safe_print(f"\n  🔄 Returning {len(failed_files)} topics to queue...")
+        return_failed_topics_to_queue(failed_files)
+        safe_print(f"     ✓ Topics returned to available status\n")
+
     # Summary
     safe_print(f"{'='*60}")
     safe_print(f"  Summary")
     safe_print(f"{'='*60}")
     safe_print(f"Files checked: {len(all_results)}")
+    safe_print(f"Passed: {len(passed_files)}")
+    safe_print(f"Failed: {len(failed_files)}")
     safe_print(f"Critical failures: {total_failures}")
     safe_print(f"Warnings: {total_warnings}")
+
+    # Save passed files list (for workflow to commit)
+    passed_files_path = Path("passed_files.json")
+    try:
+        with open(passed_files_path, 'w') as f:
+            json.dump(passed_files, f, indent=2)
+        safe_print(f"\n✓ Passed files list saved to: {passed_files_path}")
+    except IOError as e:
+        safe_print(f"\n⚠️  WARNING: Failed to save passed files list")
+        safe_print(f"   Path: {passed_files_path}")
+        safe_print(f"   Error: {str(e)}")
 
     # Save detailed report
     report_path = Path("quality_report.json")
@@ -652,25 +760,29 @@ def main():
             json.dump({
                 "summary": {
                     "total_files": len(all_results),
+                    "passed_files": len(passed_files),
+                    "failed_files": len(failed_files),
                     "total_failures": total_failures,
                     "total_warnings": total_warnings
                 },
+                "passed_files": passed_files,
+                "failed_files": failed_files,
                 "results": all_results
             }, f, indent=2)
-        safe_print(f"\n✓ Detailed report saved to: {report_path}")
+        safe_print(f"✓ Detailed report saved to: {report_path}")
     except IOError as e:
         safe_print(f"\n⚠️  WARNING: Failed to save quality report")
         safe_print(f"   Path: {report_path}")
         safe_print(f"   Error: {str(e)}")
         safe_print(f"   Continuing anyway...")
 
-    # Exit code
-    if total_failures > 0:
-        safe_print("\n❌ Quality Gate: FAILED")
-        sys.exit(1)
-    else:
-        safe_print("\n✅ Quality Gate: PASSED")
+    # Exit code: Success if at least one file passed
+    if len(passed_files) > 0:
+        safe_print(f"\n✅ Quality Gate: PASSED ({len(passed_files)} file(s))")
         sys.exit(0)
+    else:
+        safe_print(f"\n❌ Quality Gate: FAILED (all {len(failed_files)} file(s) failed)")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

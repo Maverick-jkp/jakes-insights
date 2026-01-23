@@ -1709,7 +1709,7 @@
       "category": "finance",
       "lang": "en",
       "priority": 9,
-      "status": "completed",
+      "status": "pending",
       "created_at": "2026-01-22T20:34:51.661073",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1728,9 +1728,7 @@
           "source": "depor.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-22T21:15:23.702523+00:00",
-      "completed_at": "2026-01-22T21:16:43.185266+00:00"
+      "expiry_days": 3
     },
     {
       "id": "186-en-business-dow-jones-futures",
@@ -1738,7 +1736,7 @@
       "category": "business",
       "lang": "en",
       "priority": 8,
-      "status": "completed",
+      "status": "pending",
       "created_at": "2026-01-22T20:34:51.661138",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1757,9 +1755,7 @@
           "source": "www.ad-hoc-news.de"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-22T21:15:23.702523+00:00",
-      "completed_at": "2026-01-22T21:19:10.141853+00:00"
+      "expiry_days": 3
     },
     {
       "id": "187-en-lifestyle-disneyland-ticket-pr",
@@ -1794,7 +1790,7 @@
       "category": "society",
       "lang": "en",
       "priority": 8,
-      "status": "completed",
+      "status": "pending",
       "created_at": "2026-01-22T20:34:51.661174",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1808,9 +1804,7 @@
           "source": "weather.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-23T04:03:26.964677+00:00",
-      "completed_at": "2026-01-23T04:04:33.937965+00:00"
+      "expiry_days": 3
     },
     {
       "id": "189-en-tech-todays-weather",
@@ -1840,7 +1834,7 @@
       "category": "sports",
       "lang": "ko",
       "priority": 8,
-      "status": "completed",
+      "status": "pending",
       "created_at": "2026-01-22T20:34:51.661204",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1859,9 +1853,7 @@
           "source": "www.yeongnam.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-23T04:03:26.964677+00:00",
-      "completed_at": "2026-01-23T04:05:56.287224+00:00"
+      "expiry_days": 3
     },
     {
       "id": "191-ko-entertainment-김연아",
@@ -1869,7 +1861,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 9,
-      "status": "completed",
+      "status": "pending",
       "created_at": "2026-01-22T20:34:51.661215",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1888,9 +1880,7 @@
           "source": "enews.imbc.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-22T21:15:23.702523+00:00",
-      "completed_at": "2026-01-22T21:18:06.314638+00:00"
+      "expiry_days": 3
     },
     {
       "id": "192-ko-business-울산-현대모비스-대-서울-sk",
@@ -2006,7 +1996,7 @@
       "category": "lifestyle",
       "lang": "ja",
       "priority": 8,
-      "status": "completed",
+      "status": "pending",
       "created_at": "2026-01-22T20:34:51.661290",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2025,9 +2015,7 @@
           "source": "www.sponichi.co.jp"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-23T04:03:26.964677+00:00",
-      "completed_at": "2026-01-23T04:07:12.497120+00:00"
+      "expiry_days": 3
     },
     {
       "id": "197-ja-business-増田貴久",
@@ -2084,409 +2072,370 @@
       "expiry_days": 3
     },
     {
-      "id": "199-en-lifestyle-flight",
-      "keyword": "flight",
-      "category": "lifestyle",
+      "id": "199-en-finance-todd-burkhalter",
+      "keyword": "todd burkhalter",
+      "category": "finance",
       "lang": "en",
       "priority": 8,
-      "status": "completed",
-      "created_at": "2026-01-23T08:37:06.257297",
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174222",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Urgent need to understand passenger rights before booking flights or facing disruptions",
-      "angle": "Hidden airline policies that cost passengers money during flight disruptions",
-      "competition_level": "high",
+      "search_intent": "투자 사기 피해자 보상 절차와 법적 대응 방법을 확인하지 않으면 구제 기회를 놓칠 수 있음",
+      "angle": "대규모 투자 사기 사건의 피해자 구제 절차와 투자자 보호 방안",
+      "competition_level": "medium",
       "references": [
         {
-          "title": "United Airlines flight from D.C. to San Francisco diverted to Chicago due to unruly passenger - CBS ",
-          "url": "https://www.cbsnews.com/chicago/news/united-airlines-flight-diverted-ohare-unruly-passenger-dc-san-francisco/",
-          "source": "www.cbsnews.com"
+          "title": "Florida man sentenced in Georgia’s largest Ponzi scheme stealing $380M from thousands | FOX 5 Atlant",
+          "url": "https://www.fox5atlanta.com/news/todd-burkhalter-ponzi-scheme-georgia-federal-guilty-plea",
+          "source": "www.fox5atlanta.com"
         },
         {
-          "title": "Winter Storm Fern update: Delta cancels flights in five states, expands waivers for customers to adj",
-          "url": "https://news.delta.com/winter-storm-fern-update-delta-cancels-flights-five-states-expands-waivers-customers-adjust-travel",
-          "source": "news.delta.com"
+          "title": "Guilty plea in $380 million Ponzi scheme, feds say - CBS News",
+          "url": "https://www.cbsnews.com/news/ponzi-scheme-380-million-guilty-plea-todd-burkhalter/",
+          "source": "www.cbsnews.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-23T09:30:15.649316+00:00",
-      "completed_at": "2026-01-23T09:33:36.951566+00:00"
+      "expiry_days": 3
     },
     {
-      "id": "200-en-society-national",
-      "keyword": "national",
+      "id": "200-en-society-judit-polgar",
+      "keyword": "judit polgar",
       "category": "society",
       "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257323",
+      "created_at": "2026-01-22T22:18:22.174268",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Fear of being uninformed about important national developments affecting their lives",
-      "angle": "Unreported or underreported national news that impacts citizens",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "U.S. and National News - USA TODAY",
-          "url": "https://eu.usatoday.com/news/nation/",
-          "source": "eu.usatoday.com"
-        },
-        {
-          "title": "National News, Weather, Sports, Breaking News",
-          "url": "https://thenationaldesk.com",
-          "source": "thenationaldesk.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "201-en-sports-goal",
-      "keyword": "goal",
-      "category": "sports",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257338",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Anxiety about favorite players leaving and team performance declining",
-      "angle": "Shocking transfer news that will devastate fan expectations",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "Transfer news and rumours LIVE: Inter hold talks with Emi Martinez as Aston Villa No.1 eyed to repla",
-          "url": "https://www.goal.com/en/news/live/transfer-news-and-rumours-live/blt1ccfda38eda06d5a",
-          "source": "www.goal.com"
-        },
-        {
-          "title": "Ousmane Dembele and a ‘PlayStation goal’ that shocked football - The Athletic",
-          "url": "https://www.nytimes.com/athletic/6978553/2026/01/17/ousmane-dembele-goal-psg-lille-playstation/",
-          "source": "www.nytimes.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "202-en-tech-ground",
-      "keyword": "ground",
-      "category": "tech",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257374",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Fear of expensive undercarriage damage from insufficient ground clearance",
-      "angle": "Hidden costs of low ground clearance that dealers don't warn about",
+      "search_intent": "성별 차별이 있는 분야에서 성공하려면 지금부터 전략을 세우지 않으면 기회를 놓침",
+      "angle": "성별 장벽을 깬 여성 체스 챔피언의 성공 전략과 사회적 변화",
       "competition_level": "low",
       "references": [
         {
-          "title": "Ground (electricity) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Ground_(electricity)",
-          "source": "en.wikipedia.org"
+          "title": "A Documentary About Jewish Chess Legend Judit Polgár Is Coming to Netflix – Kveller",
+          "url": "https://www.kveller.com/a-documentary-about-jewish-chess-legend-judit-polgar-is-coming-to-netflix/",
+          "source": "www.kveller.com"
         },
         {
-          "title": "5 SUVs With Higher Ground Clearance Than A Jeep Wrangler - SlashGear",
-          "url": "https://www.slashgear.com/2077402/suvs-higher-ground-clearance-than-jeep-wrangler/",
-          "source": "www.slashgear.com"
+          "title": "Official Trailer for 'Queen of Chess' Documentary About a Chess Prodigy | FirstShowing.net",
+          "url": "https://www.firstshowing.net/2026/official-trailer-for-queen-of-chess-documentary-about-a-chess-prodigy/",
+          "source": "www.firstshowing.net"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "203-ko-entertainment-김한민",
-      "keyword": "김한민",
+      "id": "201-en-sports-kobe-bryant",
+      "keyword": "kobe bryant",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174282",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "스포츠 역사상 최고 선수 논쟁에서 뒤처지지 않으려면 지금 당장 근거를 확보해야 함",
+      "angle": "NBA 역사상 최고 선수 논쟁에서 코비 브라이언트의 진정한 위치",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Kobe Bryant - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kobe_Bryant",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "“Kobe was a motherf—cking natural born killer” – Vernon Maxwell breaks down why Kobe Bryant was supe",
+          "url": "https://www.basketballnetwork.net/teams/vernon-maxwell-breaks-down-why-kobe-bryant-was-superior-to-lebron-james",
+          "source": "www.basketballnetwork.net"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "202-en-entertainment-nick-kyrgios",
+      "keyword": "nick kyrgios",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174292",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "선수의 마지막 경기를 놓치지 않으려면 지금 당장 일정을 확인해야 함",
+      "angle": "부상으로 인한 선수 커리어 위기와 팬들의 마지막 응원 기회",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Nick Kyrgios - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nick_Kyrgios",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Nick Kyrgios admits he is ‘washed up’ after losing again before the Australian Open - Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/nick-kyrgios-admits-washed-losing-213000682.html",
+          "source": "sports.yahoo.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "203-en-tech-rory-kennedy",
+      "keyword": "rory kennedy",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174301",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "화제의 다큐멘터리를 먼저 보지 않으면 사회적 대화에서 뒤처질 수 있음",
+      "angle": "케네디 가문의 다큐멘터리 감독이 밝히는 체스계의 숨겨진 이야기",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Official Trailer for 'Queen of Chess' Documentary About a Chess Prodigy | FirstShowing.net",
+          "url": "https://www.firstshowing.net/2026/official-trailer-for-queen-of-chess-documentary-about-a-chess-prodigy/",
+          "source": "www.firstshowing.net"
+        },
+        {
+          "title": "\"Good Morning America\" Rory Kennedy & Judit Polgar/Sir Ben Kingsley/Dr. Tara Narula/ (TV Episode 202",
+          "url": "https://www.imdb.com/title/tt39366387/",
+          "source": "www.imdb.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "204-ko-tech-티빙",
+      "keyword": "티빙",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174309",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "스포츠 중계 플랫폼 선택을 잘못하면 원하는 경기를 못 볼 수 있음",
+      "angle": "OTT 플랫폼들의 스포츠 중계권 경쟁과 소비자 선택의 어려움",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "TVING - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/TVING",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "티빙, '2026 호주오픈' 생중계…현장감·실시간 소통 제공",
+          "url": "https://www.dailian.co.kr/news/view/1599364",
+          "source": "www.dailian.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "205-ko-entertainment-쇼미더머니-12",
+      "keyword": "쇼미더머니 12",
       "category": "entertainment",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257390",
+      "created_at": "2026-01-22T22:18:22.174317",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "새 영화 캐스팅과 연출 방향에 대한 우려와 궁금증",
-      "angle": "기대했던 감독의 작품이 예상과 다른 방향으로 흘러가는 불안감",
+      "search_intent": "화제의 프로그램을 실시간으로 따라가지 않으면 온라인 커뮤니티에서 소외될 수 있음",
+      "angle": "힙합 오디션 프로그램의 사회적 영향력과 신인 발굴 시스템",
       "competition_level": "medium",
       "references": [
         {
-          "title": "‘명량’ 김한민 “이순신은 성리학 핵심 誠·敬·信 상징하는 인물” | 서울경제",
-          "url": "https://www.sedaily.com/NewsView/2K7BQHEEWE",
-          "source": "www.sedaily.com"
+          "title": "‘쇼미더머니12’, 첫방부터 터졌다…SNS 누적 조회수 2억 3천만뷰 돌파",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/01/21/GJRTEZTDGRRTCNRSHA4TKNLBMI/",
+          "source": "www.chosun.com"
         },
         {
-          "title": "김한민 감독 신작 <칼 : 고두막한의 검> 캐스팅 배급사 정보",
-          "url": "https://muko.kr/movietalk/18306325",
-          "source": "muko.kr"
+          "title": "‘쇼미더머니12’, 첫방부터 터졌다…SNS 누적 조회수 2억 3천만뷰 돌파 | 미주중앙일보",
+          "url": "https://www.koreadaily.com/article/20260120151338054",
+          "source": "www.koreadaily.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "204-ko-education-고려대학교",
-      "keyword": "고려대학교",
-      "category": "education",
+      "id": "206-ko-lifestyle-우영미",
+      "keyword": "우영미",
+      "category": "lifestyle",
       "lang": "ko",
-      "priority": 9,
-      "status": "completed",
-      "created_at": "2026-01-23T08:37:06.257406",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174325",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "명문대 입시 정보를 놓칠까 봐 하는 학부모들의 불안감",
-      "angle": "명문대 입시에서 정보 격차로 인한 불이익 가능성",
-      "competition_level": "high",
+      "search_intent": "인기 드라마 후속작 정보를 먼저 확인하지 않으면 예매나 시청 기회를 놓칠 수 있음",
+      "angle": "성공한 드라마의 제작진과 배우가 다시 뭉친 새로운 프로젝트의 기대감",
+      "competition_level": "low",
       "references": [
         {
-          "title": "안산시, 고대 안산병원 영재교육센터 첫 수료생 30명 배출 - 내외일보",
-          "url": "https://www.naewoeilbo.com/news/articleView.html?idxno=2293105",
-          "source": "www.naewoeilbo.com"
+          "title": "Did you not come to work or did you not go... | kiss kiss fall in love!",
+          "url": "https://susiephone.tumblr.com/post/805926064368025600",
+          "source": "susiephone.tumblr.com"
         },
         {
-          "title": "과학기술 출연연, “지역 주도 혁신 R&D 확대” - 헤럴드경제",
-          "url": "https://biz.heraldcorp.com/article/10661552",
-          "source": "biz.heraldcorp.com"
+          "title": "군백기는 걱정 마세요… ‘우영우’ 여배우와 손잡고 돌아올 ‘이 작품’",
+          "url": "https://www.news-wa.com/article/entertainment/streaming-guides/2026/01/22/20260122500027",
+          "source": "www.news-wa.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-23T09:30:15.649316+00:00",
-      "completed_at": "2026-01-23T09:31:34.191317+00:00"
+      "expiry_days": 3
     },
     {
-      "id": "205-ko-finance-현대무벡스",
-      "keyword": "현대무벡스",
+      "id": "207-ko-finance-강타",
+      "keyword": "강타",
       "category": "finance",
       "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257419",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "주가 급등을 놓친 아쉬움과 추가 투자 기회에 대한 절박함",
-      "angle": "급등하는 로봇주식 투자 기회를 놓치는 것에 대한 불안감",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "현대무벡스 주가, 1월 23일 장중 46,950원 1.29% 상승 - 중앙이코노미뉴스",
-          "url": "https://www.joongangenews.com/news/articleView.html?idxno=489021",
-          "source": "www.joongangenews.com"
-        },
-        {
-          "title": "현대차가 불러온 로봇주 인기… 두산로보틱스·현대무벡스 사상 최고가 - 머니투데이",
-          "url": "https://www.mt.co.kr/stock/2026/01/20/2026012009410894678",
-          "source": "www.mt.co.kr"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "206-ko-society-호서대",
-      "keyword": "호서대",
-      "category": "society",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257438",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "대학 발전기금의 실제 사용처와 학생 혜택에 대한 의구심",
-      "angle": "대학이 받는 거액 기금의 투명한 사용에 대한 의문",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "호서대, IBK기업은행 후원으로 3억8천만원 지원받아…학생 교육 환경 개선 기대",
-          "url": "https://www.gokorea.kr/news/articleView.html?idxno=855054",
-          "source": "www.gokorea.kr"
-        },
-        {
-          "title": "IBK기업은행, 호서대에 3억 8000만 원 쾌척…교육혁신 힘 싣는다 - 중앙이코노미뉴스",
-          "url": "https://www.joongangenews.com/news/articleView.html?idxno=488722",
-          "source": "www.joongangenews.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "207-ja-sports-欧勝海",
-      "keyword": "欧勝海",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257453",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "地元出身力士への期待と不安、プレッシャーに対する心配",
-      "angle": "地元期待を背負った力士が直面する重圧と挫折の可能性",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "横綱・大の里は勝ち越し、欧勝海は2桁勝利へあと1勝 大相撲初場所12日目の結果 | TBS NEWS DIG (1ページ)",
-          "url": "https://newsdig.tbs.co.jp/articles/-/2418888?display=1",
-          "source": "newsdig.tbs.co.jp"
-        },
-        {
-          "title": "大の里勝ち越し 欧勝海９勝目",
-          "url": "https://www.hokkoku.co.jp/articles/-/1994651",
-          "source": "www.hokkoku.co.jp"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "208-ja-sports-千葉ジェッツ",
-      "keyword": "千葉ジェッツ",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257469",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "チームの主力選手負傷による戦力低下とシーズン失敗への不安",
-      "angle": "主力選手の離脱がチーム全体に与える致命的影響",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "千葉ジェッツのジョン・ムーニーが右舟状月状骨靱帯損傷でインジュアリーリスト入り、今シーズンのキャプテンを務めるビッグマン | バスケットボール総合情報サイト バスケットカウント BASKET COUN",
-          "url": "https://basket-count.com/article/detail/250439",
-          "source": "basket-count.com"
-        },
-        {
-          "title": "島田慎二 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E7%94%B0%E6%85%8E%E4%BA%8C",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "209-ja-society-南北線",
-      "keyword": "南北線",
-      "category": "society",
-      "lang": "ja",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257481",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "延伸工事による交通への影響と代替ルート確保の必要性への不安",
-      "angle": "大規模工事が日常の交通に与える予期せぬ影響",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "東京メトロ南北線 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD%E5%8D%97%E5%8C%97%E7%B7%9A",
-          "source": "ja.wikipedia.org"
-        },
-        {
-          "title": "東京メトロ南北線、大深度地下で延伸",
-          "url": "https://xtech.nikkei.com/atcl/nxt/mag/ncr/18/00005/010900994/",
-          "source": "xtech.nikkei.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "210-ja-lifestyle-池袋駅",
-      "keyword": "池袋駅",
-      "category": "lifestyle",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257493",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "世界第3位の利用者数を誇る駅の混雑問題と安全性への懸念",
-      "angle": "大都市ターミナル駅の混雑による隠れた安全リスク",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "池袋駅 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E6%B1%A0%E8%A2%8B%E9%A7%85",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "211-en-tech-ground",
-      "keyword": "ground",
-      "category": "tech",
-      "lang": "en",
       "priority": 9,
-      "status": "completed",
-      "created_at": "2026-01-23T08:37:06.257506",
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174331",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Fear of electrical safety hazards in homes due to improper grounding",
-      "angle": "Hidden electrical dangers that homeowners overlook until it's too late",
+      "search_intent": "암호화폐 급락 상황에서 빠른 대응을 하지 않으면 더 큰 손실을 볼 수 있음",
+      "angle": "국제 정치 발언이 암호화폐 시장에 미치는 즉각적 영향과 투자자 대응",
       "competition_level": "medium",
       "references": [
         {
-          "title": "Ground (electricity) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Ground_(electricity)",
-          "source": "en.wikipedia.org"
+          "title": "강타 확률 25% ~ 52.8%를 위한 지혜 스탯 영끌 방법 - 인벤",
+          "url": "https://www.inven.co.kr/webzine/news/?news=312835&site=aion2",
+          "source": "www.inven.co.kr"
         },
         {
-          "title": "5 SUVs With Higher Ground Clearance Than A Jeep Wrangler - SlashGear",
-          "url": "https://www.slashgear.com/2077402/suvs-higher-ground-clearance-than-jeep-wrangler/",
-          "source": "www.slashgear.com"
+          "title": "트럼프 다보스연설 비트코인· 리플 강타 \" 뉴욕증시 암호화폐 레버리지 청산 폭탄\" - 글로벌이코노믹",
+          "url": "https://www.g-enews.com/article/Global-Biz/2026/01/202601210441413050906806b77b_1",
+          "source": "www.g-enews.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": "2026-01-23T09:30:15.649316+00:00",
-      "completed_at": "2026-01-23T09:32:36.333068+00:00"
+      "expiry_days": 3
     },
     {
-      "id": "212-ko-tech-현대무벡스",
-      "keyword": "현대무벡스",
-      "category": "tech",
+      "id": "208-ko-society-원더풀스",
+      "keyword": "원더풀스",
+      "category": "society",
       "lang": "ko",
-      "priority": 8,
+      "priority": 5,
       "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257519",
+      "created_at": "2026-01-22T22:18:22.174338",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "로봇 기술주의 실제 가치와 투자 위험성에 대한 의구심",
-      "angle": "기술주 투자 시 간과하기 쉬운 기술적 한계와 위험요소",
+      "search_intent": "연예인 입대 전 마지막 컨텐츠를 놓치면 장기간 공백기를 견뎌야 함",
+      "angle": "인기 연예인의 병역 의무와 팬들의 이별 준비 과정",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3
+    },
+    {
+      "id": "209-ja-finance-宝くじ-当選番号-ロト6",
+      "keyword": "宝くじ 当選番号 ロト6",
+      "category": "finance",
+      "lang": "ja",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174345",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "抽選結果を確認しないと当選していても受け取り期限を過ぎてしまう可能性がある",
+      "angle": "宝くじ当選番号の確認と受け取り手続きの重要性",
       "competition_level": "high",
       "references": [
         {
-          "title": "현대무벡스 주가, 1월 23일 장중 46,950원 1.29% 상승 - 중앙이코노미뉴스",
-          "url": "https://www.joongangenews.com/news/articleView.html?idxno=489021",
-          "source": "www.joongangenews.com"
-        },
-        {
-          "title": "현대차가 불러온 로봇주 인기… 두산로보틱스·현대무벡스 사상 최고가 - 머니투데이",
-          "url": "https://www.mt.co.kr/stock/2026/01/20/2026012009410894678",
-          "source": "www.mt.co.kr"
+          "title": "【ロト6】当選番号速報…第2069回(1月19日)の抽選結果、当選金額は | 社会 | 福井のニュース | 福井新聞ONLINE",
+          "url": "https://www.fukuishimbun.co.jp/articles/-/2508313",
+          "source": "www.fukuishimbun.co.jp"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "213-ja-business-千葉ジェッツ",
-      "keyword": "千葉ジェッツ",
-      "category": "business",
+      "id": "210-ja-society-たぬかな",
+      "keyword": "たぬかな",
+      "category": "society",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174352",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ネット炎上の対処法を知らないと同じような被害を受けた時に対応できない",
+      "angle": "ネット炎上事件から学ぶオンライン安全対策と心理的影響",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "元人気プロゲーマーたぬかな妊娠報告に「流産しろ」中傷の嵐…本人嘆く“ヘルジャパン”と自業自得のブーメラン | 週刊女性PRIME",
+          "url": "https://www.jprime.jp/articles/-/40091",
+          "source": "www.jprime.jp"
+        },
+        {
+          "title": "人気配信者たぬかな妊娠報告に「流産しろ」中傷の嵐…本人嘆く“ヘルジャパン”と自業自得のブーメラン|au Webポータル",
+          "url": "https://article.auone.jp/detail/1/5/9/100_9_r_20260122_1769072937396004",
+          "source": "article.auone.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "211-ja-lifestyle-星野リゾートトマム",
+      "keyword": "星野リゾートトマム",
+      "category": "lifestyle",
       "lang": "ja",
       "priority": 6,
       "status": "pending",
-      "created_at": "2026-01-23T08:37:06.257532",
+      "created_at": "2026-01-22T22:18:22.174359",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "過去の経営難を乗り越えたチームの現在の財政状況への不安",
-      "angle": "スポーツチーム経営の不透明な財政状況と将来リスク",
+      "search_intent": "期間限定の特別体験を予約しないと今シーズンは体験できなくなる",
+      "angle": "冬季限定リゾート体験の希少性と予約の重要性",
       "competition_level": "low",
       "references": [
         {
-          "title": "千葉ジェッツのジョン・ムーニーが右舟状月状骨靱帯損傷でインジュアリーリスト入り、今シーズンのキャプテンを務めるビッグマン | バスケットボール総合情報サイト バスケットカウント BASKET COUN",
-          "url": "https://basket-count.com/article/detail/250439",
-          "source": "basket-count.com"
+          "title": "【トマム】冬を最後まで遊びきる！多彩なコンテンツが期間限定で楽しめるイベント「トマフェス」開催 | 星野リゾートのプレスリリース",
+          "url": "https://prtimes.jp/main/html/rd/p/000001905.000033064.html",
+          "source": "prtimes.jp"
         },
         {
-          "title": "島田慎二 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E7%94%B0%E6%85%8E%E4%BA%8C",
-          "source": "ja.wikipedia.org"
+          "title": "「氷のホテル」で寒さを楽しんで 教会で挙式も 北海道・占冠村の冬の風物詩 - 産経ニュース",
+          "url": "https://www.sankei.com/article/20260121-FPKINHQIK5OK5M3T7A6KBBIDVQ/",
+          "source": "www.sankei.com"
         }
       ],
+      "expiry_days": 3
+    },
+    {
+      "id": "212-ja-entertainment-トマフェス",
+      "keyword": "トマフェス",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174365",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "冬季イベントの予約や参加申込みを早めにしないと定員に達してしまう",
+      "angle": "冬季限定イベントの魅力と参加機会の希少性",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3
+    },
+    {
+      "id": "213-ja-tech-氷のホテル",
+      "keyword": "氷のホテル",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-22T22:18:22.174371",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "希少な体験の予約を早めにしないと今シーズンの体験機会を失う",
+      "angle": "極限環境での特別宿泊体験と技術的な建築手法",
+      "competition_level": "medium",
+      "references": [],
       "expiry_days": 3
     }
   ]

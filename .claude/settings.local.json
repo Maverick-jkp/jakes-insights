@@ -99,7 +99,8 @@
       "Bash(for:*)",
       "Bash(do)",
       "Bash(done)",
-      "Bash(git status:*)"
+      "Bash(git status:*)",
+      "Bash(xmllint:*)"
     ]
   }
 }

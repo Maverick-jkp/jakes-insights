@@ -95,7 +95,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
     "editorial_title": "기사 제목 형식의 독자 친화적 제목",
     "core_fear_question": "사용자의 핵심 두려움을 담은 질문 한 문장",
     "language": "ko",
-    "category": "tech",  # or: business, lifestyle, society, entertainment, sports, finance, education
+    "category": "tech",  # ONLY: tech, business, society, entertainment, sports (5 categories + 1 reserved)
     "search_intent": "사용자가 지금 당장 검색하는 이유 (행동하지 않으면 무엇을 잃는지)",
     "angle": "이 키워드를 다룰 때의 관점",
     "competition_level": "low",
@@ -111,7 +111,8 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 중요:
 - keyword_type은 무조건 "trend"만 사용 (evergreen 금지)
-- category는 "tech", "business", "lifestyle", "society", "entertainment", "sports", "finance", "education" 중 하나 (8개 카테고리를 균등하게 분배할 것)
+- category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports" (5개를 균등하게 분배할 것)
+  - ⚠️ "finance", "lifestyle", "education"은 더 이상 사용 금지 (각각 business, society, tech로 통합됨)
 - language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
 - competition_level은 "low", "medium", "high" 중 하나
 - priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
@@ -122,21 +123,28 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - 예시는 절대 사용하지 말고, 실제 검색 가능성이 높은 키워드만 제안
 - **중요**: 위 실시간 트렌드 데이터의 Query를 keyword 필드에 그대로 복사할 것
 - **keyword 필드는 절대 재작성하지 말고 Query를 정확히 그대로 사용**
-- **중요**: 8개 카테고리(tech, business, lifestyle, society, entertainment, sports, finance, education)를 반드시 고르게 분배할 것
+- **중요**: 5개 카테고리(tech, business, society, entertainment, sports)를 반드시 고르게 분배할 것
 
-**🔴 카테고리 분류 가이드 (CRITICAL - 반드시 준수):**
-- **sports**: 모든 운동 경기, 선수, 팀 (축구, 야구, 농구, 테니스, 골프, UFC/격투기, e스포츠, U23/청소년 스포츠, 올림픽, 월드컵 등)
-  - 예시: "UFC", "u23", "손흥민", "KBO", "NBA", "wimbledon", "world cup"
-  - **중요**: 격투기(UFC, 복싱), 청소년 스포츠(U23, U21)도 반드시 sports 카테고리
+**🔴 카테고리 분류 가이드 (5개 카테고리 - CRITICAL):**
+- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, **교육 기술(EdTech), 온라인 학습**
+  - 예시: "AI", "ChatGPT", "iPhone", "게임", "온라인 강의", "코딩 교육"
+  - ⚠️ 이전 "education" 카테고리 내용 포함
+
+- **business**: 경제, 기업, 주식, 부동산, 창업, **금융, 투자, 세금, 보험, 연금, 시장**
+  - 예시: "테슬라 주가", "부동산 시장", "스타트업", "비트코인", "금리", "환율"
+  - ⚠️ 이전 "finance" 카테고리 내용 포함
+
+- **society**: 사회 이슈, 정치, 정책, 범죄, 재난, **건강, 여행, 음식, 패션, 라이프스타일**
+  - 예시: "지진속보", "정부 정책", "다이어트", "여행지 추천", "건강 관리", "트렌드"
+  - ⚠️ 이전 "lifestyle" 카테고리 내용 포함
+  - **주의**: 스포츠 관련은 무조건 sports로 (사회 이슈라도)
+
 - **entertainment**: 영화, 드라마, 음악, 예능, 연예인 (단, 스포츠 선수는 제외)
-  - 예시: "넷플릭스", "BTS", "오징어게임", "김연아 예능 출연" (스포츠 선수가 예능에 나온 경우)
-- **society**: 사회 이슈, 정치, 정책, 범죄, 재난 (단, 스포츠 관련 사회 이슈도 sports로 분류)
-  - 예시: "지진속보", "정부 정책", "사회 문제"
-  - **주의**: "U23 대표팀"은 society가 아니라 sports입니다
-- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어
-- **business**: 경제, 기업, 주식, 부동산, 창업
-- **lifestyle**: 일상, 건강, 여행, 음식, 패션
-- **finance**: 금융, 투자, 세금, 보험, 연금
+  - 예시: "넷플릭스", "BTS", "오징어게임", "영화 리뷰"
+
+- **sports**: 모든 운동 경기, 선수, 팀 (축구, 야구, 농구, UFC, e스포츠, U23 등 전부)
+  - 예시: "UFC", "u23", "손흥민", "KBO", "NBA", "wimbledon"
+  - **중요**: 격투기, 청소년 스포츠도 무조건 sports
 - **education**: 교육, 대학, 입시, 자격증, 학습
 
 언어별 톤 차이:
@@ -176,8 +184,14 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - 🇯🇵 Japanese (JP) Trends에서 {per_lang}개 키워드 추출 → language: "ja"
 - 만약 한 언어의 트렌드가 부족하면, 다른 언어 트렌드를 절대 사용하지 말고 해당 언어로 새로운 키워드를 생성하라
 
-각 언어 내에서 8개 카테고리(tech, business, lifestyle, society, entertainment, sports, finance, education)를 최대한 균등하게 분배하되,
-반드시 각 언어별로 정확히 {per_lang}개씩 생성하는 것이 최우선이다."""
+각 언어 내에서 5개 카테고리(tech, business, society, entertainment, sports)를 최대한 균등하게 분배하되,
+반드시 각 언어별로 정확히 {per_lang}개씩 생성하는 것이 최우선이다.
+
+⚠️ **카테고리 변경 사항 (2026-01-25):**
+- 기존 8개 → 새로운 5개 카테고리로 통합
+- "education" → "tech"로 통합
+- "finance" → "business"로 통합
+- "lifestyle" → "society"로 통합"""
 
 
 class KeywordCurator:

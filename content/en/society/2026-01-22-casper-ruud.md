@@ -2,7 +2,7 @@
 title: "Casper Ruud's 2026 Tennis Journey: Latest News & Updates"
 date: 2026-01-22T19:22:11+0900
 draft: false
-categories: ["lifestyle"]
+categories: ["society"]
 tags: ["casper", "ruud"]
 description: "Discover Casper Ruud's journey from promising junior to ATP star. Learn about the Norwegian tennis sensation's clay court mastery and Grand Slam success."
 image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1200&h=630&fit=crop"

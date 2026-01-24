@@ -2,7 +2,7 @@
 title: "Current Interest Rates 2024: What You Need to Know Now"
 date: 2026-01-22T17:57:17+0900
 draft: false
-categories: ["finance"]
+categories: ["business"]
 tags: ["current", "interest", "rates"]
 description: "Discover today's current interest rates for mortgages, savings, and loans. Get expert insights on rate trends and how they impact your finances in 2024."
 image: "/images/20260122-current-interest-rates.jpg"

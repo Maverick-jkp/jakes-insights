@@ -2,7 +2,7 @@
 title: "Quad Cortex Mini 출시, 휴대성과 기능 제한 사이의 선택"
 date: 2026-01-24T23:38:12+0900
 draft: false
-categories: ["education"]
+categories: ["tech"]
 tags: ["quad", "cortex", "mini"]
 description: "Neural DSP Quad Cortex Mini의 핵심 기능과 성능을 완벽 분석! 컴팩트한 크기에 담긴 프로급 기타 프로세서의 모든 것. 실제 사용 후기와 함께 알아보는 혁신적인 음향 기술의 진화를"
 image: "/images/20260124-quad-cortex-mini.jpg"

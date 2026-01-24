@@ -2,7 +2,7 @@
 title: "Yahoo Finance: Your Free Gateway to Market Success"
 date: 2026-01-22T01:57:09
 draft: false
-categories: ["finance"]
+categories: ["business"]
 tags: ["yahoo", "finance"]
 description: "Discover how Yahoo Finance can transform your investment strategy with real-time data, portfolio tracking, and expert market analysis tools."
 image: "/images/20260122-yahoo-finance.jpg"

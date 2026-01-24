@@ -2,7 +2,7 @@
 title: "2026年最新金利動向｜住宅ローン・預金金利の完全ガイドと今後の予測"
 date: 2026-01-22T18:35:26+0900
 draft: false
-categories: ["finance"]
+categories: ["business"]
 tags: ["current", "interest", "rates"]
 description: "最新の金利動向と今後の見通しを徹底解説。住宅ローン、預金金利、投資への影響を分析し、あなたの資産運用戦略に役立つ実践的な情報をお届けします。専門家の予測と具体的な対策もご紹介。"
 image: "/images/20260122-current-interest-rates.jpg"

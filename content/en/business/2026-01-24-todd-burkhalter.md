@@ -2,7 +2,7 @@
 title: "Todd Burkhalter: Latest 2026 Updates & Career Insights"
 date: 2026-01-24T12:11:41+0900
 draft: false
-categories: ["finance"]
+categories: ["business"]
 tags: ["todd", "burkhalter"]
 description: "Discover the inspiring journey of Todd Burkhalter - from his early beginnings to professional achievements. Learn about his impact, career highlights, and legacy."
 image: "/images/20260124-todd-burkhalter.jpg"

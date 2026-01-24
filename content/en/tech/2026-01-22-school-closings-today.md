@@ -2,7 +2,7 @@
 title: "School Closings Today: Latest 2026 Updates & Alerts"
 date: 2026-01-22T20:15:59+0900
 draft: false
-categories: ["education"]
+categories: ["tech"]
 tags: ["school", "closings", "today"]
 description: "Stay updated on today's school closures due to weather, emergencies, or unexpected events. Get real-time alerts and district updates to plan your day."
 image: "/images/20260122-school-closings-today.jpg"

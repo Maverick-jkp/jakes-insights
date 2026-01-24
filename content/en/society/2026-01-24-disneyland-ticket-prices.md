@@ -2,7 +2,7 @@
 title: "Disneyland Ticket Prices 2026: Latest Costs & Savings Tips"
 date: 2026-01-24T13:08:56+0900
 draft: false
-categories: ["lifestyle"]
+categories: ["society"]
 tags: ["disneyland", "ticket", "prices"]
 description: "Discover current Disneyland ticket prices, seasonal deals, and money-saving tips for your magical visit. Compare options and find the best value for 2024."
 image: "/images/20260124-disneyland-ticket-prices.jpg"

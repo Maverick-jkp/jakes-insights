@@ -2,7 +2,7 @@
 title: "School Closings & Delays: 2026 Updates You Need to Know"
 date: 2026-01-22T20:09:18+0900
 draft: false
-categories: ["lifestyle"]
+categories: ["society"]
 tags: ["school", "closings", "and"]
 description: "Stay informed on school closings and delays with real-time updates, weather alerts, and tips for parents. Never miss important announcements again."
 image: "/images/20260122-school-closings-and-delays.jpg"

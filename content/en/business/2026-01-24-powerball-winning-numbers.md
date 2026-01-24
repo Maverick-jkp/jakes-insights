@@ -2,7 +2,7 @@
 title: "Latest 2026 Powerball Winning Numbers & Prize Guide"
 date: 2026-01-24T06:15:09+0900
 draft: false
-categories: ["finance"]
+categories: ["business"]
 tags: ["powerball", "winning", "numbers"]
 description: "Discover the latest Powerball winning numbers, check your tickets, and learn winning strategies. Get results, jackpot updates, and tips to boost your chances!"
 image: "/images/20260124-powerball-winning-numbers.jpg"

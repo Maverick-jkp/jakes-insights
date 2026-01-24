@@ -2,7 +2,7 @@
 title: "2026 James Beard Semifinalists: Top Chef Contenders Revealed"
 date: 2026-01-22T13:40:20+0900
 draft: false
-categories: ["lifestyle"]
+categories: ["society"]
 tags: ["james", "beard", "semifinalists"]
 description: "Discover the rising culinary stars named James Beard Award semifinalists for 2026. Get the complete list and learn about America's most promising chefs."
 image: "/images/20260122-james-beard-semifinalists-2026.jpg"

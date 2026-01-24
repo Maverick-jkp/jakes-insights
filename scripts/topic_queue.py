@@ -185,7 +185,7 @@ class TopicQueue:
 
         Args:
             keyword: Topic keyword/title
-            category: Category (tech/business/lifestyle/society/entertainment/sports/finance/education)
+            category: Category (tech/business/society/entertainment/sports) - 5 categories only
             lang: Language code (en/ko/ja)
             priority: Priority 1-10 (higher = more important)
             metadata: Additional metadata dict
@@ -246,7 +246,7 @@ class TopicQueue:
             "pending": 0,
             "in_progress": 0,
             "completed": 0,
-            "by_category": {"tech": 0, "business": 0, "lifestyle": 0, "society": 0, "entertainment": 0, "sports": 0, "finance": 0, "education": 0},
+            "by_category": {"tech": 0, "business": 0, "society": 0, "entertainment": 0, "sports": 0},
             "by_language": {"en": 0, "ko": 0, "ja": 0}
         }
 

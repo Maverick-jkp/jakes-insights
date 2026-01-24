@@ -177,19 +177,13 @@
                 <a href="/categories/business/"><span class="cat-icon">💼</span><span class="cat-text">Business</span></a>
                 <a href="/categories/society/"><span class="cat-icon">🌍</span><span class="cat-text">Society</span></a>
                 <a href="/categories/entertainment/"><span class="cat-icon">🎬</span><span class="cat-text">Entertainment</span></a>
-                <a href="/categories/lifestyle/"><span class="cat-icon">🌱</span><span class="cat-text">Lifestyle</span></a>
                 <a href="/categories/sports/"><span class="cat-icon">⚽</span><span class="cat-text">Sports</span></a>
-                <a href="/categories/finance/"><span class="cat-icon">💰</span><span class="cat-text">Finance</span></a>
-                <a href="/categories/education/"><span class="cat-icon">📖</span><span class="cat-text">Education</span></a>
                 {{ else }}
                 <a href="/{{ .Site.Language.Lang }}/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
                 <a href="/{{ .Site.Language.Lang }}/categories/business/"><span class="cat-icon">💼</span><span class="cat-text">Business</span></a>
                 <a href="/{{ .Site.Language.Lang }}/categories/society/"><span class="cat-icon">🌍</span><span class="cat-text">Society</span></a>
                 <a href="/{{ .Site.Language.Lang }}/categories/entertainment/"><span class="cat-icon">🎬</span><span class="cat-text">Entertainment</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/lifestyle/"><span class="cat-icon">🌱</span><span class="cat-text">Lifestyle</span></a>
                 <a href="/{{ .Site.Language.Lang }}/categories/sports/"><span class="cat-icon">⚽</span><span class="cat-text">Sports</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/finance/"><span class="cat-icon">💰</span><span class="cat-text">Finance</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/education/"><span class="cat-icon">📖</span><span class="cat-text">Education</span></a>
                 {{ end }}
             </div>
         </div>
@@ -346,7 +340,7 @@
 
     .category-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0.25rem;
     }
 

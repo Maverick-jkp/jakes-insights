@@ -46,16 +46,12 @@ pagerSize = 50
       url = "/categories/entertainment/"
       weight = 6
 
-    [[languages.en.menu.main]]
-
-    [[languages.en.menu.main]]
+        [[languages.en.menu.main]]
       name = "⚽ Sports"
       url = "/categories/sports/"
       weight = 8
 
-    [[languages.en.menu.main]]
-
-    [[languages.en.menu.main]]
+        [[languages.en.menu.main]]
 
   [languages.ko]
     languageName = "한국어"
@@ -94,16 +90,12 @@ pagerSize = 50
       url = "/ko/categories/entertainment/"
       weight = 6
 
-    [[languages.ko.menu.main]]
-
-    [[languages.ko.menu.main]]
+        [[languages.ko.menu.main]]
       name = "⚽ 스포츠"
       url = "/ko/categories/sports/"
       weight = 8
 
-    [[languages.ko.menu.main]]
-
-    [[languages.ko.menu.main]]
+        [[languages.ko.menu.main]]
 
   [languages.ja]
     languageName = "日本語"
@@ -142,16 +134,12 @@ pagerSize = 50
       url = "/ja/categories/entertainment/"
       weight = 6
 
-    [[languages.ja.menu.main]]
-
-    [[languages.ja.menu.main]]
+        [[languages.ja.menu.main]]
       name = "⚽ スポーツ"
       url = "/ja/categories/sports/"
       weight = 8
 
-    [[languages.ja.menu.main]]
-
-    [[languages.ja.menu.main]]
+        [[languages.ja.menu.main]]
 
 [params]
   env = "production"

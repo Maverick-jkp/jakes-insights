@@ -273,7 +273,7 @@
                 </a>
             </div>
 
-            <!-- Trending Section (8 columns) -->
+            <!-- Trending Section (12 columns, full width) -->
             <div class="trending-section">
                 <h3 class="widget-title">Trending</h3>
                 <div class="trending-grid">
@@ -292,18 +292,6 @@
                                 {{ end }}
                             </div>
                         </div>
-                    </a>
-                    {{ end }}
-                </div>
-            </div>
-
-            <!-- Popular Tags Section (4 columns) -->
-            <div class="tags-section">
-                <h3 class="widget-title">Popular Tags</h3>
-                <div class="tags-cloud">
-                    {{ range first 12 .Site.Taxonomies.tags.ByCount }}
-                    <a href="{{ .Page.Permalink }}" class="tag-item">
-                        {{ .Page.Title }} <span class="tag-count">{{ .Count }}</span>
                     </a>
                     {{ end }}
                 </div>

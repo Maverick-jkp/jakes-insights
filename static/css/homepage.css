@@ -356,9 +356,9 @@
             border-bottom: 1px solid var(--border);
         }
 
-        /* Trending Section - 8 columns */
+        /* Trending Section - 12 columns (full width) */
         .trending-section {
-            grid-column: span 8;
+            grid-column: span 12;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 1rem;
@@ -367,7 +367,7 @@
 
         .trending-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
         }
 
@@ -411,56 +411,6 @@
             font-family: 'Space Mono', monospace;
             font-size: 0.75rem;
             color: var(--text-dim);
-        }
-
-        /* Popular Tags Section - 4 columns */
-        .tags-section {
-            grid-column: span 4;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 1rem;
-            padding: 2rem;
-        }
-
-        .tags-cloud {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-        }
-
-        .tag-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: rgba(0, 255, 136, 0.1);
-            border: 1px solid var(--border);
-            border-radius: 2rem;
-            color: var(--text);
-            text-decoration: none;
-            font-family: 'Space Mono', monospace;
-            font-size: 0.875rem;
-            transition: all 0.3s;
-        }
-
-        .tag-item:hover {
-            border-color: var(--accent);
-            background: rgba(0, 255, 136, 0.15);
-            transform: translateY(-2px);
-        }
-
-        .tag-count {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 1.5rem;
-            height: 1.5rem;
-            padding: 0 0.4rem;
-            background: var(--accent);
-            color: var(--bg);
-            border-radius: 1rem;
-            font-size: 0.7rem;
-            font-weight: 600;
         }
 
         /* Latest Updates Section - 12 columns */
@@ -786,8 +736,8 @@
                 grid-column: span 6;
             }
 
-            .tags-section {
-                grid-column: span 6;
+            .trending-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -817,8 +767,7 @@
             .featured-post,
             .post-card,
             .latest-updates-section,
-            .trending-section,
-            .tags-section {
+            .trending-section {
                 grid-column: span 1;
             }
 

@@ -5,7 +5,7 @@ draft: false
 categories: ["society"]
 tags: ["todays", "weather"]
 description: "Get the latest weather updates, forecasts, and conditions for today. Stay prepared with current temperatures, precipitation, and hourly predictions."
-image: "/images/placeholder-society.jpg"
+image: "/images/20260124-todays-weather.jpg"
 ---
 
 You step outside to check today's weather and immediately regret not grabbing that extra layer. Sound familiar? 

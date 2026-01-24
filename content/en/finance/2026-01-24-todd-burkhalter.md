@@ -5,7 +5,7 @@ draft: false
 categories: ["finance"]
 tags: ["todd", "burkhalter"]
 description: "Discover the inspiring journey of Todd Burkhalter - from his early beginnings to professional achievements. Learn about his impact, career highlights, and legacy."
-image: "/images/placeholder-finance.jpg"
+image: "/images/20260124-todd-burkhalter.jpg"
 ---
 
 You wake up one morning to find your retirement account empty. The investment advisor you trusted for years has vanished, along with your life savings. Sound like a nightmare? For thousands of Americans, this became reality when Todd Burkhalter orchestrated what federal prosecutors call Georgia's largest Ponzi scheme—a staggering $380 million fraud that devastated entire communities.

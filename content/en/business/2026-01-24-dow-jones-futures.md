@@ -5,7 +5,7 @@ draft: false
 categories: ["business"]
 tags: ["dow", "jones", "futures"]
 description: "Stay ahead of market moves with real-time Dow Jones futures analysis. Get expert insights, trading strategies, and key indicators to maximize your investment returns."
-image: "/images/placeholder-business.jpg"
+image: "/images/20260124-dow-jones-futures.jpg"
 ---
 
 You've been watching the markets climb all week, but something feels different this time. The Dow Jones futures are sitting near record territory, and traders are holding their breath for what could be the next major breakout. After last week's unexpected economic data sent shockwaves through Wall Street, everyone's asking the same question: is this sustainable momentum or another false start?

@@ -14,7 +14,7 @@ VALID_CATEGORIES = [
 VALID_LANGUAGES = ['en', 'ko', 'ja']
 
 # Allowed statuses
-VALID_STATUSES = ['pending', 'in_progress', 'completed', 'failed']
+VALID_STATUSES = ['pending', 'available', 'in_progress', 'completed', 'failed']
 
 def validate_keyword(keyword: str) -> Optional[str]:
     """

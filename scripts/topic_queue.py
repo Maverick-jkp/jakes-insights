@@ -80,18 +80,19 @@ class TopicQueue:
             if t['status'] == 'completed'
         }
 
-        # Find pending topics sorted by priority (high to low) and created_at
-        pending = [
+        # Find available topics sorted by priority (high to low) and created_at
+        # Note: Accept both 'pending' and 'available' status
+        available = [
             t for t in data['topics']
-            if t['status'] == 'pending' and t.get('priority', 5) >= priority_min
+            if t['status'] in ['pending', 'available'] and t.get('priority', 5) >= priority_min
         ]
-        pending.sort(key=lambda x: (-x.get('priority', 5), x.get('created_at', '')))
+        available.sort(key=lambda x: (-x.get('priority', 5), x.get('created_at', '')))
 
         # Reserve top N topics
         reserved = []
         now = datetime.now(timezone.utc).isoformat()
 
-        for topic in pending[:count * 2]:  # Check more topics to account for duplicates
+        for topic in available[:count * 2]:  # Check more topics to account for duplicates
             # Skip if already completed for same keyword+lang
             topic_lang = topic.get('lang', topic.get('language', 'en'))
             topic_key = (topic['keyword'].lower(), topic_lang)

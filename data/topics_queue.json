@@ -2056,7 +2056,8 @@
           "source": "www.sanin-chuo.co.jp"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": null
     },
     {
       "id": "198-ja-tech-相葉雅紀",
@@ -2120,7 +2121,7 @@
       "category": "society",
       "lang": "en",
       "priority": 7,
-      "status": "available",
+      "status": "completed",
       "created_at": "2026-01-22T22:18:22.174268",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2139,7 +2140,9 @@
           "source": "www.firstshowing.net"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T04:46:37.877912+00:00",
+      "completed_at": "2026-01-24T05:23:47.986649+00:00"
     },
     {
       "id": "201-en-sports-kobe-bryant",
@@ -2201,7 +2204,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "available",
+      "status": "completed",
       "created_at": "2026-01-22T22:18:22.174301",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2220,7 +2223,9 @@
           "source": "www.imdb.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T04:46:37.877912+00:00",
+      "completed_at": "2026-01-24T05:24:51.446122+00:00"
     },
     {
       "id": "204-ko-tech-티빙",
@@ -2228,7 +2233,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "available",
+      "status": "completed",
       "created_at": "2026-01-22T22:18:22.174309",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2248,7 +2253,8 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": null
+      "reserved_at": "2026-01-24T04:46:37.877912+00:00",
+      "completed_at": "2026-01-24T04:50:52.674073+00:00"
     },
     {
       "id": "205-ko-entertainment-쇼미더머니-12",
@@ -2256,7 +2262,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 7,
-      "status": "available",
+      "status": "completed",
       "created_at": "2026-01-22T22:18:22.174317",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2275,7 +2281,9 @@
           "source": "www.koreadaily.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T04:46:37.877912+00:00",
+      "completed_at": "2026-01-24T05:26:19.618078+00:00"
     },
     {
       "id": "206-ko-lifestyle-우영미",
@@ -2398,7 +2406,8 @@
           "source": "article.auone.jp"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": null
     },
     {
       "id": "211-ja-lifestyle-星野リゾートトマム",
@@ -2661,7 +2670,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 7,
-      "status": "available",
+      "status": "completed",
       "created_at": "2026-01-24T06:35:37.187283",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2680,7 +2689,9 @@
           "source": "en.wikipedia.org"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T04:46:37.877912+00:00",
+      "completed_at": "2026-01-24T05:29:35.857948+00:00"
     },
     {
       "id": "222-ko-society-u23",
@@ -2869,7 +2880,8 @@
           "source": "www.fnn.jp"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": null
     },
     {
       "id": "229-en-lifestyle-snooki",
@@ -3174,7 +3186,7 @@
       "category": "finance",
       "lang": "ja",
       "priority": 7,
-      "status": "available",
+      "status": "completed",
       "created_at": "2026-01-24T06:35:37.187447",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3193,7 +3205,9 @@
           "source": "es.wikipedia.org"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T04:46:37.877912+00:00",
+      "completed_at": "2026-01-24T05:32:50.799693+00:00"
     },
     {
       "id": "241-ja-education-衆議院-選挙区",

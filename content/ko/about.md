@@ -46,7 +46,7 @@ Jake's Insights는 5개 주요 카테고리에 걸쳐 시의성 있고 잘 조�
 - **Claude AI** - 콘텐츠 생성 및 편집 지원
 - **Python** - 자동화 스크립트
 - **Cloudflare Pages** - 호스팅 및 글로벌 CDN
-- **GitHub Actions** - 자동화된 콘텐츠 파이프라인 (매일 오전 6시, 오후 12시, 오후 6시 KST)
+- **GitHub Actions** - 자동화된 콘텐츠 파이프라인 (매일 오후 4시 키워드 큐레이션, 오후 7시 콘텐츠 생성)
 
 ## Jake 소개
 

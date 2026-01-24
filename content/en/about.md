@@ -46,7 +46,7 @@ This site is built with:
 - **Claude AI** - Content generation and editorial assistance
 - **Python** - Automation scripts
 - **Cloudflare Pages** - Hosting and global CDN
-- **GitHub Actions** - Automated content pipeline (3x daily at 6 AM, 12 PM, 6 PM KST)
+- **GitHub Actions** - Automated content pipeline (daily at 4 PM KST for keywords, 7 PM KST for content)
 
 ## About Jake
 

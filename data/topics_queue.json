@@ -426,109 +426,136 @@
       "completed_at": "2026-01-24T14:15:21.680459+00:00"
     },
     {
-      "id": "244-en-sports-charles-bediako",
-      "keyword": "charles bediako",
+      "id": "244-en-sports-texas-tech-basketbal",
+      "keyword": "texas tech basketball",
       "category": "sports",
       "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-25T00:36:28.263996",
+      "created_at": "2026-01-25T00:45:06.972427",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "NCAA 자격 규정 논란과 선수 권리 침해 사실을 확인하지 않으면 스포츠계의 구조적 불공정을 놓칠 수 있음",
-      "angle": "NCAA 규정의 불공정성과 선수 권리 침해 관점",
-      "competition_level": "medium",
+      "search_intent": "Fear of missing out on witnessing a potentially historic basketball season that could redefine college sports",
+      "angle": "Analyzing whether this overwhelming victory signals an unfair advantage or legitimate dominance",
+      "competition_level": "high",
       "references": [
         {
-          "title": "Charles Bediako - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Charles_Bediako",
+          "title": "Texas Tech basketball steamrolls Baylor in Waco highlights, final score",
+          "url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/01/20/texas-tech-vs-baylor-basketball-score-live-updates-highlights-stats/88208880007/",
+          "source": "www.lubbockonline.com"
+        },
+        {
+          "title": "Texas Tech Red Raiders basketball - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Texas_Tech_Red_Raiders_basketball",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "245-en-society-ice-shooting-minneap",
+      "keyword": "ice shooting minneapolis",
+      "category": "society",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-25T00:45:06.972501",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Urgent need to understand if similar incidents could happen in their community",
+      "angle": "Exposing the gap between official reports and autopsy findings",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Killing of Renée Good - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Killing_of_Renee_Good",
           "source": "en.wikipedia.org"
         },
         {
-          "title": "What to know about Charles Bediako, more men's college basketball eligibility cases - ESPN",
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/47685841/mens-college-basketball-ncaa-eligibility-faq-charles-bediako-james-nnaji",
+          "title": "Renee Good was shot three times, autopsy into Minneapolis ICE killing finds | Minnesota ICE shooting",
+          "url": "https://www.theguardian.com/us-news/2026/jan/22/renee-good-autopsy-ice-minneapolis",
+          "source": "www.theguardian.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "246-en-entertainment-tomorrowland",
+      "keyword": "tomorrowland",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-25T00:45:06.972529",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fear of missing out on limited early access to the world's biggest EDM festival",
+      "angle": "Urgent ticket acquisition strategy before general sale begins",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Tomorrowland (festival) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tomorrowland_(festival)",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "r/EDM on Reddit: Tomorrowland Belgium Lineup 2026",
+          "url": "https://www.reddit.com/r/EDM/comments/1qjx5s8/tomorrowland_belgium_lineup_2026/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "247-en-sports-haaland",
+      "keyword": "haaland",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-25T00:45:06.972551",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Anxiety about their favorite player's career trajectory and team performance",
+      "angle": "Analyzing recent performance drops and what it means for Manchester City",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Erling Haaland - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Erling_Haaland",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Erling Haaland slams 'embarrassing' Man City loss at Bodø/Glimt - ESPN",
+          "url": "https://www.espn.com/soccer/story/_/id/47674338/erling-haaland-embarrassing-man-city-bodo-glimt-pep-guardiola",
           "source": "www.espn.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "245-en-entertainment-nyt-crossword-answer",
-      "keyword": "nyt crossword answers",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264055",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "크로스워드 연속 완성 기록을 유지하지 않으면 성취감과 일상 루틴이 무너질 수 있음",
-      "angle": "일일 퍼즐 완성의 압박감과 성취 욕구",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "NYT Crossword Answers for Jan. 23, 2026 - The New York Times",
-          "url": "https://www.nytimes.com/2026/01/22/crosswords/daily-puzzle-2026-01-23.html",
-          "source": "www.nytimes.com"
-        },
-        {
-          "title": "Sat Jan 24, 2026 NYT crossword by Adrian Johnson & Ryan McCarty",
-          "url": "https://www.xwordinfo.com/crossword",
-          "source": "www.xwordinfo.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "246-en-sports-omar-marmoush",
-      "keyword": "omar marmoush",
-      "category": "sports",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264074",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "새로운 스타 선수의 영향력을 지금 파악하지 않으면 시즌 전망을 잘못 예측할 수 있음",
-      "angle": "신규 이적 선수의 리그 판도 변화 영향",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Omar Marmoush - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Omar_Marmoush",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Pep on Marmoush return after AFCON involvement",
-          "url": "https://www.mancity.com/news/mens/pep-guardiola-omar-marmoush-bodo-63904350",
-          "source": "www.mancity.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "247-en-sports-ole-miss-basketball",
-      "keyword": "ole miss basketball",
+      "id": "248-en-sports-man-city-vs-wolves",
+      "keyword": "man city vs wolves",
       "category": "sports",
       "lang": "en",
       "priority": 5,
       "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264090",
+      "created_at": "2026-01-25T00:45:06.972571",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "팀의 급격한 하락세를 지금 확인하지 않으면 시즌 전망을 잘못 판단할 수 있음",
-      "angle": "연승 중단 후 팀의 위기 상황",
+      "search_intent": "Fear that betting on or supporting City without knowing their current vulnerabilities could lead to major losses",
+      "angle": "Exposing the hidden weaknesses that could lead to an upset victory",
       "competition_level": "low",
       "references": [
         {
-          "title": "Ole Miss Rebels men's basketball - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Ole_Miss_Rebels_men's_basketball",
-          "source": "en.wikipedia.org"
+          "title": "Man City vs. Wolves: Preview, Predictions and Lineups",
+          "url": "https://www.si.com/soccer/man-city-vs-wolves-preview-predictions-lineups-1-24-26",
+          "source": "www.si.com"
         },
         {
-          "title": "Will Ole Miss basketball win vs Mark Pope, Kentucky? Our prediction",
-          "url": "https://www.clarionledger.com/story/sports/college/ole-miss/2026/01/23/ole-miss-basketball-kentucky-predictions-expert-picks/88220087007/",
-          "source": "www.clarionledger.com"
+          "title": "Trực tiếp bóng đá Man City - Wolves: Marmoush mở điểm chỉ sau 6 phút (Ngoại hạng Anh)",
+          "url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-man-city-wolves-man-xanh-trut-gian-ngoai-hang-anh-c48a1732264.html",
+          "source": "www.24h.com.vn"
         }
       ],
       "expiry_days": 3
@@ -540,11 +567,11 @@
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264124",
+      "created_at": "2026-01-25T00:45:06.972604",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "동아시아 청소년 축구 패권 변화를 지금 확인하지 않으면 지역 스포츠 판도를 놓칠 수 있음",
-      "angle": "외교적 긴장감이 스포츠에 투영된 대결",
+      "search_intent": "역사적인 복수전을 놓치면 평생 다시 볼 수 없는 순간을 잃게 된다는 불안감",
+      "angle": "외교 갈등 속에서 벌어지는 스포츠 대결의 숨은 의미 파헤치기",
       "competition_level": "medium",
       "references": [
         {
@@ -561,17 +588,17 @@
       "expiry_days": 3
     },
     {
-      "id": "250-ko-business-노희영",
+      "id": "250-ko-entertainment-노희영",
       "keyword": "노희영",
-      "category": "business",
+      "category": "entertainment",
       "lang": "ko",
-      "priority": 7,
+      "priority": 6,
       "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264136",
+      "created_at": "2026-01-25T00:45:06.972624",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "성공한 기업가의 변화 의지를 지금 배우지 않으면 개인 성장의 기회를 놓칠 수 있음",
-      "angle": "성공 후에도 계속되는 자기 변화의 의지",
+      "search_intent": "유명인의 특이한 행동 뒤에 숨은 사연을 알지 못하면 화제에서 소외될 불안감",
+      "angle": "반복된 환갑잔치 속에 담긴 개인적 변화 의지와 사업적 전략 분석",
       "competition_level": "low",
       "references": [
         {
@@ -588,99 +615,18 @@
       "expiry_days": 3
     },
     {
-      "id": "251-ko-sports-man-city-vs-wolves",
-      "keyword": "man city vs wolves",
-      "category": "sports",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264149",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "강팀의 위기 상황을 지금 확인하지 않으면 시즌 판도 변화를 놓칠 수 있음",
-      "angle": "예상치 못한 강팀의 위기와 회복 가능성",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "Man City vs. Wolves: Preview, Predictions and Lineups",
-          "url": "https://www.si.com/soccer/man-city-vs-wolves-preview-predictions-lineups-1-24-26",
-          "source": "www.si.com"
-        },
-        {
-          "title": "Man City vs Wolves LIVE Erling Haaland and Phil Foden miss out, Marc Guehi makes debut - Manchester ",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-city-vs-wolves-live-33294816",
-          "source": "www.manchestereveningnews.co.uk"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "252-ko-society-주사이모",
-      "keyword": "주사이모",
-      "category": "society",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264160",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "불법 의료행위 사건의 진실을 지금 확인하지 않으면 유사한 피해를 당할 수 있음",
-      "angle": "연예계 불법 의료행위의 은밀한 실태",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "주사이모 \"전 국민 가십거리 돼…사실과 다른 사생활 확산돼\" :: 공감언론 뉴시스 ::",
-          "url": "https://www.newsis.com/view/NISX20260124_0003488811",
-          "source": "www.newsis.com"
-        },
-        {
-          "title": "박나래 주사이모 전 국민 가십거리 돼…진실 말할 곳은 수사기관 | 한국경제",
-          "url": "https://www.hankyung.com/article/2026012402387",
-          "source": "www.hankyung.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "253-ko-sports-번리-대-토트넘",
-      "keyword": "번리 대 토트넘",
-      "category": "sports",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264171",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "감독 경질 위기 상황을 지금 확인하지 않으면 팀의 변화 시점을 놓칠 수 있음",
-      "angle": "감독의 마지막 기회와 팀의 위기",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "외교 냉각 속…중국, 일본과 결승 앞두고 \"설욕할 때\" 들썩 :: 공감언론 뉴시스 ::",
-          "url": "https://www.newsis.com/view/NISX20260123_0003487803",
-          "source": "www.newsis.com"
-        },
-        {
-          "title": "AFC U-23 아시안컵 4강 확정…한국 vs 일본·중국 vs 베트남 | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20260118017000007",
-          "source": "www.yna.co.kr"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "254-ja-sports-アヤックス-対-フォレンダム",
+      "id": "251-ja-sports-アヤックス-対-フォレンダム",
       "keyword": "アヤックス 対 フォレンダム",
       "category": "sports",
       "lang": "ja",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264183",
+      "created_at": "2026-01-25T00:45:06.972699",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "日本人選手の重要な復帰戦を今確認しないと、キャリアの転換点を見逃す可能性がある",
-      "angle": "長期離脱からの復帰戦の重要性",
-      "competition_level": "low",
+      "search_intent": "日本代表選手の復帰戦を見逃すと、選手のコンディション把握ができず今後の予想に支障をきたす不安",
+      "angle": "長期離脱から復帰する選手のリスクとチームへの影響度分析",
+      "competition_level": "medium",
       "references": [
         {
           "title": "アヤックスvsフォレンダム スタメン発表 | ゲキサカ",
@@ -696,50 +642,28 @@
       "expiry_days": 3
     },
     {
-      "id": "256-ja-tech-ff7-リメイク",
-      "keyword": "ff7 リメイク",
-      "category": "tech",
+      "id": "252-ja-sports-バイエルン",
+      "keyword": "バイエルン",
+      "category": "sports",
       "lang": "ja",
-      "priority": 6,
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264205",
+      "created_at": "2026-01-25T00:45:06.972719",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "新プラットフォーム版の特徴を今確認しないと、最適なゲーム体験を逃す可能性がある",
-      "angle": "新プラットフォーム版による体験の違い",
+      "search_intent": "チームの戦力ダウンがタイトル争いに与える影響を把握しないと予想が外れる恐怖",
+      "angle": "怪我人続出がもたらす戦術変更とライバルチームへの影響分析",
       "competition_level": "high",
       "references": [
         {
-          "title": "Switch2版「FF7リメイク インターグレード」レビュー - GAME Watch",
-          "url": "https://game.watch.impress.co.jp/docs/review/rev1/2078810.html",
-          "source": "game.watch.impress.co.jp"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "257-ja-entertainment-イヴォンヌ",
-      "keyword": "イヴォンヌ",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-01-25T00:36:28.264214",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "最強キャラの入手機会を今逃すと、ゲーム進行で大きな差が生まれる可能性がある",
-      "angle": "リセマラ期間限定の最強キャラ入手機会",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "【エンドフィールド】イヴォンヌの評価とおすすめパーティ編成・武器【アークナイツ】｜ゲームエイト",
-          "url": "https://game8.jp/arknights-endfield/687521",
-          "source": "game8.jp"
+          "title": "バイエルンvsアウクスブルク スタメン発表 | ゲキサカ",
+          "url": "https://web.gekisaka.jp/news/world/detail/?445292-445292-fl=",
+          "source": "web.gekisaka.jp"
         },
         {
-          "title": "【エンドフィールド】イヴォンヌの評価とおすすめパーティ【アークナイツ】 - ゲームウィズ",
-          "url": "https://gamewith.jp/akendfield/541122",
-          "source": "gamewith.jp"
+          "title": "右SBが今度は3人離脱も、バイエルン指揮官は前向き「左サイドでも同様の状況があったが…」 | Goal.com 日本",
+          "url": "https://www.goal.com/jp/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/bundesliga-bayern-injury-konrad-laimer-20260116/bltbcd980220a434aaf",
+          "source": "www.goal.com"
         }
       ],
       "expiry_days": 3

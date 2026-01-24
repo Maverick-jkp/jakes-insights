@@ -1,0 +1,169 @@
+{{ if site.Config.Services.GoogleAnalytics.ID }}
+<script>
+// GA4 Event Tracking for Jake's Tech Insights
+
+// Track category filter clicks (all-posts page)
+document.addEventListener('DOMContentLoaded', function() {
+    // Category filter buttons
+    const categoryButtons = document.querySelectorAll('[data-category]');
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'filter_category', {
+                    'event_category': 'engagement',
+                    'event_label': category,
+                    'value': 1
+                });
+            }
+        });
+    });
+
+    // Social share button clicks
+    const shareButtons = document.querySelectorAll('.share-btn');
+    shareButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const platform = this.getAttribute('aria-label') || 'unknown';
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'share', {
+                    'method': platform,
+                    'content_type': 'article',
+                    'event_category': 'engagement'
+                });
+            }
+        });
+    });
+
+    // Related post clicks
+    const relatedLinks = document.querySelectorAll('.related-card');
+    relatedLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const postTitle = this.querySelector('h4')?.textContent || 'unknown';
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'select_content', {
+                    'content_type': 'related_post',
+                    'item_id': postTitle,
+                    'event_category': 'engagement'
+                });
+            }
+        });
+    });
+
+    // Category navigation clicks (floating menu)
+    const categoryLinks = document.querySelectorAll('.category-grid a');
+    categoryLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const categoryText = this.querySelector('.cat-text')?.textContent || 'unknown';
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'navigate_category', {
+                    'event_category': 'navigation',
+                    'event_label': categoryText,
+                    'value': 1
+                });
+            }
+        });
+    });
+
+    // Scroll depth tracking (25%, 50%, 75%, 100%)
+    let scrollDepths = {25: false, 50: false, 75: false, 100: false};
+
+    window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+
+        Object.keys(scrollDepths).forEach(depth => {
+            if (scrollPercent >= depth && !scrollDepths[depth]) {
+                scrollDepths[depth] = true;
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll_depth', {
+                        'event_category': 'engagement',
+                        'event_label': depth + '%',
+                        'value': depth
+                    });
+                }
+            }
+        });
+    });
+
+    // Article read completion (time-based: 30s, 60s, 120s)
+    const readMilestones = {30: false, 60: false, 120: false};
+    let startTime = Date.now();
+
+    setInterval(function() {
+        const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+
+        Object.keys(readMilestones).forEach(milestone => {
+            if (timeSpent >= milestone && !readMilestones[milestone]) {
+                readMilestones[milestone] = true;
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'time_on_page', {
+                        'event_category': 'engagement',
+                        'event_label': milestone + 's',
+                        'value': milestone
+                    });
+                }
+            }
+        });
+    }, 5000); // Check every 5 seconds
+
+    // Outbound link tracking
+    const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])');
+    externalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const url = this.href;
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click', {
+                    'event_category': 'outbound',
+                    'event_label': url,
+                    'transport_type': 'beacon'
+                });
+            }
+        });
+    });
+
+    // Language switcher clicks
+    const langLinks = document.querySelectorAll('.lang-switch a');
+    langLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const targetLang = this.textContent.trim();
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'language_switch', {
+                    'event_category': 'navigation',
+                    'event_label': targetLang,
+                    'value': 1
+                });
+            }
+        });
+    });
+
+    // Floating menu interactions
+    const menuButton = document.querySelector('.menu-btn');
+    if (menuButton) {
+        menuButton.addEventListener('click', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'menu_toggle', {
+                    'event_category': 'engagement',
+                    'event_label': 'floating_menu',
+                    'value': 1
+                });
+            }
+        });
+    }
+
+    // Featured post clicks (homepage)
+    const featuredCards = document.querySelectorAll('.featured-card, .post-card');
+    featuredCards.forEach((card, index) => {
+        card.addEventListener('click', function() {
+            const postTitle = this.querySelector('.featured-title, .post-title')?.textContent || 'unknown';
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'select_content', {
+                    'content_type': 'post_card',
+                    'item_id': postTitle,
+                    'position': index + 1,
+                    'event_category': 'engagement'
+                });
+            }
+        });
+    });
+});
+</script>
+{{ end }}

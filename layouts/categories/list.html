@@ -4,7 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
-    <meta name="description" content="Browse all posts in {{ .Title }} category at {{ .Site.Title }}">
+    {{- /* Category-specific meta descriptions */ -}}
+    {{- $metaDescription := printf "Browse all posts in %s category at %s" .Title .Site.Title -}}
+    {{- if eq .Title "Tech" -}}
+        {{- if eq $.Site.Language.Lang "ko" -}}
+            {{- $metaDescription = "최신 기술 트렌드, 개발 인사이트, 혁신적인 솔루션을 다루는 기술 카테고리입니다. 기술의 본질을 탐구하고 미래를 설계합니다." -}}
+        {{- else if eq $.Site.Language.Lang "ja" -}}
+            {{- $metaDescription = "最新のテクノロジートレンド、開発インサイト、革新的なソリューションを扱うテクノロジーカテゴリーです。技術の本質を探求し、未来をデザインします。" -}}
+        {{- else -}}
+            {{- $metaDescription = "Explore cutting-edge technology trends, development insights, and innovative solutions. Discover the essence of technology and design the future." -}}
+        {{- end -}}
+    {{- else if eq .Title "Business" -}}
+        {{- if eq $.Site.Language.Lang "ko" -}}
+            {{- $metaDescription = "비즈니스 전략, 경영 인사이트, 성장 스토리를 다루는 비즈니스 카테고리입니다. 비즈니스의 숨은 원리를 발견하고 성장을 만듭니다." -}}
+        {{- else if eq $.Site.Language.Lang "ja" -}}
+            {{- $metaDescription = "ビジネス戦略、経営インサイト、成長ストーリーを扱うビジネスカテゴリーです。ビジネスの隠れた原理を発見し、成長を創造します。" -}}
+        {{- else -}}
+            {{- $metaDescription = "Explore business strategies, management insights, and growth stories. Discover hidden principles of business and create sustainable growth." -}}
+        {{- end -}}
+    {{- else if eq .Title "Society" -}}
+        {{- if eq $.Site.Language.Lang "ko" -}}
+            {{- $metaDescription = "사회 이슈, 문화 현상, 트렌드 분석을 다루는 사회 카테고리입니다. 사회의 변화를 읽고 더 나은 내일을 상상합니다." -}}
+        {{- else if eq $.Site.Language.Lang "ja" -}}
+            {{- $metaDescription = "社会問題、文化現象、トレンド分析を扱う社会カテゴリーです。社会の変化を読み取り、より良い明日を想像します。" -}}
+        {{- else -}}
+            {{- $metaDescription = "Explore social issues, cultural phenomena, and trend analysis. Read societal changes and imagine a better tomorrow together." -}}
+        {{- end -}}
+    {{- else if eq .Title "Entertainment" -}}
+        {{- if eq $.Site.Language.Lang "ko" -}}
+            {{- $metaDescription = "영화, 음악, 문화 콘텐츠를 다루는 엔터테인먼트 카테고리입니다. 문화의 흐름을 따라가며 즐거움을 발견합니다." -}}
+        {{- else if eq $.Site.Language.Lang "ja" -}}
+            {{- $metaDescription = "映画、音楽、文化コンテンツを扱うエンターテインメントカテゴリーです。文化の流れを追いかけ、楽しさを発見します。" -}}
+        {{- else -}}
+            {{- $metaDescription = "Explore movies, music, and cultural content. Follow cultural trends and discover joy in entertainment." -}}
+        {{- end -}}
+    {{- else if eq .Title "Sports" -}}
+        {{- if eq $.Site.Language.Lang "ko" -}}
+            {{- $metaDescription = "스포츠 뉴스, 경기 분석, 선수 스토리를 다루는 스포츠 카테고리입니다. 열정과 도전의 순간들을 함께합니다." -}}
+        {{- else if eq $.Site.Language.Lang "ja" -}}
+            {{- $metaDescription = "スポーツニュース、試合分析、選手ストーリーを扱うスポーツカテゴリーです。情熱と挑戦の瞬間を共有します。" -}}
+        {{- else -}}
+            {{- $metaDescription = "Explore sports news, game analysis, and athlete stories. Share moments of passion and challenge." -}}
+        {{- end -}}
+    {{- end -}}
+    <meta name="description" content="{{ $metaDescription }}">
     <meta name="author" content="{{ .Site.Params.author }}">
 
     <!-- Favicon -->
@@ -28,7 +71,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta property="og:description" content="Browse all posts in {{ .Title }} category">
+    <meta property="og:description" content="{{ $metaDescription }}">
     <meta property="og:image" content="{{ .Site.BaseURL }}/favicon.svg">
     <meta property="og:site_name" content="{{ .Site.Title }}">
 
@@ -36,7 +79,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:url" content="{{ .Permalink }}">
     <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta name="twitter:description" content="Browse all posts in {{ .Title }} category">
+    <meta name="twitter:description" content="{{ $metaDescription }}">
     <meta name="twitter:image" content="{{ .Site.BaseURL }}/favicon.svg">
 
     {{ with site.Config.Services.GoogleAnalytics.ID }}
@@ -415,7 +458,7 @@
                         >
                         <img
                           src="{{ $fallback.RelPermalink }}"
-                          alt="{{ $.Title }}"
+                          alt="{{ $.Title }} - {{ $.Summary | plainify | truncate 60 }}"
                           loading="lazy"
                           width="400"
                           height="180"
@@ -427,8 +470,10 @@
                       {{- with .Params.image }}
                         <img
                           src="{{ . }}"
-                          alt="{{ $.Title }}"
+                          alt="{{ $.Title }} - {{ $.Summary | plainify | truncate 60 }}"
                           loading="lazy"
+                          width="400"
+                          height="180"
                         >
                       {{ else }}
                         📰

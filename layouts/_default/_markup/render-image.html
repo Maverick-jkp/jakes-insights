@@ -1,9 +1,16 @@
 {{- $u := urls.Parse .Destination -}}
 {{- $src := $u.String -}}
+{{- $width := 800 -}}
+{{- $height := 450 -}}
+{{- $imgResource := false -}}
+
 {{- if not $u.IsAbs -}}
   {{- $path := strings.TrimPrefix "./" $u.Path }}
   {{- with or (.Page.Resources.Get $path) (resources.Get $path) -}}
+    {{- $imgResource = . -}}
     {{- $src = .RelPermalink -}}
+    {{- $width = .Width -}}
+    {{- $height = .Height -}}
     {{- with $u.RawQuery -}}
       {{- $src = printf "%s?%s" $src . -}}
     {{- end -}}
@@ -12,7 +19,14 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
+
+{{- /* Improve alt text with page context if generic */ -}}
+{{- $altText := .Text -}}
+{{- if or (not $altText) (eq $altText $.Page.Title) -}}
+  {{- $altText = printf "%s - %s" $.Page.Title ($.Page.Summary | plainify | truncate 60) -}}
+{{- end -}}
+
+{{- $attributes := merge .Attributes (dict "alt" $altText "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy" "width" $width "height" $height) -}}
 <img
   {{- range $k, $v := $attributes -}}
     {{- if $v -}}

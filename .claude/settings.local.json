@@ -104,7 +104,10 @@
       "Bash(.git/hooks/pre-commit)",
       "Bash(git show:*)",
       "Bash(while read file)",
-      "Bash(do grep \"^categories:\" \"$file\")"
+      "Bash(do grep \"^categories:\" \"$file\")",
+      "Bash(SKIP_HOOKS=1 git commit:*)",
+      "Bash(head:*)",
+      "Bash(awk:*)"
     ]
   }
 }

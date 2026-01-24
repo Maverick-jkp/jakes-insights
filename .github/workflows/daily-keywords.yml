@@ -2,8 +2,8 @@ name: Daily Keyword Curation
 
 on:
   schedule:
-    # Run every day at 8:05 AM UTC (5:05 PM KST) - 5min buffer after API reset
-    - cron: '5 8 * * *'
+    # Run every day at 7:00 AM UTC (4:00 PM KST) - Earlier to avoid workflow conflicts
+    - cron: '0 7 * * *'
   workflow_dispatch:
     inputs:
       count:
@@ -20,6 +20,26 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Wait for other workflows (git lock)
+        run: |
+          MAX_WAIT=300  # 5 minutes max wait
+          WAIT_TIME=0
+          while [ -f .workflow-lock ]; do
+            if [ $WAIT_TIME -ge $MAX_WAIT ]; then
+              echo "⚠️ Lock timeout - proceeding anyway"
+              break
+            fi
+            echo "⏳ Waiting for other workflow to finish... ($WAIT_TIME/$MAX_WAIT seconds)"
+            sleep 10
+            WAIT_TIME=$((WAIT_TIME + 10))
+            git pull origin main  # Refresh to check lock status
+          done
+          echo "🔒 Creating workflow lock"
+          echo "$(date): Keyword curation workflow started" > .workflow-lock
+          git add .workflow-lock
+          git commit -m "🔒 Lock: Keyword workflow started" || true
+          git push origin main || true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -73,6 +93,18 @@ jobs:
             echo "✅ Successfully added new keywords to queue"
           else
             echo "⚠️ No new keywords to commit"
+          fi
+
+      - name: Release workflow lock
+        if: always()
+        run: |
+          if [ -f .workflow-lock ]; then
+            git pull origin main || true
+            git rm -f .workflow-lock || rm -f .workflow-lock
+            git add .workflow-lock 2>/dev/null || true
+            git commit -m "🔓 Unlock: Keyword workflow completed" || true
+            git push origin main || true
+            echo "🔓 Workflow lock released"
           fi
 
       - name: Summary

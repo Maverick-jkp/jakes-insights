@@ -489,7 +489,7 @@
       "category": "entertainment",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-25T00:45:06.972529",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -508,7 +508,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:03:31.098494+00:00",
+      "completed_at": "2026-01-24T16:07:39.481067+00:00"
     },
     {
       "id": "247-en-sports-haaland",
@@ -516,7 +518,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-25T00:45:06.972551",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -535,7 +537,9 @@
           "source": "www.espn.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:03:31.098494+00:00",
+      "completed_at": "2026-01-24T16:09:00.869085+00:00"
     },
     {
       "id": "248-en-sports-man-city-vs-wolves",
@@ -543,7 +547,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 5,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-25T00:45:06.972571",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -562,7 +566,9 @@
           "source": "www.24h.com.vn"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:03:31.098494+00:00",
+      "completed_at": "2026-01-24T16:11:27.818031+00:00"
     },
     {
       "id": "249-ko-sports-중국-u-23-대-일본-u-23",
@@ -570,7 +576,7 @@
       "category": "sports",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-25T00:45:06.972604",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -589,7 +595,9 @@
           "source": "www.yna.co.kr"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:03:31.098494+00:00",
+      "completed_at": "2026-01-24T16:04:51.574686+00:00"
     },
     {
       "id": "250-ko-entertainment-노희영",
@@ -597,7 +605,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-25T00:45:06.972624",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -616,7 +624,9 @@
           "source": "sports.donga.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:03:31.098494+00:00",
+      "completed_at": "2026-01-24T16:10:25.788142+00:00"
     },
     {
       "id": "251-ja-sports-アヤックス-対-フォレンダム",
@@ -624,7 +634,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-25T00:45:06.972699",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -643,7 +653,9 @@
           "source": "www.soccer-king.jp"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:03:31.098494+00:00",
+      "completed_at": "2026-01-24T16:06:23.049571+00:00"
     },
     {
       "id": "252-ja-sports-バイエルン",

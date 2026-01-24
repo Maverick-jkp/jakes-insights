@@ -100,7 +100,11 @@
       "Bash(do)",
       "Bash(done)",
       "Bash(git status:*)",
-      "Bash(xmllint:*)"
+      "Bash(xmllint:*)",
+      "Bash(.git/hooks/pre-commit)",
+      "Bash(git show:*)",
+      "Bash(while read file)",
+      "Bash(do grep \"^categories:\" \"$file\")"
     ]
   }
 }

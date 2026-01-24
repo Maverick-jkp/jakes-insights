@@ -554,7 +554,7 @@ class KeywordCurator:
                 })
                 seen_domains.add(source)
 
-            if len(references) >= 2:  # Get only 2 references per keyword
+            if len(references) >= 3:  # Get 3 references per keyword for AdSense quality
                 break
 
         return references

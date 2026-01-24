@@ -406,7 +406,7 @@ class KeywordCurator:
                 }
                 params = {
                     "q": query,
-                    "count": 2,  # Get top 2 results per query
+                    "count": 3,  # Get top 3 results per query for better quality
                     "freshness": "pw"  # Past week (최신 뉴스)
                 }
 
@@ -606,8 +606,49 @@ class KeywordCurator:
 
         safe_print(f"✅ Generated {len(candidates)} candidates\n")
 
+        # STEP 1: Remove duplicates (keep first occurrence)
+        seen_keywords = {}
+        dedup_candidates = []
+        duplicates_removed = 0
+
+        for candidate in candidates:
+            keyword_lower = candidate.get('keyword', '').lower()
+            if keyword_lower in seen_keywords:
+                duplicates_removed += 1
+                safe_print(f"  🔴 DUPLICATE REMOVED: {candidate.get('keyword')} (category: {candidate.get('category')})")
+            else:
+                seen_keywords[keyword_lower] = True
+                dedup_candidates.append(candidate)
+
+        if duplicates_removed > 0:
+            safe_print(f"\n⚠️  Removed {duplicates_removed} duplicate keywords from Claude's response\n")
+
+        # STEP 2: Auto-correct sports keywords category
+        sports_keywords = ['vs', 'vs.', 'game', 'match', 'league', 'cup', 'tournament', 'championship',
+                          'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
+                          'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
+                          'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma',
+                          'u23', 'u-23', 'u21', 'u-21', 'player', 'team', 'squad']
+
+        corrected_count = 0
+        for candidate in dedup_candidates:
+            keyword_lower = candidate.get('keyword', '').lower()
+            category = candidate.get('category', '')
+
+            # Auto-detect sports keywords
+            if category != 'sports':
+                is_sports = any(sport_term in keyword_lower for sport_term in sports_keywords)
+                if is_sports:
+                    old_category = category
+                    candidate['category'] = 'sports'
+                    corrected_count += 1
+                    safe_print(f"  ✅ AUTO-CORRECTED: {candidate.get('keyword')} ({old_category} → sports)")
+
+        if corrected_count > 0:
+            safe_print(f"\n✅ Auto-corrected {corrected_count} sports keywords\n")
+
         # Apply risk filtering
-        filtered_candidates = self.filter_by_risk(candidates)
+        filtered_candidates = self.filter_by_risk(dedup_candidates)
 
         # Extract references for each candidate
         safe_print(f"📚 Extracting references for {len(filtered_candidates)} candidates...\n")
@@ -730,15 +771,57 @@ class KeywordCurator:
             """Check if text contains only Kanji/Chinese characters (could be Japanese)"""
             return any('\u4e00' <= char <= '\u9fff' for char in text)
 
+        def has_vietnamese_chars(text):
+            """Check if text contains Vietnamese diacritics"""
+            vietnamese_chars = ['đ', 'ă', 'â', 'ê', 'ô', 'ơ', 'ư', 'á', 'à', 'ả', 'ã', 'ạ',
+                               'ắ', 'ằ', 'ẳ', 'ẵ', 'ặ', 'ấ', 'ầ', 'ẩ', 'ẫ', 'ậ',
+                               'é', 'è', 'ẻ', 'ẽ', 'ẹ', 'ế', 'ề', 'ể', 'ễ', 'ệ',
+                               'í', 'ì', 'ỉ', 'ĩ', 'ị', 'ó', 'ò', 'ỏ', 'õ', 'ọ',
+                               'ố', 'ồ', 'ổ', 'ỗ', 'ộ', 'ớ', 'ờ', 'ở', 'ỡ', 'ợ',
+                               'ú', 'ù', 'ủ', 'ũ', 'ụ', 'ứ', 'ừ', 'ử', 'ữ', 'ự',
+                               'ý', 'ỳ', 'ỷ', 'ỹ', 'ỵ']
+            return any(char in text.lower() for char in vietnamese_chars)
+
+        def has_spanish_only_chars(text):
+            """Check if text contains Spanish-only characters (ñ, á, é, í, ó, ú, ü, ¿, ¡)"""
+            # Check for Spanish question/exclamation marks
+            if '¿' in text or '¡' in text:
+                return True
+            # Check for ñ
+            if 'ñ' in text.lower():
+                return True
+            return False
+
         # Validation rules
         if language == 'ko':
+            # Korean must have Hangul
+            if not has_hangul(keyword):
+                return False
+            # Korean cannot have Japanese characters
             if has_hiragana_katakana(keyword) or (has_kanji_only(keyword) and not has_hangul(keyword)):
                 return False
+            # Korean cannot have Vietnamese/Spanish
+            if has_vietnamese_chars(keyword) or has_spanish_only_chars(keyword):
+                return False
         elif language == 'ja':
+            # Japanese must have Hiragana/Katakana or Kanji
+            if not (has_hiragana_katakana(keyword) or has_kanji_only(keyword)):
+                return False
+            # Japanese cannot have Korean
             if has_hangul(keyword):
                 return False
+            # Japanese cannot have Vietnamese/Spanish
+            if has_vietnamese_chars(keyword) or has_spanish_only_chars(keyword):
+                return False
         elif language == 'en':
+            # English cannot have Korean/Japanese
             if has_hangul(keyword) or has_hiragana_katakana(keyword):
+                return False
+            # English cannot have Vietnamese (common in trends)
+            if has_vietnamese_chars(keyword):
+                return False
+            # English cannot have Spanish-only markers
+            if has_spanish_only_chars(keyword):
                 return False
 
         return True

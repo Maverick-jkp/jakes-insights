@@ -31,10 +31,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install anthropic requests python-dotenv
 
-      - name: Cleanup expired keywords first
+      - name: Clear all pending keywords (fresh start daily)
         run: |
-          echo "🗑️ Cleaning up expired keywords..."
-          python scripts/cleanup_expired.py 2
+          echo "🗑️ Clearing all pending keywords for fresh daily batch..."
+          python3 << 'EOF'
+          import json
+          with open('data/topics_queue.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          pending_count = len([t for t in data['topics'] if t['status'] == 'pending'])
+          data['topics'] = [t for t in data['topics'] if t['status'] != 'pending']
+          with open('data/topics_queue.json', 'w', encoding='utf-8') as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+          print(f"✅ Cleared {pending_count} pending keywords")
+          print(f"   Remaining: {len(data['topics'])} completed topics")
+          EOF
 
       - name: Curate new keywords
         env:

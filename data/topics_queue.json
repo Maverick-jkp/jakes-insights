@@ -30,33 +30,6 @@
       "completed_at": "2026-01-24T03:15:43.253395+00:00"
     },
     {
-      "id": "215-en-tech-mercy-(2026-film)",
-      "keyword": "mercy (2026 film)",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187219",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Viewers want to understand how close we are to AI-controlled justice systems in reality",
-      "angle": "Dystopian future becoming present reality",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Mercy (2026 film) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Mercy_(2026_film)",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Mercy (2026) | Action, Crime, Drama",
-          "url": "https://www.imdb.com/title/tt31050594/",
-          "source": "www.imdb.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "216-en-business-hyundai-recalls",
       "keyword": "hyundai recalls",
       "category": "business",
@@ -113,33 +86,6 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-24T14:32:28.957798+00:00",
       "completed_at": "2026-01-24T14:52:47.329329+00:00"
-    },
-    {
-      "id": "218-en-society-adam22-and-jason-fig",
-      "keyword": "adam22 and jason fight",
-      "category": "society",
-      "lang": "en",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187257",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "People want to understand the consequences of digital conflicts becoming physical",
-      "angle": "Social media drama crossing dangerous boundaries",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Adam22 Says Jason Luv Went 'Too Far' in Latest Promo for Upcoming Fight",
-          "url": "https://www.complex.com/music/a/treyalston/adam22-jason-luv-foo-far-fight",
-          "source": "www.complex.com"
-        },
-        {
-          "title": "Adam22 on Arguing with Jason Luv Online After He Did a Scene with His Wife Lena (Flashback) - YouTub",
-          "url": "https://www.youtube.com/watch?v=R8o9UZ23gvM",
-          "source": "www.youtube.com"
-        }
-      ],
-      "expiry_days": 3
     },
     {
       "id": "219-ko-tech-그록",
@@ -258,33 +204,6 @@
       "completed_at": "2026-01-24T03:17:29.917049+00:00"
     },
     {
-      "id": "223-ko-business-afc-u-23-축구-선수권-대회",
-      "keyword": "afc u-23 축구 선수권 대회",
-      "category": "business",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187304",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "축구 관계자들이 한국 축구 시스템의 문제점과 해결책을 찾아야 함",
-      "angle": "스포츠 산업 경쟁력 위기",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "축구: AFC U-23 아시안컵 경기 일정 및 결과",
-          "url": "https://www.olympics.com/ko/news/football-fixtures-results-afc-u23-asian-cup-2026",
-          "source": "www.olympics.com"
-        },
-        {
-          "title": "'한국·일본 격차 더 벌어지나' 3월 유럽 원정 평가전 확정된 日 U21 | 스타뉴스",
-          "url": "https://www.starnewskorea.com/sports/2026/01/24/2026012323113718817",
-          "source": "www.starnewskorea.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "224-ja-society-地震速報",
       "keyword": "地震速報",
       "category": "society",
@@ -307,33 +226,6 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-24T14:03:39.115642+00:00",
       "completed_at": "2026-01-24T14:06:39.812994+00:00"
-    },
-    {
-      "id": "225-ja-sports-auxerre-vs-psg",
-      "keyword": "auxerre vs psg",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187320",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "サッカーファンが試合結果と賭けの影響を把握する必要",
-      "angle": "スポーツ賭博における予測困難性",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Paris Saint-Germain FC - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Paris Saint-Germain Football Club - Wikipedia, la enciclopedia libre",
-          "url": "https://es.wikipedia.org/wiki/Paris_Saint-Germain_Football_Club",
-          "source": "es.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
     },
     {
       "id": "226-ja-business-衆議院-選挙区",
@@ -365,88 +257,6 @@
       "completed_at": "2026-01-24T03:18:55.122842+00:00"
     },
     {
-      "id": "227-ja-entertainment-セリエa",
-      "keyword": "セリエa",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187336",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "サッカーファンがリーグ情勢変化に対応し戦略を練り直す必要",
-      "angle": "スポーツ予測市場における急激な変化",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "【トリノ×ローマ｜ハイライト】セリエA第21節｜2025-26シーズン - YouTube",
-          "url": "https://www.youtube.com/watch?v=HF7yxg8SOdE",
-          "source": "www.youtube.com"
-        },
-        {
-          "title": "セリエA前半戦総括「伸びしろを残す」好調の４位ユベントス、「５大リーグ全体で最少失点」の５位ローマはFW２人獲得【現地発コラム】（THE DIGEST） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/98c5d2de5491ea4e2cd53463d0cd0103a2daed23",
-          "source": "news.yahoo.co.jp"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "228-ja-tech-山本建",
-      "keyword": "山本建",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187343",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "有権者が世襲問題の実態と対抗策を理解する必要",
-      "angle": "民主主義制度における世襲問題の深刻化",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "衆議院選挙:義母は高市首相・山本建氏を福井2区の公認候補として上申決定…山本拓氏の長男、41歳の現職県議 : 読売新聞",
-          "url": "https://www.yomiuri.co.jp/local/kansai/news/20260119-GYO1T00057/",
-          "source": "www.yomiuri.co.jp"
-        },
-        {
-          "title": "「世襲批判は認識している」義理の母が高市総理、父は元国会議員 次期衆院選に出馬表明の山本建氏「何としても自民党の議席を取り戻す」｜FNNプライムオンライン",
-          "url": "https://www.fnn.jp/articles/-/987535",
-          "source": "www.fnn.jp"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
-      "id": "229-en-lifestyle-snooki",
-      "keyword": "snooki",
-      "category": "lifestyle",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187352",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Fans want to understand if supporting her new show is appropriate during her health battle",
-      "angle": "Work-life balance ethics in celebrity culture",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Nicole \"Snooki\" Polizzi Shares Doctors Found Cancerous Cells in Her Cervix",
-          "url": "https://www.eonline.com/news/1427669/nicole-snooki-polizzi-on-cancerous-cells-found-in-cervix?cmpid=rss-syndicate-genericrss-us-top_stories",
-          "source": "www.eonline.com"
-        },
-        {
-          "title": "Nicole ‘Snooki’ Polizzi Teases Spooky New Series ‘Paranormal Rookie’ With BTS Photos",
-          "url": "https://www.yahoo.com/entertainment/tv/articles/nicole-snooki-polizzi-teases-spooky-194156521.html",
-          "source": "www.yahoo.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "230-en-finance-hyundai-recalls",
       "keyword": "hyundai recalls",
       "category": "finance",
@@ -474,195 +284,6 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-24T02:58:10.406027+00:00",
       "completed_at": "2026-01-24T03:20:00.189077+00:00"
-    },
-    {
-      "id": "231-en-education-mercy-(2026-film)",
-      "keyword": "mercy (2026 film)",
-      "category": "education",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187371",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Viewers need to understand the implications of AI in justice systems before it becomes reality",
-      "angle": "Science fiction becoming dangerous reality",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Mercy (2026 film) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Mercy_(2026_film)",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Mercy (2026) | Action, Crime, Drama",
-          "url": "https://www.imdb.com/title/tt31050594/",
-          "source": "www.imdb.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "232-en-society-adam22-and-jason-fig",
-      "keyword": "adam22 and jason fight",
-      "category": "society",
-      "lang": "en",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187381",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Social media users want to understand the legal and ethical boundaries of online conflicts",
-      "angle": "Influencer culture promoting dangerous behavior",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Adam22 Says Jason Luv Went 'Too Far' in Latest Promo for Upcoming Fight",
-          "url": "https://www.complex.com/music/a/treyalston/adam22-jason-luv-foo-far-fight",
-          "source": "www.complex.com"
-        },
-        {
-          "title": "Adam22 on Arguing with Jason Luv Online After He Did a Scene with His Wife Lena (Flashback) - YouTub",
-          "url": "https://www.youtube.com/watch?v=R8o9UZ23gvM",
-          "source": "www.youtube.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "233-en-entertainment-ufc-schedule",
-      "keyword": "ufc schedule",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187391",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "MMA fans need strategies to prioritize which events are worth their time and money",
-      "angle": "Sports entertainment oversaturation affecting fan experience",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "What do you need to know about new era of UFC? Jon Anik dishes on Paramount, 2026 storylines - The A",
-          "url": "https://www.nytimes.com/athletic/6991824/2026/01/23/ufc-paramount-how-to-watch-changes/",
-          "source": "www.nytimes.com"
-        },
-        {
-          "title": "UFC 324 - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/UFC_324",
-          "source": "en.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "234-ko-finance-그록",
-      "keyword": "그록",
-      "category": "finance",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187399",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "AI 서비스 사용자들이 법적 책임과 손해 배상 위험을 파악해야 함",
-      "angle": "AI 사용자의 예상치 못한 법적 책임",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "[AI는 지금] '19금' 대화 꺼내든 AI 챗봇…그록 사태에 제동? - ZDNet korea",
-          "url": "https://zdnet.co.kr/view/?no=20260118101910",
-          "source": "zdnet.co.kr"
-        },
-        {
-          "title": "‘나체 이미지’ 논란 머스크號 AI ‘그록’...글로벌 규제에 사면초가",
-          "url": "https://www.chosun.com/economy/tech_it/2026/01/19/7QBZ4NWB5BANNJZSGEROZBUI3Q/",
-          "source": "www.chosun.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "235-ko-lifestyle-psg",
-      "keyword": "psg",
-      "category": "lifestyle",
-      "lang": "ko",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187406",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "축구 팬들이 구단의 진정성과 팬 서비스 품질을 재평가해야 함",
-      "angle": "스포츠 팬덤과 상업주의의 갈등",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Paris Saint-Germain FC - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Paris Saint-Germain Football Club - Wikipedia, la enciclopedia libre",
-          "url": "https://es.wikipedia.org/wiki/Paris_Saint-Germain_Football_Club",
-          "source": "es.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "236-ko-education-ufc",
-      "keyword": "ufc",
-      "category": "education",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187414",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "격투기 팬들이 글로벌 일정에 맞는 시청 계획을 세워야 함",
-      "angle": "글로벌 스포츠 이벤트의 시간대 불평등",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "What do you need to know about new era of UFC? Jon Anik dishes on Paramount, 2026 storylines - The A",
-          "url": "https://www.nytimes.com/athletic/6991824/2026/01/23/ufc-paramount-how-to-watch-changes/",
-          "source": "www.nytimes.com"
-        },
-        {
-          "title": "UFC 324 - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/UFC_324",
-          "source": "en.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "237-ko-society-u23",
-      "keyword": "u23",
-      "category": "society",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187421",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "축구 관계자들이 청소년 축구 시스템의 근본적 문제를 파악해야 함",
-      "angle": "한국 스포츠 육성 시스템의 구조적 문제",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Video bóng đá U23 Việt Nam - U23 Hàn Quốc: Từ trượt chân phút 90+7 tới vỡ òa loạt luân lưu (U23 châu",
-          "url": "https://www.24h.com.vn/bong-da/video-bong-da-u23-viet-nam-u23-han-quoc-khoanh-khac-vang-cua-quoc-viet-dinh-bac-u23-chau-a-c48a1732067.html",
-          "source": "www.24h.com.vn"
-        },
-        {
-          "title": "2026 AFC U-23 Asian Cup - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/2026_AFC_U-23_Asian_Cup",
-          "source": "en.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
     },
     {
       "id": "238-ko-business-afc-u-23-축구-선수권-대회",
@@ -776,33 +397,6 @@
       "completed_at": "2026-01-24T03:05:20.072833+00:00"
     },
     {
-      "id": "242-ja-entertainment-セリエa",
-      "keyword": "セリエa",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-24T06:35:37.187462",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "サッカーファンがリーグ戦況変化に対応し観戦戦略を練り直す必要",
-      "angle": "スポーツ観戦における期待値管理の重要性",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "【トリノ×ローマ｜ハイライト】セリエA第21節｜2025-26シーズン - YouTube",
-          "url": "https://www.youtube.com/watch?v=HF7yxg8SOdE",
-          "source": "www.youtube.com"
-        },
-        {
-          "title": "セリエA前半戦総括「伸びしろを残す」好調の４位ユベントス、「５大リーグ全体で最少失点」の５位ローマはFW２人獲得【現地発コラム】（THE DIGEST） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/98c5d2de5491ea4e2cd53463d0cd0103a2daed23",
-          "source": "news.yahoo.co.jp"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "243-ja-tech-山本建",
       "keyword": "山本建",
       "category": "tech",
@@ -832,396 +426,320 @@
       "completed_at": "2026-01-24T14:15:21.680459+00:00"
     },
     {
-      "id": "244-en-sports-bundesliga",
-      "keyword": "bundesliga",
+      "id": "244-en-sports-charles-bediako",
+      "keyword": "charles bediako",
       "category": "sports",
       "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209762",
+      "created_at": "2026-01-25T00:36:28.263996",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Users fear their team might get relegated and want to track current standings before it's too late",
-      "angle": "Relegation battle and transfer deadline pressure",
+      "search_intent": "NCAA 자격 규정 논란과 선수 권리 침해 사실을 확인하지 않으면 스포츠계의 구조적 불공정을 놓칠 수 있음",
+      "angle": "NCAA 규정의 불공정성과 선수 권리 침해 관점",
       "competition_level": "medium",
       "references": [
         {
-          "title": "Bundesliga - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Bundesliga",
-          "source": "en.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "245-en-sports-u23-asian-cup",
-      "keyword": "u23 asian cup",
-      "category": "sports",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209849",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Users want to see if promising young players will breakthrough or fade into obscurity",
-      "angle": "Career-defining tournament for youth prospects",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AFC U-23 Asian Cup - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/AFC_U-23_Asian_Cup",
+          "title": "Charles Bediako - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Charles_Bediako",
           "source": "en.wikipedia.org"
         },
         {
-          "title": "How to watch 2026 Pegasus World Cup: Schedule, post time, location, entries list - NBC Sports",
-          "url": "https://www.nbcsports.com/horse-racing/news/how-to-watch-2026-pegasus-world-cup-schedule-post-time-location-entries-list",
-          "source": "www.nbcsports.com"
+          "title": "What to know about Charles Bediako, more men's college basketball eligibility cases - ESPN",
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/47685841/mens-college-basketball-ncaa-eligibility-faq-charles-bediako-james-nnaji",
+          "source": "www.espn.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "246-en-finance-nebraska-vs-minnesot",
-      "keyword": "nebraska vs minnesota prediction",
-      "category": "finance",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209902",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Users need accurate predictions before placing bets or they'll lose money",
-      "angle": "High-stakes betting decision with financial consequences",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Nebraska Cornhuskers at Minnesota Golden Gophers odds, picks and predictions",
-          "url": "https://sportsbookwire.usatoday.com/story/sports/ncaab/2026/01/24/nebraska-at-minnesota-odds-picks-and-predictions/88303313007/",
-          "source": "sportsbookwire.usatoday.com"
-        },
-        {
-          "title": "Nebraska Cornhuskers vs Minnesota Golden Gophers Prediction, 1/24/2026 College Basketball Picks, Bes",
-          "url": "https://www.docsports.com/free-picks/ncaa-college-basketball/2026/nebraska-cornhuskers-vs-minnesota-golden-gophers-prediction-1-24-2026-college-basketball-picks-best-bets-odds.html",
-          "source": "www.docsports.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "247-en-lifestyle-can-trees-explode-in",
-      "keyword": "can trees explode in cold weather",
-      "category": "lifestyle",
+      "id": "245-en-entertainment-nyt-crossword-answer",
+      "keyword": "nyt crossword answers",
+      "category": "entertainment",
       "lang": "en",
       "priority": 6,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209929",
+      "created_at": "2026-01-25T00:36:28.264055",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Users fear potential property damage from exploding trees during extreme cold weather",
-      "angle": "Unexpected property damage from natural phenomena",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Do trees actually explode from 'extreme' cold? | FOX 9 Minneapolis-St. Paul",
-          "url": "https://www.fox9.com/weather/trees-explode-cold",
-          "source": "www.fox9.com"
-        },
-        {
-          "title": "Exploding tree - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Exploding_tree",
-          "source": "en.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "248-en-entertainment-pegasus-world-cup-20",
-      "keyword": "pegasus world cup 2026",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209943",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Users want to place winning bets on high-stakes horse racing before odds change",
-      "angle": "High-stakes gambling opportunity with limited time window",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "AFC U-23 Asian Cup - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/AFC_U-23_Asian_Cup",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "How to watch 2026 Pegasus World Cup: Schedule, post time, location, entries list - NBC Sports",
-          "url": "https://www.nbcsports.com/horse-racing/news/how-to-watch-2026-pegasus-world-cup-schedule-post-time-location-entries-list",
-          "source": "www.nbcsports.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "249-ko-sports-번리-대-토트넘",
-      "keyword": "번리 대 토트넘",
-      "category": "sports",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209957",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "강등권 팀의 생존을 걱정하는 팬들이 경기 결과를 확인하려 함",
-      "angle": "강등권 팀의 절체절명 생존 경기",
+      "search_intent": "크로스워드 연속 완성 기록을 유지하지 않으면 성취감과 일상 루틴이 무너질 수 있음",
+      "angle": "일일 퍼즐 완성의 압박감과 성취 욕구",
       "competition_level": "high",
       "references": [
         {
-          "title": "[승부예측] 1월25일(일) 00:00 PL 23R 번리 vs 토트넘 스코어 예측",
-          "url": "https://www.interfootball.co.kr/news/articleView.html?idxno=678379",
-          "source": "www.interfootball.co.kr"
+          "title": "NYT Crossword Answers for Jan. 23, 2026 - The New York Times",
+          "url": "https://www.nytimes.com/2026/01/22/crosswords/daily-puzzle-2026-01-23.html",
+          "source": "www.nytimes.com"
         },
         {
-          "title": "\"도르트문트전이 분수령\" 英 유력지, 프랭크 감독 후임으로 \"라이언 메이슨 & 포체티노\" 언급 | 미주중앙일보",
-          "url": "https://www.koreadaily.com/article/20260119151108566",
-          "source": "www.koreadaily.com"
+          "title": "Sat Jan 24, 2026 NYT crossword by Adrian Johnson & Ryan McCarty",
+          "url": "https://www.xwordinfo.com/crossword",
+          "source": "www.xwordinfo.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "250-ko-entertainment-원진아",
-      "keyword": "원진아",
-      "category": "entertainment",
-      "lang": "ko",
+      "id": "246-en-sports-omar-marmoush",
+      "keyword": "omar marmoush",
+      "category": "sports",
+      "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209968",
+      "created_at": "2026-01-25T00:36:28.264074",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "드라마 시청자들이 배우의 연기력에 대한 불만을 확인하고 싶어함",
-      "angle": "배우의 연기력 논란이 작품에 미치는 영향",
-      "competition_level": "medium",
+      "search_intent": "새로운 스타 선수의 영향력을 지금 파악하지 않으면 시즌 전망을 잘못 예측할 수 있음",
+      "angle": "신규 이적 선수의 리그 판도 변화 영향",
+      "competition_level": "low",
       "references": [
         {
-          "title": "지성의 빅픽처, '전생 인연' 원진아와 공조 시작 \"김법래 잡게 해주겠다\" ('이한영')[종합]",
-          "url": "https://tvreport.co.kr/broadcast/article/991119/",
-          "source": "tvreport.co.kr"
+          "title": "Omar Marmoush - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Omar_Marmoush",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "‘D.P.’ ‘오겜’ 거쳐 ‘메이드인코리아’까지… 원지안이라는 도화지",
-          "url": "https://www.donga.com/news/Culture/article/all/20260120/133188629/2",
-          "source": "www.donga.com"
+          "title": "Pep on Marmoush return after AFCON involvement",
+          "url": "https://www.mancity.com/news/mens/pep-guardiola-omar-marmoush-bodo-63904350",
+          "source": "www.mancity.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "251-ko-sports-바이에른-대-아우크스부르크",
-      "keyword": "바이에른 대 아우크스부르크",
+      "id": "247-en-sports-ole-miss-basketball",
+      "keyword": "ole miss basketball",
+      "category": "sports",
+      "lang": "en",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-25T00:36:28.264090",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "팀의 급격한 하락세를 지금 확인하지 않으면 시즌 전망을 잘못 판단할 수 있음",
+      "angle": "연승 중단 후 팀의 위기 상황",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ole Miss Rebels men's basketball - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ole_Miss_Rebels_men's_basketball",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Will Ole Miss basketball win vs Mark Pope, Kentucky? Our prediction",
+          "url": "https://www.clarionledger.com/story/sports/college/ole-miss/2026/01/23/ole-miss-basketball-kentucky-predictions-expert-picks/88220087007/",
+          "source": "www.clarionledger.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "249-ko-sports-중국-u-23-대-일본-u-23",
+      "keyword": "중국 u-23 대 일본 u-23",
       "category": "sports",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209979",
+      "created_at": "2026-01-25T00:36:28.264124",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "한국 선수의 출전 기회를 걱정하는 팬들의 불안감",
-      "angle": "한국 선수의 기회 박탈과 미래에 대한 우려",
+      "search_intent": "동아시아 청소년 축구 패권 변화를 지금 확인하지 않으면 지역 스포츠 판도를 놓칠 수 있음",
+      "angle": "외교적 긴장감이 스포츠에 투영된 대결",
       "competition_level": "medium",
       "references": [
         {
-          "title": "[승부예측] 1월25일(일) 00:00 PL 23R 번리 vs 토트넘 스코어 예측",
-          "url": "https://www.interfootball.co.kr/news/articleView.html?idxno=678379",
-          "source": "www.interfootball.co.kr"
+          "title": "외교 냉각 속…중국, 일본과 결승 앞두고 \"설욕할 때\" 들썩 :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260123_0003487803",
+          "source": "www.newsis.com"
         },
         {
-          "title": "\"도르트문트전이 분수령\" 英 유력지, 프랭크 감독 후임으로 \"라이언 메이슨 & 포체티노\" 언급 | 미주중앙일보",
-          "url": "https://www.koreadaily.com/article/20260119151108566",
-          "source": "www.koreadaily.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "252-ko-society-울산-불",
-      "keyword": "울산 불",
-      "category": "society",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.209988",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "화재 뉴스를 보고 자신의 거주지역 안전성을 걱정하는 사람들",
-      "angle": "예상치 못한 화재 위험성과 지역 안전 문제",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "울산 태화강 명촌 억새밭 곳곳 불…\"인명피해 없어\"",
-          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008416799",
-          "source": "news.sbs.co.kr"
-        },
-        {
-          "title": "울산 명촌교 인근 갈대밭 화재…1시간 만에 진화 | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20260124047300052",
+          "title": "AFC U-23 아시안컵 4강 확정…한국 vs 일본·중국 vs 베트남 | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260118017000007",
           "source": "www.yna.co.kr"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "253-ko-entertainment-최진실",
-      "keyword": "최진실",
-      "category": "entertainment",
+      "id": "250-ko-business-노희영",
+      "keyword": "노희영",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-25T00:36:28.264136",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "성공한 기업가의 변화 의지를 지금 배우지 않으면 개인 성장의 기회를 놓칠 수 있음",
+      "angle": "성공 후에도 계속되는 자기 변화의 의지",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "'62세' 노희영, 외식업계 큰손답네...\"환갑잔치만 20번 했다\" - 스포츠조선",
+          "url": "https://www.sportschosun.com/entertainment/2026-01-20/202601200100115750016574",
+          "source": "www.sportschosun.com"
+        },
+        {
+          "title": "노희영, ‘환갑잔치 20번’ 이유 있었다…“이제 바뀌겠다는 선언” (동치미)",
+          "url": "https://sports.donga.com/ent/article/all/20260121/133195523/1",
+          "source": "sports.donga.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "251-ko-sports-man-city-vs-wolves",
+      "keyword": "man city vs wolves",
+      "category": "sports",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.210022",
+      "created_at": "2026-01-25T00:36:28.264149",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "고인의 가족이 겪는 지속적인 갈등 상황을 걱정하며 확인하려 함",
-      "angle": "유명인 가족의 지속되는 갈등과 상처",
+      "search_intent": "강팀의 위기 상황을 지금 확인하지 않으면 시즌 판도 변화를 놓칠 수 있음",
+      "angle": "예상치 못한 강팀의 위기와 회복 가능성",
       "competition_level": "high",
       "references": [
         {
-          "title": "'故 최진실 딸' 최준희, 외할머니 저격하더니...의미심장 발언 - MHN / 엠에이치앤",
-          "url": "https://www.mhnse.com/news/articleView.html?idxno=501867",
-          "source": "www.mhnse.com"
+          "title": "Man City vs. Wolves: Preview, Predictions and Lineups",
+          "url": "https://www.si.com/soccer/man-city-vs-wolves-preview-predictions-lineups-1-24-26",
+          "source": "www.si.com"
         },
         {
-          "title": "'최진실 딸' 최준희, 또 외조모 불화설…\"사랑 받지 못 해\" 저격 의혹 [Oh!쎈 이슈]",
-          "url": "https://www.chosun.com/entertainments/broadcast/2026/01/20/GYYGENZWGZTDENRUME4GCOJTGM/",
-          "source": "www.chosun.com"
+          "title": "Man City vs Wolves LIVE Erling Haaland and Phil Foden miss out, Marc Guehi makes debut - Manchester ",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-city-vs-wolves-live-33294816",
+          "source": "www.manchestereveningnews.co.uk"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "254-ja-sports-cctv5",
-      "keyword": "cctv5",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.210040",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "중요한 스포츠 경기 중계를 놓칠까봐 걱정하는 시청자들",
-      "angle": "독점 중계로 인한 시청 기회 제한",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "今日！cctv5直播u23国足冲冠+nba杨瀚森出战，5+转澳网王欣瑜亮相|纽约尼克斯队|多伦多猛龙队|杨翰森|法甲|亚特兰大_手机新浪网",
-          "url": "https://sports.sina.cn/2026-01-24/detail-inhiipvi6115507.d.html?vt=4&cid=76959&node_id=76959",
-          "source": "sports.sina.cn"
-        },
-        {
-          "title": "中国中央电视台体育频道 - 维基百科，自由的百科全书",
-          "url": "https://zh.wikipedia.org/zh-cn/%E4%B8%AD%E5%9B%BD%E4%B8%AD%E5%A4%AE%E7%94%B5%E8%A7%86%E5%8F%B0%E4%BD%93%E8%82%B2%E9%A2%91%E9%81%93",
-          "source": "zh.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "255-ja-society-bish",
-      "keyword": "bish",
+      "id": "252-ko-society-주사이모",
+      "keyword": "주사이모",
       "category": "society",
-      "lang": "ja",
+      "lang": "ko",
       "priority": 6,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.210049",
+      "created_at": "2026-01-25T00:36:28.264160",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "未解決事件に対する不安と正義への渇望",
-      "angle": "未解決事件の危険性と社会への影響",
+      "search_intent": "불법 의료행위 사건의 진실을 지금 확인하지 않으면 유사한 피해를 당할 수 있음",
+      "angle": "연예계 불법 의료행위의 은밀한 실태",
       "competition_level": "low",
       "references": [
         {
-          "title": "Killing of Molly Bish - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Killing_of_Molly_Bish",
-          "source": "en.wikipedia.org"
+          "title": "주사이모 \"전 국민 가십거리 돼…사실과 다른 사생활 확산돼\" :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260124_0003488811",
+          "source": "www.newsis.com"
+        },
+        {
+          "title": "박나래 주사이모 전 국민 가십거리 돼…진실 말할 곳은 수사기관 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026012402387",
+          "source": "www.hankyung.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "256-ja-sports-三笘薫",
-      "keyword": "三笘薫",
+      "id": "253-ko-sports-번리-대-토트넘",
+      "keyword": "번리 대 토트넘",
       "category": "sports",
-      "lang": "ja",
-      "priority": 9,
+      "lang": "ko",
+      "priority": 7,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.210058",
+      "created_at": "2026-01-25T00:36:28.264171",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "日本代表選手の調子を心配するサポーターの不安",
-      "angle": "エース選手の不調が代表チーム全体に与える影響",
+      "search_intent": "감독 경질 위기 상황을 지금 확인하지 않으면 팀의 변화 시점을 놓칠 수 있음",
+      "angle": "감독의 마지막 기회와 팀의 위기",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "외교 냉각 속…중국, 일본과 결승 앞두고 \"설욕할 때\" 들썩 :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260123_0003487803",
+          "source": "www.newsis.com"
+        },
+        {
+          "title": "AFC U-23 아시안컵 4강 확정…한국 vs 일본·중국 vs 베트남 | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260118017000007",
+          "source": "www.yna.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "254-ja-sports-アヤックス-対-フォレンダム",
+      "keyword": "アヤックス 対 フォレンダム",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-25T00:36:28.264183",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "日本人選手の重要な復帰戦を今確認しないと、キャリアの転換点を見逃す可能性がある",
+      "angle": "長期離脱からの復帰戦の重要性",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "アヤックスvsフォレンダム スタメン発表 | ゲキサカ",
+          "url": "https://web.gekisaka.jp/news/world/detail/?445299-445299-fl=",
+          "source": "web.gekisaka.jp"
+        },
+        {
+          "title": "冨安健洋がアヤックスで待望のベンチ入り！ 476日ぶりの公式戦出場に期待 | サッカーキング",
+          "url": "https://www.soccer-king.jp/news/world/ned/20260124/2118276.html",
+          "source": "www.soccer-king.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "256-ja-tech-ff7-リメイク",
+      "keyword": "ff7 リメイク",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-25T00:36:28.264205",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "新プラットフォーム版の特徴を今確認しないと、最適なゲーム体験を逃す可能性がある",
+      "angle": "新プラットフォーム版による体験の違い",
       "competition_level": "high",
       "references": [
         {
-          "title": "三笘薫 関連ニュース：時事ドットコム",
-          "url": "https://www.jiji.com/jc/v7?id=mitomakaoru",
-          "source": "www.jiji.com"
-        },
-        {
-          "title": "三笘薫 プレミア通算100試合出場 - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/pickup/6566809",
-          "source": "news.yahoo.co.jp"
+          "title": "Switch2版「FF7リメイク インターグレード」レビュー - GAME Watch",
+          "url": "https://game.watch.impress.co.jp/docs/review/rev1/2078810.html",
+          "source": "game.watch.impress.co.jp"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "257-ja-entertainment-ニッポンの社長",
-      "keyword": "ニッポンの社長",
+      "id": "257-ja-entertainment-イヴォンヌ",
+      "keyword": "イヴォンヌ",
       "category": "entertainment",
       "lang": "ja",
-      "priority": 7,
+      "priority": 5,
       "status": "pending",
-      "created_at": "2026-01-25T00:07:07.210067",
+      "created_at": "2026-01-25T00:36:28.264214",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "復活を試みる芸人への期待と不安",
-      "angle": "芸能界での復活の困難さと現実",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "ニッポンの社長、『キングオブコント』次大会出場を表明「イチから挑みたい」 昨年は欠場｜Infoseekニュース",
-          "url": "https://news.infoseek.co.jp/article/oricon_2431672/",
-          "source": "news.infoseek.co.jp"
-        },
-        {
-          "title": "ニッポンの社長、『キングオブコント』次大会出場を表明「イチから挑みたい」 昨年は欠場",
-          "url": "https://www.oricon.co.jp/news/2431672/full/",
-          "source": "www.oricon.co.jp"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
-      "id": "258-ja-education-工藤公康",
-      "keyword": "工藤公康",
-      "category": "education",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-25T00:07:07.210075",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "指導方法の時代適応性への疑問と不安",
-      "angle": "世代間の指導方法ギャップによる悪影響",
+      "search_intent": "最強キャラの入手機会を今逃すと、ゲーム進行で大きな差が生まれる可能性がある",
+      "angle": "リセマラ期間限定の最強キャラ入手機会",
       "competition_level": "low",
       "references": [
         {
-          "title": "1月27日から聞き書き新シリーズ 工藤公康さん「生きる力を身につける」",
-          "url": "https://www.nishinippon.co.jp/item/1449216/",
-          "source": "www.nishinippon.co.jp"
+          "title": "【エンドフィールド】イヴォンヌの評価とおすすめパーティ編成・武器【アークナイツ】｜ゲームエイト",
+          "url": "https://game8.jp/arknights-endfield/687521",
+          "source": "game8.jp"
         },
         {
-          "title": "工藤公康さんが野球教室を開催【岩手・宮古市】（IAT岩手朝日テレビ）｜ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/article/iat/region/iat-2169198",
-          "source": "topics.smt.docomo.ne.jp"
+          "title": "【エンドフィールド】イヴォンヌの評価とおすすめパーティ【アークナイツ】 - ゲームウィズ",
+          "url": "https://gamewith.jp/akendfield/541122",
+          "source": "gamewith.jp"
         }
       ],
       "expiry_days": 3

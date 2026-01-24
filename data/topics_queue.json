@@ -896,7 +896,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 8,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-25T01:31:42.806988",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -921,8 +921,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
-      "completed_at": "2026-01-24T16:44:43.111478+00:00"
+      "reserved_at": null
     },
     {
       "id": "260-ja-sports-フランクフルト-サッカー",

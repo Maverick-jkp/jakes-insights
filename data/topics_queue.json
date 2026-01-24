@@ -35,7 +35,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 5,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T01:48:08.506579",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55,8 +55,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T16:48:57.668000+00:00",
-      "completed_at": "2026-01-21T17:28:09.588482+00:00"
+      "reserved_at": "2026-01-21T16:48:57.668000+00:00"
     },
     {
       "id": "119-ja-lifestyle-しゃぶ葉",
@@ -64,7 +63,7 @@
       "category": "lifestyle",
       "lang": "ja",
       "priority": 5,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T01:48:08.506606",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -84,8 +83,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T16:48:57.668000+00:00",
-      "completed_at": "2026-01-21T17:29:23.457368+00:00"
+      "reserved_at": "2026-01-21T16:48:57.668000+00:00"
     },
     {
       "id": "120-ja-entertainment-SixTONES",
@@ -93,7 +91,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 4,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T01:48:08.506613",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -112,8 +110,7 @@
           "source": "www.youtube.com"
         }
       ],
-      "expiry_days": 3,
-      "completed_at": "2026-01-22T03:04:20+09:00"
+      "expiry_days": 3
     },
     {
       "id": "123-en-lifestyle-james-beard-semifina",
@@ -208,7 +205,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916216",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -228,8 +225,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T21:21:52.678557+00:00",
-      "completed_at": "2026-01-21T21:23:34.294947+00:00"
+      "reserved_at": "2026-01-21T21:21:52.678557+00:00"
     },
     {
       "id": "128-ko-finance-msft",
@@ -295,7 +291,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916263",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -315,8 +311,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T21:21:52.678557+00:00",
-      "completed_at": "2026-01-21T21:24:34.496947+00:00"
+      "reserved_at": "2026-01-21T21:21:52.678557+00:00"
     },
     {
       "id": "132-en-entertainment-qarabağ---frankfurt",
@@ -382,7 +377,7 @@
       "category": "business",
       "lang": "en",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916288",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -402,8 +397,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T21:21:52.678557+00:00",
-      "completed_at": "2026-01-21T21:25:36.773111+00:00"
+      "reserved_at": "2026-01-21T21:21:52.678557+00:00"
     },
     {
       "id": "136-ja-entertainment-爆弾-映画",
@@ -440,7 +434,7 @@
       "category": "society",
       "lang": "ja",
       "priority": 8,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916311",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -460,8 +454,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T17:53:24.420723+00:00",
-      "completed_at": "2026-01-21T18:04:20.874381+00:00"
+      "reserved_at": "2026-01-21T17:53:24.420723+00:00"
     },
     {
       "id": "138-ja-tech-quad-cortex-mini",
@@ -469,7 +462,7 @@
       "category": "tech",
       "lang": "ja",
       "priority": 6,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916319",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -489,8 +482,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T04:07:47.234940+00:00",
-      "completed_at": "2026-01-22T04:10:17.695833+00:00"
+      "reserved_at": "2026-01-22T04:07:47.234940+00:00"
     },
     {
       "id": "139-ja-finance-msft",
@@ -556,7 +548,7 @@
       "category": "society",
       "lang": "en",
       "priority": 6,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916341",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -576,8 +568,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T04:07:47.234940+00:00",
-      "completed_at": "2026-01-22T04:11:26.458766+00:00"
+      "reserved_at": "2026-01-22T04:07:47.234940+00:00"
     },
     {
       "id": "142-ja-sports-jackson-lacombe",
@@ -643,7 +634,7 @@
       "category": "lifestyle",
       "lang": "en",
       "priority": 5,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916364",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -663,8 +654,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T04:36:37.251597+00:00",
-      "completed_at": "2026-01-22T04:42:46.981741+00:00"
+      "reserved_at": "2026-01-22T04:36:37.251597+00:00"
     },
     {
       "id": "145-ko-lifestyle-진에어",
@@ -701,7 +691,7 @@
       "category": "education",
       "lang": "ko",
       "priority": 6,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916395",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -721,8 +711,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T04:36:37.251597+00:00",
-      "completed_at": "2026-01-22T04:38:10.757942+00:00"
+      "reserved_at": "2026-01-22T04:36:37.251597+00:00"
     },
     {
       "id": "149-ko-sports-qarabağ---frankfurt",
@@ -759,7 +748,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 8,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T02:52:12.916411",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -779,8 +768,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T17:53:24.420723+00:00",
-      "completed_at": "2026-01-21T18:08:42.619844+00:00"
+      "reserved_at": "2026-01-21T17:53:24.420723+00:00"
     },
     {
       "id": "151-ko-business-msft",
@@ -846,7 +834,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 9,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T03:41:48.041141",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -866,8 +854,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-21T19:40:22.305452+00:00",
-      "completed_at": "2026-01-21T19:41:46.763735+00:00"
+      "reserved_at": "2026-01-21T19:40:22.305452+00:00"
     },
     {
       "id": "155-en-entertainment-sydney-sweeney",
@@ -986,7 +973,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405305",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1006,8 +993,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
-      "completed_at": "2026-01-22T10:18:14.232694+00:00"
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00"
     },
     {
       "id": "160-ko-sports-김진성",
@@ -1044,7 +1030,7 @@
       "category": "finance",
       "lang": "ko",
       "priority": 9,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405337",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1064,8 +1050,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T08:56:11.767147+00:00",
-      "completed_at": "2026-01-22T08:58:43.401846+00:00"
+      "reserved_at": "2026-01-22T08:56:11.767147+00:00"
     },
     {
       "id": "162-ko-education-전남대",
@@ -1073,7 +1058,7 @@
       "category": "education",
       "lang": "ko",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405347",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1088,8 +1073,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
-      "completed_at": "2026-01-22T10:19:30.950647+00:00"
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00"
     },
     {
       "id": "163-ko-finance-우리은행",
@@ -1144,7 +1128,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405375",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1164,8 +1148,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
-      "completed_at": "2026-01-22T10:21:01.148194+00:00"
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00"
     },
     {
       "id": "166-ja-entertainment-若隆景",
@@ -1173,7 +1156,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 6,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405384",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1193,8 +1176,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
-      "completed_at": "2026-01-22T10:25:25.948060+00:00"
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00"
     },
     {
       "id": "167-ja-lifestyle-sorana-cîrstea",
@@ -1202,7 +1184,7 @@
       "category": "lifestyle",
       "lang": "ja",
       "priority": 5,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405394",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1222,8 +1204,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
-      "completed_at": "2026-01-22T10:28:22.612726+00:00"
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00"
     },
     {
       "id": "168-ja-sports-sl-vs-eng",
@@ -1231,7 +1212,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 6,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T17:56:05.405403",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1251,8 +1232,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T10:17:01.805037+00:00",
-      "completed_at": "2026-01-22T10:26:56.078802+00:00"
+      "reserved_at": "2026-01-22T10:17:01.805037+00:00"
     },
     {
       "id": "169-ja-finance-current-interest-rat",
@@ -1284,7 +1264,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 9,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T19:48:07.182004",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1304,8 +1284,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T11:06:30.701586+00:00",
-      "completed_at": "2026-01-22T11:08:11.492498+00:00"
+      "reserved_at": "2026-01-22T11:06:30.701586+00:00"
     },
     {
       "id": "171-ko-entertainment-이금희",
@@ -1313,7 +1292,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T19:48:07.182040",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1333,8 +1312,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T11:06:30.701586+00:00",
-      "completed_at": "2026-01-22T11:17:18.402622+00:00"
+      "reserved_at": "2026-01-22T11:06:30.701586+00:00"
     },
     {
       "id": "172-ko-finance-캐시워크-정답",
@@ -1569,7 +1547,7 @@
       "category": "society",
       "lang": "ja",
       "priority": 9,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T19:48:07.182082",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1589,8 +1567,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T11:06:30.701586+00:00",
-      "completed_at": "2026-01-22T11:10:51.618601+00:00"
+      "reserved_at": "2026-01-22T11:06:30.701586+00:00"
     },
     {
       "id": "181-ja-entertainment-フォートナイト",
@@ -1598,7 +1575,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 7,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T19:48:07.182086",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1618,8 +1595,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T11:06:30.701586+00:00",
-      "completed_at": "2026-01-22T11:19:34.963326+00:00"
+      "reserved_at": "2026-01-22T11:06:30.701586+00:00"
     },
     {
       "id": "182-ja-education-東京科学大学",
@@ -1627,7 +1603,7 @@
       "category": "education",
       "lang": "ja",
       "priority": 6,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T19:48:07.182091",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1647,8 +1623,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T11:06:30.701586+00:00",
-      "completed_at": "2026-01-22T11:23:35.072324+00:00"
+      "reserved_at": "2026-01-22T11:06:30.701586+00:00"
     },
     {
       "id": "183-ja-business-又吉直樹",
@@ -1656,7 +1631,7 @@
       "category": "business",
       "lang": "ja",
       "priority": 5,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T19:48:07.182096",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1676,8 +1651,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-22T11:06:30.701586+00:00",
-      "completed_at": "2026-01-22T11:24:51.515396+00:00"
+      "reserved_at": "2026-01-22T11:06:30.701586+00:00"
     },
     {
       "id": "184-ja-tech-wsaz",
@@ -1871,7 +1845,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 9,
-      "status": "completed",
+      "status": "available",
       "created_at": "2026-01-22T20:34:51.661215",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -1891,8 +1865,7 @@
         }
       ],
       "expiry_days": 3,
-      "reserved_at": "2026-01-23T21:13:57.880834+00:00",
-      "completed_at": "2026-01-23T21:16:43.254917+00:00"
+      "reserved_at": "2026-01-23T21:13:57.880834+00:00"
     },
     {
       "id": "192-ko-business-울산-현대모비스-대-서울-sk",

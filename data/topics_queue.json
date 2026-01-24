@@ -685,6 +685,273 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-24T15:47:03.009442+00:00",
       "completed_at": "2026-01-24T15:50:18.090836+00:00"
+    },
+    {
+      "id": "253-en-society-ice-shooting",
+      "keyword": "ice shooting",
+      "category": "society",
+      "lang": "en",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806709",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "지역 안전 상황을 확인하지 않으면 예상치 못한 위험에 노출될 수 있음",
+      "angle": "연방 요원의 총격 사건 증가 추세와 지역사회 안전 우려",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "ICE-involved shooting reported in Minneapolis on Saturday",
+          "url": "https://www.kttc.com/2026/01/24/ice-involved-shooting-reported-minneapolis-saturday/",
+          "source": "www.kttc.com"
+        },
+        {
+          "title": "Killing of Renée Good - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Killing_of_Renee_Good",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "LIVE UPDATES | ICE in MN: Third shooting in Minneapolis involving federal agents | FOX 9 Minneapolis",
+          "url": "https://www.fox9.com/news/ice-mn-third-federal-agents-shooting-minneapolis",
+          "source": "www.fox9.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:40:32.094245+00:00"
+    },
+    {
+      "id": "254-en-sports-wizards-vs-hornets",
+      "keyword": "wizards vs hornets",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806793",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "변경된 경기 일정을 확인하지 않으면 경기 시청 기회를 완전히 놓칠 수 있음",
+      "angle": "날씨로 인한 경기 일정 변경과 팬들의 혼란",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "How to watch Wizards vs. Hornets: TV channel and streaming options for January 24 - The Athletic",
+          "url": "https://www.nytimes.com/athletic/6995616/2026/01/24/how-to-watch-wizards-vs-hornets-tv-channel-and-streaming-options-for-january-24/",
+          "source": "www.nytimes.com"
+        },
+        {
+          "title": "Wizards-Hornets game on Saturday rescheduled due to impending weather",
+          "url": "https://www.nba.com/news/wizards-hornets-game-rescheduled",
+          "source": "www.nba.com"
+        },
+        {
+          "title": "Washington plays Charlotte on 5-game road skid - ABC News",
+          "url": "https://abcnews.go.com/Sports/wireStory/washington-plays-charlotte-5-game-road-skid-129482268",
+          "source": "abcnews.go.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:45:52.520550+00:00"
+    },
+    {
+      "id": "255-en-society-ice-minnesota",
+      "keyword": "ice minnesota",
+      "category": "society",
+      "lang": "en",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806826",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ICE 단속 현황을 파악하지 않으면 가족의 안전을 지킬 준비를 할 수 없음",
+      "angle": "미네소타 지역 ICE 단속 확대와 지역사회 반발",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "ICE-involved shooting reported in Minneapolis on Saturday",
+          "url": "https://www.kttc.com/2026/01/24/ice-involved-shooting-reported-minneapolis-saturday/",
+          "source": "www.kttc.com"
+        },
+        {
+          "title": "Killing of Renée Good - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Killing_of_Renee_Good",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "LIVE UPDATES | ICE in MN: Third shooting in Minneapolis involving federal agents | FOX 9 Minneapolis",
+          "url": "https://www.fox9.com/news/ice-mn-third-federal-agents-shooting-minneapolis",
+          "source": "www.fox9.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:41:52.360700+00:00"
+    },
+    {
+      "id": "256-en-sports-north-florida-basket",
+      "keyword": "north florida basketball",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806855",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "대학 농구의 극적인 순간들을 실시간으로 확인하지 않으면 스포츠의 재미를 놓침",
+      "angle": "대학 농구 경기의 극적인 막판 승부",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Last Second Shot Sinks Colonels At North Florida - Eastern Kentucky University Athletics",
+          "url": "https://ekusports.com/news/2026/1/22/mens-basketball-last-second-shot-sinks-colonels-at-north-florida.aspx",
+          "source": "ekusports.com"
+        },
+        {
+          "title": "Oriol leads North Florida against Bellarmine | FOX Sports",
+          "url": "https://www.foxsports.com/articles/cbk/oriol-leads-north-florida-against-bellarmine",
+          "source": "www.foxsports.com"
+        },
+        {
+          "title": "Predicted winter weather impacts First Coast college basketball schedules",
+          "url": "https://www.jacksonville.com/story/sports/college/basketball/2026/01/23/first-coast-college-basketball-winter-weather-north-florida-ospreys-jacksonville-dolphins/88312224007/",
+          "source": "www.jacksonville.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:48:37.044357+00:00"
+    },
+    {
+      "id": "257-ko-entertainment-이다희",
+      "keyword": "이다희",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806907",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "솔로지옥 새 시즌 정보를 놓치면 화제의 연예 프로그램을 뒤늦게 알게 됨",
+      "angle": "40세에도 완벽한 몸매를 유지하는 연예인의 비결",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Lee Da-hee - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lee_Da-hee",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "40세에도 이 비율…이다희, 솔로지옥5 앞두고 존재감 과시",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/01/17/GM2DKMRXGUYGKN3DMJTDQN3FMQ/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "국민의힘, 청와대 앞에서 규탄대회...\"쌍특검 수용하라\" | 아주경제",
+          "url": "https://www.ajunews.com/view/20260120113433725",
+          "source": "www.ajunews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:43:15.046964+00:00"
+    },
+    {
+      "id": "258-ko-sports-해외축구",
+      "keyword": "해외축구",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806933",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "한국 선수들의 해외 리그 활약상을 놓치면 응원할 기회와 자부심을 잃음",
+      "angle": "한국 선수의 유럽 리그 적응 과정과 경쟁",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "'뎀벨레 원맨쇼' PSG, 릴 3-0 완파…이강인은 또 결장 - 노컷뉴스",
+          "url": "https://www.nocutnews.co.kr/news/6457841",
+          "source": "www.nocutnews.co.kr"
+        },
+        {
+          "title": "[속보] 이강인, PSG 떠난다…“아틀레티코 영입 제안 수락”",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=794217",
+          "source": "www.spotvnews.co.kr"
+        },
+        {
+          "title": "\"손흥민이 찢고 카세미루가 중원서 지원\" 월클 만남 이뤄지나... \"나 LA FC 갈래\" MLS '사기 조합' 뜬다 | 스타뉴스",
+          "url": "https://www.starnewskorea.com/sports/2026/01/24/2026012422105630014",
+          "source": "www.starnewskorea.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:47:32.422369+00:00"
+    },
+    {
+      "id": "259-ja-entertainment-東出昌大",
+      "keyword": "東出昌大",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.806988",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "芸能界の裏話を知らないと、メディアの本当の姿を理解できないまま騙される可能性",
+      "angle": "芸能人と週刊誌記者の信頼関係破綻の実態",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "東出昌大、週刊誌の記者に裏切られた過去を告白 本人に直接注意「そういう仕事しちゃダメだよ」（スポニチアネックス） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/20731b34179b887827396047ea3e4cce2a139345",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "東出昌大、週刊誌の記者に裏切られた過去を告白 本人に直接注意「そういう仕事しちゃダメだよ」 - スポニチ Sponichi Annex 芸能",
+          "url": "https://www.sponichi.co.jp/entertainment/news/2026/01/18/kiji/20260118s00041000248000c.html",
+          "source": "www.sponichi.co.jp"
+        },
+        {
+          "title": "近畿大学 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E8%BF%91%E7%95%BF%E5%A4%A7%E5%AD%A6",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:44:43.111478+00:00"
+    },
+    {
+      "id": "260-ja-sports-フランクフルト-サッカー",
+      "keyword": "フランクフルト サッカー",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "completed",
+      "created_at": "2026-01-25T01:31:42.807048",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "スタメン情報を事前に確認しないと、期待する選手の出場を見逃す可能性",
+      "angle": "ドイツブンデスリーガの注目カードとスタメン分析",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "フランクフルトvsホッフェンハイム スタメン発表 | ゲキサカ",
+          "url": "https://web.gekisaka.jp/news/world/detail/?445293-445293-fl",
+          "source": "web.gekisaka.jp"
+        },
+        {
+          "title": "Ｅフランクフルト敗退 堂安律は後半途中まで―サッカー欧州ＣＬ：時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026012200294&g=spo",
+          "source": "www.jiji.com"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-01-24T16:39:17.489362+00:00",
+      "completed_at": "2026-01-24T16:50:09.686265+00:00"
     }
   ]
 }

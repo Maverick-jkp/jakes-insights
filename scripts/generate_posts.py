@@ -105,12 +105,13 @@ Every topic must clearly answer:
 5. Sections: 3-4 ## headings (scannable)
 6. End: Clear CTA - question or next step
 
-[Medium Style (Required!)]
-- Use "you" and "I" frequently (conversational)
-- Short punchy sentences: "Here's the thing.", "Let me explain."
-- Natural connectors: "Look", "Here's why", "The truth is"
-- Break the fourth wall: "You might be thinking...", "Sound familiar?"
-- Strong sentence starters: "Forget X.", "Stop doing Y.", "Start with Z."
+[Writing Style (Required!)]
+- Use "you" and "I" sparingly for conversational tone
+- Short direct sentences without filler phrases
+- Natural transitions without overused connectors
+- Avoid AI tell-tale phrases: "Here's the thing", "Sound familiar?", "Look", "Let me explain"
+- Strong sentence starters: State facts directly, use specific data points
+- Include recent dates, statistics, and concrete examples (2025-2026 data preferred)
 
 [Style - Completion Optimized]
 - Active voice, short sentences (1-2 lines)
@@ -848,10 +849,30 @@ Return improved version (body only, no title):""",
 
         validation_result = validation_response.content[0].text.strip().lower()
 
-        # If validation fails, log warning (but still use the title)
+        # If validation fails, regenerate title with strict instructions
         if not validation_result.startswith('yes') and not validation_result.startswith('예') and not validation_result.startswith('はい'):
             safe_print(f"  ⚠️  Title-content mismatch detected: {validation_result}")
-            safe_print(f"     Title: {generated_title}")
+            safe_print(f"     Original title: {generated_title}")
+            safe_print(f"  🔄 Regenerating title with strict content alignment...")
+
+            # Regenerate with stricter prompt
+            regenerate_prompts = {
+                "en": f"Generate a title that EXACTLY matches what this content discusses. Do NOT promise specifics that aren't in the content. Do NOT use words like 'confirmed', 'breaking', or future dates unless explicitly stated.\n\nContent preview:\n{content_preview}\n\nKeyword to include: {keyword}\n\nTitle (60-70 chars):",
+                "ko": f"본문이 실제로 다루는 내용과 정확히 일치하는 제목을 생성하세요. 본문에 없는 구체적 내용을 약속하지 마세요. '확정', '속보', 미래 날짜는 본문에 명시되지 않으면 사용하지 마세요.\n\n본문 미리보기:\n{content_preview}\n\n포함할 키워드: {keyword}\n\n제목 (40-50자):",
+                "ja": f"本文が実際に議論する内容と正確に一致するタイトルを生成してください。本文にない具体的な内容を約束しないでください。「確定」「速報」または未来の日付は本文に明示されていない限り使用しないでください。\n\n本文プレビュー:\n{content_preview}\n\n含めるキーワード: {keyword}\n\nタイトル（30-40文字）:"
+            }
+
+            regenerate_response = self.client.messages.create(
+                model=self.model,
+                max_tokens=100,
+                messages=[{
+                    "role": "user",
+                    "content": regenerate_prompts[lang]
+                }]
+            )
+
+            generated_title = regenerate_response.content[0].text.strip().strip('"').strip("'")
+            safe_print(f"  ✓ Regenerated title: {generated_title}")
 
         return generated_title
 
@@ -1301,6 +1322,7 @@ Return improved version (body only, no title):""",
 title: "{title}"
 date: {now_kst.strftime("%Y-%m-%dT%H:%M:%S%z")}
 draft: false
+author: "Jake Park"
 categories: ["{category}"]
 tags: {json.dumps(keyword.split()[:3])}
 description: "{description}"

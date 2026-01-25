@@ -107,7 +107,8 @@
       "Bash(do grep \"^categories:\" \"$file\")",
       "Bash(SKIP_HOOKS=1 git commit:*)",
       "Bash(head:*)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(git rebase:*)"
     ]
   }
 }

@@ -75,7 +75,6 @@ jobs:
           # Explicitly mask secrets in GitHub Actions logs
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
-          echo 
 
           COUNT="${{ github.event.inputs.count || '15' }}"
           echo "📝 Generating $COUNT new keywords..."

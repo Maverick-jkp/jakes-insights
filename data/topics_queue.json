@@ -891,39 +891,6 @@
       "completed_at": "2026-01-24T16:47:32.422369+00:00"
     },
     {
-      "id": "259-ja-entertainment-東出昌大",
-      "keyword": "東出昌大",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-25T01:31:42.806988",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "芸能界の裏話を知らないと、メディアの本当の姿を理解できないまま騙される可能性",
-      "angle": "芸能人と週刊誌記者の信頼関係破綻の実態",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "東出昌大、週刊誌の記者に裏切られた過去を告白 本人に直接注意「そういう仕事しちゃダメだよ」（スポニチアネックス） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/20731b34179b887827396047ea3e4cce2a139345",
-          "source": "news.yahoo.co.jp"
-        },
-        {
-          "title": "東出昌大、週刊誌の記者に裏切られた過去を告白 本人に直接注意「そういう仕事しちゃダメだよ」 - スポニチ Sponichi Annex 芸能",
-          "url": "https://www.sponichi.co.jp/entertainment/news/2026/01/18/kiji/20260118s00041000248000c.html",
-          "source": "www.sponichi.co.jp"
-        },
-        {
-          "title": "近畿大学 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E8%BF%91%E7%95%BF%E5%A4%A7%E5%AD%A6",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
       "id": "260-ja-sports-フランクフルト-サッカー",
       "keyword": "フランクフルト サッカー",
       "category": "sports",
@@ -1475,6 +1442,305 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-25T12:30:00.132396+00:00",
       "completed_at": "2026-01-25T12:43:30.550307+00:00"
+    },
+    {
+      "id": "277-en-entertainment-quinton-aaron",
+      "keyword": "quinton aaron",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709654",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fear that beloved actors from inspirational films are facing serious health crises without public knowledge",
+      "angle": "Hidden health struggles of Hollywood actors who inspired millions",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "'Blind Side' Actor Quinton Aaron Hospitalized After Falling At Home",
+          "url": "https://www.tmz.com/2026/01/25/blind-side-actor-quinton-aaron-hospitalized-after-falling-at-home/",
+          "source": "www.tmz.com"
+        },
+        {
+          "title": "Sandra Bullock's Blind Side costar Quinton Aaron is 'fighting for his life' in hospital after fallin",
+          "url": "https://www.dailymail.co.uk/tvshowbiz/article-15497403/Sandra-Bullock-Blind-Quinton-Aaron-hospital-falling-home.html",
+          "source": "www.dailymail.co.uk"
+        },
+        {
+          "title": "'The Blind Side' Star Quinton Aaron Hospitalized After Collapsing - Parade",
+          "url": "https://parade.com/news/the-blind-side-star-hospitalized-after-collapsing",
+          "source": "parade.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "278-en-sports-iga-swiatek",
+      "keyword": "iga swiatek",
+      "category": "sports",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709688",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Anxiety about witnessing the potential end of a historic sports achievement",
+      "angle": "The pressure and expectations crushing even the world's best athletes",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Iga Świątek - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Iga_%C5%9Awi%C4%85tek",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Iga Swiatek is still the only tennis player to reach the third round of every Grand Slam this decade",
+          "url": "https://www.tennis.com/news/articles/iga-swiatek-only-tennis-player-to-reach-third-round-every-grand-slam-this-decade-2026-australian-open",
+          "source": "www.tennis.com"
+        },
+        {
+          "title": "Australian Open 2026: 'Life-changing' Iga Swiatek match awaits Australian qualifier Maddison Inglis ",
+          "url": "https://www.bbc.com/sport/tennis/articles/c5y3xkj2x15o",
+          "source": "www.bbc.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "279-en-business-jewelry-near-me",
+      "keyword": "jewelry near me",
+      "category": "business",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709711",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Panic about finding meaningful gifts before Valentine's Day deadline with limited local options",
+      "angle": "Time-sensitive gift shopping with relationship stakes",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Best Online Jewelry Stores 2026: A Gem Expert’s Guide, Plus Top Gift Picks",
+          "url": "https://www.forbes.com/sites/forbes-personal-shopper/article/best-online-jewelry-store/",
+          "source": "www.forbes.com"
+        },
+        {
+          "title": "Finding the Perfect Jewelry Repair Store Near You - Oreate AI Blog",
+          "url": "https://www.oreateai.com/blog/finding-the-perfect-jewelry-repair-store-near-you/d978b353aa8c9d9f349198784105145f",
+          "source": "www.oreateai.com"
+        },
+        {
+          "title": "Where to sell jewelry around Long Island/ NYC : r/longisland",
+          "url": "https://www.reddit.com/r/longisland/comments/1qkw92n/where_to_sell_jewelry_around_long_island_nyc/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "280-en-business-irs-refund",
+      "keyword": "irs refund",
+      "category": "business",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709732",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fear of losing substantial money by not filing taxes quickly enough to claim large refunds",
+      "angle": "Limited-time government money opportunity that requires immediate action",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Tax refunds are expected to be huge this year. How to get yours quick",
+          "url": "https://www.usatoday.com/story/money/taxes/2026/01/25/tax-refunds-2026-how-to-get-yours-quick/88317570007/",
+          "source": "www.usatoday.com"
+        },
+        {
+          "title": "Tax Refunds and the One Big Beautiful Bill Act",
+          "url": "https://taxfoundation.org/blog/tax-refunds-one-big-beautiful-bill-act/",
+          "source": "taxfoundation.org"
+        },
+        {
+          "title": "Why Your Tax Refund Could Be Bigger In 2026—And What Else You Need To Know",
+          "url": "https://www.forbes.com/sites/kellyphillipserb/2026/01/21/why-your-tax-refund-could-be-bigger-in-2026-and-what-else-you-need-to-know/",
+          "source": "www.forbes.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "281-ko-entertainment-신지",
+      "keyword": "신지",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709756",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "자신의 인생 진전에 대한 불안과 연예인과의 비교 심리",
+      "angle": "중년 연예인의 인생 변화와 팬들의 시간 경과에 대한 인식",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "신지, '7살 연하' 문원과 5월 결혼 발표 \"염려 잘 알아…노력할 것\" - 머니투데이",
+          "url": "https://www.mt.co.kr/entertainment/2026/01/26/2026012615051154622",
+          "source": "www.mt.co.kr"
+        },
+        {
+          "title": "신지, 7세 연하 문원과 5월 결혼 \"걱정 잘알아…서로 의지하며 단단해져\" [전문] - 뉴스1",
+          "url": "https://www.news1.kr/entertain/celebrity-topic/6050959",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "신지, 자필 편지로 결혼 발표...\"염려·걱정 알아, 잊지 않고 나아가겠다\" - 중앙이코노미뉴스",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=489808",
+          "source": "www.joongangenews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "282-ko-society-김경",
+      "keyword": "김경",
+      "category": "society",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709778",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "정치권 부패에 대한 분노와 시민으로서의 배신감",
+      "angle": "지방 정치인의 부패가 보여주는 정치권 전체의 구조적 문제",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "[단독] 김경 “환갑 넘긴 나이, 구청장 되고 싶어”... 민주 의원들에 줄대기 시도",
+          "url": "https://www.chosun.com/national/incident/2026/01/24/DPPRMXHZDZEKLCUG7BRJMFVLMQ/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "“김경, 또다른 여당 의원에도 금품 제공 모의”… 경찰, 수사 확대",
+          "url": "https://www.donga.com/news/Society/article/all/20260121/133203100/1",
+          "source": "www.donga.com"
+        },
+        {
+          "title": "'개혁신당 탈당' 밝힌 김성열 \"김경 관련 여당 관계자는 나다\" | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25399852",
+          "source": "www.joongang.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "283-ko-sports-엘레나-리바키나",
+      "keyword": "엘레나 리바키나",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709803",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "한국 스포츠의 국제적 경쟁력에 대한 불안과 열등감",
+      "angle": "해외 스타 선수와 한국 스포츠 인프라의 격차",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "이엘리야 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%97%98%EB%A6%AC%EC%95%BC",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "견리나 - 나무위키",
+          "url": "https://archive.is/QXCYm",
+          "source": "archive.is"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "284-ja-entertainment-馬場亮成",
+      "keyword": "馬場亮成",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709865",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "芸能界の恋愛事情に対する疑念と隠された真実への関心",
+      "angle": "芸能事務所内恋愛の背景にある業界構造の問題",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3
+    },
+    {
+      "id": "285-ja-society-中国-習近平",
+      "keyword": "中国 習近平",
+      "category": "society",
+      "lang": "ja",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709891",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "隣国の政治不安が自国に及ぼす安全保障上の脅威への懸念",
+      "angle": "中国内政の変化が東アジア全体の安定性に与える影響",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "習近平 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E7%BF%92%E8%BF%91%E5%B9%B3",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "習近平 - 維基百科，自由的百科全書",
+          "url": "https://zh.wikipedia.org/zh-hant/%E4%B9%A0%E8%BF%91%E5%B9%B3",
+          "source": "zh.wikipedia.org"
+        },
+        {
+          "title": "中国軍制服組トップも「例外なき粛正」 習氏「一強」世代交代狙う？",
+          "url": "https://www.asahi.com/articles/ASV1S3H0PV1SUHBI013M.html",
+          "source": "www.asahi.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "286-ja-society-大鶴義丹",
+      "keyword": "大鶴義丹",
+      "category": "society",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-26T08:40:07.709914",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "歴史ドラマの演出が正しい歴史理解を阻害することへの懸念",
+      "angle": "エンターテイメントと歴史教育の境界線の曖昧さ",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "豊臣兄弟！コラム #03 今川の大軍が尾張に接近！ 大大名・今川義元はなぜわざわざ自ら出陣したのでしょう？ | ステラnet",
+          "url": "https://www.steranet.jp/articles/104894",
+          "source": "www.steranet.jp"
+        },
+        {
+          "title": "【豊臣兄弟！】今川義元の野望 織田信長を倒す？永禄３年の軍事行動の２つの目的とは？ | 戦国ヒストリー",
+          "url": "https://sengoku-his.com/3044",
+          "source": "sengoku-his.com"
+        },
+        {
+          "title": "大鶴義丹 家の前にクマ出没、猟友会出動する事態に 翌日役所から支給されたモノとは - スポニチ Sponichi Annex 芸能",
+          "url": "https://www.sponichi.co.jp/entertainment/news/2026/01/21/kiji/20260121s00041000302000c.html",
+          "source": "www.sponichi.co.jp"
+        }
+      ],
+      "expiry_days": 3
     }
   ]
 }

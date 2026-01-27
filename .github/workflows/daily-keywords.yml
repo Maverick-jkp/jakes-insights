@@ -9,7 +9,7 @@ on:
       count:
         description: 'Number of keywords to generate'
         required: false
-        default: '10'
+        default: '15'
 
 jobs:
   curate-keywords:

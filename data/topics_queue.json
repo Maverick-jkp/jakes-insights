@@ -2159,38 +2159,6 @@
       "completed_at": "2026-01-28T10:30:25.305383+00:00"
     },
     {
-      "id": "302-en-society-aaron's",
-      "keyword": "aaron's",
-      "category": "society",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-01-28T07:30:22.169622",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "배우의 현재 상태와 회복 가능성을 확인하지 않으면 안타까운 소식을 놓침",
-      "angle": "유명 배우의 생명 위험 상황과 의료진의 대응",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "‘Blind Side’ star Quinton Aaron on life support after severe blood infection, wife says he's 'a figh",
-          "url": "https://www.foxnews.com/entertainment/blind-side-star-quinton-aaron-life-support-after-severe-blood-infection-wife-says-hes-a-fighter",
-          "source": "www.foxnews.com"
-        },
-        {
-          "title": "Aaron Rodgers - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Aaron_Rodgers",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "'Blind Side' actor Quinton Aaron on life support with blood infection - ABC News",
-          "url": "https://abcnews.go.com/GMA/Culture/blind-side-actor-quinton-aaron-life-support-blood/story?id=129597710",
-          "source": "abcnews.go.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "303-en-business-asml",
       "keyword": "asml",
       "category": "business",
@@ -2327,37 +2295,368 @@
       "completed_at": "2026-01-28T10:34:37.654425+00:00"
     },
     {
-      "id": "307-ja-business-ニデック",
-      "keyword": "ニデック",
-      "category": "business",
-      "lang": "ja",
-      "priority": 7,
+      "id": "307-en-tech-ios-26.2.1",
+      "keyword": "ios 26.2.1",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-01-28T07:30:22.169810",
+      "created_at": "2026-01-29T07:42:27.044724",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "제3자 위원회 조사 결과를 기다리지 말고 지금 투자 결정을 내려야 함",
-      "angle": "대기업 창업자의 회계 부정 스캔들과 투자자 피해",
+      "search_intent": "긴급 보안 패치나 중요한 기능을 놓치면 개인정보 유출이나 시스템 오류 위험",
+      "angle": "애플의 '긴급 경고'가 의미하는 진짜 위험성과 즉시 업데이트해야 하는 이유",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "iOS 26.2.1—Update Now Warning Issued To Millions Of iPhone Users",
+          "url": "https://www.forbes.com/sites/kateoflahertyuk/2026/01/28/ios-2621-update-now-warning-issued-to-millions-of-iphone-users/?streamIndex=0",
+          "source": "www.forbes.com"
+        },
+        {
+          "title": "Apple Releases iOS 26.2.1 With AirTag 2 Support - MacRumors",
+          "url": "https://www.macrumors.com/2026/01/26/apple-releases-ios-26-2-1/",
+          "source": "www.macrumors.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "308-en-business-personal-injury-atto",
+      "keyword": "personal injury attorney",
+      "category": "business",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044762",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "사고 직후 변호사 없이 보험회사와 대화하면 수천만원 손해 가능성",
+      "angle": "보험회사의 초기 합의 제안이 왜 항상 터무니없이 낮은지와 대응 전략",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Best Atlanta, GA Personal Injury Attorneys | Super Lawyers",
+          "url": "https://attorneys.superlawyers.com/personal-injury-plaintiff/georgia/atlanta/",
+          "source": "attorneys.superlawyers.com"
+        },
+        {
+          "title": "Atlanta Personal Injury Lawyer | No Win, No Fee",
+          "url": "https://www.johnfoy.com/",
+          "source": "www.johnfoy.com"
+        },
+        {
+          "title": "In HelloNation, Personal Injury Attorney Professional Joseph Miklos of Garden City, NY, Launches New",
+          "url": "https://markets.businessinsider.com/news/stocks/in-hellonation-personal-injury-attorney-professional-joseph-miklos-of-garden-city-ny-launches-new-expert-website-highlighting-his-work-in-the-community-1035756284",
+          "source": "markets.businessinsider.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "309-en-entertainment-dylan-o'brien",
+      "keyword": "dylan o'brien",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044785",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "배우의 최신 작품이나 논란을 놓치면 팬덤에서 소외될 수 있음",
+      "angle": "새로운 작품에서 보여준 파격적인 변신과 과거 이미지와의 극명한 차이점",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Dylan O'Brien - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Dylan_O'Brien",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Send Help Review - IGN",
+          "url": "https://www.ign.com/articles/send-help-review-rachel-mcadams-dylan-obrien-sam-raimi",
+          "source": "www.ign.com"
+        },
+        {
+          "title": "Sam Raimi's gleefully gross 'Send Help' is a dark workplace comedy",
+          "url": "https://www.bostonglobe.com/2026/01/26/arts/send-help-dylan-obrien-rachel-mcadams/",
+          "source": "www.bostonglobe.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "310-en-society-mariano-barbacid",
+      "keyword": "mariano barbacid",
+      "category": "society",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044807",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "혁신적인 췌장암 치료법 정보를 놓치면 생존 기회를 잃을 수 있음",
+      "angle": "기존 치료법의 한계를 뛰어넘는 획기적인 연구 성과와 환자들의 희망",
       "competition_level": "low",
       "references": [
         {
-          "title": "ニデック永守氏に2つの“失敗” 時代に追い越された「鉄の精神」",
-          "url": "https://business.nikkei.com/atcl/gen/19/00141/011900094/",
-          "source": "business.nikkei.com"
+          "title": "Who Is Dr. Mariano Barbacid? Spanish Scientist Leading The Most Promising Pancreatic Cancer Breakthr",
+          "url": "https://www.timesnownews.com/world/who-is-dr-mariano-barbacid-spanish-scientist-pancreatic-cancer-cure-breakthrough-article-153522529",
+          "source": "www.timesnownews.com"
         },
         {
-          "title": "【極秘メール全文公開】ニデック永守氏が業務目標策定プロセスで幹部に「厳命」突きつける…不適切会計疑惑でも関与はあった？",
-          "url": "https://diamond.jp/articles/-/381941",
-          "source": "diamond.jp"
+          "title": "El grupo de Barbacid en el CNIO elimina tumores de páncreas en ratones por completo y sin que aparez",
+          "url": "https://www.cnio.es/noticias/el-grupo-de-barbacid-en-el-cnio-elimina-tumores-de-pancreas-en-ratones-por-completo-y-sin-que-aparezcan-resistencias/",
+          "source": "www.cnio.es"
         },
         {
-          "title": "Chasing Nidec: What Audit Disclaimers and Special Alert Status Really Mean | JAPAN Forward",
-          "url": "https://japan-forward.com/chasing-nidec-what-audit-disclaimers-and-special-alert-status-mean/",
-          "source": "japan-forward.com"
+          "title": "El científico Mariano Barbacid logra eliminar el cáncer de páncreas más común en modelos animales | ",
+          "url": "https://cadenaser.com/nacional/2026/01/27/el-cientifico-mariano-barbacid-logra-eliminar-el-cancer-de-pancreas-mas-comun-en-modelos-animales-cadena-ser/",
+          "source": "cadenaser.com"
         }
       ],
-      "expiry_days": 3,
-      "reserved_at": null
+      "expiry_days": 3
+    },
+    {
+      "id": "311-ko-society-부산대학교",
+      "keyword": "부산대학교",
+      "category": "society",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044833",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "합격 발표 일정 변경이나 추가 절차를 놓치면 입학 포기해야 할 수도",
+      "angle": "예정보다 하루 앞당겨진 발표의 숨겨진 배경과 수험생들이 놓치기 쉬운 중요 절차",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "부산대-현송, 2026 로보레이서 챔피언십 개최 - 중앙이코노미뉴스",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=490495",
+          "source": "www.joongangenews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "312-ko-business-제헌절",
+      "keyword": "제헌절",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044857",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "공휴일 부활로 인한 임금, 휴무 등 근로 조건 변화를 모르면 권리 침해",
+      "angle": "18년만의 공휴일 부활이 직장인들의 연봉과 휴가에 미치는 실질적 영향",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "제헌절 (대한민국) - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%A0%9C%ED%97%8C%EC%A0%88_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "제헌절, 올해부터 다시 쉰다…18년 만에 공휴일 부활 - 뉴스1",
+          "url": "https://www.news1.kr/politics/assembly/6055382",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "7월17일 제헌절 공휴일 됐다…18년 만에 부활",
+          "url": "https://www.hani.co.kr/arti/politics/politics_general/1242312.html",
+          "source": "www.hani.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "313-ko-tech-부산대",
+      "keyword": "부산대",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044878",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "자율주행 관련 기술과 취업 기회를 놓치면 미래 산업에서 도태될 수 있음",
+      "angle": "자율주행 경진대회가 단순한 대회가 아닌 미래 취업시장의 핵심 관문인 이유",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "부산대, RISE 로보레이서 챔피언십 성료",
+          "url": "https://www.inthenews.co.kr/news/article.html?no=82446",
+          "source": "www.inthenews.co.kr"
+        },
+        {
+          "title": "부산대-현송, 2026 로보레이서 챔피언십 개최 - 중앙이코노미뉴스",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=490495",
+          "source": "www.joongangenews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "314-ko-entertainment-중앙대",
+      "keyword": "중앙대",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044906",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "대학의 새로운 협력 프로그램 혜택을 놓치면 학업과 취업에서 기회 상실",
+      "angle": "과학기술혁신정책 분야 협력이 학생들에게 제공하는 숨겨진 특별 기회들",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "STEPI-중앙대, 과학기술혁신정책 학연 협력체계 강화 - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10664460",
+          "source": "biz.heraldcorp.com"
+        },
+        {
+          "title": "[인사]중앙대",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=03752326645321984&mediaCodeNo=257",
+          "source": "www.edaily.co.kr"
+        },
+        {
+          "title": "중앙대-STEPI, 과학기술혁신정책 분야 학연교류 협약 체결 - 중앙이코노미뉴스",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=490537",
+          "source": "www.joongangenews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "315-ja-sports-多摩川競艇",
+      "keyword": "多摩川競艇",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044932",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "天気による競艇の結果変化を見逃すと予想が大外れして経済的損失",
+      "angle": "天気変化が競艇選手のパフォーマンスと着順に与える決定的な影響の分析",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "ボートレース多摩川の1時間天気 週末の天気【競馬・競艇・競輪場の天気】 - 日本気象協会 tenki.jp",
+          "url": "https://tenki.jp/leisure/horse/3/16/32952/1hour.html",
+          "source": "tenki.jp"
+        },
+        {
+          "title": "競艇の二連単（2連単）とは？買い方・必勝法・出目ランキング！",
+          "url": "https://kyoutei-navi.com/yougo/nirentan/",
+          "source": "kyoutei-navi.com"
+        },
+        {
+          "title": "強運の競艇",
+          "url": "https://kyounboat.com/",
+          "source": "kyounboat.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "316-ja-society-福岡パルコ",
+      "keyword": "福岡パルコ",
+      "category": "society",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044954",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "閉店前の特別セールや限定商品を逃すと二度と手に入らない可能性",
+      "angle": "45年の歴史に幕を閉じる前に絶対に体験しておくべき最後の機会たち",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "福岡パルコ 来年2月に営業終了へ - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6567924",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "【速報】福岡パルコ 2027年2月末に閉店へ 建物の老朽化で 新天町商店街含む一帯では再開発計画 ライブハウスなど設置へ｜FNNプライムオンライン",
+          "url": "https://www.fnn.jp/articles/-/994410",
+          "source": "www.fnn.jp"
+        },
+        {
+          "title": "福岡ソフトバンクホークス - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%83%9B%E3%83%BC%E3%82%AF%E3%82%B9",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "317-ja-entertainment-中川安奈",
+      "keyword": "中川安奈",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.044977",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "フリー転身後の変化や新しい一面を見逃すとファンとしての繋がりを失う",
+      "angle": "NHK時代との大胆なイメージチェンジと、質問コーナーで明かされる素顔",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "元NHK中川安奈アナ「ボタン1個あいてた」タイトトップス姿に反響続々「見入っちゃった」「魅力的スタイル」 - モデルプレス",
+          "url": "https://mdpr.jp/news/detail/4720969",
+          "source": "mdpr.jp"
+        },
+        {
+          "title": "「トップスのボタン１個あいてた」元ＮＨＫ美人アナ ぴったりトップス姿に「くびれが凄い」「ふじ子ボディー」/芸能/デイリースポーツ online",
+          "url": "https://www.daily.co.jp/gossip/2026/01/29/0019961047.shtml",
+          "source": "www.daily.co.jp"
+        },
+        {
+          "title": "【 中川安奈 】ヘアケア・おでんの具・10年後・好きな人にしか見せない姿…フォロワーに「質問はありますか?」ストーリーズで続々返信 | TBS NEWS DIG (1ページ)",
+          "url": "https://newsdig.tbs.co.jp/articles/-/2433071?display=1",
+          "source": "newsdig.tbs.co.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "318-ja-tech-yahoo-天気",
+      "keyword": "yahoo 天気",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-29T07:42:27.045001",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "気象警報や急激な天候変化を見逃すと安全面で重大な危険に遭遇",
+      "angle": "冬型気圧配置の強化による青森県の異常気象と全国への波及リスク",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Yahoo!天気・災害 - 天気予報 / 防災情報",
+          "url": "https://weather.yahoo.co.jp/weather/",
+          "source": "weather.yahoo.co.jp"
+        },
+        {
+          "title": "Yahoo!天気 - 雨雲や台風の接近がわかる天気予報アプリ - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=jp.co.yahoo.android.weather.type1&hl=en_US",
+          "source": "play.google.com"
+        },
+        {
+          "title": "Yahoo!天気・災害 | Facebook",
+          "url": "https://www.facebook.com/yahooweatherjp/",
+          "source": "www.facebook.com"
+        }
+      ],
+      "expiry_days": 3
     }
   ]
 }

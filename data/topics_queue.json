@@ -2295,33 +2295,6 @@
       "completed_at": "2026-01-28T10:34:37.654425+00:00"
     },
     {
-      "id": "307-en-tech-ios-26.2.1",
-      "keyword": "ios 26.2.1",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-01-29T07:42:27.044724",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "긴급 보안 패치나 중요한 기능을 놓치면 개인정보 유출이나 시스템 오류 위험",
-      "angle": "애플의 '긴급 경고'가 의미하는 진짜 위험성과 즉시 업데이트해야 하는 이유",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "iOS 26.2.1—Update Now Warning Issued To Millions Of iPhone Users",
-          "url": "https://www.forbes.com/sites/kateoflahertyuk/2026/01/28/ios-2621-update-now-warning-issued-to-millions-of-iphone-users/?streamIndex=0",
-          "source": "www.forbes.com"
-        },
-        {
-          "title": "Apple Releases iOS 26.2.1 With AirTag 2 Support - MacRumors",
-          "url": "https://www.macrumors.com/2026/01/26/apple-releases-ios-26-2-1/",
-          "source": "www.macrumors.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "308-en-business-personal-injury-atto",
       "keyword": "personal injury attorney",
       "category": "business",
@@ -2354,38 +2327,6 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-29T10:37:20.658900+00:00",
       "completed_at": "2026-01-29T10:38:24.391232+00:00"
-    },
-    {
-      "id": "309-en-entertainment-dylan-o'brien",
-      "keyword": "dylan o'brien",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-29T07:42:27.044785",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "배우의 최신 작품이나 논란을 놓치면 팬덤에서 소외될 수 있음",
-      "angle": "새로운 작품에서 보여준 파격적인 변신과 과거 이미지와의 극명한 차이점",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Dylan O'Brien - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Dylan_O'Brien",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Send Help Review - IGN",
-          "url": "https://www.ign.com/articles/send-help-review-rachel-mcadams-dylan-obrien-sam-raimi",
-          "source": "www.ign.com"
-        },
-        {
-          "title": "Sam Raimi's gleefully gross 'Send Help' is a dark workplace comedy",
-          "url": "https://www.bostonglobe.com/2026/01/26/arts/send-help-dylan-obrien-rachel-mcadams/",
-          "source": "www.bostonglobe.com"
-        }
-      ],
-      "expiry_days": 3
     },
     {
       "id": "310-en-society-mariano-barbacid",
@@ -2444,39 +2385,6 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-29T10:37:20.658900+00:00",
       "completed_at": "2026-01-29T10:39:40.981733+00:00"
-    },
-    {
-      "id": "312-ko-business-제헌절",
-      "keyword": "제헌절",
-      "category": "business",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-29T07:42:27.044857",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "공휴일 부활로 인한 임금, 휴무 등 근로 조건 변화를 모르면 권리 침해",
-      "angle": "18년만의 공휴일 부활이 직장인들의 연봉과 휴가에 미치는 실질적 영향",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "제헌절 (대한민국) - 위키백과, 우리 모두의 백과사전",
-          "url": "https://ko.wikipedia.org/wiki/%EC%A0%9C%ED%97%8C%EC%A0%88_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)",
-          "source": "ko.wikipedia.org"
-        },
-        {
-          "title": "제헌절, 올해부터 다시 쉰다…18년 만에 공휴일 부활 - 뉴스1",
-          "url": "https://www.news1.kr/politics/assembly/6055382",
-          "source": "www.news1.kr"
-        },
-        {
-          "title": "7월17일 제헌절 공휴일 됐다…18년 만에 부활",
-          "url": "https://www.hani.co.kr/arti/politics/politics_general/1242312.html",
-          "source": "www.hani.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
     },
     {
       "id": "313-ko-tech-부산대",
@@ -2542,104 +2450,6 @@
       "completed_at": "2026-01-29T10:50:06.745946+00:00"
     },
     {
-      "id": "315-ja-sports-多摩川競艇",
-      "keyword": "多摩川競艇",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-29T07:42:27.044932",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "天気による競艇の結果変化を見逃すと予想が大外れして経済的損失",
-      "angle": "天気変化が競艇選手のパフォーマンスと着順に与える決定的な影響の分析",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "ボートレース多摩川の1時間天気 週末の天気【競馬・競艇・競輪場の天気】 - 日本気象協会 tenki.jp",
-          "url": "https://tenki.jp/leisure/horse/3/16/32952/1hour.html",
-          "source": "tenki.jp"
-        },
-        {
-          "title": "競艇の二連単（2連単）とは？買い方・必勝法・出目ランキング！",
-          "url": "https://kyoutei-navi.com/yougo/nirentan/",
-          "source": "kyoutei-navi.com"
-        },
-        {
-          "title": "強運の競艇",
-          "url": "https://kyounboat.com/",
-          "source": "kyounboat.com"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
-      "id": "316-ja-society-福岡パルコ",
-      "keyword": "福岡パルコ",
-      "category": "society",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-29T07:42:27.044954",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "閉店前の特別セールや限定商品を逃すと二度と手に入らない可能性",
-      "angle": "45年の歴史に幕を閉じる前に絶対に体験しておくべき最後の機会たち",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "福岡パルコ 来年2月に営業終了へ - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/pickup/6567924",
-          "source": "news.yahoo.co.jp"
-        },
-        {
-          "title": "【速報】福岡パルコ 2027年2月末に閉店へ 建物の老朽化で 新天町商店街含む一帯では再開発計画 ライブハウスなど設置へ｜FNNプライムオンライン",
-          "url": "https://www.fnn.jp/articles/-/994410",
-          "source": "www.fnn.jp"
-        },
-        {
-          "title": "福岡ソフトバンクホークス - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E3%82%BD%E3%83%95%E3%83%88%E3%83%90%E3%83%B3%E3%82%AF%E3%83%9B%E3%83%BC%E3%82%AF%E3%82%B9",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
-      "id": "317-ja-entertainment-中川安奈",
-      "keyword": "中川安奈",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-01-29T07:42:27.044977",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "フリー転身後の変化や新しい一面を見逃すとファンとしての繋がりを失う",
-      "angle": "NHK時代との大胆なイメージチェンジと、質問コーナーで明かされる素顔",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "元NHK中川安奈アナ「ボタン1個あいてた」タイトトップス姿に反響続々「見入っちゃった」「魅力的スタイル」 - モデルプレス",
-          "url": "https://mdpr.jp/news/detail/4720969",
-          "source": "mdpr.jp"
-        },
-        {
-          "title": "「トップスのボタン１個あいてた」元ＮＨＫ美人アナ ぴったりトップス姿に「くびれが凄い」「ふじ子ボディー」/芸能/デイリースポーツ online",
-          "url": "https://www.daily.co.jp/gossip/2026/01/29/0019961047.shtml",
-          "source": "www.daily.co.jp"
-        },
-        {
-          "title": "【 中川安奈 】ヘアケア・おでんの具・10年後・好きな人にしか見せない姿…フォロワーに「質問はありますか?」ストーリーズで続々返信 | TBS NEWS DIG (1ページ)",
-          "url": "https://newsdig.tbs.co.jp/articles/-/2433071?display=1",
-          "source": "newsdig.tbs.co.jp"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "318-ja-tech-yahoo-天気",
       "keyword": "yahoo 天気",
       "category": "tech",
@@ -2672,6 +2482,345 @@
       "expiry_days": 3,
       "reserved_at": "2026-01-29T10:37:20.658900+00:00",
       "completed_at": "2026-01-29T10:41:01.989611+00:00"
+    },
+    {
+      "id": "319-en-sports-donna-vekic",
+      "keyword": "donna vekic",
+      "category": "sports",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225180",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Find out if Vekic's repeated losses signal career decline before betting/fantasy decisions",
+      "angle": "Career trajectory analysis after unexpected defeats",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Twice beaten by Alex Eala, Donna Vekic finds comfort in Manila’s warmth | GMA News Online",
+          "url": "https://www.gmanetwork.com/news/sports/othersports/974199/twice-beaten-by-alex-eala-donna-vekic-finds-comfort-in-manila-s-warmth/story/",
+          "source": "www.gmanetwork.com"
+        },
+        {
+          "title": "Here's how 'adopted Filipina' Donna Vekic spent her afternoon while waiting for PWO match | ABS-CBN ",
+          "url": "https://www.abs-cbn.com/sports/othersports/2026/1/28/here-s-how-adopted-filipina-donna-vekic-spent-her-afternoon-while-waiting-for-pwo-match-0020",
+          "source": "www.abs-cbn.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "320-en-sports-tatiana-prozorova",
+      "keyword": "tatiana prozorova",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225214",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Discover emerging tennis talent before bookmakers adjust odds drastically",
+      "angle": "Rising underdog threatening established order",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "PWO: Tatiana Prozorova knocks out top seeded Tatjana Maria | ABS-CBN Sports",
+          "url": "https://www.abs-cbn.com/sports/othersports/2026/1/28/pwo-tatiana-prozorova-knocks-out-top-seeded-tatjana-maria-1737",
+          "source": "www.abs-cbn.com"
+        },
+        {
+          "title": "Giant-killer Prozorova advances to PH Women's Open semis vs Vekic",
+          "url": "https://www.spin.ph/tennis/giant-killer-prozorova-advances-to-ph-women-s-open-semis-vs-vekic-a5019-20260129",
+          "source": "www.spin.ph"
+        },
+        {
+          "title": "Philippine Women's Open: UAAP MVP Kaye Ann Emana falls to Tatiana Prozorova in WTA debut | GMA News ",
+          "url": "https://www.gmanetwork.com/news/sports/content/974363/philippine-women-s-open-uaap-mvp-kaye-ann-emana-falls-to-tatiana-prozorova-in-wta-debut/story/",
+          "source": "www.gmanetwork.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "321-en-society-psychologist",
+      "keyword": "psychologist",
+      "category": "society",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225237",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Secure mental health support before availability decreases further",
+      "angle": "Accessibility crisis in mental healthcare",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "List of psychologists - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_psychologists",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "322-en-society-winter-storm-warning",
+      "keyword": "winter storm warning",
+      "category": "society",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225259",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Prepare immediately for severe weather before stores run out of supplies",
+      "angle": "Emergency preparedness under time pressure",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Winter Weather Warnings, Watches and Advisories",
+          "url": "https://www.weather.gov/safety/winter-ww",
+          "source": "www.weather.gov"
+        },
+        {
+          "title": "NYC Severe Weather",
+          "url": "https://www.nyc.gov/site/severeweather/index.page",
+          "source": "www.nyc.gov"
+        },
+        {
+          "title": "Live updates: Major nor'easter to 'bomb out,' Carolinas in threat zone for heavy snow, intense wind ",
+          "url": "https://www.foxweather.com/live-news/live-updates-major-nor-easter-to-bomb-out-carolinas-in-threat-zone-for-heavy-snow-intense-wind",
+          "source": "www.foxweather.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "323-ko-society-양승태",
+      "keyword": "양승태",
+      "category": "society",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225283",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "사법농단 사태의 최종 결말과 향후 법원 신뢰도 변화 파악",
+      "angle": "사법부 권위 실추와 국민 신뢰 회복 과제",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "항소심 선고 재판에 출석한 양승태 전 대법원장 | 일요신문",
+          "url": "https://www.ilyo.co.kr/?ac=article_view&entry_id=507466",
+          "source": "www.ilyo.co.kr"
+        },
+        {
+          "title": "사법농단 양승태 前대법원장 2심 징역 6개월에 집유 1년 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026013039747",
+          "source": "www.hankyung.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "324-ko-business-장학재단",
+      "keyword": "장학재단",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225307",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "장학금 지원 변화 동향과 대안 마련 방안 긴급 확인",
+      "angle": "기업 재정난이 교육 지원에 미치는 연쇄 타격",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "업스테이지, 다음 인수 나선다…카카오와 주식교환 MOU 체결 - 뉴스1",
+          "url": "https://www.news1.kr/it-science/general-it/6055907",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "홈플러스, 본사 희망퇴직 시행…본사인력 점포 배치도 | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260127136200030",
+          "source": "www.yna.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "325-ko-business-동국대",
+      "keyword": "동국대",
+      "category": "business",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225329",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "대학 창업 생태계 투자 기회와 해외 진출 동향 파악",
+      "angle": "대학 발 스타트업의 글로벌 성공 사례 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "동국대 디지털 헬스케어 스타트업 ㈜바디맵, 인니 의료·헬스케어 시장 ‘진출’",
+          "url": "https://www.thepublic.kr/news/articleView.html?idxno=292543",
+          "source": "www.thepublic.kr"
+        },
+        {
+          "title": "동국대 참사람봉사단, 2025학년도 동계 라오스 해외봉사 진행 - 스마트경제",
+          "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=119447",
+          "source": "www.dailysmart.co.kr"
+        },
+        {
+          "title": "동국대 연구팀, ‘체외 구강 점막 칩’ 개발…신약 평가 새 장 열어-브레이크뉴스",
+          "url": "http://www.breaknews.com/1179677",
+          "source": "www.breaknews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "326-ko-sports-조훈현",
+      "keyword": "조훈현",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225358",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "바둑계 세대교체 현상과 천재 소년의 실력 수준 확인",
+      "angle": "73세 전설 vs 9세 신동의 역사적 대결",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "'바둑 황제' 조훈현 9단, '신예' 유하준 초단과 SOOP서 맞대결 | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260127041800017",
+          "source": "www.yna.co.kr"
+        },
+        {
+          "title": "타이젬 모바일 뉴스 - 최연소 입단 유하준 '조훈현-이창호-최정-신진서'와 특별대국",
+          "url": "https://m.tygem.com/news/news_view.html?seq=39442&gubun=0",
+          "source": "m.tygem.com"
+        },
+        {
+          "title": "\"바둑의 전설과 신예의 만남\"... 조훈현 9단 vs 유하준 초단, SOOP서 맞대결 - 중앙이코노미뉴스",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=489979",
+          "source": "www.joongangenews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "327-ja-entertainment-長谷川ミラ",
+      "keyword": "長谷川ミラ",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225399",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "長谷川ミラに関する隠された真実と芸能界の裏事情を把握",
+      "angle": "メディア報道の背後にある未公開情報",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "長谷川初範 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E8%B0%B7%E5%B7%9D%E5%88%9D%E7%AF%84",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "328-ja-sports-小松島競輪",
+      "keyword": "小松島競輪",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225424",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "小松島競輪の予想困難な展開パターンと投票戦略を緊急確認",
+      "angle": "競輪予想の常識を覆す異例な展開分析",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "【小松島競輪 G3玉藻杯争覇戦in小松島 2日目】12Rは郡司浩平 王者が強力ラインを形成 - スポニチ Sponichi Annex ギャンブル",
+          "url": "https://www.sponichi.co.jp/gamble/news/2026/01/30/kiji/20260129s00052000262000c.html",
+          "source": "www.sponichi.co.jp"
+        },
+        {
+          "title": "【玉藻杯争覇戦in小松島】今節のレース展望！ | 競輪ニュース - netkeirin（ネットケイリン）",
+          "url": "https://keirin.netkeiba.com/news/news_detail.html?id=41911",
+          "source": "keirin.netkeiba.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "329-ja-tech-ファンパレ-裏-梅",
+      "keyword": "ファンパレ 裏 梅",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225448",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ファンパレ裏梅の性能評価と投資価値を即座に判断したい",
+      "angle": "限定ガチャの投資判断と機会損失回避",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "【ファンパレ】裏梅(引っ込め三下)の評価とおすすめ残滓【呪術廻戦ファントムパレード】｜ゲームエイト",
+          "url": "https://game8.jp/jujutsuphanpara/759171",
+          "source": "game8.jp"
+        },
+        {
+          "title": "【ファンパレ】裏梅(引っ込め三下)評価と使い方・おすすめ残滓【呪術廻戦ファントムパレード】 - ゲームウィズ",
+          "url": "https://gamewith.jp/jujutsuphanpara/542087",
+          "source": "gamewith.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "330-ja-society-宇都宮-事故",
+      "keyword": "宇都宮 事故",
+      "category": "society",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-30T07:42:50.225472",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "宇都宮事故の詳細情報と報道規制の真相を確認",
+      "angle": "事故報道の情報統制と隠蔽疑惑",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "乗用車が店舗に衝突 宇都宮中央署｜下野新聞デジタル",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1276503",
+          "source": "www.shimotsuke.co.jp"
+        },
+        {
+          "title": "【速報】スポーツタイプの車が乗用車の下に… 宇都宮市で車4台が絡む事故 1人けが | TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/2435738",
+          "source": "newsdig.tbs.co.jp"
+        },
+        {
+          "title": "ＪＲ宇都宮線 上野〜宇都宮間 人身事故で上下線運転見合わせ | NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nb-1000125559",
+          "source": "news.web.nhk"
+        }
+      ],
+      "expiry_days": 3
     }
   ]
 }

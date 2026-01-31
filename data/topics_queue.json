@@ -2634,66 +2634,6 @@
       "completed_at": "2026-01-30T10:40:48.044454+00:00"
     },
     {
-      "id": "324-ko-business-장학재단",
-      "keyword": "장학재단",
-      "category": "business",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-30T07:42:50.225307",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "장학금 지원 변화 동향과 대안 마련 방안 긴급 확인",
-      "angle": "기업 재정난이 교육 지원에 미치는 연쇄 타격",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "업스테이지, 다음 인수 나선다…카카오와 주식교환 MOU 체결 - 뉴스1",
-          "url": "https://www.news1.kr/it-science/general-it/6055907",
-          "source": "www.news1.kr"
-        },
-        {
-          "title": "홈플러스, 본사 희망퇴직 시행…본사인력 점포 배치도 | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20260127136200030",
-          "source": "www.yna.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
-      "id": "325-ko-business-동국대",
-      "keyword": "동국대",
-      "category": "business",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-30T07:42:50.225329",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "대학 창업 생태계 투자 기회와 해외 진출 동향 파악",
-      "angle": "대학 발 스타트업의 글로벌 성공 사례 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "동국대 디지털 헬스케어 스타트업 ㈜바디맵, 인니 의료·헬스케어 시장 ‘진출’",
-          "url": "https://www.thepublic.kr/news/articleView.html?idxno=292543",
-          "source": "www.thepublic.kr"
-        },
-        {
-          "title": "동국대 참사람봉사단, 2025학년도 동계 라오스 해외봉사 진행 - 스마트경제",
-          "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=119447",
-          "source": "www.dailysmart.co.kr"
-        },
-        {
-          "title": "동국대 연구팀, ‘체외 구강 점막 칩’ 개발…신약 평가 새 장 열어-브레이크뉴스",
-          "url": "http://www.breaknews.com/1179677",
-          "source": "www.breaknews.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "326-ko-sports-조훈현",
       "keyword": "조훈현",
       "category": "sports",
@@ -2728,56 +2668,6 @@
       "completed_at": "2026-01-30T10:42:36.398094+00:00"
     },
     {
-      "id": "327-ja-entertainment-長谷川ミラ",
-      "keyword": "長谷川ミラ",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-01-30T07:42:50.225399",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "長谷川ミラに関する隠された真実と芸能界の裏事情を把握",
-      "angle": "メディア報道の背後にある未公開情報",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "長谷川初範 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E8%B0%B7%E5%B7%9D%E5%88%9D%E7%AF%84",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
-      "id": "328-ja-sports-小松島競輪",
-      "keyword": "小松島競輪",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-30T07:42:50.225424",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "小松島競輪の予想困難な展開パターンと投票戦略を緊急確認",
-      "angle": "競輪予想の常識を覆す異例な展開分析",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "【小松島競輪 G3玉藻杯争覇戦in小松島 2日目】12Rは郡司浩平 王者が強力ラインを形成 - スポニチ Sponichi Annex ギャンブル",
-          "url": "https://www.sponichi.co.jp/gamble/news/2026/01/30/kiji/20260129s00052000262000c.html",
-          "source": "www.sponichi.co.jp"
-        },
-        {
-          "title": "【玉藻杯争覇戦in小松島】今節のレース展望！ | 競輪ニュース - netkeirin（ネットケイリン）",
-          "url": "https://keirin.netkeiba.com/news/news_detail.html?id=41911",
-          "source": "keirin.netkeiba.com"
-        }
-      ],
-      "expiry_days": 3
-    },
-    {
       "id": "329-ja-tech-ファンパレ-裏-梅",
       "keyword": "ファンパレ 裏 梅",
       "category": "tech",
@@ -2807,33 +2697,353 @@
       "completed_at": "2026-01-30T10:44:15.918039+00:00"
     },
     {
-      "id": "330-ja-society-宇都宮-事故",
-      "keyword": "宇都宮 事故",
-      "category": "society",
-      "lang": "ja",
-      "priority": 7,
+      "id": "330-en-business-mega-millions-winnin",
+      "keyword": "mega millions winning numbers",
+      "category": "business",
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-01-30T07:42:50.225472",
+      "created_at": "2026-01-31T07:31:42.696719",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "宇都宮事故の詳細情報と報道規制の真相を確認",
-      "angle": "事故報道の情報統制と隠蔽疑惑",
+      "search_intent": "Check if they won millions before the deadline passes and they lose their fortune forever",
+      "angle": "Time-sensitive wealth verification with permanent loss implications",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Mega Millions jackpot at $303 million. Friday, Jan. 30 winning numbers",
+          "url": "https://www.news-press.com/story/news/2026/01/30/how-much-mega-millions-jackpot-winning-lottery-numbers-friday-january/88420971007/",
+          "source": "www.news-press.com"
+        },
+        {
+          "title": "Mega Millions winning numbers for Tuesday, Jan. 27. Check your tickets",
+          "url": "https://www.northjersey.com/story/news/nation/2026/01/27/mega-millions-winning-numbers-drawing-for-tuesday-jan-27-2026-did-anyone-win-jackpot/88387990007/",
+          "source": "www.northjersey.com"
+        },
+        {
+          "title": "Mega Millions winning numbers for January 30 $303 million jackpot",
+          "url": "https://www.lohud.com/story/news/2026/01/30/mega-millions-winning-numbers-january-30-2026-did-anyone-win-jackpot-303-million/88437317007/",
+          "source": "www.lohud.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "331-en-society-tax",
+      "keyword": "tax",
+      "category": "society",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696752",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Understand if their personal tax information is at risk of unauthorized disclosure",
+      "angle": "Personal privacy protection and government accountability",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Trump sues IRS, Treasury for $10 billion over tax returns leak - ABC News",
+          "url": "https://abcnews.go.com/Politics/trump-sues-irs-treasury-10-billion-tax-returns/story?id=129687076",
+          "source": "abcnews.go.com"
+        },
+        {
+          "title": "Understanding Key Differences Between U.S. Sales and Use and Value-Added Taxes",
+          "url": "https://www.bdo.com/insights/tax/understanding-key-differences-between-us-sales-and-use-and-value-added-taxes",
+          "source": "www.bdo.com"
+        },
+        {
+          "title": "Trump files $10B lawsuit against IRS over alleged tax return leaks to major news outlets",
+          "url": "https://www.foxnews.com/politics/rump-files-10b-lawsuit-against-irs-over-alleged-tax-return-leaks-major-news-outlets",
+          "source": "www.foxnews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "332-en-entertainment-margaret-qualley",
+      "keyword": "margaret qualley",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696776",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Stay current with celebrity fashion trends before they become mainstream",
+      "angle": "Exclusive fashion insider access and trend prediction",
       "competition_level": "medium",
       "references": [
         {
-          "title": "乗用車が店舗に衝突 宇都宮中央署｜下野新聞デジタル",
-          "url": "https://www.shimotsuke.co.jp/articles/-/1276503",
-          "source": "www.shimotsuke.co.jp"
+          "title": "Margaret Qualley - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Margaret_Qualley",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "【速報】スポーツタイプの車が乗用車の下に… 宇都宮市で車4台が絡む事故 1人けが | TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/2435738",
-          "source": "newsdig.tbs.co.jp"
+          "title": "Margaret Qualley's Liquid LBD Plunges to Her Ribs and Has a Secret '80s-Inspired Detail",
+          "url": "https://www.instyle.com/margaret-qualley-plunging-liquid-lbd-80s-shoulder-pads-11893296",
+          "source": "www.instyle.com"
         },
         {
-          "title": "ＪＲ宇都宮線 上野〜宇都宮間 人身事故で上下線運転見合わせ | NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nb-1000125559",
-          "source": "news.web.nhk"
+          "title": "Margaret Qualley Shines Bright in Sequined Chanel Dress During Paris Fashion Week",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/margaret-qualley-shines-bright-sequined-201028792.html",
+          "source": "www.yahoo.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "333-en-tech-covered-california",
+      "keyword": "covered california",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696798",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Secure health insurance before the enrollment period closes forever",
+      "angle": "Emergency healthcare access with permanent consequences",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Covered California enrollment closes in 2 days: What you need to know – NBC 7 San Diego",
+          "url": "https://www.nbcsandiego.com/news/local/covered-california-enrollment-closes-days-what-you-need-know/3969296/",
+          "source": "www.nbcsandiego.com"
+        },
+        {
+          "title": "Expiration of federal health insurance subsidies: What to know in California - Los Angeles Times",
+          "url": "https://www.latimes.com/business/story/2026-01-28/expiration-of-federal-health-insurance-subsidies-what-to-know-in-california",
+          "source": "www.latimes.com"
+        },
+        {
+          "title": "Deadline approaching for signing up to get Covered California coverage | News | actionnewsnow.com",
+          "url": "https://www.actionnewsnow.com/news/deadline-approaching-for-signing-up-to-get-covered-california-coverage/article_3ae3ca25-a01e-46f8-a567-4be3102dd483.html",
+          "source": "www.actionnewsnow.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "334-ko-entertainment-이관희-홍진경",
+      "keyword": "이관희 홍진경",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696826",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "연예계 논란의 전말을 파악하여 사회적 이슈에 뒤처지지 않으려 함",
+      "angle": "연예계 갈등의 숨겨진 배경과 사회적 파장 분석",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "“재밌으려고 했는데 상처” 이관희, 직접 사과에 홍진경 “사과 좀 그만해…괜찮아”",
+          "url": "https://sports.donga.com/ent/article/all/20260131/133270583/1",
+          "source": "sports.donga.com"
+        },
+        {
+          "title": "이관희 “홍진경, 연애 모르면서 훈수” 논란에 직접 사과 “상처드려 죄송”",
+          "url": "https://www.donga.com/news/Entertainment/article/all/20260131/133270730/1",
+          "source": "www.donga.com"
+        },
+        {
+          "title": "\"연애 훈수 화나\" 이관희, 홍진경 저격 논란…\"무례해\" 비판 [N이슈] - 뉴스1",
+          "url": "https://www.news1.kr/entertain/celebrity-topic/6056305",
+          "source": "www.news1.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "335-ko-tech-연세대",
+      "keyword": "연세대",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696850",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "교육계 기술 격차와 자녀의 미래 경쟁력에 대한 불안감 해소",
+      "angle": "대학별 AI 기술 격차와 학생들의 취업 경쟁력 차이",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "연세대학교 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "LIG넥스원, 연세대 인공지능융합대학과 AI 기술 개발 맞손 - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10666086",
+          "source": "biz.heraldcorp.com"
+        },
+        {
+          "title": "두왓, 연세대 DLI Lab·파라미타AI와 MOU 체결",
+          "url": "https://www.venturesquare.net/1034980",
+          "source": "www.venturesquare.net"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "336-ko-society-지석진",
+      "keyword": "지석진",
+      "category": "society",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696900",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "주식 투자 실패 원인을 파악하여 손실을 줄이고 수익을 내려 함",
+      "angle": "개인투자자들의 공통적인 투자 실패 패턴과 해결책",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "지석진, 폭락한 주식 계좌 공개..\"코스피 5000인데 나만 떨어져\" [핫피플]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/01/26/MM3TAYRQGU3TCNTFMMZTIZRTGI/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "전현무 예능 욕심에 지석진 분노..제작진도 난감 \"대기실 찾아가 사과\" - 스포츠조선",
+          "url": "https://www.sportschosun.com/entertainment/2026-01-30/202601300100175620023148",
+          "source": "www.sportschosun.com"
+        },
+        {
+          "title": "\"내것만 떨어져\" 지석진, 코스피5000시대에도 파란창…우울 심경 토로('런닝맨')",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=795124",
+          "source": "www.spotvnews.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "337-ja-entertainment-令和ロマン",
+      "keyword": "令和ロマン",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696927",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "M-1連覇の裏側にある芸能界の実情を理解し、ファンとしての見方を深めたい",
+      "angle": "お笑い界の成功者が直面する業界の現実と重圧",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "令和ロマン - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C%E3%83%AD%E3%83%9E%E3%83%B3",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "ウエストランド井口と作家飯塚と令和ロマンくるまと蛙亭イワクラが語る「2025年12月のお笑い」 | 今月のお笑い 43本目 - お笑いナタリー コラム",
+          "url": "https://natalie.mu/owarai/column/656010",
+          "source": "natalie.mu"
+        },
+        {
+          "title": "yutoriが展開するストリートブランド『9090』が、人気漫才師『令和ロマン』とコラボレーションアイテムを発表 | 株式会社yutoriのプレスリリース",
+          "url": "https://prtimes.jp/main/html/rd/p/000000177.000034263.html",
+          "source": "prtimes.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "338-ja-society-西寺尾火葬場",
+      "keyword": "西寺尾火葬場",
+      "category": "society",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696952",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "火葬場不足による市民生活への影響を理解し、将来への備えを考えたい",
+      "angle": "高齢化社会における火葬場不足問題と市民への影響",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "横浜で唯一の民営「西寺尾火葬場」３月閉業 老朽化や市営斎場新設で | カナロコ by 神奈川新聞",
+          "url": "https://www.kanaloco.jp/news/social/article-1242213.html",
+          "source": "www.kanaloco.jp"
+        },
+        {
+          "title": "横浜で唯一の民営「西寺尾火葬場」3月閉業 100年超の歴史、多死社会で「火葬待ち」に拍車も|au Webポータル国内ニュース",
+          "url": "https://article.auone.jp/detail/1/2/5/475_5_r_20260131_1769803985138707",
+          "source": "article.auone.jp"
+        },
+        {
+          "title": "神奈川・横浜市で唯一の民営「西寺尾火葬場」3月に閉業へ (2026年1月31日掲載) - ライブドアニュース",
+          "url": "https://news.livedoor.com/topics/detail/30482984/",
+          "source": "news.livedoor.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "339-ja-sports-琉球ゴールデンキングス",
+      "keyword": "琉球ゴールデンキングス",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696977",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Bリーグの実力格差を理解し、チーム選択や応援の仕方を見直したい",
+      "angle": "プロバスケットボールリーグにおけるチーム間格差の実態",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "琉球ゴールデンキングスの闘将ヴィック・ローが強調する『団結の力』「ファンは僕たちを信じてくれている。これこそが欠かせない」 | バスケットボール総合情報サイト バスケットカウント BASKET COU",
+          "url": "https://basket-count.com/article/detail/250708",
+          "source": "basket-count.com"
+        },
+        {
+          "title": "コートの内外から高い決定力でスコアを重ねた琉球…敵地で千葉Jを相手に“31点差”快勝 | バスケットボールキング",
+          "url": "https://basketballking.jp/news/japan/20260124/591318.html",
+          "source": "basketballking.jp"
+        },
+        {
+          "title": "2026/1/24 琉球ゴールデンキングス vs 千葉ジェッツ @BリーグRS - KINGS BOOSTER STATION | 琉球ゴールデンキングス試合情報",
+          "url": "https://go-go-kings.hatenablog.com/entry/2026/01/25/001406",
+          "source": "go-go-kings.hatenablog.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "340-ja-tech-アルバルク東京",
+      "keyword": "アルバルク東京",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-01-31T07:31:42.696999",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "バスケ界の勢力変化を把握し、注目すべきチームを見極めたい",
+      "angle": "スポーツ界における勢力図の変化とファン戦略",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "【三井ショッピングパーク アーバンドック ららぽーと豊洲】パブリックビューイングも！アルバルク東京を一緒に応援しよう！アルバルク応援WEEKを開催！：時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=000000670.000002198&g=prt",
+          "source": "www.jiji.com"
+        },
+        {
+          "title": "【三井ショッピングパーク アーバンドック ららぽーと豊洲】パブリックビューイングも！アルバルク東京を一緒に応援しよう！アルバルク応援WEEKを開催！ | 三井不動産商業マネジメント株式会社のプレスリリ",
+          "url": "https://prtimes.jp/main/html/rd/p/000000670.000002198.html",
+          "source": "prtimes.jp"
+        },
+        {
+          "title": "【Bリーグ】大阪エヴェッサ 4連勝ならず 一時9点リードも逆転負け 藤田HC「非常に悔しい敗戦」 - ライブドアニュース",
+          "url": "https://news.livedoor.com/article/detail/30436768/",
+          "source": "news.livedoor.com"
         }
       ],
       "expiry_days": 3

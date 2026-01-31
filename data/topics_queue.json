@@ -2702,7 +2702,7 @@
       "category": "business",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696719",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2726,7 +2726,9 @@
           "source": "www.lohud.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:26:53.254875+00:00"
     },
     {
       "id": "331-en-society-tax",
@@ -2734,7 +2736,7 @@
       "category": "society",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696752",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2758,7 +2760,9 @@
           "source": "www.foxnews.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:28:10.532544+00:00"
     },
     {
       "id": "332-en-entertainment-margaret-qualley",
@@ -2766,7 +2770,7 @@
       "category": "entertainment",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696776",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2790,7 +2794,9 @@
           "source": "www.yahoo.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:37:53.736014+00:00"
     },
     {
       "id": "333-en-tech-covered-california",
@@ -2798,7 +2804,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696798",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2822,7 +2828,9 @@
           "source": "www.actionnewsnow.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:29:13.362065+00:00"
     },
     {
       "id": "334-ko-entertainment-이관희-홍진경",
@@ -2830,7 +2838,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696826",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2854,7 +2862,9 @@
           "source": "www.news1.kr"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:30:55.483124+00:00"
     },
     {
       "id": "335-ko-tech-연세대",
@@ -2862,7 +2872,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696850",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2886,7 +2896,9 @@
           "source": "www.venturesquare.net"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:33:49.779030+00:00"
     },
     {
       "id": "336-ko-society-지석진",
@@ -2894,7 +2906,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696900",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2918,7 +2930,9 @@
           "source": "www.spotvnews.co.kr"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:35:16.925188+00:00"
     },
     {
       "id": "337-ja-entertainment-令和ロマン",
@@ -2926,7 +2940,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-01-31T07:31:42.696927",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -2950,7 +2964,9 @@
           "source": "prtimes.jp"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-01-31T10:25:24.007001+00:00",
+      "completed_at": "2026-01-31T10:36:54.975946+00:00"
     },
     {
       "id": "338-ja-society-西寺尾火葬場",
@@ -2982,7 +2998,8 @@
           "source": "news.livedoor.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": null
     },
     {
       "id": "339-ja-sports-琉球ゴールデンキングス",

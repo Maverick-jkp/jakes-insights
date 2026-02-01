@@ -2969,100 +2969,414 @@
       "completed_at": "2026-01-31T10:36:54.975946+00:00"
     },
     {
-      "id": "338-ja-society-西寺尾火葬場",
-      "keyword": "西寺尾火葬場",
+      "id": "338-en-society-fundraiser",
+      "keyword": "fundraiser",
       "category": "society",
-      "lang": "ja",
+      "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-01-31T07:31:42.696952",
+      "created_at": "2026-02-01T07:40:00.869850",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "火葬場不足による市民生活への影響を理解し、将来への備えを考えたい",
-      "angle": "高齢化社会における火葬場不足問題と市民への影響",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "横浜で唯一の民営「西寺尾火葬場」３月閉業 老朽化や市営斎場新設で | カナロコ by 神奈川新聞",
-          "url": "https://www.kanaloco.jp/news/social/article-1242213.html",
-          "source": "www.kanaloco.jp"
-        },
-        {
-          "title": "横浜で唯一の民営「西寺尾火葬場」3月閉業 100年超の歴史、多死社会で「火葬待ち」に拍車も|au Webポータル国内ニュース",
-          "url": "https://article.auone.jp/detail/1/2/5/475_5_r_20260131_1769803985138707",
-          "source": "article.auone.jp"
-        },
-        {
-          "title": "神奈川・横浜市で唯一の民営「西寺尾火葬場」3月に閉業へ (2026年1月31日掲載) - ライブドアニュース",
-          "url": "https://news.livedoor.com/topics/detail/30482984/",
-          "source": "news.livedoor.com"
-        }
-      ],
-      "expiry_days": 3,
-      "reserved_at": null
-    },
-    {
-      "id": "339-ja-sports-琉球ゴールデンキングス",
-      "keyword": "琉球ゴールデンキングス",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-01-31T07:31:42.696977",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Bリーグの実力格差を理解し、チーム選択や応援の仕方を見直したい",
-      "angle": "プロバスケットボールリーグにおけるチーム間格差の実態",
+      "search_intent": "총격 사건과 관련된 모금 활동의 진상을 파악하지 않으면 비슷한 위험 신호를 놓칠 수 있음",
+      "angle": "ICU 간호사 총격 사건과 연방 요원 관련 논란의 진실 추적",
       "competition_level": "medium",
       "references": [
         {
-          "title": "琉球ゴールデンキングスの闘将ヴィック・ローが強調する『団結の力』「ファンは僕たちを信じてくれている。これこそが欠かせない」 | バスケットボール総合情報サイト バスケットカウント BASKET COU",
-          "url": "https://basket-count.com/article/detail/250708",
-          "source": "basket-count.com"
+          "title": "GoFundMe for Alex Pretti's family raises over $1M after shooting",
+          "url": "https://www.usatoday.com/story/news/nation/2026/01/25/gofundme-alex-pretti-fundraiser-minneapolis-shooting/88349451007/",
+          "source": "www.usatoday.com"
         },
         {
-          "title": "コートの内外から高い決定力でスコアを重ねた琉球…敵地で千葉Jを相手に“31点差”快勝 | バスケットボールキング",
-          "url": "https://basketballking.jp/news/japan/20260124/591318.html",
-          "source": "basketballking.jp"
+          "title": "Fundraiser for Alex Pretti family raises over $1m after fatal shooting | Minneapolis | The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jan/25/alex-pretti-fundraiser",
+          "source": "www.theguardian.com"
         },
         {
-          "title": "2026/1/24 琉球ゴールデンキングス vs 千葉ジェッツ @BリーグRS - KINGS BOOSTER STATION | 琉球ゴールデンキングス試合情報",
-          "url": "https://go-go-kings.hatenablog.com/entry/2026/01/25/001406",
-          "source": "go-go-kings.hatenablog.com"
+          "title": "Woman, 92, Seen Working at Store, So Customer Starts Retirement Fundraiser",
+          "url": "https://people.com/woman-92-seen-working-at-store-so-customer-starts-retirement-fundraiser-11894585",
+          "source": "people.com"
         }
       ],
       "expiry_days": 3
     },
     {
-      "id": "340-ja-tech-アルバルク東京",
-      "keyword": "アルバルク東京",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 5,
+      "id": "339-en-sports-roki-sasaki",
+      "keyword": "roki sasaki",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
       "status": "pending",
-      "created_at": "2026-01-31T07:31:42.696999",
+      "created_at": "2026-02-01T07:40:00.869901",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "バスケ界の勢力変化を把握し、注目すべきチームを見極めたい",
-      "angle": "スポーツ界における勢力図の変化とファン戦略",
+      "search_intent": "일본 투수의 MLB 진출이 가져올 파급효과를 미리 파악하지 않으면 시즌 예측을 완전히 틀릴 수 있음",
+      "angle": "다저스의 전략적 영입과 WBC 출전 제한의 숨겨진 의도",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Roki Sasaki - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Roki_Sasaki",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Dodgers’ Dave Roberts Sends Roki Sasaki Warning After He ‘Minimized’ Team",
+          "url": "https://www.forbes.com/sites/peterchawaga/2026/01/28/dodgers-dave-roberts-sends-roki-sasaki-warning-after-he-minimized-team/",
+          "source": "www.forbes.com"
+        },
+        {
+          "title": "r/baseball on Reddit: [570 LA Sports] Roki Sasaki says that it was the Dodger’s decision for him not",
+          "url": "https://www.reddit.com/r/baseball/comments/1qsgzwu/570_la_sports_roki_sasaki_says_that_it_was_the/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "340-en-business-crypto-atm",
+      "keyword": "crypto atm",
+      "category": "business",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.869938",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "급증하는 암호화폐 ATM의 보안 리스크를 파악하지 않으면 금융 사기의 표적이 될 수 있음",
+      "angle": "15,000개 넘는 비트코인 ATM 확산과 관련 보안 취약점 분석",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Bitcoin ATM Map – Find Bitcoin ATM, Online Rates",
+          "url": "https://coinatmradar.com/",
+          "source": "coinatmradar.com"
+        },
+        {
+          "title": "Buy Bitcoin With Cash At a Bitcoin ATM Near You | Bitcoin Depot®",
+          "url": "https://bitcoindepot.com/",
+          "source": "bitcoindepot.com"
+        },
+        {
+          "title": "Bitcoin ATM - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bitcoin_ATM",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "341-en-tech-john-deere",
+      "keyword": "john deere",
+      "category": "tech",
+      "lang": "en",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.869972",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "농업 기술 독점 현황을 파악하지 않으면 식료품 가격 급등의 진짜 원인을 놓칠 수 있음",
+      "angle": "농업 기계 독점과 수리권 논란이 소비자에게 미치는 실질적 영향",
       "competition_level": "low",
       "references": [
         {
-          "title": "【三井ショッピングパーク アーバンドック ららぽーと豊洲】パブリックビューイングも！アルバルク東京を一緒に応援しよう！アルバルク応援WEEKを開催！：時事ドットコム",
-          "url": "https://www.jiji.com/jc/article?k=000000670.000002198&g=prt",
-          "source": "www.jiji.com"
+          "title": "John Deere - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Deere",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "【三井ショッピングパーク アーバンドック ららぽーと豊洲】パブリックビューイングも！アルバルク東京を一緒に応援しよう！アルバルク応援WEEKを開催！ | 三井不動産商業マネジメント株式会社のプレスリリ",
-          "url": "https://prtimes.jp/main/html/rd/p/000000670.000002198.html",
-          "source": "prtimes.jp"
+          "title": "Trump cites US investments by tractor maker John Deere | Reuters",
+          "url": "https://www.reuters.com/business/trump-notes-70-million-factory-investment-by-tractor-maker-deere-north-carolina-2026-01-27/",
+          "source": "www.reuters.com"
         },
         {
-          "title": "【Bリーグ】大阪エヴェッサ 4連勝ならず 一時9点リードも逆転負け 藤田HC「非常に悔しい敗戦」 - ライブドアニュース",
-          "url": "https://news.livedoor.com/article/detail/30436768/",
-          "source": "news.livedoor.com"
+          "title": "Fact Check: President Trump’s claims on inflation and John Deere facility",
+          "url": "https://www.kcrg.com/2026/01/28/fact-check-president-trumps-claims-inflation-john-deere-facility/",
+          "source": "www.kcrg.com"
         }
       ],
+      "expiry_days": 3
+    },
+    {
+      "id": "342-ko-entertainment-김선호",
+      "keyword": "김선호",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870064",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "연예인 탈세 의혹의 실상을 파악하지 않으면 팬으로서 계속 속을 수 있음",
+      "angle": "가족 법인을 통한 연예인 탈세 의혹과 판타지오 소속 연예인들의 공통점",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "김선호 (배우) - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%84%A0%ED%98%B8_(%EB%B0%B0%EC%9A%B0)",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "김선호, 차은우처럼 가족 법인 탈세 의혹..판타지오 \"입장 정리중\" [공식]",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/02/01/GBSTIZJTGBTGGMTEMY2WMMBSGY/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "Kim Seon-ho also has a suspicious corporation··· a one-person agency that is a ‘carbon copy’ of Cha ",
+          "url": "https://sports.khan.co.kr/en/article/202602011402007",
+          "source": "sports.khan.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "343-ko-society-함소원",
+      "keyword": "함소원",
+      "category": "society",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870116",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "이혼 후 재결합의 현실적 장벽을 미리 파악하지 않으면 비슷한 상황에서 준비 없이 고통받을 수 있음",
+      "angle": "국제결혼 이혼 후 재결합 과정에서 나타나는 가족 갈등의 현실",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "재결합 원하는 함소원 \"전 남편 진화, '선' 제안 받아…머리 띵해져\" - 뉴스1",
+          "url": "https://www.news1.kr/entertain/broadcast-tv/6057563",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "‘재결합 원하는’ 함소원 “전 남편 진화, ‘선’ 제안 받아” | 연예",
+          "url": "https://en.seoul.co.kr/news/entertainment/2026/01/31/20260131801002",
+          "source": "en.seoul.co.kr"
+        },
+        {
+          "title": "함소원 “진화와 재결합 노력 중”…전 시어머니의 강경 반대",
+          "url": "https://sports.donga.com/ent/article/all/20260131/133270698/1",
+          "source": "sports.donga.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "344-ko-sports-수원-kt-대-원주-db",
+      "keyword": "수원 kt 대 원주 db",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870167",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "프로농구 순위 변동의 결정적 순간을 놓치면 시즌 전체 흐름을 예측할 수 없게 됨",
+      "angle": "KBL 시즌 중반 순위 경쟁에서 나타나는 예상 밖의 강팀들과 약팀들",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "수원역 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%9B%90%EC%97%AD",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "프로농구 소노, 현대모비스 45점 차로 완파하고 단독 7위로 | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260127163500007",
+          "source": "www.yna.co.kr"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "345-ko-tech-풍향고",
+      "keyword": "풍향고",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870209",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "예능 콘텐츠 소비 패턴 변화를 파악하지 않으면 새로운 미디어 트렌드에서 완전히 배제될 수 있음",
+      "angle": "스마트폰 없는 여행 예능이 보여주는 디지털 디톡스 콘텐츠의 부상",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "보여주는 여행에서 보는 여행으로, K-예능의 시대 전환 ‘풍향고’ 시즌 2 | 보그 코리아 (Vogue Korea)",
+          "url": "https://www.vogue.co.kr/2026/01/30/%EB%B3%B4%EC%97%AC%EC%A3%BC%EB%8A%94-%EC%97%AC%ED%96%89%EC%97%90%EC%84%9C-%EB%B3%B4%EB%8A%94-%EC%97%AC%ED%96%89%EC%9C%BC%EB%A1%9C-k-%EC%98%88%EB%8A%A5%EC%9D%98-%EC%8B%9C%EB%8C%80-%EC%A0%84%ED%99%98/",
+          "source": "www.vogue.co.kr"
+        },
+        {
+          "title": "이성민 합류한 '풍향고2', 흥행 순항…촬영지→공개 시간 관심 | 이수현 기자 | 톱스타뉴스",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=15946103",
+          "source": "www.topstarnews.net"
+        },
+        {
+          "title": "“유재석 효과 또 통했다”…반나절 만에 250만뷰 찍은 ‘신작 예능’",
+          "url": "https://www.twig24.com/news/entertainments/broadcasting/2026/01/26/20260126500149",
+          "source": "www.twig24.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "346-ko-business-동치미",
+      "keyword": "동치미",
+      "category": "business",
+      "lang": "ko",
+      "priority": 4,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870235",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "연예계 내부 사정을 파악하지 않으면 미디어 소비에서 계속 속임을 당할 수 있음",
+      "angle": "속풀이 예능을 통해 드러나는 연예계의 숨겨진 갈등과 진실",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3
+    },
+    {
+      "id": "347-ja-sports-レバンガ北海道",
+      "keyword": "レバンガ北海道",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870260",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Bリーグ東地区首位の連勝記録を追跡しないと今シーズンの優勝予想を完全に外す可能性",
+      "angle": "ホーム13連勝と東地区首位キープの背景にある戦略的変化",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "レバンガ北海道ホーム13連勝で東地区首位キープ ロイブルHC「みんなステップアップした」｜FNNプライムオンライン",
+          "url": "https://www.fnn.jp/articles/-/995566",
+          "source": "www.fnn.jp"
+        },
+        {
+          "title": "北海道が越谷との接戦を制し東地区首位キープ…オカフォーがダブルダブル、富永啓生は9得点 | バスケットボールキング",
+          "url": "https://basketballking.jp/news/japan/20260131/593019.html",
+          "source": "basketballking.jp"
+        },
+        {
+          "title": "レバンガ ホーム13連勝 東地区首位キープ 市場が3点シュート連発：北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp/article/1269746/",
+          "source": "www.hokkaido-np.co.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "348-ja-entertainment-徹子の部屋-50-周年",
+      "keyword": "徹子の部屋 50 周年",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870286",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "50周年特番の内容を把握しないと、テレビ史に残る貴重な証言や告白を見逃す可能性",
+      "angle": "92歳の黒柳徹子が50周年で明かす業界秘話と今後への不安",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "「徹子の部屋」50周年 来月1日に「超豪華」特番 黒柳「100歳まで続けたい」：東京新聞デジタル",
+          "url": "https://www.tokyo-np.co.jp/article/464936",
+          "source": "www.tokyo-np.co.jp"
+        },
+        {
+          "title": "『徹子の部屋』イケオジ3人登場 | 朝日新聞デジタルマガジン＆[and]",
+          "url": "https://www.asahi.com/and/entertainment/16317361",
+          "source": "www.asahi.com"
+        },
+        {
+          "title": "サンドウィッチマン「徹子の部屋」50周年SP出演 最新のモノマネ披露 - お笑いナタリー",
+          "url": "https://natalie.mu/owarai/news/658181",
+          "source": "natalie.mu"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "349-ja-society-松井一郎",
+      "keyword": "松井一郎",
+      "category": "society",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870308",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "政治情勢の真実を把握しないと、選挙で誤った判断をして後悔する可能性",
+      "angle": "維新の会元幹部が明かす与野党の隠された戦略と有権者が知らない真実",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "松井一郎 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E4%BA%95%E4%B8%80%E9%83%8E",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "元大阪市長・松井一郎氏「似てるって言われて喜んでいた」強面俳優と念願トーク 衆院解散も解説|au Webポータル芸能ニュース",
+          "url": "https://article.auone.jp/detail/1/5/9/266_9_r_20260130_1769773312286365",
+          "source": "article.auone.jp"
+        },
+        {
+          "title": "衆院選序盤情勢はあてにならず、与野党にマイナス情報噴出 結果は投票率次第か 松井一郎 以心伝心 - 産経ニュース",
+          "url": "https://www.sankei.com/article/20260201-WLAAQABLSZPP7IYDHL7DDSG7JE/?outputType=theme_weekly-fuji",
+          "source": "www.sankei.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "350-ja-tech-東京都アプリ",
+      "keyword": "東京都アプリ",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870330",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "アプリの混雑状況を把握しないと給付金申請のタイミングを逃して損失を被る可能性",
+      "angle": "生活応援事業の申請混雑とマイナンバーカード認証の技術的問題",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "東京アプリの「混雑カレンダー」公開 都民に1万1000円分のポイント付与の参考に - CNET Japan",
+          "url": "https://japan.cnet.com/article/35243152/",
+          "source": "japan.cnet.com"
+        },
+        {
+          "title": "【最大1.1万円分もらえる】東京都公式アプリ「生活応援キャンペーン」：ポイント獲得から使い方までのガイド",
+          "url": "https://kodaira-it.jp/otasuke2/tokyo-app-campaign/",
+          "source": "kodaira-it.jp"
+        },
+        {
+          "title": "【東京アプリ】東京都公式アプリと連携する決済事業者を拡充します – シン・トセイ",
+          "url": "https://shintosei.metro.tokyo.lg.jp/post_seisakudx-2-2_260116-2/",
+          "source": "shintosei.metro.tokyo.lg.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "351-ja-business-混雑カレンダー",
+      "keyword": "混雑カレンダー",
+      "category": "business",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-02-01T07:40:00.870351",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "混雑予測を活用しないと行政サービスの利用で時間とお金の両方を失う可能性",
+      "angle": "確定申告時期と重なる給付金申請の混雑が都民に与える経済的影響",
+      "competition_level": "low",
+      "references": [],
       "expiry_days": 3
     }
   ]

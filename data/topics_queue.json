@@ -3212,7 +3212,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900132",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3231,7 +3231,9 @@
           "source": "www.mundodeportivo.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:54:37.082408+00:00"
     },
     {
       "id": "350-en-entertainment-leah-kateb",
@@ -3239,7 +3241,7 @@
       "category": "entertainment",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900193",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3258,7 +3260,9 @@
           "source": "en.wikipedia.org"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:49:01.077701+00:00"
     },
     {
       "id": "351-en-sports-ashlyn-krueger",
@@ -3298,7 +3302,7 @@
       "category": "society",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900272",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3322,7 +3326,9 @@
           "source": "www.news.cn"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:46:01.141790+00:00"
     },
     {
       "id": "353-en-business-tesla-cybertruck-rec",
@@ -3330,7 +3336,7 @@
       "category": "business",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900312",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3338,7 +3344,9 @@
       "angle": "Major automotive manufacturer's product safety breakdown and market confidence crisis",
       "competition_level": "high",
       "references": [],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:50:08.312170+00:00"
     },
     {
       "id": "354-ko-tech-오태석",
@@ -3346,7 +3354,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900350",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3360,7 +3368,9 @@
           "source": "www.hankyung.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:56:18.541462+00:00"
     },
     {
       "id": "355-ko-society-창원대",
@@ -3400,7 +3410,7 @@
       "category": "business",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900437",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3424,7 +3434,9 @@
           "source": "gall.dcinside.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:51:39.004726+00:00"
     },
     {
       "id": "357-ko-society-경상대",
@@ -3432,7 +3444,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900480",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3451,7 +3463,9 @@
           "source": "www.breaknews.com"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:57:50.402808+00:00"
     },
     {
       "id": "358-ko-entertainment-메이플-키우기-환불",
@@ -3459,7 +3473,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-02T07:52:57.900534",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -3467,7 +3481,9 @@
       "angle": "모바일 게임 업계의 확률 조작 의혹과 소비자 피해 보상",
       "competition_level": "high",
       "references": [],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": "2026-02-02T10:44:36.676646+00:00",
+      "completed_at": "2026-02-02T10:47:47.116825+00:00"
     },
     {
       "id": "359-ja-society-京葉線",
@@ -3526,7 +3542,8 @@
           "source": "mainichi.jp"
         }
       ],
-      "expiry_days": 3
+      "expiry_days": 3,
+      "reserved_at": null
     },
     {
       "id": "361-ja-business-ダイハツ-ハイゼットカーゴ",

@@ -3842,40 +3842,6 @@
       "completed_at": "2026-02-03T04:35:23.712866+00:00"
     },
     {
-      "id": "370-ko-tech-국장",
-      "keyword": "국장",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781649",
-      "retry_count": 2,
-      "keyword_type": "trend",
-      "search_intent": "통계 기관 인사 변화를 놓치면 향후 경제 데이터 신뢰성 판단을 잘못할 수 있음",
-      "angle": "정부 통계 기관의 신뢰성과 데이터 조작 의혹",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "대한민국의 고위공무원 목록 - 위키백과, 우리 모두의 백과사전",
-          "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EA%B3%A0%EC%9C%84%EA%B3%B5%EB%AC%B4%EC%9B%90_%EB%AA%A9%EB%A1%9D",
-          "source": "ko.wikipedia.org"
-        },
-        {
-          "title": "트럼프, 美 노동통계국 해임 파동 6개월…내부 경제학자 국장 지명",
-          "url": "https://www.donga.com/news/Inter/article/all/20260131/133270593/1",
-          "source": "www.donga.com"
-        },
-        {
-          "title": "“내란 당일 대통령실·보도국장과 통화했나요?”…박장범, 답변 거부",
-          "url": "https://www.hani.co.kr/arti/society/media/1242171.html",
-          "source": "www.hani.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
       "id": "371-ko-entertainment-실리콘투",
       "keyword": "실리콘투",
       "category": "entertainment",
@@ -3905,102 +3871,6 @@
       "last_error": "Stuck in progress for 0+ hours",
       "reserved_at": "2026-02-03T04:32:30.148978+00:00",
       "completed_at": "2026-02-03T04:36:49.656907+00:00"
-    },
-    {
-      "id": "372-ja-tech-スーパーカブ",
-      "keyword": "スーパーカブ",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781708",
-      "retry_count": 2,
-      "keyword_type": "trend",
-      "search_intent": "新型発売情報を知らないと現在の愛車価値や買い替え時期を判断できない",
-      "angle": "新型発売による既存モデルへの影響と市場価値 변화",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "ホンダ斬新「“大きな”スーパーカブ」が凄い！ 大排気量“250cc”水冷エンジン搭載で「高速道路」も走れる！ 超ビッグボディに“巨大ホイール”採用した「最強のスーパーカブ」こと“ボスカブ”とは！（くる",
-          "url": "https://carview.yahoo.co.jp/news/detail/365a73982ec6106eeffa066ff1498c4745c5dfae/",
-          "source": "carview.yahoo.co.jp"
-        },
-        {
-          "title": "原付二種コミューター「スーパーカブ C125」のカラーバリエーションを変更し発売 | Honda 企業情報サイト",
-          "url": "https://global.honda/jp/news/2026/2260130-c125.html",
-          "source": "global.honda"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
-      "id": "373-ja-sports-ジェンソン・バトン",
-      "keyword": "ジェンソン・バトン",
-      "category": "sports",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781738",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "チーム移籍による影響を知らないと来シーズンの戦力予想や応援戦略を間違える",
-      "angle": "元王者の移籍がもたらすF1チーム間パワーバランス変化",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "ジェンソン・バトン、ホンダF1と再び歩む。ウィリアムズからアストンマーティンに移籍 | Formula1-Data / F1情報・ニュース速報解説",
-          "url": "https://formula1-data.com/article/button-moves-to-aston-martin-with-honda-f1",
-          "source": "formula1-data.com"
-        },
-        {
-          "title": "ジェンソン・バトン、アストンマーティン・ホンダF1のアンバサダーに就任",
-          "url": "https://f1-gate.com/button/f1_92363.html",
-          "source": "f1-gate.com"
-        },
-        {
-          "title": "ジェンソン・バトンがアストンマーティンF1のチームアンバサダーに就任「ホンダと働いた経験を新しい役割に生かしたい」（オートスポーツweb） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/2c03bddcbaee345119ce8eb8807d92dadef379e1",
-          "source": "news.yahoo.co.jp"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "374-ja-business-デンソー",
-      "keyword": "デンソー",
-      "category": "business",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781765",
-      "retry_count": 2,
-      "keyword_type": "trend",
-      "search_intent": "業界リーダーの技術革新を知らないと競合他社や投資判断で後れを取る",
-      "angle": "自動車部品メーカーのDX推進と業界内格差拡大",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "デンソー、2025年度「IT奨励賞（経営・業務改革領域）」を初獲得 | MOTOR CARS",
-          "url": "https://motorcars.jp/denso-wins-2025-it-encouragement-award-management-and-business-reform-area-for-the-first-time20260130",
-          "source": "motorcars.jp"
-        },
-        {
-          "title": "QRコード - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/QR%E3%82%B3%E3%83%BC%E3%83%89",
-          "source": "ja.wikipedia.org"
-        },
-        {
-          "title": "パワー半導体も生き残りの条件は｢規模｣に｡ローム､東芝､デンソーなど大手が協業を模索するも､立ちはだかる主導権争いの壁 | 特集 | 東洋経済オンライン",
-          "url": "https://toyokeizai.net/articles/-/931243",
-          "source": "toyokeizai.net"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "375-ja-society-ゴジュウジャー",
@@ -4038,39 +3908,6 @@
       "completed_at": "2026-02-03T03:00:23.744192+00:00"
     },
     {
-      "id": "376-en-tech-how-to-learn-program",
-      "keyword": "how to learn programming",
-      "category": "tech",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781830",
-      "retry_count": 2,
-      "keyword_type": "evergreen",
-      "search_intent": "학습 - 프로그래밍을 처음 시작하는 사람들이 체계적인 학습 방법과 로드맵을 찾기 위해",
-      "angle": "초보자를 위한 단계별 학습 가이드 - 언어 선택부터 취업까지",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Learning Programming: Where to Start - SheCanCode",
-          "url": "https://shecancode.io/i-want-to-learn-programming-but-i-dont-know-where-to-start/",
-          "source": "shecancode.io"
-        },
-        {
-          "title": "How to Start Coding: A Beginner's Guide to Learning Programming - GeeksforGeeks",
-          "url": "https://www.geeksforgeeks.org/blogs/how-to-learn-programming/",
-          "source": "www.geeksforgeeks.org"
-        },
-        {
-          "title": "How to Learn Programming – The Guide I Wish I Had When I Started Learning to Code",
-          "url": "https://www.freecodecamp.org/news/how-to-learn-programming/",
-          "source": "www.freecodecamp.org"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
       "id": "377-en-business-passive-income-ideas",
       "keyword": "passive income ideas 2026",
       "category": "business",
@@ -4104,39 +3941,6 @@
       "last_error": "Stuck in progress for 0+ hours",
       "reserved_at": "2026-02-03T04:32:30.148978+00:00",
       "completed_at": "2026-02-03T04:37:56.197273+00:00"
-    },
-    {
-      "id": "378-en-society-mental-health-manage",
-      "keyword": "mental health management tips",
-      "category": "society",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781903",
-      "retry_count": 2,
-      "keyword_type": "evergreen",
-      "search_intent": "문제해결 - 스트레스나 정신건강 문제를 겪는 사람들이 일상에서 실천할 수 있는 관리 방법을 찾기 위해",
-      "angle": "과학적 근거 기반의 실용적 멘탈헬스 관리 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "31 Tips to Boost Your Mental Health | Mental Health America",
-          "url": "https://mhanational.org/resources/31-tips-to-boost-your-mental-health/",
-          "source": "mhanational.org"
-        },
-        {
-          "title": "Managing Stress | Mental Health | CDC",
-          "url": "https://www.cdc.gov/mental-health/living-with/index.html",
-          "source": "www.cdc.gov"
-        },
-        {
-          "title": "Building Better Mental Health - HelpGuide.org",
-          "url": "https://www.helpguide.org/mental-health/wellbeing/building-better-mental-health",
-          "source": "www.helpguide.org"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "379-en-entertainment-photography-tips",
@@ -4174,100 +3978,6 @@
       "completed_at": "2026-02-03T04:39:04.487618+00:00"
     },
     {
-      "id": "380-en-sports-home-workout-routine",
-      "keyword": "home workout routine",
-      "category": "sports",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781965",
-      "retry_count": 2,
-      "keyword_type": "evergreen",
-      "search_intent": "문제해결 - 헬스장 없이 집에서 운동하고 싶어하는 사람들이 체계적인 운동 프로그램을 찾기 위해",
-      "angle": "장비 없이 집에서 할 수 있는 체계적 운동 프로그램",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "The 10 Best at Home Workouts (No-Equipment!) | Nerd Fitness",
-          "url": "https://www.nerdfitness.com/blog/the-7-best-at-home-workout-routines-the-ultimate-guide-for-training-without-a-gym/",
-          "source": "www.nerdfitness.com"
-        },
-        {
-          "title": "r/bodyweightfitness Guide: The Recommended Routine",
-          "url": "https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/",
-          "source": "www.reddit.com"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
-      "id": "381-en-tech-AI-tools-for-beginne",
-      "keyword": "AI tools for beginners",
-      "category": "tech",
-      "lang": "en",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.781998",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "의사결정 - AI 기술을 활용하고 싶어하는 초보자들이 접근하기 쉬운 도구를 찾기 위해",
-      "angle": "초보자 친화적인 AI 도구 비교 및 사용법 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Learn Artificial Intelligence: A Beginner’s Guide | Coursera",
-          "url": "https://www.coursera.org/articles/how-to-learn-artificial-intelligence",
-          "source": "www.coursera.org"
-        },
-        {
-          "title": "The 45 Best AI Tools in 2026 (Tried & Tested)",
-          "url": "https://www.synthesia.io/post/ai-tools",
-          "source": "www.synthesia.io"
-        },
-        {
-          "title": "5 Teacher-Tested AI Tools for Beginners",
-          "url": "https://www.edutopia.org/article/ai-tools-teachers-try/",
-          "source": "www.edutopia.org"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
-      "id": "382-ko-tech-프로그래밍-독학-방법",
-      "keyword": "프로그래밍 독학 방법",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782035",
-      "retry_count": 2,
-      "keyword_type": "evergreen",
-      "search_intent": "학습 - 프로그래밍을 혼자 배우고자 하는 사람들이 체계적인 학습 방법과 순서를 알고 싶어함",
-      "angle": "독학자를 위한 단계별 프로그래밍 학습 전략 및 실전 가이드",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "코딩 독학 순서: 코딩 테스트 준비 방법 - 코드트리 블로그",
-          "url": "https://www.codetree.ai/blog/%EC%BD%94%EB%94%A9-%EB%8F%85%ED%95%99-%EC%88%9C%EC%84%9C-%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%80%EB%B9%84-%EB%B0%A9%EB%B2%95/",
-          "source": "www.codetree.ai"
-        },
-        {
-          "title": "C언어 독학 완전 기초부터 마스터까지 #1 (기초, 쉬운 설명, Hello world) :: JD Tech Now",
-          "url": "https://jdcyber.tistory.com/23",
-          "source": "jdcyber.tistory.com"
-        },
-        {
-          "title": "파이썬 공부 독학ㅣ설치부터 실전 프로젝트까지 99% 이해되는 파이썬 공부법",
-          "url": "https://media.fastcampus.co.kr/insight/dev/python_study_guide/",
-          "source": "media.fastcampus.co.kr"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
       "id": "383-ko-business-부업-아이디어",
       "keyword": "부업 아이디어",
       "category": "business",
@@ -4301,39 +4011,6 @@
       "last_error": "Stuck in progress for 0+ hours",
       "reserved_at": "2026-02-03T04:32:30.148978+00:00",
       "completed_at": "2026-02-03T04:41:00.104221+00:00"
-    },
-    {
-      "id": "384-ko-society-건강한-생활-습관",
-      "keyword": "건강한 생활 습관",
-      "category": "society",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782099",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "문제해결 - 건강에 대한 관심이 높아진 사람들이 일상에서 실천할 수 있는 건강 관리 방법을 찾기 위해",
-      "angle": "의학적 근거 기반의 실용적 건강 습관 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "[본방 종합] 무너진 생활 습관, 건강한 변화를 꿈꾸나요? 단 6일 만에 몸과 마음, 그리고 일상은 얼마나 달라질 수 있을까? I KBS 20251022 방송 - YouTube",
-          "url": "https://www.youtube.com/watch?v=qr_rjxhQ7-M",
-          "source": "www.youtube.com"
-        },
-        {
-          "title": "건강한 70대를 위해 30대에 할 수 있는 일들 - BBC News 코리아",
-          "url": "https://www.bbc.com/korean/articles/cx2d200p3v9o",
-          "source": "www.bbc.com"
-        },
-        {
-          "title": "건강한 사람들은 아침에 ‘이것’ 꼭 챙겨...어떤 좋은 습관 갖고 있나? - 코메디닷컴",
-          "url": "https://kormedi.com/2741498/",
-          "source": "kormedi.com"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "385-ko-entertainment-사진-촬영-팁",
@@ -4371,100 +4048,6 @@
       "completed_at": "2026-02-03T04:42:46.465875+00:00"
     },
     {
-      "id": "386-ko-sports-홈트레이닝-루틴",
-      "keyword": "홈트레이닝 루틴",
-      "category": "sports",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782162",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "문제해결 - 헬스장 없이 집에서 운동하고 싶어하는 사람들이 체계적인 운동 프로그램을 찾기 위해",
-      "angle": "장비 없이 집에서 할 수 있는 체계적 운동 프로그램 및 주차별 계획",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "집에서 하는 근력운동 추천. 홈트운동 루틴. 홈트 살빼기 (맨몸운동루틴) : '일의 구조'를 만듭니다, 공여사들 | 노션 템플릿 & 업무 시스템 구축",
-          "url": "https://gongysd.com/workout-log/?bmode=view&idx=167993607",
-          "source": "gongysd.com"
-        },
-        {
-          "title": "집에서 하는 홈트레이닝 루틴 총정리",
-          "url": "https://jisanbudongsan.com/%EC%A7%91%EC%97%90%EC%84%9C-%ED%95%98%EB%8A%94-%ED%99%88%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D-%EB%A3%A8%ED%8B%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
-          "source": "jisanbudongsan.com"
-        },
-        {
-          "title": "홈트레이닝 루틴, 초보자도 쉽게 시작하는 방법",
-          "url": "https://zzonge.tistory.com/124",
-          "source": "zzonge.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
-      "id": "387-ko-tech-AI-입문-가이드",
-      "keyword": "AI 입문 가이드",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782194",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "학습 - AI 기술에 관심을 가진 초보자들이 기초 개념부터 체계적으로 배우고 싶어함",
-      "angle": "비전공자도 이해할 수 있는 AI 기초 개념 및 활용 방법 안내",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "비전공자도 가능한 AI 입문 루트 (실습 중심 루틴 포함) 🚀💡 :: whistory",
-          "url": "https://whiseung.tistory.com/entry/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%8F%84-%EA%B0%80%EB%8A%A5%ED%95%9C-AI-%EC%9E%85%EB%AC%B8-%EB%A3%A8%ED%8A%B8-%EC%8B%A4%EC%8A%B5-%EC%A4%91%EC%8B%AC-%EB%A3%A8%ED%8B%B4-%ED%8F%AC%ED%95%A8-%F0%9F%9A%80%F0%9F%92%A1",
-          "source": "whiseung.tistory.com"
-        },
-        {
-          "title": "AI학습 리스트: 빠르게 시작하는 AI 학습 가이드 | 블로그 | 모두의연구소",
-          "url": "https://modulabs.co.kr/blog/ai-course-list",
-          "source": "modulabs.co.kr"
-        },
-        {
-          "title": "인사혁신처_인공지능(AI) 활용가이드_20250318 | 공공데이터포털",
-          "url": "https://www.data.go.kr/data/15142458/fileData.do?recommendDataYn=Y",
-          "source": "www.data.go.kr"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
-      "id": "388-ja-tech-プログラミング独学方法",
-      "keyword": "プログラミング独学方法",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782226",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "学習 - プログラミングを独学で学びたい人が体系的な学習方法と順序を知りたがっている",
-      "angle": "独学者のための段階別プログラミング学習戦略と実践ガイド",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "【初心者向け】プログラミング独学完全ロードマップ｜挫折しない学習のステップ - プログラマカレッジ",
-          "url": "https://programmercollege.jp/column/38411/",
-          "source": "programmercollege.jp"
-        },
-        {
-          "title": "プログラミング独学ロードマップ～未経験でも挫折しない学習法とおすすめ言語5選～",
-          "url": "https://codezine.jp/article/detail/21989",
-          "source": "codezine.jp"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
       "id": "389-ja-business-副業アイデア",
       "keyword": "副業アイデア",
       "category": "business",
@@ -4498,39 +4081,6 @@
       "last_error": "Stuck in progress for 0+ hours",
       "reserved_at": "2026-02-03T04:32:30.148978+00:00",
       "completed_at": "2026-02-03T04:44:38.517324+00:00"
-    },
-    {
-      "id": "390-ja-society-健康的な生活習慣",
-      "keyword": "健康的な生活習慣",
-      "category": "society",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782287",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "問題解決 - 健康への関心が高まった人が日常で実践できる健康管理方法を探すため",
-      "angle": "医学的根拠に基づいた実用的健康習慣ガイド",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "生活習慣が健康を守る！日常生活でできる管理法 - 花田クリニック",
-          "url": "https://hanada-clinic.com/column/193/",
-          "source": "hanada-clinic.com"
-        },
-        {
-          "title": "毎日の生活で実践できる！生活習慣病を防ぐ10の習慣【実践ガイド】 | グッドライフクリニック西町南",
-          "url": "https://goodlifeclinic.co.jp/post-3108/",
-          "source": "goodlifeclinic.co.jp"
-        },
-        {
-          "title": "生活習慣病を予防する方法12選！食べ物・食生活や運動など解説 | セントラルクリニック世田谷",
-          "url": "https://nidc.or.jp/column/lifestyle-related-diseases/",
-          "source": "nidc.or.jp"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "391-ja-entertainment-写真撮影コツ",
@@ -4568,70 +4118,356 @@
       "completed_at": "2026-02-03T04:46:18.739486+00:00"
     },
     {
-      "id": "392-ja-sports-自宅トレーニングルーティン",
-      "keyword": "自宅トレーニングルーティン",
+      "id": "392-en-society-gabriela-rico",
+      "keyword": "gabriela rico",
+      "category": "society",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897738",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Urgent need to uncover suppressed testimony before it's completely erased from public memory",
+      "angle": "Whistleblower who disappeared after exposing global elite's darkest secrets",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Gabriela Rico Jiménez: Epstein files spark interest in Mexican woman's cannibalism claim video; ‘who",
+          "url": "https://www.hindustantimes.com/world-news/us-news/gabriela-rico-jimenez-epstein-files-spark-interest-in-mexican-womans-cannibalism-claim-video-who-disappeared-her-101769907235472.html",
+          "source": "www.hindustantimes.com"
+        },
+        {
+          "title": "Who Is Gabriela Rico Jimenez? Epstein Cannibalism Whistleblower's Video Goes Viral Amid 'I Love Tort",
+          "url": "https://www.timesnownews.com/world/us/us-news/who-is-gabriela-rico-jimenez-now-epstein-cannibalism-whistleblowers-video-goes-viral-amid-i-love-torture-video-revelation-article-153534791",
+          "source": "www.timesnownews.com"
+        },
+        {
+          "title": "¿Quién era Gabriela Rico?; usuarios reviven polémico video tras liberación de archivos Epstein",
+          "url": "https://www.eluniversal.com.mx/tendencias/quien-era-gabriela-rico-usuarios-reviven-polemico-video-tras-liberacion-de-archivos-epstein/",
+          "source": "www.eluniversal.com.mx"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "393-ko-society-우크라이나",
+      "keyword": "우크라이나",
+      "category": "society",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897775",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "종전 협상 결렬 시 전쟁 확산과 글로벌 경제 충격에 대한 불안감",
+      "angle": "협상 지연 중 러시아 공습 강화로 평화 기회 상실 위기",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "러 공습 거세지는데 종전회담 늦춰져…우크라 '어망'으로 드론 막는 고육책도 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25402045",
+          "source": "www.joongang.co.kr"
+        },
+        {
+          "title": "트럼프, 우크라-러시아 종전 협상에 \"좋은 소식 나올 것\" | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260203022800071",
+          "source": "www.yna.co.kr"
+        },
+        {
+          "title": "\"우크라이나 재건에 10년간 723조 원 투입\"…2차대전 후 최대 프로젝트 - 글로벌이코노믹",
+          "url": "https://www.g-enews.com/article/Global-Biz/2026/01/202601271920578956fbbec65dfb_1",
+          "source": "www.g-enews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "394-ko-entertainment-추성훈-이혼",
+      "keyword": "추성훈 이혼",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897801",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "연예인 부부의 숨겨진 갈등과 이혼 위기의 실체를 알고 싶은 호기심",
+      "angle": "TV에서 공개된 충격적인 결혼 생활 현실과 이혼 암시",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "추성훈 \"매번 이혼 생각…야노시호와 똑같아\" :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260202_0003499782",
+          "source": "www.newsis.com"
+        },
+        {
+          "title": "추성훈, ♥야노시호와 이혼에 입 열었다…\"매번 생각, 남친 있어도 돼\" ('아근진') | 텐아시아",
+          "url": "https://www.tenasia.co.kr/article/2026020396034",
+          "source": "www.tenasia.co.kr"
+        },
+        {
+          "title": "추성훈, 야노시호 이혼 발언? \"와이프와 똑같이 매번 생각해\" | 김효진 기자 | 톱스타뉴스",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=15951672",
+          "source": "www.topstarnews.net"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "395-ja-entertainment-出水麻衣",
+      "keyword": "出水麻衣",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897824",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "表に出ない女子アナの実力と努力、プライベートな一面への関心",
+      "angle": "報道の現場で認められた実力派アナウンサーの意外な素顔",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ＴＢＳ出水麻衣アナ、ノーベル賞取材で奨励賞！「大人になっても嬉しいものですね」思い出ショット公開 - スポーツ報知",
+          "url": "https://hochi.news/articles/20260129-OHT1T51246.html",
+          "source": "hochi.news"
+        },
+        {
+          "title": "TBS出水麻衣アナ 北欧で“魔女の宅急便ごっこ” キュートな赤リボン姿に反響｢フェロモン半端ない｣｜よろず〜ニュース",
+          "url": "https://yorozoonews.jp/article/16322923",
+          "source": "yorozoonews.jp"
+        },
+        {
+          "title": "ＴＢＳ出水麻衣アナ、ノーベル賞取材で奨励賞！「大人になっても嬉しいものですね」思い出ショット公開|au Webポータル国内ニュース",
+          "url": "https://article.auone.jp/detail/1/2/2/202_2_r_20260130_1769724821337800",
+          "source": "article.auone.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "396-ja-society-青山繁晴",
+      "keyword": "青山繁晴",
+      "category": "society",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897875",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "総裁選で挫折した政治家の復活劇と政治的立場への注目",
+      "angle": "総裁選での推薦人不足という政治的孤立からの巻き返し戦略",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "青山繁晴 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E9%9D%92%E5%B1%B1%E7%B9%81%E6%99%B4",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "青山繁晴 衆議院選挙(自民 小選挙区)衆院選2026 : 読売新聞",
+          "url": "https://www.yomiuri.co.jp/election/shugiin/2026/YA28XXXXXX000/138843/",
+          "source": "www.yomiuri.co.jp"
+        },
+        {
+          "title": "自民が青山繁晴氏を兵庫8区に擁立方針 現参院議員、県連が党本部に申請へ 公明の連立離脱受け|社会|神戸新聞NEXT",
+          "url": "https://kobe-np.co.jp/news/society/202601/0019926774.shtml",
+          "source": "kobe-np.co.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "397-en-tech-how-to-learn-program",
+      "keyword": "how to learn programming",
+      "category": "tech",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897900",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Learning foundational programming skills to start a career or develop personal projects",
+      "angle": "Comprehensive step-by-step educational guide covering multiple learning paths",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Learning Programming: Where to Start - SheCanCode",
+          "url": "https://shecancode.io/i-want-to-learn-programming-but-i-dont-know-where-to-start/",
+          "source": "shecancode.io"
+        },
+        {
+          "title": "How to Start Coding: A Beginner's Guide to Learning Programming - GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/blogs/how-to-learn-programming/",
+          "source": "www.geeksforgeeks.org"
+        },
+        {
+          "title": "How to Learn Programming – The Guide I Wish I Had When I Started Learning to Code",
+          "url": "https://www.freecodecamp.org/news/how-to-learn-programming/",
+          "source": "www.freecodecamp.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "398-en-society-mental-health-manage",
+      "keyword": "mental health management tips",
+      "category": "society",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.897977",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developing practical strategies to maintain and improve mental wellness in daily life",
+      "angle": "Evidence-based guide with actionable daily practices and professional insights",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "31 Tips to Boost Your Mental Health | Mental Health America",
+          "url": "https://mhanational.org/resources/31-tips-to-boost-your-mental-health/",
+          "source": "mhanational.org"
+        },
+        {
+          "title": "Managing Stress | Mental Health | CDC",
+          "url": "https://www.cdc.gov/mental-health/living-with/index.html",
+          "source": "www.cdc.gov"
+        },
+        {
+          "title": "Building Better Mental Health - HelpGuide.org",
+          "url": "https://www.helpguide.org/mental-health/wellbeing/building-better-mental-health",
+          "source": "www.helpguide.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "399-ko-tech-프로그래밍-독학-방법",
+      "keyword": "프로그래밍 독학 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.898031",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "비용을 절약하며 체계적으로 프로그래밍 실력을 키우고 싶어하는 학습자들의 가이드 필요",
+      "angle": "단계별 학습 로드맵과 추천 자료를 포함한 실용적 교육 가이드",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "코딩 독학 순서: 코딩 테스트 준비 방법 - 코드트리 블로그",
+          "url": "https://www.codetree.ai/blog/%EC%BD%94%EB%94%A9-%EB%8F%85%ED%95%99-%EC%88%9C%EC%84%9C-%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%80%EB%B9%84-%EB%B0%A9%EB%B2%95/",
+          "source": "www.codetree.ai"
+        },
+        {
+          "title": "C언어 독학 완전 기초부터 마스터까지 #1 (기초, 쉬운 설명, Hello world) :: JD Tech Now",
+          "url": "https://jdcyber.tistory.com/23",
+          "source": "jdcyber.tistory.com"
+        },
+        {
+          "title": "파이썬 공부 독학ㅣ설치부터 실전 프로젝트까지 99% 이해되는 파이썬 공부법",
+          "url": "https://media.fastcampus.co.kr/insight/dev/python_study_guide/",
+          "source": "media.fastcampus.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "400-ko-sports-홈트레이닝-루틴",
+      "keyword": "홈트레이닝 루틴",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.898113",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "시간과 비용을 절약하면서도 체계적으로 운동하여 건강을 관리하고 싶은 욕구",
+      "angle": "운동 기초부터 단계별 프로그램까지 포함한 종합 운동 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "집에서 하는 근력운동 추천. 홈트운동 루틴. 홈트 살빼기 (맨몸운동루틴) : '일의 구조'를 만듭니다, 공여사들 | 노션 템플릿 & 업무 시스템 구축",
+          "url": "https://gongysd.com/workout-log/?bmode=view&idx=167993607",
+          "source": "gongysd.com"
+        },
+        {
+          "title": "초보자도 쉽게 따라하는 홈트 루틴 🏋️‍♀️ :: 생활에 꼭 필요한 잡다한 지식들 '생활잡지'",
+          "url": "https://winjoo3.tistory.com/entry/%EC%B4%88%EB%B3%B4%EC%9E%90%EB%8F%84-%EC%89%BD%EA%B2%8C-%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%ED%99%88%ED%8A%B8-%EB%A3%A8%ED%8B%B4-%F0%9F%8F%8B%EF%B8%8F%E2%80%8D%E2%99%80%EF%B8%8F",
+          "source": "winjoo3.tistory.com"
+        },
+        {
+          "title": "홈트레이닝 루틴, 초보자도 쉽게 시작하는 방법",
+          "url": "https://zzonge.tistory.com/124",
+          "source": "zzonge.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "401-ja-tech-プログラミング独学方法",
+      "keyword": "プログラミング独学方法",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T07:46:07.898156",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "コストを抑えながら体系的にプログラミングスキルを身につけたい学習者のガイド需要",
+      "angle": "段階別学習計画と推奨リソースを含む実用的教育ガイド",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "【初心者向け】プログラミング独学完全ロードマップ｜挫折しない学習のステップ - プログラマカレッジ",
+          "url": "https://programmercollege.jp/column/38411/",
+          "source": "programmercollege.jp"
+        },
+        {
+          "title": "プログラミング独学ロードマップ～未経験でも挫折しない学習法とおすすめ言語5選～",
+          "url": "https://codezine.jp/article/detail/21989",
+          "source": "codezine.jp"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "402-ja-sports-ヨガ初心者ガイド",
+      "keyword": "ヨガ初心者ガイド",
       "category": "sports",
       "lang": "ja",
       "priority": 6,
       "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782349",
-      "retry_count": 1,
+      "created_at": "2026-02-03T07:46:07.898239",
+      "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "問題解決 - ジム無しで自宅で運動したい人が体系的な運動プログラムを探すため",
-      "angle": "器具なしで自宅でできる体系的運動プログラムと週間別計画",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "自宅でできる筋トレメニュー17種目｜目的別に回数・強度・頻度を解説 | トレーニング ×スポーツ『MELOS』",
-          "url": "https://melos.media/training/36561/",
-          "source": "melos.media"
-        },
-        {
-          "title": "【1週間メニュー付き】本気で結果を出す自重トレーニング総まとめ！器具なし自宅筋トレで効果をあげるポイントを紹介",
-          "url": "https://ufit.co.jp/blogs/training/bodyweighttraining",
-          "source": "ufit.co.jp"
-        },
-        {
-          "title": "筋トレは自宅でできる！ 器具なしで全身を鍛える自重トレーニング11選 | GQ JAPAN",
-          "url": "https://www.gqjapan.jp/article/20250501-the-best-full-body-strength-training-that-you-can-do-at-home",
-          "source": "www.gqjapan.jp"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
-      "id": "393-ja-tech-AI入門ガイド",
-      "keyword": "AI入門ガイド",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-02-03T11:54:30.782379",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "学習 - AI技術に興味を持った初心者が基礎概念から体系的に学びたがっている",
-      "angle": "非専門者でも理解できるAI基礎概念と活用方法案内",
+      "search_intent": "健康管理とストレス解消のために手軽に始められる運動方法を求める需要",
+      "angle": "基礎知識から実践的なポーズ、段階的プログラムまで含む包括的ガイド",
       "competition_level": "low",
       "references": [
         {
-          "title": "初心者のためのAI入門！勉強方法をわかりやすく解説！ | 通信制大学・オンラインで学べる大学なら【開志創造大学 情報デザイン学部】",
-          "url": "https://kaishi.ac.jp/info-d/column/column-list/introduction-of-ai/",
-          "source": "kaishi.ac.jp"
+          "title": "ヨガの基本ポーズ30選｜初心者でも簡単！効果的なやり方 | トレーニング ×スポーツ『MELOS』",
+          "url": "https://melos.media/training/27208/",
+          "source": "melos.media"
         },
         {
-          "title": "【初心者必見】AI（人工知能）分野への完全入門ガイド | 侍エンジニアブログ",
-          "url": "https://www.sejuku.net/blog/54459",
-          "source": "www.sejuku.net"
+          "title": "体が硬いヨガ初心者がヨガを取り組む際に知っておきべくこと！何から始めるかも合わせて解説！ - Getfit",
+          "url": "https://getfit.jp/yogaklg/yoga-beginner",
+          "source": "getfit.jp"
         },
         {
-          "title": "生成AI入門｜初心者向け簡単ガイド | 株式会社SCREENアドバンストシステムソリューションズ",
-          "url": "https://www.screen.co.jp/as/column/column250101",
-          "source": "www.screen.co.jp"
+          "title": "ヨガのポーズ集を一覧で紹介！24の基本ポーズ名前や効果を徹底解説 – SOELU(ソエル) Magazine",
+          "url": "https://soelu.com/articles/?p=1632",
+          "source": "soelu.com"
         }
       ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
+      "content_type_hint": "GUIDE"
     }
   ]
 }

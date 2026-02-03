@@ -1,6 +1,49 @@
 {
-  "tests": [],
-  "last_updated": "2026-02-03T00:00:00+09:00",
+  "tests": [
+    {
+      "post_id": "2026-02-03-ashlyn-krueger",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-03T11:47:00.388186"
+    },
+    {
+      "post_id": "2026-02-03-창원대",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-03T11:48:23.651440"
+    },
+    {
+      "post_id": "2026-02-03-戸田競艇",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-03T11:51:26.151671"
+    },
+    {
+      "post_id": "2026-02-03-winter-storm-weather-forecast",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-03T11:55:48.213935"
+    },
+    {
+      "post_id": "2026-02-03-dominik-mysterio",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-03T11:56:57.253351"
+    },
+    {
+      "post_id": "2026-02-03-stephanie-vaquer",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-03T13:33:41.258700"
+    },
+    {
+      "post_id": "2026-02-03-passive-income-ideas-2026",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-03T13:37:56.142511"
+    }
+  ],
+  "last_updated": "2026-02-03T13:37:56.142530",
   "summary": {
     "total_assignments": 0,
     "by_test": {}

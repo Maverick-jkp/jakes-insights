@@ -4123,7 +4123,7 @@
       "category": "society",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.897738",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4148,7 +4148,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:43:09.870251+00:00"
     },
     {
       "id": "393-ko-society-우크라이나",
@@ -4156,7 +4158,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.897775",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4181,7 +4183,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:42:02.915181+00:00"
     },
     {
       "id": "394-ko-entertainment-추성훈-이혼",
@@ -4189,7 +4193,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.897801",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4214,7 +4218,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:44:45.113507+00:00"
     },
     {
       "id": "395-ja-entertainment-出水麻衣",
@@ -4247,7 +4253,8 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": null
     },
     {
       "id": "396-ja-society-青山繁晴",
@@ -4280,7 +4287,8 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": null
     },
     {
       "id": "397-en-tech-how-to-learn-program",
@@ -4288,7 +4296,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.897900",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -4312,7 +4320,9 @@
           "source": "www.freecodecamp.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:48:47.143034+00:00"
     },
     {
       "id": "398-en-society-mental-health-manage",
@@ -4320,7 +4330,7 @@
       "category": "society",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.897977",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -4344,7 +4354,9 @@
           "source": "www.helpguide.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:49:50.143987+00:00"
     },
     {
       "id": "399-ko-tech-프로그래밍-독학-방법",
@@ -4352,7 +4364,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.898031",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -4376,7 +4388,9 @@
           "source": "media.fastcampus.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:51:39.363481+00:00"
     },
     {
       "id": "400-ko-sports-홈트레이닝-루틴",
@@ -4384,7 +4398,7 @@
       "category": "sports",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-03T07:46:07.898113",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -4408,7 +4422,9 @@
           "source": "zzonge.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-03T10:40:37.285565+00:00",
+      "completed_at": "2026-02-03T10:53:09.103886+00:00"
     },
     {
       "id": "401-ja-tech-プログラミング独学方法",

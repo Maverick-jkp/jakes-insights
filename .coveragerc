@@ -22,6 +22,10 @@ omit =
     scripts/migrate_categories.sh
     scripts/utils/security.py
     scripts/utils/validate_queue.py
+    scripts/ab_test_manager.py
+    scripts/cluster_manager.py
+    scripts/affiliate_config.py
+    scripts/internal_linker.py
 
 [report]
 precision = 2

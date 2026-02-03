@@ -1,0 +1,52 @@
+{
+  "title_style": {
+    "name": "Title Style Test",
+    "description": "Test informative vs clickbait title styles",
+    "variants": {
+      "A": "informative",
+      "B": "clickbait"
+    },
+    "active": true,
+    "split": 0.5,
+    "metrics": ["click_through_rate", "time_on_page", "bounce_rate"],
+    "created_at": "2026-02-03T00:00:00+09:00"
+  },
+  "word_count": {
+    "name": "Content Length Test",
+    "description": "Test optimal content length for engagement",
+    "variants": {
+      "A": "800",
+      "B": "1500",
+      "C": "2500"
+    },
+    "active": true,
+    "split": 0.33,
+    "metrics": ["completion_rate", "scroll_depth", "time_on_page"],
+    "created_at": "2026-02-03T00:00:00+09:00"
+  },
+  "image_placement": {
+    "name": "Image Position Test",
+    "description": "Test hero image vs section-embedded images",
+    "variants": {
+      "A": "top",
+      "B": "section"
+    },
+    "active": false,
+    "split": 0.5,
+    "metrics": ["engagement_rate", "scroll_depth"],
+    "created_at": "2026-02-03T00:00:00+09:00"
+  },
+  "cta_position": {
+    "name": "CTA Position Test",
+    "description": "Test optimal call-to-action placement",
+    "variants": {
+      "A": "top",
+      "B": "middle",
+      "C": "bottom"
+    },
+    "active": false,
+    "split": 0.33,
+    "metrics": ["click_rate", "conversion_rate"],
+    "created_at": "2026-02-03T00:00:00+09:00"
+  }
+}

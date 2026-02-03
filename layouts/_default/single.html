@@ -97,7 +97,7 @@
     <!-- Breadcrumbs -->
     {{ partial "breadcrumbs.html" . }}
 
-    <article>
+    <article{{ with .Params.ab_test_id }} data-ab-test="{{ . }}"{{ end }}{{ with .Params.ab_variant }} data-ab-variant="{{ . }}"{{ end }}>
         {{/* Hero Image removed - image appears in article content already */}}
 
         <div class="article-header">

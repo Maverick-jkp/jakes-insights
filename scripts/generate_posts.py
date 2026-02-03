@@ -37,6 +37,7 @@ from affiliate_config import (
     should_add_affiliate_links
 )
 from internal_linker import InternalLinker
+from ab_test_manager import ABTestManager
 
 try:
     from anthropic import Anthropic
@@ -331,6 +332,10 @@ class ContentGenerator:
         else:
             safe_print("  ⚠️  Unsplash API key not found (images will be skipped)")
             safe_print("     Set UNSPLASH_ACCESS_KEY environment variable to enable")
+
+        # Initialize A/B Test Manager
+        self.ab_test_manager = ABTestManager()
+        safe_print("  🧪 A/B Test Manager initialized")
 
     def generate_draft(self, topic: Dict) -> str:
         """Generate initial draft using Draft Agent with Prompt Caching"""
@@ -1308,6 +1313,32 @@ Return improved version (body only, no title):""",
         filename = f"{date_str}-{slug}.md"
         filepath = content_dir / filename
 
+        # A/B Testing Integration (50% chance)
+        import random
+        ab_test_id = None
+        ab_variant = None
+
+        if self.ab_test_manager.should_run_test("title_style"):
+            # Generate post ID for consistent assignment
+            post_id = f"{date_str}-{slug}"
+
+            # Assign variant
+            ab_variant = self.ab_test_manager.assign_variant(post_id, "title_style")
+
+            if ab_variant:
+                ab_test_id = "title_style"
+
+                # Generate title variants
+                title_variants = self.ab_test_manager.generate_title_variants(title, lang)
+
+                # Apply variant title
+                if ab_variant in title_variants:
+                    original_title = title
+                    title = title_variants[ab_variant]
+                    safe_print(f"  🧪 A/B Test: title_style (Variant {ab_variant})")
+                    safe_print(f"     Original: {original_title}")
+                    safe_print(f"     Modified: {title}")
+
         # Hugo frontmatter with required image field
         # Use placeholder if no Unsplash image available
         if not image_path:
@@ -1323,18 +1354,27 @@ Return improved version (body only, no title):""",
         safe_title = title.replace('"', "'")
         safe_description = description.replace('"', "'")
 
-        frontmatter = f"""---
-title: "{safe_title}"
-date: {now_kst.strftime("%Y-%m-%dT%H:%M:%S%z")}
-draft: false
-author: "Jake Park"
-categories: ["{category}"]
-tags: {json.dumps(keyword.split()[:3])}
-description: "{safe_description}"
-image: "{image_path}"
----
+        # Build frontmatter with optional A/B test metadata
+        frontmatter_lines = [
+            "---",
+            f'title: "{safe_title}"',
+            f'date: {now_kst.strftime("%Y-%m-%dT%H:%M:%S%z")}',
+            "draft: false",
+            'author: "Jake Park"',
+            f'categories: ["{category}"]',
+            f'tags: {json.dumps(keyword.split()[:3])}',
+            f'description: "{safe_description}"',
+            f'image: "{image_path}"'
+        ]
 
-"""
+        # Add A/B test metadata if applicable
+        if ab_test_id and ab_variant:
+            frontmatter_lines.append(f'ab_test_id: "{ab_test_id}"')
+            frontmatter_lines.append(f'ab_variant: "{ab_variant}"')
+
+        frontmatter_lines.extend(["---", ""])
+
+        frontmatter = "\n".join(frontmatter_lines) + "\n"
 
         # Add hero image at the top of content if available
         hero_image = ""

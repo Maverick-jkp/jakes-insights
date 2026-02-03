@@ -1051,27 +1051,33 @@ Return improved version (body only, no title):""",
                     if is_ascii and len(word) > 2 and word.lower() not in noise_words:
                         translated_keywords.append(word)
 
-            # Add category context
+            # Add category context (more specific than before)
             category_context = {
-                'tech': 'technology digital',
-                'business': 'business professional',
-                'finance': 'finance money',
-                'society': 'society community',
-                'entertainment': 'entertainment culture',
-                'lifestyle': 'lifestyle daily',
-                'sports': 'sports athletic',
-                'education': 'education learning'
+                'tech': ['technology', 'digital innovation', 'tech workspace', 'coding', 'software'],
+                'business': ['business', 'professional office', 'meeting', 'strategy', 'corporate'],
+                'finance': ['finance', 'money investment', 'stock market', 'banking', 'wealth'],
+                'society': ['society', 'community people', 'social gathering', 'urban life', 'culture'],
+                'entertainment': ['entertainment', 'cinema theater', 'music concert', 'art gallery', 'performance'],
+                'lifestyle': ['lifestyle', 'daily life', 'home interior', 'wellness', 'travel'],
+                'sports': ['sports', 'athletic training', 'stadium', 'competition', 'fitness'],
+                'education': ['education', 'learning classroom', 'study', 'books', 'school']
             }
 
-            # Build flexible, contextual query
+            # Build flexible, contextual query with fallback strategies
             if translated_keywords:
                 base_keywords = ' '.join(translated_keywords[:2])
+                # Primary search: specific keywords + main category term
+                context_list = category_context.get(category, ['technology'])
+                context = context_list[0]
+                query = f"{base_keywords} {context}".strip()
+                # Store fallback queries
+                fallback_queries = [f"{base_keywords} {ctx}" for ctx in context_list[1:3]]
+                fallback_queries.append(context_list[0])  # Pure category as last resort
             else:
-                # Fallback to pure category context if no English keywords found
-                base_keywords = category_context.get(category, 'technology')
-
-            context = category_context.get(category, category)
-            query = f"{base_keywords} {context}".strip()
+                # Fallback to category-specific queries if no English keywords found
+                context_list = category_context.get(category, ['technology'])
+                query = context_list[0]
+                fallback_queries = context_list[1:3]
 
             # Unsplash API endpoint
             url = "https://api.unsplash.com/search/photos"
@@ -1142,29 +1148,33 @@ Return improved version (body only, no title):""",
             else:
                 safe_print(f"  ⚠️  No images found for '{query}'")
 
-            # If no results or all images are used, try with generic category query
-            if photo is None:
-                safe_print(f"  ⚠️  All images for '{query}' already used, trying generic category search...")
-                generic_query = category_context.get(category, 'technology')
-                params['query'] = generic_query
+            # If no results or all images are used, try fallback queries
+            if photo is None and fallback_queries:
+                for fallback_query in fallback_queries:
+                    safe_print(f"  ⚠️  No unused images for '{query}', trying: {fallback_query}")
+                    params['query'] = fallback_query
 
-                response = requests.get(url, headers=headers, params=params, timeout=10, verify=verify_ssl)
-                response.raise_for_status()
-                data = response.json()
+                    response = requests.get(url, headers=headers, params=params, timeout=10, verify=verify_ssl)
+                    response.raise_for_status()
+                    data = response.json()
 
-                if data.get('results'):
-                    for result in data['results']:
-                        image_id = result['id']
-                        if image_id not in used_images:
-                            photo = result
-                            used_images.add(image_id)
-                            used_images_meta[image_id] = current_time
-                            safe_print(f"  ✓ Found unused image with generic search: {generic_query}")
-                            break
+                    if data.get('results'):
+                        for result in data['results']:
+                            image_id = result['id']
+                            if image_id not in used_images:
+                                photo = result
+                                used_images.add(image_id)
+                                used_images_meta[image_id] = current_time
+                                safe_print(f"  ✓ Found unused image with fallback: {fallback_query}")
+                                break
+
+                    # If found, stop trying fallbacks
+                    if photo is not None:
+                        break
 
                 # If still no unused image found, return None (use placeholder)
                 if photo is None:
-                    safe_print(f"  ❌ No unused images available for category '{category}'")
+                    safe_print(f"  ❌ No unused images available after trying all fallbacks for category '{category}'")
                     return None
 
             # Save used images (legacy file for backward compatibility)
@@ -1215,7 +1225,7 @@ Return improved version (body only, no title):""",
             return None
 
     def download_image(self, image_info: Dict, keyword: str) -> Optional[str]:
-        """Download optimized image to static/images/ directory"""
+        """Download optimized image to static/images/ directory with hash-based duplicate detection"""
         if not image_info:
             return None
 
@@ -1260,12 +1270,38 @@ Return improved version (body only, no title):""",
             response = requests.get(optimized_url, timeout=15, verify=verify_ssl)
             response.raise_for_status()
 
-            # Save image
+            # Calculate MD5 hash of downloaded content
+            import hashlib
+            content_hash = hashlib.md5(response.content).hexdigest()
+
+            # Check for duplicate images by hash
+            duplicate_found = False
+            for existing_file in images_dir.glob("*.jpg"):
+                if existing_file.exists():
+                    try:
+                        with open(existing_file, 'rb') as f:
+                            existing_hash = hashlib.md5(f.read()).hexdigest()
+                        if existing_hash == content_hash:
+                            safe_print(f"  ⚠️  Duplicate image detected (same content as {existing_file.name})")
+                            duplicate_found = True
+                            break
+                    except:
+                        pass
+
+            # If duplicate found, skip saving but still return the new filename
+            # (The image will be saved with a new name to maintain unique URLs)
+            if duplicate_found:
+                safe_print(f"  ℹ️  Saving with new filename to maintain unique URL: {filename}")
+
+            # Save image (even if duplicate, to maintain URL uniqueness per post)
             with open(filepath, 'wb') as f:
                 f.write(response.content)
 
             size_kb = len(response.content) / 1024
             safe_print(f"  ✓ Image saved: {filepath} ({size_kb:.1f} KB)")
+
+            # Log hash for debugging
+            safe_print(f"  🔑 Image hash: {content_hash[:8]}...")
 
             # Return relative path for Hugo
             return f"/images/{filename}"

@@ -29,6 +29,7 @@ omit =
     scripts/google_indexing.py
     scripts/evergreen_updater.py
     scripts/internal_linker_v2.py
+    scripts/dedupe_images.py
 
 [report]
 precision = 2

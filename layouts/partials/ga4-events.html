@@ -164,6 +164,76 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // A/B Test Tracking
+    // Track which A/B test variant user is viewing
+    const abTestElement = document.querySelector('[data-ab-test]');
+    if (abTestElement) {
+        const testId = abTestElement.dataset.abTest;
+        const variant = abTestElement.dataset.abVariant;
+
+        if (typeof gtag !== 'undefined' && testId && variant) {
+            // Track initial view of test variant
+            gtag('event', 'ab_test_view', {
+                'event_category': 'ab_testing',
+                'test_id': testId,
+                'variant': variant,
+                'page_path': window.location.pathname
+            });
+
+            // Track engagement metrics for A/B testing
+            // Track clicks on the page
+            let clickCount = 0;
+            document.addEventListener('click', function() {
+                clickCount++;
+                if (clickCount === 1) {
+                    // First click - user is engaging
+                    gtag('event', 'ab_test_engagement', {
+                        'event_category': 'ab_testing',
+                        'test_id': testId,
+                        'variant': variant,
+                        'engagement_type': 'first_click'
+                    });
+                }
+            });
+
+            // Track completion (scroll to bottom)
+            let hasReachedBottom = false;
+            window.addEventListener('scroll', function() {
+                const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+
+                if (scrollPercent >= 90 && !hasReachedBottom) {
+                    hasReachedBottom = true;
+                    gtag('event', 'ab_test_completion', {
+                        'event_category': 'ab_testing',
+                        'test_id': testId,
+                        'variant': variant,
+                        'scroll_depth': scrollPercent
+                    });
+                }
+            });
+
+            // Track time milestones for A/B tests
+            const testMilestones = {30: false, 60: false, 120: false};
+            let testStartTime = Date.now();
+
+            setInterval(function() {
+                const timeSpent = Math.floor((Date.now() - testStartTime) / 1000);
+
+                Object.keys(testMilestones).forEach(milestone => {
+                    if (timeSpent >= milestone && !testMilestones[milestone]) {
+                        testMilestones[milestone] = true;
+                        gtag('event', 'ab_test_time', {
+                            'event_category': 'ab_testing',
+                            'test_id': testId,
+                            'variant': variant,
+                            'time_seconds': milestone
+                        });
+                    }
+                });
+            }, 5000);
+        }
+    }
 });
 </script>
 {{ end }}

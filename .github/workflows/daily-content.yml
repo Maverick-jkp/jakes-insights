@@ -9,7 +9,7 @@ on:
       count:
         description: 'Number of posts to generate'
         required: false
-        default: '9'
+        default: '15'
       skip_review:
         description: 'Skip AI review step'
         required: false

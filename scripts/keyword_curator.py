@@ -1080,6 +1080,14 @@ class KeywordCurator:
             # Add expiry_days for trend keywords
             if topic['keyword_type'] == 'trend':
                 topic['expiry_days'] = 3  # 3 days expiry for trending keywords
+                # Add content_type hint for trends: prefer BREAKING
+                topic['content_type_hint'] = 'BREAKING'
+            elif topic['keyword_type'] == 'evergreen':
+                # Add content_type hint for evergreen: prefer GUIDE
+                topic['content_type_hint'] = 'GUIDE'
+            else:
+                # Mixed or undefined: let generate_posts.py decide
+                topic['content_type_hint'] = 'MIXED'
 
             self.queue_data['topics'].append(topic)
 

@@ -3,9 +3,19 @@
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="dns-prefetch" href="//www.google-analytics.com" />
 <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+<link rel="dns-prefetch" href="//images.unsplash.com" />
 
 {{- /* Preconnect to critical external resources */ -}}
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+
+{{- /* Preload critical CSS */ -}}
+<link rel="preload" href="{{ "css/single-post.css" | relURL }}" as="style" />
+
+{{- /* Fetch priority hints for LCP image */ -}}
+{{ with .Params.image }}
+<link rel="preload" as="image" href="{{ . }}" fetchpriority="high" />
+{{ end }}

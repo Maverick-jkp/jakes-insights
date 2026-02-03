@@ -5,6 +5,34 @@ theme = 'PaperMod'
 timeZone = 'Asia/Seoul'
 googleAnalytics = 'G-3ML8CHS112'
 
+# Performance optimization
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff.html]
+    keepWhitespace = false
+
+# Image processing optimization
+[imaging]
+  quality = 85
+  resampleFilter = "Lanczos"
+  anchor = "Smart"
+
+# Build performance
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "assets/.*\\.(js|ts|jsx|tsx)"
+    target = "(js|scripts|javascript)"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(.*)$"
+    target = "$1"
+
 [pagination]
 pagerSize = 50
 

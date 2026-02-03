@@ -332,6 +332,34 @@ class ContentGenerator:
             safe_print("  ⚠️  Unsplash API key not found (images will be skipped)")
             safe_print("     Set UNSPLASH_ACCESS_KEY environment variable to enable")
 
+    # Content type definitions for content mix strategy
+    CONTENT_TYPES = {
+        "BREAKING": {
+            "weight": 0.3,
+            "word_count": (800, 1200),
+            "tone": "urgent, timely, factual"
+        },
+        "ANALYSIS": {
+            "weight": 0.4,
+            "word_count": (1500, 2500),
+            "tone": "thoughtful, deep, opinion-based"
+        },
+        "GUIDE": {
+            "weight": 0.3,
+            "word_count": (1200, 2000),
+            "tone": "educational, step-by-step, practical"
+        }
+    }
+
+    def _select_content_type(self) -> str:
+        """Select content type using weighted random selection"""
+        import random
+
+        types = list(self.CONTENT_TYPES.keys())
+        weights = [self.CONTENT_TYPES[t]["weight"] for t in types]
+
+        return random.choices(types, weights=weights, k=1)[0]
+
     def generate_draft(self, topic: Dict) -> str:
         """Generate initial draft using Draft Agent with Prompt Caching"""
         keyword = topic['keyword']
@@ -341,10 +369,35 @@ class ContentGenerator:
 
         system_prompt = SYSTEM_PROMPTS[lang].format(keyword=keyword)
 
-        # User prompt with references
-        user_prompt = self._get_draft_prompt(keyword, category, lang, references)
+        # Determine content type based on keyword_type
+        keyword_type = topic.get('keyword_type', 'mixed')
+        if keyword_type == 'trend':
+            content_type = 'BREAKING'
+        elif keyword_type == 'evergreen':
+            content_type = 'GUIDE'
+        else:
+            # For mixed or undefined, use weighted random selection
+            content_type = self._select_content_type()
 
-        safe_print(f"  📝 Generating draft for: {keyword}")
+        # Store content_type in topic for later use
+        topic['content_type'] = content_type
+
+        # Select appropriate prompt method based on content type
+        if content_type == 'BREAKING':
+            user_prompt = self._get_draft_prompt_breaking(keyword, category, lang, references)
+            type_label = "🔥 BREAKING"
+        elif content_type == 'ANALYSIS':
+            user_prompt = self._get_draft_prompt_analysis(keyword, category, lang, references)
+            type_label = "🧠 ANALYSIS"
+        elif content_type == 'GUIDE':
+            user_prompt = self._get_draft_prompt_guide(keyword, category, lang, references)
+            type_label = "📚 GUIDE"
+        else:
+            # Fallback to original prompt
+            user_prompt = self._get_draft_prompt(keyword, category, lang, references)
+            type_label = "📝 STANDARD"
+
+        safe_print(f"  📝 Generating draft for: {keyword} [{type_label}]")
 
         # Use Prompt Caching: cache the system prompt
         try:
@@ -649,6 +702,308 @@ Write the complete blog post now (body only, no title or metadata):""",
         }
 
         return prompts[lang]
+
+
+    def _get_draft_prompt_breaking(self, keyword: str, category: str, lang: str, references: List[Dict] = None) -> str:
+        """Generate BREAKING news style draft prompt (urgent, timely, factual)"""
+        from datetime import datetime, timezone, timedelta
+        kst = timezone(timedelta(hours=9))
+        today = datetime.now(kst)
+        current_date = today.strftime("%Y년 %m월 %d일")
+        current_date_en = today.strftime("%B %d, %Y")
+        current_year = today.year
+
+        refs_section = ""
+        if references and len(references) > 0:
+            refs_list = "\n".join([
+                f"- [{ref.get('title', 'Source')}]({ref.get('url', '')}) - {ref.get('source', '')}"
+                for ref in references[:3]
+            ])
+            refs_section = f"\n\n📚 USE THESE REFERENCES:\n{refs_list}\n"
+
+        prompts = {
+            "en": f"""📅 TODAY'S DATE: {current_date_en}
+⚠️ BREAKING NEWS STYLE: Write as timely, urgent coverage of: {keyword}{refs_section}
+
+Category: {category}
+
+⏱️ Target: 800-1200 words (3-4 min read)
+🔥 BREAKING NEWS APPROACH:
+1. **Lead with the news**: What happened? When? Why does it matter NOW?
+2. **Impact first**: Who is affected? What changes immediately?
+3. **Key facts**: 5W1H (Who, What, When, Where, Why, How)
+4. **Quick context**: Brief background (2-3 sentences max)
+5. **What's next**: Immediate implications, upcoming developments
+
+TONE: Urgent, factual, concise. No fluff. Get to the point fast.
+
+📚 REFERENCES: If provided above, add "## References" section at the end with exact URLs.
+
+Write the complete blog post now (body only, no title):""",
+
+            "ko": f"""📅 오늘 날짜: {current_date}
+⚠️ 속보 스타일: 긴급하고 시의성 있는 보도로 작성: {keyword}{refs_section}
+
+카테고리: {category}
+
+⏱️ 목표: 800-1200 단어 (3-4분 읽기)
+🔥 속보 접근법:
+1. **뉴스로 시작**: 무슨 일이? 언제? 왜 지금 중요한가?
+2. **영향 우선**: 누가 영향받나? 당장 무엇이 바뀌나?
+3. **핵심 사실**: 5W1H (누가, 무엇을, 언제, 어디서, 왜, 어떻게)
+4. **간단한 맥락**: 배경 설명 (최대 2-3문장)
+5. **향후 전망**: 즉각적 영향, 다가올 변화
+
+톤: 긴급하고, 사실적이며, 간결하게. 군더더기 없이. 빠르게 요점 전달.
+
+📚 참고자료: 위에 제공된 경우, 정확한 URL로 "## 참고자료" 섹션 추가.
+
+지금 바로 완전한 블로그 글 작성 (본문만, 제목 제외):""",
+
+            "ja": f"""📅 本日の日付: {current_date}
+⚠️ 速報スタイル: タイムリーで緊急性のある報道として作成: {keyword}{refs_section}
+
+カテゴリ: {category}
+
+⏱️ 目標: 800-1200語 (3-4分で読める)
+🔥 速報アプローチ:
+1. **ニュースから始める**: 何が起きた? いつ? なぜ今重要?
+2. **影響を最優先**: 誰が影響を受ける? 何がすぐ変わる?
+3. **重要事実**: 5W1H (誰が、何を、いつ、どこで、なぜ、どうやって)
+4. **簡単な背景**: コンテキスト説明 (最大2-3文)
+5. **今後の展望**: 即座の影響、今後の展開
+
+トーン: 緊急性があり、事実的で、簡潔に。無駄なし。要点を素早く。
+
+📚 参考資料: 上記で提供された場合、正確なURLで"## 参考資料"セクション追加。
+
+今すぐ完全なブログ記事を書く（本文のみ、タイトルなし）:"""
+        }
+
+        return prompts[lang]
+
+    def _get_draft_prompt_analysis(self, keyword: str, category: str, lang: str, references: List[Dict] = None) -> str:
+        """Generate ANALYSIS style draft prompt (thoughtful, deep, opinion-based)"""
+        from datetime import datetime, timezone, timedelta
+        kst = timezone(timedelta(hours=9))
+        today = datetime.now(kst)
+        current_date = today.strftime("%Y년 %m월 %d일")
+        current_date_en = today.strftime("%B %d, %Y")
+        current_year = today.year
+
+        refs_section = ""
+        if references and len(references) > 0:
+            refs_list = "\n".join([
+                f"- [{ref.get('title', 'Source')}]({ref.get('url', '')}) - {ref.get('source', '')}"
+                for ref in references[:3]
+            ])
+            refs_section = f"\n\n📚 USE THESE REFERENCES:\n{refs_list}\n"
+
+        prompts = {
+            "en": f"""📅 TODAY'S DATE: {current_date_en}
+⚠️ DEEP ANALYSIS STYLE: Write thoughtful, opinionated analysis of: {keyword}{refs_section}
+
+Category: {category}
+
+⏱️ Target: 1500-2500 words (7-10 min read)
+🧠 ANALYSIS APPROACH:
+1. **The Big Question**: What's the deeper issue behind the headlines?
+2. **Multiple Perspectives**: Present 2-3 different viewpoints fairly
+3. **Hidden Patterns**: What are people missing? Connect the dots
+4. **Counter-intuitive Insights**: Challenge conventional wisdom
+5. **Long-term Implications**: What does this mean in 1-3 years?
+6. **Expert Opinion**: Your informed take (supported by evidence)
+
+STRUCTURE:
+- Introduction: Frame the debate/issue (why this matters long-term)
+- Section 1: The conventional view (and its blind spots)
+- Section 2: Alternative perspective(s)
+- Section 3: What the data really shows
+- Section 4: Future implications and your thesis
+- Conclusion: Actionable takeaway
+
+TONE: Thoughtful, balanced but opinionated. Think "New York Times analysis" or "The Atlantic feature".
+
+📚 REFERENCES: If provided above, add "## References" section at the end with exact URLs.
+
+Write the complete blog post now (body only, no title):""",
+
+            "ko": f"""📅 오늘 날짜: {current_date}
+⚠️ 심층 분석 스타일: 사려 깊고 의견이 담긴 분석 작성: {keyword}{refs_section}
+
+카테고리: {category}
+
+⏱️ 목표: 1500-2500 단어 (7-10분 읽기)
+🧠 분석 접근법:
+1. **핵심 질문**: 헤드라인 너머의 더 깊은 이슈는?
+2. **다각적 관점**: 2-3가지 다른 시각을 공정하게 제시
+3. **숨겨진 패턴**: 사람들이 놓치는 것은? 연결고리 찾기
+4. **역발상 통찰**: 통념에 도전
+5. **장기적 함의**: 1-3년 후 이것이 의미하는 바는?
+6. **전문가 의견**: 증거로 뒷받침된 당신의 견해
+
+구조:
+- 서론: 논쟁/이슈 설정 (왜 장기적으로 중요한가)
+- 섹션 1: 통념적 시각 (그리고 그 맹점)
+- 섹션 2: 대안적 관점들
+- 섹션 3: 데이터가 실제로 보여주는 것
+- 섹션 4: 미래 함의와 당신의 논지
+- 결론: 실행 가능한 시사점
+
+톤: 사려 깊고, 균형 잡혔지만 주관적. "조선일보 분석" 또는 "한겨레 심층보도" 스타일.
+
+📚 참고자료: 위에 제공된 경우, 정확한 URL로 "## 참고자료" 섹션 추가.
+
+지금 바로 완전한 블로그 글 작성 (본문만, 제목 제외):""",
+
+            "ja": f"""📅 本日の日付: {current_date}
+⚠️ 深層分析スタイル: 思慮深く、意見を含む分析を作成: {keyword}{refs_section}
+
+カテゴリ: {category}
+
+⏱️ 目標: 1500-2500語 (7-10分で読める)
+🧠 分析アプローチ:
+1. **核心的な質問**: ヘッドラインの向こうのより深い問題は?
+2. **多角的な視点**: 2-3つの異なる見方を公平に提示
+3. **隠れたパターン**: 人々が見落としているのは? 点を繋ぐ
+4. **逆説的洞察**: 通念に挑戦
+5. **長期的な意味**: 1-3年後にこれが意味するものは?
+6. **専門家の意見**: 証拠に裏付けられたあなたの見解
+
+構造:
+- 導入: 論争/問題の設定 (なぜ長期的に重要か)
+- セクション1: 通念的見方 (とその盲点)
+- セクション2: 代替的視点
+- セクション3: データが実際に示すもの
+- セクション4: 将来の影響とあなたの論旨
+- 結論: 実行可能な示唆
+
+トーン: 思慮深く、バランスが取れているが主観的。"朝日新聞分析"や"東洋経済特集"スタイル。
+
+📚 参考資料: 上記で提供された場合、正確なURLで"## 参考資料"セクション追加。
+
+今すぐ完全なブログ記事を書く（本文のみ、タイトルなし）:"""
+        }
+
+        return prompts[lang]
+
+    def _get_draft_prompt_guide(self, keyword: str, category: str, lang: str, references: List[Dict] = None) -> str:
+        """Generate GUIDE style draft prompt (educational, step-by-step, practical)"""
+        from datetime import datetime, timezone, timedelta
+        kst = timezone(timedelta(hours=9))
+        today = datetime.now(kst)
+        current_date = today.strftime("%Y년 %m월 %d일")
+        current_date_en = today.strftime("%B %d, %Y")
+        current_year = today.year
+
+        refs_section = ""
+        if references and len(references) > 0:
+            refs_list = "\n".join([
+                f"- [{ref.get('title', 'Source')}]({ref.get('url', '')}) - {ref.get('source', '')}"
+                for ref in references[:3]
+            ])
+            refs_section = f"\n\n📚 USE THESE REFERENCES:\n{refs_list}\n"
+
+        prompts = {
+            "en": f"""📅 TODAY'S DATE: {current_date_en}
+⚠️ PRACTICAL GUIDE STYLE: Write step-by-step educational guide for: {keyword}{refs_section}
+
+Category: {category}
+
+⏱️ Target: 1200-2000 words (6-8 min read)
+📚 GUIDE APPROACH:
+1. **Clear Outcome**: What will readers achieve by the end?
+2. **Prerequisites**: What do they need before starting? (tools, knowledge)
+3. **Step-by-Step Process**: Break down into 3-7 numbered steps
+4. **Visual Cues**: Use bullet points, numbered lists extensively
+5. **Common Mistakes**: Dedicate a section to "What NOT to do"
+6. **Real Examples**: Show concrete before/after or case studies
+7. **Quick Wins**: Include a "Start here if you only have 10 minutes" section
+
+STRUCTURE:
+- Introduction: The problem this guide solves + what you'll learn
+- Prerequisites/Requirements
+- Step 1: [Action] - Expected outcome, time needed
+- Step 2: [Action] - Expected outcome, time needed
+- [Continue steps...]
+- Common Pitfalls to Avoid
+- Real-world Example/Case Study
+- Quick Start Checklist (optional)
+- Conclusion: Next steps
+
+TONE: Clear, instructional, encouraging. Like a patient teacher or "Wirecutter guide".
+
+📚 REFERENCES: If provided above, add "## References" section at the end with exact URLs.
+
+Write the complete blog post now (body only, no title):""",
+
+            "ko": f"""📅 오늘 날짜: {current_date}
+⚠️ 실용 가이드 스타일: 단계별 실용 가이드 작성: {keyword}{refs_section}
+
+카테고리: {category}
+
+⏱️ 목표: 1200-2000 단어 (6-8분 읽기)
+📚 가이드 접근법:
+1. **명확한 결과**: 독자가 끝까지 읽으면 무엇을 달성하나?
+2. **필수 조건**: 시작 전 필요한 것은? (도구, 지식)
+3. **단계별 프로세스**: 3-7개 번호 매긴 단계로 분해
+4. **시각적 신호**: 불릿 포인트, 번호 목록 적극 활용
+5. **흔한 실수**: "하지 말아야 할 것" 섹션 할애
+6. **실제 사례**: 구체적인 전/후 또는 케이스 스터디 보여주기
+7. **빠른 성과**: "10분만 있다면 여기서 시작" 섹션 포함
+
+구조:
+- 서론: 이 가이드가 해결하는 문제 + 배울 내용
+- 필수 조건/요구사항
+- 1단계: [행동] - 예상 결과, 소요 시간
+- 2단계: [행동] - 예상 결과, 소요 시간
+- [단계 계속...]
+- 피해야 할 흔한 함정
+- 실제 사례/케이스 스터디
+- 빠른 시작 체크리스트 (선택)
+- 결론: 다음 단계
+
+톤: 명확하고, 교육적이며, 격려하는. 인내심 있는 선생님이나 "백종원 레시피" 스타일.
+
+📚 참고자료: 위에 제공된 경우, 정확한 URL로 "## 참고자료" 섹션 추가.
+
+지금 바로 완전한 블로그 글 작성 (본문만, 제목 제외):""",
+
+            "ja": f"""📅 本日の日付: {current_date}
+⚠️ 実用ガイドスタイル: ステップバイステップの実用ガイド作成: {keyword}{refs_section}
+
+カテゴリ: {category}
+
+⏱️ 目標: 1200-2000語 (6-8分で読める)
+📚 ガイドアプローチ:
+1. **明確な成果**: 読者が最後まで読んだら何を達成できる?
+2. **前提条件**: 始める前に必要なものは? (ツール、知識)
+3. **ステップバイステップ**: 3-7つの番号付きステップに分解
+4. **視覚的手がかり**: 箇条書き、番号付きリストを積極活用
+5. **よくある間違い**: "やってはいけないこと"セクション割当
+6. **実例**: 具体的なビフォー/アフターまたはケーススタディ
+7. **クイックウィン**: "10分しかない場合はここから"セクション含む
+
+構造:
+- 導入: このガイドが解決する問題 + 学ぶ内容
+- 前提条件/要件
+- ステップ1: [行動] - 期待される結果、所要時間
+- ステップ2: [行動] - 期待される結果、所要時間
+- [ステップ続く...]
+- 避けるべきよくある落とし穴
+- 実世界の例/ケーススタディ
+- クイックスタートチェックリスト (オプション)
+- 結論: 次のステップ
+
+トーン: 明確で、教育的で、励ます。忍耐強い先生や"クックパッド殿堂入りレシピ"スタイル。
+
+📚 参考資料: 上記で提供された場合、正確なURLで"## 参考資料"セクション追加。
+
+今すぐ完全なブログ記事を書く（本文のみ、タイトルなし）:"""
+        }
+
+        return prompts[lang]
+
 
     def _get_editor_prompt(self, lang: str) -> str:
         """Get editor prompt based on language"""

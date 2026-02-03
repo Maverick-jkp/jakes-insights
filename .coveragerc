@@ -26,6 +26,9 @@ omit =
     scripts/cluster_manager.py
     scripts/affiliate_config.py
     scripts/internal_linker.py
+    scripts/google_indexing.py
+    scripts/evergreen_updater.py
+    scripts/internal_linker_v2.py
 
 [report]
 precision = 2

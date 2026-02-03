@@ -217,11 +217,34 @@ jobs:
             echo "pushed=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Notify Google Indexing API
+        if: steps.commit_changes.outputs.pushed == 'true'
+        continue-on-error: true
+        env:
+          GOOGLE_INDEXING_CREDENTIALS: ${{ secrets.GOOGLE_INDEXING_CREDENTIALS }}
+        run: |
+          # Install Google API dependencies
+          pip install google-auth google-api-python-client
+
+          # Setup credentials (if available)
+          if [ -n "$GOOGLE_INDEXING_CREDENTIALS" ]; then
+            mkdir -p credentials
+            echo "$GOOGLE_INDEXING_CREDENTIALS" > credentials/google-indexing-credentials.json
+
+            echo "📤 Notifying Google about new content..."
+            python scripts/google_indexing.py --days 1
+
+            rm -f credentials/google-indexing-credentials.json
+            echo "✅ Google Indexing API notified"
+          else
+            echo "ℹ️  Google Indexing API credentials not configured (optional)"
+          fi
+
       - name: Deployment summary
         if: steps.commit_changes.outputs.pushed == 'true'
         run: |
           echo "✅ Content deployed successfully"
-          echo "🔗 Live site: https://jakes-tech-insights.pages.dev"
+          echo "🔗 Live site: https://jakeinsight.com"
           echo "📊 Check analytics for performance"
 
       - name: No deployment notice

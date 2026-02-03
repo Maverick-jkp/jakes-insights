@@ -55,7 +55,7 @@
          ▼
 ┌─────────────────┐
 │ Cloudflare      │  Automatic deployment on merge
-│ Pages           │  https://jakes-tech-insights.pages.dev
+│ Pages           │  https://jakeinsight.com
 └─────────────────┘
 ```
 
@@ -407,7 +407,7 @@ python scripts/topic_queue.py cleanup 24
 
 - **Issues**: [GitHub Issues](https://github.com/Maverick-jkp/jakes-tech-insights/issues)
 - **Docs**: [PROJECT_CONTEXT.md](PROJECT_CONTEXT.md)
-- **Live Site**: https://jakes-tech-insights.pages.dev
+- **Live Site**: https://jakeinsight.com
 
 ## 📜 License
 

@@ -1,0 +1,193 @@
+  ✓ Anthropic API client initialized successfully
+  ✓ Loaded topic queue: 37 topics
+
+============================================================
+  🔍 Generating 15 keyword candidates...
+============================================================
+
+
+============================================================
+  🔥 Fetching REAL-TIME trending topics from Google Trends RSS...
+============================================================
+
+  ✓ Found 5 trends from KR → ko
+  ✓ Found 5 trends from US → en
+  ✓ Found 5 trends from JP → ja
+
+  🎉 Total 15 real-time trending topics from RSS!
+     EN: 5, KO: 5, JA: 5
+
+  ✓ Fetched 3 results for: 황재균
+  ✓ Fetched 3 results for: 프로방스
+  ✓ Fetched 3 results for: 김현지
+  ✓ Fetched 3 results for: 케리아
+  ✓ Fetched 3 results for: 황충재
+  ✓ Fetched 3 results for: atlético madrid - r.c.d. mallorca
+  ✓ Fetched 3 results for: boston weather
+  ✓ Fetched 3 results for: opm status
+  ✓ Fetched 3 results for: detroit weather
+  ✓ Fetched 3 results for: shell
+  ✓ Fetched 3 results for: あわら市長選挙
+  ✓ Fetched 3 results for: 佐々木美玲
+  ✓ Fetched 3 results for: 探偵ナイトスクープ tver
+  ✓ Fetched 3 results for: 北斗市長選挙
+  ✓ Fetched 3 results for: 高橋海人
+
+✅ Total 45 trending topics fetched
+
+✅ Generated 15 candidates
+
+  🔴 DUPLICATE REMOVED: 'atlético madrid - r.c.d. mallorca' (duplicate category: tech, already exists as: sports)
+  🔴 DUPLICATE REMOVED: '황재균' (duplicate category: business, already exists as: sports)
+  🔴 DUPLICATE REMOVED: '探偵ナイトスクープ tver' (duplicate category: tech, already exists as: society)
+
+⚠️  Removed 3 duplicate keywords from Claude's response
+    Policy: One keyword = one category (first occurrence wins)
+
+  🟡 Caution flagged: 황재균
+  🟡 Caution flagged: 김현지
+  🟡 Caution flagged: 探偵ナイトスクープ tver
+📚 Extracting references for 12 candidates...
+
+  ✓ 3 refs for: boston weather...
+  ✓ 3 refs for: opm status...
+  ✓ 3 refs for: detroit weather...
+  ✓ 3 refs for: atlético madrid - r.c.d. mallorca...
+  ✓ 3 refs for: 황재균...
+  ✓ 3 refs for: 김현지...
+  ✓ 2 refs for: 케리아...
+  ✓ 3 refs for: 프로방스...
+  ✓ 2 refs for: あわら市長選挙...
+  ✓ 3 refs for: 佐々木美玲...
+  ✓ 3 refs for: 探偵ナイトスクープ tver...
+  ✓ 2 refs for: 北斗市長選挙...
+
+✅ All 12 keywords have references!
+
+============================================================
+  📋 Keyword Candidates
+============================================================
+
+
+[English]
+------------------------------------------------------------
+
+1. 🔥 boston weather
+   Category: society | Competition: 🔴 high
+   Intent: People need to prepare NOW before stores close and roads become impassable - waiting means being stranded without essentials
+   Angle: Emergency preparedness and survival during extreme weather crisis
+   Why: Missing the preparation window means being trapped without heat, food, or medica...
+
+2. 🔥 opm status
+   Category: business | Competition: 🟡 medium
+   Intent: Federal employees need to know immediately if they'll be paid or penalized for weather-related absences
+   Angle: Employment rights and compensation during emergency closures
+   Why: Not knowing OPM policies could result in unexpected pay loss or workplace violat...
+
+3. 🔥 detroit weather
+   Category: society | Competition: 🟡 medium
+   Intent: People need immediate safety measures to avoid frostbite and hypothermia in record-breaking cold
+   Angle: Life-threatening weather conditions requiring immediate protective action
+   Why: Exposure to -25°F wind chills can cause frostbite in minutes - preparation canno...
+
+4. 🔥 atlético madrid - r.c.d. mallorca
+   Category: sports | Competition: 🔴 high
+   Intent: Fans need to watch this crucial match that could determine if Atlético can salvage their championship dreams
+   Angle: High-stakes match with championship implications for underperforming team
+   Why: Missing this pivotal match means not knowing if the team's season is over or if ...
+
+[Korean]
+------------------------------------------------------------
+
+5. 🔥 황재균
+   Category: sports | Competition: 🔴 high
+   Intent: 팬들이 황재균의 은퇴 후 개인적 고충과 감정적 상태를 즉시 확인하고 싶어함
+   Angle: 스포츠 스타의 은퇴 후 현실적 어려움과 정서적 고백
+   Why: 황재균의 진솔한 감정 고백을 놓치면 그의 진짜 마음을 알 기회를 영원히 잃음...
+
+6. 🔥 김현지
+   Category: society | Competition: 🟡 medium
+   Intent: 시민들이 청와대 핵심 인사의 비리 의혹과 수사 진행 상황을 즉시 파악하려함
+   Angle: 정부 고위직 비리 의혹과 수사 당국의 대응
+   Why: 정치권 핵심 인물의 의혹을 놓치면 권력 구조 변화의 신호를 포착할 수 없음...
+
+7. 🔥 케리아
+   Category: tech | Competition: 🟢 low
+   Intent: 게이머들이 프로선수의 전략적 인사이트를 통해 게임 실력 향상 방법을 얻으려함
+   Angle: 프로게이머의 메타 분석과 전략적 통찰
+   Why: 케리아의 전략적 조언을 놓치면 게임에서 뒤처지고 랭크 상승 기회를 잃음...
+
+8. 🔥 프로방스
+   Category: society | Competition: 🟡 medium
+   Intent: 여행객들이 인기 여행지 예약 상황과 최적 여행 시기를 확인하려함
+   Angle: 인기 여행지의 예약 경쟁과 기회 손실 위험
+   Why: 봄철 프로방스 여행 예약을 놓치면 1년을 더 기다리거나 비용이 급상승함...
+
+[Japanese]
+------------------------------------------------------------
+
+9. 🔥 あわら市長選挙
+   Category: society | Competition: 🟡 medium
+   Intent: 市民が選挙結果と新市長の政策方針を即座に確認したい
+   Angle: 地方自治体選挙の即時開票状況と政治的影響
+   Why: 選挙結果を即座に知らないと市政の変化に対応が遅れ、市民サービスの影響を受ける...
+
+10. 🔥 佐々木美玲
+   Category: entertainment | Competition: 🔴 high
+   Intent: ファンがアイドルの最新活動状況と芸能界での立ち位置を確認したい
+   Angle: アイドルの成長と芸能界での新しい人脈形成
+   Why: 推しの重要な出演機会や成長瞬間を見逃すと、ファンとしての応援機会を永久に失う...
+
+11. 🔥 探偵ナイトスクープ tver
+   Category: society | Competition: 🟢 low
+   Intent: 視聴者がテレビ番組の炎上理由と社会問題への対応を理解したい
+   Angle: エンターテイメント番組と社会問題の境界線
+   Why: メディアの社会的責任に関する重要な議論を見逃すと、適切な批判的思考能力を養えない...
+
+12. 🔥 北斗市長選挙
+   Category: business | Competition: 🟢 low
+   Intent: 市民が地域経済と市政運営の方向性を決める選挙結果を即座に知りたい
+   Angle: 地方政治が地域経済に与える直接的影響
+   Why: 市長選結果を知らないと地域の経済政策や開発計画の変化に対応できない...
+
+============================================================
+
+
+🤖 Auto mode: Adding all candidates to queue...
+
+
+============================================================
+  💾 큐에 12개 키워드 추가 중...
+============================================================
+
+  ✓ Added: 🔥 Trend | boston weather
+  ✓ Added: 🔥 Trend | opm status
+  ✓ Added: 🔥 Trend | detroit weather
+  🔴 REJECTED: Keyword-language mismatch
+     Keyword: atlético madrid - r.c.d. mallorca
+     Language: en
+     Reason: Keyword contains characters from different language
+  ✓ Added: 🔥 Trend | 황재균
+  ✓ Added: 🔥 Trend | 김현지
+  ✓ Added: 🔥 Trend | 케리아
+  ✓ Added: 🔥 Trend | 프로방스
+  ✓ Added: 🔥 Trend | あわら市長選挙
+  ✓ Added: 🔥 Trend | 佐々木美玲
+  ✓ Added: 🔥 Trend | 探偵ナイトスクープ tver
+  ✓ Added: 🔥 Trend | 北斗市長選挙
+
+✅ 11개 키워드가 큐에 추가되었습니다!
+🔴 1개 키워드가 언어 불일치로 거부되었습니다!
+📊 Total topics in queue: 48
+
+============================================================
+  📊 Queue Statistics
+============================================================
+  Status: Pending=11, In Progress=0, Completed=37
+  Type: 🔥 Trend=48, 🌲 Evergreen=0, Unknown=0
+  Language: EN=17, KO=15, JA=16
+============================================================
+
+
+✨ Done!
+

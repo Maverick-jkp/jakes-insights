@@ -36,6 +36,7 @@ from affiliate_config import (
     get_affiliate_disclosure,
     should_add_affiliate_links
 )
+from internal_linker import InternalLinker
 
 try:
     from anthropic import Anthropic
@@ -1460,6 +1461,16 @@ image: "{image_path}"
             disclosure = get_affiliate_disclosure(lang, affiliate_programs_used)
             content = content.rstrip() + disclosure
             safe_print(f"  ⚠️  Added affiliate disclosure")
+
+        # Add internal links to related posts
+        try:
+            safe_print(f"  🔗 Adding internal links to related posts...")
+            linker = InternalLinker()
+            tags = keyword.split()[:3]  # Use first 3 keywords as tags
+            content = linker.add_related_posts(content, category, tags, lang)
+            safe_print(f"  ✅ Internal links added")
+        except Exception as e:
+            safe_print(f"  ⚠️  Failed to add internal links: {str(e)}")
 
         # Write file with hero image at top
         with open(filepath, 'w', encoding='utf-8') as f:

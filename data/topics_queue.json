@@ -2358,6 +2358,929 @@
       ],
       "expiry_days": 3,
       "reserved_at": null
+    },
+    {
+      "id": "308-en-tech-how-to-learn-program",
+      "keyword": "how to learn programming",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T10:55:23.434689",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Learning a new skill for career change or personal development",
+      "angle": "Step-by-step educational guide with practical roadmap",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Learning Programming: Where to Start - SheCanCode",
+          "url": "https://shecancode.io/i-want-to-learn-programming-but-i-dont-know-where-to-start/",
+          "source": "shecancode.io"
+        },
+        {
+          "title": "How to Start Coding: A Beginner's Guide to Learning Programming - GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/blogs/how-to-learn-programming/",
+          "source": "www.geeksforgeeks.org"
+        },
+        {
+          "title": "How to Learn Programming – The Guide I Wish I Had When I Started Learning to Code",
+          "url": "https://www.freecodecamp.org/news/how-to-learn-programming/",
+          "source": "www.freecodecamp.org"
+        }
+      ]
+    },
+    {
+      "id": "309-en-business-passive-income-ideas",
+      "keyword": "passive income ideas 2026",
+      "category": "business",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T10:55:23.434786",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Financial independence and building additional income streams",
+      "angle": "Practical guide with actionable strategies and realistic expectations",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Passive income ideas 2026 | U.S. Bank",
+          "url": "https://www.usbank.com/financialiq/manage-your-household/personal-finance/passive-income.html",
+          "source": "www.usbank.com"
+        },
+        {
+          "title": "26 Passive Income Ideas for 2026. In the face of mounting bills and the… | by Connie C | Medium",
+          "url": "https://simplifiedbusinesscoach.medium.com/26-uncommon-passive-income-ideas-for-2026-ef5a6012e918",
+          "source": "simplifiedbusinesscoach.medium.com"
+        },
+        {
+          "title": "r/passive_income on Reddit: PASSIVE INCOME TIER LIST FOR 2026",
+          "url": "https://www.reddit.com/r/passive_income/comments/1pbarx0/passive_income_tier_list_for_2026/",
+          "source": "www.reddit.com"
+        }
+      ]
+    },
+    {
+      "id": "310-ko-tech-프로그래밍-독학-방법",
+      "keyword": "프로그래밍 독학 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T10:55:23.434834",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "개발자 전직을 위한 기술 습득 또는 개인 역량 개발",
+      "angle": "체계적인 학습 로드맵과 실전 팁 제공",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "코딩 독학 순서: 코딩 테스트 준비 방법 - 코드트리 블로그",
+          "url": "https://www.codetree.ai/blog/%EC%BD%94%EB%94%A9-%EB%8F%85%ED%95%99-%EC%88%9C%EC%84%9C-%EC%BD%94%EB%94%A9-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%A4%80%EB%B9%84-%EB%B0%A9%EB%B2%95/",
+          "source": "www.codetree.ai"
+        },
+        {
+          "title": "C언어 독학 완전 기초부터 마스터까지 #1 (기초, 쉬운 설명, Hello world) :: JD Tech Now",
+          "url": "https://jdcyber.tistory.com/23",
+          "source": "jdcyber.tistory.com"
+        },
+        {
+          "title": "파이썬 공부 독학ㅣ설치부터 실전 프로젝트까지 99% 이해되는 파이썬 공부법",
+          "url": "https://media.fastcampus.co.kr/insight/dev/python_study_guide/",
+          "source": "media.fastcampus.co.kr"
+        }
+      ]
+    },
+    {
+      "id": "311-ko-sports-홈트레이닝-루틴",
+      "keyword": "홈트레이닝 루틴",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T10:55:23.434870",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "헬스장 없이 집에서 건강 관리와 체력 증진을 위한 운동법 습득",
+      "angle": "단계별 운동 프로그램과 실용적인 가이드 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "집에서 하는 근력운동 추천. 홈트운동 루틴. 홈트 살빼기 (맨몸운동루틴) : '일의 구조'를 만듭니다, 공여사들 | 노션 템플릿 & 업무 시스템 구축",
+          "url": "https://gongysd.com/workout-log/?bmode=view&idx=167993607",
+          "source": "gongysd.com"
+        },
+        {
+          "title": "집에서 하는 홈트레이닝 루틴 총정리",
+          "url": "https://jisanbudongsan.com/%EC%A7%91%EC%97%90%EC%84%9C-%ED%95%98%EB%8A%94-%ED%99%88%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D-%EB%A3%A8%ED%8B%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC/",
+          "source": "jisanbudongsan.com"
+        },
+        {
+          "title": "홈트레이닝 루틴, 초보자도 쉽게 시작하는 방법",
+          "url": "https://zzonge.tistory.com/124",
+          "source": "zzonge.tistory.com"
+        }
+      ]
+    },
+    {
+      "id": "312-ja-tech-プログラミング独学方法",
+      "keyword": "プログラミング独学方法",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T10:55:23.434904",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "エンジニア転職のためのスキル習得や個人的なスキルアップ",
+      "angle": "体系的な学習計画と実践的なアドバイスの提供",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "【初心者向け】プログラミング独学完全ロードマップ｜挫折しない学習のステップ - プログラマカレッジ",
+          "url": "https://programmercollege.jp/column/38411/",
+          "source": "programmercollege.jp"
+        },
+        {
+          "title": "プログラミング独学ロードマップ～未経験でも挫折しない学習法とおすすめ言語5選～",
+          "url": "https://codezine.jp/article/detail/21989",
+          "source": "codezine.jp"
+        }
+      ]
+    },
+    {
+      "id": "313-ja-business-副業アイデア",
+      "keyword": "副業アイデア",
+      "category": "business",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T10:55:23.434934",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "本業以外の収入源確保や将来の経済的安定のための準備",
+      "angle": "リスクの低い実践的な副業選択肢と始め方の詳細ガイド",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "副業起業のアイデア15選！アイデアの見つけ方やよくある失敗も解説 | マネーフォワード クラウド会社設立",
+          "url": "https://biz.moneyforward.com/establish/basic/76226/",
+          "source": "biz.moneyforward.com"
+        },
+        {
+          "title": "副業から起業できるアイデア15選｜実体験をもとにコツを解説 | 生き方・働き方・日本デザイン",
+          "url": "https://japan-design.jp/side-job/9306/",
+          "source": "japan-design.jp"
+        },
+        {
+          "title": "副業から起業はできる？ 会社員から起業するメリットや事業内容のアイデアおよび注意点を解説 | 経営者から担当者にまで役立つバックオフィス基礎知識 | クラウド会計ソフト freee",
+          "url": "https://www.freee.co.jp/kb/kb-fukugyou/found-a-company/",
+          "source": "www.freee.co.jp"
+        }
+      ]
+    },
+    {
+      "id": "314-en-sports-red-wings-vs-avalanc",
+      "keyword": "red wings vs avalanche",
+      "category": "sports",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425407",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fear of missing crucial game that could determine playoff seeding and season outcome",
+      "angle": "High-stakes divisional rivalry with playoff implications",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Avalanche vs. Red Wings Prediction, Odds, Picks - Feb. 2 | FOX Sports",
+          "url": "https://www.foxsports.com/articles/nhl/avalanche-vs-red-wings-prediction-odds-picks-feb-2",
+          "source": "www.foxsports.com"
+        },
+        {
+          "title": "Where to watch the Detroit Red Wings vs. Colorado Avalanche NHL livestream today for free - mlive.co",
+          "url": "https://www.mlive.com/tv/2026/02/where-to-watch-the-red-wings-vs-avalanche-nhl-livestream-today-for-free.html",
+          "source": "www.mlive.com"
+        },
+        {
+          "title": "Red Wings vs Avalanche channel, how to stream today's national TV game",
+          "url": "https://www.freep.com/story/sports/nhl/red-wings/2026/01/31/red-wings-game-today-channel-avalanche/88434817007/",
+          "source": "www.freep.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "315-en-society-fafo",
+      "keyword": "fafo",
+      "category": "society",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425578",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Anxiety about parenting methods and fear of raising unsuccessful children",
+      "angle": "Controversial shift from gentle to consequence-based parenting",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "The rise of Fafo parenting: is this the end of gentle child rearing? | Parents and parenting | The G",
+          "url": "https://www.theguardian.com/lifeandstyle/2026/jan/29/the-rise-of-fafo-parenting-is-this-the-end-of-gentle-child-rearing",
+          "source": "www.theguardian.com"
+        },
+        {
+          "title": "Local Prosecutors Launch “FAFO” Team to Go After Feds Breaking the Law | The New Republic",
+          "url": "https://newrepublic.com/post/205831/prosecutors-fafo-team-federal-agents-breaking-law",
+          "source": "newrepublic.com"
+        },
+        {
+          "title": "The Meaning of \"Fafo\"—And How it Came to Be",
+          "url": "https://www.mentalfloss.com/language/slang/meaning-of-fafo",
+          "source": "www.mentalfloss.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "316-en-entertainment-erin-elmore",
+      "keyword": "erin elmore",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425614",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fear of being out of the loop on political power dynamics and elite connections",
+      "angle": "High-profile political wedding revealing power structures",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Who is Erin Elmore, Dan Scavino's wife? Trump, Musk among guests as photos emerge from Mar-a-Lago we",
+          "url": "https://www.hindustantimes.com/world-news/us-news/who-is-erin-elmore-dan-scavinos-wife-trump-musk-among-guests-as-photos-emerge-from-mar-a-lago-wedding-101769975752212.html",
+          "source": "www.hindustantimes.com"
+        },
+        {
+          "title": "Who is Erin Elmore? Trump hosts lavish Mar-a-Lago wedding for 'MAGA Barbie', top aide Dan Scavino - ",
+          "url": "https://www.financialexpress.com/world-news/us-news/who-is-erin-elmore-trump-hosts-lavish-mar-a-lago-wedding-for-maga-barbie-top-aide-dan-scavino/4128039/",
+          "source": "www.financialexpress.com"
+        },
+        {
+          "title": "Mar-a-Lago wedding album: Photos from the ceremony as Dan Scavino marries Erin Elmore - February 1, ",
+          "url": "https://www.reuters.com/pictures/mar-a-lago-wedding-album-photos-ceremony-dan-scavino-marries-erin-elmore-2026-02-01/",
+          "source": "www.reuters.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "317-ko-business-사이드카",
+      "keyword": "사이드카",
+      "category": "business",
+      "lang": "ko",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-03T11:01:00.425649",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "주식 급락 상황에서 손실 최소화와 대응 방법을 찾는 절박함",
+      "angle": "시장 폭락 시 긴급 대응 전략",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "[속보] '워시 쇼크'에 급락…코스피 매도 사이드카 발동 - 뉴스1",
+          "url": "https://www.news1.kr/finance/general-stock/6058881",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "코스피 장중 4%대 급락…매도 사이드카 발동 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026020280226",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "[속보] 코스피 5000선 깨져…매도 사이드카 발동 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25402017",
+          "source": "www.joongang.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-02-03T02:01:15.526330+00:00",
+      "completed_at": "2026-02-03T02:02:51.350325+00:00"
+    },
+    {
+      "id": "318-ko-tech-군산대",
+      "keyword": "군산대",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425678",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "대학 입시 경쟁 심화에 대한 불안과 진학 기회 상실 우려",
+      "angle": "지방대학교 입시 경쟁률 급증 현상",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "군산대 정시모집 경쟁률 5.53:1, 지난해보다 두 배 높아 - 노컷뉴스",
+          "url": "https://www.nocutnews.co.kr/news/6462297",
+          "source": "www.nocutnews.co.kr"
+        },
+        {
+          "title": "전북교육청 \"군산대 대학원 진학하면 장학금 지원\" - 뉴스1",
+          "url": "https://www.news1.kr/local/jeonbuk/6052613",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "도내 교직원, 국립군산대 대학원 진학 시 장학금 혜택",
+          "url": "https://www.todayan.com/news/articleView.html?idxno=604464",
+          "source": "www.todayan.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "319-ko-society-계명대학교",
+      "keyword": "계명대학교",
+      "category": "society",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425705",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "의료계 인사 변동을 통한 지역 의료 서비스 변화에 대한 우려",
+      "angle": "대학병원 인사를 통해 본 의료계 권력 변화",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "계명대학교 동산의료원 - 경북도민일보",
+          "url": "http://www.hidomin.com/news/articleView.html?idxno=607385",
+          "source": "www.hidomin.com"
+        },
+        {
+          "title": "배재훈 교수, 계명대학교 동산의료원장 취임",
+          "url": "https://www.medifonews.com/news/article.html?no=210940",
+          "source": "www.medifonews.com"
+        },
+        {
+          "title": "계명대 경영학과 김경현 교수, \"준수 비용 증가가 기업 장기 투자 위축시킨다\" 실증 규명",
+          "url": "https://www.gukjenews.com/news/articleView.html?idxno=3492095",
+          "source": "www.gukjenews.com"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "320-ja-society-東名古屋病院",
+      "keyword": "東名古屋病院",
+      "category": "society",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425733",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "医療機関への信頼失墜と医療安全性への不安",
+      "angle": "医療従事者の職業倫理違反による医療制度への不信",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "【2026年版】名古屋市の心療内科・精神科クリニックおすすめ10選｜マイナビクリニックナビ",
+          "url": "https://clinic.mynavi.jp/article/nagoyashi_psychosomatic-internal-medicine/",
+          "source": "clinic.mynavi.jp"
+        },
+        {
+          "title": "社会ニュース：事件・事故・裁判の最新情報・特集 : 読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/",
+          "source": "www.yomiuri.co.jp"
+        },
+        {
+          "title": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ 第3話「事件」 - ニコニコ動画",
+          "url": "https://www.nicovideo.jp/watch/so45878679",
+          "source": "www.nicovideo.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "321-ja-tech-津波",
+      "keyword": "津波",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-03T11:01:00.425757",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "自然災害への備えが不十分であることへの恐怖と対策の必要性",
+      "angle": "災害警報システムと個人の防災準備",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "津波情報 - 日本気象協会 tenki.jp",
+          "url": "https://earthquake.tenki.jp/bousai/tsunami/",
+          "source": "earthquake.tenki.jp"
+        },
+        {
+          "title": "歴史的な津波の一覧 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E6%AD%B4%E5%8F%B2%E7%9A%84%E3%81%AA%E6%B4%A5%E6%B3%A2%E3%81%AE%E4%B8%80%E8%A6%A7",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "reserved_at": "2026-02-03T02:01:15.526330+00:00",
+      "completed_at": "2026-02-03T02:04:27.421615+00:00"
+    },
+    {
+      "id": "322-ja-business-東京-雪予報",
+      "keyword": "東京 雪予報",
+      "category": "business",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425786",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "悪天候による交通機関の混乱と経済活動への影響への不安",
+      "angle": "降雪による都市機能停止とビジネスへの打撃",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "東京都のアメダス実況(積雪深) - 日本気象協会 tenki.jp",
+          "url": "https://tenki.jp/amedas/3/16/snow.html",
+          "source": "tenki.jp"
+        },
+        {
+          "title": "【東京２３区 積雪か？】「降雪予想」２３区１ｃｍ 多摩３ｃｍ【雪シミュレーション２９日（木）～３０（金）】／ 関東各都市の週間予報】気象庁発表詳しく 東京・神奈川・埼玉・千葉・群馬・茨城・栃木・山梨・",
+          "url": "https://newsdig.tbs.co.jp/articles/-/2431804",
+          "source": "newsdig.tbs.co.jp"
+        }
+      ],
+      "expiry_days": 3
+    },
+    {
+      "id": "323-en-society-mental-health-manage",
+      "keyword": "mental health management tips",
+      "category": "society",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425864",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Improving personal mental wellness and coping strategies",
+      "angle": "Practical daily management techniques",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "31 Tips to Boost Your Mental Health | Mental Health America",
+          "url": "https://mhanational.org/resources/31-tips-to-boost-your-mental-health/",
+          "source": "mhanational.org"
+        },
+        {
+          "title": "Managing Stress | Mental Health | CDC",
+          "url": "https://www.cdc.gov/mental-health/living-with/index.html",
+          "source": "www.cdc.gov"
+        },
+        {
+          "title": "Building Better Mental Health - HelpGuide.org",
+          "url": "https://www.helpguide.org/mental-health/wellbeing/building-better-mental-health",
+          "source": "www.helpguide.org"
+        }
+      ]
+    },
+    {
+      "id": "324-en-entertainment-photography-tips",
+      "keyword": "photography tips",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425894",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Learning creative skills to capture better photos",
+      "angle": "Technical guide with practical examples",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "25 Photography Tips for Beginners in 2025",
+          "url": "https://photographylife.com/photography-tips-for-beginners",
+          "source": "photographylife.com"
+        },
+        {
+          "title": "49 Essential Photography Tips for Beginners (2026 Guide)",
+          "url": "https://themframes.com/features/photography-tips-for-beginners/",
+          "source": "themframes.com"
+        },
+        {
+          "title": "Photography Tips | Take A Good Photo On Your Phone | Samsung UK",
+          "url": "https://www.samsung.com/uk/mobile-phone-buying-guide/photography-tips-for-smartphone/",
+          "source": "www.samsung.com"
+        }
+      ]
+    },
+    {
+      "id": "325-en-sports-home-workout-routine",
+      "keyword": "home workout routine",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425925",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Maintaining fitness without gym membership or equipment",
+      "angle": "Practical exercise guide with routines",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "The 10 Best at Home Workouts (No-Equipment!) | Nerd Fitness",
+          "url": "https://www.nerdfitness.com/blog/the-7-best-at-home-workout-routines-the-ultimate-guide-for-training-without-a-gym/",
+          "source": "www.nerdfitness.com"
+        },
+        {
+          "title": "r/bodyweightfitness Guide: The Recommended Routine",
+          "url": "https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/",
+          "source": "www.reddit.com"
+        }
+      ]
+    },
+    {
+      "id": "326-en-tech-cybersecurity-best-p",
+      "keyword": "cybersecurity best practices",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425953",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Learning to protect personal data and devices from cyber threats",
+      "angle": "Security guide with actionable steps",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "9 Cybersecurity Best Practices for Businesses in 2026 | Coursera",
+          "url": "https://www.coursera.org/articles/cybersecurity-best-practices",
+          "source": "www.coursera.org"
+        },
+        {
+          "title": "Cyber Security Best Practices for 2026",
+          "url": "https://www.sentinelone.com/cybersecurity-101/cybersecurity/cyber-security-best-practices/",
+          "source": "www.sentinelone.com"
+        },
+        {
+          "title": "10 Cybersecurity Best Practices for Employees",
+          "url": "https://www.dataprise.com/resources/blog/10-cybersecurity-tips-employees/",
+          "source": "www.dataprise.com"
+        }
+      ]
+    },
+    {
+      "id": "327-en-business-freelancing-tips",
+      "keyword": "freelancing tips",
+      "category": "business",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.425978",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Starting or improving freelance career for independence and income",
+      "angle": "Business guide with practical strategies",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "21 Freelancing Tips to Build a Successful Career (From Someone Who Actually Did It) | Medium",
+          "url": "https://ilampadmanabhan.medium.com/freelancing-tips-successful-freelancing-career-5cc74cfd4490",
+          "source": "ilampadmanabhan.medium.com"
+        },
+        {
+          "title": "Top Freelancing Tips for a Successful Career",
+          "url": "https://www.bluehost.com/blog/freelancing-tips-for-success/",
+          "source": "www.bluehost.com"
+        },
+        {
+          "title": "How To Start Freelancing With No Experience 2026",
+          "url": "https://dropcapcopy.com/how-to-start-your-freelancing-career-with-no-experience/",
+          "source": "dropcapcopy.com"
+        }
+      ]
+    },
+    {
+      "id": "328-ko-business-부업-아이디어",
+      "keyword": "부업 아이디어",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426030",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "추가 수입원 확보를 통한 경제적 여유 확보",
+      "angle": "실현 가능한 부업 옵션 제시",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "추천하는 부업 | 지금 바로 시작할 수 있는 부업 아이디어",
+          "url": "https://hko96spm.tistory.com/299",
+          "source": "hko96spm.tistory.com"
+        },
+        {
+          "title": "자본금 없이 컴퓨터 하나로 💵달러를 벌어보자!🚀 기획자의 부업 아이디어 로직트리 - YouTube",
+          "url": "https://www.youtube.com/watch?v=y6CTPGAXu0w",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "10년 수익성 있는 2025대 부업 아이디어 - 인터넷에서 일하기",
+          "url": "https://get-earn.com/ko/creative-side-hustles-to-earn-money/",
+          "source": "get-earn.com"
+        }
+      ]
+    },
+    {
+      "id": "329-ko-society-멘탈-관리-팁",
+      "keyword": "멘탈 관리 팁",
+      "category": "society",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426060",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "정신적 스트레스 관리와 심리적 안정감 확보",
+      "angle": "실생활 적용 가능한 멘탈케어 방법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "멘탈을 강하게 키우는 방법과 효과적인 관리법",
+          "url": "https://jh-tr.tistory.com/413",
+          "source": "jh-tr.tistory.com"
+        },
+        {
+          "title": "[2026 신년기획-멘탈 관리법①] 정신 수양으로의 집안일-박찬용 작가 편 - 우먼센스",
+          "url": "https://www.womansense.co.kr/news/articleView.html?idxno=61547",
+          "source": "www.womansense.co.kr"
+        },
+        {
+          "title": "원스휴먼 - 뉴비를 위한 팁 - 멘탈 2탄",
+          "url": "https://tgem2060.tistory.com/73",
+          "source": "tgem2060.tistory.com"
+        }
+      ]
+    },
+    {
+      "id": "330-ko-entertainment-사진-촬영-팁",
+      "keyword": "사진 촬영 팁",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426090",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "취미나 SNS용 사진의 품질 향상을 위한 기술 습득",
+      "angle": "기초부터 응용까지 단계별 촬영 기법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "스마트폰으로 사진 잘 찍는 7가지 방법",
+          "url": "https://brunch.co.kr/@grayround/1",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "스마트폰 사진 잘 찍는 법: 전문가처럼 찍는 사진 촬영 팁",
+          "url": "https://haengwoon1.tistory.com/26",
+          "source": "haengwoon1.tistory.com"
+        },
+        {
+          "title": "대충 찍어도 인생샷 건지는 핸드폰 카메라 설정 (이강신 사진작가 2부) - YouTube",
+          "url": "https://www.youtube.com/watch?v=O2nha-m8sm4",
+          "source": "www.youtube.com"
+        }
+      ]
+    },
+    {
+      "id": "331-ko-tech-클라우드-컴퓨팅-기초",
+      "keyword": "클라우드 컴퓨팅 기초",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426140",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "IT 트렌드 이해와 관련 기술 학습을 위한 기초 지식 습득",
+      "angle": "비전공자도 이해하는 클라우드 개념 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and Types - AWS",
+          "url": "https://aws.amazon.com/what-is-cloud-computing/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "클라우드 컴퓨팅 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%BB%B4%ED%93%A8%ED%8C%85",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "클라우드 개념 정리: 클라우드, 클라우드 컴퓨팅, 클라우드 서비스 차이는 - 올인원 비즈니스 클라우드 스토리지, 클라우다이크",
+          "url": "https://cloudike.kr/blog/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%81%B4%EB%9D%BC/",
+          "source": "cloudike.kr"
+        }
+      ]
+    },
+    {
+      "id": "332-ko-business-연봉-협상-전략",
+      "keyword": "연봉 협상 전략",
+      "category": "business",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426169",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "취업이나 이직 시 더 나은 조건의 연봉 확보",
+      "angle": "실전 협상 기법과 준비 사항 제시",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "경력직 연봉 협상 팁: 원하는 조건을 끌어내는 7가지 전략 - 캔디드 공식 블로그",
+          "url": "https://teamcandid.kr/blog/salary-negotiation-tips",
+          "source": "teamcandid.kr"
+        },
+        {
+          "title": "작아지지 마세요! 연봉 협상 13가지 꿀팁 · 위픽레터",
+          "url": "https://letter.wepick.kr/510/4419641/",
+          "source": "letter.wepick.kr"
+        },
+        {
+          "title": "신입 1년차 연봉협상 가이드｜대기업·중소기업·스타트업 비교",
+          "url": "https://doney-money.tistory.com/225",
+          "source": "doney-money.tistory.com"
+        }
+      ]
+    },
+    {
+      "id": "333-ja-society-メンタル管理コツ",
+      "keyword": "メンタル管理コツ",
+      "category": "society",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426236",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "精神的ストレス管理と心理的安定の確保",
+      "angle": "実生活で活用できるメンタルケア手法",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "【マネジャー必見】優秀な人材を守る「メンタルヘルス管理術」 - 1on1総研",
+          "url": "https://kakeai.co.jp/media/article/0069",
+          "source": "kakeai.co.jp"
+        },
+        {
+          "title": "これからの管理職に必須！メンタルヘルス・マネジメント®のススメ - STUDYing",
+          "url": "https://studying.jp/mental/about-more/manager.html",
+          "source": "studying.jp"
+        },
+        {
+          "title": "メンタルヘルスマネジメントとは？【検定内容】ストレス対策 - カオナビ人事用語集",
+          "url": "https://www.kaonavi.jp/dictionary/mentalhealth_management/",
+          "source": "www.kaonavi.jp"
+        }
+      ]
+    },
+    {
+      "id": "334-ja-entertainment-写真撮影コツ",
+      "keyword": "写真撮影コツ",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 5,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426262",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "趣味やSNS用写真の品質向上のための技術習得",
+      "angle": "基礎から応用まで段階的な撮影技法",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "スマホカメラの特性を知って盛れる “全身写真” を。プロ直伝のスマホ撮影テクニック - ITをもっと身近に。ソフトバンクニュース",
+          "url": "https://www.softbank.jp/sbnews/entry/20250813_01",
+          "source": "www.softbank.jp"
+        },
+        {
+          "title": "インテリア写真の撮り方コツ6選。 現職カメラマンが徹底解説します。｜Re:CENO Mag",
+          "url": "https://www.receno.com/pen/other/u32/2024-07-16.php",
+          "source": "www.receno.com"
+        },
+        {
+          "title": "【初心者でもOK】おしゃれな写真の撮り方とは インスタ映えな加工テクニックも - アプリブ",
+          "url": "https://app-liv.jp/articles/135312/",
+          "source": "app-liv.jp"
+        }
+      ]
+    },
+    {
+      "id": "335-ja-sports-自宅トレーニングルーティン",
+      "keyword": "自宅トレーニングルーティン",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426292",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ジムなしで自宅での体力管理とダイエット実現",
+      "angle": "段階別ホームトレーニングプログラム提供",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "自宅でできる筋トレメニュー17種目｜目的別に回数・強度・頻度を解説 | トレーニング ×スポーツ『MELOS』",
+          "url": "https://melos.media/training/36561/",
+          "source": "melos.media"
+        },
+        {
+          "title": "筋トレは自宅でできる！ 器具なしで全身を鍛える自重トレーニング11選 | GQ JAPAN",
+          "url": "https://www.gqjapan.jp/article/20250501-the-best-full-body-strength-training-that-you-can-do-at-home",
+          "source": "www.gqjapan.jp"
+        },
+        {
+          "title": "【1週間メニュー付き】本気で結果を出す自重トレーニング総まとめ！器具なし自宅筋トレで効果をあげるポイントを紹介",
+          "url": "https://ufit.co.jp/blogs/training/bodyweighttraining",
+          "source": "ufit.co.jp"
+        }
+      ]
+    },
+    {
+      "id": "336-ja-tech-クラウドコンピューティング基礎",
+      "keyword": "クラウドコンピューティング基礎",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426320",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ITトレンド理解と関連技術学習のための基礎知識習得",
+      "angle": "非専門者でも理解できるクラウド概念説明",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "【基礎】クラウドコンピューティングとは? メリットや例をわかりやすく紹介",
+          "url": "https://www.dsk-cloud.com/blog/cloud-computing",
+          "source": "www.dsk-cloud.com"
+        },
+        {
+          "title": "クラウドコンピューティングとは？仕組みやメリットをわかりやすく解説 : 富士フイルムビジネスイノベーション",
+          "url": "https://www.fujifilm.com/fb/solution/dx_column/efficiency/cloud_computing_01.html",
+          "source": "www.fujifilm.com"
+        },
+        {
+          "title": "クラウドコンピューティング - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0",
+          "source": "ja.wikipedia.org"
+        }
+      ]
+    },
+    {
+      "id": "337-ja-business-年収交渉戦略",
+      "keyword": "年収交渉戦略",
+      "category": "business",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-03T11:01:00.426347",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "就職や転職時により良い条件での年収確保",
+      "angle": "実践的交渉技法と準備事項の提示",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "転職時の給与交渉は失敗しやすい？成功するコツをプロが伝授！ | すべらない転職",
+          "url": "https://axxis.co.jp/magazine/17146",
+          "source": "axxis.co.jp"
+        },
+        {
+          "title": "転職時に給与交渉を行う最適なタイミングはいつ？成功のコツや適切な金額とは｜求人・転職エージェントはマイナビエージェント",
+          "url": "https://mynavi-agent.jp/knowledge/common/869.html",
+          "source": "mynavi-agent.jp"
+        },
+        {
+          "title": "【メール例文集】転職の年収交渉を成功させるコツ｜キャリアトラス｜就職・転職を応援する情報メディア",
+          "url": "https://www.neo-career.co.jp/careertrus/tenshoku_tenshokuagent_neshukosho",
+          "source": "www.neo-career.co.jp"
+        }
+      ]
     }
   ]
 }

@@ -10,6 +10,14 @@ on:
         description: 'Number of keywords to generate'
         required: false
         default: '15'
+      keyword_type:
+        description: 'Keyword type (trend, evergreen, or mixed)'
+        required: false
+        default: 'mixed'
+      evergreen_ratio:
+        description: 'Ratio of evergreen keywords in mixed mode (0.0-1.0)'
+        required: false
+        default: '0.6'
 
 jobs:
   curate-keywords:
@@ -70,15 +78,18 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
-          
+
         run: |
           # Explicitly mask secrets in GitHub Actions logs
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
           COUNT="${{ github.event.inputs.count || '15' }}"
-          echo "📝 Generating $COUNT new keywords..."
-          python scripts/keyword_curator.py --count "$COUNT" --auto
+          TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
+          RATIO="${{ github.event.inputs.evergreen_ratio || '0.6' }}"
+
+          echo "📝 Generating $COUNT new keywords (type: $TYPE, evergreen ratio: $RATIO)..."
+          python scripts/keyword_curator.py --count "$COUNT" --type "$TYPE" --evergreen-ratio "$RATIO" --auto
 
       - name: Commit and push keywords
         run: |
@@ -108,5 +119,7 @@ jobs:
 
       - name: Summary
         run: |
+          TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
           echo "✅ Keyword curation complete"
-          echo "📊 Queue updated with fresh trending topics"
+          echo "📊 Queue updated with $TYPE keywords"
+          echo "🔄 Next: Content generation workflow will consume these keywords"

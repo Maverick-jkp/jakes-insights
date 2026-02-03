@@ -194,6 +194,83 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - "lifestyle" → "society"로 통합"""
 
 
+CURATION_PROMPT_EVERGREEN = """역할:
+너는 **장기 트래픽** 확보를 위한 Evergreen 키워드 큐레이터다.
+아래 Evergreen 키워드 풀에서 **검색량이 지속되는, 교육/가이드성** 키워드를 제안하라.
+
+Evergreen 키워드 풀 (언어별로 구분됨):
+
+🇺🇸 English Keywords:
+{evergreen_en}
+
+🇰🇷 Korean Keywords:
+{evergreen_ko}
+
+🇯🇵 Japanese Keywords:
+{evergreen_ja}
+
+**목표:**
+- **지속적 검색 수요**: 1년 후에도 검색되는 주제
+- **교육/가이드성**: "how to", "guide", "방법", "가이드" 등
+- **낮은 경쟁**: low~medium competition 위주
+- **실용적 가치**: 독자에게 실질적 도움이 되는 내용
+
+**금지:**
+- 시사성 토픽 (속보, 사건 사고)
+- 실명 인물 관련 (연예인, 정치인)
+- 논란/감정 자극형 키워드
+- 추상적 주제 ("AI의 미래", "기술 트렌드")
+
+출력 형식:
+반드시 JSON 형식으로만 응답하라.
+
+[
+  {{
+    "keyword": "위 Evergreen 키워드 풀에서 선택한 키워드 (또는 유사 변형)",
+    "raw_search_title": "사용자가 구글에 검색할 때 정확히 입력하는 검색어",
+    "editorial_title": "기사 제목 형식의 독자 친화적 제목",
+    "core_question": "사용자가 해결하고 싶은 핵심 질문 (교육적)",
+    "language": "ko",
+    "category": "tech",
+    "search_intent": "사용자가 이 키워드를 검색하는 실질적 이유 (학습, 문제 해결, 의사 결정 등)",
+    "angle": "이 키워드를 다룰 때의 관점 (교육, 비교, 가이드 등)",
+    "competition_level": "low",
+    "why_evergreen": "이 키워드가 장기간 검색될 이유 (지속적 수요 근거)",
+    "keyword_type": "evergreen",
+    "priority": 6,
+    "risk_level": "safe",
+    "name_policy": "no_real_names",
+    "content_depth": "comprehensive"
+  }}
+]
+
+중요:
+- keyword_type은 무조건 "evergreen"만 사용 (trend 금지)
+- category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
+- language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
+- competition_level은 "low", "medium"만 사용 (high 금지 - 경쟁 피할 것)
+- priority는 5-8 사이 (Evergreen은 트렌드보다 낮은 우선순위)
+- risk_level은 무조건 "safe" (Evergreen은 안전해야 함)
+- content_depth는 "comprehensive" (상세한 가이드 형식)
+
+**🔴 카테고리별 Evergreen 키워드 예시:**
+- **tech**: "프로그래밍 독학 방법", "web development roadmap", "AI tools for beginners"
+- **business**: "passive income ideas", "부업 아이디어", "startup funding guide"
+- **society**: "mental health management", "건강한 생활 습관", "climate change solutions"
+- **entertainment**: "Netflix recommendations", "음악 제작 입문", "photography tips"
+- **sports**: "home workout routine", "마라톤 훈련 계획", "yoga for beginners"
+
+**🚨 언어별 키워드 생성 규칙:**
+반드시 정확히 {count}개의 키워드를 생성하라:
+- 영어(en): 정확히 {per_lang}개
+- 한국어(ko): 정확히 {per_lang}개
+- 일본어(ja): 정확히 {per_lang}개
+- 총합: 정확히 {count}개
+
+각 언어 내에서 5개 카테고리를 균등하게 분배할 것.
+"""
+
+
 class KeywordCurator:
     def __init__(self, api_key: str = None, google_api_key: str = None, google_cx: str = None):
         """Initialize keyword curator with Claude API and Google Custom Search"""
@@ -519,6 +596,58 @@ class KeywordCurator:
 
         return safe_candidates
 
+    def fetch_evergreen_references(self, keyword: str, lang: str) -> List[Dict]:
+        """Fetch references for evergreen keywords on-demand using Brave Search"""
+        if not self.brave_api_key:
+            safe_print(f"  ⚠️  No Brave API key - skipping references for: {keyword}")
+            return []
+
+        try:
+            url = "https://api.search.brave.com/res/v1/web/search"
+            headers = {
+                "Accept": "application/json",
+                "X-Subscription-Token": self.brave_api_key
+            }
+            params = {
+                "q": keyword,
+                "count": 3,
+                "freshness": "py"  # Past year (for evergreen content)
+            }
+
+            time.sleep(0.5)  # Rate limiting
+
+            verify_ssl = certifi.where() if certifi else True
+            response = requests.get(url, headers=headers, params=params, verify=verify_ssl)
+            response.raise_for_status()
+
+            data = response.json()
+            web_results = data.get("web", {}).get("results", [])
+
+            references = []
+            seen_domains = set()
+
+            for item in web_results:
+                link = item.get("url", "")
+                title = item.get("title", "")
+                source = link.split("/")[2] if link else ""
+
+                if link and source and source not in seen_domains:
+                    references.append({
+                        "title": title[:100],
+                        "url": link,
+                        "source": source
+                    })
+                    seen_domains.add(source)
+
+                if len(references) >= 3:
+                    break
+
+            return references
+
+        except Exception as e:
+            safe_print(f"  ⚠️  Failed to fetch references for '{keyword}': {mask_secrets(str(e))}")
+            return []
+
     def extract_references(self, all_results: List[Dict], keyword: str, lang: str) -> List[Dict]:
         """Extract top 3 references for a keyword based on search results"""
         # Find relevant results for this keyword
@@ -559,27 +688,64 @@ class KeywordCurator:
 
         return references
 
-    def generate_candidates(self, count: int = 15) -> List[Dict]:
-        """Generate keyword candidates using Claude API with trending data"""
-        safe_print(f"\n{'='*60}")
-        safe_print(f"  🔍 Generating {count} keyword candidates...")
-        safe_print(f"{'='*60}\n")
+    def load_evergreen_keywords(self) -> Dict[str, Dict[str, List[str]]]:
+        """Load evergreen keywords from JSON file"""
+        evergreen_path = Path("data/evergreen_keywords.json")
+        if not evergreen_path.exists():
+            safe_print("⚠️  Evergreen keywords file not found, using empty pool")
+            return {"tech": {"en": [], "ko": [], "ja": []}, "business": {"en": [], "ko": [], "ja": []}}
 
-        # Fetch trending topics from Google (store for reference extraction)
-        self.search_results = []  # Store search results
-        trends_by_lang = self.fetch_trending_topics()
+        with open(evergreen_path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+
+    def generate_candidates(self, count: int = 15, keyword_type: str = "trend") -> List[Dict]:
+        """Generate keyword candidates using Claude API
+
+        Args:
+            count: Number of keywords to generate
+            keyword_type: "trend" or "evergreen"
+        """
+        safe_print(f"\n{'='*60}")
+        safe_print(f"  🔍 Generating {count} {keyword_type} keyword candidates...")
+        safe_print(f"{'='*60}\n")
 
         # Calculate per-language count
         per_lang = count // 3  # Distribute evenly across 3 languages
 
-        # Generate prompt with trending data (grouped by language)
-        prompt = CURATION_PROMPT_WITH_TRENDS.format(
-            trends_en=trends_by_lang.get('en', 'No English trends available'),
-            trends_ko=trends_by_lang.get('ko', 'No Korean trends available'),
-            trends_ja=trends_by_lang.get('ja', 'No Japanese trends available'),
-            count=count,
-            per_lang=per_lang
-        )
+        if keyword_type == "evergreen":
+            # Load evergreen keywords pool
+            evergreen_pool = self.load_evergreen_keywords()
+
+            # Format evergreen keywords for prompt
+            evergreen_en = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("en", [])])
+            evergreen_ko = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ko", [])])
+            evergreen_ja = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ja", [])])
+
+            # Generate prompt with evergreen data
+            prompt = CURATION_PROMPT_EVERGREEN.format(
+                evergreen_en=evergreen_en,
+                evergreen_ko=evergreen_ko,
+                evergreen_ja=evergreen_ja,
+                count=count,
+                per_lang=per_lang
+            )
+
+            # For evergreen, we don't need real-time search results
+            self.search_results = []
+
+        else:  # trend
+            # Fetch trending topics from Google (store for reference extraction)
+            self.search_results = []  # Store search results
+            trends_by_lang = self.fetch_trending_topics()
+
+            # Generate prompt with trending data (grouped by language)
+            prompt = CURATION_PROMPT_WITH_TRENDS.format(
+                trends_en=trends_by_lang.get('en', 'No English trends available'),
+                trends_ko=trends_by_lang.get('ko', 'No Korean trends available'),
+                trends_ja=trends_by_lang.get('ja', 'No Japanese trends available'),
+                count=count,
+                per_lang=per_lang
+            )
 
         try:
             response = self.client.messages.create(
@@ -677,7 +843,14 @@ class KeywordCurator:
         for candidate in filtered_candidates:
             keyword = candidate.get("keyword", "")
             lang = candidate.get("language", "en")
-            references = self.extract_references(self.search_results, keyword, lang)
+            kw_type = candidate.get("keyword_type", "trend")
+
+            # For evergreen keywords, fetch references on-demand
+            if kw_type == "evergreen" and not self.search_results:
+                references = self.fetch_evergreen_references(keyword, lang)
+            else:
+                references = self.extract_references(self.search_results, keyword, lang)
+
             candidate["references"] = references
             if references:
                 safe_print(f"  ✓ {len(references)} refs for: {keyword[:50]}...")
@@ -964,6 +1137,10 @@ def main():
     parser = argparse.ArgumentParser(description="Keyword Curator for blog content")
     parser.add_argument('--count', type=int, default=15, help="Number of candidates to generate (default: 15)")
     parser.add_argument('--auto', action='store_true', help="Automatically add all candidates without interactive selection")
+    parser.add_argument('--type', choices=['trend', 'evergreen', 'mixed'], default='trend',
+                       help="Keyword type: trend (default), evergreen, or mixed")
+    parser.add_argument('--evergreen-ratio', type=float, default=0.6,
+                       help="Ratio of evergreen keywords in mixed mode (default: 0.6)")
     args = parser.parse_args()
 
     # Check API key
@@ -974,8 +1151,32 @@ def main():
     # Initialize curator
     curator = KeywordCurator()
 
-    # Generate candidates
-    candidates = curator.generate_candidates(count=args.count)
+    # Generate candidates based on type
+    if args.type == 'mixed':
+        # Mixed mode: generate both trend and evergreen
+        evergreen_count = int(args.count * args.evergreen_ratio)
+        trend_count = args.count - evergreen_count
+
+        safe_print(f"\n📊 Mixed Mode: {trend_count} trend + {evergreen_count} evergreen keywords\n")
+
+        # Generate trend keywords
+        if trend_count > 0:
+            trend_candidates = curator.generate_candidates(count=trend_count, keyword_type="trend")
+        else:
+            trend_candidates = []
+
+        # Generate evergreen keywords
+        if evergreen_count > 0:
+            evergreen_candidates = curator.generate_candidates(count=evergreen_count, keyword_type="evergreen")
+        else:
+            evergreen_candidates = []
+
+        # Combine candidates
+        candidates = trend_candidates + evergreen_candidates
+
+    else:
+        # Single type mode
+        candidates = curator.generate_candidates(count=args.count, keyword_type=args.type)
 
     # Display candidates
     curator.display_candidates(candidates)

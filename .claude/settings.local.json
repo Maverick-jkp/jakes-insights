@@ -108,7 +108,15 @@
       "Bash(SKIP_HOOKS=1 git commit:*)",
       "Bash(head:*)",
       "Bash(awk:*)",
-      "Bash(git rebase:*)"
+      "Bash(git rebase:*)",
+      "Bash(dig:*)",
+      "Bash(open:*)",
+      "Bash(sips:*)",
+      "Bash(SKIP_PRE_COMMIT=1 git commit:*)",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/brew install:*)",
+      "Bash(/opt/homebrew/bin/pandoc:*)",
+      "Bash(if ! python -m py_compile \"scripts/generate_posts.py\")"
     ]
   }
 }

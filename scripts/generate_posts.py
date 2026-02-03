@@ -332,6 +332,34 @@ class ContentGenerator:
             safe_print("  ⚠️  Unsplash API key not found (images will be skipped)")
             safe_print("     Set UNSPLASH_ACCESS_KEY environment variable to enable")
 
+    # Content type definitions for content mix strategy
+    CONTENT_TYPES = {
+        "BREAKING": {
+            "weight": 0.3,
+            "word_count": (800, 1200),
+            "tone": "urgent, timely, factual"
+        },
+        "ANALYSIS": {
+            "weight": 0.4,
+            "word_count": (1500, 2500),
+            "tone": "thoughtful, deep, opinion-based"
+        },
+        "GUIDE": {
+            "weight": 0.3,
+            "word_count": (1200, 2000),
+            "tone": "educational, step-by-step, practical"
+        }
+    }
+
+    def _select_content_type(self) -> str:
+        """Select content type using weighted random selection"""
+        import random
+
+        types = list(self.CONTENT_TYPES.keys())
+        weights = [self.CONTENT_TYPES[t]["weight"] for t in types]
+
+        return random.choices(types, weights=weights, k=1)[0]
+
     def generate_draft(self, topic: Dict) -> str:
         """Generate initial draft using Draft Agent with Prompt Caching"""
         keyword = topic['keyword']
@@ -1480,6 +1508,42 @@ image: "{image_path}"
             f.write(credit_line)
 
         safe_print(f"  💾 Saved to: {filepath}")
+
+        # Topic Cluster Integration: Link to pillar content if applicable
+        try:
+            from cluster_manager import ClusterManager
+            safe_print(f"  🏗️  Checking topic cluster assignment...")
+
+            cluster_mgr = ClusterManager()
+            tags = keyword.split()[:3]  # Use first 3 keywords as tags
+
+            # Find matching cluster
+            cluster_match = cluster_mgr.find_cluster(category, tags)
+
+            if cluster_match:
+                cluster_category, cluster_id = cluster_match
+                safe_print(f"  ✓ Matched cluster: {cluster_category}/{cluster_id}")
+
+                # Add pillar link to post
+                if cluster_mgr.link_to_pillar(str(filepath), cluster_category, cluster_id):
+                    # Update cluster index with post info
+                    post_info = {
+                        'path': str(filepath.relative_to(Path.cwd())),
+                        'title': title,
+                        'keyword': keyword,
+                        'date': date_str,
+                        'lang': lang
+                    }
+                    cluster_mgr.update_cluster_index(cluster_category, cluster_id, post_info)
+                    safe_print(f"  ✅ Linked to pillar content in cluster")
+            else:
+                safe_print(f"  ℹ️  No matching cluster found (tags: {', '.join(tags)})")
+
+        except ImportError:
+            safe_print(f"  ⚠️  ClusterManager not available, skipping cluster linking")
+        except Exception as e:
+            safe_print(f"  ⚠️  Cluster linking failed: {str(e)}")
+
         return filepath
 
 

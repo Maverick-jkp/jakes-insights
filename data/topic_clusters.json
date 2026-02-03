@@ -1,0 +1,102 @@
+{
+  "tech": {
+    "ai-development": {
+      "pillar": {
+        "title": "Complete AI Development Guide 2026",
+        "target_keywords": ["AI development", "machine learning tutorial", "AI programming"],
+        "target_word_count": 3000,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    },
+    "web-development": {
+      "pillar": {
+        "title": "Modern Web Development Roadmap",
+        "target_keywords": ["web development", "frontend backend", "full stack"],
+        "target_word_count": 3500,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    }
+  },
+  "business": {
+    "passive-income": {
+      "pillar": {
+        "title": "Complete Passive Income Guide 2026",
+        "target_keywords": ["passive income", "side hustle", "financial freedom"],
+        "target_word_count": 3000,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    },
+    "startup-guide": {
+      "pillar": {
+        "title": "Startup Launch Guide 2026",
+        "target_keywords": ["startup guide", "business launch", "entrepreneurship"],
+        "target_word_count": 3200,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    }
+  },
+  "society": {
+    "health-wellness": {
+      "pillar": {
+        "title": "Complete Health & Wellness Guide 2026",
+        "target_keywords": ["health wellness", "mental health", "fitness lifestyle"],
+        "target_word_count": 3000,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    },
+    "sustainable-living": {
+      "pillar": {
+        "title": "Sustainable Living Handbook 2026",
+        "target_keywords": ["sustainable living", "eco friendly", "green lifestyle"],
+        "target_word_count": 2800,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    }
+  },
+  "entertainment": {
+    "content-creation": {
+      "pillar": {
+        "title": "Content Creator's Complete Guide 2026",
+        "target_keywords": ["content creation", "YouTube growth", "social media strategy"],
+        "target_word_count": 3200,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    },
+    "streaming-guide": {
+      "pillar": {
+        "title": "Streaming Success Blueprint 2026",
+        "target_keywords": ["streaming guide", "Twitch YouTube", "live streaming"],
+        "target_word_count": 2900,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    }
+  },
+  "sports": {
+    "home-fitness": {
+      "pillar": {
+        "title": "Home Fitness Master Guide 2026",
+        "target_keywords": ["home fitness", "workout routine", "home gym"],
+        "target_word_count": 2800,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    },
+    "sports-nutrition": {
+      "pillar": {
+        "title": "Sports Nutrition Complete Guide 2026",
+        "target_keywords": ["sports nutrition", "athlete diet", "performance nutrition"],
+        "target_word_count": 3000,
+        "status": "planned"
+      },
+      "supporting_posts": []
+    }
+  }
+}

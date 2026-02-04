@@ -111,7 +111,14 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 중요:
 - keyword_type은 무조건 "trend"만 사용 (evergreen 금지)
-- category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports" (5개를 균등하게 분배할 것)
+- category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
+- **카테고리 분배 비율 (중요)**:
+  * tech: 40% (가장 높은 CPM, 우선순위 최고)
+  * business: 20%
+  * society: 15%
+  * sports: 15%
+  * entertainment: 10%
+- Tech 관련 키워드는 최대한 많이 선택할 것 (AI, ML, cloud, programming, frameworks, devops 등)
   - ⚠️ "finance", "lifestyle", "education"은 더 이상 사용 금지 (각각 business, society, tech로 통합됨)
 - language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
 - competition_level은 "low", "medium", "high" 중 하나

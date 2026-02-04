@@ -14,17 +14,19 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 
 # Add scripts to path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from utils.security import safe_print, mask_secrets
+from utils.content_classifier import ContentClassifier
 
 
 class QualityGate:
     def __init__(self, strict_mode: bool = False):
         self.strict_mode = strict_mode
+        self.classifier = ContentClassifier()
 
         # AI phrases to detect
         self.ai_phrases = {
@@ -121,14 +123,19 @@ class QualityGate:
             "info": {}
         }
 
+        # Detect content type
+        content_type = self._detect_content_type(frontmatter, body)
+        checks['info']['content_type'] = content_type
+
         # CRITICAL checks (FAIL)
-        self._check_word_count(body, checks)
+        self._check_word_count_type_specific(body, lang, content_type, checks)
         self._check_ai_phrases(body, lang, checks)
         self._check_frontmatter(frontmatter, checks)
         self._check_date_consistency(frontmatter, filepath, checks)
         self._check_duplicate_topic(frontmatter, filepath, checks)
         self._check_title_content_consistency(frontmatter, body, checks)
         self._check_clickbait(frontmatter, body, checks)
+        self._check_content_type_structure(body, content_type, checks)
 
         # WARNING checks (don't fail, just warn)
         self._check_links(body, checks)
@@ -167,6 +174,134 @@ class QualityGate:
         elif '/ja/' in path_str:
             return 'ja'
         return 'en'
+
+    def _detect_content_type(self, frontmatter: Dict, body: str) -> str:
+        """
+        Detect content type (tutorial/analysis/news) from content.
+        Fallback to classifier if needed.
+        """
+        title = frontmatter.get('title', '')
+        category = frontmatter.get('categories', ['general'])[0] if 'categories' in frontmatter else 'general'
+
+        # Try to classify based on title
+        keywords = [title]
+        content_type = self.classifier.classify(title, keywords, category)
+
+        return content_type
+
+    def _check_word_count_type_specific(
+        self,
+        body: str,
+        lang: str,
+        content_type: str,
+        checks: Dict
+    ):
+        """Check word count against type-specific targets"""
+        # Get type-specific config
+        try:
+            config = self.classifier.get_config(content_type, lang)
+            target_range = config['word_count']
+            min_count, max_count = target_range
+        except (ValueError, KeyError):
+            # Fallback to general validation
+            self._check_word_count(body, checks)
+            return
+
+        # Remove markdown syntax for accurate count
+        clean_text = re.sub(r'[#*`\[\]()_]', '', body)
+
+        # Count based on language
+        if lang in ['ja', 'ko']:
+            # Character count
+            count = len(re.sub(r'\s+', '', clean_text))
+            count_label = f"{count} chars"
+            checks['info']['char_count'] = count
+        else:
+            # Word count
+            words = clean_text.split()
+            count = len(words)
+            count_label = f"{count} words"
+            checks['info']['word_count'] = count
+
+        checks['info']['word_count'] = count_label
+
+        # Validate against type-specific targets
+        if count < min_count * 0.7:  # 30% below minimum is critical
+            checks['critical_failures'].append(
+                f"Content too short for {content_type}: {count_label} (minimum: {min_count})"
+            )
+        elif count < min_count:  # Below minimum is warning
+            checks['warnings'].append(
+                f"Content below target for {content_type}: {count_label} (target: {min_count}-{max_count})"
+            )
+        elif count > max_count * 1.3:  # 30% above maximum is warning
+            checks['warnings'].append(
+                f"Content too long for {content_type}: {count_label} (target: {min_count}-{max_count})"
+            )
+
+    def _check_content_type_structure(self, body: str, content_type: str, checks: Dict):
+        """
+        Validate content has required structural elements based on type.
+        """
+        if content_type == 'tutorial':
+            # Check for code blocks
+            code_blocks = re.findall(r'```[\w]*\n', body)
+            code_count = len(code_blocks)
+            checks['info']['code_blocks'] = code_count
+
+            if code_count < 2:
+                checks['critical_failures'].append(
+                    f"Tutorial missing code examples: found {code_count}, expected 2+ code blocks"
+                )
+
+            # Check for comparison table (markdown table with |)
+            tables = re.findall(r'\|[^\n]+\|', body)
+            table_count = len([t for t in tables if '|' in t and '-' in body])
+            checks['info']['tables'] = table_count
+
+            if table_count == 0:
+                checks['critical_failures'].append(
+                    "Tutorial missing comparison table: expected at least 1 markdown table"
+                )
+
+            # Check for step-by-step headings (### Step or ## Step)
+            steps = re.findall(r'^###? Step \d+', body, re.MULTILINE)
+            step_count = len(steps)
+            checks['info']['step_headings'] = step_count
+
+            if step_count < 3:
+                checks['warnings'].append(
+                    f"Tutorial has few step headings: found {step_count}, recommended 3-5"
+                )
+
+        elif content_type == 'analysis':
+            # Check for comparison element (table OR structured list)
+            tables = re.findall(r'\|[^\n]+\|', body)
+            has_table = len(tables) > 0
+
+            # Check for pros/cons structure
+            pros_cons = re.findall(r'(Pro:|Con:|Advantage:|Disadvantage:|장점:|단점:|メリット:|デメリット:)', body, re.IGNORECASE)
+            has_comparison_list = len(pros_cons) >= 2
+
+            checks['info']['has_comparison'] = has_table or has_comparison_list
+
+            if not has_table and not has_comparison_list:
+                checks['warnings'].append(
+                    "Analysis missing comparison element: expected table or pros/cons list"
+                )
+
+        elif content_type == 'news':
+            # Check for 5 W's elements (Who, What, When, Where, Why)
+            # News should be factual and concise
+            # Check for date references (specific dates)
+            date_patterns = r'(\d{4}[-/]\d{1,2}[-/]\d{1,2}|January|February|March|April|May|June|July|August|September|October|November|December|\d{1,2}월|\d{1,2}日)'
+            dates = re.findall(date_patterns, body, re.IGNORECASE)
+            checks['info']['date_references'] = len(dates)
+
+            if len(dates) == 0:
+                checks['warnings'].append(
+                    "News article missing specific date references: should include when events occurred"
+                )
 
     def _check_word_count(self, body: str, checks: Dict):
         """Check if word count is within range"""

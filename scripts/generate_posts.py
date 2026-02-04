@@ -29,6 +29,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from topic_queue import reserve_topics, mark_completed, mark_failed
 from utils.security import safe_print, mask_secrets
+from utils.content_classifier import ContentClassifier
 from affiliate_config import (
     detect_product_mentions,
     generate_affiliate_link,
@@ -38,6 +39,7 @@ from affiliate_config import (
 )
 from internal_linker import InternalLinker
 from ab_test_manager import ABTestManager
+from prompts import get_tutorial_prompt, get_analysis_prompt, get_news_prompt
 
 try:
     from anthropic import Anthropic
@@ -344,12 +346,33 @@ class ContentGenerator:
         category = topic['category']
         references = topic.get('references', [])  # Get references from topic
 
-        system_prompt = SYSTEM_PROMPTS[lang].format(keyword=keyword)
+        # Classify content type
+        classifier = ContentClassifier()
+        keywords = [keyword]  # Use topic keyword
+        content_type = classifier.classify(keyword, keywords, category)
 
-        # User prompt with references
-        user_prompt = self._get_draft_prompt(keyword, category, lang, references)
-
+        safe_print(f"  🎯 Content type: {content_type}")
         safe_print(f"  📝 Generating draft for: {keyword}")
+
+        # Get type-specific prompt
+        if content_type == 'tutorial':
+            user_prompt = get_tutorial_prompt(keyword, keywords, lang)
+        elif content_type == 'analysis':
+            user_prompt = get_analysis_prompt(keyword, keywords, lang)
+        else:  # news
+            user_prompt = get_news_prompt(keyword, keywords, lang)
+
+        # Append references if available
+        if references and len(references) > 0:
+            user_prompt += "\n\n## References (Use for factual accuracy)\n\n"
+            for i, ref in enumerate(references[:3], 1):  # Use top 3
+                user_prompt += f"{i}. {ref['title']}\n   URL: {ref['url']}\n"
+                if ref.get('snippet'):
+                    user_prompt += f"   Summary: {ref['snippet']}\n"
+                user_prompt += "\n"
+            user_prompt += "Use these references for factual information, but DO NOT plagiarize. Write in your own words.\n"
+
+        system_prompt = SYSTEM_PROMPTS[lang].format(keyword=keyword)
 
         # Use Prompt Caching: cache the system prompt
         try:

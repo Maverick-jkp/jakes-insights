@@ -116,7 +116,12 @@
       "Bash(brew install:*)",
       "Bash(/opt/homebrew/bin/brew install:*)",
       "Bash(/opt/homebrew/bin/pandoc:*)",
-      "Bash(if ! python -m py_compile \"scripts/generate_posts.py\")"
+      "Bash(if ! python -m py_compile \"scripts/generate_posts.py\")",
+      "Bash(do python -m py_compile:*)",
+      "Bash(pip install:*)",
+      "Bash(yamllint:*)",
+      "Bash(md5:*)",
+      "Bash(git -C /Users/jakepark/projects/jakes-tech-insights show 4678395 --name-only --diff-filter=D)"
     ]
   }
 }

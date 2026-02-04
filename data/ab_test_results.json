@@ -41,9 +41,39 @@
       "test_name": "title_style",
       "variant": "A",
       "assigned_at": "2026-02-03T13:37:56.142511"
+    },
+    {
+      "post_id": "2026-02-04-出水麻衣",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T14:52:06.229973"
+    },
+    {
+      "post_id": "2026-02-04-プログラミング独学方法",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T14:54:35.787889"
+    },
+    {
+      "post_id": "2026-02-04-出水麻衣",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T15:12:57.765933"
+    },
+    {
+      "post_id": "2026-02-04-青山繁晴",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-04T15:16:36.433421"
+    },
+    {
+      "post_id": "2026-02-04-プログラミング独学方法",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T15:27:08.273304"
     }
   ],
-  "last_updated": "2026-02-03T13:37:56.142530",
+  "last_updated": "2026-02-04T15:27:08.273310",
   "summary": {
     "total_assignments": 0,
     "by_test": {}

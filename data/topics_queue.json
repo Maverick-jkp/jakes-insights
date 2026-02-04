@@ -4490,6 +4490,257 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-02-04T06:24:05.967197+00:00",
       "completed_at": "2026-02-04T06:30:50.615616+00:00"
+    },
+    {
+      "id": "403-en-tech-amazon-down",
+      "keyword": "amazon down",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115471",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Investors and business owners need to understand if Amazon's declining partnerships signal broader tech industry instability",
+      "angle": "Market disruption analysis focusing on supply chain vulnerability",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "UPS to eliminate 30,000 more jobs as Amazon volume cuts accelerate; shares rise | Reuters",
+          "url": "https://www.reuters.com/business/retail-consumer/ups-forecasts-higher-2026-revenue-2026-01-27/",
+          "source": "www.reuters.com"
+        },
+        {
+          "title": "AMZN News Today | Why did Amazon.com stock go down today? $AMZN",
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/AMZN/news/",
+          "source": "www.marketbeat.com"
+        },
+        {
+          "title": "Amazon's Echo Show 8 and 11 are down to new all-time lows",
+          "url": "https://www.engadget.com/deals/amazons-echo-show-8-and-11-are-down-to-new-all-time-lows-150021328.html",
+          "source": "www.engadget.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "404-en-entertainment-jennifer-garner",
+      "keyword": "jennifer garner",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115503",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fans want to understand the real dynamics behind celebrity family disputes before media narratives solidify",
+      "angle": "Celebrity family tension analysis with child welfare concerns",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Jennifer Garner - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jennifer_Garner",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Jennifer Garner Co-Signed a Timeless Outfit Formula You Can Wear Into Spring — Get the Look from $28",
+          "url": "https://people.com/jennifer-garner-turtleneck-sweater-straight-leg-jeans-february-2026-11896748",
+          "source": "people.com"
+        },
+        {
+          "title": "Jen Garner Reportedly ‘Uncomfortable’ With JLo’s Decision Involving Her Kids With Ben Affleck—She’s ",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jen-garner-reportedly-uncomfortable-jlo-170000131.html",
+          "source": "www.yahoo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "405-ko-business-한화오션",
+      "keyword": "한화오션",
+      "category": "business",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115530",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "투자자들이 실적 발표 전 마지막 투자 판단을 내리기 위해 긴급히 정보를 찾고 있음",
+      "angle": "실적 발표 직전 투자 기회 분석과 리스크 평가",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "한화오션 실적발표 D-2, 전년比 영업익 4배 이상 급증…전망 이유는 - 오피니언뉴스",
+          "url": "https://www.opinionnews.co.kr/news/articleView.html?idxno=132691",
+          "source": "www.opinionnews.co.kr"
+        },
+        {
+          "title": "韓 한화오션·獨 TKMS, 캐나다 잠수함 수주전 '점입가경'…\"車공장부터 제철소까지\" 현금 보따리 싸움 - 글로벌이코노믹",
+          "url": "https://www.g-enews.com/article/Global-Biz/2026/01/202601310621248661533107c202_1",
+          "source": "www.g-enews.com"
+        },
+        {
+          "title": "한화오션, 작년 영업익 1조1091억…전년比 366.2% 급증 - 뉴스1",
+          "url": "https://www.news1.kr/industry/general-industry/6061795",
+          "source": "www.news1.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "406-ko-society-신동엽",
+      "keyword": "신동엽",
+      "category": "society",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115590",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "부모들이 자녀 교육 방법을 재점검하고 성공 사례를 벤치마킹하려고 함",
+      "angle": "연예인 자녀의 교육 성공 사례를 통한 일반 가정 교육 방법 비교 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "신동엽 자식 농사 대박…딸 지효, 한예종·서울대 동시 합격 - 머니투데이",
+          "url": "https://www.mt.co.kr/entertainment/2026/02/04/2026020405335595124",
+          "source": "www.mt.co.kr"
+        },
+        {
+          "title": "신동엽 딸 “무용 취미로 시켰다”더니… 서울대·한예종 동시 합격 | 서울신문",
+          "url": "https://www.seoul.co.kr/news/newsView.php?id=20260204500031",
+          "source": "www.seoul.co.kr"
+        },
+        {
+          "title": "신동엽 딸, 무용한다더니…서울대·한예종 동시 합격 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026020422807",
+          "source": "www.hankyung.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "407-ja-sports-唐津競艇",
+      "keyword": "唐津競艇",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115619",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "競艇ファンが九州地区選手権の予想を的中させるため緊急に攻略情報を求めている",
+      "angle": "競艇場の特徴と出目傾向を活用した予想戦略分析",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "唐津競艇場（ボートレース唐津）の特徴は？出目の傾向や予想のコツを攻略！",
+          "url": "https://kyoutei-navi.com/place/karatsu/",
+          "source": "kyoutei-navi.com"
+        },
+        {
+          "title": "「今節は眠れない」峰竜太がうわさのワースト機に苦笑い/唐津・九州地区選手権 | ボートレース（競艇）【マクール】",
+          "url": "https://sp.macour.jp/news/188930/",
+          "source": "sp.macour.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "408-en-sports-home-workout-routine",
+      "keyword": "home workout routine",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115794",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "문제해결 - 집에서 효율적으로 운동할 수 있는 체계적인 방법을 찾고자 함",
+      "angle": "가이드 - 장비 없이도 할 수 있는 운동 루틴과 실행 방법 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "The 10 Best at Home Workouts (No-Equipment!) | Nerd Fitness",
+          "url": "https://www.nerdfitness.com/blog/the-7-best-at-home-workout-routines-the-ultimate-guide-for-training-without-a-gym/",
+          "source": "www.nerdfitness.com"
+        },
+        {
+          "title": "r/bodyweightfitness Guide: The Recommended Routine",
+          "url": "https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "409-ko-society-건강한-생활-습관",
+      "keyword": "건강한 생활 습관",
+      "category": "society",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115900",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "문제해결 - 건강 관리를 위한 실천 가능한 생활 습관 개선 방법을 찾고자 함",
+      "angle": "교육 - 과학적 근거를 바탕으로 한 건강 습관과 실행 전략 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[본방 종합] 무너진 생활 습관, 건강한 변화를 꿈꾸나요? 단 6일 만에 몸과 마음, 그리고 일상은 얼마나 달라질 수 있을까? I KBS 20251022 방송 - YouTube",
+          "url": "https://www.youtube.com/watch?v=qr_rjxhQ7-M",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "건강한 사람들은 아침에 ‘이것’ 꼭 챙겨...어떤 좋은 습관 갖고 있나? - 코메디닷컴",
+          "url": "https://kormedi.com/2741498/",
+          "source": "kormedi.com"
+        },
+        {
+          "title": "건강한 70대를 위해 30대에 할 수 있는 일들 - BBC News 코리아",
+          "url": "https://www.bbc.com/korean/articles/cx2d200p3v9o",
+          "source": "www.bbc.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "410-ja-sports-自宅トレーニングルーティン",
+      "keyword": "自宅トレーニングルーティン",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-04T07:47:32.115997",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "問題解決 - 家で効率的に運動できる体系的な方法を見つけたい",
+      "angle": "ガイド - 器具を使わずにできる運動ルーティンと実行方法の提示",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "自宅でできる筋トレメニュー17種目｜目的別に回数・強度・頻度を解説 | トレーニング ×スポーツ『MELOS』",
+          "url": "https://melos.media/training/36561/",
+          "source": "melos.media"
+        },
+        {
+          "title": "【1週間メニュー付き】本気で結果を出す自重トレーニング総まとめ！器具なし自宅筋トレで効果をあげるポイントを紹介",
+          "url": "https://ufit.co.jp/blogs/training/bodyweighttraining",
+          "source": "ufit.co.jp"
+        },
+        {
+          "title": "筋トレは自宅でできる！ 器具なしで全身を鍛える自重トレーニング11選 | GQ JAPAN",
+          "url": "https://www.gqjapan.jp/article/20250501-the-best-full-body-strength-training-that-you-can-do-at-home",
+          "source": "www.gqjapan.jp"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

@@ -665,21 +665,50 @@ class QualityGate:
         lang = checks['language']
         stop_words = common_words.get(lang, set())
 
-        # Split title into words and filter
-        title_words = re.findall(r'\w+', title)
-        significant_words = [w for w in title_words if w not in stop_words and len(w) > 2]
+        # Extract significant keywords based on language
+        if lang in ['ja', 'ko']:
+            # For CJK languages, check if significant portions of title appear in body
+            # Remove stop words and punctuation from title
+            title_clean = ''.join(c for c in title if c not in stop_words and not re.match(r'[\W_\d]', c))
 
-        if not significant_words:
-            return
+            if len(title_clean) < 3:
+                return
 
-        # Check if at least 30% of title keywords appear in body
-        matches = sum(1 for word in significant_words if word in body_lower)
-        match_ratio = matches / len(significant_words)
+            # Check how many of the title characters appear in the body
+            # Use a sliding window approach: check if 3-character sequences from title exist in body
+            char_sequences = []
+            for i in range(len(title_clean) - 2):
+                seq = title_clean[i:i+3]
+                if len(seq) == 3:
+                    char_sequences.append(seq)
 
-        if match_ratio < 0.3:
-            checks['critical_failures'].append(
-                f"Title-content mismatch: Only {match_ratio*100:.0f}% of title keywords found in body (expected >30%)"
-            )
+            if not char_sequences:
+                return
+
+            matches = sum(1 for seq in char_sequences if seq in body_lower)
+            match_ratio = matches / len(char_sequences) if char_sequences else 0
+
+            # More lenient threshold for CJK (20% instead of 30%)
+            if match_ratio < 0.2:
+                checks['critical_failures'].append(
+                    f"Title-content mismatch: Only {match_ratio*100:.0f}% of title character sequences found in body (expected >20%)"
+                )
+        else:
+            # For English, use word-based matching
+            title_words = re.findall(r'\w+', title)
+            significant_words = [w for w in title_words if w not in stop_words and len(w) > 2]
+
+            if not significant_words:
+                return
+
+            # Check if at least 30% of title keywords appear in body
+            matches = sum(1 for word in significant_words if word in body_lower)
+            match_ratio = matches / len(significant_words)
+
+            if match_ratio < 0.3:
+                checks['critical_failures'].append(
+                    f"Title-content mismatch: Only {match_ratio*100:.0f}% of title keywords found in body (expected >30%)"
+                )
 
         # Additional check: detect obvious topic mismatch using category
         category = frontmatter.get('categories', [''])[0] if 'categories' in frontmatter else ''

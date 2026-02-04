@@ -339,8 +339,12 @@ class ContentGenerator:
         self.ab_test_manager = ABTestManager()
         safe_print("  🧪 A/B Test Manager initialized")
 
-    def generate_draft(self, topic: Dict) -> str:
-        """Generate initial draft using Draft Agent with Prompt Caching"""
+    def generate_draft(self, topic: Dict) -> tuple[str, str]:
+        """Generate initial draft using Draft Agent with Prompt Caching
+
+        Returns:
+            tuple: (draft_content, content_type)
+        """
         keyword = topic['keyword']
         lang = topic['lang']
         category = topic['category']
@@ -420,10 +424,19 @@ class ContentGenerator:
             safe_print(f"  ℹ️  No caching (usage: input={usage.input_tokens}, output={usage.output_tokens})")
 
         safe_print(f"  ✓ Draft generated ({len(draft)} chars)")
-        return draft
+        return draft, content_type
 
-    def edit_draft(self, draft: str, topic: Dict) -> str:
-        """Refine draft using Editor Agent with Prompt Caching"""
+    def edit_draft(self, draft: str, topic: Dict, content_type: str = 'analysis') -> str:
+        """Refine draft using Editor Agent with Prompt Caching
+
+        Args:
+            draft: Draft content to edit
+            topic: Topic dictionary
+            content_type: Type of content (tutorial/analysis/news)
+
+        Returns:
+            str: Edited content
+        """
         lang = topic['lang']
 
         safe_print(f"  ✏️  Editing draft...")
@@ -433,7 +446,7 @@ class ContentGenerator:
             safe_print(f"     Topic: {topic.get('id', 'unknown')}")
             raise ValueError("Cannot edit empty draft")
 
-        editor_prompt = self._get_editor_prompt(lang)
+        editor_prompt = self._get_editor_prompt(lang, content_type)
 
         # Use Prompt Caching: cache the editor instructions
         try:
@@ -678,16 +691,40 @@ Write the complete blog post now (body only, no title or metadata):""",
 
         return prompts[lang]
 
-    def _get_editor_prompt(self, lang: str) -> str:
-        """Get editor prompt based on language"""
-        prompts = {
-            "en": """You are an expert editor. Transform this into Medium-style content with authentic human touch:
+    def _get_editor_prompt(self, lang: str, content_type: str = 'analysis') -> str:
+        """Get editor prompt based on language and content type
 
-📏 Length Requirements (Target: 700-1200 words for 5-7 min read):
-- If draft is under 700 words: EXPAND with examples, explanations, context to reach 700-1200 words
-- If draft is 700-1200 words: MAINTAIN the same length (ideal range)
-- If draft is 1200-1800 words: COMPRESS to 1100-1300 words by removing redundancy
-- If draft is over 1800 words: COMPRESS aggressively to 1100-1300 words
+        Args:
+            lang: Language code (en/ko/ja)
+            content_type: Content type (tutorial/analysis/news)
+
+        Returns:
+            str: Editor prompt with type-specific length targets
+        """
+        # Get type-specific word count targets
+        classifier = ContentClassifier()
+        config = classifier.get_config(content_type, lang)
+        min_count, max_count = config['word_count']
+
+        # Format length requirements based on language
+        if lang in ['ja', 'ko']:
+            count_unit = '文字' if lang == 'ja' else '글자'
+            length_req = f"""📏 길이 요구사항 (목표: {min_count:,}-{max_count:,}{count_unit}):
+- 초안이 {int(min_count*0.7):,}{count_unit} 미만: 예시, 설명, 맥락 추가로 {min_count:,}-{max_count:,}{count_unit}까지 확장
+- 초안이 {min_count:,}-{max_count:,}{count_unit}: 같은 길이 유지 (이상적 범위)
+- 초안이 {int(max_count*1.2):,}-{int(max_count*1.5):,}{count_unit}: 중복 제거하여 {int(max_count*0.9):,}-{int(max_count*1.1):,}{count_unit}로 압축
+- 초안이 {int(max_count*1.5):,}{count_unit} 이상: 적극 압축하여 {int(max_count*0.9):,}-{int(max_count*1.1):,}{count_unit}로 압축"""
+        else:
+            length_req = f"""📏 Length Requirements (Target: {min_count:,}-{max_count:,} words):
+- If draft is under {int(min_count*0.7):,} words: EXPAND with examples, explanations, context to reach {min_count:,}-{max_count:,} words
+- If draft is {min_count:,}-{max_count:,} words: MAINTAIN the same length (ideal range)
+- If draft is {int(max_count*1.2):,}-{int(max_count*1.5):,} words: COMPRESS to {int(max_count*0.9):,}-{int(max_count*1.1):,} words by removing redundancy
+- If draft is over {int(max_count*1.5):,} words: COMPRESS aggressively to {int(max_count*0.9):,}-{int(max_count*1.1):,} words"""
+
+        prompts = {
+            "en": f"""You are an expert editor. Transform this into Medium-style content with authentic human touch:
+
+{length_req}
 
 🎯 CRITICAL ENHANCEMENTS:
 1. **Strengthen Opening Hook**:
@@ -724,13 +761,9 @@ Tasks:
 
 Return improved version (body only, no title):""",
 
-            "ko": """당신은 전문 에디터입니다. 이 블로그 글을 진짜 사람이 쓴 것 같은 토스 스타일로 개선하세요:
+            "ko": f"""당신은 전문 에디터입니다. 이 블로그 글을 진짜 사람이 쓴 것 같은 토스 스타일로 개선하세요:
 
-📏 길이 요구사항 (목표: 5-7분 읽기 = 700-1,200단어):
-- 초안이 700단어 미만: 예시, 설명, 맥락 추가로 700-1,200단어까지 확장
-- 초안이 700-1,200단어: 같은 길이 유지 (이상적 범위)
-- 초안이 1,200-1,800단어: 1,100-1,300단어로 압축 (중복 제거)
-- 초안이 1,800단어 초과: 1,100-1,300단어로 대폭 압축
+{length_req}
 
 🎯 핵심 개선사항:
 1. **오프닝 강화**:
@@ -767,13 +800,9 @@ Return improved version (body only, no title):""",
 
 개선된 버전을 반환하세요 (본문만, 제목 제외):""",
 
-            "ja": """あなたは専門エディターです。このブログ記事を本物の人間が書いたような自然な会話調に改善してください:
+            "ja": f"""あなたは専門エディターです。このブログ記事を本物の人間が書いたような自然な会話調に改善してください:
 
-📏 文字数要件 (目標: 5-7分 = 2,800-4,200文字):
-- 下書きが2,800文字未満: 例、説明、文脈を追加して2,800-4,200文字に拡張
-- 下書きが2,800-4,200文字: 同じ長さを維持 (理想的な範囲)
-- 下書きが4,200-7,000文字: 3,500-4,000文字に圧縮 (冗長性削除)
-- 下書きが7,000文字超: 3,500-4,000文字に大幅圧縮
+{length_req}
 
 🎯 重要な改善点:
 1. **オープニングの強化**:
@@ -1651,10 +1680,10 @@ def main():
         try:
             # Generate content
             safe_print(f"  → Step 1/5: Generating draft...")
-            draft = generator.generate_draft(topic)
+            draft, content_type = generator.generate_draft(topic)
 
             safe_print(f"  → Step 2/5: Editing draft...")
-            final_content = generator.edit_draft(draft, topic)
+            final_content = generator.edit_draft(draft, topic, content_type)
 
             # Generate metadata
             safe_print(f"  → Step 3/5: Generating metadata...")

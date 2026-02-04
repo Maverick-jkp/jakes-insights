@@ -30,6 +30,8 @@ omit =
     scripts/evergreen_updater.py
     scripts/internal_linker_v2.py
     scripts/dedupe_images.py
+    scripts/utils/content_classifier.py
+    scripts/prompts/*.py
 
 [report]
 precision = 2

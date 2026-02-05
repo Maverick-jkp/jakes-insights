@@ -4582,39 +4582,6 @@
       "completed_at": "2026-02-04T06:47:55.312468+00:00"
     },
     {
-      "id": "406-en-society-jean-luc-brunel",
-      "keyword": "jean luc brunel",
-      "category": "society",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029072",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Understanding systemic abuse in fashion and entertainment",
-      "angle": "Industry accountability and victim protection",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Jean-Luc Brunel - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Jean-Luc_Brunel",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Jack Lang, Jean-Luc Brunel, Bruno Le Maire : que révèlent les nouveaux documents déclassifiés dans l",
-          "url": "https://www.lepoint.fr/monde/jack-lang-jean-luc-brunel-bruno-le-maire-que-revelent-les-nouveaux-documents-declassifies-dans-HXOFEWN7WZB5FNSK27TALGEQRI/",
-          "source": "www.lepoint.fr"
-        },
-        {
-          "title": "Quem é Jean-Luc Brunel, o elo entre o caso Epstein e o Brasil - Estadão",
-          "url": "https://www.estadao.com.br/internacional/quem-e-jean-luc-brunel-o-elo-entre-o-caso-epstein-e-o-brasil/",
-          "source": "www.estadao.com.br"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "407-en-tech-molecular-glue-cance",
       "keyword": "molecular glue cancer",
       "category": "tech",
@@ -4664,29 +4631,6 @@
       "completed_at": "2026-02-04T07:13:28.337489+00:00"
     },
     {
-      "id": "409-en-business-daredevil-born-again",
-      "keyword": "daredevil born again",
-      "category": "business",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029105",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Understanding entertainment industry investment trends",
-      "angle": "Media company strategy and content investment",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Daredevil (Marvel Comics character) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Daredevil_(Marvel_Comics_character)",
-          "source": "en.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "410-en-tech-kidney-cancer-treatm",
       "keyword": "kidney cancer treatment",
       "category": "tech",
@@ -4715,51 +4659,6 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-04T06:45:27.878588+00:00",
       "completed_at": "2026-02-04T06:53:59.908483+00:00"
-    },
-    {
-      "id": "411-en-sports-coaches-vs-cancer",
-      "keyword": "coaches vs cancer",
-      "category": "sports",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029126",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Support for cancer awareness through sports",
-      "angle": "Sports community health advocacy",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "‘Molecular glue’ from this San Diego startup makes cancer self-destruct; Big Pharma bets billions",
-          "url": "https://www.sandiegouniontribune.com/2026/02/03/molecular-glue-from-this-san-diego-startup-makes-cancer-self-destruct-big-pharma-bets-billions/",
-          "source": "www.sandiegouniontribune.com"
-        },
-        {
-          "title": "Toreros Host Beavers in Coaches vs. Cancer Game - University of San Diego Athletics",
-          "url": "https://usdtoreros.com/news/2026/1/30/mens-basketball-toreros-host-beavers-in-coaches-vs-cancer-game.aspx",
-          "source": "usdtoreros.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "412-en-sports-usd-basketball",
-      "keyword": "usd basketball",
-      "category": "sports",
-      "lang": "en",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029136",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Following emerging college basketball talent",
-      "angle": "College athletics and player development",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
     },
     {
       "id": "413-en-business-big-pharma-molecular",
@@ -4798,34 +4697,6 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-04T06:45:27.878588+00:00",
       "completed_at": "2026-02-04T06:55:53.745431+00:00"
-    },
-    {
-      "id": "415-en-sports-steve-lavin-cancer",
-      "keyword": "steve lavin cancer",
-      "category": "sports",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029168",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Understanding health challenges in sports leadership",
-      "angle": "Sports community health awareness",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "‘Molecular glue’ from this San Diego startup makes cancer self-destruct; Big Pharma bets billions",
-          "url": "https://www.sandiegouniontribune.com/2026/02/03/molecular-glue-from-this-san-diego-startup-makes-cancer-self-destruct-big-pharma-bets-billions/",
-          "source": "www.sandiegouniontribune.com"
-        },
-        {
-          "title": "Toreros Host Beavers in Coaches vs. Cancer Game - University of San Diego Athletics",
-          "url": "https://usdtoreros.com/news/2026/1/30/mens-basketball-toreros-host-beavers-in-coaches-vs-cancer-game.aspx",
-          "source": "usdtoreros.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
     },
     {
       "id": "416-en-society-reality-tv-manipulat",
@@ -4955,39 +4826,6 @@
       "completed_at": "2026-02-04T09:40:29.248093+00:00"
     },
     {
-      "id": "421-ko-entertainment-신동엽",
-      "keyword": "신동엽",
-      "category": "entertainment",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029234",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "연예인 자녀 교육 성공사례 분석",
-      "angle": "예술 교육 투자와 입시 전략",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "신동엽 자식 농사 대박…딸 지효, 한예종·서울대 동시 합격 - 머니투데이",
-          "url": "https://www.mt.co.kr/entertainment/2026/02/04/2026020405335595124",
-          "source": "www.mt.co.kr"
-        },
-        {
-          "title": "신동엽 딸 “무용 취미로 시켰다”더니… 서울대·한예종 동시 합격 | 서울신문",
-          "url": "https://www.seoul.co.kr/news/newsView.php?id=20260204500031",
-          "source": "www.seoul.co.kr"
-        },
-        {
-          "title": "신동엽 딸, 무용한다더니…서울대·한예종 동시 합격 | 한국경제",
-          "url": "https://www.hankyung.com/article/2026020422807",
-          "source": "www.hankyung.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "422-ko-tech-인천시교육청",
       "keyword": "인천시교육청",
       "category": "tech",
@@ -5072,40 +4910,6 @@
       "completed_at": "2026-02-04T10:00:40.054393+00:00"
     },
     {
-      "id": "425-ko-tech-서울대-한예종-동시합격",
-      "keyword": "서울대 한예종 동시합격",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029291",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "예술 교육과 입시 전략 정보",
-      "angle": "예술 교육 기술과 진로 설계",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "426-ko-society-무용-전공자-진로",
-      "keyword": "무용 전공자 진로",
-      "category": "society",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029302",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "예술 전공자 진로 안정성과 대안 모색",
-      "angle": "예술계 진로와 사회적 인식 변화",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "427-ko-business-조선업-호황",
       "keyword": "조선업 호황",
       "category": "business",
@@ -5144,252 +4948,6 @@
       "completed_at": "2026-02-04T10:43:24.946635+00:00"
     },
     {
-      "id": "429-ko-society-신설학교-개교",
-      "keyword": "신설학교 개교",
-      "category": "society",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029338",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "지역 교육 환경 변화와 학군 정보",
-      "angle": "교육 인프라와 지역 발전",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "430-ko-business-방산주-투자",
-      "keyword": "방산주 투자",
-      "category": "business",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029349",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "방산업체 투자 가치와 성장 전망",
-      "angle": "방산업계 수출 확대와 주식 투자",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "431-ko-entertainment-연예인-자녀-교육",
-      "keyword": "연예인 자녀 교육",
-      "category": "entertainment",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029391",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "효과적인 자녀 교육 투자 전략 벤치마킹",
-      "angle": "연예계 교육 투자와 성공 사례",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "432-ko-tech-중등교사-전문성",
-      "keyword": "중등교사 전문성",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029419",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "교사 전문성 개발과 교육 기술 활용",
-      "angle": "교육 기술과 교사 역량 강화",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "433-ko-tech-LNG선-수주",
-      "keyword": "LNG선 수주",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029502",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "친환경 에너지 운송 기술과 시장 전망",
-      "angle": "조선업과 친환경 기술 융합",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "434-ja-society-アカデミック・ハラスメント",
-      "keyword": "アカデミック・ハラスメント",
-      "category": "society",
-      "lang": "ja",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029517",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "大学でのハラスメント問題の実態把握",
-      "angle": "学術界のパワハラ問題と被害者保護",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "｢私が受けた被害は消えない｣ 大学教授の侮辱的発言を”アカハラ”認定 地裁が55万円の賠償命じる 山口 | TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/2431436",
-          "source": "newsdig.tbs.co.jp"
-        },
-        {
-          "title": "山口大学大学院“アカハラ”裁判 計５５万円の賠償命じる判決 | NHKニュース",
-          "url": "https://archive.is/WDREY",
-          "source": "archive.is"
-        },
-        {
-          "title": "「アカハラ」で停職処分 長野大学の非常勤講師の男性 複数の学生が遅刻したことに腹を立て…学生に対して暴言を浴びせる 授業を途中でやめ学生を欠席扱いに | TBS NEWS DIG",
-          "url": "https://archive.ph/SzQ67",
-          "source": "archive.ph"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "435-ja-society-岡山大学",
-      "keyword": "岡山大学",
-      "category": "society",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029527",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "大学選択時のリスク要因調査",
-      "angle": "大学の管理体制と学生保護",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "【岡山大学】女性教員（60代）を停職2か月の懲戒処分 「深夜にわたる長時間の電話連絡など」アカデミック・ハラスメントに認定（RSK山陽放送） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/804669806b087c5ba1918b8d34f4a973528788e6",
-          "source": "news.yahoo.co.jp"
-        },
-        {
-          "title": "【岡山大学】『絡み合う』だけで材料になる－短炭素繊維の新しい3D成形法を開発－ | 国立大学法人岡山大学のプレスリリース",
-          "url": "https://prtimes.jp/main/html/rd/p/000003769.000072793.html",
-          "source": "prtimes.jp"
-        },
-        {
-          "title": "【岡山大学】女性教員（60代）を停職2か月の懲戒処分 「深夜にわたる長時間の電話連絡など」アカデミック・ハラスメントに認定|au Webポータル国内ニュース",
-          "url": "https://article.auone.jp/detail/1/2/5/537_5_r_20260204_1770172404281197",
-          "source": "article.auone.jp"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "436-ja-entertainment-ジョシュアスミス",
-      "keyword": "ジョシュアスミス",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029538",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "海外エンタメ人物の最新情報収集",
-      "angle": "海外エンタメ動向とファン心理",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Joseph Smith - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Joseph_Smith",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "AJスタイルズ - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/AJ%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%BA",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "437-ja-entertainment-機動戦士ガンダム-閃光のハサウェイ-キル",
-      "keyword": "機動戦士ガンダム 閃光のハサウェイ キルケーの魔女",
-      "category": "entertainment",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029553",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "人気アニメシリーズの新作情報確認",
-      "angle": "アニメ続編の品質と原作再現度",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "機動戦士ガンダム 閃光のハサウェイ キルケーの魔女 : 作品情報・声優・キャスト・あらすじ・動画 - 映画.com",
-          "url": "https://eiga.com/movie/95672/",
-          "source": "eiga.com"
-        },
-        {
-          "title": "【ネタバレあり】ガンダム最新作「閃光のハサウェイ キルケーの魔女」を観た感想会 - イーアイデム「ジモコロ」",
-          "url": "https://www.e-aidem.com/ch/jimocoro/entry/kato36",
-          "source": "www.e-aidem.com"
-        },
-        {
-          "title": "「閃光のハサウェイ」Ξガンダムが立体化！ 「キルケーの魔女」ラストで衝撃を与えた“ガンダム顔”も付属 | アニメ！アニメ！",
-          "url": "https://animeanime.jp/article/2026/02/02/95701.html",
-          "source": "animeanime.jp"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "438-ja-tech-大学ハラスメント対策",
-      "keyword": "大学ハラスメント対策",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029565",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "教育機関でのハラスメント防止技術と制度",
-      "angle": "教育テクノロジーとハラスメント防止",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "439-ja-society-長野大学パワハラ",
-      "keyword": "長野大学パワハラ",
-      "category": "society",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029575",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "教育機関の不祥事と対応策確認",
-      "angle": "教育倫理と学生保護",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "440-ja-tech-短炭素繊維3D成形",
       "keyword": "短炭素繊維3D成形",
       "category": "tech",
@@ -5409,141 +4967,241 @@
       "completed_at": "2026-02-04T07:07:06.599917+00:00"
     },
     {
-      "id": "441-ja-society-大学教員懲戒処分",
-      "keyword": "大学教員懲戒処分",
-      "category": "society",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029597",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "教育機関の品質管理と選択基準",
-      "angle": "教育機関のガバナンスと品質保証",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "442-ja-business-アニメ制作遅延",
-      "keyword": "アニメ制作遅延",
-      "category": "business",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029607",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "アニメ産業の構造的問題と対策",
-      "angle": "エンタメ産業の労働環境と品質管理",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "443-ja-society-山口大学アカハラ",
-      "keyword": "山口大学アカハラ",
-      "category": "society",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029617",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "ハラスメント被害の法的救済措置",
-      "angle": "教育機関での権利保護と救済制度",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "444-ja-tech-炭素繊維技術革新",
-      "keyword": "炭素繊維技術革新",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029628",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "日本の製造技術競争力維持に関する情報",
-      "angle": "材料技術と国際競争力",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "445-ja-business-ガンダム新作制作費",
-      "keyword": "ガンダム新作制作費",
-      "category": "business",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029638",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "アニメ制作の経済構造と投資効率",
-      "angle": "エンタメ産業の投資収益性",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "446-ja-tech-大学選択リスク",
-      "keyword": "大学選択リスク",
-      "category": "tech",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029648",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "教育機関選択時のリスク評価技術",
-      "angle": "教育データ分析とリスクアセスメント",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "447-ja-sports-プロレス興行収益",
-      "keyword": "プロレス興行収益",
+      "id": "441-en-sports-trade-deadline-nba-t",
+      "keyword": "trade deadline nba trades",
       "category": "sports",
-      "lang": "ja",
-      "priority": 5,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029658",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "プロレス業界の経営状況と将来性",
-      "angle": "格闘技エンタメの経済構造",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "448-ja-tech-製造業デジタル化",
-      "keyword": "製造業デジタル化",
-      "category": "tech",
-      "lang": "ja",
+      "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029668",
+      "created_at": "2026-02-05T07:53:07.523099",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "製造業のデジタル変革と競争力維持",
-      "angle": "インダストリー4.0と日本の対応",
-      "competition_level": "medium",
-      "references": [],
+      "search_intent": "Users need to know which players are being traded before the deadline hits and their team loses key talent permanently",
+      "angle": "Emergency trade tracking as teams make desperate last-minute moves that could backfire",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "2026 NBA Trade Deadline: Every reported deal before Thursday's deadline",
+          "url": "https://www.nba.com/news/nba-trade-deadline-2026-latest-reports",
+          "source": "www.nba.com"
+        },
+        {
+          "title": "NBA trade deadline live updates: News, rumors as Warriors trade Jonathan Kuminga - CBS Sports",
+          "url": "https://www.cbssports.com/nba/news/nba-trade-deadline-live-updates-rumors-feb-04-2026/live/",
+          "source": "www.cbssports.com"
+        }
+      ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING",
-      "reserved_at": null
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "442-en-business-affordable-housing",
+      "keyword": "affordable housing",
+      "category": "business",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523138",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Desperate search for housing options before being completely shut out of the market",
+      "angle": "Housing crisis reaching breaking point with limited opportunities vanishing fast",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "AffordableHousing.com - Affordable Houses & Apartments For Rent",
+          "url": "https://www.affordablehousing.com/",
+          "source": "www.affordablehousing.com"
+        },
+        {
+          "title": "Affordable Rentals - SDHC",
+          "url": "https://sdhc.org/housing-opportunities/affordable-rentals/",
+          "source": "sdhc.org"
+        },
+        {
+          "title": "Find Affordable Housing - HPD",
+          "url": "https://www.nyc.gov/site/hpd/services-and-information/find-affordable-housing.page",
+          "source": "www.nyc.gov"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "443-ko-society-강남구청장",
+      "keyword": "강남구청장",
+      "category": "society",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523167",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "강남구 정책 변화가 내 재산가치와 생활에 미칠 영향을 미리 알아야 함",
+      "angle": "강남구청장 교체로 인한 부동산·교육 정책의 급격한 변화 가능성",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "강남구청장 출마 선언 장석명 전 비서관 골목길 걸으며 ‘골목 메모’ 남겨 화제 - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10667911",
+          "source": "biz.heraldcorp.com"
+        },
+        {
+          "title": "[포토] 강남구 설맞이 직거래장터 찾은 조성명 강남구청장 - 아시아투데이",
+          "url": "https://www.asiatoday.co.kr/kn/view.php?key=20260203010001090",
+          "source": "www.asiatoday.co.kr"
+        },
+        {
+          "title": "강남구, 복지 사각지대 먼저 찾아 권리 되돌렸다 - 시정일보",
+          "url": "https://www.sijung.co.kr/news/articleView.html?idxno=423883",
+          "source": "www.sijung.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "444-ko-entertainment-한대음",
+      "keyword": "한대음",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523191",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "음악계 새로운 세력 등장과 기존 아이돌 시스템의 변화 확인 필요",
+      "angle": "신예 아티스트 에피의 독주가 의미하는 K-POP 생태계 변화",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "'韓 그래미' 한국대중음악상, '제23회 후보' 5일 공개한다 - 파이낸셜뉴스",
+          "url": "https://www.fnnews.com/news/202602030831007923",
+          "source": "www.fnnews.com"
+        },
+        {
+          "title": "'韓 그래미' 한국대중음악상, '제23회 후보' 5일 공개한다 :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260203_0003499911",
+          "source": "www.newsis.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "445-ja-society-マクドナルド-ハッピーセット",
+      "keyword": "マクドナルド ハッピーセット",
+      "category": "society",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523218",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "限定おもちゃの入手困難が予想されるため、発売と同時に確保する必要がある",
+      "angle": "人気キャラクター登場による異常な争奪戦と転売市場の過熱",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "「これは争奪戦の予感」 次回ハッピーセット、“人気爆上がり中のキャラ”のヒントに「朝からダッシュ開始」「全力で並びます！」（ねとらぼ） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/693d5f3a56038e5dd55fa811cf0b8d8f1fd1b2c9",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "コンプしたーーーーいッ！！【マクドナルド】集めたくなる可愛さ♡「ハッピーセット」（ftn-fashion trend news-）｜ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/article/ftnews/trend/ftnews-f6397bda0d7b64d55072cd92456384e776e0b203",
+          "source": "topics.smt.docomo.ne.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "446-ja-tech-共通テスト-平均点",
+      "keyword": "共通テスト 平均点",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523242",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "平均点データから自分の合格可能性と出願戦略を緊急で見直す必要がある",
+      "angle": "平均点ダウンによる志望校選択の混乱と受験戦略の緊急見直し",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "共通テスト2026｢平均点ダウン｣は理系にダメージ､\"難関国立大入試\"への影響は？既卒生の動きにも注意",
+          "url": "https://toyokeizai.net/articles/-/931912?display=b",
+          "source": "toyokeizai.net"
+        },
+        {
+          "title": "【共通テスト2026】データネット「合格可能性判定基準」早稲田・上智・理科大 | リセマム",
+          "url": "https://resemom.jp/article/2026/01/30/84865.html",
+          "source": "resemom.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "447-en-sports-home-workout-routine",
+      "keyword": "home workout routine",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523311",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "문제 해결 - 집에서 효과적으로 운동할 수 있는 루틴과 방법을 찾고 있음",
+      "angle": "가이드 - 장비 없이 할 수 있는 체계적인 홈 운동 프로그램 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "The 10 Best at Home Workouts (No-Equipment!) | Nerd Fitness",
+          "url": "https://www.nerdfitness.com/blog/the-7-best-at-home-workout-routines-the-ultimate-guide-for-training-without-a-gym/",
+          "source": "www.nerdfitness.com"
+        },
+        {
+          "title": "r/bodyweightfitness Guide: The Recommended Routine",
+          "url": "https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "448-ja-sports-自宅トレーニングルーティン",
+      "keyword": "自宅トレーニングルーティン",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-05T07:53:07.523443",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "問題解決 - ジムに行かずに自宅で体系的に運動する方法を探している",
+      "angle": "ガイド - 器具なしでできる効果的な運動プログラムと実行方法を提供",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "自宅でできる筋トレメニュー17種目｜目的別に回数・強度・頻度を解説 | トレーニング ×スポーツ『MELOS』",
+          "url": "https://melos.media/training/36561/",
+          "source": "melos.media"
+        },
+        {
+          "title": "【1週間メニュー付き】本気で結果を出す自重トレーニング総まとめ！器具なし自宅筋トレで効果をあげるポイントを紹介",
+          "url": "https://ufit.co.jp/blogs/training/bodyweighttraining",
+          "source": "ufit.co.jp"
+        },
+        {
+          "title": "筋トレは自宅でできる！ 器具なしで全身を鍛える自重トレーニング11選 | GQ JAPAN",
+          "url": "https://www.gqjapan.jp/article/20250501-the-best-full-body-strength-training-that-you-can-do-at-home",
+          "source": "www.gqjapan.jp"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

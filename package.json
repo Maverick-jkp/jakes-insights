@@ -1,0 +1,32 @@
+{
+  "name": "jakes-tech-insights",
+  "version": "1.0.0",
+  "description": "완전 자동화된 다국어 블로그 플랫폼 with AI Content Generation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maverick-jkp/jakes-insights.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Maverick-jkp/jakes-insights/issues"
+  },
+  "homepage": "https://github.com/Maverick-jkp/jakes-insights#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1"
+  }
+}

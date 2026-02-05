@@ -39,11 +39,12 @@ class ContentClassifier:
 
     # News indicators (25% of content)
     NEWS_INDICATORS = [
-        'announces', 'launches', 'releases', 'unveils', 'introduces',
-        'acquires', 'acquisition', 'funding', 'investment', 'raises',
-        'breaking', 'update', 'news', 'just released', 'now available',
-        '발표', '출시', '공개', '인수', '투자', '펀딩', '업데이트',
-        '発表', 'リリース', '公開', '買収', '投資', 'アップデート'
+        'announces', 'announced', 'launching', 'released', 'unveils', 'introduces',
+        'acquires', 'acquired', 'acquisition', 'funding round', 'investment',
+        'raises $', 'raised $', 'breaking news', 'just released', 'now available',
+        'confirmed', 'confirms', 'revealed', 'reveals',
+        '발표했다', '출시했다', '공개했다', '인수했다', '투자 유치', '펀딩',
+        '発表した', 'リリースした', '公開した', '買収した', '資金調達'
     ]
 
     # Content type configurations
@@ -112,18 +113,46 @@ class ContentClassifier:
         keywords_str = ' '.join(keywords).lower()
 
         # Check for Tutorial indicators (15%)
-        is_tutorial = (
-            any(indicator in topic_lower for indicator in self.TUTORIAL_INDICATORS) or
-            any(tech in keywords_str for tech in self.COMPLEX_TECH)
-        )
+        # Must have strong tutorial signal (not just "shows" or "trends")
+        tutorial_score = 0
+        for indicator in self.TUTORIAL_INDICATORS:
+            if indicator in topic_lower:
+                # Strong tutorial words get higher score
+                if indicator in ['guide', 'tutorial', 'how to', 'step by step', 'walkthrough', 'ガイド', '가이드']:
+                    tutorial_score += 3
+                else:
+                    tutorial_score += 1
 
-        if is_tutorial:
-            return 'tutorial'
+        # Complex tech topics boost tutorial score
+        if any(tech in keywords_str for tech in self.COMPLEX_TECH):
+            tutorial_score += 1
 
         # Check for News indicators (25%)
-        is_news = any(indicator in topic_lower for indicator in self.NEWS_INDICATORS)
+        # News should have time-sensitive action verbs
+        news_score = 0
+        for indicator in self.NEWS_INDICATORS:
+            if indicator in topic_lower:
+                # Strong news words (past tense actions)
+                if indicator in ['announced', 'launched', 'released', 'acquired', 'raised $', 'confirms', '발표했다', '出시했다', '発表した']:
+                    news_score += 3
+                # Weaker news signals
+                elif indicator in ['unveils', 'introduces', 'reveals']:
+                    news_score += 2
+                else:
+                    news_score += 1
 
-        if is_news:
+        # Decision logic with scores
+        if tutorial_score >= 3:
+            return 'tutorial'
+
+        if news_score >= 3:
+            return 'news'
+
+        # If has some tutorial/news signal but not strong enough, check context
+        if tutorial_score >= 1 and 'complete' in topic_lower:
+            return 'tutorial'
+
+        if news_score >= 1 and any(year in topic_lower for year in ['2024', '2025', '2026', 'latest', 'new']):
             return 'news'
 
         # Default to Analysis (60%)

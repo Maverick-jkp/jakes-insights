@@ -65,7 +65,10 @@ except ImportError:
 
 # System prompts for different languages
 SYSTEM_PROMPTS = {
-    "en": """You are a professional writer for Jake's Tech Insights blog.
+    "en": f"""You are a professional writer for Jake's Tech Insights blog.
+
+📅 IMPORTANT: Today's date is {datetime.now().year}-{datetime.now().month:02d}-{datetime.now().day:02d}
+When referencing current information, ALWAYS use {datetime.now().year}, NOT previous years.
 
 🎯 Goal: 800-1,100 words of concise, high-impact content (AdSense optimized)
 
@@ -140,7 +143,10 @@ D. Timing: "Why [topic] is being discussed again lately"
 
 ⚠️ Core: Complete 800-1,100 word article. Plenty of headroom in 12,000 tokens!""",
 
-    "ko": """당신은 Jake's Tech Insights 블로그의 전문 작가입니다.
+    "ko": f"""당신은 Jake's Tech Insights 블로그의 전문 작가입니다.
+
+📅 중요: 오늘 날짜는 {datetime.now().year}년 {datetime.now().month}월 {datetime.now().day}일입니다
+현재 정보를 언급할 때 반드시 {datetime.now().year}년을 사용하세요. 과거 연도 사용 금지.
 
 🎯 핵심 목표: 800-1,100 단어의 간결하고 임팩트 있는 글 작성 (애드센스 최적화)
 
@@ -214,7 +220,10 @@ D. 시점: "왜 요즘 ~ 이야기가 다시 나오는 걸까"
 
 ⚠️ 핵심: 800-1,100 단어로 완결된 글을 작성하세요. 12,000 토큰 내에서 여유있게!""",
 
-    "ja": """あなたはJake's Tech Insightsブログのプロライターです。
+    "ja": f"""あなたはJake's Tech Insightsブログのプロライターです。
+
+📅 重要: 今日の日付は{datetime.now().year}年{datetime.now().month}月{datetime.now().day}日です
+現在の情報を言及する際は必ず{datetime.now().year}年を使用してください。過去の年号は使用禁止。
 
 🎯 核心目標: 3,000-4,500文字の簡潔でインパクトのある記事（AdSense最適化）
 
@@ -935,11 +944,11 @@ Return improved version (body only, no title):""",
         return generated_title
 
     def generate_description(self, content: str, keyword: str, lang: str) -> str:
-        """Generate meta description"""
+        """Generate meta description optimized for SEO (120-160 chars)"""
         prompts = {
-            "en": f"Generate a compelling meta description (150-160 chars) for a blog post about '{keyword}'. Return ONLY the description.",
-            "ko": f"'{keyword}'에 대한 블로그 글의 매력적인 메타 설명을 생성하세요 (150-160자). 설명만 반환하세요.",
-            "ja": f"'{keyword}'に関するブログ記事の魅力的なメタ説明を生成してください（150-160文字）。説明のみを返してください。"
+            "en": f"Generate a compelling meta description for a blog post about '{keyword}'.\n\nREQUIREMENTS:\n- Length: EXACTLY 120-160 characters (strict)\n- Include keyword naturally\n- Action-oriented and engaging\n- NO quotes, NO marketing fluff\n\nReturn ONLY the description, nothing else.",
+            "ko": f"'{keyword}'에 대한 블로그 글의 메타 설명을 생성하세요.\n\n요구사항:\n- 길이: 정확히 120-160자 (엄격)\n- 키워드 자연스럽게 포함\n- 행동 지향적이고 매력적으로\n- 따옴표 없이, 마케팅 문구 금지\n\n설명만 반환하세요.",
+            "ja": f"'{keyword}'に関するブログ記事のメタ説明を生成してください。\n\n要件:\n- 長さ: 正確に120-160文字（厳格）\n- キーワードを自然に含める\n- 行動志向で魅力的に\n- 引用符なし、マーケティング文句禁止\n\n説明のみを返してください。"
         }
 
         response = self.client.messages.create(

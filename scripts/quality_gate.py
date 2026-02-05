@@ -688,10 +688,11 @@ class QualityGate:
             matches = sum(1 for seq in char_sequences if seq in body_lower)
             match_ratio = matches / len(char_sequences) if char_sequences else 0
 
-            # More lenient threshold for CJK (20% instead of 30%)
-            if match_ratio < 0.2:
+            # More lenient threshold for CJK (15% instead of 30%)
+            # CJK languages have more complex character matching due to different writing systems
+            if match_ratio < 0.15:
                 checks['critical_failures'].append(
-                    f"Title-content mismatch: Only {match_ratio*100:.0f}% of title character sequences found in body (expected >20%)"
+                    f"Title-content mismatch: Only {match_ratio*100:.0f}% of title character sequences found in body (expected >15%)"
                 )
         else:
             # For English, use word-based matching

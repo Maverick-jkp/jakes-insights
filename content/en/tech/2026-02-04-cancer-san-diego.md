@@ -11,7 +11,7 @@ ab_test_id: "title_style"
 ab_variant: "B"
 ---
 
-![cancer san diego](/images/20260204-cancer-san-diego.jpg)
+![Featured article: 5 Things You Didn't Know About San Diego Biotech Breakthrough: Cancer ](/images/20260204-cancer-san-diego.jpg)
 
 You've been staring at cancer statistics for months now, haven't you? The relentless climb toward 28.4 million cases by 2040. The plateau in traditional treatment effectiveness. The gnawing sense that we're running out of time while cancer keeps winning.
 

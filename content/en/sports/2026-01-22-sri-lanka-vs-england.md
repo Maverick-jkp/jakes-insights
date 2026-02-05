@@ -8,7 +8,7 @@ description: "Discover the thrilling cricket rivalry between Sri Lanka and Engla
 image: "/images/20260122-sri-lanka-vs-england.jpg"
 ---
 
-![sri lanka vs england](/images/20260122-sri-lanka-vs-england.jpg)
+![Featured article: Sri Lanka vs England: 2026 Cricket Series Preview](/images/20260122-sri-lanka-vs-england.jpg)
 
 Cricket fans know the frustration all too well. You clear your schedule, settle in to watch what promises to be an exciting match, only to find yourself checking your phone after the first hour because the game has turned into a one-sided affair. That's exactly what many expected when Sri Lanka faced England in their first ODI of 2026 in Colombo – but sometimes cricket has other plans.
 

@@ -8,7 +8,7 @@ description: "Discover the thrilling world of ice shooting - from frozen target 
 image: "/images/20260125-ice-shooting.jpg"
 ---
 
-![ice shooting](/images/20260125-ice-shooting.jpg)
+![Featured article: ICE Shooting Incidents Impact Minneapolis Communities](/images/20260125-ice-shooting.jpg)
 
 You wake up to breaking news alerts flooding your phone, but this time it's different. The headlines aren't about celebrity drama or political scandals – they're about federal immigration agents opening fire in your city's neighborhoods. For Minneapolis residents this weekend, that nightmare became reality as ICE-involved shootings dominated local news cycles.
 

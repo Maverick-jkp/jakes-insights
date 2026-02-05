@@ -8,7 +8,7 @@ description: "Discover everything about the highly anticipated Oblivion Remaster
 image: "/images/20260122-oblivion-remastered.jpg"
 ---
 
-![oblivion remastered](/images/20260122-oblivion-remastered.jpg)
+![Featured article: Oblivion Remastered: Epic RPG Gets Stunning Visual Upgrade](/images/20260122-oblivion-remastered.jpg)
 
 You've been refreshing gaming news sites for years, hoping to see that magical headline: "The Elder Scrolls IV: Oblivion Remastered - Official Announcement." I hate to be the bearer of bad news, but here's what you need to know: Bethesda hasn't announced anything official, and frankly, they might never.
 

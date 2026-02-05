@@ -9,7 +9,7 @@ description: "Discover Kendall Jenner's journey from reality TV to supermodel st
 image: "/images/20260128-kendall-jenner.jpg"
 ---
 
-![kendall jenner](/images/20260128-kendall-jenner.jpg)
+![Entertainment spotlight: Kendall Jenner's Super Bowl Ad Strategy: Dating Drama Respon](/images/20260128-kendall-jenner.jpg)
 
 You've probably been there, right? Watching celebrity dating drama unfold across your feeds, feeling that familiar mix of fascination and exhaustion. Recent surveys show 78% of Gen Z feel overwhelmed by celebrity relationship coverage, yet something shifted when Kendall Jenner decided to roast her own dating history on one of the world's biggest stages.
 

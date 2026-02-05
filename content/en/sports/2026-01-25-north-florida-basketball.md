@@ -8,7 +8,7 @@ description: "Discover North Florida basketball's rise in college hoops! From AS
 image: "/images/20260125-north-florida-basketball.jpg"
 ---
 
-![north florida basketball](/images/20260125-north-florida-basketball.jpg)
+![Featured article: North Florida Basketball Struggles Continue in 2026 Season](/images/20260125-north-florida-basketball.jpg)
 
 You're following North Florida basketball this season, but the Ospreys keep finding ways to break your heart at the worst possible moments. Just last week, they let a winnable game slip away in the final seconds against Eastern Kentucky, and now winter weather is throwing their entire schedule into chaos. If you're wondering why this talented UNF squad can't seem to catch a break in 2026, you're not alone.
 

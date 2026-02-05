@@ -9,7 +9,7 @@ description: "Discover Coco Gauff's inspiring journey from tennis prodigy to Gra
 image: "/images/20260127-coco-gauff.jpg"
 ---
 
-![coco gauff](/images/20260127-coco-gauff.jpg)
+![Featured article: Coco Gauff's Political Commentary Complicates Sports Fan](/images/20260127-coco-gauff.jpg)
 
 You're scrolling through your sports feed, excited to catch up on Australian Open highlights, when suddenly you're hit with political commentary instead of match analysis. Sound familiar?
 

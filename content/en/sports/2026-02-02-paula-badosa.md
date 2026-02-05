@@ -9,7 +9,7 @@ description: "Discover Paula Badosa's inspiring tennis journey from Spain to WTA
 image: "/images/20260202-paula-badosa.jpg"
 ---
 
-![paula badosa](/images/20260202-paula-badosa.jpg)
+![Featured article: Paula Badosa Faces Spanish Tennis Success Dilemma in 2026](/images/20260202-paula-badosa.jpg)
 
 You've probably felt that bittersweet moment when your favorite team's success creates an unexpected problem. That's exactly what's happening to Spanish tennis fans right now.
 

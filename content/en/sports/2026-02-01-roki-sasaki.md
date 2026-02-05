@@ -9,7 +9,7 @@ description: "Discover everything about Roki Sasaki, Japan's pitching phenom mak
 image: "/images/20260201-roki-sasaki.jpg"
 ---
 
-![roki sasaki](/images/20260201-roki-sasaki.jpg)
+![Featured article: Dodgers Manager Dave Roberts Manages Roki Sasaki Expectations](/images/20260201-roki-sasaki.jpg)
 
 You've been there, right? That moment when your team lands the superstar everyone's talking about, and instead of pure excitement, you get this nagging feeling that the hype machine might be setting everyone up for disappointment.
 

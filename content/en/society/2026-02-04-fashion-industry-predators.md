@@ -9,7 +9,7 @@ description: "Exposing predatory behavior in fashion: how power imbalances enabl
 image: "/images/20260204-fashion-industry-predators.jpg"
 ---
 
-![fashion industry predators](/images/20260204-fashion-industry-predators.jpg)
+![Featured article: Fashion Industry Predators Face New Accountability Systems](/images/20260204-fashion-industry-predators.jpg)
 
 You've been staring at another headline about fashion industry misconduct, haven't you? Maybe scrolling through yet another exposé thread on Twitter, watching careers implode in real-time. The pattern feels exhaustingly familiar, but here's what you might be missing: 2026 isn't just another year of fashion scandals. It's the year the entire industry's protection racket finally collapsed.
 

@@ -8,7 +8,7 @@ description: "Discover Jannik Sinner's meteoric rise to tennis stardom, from his
 image: "/images/20260122-jannik-sinner.jpg"
 ---
 
-![jannik sinner](/images/20260122-jannik-sinner.jpg)
+![Featured article: Jannik Sinner: Rising Tennis Star's Journey to the Top](/images/20260122-jannik-sinner.jpg)
 
 You've watched Jannik Sinner climb to the top of tennis, but here's what keeps me up at night as a tennis analyst: the higher you climb, the more painful the fall becomes. And right now, Sinner is walking a tightrope that's claimed several promising careers.
 

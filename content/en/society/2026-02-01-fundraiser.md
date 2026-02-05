@@ -9,7 +9,7 @@ description: "Discover proven fundraising strategies, tips for engaging donors, 
 image: "/images/20260201-fundraiser.jpg"
 ---
 
-![fundraiser](/images/20260201-fundraiser.jpg)
+![Featured article: Why Some Fundraiser Campaigns Go Viral While Others Fail](/images/20260201-fundraiser.jpg)
 
 You open your phone to see another fundraiser hitting seven figures while your local community cause struggles to reach $500. The Alex Pretti family GoFundMe just crossed $1.3 million in days, yet industry reports show most campaigns fail to reach even 30% of their modest goals. What makes some fundraisers explode while others disappear into the digital void?
 

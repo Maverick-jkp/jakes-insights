@@ -9,7 +9,7 @@ description: "Discover the groundbreaking cancer research of Mariano Barbacid, t
 image: "/images/20260129-mariano-barbacid.jpg"
 ---
 
-![mariano barbacid](/images/20260129-mariano-barbacid.jpg)
+![Featured article: Mariano Barbacid's Pancreatic Cancer Research: Mouse Study Results](/images/20260129-mariano-barbacid.jpg)
 
 You've been there, right? That moment when a loved one receives a cancer diagnosis and everything stops. But with pancreatic cancer, the conversation shifts almost immediately from "How do we fight this?" to "How much time do we have left?"
 

@@ -9,7 +9,7 @@ description: "Stay safe during severe winter weather. Learn how to prepare for w
 image: "/images/20260130-winter-storm-warning.jpg"
 ---
 
-![winter storm warning](/images/20260130-winter-storm-warning.jpg)
+![Featured article: Winter Storm Warning Mistakes: Why 68% Face Disruptions](/images/20260130-winter-storm-warning.jpg)
 
 You've probably experienced that sinking feeling when your phone buzzes with a winter storm warning notification. Your first thought? "How bad is this really going to be?" You're not alone in that uncertainty—and unfortunately, most people are handling these warnings completely wrong.
 

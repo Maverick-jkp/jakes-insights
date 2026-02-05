@@ -8,7 +8,7 @@ description: "最新の金利動向と今後の見通しを徹底解説。住宅
 image: "/images/20260122-current-interest-rates.jpg"
 ---
 
-![current interest rates](/images/20260122-current-interest-rates.jpg)
+![Business analysis: 2026年最新金利動向｜住宅ローン・預金金利の完全ガイドと今後の予測](/images/20260122-current-interest-rates.jpg)
 
 「また金利が上がってる...」そんなニュースを見て、ため息をついている方も多いのではないでしょうか。2026年に入っても住宅ローンの金利は高止まりしたまま、30年固定金利は7%台前半で推移しています。私も最初は「そのうち下がるでしょ」と楽観的に考えていたのですが、現実はそう甘くありませんでした。
 

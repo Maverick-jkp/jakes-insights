@@ -8,7 +8,7 @@ description: "Discover the rising culinary stars named James Beard Award semifin
 image: "/images/20260122-james-beard-semifinalists-2026.jpg"
 ---
 
-![james beard semifinalists 2026](/images/20260122-james-beard-semifinalists-2026.jpg)
+![Featured article: 2026 James Beard Semifinalists: Top Chef Contenders Revealed](/images/20260122-james-beard-semifinalists-2026.jpg)
 
 You've been following your favorite restaurants and chefs all year, watching their social media posts and making mental notes about who deserves recognition. Now the James Beard Foundation has dropped their 2026 semifinalist list, and you're probably scanning it wondering how many of your picks made the cut. 
 

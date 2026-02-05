@@ -11,7 +11,7 @@ ab_test_id: "title_style"
 ab_variant: "A"
 ---
 
-![gabriela rico](/images/20260203-gabriela-rico.jpg)
+![Featured article: Gabriela Rico: Why Viral Misinformation Spreads Faster](/images/20260203-gabriela-rico.jpg)
 
 You've probably seen the name Gabriela Rico trending across social media lately, but here's the problem: most people sharing her story don't actually know who she was or why her case matters in 2024. With conspiracy theories spreading faster than facts, millions are getting caught up in misinformation about a tragic case that deserves accurate coverage.
 

@@ -34,6 +34,9 @@ resume_project/
 # static/images/
 .env
 
+# Google Search Console credentials
+config/gsc-service-account.json
+
 # Work log (personal notes, not for git)
 docs/WORK_LOG.md
 

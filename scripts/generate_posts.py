@@ -718,17 +718,25 @@ Write the complete blog post now (body only, no title or metadata):""",
         # Format length requirements based on language
         if lang in ['ja', 'ko']:
             count_unit = '文字' if lang == 'ja' else '글자'
-            length_req = f"""📏 길이 요구사항 (목표: {min_count:,}-{max_count:,}{count_unit}):
-- 초안이 {int(min_count*0.7):,}{count_unit} 미만: 예시, 설명, 맥락 추가로 {min_count:,}-{max_count:,}{count_unit}까지 확장
-- 초안이 {min_count:,}-{max_count:,}{count_unit}: 같은 길이 유지 (이상적 범위)
-- 초안이 {int(max_count*1.2):,}-{int(max_count*1.5):,}{count_unit}: 중복 제거하여 {int(max_count*0.9):,}-{int(max_count*1.1):,}{count_unit}로 압축
-- 초안이 {int(max_count*1.5):,}{count_unit} 이상: 적극 압축하여 {int(max_count*0.9):,}-{int(max_count*1.1):,}{count_unit}로 압축"""
+            length_req = f"""📏 길이 요구사항 (CRITICAL - 반드시 준수):
+🎯 목표 범위: {min_count:,}-{max_count:,}{count_unit}
+
+**절대 규칙**:
+- 초안이 {int(min_count*0.8):,}{count_unit} 미만: 예시/설명 추가로 최소 {min_count:,}{count_unit} 이상 확장
+- 초안이 {min_count:,}-{max_count:,}{count_unit}: 길이 절대 유지 (이상적 범위 - 압축 금지!)
+- 초안이 {int(max_count*1.3):,}{count_unit} 이상: 중복만 제거하여 {max_count:,}{count_unit} 근처로 조정
+
+⚠️  경고: 이상적 범위({min_count:,}-{max_count:,}{count_unit})에 있으면 절대 줄이지 마세요!"""
         else:
-            length_req = f"""📏 Length Requirements (Target: {min_count:,}-{max_count:,} words):
-- If draft is under {int(min_count*0.7):,} words: EXPAND with examples, explanations, context to reach {min_count:,}-{max_count:,} words
-- If draft is {min_count:,}-{max_count:,} words: MAINTAIN the same length (ideal range)
-- If draft is {int(max_count*1.2):,}-{int(max_count*1.5):,} words: COMPRESS to {int(max_count*0.9):,}-{int(max_count*1.1):,} words by removing redundancy
-- If draft is over {int(max_count*1.5):,} words: COMPRESS aggressively to {int(max_count*0.9):,}-{int(max_count*1.1):,} words"""
+            length_req = f"""📏 Length Requirements (CRITICAL - Must Follow):
+🎯 Target Range: {min_count:,}-{max_count:,} words
+
+**Absolute Rules**:
+- If draft is under {int(min_count*0.8):,} words: EXPAND with examples/explanations to reach at least {min_count:,} words
+- If draft is {min_count:,}-{max_count:,} words: MAINTAIN exact length (ideal range - DO NOT compress!)
+- If draft is over {int(max_count*1.3):,} words: Remove only redundancy to reach near {max_count:,} words
+
+⚠️  Warning: If draft is in ideal range ({min_count:,}-{max_count:,} words), DO NOT shorten it!"""
 
         prompts = {
             "en": f"""You are an expert editor. Transform this into Medium-style content with authentic human touch:

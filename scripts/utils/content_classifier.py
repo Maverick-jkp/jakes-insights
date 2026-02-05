@@ -112,6 +112,10 @@ class ContentClassifier:
         topic_lower = topic.lower()
         keywords_str = ' '.join(keywords).lower()
 
+        # Tutorial classification only for tech/education categories
+        # Business/finance/lifestyle topics should not be tutorials
+        allow_tutorial = category in ['tech', 'education']
+
         # Check for Tutorial indicators (15%)
         # Must have strong tutorial signal (not just "shows" or "trends")
         tutorial_score = 0
@@ -142,14 +146,14 @@ class ContentClassifier:
                     news_score += 1
 
         # Decision logic with scores
-        if tutorial_score >= 3:
+        if allow_tutorial and tutorial_score >= 3:
             return 'tutorial'
 
         if news_score >= 3:
             return 'news'
 
         # If has some tutorial/news signal but not strong enough, check context
-        if tutorial_score >= 1 and 'complete' in topic_lower:
+        if allow_tutorial and tutorial_score >= 1 and 'complete' in topic_lower:
             return 'tutorial'
 
         if news_score >= 1 and any(year in topic_lower for year in ['2024', '2025', '2026', 'latest', 'new']):

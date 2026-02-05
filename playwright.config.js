@@ -28,7 +28,7 @@ module.exports = defineConfig({
   ],
 
   webServer: {
-    command: '/opt/homebrew/bin/hugo server -D --bind 0.0.0.0',
+    command: 'hugo server -D --bind 0.0.0.0',
     url: 'http://localhost:1313',
     reuseExistingServer: !process.env.CI,
     timeout: 120 * 1000,

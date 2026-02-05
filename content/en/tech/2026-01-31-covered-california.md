@@ -9,7 +9,7 @@ description: "Discover how Covered California makes health insurance affordable 
 image: "/images/20260131-covered-california.jpg"
 ---
 
-![covered california](/images/20260131-covered-california.jpg)
+![Featured article: Covered California Enrollment Issues & Hidden Costs](/images/20260131-covered-california.jpg)
 
 You've been there, right? It's 11 PM, you're staring at a government website that keeps timing out, and you're trying to figure out health insurance with less than 48 hours before the deadline. Welcome to the covered california enrollment crunch.
 

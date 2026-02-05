@@ -9,7 +9,7 @@ description: "Discover proven strategies to learn programming from scratch. Get 
 image: "/images/20260203-how-to-learn-programming.jpg"
 ---
 
-![how to learn programming](/images/20260203-how-to-learn-programming.jpg)
+![Featured article: How to Learn Programming: A Beginner's Roadmap for 2026](/images/20260203-how-to-learn-programming.jpg)
 
 You've decided to learn programming, but staring at a blank code editor feels like trying to read hieroglyphics. According to recent developer surveys, 73% of aspiring programmers quit within their first three months because they lack a clear roadmap and get overwhelmed by conflicting advice online.
 

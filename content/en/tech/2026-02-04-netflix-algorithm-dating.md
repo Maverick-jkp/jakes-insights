@@ -9,7 +9,7 @@ description: "Discover how Netflix's recommendation algorithm mirrors modern dat
 image: "/images/20260204-netflix-algorithm-dating.jpg"
 ---
 
-![netflix algorithm dating](/images/20260204-netflix-algorithm-dating.jpg)
+![Featured article: Netflix Algorithm Dating: Privacy Issues and Data Integration](/images/20260204-netflix-algorithm-dating.jpg)
 
 You've probably wondered if your Netflix binge-watching habits say more about you than you'd care to admit. Well, it turns out they might — and dating apps are paying attention.
 

@@ -9,7 +9,7 @@ description: "Discover how crypto ATMs work, where to find them, fees involved, 
 image: "/images/20260201-crypto-atm.jpg"
 ---
 
-![crypto atm](/images/20260201-crypto-atm.jpg)
+![Business analysis: Why Your Crypto ATM Isn't Making Money: Real Challenges](/images/20260201-crypto-atm.jpg)
 
 You're staring at that crypto ATM in the corner of your store, watching another day pass with maybe two transactions. Sound familiar? You're not alone in wondering if you made a massive mistake.
 

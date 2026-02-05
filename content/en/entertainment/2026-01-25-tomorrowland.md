@@ -8,7 +8,7 @@ description: "Discover the magic of Tomorrowland, the world's most spectacular e
 image: "/images/20260125-tomorrowland.jpg"
 ---
 
-![tomorrowland](/images/20260125-tomorrowland.jpg)
+![Entertainment spotlight: Tomorrowland 2026: High Costs and Festival Industry Impact](/images/20260125-tomorrowland.jpg)
 
 You're planning your summer festival season, but every electronic music event feels like a copy-paste experience. The same generic stages, predictable lineups, and cookie-cutter production that leaves you wondering if you wasted hundreds of dollars on another forgettable weekend. 
 

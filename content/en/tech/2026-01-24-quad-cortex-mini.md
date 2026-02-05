@@ -8,7 +8,7 @@ description: "Discover the Quad Cortex Mini's revolutionary compact design, prof
 image: "/images/20260124-quad-cortex-mini.jpg"
 ---
 
-![quad cortex mini](/images/20260124-quad-cortex-mini.jpg)
+![Featured article: Quad Cortex Mini Review: Is Neural DSP's $800 Alternative Worth It?](/images/20260124-quad-cortex-mini.jpg)
 
 You've been eyeing that Neural DSP Quad Cortex for months, but every time you check your bank account, reality hits hard. At $1,699, it's a serious investment that makes most guitarists pause and wonder if they really need to eat this month. Here's the thing: you're not alone in wanting professional amp modeling without selling a kidney.
 

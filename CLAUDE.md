@@ -67,6 +67,21 @@ grep "VARIABLE_NAME" .env
 
 ## Quick Commands
 
+### Claude Plugins (Quick Access)
+```bash
+# List installed plugins
+./scripts/manage_plugins.sh list
+
+# Show plugin paths
+./scripts/manage_plugins.sh path
+
+# Open in Finder
+./scripts/manage_plugins.sh open
+
+# Or use project symlink
+ls -la .claude/plugins-link/system-plugins/
+```
+
 ### Hugo (CRITICAL: Use full path)
 ```bash
 /opt/homebrew/bin/hugo server -D

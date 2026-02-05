@@ -11,7 +11,7 @@ ab_test_id: "title_style"
 ab_variant: "B"
 ---
 
-![singles inferno](/images/20260204-singles-inferno.jpg)
+![Entertainment spotlight: Singles Inferno: What Tech Pros Can Learn From Netflix Show:](/images/20260204-singles-inferno.jpg)
 
 You've been scrolling through Netflix for the third time this week, haven't you? Looking for something that doesn't feel like the same recycled dating drama you've seen a hundred times before. Here's where Singles Inferno comes in—and why tech professionals, data analysts, and anyone building digital products should be paying attention.
 

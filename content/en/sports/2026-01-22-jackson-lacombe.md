@@ -8,7 +8,7 @@ description: "Discover Jackson LaCombe's remarkable journey from college hockey 
 image: "/images/20260122-jackson-lacombe.jpg"
 ---
 
-![jackson lacombe](/images/20260122-jackson-lacombe.jpg)
+![Featured article: Jackson Lacombe: Rising NHL Star's Journey to Success](/images/20260122-jackson-lacombe.jpg)
 
 You've been following hockey for years, watching promising prospects develop in college only to disappoint when they hit the big leagues. It's frustrating, right? You see a defenseman dominate the NCAA, then struggle to make any real impact in professional hockey. Here's what the numbers tell us: only 35% of college hockey players successfully transition to become regular NHL contributors within their first three seasons.
 

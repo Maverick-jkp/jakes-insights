@@ -8,7 +8,7 @@ description: "Discover Sydney Sweeney's rise from small-town actress to Hollywoo
 image: "/images/20260122-sydney-sweeney.jpg"
 ---
 
-![sydney sweeney](/images/20260122-sydney-sweeney.jpg)
+![Entertainment spotlight: Sydney Sweeney: From Euphoria Star to Hollywood's Rising Ico](/images/20260122-sydney-sweeney.jpg)
 
 You've probably seen Sydney Sweeney dominating your social feeds lately, but here's what's catching fans off guard: despite her massive Hollywood success, many are just discovering some of her most provocative early work. While everyone knows her from Euphoria and The White Lotus, a recent spotlight on her 2021 erotic thriller "The Voyeurs" has left viewers stunned by just how far the actress was willing to push boundaries before becoming a household name.
 

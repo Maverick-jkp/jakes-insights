@@ -11,7 +11,7 @@ ab_test_id: "title_style"
 ab_variant: "A"
 ---
 
-![reality tv manipulation](/images/20260204-reality-tv-manipulation.jpg)
+![Featured article: How Reality TV Manipulation Uses AI to Control Viewers](/images/20260204-reality-tv-manipulation.jpg)
 
 You've been there, right? Settling in for your favorite reality show, getting invested in the drama, rooting for contestants—only to discover later that everything you watched was carefully orchestrated by algorithms that knew exactly which buttons to push.
 

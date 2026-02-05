@@ -8,7 +8,7 @@ description: "Discover how Yahoo Finance can transform your investment strategy 
 image: "/images/20260122-yahoo-finance.jpg"
 ---
 
-![yahoo finance](/images/20260122-yahoo-finance.jpg)
+![Business analysis: Yahoo Finance: Your Free Gateway to Market Success](/images/20260122-yahoo-finance.jpg)
 
 You've probably noticed something odd when checking Yahoo Finance lately. Bond yields are moving in ways that seem disconnected from everything else happening in the markets. One day Treasury rates spike, the next they plummet, and your portfolio feels the whiplash. If you're like most investors, you're wondering why the bond market suddenly seems to be calling the shots again.
 

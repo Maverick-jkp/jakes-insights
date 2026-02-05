@@ -9,7 +9,7 @@ description: "Find the right personal injury attorney to protect your rights and
 image: "/images/20260129-personal-injury-attorney.jpg"
 ---
 
-![personal injury attorney](/images/20260129-personal-injury-attorney.jpg)
+![Business analysis: Why 73% of Personal Injury Attorney Cases Settle Low](/images/20260129-personal-injury-attorney.jpg)
 
 Getting hurt in an accident feels overwhelming enough without wondering if your personal injury attorney is actually fighting for your best interests. You're dealing with medical bills, lost wages, and insurance companies that seem determined to pay you as little as possible. The brutal truth? 73% of personal injury cases settle for less than they're worth because people choose the wrong legal representation or make critical mistakes during the process.
 

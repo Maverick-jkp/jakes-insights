@@ -9,7 +9,7 @@ description: "Master essential photography tips to capture stunning images like 
 image: "/images/20260203-photography-tips.jpg"
 ---
 
-![photography tips](/images/20260203-photography-tips.jpg)
+![Professional photography guide: essential camera techniques and composition tips](/images/20260203-photography-tips.jpg)
 
 You spent hundreds on that new camera, watched countless YouTube tutorials, but your photos still look like amateur snapshots. Sound familiar? According to a 2025 study by PhotoTech Analytics, 73% of photography enthusiasts quit within their first year because they can't see meaningful improvement despite expensive equipment purchases.
 

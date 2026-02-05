@@ -9,7 +9,7 @@ description: "Discover the inspiring journey of Quinton Aaron, from his breakthr
 image: "/images/20260126-quinton-aaron.jpg"
 ---
 
-![quinton aaron](/images/20260126-quinton-aaron.jpg)
+![Actor profile: Quinton Aaron career highlights and achievements](/images/20260126-quinton-aaron.jpg)
 
 You know that sinking feeling when you hear your favorite actor has been rushed to the hospital? That moment when "breaking news" flashes across your screen and your heart drops just a little. We've all been there, and right now, fans of "The Blind Side" are experiencing exactly that.
 

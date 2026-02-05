@@ -9,7 +9,7 @@ description: "Check your OPM retirement status, federal benefits, and applicatio
 image: "/images/20260125-opm-status.jpg"
 ---
 
-![opm status](/images/20260125-opm-status.jpg)
+![Business analysis: OPM Status: Why Federal Office Closures Create Problems](/images/20260125-opm-status.jpg)
 
 You've been there, right? Checking your phone at 11 PM, hoping for that magical text or email that says you don't have to battle tomorrow's commute through a winter hellscape.
 

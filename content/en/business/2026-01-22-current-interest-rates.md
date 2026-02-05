@@ -8,7 +8,7 @@ description: "Discover today's current interest rates for mortgages, savings, an
 image: "/images/20260122-current-interest-rates.jpg"
 ---
 
-![current interest rates](/images/20260122-current-interest-rates.jpg)
+![Business analysis: Current Interest Rates 2024: What You Need to Know Now](/images/20260122-current-interest-rates.jpg)
 
 You're watching your monthly budget get squeezed harder every month, and the culprit isn't just inflation anymore. You've been there, right? Staring at loan offers that seem designed to drain your bank account, wondering when borrowing money became this expensive.
 

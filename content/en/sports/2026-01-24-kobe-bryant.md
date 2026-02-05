@@ -8,7 +8,7 @@ description: "Discover the legendary legacy of Kobe Bryant - from his iconic bas
 image: "/images/20260124-kobe-bryant.jpg"
 ---
 
-![kobe bryant](/images/20260124-kobe-bryant.jpg)
+![Featured article: Kobe Bryant's Evolving Legacy and Impact on Modern NBA](/images/20260124-kobe-bryant.jpg)
 
 You probably think Kobe Bryant's legacy is set in stone six years after his passing. But here's the thing—his influence on modern basketball keeps evolving, and recent discussions among former players are reshaping how we understand his true impact.
 

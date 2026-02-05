@@ -11,7 +11,7 @@ ab_test_id: "title_style"
 ab_variant: "A"
 ---
 
-![passive income ideas 2026](/images/20260203-passive-income-ideas-2026.jpg)
+![Business analysis: Passive Income Ideas 2026: REITs, Yields and Real Risks](/images/20260203-passive-income-ideas-2026.jpg)
 
 You've been there, right? Scrolling through financial advice at 2 AM, wondering how everyone else seems to have cracked the code on making money while they sleep. The truth is, the promise of earning money while you sleep sounds too good to be true — and often it is. But here's where it gets interesting: recent economic shifts have made passive income more critical than ever.
 

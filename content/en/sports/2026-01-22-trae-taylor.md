@@ -8,7 +8,7 @@ description: "Discover the inspiring journey of Trae Taylor - from his early beg
 image: "/images/20260122-trae-taylor.jpg"
 ---
 
-![trae taylor](/images/20260122-trae-taylor.jpg)
+![Featured article: Trae Taylor: Rising Star's Journey to Success Story](/images/20260122-trae-taylor.jpg)
 
 You know that sinking feeling when your team's "sure thing" recruit completely flames out in college? 
 

@@ -8,7 +8,7 @@ description: "Jackson Lacombeの成長ストーリーと最新動向を詳しく
 image: "/images/20260122-jackson-lacombe.jpg"
 ---
 
-![jackson lacombe](/images/20260122-jackson-lacombe.jpg)
+![Featured article: Jackson Lacombe：注目の若手ディフェンスマンの成長と将来性を徹底解説](/images/20260122-jackson-lacombe.jpg)
 
 アナハイムダックスのディフェンダー、Jackson LaCombeが急遽アメリカ代表チームに抜擢されたニュースを聞いて、「えっ、なぜ彼なの？」と思った方も多いのではないでしょうか。私も最初はそう思いました。でも実は、この選出には明確な理由があるんです。
 

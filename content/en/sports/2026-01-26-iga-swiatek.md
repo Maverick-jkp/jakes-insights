@@ -9,7 +9,7 @@ description: "Discover Iga Swiatek's incredible journey from teenage prodigy to 
 image: "/images/20260126-iga-swiatek.jpg"
 ---
 
-![iga swiatek](/images/20260126-iga-swiatek.jpg)
+![Featured article: Iga Swiatek's Clay Court Dominance Creates Surface Doubts](/images/20260126-iga-swiatek.jpg)
 
 You've watched Iga Swiatek demolish opponents on clay courts for years, yet you still find yourself questioning whether she's truly proven herself as a complete champion. Sound familiar? Despite her multiple Grand Slam titles and extended reign at world No. 1, that nagging doubt persists among tennis fans and critics alike.
 

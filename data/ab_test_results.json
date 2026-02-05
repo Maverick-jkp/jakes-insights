@@ -71,9 +71,45 @@
       "test_name": "title_style",
       "variant": "A",
       "assigned_at": "2026-02-04T15:27:08.273304"
+    },
+    {
+      "post_id": "2026-02-04-cancer-san-diego",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-04T15:47:55.254141"
+    },
+    {
+      "post_id": "2026-02-04-molecular-glue-cancer",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T15:50:03.970071"
+    },
+    {
+      "post_id": "2026-02-04-singles-inferno",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-04T15:52:04.089273"
+    },
+    {
+      "post_id": "2026-02-04-big-pharma-molecular-glue",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-04T16:47:48.851173"
+    },
+    {
+      "post_id": "2026-02-04-reality-tv-manipulation",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T17:32:19.257930"
+    },
+    {
+      "post_id": "2026-02-04-인천시교육청",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-04T18:58:11.277965"
     }
   ],
-  "last_updated": "2026-02-04T15:27:08.273310",
+  "last_updated": "2026-02-04T18:58:11.277973",
   "summary": {
     "total_assignments": 0,
     "by_test": {}

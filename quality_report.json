@@ -1,72 +1,598 @@
 {
   "summary": {
-    "total_files": 2,
-    "passed_files": 2,
-    "failed_files": 0,
-    "total_failures": 0,
-    "total_warnings": 5
+    "total_files": 20,
+    "passed_files": 15,
+    "failed_files": 5,
+    "total_failures": 6,
+    "total_warnings": 61
   },
   "passed_files": [
-    "content/ja/tech/2026-02-04-\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u72ec\u5b66\u65b9\u6cd5.md",
-    "content/ja/sports/2026-02-04-\u30e8\u30ac\u521d\u5fc3\u8005\u30ac\u30a4\u30c9.md"
+    "content/en/tech/2026-02-04-cancer-san-diego.md",
+    "content/en/tech/2026-02-04-molecular-glue-cancer.md",
+    "content/en/entertainment/2026-02-04-singles-inferno.md",
+    "content/en/tech/2026-02-04-kidney-cancer-treatment.md",
+    "content/en/tech/2026-02-04-netflix-algorithm-dating.md",
+    "content/ko/business/2026-02-04-\ud55c\ud654\uc624\uc158.md",
+    "content/ko/business/2026-02-04-\ud55c\ud654\uc624\uc158-\uc2e4\uc801.md",
+    "content/ko/business/2026-02-04-\uc870\uc120\uc5c5-\ud638\ud669.md",
+    "content/ja/tech/2026-02-04-\u77ed\u70ad\u7d20\u7e4a\u7dad3d\u6210\u5f62.md",
+    "content/en/entertainment/2026-02-04-daredevil.md",
+    "content/en/tech/2026-02-04-netflix-reality-dating.md",
+    "content/en/society/2026-02-04-reality-tv-manipulation.md",
+    "content/en/society/2026-02-04-fashion-industry-predators.md",
+    "content/ko/society/2026-02-04-\uc778\ucc9c\uad11\uc5ed\uc2dc\uad50\uc721\uccad.md",
+    "content/ko/tech/2026-02-04-\uc778\ucc9c\uc2dc\uad50\uc721\uccad.md"
   ],
-  "failed_files": [],
+  "failed_files": [
+    "content/en/business/2026-02-04-biotech-investment-trends.md",
+    "content/ja/tech/2026-02-04-\u88fd\u9020\u696d\u30c7\u30b8\u30bf\u30eb\u5316.md",
+    "content/en/business/2026-02-04-big-pharma-molecular-glue.md",
+    "content/ko/business/2026-02-04-\uce90\ub098\ub2e4-\uc7a0\uc218\ud568-\uc218\uc8fc.md",
+    "content/ko/tech/2026-02-04-\uad50\uc0ac-\uc784\uc6a9-\uacbd\uc7c1\ub960.md"
+  ],
   "results": [
     {
-      "file": "content/ja/tech/2026-02-04-\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u72ec\u5b66\u65b9\u6cd5.md",
-      "language": "ja",
+      "file": "content/en/tech/2026-02-04-cancer-san-diego.md",
+      "language": "en",
       "critical_failures": [],
       "warnings": [
-        "AI phrases detected: \u91cd\u8981\u3067\u3059",
-        "Description length not optimal: 104 chars (ideal: 120-160)",
-        "Meta description may not accurately reflect content"
+        "AI phrases detected: revolutionary, cutting-edge, leverage",
+        "Analysis missing comparison element: expected table or pros/cons list"
       ],
       "info": {
         "content_type": "analysis",
-        "char_count": 5567,
-        "word_count": "5567 chars",
+        "word_count": "2251 words",
         "ai_phrases_found": [
-          "\u91cd\u8981\u3067\u3059"
+          "revolutionary",
+          "cutting-edge",
+          "leverage"
         ],
-        "description_length": 104,
+        "description_length": 157,
         "filename_year": 2026,
         "title_years": null,
         "frontmatter_year": 2026,
-        "has_comparison": true,
+        "has_comparison": false,
         "link_count": 10,
-        "avg_sentence_length": 19.5,
-        "has_image": "/images/20260204-\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u72ec\u5b66\u65b9\u6cd5.jpg",
-        "heading_count": 13,
-        "title": "\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u72ec\u5b66\u65b9\u6cd5\u306e\u5909\u5316\uff5cAI\u6642\u4ee3\u306e\u554f\u984c\u89e3\u6c7a\u578b\u5b66\u7fd2\u3068\u30cf\u30a4\u30d6\u30ea\u30c3\u30c9\u30a2\u30d7\u30ed\u30fc\u30c1"
+        "avg_sentence_length": 14.5,
+        "has_image": "/images/20260204-cancer-san-diego.jpg",
+        "heading_count": 8,
+        "title": "5 Things You Didn't Know About San Diego Biotech Breakthrough: Cancer Cells Self-Destruct"
       }
     },
     {
-      "file": "content/ja/sports/2026-02-04-\u30e8\u30ac\u521d\u5fc3\u8005\u30ac\u30a4\u30c9.md",
-      "language": "ja",
+      "file": "content/en/tech/2026-02-04-molecular-glue-cancer.md",
+      "language": "en",
       "critical_failures": [],
       "warnings": [
-        "Description length not optimal: 96 chars (ideal: 120-160)",
-        "Meta description may not accurately reflect content"
+        "AI phrases detected: revolutionary, leverage",
+        "Analysis missing comparison element: expected table or pros/cons list"
       ],
       "info": {
-        "content_type": "tutorial",
-        "char_count": 8144,
-        "word_count": "8144 chars",
-        "ai_phrases_found": [],
-        "description_length": 96,
+        "content_type": "analysis",
+        "word_count": "1534 words",
+        "ai_phrases_found": [
+          "revolutionary",
+          "leverage"
+        ],
+        "description_length": 147,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 10,
+        "avg_sentence_length": 15.4,
+        "has_image": "/images/20260204-molecular-glue-cancer.jpg",
+        "heading_count": 8,
+        "title": "Molecular Glue Cancer Therapy Shows Clinical Promise"
+      }
+    },
+    {
+      "file": "content/en/entertainment/2026-02-04-singles-inferno.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "AI phrases detected: leverage",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1522 words",
+        "ai_phrases_found": [
+          "leverage"
+        ],
+        "description_length": 158,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 11,
+        "avg_sentence_length": 14.0,
+        "has_image": "/images/20260204-singles-inferno.jpg",
+        "heading_count": 7,
+        "title": "Singles Inferno: What Tech Pros Can Learn From Netflix Show: What the Experts Won't Tell You"
+      }
+    },
+    {
+      "file": "content/en/tech/2026-02-04-kidney-cancer-treatment.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "AI phrases detected: cutting-edge",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1627 words",
+        "ai_phrases_found": [
+          "cutting-edge"
+        ],
+        "description_length": 159,
         "filename_year": 2026,
         "title_years": [
           2026
         ],
         "frontmatter_year": 2026,
-        "code_blocks": 14,
-        "tables": 7,
-        "step_headings": 5,
+        "has_comparison": false,
+        "link_count": 10,
+        "avg_sentence_length": 14.4,
+        "has_image": "/images/20260204-kidney-cancer-treatment.jpg",
+        "heading_count": 10,
+        "title": "Kidney Cancer Treatment Advances Coming in 2026: New Options"
+      }
+    },
+    {
+      "file": "content/en/tech/2026-02-04-netflix-algorithm-dating.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "AI phrases detected: game-changer",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1765 words",
+        "ai_phrases_found": [
+          "game-changer"
+        ],
+        "description_length": 157,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 8,
+        "avg_sentence_length": 17.6,
+        "has_image": "/images/20260204-netflix-algorithm-dating.jpg",
+        "heading_count": 9,
+        "title": "Netflix Algorithm Dating: Privacy Issues and Data Integration"
+      }
+    },
+    {
+      "file": "content/en/business/2026-02-04-biotech-investment-trends.md",
+      "language": "en",
+      "critical_failures": [
+        "Date mismatch: Title contains outdated year 2025 (e.g., '2025\u5e74\u6700\u65b0' or 'Latest 2025') but filename is dated 2026. Update title to use 2026."
+      ],
+      "warnings": [
+        "AI phrases detected: revolutionary",
+        "Description length not optimal: 171 chars (ideal: 120-160)"
+      ],
+      "info": {
+        "content_type": "news",
+        "word_count": "1046 words",
+        "ai_phrases_found": [
+          "revolutionary"
+        ],
+        "description_length": 171,
+        "filename_year": 2026,
+        "title_years": [
+          2025
+        ],
+        "frontmatter_year": 2026,
+        "date_references": 6,
+        "link_count": 8,
+        "avg_sentence_length": 14.6,
+        "has_image": "/images/20260204-biotech-investment-trends.jpg",
+        "heading_count": 5,
+        "title": "Biotech Investment Trends Show 23% Funding Drop in Q1 2025"
+      }
+    },
+    {
+      "file": "content/ko/business/2026-02-04-\ud55c\ud654\uc624\uc158.md",
+      "language": "ko",
+      "critical_failures": [],
+      "warnings": [
+        "Content too long for analysis: 3047 chars (target: 1500-2000)",
+        "AI phrases detected: \ubb3c\ub860",
+        "Description length not optimal: 92 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 3047,
+        "word_count": "3047 chars",
+        "ai_phrases_found": [
+          "\ubb3c\ub860"
+        ],
+        "description_length": 92,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
         "link_count": 11,
-        "avg_sentence_length": 11.5,
-        "has_image": "/images/20260204-\u30e8\u30ac\u521d\u5fc3\u8005\u30ac\u30a4\u30c9.jpg",
-        "heading_count": 19,
-        "title": "\u30102026\u5e74\u7248\u3011\u30d7\u30ed\u30b0\u30e9\u30de\u30fc\u5411\u3051\u30e8\u30ac\u521d\u5fc3\u8005\u30ac\u30a4\u30c9\uff01\u80a9\u3053\u308a\u8170\u75db\u6539\u5584\u3068\u96c6\u4e2d\u529b\u5411\u4e0a\u306e\u5b9f\u8df5\u6cd5"
+        "avg_sentence_length": 9.1,
+        "has_image": "/images/20260204-\ud55c\ud654\uc624\uc158.jpg",
+        "heading_count": 9,
+        "title": "\ud55c\ud654\uc624\uc158 \uc601\uc5c5\uc774\uc775 4\ubc30 \uae09\uc99d, \uc870\uc120\uc5d0\uc11c \ud574\uc591\ubc29\uc0b0\uc73c\ub85c \ubcc0\uc2e0\ud55c \ube44\uc988\ub2c8\uc2a4 \uc804\ub7b5"
+      }
+    },
+    {
+      "file": "content/ko/business/2026-02-04-\ud55c\ud654\uc624\uc158-\uc2e4\uc801.md",
+      "language": "ko",
+      "critical_failures": [],
+      "warnings": [
+        "Content too long for analysis: 2862 chars (target: 1500-2000)",
+        "Description length not optimal: 93 chars (ideal: 120-160)",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 2862,
+        "word_count": "2862 chars",
+        "ai_phrases_found": [],
+        "description_length": 93,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 11,
+        "avg_sentence_length": 9.9,
+        "has_image": "/images/20260204-\ud55c\ud654\uc624\uc158-\uc2e4\uc801.jpg",
+        "heading_count": 7,
+        "title": "\ud55c\ud654\uc624\uc158 \uc2e4\uc801 366% \uae09\uc99d \ubc30\uacbd\uacfc \uce90\ub098\ub2e4 \uc7a0\uc218\ud568 \uc218\uc8fc\uc804 \uacbd\uc7c1 \ud604\ud669 \ubd84\uc11d"
+      }
+    },
+    {
+      "file": "content/ko/business/2026-02-04-\uc870\uc120\uc5c5-\ud638\ud669.md",
+      "language": "ko",
+      "critical_failures": [],
+      "warnings": [
+        "Content too long for analysis: 3326 chars (target: 1500-2000)",
+        "AI phrases detected: \ubb3c\ub860",
+        "Description length not optimal: 98 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 3326,
+        "word_count": "3326 chars",
+        "ai_phrases_found": [
+          "\ubb3c\ub860"
+        ],
+        "description_length": 98,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": true,
+        "link_count": 8,
+        "avg_sentence_length": 11.0,
+        "has_image": "/images/20260204-\uc870\uc120\uc5c5-\ud638\ud669.jpg",
+        "heading_count": 16,
+        "title": "\ud55c\uad6d \uc870\uc120\uc5c5 \ud638\ud669 \uc7ac\uc810\ud654, \uce5c\ud658\uacbd\u00b7\uc2a4\ub9c8\ud2b8\uc2ed \uae30\uc220\ub85c \uace0\ubd80\uac00\uac00\uce58 \uc2dc\uc7a5 \uc120\uc810"
+      }
+    },
+    {
+      "file": "content/ja/tech/2026-02-04-\u77ed\u70ad\u7d20\u7e4a\u7dad3d\u6210\u5f62.md",
+      "language": "ja",
+      "critical_failures": [],
+      "warnings": [
+        "Content below target for analysis: 3268 chars (target: 4500-6000)",
+        "AI phrases detected: \u9769\u65b0\u7684, \u6ce8\u76ee\u3059\u3079\u304d",
+        "Description length not optimal: 92 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 3268,
+        "word_count": "3268 chars",
+        "ai_phrases_found": [
+          "\u9769\u65b0\u7684",
+          "\u6ce8\u76ee\u3059\u3079\u304d"
+        ],
+        "description_length": 92,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": true,
+        "link_count": 8,
+        "avg_sentence_length": 24.4,
+        "has_image": "/images/20260204-\u77ed\u70ad\u7d20\u7e4a\u7dad3d\u6210\u5f62.jpg",
+        "heading_count": 16,
+        "title": "\u77ed\u70ad\u7d20\u7e4a\u7dad3D\u6210\u5f62\u304c\u88fd\u9020\u696d\u3067\u6ce8\u76ee\u3055\u308c\u308b\u7406\u7531\uff5c\u8efd\u91cf\u5316\u3068\u5f37\u5ea6\u3092\u4e21\u7acb\u3059\u308b\u9769\u65b0\u6280\u8853"
+      }
+    },
+    {
+      "file": "content/ja/tech/2026-02-04-\u88fd\u9020\u696d\u30c7\u30b8\u30bf\u30eb\u5316.md",
+      "language": "ja",
+      "critical_failures": [
+        "Date mismatch: Title contains outdated year 2024 (e.g., '2024\u5e74\u6700\u65b0' or 'Latest 2024') but filename is dated 2026. Update title to use 2026."
+      ],
+      "warnings": [
+        "Description length not optimal: 106 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "News article missing specific date references: should include when events occurred"
+      ],
+      "info": {
+        "content_type": "news",
+        "char_count": 4035,
+        "word_count": "4035 chars",
+        "ai_phrases_found": [],
+        "description_length": 106,
+        "filename_year": 2026,
+        "title_years": [
+          2024
+        ],
+        "frontmatter_year": 2026,
+        "date_references": 0,
+        "link_count": 8,
+        "avg_sentence_length": 20.5,
+        "has_image": "/images/20260204-\u88fd\u9020\u696d\u30c7\u30b8\u30bf\u30eb\u5316.jpg",
+        "heading_count": 23,
+        "title": "\u88fd\u9020\u696d\u30c7\u30b8\u30bf\u30eb\u5316\u304c2024\u5e74\u304b\u3089\u5909\u5316\u3057\u305f\u7406\u7531\u3068AI\u7d71\u5408\u306b\u3088\u308b\u65b0\u3057\u3044\u6295\u8cc7\u56de\u53ce\u306e\u73fe\u5b9f"
+      }
+    },
+    {
+      "file": "content/en/entertainment/2026-02-04-daredevil.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "Description length not optimal: 165 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1532 words",
+        "ai_phrases_found": [],
+        "description_length": 165,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 9,
+        "avg_sentence_length": 14.2,
+        "has_image": "/images/20260204-daredevil.jpg",
+        "heading_count": 11,
+        "title": "Why Daredevil Tech Systems Fail When Real Situations Hit"
+      }
+    },
+    {
+      "file": "content/en/tech/2026-02-04-netflix-reality-dating.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "AI phrases detected: game-changer, leverage",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1713 words",
+        "ai_phrases_found": [
+          "game-changer",
+          "leverage"
+        ],
+        "description_length": 154,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 8,
+        "avg_sentence_length": 16.7,
+        "has_image": "/images/20260204-netflix-reality-dating.jpg",
+        "heading_count": 8,
+        "title": "Netflix Reality Dating Shows: How They Became a Global Strategy"
+      }
+    },
+    {
+      "file": "content/en/business/2026-02-04-big-pharma-molecular-glue.md",
+      "language": "en",
+      "critical_failures": [
+        "Tutorial missing code examples: found 0, expected 2+ code blocks",
+        "Tutorial missing comparison table: expected at least 1 markdown table"
+      ],
+      "warnings": [
+        "Content below target for tutorial: 1814 words (target: 2500-3500)",
+        "AI phrases detected: revolutionary",
+        "Description length not optimal: 163 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "Tutorial has few step headings: found 0, recommended 3-5"
+      ],
+      "info": {
+        "content_type": "tutorial",
+        "word_count": "1814 words",
+        "ai_phrases_found": [
+          "revolutionary"
+        ],
+        "description_length": 163,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "code_blocks": 0,
+        "tables": 0,
+        "step_headings": 0,
+        "link_count": 8,
+        "avg_sentence_length": 15.4,
+        "has_image": "/images/20260204-big-pharma-molecular-glue.jpg",
+        "heading_count": 9,
+        "title": "Big Pharma Molecular Glue Programs Face Clinical Challenges: The Complete Guide"
+      }
+    },
+    {
+      "file": "content/en/society/2026-02-04-reality-tv-manipulation.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1793 words",
+        "ai_phrases_found": [],
+        "description_length": 157,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 8,
+        "avg_sentence_length": 16.9,
+        "has_image": "/images/20260204-reality-tv-manipulation.jpg",
+        "heading_count": 13,
+        "title": "How Reality TV Manipulation Uses AI to Control Viewers"
+      }
+    },
+    {
+      "file": "content/en/society/2026-02-04-fashion-industry-predators.md",
+      "language": "en",
+      "critical_failures": [],
+      "warnings": [
+        "AI phrases detected: game-changer",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "word_count": "1793 words",
+        "ai_phrases_found": [
+          "game-changer"
+        ],
+        "description_length": 148,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 8,
+        "avg_sentence_length": 17.5,
+        "has_image": "/images/20260204-fashion-industry-predators.jpg",
+        "heading_count": 9,
+        "title": "Fashion Industry Predators Face New Accountability Systems"
+      }
+    },
+    {
+      "file": "content/ko/society/2026-02-04-\uc778\ucc9c\uad11\uc5ed\uc2dc\uad50\uc721\uccad.md",
+      "language": "ko",
+      "critical_failures": [],
+      "warnings": [
+        "Content too long for analysis: 3231 chars (target: 1500-2000)",
+        "Description length not optimal: 97 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 3231,
+        "word_count": "3231 chars",
+        "ai_phrases_found": [],
+        "description_length": 97,
+        "filename_year": 2026,
+        "title_years": [
+          2026
+        ],
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 10,
+        "avg_sentence_length": 10.5,
+        "has_image": "/images/20260204-\uc778\ucc9c\uad11\uc5ed\uc2dc\uad50\uc721\uccad.jpg",
+        "heading_count": 9,
+        "title": "\uc778\ucc9c\uad11\uc5ed\uc2dc\uad50\uc721\uccad 2026\ub144 \uad50\uc721\ud601\uc2e0 \ud604\ud669: \uad50\uc0ac\uc784\uc6a9 \ud655\ub300\uc640 \uc5c5\ubb34\uac1c\uc120 \ucd94\uc9c4"
+      }
+    },
+    {
+      "file": "content/ko/tech/2026-02-04-\uc778\ucc9c\uc2dc\uad50\uc721\uccad.md",
+      "language": "ko",
+      "critical_failures": [],
+      "warnings": [
+        "Content too long for analysis: 2933 chars (target: 1500-2000)",
+        "AI phrases detected: \ubb3c\ub860",
+        "Description length not optimal: 97 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 2933,
+        "word_count": "2933 chars",
+        "ai_phrases_found": [
+          "\ubb3c\ub860"
+        ],
+        "description_length": 97,
+        "filename_year": 2026,
+        "title_years": [
+          2026
+        ],
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 7,
+        "avg_sentence_length": 10.8,
+        "has_image": "/images/placeholder-tech.jpg",
+        "heading_count": 9,
+        "title": "\uc778\ucc9c\uc2dc\uad50\uc721\uccad 2026 \uad50\uc721\ud601\uc2e0 \uacc4\ud68d, \uc800\uacbd\ub825 \uad50\uc0ac \uc9c0\uc6d0\uacfc \uc2e0\uc124 \ud559\uad50 \ucd94\uc9c4 \ud604\ud669"
+      }
+    },
+    {
+      "file": "content/ko/business/2026-02-04-\uce90\ub098\ub2e4-\uc7a0\uc218\ud568-\uc218\uc8fc.md",
+      "language": "ko",
+      "critical_failures": [
+        "Title-content mismatch: Only 17% of title character sequences found in body (expected >20%)"
+      ],
+      "warnings": [
+        "Description length not optimal: 93 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content",
+        "Analysis missing comparison element: expected table or pros/cons list"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 2341,
+        "word_count": "2341 chars",
+        "ai_phrases_found": [],
+        "description_length": 93,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": false,
+        "link_count": 8,
+        "avg_sentence_length": 10.8,
+        "has_image": "/images/20260204-\uce90\ub098\ub2e4-\uc7a0\uc218\ud568-\uc218\uc8fc.jpg",
+        "heading_count": 7,
+        "title": "\uce90\ub098\ub2e4 \uc7a0\uc218\ud568 \uc218\uc8fc 80\uc870\uc6d0 \uaddc\ubaa8, \ud55c\uad6d\u00b7\ud504\ub791\uc2a4\u00b7\ub3c5\uc77c\u00b7\uc2a4\uc6e8\ub374 \uacbd\uc7c1 \ubd84\uc11d"
+      }
+    },
+    {
+      "file": "content/ko/tech/2026-02-04-\uad50\uc0ac-\uc784\uc6a9-\uacbd\uc7c1\ub960.md",
+      "language": "ko",
+      "critical_failures": [
+        "Title-content mismatch: Only 9% of title character sequences found in body (expected >20%)"
+      ],
+      "warnings": [
+        "Content too long for analysis: 2776 chars (target: 1500-2000)",
+        "Description length not optimal: 92 chars (ideal: 120-160)",
+        "Meta description may not accurately reflect content"
+      ],
+      "info": {
+        "content_type": "analysis",
+        "char_count": 2776,
+        "word_count": "2776 chars",
+        "ai_phrases_found": [],
+        "description_length": 92,
+        "filename_year": 2026,
+        "title_years": null,
+        "frontmatter_year": 2026,
+        "has_comparison": true,
+        "link_count": 8,
+        "avg_sentence_length": 9.1,
+        "has_image": "/images/20260204-\uad50\uc0ac-\uc784\uc6a9-\uacbd\uc7c1\ub960.jpg",
+        "heading_count": 8,
+        "title": "\uad50\uc0ac \uc784\uc6a9 \uacbd\uc7c1\ub960 \uc9c0\uc5ed\ubcc4 \uaca9\ucc28 \uc2ec\ud654, \uc218\ub3c4\uad8c 3:1 vs \uc9c0\ubc29 \uc815\uc6d0\ubbf8\ub2ec"
       }
     }
   ]

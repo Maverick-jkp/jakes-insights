@@ -108,7 +108,7 @@ Every topic must clearly answer:
 1. First paragraph: Hook with reader's pain point (1-2 sentences)
 2. Structure: Problem → 3 Core Solutions → Action Steps → Conclusion
 3. Tone: Medium/Substack style - conversational, personal, direct
-4. SEO: Keyword "{keyword}" naturally 4-6 times
+4. SEO: Keyword "{{keyword}}" naturally 4-6 times
 5. Sections: 3-4 ## headings (scannable)
 6. End: Clear CTA - question or next step
 
@@ -186,7 +186,7 @@ D. Timing: "Why [topic] is being discussed again lately"
 1. 첫 문단: 독자의 pain point 공감 (1-2문장으로 강렬하게)
 2. 구조: 문제 제기 → 핵심 해결책 3가지 → 실전 팁 → 결론
 3. 톤: 토스(Toss) 스타일 - 전문적이지만 편안한 친구 같은 느낌
-4. SEO: 키워드 "{keyword}"를 자연스럽게 4-6회 포함
+4. SEO: 키워드 "{{keyword}}"를 자연스럽게 4-6회 포함
 5. 섹션: 3-4개 ## 헤딩 (각 섹션은 읽기 쉽게)
 6. 끝: 명확한 CTA - 질문이나 다음 단계 제안
 
@@ -263,7 +263,7 @@ D. 시점: "왜 요즘 ~ 이야기가 다시 나오는 걸까"
 1. 最初の段落: 読者の悩みに共感（1-2文で強烈に）
 2. 構造: 問題提起 → 核心解決策3つ → 実践ヒント → 結論
 3. トーン: SmartNews/NewsPicks/日経COMEMO風 - 情報密度高く、読みやすく、直接的
-4. SEO: キーワード"{keyword}"を自然に4-6回含める
+4. SEO: キーワード"{{keyword}}"を自然に4-6回含める
 5. セクション: 3-4個の##見出し（各セクションは読みやすく）
 6. 終わり: 明確なCTA - 質問または次のステップ
 

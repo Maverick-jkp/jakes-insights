@@ -4970,7 +4970,7 @@
       "category": "entertainment",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-04T15:43:43.029234",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4996,7 +4996,8 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": null
+      "reserved_at": "2026-02-06T05:09:38.823922+00:00",
+      "completed_at": "2026-02-06T05:12:09.610463+00:00"
     },
     {
       "id": "422-ko-tech-인천시교육청",
@@ -5594,6 +5595,393 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-05T04:19:52.540055+00:00",
       "completed_at": "2026-02-05T04:22:00.087794+00:00"
+    },
+    {
+      "id": "449-en-entertainment-halle-berry",
+      "keyword": "halle berry",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760121",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "할리 베리의 충격적인 발언과 그 배경을 모르면 할리우드의 진실을 영원히 놓친다",
+      "angle": "오스카 수상 후에도 변하지 않은 할리우드의 인종차별 현실",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Halle Berry - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Halle_Berry",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "‘I was still black the next morning’: Halle Berry says Oscar win didn’t change her career | Film | T",
+          "url": "https://www.theguardian.com/film/2026/feb/03/i-was-still-black-the-next-morning-halle-berry-says-oscar-win-didnt-change-her-career",
+          "source": "www.theguardian.com"
+        },
+        {
+          "title": "Halle Berry Isn’t Backing Down",
+          "url": "https://www.thecut.com/article/halle-berry-crime-101-film-menopause-gavin-newsom-interview-profile.html",
+          "source": "www.thecut.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "450-en-entertainment-milo-ventimiglia",
+      "keyword": "milo ventimiglia",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760158",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "밀로 벤티밀리아의 차기작 정보를 놓치면 방영 시점을 알 수 없다",
+      "angle": "This Is Us 이후 밀로 벤티밀리아의 새로운 도전",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Milo Ventimiglia - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Milo_Ventimiglia",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Casting News: Milo Ventimiglia's HBO Max Cop Drama, Grey's Anatomy's 'Charming' New Doctor, And More",
+          "url": "https://www.tvline.com/2089493/milo-ventimiglia-hbo-max-cop-drama-american-blue/",
+          "source": "www.tvline.com"
+        },
+        {
+          "title": "Milo Ventimiglia to Star in HBO Max Cop Drama Pilot 'American Blue'",
+          "url": "https://www.thewrap.com/industry-news/business/milo-ventimiglia-hbo-max-cop-drama-pilot-american-blue/",
+          "source": "www.thewrap.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "451-en-society-van-hunt",
+      "keyword": "van hunt",
+      "category": "society",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760171",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "할리 베리의 연애관과 자기성찰 과정을 모르면 진정한 관계의 의미를 놓친다",
+      "angle": "할리 베리의 4년 금욕 기간과 그 이후의 새로운 사랑",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Halle Berry 'Grateful' for Boyfriend Van Hunt, But in No Rush to Wed: 'Very Happy with Life Right No",
+          "url": "https://people.com/halle-berry-grateful-for-boyfriend-van-hunt-but-in-no-rush-to-wed-exclusive-source-11897356",
+          "source": "people.com"
+        },
+        {
+          "title": "Halle Berry Explains Why She Won't Marry Van Hunt Just Yet",
+          "url": "https://www.elle.com/culture/celebrities/a36440649/who-is-van-hunt-halle-berry-musician-boyfriend/",
+          "source": "www.elle.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "452-en-society-weather-snow-storm",
+      "keyword": "weather snow storm",
+      "category": "society",
+      "lang": "en",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-06T14:14:11.760183",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "폭설 정보를 실시간으로 확인하지 않으면 외출과 일상에 큰 차질이 생긴다",
+      "angle": "폭설 예보와 즉시 필요한 안전 대비책",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Garden City, NY Winter Weather Forecast | AccuWeather",
+          "url": "https://www.accuweather.com/en/us/garden-city/11530/winter-weather-forecast/2102702",
+          "source": "www.accuweather.com"
+        },
+        {
+          "title": "News 12 | Long Island | Decent Thursday on Long Island ahead of some snow and the return of bitter c",
+          "url": "https://longisland.news12.com/your-daily-long-island-weather-forecast",
+          "source": "longisland.news12.com"
+        },
+        {
+          "title": "Probabilistic Winter Weather Forecasts",
+          "url": "https://www.weather.gov/okx/winter",
+          "source": "www.weather.gov"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-06T05:14:17.625484+00:00",
+      "completed_at": "2026-02-06T05:16:46.059017+00:00"
+    },
+    {
+      "id": "453-ko-business-한화솔루션",
+      "keyword": "한화솔루션",
+      "category": "business",
+      "lang": "ko",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-06T14:14:11.760195",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "한화솔루션의 실적 악화 소식을 놓치면 투자 손실을 키울 수 있다",
+      "angle": "한화솔루션의 예상치 못한 적자와 향후 전망",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "한화솔루션 4분기 적자전환 먹구름…올해엔 볕 들까",
+          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4396854",
+          "source": "news.einfomax.co.kr"
+        },
+        {
+          "title": "한화솔루션, 올해 흑자 전환 전망…목표가 5만원-유진 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026020680816",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "한화솔루션, 지난해 영업손실 3533억···전년비 17.67% 증가 - 스마트비즈",
+          "url": "https://www.smartbizn.com/news/articleView.html?idxno=135091",
+          "source": "www.smartbizn.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-06T05:14:17.625484+00:00",
+      "completed_at": "2026-02-06T05:20:15.374184+00:00"
+    },
+    {
+      "id": "454-ko-society-파리바게트",
+      "keyword": "파리바게트",
+      "category": "society",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760206",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "파리바게트 할인 정보를 놓치면 절약 기회를 잃는다",
+      "angle": "파리바게트 특별 할인과 새 메뉴 출시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "파리바게트, '두쫀팝 케이크' 출시…한정 수량 사전예약 - 전자신문",
+          "url": "https://www.etnews.com/20260206000055",
+          "source": "www.etnews.com"
+        },
+        {
+          "title": "Paris Baguette - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Paris_Baguette",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "'파리바게뜨 50% 할인' 4일 단 하루...빵순이들 구매방법은?",
+          "url": "https://www.gukjenews.com/news/articleView.html?idxno=3497188",
+          "source": "www.gukjenews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "455-ko-business-남부내륙철도",
+      "keyword": "남부내륙철도",
+      "category": "business",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760217",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "남부내륙철도 영향을 모르면 지역 개발과 투자 기회를 놓친다",
+      "angle": "남부내륙철도가 가져올 지역 경제와 부동산 시장 변화",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "거제~김천 연결하는 남부내륙철도 착공…개통시 서울~거제 2시간41분",
+          "url": "https://www.hani.co.kr/arti/area/yeongnam/1243677.html",
+          "source": "www.hani.co.kr"
+        },
+        {
+          "title": "'경남-수도권 2시간대' 남부내륙철도 착공식 열려…2031년 개통 목표 :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260206_0003505181",
+          "source": "www.newsis.com"
+        },
+        {
+          "title": "'서울~거제 2시간대' 남부내륙철도, 6일 드디어 착공 - 오마이뉴스",
+          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003204774",
+          "source": "www.ohmynews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "456-ko-sports-la-레이커스-대-필라델피아",
+      "keyword": "la 레이커스 대 필라델피아",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760231",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "레이커스 경기 결과를 놓치면 NBA 시즌 흐름을 놓친다",
+      "angle": "레이커스와 76ers의 중요한 경기 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Los Angeles Lakers - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Los_Angeles_Lakers",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "최고령 르브론 제임스의 올스타전 예고편 🔥| LA 레이커스 vs 브루클린 | NBA 하이라이트 - YouTube",
+          "url": "https://www.youtube.com/watch?v=d9cIqvXIa_k",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "돈치치, 레이커스서 ‘첫 월간 MVP’ 우뚝…1월 15경기 평균 34득점 질주, 동부에선 브라운 첫 영광 - 스포츠경향",
+          "url": "https://sports.khan.co.kr/article/202602040948003",
+          "source": "sports.khan.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "457-ja-business-トヨタ-株価",
+      "keyword": "トヨタ 株価",
+      "category": "business",
+      "lang": "ja",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-06T14:14:11.760243",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "トヨタ株価の急上昇を見逃すと投資タイミングを逃してしまう",
+      "angle": "トヨタ株価の6日続伸と円安効果による株価上昇",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "トヨタ自動車(株)【7203】：配当情報 - Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/quote/7203.T/dividend",
+          "source": "finance.yahoo.co.jp"
+        },
+        {
+          "title": "トヨタの株価、6日続伸し昨年来高値 円安とHV増産を好感 - 日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOFL050LT0V00C26A2000000/",
+          "source": "www.nikkei.com"
+        },
+        {
+          "title": "トヨタの「\"2人乗り\"スポーツカー」に反響殺到！ 斬新「MTのようなAT」＆「タテ目」採用のGRモデルに熱望の声！ 全長4.3m級の「GR HV スポーツ」が話題に | くるまのニュース",
+          "url": "https://kuruma-news.jp/post/1013042",
+          "source": "kuruma-news.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-06T05:14:17.625484+00:00",
+      "completed_at": "2026-02-06T05:23:00.360011+00:00"
+    },
+    {
+      "id": "458-ja-tech-ソニック",
+      "keyword": "ソニック",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760252",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ソニック新作ゲームの情報を見逃すと予約や発売日を逃してしまう",
+      "angle": "ソニックシリーズ最新作とキャラクター情報",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Sonic the Hedgehog - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "ソニックシリーズに登場するキャラクターの一覧 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%AB%E7%99%BB%E5%A0%B4%E3%81%99%E3%82%8B%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%81%AE%E4%B8%80%E8%A6%A7",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "459-ja-sports-藤川-球児",
+      "keyword": "藤川 球児",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760263",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "藤川球児監督の方針を見逃すと今季阪神の戦略を理解できない",
+      "angle": "藤川球児監督就任後の阪神タイガース春季キャンプ",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "藤川球児 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E8%97%A4%E5%B7%9D%E7%90%83%E5%85%90",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "藤川球児 - 日米野球好き有名人・芸能人 @Wiki【1/31更新】",
+          "url": "https://w.atwiki.jp/baseballfan/pages/213.html",
+          "source": "w.atwiki.jp"
+        },
+        {
+          "title": "【虎将トーク】阪神・藤川監督、若手に伝える〝球児の考え〟「忘れた頃に大事なことに気づくでしょう」 - サンスポ",
+          "url": "https://www.sanspo.com/article/20260205-BD2GK4N3ABJ7VG3IIJUYD4CM5E/?outputType=theme_tigers",
+          "source": "www.sanspo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "460-ja-entertainment-川村エミコ",
+      "keyword": "川村エミコ",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-06T14:14:11.760273",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "川村エミコの最新情報を見逃すとファン活動に支障が出る",
+      "angle": "たんぽぽ川村エミコの現在の活動と話題",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "川村エミコ - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E5%B7%9D%E6%9D%91%E3%82%A8%E3%83%9F%E3%82%B3",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "大久保佳代子＆川村エミコ＆ゆめっち、入浴ショット公開 「わぁぁ」「絶対見ます」と反響（オリコン） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c1d6212df732adf92947e11c9293f0e46ceb2d23",
+          "source": "news.yahoo.co.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
     }
   ]
 }

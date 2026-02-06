@@ -1608,15 +1608,7 @@ Return improved version (body only, no title):""",
             content = content.rstrip() + disclosure
             safe_print(f"  ⚠️  Added affiliate disclosure")
 
-        # Add internal links to related posts
-        try:
-            safe_print(f"  🔗 Adding internal links to related posts...")
-            linker = InternalLinker()
-            tags = keyword.split()[:3]  # Use first 3 keywords as tags
-            content = linker.add_related_posts(content, category, tags, lang)
-            safe_print(f"  ✅ Internal links added")
-        except Exception as e:
-            safe_print(f"  ⚠️  Failed to add internal links: {str(e)}")
+        # Internal linking removed - Hugo template handles related posts automatically
 
         # Write file with hero image at top
         with open(filepath, 'w', encoding='utf-8') as f:

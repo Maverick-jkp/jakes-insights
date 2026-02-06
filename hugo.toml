@@ -208,3 +208,22 @@ pagerSize = 50
   url = "/categories/entertainment"
 
 [[params.profileMode.buttons]]
+  name = "⚽ Sports"
+  url = "/categories/sports"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+  [[related.indices]]
+    name = "date"
+    weight = 10

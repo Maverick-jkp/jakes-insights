@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["society"]
 tags: ["weather", "snow", "storm"]
 description: "Stay safe during winter weather snow storms with essential preparation tips, emergency supplies, and safety strategies for your home and family."
-image: "/images/placeholder-society.jpg"
+image: "https://images.unsplash.com/photo-1671990380526-772ed7fd431b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTg1NzV8MHwxfHNlYXJjaHwxfHxzbm93JTIwc3Rvcm0lMjB3aW50ZXIlMjB3ZWF0aGVyfGVufDB8MHx8fDE3NzAzNjE0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
 ---
 
 You've probably checked your weather app this morning, seen "30% chance of snow," and wondered what that actually means for your commute. Here's the thing: you're witnessing the biggest revolution in weather forecasting since we started using satellites.

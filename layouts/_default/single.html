@@ -222,51 +222,6 @@
         </div>
         {{ end }}
 
-        <!-- Related Posts Section -->
-        {{- /* Prioritize same-category posts in related content */ -}}
-        {{- $currentCategory := index (.Params.categories | default slice) 0 -}}
-        {{- $sameCategoryPosts := slice -}}
-        {{- $otherPosts := slice -}}
-
-        {{- if $currentCategory -}}
-            {{- range .Site.RegularPages.Related . -}}
-                {{- if ne . $ -}}
-                    {{- $postCategory := index (.Params.categories | default slice) 0 -}}
-                    {{- if eq $postCategory $currentCategory -}}
-                        {{- $sameCategoryPosts = $sameCategoryPosts | append . -}}
-                    {{- else -}}
-                        {{- $otherPosts = $otherPosts | append . -}}
-                    {{- end -}}
-                {{- end -}}
-            {{- end -}}
-        {{- else -}}
-            {{- $otherPosts = .Site.RegularPages.Related . -}}
-        {{- end -}}
-
-        {{- /* Combine: same-category first, then others */ -}}
-        {{- $related := union $sameCategoryPosts $otherPosts | first 4 -}}
-
-        {{ with $related }}
-        <div class="related-posts">
-            <h3 class="related-title">You Might Also Like</h3>
-            <div class="related-grid">
-                {{ range . }}
-                <a href="{{ .Permalink }}" class="related-card">
-                    <div class="related-thumbnail">
-                        {{ $relatedPost := . }}
-                        {{ with $relatedPost.Params.image }}
-                            <img src="{{ . }}" alt="{{ $relatedPost.Title }} - {{ $relatedPost.Summary | plainify | truncate 60 }}" loading="lazy" width="400" height="225">
-                        {{ else }}
-                            📄
-                        {{ end }}
-                    </div>
-                    <h4>{{ .Title }}</h4>
-                    <p>{{ .Summary | plainify | truncate 80 }}</p>
-                </a>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
 
         <a href="/{{ .Site.Language.Lang }}/" class="back-link">← Back to Home</a>
     </article>

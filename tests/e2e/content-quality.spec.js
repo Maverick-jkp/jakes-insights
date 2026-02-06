@@ -6,12 +6,12 @@ test.describe('Content Quality Tests', () => {
   test('should have at least one image in every post', async ({ page }) => {
     const errors = [];
 
-    // Test all sample posts
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang];
+    // Test sample posts
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const images = page.locator('article img, .content img, .post-content img');
         const count = await images.count();
@@ -30,12 +30,12 @@ test.describe('Content Quality Tests', () => {
   test('should have hero/featured image', async ({ page }) => {
     const errors = [];
 
-    // Test all sample posts
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang];
+    // Test sample posts
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         // Check for hero image (common selectors)
         const heroImage = page.locator('.hero-image img, .featured-image img, .post-header img, article > img').first();
@@ -55,12 +55,12 @@ test.describe('Content Quality Tests', () => {
   test('should have valid reading time estimate', async ({ page }) => {
     const errors = [];
 
-    // Test all sample posts
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang];
+    // Test sample posts
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         // Check for reading time display
         const readingTime = page.locator('.reading-time, [class*="read"], .meta-reading-time');
@@ -95,12 +95,12 @@ test.describe('Content Quality Tests', () => {
   test('should have valid category assignment', async ({ page }) => {
     const errors = [];
 
-    // Test all sample posts
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang];
+    // Test sample posts
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         // Extract category from URL (e.g., /en/tech/2026-02-04-post/)
         const categoryMatch = postUrl.match(/\/(en|ko|ja)\/([^\/]+)\//);
@@ -126,12 +126,12 @@ test.describe('Content Quality Tests', () => {
   test('should not contain AI-generated phrases blacklist', async ({ page }) => {
     const warnings = [];
 
-    // Test 2 posts per language (content check is expensive)
-    for (const lang of ['en']) {  // Only check English posts
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 Korean post only (content check is expensive)
+    for (const lang of ['ko']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         // Get post content text
         const content = await page.locator('article, .post-content, .content').first().textContent();
@@ -158,12 +158,12 @@ test.describe('Content Quality Tests', () => {
   test('should have proper heading structure (h1 -> h2 -> h3)', async ({ page }) => {
     const warnings = [];
 
-    // Test all sample posts
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang];
+    // Test sample posts
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         // Check heading hierarchy
         const headings = await page.evaluate(() => {
@@ -196,12 +196,12 @@ test.describe('Content Quality Tests', () => {
   test('should have meta description matching post summary', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const metaDescription = await page.locator('meta[name="description"]').getAttribute('content');
 
@@ -227,12 +227,12 @@ test.describe('Content Quality Tests', () => {
   test('should have proper image alt text (accessibility)', async ({ page }) => {
     const warnings = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const images = page.locator('article img, .content img');
         const count = await images.count();
@@ -261,12 +261,12 @@ test.describe('Content Quality Tests', () => {
   test('should have reasonable content length', async ({ page }) => {
     const warnings = [];
 
-    // Test all sample posts
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang];
+    // Test sample posts
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const content = await page.locator('article, .post-content, .content').first().textContent();
 

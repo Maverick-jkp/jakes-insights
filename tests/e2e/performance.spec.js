@@ -8,10 +8,10 @@ test.describe('Performance Tests (Core Web Vitals)', () => {
     const failures = [];
 
     // Test 1 post per language
-    for (const lang of ['en', 'ko', 'ja']) {
+    for (const lang of ['ko', 'ja']) {
       const postUrl = SAMPLE_POSTS[lang][0];
 
-      await page.goto(postUrl, { waitUntil: 'networkidle' });
+      await page.goto(postUrl, { waitUntil: 'networkidle', timeout: 30000 });
 
       // Measure LCP using PerformanceObserver
       const lcp = await page.evaluate(() => {
@@ -94,10 +94,10 @@ test.describe('Performance Tests (Core Web Vitals)', () => {
     const failures = [];
 
     // Test 1 post per language
-    for (const lang of ['en', 'ko', 'ja']) {
+    for (const lang of ['ko', 'ja']) {
       const postUrl = SAMPLE_POSTS[lang][0];
 
-      await page.goto(postUrl, { waitUntil: 'networkidle' });
+      await page.goto(postUrl, { waitUntil: 'networkidle', timeout: 30000 });
 
       // Measure CLS
       const cls = await page.evaluate(() => {

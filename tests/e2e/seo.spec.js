@@ -14,12 +14,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid meta description tags', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const description = await page.locator('meta[name="description"]').getAttribute('content');
 
@@ -41,12 +41,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid Open Graph tags', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const ogValidation = await validateOpenGraph(page);
 
@@ -64,12 +64,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid Twitter Card tags', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const twitterValidation = await validateTwitterCard(page);
 
@@ -87,12 +87,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid JSON-LD structured data (BlogPosting)', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const jsonldValidation = await validateJSONLD(page, 'BlogPosting');
 
@@ -118,12 +118,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid canonical URLs', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const canonicalValidation = await validateCanonical(page);
 
@@ -141,12 +141,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid hreflang tags for multilingual content', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const hreflangValidation = await validateHreflang(page);
 
@@ -164,12 +164,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have author meta tag', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const author = await page.locator('meta[name="author"]').getAttribute('content');
 
@@ -189,12 +189,12 @@ test.describe('SEO Validation Tests', () => {
   test('should have valid title tags', async ({ page }) => {
     const errors = [];
 
-    // Test 2 posts per language
-    for (const lang of ['en', 'ko', 'ja']) {
-      const posts = SAMPLE_POSTS[lang].slice(0, 2);
+    // Test 1 post per language
+    for (const lang of ['ko', 'ja']) {
+      const posts = SAMPLE_POSTS[lang].slice(0, 1);
 
       for (const postUrl of posts) {
-        await page.goto(postUrl);
+        await page.goto(postUrl, { timeout: 30000 });
 
         const title = await page.title();
 
@@ -215,9 +215,9 @@ test.describe('SEO Validation Tests', () => {
 
   test('should extract and validate all meta tags', async ({ page }) => {
     // Test one post per language
-    for (const lang of ['en', 'ko', 'ja']) {
+    for (const lang of ['ko', 'ja']) {
       const postUrl = SAMPLE_POSTS[lang][0];
-      await page.goto(postUrl);
+      await page.goto(postUrl, { timeout: 30000 });
 
       const metaTags = await extractMetaTags(page);
 

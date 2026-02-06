@@ -3,18 +3,19 @@
 
 const SAMPLE_POSTS = {
   en: [
-    '/en/entertainment/2026-02-04-daredevil/',
-    '/en/tech/2026-02-04-amazon-down/',
-    '/en/business/2026-02-03-passive-income-ideas-2026/',
+    '/ko/business/2026-02-03-부업-아이디어/',
+    '/ko/business/2026-01-27-국세청장/',
+    '/ko/business/2026-01-25-이재용/',
   ],
   ko: [
-    '/ko/entertainment/2026-02-05-신동엽/',
     '/ko/tech/2026-02-05-서울대-한예종-동시합격/',
     '/ko/society/2026-02-05-신설학교-개교/',
+    '/ko/tech/2026-02-05-중등교사-전문성/',
   ],
   ja: [
     '/ja/society/2026-02-05-長野大学パワハラ/',
-    '/ja/tech/2026-02-04-日本製鉄/',
+    '/ja/business/2026-02-03-副業アイデア/',
+    '/ja/business/2026-01-27-鹿島建設/',
   ],
 };
 

@@ -1,13 +1,13 @@
 {
-  "current_session": "2026-01-23",
-  "documentation_version": "6.0",
-  "last_updated": "2026-01-23T22:00:00+09:00",
+  "current_session": "2026-02-05",
+  "documentation_version": "6.1",
+  "last_updated": "2026-02-05T13:35:00+09:00",
   "session_directory": ".claude/sessions/2026-01-23/",
   "pattern": "Progressive disclosure (350k LOC production case)",
   "structure": {
     "entry_point": "CLAUDE.md (209 lines)",
     "on_demand_docs": ".claude/docs/ (7 files, 930 lines)",
-    "task_based_skills": ".claude/skills/ (4 skills, 2,124 lines)",
+    "task_based_skills": ".claude/skills/ (5 skills, 3,000+ lines)",
     "per_session_state": ".claude/sessions/{date}/"
   },
   "quick_reference": {
@@ -30,9 +30,16 @@
     "content_generation": ".claude/skills/content-generation/SKILL.md",
     "quality_validation": ".claude/skills/quality-validation/SKILL.md",
     "hugo_operations": ".claude/skills/hugo-operations/SKILL.md",
-    "keyword_curation": ".claude/skills/keyword-curation/SKILL.md"
+    "keyword_curation": ".claude/skills/keyword-curation/SKILL.md",
+    "ab_test_manager": ".claude/skills/ab-test-manager/SKILL.md"
   },
   "recent_sessions": [
+    {
+      "date": "2026-02-05",
+      "focus": "AB Test Manager skill creation + Plugin setup",
+      "directory": ".claude/sessions/2026-02-05/",
+      "status": "in_progress"
+    },
     {
       "date": "2026-01-23",
       "focus": "Progressive disclosure refactor (Week 1, 2, 4)",

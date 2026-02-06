@@ -107,9 +107,75 @@
       "test_name": "title_style",
       "variant": "A",
       "assigned_at": "2026-02-04T18:58:11.277965"
+    },
+    {
+      "post_id": "2026-02-05-lng선-수주",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T13:26:10.431108"
+    },
+    {
+      "post_id": "2026-02-05-アニメ制作遅延",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-05T13:35:20.874692"
+    },
+    {
+      "post_id": "2026-02-05-山口大学アカハラ",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-05T13:37:30.721585"
+    },
+    {
+      "post_id": "2026-02-05-ガンダム新作制作費",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T13:40:32.845299"
+    },
+    {
+      "post_id": "2026-02-05-大学ハラスメント対策",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T14:06:07.871492"
+    },
+    {
+      "post_id": "2026-02-05-jean-luc-brunel",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T14:17:42.556314"
+    },
+    {
+      "post_id": "2026-02-05-steve-lavin-cancer",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-05T14:23:53.876526"
+    },
+    {
+      "post_id": "2026-02-05-무용-전공자-진로",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T14:31:00.413840"
+    },
+    {
+      "post_id": "2026-02-05-신설학교-개교",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T14:33:40.862788"
+    },
+    {
+      "post_id": "2026-02-05-연예인-자녀-교육",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-05T14:36:32.358117"
+    },
+    {
+      "post_id": "2026-02-05-長野大学パワハラ",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-05T14:40:49.627923"
     }
   ],
-  "last_updated": "2026-02-04T18:58:11.277973",
+  "last_updated": "2026-02-05T14:40:49.627927",
   "summary": {
     "total_assignments": 0,
     "by_test": {}

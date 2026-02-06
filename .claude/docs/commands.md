@@ -6,6 +6,30 @@
 
 ---
 
+## Claude Code Plugins
+
+**Plugin Location**: `~/.claude/plugins/`
+
+```bash
+# Quick access via project symlink
+ls -la .claude/plugins-link/system-plugins/
+
+# Direct access to installed plugins
+ls -la ~/.claude/plugins/marketplaces/claude-plugins-official/plugins/
+
+# View installed plugins config
+cat ~/.claude/plugins/installed_plugins.json
+
+# Installed plugins:
+# - context7: Latest documentation auto-injection
+# - code-review: PR auto-review
+# - security-guidance: Security auto-check
+# - ralph-loop: Autonomous coding sessions
+# - playwright: Browser automation
+```
+
+---
+
 ## Hugo Commands
 
 **CRITICAL**: Hugo is installed at `/opt/homebrew/bin/hugo` (not in PATH).

@@ -5255,39 +5255,6 @@
       "completed_at": "2026-02-05T04:26:10.491931+00:00"
     },
     {
-      "id": "434-ja-society-アカデミック・ハラスメント",
-      "keyword": "アカデミック・ハラスメント",
-      "category": "society",
-      "lang": "ja",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-04T15:43:43.029517",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "大学でのハラスメント問題の実態把握",
-      "angle": "学術界のパワハラ問題と被害者保護",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "｢私が受けた被害は消えない｣ 大学教授の侮辱的発言を”アカハラ”認定 地裁が55万円の賠償命じる 山口 | TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/2431436",
-          "source": "newsdig.tbs.co.jp"
-        },
-        {
-          "title": "山口大学大学院“アカハラ”裁判 計５５万円の賠償命じる判決 | NHKニュース",
-          "url": "https://archive.is/WDREY",
-          "source": "archive.is"
-        },
-        {
-          "title": "「アカハラ」で停職処分 長野大学の非常勤講師の男性 複数の学生が遅刻したことに腹を立て…学生に対して暴言を浴びせる 授業を途中でやめ学生を欠席扱いに | TBS NEWS DIG",
-          "url": "https://archive.ph/SzQ67",
-          "source": "archive.ph"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "435-ja-society-岡山大学",
       "keyword": "岡山大学",
       "category": "society",
@@ -5597,100 +5564,6 @@
       "completed_at": "2026-02-05T04:22:00.087794+00:00"
     },
     {
-      "id": "449-en-entertainment-halle-berry",
-      "keyword": "halle berry",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760121",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "할리 베리의 충격적인 발언과 그 배경을 모르면 할리우드의 진실을 영원히 놓친다",
-      "angle": "오스카 수상 후에도 변하지 않은 할리우드의 인종차별 현실",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Halle Berry - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Halle_Berry",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "‘I was still black the next morning’: Halle Berry says Oscar win didn’t change her career | Film | T",
-          "url": "https://www.theguardian.com/film/2026/feb/03/i-was-still-black-the-next-morning-halle-berry-says-oscar-win-didnt-change-her-career",
-          "source": "www.theguardian.com"
-        },
-        {
-          "title": "Halle Berry Isn’t Backing Down",
-          "url": "https://www.thecut.com/article/halle-berry-crime-101-film-menopause-gavin-newsom-interview-profile.html",
-          "source": "www.thecut.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "450-en-entertainment-milo-ventimiglia",
-      "keyword": "milo ventimiglia",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760158",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "밀로 벤티밀리아의 차기작 정보를 놓치면 방영 시점을 알 수 없다",
-      "angle": "This Is Us 이후 밀로 벤티밀리아의 새로운 도전",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Milo Ventimiglia - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Milo_Ventimiglia",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Casting News: Milo Ventimiglia's HBO Max Cop Drama, Grey's Anatomy's 'Charming' New Doctor, And More",
-          "url": "https://www.tvline.com/2089493/milo-ventimiglia-hbo-max-cop-drama-american-blue/",
-          "source": "www.tvline.com"
-        },
-        {
-          "title": "Milo Ventimiglia to Star in HBO Max Cop Drama Pilot 'American Blue'",
-          "url": "https://www.thewrap.com/industry-news/business/milo-ventimiglia-hbo-max-cop-drama-pilot-american-blue/",
-          "source": "www.thewrap.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "451-en-society-van-hunt",
-      "keyword": "van hunt",
-      "category": "society",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760171",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "할리 베리의 연애관과 자기성찰 과정을 모르면 진정한 관계의 의미를 놓친다",
-      "angle": "할리 베리의 4년 금욕 기간과 그 이후의 새로운 사랑",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Halle Berry 'Grateful' for Boyfriend Van Hunt, But in No Rush to Wed: 'Very Happy with Life Right No",
-          "url": "https://people.com/halle-berry-grateful-for-boyfriend-van-hunt-but-in-no-rush-to-wed-exclusive-source-11897356",
-          "source": "people.com"
-        },
-        {
-          "title": "Halle Berry Explains Why She Won't Marry Van Hunt Just Yet",
-          "url": "https://www.elle.com/culture/celebrities/a36440649/who-is-van-hunt-halle-berry-musician-boyfriend/",
-          "source": "www.elle.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "452-en-society-weather-snow-storm",
       "keyword": "weather snow storm",
       "category": "society",
@@ -5761,105 +5634,6 @@
       "completed_at": "2026-02-06T05:20:15.374184+00:00"
     },
     {
-      "id": "454-ko-society-파리바게트",
-      "keyword": "파리바게트",
-      "category": "society",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760206",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "파리바게트 할인 정보를 놓치면 절약 기회를 잃는다",
-      "angle": "파리바게트 특별 할인과 새 메뉴 출시",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "파리바게트, '두쫀팝 케이크' 출시…한정 수량 사전예약 - 전자신문",
-          "url": "https://www.etnews.com/20260206000055",
-          "source": "www.etnews.com"
-        },
-        {
-          "title": "Paris Baguette - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Paris_Baguette",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "'파리바게뜨 50% 할인' 4일 단 하루...빵순이들 구매방법은?",
-          "url": "https://www.gukjenews.com/news/articleView.html?idxno=3497188",
-          "source": "www.gukjenews.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "455-ko-business-남부내륙철도",
-      "keyword": "남부내륙철도",
-      "category": "business",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760217",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "남부내륙철도 영향을 모르면 지역 개발과 투자 기회를 놓친다",
-      "angle": "남부내륙철도가 가져올 지역 경제와 부동산 시장 변화",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "거제~김천 연결하는 남부내륙철도 착공…개통시 서울~거제 2시간41분",
-          "url": "https://www.hani.co.kr/arti/area/yeongnam/1243677.html",
-          "source": "www.hani.co.kr"
-        },
-        {
-          "title": "'경남-수도권 2시간대' 남부내륙철도 착공식 열려…2031년 개통 목표 :: 공감언론 뉴시스 ::",
-          "url": "https://www.newsis.com/view/NISX20260206_0003505181",
-          "source": "www.newsis.com"
-        },
-        {
-          "title": "'서울~거제 2시간대' 남부내륙철도, 6일 드디어 착공 - 오마이뉴스",
-          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003204774",
-          "source": "www.ohmynews.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "456-ko-sports-la-레이커스-대-필라델피아",
-      "keyword": "la 레이커스 대 필라델피아",
-      "category": "sports",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760231",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "레이커스 경기 결과를 놓치면 NBA 시즌 흐름을 놓친다",
-      "angle": "레이커스와 76ers의 중요한 경기 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Los Angeles Lakers - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Los_Angeles_Lakers",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "최고령 르브론 제임스의 올스타전 예고편 🔥| LA 레이커스 vs 브루클린 | NBA 하이라이트 - YouTube",
-          "url": "https://www.youtube.com/watch?v=d9cIqvXIa_k",
-          "source": "www.youtube.com"
-        },
-        {
-          "title": "돈치치, 레이커스서 ‘첫 월간 MVP’ 우뚝…1월 15경기 평균 34득점 질주, 동부에선 브라운 첫 영광 - 스포츠경향",
-          "url": "https://sports.khan.co.kr/article/202602040948003",
-          "source": "sports.khan.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "457-ja-business-トヨタ-株価",
       "keyword": "トヨタ 株価",
       "category": "business",
@@ -5895,93 +5669,261 @@
       "completed_at": "2026-02-06T05:23:00.360011+00:00"
     },
     {
-      "id": "458-ja-tech-ソニック",
-      "keyword": "ソニック",
+      "id": "458-en-tech-high-wind-warning",
+      "keyword": "high wind warning",
       "category": "tech",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760252",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "ソニック新作ゲームの情報を見逃すと予約や発売日を逃してしまう",
-      "angle": "ソニックシリーズ最新作とキャラクター情報",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Sonic the Hedgehog - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "ソニックシリーズに登場するキャラクターの一覧 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%AB%E7%99%BB%E5%A0%B4%E3%81%99%E3%82%8B%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%81%AE%E4%B8%80%E8%A6%A7",
-          "source": "ja.wikipedia.org"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "459-ja-sports-藤川-球児",
-      "keyword": "藤川 球児",
-      "category": "sports",
-      "lang": "ja",
+      "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760263",
+      "created_at": "2026-02-06T07:50:50.830765",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "藤川球児監督の方針を見逃すと今季阪神の戦略を理解できない",
-      "angle": "藤川球児監督就任後の阪神タイガース春季キャンプ",
+      "search_intent": "Find emergency apps and wind monitoring technology before power outages hit their area",
+      "angle": "Weather monitoring technology and emergency preparedness systems failing during extreme weather",
       "competition_level": "low",
       "references": [
         {
-          "title": "藤川球児 - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E8%97%A4%E5%B7%9D%E7%90%83%E5%85%90",
-          "source": "ja.wikipedia.org"
+          "title": "Wind Warnings, Watches and Advisories",
+          "url": "https://www.weather.gov/safety/wind-ww",
+          "source": "www.weather.gov"
         },
         {
-          "title": "藤川球児 - 日米野球好き有名人・芸能人 @Wiki【1/31更新】",
-          "url": "https://w.atwiki.jp/baseballfan/pages/213.html",
-          "source": "w.atwiki.jp"
-        },
-        {
-          "title": "【虎将トーク】阪神・藤川監督、若手に伝える〝球児の考え〟「忘れた頃に大事なことに気づくでしょう」 - サンスポ",
-          "url": "https://www.sanspo.com/article/20260205-BD2GK4N3ABJ7VG3IIJUYD4CM5E/?outputType=theme_tigers",
-          "source": "www.sanspo.com"
+          "title": "Port St. Lucie, FL Severe Weather Alert | Weather Underground",
+          "url": "https://www.wunderground.com/severe/us/fl/port-st-lucie/34952",
+          "source": "www.wunderground.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "460-ja-entertainment-川村エミコ",
-      "keyword": "川村エミコ",
+      "id": "459-en-business-mortgages",
+      "keyword": "mortgages",
+      "category": "business",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T07:50:50.830800",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Compare their current mortgage rate to market rates before missing refinancing opportunities",
+      "angle": "Mortgage rate inequality and missed refinancing windows costing homeowners thousands",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "A surprising share of homeowners have high mortgage rates. Here's the breakdown",
+          "url": "https://www.cnbc.com/2026/02/04/homeowner-mortgage-rates-breakdown.html",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "30-Year Fixed Rate Mortgage Average in the United States (MORTGAGE30US) | FRED | St. Louis Fed",
+          "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
+          "source": "fred.stlouisfed.org"
+        },
+        {
+          "title": "Mortgage and refinance interest rates today, February 2, 2026: Bubbling under 6%",
+          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-february-2-2026-110039176.html",
+          "source": "finance.yahoo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "460-ko-society-지귀연",
+      "keyword": "지귀연",
+      "category": "society",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-06T07:50:50.830830",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "재판관 교체가 판결에 미치는 영향을 알아보지 않으면 중요한 정치적 변화를 놓칠 수 있음",
+      "angle": "핵심 재판관의 갑작스런 인사이동이 대통령 재판에 미칠 예측불가능한 영향",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[속보] 尹 내란재판 지귀연 부장판사 북부지법으로…법관 정기인사 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25403140",
+          "source": "www.joongang.co.kr"
+        },
+        {
+          "title": "尹 내란우두머리 재판 지귀연 부장판사, 서울북부지법으로(종합) | 서울신문",
+          "url": "https://www.seoul.co.kr/news/newsView.php?id=20260206500218",
+          "source": "www.seoul.co.kr"
+        },
+        {
+          "title": "지귀연, 윤석열 내란 1심 선고 뒤 북부지법으로…법원 정기 인사",
+          "url": "https://www.hani.co.kr/arti/society/society_general/1243722.html",
+          "source": "www.hani.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "461-ko-business-부영그룹",
+      "keyword": "부영그룹",
+      "category": "business",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-06T07:50:50.830854",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "자신의 직장도 비슷한 출산지원 정책을 도입할지 알아보지 않으면 혜택을 놓칠 수 있음",
+      "angle": "기업 출산지원금 경쟁이 시작되면서 직장 선택 기준이 완전히 바뀌는 상황",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "부영그룹 ‘직원 출산하면 1억’… 도입후 3년간 총 134억 지급",
+          "url": "https://www.donga.com/news/Economy/article/all/20260205/133307405/2",
+          "source": "www.donga.com"
+        },
+        {
+          "title": "부영그룹, 자녀 1인당 1억 원 출산장려금 지급… 누적 134억 원 | 한국경제",
+          "url": "https://www.hankyung.com/article/202602056924i",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "부영그룹, 출산장려금 36억 확대 지급 선언 - 퍼블릭뉴스통신(Public news-network for TTL)",
+          "url": "http://www.ttlnews.com/news/articleView.html?idxno=3076921",
+          "source": "www.ttlnews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "462-ja-society-最高裁判所裁判官国民審査どんな人",
+      "keyword": "最高裁判所裁判官国民審査どんな人",
+      "category": "society",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T07:50:50.830883",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "判事の詳しい経歴を調べて適切な判断をしないと、重要な司法判決に悪影響を与える可能性",
+      "angle": "国民審査で適当に投票すると司法制度に長期的な悪影響を与えるリスク",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "最高裁の裁判官をチェックしよう 2人はどんな「判断」を？ 「国民審査」期日前は2月1日から：東京新聞デジタル",
+          "url": "https://www.tokyo-np.co.jp/article/464832",
+          "source": "www.tokyo-np.co.jp"
+        },
+        {
+          "title": "国民審査：「憲法の番人」にふさわしいか 最高裁裁判官国民審査の判断ポイント | 毎日新聞",
+          "url": "https://mainichi.jp/articles/20260129/k00/00m/040/006000c",
+          "source": "mainichi.jp"
+        },
+        {
+          "title": "注目されない最高裁裁判官の国民審査、形骸化に批判 あるべき姿は",
+          "url": "https://www.asahi.com/articles/ASV221QVJV22UTIL00BM.html",
+          "source": "www.asahi.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "463-ja-entertainment-円井わん",
+      "keyword": "円井わん",
       "category": "entertainment",
       "lang": "ja",
       "priority": 6,
       "status": "pending",
-      "created_at": "2026-02-06T14:14:11.760273",
+      "created_at": "2026-02-06T07:50:50.830905",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "川村エミコの最新情報を見逃すとファン活動に支障が出る",
-      "angle": "たんぽぽ川村エミコの現在の活動と話題",
-      "competition_level": "low",
+      "search_intent": "女優の政治発言が作品や芸能界での立場に与える影響を知らないと重要な業界動向を見逃す",
+      "angle": "芸能人の政治発言がキャリアと作品評価に与える予測不可能な影響",
+      "competition_level": "medium",
       "references": [
         {
-          "title": "川村エミコ - Wikipedia",
-          "url": "https://ja.wikipedia.org/wiki/%E5%B7%9D%E6%9D%91%E3%82%A8%E3%83%9F%E3%82%B3",
-          "source": "ja.wikipedia.org"
+          "title": "円井わん「選挙、政治は推し活ではありません」（日刊スポーツ） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6468ad02f7f5f8cb32602417919ef4017db3759b",
+          "source": "news.yahoo.co.jp"
         },
         {
-          "title": "大久保佳代子＆川村エミコ＆ゆめっち、入浴ショット公開 「わぁぁ」「絶対見ます」と反響（オリコン） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/c1d6212df732adf92947e11c9293f0e46ceb2d23",
-          "source": "news.yahoo.co.jp"
+          "title": "円井わん「選挙、政治は推し活ではありません」 - 社会 : 日刊スポーツ",
+          "url": "https://www.nikkansports.com/entertainment/news/202602030001090.html",
+          "source": "www.nikkansports.com"
+        },
+        {
+          "title": "「今のままでは演じられない」話題の円井わんが朝ドラの役作りで“しんどくなった”ワケ〈ばけばけ第88回〉",
+          "url": "https://diamond.jp/articles/-/382558",
+          "source": "diamond.jp"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "464-ko-society-건강한-생활-습관",
+      "keyword": "건강한 생활 습관",
+      "category": "society",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T07:50:50.831158",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "장기적인 건강 관리와 삶의 질 향상을 위한 실천 방법 학습",
+      "angle": "과학적 근거 기반의 실천 가능한 건강 습관 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[본방 종합] 무너진 생활 습관, 건강한 변화를 꿈꾸나요? 단 6일 만에 몸과 마음, 그리고 일상은 얼마나 달라질 수 있을까? I KBS 20251022 방송 - YouTube",
+          "url": "https://www.youtube.com/watch?v=qr_rjxhQ7-M",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "건강한 사람들은 아침에 ‘이것’ 꼭 챙겨...어떤 좋은 습관 갖고 있나? - 코메디닷컴",
+          "url": "https://kormedi.com/2741498/",
+          "source": "kormedi.com"
+        },
+        {
+          "title": "건강한 70대를 위해 30대에 할 수 있는 일들 - BBC News 코리아",
+          "url": "https://www.bbc.com/korean/articles/cx2d200p3v9o",
+          "source": "www.bbc.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "465-ja-society-健康的な生活習慣",
+      "keyword": "健康的な生活習慣",
+      "category": "society",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-06T07:50:50.831286",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "長期的な健康管理と生活の質向上のための実践方法学習",
+      "angle": "科学的根拠に基づく実践可能な健康習慣ガイド",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "生活習慣が健康を守る！日常生活でできる管理法 - 花田クリニック",
+          "url": "https://hanada-clinic.com/column/193/",
+          "source": "hanada-clinic.com"
+        },
+        {
+          "title": "生活習慣病を予防する方法12選！食べ物・食生活や運動など解説 | セントラルクリニック世田谷",
+          "url": "https://nidc.or.jp/column/lifestyle-related-diseases/",
+          "source": "nidc.or.jp"
+        },
+        {
+          "title": "毎日の生活で実践できる！生活習慣病を防ぐ10の習慣【実践ガイド】 | グッドライフクリニック西町南",
+          "url": "https://goodlifeclinic.co.jp/post-3108/",
+          "source": "goodlifeclinic.co.jp"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

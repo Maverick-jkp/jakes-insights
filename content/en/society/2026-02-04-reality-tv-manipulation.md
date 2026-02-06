@@ -117,15 +117,6 @@ Stop and think about this the next time you're watching your favorite reality sh
 
 They probably are scripted—just not by human writers.
 
-## Related Posts
-
-
-- [Modern Mental Health Management Tips That Actually Work in 2026: What the Experts Won't Tell You](/en/society/mental-health-management-tips/)
-- [Gabriela Rico: Why Viral Misinformation Spreads Faster](/en/society/gabriela-rico/)
-- [How Epstein Documents Impact Corporate Reputation Risk (爱泼斯坦)](/en/society/爱泼斯坦/)
-- [Why Some Fundraiser Campaigns Go Viral While Others Fail](/en/society/fundraiser/)
-- [$10B IRS Lawsuit Exposes Tax Return Privacy Issues](/en/society/tax/)
-
 
 
 ---

@@ -133,15 +133,6 @@ You're watching the evolution of sports culture in real time. The question isn't
 
 
 
-## Related Posts
-
-
-- [Coaches vs Cancer Model Faces Major Changes in 2026](/en/sports/coaches-vs-cancer/)
-- [Dominik Mysterio's AAA Appearance Signals Career Pivot](/en/sports/dominik-mysterio/)
-- [Paula Badosa Faces Spanish Tennis Success Dilemma in 2026](/en/sports/paula-badosa/)
-- [Dodgers Manager Dave Roberts Manages Roki Sasaki Expectations](/en/sports/roki-sasaki/)
-- [Tatiana Prozorova Upsets Seeds at Philippine Women's Open](/en/sports/tatiana-prozorova/)
-
 ## References
 
 1. [‘Molecular glue’ from this San Diego startup makes cancer self-destruct; Big Pharma bets billions](https://www.sandiegouniontribune.com/2026/02/03/molecular-glue-from-this-san-diego-startup-makes-cancer-self-destruct-big-pharma-bets-billions/)

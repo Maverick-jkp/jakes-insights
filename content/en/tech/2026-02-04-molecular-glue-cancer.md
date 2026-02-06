@@ -107,15 +107,6 @@ The revolution isn't coming. It's already here, running clinical trials in hospi
 
 
 
-## Related Posts
-
-
-- [5 Things You Didn't Know About San Diego Biotech Breakthrough: Cancer Cells Self-Destruct](/en/tech/cancer-san-diego/)
-- [How to Learn Programming: A Beginner's Roadmap for 2026](/en/tech/how-to-learn-programming/)
-- [Raquel Rodriguez WWE Creative Struggles Multi-Platform Era](/en/tech/raquel-rodriguez/)
-- [Covered California Enrollment Issues & Hidden Costs](/en/tech/covered-california/)
-- [TikTok's Impact on Focus and Productivity in 2026](/en/tech/tiktok/)
-
 ## References
 
 1. [‘Molecular glue’ from this San Diego startup makes cancer self-destruct; Big Pharma bets billions](https://www.sandiegouniontribune.com/2026/02/03/molecular-glue-from-this-san-diego-startup-makes-cancer-self-destruct-big-pharma-bets-billions/)

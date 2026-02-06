@@ -71,15 +71,6 @@ The answer might reshape how we think about second-generation talent navigating 
 
 
 
-## Related Posts
-
-
-- [Everything You Need to Know About Ashlyn Krueger's Rise: The American Tennis Star You Haven't](/en/sports/ashlyn-krueger/)
-- [Paula Badosa Faces Spanish Tennis Success Dilemma in 2026](/en/sports/paula-badosa/)
-- [Dodgers Manager Dave Roberts Manages Roki Sasaki Expectations](/en/sports/roki-sasaki/)
-- [Tatiana Prozorova Upsets Seeds at Philippine Women's Open](/en/sports/tatiana-prozorova/)
-- [Donna Vekic Loses Matches But Wins Hearts in Manila](/en/sports/donna-vekic/)
-
 ## References
 
 1. [Dominik Mysterio - Wikipedia](https://en.wikipedia.org/wiki/Dominik_Mysterio)

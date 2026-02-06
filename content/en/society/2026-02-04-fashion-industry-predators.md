@@ -111,15 +111,6 @@ You've probably noticed that real change in creative industries rarely comes fro
 
 Whether it spreads everywhere else depends on how well these new systems actually work — and whether the rest of us are paying close enough attention to adapt them before our own industries face similar reckonings.
 
-## Related Posts
-
-
-- [How Reality TV Manipulation Uses AI to Control Viewers](/en/society/reality-tv-manipulation/)
-- [Modern Mental Health Management Tips That Actually Work in 2026: What the Experts Won't Tell You](/en/society/mental-health-management-tips/)
-- [Gabriela Rico: Why Viral Misinformation Spreads Faster](/en/society/gabriela-rico/)
-- [How Epstein Documents Impact Corporate Reputation Risk (爱泼斯坦)](/en/society/爱泼斯坦/)
-- [Why Some Fundraiser Campaigns Go Viral While Others Fail](/en/society/fundraiser/)
-
 
 
 ---

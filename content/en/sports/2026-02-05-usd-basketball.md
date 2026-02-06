@@ -129,15 +129,6 @@ USD's 18-4 record and top-25 ranking might seem like the main story. But the rea
 
 If you're involved with a mid-major program, you have a choice: adapt to this new reality or watch other schools pass you by. USD just showed everyone what's possible when you choose to adapt.
 
-## Related Posts
-
-
-- [North Florida Basketball Struggles Continue in 2026 Season](/en/sports/north-florida-basketball/)
-- [Texas Tech Basketball Dominates Baylor on Road in 2026](/en/sports/texas-tech-basketball/)
-- [Dominik Mysterio's AAA Appearance Signals Career Pivot](/en/sports/dominik-mysterio/)
-- [Paula Badosa Faces Spanish Tennis Success Dilemma in 2026](/en/sports/paula-badosa/)
-- [Dodgers Manager Dave Roberts Manages Roki Sasaki Expectations](/en/sports/roki-sasaki/)
-
 
 
 ---

@@ -115,15 +115,6 @@ The real victory isn't just about one promising cancer treatment—it's about pr
 
 
 
-## Related Posts
-
-
-- [How to Learn Programming: A Beginner's Roadmap for 2026](/en/tech/how-to-learn-programming/)
-- [Raquel Rodriguez WWE Creative Struggles Multi-Platform Era](/en/tech/raquel-rodriguez/)
-- [Covered California Enrollment Issues & Hidden Costs](/en/tech/covered-california/)
-- [TikTok's Impact on Focus and Productivity in 2026](/en/tech/tiktok/)
-- [Quad Cortex Mini Review: Is Neural DSP's $800 Alternative Worth It?](/en/tech/quad-cortex-mini/)
-
 ## References
 
 1. [‘Molecular glue’ from this San Diego startup makes cancer self-destruct; Big Pharma bets billions](https://www.sandiegouniontribune.com/2026/02/03/molecular-glue-from-this-san-diego-startup-makes-cancer-self-destruct-big-pharma-bets-billions/)

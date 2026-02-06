@@ -77,15 +77,6 @@ The next time you watch Rodriguez perform, pay attention to how she navigates th
 
 
 
-## Related Posts
-
-
-- [Covered California Enrollment Issues & Hidden Costs](/en/tech/covered-california/)
-- [Arc Raiders Down: Server Issues Hit Players After Patch](/en/tech/arc-raiders-down/)
-- [Resident Evil Requiem Preview Issues Worry Longtime Fans](/en/tech/resident-evil-requiem/)
-- [TikTok's Impact on Focus and Productivity in 2026](/en/tech/tiktok/)
-- [Quad Cortex Mini Review: Is Neural DSP's $800 Alternative Worth It?](/en/tech/quad-cortex-mini/)
-
 ## References
 
 1. [Raquel Rodriguez (wrestler) - Wikipedia](https://en.wikipedia.org/wiki/Raquel_Rodriguez_(wrestler))

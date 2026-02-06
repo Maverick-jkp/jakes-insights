@@ -75,15 +75,6 @@ Start messy, build badly, and improve gradually. That's how every successful pro
 
 
 
-## Related Posts
-
-
-- [Raquel Rodriguez WWE Creative Struggles Multi-Platform Era](/en/tech/raquel-rodriguez/)
-- [Covered California Enrollment Issues & Hidden Costs](/en/tech/covered-california/)
-- [TikTok's Impact on Focus and Productivity in 2026](/en/tech/tiktok/)
-- [Quad Cortex Mini Review: Is Neural DSP's $800 Alternative Worth It?](/en/tech/quad-cortex-mini/)
-- [Rory Kennedy: Documentary Filmmaker's Impact in 2026](/en/tech/rory-kennedy/)
-
 ## References
 
 1. [Learning Programming: Where to Start - SheCanCode](https://shecancode.io/i-want-to-learn-programming-but-i-dont-know-where-to-start/)

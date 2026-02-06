@@ -125,15 +125,6 @@ The future of kidney cancer treatment isn't about fighting harder with the same 
 
 
 
-## Related Posts
-
-
-- [Molecular Glue Cancer Therapy Shows Clinical Promise](/en/tech/molecular-glue-cancer/)
-- [5 Things You Didn't Know About San Diego Biotech Breakthrough: Cancer Cells Self-Destruct](/en/tech/cancer-san-diego/)
-- [How to Learn Programming: A Beginner's Roadmap for 2026](/en/tech/how-to-learn-programming/)
-- [Raquel Rodriguez WWE Creative Struggles Multi-Platform Era](/en/tech/raquel-rodriguez/)
-- [Covered California Enrollment Issues & Hidden Costs](/en/tech/covered-california/)
-
 ## References
 
 1. [‘Molecular glue’ from this San Diego startup makes cancer self-destruct; Big Pharma bets billions](https://www.sandiegouniontribune.com/2026/02/03/molecular-glue-from-this-san-diego-startup-makes-cancer-self-destruct-big-pharma-bets-billions/)

@@ -181,15 +181,6 @@ Your move.
 
 
 
-## Related Posts
-
-
-- [Fashion Industry Predators Face New Accountability Systems](/en/society/fashion-industry-predators/)
-- [How Reality TV Manipulation Uses AI to Control Viewers](/en/society/reality-tv-manipulation/)
-- [Modern Mental Health Management Tips That Actually Work in 2026: What the Experts Won't Tell You](/en/society/mental-health-management-tips/)
-- [Gabriela Rico: Why Viral Misinformation Spreads Faster](/en/society/gabriela-rico/)
-- [How Epstein Documents Impact Corporate Reputation Risk (爱泼斯坦)](/en/society/爱泼斯坦/)
-
 ## References
 
 1. [Jean-Luc Brunel - Wikipedia](https://en.wikipedia.org/wiki/Jean-Luc_Brunel)

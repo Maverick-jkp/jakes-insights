@@ -11,6 +11,10 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3]
 
     steps:
       - name: Checkout code
@@ -39,14 +43,14 @@ jobs:
       - name: Build Hugo site
         run: hugo --minify
 
-      - name: Run Playwright tests
-        run: npx playwright test
+      - name: Run Playwright tests (shard ${{ matrix.shard }}/3)
+        run: npx playwright test --shard=${{ matrix.shard }}/3
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.shard }}
           path: playwright-report/
           retention-days: 30
 
@@ -54,6 +58,6 @@ jobs:
         uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: playwright-screenshots
+          name: playwright-screenshots-${{ matrix.shard }}
           path: test-results/
           retention-days: 7

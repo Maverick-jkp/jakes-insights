@@ -173,9 +173,27 @@
       "test_name": "title_style",
       "variant": "B",
       "assigned_at": "2026-02-05T14:40:49.627923"
+    },
+    {
+      "post_id": "2026-02-06-신동엽",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-06T14:12:09.208881"
+    },
+    {
+      "post_id": "2026-02-06-한화솔루션",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-06T14:20:15.315201"
+    },
+    {
+      "post_id": "2026-02-06-トヨタ-株価",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-06T14:23:00.245997"
     }
   ],
-  "last_updated": "2026-02-05T14:40:49.627927",
+  "last_updated": "2026-02-06T14:23:00.246010",
   "summary": {
     "total_assignments": 0,
     "by_test": {}

@@ -5,7 +5,7 @@
  * @param {import('@playwright/test').Page} page - Playwright page object
  * @returns {Promise<{isValid: boolean, tags: object, errors: string[]}>}
  */
-export async function validateOpenGraph(page) {
+async function validateOpenGraph(page) {
   const errors = [];
 
   const ogTags = {
@@ -40,7 +40,7 @@ export async function validateOpenGraph(page) {
  * @param {import('@playwright/test').Page} page - Playwright page object
  * @returns {Promise<{isValid: boolean, tags: object, errors: string[]}>}
  */
-export async function validateTwitterCard(page) {
+async function validateTwitterCard(page) {
   const errors = [];
 
   const twitterTags = {
@@ -70,7 +70,7 @@ export async function validateTwitterCard(page) {
  * @param {string} schemaType - Expected @type value (e.g., 'BlogPosting')
  * @returns {Promise<{isValid: boolean, data: object|null, error: string|null}>}
  */
-export async function validateJSONLD(page, schemaType) {
+async function validateJSONLD(page, schemaType) {
   try {
     const scripts = await page.locator('script[type="application/ld+json"]').allTextContents();
 
@@ -123,7 +123,7 @@ export async function validateJSONLD(page, schemaType) {
  * @param {import('@playwright/test').Page} page - Playwright page object
  * @returns {Promise<{name: string, content: string}[]>}
  */
-export async function extractMetaTags(page) {
+async function extractMetaTags(page) {
   return await page.evaluate(() => {
     const metas = Array.from(document.querySelectorAll('meta'));
     return metas.map(meta => ({
@@ -138,7 +138,7 @@ export async function extractMetaTags(page) {
  * @param {import('@playwright/test').Page} page - Playwright page object
  * @returns {Promise<{isValid: boolean, canonical: string|null, currentUrl: string, error: string|null}>}
  */
-export async function validateCanonical(page) {
+async function validateCanonical(page) {
   const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
   const currentUrl = page.url();
 
@@ -175,7 +175,7 @@ export async function validateCanonical(page) {
  * @param {import('@playwright/test').Page} page - Playwright page object
  * @returns {Promise<{isValid: boolean, hreflangs: Array<{lang: string, href: string}>, errors: string[]}>}
  */
-export async function validateHreflang(page) {
+async function validateHreflang(page) {
   const errors = [];
 
   const hreflangs = await page.evaluate(() => {
@@ -217,3 +217,12 @@ export async function validateHreflang(page) {
     errors,
   };
 }
+
+module.exports = {
+  validateOpenGraph,
+  validateTwitterCard,
+  validateJSONLD,
+  extractMetaTags,
+  validateCanonical,
+  validateHreflang,
+};

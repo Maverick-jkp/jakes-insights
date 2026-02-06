@@ -1,7 +1,7 @@
 // Test data for consistent E2E testing
 // Sample posts for testing across languages
 
-export const SAMPLE_POSTS = {
+const SAMPLE_POSTS = {
   en: [
     '/en/entertainment/2026-02-04-daredevil/',
     '/en/tech/2026-02-04-amazon-down/',
@@ -19,7 +19,7 @@ export const SAMPLE_POSTS = {
 };
 
 // Valid categories for validation
-export const VALID_CATEGORIES = [
+const VALID_CATEGORIES = [
   'tech',
   'business',
   'society',
@@ -28,7 +28,7 @@ export const VALID_CATEGORIES = [
 ];
 
 // AI phrases to avoid (from quality_gate.py blacklist)
-export const AI_BLACKLIST = [
+const AI_BLACKLIST = [
   'delve into',
   'navigating the landscape',
   "in today's fast-paced",
@@ -42,7 +42,7 @@ export const AI_BLACKLIST = [
 ];
 
 // Expected meta tag patterns
-export const SEO_PATTERNS = {
+const SEO_PATTERNS = {
   description: {
     minLength: 120,
     maxLength: 160,
@@ -54,7 +54,7 @@ export const SEO_PATTERNS = {
 };
 
 // Performance budgets (Core Web Vitals)
-export const PERFORMANCE_BUDGETS = {
+const PERFORMANCE_BUDGETS = {
   lcp: {
     good: 2500,        // < 2.5s
     needsImprovement: 4000,  // 2.5-4.0s
@@ -67,4 +67,12 @@ export const PERFORMANCE_BUDGETS = {
     good: 0.1,         // < 0.1
     needsImprovement: 0.25,  // 0.1-0.25
   },
+};
+
+module.exports = {
+  SAMPLE_POSTS,
+  VALID_CATEGORIES,
+  AI_BLACKLIST,
+  SEO_PATTERNS,
+  PERFORMANCE_BUDGETS,
 };

@@ -165,7 +165,9 @@
       "Bash(/opt/homebrew/bin/gh pr view:*)",
       "Bash(git cherry-pick:*)",
       "Bash(/opt/homebrew/bin/gh pr list --json number,title,state,statusCheckRollup)",
-      "Bash(/opt/homebrew/bin/gh pr merge 5 --squash --delete-branch)"
+      "Bash(/opt/homebrew/bin/gh pr merge 5 --squash --delete-branch)",
+      "Bash(if ! grep -q \"^image:\" \"$file\")",
+      "Bash(python scripts/regenerate_missing_images.py:*)"
     ]
   }
 }

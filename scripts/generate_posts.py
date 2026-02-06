@@ -1305,7 +1305,8 @@ Return improved version (body only, no title):""",
 
             # Generate filename
             slug = keyword.lower()
-            slug = ''.join(c if c.isalnum() or c.isspace() else '' for c in slug)
+            # Allow Unicode characters (CJK) in filenames
+            slug = ''.join(c if c.isalnum() or c.isspace() or ord(c) > 127 else '' for c in slug)
             slug = slug.replace(' ', '-')[:30]
             # Use KST for image filename
             from datetime import timezone, timedelta

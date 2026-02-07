@@ -152,7 +152,7 @@ layouts/                     # Hugo templates
 ```markdown
 ## Links
 
-- Live: https://jakes-tech-insights.pages.dev
+- Live: https://jakeinsight.com
 - Repo: https://github.com/Maverick-jkp/jakes-tech-insights
 - Hugo: https://gohugo.io/documentation/
 - Claude API: https://docs.anthropic.com/en/api/

@@ -191,9 +191,57 @@
       "test_name": "title_style",
       "variant": "A",
       "assigned_at": "2026-02-06T14:23:00.245997"
+    },
+    {
+      "post_id": "2026-02-07-77회-한능검",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-07T15:01:12.148263"
+    },
+    {
+      "post_id": "2026-02-07-lil-uzi-vert",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-07T15:04:49.417814"
+    },
+    {
+      "post_id": "2026-02-07-openciv3",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-07T15:12:04.135541"
+    },
+    {
+      "post_id": "2026-02-07-대한상공회의소",
+      "test_name": "title_style",
+      "variant": "A",
+      "assigned_at": "2026-02-07T15:20:56.825070"
+    },
+    {
+      "post_id": "2026-02-07-monty-python-interpreter",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-07T15:48:08.976422"
+    },
+    {
+      "post_id": "2026-02-07-대미투자특별법",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-07T15:53:21.793094"
+    },
+    {
+      "post_id": "2026-02-07-j2リーグ",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-07T16:06:09.395305"
+    },
+    {
+      "post_id": "2026-02-07-滝沢カレン",
+      "test_name": "title_style",
+      "variant": "B",
+      "assigned_at": "2026-02-07T16:18:42.765004"
     }
   ],
-  "last_updated": "2026-02-06T14:23:00.246010",
+  "last_updated": "2026-02-07T16:18:42.765008",
   "summary": {
     "total_assignments": 0,
     "by_test": {}

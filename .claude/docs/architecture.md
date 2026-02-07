@@ -65,7 +65,7 @@
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │              Cloudflare Pages (Auto-deploy on merge)            │
-│   URL: https://jakes-tech-insights.pages.dev                   │
+│   URL: https://jakeinsight.com                                  │
 │   Build: hugo --minify                                          │
 └─────────────────────────────────────────────────────────────────┘
 ```

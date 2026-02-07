@@ -210,6 +210,60 @@ Documentation reading is happening, but **application of documented procedures i
 
 ---
 
-**Last Updated**: 2026-01-22
+## 2026-02-07: Homebrew CLI Commands "Not Found" - Recurring Failure
+
+**What happened**: Agent repeatedly tried `gh run list` and got "command not found" error. This has been happening for weeks despite `gh` CLI being installed.
+
+**Specific failure**:
+```bash
+$ gh run list
+(eval):1: command not found: gh
+```
+
+**Root cause**:
+1. **Homebrew binaries are installed in `/opt/homebrew/bin/`** (Apple Silicon Macs)
+2. **This path is NOT in the shell PATH** when Claude Code runs
+3. Agent kept trying bare commands (`gh`, `hugo`) instead of full paths
+4. CLAUDE.md already documented Hugo full path but agent didn't apply same logic to `gh`
+
+**Actual PATH confirmed**:
+```
+/Library/Frameworks/Python.framework/Versions/3.13/bin
+/usr/local/bin
+/System/Cryptexes/App/usr/bin
+/usr/bin
+/bin
+... (NO /opt/homebrew/bin)
+```
+
+**Prevention measures**:
+1. ✅ Updated CLAUDE.md Quick Commands section with explicit warning
+2. ✅ Added `/opt/homebrew/bin/gh` examples
+3. ✅ Added visual warning: "HOMEBREW TOOLS - ALWAYS USE FULL PATH"
+
+**Correct approach**:
+```bash
+# ❌ WRONG - Will fail
+gh run list
+hugo server -D
+
+# ✅ CORRECT - Always works
+/opt/homebrew/bin/gh run list
+/opt/homebrew/bin/hugo server -D
+```
+
+**Tools affected**:
+- `/opt/homebrew/bin/hugo` - Hugo static site generator
+- `/opt/homebrew/bin/gh` - GitHub CLI
+- (Any other Homebrew-installed tools)
+
+**Lesson learned**:
+- When a command fails with "not found", check if it's a Homebrew tool
+- ALWAYS use full path for Homebrew tools: `/opt/homebrew/bin/<tool>`
+- This is a known issue on Apple Silicon Macs where Claude Code doesn't inherit user's shell PATH
+
+---
+
+**Last Updated**: 2026-02-07
 **Maintained By**: All agents
-**System Version**: 5.0
+**System Version**: 6.2

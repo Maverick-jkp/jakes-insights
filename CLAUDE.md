@@ -1,7 +1,7 @@
 # CLAUDE.md
 
-**Version**: 6.0 - Progressive Disclosure
-**Last Updated**: 2026-01-23
+**Version**: 6.2 - Homebrew PATH fix
+**Last Updated**: 2026-02-07
 **Pattern**: 350k LOC case (production-proven)
 
 ---
@@ -17,40 +17,15 @@
 
 ---
 
-## 🔴 PRE-ACTION VERIFICATION CHECKLIST
+## 🔴 PRE-ACTION VERIFICATION
 
-**Before attempting to "fix" ANY reported issue:**
+**Before attempting any fix:**
+1. Verify problem exists locally (`git status`, `git diff`)
+2. Check if already fixed in remote (`git fetch origin`)
+3. Follow documented procedures (`.claude/docs/troubleshooting.md`)
+4. Never assume - always verify current state first
 
-```bash
-# Step 1: Verify problem exists locally
-git status
-git diff
-
-# Step 2: Check if already fixed in remote repository
-git fetch origin
-git show origin/main:path/to/file | grep "search-term"
-
-# Step 3: Verify environment files exist
-ls -la .env
-ls -la .git/config
-
-# Step 4: If issue involves environment variables, verify they exist
-grep "VARIABLE_NAME" .env
-
-# Step 5: Check documented procedures FIRST
-# Example: .claude/docs/commands.md line 20 shows how to load .env
-# DO NOT improvise - follow documented method
-```
-
-**CRITICAL RULES**:
-1. ❌ **NEVER assume** user's report means issue currently exists - verify first
-2. ❌ **NEVER improvise** solutions when documented procedures exist
-3. ❌ **NEVER claim** files/keys/tools are missing without checking
-4. ✅ **ALWAYS verify** current state before attempting any fix
-5. ✅ **ALWAYS follow** documented procedures exactly as written
-6. ✅ **ALWAYS check** if issue already resolved in previous session
-
-**If verification shows issue is already fixed**: Report findings, do NOT redo the work.
+**Full checklist**: `.claude/rules/verification.md`
 
 ---
 
@@ -60,48 +35,34 @@ grep "VARIABLE_NAME" .env
 
 - **Tech Stack**: Hugo, Python 3.x, Claude API (Sonnet 4.5), GitHub Actions
 - **Languages**: English (EN), Korean (KO), Japanese (JA)
-- **Deployment**: Cloudflare Pages (https://jakes-tech-insights.pages.dev)
+- **Deployment**: Cloudflare Pages (https://jakeinsight.com)
 - **Automation**: Daily content generation (configured via GitHub Actions schedule)
 
 ---
 
 ## Quick Commands
 
-### Claude Plugins (Quick Access)
 ```bash
-# List installed plugins
-./scripts/manage_plugins.sh list
-
-# Show plugin paths
-./scripts/manage_plugins.sh path
-
-# Open in Finder
-./scripts/manage_plugins.sh open
-
-# Or use project symlink
-ls -la .claude/plugins-link/system-plugins/
-```
-
-### Hugo (CRITICAL: Use full path)
-```bash
+# ⚠️ HOMEBREW TOOLS - ALWAYS USE FULL PATH (not in PATH!)
 /opt/homebrew/bin/hugo server -D
 /opt/homebrew/bin/hugo --minify
-```
+/opt/homebrew/bin/gh run list
+/opt/homebrew/bin/gh run view <id> --log-failed
 
-### Python
-```bash
-pip install -r requirements.txt
+# Python
 python scripts/generate_posts.py --count 3
 pytest
-```
 
-### Git
-```bash
+# Git
 git status
 git commit -m "..."
 ```
 
-**Full reference**: `.claude/docs/commands.md`
+**🚨 CRITICAL**: Homebrew binaries (`hugo`, `gh`) are NOT in PATH.
+- ❌ `gh run list` → "command not found"
+- ✅ `/opt/homebrew/bin/gh run list` → works
+
+**Full reference**: `.claude/commands/quickstart.md`
 
 ---
 
@@ -144,31 +105,14 @@ data/topics_queue.json       # Topic queue (state machine)
 
 ---
 
-## Common Tasks Quick Reference
+## Common Tasks
 
-### 1. Generate content
-```bash
-python scripts/generate_posts.py --count 3
-```
-**Details**: `.claude/docs/development.md` → Section 1
-
-### 2. Fix stuck topics
-```bash
-python scripts/topic_queue.py cleanup 24
-```
-**Details**: `.claude/docs/development.md` → Section 2
-
-### 3. Test locally
-```bash
-/opt/homebrew/bin/hugo server -D
-```
-**Details**: `.claude/docs/development.md` → Section 3
-
-### 4. Troubleshoot Hugo
-**Read**: `.claude/docs/troubleshooting.md` → "Hugo Not Found"
-
-### 5. Troubleshoot API keys
-**Read**: `.claude/docs/troubleshooting.md` → "API Key Issues"
+| Task | Command | Details |
+|------|---------|---------|
+| Generate content | `python scripts/generate_posts.py --count 3` | `.claude/docs/development.md` §1 |
+| Fix stuck topics | `python scripts/topic_queue.py cleanup 24` | `.claude/docs/development.md` §2 |
+| Test locally | `/opt/homebrew/bin/hugo server -D` | `.claude/docs/development.md` §3 |
+| Troubleshoot | See `.claude/docs/troubleshooting.md` | Hugo, API keys, etc. |
 
 ---
 
@@ -196,29 +140,14 @@ Topic Queue → Draft Agent → Editor Agent → Quality Gate → AI Review → 
 
 ## Important Links
 
-- **Live Site**: https://jakes-tech-insights.pages.dev
+- **Live Site**: https://jakeinsight.com (verify: `grep baseURL hugo.toml`)
 - **GitHub**: https://github.com/Maverick-jkp/jakes-tech-insights
 - **Hugo Docs**: https://gohugo.io/documentation/
 - **Claude API**: https://docs.anthropic.com/en/api/
 
 ---
 
-## For Larger Projects
-
-**Current scale**: < 10k LOC
-**Pattern**: Progressive disclosure (proven at 350k LOC)
-**Future**: See `.claude/real-world-cases.md` for scaling patterns
-
 ---
 
-## Version History
-
-- **6.0** (2026-01-23): Progressive disclosure refactor (957 → 200 lines)
-- **5.0** (2026-01-23): Technical architecture split
-- **4.0** (2026-01-22): Multi-agent workflow consolidation
-- **3.0** (2026-01-20): Session checklists added
-
----
-
-**This is the entry point. Read detailed docs on-demand.**
-**Based on production-proven 350k LOC case (30-40% productivity gain).**
+**Entry point | Scale**: < 10k LOC | **Pattern**: Progressive disclosure (350k LOC proven)
+**Version**: 6.1 (2026-02-07) - Token-optimized structure

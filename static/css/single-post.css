@@ -6,7 +6,7 @@
     --border: #2d2d2d;
     --text: #f0f0f0;
     --text-dim: #9a9a9a;
-    --accent: #00ff88;
+    --accent: #00dd77;
 }
 
 * {
@@ -115,7 +115,7 @@ h1 {
 }
 
 .content img {
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
     height: auto;
     margin: 1.5rem auto;

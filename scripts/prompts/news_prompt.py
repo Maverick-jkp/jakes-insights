@@ -150,6 +150,23 @@ THINGS TO AVOID:
 - Vague timeframes ("soon", "recently" - be specific)
 - Filler content just to reach word count
 
+AI PHRASE BLACKLIST (NEVER USE):
+- "game-changer", "revolutionary", "revolutionize"
+- "cutting-edge", "state-of-the-art", "groundbreaking"
+- "leverage", "robust", "seamlessly", "synergy"
+- "In today's rapidly evolving...", "In the ever-changing landscape..."
+- "It's important to note that...", "It's worth mentioning..."
+- "Whether you're a... or a...", "dive deep", "dive into"
+- "comprehensive guide", "everything you need to know"
+- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each)
+
+CITATION REQUIREMENTS (MANDATORY):
+- Every statistic MUST have an inline source: "According to [Source Name]..."
+- Every percentage claim needs verification: Link to study or official report
+- Do NOT use: "studies show", "research indicates", "experts say" without naming the specific study/expert
+- If you cannot verify a statistic, DO NOT include it
+- Fabricated statistics are UNACCEPTABLE - better to omit than to invent
+
 KEEP IT CONCISE:
 - News should be factual and to-the-point
 - Don't pad with unnecessary details

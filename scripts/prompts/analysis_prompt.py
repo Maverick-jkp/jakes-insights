@@ -178,6 +178,24 @@ THINGS TO AVOID:
 - Making unsubstantiated predictions
 - Personal opinions stated as facts
 
+AI PHRASE BLACKLIST (NEVER USE):
+- "game-changer", "revolutionary", "revolutionize"
+- "cutting-edge", "state-of-the-art", "groundbreaking"
+- "leverage", "robust", "seamlessly", "synergy"
+- "In today's rapidly evolving...", "In the ever-changing landscape..."
+- "It's important to note that...", "It's worth mentioning..."
+- "Whether you're a... or a...", "dive deep", "dive into"
+- "comprehensive guide", "everything you need to know"
+- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each)
+
+CITATION REQUIREMENTS (MANDATORY):
+- Every statistic MUST have an inline source: "According to [Source Name]..."
+- Every percentage claim needs verification: Link to study or official report
+- Do NOT use: "studies show", "research indicates", "experts say" without naming the specific study/expert
+- If comparing products/services, use REAL specifications from official sources
+- Do NOT invent products, features, or companies that don't exist
+- Fabricated data is UNACCEPTABLE - better to be general than to lie
+
 Now write the complete analysis article following this structure exactly."""
 
     return prompt

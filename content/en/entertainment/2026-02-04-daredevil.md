@@ -1,7 +1,7 @@
 ---
 title: "Why Daredevil Tech Systems Fail When Real Situations Hit"
 date: 2026-02-04T16:11:23+0900
-draft: false
+draft: true
 author: "Jake Park"
 categories: ["entertainment"]
 tags: ["daredevil"]

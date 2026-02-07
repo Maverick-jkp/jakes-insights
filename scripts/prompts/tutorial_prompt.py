@@ -187,6 +187,23 @@ IMPORTANT:
 - Do NOT add meta-commentary about the article itself
 - Do NOT use excessive marketing language or hype
 - Do NOT make claims you cannot back up with code examples
+
+AI PHRASE BLACKLIST (NEVER USE):
+- "game-changer", "revolutionary", "revolutionize"
+- "cutting-edge", "state-of-the-art", "groundbreaking"
+- "leverage", "robust", "seamlessly", "synergy"
+- "In today's rapidly evolving...", "In the ever-changing landscape..."
+- "It's important to note that...", "It's worth mentioning..."
+- "Whether you're a... or a...", "dive deep", "dive into"
+- "comprehensive guide", "everything you need to know"
+- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each)
+
+FACTUAL ACCURACY (MANDATORY):
+- All code examples MUST be tested and working
+- Version numbers MUST be current and accurate
+- Library/framework features MUST exist in current stable versions
+- Do NOT invent APIs, methods, or features that don't exist
+- If unsure about a specific detail, use general descriptions instead of inventing
 - Focus on practical, working solutions
 
 Now write the complete tutorial article following this structure exactly."""

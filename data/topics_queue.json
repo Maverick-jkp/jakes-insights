@@ -5599,41 +5599,6 @@
       "completed_at": "2026-02-06T05:16:46.059017+00:00"
     },
     {
-      "id": "453-ko-business-한화솔루션",
-      "keyword": "한화솔루션",
-      "category": "business",
-      "lang": "ko",
-      "priority": 9,
-      "status": "completed",
-      "created_at": "2026-02-06T14:14:11.760195",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "한화솔루션의 실적 악화 소식을 놓치면 투자 손실을 키울 수 있다",
-      "angle": "한화솔루션의 예상치 못한 적자와 향후 전망",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "한화솔루션 4분기 적자전환 먹구름…올해엔 볕 들까",
-          "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4396854",
-          "source": "news.einfomax.co.kr"
-        },
-        {
-          "title": "한화솔루션, 올해 흑자 전환 전망…목표가 5만원-유진 | 한국경제",
-          "url": "https://www.hankyung.com/article/2026020680816",
-          "source": "www.hankyung.com"
-        },
-        {
-          "title": "한화솔루션, 지난해 영업손실 3533억···전년비 17.67% 증가 - 스마트비즈",
-          "url": "https://www.smartbizn.com/news/articleView.html?idxno=135091",
-          "source": "www.smartbizn.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-06T05:14:17.625484+00:00",
-      "completed_at": "2026-02-06T05:20:15.374184+00:00"
-    },
-    {
       "id": "457-ja-business-トヨタ-株価",
       "keyword": "トヨタ 株価",
       "category": "business",
@@ -5669,261 +5634,503 @@
       "completed_at": "2026-02-06T05:23:00.360011+00:00"
     },
     {
-      "id": "458-en-tech-high-wind-warning",
-      "keyword": "high wind warning",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.830765",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Find emergency apps and wind monitoring technology before power outages hit their area",
-      "angle": "Weather monitoring technology and emergency preparedness systems failing during extreme weather",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Wind Warnings, Watches and Advisories",
-          "url": "https://www.weather.gov/safety/wind-ww",
-          "source": "www.weather.gov"
-        },
-        {
-          "title": "Port St. Lucie, FL Severe Weather Alert | Weather Underground",
-          "url": "https://www.wunderground.com/severe/us/fl/port-st-lucie/34952",
-          "source": "www.wunderground.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "459-en-business-mortgages",
-      "keyword": "mortgages",
-      "category": "business",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.830800",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Compare their current mortgage rate to market rates before missing refinancing opportunities",
-      "angle": "Mortgage rate inequality and missed refinancing windows costing homeowners thousands",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "A surprising share of homeowners have high mortgage rates. Here's the breakdown",
-          "url": "https://www.cnbc.com/2026/02/04/homeowner-mortgage-rates-breakdown.html",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "30-Year Fixed Rate Mortgage Average in the United States (MORTGAGE30US) | FRED | St. Louis Fed",
-          "url": "https://fred.stlouisfed.org/series/MORTGAGE30US",
-          "source": "fred.stlouisfed.org"
-        },
-        {
-          "title": "Mortgage and refinance interest rates today, February 2, 2026: Bubbling under 6%",
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-refinance-rates-today-monday-february-2-2026-110039176.html",
-          "source": "finance.yahoo.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "460-ko-society-지귀연",
-      "keyword": "지귀연",
-      "category": "society",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.830830",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "재판관 교체가 판결에 미치는 영향을 알아보지 않으면 중요한 정치적 변화를 놓칠 수 있음",
-      "angle": "핵심 재판관의 갑작스런 인사이동이 대통령 재판에 미칠 예측불가능한 영향",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "[속보] 尹 내란재판 지귀연 부장판사 북부지법으로…법관 정기인사 | 중앙일보",
-          "url": "https://www.joongang.co.kr/article/25403140",
-          "source": "www.joongang.co.kr"
-        },
-        {
-          "title": "尹 내란우두머리 재판 지귀연 부장판사, 서울북부지법으로(종합) | 서울신문",
-          "url": "https://www.seoul.co.kr/news/newsView.php?id=20260206500218",
-          "source": "www.seoul.co.kr"
-        },
-        {
-          "title": "지귀연, 윤석열 내란 1심 선고 뒤 북부지법으로…법원 정기 인사",
-          "url": "https://www.hani.co.kr/arti/society/society_general/1243722.html",
-          "source": "www.hani.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "461-ko-business-부영그룹",
-      "keyword": "부영그룹",
-      "category": "business",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.830854",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "자신의 직장도 비슷한 출산지원 정책을 도입할지 알아보지 않으면 혜택을 놓칠 수 있음",
-      "angle": "기업 출산지원금 경쟁이 시작되면서 직장 선택 기준이 완전히 바뀌는 상황",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "부영그룹 ‘직원 출산하면 1억’… 도입후 3년간 총 134억 지급",
-          "url": "https://www.donga.com/news/Economy/article/all/20260205/133307405/2",
-          "source": "www.donga.com"
-        },
-        {
-          "title": "부영그룹, 자녀 1인당 1억 원 출산장려금 지급… 누적 134억 원 | 한국경제",
-          "url": "https://www.hankyung.com/article/202602056924i",
-          "source": "www.hankyung.com"
-        },
-        {
-          "title": "부영그룹, 출산장려금 36억 확대 지급 선언 - 퍼블릭뉴스통신(Public news-network for TTL)",
-          "url": "http://www.ttlnews.com/news/articleView.html?idxno=3076921",
-          "source": "www.ttlnews.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "462-ja-society-最高裁判所裁判官国民審査どんな人",
-      "keyword": "最高裁判所裁判官国民審査どんな人",
-      "category": "society",
-      "lang": "ja",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.830883",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "判事の詳しい経歴を調べて適切な判断をしないと、重要な司法判決に悪影響を与える可能性",
-      "angle": "国民審査で適当に投票すると司法制度に長期的な悪影響を与えるリスク",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "最高裁の裁判官をチェックしよう 2人はどんな「判断」を？ 「国民審査」期日前は2月1日から：東京新聞デジタル",
-          "url": "https://www.tokyo-np.co.jp/article/464832",
-          "source": "www.tokyo-np.co.jp"
-        },
-        {
-          "title": "国民審査：「憲法の番人」にふさわしいか 最高裁裁判官国民審査の判断ポイント | 毎日新聞",
-          "url": "https://mainichi.jp/articles/20260129/k00/00m/040/006000c",
-          "source": "mainichi.jp"
-        },
-        {
-          "title": "注目されない最高裁裁判官の国民審査、形骸化に批判 あるべき姿は",
-          "url": "https://www.asahi.com/articles/ASV221QVJV22UTIL00BM.html",
-          "source": "www.asahi.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "463-ja-entertainment-円井わん",
-      "keyword": "円井わん",
+      "id": "458-en-entertainment-lil-uzi-vert",
+      "keyword": "lil uzi vert",
       "category": "entertainment",
-      "lang": "ja",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.830905",
+      "lang": "en",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675077",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "女優の政治発言が作品や芸能界での立場に与える影響を知らないと重要な業界動向を見逃す",
-      "angle": "芸能人の政治発言がキャリアと作品評価に与える予測不可能な影響",
-      "competition_level": "medium",
+      "search_intent": "Users fear missing out on the viral makeup trend inspired by Lil Uzi Vert's Marc Jacobs appearance before it becomes oversaturated",
+      "angle": "Celebrity influence shifting from music to beauty industry disruption",
+      "competition_level": "high",
       "references": [
         {
-          "title": "円井わん「選挙、政治は推し活ではありません」（日刊スポーツ） - Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6468ad02f7f5f8cb32602417919ef4017db3759b",
-          "source": "news.yahoo.co.jp"
+          "title": "Lil Uzi Vert discography - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lil_Uzi_Vert_discography",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "円井わん「選挙、政治は推し活ではありません」 - 社会 : 日刊スポーツ",
-          "url": "https://www.nikkansports.com/entertainment/news/202602030001090.html",
-          "source": "www.nikkansports.com"
-        },
-        {
-          "title": "「今のままでは演じられない」話題の円井わんが朝ドラの役作りで“しんどくなった”ワケ〈ばけばけ第88回〉",
-          "url": "https://diamond.jp/articles/-/382558",
-          "source": "diamond.jp"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "464-ko-society-건강한-생활-습관",
-      "keyword": "건강한 생활 습관",
-      "category": "society",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-06T07:50:50.831158",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "장기적인 건강 관리와 삶의 질 향상을 위한 실천 방법 학습",
-      "angle": "과학적 근거 기반의 실천 가능한 건강 습관 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "[본방 종합] 무너진 생활 습관, 건강한 변화를 꿈꾸나요? 단 6일 만에 몸과 마음, 그리고 일상은 얼마나 달라질 수 있을까? I KBS 20251022 방송 - YouTube",
-          "url": "https://www.youtube.com/watch?v=qr_rjxhQ7-M",
+          "title": "Lil Uzi Vert - What You Saying (Lyrics) - YouTube",
+          "url": "https://www.youtube.com/watch?v=HriOwijC4fs",
           "source": "www.youtube.com"
         },
         {
-          "title": "건강한 사람들은 아침에 ‘이것’ 꼭 챙겨...어떤 좋은 습관 갖고 있나? - 코메디닷컴",
-          "url": "https://kormedi.com/2741498/",
-          "source": "kormedi.com"
-        },
-        {
-          "title": "건강한 70대를 위해 30대에 할 수 있는 일들 - BBC News 코리아",
-          "url": "https://www.bbc.com/korean/articles/cx2d200p3v9o",
-          "source": "www.bbc.com"
+          "title": "Lil Uzi Vert Makeup | TikTok",
+          "url": "https://www.tiktok.com/discover/lil-uzi-vert-makeup",
+          "source": "www.tiktok.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T05:50:26.728288+00:00",
+      "completed_at": "2026-02-07T06:04:49.428948+00:00"
     },
     {
-      "id": "465-ja-society-健康的な生活習慣",
-      "keyword": "健康的な生活習慣",
-      "category": "society",
-      "lang": "ja",
+      "id": "459-en-entertainment-green-day",
+      "keyword": "green day",
+      "category": "entertainment",
+      "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-06T07:50:50.831286",
+      "created_at": "2026-02-07T14:50:18.675157",
+      "retry_count": 1,
+      "keyword_type": "trend",
+      "search_intent": "Fans want to know if Green Day will perform their politically charged hits or play safe for NBC sponsors",
+      "angle": "Corporate censorship vs. artistic integrity in high-stakes live performance",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Green Day - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Green_Day",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Green Day to Play Super Bowl LX Opening Ceremony: How to Watch on NBC & Peacock",
+          "url": "https://www.nbc.com/nbc-insider/green-day-to-play-super-bowl-opening-ceremony-how-to-watch-on-nbc",
+          "source": "www.nbc.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "last_error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Output blocked by content filtering policy'}, 'request_id': 'req_011CXtFdg99ZgKYoXjRZ7nUd'}",
+      "last_failed_at": "2026-02-07T06:42:41.787574+00:00"
+    },
+    {
+      "id": "460-en-sports-willow-tv",
+      "keyword": "willow tv",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675183",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "長期的な健康管理と生活の質向上のための実践方法学習",
-      "angle": "科学的根拠に基づく実践可能な健康習慣ガイド",
+      "keyword_type": "trend",
+      "search_intent": "Users suspect this free access is temporary and want to lock in viewing before paywalls return",
+      "angle": "Streaming platform strategy shift signals potential industry disruption",
       "competition_level": "low",
       "references": [
         {
-          "title": "生活習慣が健康を守る！日常生活でできる管理法 - 花田クリニック",
-          "url": "https://hanada-clinic.com/column/193/",
-          "source": "hanada-clinic.com"
+          "title": "Willow (TV series) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Willow_(TV_series)",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "生活習慣病を予防する方法12選！食べ物・食生活や運動など解説 | セントラルクリニック世田谷",
-          "url": "https://nidc.or.jp/column/lifestyle-related-diseases/",
-          "source": "nidc.or.jp"
+          "title": "Willow to stream Team USA cricket matches for free on YouTube",
+          "url": "https://thedesk.net/2026/02/willow-to-stream-team-usa-cricket-matches-for-free-on-youtube/",
+          "source": "thedesk.net"
         },
         {
-          "title": "毎日の生活で実践できる！生活習慣病を防ぐ10の習慣【実践ガイド】 | グッドライフクリニック西町南",
-          "url": "https://goodlifeclinic.co.jp/post-3108/",
-          "source": "goodlifeclinic.co.jp"
+          "title": "Willow By Cricbuzz Brings a Host of Updates for 2026 Cricket Season | Markets Insider",
+          "url": "https://markets.businessinsider.com/news/stocks/willow-by-cricbuzz-brings-a-host-of-updates-for-2026-cricket-season-1035778862",
+          "source": "markets.businessinsider.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T07:09:58.401202+00:00"
+    },
+    {
+      "id": "461-en-business-50-cent",
+      "keyword": "50 cent",
+      "category": "business",
+      "lang": "en",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675204",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users want to understand if endorsement deals signal declining music revenue for legacy artists",
+      "angle": "Ageism in hip-hop forcing industry veterans into alternative revenue streams",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "50 Cent on His Super Bowl Ad and His Future: 'I'm Going to Make Music'",
+          "url": "https://www.rollingstone.com/music/music-features/50-cent-super-bowl-ad-his-future-1235512298/",
+          "source": "www.rollingstone.com"
+        },
+        {
+          "title": "50 Cent Continues to Troll Diddy in Super Bowl Commercial for DoorDash",
+          "url": "https://www.vice.com/en/article/50-cent-continues-to-troll-diddy-in-super-bowl-commercial-for-doordash/",
+          "source": "www.vice.com"
+        },
+        {
+          "title": "50 Cent Teases Documentary About Jay-Z's Alleged Jeffrey Epstein Link",
+          "url": "https://www.hotnewhiphop.com/974546-50-cent-documentary-jay-z-alleged-jeffrey-epstein-link",
+          "source": "www.hotnewhiphop.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T06:45:37.000035+00:00"
+    },
+    {
+      "id": "462-en-tech-OpenCiv3",
+      "keyword": "OpenCiv3",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675223",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers need workarounds now before Apple tightens restrictions further in future OS updates",
+      "angle": "Platform control threatening open-source software viability",
+      "competition_level": "medium",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:07:27.925275+00:00",
+      "completed_at": "2026-02-07T06:12:04.146833+00:00"
+    },
+    {
+      "id": "463-en-tech-Waymo-World-Model",
+      "keyword": "Waymo World Model",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675244",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users suspect simulation capabilities far exceed deployment, indicating regulatory or liability barriers",
+      "angle": "Gap between technological capability and commercial deployment exposes industry secrets",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Men's T20 World Cup - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Men's_T20_World_Cup",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "ICC Men's T20 World Cup 2026 format, teams, groups, venues, rules & winners' list - BBC Sport",
+          "url": "https://www.bbc.com/sport/cricket/articles/cvgj5ngm0mdo",
+          "source": "www.bbc.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T05:50:26.728288+00:00",
+      "completed_at": "2026-02-07T05:54:40.011521+00:00"
+    },
+    {
+      "id": "464-en-tech-H3-indexes",
+      "keyword": "H3 indexes",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675263",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers fear their current geo solutions are becoming non-competitive as H3 adoption accelerates",
+      "angle": "Silent industry migration to superior technology leaving late adopters behind",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:07:27.925275+00:00",
+      "completed_at": "2026-02-07T06:16:00.026640+00:00"
+    },
+    {
+      "id": "465-en-tech-Monty-Python-interpr",
+      "keyword": "Monty Python interpreter",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675285",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers need to understand if their Python expertise will remain relevant as AI agents demand sandboxed environments",
+      "angle": "AI-driven security requirements forcing Python ecosystem fragmentation",
+      "competition_level": "medium",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T06:48:08.979278+00:00"
+    },
+    {
+      "id": "466-ko-entertainment-홍진경",
+      "keyword": "홍진경",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 6,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675331",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "팬들이 홍진경의 커리어 전환 배경에 숨겨진 업계 구조를 알고 싶어 함",
+      "angle": "한국 방송계의 나이 차별이 중견 연예인을 해외로 내모는 현실",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "홍진경, 이혼 6개월 만에…중국서 난리났다",
+          "url": "https://tvreport.co.kr/entertainment/article/997276/",
+          "source": "tvreport.co.kr"
+        },
+        {
+          "title": "이관희 \"연애 훈수 화난다\" 논란…결국 홍진경에 직접 사과 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25401763",
+          "source": "www.joongang.co.kr"
+        },
+        {
+          "title": "홍진경, ‘솔로지옥3’ 이관희 망언 사과 받았다 “논란 죄송”",
+          "url": "https://news.jtbc.co.kr/article/NB12282739",
+          "source": "news.jtbc.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T07:14:21.614555+00:00"
+    },
+    {
+      "id": "467-ko-business-대한상공회의소",
+      "keyword": "대한상공회의소",
+      "category": "business",
+      "lang": "ko",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675354",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "중산층 이상 가구가 상속세 부담 증가에 대비한 자산 재배치 전략 필요",
+      "angle": "현 정부의 상속세 개편 논의가 실패할 경우 세 부담 폭증 시나리오",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "韓 자산가 유출 세계 4위…\"상속세 납부방식 개선해야\" | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260203041300003",
+          "source": "www.yna.co.kr"
+        },
+        {
+          "title": "박동민 대한상의 전무이사 ‘규제합리화 유공’ 동백장",
+          "url": "https://www.chosun.com/economy/industry-company/2026/02/02/3W6KZTL2WJAQVESJY7YRIBWQF4/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "경제계 “대미투자법 국회특위 구성 환영…2월 내 통과 간곡히 요청” - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10670689",
+          "source": "biz.heraldcorp.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:07:27.925275+00:00",
+      "completed_at": "2026-02-07T06:20:56.830086+00:00"
+    },
+    {
+      "id": "468-ko-society-77회-한능검",
+      "keyword": "77회 한능검",
+      "category": "society",
+      "lang": "ko",
+      "priority": 9,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675377",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "수험생이 시험 직전 핵심 요약과 실수 방지 체크리스트 필요",
+      "angle": "대형 강사 커리큘럼이 다루지 않는 D-1 전략 공백",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "별별353_77회 한능검 D-1 합격을 원한다면 ☆전!!!야!!!제!!!☆｜별★밤 1TV - YouTube",
+          "url": "https://www.youtube.com/watch?v=tf97j0aG7YE",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "<최태성의 한능검 한국사 ① 구석기 시대 ? 청동기 시대 > 최태성의한능검한국사",
+          "url": "https://sarak.yes24.com/blog/pyj305965/review-view/21947245",
+          "source": "sarak.yes24.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T05:50:26.728288+00:00",
+      "completed_at": "2026-02-07T06:01:12.155994+00:00"
+    },
+    {
+      "id": "469-ko-business-대미투자특별법",
+      "keyword": "대미투자특별법",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675398",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "중소기업 경영자가 법안 세부 조항 확인 후 로비 또는 대응 전략 수립 필요",
+      "angle": "경제계 환영 뒤에 숨겨진 중소기업 배제 구조",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T06:53:21.795986+00:00"
+    },
+    {
+      "id": "470-ko-society-JD-Vance-야유",
+      "keyword": "JD Vance 야유",
+      "category": "society",
+      "lang": "ko",
+      "priority": 8,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675423",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "시청자가 원본 영상과 편집본을 비교하여 미디어 조작 여부 확인하고 싶어 함",
+      "angle": "주요 방송사의 실시간 검열 능력이 여론 형성에 미치는 영향",
+      "competition_level": "medium",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:33:10.197899+00:00",
+      "completed_at": "2026-02-07T06:38:27.062812+00:00"
+    },
+    {
+      "id": "471-ko-business-AI-스타트업-부자-행진",
+      "keyword": "AI 스타트업 부자 행진",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675449",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "스타트업 창업자와 투자자가 부유세 시행 시 이탈 전략 필요 여부 판단",
+      "angle": "기술 업계 엘리트의 정치 개입이 대중 반감을 사는 역설",
+      "competition_level": "medium",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T06:59:41.868055+00:00"
+    },
+    {
+      "id": "472-ja-entertainment-桜井ユキ",
+      "keyword": "桜井ユキ",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675515",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ファンが桜井ユキの新作ドラマで見せる演技方向性を事前把握し、放送前に期待値を設定したい",
+      "angle": "中堅女優のキャリア転換期における作品選択の意味",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "桜井ユキ - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E6%A1%9C%E4%BA%95%E3%83%A6%E3%82%AD",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "桜井ユキ、宮沢氷魚、加賀まりこ出演「しあわせは食べて寝て待て」SPドラマが夏放送 - 映画ナタリー",
+          "url": "https://natalie.mu/eiga/news/658543",
+          "source": "natalie.mu"
+        },
+        {
+          "title": "桜井ユキ、岡村隆史と初共演に喜び「ぜいたくな時間だな」【コメントあり】",
+          "url": "https://www.oricon.co.jp/news/2434795/full/",
+          "source": "www.oricon.co.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T07:02:16.916595+00:00"
+    },
+    {
+      "id": "473-ja-entertainment-滝沢カレン",
+      "keyword": "滝沢カレン",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 6,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675535",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "視聴者が芸能界の「かわいいから許される」構造を理解し、他タレントとの不公平感を確認したい",
+      "angle": "芸能界における外見による特権とその批判のタブー",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "“きれいめカジュアル”…滝沢カレン、シャツ×ジュエリーで“つぶらな二重”の美顔のオフショットを公開（WEBザテレビジョン） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/996af63834269074c7904fc90590f7422475868f",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "とろサーモン・久保田かずのぶ 滝沢カレンに辛辣意見「かわいいから、誰もその辺言わない」 | 東スポWEB",
+          "url": "https://www.tokyo-sports.co.jp/articles/-/375779",
+          "source": "www.tokyo-sports.co.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T07:18:42.767648+00:00"
+    },
+    {
+      "id": "474-ja-sports-j2リーグ",
+      "keyword": "j2リーグ",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 7,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675553",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "サポーターが自分の応援チームが不利なグループに配置されるリスクを事前把握したい",
+      "angle": "リーグ構造改革による地域格差拡大の懸念",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "J2リーグ - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/J2%E3%83%AA%E3%83%BC%E3%82%B0",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T07:06:09.400110+00:00"
+    },
+    {
+      "id": "475-ja-sports-中田翔",
+      "keyword": "中田翔",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "completed",
+      "created_at": "2026-02-07T14:50:18.675571",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "野球ファンが元プロの実戦経験に基づく分析と、データ重視の評論家の意見を比較したい",
+      "angle": "引退選手の発言権と現役世代との戦略観の相違",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "中田翔氏が選ぶ侍ジャパン最強スタメン 外したら「日本代表の打順は完成しない」キーマンとは？（スポニチアネックス） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7063f13a71997115343e845445ff3c533fe8ff69",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "北谷を訪れた中田翔さん、「みんな、すごくいい顔」今季から本拠地に『ウイング』新設「本塁打がどれくらい増えるのか楽しみ」：中日スポーツ・東京中日スポーツ",
+          "url": "https://www.chunichi.co.jp/article/1203531",
+          "source": "www.chunichi.co.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-07T06:41:55.236386+00:00",
+      "completed_at": "2026-02-07T07:22:27.153213+00:00"
     }
   ]
 }

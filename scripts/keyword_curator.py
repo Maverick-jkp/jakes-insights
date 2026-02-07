@@ -391,9 +391,9 @@ class KeywordCurator:
         community_topics = []
         verify_ssl = certifi.where() if certifi else True
 
-        # 1. HackerNews - Top Stories (free, no auth)
+        # 1. HackerNews - Top Stories + Top Comments (free, no auth)
         try:
-            safe_print("  → Fetching from HackerNews...")
+            safe_print("  → Fetching from HackerNews (with top comments)...")
             hn_top_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
             response = requests.get(hn_top_url, timeout=10, verify=verify_ssl)
             response.raise_for_status()
@@ -407,17 +407,38 @@ class KeywordCurator:
                     item = item_resp.json()
 
                     if item and item.get('title'):
+                        # Fetch top 3 comments for additional context
+                        top_comments = []
+                        comment_ids = item.get('kids', [])[:3]  # Top 3 comment IDs
+                        for comment_id in comment_ids:
+                            try:
+                                comment_url = f"https://hacker-news.firebaseio.com/v0/item/{comment_id}.json"
+                                comment_resp = requests.get(comment_url, timeout=3, verify=verify_ssl)
+                                comment_resp.raise_for_status()
+                                comment = comment_resp.json()
+                                if comment and comment.get('text'):
+                                    # Strip HTML tags and limit length
+                                    import re
+                                    clean_text = re.sub('<[^<]+?>', '', comment.get('text', ''))
+                                    if len(clean_text) > 500:
+                                        clean_text = clean_text[:500] + '...'
+                                    top_comments.append(clean_text)
+                            except Exception:
+                                continue
+
                         community_topics.append({
                             'title': item['title'],
                             'source': 'HackerNews',
                             'url': item.get('url', f"https://news.ycombinator.com/item?id={story_id}"),
                             'score': item.get('score', 0),
-                            'comments': item.get('descendants', 0)
+                            'comments': item.get('descendants', 0),
+                            'top_comments': top_comments  # NEW: Developer insights
                         })
                 except Exception:
                     continue
 
-            safe_print(f"    ✓ Found {len([t for t in community_topics if t['source'] == 'HackerNews'])} topics from HackerNews")
+            hn_count = len([t for t in community_topics if t['source'] == 'HackerNews'])
+            safe_print(f"    ✓ Found {hn_count} topics from HackerNews (with comments)")
 
         except Exception as e:
             safe_print(f"    ⚠️ HackerNews fetch failed: {mask_secrets(str(e))}")
@@ -451,30 +472,50 @@ class KeywordCurator:
                 safe_print(f"    ⚠️ Reddit r/{subreddit} fetch failed: {mask_secrets(str(e))}")
                 continue
 
-        # 3. ProductHunt - Using RSS feed (no auth needed)
+        # 3. ProductHunt - Using Atom feed with descriptions (no auth needed)
         try:
-            safe_print("  → Fetching from ProductHunt...")
+            safe_print("  → Fetching from ProductHunt (with descriptions)...")
             import xml.etree.ElementTree as ET
-            ph_rss_url = "https://www.producthunt.com/feed"
-            response = requests.get(ph_rss_url, timeout=10, verify=verify_ssl)
+            ph_feed_url = "https://www.producthunt.com/feed"
+            response = requests.get(ph_feed_url, timeout=10, verify=verify_ssl)
             response.raise_for_status()
 
             root = ET.fromstring(response.content)
-            items = root.findall('.//item')
+            # ProductHunt uses Atom format, not RSS - need to use namespace
+            atom_ns = {'atom': 'http://www.w3.org/2005/Atom'}
+            entries = root.findall('atom:entry', atom_ns)
 
-            for item in items[:5]:
-                title_elem = item.find('title')
-                link_elem = item.find('link')
+            for entry in entries[:5]:
+                title_elem = entry.find('atom:title', atom_ns)
+                link_elem = entry.find('atom:link', atom_ns)
+                content_elem = entry.find('atom:content', atom_ns)  # Atom uses 'content' not 'description'
+
                 if title_elem is not None and title_elem.text:
+                    # Extract URL from link element's href attribute
+                    url = ''
+                    if link_elem is not None:
+                        url = link_elem.get('href', '')
+
+                    # Extract and clean description from content
+                    description = ''
+                    if content_elem is not None and content_elem.text:
+                        import re
+                        description = re.sub('<[^<]+?>', '', content_elem.text)  # Strip HTML
+                        description = ' '.join(description.split())  # Normalize whitespace
+                        if len(description) > 500:
+                            description = description[:500] + '...'
+
                     community_topics.append({
                         'title': title_elem.text.strip(),
                         'source': 'ProductHunt',
-                        'url': link_elem.text if link_elem is not None else '',
+                        'url': url,
                         'score': 0,
-                        'comments': 0
+                        'comments': 0,
+                        'description': description  # Product details
                     })
 
-            safe_print(f"    ✓ Found {len([t for t in community_topics if t['source'] == 'ProductHunt'])} topics from ProductHunt")
+            ph_count = len([t for t in community_topics if t['source'] == 'ProductHunt'])
+            safe_print(f"    ✓ Found {ph_count} topics from ProductHunt (with descriptions)")
 
         except Exception as e:
             safe_print(f"    ⚠️ ProductHunt fetch failed: {mask_secrets(str(e))}")
@@ -859,9 +900,26 @@ class KeywordCurator:
             community_data = self.fetch_community_topics()
             community_topics_list = community_data.get('en', [])
 
-            # Format community topics for prompt
+            # Format community topics for prompt (with additional context)
+            def format_community_topic(t):
+                base = f"- [{t['source']}] {t['title']} (score: {t['score']}, comments: {t['comments']})\n  URL: {t['url']}"
+
+                # Add HackerNews top comments if available
+                if t.get('top_comments'):
+                    comments_text = "\n  💬 Top developer comments:\n"
+                    for i, comment in enumerate(t['top_comments'][:2], 1):  # Max 2 comments
+                        comments_text += f"    {i}. {comment[:200]}...\n" if len(comment) > 200 else f"    {i}. {comment}\n"
+                    base += comments_text
+
+                # Add ProductHunt description if available
+                if t.get('description'):
+                    desc = t['description'][:300] + '...' if len(t['description']) > 300 else t['description']
+                    base += f"\n  📝 Description: {desc}"
+
+                return base
+
             community_topics_formatted = "\n".join([
-                f"- [{t['source']}] {t['title']} (score: {t['score']}, comments: {t['comments']})\n  URL: {t['url']}"
+                format_community_topic(t)
                 for t in community_topics_list[:15]  # Top 15 community topics
             ]) or "No community topics available"
 

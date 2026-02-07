@@ -1188,6 +1188,9 @@ Return improved version (body only, no title):""",
 
             cleaned_meta = {}
             for img_id, timestamp in used_images_meta.items():
+                # Skip corrupted entries (non-numeric timestamps)
+                if not isinstance(timestamp, (int, float)):
+                    continue
                 if timestamp > cutoff_time:
                     cleaned_meta[img_id] = timestamp
 

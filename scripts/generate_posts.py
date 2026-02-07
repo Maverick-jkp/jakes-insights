@@ -1485,10 +1485,8 @@ Return improved version (body only, no title):""",
 
         frontmatter = "\n".join(frontmatter_lines) + "\n"
 
-        # Add hero image at the top of content if available
+        # Hero image removed - PaperMod theme renders frontmatter image: as cover
         hero_image = ""
-        if image_path and image_credit:
-            hero_image = f"![{keyword}]({image_path})\n\n"
 
         # Add image credit at the end of content if available
         credit_line = ""

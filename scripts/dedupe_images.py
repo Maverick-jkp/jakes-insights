@@ -46,6 +46,34 @@ def find_duplicates(images_dir: Path) -> Dict[str, List[Path]]:
     return duplicates
 
 
+def update_image_references(
+    content_dir: Path, old_file: Path, new_file: Path
+) -> List[Path]:
+    """
+    Update markdown posts that reference old_file to point to new_file.
+    Handles both frontmatter `image:` fields and inline `![...](path)` syntax.
+
+    Returns list of post paths that were updated.
+    """
+    # Build path strings as they appear in posts (e.g. /images/foo.jpg)
+    old_ref = f"/images/{old_file.name}"
+    new_ref = f"/images/{new_file.name}"
+
+    if old_ref == new_ref:
+        return []
+
+    updated = []
+    for md_file in content_dir.rglob("*.md"):
+        text = md_file.read_text(encoding="utf-8")
+        if old_ref not in text:
+            continue
+        new_text = text.replace(old_ref, new_ref)
+        md_file.write_text(new_text, encoding="utf-8")
+        updated.append(md_file)
+
+    return updated
+
+
 def dedupe_images(dry_run: bool = False):
     """
     Find and optionally remove duplicate images.
@@ -93,11 +121,19 @@ def dedupe_images(dry_run: bool = False):
         print("   Run without --dry-run to remove duplicates")
         return
 
-    # Remove duplicates (keep first/oldest file)
+    # Update references and remove duplicates (keep first/oldest file)
+    content_dir = Path("content")
     removed_count = 0
     for file_hash, files in duplicates.items():
         files.sort(key=lambda f: f.stat().st_mtime)
+        kept_file = files[0]
         for filepath in files[1:]:  # Skip first (keep oldest)
+            # Update posts referencing the file about to be deleted
+            updated_posts = update_image_references(
+                content_dir, filepath, kept_file
+            )
+            for post in updated_posts:
+                print(f"📝 Updated reference in: {post}")
             try:
                 filepath.unlink()
                 removed_count += 1

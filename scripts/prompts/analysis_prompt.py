@@ -75,11 +75,13 @@ Divide into 3-4 clear subsections:
 - Build on previous points
 - Show connections or implications
 
-### Comparison Analysis
+### Comparison Analysis (REQUIRED)
+
+**IMPORTANT**: Every analysis article MUST include at least ONE comparison table or structured comparison.
 
 Choose ONE format based on what makes sense:
 
-**FORMAT A - Markdown Table** (if comparing 3+ options):
+**FORMAT A - Markdown Table** (PREFERRED - use for any comparison with 2+ items):
 
 | Feature | Option A | Option B | Option C |
 |---------|----------|----------|----------|
@@ -254,14 +256,47 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - Avoid passive constructions like "It should be noted that..."
 - Start paragraphs with strong topic sentences, not filler phrases
 - Prefer simple words: "use" not "utilize", "help" not "facilitate", "show" not "demonstrate"
+
+TONE REQUIREMENTS (CRITICAL):
+- Write like explaining to a smart friend at coffee, NOT a corporate report
+- MAINTAIN conversational energy from start to END - don't get formal midway
+- If a sentence sounds like a press release or McKinsey report, REWRITE IT
+
+BANNED PHRASES (NEVER USE):
+- "Here's the thing" (overused)
+- "Sound familiar?" (overused)
+- "Let's be honest" (overused)
+- "But here's where it gets interesting" (overused)
+- "This isn't always the answer" (hedging)
+- "One software engineer...", "A marketing executive..." (vague fake examples)
+
+REQUIRED: REAL EXAMPLES ONLY
+- Do NOT invent vague case studies like "One Silicon Valley startup..."
+- Use REAL company names, REAL products, REAL data with citations
+- If you can't cite a specific example, use hypothetical framing: "Imagine if..." or just explain the concept directly
 """,
         'ko': """
 한국어 품질 규칙:
-- 자연스러운 구어체 유지 (딱딱한 번역투 금지)
-- "~입니다", "~습니다" 반복 피하기 - 문장 끝 변화 주기
-- 실제 한국 독자에게 와닿는 예시 사용
-- 불필요한 영어 단어 남용 금지 (대체 가능한 한국어 사용)
-- "사실", "의외로", "그런데" 과다 사용 피하기
+
+톤/스타일 (중요):
+- 토스처럼 친근하게: 어려운 내용도 친구한테 설명하듯 쉽게
+- 처음부터 끝까지 대화체 유지 - 중간에 갑자기 보고서체로 전환 금지
+- "전략적 포지셔닝", "명확한 차별화" 같은 컨설팅 용어 금지
+
+금지 표현:
+- "이런 경험 있으시죠?" (남발 금지 - 도입부에만 가끔 사용)
+- "~거든요" 연속 사용 (문단당 최대 1-2회)
+- "결합", "활용", "최적화" (번역투 - "합치다", "쓰다", "잘 맞추다"로)
+- "전략적", "효율적", "체계적" (추상적 - 구체적으로 풀어서)
+
+필수 사항:
+- 문장 끝 변화 주기: "~예요", "~죠", "~인 셈이에요", "~더라고요" 섞어 쓰기
+- 전문용어는 바로 다음 문장에서 초등학생도 알게 풀어주기
+- 가상의 "한 마케터", "한 개발자" 금지 - 실제 사례만 쓰거나 "예를 들어..." 표현 사용
+
+결론 주의:
+- "유연성이 중요해요", "지켜봐야 해요" 같은 뻔한 말 금지
+- 구체적 다음 행동 제시하거나 여운 남기는 질문으로 마무리
 """,
         'ja': """
 日本語品質ルール (重要):

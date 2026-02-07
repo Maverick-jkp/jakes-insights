@@ -179,3 +179,62 @@
 .affiliate-disclosure strong {
     color: var(--content);
 }
+
+/* ========== Table Styling ========== */
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    background: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.post-content table thead {
+    background: var(--bg-secondary);
+}
+
+.post-content table th {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent);
+}
+
+.post-content table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+.post-content table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.post-content table tbody tr:hover {
+    background: var(--bg-secondary);
+}
+
+/* Light mode table adjustments */
+[data-theme="light"] .post-content table {
+    background: var(--surface);
+}
+
+[data-theme="light"] .post-content table thead {
+    background: var(--bg-secondary);
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .post-content table {
+        font-size: 0.875rem;
+    }
+
+    .post-content table th,
+    .post-content table td {
+        padding: 0.5rem 0.75rem;
+    }
+}

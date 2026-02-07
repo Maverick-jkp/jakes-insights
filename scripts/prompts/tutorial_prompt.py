@@ -286,6 +286,16 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - Use consistent terminology throughout (pick one term and stick with it)
 - Prefer "you" over "we" for direct instruction
 - Code comments should explain WHY, not WHAT
+
+TONE REQUIREMENTS:
+- Friendly and encouraging, like a mentor helping a colleague
+- Acknowledge common mistakes without being condescending
+- Celebrate small wins: "Now you have a working..."
+
+BANNED PHRASES:
+- "Here's the thing" (overused)
+- "In this comprehensive guide" (corporate speak)
+- "Simply do X" when X is actually complex
 """,
         'ko': """
 한국어 품질 규칙:
@@ -293,6 +303,15 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - 한국어로 자연스러운 기술 용어 사용 (무리한 번역 피하기)
 - 코드 주석은 한국어로 작성 (독자 편의)
 - 불필요한 높임말 반복 피하기
+
+톤/스타일:
+- 선배가 후배 가르쳐주는 느낌으로 친근하게
+- "~거든요" 문단당 최대 1회
+- "활용", "구현", "최적화" 같은 딱딱한 표현 피하기 → "쓰다", "만들다", "빠르게 하다"
+
+금지 표현:
+- "이런 경험 있으시죠?" (튜토리얼에 부적절)
+- "간단하게 X를 하면 됩니다" (실제로 복잡할 때)
 """,
         'ja': """
 日本語品質ルール:
@@ -301,6 +320,10 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - 明確な指示文を使用: 「〜してください」「〜します」
 - コードコメントは日本語で記述
 - 架空のライブラリやAPIは絶対に使用しない
+
+トーン要件:
+- 先輩が後輩に教えるような親しみやすさ
+- 専門用語は必ず説明を添える
 """
     }
     return rules.get(language, '')

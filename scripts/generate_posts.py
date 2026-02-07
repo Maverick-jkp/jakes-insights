@@ -330,7 +330,7 @@ class ContentGenerator:
                     "anthropic-beta": "prompt-caching-2024-07-31"
                 }
             )
-            self.model = "claude-sonnet-4-20250514"
+            self.model = "claude-sonnet-4-5-20250929"
             safe_print("  ✓ Anthropic API client initialized successfully")
         except Exception as e:
             safe_print(f"❌ ERROR: Failed to initialize Anthropic client: {mask_secrets(str(e))}")

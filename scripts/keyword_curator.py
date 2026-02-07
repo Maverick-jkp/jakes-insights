@@ -43,7 +43,10 @@ except ImportError:
 
 CURATION_PROMPT_WITH_TRENDS = """역할:
 너는 광고 수익 최적화를 위한 키워드 큐레이터다.
-아래 실시간 트렌드 검색 결과를 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
+아래 실시간 트렌드 검색 결과와 커뮤니티 토픽을 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
+
+📊 **소스 비중**: Google Trends 40% + Community 40% + Evergreen 20%
+📊 **언어 비중**: EN 40% ({en_count}개), KO 40% ({ko_count}개), JA 20% ({ja_count}개)
 
 실시간 트렌드 데이터 (언어별로 구분됨):
 
@@ -55,6 +58,12 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 🇯🇵 Japanese (JP) Trends:
 {trends_ja}
+
+🌐 **Community Topics (HackerNews, Reddit, ProductHunt)**:
+{community_topics}
+
+**중요**: Community Topics는 영어 원문이지만, 한국/일본 독자에게도 유용한 내용이면 KO/JA 버전으로도 제안하라.
+예: "OpenAI releases new model" → EN 원문 + KO "OpenAI 새 모델 출시" + JA "OpenAI新モデル発表"
 
 **🔴 중요 규칙: 언어-키워드 매칭 (CRITICAL - 위반 시 즉시 거부)**
 1. English (US) 트렌드의 Query → language: "en"으로만 사용
@@ -120,7 +129,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
   * entertainment: 10%
 - Tech 관련 키워드는 최대한 많이 선택할 것 (AI, ML, cloud, programming, frameworks, devops 등)
   - ⚠️ "finance", "lifestyle", "education"은 더 이상 사용 금지 (각각 business, society, tech로 통합됨)
-- language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
+- language는 "en", "ko", "ja" 중 하나 (비율: EN 40%, KO 40%, JA 20%)
 - competition_level은 "low", "medium", "high" 중 하나
 - priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
 - risk_level은 "safe", "caution", "high_risk" 중 하나 (기본값: "safe")
@@ -254,7 +263,7 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 중요:
 - keyword_type은 무조건 "evergreen"만 사용 (trend 금지)
 - category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
-- language는 "en", "ko", "ja" 중 하나 (3개 언어를 균등하게 분배할 것)
+- language는 "en", "ko", "ja" 중 하나 (비율: EN 40%, KO 40%, JA 20%)
 - competition_level은 "low", "medium"만 사용 (high 금지 - 경쟁 피할 것)
 - priority는 5-8 사이 (Evergreen은 트렌드보다 낮은 우선순위)
 - risk_level은 무조건 "safe" (Evergreen은 안전해야 함)
@@ -304,7 +313,7 @@ class KeywordCurator:
 
         try:
             self.client = Anthropic(api_key=self.api_key)
-            self.model = "claude-sonnet-4-20250514"
+            self.model = "claude-sonnet-4-5-20250929"
             safe_print("  ✓ Anthropic API client initialized successfully")
         except Exception as e:
             safe_print(f"❌ ERROR: Failed to initialize Anthropic client")
@@ -372,6 +381,107 @@ class KeywordCurator:
             signals.append("COMPARISON")
 
         return signals if signals else ["GENERAL"]
+
+    def fetch_community_topics(self) -> Dict[str, List[Dict]]:
+        """Fetch trending topics from HackerNews, Reddit, and ProductHunt"""
+        safe_print(f"\n{'='*60}")
+        safe_print(f"  🌐 Fetching topics from community sources...")
+        safe_print(f"{'='*60}\n")
+
+        community_topics = []
+        verify_ssl = certifi.where() if certifi else True
+
+        # 1. HackerNews - Top Stories (free, no auth)
+        try:
+            safe_print("  → Fetching from HackerNews...")
+            hn_top_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
+            response = requests.get(hn_top_url, timeout=10, verify=verify_ssl)
+            response.raise_for_status()
+            story_ids = response.json()[:10]  # Top 10 stories
+
+            for story_id in story_ids[:5]:  # Fetch details for top 5
+                try:
+                    item_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
+                    item_resp = requests.get(item_url, timeout=5, verify=verify_ssl)
+                    item_resp.raise_for_status()
+                    item = item_resp.json()
+
+                    if item and item.get('title'):
+                        community_topics.append({
+                            'title': item['title'],
+                            'source': 'HackerNews',
+                            'url': item.get('url', f"https://news.ycombinator.com/item?id={story_id}"),
+                            'score': item.get('score', 0),
+                            'comments': item.get('descendants', 0)
+                        })
+                except Exception:
+                    continue
+
+            safe_print(f"    ✓ Found {len([t for t in community_topics if t['source'] == 'HackerNews'])} topics from HackerNews")
+
+        except Exception as e:
+            safe_print(f"    ⚠️ HackerNews fetch failed: {mask_secrets(str(e))}")
+
+        # 2. Reddit - Programming & Technology (free, no auth for public data)
+        subreddits = ['programming', 'technology', 'MachineLearning']
+        for subreddit in subreddits:
+            try:
+                safe_print(f"  → Fetching from r/{subreddit}...")
+                reddit_url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=5"
+                headers = {'User-Agent': 'JakesTechInsights/1.0'}
+                response = requests.get(reddit_url, headers=headers, timeout=10, verify=verify_ssl)
+                response.raise_for_status()
+                data = response.json()
+
+                for post in data.get('data', {}).get('children', [])[:3]:
+                    post_data = post.get('data', {})
+                    if post_data.get('title') and not post_data.get('stickied'):
+                        community_topics.append({
+                            'title': post_data['title'],
+                            'source': f'Reddit/r/{subreddit}',
+                            'url': f"https://reddit.com{post_data.get('permalink', '')}",
+                            'score': post_data.get('score', 0),
+                            'comments': post_data.get('num_comments', 0)
+                        })
+
+                safe_print(f"    ✓ Found topics from r/{subreddit}")
+                time.sleep(1)  # Rate limiting for Reddit
+
+            except Exception as e:
+                safe_print(f"    ⚠️ Reddit r/{subreddit} fetch failed: {mask_secrets(str(e))}")
+                continue
+
+        # 3. ProductHunt - Using RSS feed (no auth needed)
+        try:
+            safe_print("  → Fetching from ProductHunt...")
+            import xml.etree.ElementTree as ET
+            ph_rss_url = "https://www.producthunt.com/feed"
+            response = requests.get(ph_rss_url, timeout=10, verify=verify_ssl)
+            response.raise_for_status()
+
+            root = ET.fromstring(response.content)
+            items = root.findall('.//item')
+
+            for item in items[:5]:
+                title_elem = item.find('title')
+                link_elem = item.find('link')
+                if title_elem is not None and title_elem.text:
+                    community_topics.append({
+                        'title': title_elem.text.strip(),
+                        'source': 'ProductHunt',
+                        'url': link_elem.text if link_elem is not None else '',
+                        'score': 0,
+                        'comments': 0
+                    })
+
+            safe_print(f"    ✓ Found {len([t for t in community_topics if t['source'] == 'ProductHunt'])} topics from ProductHunt")
+
+        except Exception as e:
+            safe_print(f"    ⚠️ ProductHunt fetch failed: {mask_secrets(str(e))}")
+
+        safe_print(f"\n  🎉 Total {len(community_topics)} community topics fetched!\n")
+
+        return {'en': community_topics}  # All community sources are English
 
     def fetch_trending_from_rss(self) -> Dict[str, List[str]]:
         """Fetch trending topics from Google Trends RSS feeds grouped by language"""
@@ -745,13 +855,32 @@ class KeywordCurator:
             self.search_results = []  # Store search results
             trends_by_lang = self.fetch_trending_topics()
 
+            # Fetch community topics (HackerNews, Reddit, ProductHunt)
+            community_data = self.fetch_community_topics()
+            community_topics_list = community_data.get('en', [])
+
+            # Format community topics for prompt
+            community_topics_formatted = "\n".join([
+                f"- [{t['source']}] {t['title']} (score: {t['score']}, comments: {t['comments']})\n  URL: {t['url']}"
+                for t in community_topics_list[:15]  # Top 15 community topics
+            ]) or "No community topics available"
+
+            # Calculate language-specific counts (EN 40%, KO 40%, JA 20%)
+            en_count = int(count * 0.4)
+            ko_count = int(count * 0.4)
+            ja_count = count - en_count - ko_count  # Remainder goes to JA
+
             # Generate prompt with trending data (grouped by language)
             prompt = CURATION_PROMPT_WITH_TRENDS.format(
                 trends_en=trends_by_lang.get('en', 'No English trends available'),
                 trends_ko=trends_by_lang.get('ko', 'No Korean trends available'),
                 trends_ja=trends_by_lang.get('ja', 'No Japanese trends available'),
+                community_topics=community_topics_formatted,
                 count=count,
-                per_lang=per_lang
+                per_lang=per_lang,
+                en_count=en_count,
+                ko_count=ko_count,
+                ja_count=ja_count
             )
 
         try:

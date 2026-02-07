@@ -62,7 +62,16 @@ Write this as 2-3 sentences that capture the essence of the story.
 - Key specifications or technical details
 
 ### Supporting Information
-Use bullet lists for clarity:
+Use bullet lists OR markdown tables for clarity:
+
+**Option: Use a table when comparing 2+ items or showing structured data:**
+
+| Item | Detail 1 | Detail 2 | Notes |
+|------|----------|----------|-------|
+| Feature A | ... | ... | ... |
+| Feature B | ... | ... | ... |
+
+**Otherwise use bullet lists:**
 - **Technical specifications** (if relevant):
   - Spec 1
   - Spec 2
@@ -222,6 +231,16 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - Use concrete numbers and dates, not vague terms like "significant" or "recently"
 - Attribute all claims to specific sources
 - Prefer simple direct language: "said" not "stated", "use" not "utilize"
+
+TONE REQUIREMENTS:
+- News should still be engaging - not boring corporate speak
+- Keep sentences punchy and direct
+- Explain WHY something matters to the reader, not just WHAT happened
+
+BANNED PHRASES:
+- "Here's the thing" (overused)
+- "Sound familiar?" (overused)
+- "One industry expert..." (vague - use real names)
 """,
         'ko': """
 한국어 품질 규칙:
@@ -229,6 +248,15 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - 핵심 정보를 먼저 전달 (역피라미드 구조)
 - 한국 독자에게 친숙한 맥락 제공
 - 불필요한 영어 단어 피하기
+
+톤/스타일:
+- 토스 뉴스처럼: 딱딱하지 않으면서도 신뢰감 있게
+- "~거든요" 문단당 최대 1회
+- "결합", "활용", "최적화" 같은 번역투 금지
+
+금지 표현:
+- "이런 경험 있으시죠?" (뉴스에 부적절)
+- "한 업계 관계자에 따르면" (실명 사용 권장)
 """,
         'ja': """
 日本語品質ルール:
@@ -237,6 +265,10 @@ ENGLISH-SPECIFIC QUALITY RULES:
 - 断定的な表現を使用: 「〜です」「〜しました」
 - 出典不明の統計や数字は絶対に使用しない
 - 架空の会社名や製品名は使用禁止
+
+トーン要件:
+- ニュースでも読者を引き込む文章で
+- 専門用語は必ず説明を添える
 """
     }
     return rules.get(language, '')

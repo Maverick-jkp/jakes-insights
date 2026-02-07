@@ -9,7 +9,7 @@ on:
       count:
         description: 'Number of keywords to generate'
         required: false
-        default: '15'
+        default: '25'
       keyword_type:
         description: 'Keyword type (trend, evergreen, or mixed)'
         required: false

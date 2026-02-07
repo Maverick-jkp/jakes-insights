@@ -229,6 +229,33 @@ h1 {
     margin: 0;
 }
 
+/* Ad Containers */
+.ad-container {
+    margin: 2rem auto;
+    padding: 1rem 0;
+    max-width: 100%;
+    min-height: 90px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ad-top {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ad-mid {
+    margin: 2.5rem auto;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.ad-bottom {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     article {
@@ -238,7 +265,8 @@ h1 {
 
     .ad-container {
         min-height: 250px;
-        margin: 2rem 0;
+        margin: 1.5rem 0;
+        padding: 0.5rem 0;
     }
 
     .related-grid {

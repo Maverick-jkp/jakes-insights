@@ -169,30 +169,8 @@
             </div>
         </div>
 
-        <!-- Ad Slot 1: Top of Article -->
-        <div class="ad-container ad-top">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2478912111812328"
-                 data-ad-slot="auto"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
         <div class="content">
             {{ .Content }}
-        </div>
-
-        <!-- Ad Slot 2: After Content -->
-        <div class="ad-container ad-mid">
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-2478912111812328"
-                 data-ad-slot="auto"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
 
         <!-- Social Share Buttons -->
@@ -243,17 +221,6 @@
             </div>
         </div>
         {{ end }}
-
-        <!-- Ad Slot 3: Before Related Posts -->
-        <div class="ad-container ad-bottom">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-2478912111812328"
-                 data-ad-slot="auto"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
 
         <!-- You Might Also Like Section -->
         {{- $currentLang := .Site.Language.Lang -}}

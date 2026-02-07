@@ -5669,36 +5669,6 @@
       "completed_at": "2026-02-07T06:04:49.428948+00:00"
     },
     {
-      "id": "459-en-entertainment-green-day",
-      "keyword": "green day",
-      "category": "entertainment",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-07T14:50:18.675157",
-      "retry_count": 1,
-      "keyword_type": "trend",
-      "search_intent": "Fans want to know if Green Day will perform their politically charged hits or play safe for NBC sponsors",
-      "angle": "Corporate censorship vs. artistic integrity in high-stakes live performance",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Green Day - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Green_Day",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Green Day to Play Super Bowl LX Opening Ceremony: How to Watch on NBC & Peacock",
-          "url": "https://www.nbc.com/nbc-insider/green-day-to-play-super-bowl-opening-ceremony-how-to-watch-on-nbc",
-          "source": "www.nbc.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING",
-      "last_error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Output blocked by content filtering policy'}, 'request_id': 'req_011CXtFdg99ZgKYoXjRZ7nUd'}",
-      "last_failed_at": "2026-02-07T06:42:41.787574+00:00"
-    },
-    {
       "id": "460-en-sports-willow-tv",
       "keyword": "willow tv",
       "category": "sports",
@@ -6131,6 +6101,220 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-07T06:41:55.236386+00:00",
       "completed_at": "2026-02-07T07:22:27.153213+00:00"
+    },
+    {
+      "id": "476-en-tech-ai",
+      "keyword": "ai",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.941541",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users need to understand if AI agents operating on their behalf could make unauthorized decisions that affect their finances, privacy, or legal standing",
+      "angle": "Autonomous AI decision-making without human oversight—exploring the safety gaps",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Artificial intelligence - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "From Clawdbot to Moltbot to OpenClaw: Meet the AI agent generating buzz and fear globally",
+          "url": "https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Does AI already have human-level intelligence? The evidence is clear",
+          "url": "https://www.nature.com/articles/d41586-026-00285-6",
+          "source": "www.nature.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "477-en-business-china",
+      "keyword": "china",
+      "category": "business",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.941601",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Business leaders and investors need to understand if the global order is fundamentally shifting away from Western markets toward China-led trade alliances",
+      "angle": "Geopolitical power shift threatening Western economic dominance",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "China - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/China",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "How America’s EV retreat is increasing China's control of global markets",
+          "url": "https://www.cnbc.com/2026/02/06/automakers-ev-china-ford-gm.html",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Analysis: As a parade of US allies rattled by Trump visit China, Beijing claims a win for its new wo",
+          "url": "https://www.cnn.com/2026/02/02/china/china-us-europe-allies-analysis-hnk-intl",
+          "source": "www.cnn.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "478-ko-sports-권예",
+      "keyword": "권예",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.941717",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "올림픽 시즌에 귀화 선수의 희생과 처우에 대한 대중의 공정성 판단 욕구와, 메달 획득 시 보상 체계에 대한 궁금증",
+      "angle": "귀화 선수의 경제적 희생과 국가 지원 시스템의 불균형",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "올림픽 피겨스케이팅: 아이스 댄스 임해나-권예 – \"단체전에서 한국을 대표할 때 정말 자랑스러워요\" [밀라노-코르티나 2026]",
+          "url": "https://www.olympics.com/ko/milano-cortina-2026/news/korea-ice-dance-lim-hannah-quan-ye-exclusive-interview-milano-cortina-2026",
+          "source": "www.olympics.com"
+        },
+        {
+          "title": "‘제2의 조국’ 韓 대표로 뛰는 임해나-권예… “올림픽, 너무 먼 무대 같았는데”",
+          "url": "https://www.donga.com/news/Sports/article/all/20260204/133294976/1",
+          "source": "www.donga.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "479-ja-entertainment-オドリドリ-タイムチャレンジ",
+      "keyword": "オドリドリ タイムチャレンジ",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.941775",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ポケモンGOプレイヤーが限定イベントの有料チケット購入価値を判断し、色違い入手チャンスを逃さないための緊急情報ニーズ",
+      "angle": "期間限定・地域限定の希少性を強調し、購入判断の締切プレッシャーを訴求",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "【ポケモンGO】オドリドリマスタリーシリーズの期間とボーナス - ゲームウィズ",
+          "url": "https://pokemongo.gamewith.jp/article/show/541787",
+          "source": "pokemongo.gamewith.jp"
+        },
+        {
+          "title": "【ポケモンGO】オドリドリマスタリーシリーズイベント 出現ポケモン・色違い・フィールドリサーチタスク情報｜ポケらく",
+          "url": "https://pokemongo-raku.com/post140933",
+          "source": "pokemongo-raku.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "480-ja-entertainment-東京ドーム-イベント",
+      "keyword": "東京ドーム イベント",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.941823",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "K-POPファンとジャニーズファンが東京ドーム大型公演のチケット入手可能性と転売相場を緊急チェックし、購入タイミングを逃さないための情報収集",
+      "angle": "大型会場公演の希少性と転売市場の価格急騰リスクを前面に出す",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "【すとふぇす】東京ドーム公演を楽しみ尽くす！ 『STPR Family Festival!! 2026』にあわせた7つの企画が発表 - PASH! PLUSPASH! PLUS",
+          "url": "https://www.pashplus.jp/event/458979/",
+          "source": "www.pashplus.jp"
+        },
+        {
+          "title": "2PM、10年ぶりの東京ドーム公演…詳細が決定！5月9日＆10日の2Days開催 - Kstyle",
+          "url": "https://kstyle.com/article.ksn?articleNo=2274810",
+          "source": "kstyle.com"
+        },
+        {
+          "title": "timeleszが東京ドームでコンサート この瞬間はタイムレス | 毎日新聞",
+          "url": "https://mainichi.jp/articles/20260205/k00/00m/200/376000c",
+          "source": "mainichi.jp"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "481-en-sports-home-workout-routine",
+      "keyword": "home workout routine",
+      "category": "sports",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.941944",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Maintaining fitness and health while saving money and time on gym memberships",
+      "angle": "Step-by-step guide with exercise demonstrations, weekly schedules, and progression plans",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "The 10 Best at Home Workouts (No-Equipment!) | Nerd Fitness",
+          "url": "https://www.nerdfitness.com/blog/the-7-best-at-home-workout-routines-the-ultimate-guide-for-training-without-a-gym/",
+          "source": "www.nerdfitness.com"
+        },
+        {
+          "title": "r/bodyweightfitness Guide: The Recommended Routine",
+          "url": "https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "482-ja-sports-自宅トレーニングルーティン",
+      "keyword": "自宅トレーニングルーティン",
+      "category": "sports",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-07T07:35:16.942122",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ジム通い不要で自宅で体系的に運動し、健康と体力を向上させる",
+      "angle": "器具不要のエクササイズと週次プログラムの詳細ガイド",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "自宅でできる筋トレメニュー17種目｜目的別に回数・強度・頻度を解説 | トレーニング ×スポーツ『MELOS』",
+          "url": "https://melos.media/training/36561/",
+          "source": "melos.media"
+        },
+        {
+          "title": "【1週間メニュー付き】本気で結果を出す自重トレーニング総まとめ！器具なし自宅筋トレで効果をあげるポイントを紹介",
+          "url": "https://ufit.co.jp/blogs/training/bodyweighttraining",
+          "source": "ufit.co.jp"
+        },
+        {
+          "title": "筋トレは自宅でできる！ 器具なしで全身を鍛える自重トレーニング11選 | GQ JAPAN",
+          "url": "https://www.gqjapan.jp/article/20250501-the-best-full-body-strength-training-that-you-can-do-at-home",
+          "source": "www.gqjapan.jp"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

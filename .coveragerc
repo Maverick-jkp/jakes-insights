@@ -30,6 +30,12 @@ omit =
     scripts/evergreen_updater.py
     scripts/internal_linker_v2.py
     scripts/dedupe_images.py
+    scripts/fill_missing_images.py
+    scripts/regenerate_missing_images.py
+    scripts/regenerate_missing_images_with_translation.py
+    scripts/improve_alt_text.py
+    scripts/analyze_ab_winners.py
+    scripts/seo_tracker.py
     scripts/utils/content_classifier.py
     scripts/prompts/*.py
 

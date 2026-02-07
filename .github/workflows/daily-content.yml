@@ -96,7 +96,7 @@ jobs:
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.UNSPLASH_ACCESS_KEY }}"
 
-          COUNT="${{ github.event.inputs.count || '9' }}"
+          COUNT="${{ github.event.inputs.count || '15' }}"
           python scripts/generate_posts.py --count "$COUNT"
 
       - name: Run quality gate

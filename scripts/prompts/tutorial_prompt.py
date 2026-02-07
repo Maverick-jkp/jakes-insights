@@ -206,6 +206,8 @@ FACTUAL ACCURACY (MANDATORY):
 - If unsure about a specific detail, use general descriptions instead of inventing
 - Focus on practical, working solutions
 
+{_get_language_specific_rules(language)}
+
 Now write the complete tutorial article following this structure exactly."""
 
     return prompt
@@ -272,3 +274,33 @@ def _get_conclusion_words(language: str) -> str:
         'ko': '200-250 단어',
         'ja': '600-750 文字'
     }.get(language, '200-250 words')
+
+
+def _get_language_specific_rules(language: str) -> str:
+    """Return language-specific writing quality rules for tutorials."""
+    rules = {
+        'en': """
+ENGLISH-SPECIFIC QUALITY RULES:
+- Use clear, imperative instructions: "Open the file" not "You should open the file"
+- Keep explanations concise - readers want to DO, not read paragraphs
+- Use consistent terminology throughout (pick one term and stick with it)
+- Prefer "you" over "we" for direct instruction
+- Code comments should explain WHY, not WHAT
+""",
+        'ko': """
+한국어 품질 규칙:
+- 명확한 지시형 문장 사용: "파일을 엽니다" (간결하게)
+- 한국어로 자연스러운 기술 용어 사용 (무리한 번역 피하기)
+- 코드 주석은 한국어로 작성 (독자 편의)
+- 불필요한 높임말 반복 피하기
+""",
+        'ja': """
+日本語品質ルール:
+- 過度なヘッジング禁止: 「〜と思います」「〜かもしれません」は最小限に
+- 「ただし」は全体で2回まで
+- 明確な指示文を使用: 「〜してください」「〜します」
+- コードコメントは日本語で記述
+- 架空のライブラリやAPIは絶対に使用しない
+"""
+    }
+    return rules.get(language, '')

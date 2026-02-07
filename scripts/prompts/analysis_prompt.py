@@ -196,6 +196,8 @@ CITATION REQUIREMENTS (MANDATORY):
 - Do NOT invent products, features, or companies that don't exist
 - Fabricated data is UNACCEPTABLE - better to be general than to lie
 
+{_get_language_specific_rules(language)}
+
 Now write the complete analysis article following this structure exactly."""
 
     return prompt
@@ -239,3 +241,38 @@ def _get_conclusion_words(language: str) -> str:
         'ko': '200-250 단어',
         'ja': '600-750 文字'
     }.get(language, '200-250 words')
+
+
+def _get_language_specific_rules(language: str) -> str:
+    """Return language-specific writing quality rules."""
+    rules = {
+        'en': """
+ENGLISH-SPECIFIC QUALITY RULES:
+- Write in active voice whenever possible ("The team developed" not "It was developed by")
+- Vary sentence structure - mix short punchy sentences with longer explanatory ones
+- Use concrete examples instead of abstract statements
+- Avoid passive constructions like "It should be noted that..."
+- Start paragraphs with strong topic sentences, not filler phrases
+- Prefer simple words: "use" not "utilize", "help" not "facilitate", "show" not "demonstrate"
+""",
+        'ko': """
+한국어 품질 규칙:
+- 자연스러운 구어체 유지 (딱딱한 번역투 금지)
+- "~입니다", "~습니다" 반복 피하기 - 문장 끝 변화 주기
+- 실제 한국 독자에게 와닿는 예시 사용
+- 불필요한 영어 단어 남용 금지 (대체 가능한 한국어 사용)
+- "사실", "의외로", "그런데" 과다 사용 피하기
+""",
+        'ja': """
+日本語品質ルール (重要):
+- 過度なヘッジング表現を避ける:
+  × 「〜だと考えています」「〜かもしれません」「〜と思われます」の連続使用禁止
+  × 「ただし」の過剰使用（記事全体で最大3回まで）
+  × 「〜ですね」「〜でしょうか」の多用（読者への過度な同意求め）
+- 断定的に書く: 「〜です」「〜します」を基本形として使用
+- 具体的な数字や事実には必ず出典を明記
+- 「興味深いことに」「意外にも」「驚くべきことに」は記事全体で1回まで
+- 架空の製品名、会社名、統計データは絶対に使用しない
+"""
+    }
+    return rules.get(language, '')

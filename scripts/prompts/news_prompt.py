@@ -173,6 +173,8 @@ KEEP IT CONCISE:
 - If it's 800 words of good content, that's better than 1,200 words of fluff
 - Focus on what readers need to know NOW
 
+{_get_language_specific_rules(language)}
+
 Now write the complete news article following this structure exactly."""
 
     return prompt
@@ -208,3 +210,33 @@ def _get_impact_words(language: str) -> str:
         'ko': '200-250 단어',
         'ja': '600-750 文字'
     }.get(language, '200-250 words')
+
+
+def _get_language_specific_rules(language: str) -> str:
+    """Return language-specific writing quality rules."""
+    rules = {
+        'en': """
+ENGLISH-SPECIFIC QUALITY RULES:
+- Write in active voice ("The company announced" not "It was announced by")
+- Lead with the most important fact - no filler introductions
+- Use concrete numbers and dates, not vague terms like "significant" or "recently"
+- Attribute all claims to specific sources
+- Prefer simple direct language: "said" not "stated", "use" not "utilize"
+""",
+        'ko': """
+한국어 품질 규칙:
+- 자연스러운 구어체 유지 (뉴스도 딱딱하지 않게)
+- 핵심 정보를 먼저 전달 (역피라미드 구조)
+- 한국 독자에게 친숙한 맥락 제공
+- 불필요한 영어 단어 피하기
+""",
+        'ja': """
+日本語品質ルール:
+- 過度なヘッジング禁止: 「〜と思われます」「〜かもしれません」の連続使用禁止
+- 「ただし」は記事全体で最大2回まで
+- 断定的な表現を使用: 「〜です」「〜しました」
+- 出典不明の統計や数字は絶対に使用しない
+- 架空の会社名や製品名は使用禁止
+"""
+    }
+    return rules.get(language, '')

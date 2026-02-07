@@ -1,5 +1,5 @@
 ---
-title: "How Why 'Monty Python Interpreter' Doesn't Exist Will Change Your Life"
+title: "Why 'Monty Python Interpreter' Doesn't Exist"
 date: 2026-02-07T15:48:08+0900
 draft: false
 author: "Jake Park"

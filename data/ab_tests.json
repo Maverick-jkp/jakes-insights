@@ -6,9 +6,13 @@
       "A": "informative",
       "B": "clickbait"
     },
-    "active": true,
+    "active": false,
     "split": 0.5,
-    "metrics": ["click_through_rate", "time_on_page", "bounce_rate"],
+    "metrics": [
+      "click_through_rate",
+      "time_on_page",
+      "bounce_rate"
+    ],
     "created_at": "2026-02-03T00:00:00+09:00"
   },
   "word_count": {
@@ -21,7 +25,11 @@
     },
     "active": true,
     "split": 0.33,
-    "metrics": ["completion_rate", "scroll_depth", "time_on_page"],
+    "metrics": [
+      "completion_rate",
+      "scroll_depth",
+      "time_on_page"
+    ],
     "created_at": "2026-02-03T00:00:00+09:00"
   },
   "image_placement": {
@@ -33,7 +41,10 @@
     },
     "active": false,
     "split": 0.5,
-    "metrics": ["engagement_rate", "scroll_depth"],
+    "metrics": [
+      "engagement_rate",
+      "scroll_depth"
+    ],
     "created_at": "2026-02-03T00:00:00+09:00"
   },
   "cta_position": {
@@ -46,7 +57,10 @@
     },
     "active": false,
     "split": 0.33,
-    "metrics": ["click_rate", "conversion_rate"],
+    "metrics": [
+      "click_rate",
+      "conversion_rate"
+    ],
     "created_at": "2026-02-03T00:00:00+09:00"
   }
 }

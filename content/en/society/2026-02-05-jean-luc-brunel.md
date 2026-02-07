@@ -1,5 +1,5 @@
 ---
-title: "How Jean Luc Brunel Case Drives 2026 Modeling Industry Reform Will Change Your Life"
+title: "Jean Luc Brunel Case Drives 2026 Modeling Industry Reform"
 date: 2026-02-05T14:17:42+0900
 draft: false
 author: "Jake Park"

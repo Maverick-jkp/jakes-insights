@@ -1361,8 +1361,8 @@ def main():
     parser.add_argument('--auto', action='store_true', help="Automatically add all candidates without interactive selection")
     parser.add_argument('--type', choices=['trend', 'evergreen', 'mixed'], default='trend',
                        help="Keyword type: trend (default), evergreen, or mixed")
-    parser.add_argument('--evergreen-ratio', type=float, default=0.6,
-                       help="Ratio of evergreen keywords in mixed mode (default: 0.6)")
+    parser.add_argument('--evergreen-ratio', type=float, default=0.2,
+                       help="Ratio of evergreen keywords in mixed mode (default: 0.2)")
     args = parser.parse_args()
 
     # Check API key
@@ -1375,11 +1375,14 @@ def main():
 
     # Generate candidates based on type
     if args.type == 'mixed':
-        # Mixed mode: generate both trend and evergreen
+        # Mixed mode: Google Trends 40% + Community 40% + Evergreen 20%
+        # trend candidates (80%) include both Google Trends and Community sources
+        # The prompt instructs Claude to split trend candidates 50/50 between Trends and Community
         evergreen_count = int(args.count * args.evergreen_ratio)
         trend_count = args.count - evergreen_count
 
-        safe_print(f"\n📊 Mixed Mode: {trend_count} trend + {evergreen_count} evergreen keywords\n")
+        safe_print(f"\n📊 Mixed Mode: {trend_count} trend (Trends+Community) + {evergreen_count} evergreen keywords")
+        safe_print(f"   Source ratio: Google Trends ~{trend_count//2} + Community ~{trend_count - trend_count//2} + Evergreen {evergreen_count}\n")
 
         # Generate trend keywords
         if trend_count > 0:

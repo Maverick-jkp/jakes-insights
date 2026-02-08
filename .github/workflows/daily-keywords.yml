@@ -17,7 +17,7 @@ on:
       evergreen_ratio:
         description: 'Ratio of evergreen keywords in mixed mode (0.0-1.0)'
         required: false
-        default: '0.6'
+        default: '0.2'
 
 jobs:
   curate-keywords:
@@ -86,7 +86,7 @@ jobs:
 
           COUNT="${{ github.event.inputs.count || '25' }}"
           TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
-          RATIO="${{ github.event.inputs.evergreen_ratio || '0.6' }}"
+          RATIO="${{ github.event.inputs.evergreen_ratio || '0.2' }}"
 
           echo "📝 Generating $COUNT new keywords (type: $TYPE, evergreen ratio: $RATIO)..."
           python scripts/keyword_curator.py --count "$COUNT" --type "$TYPE" --evergreen-ratio "$RATIO" --auto

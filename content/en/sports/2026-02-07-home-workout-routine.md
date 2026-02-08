@@ -183,4 +183,4 @@ That pull-up bar in your doorway? It doesn't need to support a perfect program. 
 
 ---
 
-*Photo by [Sebastian Pociecha](https://unsplash.com/@sebastianpoc) on [Unsplash](https://unsplash.com/photos/black-lenovo-laptop-on-brown-wooden-table-FoSF9-4xTGg)*
+*Photo by [Rahul Gupta](https://unsplash.com/@rahulguptafit4soul) on [Unsplash](https://unsplash.com/photos/man-doing-push-ups-in-a-sunlit-living-room-2rZ4nhCdQNc)*

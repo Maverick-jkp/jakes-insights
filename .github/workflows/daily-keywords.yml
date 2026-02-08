@@ -84,7 +84,7 @@ jobs:
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
-          COUNT="${{ github.event.inputs.count || '15' }}"
+          COUNT="${{ github.event.inputs.count || '25' }}"
           TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
           RATIO="${{ github.event.inputs.evergreen_ratio || '0.6' }}"
 

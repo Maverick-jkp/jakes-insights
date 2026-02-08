@@ -8,8 +8,6 @@ description: "Discover Minnesota's incredible ice culture - from frozen lakes an
 image: "/images/20260125-ice-minnesota.jpg"
 ---
 
-![Featured article: ICE Minnesota Shootings Raise Safety Concerns in Minneapolis](/images/20260125-ice-minnesota.jpg)
-
 You might think federal immigration enforcement is just another policy debate, but when ICE operations turn deadly in your neighborhood, the conversation becomes painfully real. You've been there, right? Scrolling through news about immigration policy, thinking it's someone else's problem—until gunfire erupts on streets where your kids walk to school.
 
 Minneapolis residents are grappling with this harsh reality this week after the third ICE-involved shooting in recent months. Saturday's incident isn't just another headline. It's a wake-up call for communities across Minnesota who never expected federal enforcement operations to result in armed confrontations in their backyards.

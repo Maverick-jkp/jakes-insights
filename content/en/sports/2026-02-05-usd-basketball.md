@@ -9,8 +9,6 @@ description: "Discover USD basketball's journey from rising program to NCAA cont
 image: "/images/20260205-usd-basketball.jpg"
 ---
 
-![Featured article: USD Basketball's NIL Strategy Helps Mid-Major Compete](/images/20260205-usd-basketball.jpg)
-
 You've been there, right? Watching your favorite mid-major basketball team get steamrolled by programs with deeper pockets and five-star recruits, wondering if smaller schools can ever truly compete. The conventional wisdom says they can't — that college basketball is increasingly becoming a game for the richest programs.
 
 Well, the University of San Diego is proving that conventional wisdom wrong in spectacular fashion.

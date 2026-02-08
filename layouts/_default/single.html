@@ -159,7 +159,11 @@
     {{ partial "breadcrumbs.html" . }}
 
     <article{{ with .Params.ab_test_id }} data-ab-test="{{ . }}"{{ end }}{{ with .Params.ab_variant }} data-ab-variant="{{ . }}"{{ end }}>
-        {{/* Hero Image removed - image appears in article content already */}}
+        {{ with .Params.image }}
+        <figure class="hero-image">
+            <img src="{{ . }}" alt="{{ $.Title }}" loading="eager" width="900" height="450">
+        </figure>
+        {{ end }}
 
         <div class="article-header">
             <h1>{{ .Title }}</h1>

@@ -9,8 +9,6 @@ description: "Discover everything about Roki Sasaki, Japan's pitching phenom mak
 image: "/images/20260201-roki-sasaki.jpg"
 ---
 
-![Featured article: Dodgers Manager Dave Roberts Manages Roki Sasaki Expectations](/images/20260201-roki-sasaki.jpg)
-
 You've been there, right? That moment when your team lands the superstar everyone's talking about, and instead of pure excitement, you get this nagging feeling that the hype machine might be setting everyone up for disappointment.
 
 The Los Angeles Dodgers just experienced exactly that with Roki Sasaki. They signed baseball's most coveted young pitcher, but their own manager is already pumping the brakes publicly. When Dave Roberts feels compelled to manage fan expectations just weeks after landing their biggest acquisition, it tells you something fascinating about modern sports psychology.

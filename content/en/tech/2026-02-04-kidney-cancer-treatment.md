@@ -9,8 +9,6 @@ description: "Discover the latest kidney cancer treatment options including surg
 image: "/images/20260204-kidney-cancer-treatment.jpg"
 ---
 
-![Featured article: Kidney Cancer Treatment Advances Coming in 2026: New Options](/images/20260204-kidney-cancer-treatment.jpg)
-
 You've been there, right? Sitting in that sterile oncologist's office, hearing words like "kidney cancer" and watching your world shift in real-time. The treatment options they rattle off — surgery, chemotherapy, radiation — sound like a medical textbook from decades past.
 
 Here's the thing: everything is about to change.

@@ -8,8 +8,6 @@ description: "革命的なギターエフェクター「Quad Cortex Mini」の�
 image: "/images/20260124-quad-cortex-mini.jpg"
 ---
 
-![Featured article: Quad Cortex Mini発表で賛否両論：コンパクト化の代償とスペック比較](/images/20260124-quad-cortex-mini.jpg)
-
 こんな経験ありませんか？ライブハウスで演奏する時、重いアンプシミュレーターを持ち運ぶのが本当に大変で、「もっとコンパクトなのがあったらなあ...」って思ったこと。
 
 そんなミュージシャンの悩みに応える形で、Neural DSPが突然発表したQuad Cortex Miniが、いま音響機器業界で話題沸騰なんです。フラッグシップのQuad Cortexは音質面では文句なしなんですが、価格と持ち運び性がネックで諦めていた人、結構いますよね。

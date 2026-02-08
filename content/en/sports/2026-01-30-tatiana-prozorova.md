@@ -9,8 +9,6 @@ description: "Discover the fascinating story of Tatiana Prozorova, her remarkabl
 image: "/images/20260130-tatiana-prozorova.jpg"
 ---
 
-![Featured article: Tatiana Prozorova Upsets Seeds at Philippine Women's Open](/images/20260130-tatiana-prozorova.jpg)
-
 You've probably watched it happen before — an unknown player suddenly dismantling ranked opponents like they're playing different sports entirely. That's exactly what's unfolding at the Philippine Women's Open, where Russian player Tatiana Prozorova has turned the tournament into her personal statement match.
 
 Here's the thing: tennis upsets are common, but systematic demolition of multiple seeded players? That's rare territory.

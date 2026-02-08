@@ -8,8 +8,6 @@ description: "Watch Man City clash with Wolves in this thrilling Premier League 
 image: "/images/20260125-man-city-vs-wolves.jpg"
 ---
 
-![Featured article: Man City vs Wolves Analysis: Title Race Pressure Test](/images/20260125-man-city-vs-wolves.jpg)
-
 You're tracking the Premier League table, and Manchester City's inconsistent form has you wondering if they can bounce back against Wolves. Sound familiar? You're not alone. The Citizens have dropped crucial points this season, making every match feel like a must-win situation for fans and fantasy players alike.
 
 Here's the thing: the January 25, 2026 clash between Man City and Wolves isn't just another fixture—it's a litmus test for Pep Guardiola's squad as they fight to stay in the title race. With both teams carrying different expectations and pressures, this matchup offers insights into how elite teams handle adversity when the stakes are highest.

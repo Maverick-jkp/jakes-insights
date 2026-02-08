@@ -9,8 +9,6 @@ description: "Discover the legendary career of John Force, 16-time NHRA champion
 image: "/images/20260127-john-force-racing.jpg"
 ---
 
-![Featured article: John Force Racing Faces 2026 Changes After Austin Prock Exit](/images/20260127-john-force-racing.jpg)
-
 You've watched John Force Racing dominate NHRA drag racing for decades, but 2026 has brought seismic shifts that are reshaping one of motorsport's most successful teams. When reigning Funny Car champion Austin Prock announced his departure from the legendary team, it sent shockwaves through the drag racing community and raised questions about the future of the Force empire.
 
 Sound familiar? You've probably seen this pattern before in professional sports—championship teams that seem untouchable suddenly face internal upheaval just when everything appears to be going right.

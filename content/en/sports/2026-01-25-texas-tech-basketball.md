@@ -8,8 +8,6 @@ description: "Discover Texas Tech basketball's rise to national prominence, key 
 image: "/images/20260125-texas-tech-basketball.jpg"
 ---
 
-![Featured article: Texas Tech Basketball Dominates Baylor on Road in 2026](/images/20260125-texas-tech-basketball.jpg)
-
 You've been following Texas Tech basketball all season, watching every game, checking every stat update. But if you missed their January 20th demolition of Baylor in Waco, you witnessed something that's reshaping how we view this Red Raiders squad in 2026.
 
 Texas Tech didn't just beat Baylor – they steamrolled them on their home court, sending a message that's reverberating through college basketball circles. Here's why this performance has everyone talking about the Red Raiders as a legitimate threat this season.

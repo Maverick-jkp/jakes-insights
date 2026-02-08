@@ -9,8 +9,6 @@ description: "Amazon outage leaves millions unable to shop, stream, or access cl
 image: "/images/20260204-amazon-down.jpg"
 ---
 
-![Featured article: Amazon Down: Why the Tech Giant Faces Major Challenges](/images/20260204-amazon-down.jpg)
-
 You've been watching the headlines, haven't you? Amazon's stock doing that uncomfortable dance in 2026 that makes everyone wonder if the unstoppable giant finally hit a wall.
 
 Here's the thing — when Amazon stumbles, the entire tech world holds its breath. This isn't just another earnings miss or temporary dip. We're looking at fundamental shifts that challenge everything we thought we knew about Amazon's invincibility.

@@ -8,8 +8,6 @@ description: "Discover the inspiring journey of Trae Taylor - from his early beg
 image: "/images/20260122-trae-taylor.jpg"
 ---
 
-![Featured article: Trae Taylor: Rising Star's Journey to Success Story](/images/20260122-trae-taylor.jpg)
-
 You know that sinking feeling when your team's "sure thing" recruit completely flames out in college? 
 
 I've watched it happen countless times. The five-star quarterback who can't handle pressure. The elite running back who gets buried on the depth chart. The defensive end who looked unstoppable in high school but disappears against real competition.

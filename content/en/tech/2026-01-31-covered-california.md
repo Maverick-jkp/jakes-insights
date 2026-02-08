@@ -9,8 +9,6 @@ description: "Discover how Covered California makes health insurance affordable 
 image: "/images/20260131-covered-california.jpg"
 ---
 
-![Featured article: Covered California Enrollment Issues & Hidden Costs](/images/20260131-covered-california.jpg)
-
 You've been there, right? It's 11 PM, you're staring at a government website that keeps timing out, and you're trying to figure out health insurance with less than 48 hours before the deadline. Welcome to the covered california enrollment crunch.
 
 Here's what's happening: thousands of Californians are scrambling to secure health insurance before the window slams shut on February 1st. Recent surveys show that 35% of eligible residents still haven't enrolled, despite facing potential tax penalties and losing access to federal subsidies that could save them thousands annually.

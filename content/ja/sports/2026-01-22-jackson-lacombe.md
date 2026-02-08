@@ -8,8 +8,6 @@ description: "Jackson Lacombeの成長ストーリーと最新動向を詳しく
 image: "/images/20260122-jackson-lacombe.jpg"
 ---
 
-![Featured article: Jackson Lacombe：注目の若手ディフェンスマンの成長と将来性を徹底解説](/images/20260122-jackson-lacombe.jpg)
-
 アナハイムダックスのディフェンダー、Jackson LaCombeが急遽アメリカ代表チームに抜擢されたニュースを聞いて、「えっ、なぜ彼なの？」と思った方も多いのではないでしょうか。私も最初はそう思いました。でも実は、この選出には明確な理由があるんです。
 
 Seth Jonesの負傷によって空いたポジションに選ばれたLaCombeですが、これは単なる穴埋めじゃありません。2026年現在、アメリカ代表の若手育成戦略と緊急時対応能力が試される局面で、Jackson LaCombeの選出は注目すべき判断となっています。

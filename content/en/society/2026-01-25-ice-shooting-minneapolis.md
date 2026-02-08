@@ -8,8 +8,6 @@ description: "Discover Minneapolis ice shooting photography tips, locations, and
 image: "/images/20260125-ice-shooting-minneapolis.jpg"
 ---
 
-![Featured article: ICE Shooting Minneapolis: Autopsy Results Raise Questions](/images/20260125-ice-shooting-minneapolis.jpg)
-
 You've probably seen the headlines flooding your social media feed this week. Another federal law enforcement shooting. Another family devastated. Another community demanding answers.
 
 But the killing of Renée Good by ICE agents in Minneapolis isn't just another tragic news cycle. The autopsy results released this week reveal something that should make every American pause and ask hard questions about what our federal agencies are telling us.

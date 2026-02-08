@@ -9,8 +9,6 @@ description: "Discover the groundbreaking cancer research of Mariano Barbacid, t
 image: "/images/20260129-mariano-barbacid.jpg"
 ---
 
-![Featured article: Mariano Barbacid's Pancreatic Cancer Research: Mouse Study Results](/images/20260129-mariano-barbacid.jpg)
-
 You've been there, right? That moment when a loved one receives a cancer diagnosis and everything stops. But with pancreatic cancer, the conversation shifts almost immediately from "How do we fight this?" to "How much time do we have left?"
 
 Here's the brutal truth: pancreatic cancer kills 90% of patients within five years. While other cancers have seen dramatic improvements over the past decades, pancreatic cancer has remained stubbornly lethal. Most oncologists will tell you privately that this is the diagnosis they dread delivering most.

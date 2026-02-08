@@ -9,8 +9,6 @@ description: "Stay safe during severe winter weather. Learn how to prepare for w
 image: "/images/20260130-winter-storm-warning.jpg"
 ---
 
-![Featured article: Winter Storm Warning Mistakes: Why 68% Face Disruptions](/images/20260130-winter-storm-warning.jpg)
-
 You've probably experienced that sinking feeling when your phone buzzes with a winter storm warning notification. Your first thought? "How bad is this really going to be?" You're not alone in that uncertainty—and unfortunately, most people are handling these warnings completely wrong.
 
 Recent surveys show 68% of companies faced unexpected operational disruptions during the 2025-2026 winter season, with many discovering their emergency protocols weren't nearly as storm-proof as they assumed. The Northeast corridor learned this lesson the hard way during the January 2026 bomb cyclone, when supply chains buckled under conditions that weather services had been warning about for days.

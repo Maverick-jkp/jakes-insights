@@ -8,8 +8,6 @@ description: "Stay updated on today's school closures due to weather, emergencie
 image: "/images/20260122-school-closings-today.jpg"
 ---
 
-![Featured article: School Closings Today: Latest 2026 Updates & Alerts](/images/20260122-school-closings-today.jpg)
-
 You wake up to your phone buzzing with notifications, and your heart sinks when you see the alert: "School closed today." Sound familiar? Suddenly, your carefully planned morning routine crumbles as you scramble to find childcare, reschedule meetings, and explain to your boss why you might be late. According to recent data, the average parent loses 4.2 work hours per unexpected school closure, and these disruptions are happening more frequently than ever in 2026.
 
 You've been there, right? That moment of panic when everything you planned gets thrown out the window because someone else made a decision that impacts your entire day.

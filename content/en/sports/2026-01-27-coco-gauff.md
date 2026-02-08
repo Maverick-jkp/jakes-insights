@@ -9,8 +9,6 @@ description: "Discover Coco Gauff's inspiring journey from tennis prodigy to Gra
 image: "/images/20260127-coco-gauff.jpg"
 ---
 
-![Featured article: Coco Gauff's Political Commentary Complicates Sports Fan](/images/20260127-coco-gauff.jpg)
-
 You're scrolling through your sports feed, excited to catch up on Australian Open highlights, when suddenly you're hit with political commentary instead of match analysis. Sound familiar?
 
 That's exactly what's happening with Coco Gauff right now. The 22-year-old tennis star has tennis fans in a tough spot — do we focus on her athletic prowess or get pulled into debates about Trump's second term? Here's the thing: modern sports viewing has become way more complicated than just cheering for your favorite player.

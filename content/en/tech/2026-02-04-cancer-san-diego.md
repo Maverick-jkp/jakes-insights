@@ -11,8 +11,6 @@ ab_test_id: "title_style"
 ab_variant: "B"
 ---
 
-![Featured article: 5 Things You Didn't Know About San Diego Biotech Breakthrough: Cancer ](/images/20260204-cancer-san-diego.jpg)
-
 You've been staring at cancer statistics for months now, haven't you? The relentless climb toward 28.4 million cases by 2040. The plateau in traditional treatment effectiveness. The gnawing sense that we're running out of time while cancer keeps winning.
 
 Here's what just changed everything: A small San Diego biotech startup demonstrated something in February 2026 that made pharmaceutical giants collectively lose their minds. They watched cancer cells literally destroy themselves—not from poison, not from immune attacks, but from being tricked by what scientists call "molecular glue." Within weeks, these companies committed over $3 billion to San Diego cancer research. That's not venture capital betting on potential. That's pharmaceutical money betting on revolution.

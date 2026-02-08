@@ -9,8 +9,6 @@ description: "Discover Paula Badosa's inspiring tennis journey from Spain to WTA
 image: "/images/20260202-paula-badosa.jpg"
 ---
 
-![Featured article: Paula Badosa Faces Spanish Tennis Success Dilemma in 2026](/images/20260202-paula-badosa.jpg)
-
 You've probably felt that bittersweet moment when your favorite team's success creates an unexpected problem. That's exactly what's happening to Spanish tennis fans right now.
 
 Paula Badosa's return to tennis courts after the Australian Open has thrown Spanish tennis supporters into an uncomfortable position. The 26-year-old from Begues faces what Spanish media calls a "fratricidal duel" against a fellow Spaniard in her first tournament back. Translation? Spanish fans have to watch one of their stars eliminate the other.

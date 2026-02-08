@@ -8,8 +8,6 @@ description: "Neural DSP Quad Cortex Mini의 핵심 기능과 성능을 완벽 �
 image: "/images/20260124-quad-cortex-mini.jpg"
 ---
 
-![Featured article: Quad Cortex Mini 출시, 휴대성과 기능 제한 사이의 선택](/images/20260124-quad-cortex-mini.jpg)
-
 기타리스트라면 누구나 한 번쯤 겪어봤을 거예요. 라이브 공연에서 앰프 세팅이 망가지거나, 레코딩 스튜디오에서 원하는 톤이 안 나와서 시간과 돈이 날아가는 상황 말이에요. 실제로 2025년 조사에 따르면 기타리스트의 70%가 "톤 찾기"에만 연습 시간의 30% 이상을 소모한다고 해요. Neural DSP가 2026년 초 공개한 Quad Cortex Mini는 바로 이런 문제를 해결하겠다고 나온 제품이에요.
 
 ## 왜 굳이 Mini 버전을 만들었을까

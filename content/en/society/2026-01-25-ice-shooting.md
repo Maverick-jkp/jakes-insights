@@ -8,8 +8,6 @@ description: "Discover the thrilling world of ice shooting - from frozen target 
 image: "/images/20260125-ice-shooting.jpg"
 ---
 
-![Featured article: ICE Shooting Incidents Impact Minneapolis Communities](/images/20260125-ice-shooting.jpg)
-
 You wake up to breaking news alerts flooding your phone, but this time it's different. The headlines aren't about celebrity drama or political scandals – they're about federal immigration agents opening fire in your city's neighborhoods. For Minneapolis residents this weekend, that nightmare became reality as ICE-involved shootings dominated local news cycles.
 
 You've probably seen the footage by now – tactical vehicles, armed agents, and the inevitable yellow tape cordoning off another crime scene. The latest incident marks the third shooting involving federal agents in Minneapolis recently, turning what was once considered routine immigration enforcement into a public safety crisis that's impossible to ignore.

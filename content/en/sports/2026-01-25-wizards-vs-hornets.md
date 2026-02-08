@@ -8,8 +8,6 @@ description: "Discover the epic showdown between magical wizards and fierce horn
 image: "/images/20260125-wizards-vs-hornets.jpg"
 ---
 
-![Featured article: Wizards vs Hornets: Streaming Chaos and Schedule Issues](/images/20260125-wizards-vs-hornets.jpg)
-
 You're trying to catch the Wizards vs Hornets matchup, but between weather delays and streaming confusion, finding reliable game coverage feels like navigating a maze blindfolded. With Saturday's game already rescheduled and Washington riding a brutal 5-game road losing streak, fans are scrambling to figure out when and where they can actually watch their teams play.
 
 Here's the thing: NBA scheduling chaos has reached new heights this season, and the Wizards-Hornets series perfectly captures why basketball fans are more frustrated than ever with viewing accessibility.

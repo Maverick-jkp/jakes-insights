@@ -11,8 +11,6 @@ ab_test_id: "title_style"
 ab_variant: "A"
 ---
 
-![Featured article: Dominik Mysterio's AAA Appearance Signals Career Pivot](/images/20260203-dominik-mysterio.jpg)
-
 You've been following WWE storylines for years, watching predictable character arcs play out exactly as expected. So when Dominik Mysterio showed up at Lucha Libre AAA in January 2026, interrupting El Hijo del Vikingo to talk about the Rey de Reyes tournament, you probably thought it was just another minor appearance. 
 
 Here's the thing: it wasn't.

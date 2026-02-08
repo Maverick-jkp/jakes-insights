@@ -11,8 +11,6 @@ ab_test_id: "title_style"
 ab_variant: "A"
 ---
 
-![Featured article: Molecular Glue Cancer Therapy Shows Clinical Promise](/images/20260204-molecular-glue-cancer.jpg)
-
 You've probably heard the promises before. Another "revolutionary" cancer treatment that's going to change everything. Another breakthrough that somehow never quite breaks through.
 
 But here's the thing about molecular glue cancer therapy: it's not just another incremental improvement. It's actually working, and pharmaceutical giants are betting billions on it.

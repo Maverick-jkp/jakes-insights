@@ -8,8 +8,6 @@ description: "Discover the Quad Cortex Mini's powerful amp modeling, compact des
 image: "/images/20260121-quad-cortex-mini.jpg"
 ---
 
-![Featured article: Quad Cortex Mini: The Ultimate Compact Guitar Processor](/images/20260121-quad-cortex-mini.jpg)
-
 You bought the original Quad Cortex for $1,699, thinking it would revolutionize your guitar setup. But here's what happened: the massive pedalboard-sized unit barely fits in your gig bag, and you find yourself leaving it at home for smaller venues. Sound familiar?
 
 Neural DSP just dropped the Quad Cortex Mini in January 2026, and guitarists are split down the middle. Some call it the perfect solution for mobile musicians, while others worry it's just another overpriced toy that strips away the features that made the original worth buying.

@@ -11,8 +11,6 @@ ab_test_id: "title_style"
 ab_variant: "A"
 ---
 
-![Featured article: How Reality TV Manipulation Uses AI to Control Viewers](/images/20260204-reality-tv-manipulation.jpg)
-
 You've been there, right? Settling in for your favorite reality show, getting invested in the drama, rooting for contestants—only to discover later that everything you watched was carefully orchestrated by algorithms that knew exactly which buttons to push.
 
 The truth is, reality TV manipulation has exploded into something far more sophisticated than clever editing. Following Netflix's transparency report and Disney+'s AI-assisted casting revelations in early 2026, we're seeing manipulation techniques that would make social media platforms jealous.

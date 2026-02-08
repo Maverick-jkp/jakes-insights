@@ -6450,6 +6450,321 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "487-en-sports-eng-vs-nep",
+      "keyword": "eng vs nep",
+      "category": "sports",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.800999",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fans need live stream info and betting odds NOW before match starts tomorrow - missing this means losing betting opportunities and unable to watch historic first encounter",
+      "angle": "Underdog drama: Nepal faces 15:1 odds against England favorites in their first-ever T20 World Cup encounter",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "T20 World Cup 2025/26, AFG vs NZ 4th Match, Group D Match Preview - Injury-hit New Zealand eye reven",
+          "url": "https://www.espncricinfo.com/series/icc-men-s-t20-world-cup-2025-26-1502138/afghanistan-vs-new-zealand-4th-match-group-d-1512722/match-preview",
+          "source": "www.espncricinfo.com"
+        },
+        {
+          "title": "New Zealand vs Afghanistan LIVE Score T20 World Cup: Tim Seifert and NZ batters blaze to big win wit",
+          "url": "https://www.hindustantimes.com/cricket/new-zealand-vs-afghanistan-live-cricket-score-nz-vs-afg-t20-world-cup-2026-group-d-match-today-chennai-feb-8-latest-news-101770515128414.html",
+          "source": "www.hindustantimes.com"
+        },
+        {
+          "title": "England vs Nepal, 5th Match, Group C, ICC Men's T20 World Cup 2026, Tomorrow, ICC Men's T20 World Cu",
+          "url": "https://www.cricbuzz.com/live-cricket-scores/138996/eng-vs-nep-5th-match-group-c-icc-mens-t20-world-cup-2026",
+          "source": "www.cricbuzz.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "488-en-society-earthquake-now",
+      "keyword": "earthquake now",
+      "category": "society",
+      "lang": "en",
+      "priority": 10,
+      "status": "completed",
+      "created_at": "2026-02-08T18:10:41.801145",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Need real-time earthquake data to assess immediate safety risk and decide whether to evacuate NOW",
+      "angle": "Urgent safety: Real-time earthquake tracking reveals if you're in danger zone requiring immediate action",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Latest Earthquakes",
+          "url": "https://earthquake.usgs.gov/earthquakes/map/",
+          "source": "earthquake.usgs.gov"
+        },
+        {
+          "title": "Recent Earthquakes Near California, United States - Earthquake Track",
+          "url": "https://earthquaketrack.com/p/united-states/california/recent",
+          "source": "earthquaketrack.com"
+        },
+        {
+          "title": "List of Recent Earthquakes for California and Nevada",
+          "url": "https://scedc.caltech.edu/recent/Quakes/quakes0.html",
+          "source": "scedc.caltech.edu"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-08T09:10:42.283191+00:00",
+      "completed_at": "2026-02-08T09:15:23.638780+00:00"
+    },
+    {
+      "id": "489-en-tech-printer-driver",
+      "keyword": "printer driver",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801200",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users need to know if their printers will stop working and what alternatives exist before it's too late to return or upgrade",
+      "angle": "Tech obsolescence: Microsoft's driver removal puts millions of legacy printers on death row",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Microsoft purges Windows 11 printer drivers, putting millions of devices on borrowed time — legacy p",
+          "url": "https://www.tomshardware.com/peripherals/printers/microsoft-stops-distrubitng-legacy-v3-and-v4-printer-drivers",
+          "source": "www.tomshardware.com"
+        },
+        {
+          "title": "Windows 11 ends legacy printer drivers in 2026 | Windows Central",
+          "url": "https://www.windowscentral.com/microsoft/windows-11/windows-11-finally-pulls-the-plug-on-legacy-printer-drivers-starting-january-2026",
+          "source": "www.windowscentral.com"
+        },
+        {
+          "title": "Windows 11 Ends Legacy V3 V4 Printer Drivers IPP Inbox Class Driver | Windows Forum",
+          "url": "https://windowsforum.com/threads/windows-11-ends-legacy-v3-v4-printer-drivers-ipp-inbox-class-driver.400347/",
+          "source": "windowsforum.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "490-en-sports-afghanistan-vs-new-z",
+      "keyword": "afghanistan vs new zealand",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801252",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Cricket fans need to know if injury-depleted New Zealand can compete or if Afghanistan will dominate again - betting odds depend on this",
+      "angle": "Revenge narrative: Injury-hit New Zealand faces Afghanistan who demolished them in 2024",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "T20 World Cup 2025/26, AFG vs NZ 4th Match, Group D Match Preview - Injury-hit New Zealand eye reven",
+          "url": "https://www.espncricinfo.com/series/icc-men-s-t20-world-cup-2025-26-1502138/afghanistan-vs-new-zealand-4th-match-group-d-1512722/match-preview",
+          "source": "www.espncricinfo.com"
+        },
+        {
+          "title": "New Zealand vs Afghanistan LIVE Score T20 World Cup: Tim Seifert and NZ batters blaze to big win wit",
+          "url": "https://www.hindustantimes.com/cricket/new-zealand-vs-afghanistan-live-cricket-score-nz-vs-afg-t20-world-cup-2026-group-d-match-today-chennai-feb-8-latest-news-101770515128414.html",
+          "source": "www.hindustantimes.com"
+        },
+        {
+          "title": "England vs Nepal, 5th Match, Group C, ICC Men's T20 World Cup 2026, Tomorrow, ICC Men's T20 World Cu",
+          "url": "https://www.cricbuzz.com/live-cricket-scores/138996/eng-vs-nep-5th-match-group-c-icc-mens-t20-world-cup-2026",
+          "source": "www.cricbuzz.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "491-en-tech-icc-tv",
+      "keyword": "icc tv",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801293",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users need to find correct streaming platform NOW before tournament starts or miss live matches and waste money on wrong subscriptions",
+      "angle": "Access confusion: Complex regional broadcasting deals create viewer frustration and subscription waste",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "All the Broadcast details for ICC Men’s T20 World Cup 2026 | ICC Men's T20 World Cup, 2026 | ICC",
+          "url": "https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/news/all-the-broadcast-details-for-icc-men-s-t20-world-cup-2026",
+          "source": "www.icc-cricket.com"
+        },
+        {
+          "title": "India A sees off USA | T20 World Cup 2026 Warm-Up Highlights - YouTube",
+          "url": "https://www.youtube.com/watch?v=vgXhHNy95RI",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "492-ko-society-정원오",
+      "keyword": "정원오",
+      "category": "society",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801340",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "서울 부동산 정책 변화가 내 주택 구매 타이밍과 가격에 직접 영향 - 지금 판단 못하면 매수 기회 상실",
+      "angle": "정치 대립: 차기 서울시장 후보들의 부동산 정책 충돌이 시민 자산에 미치는 실질적 영향",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "성동구청장 정원오가 시장 오세훈에게 점잖게 한 마디 던졌다 : \"상대방과 싸우는 게 아니고 시민의 불편함과 싸우라\"",
+          "url": "https://www.huffingtonpost.kr/news/articleView.html?idxno=242214",
+          "source": "www.huffingtonpost.kr"
+        },
+        {
+          "title": "정원오, 오세훈 향해 “세계유산영향평가 받으면 될 일”···태릉CC 개발 비판에 역공 - 경향신문",
+          "url": "https://www.khan.co.kr/article/202602011410001/?amp=&amp=",
+          "source": "www.khan.co.kr"
+        },
+        {
+          "title": "“오세훈 경선 탈락?“ 질문에 정원오 성동구청장 반응이… / “오세훈 때문에 부동산 사달이 난 겁니다“ / 정원오X성한용X장형철 [송채경화의 공덕포차 260205-농축본1] - Y",
+          "url": "https://www.youtube.com/watch?v=xeWigrSsX8k",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "493-ja-entertainment-林家たい平",
+      "keyword": "林家たい平",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801428",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "笑点の新メンバー加入で林家一門の力関係変化 - 見逃すと番組の文脈理解できず",
+      "angle": "師弟継承: こん平師匠の病気降板後、たい平と三平の共演が示す一門の未来",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "林家こん平 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E6%9E%97%E5%AE%B6%E3%81%93%E3%82%93%E5%B9%B3",
+          "source": "ja.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "494-ja-entertainment-前原瑞樹",
+      "keyword": "前原瑞樹",
+      "category": "entertainment",
+      "lang": "ja",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801472",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "新人俳優の経歴と所属事務所情報 - 今後ブレイク前に知らないとトレンド乗り遅れ",
+      "angle": "キャリア転換: 弁護士志望から俳優へ、前原瑞樹の異色の経歴",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "前原瑞樹 - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E5%89%8D%E5%8E%9F%E7%91%9E%E6%A8%B9",
+          "source": "ja.wikipedia.org"
+        },
+        {
+          "title": "『ばけばけ』銭太郎（前原瑞樹）退場におわせに「困る」「やだ～」「秀吉の義弟に転生」ロスの声続出（中日スポーツ） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b8a46c0bcd300ed9fd09436585b3775d48c81613",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "禍禍女 : 作品情報・キャスト・あらすじ - 映画.com",
+          "url": "https://eiga.com/movie/104392/",
+          "source": "eiga.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "495-ko-sports-요가-초보-가이드",
+      "keyword": "요가 초보 가이드",
+      "category": "sports",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801629",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "신체 유연성 향상과 스트레스 해소를 위해 요가를 시작하려는 초보자가 기초부터 안전하게 배우기",
+      "angle": "초보자 필수 자세 10가지, 호흡법 기초, 집에서 따라할 수 있는 20분 루틴, 부상 예방 팁",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Essential Yoga Poses for Beginners: A Complete Guide to 13 Foundational Poses with Names and Key Poi",
+          "url": "https://www.twosevenths.com/en/info/yoga-pose-guide/",
+          "source": "www.twosevenths.com"
+        },
+        {
+          "title": "요가 초보자를 위한 완벽 가이드 – 기본 동작부터 호흡법까지 :: 힐링 마인드",
+          "url": "https://healingminder.tistory.com/entry/%EC%9A%94%EA%B0%80-%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C-%E2%80%93-%EA%B8%B0%EB%B3%B8-%EB%8F%99%EC%9E%91%EB%B6%80%ED%84%B0-%ED%98%B8%ED%9D%A1%EB%B2%95%EA%B9%8C%EC%A7%80",
+          "source": "healingminder.tistory.com"
+        },
+        {
+          "title": "요가 자격증, 비용부터 준비 방법까지 초보자를 위한 완벽 가이드 :: innerone 님의 블로그",
+          "url": "https://sm-innerone.com/30",
+          "source": "sm-innerone.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "496-ja-tech-AI入門ガイド",
+      "keyword": "AI入門ガイド",
+      "category": "tech",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-08T18:10:41.801672",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ビジネスやキャリアでAIを活用するために、基礎概念から実践的なツールの使い方まで体系的に学習する",
+      "angle": "AI基礎理論、機械学習との違い、初心者向けツール紹介、Python基礎、実践プロジェクト例を含む段階的学習パス",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "初心者のためのAI入門！勉強方法をわかりやすく解説！ | 通信制大学・オンラインで学べる大学なら【開志創造大学 情報デザイン学部】",
+          "url": "https://kaishi.ac.jp/info-d/column/column-list/introduction-of-ai/",
+          "source": "kaishi.ac.jp"
+        },
+        {
+          "title": "【初心者必見】AI（人工知能）分野への完全入門ガイド | 侍エンジニアブログ",
+          "url": "https://www.sejuku.net/blog/54459",
+          "source": "www.sejuku.net"
+        },
+        {
+          "title": "AI（人工知能）の学習本20選！おすすめの書籍をレベル・目的別に紹介 | 侍エンジニア",
+          "url": "https://generative-ai.sejuku.net/blog/7392/",
+          "source": "generative-ai.sejuku.net"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

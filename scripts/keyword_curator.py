@@ -189,19 +189,19 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 **🚨 언어별 키워드 생성 규칙 (절대 준수):**
 반드시 정확히 {count}개의 키워드를 생성하라:
-- 영어(en): 정확히 {per_lang}개 (1개라도 부족하거나 초과하면 안 됨)
-- 한국어(ko): 정확히 {per_lang}개 (1개라도 부족하거나 초과하면 안 됨)
-- 일본어(ja): 정확히 {per_lang}개 (1개라도 부족하거나 초과하면 안 됨)
+- 영어(en): 정확히 {en_count}개 (1개라도 부족하거나 초과하면 안 됨)
+- 한국어(ko): 정확히 {ko_count}개 (1개라도 부족하거나 초과하면 안 됨)
+- 일본어(ja): 정확히 {ja_count}개 (1개라도 부족하거나 초과하면 안 됨)
 - 총합: 정확히 {count}개
 
 **언어별 트렌드 데이터 사용 규칙:**
-- 🇺🇸 English (US) Trends에서 {per_lang}개 키워드 추출 → language: "en"
-- 🇰🇷 Korean (KR) Trends에서 {per_lang}개 키워드 추출 → language: "ko"
-- 🇯🇵 Japanese (JP) Trends에서 {per_lang}개 키워드 추출 → language: "ja"
+- 🇺🇸 English (US) Trends에서 {en_count}개 키워드 추출 → language: "en"
+- 🇰🇷 Korean (KR) Trends에서 {ko_count}개 키워드 추출 → language: "ko"
+- 🇯🇵 Japanese (JP) Trends에서 {ja_count}개 키워드 추출 → language: "ja"
 - 만약 한 언어의 트렌드가 부족하면, 다른 언어 트렌드를 절대 사용하지 말고 해당 언어로 새로운 키워드를 생성하라
 
 각 언어 내에서 5개 카테고리(tech, business, society, entertainment, sports)를 최대한 균등하게 분배하되,
-반드시 각 언어별로 정확히 {per_lang}개씩 생성하는 것이 최우선이다.
+반드시 각 언어별로 정확히 EN {en_count}개, KO {ko_count}개, JA {ja_count}개씩 생성하는 것이 최우선이다.
 
 ⚠️ **카테고리 변경 사항 (2026-01-25):**
 - 기존 8개 → 새로운 5개 카테고리로 통합
@@ -225,6 +225,9 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 🇯🇵 Japanese Keywords:
 {evergreen_ja}
 
+**🚫 이미 큐에 존재하는 키워드 (절대 중복 제안 금지):**
+{existing_keywords}
+
 **목표:**
 - **지속적 검색 수요**: 1년 후에도 검색되는 주제
 - **교육/가이드성**: "how to", "guide", "방법", "가이드" 등
@@ -236,6 +239,7 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 - 실명 인물 관련 (연예인, 정치인)
 - 논란/감정 자극형 키워드
 - 추상적 주제 ("AI의 미래", "기술 트렌드")
+- **위 "이미 큐에 존재하는 키워드" 목록과 동일하거나 유사한 키워드** (반드시 새로운 키워드만 제안)
 
 출력 형식:
 반드시 JSON 형식으로만 응답하라.
@@ -278,9 +282,9 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 
 **🚨 언어별 키워드 생성 규칙:**
 반드시 정확히 {count}개의 키워드를 생성하라:
-- 영어(en): 정확히 {per_lang}개
-- 한국어(ko): 정확히 {per_lang}개
-- 일본어(ja): 정확히 {per_lang}개
+- 영어(en): 정확히 {en_count}개
+- 한국어(ko): 정확히 {ko_count}개
+- 일본어(ja): 정확히 {ja_count}개
 - 총합: 정확히 {count}개
 
 각 언어 내에서 5개 카테고리를 균등하게 분배할 것.
@@ -887,8 +891,10 @@ class KeywordCurator:
         safe_print(f"  🔍 Generating {count} {keyword_type} keyword candidates...")
         safe_print(f"{'='*60}\n")
 
-        # Calculate per-language count
-        per_lang = count // 3  # Distribute evenly across 3 languages
+        # Calculate per-language count (EN 40%, KO 40%, JA 20%)
+        en_count = int(count * 0.4)
+        ko_count = int(count * 0.4)
+        ja_count = count - en_count - ko_count  # Remainder to JA
 
         if keyword_type == "evergreen":
             # Load evergreen keywords pool
@@ -899,13 +905,20 @@ class KeywordCurator:
             evergreen_ko = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ko", [])])
             evergreen_ja = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ja", [])])
 
+            # Collect existing keywords from queue to prevent duplicates
+            existing_keywords = [t['keyword'] for t in self.queue_data.get('topics', [])]
+            existing_keywords_text = "\n".join([f"- {kw}" for kw in existing_keywords[-100:]]) if existing_keywords else "없음"
+
             # Generate prompt with evergreen data
             prompt = CURATION_PROMPT_EVERGREEN.format(
                 evergreen_en=evergreen_en,
                 evergreen_ko=evergreen_ko,
                 evergreen_ja=evergreen_ja,
                 count=count,
-                per_lang=per_lang
+                en_count=en_count,
+                ko_count=ko_count,
+                ja_count=ja_count,
+                existing_keywords=existing_keywords_text
             )
 
             # For evergreen, we don't need real-time search results
@@ -943,11 +956,6 @@ class KeywordCurator:
                 for t in community_topics_list[:15]  # Top 15 community topics
             ]) or "No community topics available"
 
-            # Calculate language-specific counts (EN 40%, KO 40%, JA 20%)
-            en_count = int(count * 0.4)
-            ko_count = int(count * 0.4)
-            ja_count = count - en_count - ko_count  # Remainder goes to JA
-
             # Generate prompt with trending data (grouped by language)
             prompt = CURATION_PROMPT_WITH_TRENDS.format(
                 trends_en=trends_by_lang.get('en', 'No English trends available'),
@@ -955,7 +963,6 @@ class KeywordCurator:
                 trends_ja=trends_by_lang.get('ja', 'No Japanese trends available'),
                 community_topics=community_topics_formatted,
                 count=count,
-                per_lang=per_lang,
                 en_count=en_count,
                 ko_count=ko_count,
                 ja_count=ja_count

@@ -59,7 +59,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 🇯🇵 Japanese (JP) Trends:
 {trends_ja}
 
-🌐 **Community Topics (HackerNews, Reddit, ProductHunt)**:
+🌐 **Community Topics (HackerNews, Dev.to, Lobsters, ProductHunt)**:
 {community_topics}
 
 **중요**: Community Topics는 영어 원문이지만, 한국/일본 독자에게도 유용한 내용이면 KO/JA 버전으로도 제안하라.
@@ -443,34 +443,54 @@ class KeywordCurator:
         except Exception as e:
             safe_print(f"    ⚠️ HackerNews fetch failed: {mask_secrets(str(e))}")
 
-        # 2. Reddit - Programming & Technology (free, no auth for public data)
-        subreddits = ['programming', 'technology', 'MachineLearning']
-        for subreddit in subreddits:
-            try:
-                safe_print(f"  → Fetching from r/{subreddit}...")
-                reddit_url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=5"
-                headers = {'User-Agent': 'JakesTechInsights/1.0'}
-                response = requests.get(reddit_url, headers=headers, timeout=10, verify=verify_ssl)
-                response.raise_for_status()
-                data = response.json()
+        # 2. Dev.to - Developer community (free, no auth needed)
+        try:
+            safe_print("  → Fetching from Dev.to (top articles)...")
+            devto_url = "https://dev.to/api/articles?top=1&per_page=5"
+            headers = {'User-Agent': 'JakesTechInsights/1.0'}
+            response = requests.get(devto_url, headers=headers, timeout=10, verify=verify_ssl)
+            response.raise_for_status()
+            data = response.json()
 
-                for post in data.get('data', {}).get('children', [])[:3]:
-                    post_data = post.get('data', {})
-                    if post_data.get('title') and not post_data.get('stickied'):
-                        community_topics.append({
-                            'title': post_data['title'],
-                            'source': f'Reddit/r/{subreddit}',
-                            'url': f"https://reddit.com{post_data.get('permalink', '')}",
-                            'score': post_data.get('score', 0),
-                            'comments': post_data.get('num_comments', 0)
-                        })
+            for article in data[:5]:
+                if article.get('title'):
+                    community_topics.append({
+                        'title': article['title'],
+                        'source': 'Dev.to',
+                        'url': article.get('url', ''),
+                        'score': article.get('positive_reactions_count', 0),
+                        'comments': article.get('comments_count', 0)
+                    })
 
-                safe_print(f"    ✓ Found topics from r/{subreddit}")
-                time.sleep(1)  # Rate limiting for Reddit
+            devto_count = len([t for t in community_topics if t['source'] == 'Dev.to'])
+            safe_print(f"    ✓ Found {devto_count} topics from Dev.to")
 
-            except Exception as e:
-                safe_print(f"    ⚠️ Reddit r/{subreddit} fetch failed: {mask_secrets(str(e))}")
-                continue
+        except Exception as e:
+            safe_print(f"    ⚠️ Dev.to fetch failed: {mask_secrets(str(e))}")
+
+        # 3a. Lobsters - Tech community (free, no auth needed)
+        try:
+            safe_print("  → Fetching from Lobsters (hottest)...")
+            lobsters_url = "https://lobste.rs/hottest.json"
+            response = requests.get(lobsters_url, headers={'User-Agent': 'JakesTechInsights/1.0'}, timeout=10, verify=verify_ssl)
+            response.raise_for_status()
+            data = response.json()
+
+            for article in data[:5]:
+                if article.get('title'):
+                    community_topics.append({
+                        'title': article['title'],
+                        'source': 'Lobsters',
+                        'url': article.get('url') or article.get('short_id_url', ''),
+                        'score': article.get('score', 0),
+                        'comments': article.get('comment_count', 0)
+                    })
+
+            lobsters_count = len([t for t in community_topics if t['source'] == 'Lobsters'])
+            safe_print(f"    ✓ Found {lobsters_count} topics from Lobsters")
+
+        except Exception as e:
+            safe_print(f"    ⚠️ Lobsters fetch failed: {mask_secrets(str(e))}")
 
         # 3. ProductHunt - Using Atom feed with descriptions (no auth needed)
         try:
@@ -896,7 +916,7 @@ class KeywordCurator:
             self.search_results = []  # Store search results
             trends_by_lang = self.fetch_trending_topics()
 
-            # Fetch community topics (HackerNews, Reddit, ProductHunt)
+            # Fetch community topics (HackerNews, Dev.to, Lobsters, ProductHunt)
             community_data = self.fetch_community_topics()
             community_topics_list = community_data.get('en', [])
 

@@ -6297,37 +6297,159 @@
       "completed_at": "2026-02-07T10:51:24.575502+00:00"
     },
     {
-      "id": "482-ja-sports-自宅トレーニングルーティン",
-      "keyword": "自宅トレーニングルーティン",
+      "id": "482-en-entertainment-james-franco",
+      "keyword": "james franco",
+      "category": "entertainment",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-08T07:41:26.234540",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Discover what happened during Franco's absence and whether his return signals Hollywood's shifting standards on accountability",
+      "angle": "Career resurrection after controversy - what was hidden and what's now being revealed",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "James Franco Wakes Up David Dobrik's Roommate, Offers $1K to Name 5 of His Movies",
+          "url": "https://www.tmz.com/2026/02/06/david-dobrik-roommate-name-james-franco-movies/",
+          "source": "www.tmz.com"
+        },
+        {
+          "title": "James Franco Discusses Tense Relationship with Henry Cavill - FilmoGaz",
+          "url": "https://www.filmogaz.com/135662",
+          "source": "www.filmogaz.com"
+        },
+        {
+          "title": "James Franco Wakes Up David Dobrik's Roommate, Offers $1K to Name 5 of His Movies",
+          "url": "https://www.aol.com/articles/james-franco-wakes-david-dobriks-203045114.html",
+          "source": "www.aol.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "483-en-tech-arc-raiders",
+      "keyword": "arc raiders",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-08T07:41:26.234595",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Get into the game before the meta is established and before cheaters dominate - early players gain permanent advantage",
+      "angle": "New extraction shooter launch with anti-cheat promises - limited window for fair competition",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "The Big Arc Raiders Interview: Embark Boss Patrick Söderlund Talks Live-Service Plans, Banning Cheat",
+          "url": "https://www.ign.com/articles/the-big-arc-raiders-interview-embark-boss-patrick-sderlund-talks-live-service-plans-banning-cheaters-and-the-secret-sauce-of-pve",
+          "source": "www.ign.com"
+        },
+        {
+          "title": "ARC Raiders’ Success Has Allowed Embark Studios To Thrive Amid Industry Uncertainty",
+          "url": "https://gamingbolt.com/arc-raiders-success-has-allowed-embark-studios-to-thrive-amid-industry-uncertainty",
+          "source": "gamingbolt.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "484-ko-entertainment-전소민",
+      "keyword": "전소민",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-08T07:41:26.234638",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "예능인의 데뷔 전 진짜 모습과 현재 페르소나의 차이를 확인하고 싶은 궁금증",
+      "angle": "스타가 되기 전 평범했던 시절의 흔적 - 지금은 볼 수 없는 솔직함",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "전소민, 유재석에게 ‘명품 지갑’ 선물 받아 감동했던 일화 공개↗ - YouTube",
+          "url": "https://www.youtube.com/watch?v=1gZXLAJ8plI",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "\"출처=본인 ㅋ\" 전소민, '지식인 유출' 해프닝 :: 공감언론 뉴시스 ::",
+          "url": "https://www.newsis.com/view/NISX20260205_0003504684",
+          "source": "www.newsis.com"
+        },
+        {
+          "title": "전소민 \"출처=본인ㅋ\" 지식인 유출 해프닝…귀여운 15년 전 과거 '끌올' [엑's 이슈]",
+          "url": "https://www.xportsnews.com/article/2108685",
+          "source": "www.xportsnews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "485-ja-sports-京都記念",
+      "keyword": "京都記念",
       "category": "sports",
+      "lang": "ja",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-08T07:41:26.234711",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "天皇賞春への前哨戦として、有力馬の仕上がりと適性を事前に把握し的中率を上げたい",
+      "angle": "GII重賞の前週追い切り情報 - 猛時計を出した伏兵馬の存在",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "【京都記念想定】ヘデントール、エリキングなど14頭（netkeiba） - Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/338cb9034f5dba377d25545640e0885764bf71ef",
+          "source": "news.yahoo.co.jp"
+        },
+        {
+          "title": "【京都記念想定馬・騎手】ヘデントール、エリキングなど14頭 | 競馬ニュース - netkeiba",
+          "url": "https://news.netkeiba.com/?pid=news_view&no=321506",
+          "source": "news.netkeiba.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "486-ja-entertainment-ガクテンソク",
+      "keyword": "ガクテンソク",
+      "category": "entertainment",
       "lang": "ja",
       "priority": 6,
       "status": "pending",
-      "created_at": "2026-02-07T07:35:16.942122",
+      "created_at": "2026-02-08T07:41:26.234735",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "ジム通い不要で自宅で体系的に運動し、健康と体力を向上させる",
-      "angle": "器具不要のエクササイズと週次プログラムの詳細ガイド",
+      "keyword_type": "trend",
+      "search_intent": "お笑い界の王者が実践した具体的なダイエット方法と、芸人同士のつながりの真相を知りたい",
+      "angle": "賞レース王者の体型変化 - 「執事は太ってちゃダメ」という一言から始まった変身ストーリー",
       "competition_level": "low",
       "references": [
         {
-          "title": "自宅でできる筋トレメニュー17種目｜目的別に回数・強度・頻度を解説 | トレーニング ×スポーツ『MELOS』",
-          "url": "https://melos.media/training/36561/",
-          "source": "melos.media"
+          "title": "ガクテンソク - Wikipedia",
+          "url": "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%82%AF%E3%83%86%E3%83%B3%E3%82%BD%E3%82%AF",
+          "source": "ja.wikipedia.org"
         },
         {
-          "title": "【1週間メニュー付き】本気で結果を出す自重トレーニング総まとめ！器具なし自宅筋トレで効果をあげるポイントを紹介",
-          "url": "https://ufit.co.jp/blogs/training/bodyweighttraining",
-          "source": "ufit.co.jp"
+          "title": "「漫才Lovers」にノンスタ、ガクテンソク、吉田たち、さや香、カベポスター、たくろう、エバース - お笑いナタリー",
+          "url": "https://natalie.mu/owarai/news/658430",
+          "source": "natalie.mu"
         },
         {
-          "title": "筋トレは自宅でできる！ 器具なしで全身を鍛える自重トレーニング11選 | GQ JAPAN",
-          "url": "https://www.gqjapan.jp/article/20250501-the-best-full-body-strength-training-that-you-can-do-at-home",
-          "source": "www.gqjapan.jp"
+          "title": "ガクテンソク奥田がマヂラブ野田「クリスタルジム」でダイエット大成功! きっかけはルミネ楽屋で「執事は太ってちゃダメだろう」 | FANY Magazine",
+          "url": "https://magazine.fany.lol/265284/",
+          "source": "magazine.fany.lol"
         }
       ],
-      "content_type_hint": "GUIDE",
-      "reserved_at": null
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
     }
   ]
 }

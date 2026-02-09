@@ -6852,7 +6852,7 @@
       "category": "business",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551522",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6877,7 +6877,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T10:59:46.992865+00:00"
     },
     {
       "id": "511-en-business-pedestrian-accident-",
@@ -6885,7 +6887,7 @@
       "category": "business",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551558",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6910,7 +6912,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:04:07.734596+00:00"
     },
     {
       "id": "512-en-tech-incident-response-pl",
@@ -6918,7 +6922,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551614",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6943,7 +6947,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:20:52.083683+00:00"
     },
     {
       "id": "513-en-tech-latest-iphone-rumors",
@@ -6951,7 +6957,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551642",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6971,7 +6977,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:46:13.465234+00:00"
     },
     {
       "id": "514-en-sports-scotland-vs-italy",
@@ -6979,7 +6987,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551662",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7004,7 +7012,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:22:51.236124+00:00"
     },
     {
       "id": "515-en-tech-Vouch-GitHub",
@@ -7012,7 +7022,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551682",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7021,7 +7031,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:08:16.914831+00:00"
     },
     {
       "id": "516-en-tech-Claude-C-compiler",
@@ -7029,7 +7041,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551701",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7038,7 +7050,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:26:33.207892+00:00"
     },
     {
       "id": "517-en-tech-BGP-FreeBSD-tutorial",
@@ -7046,7 +7060,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551728",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7055,7 +7069,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:51:23.700003+00:00"
     },
     {
       "id": "518-ko-entertainment-김병세",
@@ -7088,7 +7104,8 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": null
     },
     {
       "id": "519-ko-tech-AI-코딩-에이전트-논란",
@@ -7096,7 +7113,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551818",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7105,7 +7122,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:32:06.891015+00:00"
     },
     {
       "id": "520-ko-tech-오픈소스-유료화",
@@ -7113,7 +7132,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551843",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7122,7 +7141,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:12:48.414109+00:00"
     },
     {
       "id": "521-ko-tech-사이버-보안-규정-2026",
@@ -7130,7 +7151,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551870",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7155,7 +7176,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:37:14.412584+00:00"
     },
     {
       "id": "522-ko-tech-홈-네트워크-10Gbps",
@@ -7163,7 +7186,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551896",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7172,7 +7195,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:00:41.383781+00:00"
     },
     {
       "id": "523-ko-tech-iPhone-18-루머",
@@ -7180,7 +7205,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551921",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7200,7 +7225,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:05:49.761062+00:00"
     },
     {
       "id": "524-ja-entertainment-桜蘭高校ホスト部",
@@ -7208,7 +7235,7 @@
       "category": "entertainment",
       "lang": "ja",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551945",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7233,7 +7260,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:41:59.117777+00:00"
     },
     {
       "id": "525-ja-sports-奈良育英高校",
@@ -7241,7 +7270,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551968",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7266,7 +7295,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:09:14.564588+00:00"
     },
     {
       "id": "526-ja-business-ソフトバンク-決算",
@@ -7274,7 +7305,7 @@
       "category": "business",
       "lang": "ja",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.551991",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7299,7 +7330,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T11:16:53.913097+00:00"
     },
     {
       "id": "527-ja-tech-愛媛大学",
@@ -7307,7 +7340,7 @@
       "category": "tech",
       "lang": "ja",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.552013",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7332,7 +7365,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:13:19.900391+00:00"
     },
     {
       "id": "528-en-tech-web-development-road",
@@ -7340,7 +7375,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.552034",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7364,7 +7399,9 @@
           "source": "www.geeksforgeeks.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:17:49.654420+00:00"
     },
     {
       "id": "529-en-business-freelancing-tips",
@@ -7372,7 +7409,7 @@
       "category": "business",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.552053",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7396,7 +7433,9 @@
           "source": "www.bluehost.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:28:03.286640+00:00"
     },
     {
       "id": "530-ko-tech-데이터-분석-시작하기",
@@ -7404,7 +7443,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.552079",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7428,7 +7467,9 @@
           "source": "aws.amazon.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:23:12.025864+00:00"
     },
     {
       "id": "531-ko-society-스트레스-해소법",
@@ -7436,7 +7477,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.552102",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7460,7 +7501,9 @@
           "source": "news.hidoc.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:32:51.403885+00:00"
     },
     {
       "id": "532-ja-sports-筋力トレーニング基礎",
@@ -7468,7 +7511,7 @@
       "category": "sports",
       "lang": "ja",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-09T08:00:55.552125",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7487,7 +7530,9 @@
           "source": "co-medical.mynavi.jp"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-09T10:55:51.674310+00:00",
+      "completed_at": "2026-02-09T12:38:13.418914+00:00"
     }
   ]
 }

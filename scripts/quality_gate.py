@@ -134,6 +134,9 @@ class QualityGate:
         self._check_links(body, checks)
         self._check_readability(body, checks)
         self._check_image(frontmatter, checks)
+        self._check_key_takeaways(body, lang, checks)
+        self._check_faq_data(frontmatter, checks)
+        self._check_technologies(frontmatter, filepath, checks)
 
         # Info
         self._add_info(body, frontmatter, checks)
@@ -741,6 +744,51 @@ class QualityGate:
                     checks['warnings'].append(
                         "Meta description may not accurately reflect content"
                     )
+
+    def _check_key_takeaways(self, body: str, lang: str, checks: Dict):
+        """Validate presence of Key Takeaways block (AEO)"""
+        takeaways_markers = {
+            'en': '**Key Takeaways**',
+            'ko': '**핵심 요약**'
+        }
+        marker = takeaways_markers.get(lang, '**Key Takeaways**')
+        has_takeaways = marker in body or '**Key Takeaways**' in body
+
+        checks['info']['has_key_takeaways'] = has_takeaways
+
+        if not has_takeaways:
+            checks['warnings'].append(
+                "Missing Key Takeaways block (recommended for AEO - expected before first ## heading)"
+            )
+        else:
+            first_h2 = body.find('\n## ')
+            takeaways_pos = body.find('**Key Takeaways**')
+            if takeaways_pos == -1:
+                takeaways_pos = body.find('**핵심 요약**')
+            if first_h2 > 0 and takeaways_pos > first_h2:
+                checks['warnings'].append(
+                    "Key Takeaways block is after first H2 heading (should be before)"
+                )
+
+    def _check_faq_data(self, frontmatter: Dict, checks: Dict):
+        """Validate FAQ frontmatter data (AEO)"""
+        faq = frontmatter.get('faq')
+        checks['info']['has_faq'] = faq is not None
+        if not faq:
+            checks['warnings'].append(
+                "No FAQ data in frontmatter (recommended for FAQPage schema)"
+            )
+
+    def _check_technologies(self, frontmatter: Dict, filepath: Path, checks: Dict):
+        """Validate technologies taxonomy for tech posts"""
+        is_tech = 'tech' in str(filepath).lower().split('/')
+        if is_tech:
+            technologies = frontmatter.get('technologies')
+            checks['info']['has_technologies'] = technologies is not None
+            if not technologies:
+                checks['warnings'].append(
+                    "Tech post missing 'technologies' frontmatter field (recommended for taxonomy)"
+                )
 
     def _add_info(self, body: str, frontmatter: Dict, checks: Dict):
         """Add additional info"""

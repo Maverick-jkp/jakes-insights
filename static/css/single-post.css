@@ -518,3 +518,30 @@ button.share-btn {
 .footer a:hover {
     color: var(--accent);
 }
+
+/* Key Takeaways Block */
+.content blockquote:first-of-type {
+    background: linear-gradient(135deg, rgba(0, 221, 119, 0.08), rgba(0, 221, 119, 0.02));
+    border-left: 4px solid var(--accent);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0 3rem;
+    font-size: 1rem;
+}
+
+.content blockquote:first-of-type strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--accent);
+}
+
+.content blockquote:first-of-type ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.content blockquote:first-of-type li {
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
+}

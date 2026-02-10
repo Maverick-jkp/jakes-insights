@@ -49,6 +49,12 @@ MANDATORY STRUCTURE:
 - What will readers learn by the end?
 - Quick preview of key benefits (3-4 bullet points)
 
+**KEY TAKEAWAYS BLOCK (MANDATORY)** - Insert immediately after Introduction, before ## 2:
+> **Key Takeaways**
+> - 3-5 bullet points summarizing the most important learnings
+> - Each point: complete, standalone declarative sentence
+> - Include specific tool names, version numbers, or performance data when relevant
+
 ## 2. Background & Context ({_get_background_words(language)})
 - Brief history or evolution of this technology/concept
 - Current landscape and why it matters now

@@ -36,6 +36,11 @@ googleAnalytics = 'G-3ML8CHS112'
 [pagination]
 pagerSize = 50
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  technology = "technologies"
+
 [languages]
   [languages.en]
     languageName = "English"
@@ -139,6 +144,7 @@ pagerSize = 50
   TocOpen = false
   homeInfoParams.Title = "Welcome"
   homeInfoParams.Content = "In-depth tech analysis and data-driven reports"
+  naverVerification = ""
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -183,3 +189,7 @@ pagerSize = 50
   [[related.indices]]
     name = "date"
     weight = 10
+
+  [[related.indices]]
+    name = "technologies"
+    weight = 70

@@ -17,6 +17,9 @@
 
     <meta name="description" content="{{ $metaDescription }}">
     <meta name="author" content="{{ .Site.Params.author }}">
+    {{- with site.Params.naverVerification }}
+    <meta name="naver-site-verification" content="{{ . }}">
+    {{- end }}
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">

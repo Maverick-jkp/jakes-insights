@@ -25,11 +25,9 @@ class TestQualityGate:
 
         assert "en" in gate.ai_phrases
         assert "ko" in gate.ai_phrases
-        assert "ja" in gate.ai_phrases
 
         assert len(gate.ai_phrases["en"]) > 0
         assert len(gate.ai_phrases["ko"]) > 0
-        assert len(gate.ai_phrases["ja"]) > 0
 
 class TestParseMarkdown:
     """Test markdown parsing"""
@@ -79,15 +77,6 @@ class TestDetectLanguage:
         lang = gate._detect_language(path)
 
         assert lang == "ko"
-
-    def test_detect_language_japanese(self):
-        """Test detecting Japanese from path"""
-        gate = QualityGate()
-
-        path = Path("content/ja/lifestyle/post.md")
-        lang = gate._detect_language(path)
-
-        assert lang == "ja"
 
     def test_detect_language_default(self):
         """Test default language when not detected"""

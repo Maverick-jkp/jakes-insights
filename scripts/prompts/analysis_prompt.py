@@ -37,7 +37,7 @@ TARGET: {word_count}
 LANGUAGE: {lang_instructions}
 AUDIENCE: {audience}
 KEYWORDS: {keywords_str}
-STYLE: Analytical, insightful, balanced
+STYLE: Data-driven, report-style, evidence-based
 
 MANDATORY STRUCTURE:
 
@@ -46,6 +46,12 @@ MANDATORY STRUCTURE:
 - **Why it matters**: Explain significance in 2026 context
 - **Thesis statement**: Your main argument or insight
 - **Preview**: Quick bullet list of key points (3-4 items)
+
+**KEY TAKEAWAYS BLOCK (MANDATORY)** - Insert immediately after Introduction, before ## 2:
+> **Key Takeaways**
+> - 3-5 bullet points summarizing the most important findings
+> - Each point: complete, standalone declarative sentence with specific data
+> - These should be directly quotable by AI search engines (Perplexity, Google SGE)
 
 ## 2. Background & Context ({_get_background_words(language)})
 - What led to the current situation?

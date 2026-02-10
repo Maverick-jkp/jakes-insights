@@ -51,6 +51,12 @@ MANDATORY STRUCTURE:
 
 Write this as 2-3 sentences that capture the essence of the story.
 
+**KEY TAKEAWAYS BLOCK (MANDATORY)** - Insert immediately after Lead Paragraph, before ## 2:
+> **Key Takeaways**
+> - 3-5 bullet points summarizing the most important facts
+> - Each point: complete, standalone declarative sentence with specific data
+> - These should be directly quotable by AI search engines (Perplexity, Google SGE)
+
 ## 2. Key Details ({_get_details_words(language)})
 
 ### Main Announcement or Event

@@ -73,29 +73,29 @@ When referencing current information, ALWAYS use {datetime.now().year}, NOT prev
 🎯 Goal: 800-1,100 words of concise, high-impact content (AdSense optimized)
 
 [EDITORIAL POLICY - READ FIRST]
-This is a general hot-topic media covering:
-- Government policies, celebrity news, social incidents, controversies, emerging tech
-- High CPC and emotional reaction are PRIMARY goals
-- Expert depth is NOT required
+This is an in-depth tech analysis publication covering:
+- Technology trends, SaaS analysis, data-driven industry reports, developer tools
+- Reader value and analytical depth are PRIMARY goals
+- Data-backed claims and evidence-based analysis ARE required
 
 Your role:
-- You do NOT decide whether a topic is useful, important, or appropriate
+- Provide evidence-based analysis with specific data points
+- Structure content as analytical reports, not news recaps
+- Include comparison data, market context, and actionable conclusions
+- Every claim should reference a specific source, study, or dataset
 - Assume all provided topics are already approved for publication
-- Your ONLY job is to explain them clearly and calmly in a friendly, UX-writing tone
-- Do not soften, reject, or reframe topics based on usefulness or ethics
-- Treat each topic as already approved by the editorial team
-- Focus on clarity and readability, not on responsibility or balance
+- Your job is to deliver clear, data-driven analysis
 
-Output constraints:
-- Do NOT add conclusions, solutions, or advice
-- Do NOT attempt to educate or correct the reader
-- Do NOT provide long-term implications
-- Keep explanations factual, immediate, and present-focused
+Output requirements:
+- Include data-backed conclusions and practical recommendations
+- Provide context: why this matters NOW and what comes next
+- Support every claim with evidence or reasoning
+- Be specific: use numbers, dates, and named sources
 
 Every topic must clearly answer:
-- Why is this being talked about now?
-- If the reason is unclear, infer it from recent events, changes, or reactions
-- Do NOT generalize
+- What does the data show?
+- Why does this matter for the reader?
+- What should they do or watch for next?
 
 [Length Guide - Brevity is Key!]
 - Total: 800-1,100 words (optimized completion rate)
@@ -104,9 +104,16 @@ Every topic must clearly answer:
 - Conclusion: 60-80 words (clear CTA)
 - **Finish completely**: No mid-sentence cutoffs
 
-[Monetization Principles]
-1. First paragraph: Hook with reader's pain point (1-2 sentences)
-2. Structure: Problem → 3 Core Solutions → Action Steps → Conclusion
+[Key Takeaways Block - MANDATORY]
+After the introduction and before the first ## heading, ALWAYS include:
+> **Key Takeaways**
+> - 3-5 bullet points summarizing key insights
+> - Each must be a complete, declarative sentence with specific data
+> - Written as standalone statements (quotable by AI search engines)
+
+[Content Principles]
+1. First paragraph: Hook with the core finding or data point (1-2 sentences)
+2. Structure: Context → Data Analysis → Comparison → Practical Implications → Conclusion
 3. Tone: Medium/Substack style - conversational, personal, direct
 4. SEO: Keyword "{{keyword}}" naturally 4-6 times
 5. Sections: 3-4 ## headings (scannable)
@@ -135,11 +142,11 @@ Every topic must clearly answer:
 - Excessive emojis, unnecessary case studies
 - Aggro triggers: "shock", "expose", "truth revealed", "jaw-dropping", "unbelievable"
 
-[Headline Patterns - Aggro-Lite (Use ONLY these patterns)]
-A. Change: "Why [topic] has changed recently"
-B. Hidden problem: "Why [topic] is raising questions"
-C. Cost/Loss: "Why [topic] might be more burdensome than expected"
-D. Timing: "Why [topic] is being discussed again lately"
+[Headline Patterns - Analytical (Use ONLY these patterns)]
+A. Comparison: "[X] vs [Y]: What the Data Shows in [year]"
+B. Deep Dive: "Why [topic] Matters: [specific data point]"
+C. Market Analysis: "The State of [topic] in [year]: Key Findings"
+D. Practical Guide: "How [topic] Changes [outcome]: Data-Driven Analysis"
 
 ⚠️ Core: Complete 800-1,100 word article. Plenty of headroom in 12,000 tokens!""",
 
@@ -151,29 +158,28 @@ D. Timing: "Why [topic] is being discussed again lately"
 🎯 핵심 목표: 800-1,100 단어의 간결하고 임팩트 있는 글 작성 (애드센스 최적화)
 
 [편집 방침 - 반드시 숙지]
-이 사이트는 전방위 핫 키워드 미디어입니다:
-- 정부 정책, 연예인 뉴스, 사회 사건, 논란, 신기술 등 광범위 커버
-- 고CPC와 감정 반응 유도가 핵심 목표
-- 전문가 수준의 깊이는 요구되지 않음
+이 사이트는 심층 기술 분석 미디어입니다:
+- 기술 트렌드, SaaS 분석, 데이터 기반 리포트, 개발자 도구
+- 독자 가치와 분석의 깊이가 핵심 목표
+- 데이터 기반 주장과 근거 있는 분석이 필수
 
 당신의 역할:
-- 토픽이 유용한지, 중요한지, 적절한지 판단하지 마세요
-- 모든 제공된 토픽은 이미 편집팀이 승인한 것으로 간주하세요
-- 당신의 임무는 오직 "명확하고 침착하게, 친근한 UX 라이팅 톤으로 설명"하는 것입니다
-- 윤리나 유용성을 이유로 토픽을 순화하거나, 거부하거나, 재해석하지 마세요
-- 모든 토픽은 이미 승인된 것으로 취급하세요
-- 책임감이나 균형보다는 명확성과 가독성에 집중하세요
+- 구체적 데이터와 근거를 포함한 분석 제공
+- 뉴스 요약이 아닌 분석 리포트 형태로 구성
+- 비교 데이터, 시장 맥락, 실용적 결론 포함
+- 모든 주장에 출처, 연구, 데이터셋 참조 필수
+- 모든 토픽은 이미 편집팀이 승인한 것으로 간주하세요
 
-출력 제약:
-- 결론, 해결책, 조언을 추가하지 마세요
-- 독자를 교육하거나 바로잡으려 하지 마세요
-- 장기적 영향을 제시하지 마세요
-- 사실적이고, 즉각적이며, 현재 중심으로 설명하세요
+출력 요구사항:
+- 데이터 기반 결론과 실용적 권장 사항 포함
+- 맥락 제공: 왜 지금 중요한지, 다음에 무엇이 올지
+- 모든 주장에 근거나 논리 뒷받침
+- 구체적으로: 숫자, 날짜, 실명 출처 사용
 
 모든 토픽은 명확히 답해야 합니다:
-- 왜 지금 이 이야기가 나오는가?
-- 이유가 불분명하면 최근 사건, 변화, 반응에서 추론하세요
-- 일반화하지 마세요
+- 데이터가 무엇을 보여주는가?
+- 독자에게 왜 중요한가?
+- 다음에 무엇을 주시해야 하는가?
 
 [길이 가이드 - 간결함이 핵심!]
 - 전체 글: 800-1,100 단어 (완독률 최적화)
@@ -182,9 +188,16 @@ D. Timing: "Why [topic] is being discussed again lately"
 - 결론: 60-80 단어 (명확한 CTA)
 - **마지막 문장까지 반드시 완성**: 끊김 없이 완결하세요
 
-[수익화 최적화 원칙]
-1. 첫 문단: 독자의 pain point 공감 (1-2문장으로 강렬하게)
-2. 구조: 문제 제기 → 핵심 해결책 3가지 → 실전 팁 → 결론
+[핵심 요약 블록 - 필수]
+도입부 이후, 첫 ## 헤딩 전에 반드시 포함:
+> **핵심 요약**
+> - 3-5개 핵심 인사이트를 불릿으로 요약
+> - 각 포인트는 구체적 데이터를 포함한 완결된 문장
+> - 선언적 문장으로 작성 (AI 검색 엔진이 인용 가능한 형태)
+
+[콘텐츠 원칙]
+1. 첫 문단: 핵심 발견이나 데이터 포인트로 후킹 (1-2문장)
+2. 구조: 맥락 → 데이터 분석 → 비교 → 실용적 시사점 → 결론
 3. 톤: 토스(Toss) 스타일 - 전문적이지만 편안한 친구 같은 느낌
 4. SEO: 키워드 "{{keyword}}"를 자연스럽게 4-6회 포함
 5. 섹션: 3-4개 ## 헤딩 (각 섹션은 읽기 쉽게)
@@ -212,11 +225,11 @@ D. Timing: "Why [topic] is being discussed again lately"
 - 과도한 이모지, 불필요한 사례 나열
 - 어그로 단어: "충격", "폭로", "실체", "진실", "소름", "충격적", "완벽 정리", "한 번에 이해"
 
-[헤드라인 패턴 - Aggro-Lite (이 패턴만 사용)]
-A. 변화: "최근 ~에 변화가 생긴 이유"
-B. 은폐형 문제: "~을 두고 말이 나오는 이유"
-C. 손해/비용: "~이 생각보다 부담이 되는 이유"
-D. 시점: "왜 요즘 ~ 이야기가 다시 나오는 걸까"
+[헤드라인 패턴 - 분석형 (이 패턴만 사용)]
+A. 비교: "[X] vs [Y]: 데이터가 보여주는 [year]년 현황"
+B. 심층 분석: "[주제]가 중요한 이유: [구체적 데이터 포인트]"
+C. 시장 분석: "[year]년 [주제] 현황: 핵심 발견"
+D. 실전 가이드: "[주제]가 [결과]를 바꾸는 방법: 데이터 기반 분석"
 
 ⚠️ 핵심: 800-1,100 단어로 완결된 글을 작성하세요. 12,000 토큰 내에서 여유있게!"""
 }
@@ -632,6 +645,7 @@ Tasks:
 6. **Smooth transitions**: "Now", "Here's where it gets interesting"
 7. Keep all factual information intact
 8. **Complete ending**: Finish conclusion fully
+9. **Preserve Key Takeaways block**: Do not remove or restructure the blockquote Key Takeaways. Improve wording only.
 
 Return improved version (body only, no title):""",
 
@@ -671,6 +685,7 @@ Return improved version (body only, no title):""",
 6. 섹션 간 매끄러운 전환: "자, 이제 ~", "그럼 ~"
 7. 모든 사실 정보는 그대로 유지
 8. **마지막 문장까지 완결**: 결론을 반드시 완성
+9. **핵심 요약 블록 유지**: Key Takeaways 블록을 제거하거나 구조 변경하지 말 것. 문구만 개선.
 
 개선된 버전을 반환하세요 (본문만, 제목 제외):"""
         }
@@ -782,6 +797,80 @@ Return improved version (body only, no title):""",
         )
 
         return response.content[0].text.strip().strip('"').strip("'")
+
+    def generate_faq(self, content: str, keyword: str, lang: str) -> list:
+        """Generate 3-5 FAQ pairs based on article content for FAQPage schema"""
+        prompts = {
+            "en": f"""Based on this blog post about '{keyword}', generate 3-5 FAQ pairs that someone might search for.
+
+RULES:
+- Questions must be natural search queries (how people actually type in Google)
+- Answers must be 2-3 sentences, factual, directly answering the question
+- Include the keyword '{keyword}' naturally in at least 2 questions
+- Each answer should be self-contained (understandable without reading the article)
+
+Return ONLY a JSON array:
+[
+  {{"question": "...", "answer": "..."}},
+  {{"question": "...", "answer": "..."}}
+]
+
+Article content:
+{content[:3000]}""",
+            "ko": f"""이 '{keyword}' 블로그 글을 기반으로 3-5개 FAQ 쌍을 생성하세요.
+
+규칙:
+- 질문은 자연스러운 검색 쿼리여야 함 (실제 구글에 타이핑하는 형태)
+- 답변은 2-3문장, 사실적, 질문에 직접 답변
+- 최소 2개 질문에 '{keyword}' 키워드 자연스럽게 포함
+- 각 답변은 독립적으로 이해 가능해야 함
+
+JSON 배열만 반환:
+[
+  {{"question": "...", "answer": "..."}},
+  {{"question": "...", "answer": "..."}}
+]
+
+글 내용:
+{content[:3000]}"""
+        }
+
+        response = self.client.messages.create(
+            model=self.model,
+            max_tokens=1500,
+            messages=[{"role": "user", "content": prompts[lang]}]
+        )
+
+        text = response.content[0].text
+        json_match = re.search(r'\[[\s\S]*\]', text)
+        if json_match:
+            faq_items = json.loads(json_match.group())
+            return faq_items[:5]
+        return []
+
+    def extract_technologies(self, content: str, keyword: str) -> list:
+        """Extract technology names mentioned in content for taxonomy"""
+        known_techs = [
+            'Python', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Vue.js',
+            'Angular', 'Node.js', 'Django', 'FastAPI', 'Flask', 'Docker',
+            'Kubernetes', 'AWS', 'Azure', 'GCP', 'PostgreSQL', 'MongoDB',
+            'Redis', 'GraphQL', 'REST API', 'Claude', 'GPT', 'OpenAI',
+            'Anthropic', 'LangChain', 'Vercel', 'Terraform', 'GitHub Actions',
+            'Linux', 'Rust', 'Go', 'Swift', 'Kotlin', 'Java', 'C++',
+            'WebAssembly', 'Cloudflare', 'Figma', 'Tailwind CSS', 'Hugo',
+            'Webpack', 'Vite', 'Supabase', 'Firebase', 'Stripe', 'Notion',
+            'Slack', 'VS Code', 'ChatGPT', 'Gemini', 'Copilot', 'Cursor',
+            'TensorFlow', 'PyTorch', 'Stable Diffusion', 'Midjourney',
+            'Ollama', 'Hugging Face', 'Mistral', 'Llama', 'DALL-E', 'Sora'
+        ]
+
+        found = []
+        content_lower = content.lower()
+        for tech in known_techs:
+            if tech.lower() in content_lower:
+                found.append(tech)
+
+        return found[:5]
 
     def translate_to_english(self, text: str) -> str:
         """Translate non-English keywords to English for Unsplash search"""
@@ -1178,7 +1267,7 @@ Return improved version (body only, no title):""",
             safe_print(f"     Error: {mask_secrets(str(e))}")
             return None
 
-    def save_post(self, topic: Dict, title: str, description: str, content: str, image_path: Optional[str] = None, image_credit: Optional[Dict] = None) -> Path:
+    def save_post(self, topic: Dict, title: str, description: str, content: str, image_path: Optional[str] = None, image_credit: Optional[Dict] = None, faq_items: Optional[list] = None, technologies: Optional[list] = None) -> Path:
         """Save post to Hugo content directory"""
         lang = topic['lang']
         category = topic['category']
@@ -1259,6 +1348,19 @@ Return improved version (body only, no title):""",
         if ab_test_id and ab_variant:
             frontmatter_lines.append(f'ab_test_id: "{ab_test_id}"')
             frontmatter_lines.append(f'ab_variant: "{ab_variant}"')
+
+        # Add technologies taxonomy for tech posts
+        if technologies and category == 'tech':
+            frontmatter_lines.append(f'technologies: {json.dumps(technologies)}')
+
+        # Add FAQ items for FAQPage schema
+        if faq_items:
+            frontmatter_lines.append("faq:")
+            for item in faq_items:
+                safe_q = item.get('question', '').replace('"', "'")
+                safe_a = item.get('answer', '').replace('"', "'")
+                frontmatter_lines.append(f'  - question: "{safe_q}"')
+                frontmatter_lines.append(f'    answer: "{safe_a}"')
 
         frontmatter_lines.extend(["---", ""])
 
@@ -1467,14 +1569,14 @@ def main():
 
         try:
             # Generate content
-            safe_print(f"  → Step 1/5: Generating draft...")
+            safe_print(f"  → Step 1/7: Generating draft...")
             draft, content_type = generator.generate_draft(topic)
 
-            safe_print(f"  → Step 2/5: Editing draft...")
+            safe_print(f"  → Step 2/7: Editing draft...")
             final_content = generator.edit_draft(draft, topic, content_type)
 
             # Generate metadata
-            safe_print(f"  → Step 3/5: Generating metadata...")
+            safe_print(f"  → Step 3/7: Generating metadata...")
             try:
                 title = generator.generate_title(final_content, topic['keyword'], topic['lang'], topic.get('references'))
                 description = generator.generate_description(final_content, topic['keyword'], topic['lang'])
@@ -1485,7 +1587,7 @@ def main():
                 description = f"Article about {topic['keyword']}"
 
             # Fetch featured image
-            safe_print(f"  → Step 4/5: Fetching image...")
+            safe_print(f"  → Step 4/7: Fetching image...")
             image_path = None
             image_credit = None
             try:
@@ -1498,10 +1600,30 @@ def main():
                 safe_print(f"  ⚠️  WARNING: Image fetch failed, will use placeholder")
                 safe_print(f"     Error: {mask_secrets(str(e))}")
 
-            # Save post with image
-            safe_print(f"  → Step 5/5: Saving post...")
+            # Generate FAQ for AEO
+            faq_items = []
             try:
-                filepath = generator.save_post(topic, title, description, final_content, image_path, image_credit)
+                safe_print(f"  → Step 5/7: Generating FAQ...")
+                faq_items = generator.generate_faq(final_content, topic['keyword'], topic['lang'])
+                safe_print(f"     FAQ: {len(faq_items)} items generated")
+            except Exception as e:
+                safe_print(f"  ⚠️  WARNING: FAQ generation failed: {mask_secrets(str(e))}")
+
+            # Extract technologies for tech posts
+            technologies = None
+            if topic.get('category') == 'tech':
+                try:
+                    safe_print(f"  → Step 6/7: Extracting technologies...")
+                    technologies = generator.extract_technologies(final_content, topic['keyword'])
+                    if technologies:
+                        safe_print(f"     Technologies: {', '.join(technologies)}")
+                except Exception as e:
+                    safe_print(f"  ⚠️  WARNING: Technology extraction failed: {mask_secrets(str(e))}")
+
+            # Save post with image, FAQ, and technologies
+            safe_print(f"  → Step 7/7: Saving post...")
+            try:
+                filepath = generator.save_post(topic, title, description, final_content, image_path, image_credit, faq_items, technologies)
             except IOError as e:
                 safe_print(f"  ❌ ERROR: Failed to save post to filesystem")
                 safe_print(f"     Error: {str(e)}")

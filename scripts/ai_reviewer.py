@@ -44,6 +44,7 @@ Evaluation Criteria:
 3. **Engagement** (1-10): Is it interesting and well-structured?
 4. **Technical Accuracy** (1-10): Are facts and technical details correct?
 5. **SEO Quality** (1-10): Good keyword usage, meta description, structure?
+6. **AEO Readiness** (1-10): Has Key Takeaways block? Declarative, quotable statements? Would AI search engines cite this?
 
 For each criterion, provide:
 - Score (1-10)
@@ -84,6 +85,7 @@ Provide your review now:""",
 3. **참여도** (1-10): 흥미롭고 구조가 잘 짜여있는가?
 4. **기술 정확성** (1-10): 사실과 기술적 세부사항이 정확한가?
 5. **SEO 품질** (1-10): 키워드 사용, 메타 설명, 구조가 좋은가?
+6. **AEO 대비** (1-10): 핵심 요약 블록이 있는가? 선언적이고 인용 가능한 문장이 있는가? AI 검색 엔진이 인용할 만한가?
 
 각 기준에 대해 제공:
 - 점수 (1-10)

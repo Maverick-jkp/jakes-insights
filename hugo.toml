@@ -144,7 +144,7 @@ pagerSize = 50
   TocOpen = false
   homeInfoParams.Title = "Welcome"
   homeInfoParams.Content = "In-depth tech analysis and data-driven reports"
-  naverVerification = ""
+  naverVerification = "ab8a8be3ea59eba75ed5d3d53946551f4541a68a"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

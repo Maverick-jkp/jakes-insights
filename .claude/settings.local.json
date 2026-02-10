@@ -100,7 +100,14 @@
       "Bash(printenv:*)",
       "Bash(/opt/homebrew/bin/gh run list --limit 5)",
       "Bash(/opt/homebrew/bin/gh run view:*)",
-      "Bash(/opt/homebrew/bin/gh run list --limit 3)"
+      "Bash(/opt/homebrew/bin/gh run list --limit 3)",
+      "Bash(file:*)",
+      "Bash(printf:*)",
+      "Bash(done)",
+      "Bash(GIT_TERMINAL_PROMPT=0 git commit:*)",
+      "WebFetch(domain:support.reddithelp.com)",
+      "WebSearch",
+      "WebFetch"
     ]
   }
 }

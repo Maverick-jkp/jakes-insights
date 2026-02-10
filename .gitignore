@@ -51,3 +51,21 @@ htmlcov/
 .coverage.*
 coverage.xml
 *.cover
+
+# Build artifacts & logs (generated, not source)
+*.log
+*.backup
+hugo_stats.json
+ai_review_report.json
+quality_report.json
+passed_files.json
+generated_files.json
+title_mismatch_report.json
+alt_text_report.txt
+alt_text_stats.txt
+
+# Personal files (not part of blog project)
+Jongguk_Park_Resume.md
+Jongguk_Park_Resume_Korean.md
+LinkedIn_Profile_English.md
+Wanted_Remember_Profile.md

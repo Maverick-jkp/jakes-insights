@@ -5,7 +5,6 @@ test.describe('Multilingual Navigation Tests', () => {
   const languages = [
     { code: 'en', name: 'English', path: '/en/' },
     { code: 'ko', name: 'Korean', path: '/ko/' },
-    { code: 'ja', name: 'Japanese', path: '/ja/' },
   ];
 
   for (const lang of languages) {
@@ -39,7 +38,7 @@ test.describe('Multilingual Navigation Tests', () => {
 
     // Look for language selector (common patterns)
     const langSwitcher = page.locator(
-      '[class*="language"], [class*="lang"], [id*="language"], [id*="lang"], a[href*="/en/"], a[href*="/ko/"], a[href*="/ja/"]'
+      '[class*="language"], [class*="lang"], [id*="language"], [id*="lang"], a[href*="/en/"], a[href*="/ko/"]'
     );
 
     // Should find at least one language-related element

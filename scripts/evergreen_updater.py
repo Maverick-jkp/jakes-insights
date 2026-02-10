@@ -60,7 +60,7 @@ class EvergreenUpdater:
         eligible = []
 
         # Scan all language directories
-        for lang_dir in ["en", "ko", "ja"]:
+        for lang_dir in ["en", "ko"]:
             lang_path = CONTENT_DIR / lang_dir
             if not lang_path.exists():
                 continue
@@ -185,10 +185,10 @@ class EvergreenUpdater:
             content = re.sub(r'\n\n\*Last Updated:.*?\*\n', '', content)
 
             # Add new update note at the end (before references if they exist)
-            if "## References" in content or "## 참고자료" in content or "## 参考資料" in content:
+            if "## References" in content or "## 참고자료" in content:
                 # Insert before references
                 content = re.sub(
-                    r'(## (?:References|参考資料|참고자료))',
+                    r'(## (?:References|참고자료))',
                     f'{update_note}\\1',
                     content
                 )

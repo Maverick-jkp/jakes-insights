@@ -34,10 +34,6 @@ TRANSLATIONS = {
     '실패': 'failure', '이유': 'reasons', '스타트업': 'startup', '투자': 'investment',
     '전략': 'strategy', '디지털': 'digital', '노마드': 'nomad', '라이프': 'lifestyle',
     '미니멀': 'minimalism', '트렌드': 'trends',
-    # Japanese
-    'AIコーディング': 'AI coding', 'アシスタント': 'assistant', 'スタートアップ': 'startup',
-    '資金調達': 'fundraising', '戦略': 'strategy', 'デジタル': 'digital',
-    'ノマド': 'nomad', 'トレンド': 'trends', 'ミニマリズム': 'minimalism'
 }
 
 def translate_to_english(text):

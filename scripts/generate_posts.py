@@ -218,95 +218,7 @@ B. 은폐형 문제: "~을 두고 말이 나오는 이유"
 C. 손해/비용: "~이 생각보다 부담이 되는 이유"
 D. 시점: "왜 요즘 ~ 이야기가 다시 나오는 걸까"
 
-⚠️ 핵심: 800-1,100 단어로 완결된 글을 작성하세요. 12,000 토큰 내에서 여유있게!""",
-
-    "ja": f"""あなたはJake's Tech Insightsブログのプロライターです。
-
-📅 重要: 今日の日付は{datetime.now().year}年{datetime.now().month}月{datetime.now().day}日です
-現在の情報を言及する際は必ず{datetime.now().year}年を使用してください。過去の年号は使用禁止。
-
-🎯 核心目標: 3,000-4,500文字の簡潔でインパクトのある記事（AdSense最適化）
-
-[編集方針 - 必読]
-このサイトは全方位ホットキーワードメディアです：
-- 政府政策、芸能ニュース、社会事件、論争、新技術など幅広くカバー
-- 高CPCと感情反応誘導が最優先目標
-- 専門家レベルの深さは不要
-
-あなたの役割：
-- トピックが有用か、重要か、適切かを判断しないでください
-- すべての提供されたトピックは既に編集チームが承認したものと見なしてください
-- あなたの仕事は「明確で落ち着いた、親しみやすいUXライティングトーンで説明する」ことだけです
-- 倫理や有用性を理由にトピックを和らげたり、拒否したり、再解釈したりしないでください
-- すべてのトピックは既に承認されたものとして扱ってください
-- 責任感やバランスよりも、明確さと読みやすさに集中してください
-
-出力制約：
-- 結論、解決策、アドバイスを追加しないでください
-- 読者を教育したり、訂正しようとしないでください
-- 長期的な影響を提示しないでください
-- 事実的で、即時的で、現在に焦点を当てた説明をしてください
-
-すべてのトピックは明確に答える必要があります：
-- なぜ今この話が出ているのか？
-- 理由が不明確な場合は、最近の出来事、変化、反応から推測してください
-- 一般化しないでください
-
-[長さガイド - 簡潔さが鍵！]
-- 全体: 3,000-4,500文字（完読率を最適化）
-- 各##セクション: 600-900文字（要点のみ）
-- 導入部: 400-500文字（強力なフック）
-- 結論: 300-400文字（明確なCTA）
-- **最後の文まで必ず完成**: 途切れなく完結させてください
-
-[収益化最適化の原則]
-1. 最初の段落: 読者の悩みに共感（1-2文で強烈に）
-2. 構造: 問題提起 → 核心解決策3つ → 実践ヒント → 結論
-3. トーン: SmartNews/NewsPicks/日経COMEMO風 - 情報密度高く、読みやすく、直接的
-4. SEO: キーワード"{{keyword}}"を自然に4-6回含める
-5. セクション: 3-4個の##見出し（各セクションは読みやすく）
-6. 終わり: 明確なCTA - 質問または次のステップ
-
-[現代的UXライティングスタイル（必須！）- SmartNews/NewsPicks調]
-- 結論ファースト: 最初に答えを提示し、その後に詳細説明
-- 「です・ます」調でありながら簡潔で切れ味のある文体
-- 情報密度を高める: 具体的な数字、データ、事例を優先
-- 余計な修飾語を削除: 「〜という」「〜のような」を最小限に
-- 箇条書きと表を積極活用: スキャンしやすい構成
-- 接続詞は最小限: "実は", "ちなみに" など雰囲気作りの接続詞を減らす
-- **過度な質問形を避ける**: "どうでしょうか？", "気になりませんか？" などの rhetorical questions は1記事に1-2回まで
-- 断定的に伝える: "〜と言えます", "〜です" など明確な語尾
-
-[段落構成 - 情報を前に]
-- 各段落の最初の1-2文で結論を述べる
-- その後に理由・根拠・データを配置
-- 不要な導入や前置きを削除
-- 「要するに」「ポイントは」などで核心を強調
-
-[スタイル - 完読率最適化]
-- 能動態中心、短い文（1-2行）
-- 要点のみ伝達（不要な説明削除）
-- 具体的な数字/例（1-2個のみ選択的に）
-- 箇条書き積極活用（スキャン可能に）
-- 段落の終わりは断定形: "これが現状です。", "この点が重要です。"
-
-[絶対禁止]
-- 冗長表現: 同じ内容の繰り返し ❌
-- AI的表現: "もちろん", "〜することが重要です"
-- 硬い文体: 教科書のような説明調
-- 抽象的: "革新的", "ゲームチェンジャー", "注目すべき"
-- 過度な絵文字、不要な事例の羅列
-- アグロ単語: "衝撃", "暴露", "真実", "完全理解", "驚愕", "信じられない"
-- **過度な個人的質問**: "〜ありませんか？", "〜でしょうか？" の連発（1記事に最大2回まで）
-- **共感を装った前置き**: "皆さんも経験あると思いますが", "よくある悩みですよね" など
-
-[ヘッドラインパターン - Aggro-Lite (このパターンのみ使用)]
-A. 変化: "最近~に変化が起きた理由"
-B. 隠された問題: "~をめぐって話が出ている理由"
-C. 損失/コスト: "~が思ったより負担になる理由"
-D. タイミング: "なぜ最近~の話が再び出ているのか"
-
-⚠️ 核心: 3,000-4,500文字で完結した記事を書いてください。12,000トークン内で余裕を持って！"""
+⚠️ 핵심: 800-1,100 단어로 완결된 글을 작성하세요. 12,000 토큰 내에서 여유있게!"""
 }
 
 
@@ -640,62 +552,7 @@ Write the complete blog post now (body only, no title or metadata):""",
   - [원격 근무 통계 2025](https://example.com/remote) - Buffer
 - **중요**: 위에 참고자료가 제공되지 않았다면, 참고자료 섹션을 절대 추가하지 마세요
 
-지금 바로 완전한 블로그 글을 작성하세요 (본문만, 제목이나 메타데이터 제외):""",
-
-            "ja": f"""📅 本日の日付: {current_date}
-⚠️ 重要: この記事は本日({current_date})の時点で書かれています。すべての情報は{current_year}年現在を基準にする必要があります。2024年以前の古い情報を使用しないでください。
-
-次のトピックについて包括的なブログ記事を書いてください: {keyword}{refs_section}
-
-カテゴリ: {category}
-
-⏱️ 読む時間の目標: 4-5分
-- 3-4個の主要セクション (##見出し) を作成
-- 各セクション: 1-2分で読める分量、1つの重要ポイント
-- 短い段落を使用 (2-4文ずつ)
-- 考えさせる質問で締めくくる
-
-🎯 フッキング戦略 (必須!):
-1. **オープニングフック** (最初の2-3文):
-   - 読者が直面する問題状況から始める
-   - 共感を誘う: "会社でXを導入したのに社員が使わない..."
-   - 具体的な失敗統計を含む: "Xプロジェクトの60%が失敗する理由は..."
-   - 一般的な始まり方禁止: "Xが人気になっています..." ❌
-
-2. **実際の成功/失敗事例**:
-   - 具体的な会社/人物の例を1-2個含む
-   - "あるECサイトはXを全てに適用して失敗したが、Yだけに集中したら..."
-   - うまくいかないことも見せる (成功だけ語らない)
-   - 抽象的表現禁止: "多くの企業が..." → "あるスタートアップは..." ✅
-
-3. **限界点と落とし穴**:
-   - "Xがかえって逆効果になる場合" セクションを1つ設ける
-   - "この3つの状況ではXは非効率的..."
-   - これが真実味と信頼を生む
-
-4. **データドリブン**:
-   - 具体的な統計を2-3個含む (おおよそでもOK)
-   - "2024年の調査では60%の失敗率..."
-   - "企業は35%の生産性向上を経験..."
-
-コンテンツガイドライン:
-- 対象読者: 実用的なアドバイスを求める意思決定者
-- "避けるべきこと"を"すべきこと"と同じくらい強調
-- 抽象的な概念より具体例
-- 現在のトレンドに言及 (2025-2026年)
-- 簡潔でインパクトのある内容 - 不要な説明を削除
-
-📚 参考資料セクション:
-- 上記プロンプトで参考資料が提供された場合、記事の最後に必ず"## 参考資料"セクションを追加
-- 提供されたURLを正確に使用 - 修正したり新規作成したりしないこと
-- 形式: `- [情報源タイトル](URL) - 組織/出版社`
-- 例示:
-  ## 参考資料
-  - [2025年AI動向レポート](https://example.com/ai-report) - マッキンゼー・アンド・カンパニー
-  - [リモートワーク統計2025](https://example.com/remote) - Buffer
-- **重要**: 上記で参考資料が提供されていない場合、参考資料セクションは絶対に追加しないでください
-
-今すぐ完全なブログ記事を書いてください（本文のみ、タイトルやメタデータなし）:"""
+지금 바로 완전한 블로그 글을 작성하세요 (본문만, 제목이나 메타데이터 제외):"""
         }
 
         return prompts[lang]
@@ -704,7 +561,7 @@ Write the complete blog post now (body only, no title or metadata):""",
         """Get editor prompt based on language and content type
 
         Args:
-            lang: Language code (en/ko/ja)
+            lang: Language code (en/ko)
             content_type: Content type (tutorial/analysis/news)
 
         Returns:
@@ -716,8 +573,8 @@ Write the complete blog post now (body only, no title or metadata):""",
         min_count, max_count = config['word_count']
 
         # Format length requirements based on language
-        if lang in ['ja', 'ko']:
-            count_unit = '文字' if lang == 'ja' else '글자'
+        if lang == 'ko':
+            count_unit = '글자'
             length_req = f"""📏 길이 요구사항 (CRITICAL - 반드시 준수):
 🎯 목표 범위: {min_count:,}-{max_count:,}{count_unit}
 
@@ -815,47 +672,7 @@ Return improved version (body only, no title):""",
 7. 모든 사실 정보는 그대로 유지
 8. **마지막 문장까지 완결**: 결론을 반드시 완성
 
-개선된 버전을 반환하세요 (본문만, 제목 제외):""",
-
-            "ja": f"""あなたは専門エディターです。このブログ記事を本物の人間が書いたような自然な会話調に改善してください:
-
-{length_req}
-
-🎯 重要な改善点:
-1. **オープニングの強化**:
-   - 一般的な始まりなら問題/悩み状況に書き直し
-   - 共感を追加: "こんな経験ありませんか？"
-   - 個人的で共感できるように
-
-2. **結論ファースト + スペック優先** (日本読者の好み):
-   - 最初に結論: "結論：〇〇を選ぶべき理由"
-   - スペック表必須（Tech/Finance）: 比較表、数値データ
-   - "意外にも...", "驚いたことに..." のような自然な表現
-   - 限界の言及: "これが常に答えとは限りません..."
-
-3. **例の具体化** (個人経験排除):
-   - 曖昧な例を具体的に: "多くの企業" → "あるフィンテック企業" または "メルカリの事例"
-   - 具体的な詳細: 数字、結果、タイムライン
-   - 失敗したことも含める: 成功だけ語らない
-   - 避けるべき: "私の経験では", "私が見たところ" → 代わりに: "ケーススタディによると", "データが示しています"
-
-4. **バランスの取れた視点**:
-   - "こういう場合はうまくいきません" セクションを確認/追加
-   - ニュアンス: "これがうまくいくには...", "ただしこんな場合は..."
-   - 絶対的な表現を避ける: "常に", "絶対に", "必ず"
-
-タスク:
-1. **会話調に変換**: "〜ですね", "〜ますよね", "〜でしょう" など柔らかい語尾に
-2. AI的な表現を完全削除: "もちろん", "〜することが重要です", "〜について説明します"
-3. 自然な接続詞: "実は", "ちなみに", "さて", "それで"
-4. 提案形を追加: "〜してみましょう", "〜してみてください"
-5. 質問形で引き込む: "どうでしょうか？", "気になりませんか？"
-6. 短い感嘆: "驚きですね。", "面白いですよね。"
-7. セクション間の移行: "では、詳しく見ていきましょう。"
-8. すべての事実情報はそのまま保持
-9. **最後の文まで完結**: 結論を必ず完成
-
-改善されたバージョンを返してください（本文のみ、タイトルなし）:"""
+개선된 버전을 반환하세요 (본문만, 제목 제외):"""
         }
 
         return prompts[lang]
@@ -891,8 +708,7 @@ Return improved version (body only, no title):""",
 
         prompts = {
             "en": f"Generate a factual, SEO-friendly blog title (50-60 chars) for this post about '{keyword}'.\n\nCONTENT SAMPLES (beginning, middle, end):\n{content_preview}{refs_context}\n\nCRITICAL RULES - VIOLATION WILL FAIL:\n1. Title MUST describe what the content ACTUALLY discusses (not what sounds catchy)\n2. NO exaggeration, speculation, or clickbait (e.g., \"confirmed\", \"revealed\", \"secret\")\n3. If content is about \"how to watch\", title must say \"how to watch\" (not \"rankings\")\n4. If content discusses problems/issues, title must reflect that (not promise solutions)\n5. ONLY use facts explicitly stated in the content samples\n6. Do NOT promise specific numbers/data unless clearly stated in content\n7. Include keyword '{keyword}' naturally\n8. Current year is {current_year}\n9. Return ONLY the title",
-            "ko": f"'{keyword}'에 대한 사실적이고 SEO 친화적인 제목을 생성하세요 (50-60자).\n\n본문 샘플 (시작, 중간, 끝):\n{content_preview}{refs_context}\n\n핵심 규칙 - 위반 시 실패:\n1. 제목은 본문이 실제로 다루는 내용을 설명해야 함 (매력적으로 들리는 것이 아님)\n2. 과장, 추측, 클릭베이트 금지 (예: \"확정\", \"폭로\", \"충격\")\n3. 본문이 \"시청 방법\"에 대한 것이면 제목도 \"시청 방법\"이어야 함 (\"랭킹\" 아님)\n4. 본문이 문제점을 논의하면 제목도 그것을 반영해야 함 (해결책 약속 금지)\n5. 본문 샘플에 명시적으로 언급된 사실만 사용\n6. 본문에 명확히 나와있지 않으면 구체적 숫자/데이터 약속 금지\n7. '{keyword}' 키워드를 자연스럽게 포함\n8. 현재 연도는 {current_year}년\n9. 제목만 반환",
-            "ja": f"'{keyword}'に関する事実に基づいたSEOフレンドリーなタイトルを生成してください（50-60文字）。\n\n本文サンプル（冒頭、中盤、終盤）:\n{content_preview}{refs_context}\n\n重要ルール - 違反は失敗:\n1. タイトルは本文が実際に議論する内容を説明する必要がある（魅力的に聞こえるだけではダメ）\n2. 誇張、推測、クリックベイト禁止（例：「確定」「暴露」「衝撃」）\n3. 本文が「視聴方法」についてなら、タイトルも「視聴方法」であるべき（「ランキング」ではない）\n4. 本文が問題を議論していれば、タイトルもそれを反映すべき（解決策を約束しない）\n5. 本文サンプルに明示的に述べられた事実のみ使用\n6. 本文に明確に書かれていない限り、具体的な数字/データを約束しない\n7. '{keyword}'キーワードを自然に含める\n8. 現在の年は{current_year}年\n9. タイトルのみを返す"
+            "ko": f"'{keyword}'에 대한 사실적이고 SEO 친화적인 제목을 생성하세요 (50-60자).\n\n본문 샘플 (시작, 중간, 끝):\n{content_preview}{refs_context}\n\n핵심 규칙 - 위반 시 실패:\n1. 제목은 본문이 실제로 다루는 내용을 설명해야 함 (매력적으로 들리는 것이 아님)\n2. 과장, 추측, 클릭베이트 금지 (예: \"확정\", \"폭로\", \"충격\")\n3. 본문이 \"시청 방법\"에 대한 것이면 제목도 \"시청 방법\"이어야 함 (\"랭킹\" 아님)\n4. 본문이 문제점을 논의하면 제목도 그것을 반영해야 함 (해결책 약속 금지)\n5. 본문 샘플에 명시적으로 언급된 사실만 사용\n6. 본문에 명확히 나와있지 않으면 구체적 숫자/데이터 약속 금지\n7. '{keyword}' 키워드를 자연스럽게 포함\n8. 현재 연도는 {current_year}년\n9. 제목만 반환"
         }
 
         response = self.client.messages.create(
@@ -909,8 +725,7 @@ Return improved version (body only, no title):""",
         # Validate title-content alignment (STRICT check for critical mismatches only)
         validation_prompts = {
             "en": f"Does this title accurately match what the content ACTUALLY discusses?\n\nTITLE: {generated_title}\n\nCONTENT: {content_preview}\n\nCheck for CRITICAL mismatches ONLY:\n- Title promises specific data (e.g., \"$800\", \"75%\") but content doesn't provide it\n- Title says \"how to watch\" but content discusses problems/history instead\n- Title says \"confirmed\" but content is speculation/rumors\n- Title topic completely different from content topic\n\nIGNORE minor issues like:\n- Year mentions (2026 is acceptable for future-looking content)\n- Slight emphasis differences\n- Language mixing (Korean keyword in English title is OK)\n\nAnswer 'yes' if title reasonably matches content. Answer 'no' ONLY for critical mismatches. If no, explain in max 15 words.",
-            "ko": f"이 제목이 본문이 실제로 논의하는 내용과 정확히 일치합니까?\n\n제목: {generated_title}\n\n본문: {content_preview}\n\n치명적 불일치만 확인:\n- 제목이 구체적 데이터(예: \"75%\", \"$800\")를 약속하지만 본문에 없음\n- 제목은 \"시청 방법\"인데 본문은 문제점/역사를 논의\n- 제목은 \"확정\"인데 본문은 추측/소문\n- 제목 주제와 본문 주제가 완전히 다름\n\n무시할 사소한 문제:\n- 연도 언급 (미래 지향적 콘텐츠에 2026 사용 가능)\n- 약간의 강조 차이\n- 언어 혼용 (영어 제목에 한국어 키워드 사용 가능)\n\n제목이 본문과 합리적으로 일치하면 '예'. 치명적 불일치만 '아니오'. 아니오라면 15단어 이내 설명.",
-            "ja": f"このタイトルは本文が実際に議論する内容と正確に一致していますか？\n\nタイトル: {generated_title}\n\n本文: {content_preview}\n\n致命的な不一致のみ確認:\n- タイトルが具体的データ（例：「75%」「$800」）を約束するが本文にない\n- タイトルは「視聴方法」だが本文は問題点/歴史を議論\n- タイトルは「確定」だが本文は推測/噂\n- タイトルトピックと本文トピックが完全に異なる\n\n無視すべき軽微な問題:\n- 年の言及（未来志向コンテンツに2026使用可）\n- わずかな強調の違い\n- 言語混在（英語タイトルに韓国語キーワード使用可）\n\nタイトルが本文と合理的に一致なら「はい」。致命的不一致のみ「いいえ」。いいえなら15語以内で説明。"
+            "ko": f"이 제목이 본문이 실제로 논의하는 내용과 정확히 일치합니까?\n\n제목: {generated_title}\n\n본문: {content_preview}\n\n치명적 불일치만 확인:\n- 제목이 구체적 데이터(예: \"75%\", \"$800\")를 약속하지만 본문에 없음\n- 제목은 \"시청 방법\"인데 본문은 문제점/역사를 논의\n- 제목은 \"확정\"인데 본문은 추측/소문\n- 제목 주제와 본문 주제가 완전히 다름\n\n무시할 사소한 문제:\n- 연도 언급 (미래 지향적 콘텐츠에 2026 사용 가능)\n- 약간의 강조 차이\n- 언어 혼용 (영어 제목에 한국어 키워드 사용 가능)\n\n제목이 본문과 합리적으로 일치하면 '예'. 치명적 불일치만 '아니오'. 아니오라면 15단어 이내 설명."
         }
 
         validation_response = self.client.messages.create(
@@ -925,7 +740,7 @@ Return improved version (body only, no title):""",
         validation_result = validation_response.content[0].text.strip().lower()
 
         # If validation fails, regenerate title with strict instructions
-        if not validation_result.startswith('yes') and not validation_result.startswith('예') and not validation_result.startswith('はい'):
+        if not validation_result.startswith('yes') and not validation_result.startswith('예'):
             safe_print(f"  ⚠️  Title-content mismatch detected: {validation_result}")
             safe_print(f"     Original title: {generated_title}")
             safe_print(f"  🔄 Regenerating title with strict content alignment...")
@@ -933,8 +748,7 @@ Return improved version (body only, no title):""",
             # Regenerate with stricter prompt
             regenerate_prompts = {
                 "en": f"Generate a title that EXACTLY matches what this content discusses. Do NOT promise specifics that aren't in the content. Do NOT use words like 'confirmed', 'breaking', or future dates unless explicitly stated.\n\nContent preview:\n{content_preview}\n\nKeyword to include: {keyword}\n\nTitle (60-70 chars):",
-                "ko": f"본문이 실제로 다루는 내용과 정확히 일치하는 제목을 생성하세요. 본문에 없는 구체적 내용을 약속하지 마세요. '확정', '속보', 미래 날짜는 본문에 명시되지 않으면 사용하지 마세요.\n\n본문 미리보기:\n{content_preview}\n\n포함할 키워드: {keyword}\n\n제목 (40-50자):",
-                "ja": f"本文が実際に議論する内容と正確に一致するタイトルを生成してください。本文にない具体的な内容を約束しないでください。「確定」「速報」または未来の日付は本文に明示されていない限り使用しないでください。\n\n本文プレビュー:\n{content_preview}\n\n含めるキーワード: {keyword}\n\nタイトル（30-40文字）:"
+                "ko": f"본문이 실제로 다루는 내용과 정확히 일치하는 제목을 생성하세요. 본문에 없는 구체적 내용을 약속하지 마세요. '확정', '속보', 미래 날짜는 본문에 명시되지 않으면 사용하지 마세요.\n\n본문 미리보기:\n{content_preview}\n\n포함할 키워드: {keyword}\n\n제목 (40-50자):"
             }
 
             regenerate_response = self.client.messages.create(
@@ -955,8 +769,7 @@ Return improved version (body only, no title):""",
         """Generate meta description optimized for SEO (120-160 chars)"""
         prompts = {
             "en": f"Generate a compelling meta description for a blog post about '{keyword}'.\n\nREQUIREMENTS:\n- Length: EXACTLY 120-160 characters (strict)\n- Include keyword naturally\n- Action-oriented and engaging\n- NO quotes, NO marketing fluff\n\nReturn ONLY the description, nothing else.",
-            "ko": f"'{keyword}'에 대한 블로그 글의 메타 설명을 생성하세요.\n\n요구사항:\n- 길이: 정확히 120-160자 (엄격)\n- 키워드 자연스럽게 포함\n- 행동 지향적이고 매력적으로\n- 따옴표 없이, 마케팅 문구 금지\n\n설명만 반환하세요.",
-            "ja": f"'{keyword}'に関するブログ記事のメタ説明を生成してください。\n\n要件:\n- 長さ: 正確に120-160文字（厳格）\n- キーワードを自然に含める\n- 行動志向で魅力的に\n- 引用符なし、マーケティング文句禁止\n\n説明のみを返してください。"
+            "ko": f"'{keyword}'에 대한 블로그 글의 메타 설명을 생성하세요.\n\n요구사항:\n- 길이: 정확히 120-160자 (엄격)\n- 키워드 자연스럽게 포함\n- 행동 지향적이고 매력적으로\n- 따옴표 없이, 마케팅 문구 금지\n\n설명만 반환하세요."
         }
 
         response = self.client.messages.create(
@@ -981,17 +794,6 @@ Return improved version (body only, no title):""",
             '근무': 'work', '효율성': 'efficiency', 'MZ세대': 'gen z', '관리': 'management',
             '방법': 'method', '사례': 'case', '미니멀': 'minimal', '라이프': 'lifestyle',
             '중단': 'quit', '생산성': 'productivity', '팁': 'tips',
-            # Japanese
-            'コード': 'code', '開発': 'development', '限界点': 'limitations',
-            'テレワーク': 'telework', 'オフィス': 'office', '勤務': 'work',
-            '生産性': 'productivity', '比較': 'comparison', 'ノー': 'no',
-            'サブスク': 'subscription', '疲れ': 'fatigue', '解約': 'cancel',
-            '理由': 'reason', 'Z世代': 'gen z', 'マネジメント': 'management',
-            '誤解': 'misconception', 'DX': 'digital transformation', '推進': 'promotion',
-            '失敗': 'failure', '要因': 'factors', 'ヒント': 'tips',
-            'ワークライフバランス': 'work life balance', 'スタートアップ': 'startup',
-            '資金調達': 'fundraising', '戦略': 'strategy', 'AIコーディング': 'AI coding',
-            'アシスタント': 'assistant', 'リモートワーク': 'remote work'
         }
 
         # Split and translate each word
@@ -1071,30 +873,7 @@ Return improved version (body only, no title):""",
                 '팬': 'fan supporter',
                 '등돌림': 'backlash criticism',
                 '스마트폰': 'smartphone mobile',
-                '건강': 'health wellness',
-                # Japanese - AI/Jobs/Employment
-                '人工知能': 'artificial intelligence',
-                '失業': 'unemployment jobless',
-                'リスク': 'risk danger threat',
-                '職業': 'occupation job',
-                '代替': 'replacement substitute',
-                '雇用': 'employment hiring',
-                '自動化': 'automation robot',
-                'デジタル': 'digital technology',
-                'ロボット': 'robot automation',
-                '未来': 'future',
-                '変化': 'change transformation',
-                # Japanese - Finance/Business
-                '奨学金': 'scholarship student loan',
-                '返済': 'repayment debt',
-                '免除': 'exemption forgiveness',
-                '投資': 'investment financial',
-                '詐欺': 'fraud scam',
-                'アカデミー賞': 'academy award',
-                '受賞': 'award winner',
-                '住宅ローン': 'home mortgage loan',
-                '審査': 'screening examination',
-                '承認': 'approval authorization',
+                '건강': 'health wellness'
             }
 
             # Extract meaningful keywords from title
@@ -1512,8 +1291,7 @@ Return improved version (body only, no title):""",
         # Check if References section exists - if not, just skip it (don't add fake references)
         ref_headers = {
             'en': '## References',
-            'ko': '## 참고자료',
-            'ja': '## 参考文献'
+            'ko': '## 참고자료'
         }
         ref_header = ref_headers.get(lang, '## References')
 
@@ -1521,14 +1299,13 @@ Return improved version (body only, no title):""",
         # Remove bold "**References:**" format if exists (common Claude output)
         bold_ref_patterns = [
             (r'\*\*References?:\*\*\n', ''),  # **References:**
-            (r'\*\*参考(?:文献|資料):\*\*\n', ''),  # **参考文献:** or **参考資料:**
-            (r'\*\*참고자료:\*\*\n', ''),  # **참고자료:**
+            (r'\*\*참고자료:\*\*\n', '')  # **참고자료:**
         ]
         for pattern, replacement in bold_ref_patterns:
             content = re.sub(pattern, replacement, content)
 
         # Extract References section if exists
-        has_references = ref_header in content or '## Reference' in content or '## 참고' in content or '## 参考' in content
+        has_references = ref_header in content or '## Reference' in content or '## 참고' in content
 
         if has_references:
             # Extract URLs from References section using regex
@@ -1545,7 +1322,7 @@ Return improved version (body only, no title):""",
 
                 # Remove References section entirely
                 # Match from any References header to the next ## header or end of content
-                ref_pattern = r'\n## (?:References?|参考(?:文献|資料)|참고자료)\n.*?(?=\n## |\Z)'
+                ref_pattern = r'\n## (?:References?|참고자료)\n.*?(?=\n## |\Z)'
                 content = re.sub(ref_pattern, '', content, flags=re.DOTALL)
                 safe_print(f"  🗑️  Removed References section with fake URLs")
                 has_references = False  # Mark as no valid references

@@ -60,7 +60,7 @@
             "@type": "Organization",
             "name": "{{ .Site.Title }}"
           },
-          "inLanguage": ["en", "ko", "ja"]
+          "inLanguage": ["en", "ko"]
         }
       ]
     }
@@ -108,7 +108,6 @@
                     {{- /* Fallback to homepage links if no translations */ -}}
                     <a href="/en/" class="{{ if eq .Site.Language.Lang "en" }}active{{ end }}">EN</a>
                     <a href="/ko/" class="{{ if eq .Site.Language.Lang "ko" }}active{{ end }}">KO</a>
-                    <a href="/ja/" class="{{ if eq .Site.Language.Lang "ja" }}active{{ end }}">JA</a>
                 {{- end -}}
             </div>
         </div>
@@ -166,8 +165,6 @@
                         <span class="featured-date">
                             {{ if eq .Site.Language.Lang "ko" }}
                                 {{ .Date.Format "2006년 01월 02일" }}
-                            {{ else if eq .Site.Language.Lang "ja" }}
-                                {{ .Date.Format "2006年01月02日" }}
                             {{ else }}
                                 {{ .Date.Format "January 02, 2006" }}
                             {{ end }}
@@ -221,8 +218,6 @@
                         <span class="post-card-date">
                             {{ if eq $.Site.Language.Lang "ko" }}
                                 {{ .Date.Format "2006.01.02" }}
-                            {{ else if eq $.Site.Language.Lang "ja" }}
-                                {{ .Date.Format "2006.01.02" }}
                             {{ else }}
                                 {{ .Date.Format "Jan 02, 2006" }}
                             {{ end }}
@@ -248,8 +243,6 @@
                             <div class="latest-updates-date">
                                 {{ if eq $.Site.Language.Lang "ko" }}
                                     {{ $page.Date.Format "2006.01.02" }}
-                                {{ else if eq $.Site.Language.Lang "ja" }}
-                                    {{ $page.Date.Format "2006.01.02" }}
                                 {{ else }}
                                     {{ $page.Date.Format "Jan 02, 2006" }}
                                 {{ end }}
@@ -263,8 +256,6 @@
                     <div class="view-all-text">
                         {{ if eq .Site.Language.Lang "ko" }}
                         전체<br>글 보기
-                        {{ else if eq .Site.Language.Lang "ja" }}
-                        すべての<br>記事
                         {{ else }}
                         View All<br>Articles
                         {{ end }}
@@ -284,8 +275,6 @@
                             <div class="trending-title">{{ $page.Title }}</div>
                             <div class="trending-date">
                                 {{ if eq $.Site.Language.Lang "ko" }}
-                                    {{ $page.Date.Format "2006.01.02" }}
-                                {{ else if eq $.Site.Language.Lang "ja" }}
                                     {{ $page.Date.Format "2006.01.02" }}
                                 {{ else }}
                                     {{ $page.Date.Format "Jan 02, 2006" }}

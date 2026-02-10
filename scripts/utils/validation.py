@@ -15,7 +15,7 @@ VALID_CATEGORIES = [
 ]
 
 # Allowed languages
-VALID_LANGUAGES = ['en', 'ko', 'ja']
+VALID_LANGUAGES = ['en', 'ko']
 
 # Allowed statuses
 VALID_STATUSES = ['pending', 'in_progress', 'completed', 'failed']  # Removed 'available' - unified to 'pending'
@@ -34,9 +34,9 @@ def validate_keyword(keyword: str) -> Optional[str]:
     if len(keyword) > 100:
         return "Keyword must be less than 100 characters"
 
-    # Character whitelist: alphanumeric, Korean, Japanese, spaces, hyphens
+    # Character whitelist: alphanumeric, Korean, spaces, hyphens
     # Block: path separators, special chars that could cause injection
-    if not re.match(r'^[\w\s가-힣ぁ-んァ-ヶー一-龯\-]+$', keyword):
+    if not re.match(r'^[\w\s가-힣\-]+$', keyword):
         return "Keyword contains invalid characters"
 
     # Path traversal prevention

@@ -172,7 +172,7 @@ def get_recent_posts(days: int = 1) -> List[str]:
     recent_urls = []
 
     # Scan all language directories
-    for lang_dir in ["en", "ko", "ja"]:
+    for lang_dir in ["en", "ko"]:
         lang_path = content_dir / lang_dir
         if not lang_path.exists():
             continue

@@ -824,18 +824,15 @@
             }
         }
         /* Language-specific card heights and typography */
-        body[lang="ko"] .post-card,
-        body[lang="ja"] .post-card {
+        body[lang="ko"] .post-card {
             min-height: 400px;
         }
 
-        /* Korean/Japanese: Increase title line-clamp for better readability */
-        body[lang="ko"] .post-card-title,
-        body[lang="ja"] .post-card-title {
+        /* Korean: Increase title line-clamp for better readability */
+        body[lang="ko"] .post-card-title {
             -webkit-line-clamp: 3;
         }
 
-        body[lang="ko"] .featured-title,
-        body[lang="ja"] .featured-title {
+        body[lang="ko"] .featured-title {
             -webkit-line-clamp: 3;
         }

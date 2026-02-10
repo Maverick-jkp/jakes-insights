@@ -5,7 +5,6 @@ Affiliate Link Configuration and Management
 Supports multiple affiliate programs:
 - Coupang Partners (Korea)
 - Amazon Associates (International)
-- Rakuten Affiliate (Japan)
 """
 
 import os
@@ -17,7 +16,6 @@ load_dotenv()
 # Affiliate Program IDs
 COUPANG_PARTNERS_ID = os.getenv("COUPANG_PARTNERS_ID", "")
 AMAZON_ASSOCIATES_TAG = os.getenv("AMAZON_ASSOCIATES_TAG", "")
-RAKUTEN_AFFILIATE_ID = os.getenv("RAKUTEN_AFFILIATE_ID", "")
 
 # Product keyword mapping for auto-detection
 AFFILIATE_KEYWORDS = {
@@ -28,18 +26,14 @@ AFFILIATE_KEYWORDS = {
         "ko": ["아이폰", "맥북", "노트북", "헤드폰", "스피커", "카메라",
                "키보드", "마우스", "모니터", "태블릿", "아이패드", "에어팟",
                "스마트워치", "게이밍 PC", "그래픽카드", "SSD", "외장하드"],
-        "ja": ["iPhone", "MacBook", "ノートPC", "ヘッドホン", "スピーカー", "カメラ",
-               "キーボード", "マウス", "モニター", "タブレット", "iPad", "AirPods"]
     },
     "finance": {
         "en": ["book", "financial planning", "investing guide", "credit card"],
         "ko": ["책", "재테크", "투자", "신용카드"],
-        "ja": ["本", "投資ガイド", "クレジットカード"]
     },
     "entertainment": {
         "en": ["movie", "book", "game", "subscription", "streaming service"],
         "ko": ["영화", "책", "게임", "구독", "스트리밍"],
-        "ja": ["映画", "本", "ゲーム", "サブスク"]
     }
 }
 
@@ -57,12 +51,6 @@ AFFILIATE_TEMPLATES = {
         "template": "https://www.amazon.com/s?k={query}&tag={tag}",
         "languages": ["en"],
         "disclosure_en": "As an Amazon Associate, I earn from qualifying purchases."
-    },
-    "rakuten": {
-        "base_url": "https://search.rakuten.co.jp/search/mall",
-        "template": "https://search.rakuten.co.jp/search/mall/{query}/?f=1&grp=product",
-        "languages": ["ja"],
-        "disclosure_ja": "この記事にはアフィリエイトリンクが含まれています。"
     }
 }
 
@@ -73,7 +61,7 @@ def detect_product_mentions(content: str, lang: str, category: str) -> List[str]
 
     Args:
         content: The blog post content
-        lang: Language code (en, ko, ja)
+        lang: Language code (en, ko)
         category: Content category (tech, finance, entertainment)
 
     Returns:
@@ -97,8 +85,8 @@ def generate_affiliate_link(product: str, lang: str, program: str = "auto") -> O
 
     Args:
         product: Product name or keyword
-        lang: Language code (en, ko, ja)
-        program: Affiliate program ('coupang', 'amazon', 'rakuten', or 'auto')
+        lang: Language code (en, ko)
+        program: Affiliate program ('coupang', 'amazon', or 'auto')
 
     Returns:
         Dictionary with 'url' and 'disclosure' keys, or None if not applicable
@@ -109,8 +97,6 @@ def generate_affiliate_link(product: str, lang: str, program: str = "auto") -> O
             program = "coupang"
         elif lang == "en" and AMAZON_ASSOCIATES_TAG:
             program = "amazon"
-        elif lang == "ja" and RAKUTEN_AFFILIATE_ID:
-            program = "rakuten"
         else:
             return None
 
@@ -134,15 +120,6 @@ def generate_affiliate_link(product: str, lang: str, program: str = "auto") -> O
             "url": url,
             "disclosure": template["disclosure_en"],
             "program": "amazon"
-        }
-
-    elif program == "rakuten" and RAKUTEN_AFFILIATE_ID:
-        template = AFFILIATE_TEMPLATES["rakuten"]
-        url = template["template"].format(query=product.replace(" ", "+"))
-        return {
-            "url": url,
-            "disclosure": template["disclosure_ja"],
-            "program": "rakuten"
         }
 
     return None
@@ -169,17 +146,12 @@ def create_affiliate_box(product: str, lang: str, link_data: Dict[str, str]) -> 
             "check_prices": "가격 확인하기",
             "related_product": "관련 제품"
         },
-        "ja": {
-            "check_prices": "価格をチェック",
-            "related_product": "関連商品"
-        }
     }
 
     t = translations.get(lang, translations["en"])
     program_name = {
         "coupang": "쿠팡",
         "amazon": "Amazon",
-        "rakuten": "楽天市場"
     }.get(link_data["program"], "")
 
     return f"""
@@ -229,9 +201,6 @@ def get_affiliate_disclosure(lang: str, programs: List[str]) -> str:
 
     if "amazon" in programs:
         disclosures.append(AFFILIATE_TEMPLATES["amazon"]["disclosure_en"])
-
-    if "rakuten" in programs:
-        disclosures.append(AFFILIATE_TEMPLATES["rakuten"]["disclosure_ja"])
 
     if not disclosures:
         return ""

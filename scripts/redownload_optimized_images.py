@@ -141,7 +141,7 @@ def main():
 
     print("🔄 Re-downloading images with optimization (w=1200, q=85)...\n")
 
-    for lang in ['en', 'ko', 'ja']:
+    for lang in ['en', 'ko']:
         lang_dir = content_dir / lang
 
         if not lang_dir.exists():

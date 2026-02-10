@@ -17,23 +17,7 @@ def fetch_unsplash_image(keyword, category):
         print("❌ Error: UNSPLASH_ACCESS_KEY not set")
         return None
 
-    # Translation dictionary
-    translations = {
-        # Japanese
-        "大相撲": "sumo wrestling",
-        "結果速報": "tournament results",
-        "見逃し": "highlights",
-        # Common Japanese words
-        "速報": "breaking news",
-        "最新": "latest",
-    }
-
-    # Translate keyword
-    english_query = keyword
-    for jp, en in translations.items():
-        english_query = english_query.replace(jp, en)
-
-    query = f"{category} {english_query}".strip()
+    query = f"{category} {keyword}".strip()
 
     url = "https://api.unsplash.com/search/photos"
     headers = {"Authorization": f"Client-ID {api_key}"}
@@ -197,7 +181,7 @@ def main():
     print(f"✓ Found image by {image_info['photographer']}")
 
     # Generate filename from post filename
-    post_filename = post_path.stem  # e.g., 2026-01-20-大相撲結果速報見逃し
+    post_filename = post_path.stem  # e.g., 2026-01-20-ai-coding-tools
     image_filename = f"{post_filename}.jpg"
     image_path = Path("static/images") / image_filename
 

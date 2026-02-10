@@ -42,19 +42,7 @@ KEYWORD_TRANSLATION = {
     '원더맨': 'marvel superhero',
     '연세대': 'korean university campus',
     '전남대': 'korean university campus',
-    '오태석': 'korean theater director',
-
-    # Japanese
-    '爱泼斯坦': 'controversy scandal',
-    'しゃぶ葉': 'japanese restaurant shabu',
-    '喧嘩独学': 'manga fighting',
-    '増田貴久': 'japanese idol performer',
-    '令和ロマン': 'japanese comedy duo',
-    '探偵ナイトスクープ tver': 'japanese tv detective show',
-    'アヤックス 対 フォレンダム': 'dutch football soccer match',
-    'ファンパレ 裏 梅': 'japanese game strategy',
-    'ゴジュウジャー': 'japanese tokusatsu sentai',
-    '津波': 'tsunami disaster ocean'
+    '오태석': 'korean theater director'
 }
 
 def find_posts_with_missing_images() -> List[Dict]:

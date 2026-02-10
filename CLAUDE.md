@@ -1,7 +1,7 @@
 # CLAUDE.md
 
-**Version**: 6.2 - Homebrew PATH fix
-**Last Updated**: 2026-02-07
+**Version**: 7.0 - Bilingual pivot (EN/KO), quality-first strategy
+**Last Updated**: 2026-02-10
 **Pattern**: 350k LOC case (production-proven)
 
 ---
@@ -31,12 +31,12 @@
 
 ## Project Overview
 
-**Jake's Tech Insights** - AI-powered multilingual blog system
+**Jake's Tech Insights** - In-depth tech analysis and data-driven reports
 
 - **Tech Stack**: Hugo, Python 3.x, Claude API (Sonnet 4.5), GitHub Actions
-- **Languages**: English (EN), Korean (KO), Japanese (JA)
+- **Languages**: English (EN), Korean (KO)
 - **Deployment**: Cloudflare Pages (https://jakeinsight.com)
-- **Automation**: Daily content generation (configured via GitHub Actions schedule)
+- **Automation**: Daily content generation, 5 posts/day (configured via GitHub Actions schedule)
 
 ---
 
@@ -69,7 +69,7 @@ git commit -m "..."
 ## Key Files
 
 ```
-content/{en,ko,ja}/          # Blog posts (Markdown)
+content/{en,ko}/             # Blog posts (Markdown)
 scripts/                     # Python automation
 layouts/                     # Hugo templates
 data/topics_queue.json       # Topic queue (state machine)
@@ -132,7 +132,6 @@ Topic Queue → Draft Agent → Editor Agent → Quality Gate → AI Review → 
 |----------|------------|-----------|
 | English | 800-2,000 | 3-4 sections |
 | Korean | 800-2,000 | 3-4 sections |
-| Japanese | 3,000-7,500 chars | 3-4 sections |
 
 **Full standards**: `.claude/docs/quality-standards.md`
 
@@ -150,4 +149,4 @@ Topic Queue → Draft Agent → Editor Agent → Quality Gate → AI Review → 
 ---
 
 **Entry point | Scale**: < 10k LOC | **Pattern**: Progressive disclosure (350k LOC proven)
-**Version**: 6.1 (2026-02-07) - Token-optimized structure
+**Version**: 7.0 (2026-02-10) - Bilingual pivot, quality-first

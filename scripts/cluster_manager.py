@@ -107,7 +107,7 @@ class ClusterManager:
             content = f.read()
 
         # Check if pillar link already exists
-        if '## Related Resources' in content or '## 관련 자료' in content or '## 関連リソース' in content:
+        if '## Related Resources' in content or '## 관련 자료' in content:
             print(f"Pillar link section already exists in {post_path}")
             return False
 
@@ -124,10 +124,6 @@ class ClusterManager:
             lang = 'ko'
             section_title = "## 관련 자료"
             link_text = f"📚 전체 가이드: [{pillar_title}](/pillar/{category}/{cluster_id}/)"
-        elif '/ja/' in str(post_path):
-            lang = 'ja'
-            section_title = "## 関連リソース"
-            link_text = f"📚 完全ガイド: [{pillar_title}](/pillar/{category}/{cluster_id}/)"
         else:
             print(f"Warning: Could not determine language for {post_path}")
             return False

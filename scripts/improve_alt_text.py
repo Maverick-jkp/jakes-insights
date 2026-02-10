@@ -35,11 +35,11 @@ def generate_alt_text(title, category, image_filename, current_alt):
         new_alt = "Professional photography guide: essential camera techniques and composition tips"
     elif 'quinton' in image_filename and 'aaron' in image_filename:
         new_alt = "Actor profile: Quinton Aaron career highlights and achievements"
-    elif any(word in topic for word in ['gundam', 'ガンダム', '閃光', 'ハサウェイ', 'キルケー']):
+    elif any(word in topic for word in ['gundam']):
         new_alt = "Anime analysis: Mobile Suit Gundam Hathaway Flash story breakdown"
-    elif any(word in topic for word in ['movie', 'film', 'cinema', '映画', '爆弾']):
+    elif any(word in topic for word in ['movie', 'film', 'cinema']):
         new_alt = f"Film review: {title[:70]}"
-    elif any(word in topic for word in ['game', 'gaming', 'fortnite', 'ゲーム']):
+    elif any(word in topic for word in ['game', 'gaming', 'fortnite']):
         new_alt = f"Gaming guide: {title[:70]}"
     elif category == 'entertainment':
         new_alt = f"Entertainment spotlight: {title[:60]}"
@@ -76,7 +76,7 @@ def process_file(filepath):
     
     # Extract metadata
     title, category = extract_frontmatter(content)
-    lang = 'en' if '/en/' in str(filepath) else ('ko' if '/ko/' in str(filepath) else 'ja')
+    lang = 'en' if '/en/' in str(filepath) else 'ko'
     
     changes = []
     new_content = content

@@ -32,7 +32,7 @@ class InternalLinkerV2:
 
     def _load_stopwords(self) -> Set[str]:
         """Load common stopwords to exclude from analysis."""
-        # Basic stopwords for EN/KO/JA
+        # Basic stopwords for EN/KO
         return {
             # English
             "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for",
@@ -40,15 +40,13 @@ class InternalLinkerV2:
             "this", "that", "these", "those", "it", "its", "as", "if", "then",
             # Korean (common particles)
             "은", "는", "이", "가", "을", "를", "에", "의", "와", "과", "도", "만",
-            # Japanese (common particles)
-            "は", "が", "を", "に", "へ", "と", "で", "から", "まで", "より", "の",
         }
 
     def _build_index(self) -> Dict[str, List[Dict]]:
         """Build comprehensive index of all posts."""
-        index = {"en": [], "ko": [], "ja": []}
+        index = {"en": [], "ko": []}
 
-        for lang in ["en", "ko", "ja"]:
+        for lang in ["en", "ko"]:
             lang_path = CONTENT_DIR / lang
             if not lang_path.exists():
                 continue
@@ -247,7 +245,7 @@ class InternalLinkerV2:
                 continue
 
             # Skip if in references section
-            if any(marker in para for marker in ["## References", "## 참고자료", "## 参考資料"]):
+            if any(marker in para for marker in ["## References", "## 참고자료"]):
                 break
 
             # Skip first and last paragraphs
@@ -305,10 +303,8 @@ class InternalLinkerV2:
         # Determine section title by language
         if lang == "en":
             section_title = "## Related Articles\n\n"
-        elif lang == "ko":
+        else:  # ko
             section_title = "## 관련 글\n\n"
-        else:  # ja
-            section_title = "## 関連記事\n\n"
 
         # Build section
         section = section_title
@@ -316,9 +312,9 @@ class InternalLinkerV2:
             section += f"- [{post['title']}]({post['url']})\n"
 
         # Insert before references if exists
-        if "## References" in content or "## 참고자료" in content or "## 参考資料" in content:
+        if "## References" in content or "## 참고자료" in content:
             content = re.sub(
-                r'(## (?:References|参考資料|참고자료))',
+                r'(## (?:References|참고자료))',
                 f'{section}\n\\1',
                 content
             )

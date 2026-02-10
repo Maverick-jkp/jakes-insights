@@ -158,15 +158,6 @@ class ABTestManager:
                 "{}가 중요한 5가지 이유",
                 "당신이 몰랐던 {}의 모든 것"
             ],
-            'ja': [
-                "{}の完全ガイド",
-                "{}について知っておくべきすべて",
-                "{}があなたの人生を変える方法",
-                "{}の隠された秘密",
-                "専門家が語らない{}の真実",
-                "{}が重要な5つの理由",
-                "あなたが知らなかった{}のすべて"
-            ]
         }
 
         # Extract core topic from original title
@@ -209,12 +200,6 @@ class ABTestManager:
         }
 
         base_count = variant_to_count.get(variant, 1500)
-
-        # Adjust for Japanese (character count instead of word count)
-        if lang == 'ja':
-            # Japanese: 3000-7500 characters approximately
-            multiplier = 4  # Rough conversion
-            return base_count * multiplier
 
         return base_count
 

@@ -2,7 +2,7 @@
 Analysis Prompt Template
 
 For standard analysis articles with structured sections and comparison elements.
-Target: 1,500-2,000 words (EN/KO), 4,500-6,000 chars (JA).
+Target: 1,500-2,000 words (EN/KO).
 """
 
 def get_analysis_prompt(topic: str, keywords: list, language: str, audience: str = "tech professionals") -> str:
@@ -12,7 +12,7 @@ def get_analysis_prompt(topic: str, keywords: list, language: str, audience: str
     Args:
         topic: Main topic of the analysis
         keywords: List of relevant keywords
-        language: 'en', 'ko', or 'ja'
+        language: 'en' or 'ko'
         audience: Target audience description
 
     Returns:
@@ -24,13 +24,11 @@ def get_analysis_prompt(topic: str, keywords: list, language: str, audience: str
     word_count = {
         'en': '1,500-2,000 words',
         'ko': '1,500-2,000 단어',
-        'ja': '4,500-6,000 文字'
     }.get(language, '1,500-2,000 words')
 
     lang_instructions = {
         'en': 'English',
         'ko': '한국어 (Korean)',
-        'ja': '日本語 (Japanese)'
     }.get(language, 'English')
 
     prompt = f"""Write an analytical article on "{topic}".
@@ -209,7 +207,6 @@ def _get_intro_words(language: str) -> str:
     return {
         'en': '250-300 words',
         'ko': '250-300 단어',
-        'ja': '750-900 文字'
     }.get(language, '250-300 words')
 
 
@@ -217,7 +214,6 @@ def _get_background_words(language: str) -> str:
     return {
         'en': '300-350 words',
         'ko': '300-350 단어',
-        'ja': '900-1050 文字'
     }.get(language, '300-350 words')
 
 
@@ -225,7 +221,6 @@ def _get_analysis_words(language: str) -> str:
     return {
         'en': '700-900 words',
         'ko': '700-900 단어',
-        'ja': '2100-2700 文字'
     }.get(language, '700-900 words')
 
 
@@ -233,7 +228,6 @@ def _get_implications_words(language: str) -> str:
     return {
         'en': '350-400 words',
         'ko': '350-400 단어',
-        'ja': '1050-1200 文字'
     }.get(language, '350-400 words')
 
 
@@ -241,7 +235,6 @@ def _get_conclusion_words(language: str) -> str:
     return {
         'en': '200-250 words',
         'ko': '200-250 단어',
-        'ja': '600-750 文字'
     }.get(language, '200-250 words')
 
 
@@ -298,16 +291,5 @@ REQUIRED: REAL EXAMPLES ONLY
 - "유연성이 중요해요", "지켜봐야 해요" 같은 뻔한 말 금지
 - 구체적 다음 행동 제시하거나 여운 남기는 질문으로 마무리
 """,
-        'ja': """
-日本語品質ルール (重要):
-- 過度なヘッジング表現を避ける:
-  × 「〜だと考えています」「〜かもしれません」「〜と思われます」の連続使用禁止
-  × 「ただし」の過剰使用（記事全体で最大3回まで）
-  × 「〜ですね」「〜でしょうか」の多用（読者への過度な同意求め）
-- 断定的に書く: 「〜です」「〜します」を基本形として使用
-- 具体的な数字や事実には必ず出典を明記
-- 「興味深いことに」「意外にも」「驚くべきことに」は記事全体で1回まで
-- 架空の製品名、会社名、統計データは絶対に使用しない
-"""
     }
     return rules.get(language, '')

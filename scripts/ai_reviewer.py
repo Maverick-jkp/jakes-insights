@@ -114,47 +114,7 @@ Provide your review now:""",
 {content}
 ---
 
-지금 리뷰를 제공하세요:""",
-
-    "ja": """あなたは技術ブログの専門コンテンツレビュアーです。このブログ記事をレビューし、詳細な評価を提供してください。
-
-評価基準:
-1. **真正性** (1-10): 自然で人間的か？AI的な表現はないか？
-2. **価値** (1-10): 実用的で実行可能な洞察を提供しているか？
-3. **エンゲージメント** (1-10): 興味深く、構造が良いか？
-4. **技術的正確性** (1-10): 事実と技術的詳細は正確か？
-5. **SEO品質** (1-10): キーワード使用、メタ説明、構造は良いか？
-
-各基準について提供:
-- スコア (1-10)
-- 簡単な説明 (1-2文)
-- 具体的な改善提案 (スコア < 8の場合)
-
-全体的な推奨:
-- APPROVE: 公開準備完了 (平均スコア >= 8.0)
-- REVISE: 軽微な改善が必要 (平均スコア 6.0-7.9)
-- REJECT: 大幅な書き直しが必要 (平均スコア < 6.0)
-
-次の構造のJSONでレビューを返してください:
-{
-  "scores": {
-    "authenticity": {"score": 8, "explanation": "...", "suggestions": "..."},
-    "value": {"score": 9, "explanation": "..."},
-    ...
-  },
-  "average_score": 8.2,
-  "recommendation": "APPROVE",
-  "summary": "2-3文で全体評価",
-  "top_strengths": ["強み1", "強み2"],
-  "top_improvements": ["改善点1", "改善点2"]
-}
-
-レビューするブログ記事:
----
-{content}
----
-
-今すぐレビューを提供してください:"""
+지금 리뷰를 제공하세요:"""
 }
 
 
@@ -230,8 +190,6 @@ class AIReviewer:
         path_str = str(filepath)
         if '/ko/' in path_str:
             return 'ko'
-        elif '/ja/' in path_str:
-            return 'ja'
         return 'en'
 
     def print_review(self, review: Dict):

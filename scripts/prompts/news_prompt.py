@@ -2,7 +2,7 @@
 News Prompt Template
 
 For concise, factual news articles with key information and context.
-Target: 800-1,200 words (EN/KO), 2,400-3,600 chars (JA).
+Target: 800-1,200 words (EN/KO).
 """
 
 def get_news_prompt(topic: str, keywords: list, language: str, audience: str = "general tech audience") -> str:
@@ -12,7 +12,7 @@ def get_news_prompt(topic: str, keywords: list, language: str, audience: str = "
     Args:
         topic: Main topic of the news article
         keywords: List of relevant keywords
-        language: 'en', 'ko', or 'ja'
+        language: 'en' or 'ko'
         audience: Target audience description
 
     Returns:
@@ -24,13 +24,11 @@ def get_news_prompt(topic: str, keywords: list, language: str, audience: str = "
     word_count = {
         'en': '800-1,200 words',
         'ko': '800-1,200 단어',
-        'ja': '2,400-3,600 文字'
     }.get(language, '800-1,200 words')
 
     lang_instructions = {
         'en': 'English',
         'ko': '한국어 (Korean)',
-        'ja': '日本語 (Japanese)'
     }.get(language, 'English')
 
     prompt = f"""Write a concise news article on "{topic}".
@@ -193,7 +191,6 @@ def _get_lead_words(language: str) -> str:
     return {
         'en': '120-150 words',
         'ko': '120-150 단어',
-        'ja': '360-450 文字'
     }.get(language, '120-150 words')
 
 
@@ -201,7 +198,6 @@ def _get_details_words(language: str) -> str:
     return {
         'en': '350-450 words',
         'ko': '350-450 단어',
-        'ja': '1050-1350 文字'
     }.get(language, '350-450 words')
 
 
@@ -209,7 +205,6 @@ def _get_context_words(language: str) -> str:
     return {
         'en': '250-300 words',
         'ko': '250-300 단어',
-        'ja': '750-900 文字'
     }.get(language, '250-300 words')
 
 
@@ -217,7 +212,6 @@ def _get_impact_words(language: str) -> str:
     return {
         'en': '200-250 words',
         'ko': '200-250 단어',
-        'ja': '600-750 文字'
     }.get(language, '200-250 words')
 
 
@@ -258,17 +252,5 @@ BANNED PHRASES:
 - "이런 경험 있으시죠?" (뉴스에 부적절)
 - "한 업계 관계자에 따르면" (실명 사용 권장)
 """,
-        'ja': """
-日本語品質ルール:
-- 過度なヘッジング禁止: 「〜と思われます」「〜かもしれません」の連続使用禁止
-- 「ただし」は記事全体で最大2回まで
-- 断定的な表現を使用: 「〜です」「〜しました」
-- 出典不明の統計や数字は絶対に使用しない
-- 架空の会社名や製品名は使用禁止
-
-トーン要件:
-- ニュースでも読者を引き込む文章で
-- 専門用語は必ず説明を添える
-"""
     }
     return rules.get(language, '')

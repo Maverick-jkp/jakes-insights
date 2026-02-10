@@ -25,7 +25,6 @@ class ContentClassifier:
         'implementation', 'setup', 'install', 'configure', 'deployment',
         'complete guide', 'getting started', 'quick start',
         '가이드', '튜토리얼', '설치', '구성', '배포', '완전 가이드', '완벽 가이드',
-        'ガイド', 'チュートリアル', 'インストール', '設定', '完全ガイド'
     ]
 
     # Complex tech topics that warrant tutorials
@@ -44,7 +43,6 @@ class ContentClassifier:
         'raises $', 'raised $', 'breaking news', 'just released', 'now available',
         'confirmed', 'confirms', 'revealed', 'reveals',
         '발표했다', '출시했다', '공개했다', '인수했다', '투자 유치', '펀딩',
-        '発表した', 'リリースした', '公開した', '買収した', '資金調達'
     ]
 
     # Content type configurations
@@ -53,7 +51,6 @@ class ContentClassifier:
             'word_count': {
                 'en': (2500, 3500),
                 'ko': (2500, 3500),
-                'ja': (7500, 10500)  # Japanese requires more characters
             },
             'prompt_template': 'tutorial',
             'priority': 1.5,
@@ -69,7 +66,6 @@ class ContentClassifier:
             'word_count': {
                 'en': (1500, 2000),
                 'ko': (1500, 2000),
-                'ja': (4500, 6000)
             },
             'prompt_template': 'analysis',
             'priority': 1.0,
@@ -84,7 +80,6 @@ class ContentClassifier:
             'word_count': {
                 'en': (800, 1200),
                 'ko': (800, 1200),
-                'ja': (2400, 3600)
             },
             'prompt_template': 'news',
             'priority': 0.8,
@@ -122,7 +117,7 @@ class ContentClassifier:
         for indicator in self.TUTORIAL_INDICATORS:
             if indicator in topic_lower:
                 # Strong tutorial words get higher score
-                if indicator in ['guide', 'tutorial', 'how to', 'step by step', 'walkthrough', 'ガイド', '가이드']:
+                if indicator in ['guide', 'tutorial', 'how to', 'step by step', 'walkthrough', '가이드']:
                     tutorial_score += 3
                 else:
                     tutorial_score += 1
@@ -137,7 +132,7 @@ class ContentClassifier:
         for indicator in self.NEWS_INDICATORS:
             if indicator in topic_lower:
                 # Strong news words (past tense actions)
-                if indicator in ['announced', 'launched', 'released', 'acquired', 'raised $', 'confirms', '발표했다', '出시했다', '発表した']:
+                if indicator in ['announced', 'launched', 'released', 'acquired', 'raised $', 'confirms', '발표했다', '출시했다']:
                     news_score += 3
                 # Weaker news signals
                 elif indicator in ['unveils', 'introduces', 'reveals']:
@@ -168,7 +163,7 @@ class ContentClassifier:
 
         Args:
             content_type: 'tutorial' | 'analysis' | 'news'
-            language: 'en' | 'ko' | 'ja'
+            language: 'en' | 'ko'
 
         Returns:
             Configuration dictionary with word_count, prompt_template, etc.

@@ -11,8 +11,6 @@
     {{- $metaDescription := "" -}}
     {{- if eq .Site.Language.Lang "ko" -}}
         {{- $metaDescription = printf "%d개의 글로 구성된 전체 아카이브입니다. 기술, 비즈니스, 사회, 엔터테인먼트, 스포츠 카테고리의 모든 인사이트를 한 곳에서 만나보세요." $totalPosts -}}
-    {{- else if eq .Site.Language.Lang "ja" -}}
-        {{- $metaDescription = printf "%d件の記事で構成された完全アーカイブです。テクノロジー、ビジネス、社会、エンターテインメント、スポーツカテゴリーのすべてのインサイトを一箇所で。" $totalPosts -}}
     {{- else -}}
         {{- $metaDescription = printf "Complete archive of all %d articles. Explore insights across Tech, Business, Society, Entertainment, and Sports categories in one place." $totalPosts -}}
     {{- end -}}
@@ -95,7 +93,6 @@
             <div class="lang-switch">
                 <a href="/all-posts/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
                 <a href="/ko/all-posts/" {{ if eq .Site.Language.Lang "ko" }}class="active"{{ end }}>KO</a>
-                <a href="/ja/all-posts/" {{ if eq .Site.Language.Lang "ja" }}class="active"{{ end }}>JA</a>
             </div>
         </div>
     </div>
@@ -131,8 +128,6 @@
                     <div class="post-card-header">
                         <span class="post-card-date">
                             {{ if eq $.Site.Language.Lang "ko" }}
-                                {{ .Date.Format "2006.01.02" }}
-                            {{ else if eq $.Site.Language.Lang "ja" }}
                                 {{ .Date.Format "2006.01.02" }}
                             {{ else }}
                                 {{ .Date.Format "Jan 02, 2006" }}

@@ -75,7 +75,6 @@ Prompts are in `scripts/generate_posts.py`:
 
 - **English**: Lines ~63-450
 - **Korean**: Lines ~450-850
-- **Japanese**: Lines ~850-1250
 
 After editing:
 ```bash
@@ -93,7 +92,7 @@ python scripts/quality_gate.py
 
 ## 5. Add New Category
 
-1. **Update `hugo.toml`**: Add menu items for EN/KO/JA (lines ~30-180)
+1. **Update `hugo.toml`**: Add menu items for EN/KO (lines ~30-130)
    ```toml
    [[languages.en.menu.main]]
      name = "🆕 NewCategory"
@@ -114,7 +113,6 @@ python scripts/quality_gate.py
    ```bash
    mkdir -p content/en/newcategory
    mkdir -p content/ko/newcategory
-   mkdir -p content/ja/newcategory
    ```
 
 4. **Test**:

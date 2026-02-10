@@ -41,18 +41,9 @@ def fetch_unsplash_image(keyword: str, category: str, api_key: str) -> Optional[
     """Fetch image from Unsplash API"""
     # Translation dictionary for better English queries
     translations = {
-        # Japanese
-        "大相撲": "sumo wrestling",
-        "結果速報": "tournament results  ",
-        "見逃し": "highlights",
-        "速報": "breaking news",
-        "最新": "latest",
-        "日本": "japan",
         # Korean
         "속보": "breaking news",
         "최신": "latest",
-        # Common terms
-        "ニュース": "news",
         "뉴스": "news",
     }
 
@@ -61,11 +52,11 @@ def fetch_unsplash_image(keyword: str, category: str, api_key: str) -> Optional[
     for foreign, english in translations.items():
         english_query = english_query.replace(foreign, english)
 
-    # Remove all non-ASCII characters (Japanese/Korean remaining after translation)
+    # Remove all non-ASCII characters (Korean remaining after translation)
     english_query = re.sub(r'[^\x00-\x7F]+', ' ', english_query)
 
     # Clean up the query
-    english_query = re.sub(r'[【】\[\]「」！？]', '', english_query)
+    english_query = re.sub(r'[\[\]]', '', english_query)
     english_query = ' '.join(english_query.split())
 
     # If query is empty after cleaning, use category only

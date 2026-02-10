@@ -111,7 +111,7 @@ def main():
     success = 0
 
     # Process all bundles
-    for lang in ['en', 'ko', 'ja']:
+    for lang in ['en', 'ko']:
         lang_dir = content_dir / lang
 
         if not lang_dir.exists():

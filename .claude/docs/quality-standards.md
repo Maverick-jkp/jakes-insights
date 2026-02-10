@@ -12,7 +12,6 @@
 |----------|---------|--------|---------|
 | English  | 800     | 900-1,200 | 2,000 |
 | Korean   | 800     | 900-1,200 | 2,000 |
-| Japanese | 3,000 chars | 4,000-5,000 chars | 7,500 chars |
 
 ---
 
@@ -38,10 +37,6 @@ Quality gate **fails** if these phrases appear:
 **Korean**:
 - "물론", "혁신적", "게임체인저"
 - "디지털 시대", "중요한 점은"
-
-**Japanese**:
-- "もちろん", "革新的", "ゲームチェンジャー"
-- "重要なのは", "結論として"
 
 Full list: `scripts/quality_gate.py` lines ~50-100
 

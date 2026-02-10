@@ -29,9 +29,9 @@ class InternalLinker:
 
     def _build_posts_index(self) -> Dict[str, List[Dict]]:
         """Build index of all posts grouped by language"""
-        index = {"en": [], "ko": [], "ja": []}
+        index = {"en": [], "ko": []}
 
-        for lang in ["en", "ko", "ja"]:
+        for lang in ["en", "ko"]:
             lang_dir = self.content_dir / lang
             if not lang_dir.exists():
                 continue
@@ -79,7 +79,7 @@ class InternalLinker:
             index[lang].sort(key=lambda x: x.get('date', ''), reverse=True)
 
         print(f"✅ Indexed {sum(len(posts) for posts in index.values())} posts")
-        print(f"   EN: {len(index['en'])}, KO: {len(index['ko'])}, JA: {len(index['ja'])}")
+        print(f"   EN: {len(index['en'])}, KO: {len(index['ko'])}")
 
         return index
 
@@ -173,7 +173,6 @@ class InternalLinker:
         headers = {
             "en": "## Related Posts",
             "ko": "## 관련 글",
-            "ja": "## 関連記事"
         }
 
         header = headers.get(lang, "## Related Posts")
@@ -200,20 +199,20 @@ class InternalLinker:
         related_section = self.generate_related_section(related_posts, lang)
 
         # Check if content already has related section
-        if re.search(r'## Related Posts|## 관련 글|## 関連記事', content):
+        if re.search(r'## Related Posts|## 관련 글', content):
             # Replace existing section
             content = re.sub(
-                r'(## Related Posts|## 관련 글|## 関連記事).*?(?=\n##|\Z)',
+                r'(## Related Posts|## 관련 글).*?(?=\n##|\Z)',
                 related_section,
                 content,
                 flags=re.DOTALL
             )
         else:
             # Append before references section (if exists)
-            if '## References' in content or '## 참고자료' in content or '## 参考資料' in content:
+            if '## References' in content or '## 참고자료' in content:
                 # Insert before references
                 content = re.sub(
-                    r'(## References|## 참고자료|## 参考資料)',
+                    r'(## References|## 참고자료)',
                     f'{related_section}\\1',
                     content,
                     count=1
@@ -232,7 +231,7 @@ def main():
     parser = argparse.ArgumentParser(description="Add internal links to blog posts")
     parser.add_argument('--file', type=str, help="Specific file to process")
     parser.add_argument('--category', type=str, help="Category for filtering")
-    parser.add_argument('--lang', type=str, choices=['en', 'ko', 'ja'], help="Language")
+    parser.add_argument('--lang', type=str, choices=['en', 'ko'], help="Language")
     parser.add_argument('--rebuild-index', action='store_true', help="Rebuild posts index")
     parser.add_argument('--dry-run', action='store_true', help="Preview without writing")
     args = parser.parse_args()

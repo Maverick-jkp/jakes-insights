@@ -46,7 +46,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 아래 실시간 트렌드 검색 결과와 커뮤니티 토픽을 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
 
 📊 **소스 비중**: Google Trends 40% + Community 40% + Evergreen 20%
-📊 **언어 비중**: EN 40% ({en_count}개), KO 40% ({ko_count}개), JA 20% ({ja_count}개)
+📊 **언어 비중**: EN 50% ({en_count}개), KO 50% ({ko_count}개)
 
 실시간 트렌드 데이터 (언어별로 구분됨):
 
@@ -56,35 +56,27 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 🇰🇷 Korean (KR) Trends:
 {trends_ko}
 
-🇯🇵 Japanese (JP) Trends:
-{trends_ja}
-
 🌐 **Community Topics (HackerNews, Dev.to, Lobsters, ProductHunt)**:
 {community_topics}
 
-**중요**: Community Topics는 영어 원문이지만, 한국/일본 독자에게도 유용한 내용이면 KO/JA 버전으로도 제안하라.
-예: "OpenAI releases new model" → EN 원문 + KO "OpenAI 새 모델 출시" + JA "OpenAI新モデル発表"
+**중요**: Community Topics는 영어 원문이지만, 한국 독자에게도 유용한 내용이면 KO 버전으로도 제안하라.
+예: "OpenAI releases new model" → EN 원문 + KO "OpenAI 새 모델 출시"
 
 **🔴 중요 규칙: 언어-키워드 매칭 (CRITICAL - 위반 시 즉시 거부)**
 1. English (US) 트렌드의 Query → language: "en"으로만 사용
 2. Korean (KR) 트렌드의 Query → language: "ko"로만 사용
-3. Japanese (JP) 트렌드의 Query → language: "ja"로만 사용
-4. **절대로 일본어 키워드를 한국어 게시물에 사용하거나, 한국어 키워드를 일본어 게시물에 사용하지 말 것**
-5. 위 트렌드 데이터의 Query를 그대로 keyword로 사용하라. 절대 재해석하거나 재작성하지 말 것.
+3. 위 트렌드 데이터의 Query를 그대로 keyword로 사용하라. 절대 재해석하거나 재작성하지 말 것.
 
 **🚨 언어 문자 검증 규칙 (반드시 준수):**
-- **영어(en) 키워드**: 한글(가-힣), 히라가나(ぁ-ん), 가타카나(ァ-ヶ), 한자(一-龯) 포함 금지
+- **영어(en) 키워드**: 한글(가-힣) 포함 금지
   - 올바른 예: "NBA", "Kobe Bryant", "quad cortex"
-  - 잘못된 예: "붉은사막" (한글 포함), "フォートナイト" (가타카나 포함)
+  - 잘못된 예: "붉은사막" (한글 포함)
 - **한국어(ko) 키워드**: 반드시 한글(가-힣) 포함 필요
   - 올바른 예: "붉은사막", "김연아", "u23" (영문 약어는 허용)
-  - 잘못된 예: "red desert" (한글 없음), "フォートナイト" (일본어)
-- **일본어(ja) 키워드**: 반드시 히라가나/가타카나/한자 포함 필요
-  - 올바른 예: "フォートナイト", "三笘薫", "地震速報"
-  - 잘못된 예: "fortnite" (일본어 문자 없음), "붉은사막" (한글)
+  - 잘못된 예: "red desert" (한글 없음)
 
 목표:
-한국어 / 영어 / 일본어 각각에서
+한국어 / 영어 각각에서
 **불안, 분노, 궁금증**을 유발하는 키워드만 제안하라.
 
 금지:
@@ -92,7 +84,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - 교육/정보성 키워드 ("~하는 방법", "~란 무엇인가")
 - 긍정적이고 평화로운 키워드
 - **Query를 재해석하거나 다시 쓰는 것**
-- **같은 키워드를 다른 카테고리로 중복 제안하는 것** (예: "相葉雅紀"를 tech와 society 모두에 제안하지 말 것. 하나의 키워드는 하나의 카테고리만 가져야 함)
+- **같은 키워드를 다른 카테고리로 중복 제안하는 것**
 
 출력 형식:
 반드시 JSON 형식으로만 응답하라.
@@ -104,7 +96,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
     "editorial_title": "기사 제목 형식의 독자 친화적 제목",
     "core_fear_question": "사용자의 핵심 두려움을 담은 질문 한 문장",
     "language": "ko",
-    "category": "tech",  # ONLY: tech, business, society, entertainment, sports (5 categories + 1 reserved)
+    "category": "tech",
     "search_intent": "사용자가 지금 당장 검색하는 이유 (행동하지 않으면 무엇을 잃는지)",
     "angle": "이 키워드를 다룰 때의 관점",
     "competition_level": "low",
@@ -119,7 +111,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 ]
 
 중요:
-- keyword_type은 무조건 "trend"만 사용 (evergreen 금지)
+- keyword_type은 "trend"만 사용 (이 프롬프트는 트렌드 전용)
 - category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
 - **카테고리 분배 비율 (중요)**:
   * tech: 40% (가장 높은 CPM, 우선순위 최고)
@@ -128,86 +120,46 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
   * sports: 15%
   * entertainment: 10%
 - Tech 관련 키워드는 최대한 많이 선택할 것 (AI, ML, cloud, programming, frameworks, devops 등)
-  - ⚠️ "finance", "lifestyle", "education"은 더 이상 사용 금지 (각각 business, society, tech로 통합됨)
-- language는 "en", "ko", "ja" 중 하나 (비율: EN 40%, KO 40%, JA 20%)
+- language는 "en", "ko" 중 하나 (비율: EN 50%, KO 50%)
 - competition_level은 "low", "medium", "high" 중 하나
 - priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
 - risk_level은 "safe", "caution", "high_risk" 중 하나 (기본값: "safe")
 - name_policy는 "no_real_names", "generic_only" 중 하나 (기본값: "no_real_names")
 - intent_signal은 "STATE_CHANGE", "PROMISE_BROKEN", "SILENCE", "DEADLINE_LOST", "COMPARISON" 중 하나
-- 지금 시점(2026년 1월)에서 현실적인 키워드만 제안
-- 예시는 절대 사용하지 말고, 실제 검색 가능성이 높은 키워드만 제안
 - **중요**: 위 실시간 트렌드 데이터의 Query를 keyword 필드에 그대로 복사할 것
 - **keyword 필드는 절대 재작성하지 말고 Query를 정확히 그대로 사용**
 - **중요**: 5개 카테고리(tech, business, society, entertainment, sports)를 반드시 고르게 분배할 것
 
-**🔴 카테고리 분류 가이드 (5개 카테고리 - CRITICAL):**
-- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, **교육 기술(EdTech), 온라인 학습**
-  - 예시: "AI", "ChatGPT", "iPhone", "게임", "온라인 강의", "코딩 교육"
-  - ⚠️ 이전 "education" 카테고리 내용 포함
-
-- **business**: 경제, 기업, 주식, 부동산, 창업, **금융, 투자, 세금, 보험, 연금, 시장**
-  - 예시: "테슬라 주가", "부동산 시장", "스타트업", "비트코인", "금리", "환율"
-  - ⚠️ 이전 "finance" 카테고리 내용 포함
-
-- **society**: 사회 이슈, 정치, 정책, 범죄, 재난, **건강, 여행, 음식, 패션, 라이프스타일**
-  - 예시: "지진속보", "정부 정책", "다이어트", "여행지 추천", "건강 관리", "트렌드"
-  - ⚠️ 이전 "lifestyle" 카테고리 내용 포함
-  - **주의**: 스포츠 관련은 무조건 sports로 (사회 이슈라도)
-
-- **entertainment**: 영화, 드라마, 음악, 예능, 연예인 (단, 스포츠 선수는 제외)
-  - 예시: "넷플릭스", "BTS", "오징어게임", "영화 리뷰"
-
-- **sports**: 모든 운동 경기, 선수, 팀 (축구, 야구, 농구, UFC, e스포츠, U23 등 전부)
-  - 예시: "UFC", "u23", "손흥민", "KBO", "NBA", "wimbledon"
-  - **중요**: 격투기, 청소년 스포츠도 무조건 sports
-- **education**: 교육, 대학, 입시, 자격증, 학습
+**🔴 카테고리 분류 가이드 (5개 카테고리):**
+- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, 교육 기술(EdTech)
+- **business**: 경제, 기업, 주식, 부동산, 창업, 금융, 투자
+- **society**: 사회 이슈, 정치, 정책, 건강, 여행, 라이프스타일
+- **entertainment**: 영화, 드라마, 음악, 예능, 연예인 (스포츠 선수 제외)
+- **sports**: 모든 운동 경기, 선수, 팀
 
 언어별 톤 차이:
 - 🇺🇸 English: rights, compensation, legal leverage, lawsuits 중심
 - 🇰🇷 Korean: 불공정, 좌절, 소비자 보호, 책임 추궁 중심
-- 🇯🇵 Japanese: 불투명성, 공식 절차, 적절한 대응 방법 중심
 
 **🔴 안전 가이드라인:**
-
-주의사항:
 - 명예훼손/비난/비방 표현 금지
 - 사실 기반의 trending 키워드는 실명 사용 가능
-
-각 키워드에 리스크 레벨 표시:
-- "risk_level": "safe" (기본값)
-- "risk_level": "caution" (논란 가능성 있음)
-
-각 키워드에 실명 정책 표시:
-- "name_policy": "no_real_names" (실명 불필요)
-- "name_policy": "real_names_ok" (trending 뉴스 등 실명 포함 가능)
 
 **중복 방지 규칙:**
 - Intent signals: STATE_CHANGE, PROMISE_BROKEN, SILENCE, DEADLINE_LOST, COMPARISON
 - 같은 signal을 가진 키워드는 언어당 최대 2개까지만
-- 5개 signal을 언어별로 균등하게 분배
 
 **🚨 언어별 키워드 생성 규칙 (절대 준수):**
 반드시 정확히 {count}개의 키워드를 생성하라:
-- 영어(en): 정확히 {en_count}개 (1개라도 부족하거나 초과하면 안 됨)
-- 한국어(ko): 정확히 {ko_count}개 (1개라도 부족하거나 초과하면 안 됨)
-- 일본어(ja): 정확히 {ja_count}개 (1개라도 부족하거나 초과하면 안 됨)
+- 영어(en): 정확히 {en_count}개
+- 한국어(ko): 정확히 {ko_count}개
 - 총합: 정확히 {count}개
 
 **언어별 트렌드 데이터 사용 규칙:**
 - 🇺🇸 English (US) Trends에서 {en_count}개 키워드 추출 → language: "en"
 - 🇰🇷 Korean (KR) Trends에서 {ko_count}개 키워드 추출 → language: "ko"
-- 🇯🇵 Japanese (JP) Trends에서 {ja_count}개 키워드 추출 → language: "ja"
-- 만약 한 언어의 트렌드가 부족하면, 다른 언어 트렌드를 절대 사용하지 말고 해당 언어로 새로운 키워드를 생성하라
 
-각 언어 내에서 5개 카테고리(tech, business, society, entertainment, sports)를 최대한 균등하게 분배하되,
-반드시 각 언어별로 정확히 EN {en_count}개, KO {ko_count}개, JA {ja_count}개씩 생성하는 것이 최우선이다.
-
-⚠️ **카테고리 변경 사항 (2026-01-25):**
-- 기존 8개 → 새로운 5개 카테고리로 통합
-- "education" → "tech"로 통합
-- "finance" → "business"로 통합
-- "lifestyle" → "society"로 통합"""
+각 언어 내에서 5개 카테고리를 최대한 균등하게 분배할 것."""
 
 
 CURATION_PROMPT_EVERGREEN = """역할:
@@ -221,9 +173,6 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 
 🇰🇷 Korean Keywords:
 {evergreen_ko}
-
-🇯🇵 Japanese Keywords:
-{evergreen_ja}
 
 **🚫 이미 큐에 존재하는 키워드 (절대 중복 제안 금지):**
 {existing_keywords}
@@ -239,7 +188,7 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 - 실명 인물 관련 (연예인, 정치인)
 - 논란/감정 자극형 키워드
 - 추상적 주제 ("AI의 미래", "기술 트렌드")
-- **위 "이미 큐에 존재하는 키워드" 목록과 동일하거나 유사한 키워드** (반드시 새로운 키워드만 제안)
+- **위 "이미 큐에 존재하는 키워드" 목록과 동일하거나 유사한 키워드**
 
 출력 형식:
 반드시 JSON 형식으로만 응답하라.
@@ -265,26 +214,18 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 ]
 
 중요:
-- keyword_type은 무조건 "evergreen"만 사용 (trend 금지)
+- keyword_type은 "evergreen"만 사용 (이 프롬프트는 에버그린 전용)
 - category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
-- language는 "en", "ko", "ja" 중 하나 (비율: EN 40%, KO 40%, JA 20%)
-- competition_level은 "low", "medium"만 사용 (high 금지 - 경쟁 피할 것)
-- priority는 5-8 사이 (Evergreen은 트렌드보다 낮은 우선순위)
-- risk_level은 무조건 "safe" (Evergreen은 안전해야 함)
-- content_depth는 "comprehensive" (상세한 가이드 형식)
-
-**🔴 카테고리별 Evergreen 키워드 예시:**
-- **tech**: "프로그래밍 독학 방법", "web development roadmap", "AI tools for beginners"
-- **business**: "passive income ideas", "부업 아이디어", "startup funding guide"
-- **society**: "mental health management", "건강한 생활 습관", "climate change solutions"
-- **entertainment**: "Netflix recommendations", "음악 제작 입문", "photography tips"
-- **sports**: "home workout routine", "마라톤 훈련 계획", "yoga for beginners"
+- language는 "en", "ko" 중 하나 (비율: EN 50%, KO 50%)
+- competition_level은 "low", "medium"만 사용 (high 금지)
+- priority는 6-9 사이 (Evergreen은 장기 가치가 높으므로 우선순위 상향)
+- risk_level은 무조건 "safe"
+- content_depth는 "comprehensive"
 
 **🚨 언어별 키워드 생성 규칙:**
 반드시 정확히 {count}개의 키워드를 생성하라:
 - 영어(en): 정확히 {en_count}개
 - 한국어(ko): 정확히 {ko_count}개
-- 일본어(ja): 정확히 {ja_count}개
 - 총합: 정확히 {count}개
 
 각 언어 내에서 5개 카테고리를 균등하게 분배할 것.
@@ -365,23 +306,23 @@ class KeywordCurator:
         signals = []
 
         # State transition patterns
-        if any(word in query.lower() for word in ["after", "갑자기", "suddenly", "突然", "overnight"]):
+        if any(word in query.lower() for word in ["after", "갑자기", "suddenly", "overnight"]):
             signals.append("STATE_CHANGE")
 
         # Promise broken patterns
-        if any(word in query.lower() for word in ["promised", "supposed to", "약속", "発表", "denied", "거부", "拒否"]):
+        if any(word in query.lower() for word in ["promised", "supposed to", "약속", "denied", "거부"]):
             signals.append("PROMISE_BROKEN")
 
         # Silence patterns
-        if any(word in query.lower() for word in ["no response", "ignored", "説明なし", "무응답", "침묵"]):
+        if any(word in query.lower() for word in ["no response", "ignored", "무응답", "침묵"]):
             signals.append("SILENCE")
 
         # Deadline/time loss patterns
-        if any(word in query.lower() for word in ["deadline", "too late", "마감", "期限", "놓침", "逃し"]):
+        if any(word in query.lower() for word in ["deadline", "too late", "마감", "놓침"]):
             signals.append("DEADLINE_LOST")
 
         # Comparison/injustice patterns
-        if any(word in query.lower() for word in ["others got", "only me", "나만", "自分だけ"]):
+        if any(word in query.lower() for word in ["others got", "only me", "나만"]):
             signals.append("COMPARISON")
 
         return signals if signals else ["GENERAL"]
@@ -554,19 +495,17 @@ class KeywordCurator:
 
         rss_urls = {
             "KR": "https://trends.google.co.kr/trending/rss?geo=KR",
-            "US": "https://trends.google.co.kr/trending/rss?geo=US",
-            "JP": "https://trends.google.co.kr/trending/rss?geo=JP"
+            "US": "https://trends.google.co.kr/trending/rss?geo=US"
         }
 
         # Map region to language
         region_to_lang = {
             "KR": "ko",
-            "US": "en",
-            "JP": "ja"
+            "US": "en"
         }
 
         # Group trends by language
-        trends_by_lang = {"ko": [], "en": [], "ja": []}
+        trends_by_lang = {"ko": [], "en": []}
 
         for geo, url in rss_urls.items():
             try:
@@ -618,7 +557,7 @@ class KeywordCurator:
 
         if total_trends > 0:
             safe_print(f"\n  🎉 Total {total_trends} real-time trending topics from RSS!")
-            safe_print(f"     EN: {len(trends_by_lang['en'])}, KO: {len(trends_by_lang['ko'])}, JA: {len(trends_by_lang['ja'])}\n")
+            safe_print(f"     EN: {len(trends_by_lang['en'])}, KO: {len(trends_by_lang['ko'])}\n")
         else:
             safe_print("  ⚠️  RSS feeds failed. Falling back to pattern-based queries...\n")
             # Fallback to pattern queries (grouped by language)
@@ -638,13 +577,6 @@ class KeywordCurator:
                     "정부지원 조건 발표와 다름",
                     "사과문 냈지만 논란 계속",
                     "리콜 발표했는데 환불 거부"
-                ],
-                "ja": [
-                    "アカウント停止 理由説明なし",
-                    "返金約束したが 拒否された",
-                    "政府支援 突然 条件厳しく",
-                    "謝罪文出したが 炎上続く",
-                    "リコール発表 返金対応なし"
                 ]
             }
 
@@ -740,16 +672,17 @@ class KeywordCurator:
         self.search_results = all_results
 
         # Format results for Claude, grouped by language
-        trends_by_lang_formatted = {"en": [], "ko": [], "ja": []}
+        trends_by_lang_formatted = {"en": [], "ko": []}
         for r in all_results:
             lang = r.get('query_lang', 'en')
-            trends_by_lang_formatted[lang].append(
-                f"Query: {r['query']}\nTitle: {r['title']}\nSnippet: {r['snippet']}\n"
-            )
+            if lang in trends_by_lang_formatted:
+                trends_by_lang_formatted[lang].append(
+                    f"Query: {r['query']}\nTitle: {r['title']}\nSnippet: {r['snippet']}\n"
+                )
 
         # Convert to string format per language
         trends_formatted = {}
-        for lang in ["en", "ko", "ja"]:
+        for lang in ["en", "ko"]:
             trends_formatted[lang] = "\n\n".join(trends_by_lang_formatted[lang][:10])  # Top 10 per language
 
         return trends_formatted
@@ -875,7 +808,7 @@ class KeywordCurator:
         evergreen_path = Path("data/evergreen_keywords.json")
         if not evergreen_path.exists():
             safe_print("⚠️  Evergreen keywords file not found, using empty pool")
-            return {"tech": {"en": [], "ko": [], "ja": []}, "business": {"en": [], "ko": [], "ja": []}}
+            return {"tech": {"en": [], "ko": []}, "business": {"en": [], "ko": []}}
 
         with open(evergreen_path, 'r', encoding='utf-8') as f:
             return json.load(f)
@@ -891,10 +824,9 @@ class KeywordCurator:
         safe_print(f"  🔍 Generating {count} {keyword_type} keyword candidates...")
         safe_print(f"{'='*60}\n")
 
-        # Calculate per-language count (EN 40%, KO 40%, JA 20%)
-        en_count = int(count * 0.4)
-        ko_count = int(count * 0.4)
-        ja_count = count - en_count - ko_count  # Remainder to JA
+        # Calculate per-language count (EN 50%, KO 50%)
+        en_count = count // 2
+        ko_count = count - en_count  # Remainder to KO
 
         if keyword_type == "evergreen":
             # Load evergreen keywords pool
@@ -903,7 +835,6 @@ class KeywordCurator:
             # Format evergreen keywords for prompt
             evergreen_en = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("en", [])])
             evergreen_ko = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ko", [])])
-            evergreen_ja = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ja", [])])
 
             # Collect existing keywords from queue to prevent duplicates
             existing_keywords = [t['keyword'] for t in self.queue_data.get('topics', [])]
@@ -913,11 +844,9 @@ class KeywordCurator:
             prompt = CURATION_PROMPT_EVERGREEN.format(
                 evergreen_en=evergreen_en,
                 evergreen_ko=evergreen_ko,
-                evergreen_ja=evergreen_ja,
                 count=count,
                 en_count=en_count,
                 ko_count=ko_count,
-                ja_count=ja_count,
                 existing_keywords=existing_keywords_text
             )
 
@@ -960,12 +889,10 @@ class KeywordCurator:
             prompt = CURATION_PROMPT_WITH_TRENDS.format(
                 trends_en=trends_by_lang.get('en', 'No English trends available'),
                 trends_ko=trends_by_lang.get('ko', 'No Korean trends available'),
-                trends_ja=trends_by_lang.get('ja', 'No Japanese trends available'),
                 community_topics=community_topics_formatted,
                 count=count,
                 en_count=en_count,
-                ko_count=ko_count,
-                ja_count=ja_count
+                ko_count=ko_count
             )
 
         try:
@@ -1100,15 +1027,16 @@ class KeywordCurator:
         safe_print(f"{'='*60}\n")
 
         # Group by language
-        by_lang = {"en": [], "ko": [], "ja": []}
+        by_lang = {"en": [], "ko": []}
         for c in candidates:
             lang = c.get("language", "en")
-            by_lang[lang].append(c)
+            if lang in by_lang:
+                by_lang[lang].append(c)
 
         idx = 1
-        lang_names = {"en": "English", "ko": "Korean", "ja": "Japanese"}
+        lang_names = {"en": "English", "ko": "Korean"}
 
-        for lang in ["en", "ko", "ja"]:
+        for lang in ["en", "ko"]:
             if by_lang[lang]:
                 safe_print(f"\n[{lang_names[lang]}]")
                 safe_print("-" * 60)
@@ -1166,7 +1094,6 @@ class KeywordCurator:
 
     def _validate_keyword_language(self, keyword: str, language: str) -> bool:
         """Validate that keyword matches the specified language"""
-        import unicodedata
 
         def has_hangul(text):
             """Check if text contains Korean characters"""
@@ -1180,61 +1107,17 @@ class KeywordCurator:
                 for char in text
             )
 
-        def has_kanji_only(text):
-            """Check if text contains only Kanji/Chinese characters (could be Japanese)"""
-            return any('\u4e00' <= char <= '\u9fff' for char in text)
-
-        def has_vietnamese_chars(text):
-            """Check if text contains Vietnamese diacritics"""
-            vietnamese_chars = ['đ', 'ă', 'â', 'ê', 'ô', 'ơ', 'ư', 'á', 'à', 'ả', 'ã', 'ạ',
-                               'ắ', 'ằ', 'ẳ', 'ẵ', 'ặ', 'ấ', 'ầ', 'ẩ', 'ẫ', 'ậ',
-                               'é', 'è', 'ẻ', 'ẽ', 'ẹ', 'ế', 'ề', 'ể', 'ễ', 'ệ',
-                               'í', 'ì', 'ỉ', 'ĩ', 'ị', 'ó', 'ò', 'ỏ', 'õ', 'ọ',
-                               'ố', 'ồ', 'ổ', 'ỗ', 'ộ', 'ớ', 'ờ', 'ở', 'ỡ', 'ợ',
-                               'ú', 'ù', 'ủ', 'ũ', 'ụ', 'ứ', 'ừ', 'ử', 'ữ', 'ự',
-                               'ý', 'ỳ', 'ỷ', 'ỹ', 'ỵ']
-            return any(char in text.lower() for char in vietnamese_chars)
-
-        def has_spanish_only_chars(text):
-            """Check if text contains Spanish-only characters (ñ, á, é, í, ó, ú, ü, ¿, ¡)"""
-            # Check for Spanish question/exclamation marks
-            if '¿' in text or '¡' in text:
-                return True
-            # Check for ñ
-            if 'ñ' in text.lower():
-                return True
-            return False
-
         # Validation rules
         if language == 'ko':
             # Korean must have Hangul
             if not has_hangul(keyword):
                 return False
             # Korean cannot have Japanese characters
-            if has_hiragana_katakana(keyword) or (has_kanji_only(keyword) and not has_hangul(keyword)):
-                return False
-            # Korean cannot have Vietnamese/Spanish
-            if has_vietnamese_chars(keyword) or has_spanish_only_chars(keyword):
-                return False
-        elif language == 'ja':
-            # Japanese must have Hiragana/Katakana or Kanji
-            if not (has_hiragana_katakana(keyword) or has_kanji_only(keyword)):
-                return False
-            # Japanese cannot have Korean
-            if has_hangul(keyword):
-                return False
-            # Japanese cannot have Vietnamese/Spanish
-            if has_vietnamese_chars(keyword) or has_spanish_only_chars(keyword):
+            if has_hiragana_katakana(keyword):
                 return False
         elif language == 'en':
             # English cannot have Korean/Japanese
             if has_hangul(keyword) or has_hiragana_katakana(keyword):
-                return False
-            # English cannot have Vietnamese (common in trends)
-            if has_vietnamese_chars(keyword):
-                return False
-            # English cannot have Spanish-only markers
-            if has_spanish_only_chars(keyword):
                 return False
 
         return True
@@ -1346,17 +1229,18 @@ class KeywordCurator:
             by_type[ktype] = by_type.get(ktype, 0) + 1
 
         # Count by language
-        by_lang = {"en": 0, "ko": 0, "ja": 0}
+        by_lang = {"en": 0, "ko": 0}
         for t in topics:
             lang = t.get('lang', 'en')
-            by_lang[lang] = by_lang.get(lang, 0) + 1
+            if lang in by_lang:
+                by_lang[lang] = by_lang.get(lang, 0) + 1
 
         safe_print(f"\n{'='*60}")
         safe_print(f"  📊 Queue Statistics")
         safe_print(f"{'='*60}")
         safe_print(f"  Status: Pending={by_status['pending']}, In Progress={by_status['in_progress']}, Completed={by_status['completed']}")
         safe_print(f"  Type: 🔥 Trend={by_type['trend']}, 🌲 Evergreen={by_type['evergreen']}, Unknown={by_type['unknown']}")
-        safe_print(f"  Language: EN={by_lang['en']}, KO={by_lang['ko']}, JA={by_lang['ja']}")
+        safe_print(f"  Language: EN={by_lang['en']}, KO={by_lang['ko']}")
         safe_print(f"{'='*60}\n")
 
 

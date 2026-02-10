@@ -54,13 +54,6 @@ class QualityGate:
                 "게임체인저",
                 "주목할만한",
                 "~하는 것이 중요하다"
-            ],
-            "ja": [
-                "もちろん",
-                "重要です",
-                "革新的",
-                "ゲームチェンジャー",
-                "注目すべき"
             ]
         }
 
@@ -171,8 +164,6 @@ class QualityGate:
         path_str = str(filepath)
         if '/ko/' in path_str:
             return 'ko'
-        elif '/ja/' in path_str:
-            return 'ja'
         return 'en'
 
     def _detect_content_type(self, frontmatter: Dict, body: str) -> str:
@@ -211,7 +202,7 @@ class QualityGate:
         clean_text = re.sub(r'[#*`\[\]()_]', '', body)
 
         # Count based on language
-        if lang in ['ja', 'ko']:
+        if lang == 'ko':
             # Character count
             count = len(re.sub(r'\s+', '', clean_text))
             count_label = f"{count} chars"
@@ -310,50 +301,30 @@ class QualityGate:
         # Remove markdown syntax for accurate count
         clean_text = re.sub(r'[#*`\[\]()_]', '', body)
 
-        # Japanese and Korean use character count instead of word count
-        if lang in ['ja', 'ko']:
+        # Korean uses character count instead of word count
+        if lang == 'ko':
             # Count all non-whitespace characters
             char_count = len(re.sub(r'\s+', '', clean_text))
             checks['info']['char_count'] = char_count
             checks['info']['word_count'] = f"{char_count} chars"
 
-            if lang == 'ja':
-                # Japanese: Target 2800-4200, WARN if outside range
-                if char_count < 2200:
-                    checks['warnings'].append(
-                        f"Character count too low: {char_count} chars (recommended: 2200+)"
-                    )
-                elif 2200 <= char_count < 2800:
-                    checks['warnings'].append(
-                        f"Character count on the lower end: {char_count} chars (target: 2800-4200)"
-                    )
-                elif 4200 <= char_count <= 7000:
-                    checks['warnings'].append(
-                        f"Character count high: {char_count} chars (target: 2800-4200, Editor should compress)"
-                    )
-                elif char_count > 11000:
-                    checks['warnings'].append(
-                        f"Character count extremely high: {char_count} chars (strongly recommend compressing)"
-                    )
-            else:  # ko
-                # Korean: Target 2000-3200, WARN if outside range
-                # (Korean has ~20% fewer chars than Japanese for same reading time)
-                if char_count < 1500:
-                    checks['warnings'].append(
-                        f"Character count too low: {char_count} chars (recommended: 1500+)"
-                    )
-                elif 1500 <= char_count < 2000:
-                    checks['warnings'].append(
-                        f"Character count on the lower end: {char_count} chars (target: 2000-3200)"
-                    )
-                elif 3200 <= char_count <= 5000:
-                    checks['warnings'].append(
-                        f"Character count high: {char_count} chars (target: 2000-3200, Editor should compress)"
-                    )
-                elif char_count > 8000:
-                    checks['warnings'].append(
-                        f"Character count extremely high: {char_count} chars (strongly recommend compressing)"
-                    )
+            # Korean: Target 2000-3200, WARN if outside range
+            if char_count < 1500:
+                checks['warnings'].append(
+                    f"Character count too low: {char_count} chars (recommended: 1500+)"
+                )
+            elif 1500 <= char_count < 2000:
+                checks['warnings'].append(
+                    f"Character count on the lower end: {char_count} chars (target: 2000-3200)"
+                )
+            elif 3200 <= char_count <= 5000:
+                checks['warnings'].append(
+                    f"Character count high: {char_count} chars (target: 2000-3200, Editor should compress)"
+                )
+            elif char_count > 8000:
+                checks['warnings'].append(
+                    f"Character count extremely high: {char_count} chars (strongly recommend compressing)"
+                )
         else:
             # English uses word count
             words = clean_text.split()
@@ -658,16 +629,15 @@ class QualityGate:
         # Extract main keywords from title (remove common words)
         common_words = {
             'en': {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'from', 'up', 'about', 'into', 'through', 'during'},
-            'ko': {'의', '이', '가', '을', '를', '에', '와', '과', '도', '는', '은', '까지', '부터', '에서'},
-            'ja': {'の', 'に', 'を', 'は', 'が', 'で', 'と', 'から', 'まで', 'より', 'へ'}
+            'ko': {'의', '이', '가', '을', '를', '에', '와', '과', '도', '는', '은', '까지', '부터', '에서'}
         }
 
         lang = checks['language']
         stop_words = common_words.get(lang, set())
 
         # Extract significant keywords based on language
-        if lang in ['ja', 'ko']:
-            # For CJK languages, check if significant portions of title appear in body
+        if lang == 'ko':
+            # For Korean, check if significant portions of title appear in body
             # Remove stop words and punctuation from title
             title_clean = ''.join(c for c in title if c not in stop_words and not re.match(r'[\W_\d]', c))
 
@@ -688,8 +658,8 @@ class QualityGate:
             matches = sum(1 for seq in char_sequences if seq in body_lower)
             match_ratio = matches / len(char_sequences) if char_sequences else 0
 
-            # More lenient threshold for CJK (10% instead of 30%)
-            # CJK languages have more complex character matching due to different writing systems
+            # More lenient threshold for Korean (10% instead of 30%)
+            # Korean has more complex character matching due to different writing systems
             if match_ratio < 0.10:
                 checks['critical_failures'].append(
                     f"Title-content mismatch: Only {match_ratio*100:.0f}% of title character sequences found in body (expected >10%)"
@@ -731,7 +701,6 @@ class QualityGate:
         # Pattern 1: Title mentions person/celebrity but content doesn't
         celebrity_patterns = {
             'ko': r'(강타|김연아|김연경|손흥민|아이유|방탄소년단)',
-            'ja': r'(芸能人|アイドル|歌手)',
             'en': r'(celebrity|star|singer|idol)'
         }
 
@@ -811,8 +780,6 @@ def return_failed_topics_to_queue(failed_files: List[str]):
                     lang = 'en'
                 elif '/ko/' in str(filepath):
                     lang = 'ko'
-                elif '/ja/' in str(filepath):
-                    lang = 'ja'
                 else:
                     continue
 

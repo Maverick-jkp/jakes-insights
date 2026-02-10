@@ -20,7 +20,7 @@
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │              Draft Agent (Claude API - Sonnet 4.5)              │
-│                  System Prompt: EN/KO/JA specific               │
+│                  System Prompt: EN/KO specific                  │
 │                  max_tokens: 12000                              │
 │                  Prompt Caching: Enabled (20% cost reduction)   │
 └─────────────────────────────────────────────────────────────────┘
@@ -33,7 +33,7 @@
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │                    Quality Gate (quality_gate.py)                │
-│   - Word count: 800-2000 (EN/KO), 3000-7500 chars (JA)         │
+│   - Word count: 800-2000 (EN/KO)                               │
 │   - AI phrase blacklist check                                   │
 │   - SEO validation (meta description, keywords)                 │
 │   - Image check (WARNING only)                                  │
@@ -53,13 +53,13 @@
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │                    Git Commit (Markdown Files)                   │
-│   Location: content/{en,ko,ja}/{category}/{date}-{slug}.md     │
+│   Location: content/{en,ko}/{category}/{date}-{slug}.md        │
 │   Frontmatter: title, date, categories, tags, image, etc.      │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │          GitHub Actions (.github/workflows/daily-content.yml)   │
-│   Schedule: 6 AM, 12 PM, 6 PM KST (may delay 15-60 min)        │
+│   Schedule: 7 PM KST daily (5 posts/day, quality-first)         │
 │   Steps: pytest → generate → quality gate → create PR          │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
@@ -96,10 +96,10 @@ Topics in `data/topics_queue.json` flow through these states:
 | Script | Purpose | Key Functions | When to Run |
 |--------|---------|---------------|-------------|
 | `topic_queue.py` | Topic state management | `reserve_topics()`, `mark_completed()`, `cleanup()` | Always (imported by others) |
-| `generate_posts.py` | Content generation | `generate_post()` (Draft + Editor agents) | Manual or automated (3x daily) |
+| `generate_posts.py` | Content generation | `generate_post()` (Draft + Editor agents) | Manual or automated (1x daily, 5 posts) |
 | `quality_gate.py` | Validation checks | `validate_content()`, `check_ai_phrases()` | After generation (automated) |
 | `ai_reviewer.py` | 5-criteria scoring | `review_content()`, provides recommendations | Optional (manual review) |
-| `keyword_curator.py` | Keyword research | Fetches Google Trends, human filtering required | Weekly (Fridays 5 PM KST) |
+| `keyword_curator.py` | Keyword research | Fetches Google Trends, mixed mode (trend 70% + evergreen 30%) | Daily (4 PM KST, 5 keywords) |
 | `affiliate_config.py` | Affiliate link management | `detect_product_mentions()`, `generate_affiliate_link()` | Imported by generate_posts.py |
 
 ---
@@ -161,8 +161,7 @@ content/
 │   ├── sports/
 │   ├── finance/
 │   └── education/
-├── ko/          # Korean posts (same structure)
-└── ja/          # Japanese posts (same structure)
+└── ko/          # Korean posts (same structure)
 ```
 
 **Post Format**: Markdown with YAML frontmatter
@@ -173,8 +172,7 @@ date: 2026-01-22T18:00:00+09:00  # KST timezone required
 categories: ["tech"]
 tags: ["keyword1", "keyword2"]
 description: "120-160 char meta description"
-image: "https://images.unsplash.com/photo-..."
-imageCredit: "Photo by [Name](https://unsplash.com/@username)"
+## image and imageCredit fields go here
 lang: "en"
 ---
 

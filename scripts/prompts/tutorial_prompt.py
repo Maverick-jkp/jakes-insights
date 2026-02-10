@@ -2,7 +2,7 @@
 Tutorial Prompt Template
 
 For comprehensive, in-depth tutorials with code examples, comparison tables,
-and step-by-step guides. Target: 2,500-3,500 words (EN/KO), 7,500-10,500 chars (JA).
+and step-by-step guides. Target: 2,500-3,500 words (EN/KO).
 """
 
 def get_tutorial_prompt(topic: str, keywords: list, language: str, audience: str = "developers and engineers") -> str:
@@ -12,7 +12,7 @@ def get_tutorial_prompt(topic: str, keywords: list, language: str, audience: str
     Args:
         topic: Main topic of the tutorial
         keywords: List of relevant keywords
-        language: 'en', 'ko', or 'ja'
+        language: 'en' or 'ko'
         audience: Target audience description
 
     Returns:
@@ -25,14 +25,12 @@ def get_tutorial_prompt(topic: str, keywords: list, language: str, audience: str
     word_count = {
         'en': '2,500-3,500 words',
         'ko': '2,500-3,500 단어',
-        'ja': '7,500-10,500 文字'
     }.get(language, '2,500-3,500 words')
 
     # Language-specific instructions
     lang_instructions = {
         'en': 'English',
         'ko': '한국어 (Korean)',
-        'ja': '日本語 (Japanese)'
     }.get(language, 'English')
 
     prompt = f"""Write a comprehensive tutorial article on "{topic}".
@@ -218,7 +216,6 @@ def _get_intro_words(language: str) -> str:
     return {
         'en': '200-250 words',
         'ko': '200-250 단어',
-        'ja': '600-750 文字'
     }.get(language, '200-250 words')
 
 
@@ -227,7 +224,6 @@ def _get_background_words(language: str) -> str:
     return {
         'en': '350-400 words',
         'ko': '350-400 단어',
-        'ja': '1050-1200 文字'
     }.get(language, '350-400 words')
 
 
@@ -236,7 +232,6 @@ def _get_comparison_words(language: str) -> str:
     return {
         'en': '300-350 words',
         'ko': '300-350 단어',
-        'ja': '900-1050 文字'
     }.get(language, '300-350 words')
 
 
@@ -245,7 +240,6 @@ def _get_guide_words(language: str) -> str:
     return {
         'en': '900-1,200 words',
         'ko': '900-1,200 단어',
-        'ja': '2700-3600 文字'
     }.get(language, '900-1,200 words')
 
 
@@ -254,7 +248,6 @@ def _get_examples_words(language: str) -> str:
     return {
         'en': '400-500 words',
         'ko': '400-500 단어',
-        'ja': '1200-1500 文字'
     }.get(language, '400-500 words')
 
 
@@ -263,7 +256,6 @@ def _get_tips_words(language: str) -> str:
     return {
         'en': '300-400 words',
         'ko': '300-400 단어',
-        'ja': '900-1200 文字'
     }.get(language, '300-400 words')
 
 
@@ -272,7 +264,6 @@ def _get_conclusion_words(language: str) -> str:
     return {
         'en': '200-250 words',
         'ko': '200-250 단어',
-        'ja': '600-750 文字'
     }.get(language, '200-250 words')
 
 
@@ -313,17 +304,5 @@ BANNED PHRASES:
 - "이런 경험 있으시죠?" (튜토리얼에 부적절)
 - "간단하게 X를 하면 됩니다" (실제로 복잡할 때)
 """,
-        'ja': """
-日本語品質ルール:
-- 過度なヘッジング禁止: 「〜と思います」「〜かもしれません」は最小限に
-- 「ただし」は全体で2回まで
-- 明確な指示文を使用: 「〜してください」「〜します」
-- コードコメントは日本語で記述
-- 架空のライブラリやAPIは絶対に使用しない
-
-トーン要件:
-- 先輩が後輩に教えるような親しみやすさ
-- 専門用語は必ず説明を添える
-"""
     }
     return rules.get(language, '')

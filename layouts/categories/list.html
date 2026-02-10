@@ -9,40 +9,30 @@
     {{- if eq .Title "Tech" -}}
         {{- if eq $.Site.Language.Lang "ko" -}}
             {{- $metaDescription = "최신 기술 트렌드, 개발 인사이트, 혁신적인 솔루션을 다루는 기술 카테고리입니다. 기술의 본질을 탐구하고 미래를 설계합니다." -}}
-        {{- else if eq $.Site.Language.Lang "ja" -}}
-            {{- $metaDescription = "最新のテクノロジートレンド、開発インサイト、革新的なソリューションを扱うテクノロジーカテゴリーです。技術の本質を探求し、未来をデザインします。" -}}
         {{- else -}}
             {{- $metaDescription = "Explore cutting-edge technology trends, development insights, and innovative solutions. Discover the essence of technology and design the future." -}}
         {{- end -}}
     {{- else if eq .Title "Business" -}}
         {{- if eq $.Site.Language.Lang "ko" -}}
             {{- $metaDescription = "비즈니스 전략, 경영 인사이트, 성장 스토리를 다루는 비즈니스 카테고리입니다. 비즈니스의 숨은 원리를 발견하고 성장을 만듭니다." -}}
-        {{- else if eq $.Site.Language.Lang "ja" -}}
-            {{- $metaDescription = "ビジネス戦略、経営インサイト、成長ストーリーを扱うビジネスカテゴリーです。ビジネスの隠れた原理を発見し、成長を創造します。" -}}
         {{- else -}}
             {{- $metaDescription = "Explore business strategies, management insights, and growth stories. Discover hidden principles of business and create sustainable growth." -}}
         {{- end -}}
     {{- else if eq .Title "Society" -}}
         {{- if eq $.Site.Language.Lang "ko" -}}
             {{- $metaDescription = "사회 이슈, 문화 현상, 트렌드 분석을 다루는 사회 카테고리입니다. 사회의 변화를 읽고 더 나은 내일을 상상합니다." -}}
-        {{- else if eq $.Site.Language.Lang "ja" -}}
-            {{- $metaDescription = "社会問題、文化現象、トレンド分析を扱う社会カテゴリーです。社会の変化を読み取り、より良い明日を想像します。" -}}
         {{- else -}}
             {{- $metaDescription = "Explore social issues, cultural phenomena, and trend analysis. Read societal changes and imagine a better tomorrow together." -}}
         {{- end -}}
     {{- else if eq .Title "Entertainment" -}}
         {{- if eq $.Site.Language.Lang "ko" -}}
             {{- $metaDescription = "영화, 음악, 문화 콘텐츠를 다루는 엔터테인먼트 카테고리입니다. 문화의 흐름을 따라가며 즐거움을 발견합니다." -}}
-        {{- else if eq $.Site.Language.Lang "ja" -}}
-            {{- $metaDescription = "映画、音楽、文化コンテンツを扱うエンターテインメントカテゴリーです。文化の流れを追いかけ、楽しさを発見します。" -}}
         {{- else -}}
             {{- $metaDescription = "Explore movies, music, and cultural content. Follow cultural trends and discover joy in entertainment." -}}
         {{- end -}}
     {{- else if eq .Title "Sports" -}}
         {{- if eq $.Site.Language.Lang "ko" -}}
             {{- $metaDescription = "스포츠 뉴스, 경기 분석, 선수 스토리를 다루는 스포츠 카테고리입니다. 열정과 도전의 순간들을 함께합니다." -}}
-        {{- else if eq $.Site.Language.Lang "ja" -}}
-            {{- $metaDescription = "スポーツニュース、試合分析、選手ストーリーを扱うスポーツカテゴリーです。情熱と挑戦の瞬間を共有します。" -}}
         {{- else -}}
             {{- $metaDescription = "Explore sports news, game analysis, and athlete stories. Share moments of passion and challenge." -}}
         {{- end -}}
@@ -409,32 +399,24 @@
             {{ if eq .Title "Tech" }}
                 {{ if eq $.Site.Language.Lang "ko" }}
                 <p class="category-description">기술의 본질을 파헤치고, 미래를 설계합니다.</p>
-                {{ else if eq $.Site.Language.Lang "ja" }}
-                <p class="category-description">テクノロジーの本質を探求し、未来をデザインします。</p>
                 {{ else }}
                 <p class="category-description">Exploring the essence of technology and designing the future.</p>
                 {{ end }}
             {{ else if eq .Title "Business" }}
                 {{ if eq $.Site.Language.Lang "ko" }}
                 <p class="category-description">비즈니스의 숨은 원리를 발견하고, 성장을 만듭니다.</p>
-                {{ else if eq $.Site.Language.Lang "ja" }}
-                <p class="category-description">ビジネスの隠れた原理を発見し、成長を創造します。</p>
                 {{ else }}
                 <p class="category-description">Discovering hidden principles of business and creating growth.</p>
                 {{ end }}
             {{ else if eq .Title "Society" }}
                 {{ if eq $.Site.Language.Lang "ko" }}
                 <p class="category-description">사회의 변화를 읽고, 더 나은 내일을 상상합니다.</p>
-                {{ else if eq $.Site.Language.Lang "ja" }}
-                <p class="category-description">社会の変化を読み取り、より良い明日を想像します。</p>
                 {{ else }}
                 <p class="category-description">Reading societal changes and imagining a better tomorrow.</p>
                 {{ end }}
             {{ else if eq .Title "Entertainment" }}
                 {{ if eq $.Site.Language.Lang "ko" }}
                 <p class="category-description">문화의 흐름을 따라가며, 즐거움을 발견합니다.</p>
-                {{ else if eq $.Site.Language.Lang "ja" }}
-                <p class="category-description">文化の流れを追いかけ、楽しさを発見します。</p>
                 {{ else }}
                 <p class="category-description">Following cultural trends and discovering joy.</p>
                 {{ end }}
@@ -483,8 +465,6 @@
                 <div class="card-content">
                     <div class="post-date">
                         {{ if eq $.Site.Language.Lang "ko" }}
-                            {{ .Date.Format "2006.01.02" }}
-                        {{ else if eq $.Site.Language.Lang "ja" }}
                             {{ .Date.Format "2006.01.02" }}
                         {{ else }}
                             {{ .Date.Format "Jan 02, 2006" }}

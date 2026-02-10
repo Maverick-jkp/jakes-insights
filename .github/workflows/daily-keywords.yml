@@ -9,7 +9,7 @@ on:
       count:
         description: 'Number of keywords to generate'
         required: false
-        default: '25'
+        default: '5'
       keyword_type:
         description: 'Keyword type (trend, evergreen, or mixed)'
         required: false
@@ -17,7 +17,7 @@ on:
       evergreen_ratio:
         description: 'Ratio of evergreen keywords in mixed mode (0.0-1.0)'
         required: false
-        default: '0.2'
+        default: '0.3'
 
 jobs:
   curate-keywords:
@@ -84,9 +84,9 @@ jobs:
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
-          COUNT="${{ github.event.inputs.count || '25' }}"
+          COUNT="${{ github.event.inputs.count || '5' }}"
           TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
-          RATIO="${{ github.event.inputs.evergreen_ratio || '0.2' }}"
+          RATIO="${{ github.event.inputs.evergreen_ratio || '0.3' }}"
 
           echo "📝 Generating $COUNT new keywords (type: $TYPE, evergreen ratio: $RATIO)..."
           python scripts/keyword_curator.py --count "$COUNT" --type "$TYPE" --evergreen-ratio "$RATIO" --auto

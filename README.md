@@ -1,6 +1,6 @@
 # 🤖 Jake's Tech Insights - Automated Blog System
 
-완전 자동화된 다국어 블로그 플랫폼 with AI Content Generation
+In-depth tech analysis and data-driven reports in English and Korean
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.123.0-FF4088?logo=hugo)](https://gohugo.io/)
 [![Claude API](https://img.shields.io/badge/Claude-Sonnet%204.5-8B5CF6)](https://anthropic.com/)
@@ -13,7 +13,7 @@
 
 ### Key Features
 
-- 🌍 **3개 언어 동시 지원**: English, 한국어, 日本語
+- 🌍 **2개 언어 지원**: English, 한국어
 - 🤖 **완전 자동 생성**: Topic Queue → Draft → Edit → Review → PR
 - ✅ **품질 보증**: Quality Gate + AI Self-Review (5-criteria scoring)
 - 📊 **상세 리포트**: Word count, AI phrase detection, SEO metrics
@@ -31,7 +31,7 @@
          ▼
 ┌─────────────────┐
 │ Content Gen     │  Draft Agent → Editor Agent (Claude Sonnet 4.5)
-│ (generate_posts)│  Language-specific prompts (EN/KO/JA)
+│ (generate_posts)│  Language-specific prompts (EN/KO)
 └────────┬────────┘
          │
          ▼
@@ -114,7 +114,6 @@ jakes-tech-insights/
 ├── content/                  # Hugo content
 │   ├── en/                   # English posts
 │   ├── ko/                   # Korean posts
-│   └── ja/                   # Japanese posts
 ├── data/
 │   └── topics_queue.json     # Topic queue state
 ├── scripts/
@@ -229,7 +228,7 @@ git commit -m "Update topics"
 ## 📊 Quality Standards
 
 ### Content Requirements
-- **Word count**: 800-2000 words (EN/KO), 3000-7500 chars (JA)
+- **Word count**: 800-2000 words (EN/KO)
 - **Structure**: 3-4 main sections (## headings)
 - **Tone**: Professional but friendly
 - **Paragraphs**: Short and concise (2-4 sentences each)
@@ -239,7 +238,6 @@ git commit -m "Update topics"
 ### AI Phrase Blacklist
 - English: "revolutionary", "game-changer", "cutting-edge", "it's important to note"
 - Korean: "물론", "혁신적", "게임체인저"
-- Japanese: "もちろん", "革新的", "ゲームチェンジャー"
 
 ### AI Review Criteria
 1. **Authenticity** (1-10): Natural human tone
@@ -256,23 +254,19 @@ git commit -m "Update topics"
 ## 🔄 Automation Workflow
 
 ### Daily Schedule (GitHub Actions)
-- **9 AM UTC** (6 PM KST): Auto-generate 3 posts
-- Quality gate runs automatically
-- AI review provides recommendations
-- Creates PR for human approval
+- **Keywords**: 4 PM KST - Curate 5 mixed keywords (trend 70% + evergreen 30%)
+- **Content**: 7 PM KST - Generate 5 posts from queue
+- Quality gate + AI review runs automatically
+- Auto-commit to main on quality pass
 
 ### Cost Optimization
 **Token Settings**:
-- Draft generation: 12000 max_tokens (ensures completion for all languages)
+- Draft generation: 12000 max_tokens
 - Editor refinement: 12000 max_tokens
-- Structure-based: 3-4 sections (no strict word count limits)
-- Expected output: 800-2,000 words (EN/KO), 3,000-7,500 chars (JA)
-- Est. cost: ~$0.09/post × 3 posts/day = $8.1/month
-
-**Scaling Strategy**:
-- Week 1-2: 1 post/day ($2.7/month) - Manual review
-- Week 3-4: 3 posts/day ($8.1/month) - Semi-auto
-- Month 2+: Adjust based on quality/budget
+- Structure-based: 3-4 sections
+- Expected output: 800-2,000 words (EN/KO)
+- Est. cost: ~$0.09/post × 5 posts/day = $13.5/month
+- Prompt Caching: ~20-25% cost reduction
 
 ### Manual Trigger
 1. Go to **Actions** tab on GitHub
@@ -290,7 +284,7 @@ git commit -m "Update topics"
 - **Pending**: 9
 
 ### Coverage
-- **Languages**: EN (6), KO (6), JA (6)
+- **Languages**: EN, KO
 - **Categories**: Tech (6), Business (6), Lifestyle (6)
 - **Priority Range**: 6-8
 
@@ -300,10 +294,10 @@ git commit -m "Update topics"
 - ✅ Queue system: State transitions working
 - ✅ Retry mechanism: Failures handled gracefully
 - ✅ max_tokens optimization: 4000 → 8000 → 12000
-- ✅ Tone optimization: Toss style (KO), Medium style (EN), Natural (JA)
-- ✅ Quality Gate updated: 800-2,000 words, 3,000-7,500 chars (JA)
+- ✅ Tone optimization: Toss style (KO), Medium style (EN)
+- ✅ Quality Gate updated: 800-2,000 words (EN/KO)
 - ✅ Structure-based constraints: 3-4 sections (removed strict word counts)
-- ✅ Prompt Caching: 20-25% cost reduction ($8.1 → $6.3/month)
+- ✅ Prompt Caching: 20-25% cost reduction
 - ✅ Unsplash API: Featured images auto-generated with credits
 - ✅ Keyword Curation: Semi-automated with human filtering (5 min/week)
 
@@ -329,7 +323,7 @@ UNSPLASH_ACCESS_KEY=your-unsplash-access-key-here
 
 ### ✅ Phase 1: Foundation (Complete)
 - [x] Hugo site setup with PaperMod theme
-- [x] Multi-language support (EN/KO/JA)
+- [x] Multi-language support (EN/KO)
 - [x] Category system (Tech/Business/Lifestyle)
 - [x] Navigation and UI fixes
 
@@ -343,7 +337,7 @@ UNSPLASH_ACCESS_KEY=your-unsplash-access-key-here
 ### ✅ Phase 3: Enhancement (Complete)
 - [x] Workflow setup on GitHub
 - [x] Test full pipeline end-to-end
-- [x] Monitor quality metrics (KO/JA word count issue identified)
+- [x] Monitor quality metrics (KO word count issue identified)
 - [x] max_tokens optimization (4000 → 8000 → 12000)
 - [x] Tone optimization (Toss/Medium/Natural styles)
 - [x] Quality Gate criteria updated (800-2,000 words for flexibility)
@@ -356,12 +350,12 @@ UNSPLASH_ACCESS_KEY=your-unsplash-access-key-here
 - [ ] A/B testing for titles (optional)
 - [ ] n8n integration for monitoring (optional)
 
-### 💰 Phase 5: Monetization (Future)
-- [ ] Custom domain setup
-- [ ] 20-30 manual quality posts
-- [ ] SEO optimization
-- [ ] Google AdSense application
-- [ ] Gradual scaling (1→3→9 posts/day)
+### 💰 Phase 5: Monetization (In Progress)
+- [x] Custom domain setup (jakeinsight.com)
+- [x] 198 quality posts (EN 107, KO 91)
+- [ ] Google AdSense approval (auto ads enabled, pending)
+- [ ] AEO optimization (FAQPage schema)
+- [ ] Dev.to cross-posting automation
 
 ## 💡 Tips & Best Practices
 
@@ -380,9 +374,9 @@ UNSPLASH_ACCESS_KEY=your-unsplash-access-key-here
 5. Regular publishing schedule
 
 ### For Scaling
-1. **Month 1-3**: 1-2 posts/day (manual review)
-2. **Month 4-6**: 3-5 posts/day (semi-auto)
-3. **Month 7+**: 9 posts/day (full auto)
+1. **Current**: 5 posts/day (quality-first, EN/KO bilingual)
+2. **Next**: Focus on depth over volume (report-style content)
+3. **Future**: Scale based on AdSense performance data
 
 ## 🐛 Troubleshooting
 
@@ -425,17 +419,17 @@ MIT License - See [LICENSE](LICENSE) file
 
 **Built with 🤖 AI + ❤️ Human Touch**
 
-*Last updated: 2026-01-17*
-*Version: 3.3 (Day 6 - Monetization Optimization)*
+*Last updated: 2026-02-10*
+*Version: 4.0 (Bilingual pivot - EN/KO, quality-first strategy)*
 
 ## 🔍 Recent Changes
 
 **2026-01-17 (v3.3)**:
 - **Monetization Features**: Related Posts (2-3x pageviews), Table of Contents, References section
 - **Category Expansion**: Added Society (🌍) and Entertainment (🎬) for broader content coverage
-- **Archives Page**: Unified "All Posts" view across all 3 languages
+- **Archives Page**: Unified "All Posts" view across all languages
 - **Hero Images**: Featured image now displays at top of post body (Medium/Substack style)
-- **6 New Posts**: Total posts 29 → 38 (EN/KO/JA Business & Lifestyle topics)
+- **6 New Posts**: Total posts 29 → 38 (EN/KO Business & Lifestyle topics)
 - **Result**: Ready for AdSense application with optimized engagement features
 
 **2026-01-17 (v3.2)**:
@@ -443,7 +437,7 @@ MIT License - See [LICENSE](LICENSE) file
 - **Hooking Elements**: Problem-driven openings, failure cases, authenticity markers
 - **Decision-Stage Focus**: "What to avoid" as much as "What to do"
 - **Real Examples**: Specific companies/stats, not abstract "many companies..."
-- **All Languages**: EN/KO/JA prompts upgraded with same strategies
+- **All Languages**: EN/KO prompts upgraded with same strategies
 
 **2026-01-17 (v3.1)**:
 - **Bug Fix**: Added timezone (+09:00) to all post dates - fixed "future post" issue on production
@@ -467,17 +461,17 @@ MIT License - See [LICENSE](LICENSE) file
 **2026-01-17 (v2.8)**:
 - **Structure-based prompts**: Removed strict word count limits → 3-4 sections structure
 - **Editor behavior**: Changed from "increase length" to "maintain length"
-- **Quality Gate**: 800-2,000 words (EN/KO), 3,000-7,500 chars (JA)
+- **Quality Gate**: 800-2,000 words (EN/KO)
 - **Rationale**: Word count limits caused AI to cut off or exceed - structure is more natural
 
 **2026-01-17 (v2.7)**:
 - **Monetization focus**: Optimized for completion rate & engagement
 - **max_tokens**: 8000 → 12000 (prevents truncation)
-- **Tone optimization**: Toss style (KO), Medium/Substack (EN), Natural (JA)
+- **Tone optimization**: Toss style (KO), Medium/Substack (EN)
 - **Cost**: ~$0.09/post ($8.1/month for 3 posts/day)
 
 **2026-01-16 (v2.6)**:
-- Fixed KO/JA word count issue (794 → target 1,200+)
+- Fixed KO word count issue (794 → target 1,200+)
 - Increased max_tokens: 4000 → 8000
 - Added cost optimization strategy
 

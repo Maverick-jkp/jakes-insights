@@ -70,7 +70,7 @@ def main():
     static_images_dir = "static/images"
 
     # Process all markdown files
-    for lang in ['en', 'ko', 'ja']:
+    for lang in ['en', 'ko']:
         lang_dir = content_dir / lang
 
         for category_dir in lang_dir.iterdir():

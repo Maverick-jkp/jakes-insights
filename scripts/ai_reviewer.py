@@ -182,8 +182,9 @@ class AIReviewer:
         safe_print(f"  🔍 Reviewing with AI: {filepath.name}")
         safe_print(f"  Language: {lang}")
 
-        # Get review prompt
-        prompt = REVIEW_PROMPTS[lang].format(content=content)
+        # Get review prompt (use replace instead of .format() to avoid
+        # KeyError when blog content contains curly braces like {scores})
+        prompt = REVIEW_PROMPTS[lang].replace("{content}", content)
 
         # Call Claude API
         response = self.client.messages.create(

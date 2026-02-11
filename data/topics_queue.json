@@ -5623,6 +5623,137 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-02-09T10:55:51.674310+00:00",
       "completed_at": "2026-02-09T12:32:51.403885+00:00"
+    },
+    {
+      "id": "532-en-society-seamus-culleton-ice-",
+      "keyword": "seamus culleton ice detention",
+      "category": "society",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-11T07:57:13.343639",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users need to understand if they or their family members with legal status are vulnerable to indefinite detention, and what legal protections actually exist",
+      "angle": "Focus on the legal gray zone where valid work permits don't guarantee freedom from ICE detention, creating fear for all immigrants regardless of status",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ice hockey at the 2026 Winter Olympics - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ice_hockey_at_the_2026_Winter_Olympics",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Connor McDavid, Sidney Crosby and Team Canada open Winter Olympics 2026 men's ice hockey tournament ",
+          "url": "https://www.olympics.com/en/milano-cortina-2026/news/winter-olympics-2026-connor-mcdavid-sidney-crosby-canada-ice-hockey-tournament-czechia-watch-schedule-live",
+          "source": "www.olympics.com"
+        },
+        {
+          "title": "Irish man with valid US work permit held in ICE detention for five months | ICE (US Immigration and ",
+          "url": "https://www.theguardian.com/us-news/2026/feb/09/irish-man-seamus-culleton-ice-detention",
+          "source": "www.theguardian.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "533-en-sports-f1",
+      "keyword": "f1",
+      "category": "sports",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-11T07:57:13.343664",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "F1 fans need to know how radical 2026 rule changes will reshuffle team rankings before the season starts and their predictions become worthless",
+      "angle": "Emphasize the complete technical reset in 2026 that could eliminate current team advantages, creating urgency to understand new power dynamics",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "F1 (film) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/F1_(film)",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "LIVE COVERAGE: F1 Pre-Season Testing 2026 – Day 1 in Bahrain",
+          "url": "https://www.formula1.com/en/latest/article/live-coverage-formula-1-aramco-pre-season-testing-2026-test-1-day-1.5v6MBv7UYaprle8jVfHoPv",
+          "source": "www.formula1.com"
+        },
+        {
+          "title": "F1 2026: a look at the cars for the new season – in pictures | Formula One 2026 | The Guardian",
+          "url": "https://www.theguardian.com/sport/gallery/2026/feb/10/f1-2026-formula-one-new-season-cars-in-pictures",
+          "source": "www.theguardian.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "534-ko-business-lg전자-주가",
+      "keyword": "lg전자 주가",
+      "category": "business",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-11T07:57:13.343680",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "투자자들은 LG전자의 정체성 변화(가전→AI로봇)가 주가에 미치는 영향을 즉시 파악해 매수/매도 결정을 내려야 함",
+      "angle": "기업 정체성의 근본적 전환을 강조하여 '지금 아니면 영영 놓칠 기회'라는 긴박감 조성",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "LG전자 주가, 52주 신고가... 왜?",
+          "url": "https://www.ggilbo.com/news/articleView.html?idxno=1141558",
+          "source": "www.ggilbo.com"
+        },
+        {
+          "title": "“가전 회사 → 로봇주 가나?” LG전자, 피지컬AI 기대감에 주가 13% 강세 [종목Pick] - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10674340",
+          "source": "biz.heraldcorp.com"
+        },
+        {
+          "title": "“가전주 아니다, 로봇주다”...LG전자 주가 밀어 올린 건 ‘피지컬 AI’ 기업 전환 - KMJ",
+          "url": "https://www.kmjournal.net/news/articleView.html?idxno=8369",
+          "source": "www.kmjournal.net"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "535-ko-tech-코딩-부트캠프-추천",
+      "keyword": "코딩 부트캠프 추천",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-11T07:57:13.343723",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "비전공자가 개발자 커리어 전환을 위해 적합한 부트캠프를 선택하고 투자 대비 효과를 비교하려는 의도",
+      "angle": "부트캠프별 커리큘럼, 비용, 취업률, 교육 방식을 비교 분석하여 개인 상황에 맞는 선택 기준을 제시하는 가이드",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "2025 부트캠프 TOP5 종류별 추천과 가격, 비전공자 등 정보 총정리 - 내일배움캠프 블로그",
+          "url": "https://nbcamp.spartaclub.kr/blog/2025-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-top5-%EC%A2%85%EB%A5%98%EB%B3%84-%EC%B6%94%EC%B2%9C%EA%B3%BC-%EA%B0%80%EA%B2%A9-%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90-%EB%93%B1-%EC%A0%95%EB%B3%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC-56201?traffic_type=internal",
+          "source": "nbcamp.spartaclub.kr"
+        },
+        {
+          "title": "2025년 코딩 부트캠프 추천 리스트",
+          "url": "https://greenutopia.tistory.com/entry/2025%EB%85%84-%EC%BD%94%EB%94%A9-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-%EC%B6%94%EC%B2%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8",
+          "source": "greenutopia.tistory.com"
+        },
+        {
+          "title": "코딩 부트캠프 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%94%A9_%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84",
+          "source": "ko.wikipedia.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

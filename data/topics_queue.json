@@ -5630,7 +5630,7 @@
       "category": "society",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-11T07:57:13.343639",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5655,7 +5655,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-11T10:51:54.984764+00:00",
+      "completed_at": "2026-02-11T11:00:53.087453+00:00"
     },
     {
       "id": "533-en-sports-f1",
@@ -5663,7 +5665,7 @@
       "category": "sports",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-11T07:57:13.343664",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5688,7 +5690,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-11T10:51:54.984764+00:00",
+      "completed_at": "2026-02-11T11:05:52.006632+00:00"
     },
     {
       "id": "534-ko-business-lg전자-주가",
@@ -5696,7 +5700,7 @@
       "category": "business",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-11T07:57:13.343680",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5721,7 +5725,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-11T10:51:54.984764+00:00",
+      "completed_at": "2026-02-11T10:56:16.495976+00:00"
     },
     {
       "id": "535-ko-tech-코딩-부트캠프-추천",
@@ -5729,7 +5735,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-11T07:57:13.343723",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5753,7 +5759,9 @@
           "source": "ko.wikipedia.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-11T10:51:54.984764+00:00",
+      "completed_at": "2026-02-11T11:11:46.957307+00:00"
     }
   ]
 }

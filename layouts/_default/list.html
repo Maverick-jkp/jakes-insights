@@ -1,395 +1,75 @@
-{{- define "main" }}
+{{ define "main" }}
 
-<!-- Theme Toggle Button -->
-<button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+<div class="container">
+  {{ if .IsHome }}
+  {{/* Hero Section */}}
+  <section class="hero" style="margin: 4rem 0;">
+    <h2 style="font-size: 48px; font-weight: 700; margin-bottom: 1rem;">Global Tech Insights</h2>
+    <p style="font-size: 20px; color: var(--text-secondary);">Where Silicon Valley meets Seoul</p>
+  </section>
 
-<!-- Theme Toggle Script (inline to prevent FOUC) -->
-<script>
-    (function() {
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    })();
-</script>
-
-{{- if (and site.Params.profileMode.enabled .IsHome) }}
-{{- partial "index_profile.html" . }}
-{{- else }} {{/* if not profileMode */}}
-
-{{- if not .IsHome | and .Title }}
-<header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
-  <h1>
-    {{ .Title }}
-    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
-    {{- with .OutputFormats.Get "rss" }}
-    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-    {{- end }}
-    {{- end }}
-  </h1>
-  {{- if .Description }}
-  <div class="post-description">
-    {{ .Description | markdownify }}
-  </div>
-  {{- end }}
-</header>
-{{- end }}
-
-{{- if .Content }}
-<div class="post-content">
-  {{- if not (.Param "disableAnchoredHeadings") }}
-  {{- partial "anchored_headings.html" .Content -}}
-  {{- else }}{{ .Content }}{{ end }}
-</div>
-{{- end }}
-
-{{- $pages := union .RegularPages .Sections }}
-
-{{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
-{{- end }}
-
-{{- $paginator := .Paginate $pages }}
-
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
-{{- partial "home_info.html" . }}
-{{- end }}
-
-{{- $term := .Data.Term }}
-{{- range $index, $page := $paginator.Pages }}
-
-{{- $class := "post-entry" }}
-
-{{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-{{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-{{- $class = "first-entry" }}
-{{- else if $term }}
-{{- $class = "post-entry tag-entry" }}
-{{- end }}
-
-<article class="{{ $class }}">
-  {{- $isHidden := false }}
-  {{- /* Custom cover image rendering for page bundles */ -}}
-  {{- with $page.Resources.GetMatch "cover.*" }}
-  <figure class="entry-cover">
-    {{ $thumb := .Fill "400x200 webp q85" }}
-    {{ $thumb2x := .Fill "800x400 webp q85" }}
-    {{ $fallback := .Fill "400x200 jpg q85" }}
-    <picture>
-      <source
-        srcset="{{ $thumb.RelPermalink }} 1x,
-                {{ $thumb2x.RelPermalink }} 2x"
-        type="image/webp"
-      >
-      <img
-        src="{{ $fallback.RelPermalink }}"
-        alt="{{ $page.Title }}"
-        loading="lazy"
-        width="400"
-        height="200"
-        style="width: 100%; height: auto; object-fit: cover;"
-      >
-    </picture>
-  </figure>
-  {{- else }}
-    {{- /* Fallback to front matter image field */ -}}
-    {{- with $page.Params.image }}
-    <figure class="entry-cover">
-      <img
-        src="{{ . }}"
-        alt="{{ $page.Title }}"
-        loading="lazy"
-      >
-    </figure>
-    {{- end }}
-  {{- end }}
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      {{- .Title }}
-      {{- if .Draft }}
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
-      {{- end }}
-    </h2>
-  </header>
-  {{- if (ne (.Param "hideSummary") true) }}
-  <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  </div>
-  {{- end }}
-  {{- if not (.Param "hideMeta") }}
-  <footer class="entry-footer">
-    {{- partial "post_meta.html" . -}}
-  </footer>
-  {{- end }}
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-</article>
-{{- end }}
-
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-      «&nbsp;{{ i18n "prev_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
-      {{- end }}
-    </a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-      {{- i18n "next_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
-      {{- end }}&nbsp;»
-    </a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
-
-{{- end }}{{/* end profileMode */}}
-
-<!-- Floating Menu -->
-<div class="floating-menu">
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-    <div class="menu-panel" id="menuPanel">
-        <a href="#top">↑ Top</a>
-        <a href="{{ "/" | relLangURL }}" style="font-weight: 600;">🏠 Home</a>
-        <a href="{{ "all-posts" | relLangURL }}" style="color: var(--accent); font-weight: 600;">📋 All Posts</a>
-        <div style="border-top: 1px solid var(--border); margin: 0.5rem 0; padding-top: 0.5rem;">
-            <div style="font-size: 0.75rem; color: var(--accent); padding: 0 1rem 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Categories</div>
-            <div class="category-grid">
-                {{ if eq .Site.Language.Lang "en" }}
-                <a href="/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
-                <a href="/categories/business/"><span class="cat-icon">💼</span><span class="cat-text">Business</span></a>
-                <a href="/categories/society/"><span class="cat-icon">🌍</span><span class="cat-text">Society</span></a>
-                <a href="/categories/entertainment/"><span class="cat-icon">🎬</span><span class="cat-text">Entertainment</span></a>
-                <a href="/categories/sports/"><span class="cat-icon">⚽</span><span class="cat-text">Sports</span></a>
-                {{ else }}
-                <a href="/{{ .Site.Language.Lang }}/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/business/"><span class="cat-icon">💼</span><span class="cat-text">Business</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/society/"><span class="cat-icon">🌍</span><span class="cat-text">Society</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/entertainment/"><span class="cat-icon">🎬</span><span class="cat-text">Entertainment</span></a>
-                <a href="/{{ .Site.Language.Lang }}/categories/sports/"><span class="cat-icon">⚽</span><span class="cat-text">Sports</span></a>
-                {{ end }}
-            </div>
-        </div>
+  {{/* Featured Post */}}
+  {{ $pages := where .Site.RegularPages "Type" "in" (slice "en" "ko") }}
+  {{ $latestPost := index $pages 0 }}
+  {{ with $latestPost }}
+  <article class="featured-post">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $latestPost.Title }}" class="featured-post-image">
+    {{ end }}
+    <div class="featured-post-content">
+      <h3 class="featured-post-title">
+        <a href="{{ .Permalink }}" style="color: inherit; text-decoration: none;">{{ .Title }}</a>
+      </h3>
+      <p class="featured-post-excerpt">{{ .Description | truncate 200 }}</p>
+      <div class="post-card-meta">
+        <span class="post-card-meta-item">{{ .Date.Format "Jan 2, 2006" }}</span>
+        <span class="post-card-meta-item">{{ .ReadingTime }} min read</span>
+        <span class="post-card-meta-item">{{ .Language.LanguageName }}</span>
+      </div>
     </div>
+  </article>
+  {{ end }}
+  {{ end }}
+
+  {{/* Section Title */}}
+  <h2 class="section-title">Latest Posts</h2>
+
+  {{/* Posts Grid */}}
+  <div class="posts-grid">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (slice "en" "ko")) }}
+    {{ range $index, $page := $paginator.Pages }}
+      {{ if gt $index 0 }}  {{/* Skip first (already shown as featured) */}}
+      <article class="post-card">
+        <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
+          {{ with .Params.image }}
+          <img src="{{ . }}" alt="{{ $page.Title }}" class="post-card-image">
+          {{ end }}
+          <div class="post-card-content">
+            <h3 class="post-card-title">{{ .Title }}</h3>
+            <div class="post-card-meta">
+              <span class="post-card-meta-item">{{ .Date.Format "Jan 2" }}</span>
+              <span class="post-card-meta-item">{{ .ReadingTime }} min</span>
+              <span class="post-card-meta-item">{{ .Language.LanguageName }}</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{/* Pagination */}}
+  {{ if gt $paginator.TotalPages 1 }}
+  <nav class="pagination" style="margin: 3rem 0; text-align: center;">
+    {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}" class="btn btn-secondary">← Prev</a>
+    {{ end }}
+    <span style="margin: 0 1rem; color: var(--text-secondary);">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+    {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}" class="btn btn-secondary">Next →</a>
+    {{ end }}
+  </nav>
+  {{ end }}
 </div>
 
-<script>
-    function toggleMenu() {
-        const panel = document.getElementById('menuPanel');
-        panel.classList.toggle('active');
-    }
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        const menu = document.querySelector('.floating-menu');
-        if (!menu.contains(event.target)) {
-            document.getElementById('menuPanel').classList.remove('active');
-        }
-    });
-
-    // Theme toggle function
-    function toggleTheme() {
-        const currentTheme = localStorage.getItem('theme') || 'dark';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        localStorage.setItem('theme', newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
-
-        const toggleBtn = document.getElementById('theme-toggle');
-        toggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-        toggleBtn.setAttribute('aria-label', `Switch to ${newTheme === 'dark' ? 'light' : 'dark'} mode`);
-    }
-
-    // Initialize theme on load
-    (function() {
-        const theme = localStorage.getItem('theme') || 'dark';
-        const toggleBtn = document.getElementById('theme-toggle');
-        if (toggleBtn) {
-            toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
-            toggleBtn.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
-        }
-    })();
-</script>
-
-<style>
-    /* Theme toggle button */
-    #theme-toggle {
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        width: 50px;
-        height: 50px;
-        border: 2px solid var(--border);
-        background: var(--surface);
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        z-index: 200;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    #theme-toggle:hover {
-        border-color: var(--accent);
-        background: var(--bg);
-        transform: scale(1.1);
-    }
-
-    @media (max-width: 768px) {
-        #theme-toggle {
-            width: 44px;
-            height: 44px;
-            font-size: 1.25rem;
-            top: 0.75rem;
-            right: 0.75rem;
-        }
-    }
-
-    /* Floating Menu */
-    .floating-menu {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 90;
-    }
-
-    .menu-btn {
-        width: 60px;
-        height: 60px;
-        background: var(--accent);
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        color: var(--bg);
-        box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
-        transition: all 0.3s;
-    }
-
-    .menu-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 30px rgba(0, 255, 136, 0.6);
-    }
-
-    .menu-panel {
-        position: absolute;
-        bottom: 80px;
-        right: 0;
-        background: var(--surface);
-        border: 1px solid var(--accent);
-        border-radius: 1rem;
-        padding: 1rem;
-        min-width: 200px;
-        display: none;
-        box-shadow: 0 10px 40px rgba(0, 255, 136, 0.2);
-    }
-
-    .menu-panel.active {
-        display: block;
-        animation: slideUp 0.3s;
-    }
-
-    @keyframes slideUp {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .menu-panel a {
-        display: block;
-        padding: 0.75rem 1rem;
-        color: var(--text);
-        text-decoration: none;
-        border-radius: 0.5rem;
-        transition: all 0.3s;
-        font-family: 'Space Mono', monospace;
-        font-size: 0.875rem;
-    }
-
-    .menu-panel a:hover {
-        background: rgba(0, 255, 136, 0.1);
-        color: var(--accent);
-    }
-
-    .category-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.25rem;
-    }
-
-    .category-grid a {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.75rem 1rem;
-        color: var(--text);
-        text-decoration: none;
-        border-radius: 0.5rem;
-        transition: all 0.3s;
-        font-family: 'Space Mono', monospace;
-        font-size: 0.72rem;
-    }
-
-    .category-grid a:hover {
-        background: rgba(0, 255, 136, 0.1);
-        color: var(--accent);
-    }
-
-    .category-grid .cat-icon {
-        flex-shrink: 0;
-        width: 1.1em;
-        text-align: center;
-    }
-
-    .category-grid .cat-text {
-        flex: 1;
-        white-space: nowrap;
-    }
-
-    @media (max-width: 768px) {
-        .floating-menu {
-            bottom: 1rem;
-            right: 1rem;
-        }
-
-        .menu-btn {
-            width: 54px;
-            height: 54px;
-            font-size: 1.35rem;
-        }
-
-        .menu-panel {
-            min-width: 280px;
-            max-width: calc(100vw - 2rem);
-        }
-    }
-</style>
-
-{{- end }}{{- /* end main */ -}}
+{{ end }}

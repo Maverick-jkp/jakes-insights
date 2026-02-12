@@ -1,0 +1,228 @@
+/* Main Stylesheet */
+/* Global Tech Insights - Custom Theme */
+
+@import "variables.css";
+
+/* === Reset & Base === */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-loose);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+/* === Typography === */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: -0.02em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: var(--text-2xl);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+p {
+  margin-bottom: var(--space-lg);
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--accent-purple);
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: var(--weight-semibold);
+}
+
+em {
+  font-style: italic;
+}
+
+/* === Lists === */
+
+ul, ol {
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-xl);
+}
+
+li {
+  margin-bottom: var(--space-sm);
+}
+
+/* === Code === */
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--code-border);
+  color: var(--code-text);
+}
+
+pre {
+  margin: var(--space-xl) 0;
+  overflow-x: auto;
+}
+
+pre code {
+  display: block;
+  padding: var(--space-lg);
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-md);
+  line-height: 1.6;
+  font-size: var(--text-sm);
+}
+
+/* === Tables === */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-xl) 0;
+  font-size: var(--text-sm);
+}
+
+thead {
+  background: var(--hover-bg);
+}
+
+th {
+  padding: var(--space-md);
+  text-align: left;
+  font-weight: var(--weight-semibold);
+  border-bottom: 2px solid var(--accent-blue);
+  color: var(--text-primary);
+}
+
+td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--accent-gray);
+}
+
+tr:hover {
+  background: var(--hover-bg);
+}
+
+/* === Blockquotes === */
+
+blockquote {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-lg) var(--space-xl);
+  border-left: 4px solid var(--accent-blue);
+  background: var(--bg-secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+blockquote p {
+  margin-bottom: var(--space-md);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* === Images === */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+figure {
+  margin: var(--space-2xl) 0;
+}
+
+figcaption {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: var(--space-sm);
+}
+
+/* === Horizontal Rule === */
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--accent-gray) 50%,
+    transparent 100%
+  );
+  margin: var(--space-3xl) 0;
+}
+
+/* === Container === */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+/* === Utilities === */
+
+.text-center {
+  text-align: center;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+
+/* === Responsive === */
+
+@media (max-width: 640px) {
+  :root {
+    --text-3xl: 36px;
+    --text-2xl: 28px;
+    --text-xl: 22px;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+}

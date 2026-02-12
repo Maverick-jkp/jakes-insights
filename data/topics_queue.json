@@ -4684,9 +4684,9 @@
       "category": "entertainment",
       "lang": "en",
       "priority": 8,
-      "status": "in_progress",
+      "status": "pending",
       "created_at": "2026-02-08T07:41:26.234540",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Discover what happened during Franco's absence and whether his return signals Hollywood's shifting standards on accountability",
       "angle": "Career resurrection after controversy - what was hidden and what's now being revealed",
@@ -4710,7 +4710,7 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "483-en-tech-arc-raiders",
@@ -4748,9 +4748,9 @@
       "category": "sports",
       "lang": "en",
       "priority": 9,
-      "status": "in_progress",
+      "status": "completed",
       "created_at": "2026-02-08T18:10:41.800999",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Fans need live stream info and betting odds NOW before match starts tomorrow - missing this means losing betting opportunities and unable to watch historic first encounter",
       "angle": "Underdog drama: Nepal faces 15:1 odds against England favorites in their first-ever T20 World Cup encounter",
@@ -4774,7 +4774,9 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-12T02:56:36.831166+00:00",
+      "completed_at": "2026-02-12T03:00:32.341541+00:00"
     },
     {
       "id": "488-en-society-earthquake-now",
@@ -4817,9 +4819,9 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "in_progress",
+      "status": "pending",
       "created_at": "2026-02-08T18:10:41.801200",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Users need to know if their printers will stop working and what alternatives exist before it's too late to return or upgrade",
       "angle": "Tech obsolescence: Microsoft's driver removal puts millions of legacy printers on death row",
@@ -4843,7 +4845,7 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "490-en-sports-afghanistan-vs-new-z",
@@ -4886,9 +4888,9 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "in_progress",
+      "status": "pending",
       "created_at": "2026-02-08T18:10:41.801293",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Users need to find correct streaming platform NOW before tournament starts or miss live matches and waste money on wrong subscriptions",
       "angle": "Access confusion: Complex regional broadcasting deals create viewer frustration and subscription waste",
@@ -4907,7 +4909,7 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "492-ko-society-정원오",
@@ -4917,7 +4919,7 @@
       "priority": 9,
       "status": "in_progress",
       "created_at": "2026-02-08T18:10:41.801340",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "서울 부동산 정책 변화가 내 주택 구매 타이밍과 가격에 직접 영향 - 지금 판단 못하면 매수 기회 상실",
       "angle": "정치 대립: 차기 서울시장 후보들의 부동산 정책 충돌이 시민 자산에 미치는 실질적 영향",
@@ -4941,7 +4943,8 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-12T04:12:09.599200+00:00"
     },
     {
       "id": "497-en-tech-nvidia",
@@ -4949,9 +4952,9 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "in_progress",
+      "status": "completed",
       "created_at": "2026-02-08T18:27:00.413122",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Investors fear missing the final window to capitalize on Nvidia's dominance as GPU supply constraints and competition threaten market share",
       "angle": "Analyze Nvidia's stock volatility through the lens of production delays and AMD/Intel catching up",
@@ -4975,7 +4978,9 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-12T04:17:16.450227+00:00",
+      "completed_at": "2026-02-12T04:21:46.285268+00:00"
     },
     {
       "id": "498-en-society-latest",
@@ -5018,9 +5023,9 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "in_progress",
+      "status": "pending",
       "created_at": "2026-02-08T18:27:00.413302",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Developers seek confirmation that local AI can replace expensive API subscriptions before renewing annual contracts",
       "angle": "Compare LocalGPT's persistent memory vs ChatGPT's data harvesting risks",
@@ -5028,7 +5033,7 @@
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "500-en-tech-DoNotNotify",
@@ -5036,9 +5041,9 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "in_progress",
+      "status": "pending",
       "created_at": "2026-02-08T18:27:00.413333",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "Android users panic-install DoNotNotify after learning notifications bypass security permissions",
       "angle": "Expose how notification channels grant apps background data access users never consented to",
@@ -5046,7 +5051,7 @@
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "504-ko-business-쿠팡",
@@ -5073,9 +5078,9 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "in_progress",
+      "status": "pending",
       "created_at": "2026-02-08T18:27:00.413568",
-      "retry_count": 0,
+      "retry_count": 1,
       "keyword_type": "trend",
       "search_intent": "개발자들이 GitHub Copilot 같은 AI 에이전트 발전 보며 자기 직무 대체 가능성과 재교육 필요성 절박하게 검색",
       "angle": "현 프론트엔드/백엔드 개발자 중 AI 시대에 살아남을 10% 역량 기준 제시",
@@ -5083,7 +5088,7 @@
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "reserved_at": "2026-02-08T09:32:11.785411+00:00"
+      "last_error": "Stuck in progress for 0+ hours"
     },
     {
       "id": "507-ko-tech-오픈소스-보안",
@@ -5623,6 +5628,39 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-02-09T10:55:51.674310+00:00",
       "completed_at": "2026-02-09T12:32:51.403885+00:00"
+    },
+    {
+      "id": "532-ko-tech-코딩-부트캠프-추천",
+      "keyword": "코딩 부트캠프 추천",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-12T11:49:54.381920",
+      "retry_count": 1,
+      "keyword_type": "evergreen",
+      "search_intent": "프로그래밍 커리어 전환을 위해 부트캠프 선택 기준과 비교 정보를 찾고자 함",
+      "angle": "비교 가이드 - 국내 주요 부트캠프의 특징, 비용, 취업률, 커리큘럼을 체계적으로 비교 분석",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "2025 부트캠프 TOP5 종류별 추천과 가격, 비전공자 등 정보 총정리 - 내일배움캠프 블로그",
+          "url": "https://nbcamp.spartaclub.kr/blog/2025-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-top5-%EC%A2%85%EB%A5%98%EB%B3%84-%EC%B6%94%EC%B2%9C%EA%B3%BC-%EA%B0%80%EA%B2%A9-%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90-%EB%93%B1-%EC%A0%95%EB%B3%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC-56201?traffic_type=internal",
+          "source": "nbcamp.spartaclub.kr"
+        },
+        {
+          "title": "2025년 코딩 부트캠프 추천 리스트",
+          "url": "https://greenutopia.tistory.com/entry/2025%EB%85%84-%EC%BD%94%EB%94%A9-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-%EC%B6%94%EC%B2%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8",
+          "source": "greenutopia.tistory.com"
+        },
+        {
+          "title": "코딩 부트캠프 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%94%A9_%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84",
+          "source": "ko.wikipedia.org"
+        }
+      ],
+      "content_type_hint": "GUIDE",
+      "last_error": "Stuck in progress for 0+ hours"
     }
   ]
 }

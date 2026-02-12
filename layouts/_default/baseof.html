@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-{{ block "head" . }}
+<html lang="{{ .Language.Lang }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
-    <!-- Resource Hints -->
-    {{ partial "resource-hints.html" . }}
-
-    <!-- Canonical URL -->
-    {{ partial "canonical.html" . }}
-
-    <!-- Hreflang for multilingual SEO -->
-    {{ partial "hreflang.html" . }}
-
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2478912111812328"
-         crossorigin="anonymous"></script>
+  {{- partial "head.html" . -}}
 </head>
-{{ end }}
 <body>
-{{ block "main" . }}{{ end }}
+  {{- partial "reading-progress.html" . -}}
+  {{- partial "header.html" . -}}
+
+  <main id="main-content">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+  {{- partial "scripts.html" . -}}
 </body>
 </html>

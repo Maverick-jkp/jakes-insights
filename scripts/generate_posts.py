@@ -42,6 +42,9 @@ from ab_test_manager import ABTestManager
 from prompts import get_tutorial_prompt, get_analysis_prompt, get_news_prompt
 from utils.rag_pipeline import RAGPipeline
 from utils.community_miner import CommunityMiner
+from utils.guru_miner import GuruMiner
+from utils.korean_community_miner import KoreanCommunityMiner
+from utils.few_shot_examples import get_examples
 
 try:
     from anthropic import Anthropic
@@ -337,6 +340,20 @@ class ContentGenerator:
         else:
             safe_print("  ⚠️  Community Miner disabled (missing Anthropic API key)")
 
+        # Initialize Guru Miner
+        self.guru_miner = GuruMiner()
+        if self.guru_miner.enabled:
+            safe_print("  🎓 Guru Miner enabled (Lenny, a16z, Pragmatic Engineer)")
+        else:
+            safe_print("  ⚠️  Guru Miner disabled (missing dependencies)")
+
+        # Initialize Korean Community Miner
+        self.korean_miner = KoreanCommunityMiner()
+        if self.korean_miner.enabled:
+            safe_print("  🇰🇷 Korean Community Miner enabled (GeekNews, Toss, Kakao)")
+        else:
+            safe_print("  ⚠️  Korean Community Miner disabled (missing dependencies)")
+
     def generate_draft(self, topic: Dict) -> tuple[str, str]:
         """Generate initial draft using Draft Agent with Prompt Caching
 
@@ -366,6 +383,19 @@ class ContentGenerator:
         if self.community_miner.enabled:
             community_insights = self.community_miner.get_insights(keyword)
 
+        # Get guru insights (if enabled)
+        guru_insights = None
+        if self.guru_miner.enabled:
+            guru_insights = self.guru_miner.get_insights(keyword)
+
+        # Get Korean community insights (if enabled)
+        korean_insights = None
+        if self.korean_miner.enabled:
+            korean_insights = self.korean_miner.get_insights(keyword)
+
+        # Get few-shot examples for this language and content type
+        few_shot = get_examples(lang, content_type)
+
         # Get type-specific prompt
         if content_type == 'tutorial':
             user_prompt = get_tutorial_prompt(keyword, keywords, lang)
@@ -374,8 +404,15 @@ class ContentGenerator:
         else:  # news
             user_prompt = get_news_prompt(keyword, keywords, lang)
 
-        # Prepend additional context if available
+        # Build full context
         context_parts = []
+
+        # Add few-shot examples first (style learning)
+        if few_shot:
+            context_parts.append(f"# Writing Style Examples\n\n{few_shot}")
+            safe_print(f"  ✅ Few-shot examples added")
+
+        # Add content sources
         if rag_context:
             context_parts.append(rag_context)
             safe_print(f"  ✅ RAG context added ({len(rag_context)} chars)")
@@ -384,6 +421,15 @@ class ContentGenerator:
             context_parts.append(community_insights)
             safe_print(f"  ✅ Community insights added ({len(community_insights)} chars)")
 
+        if guru_insights:
+            context_parts.append(guru_insights)
+            safe_print(f"  ✅ Guru insights added ({len(guru_insights)} chars)")
+
+        if korean_insights:
+            context_parts.append(korean_insights)
+            safe_print(f"  ✅ Korean community insights added ({len(korean_insights)} chars)")
+
+        # Combine all context
         if context_parts:
             full_context = "\n\n---\n\n".join(context_parts)
             user_prompt = f"{full_context}\n\n---\n\n{user_prompt}"

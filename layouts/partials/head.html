@@ -1,0 +1,60 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+
+{{/* Title */}}
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+{{/* Favicon */}}
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+{{/* CSS */}}
+{{ $variables := resources.Get "css/variables.css" }}
+{{ $main := resources.Get "css/main.css" }}
+{{ $components := resources.Get "css/components.css" }}
+{{ $post := resources.Get "css/post.css" }}
+{{ $styles := slice $variables $main $components $post | resources.Concat "css/bundle.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}">
+
+{{/* Syntax Highlighting */}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+
+{{/* hreflang for multilingual */}}
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+
+{{/* Open Graph */}}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}">
+{{ end }}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Description }}">
+
+{{/* RSS */}}
+{{ with .OutputFormats.Get "rss" -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+{{ end -}}
+
+{{/* SEO */}}
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Naver verification */}}
+{{ with .Site.Params.naverVerification }}
+<meta name="naver-site-verification" content="{{ . }}">
+{{ end }}
+
+{{/* Google AdSense */}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2478912111812328"
+     crossorigin="anonymous"></script>

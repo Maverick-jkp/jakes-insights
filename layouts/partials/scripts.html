@@ -1,0 +1,21 @@
+{{/* Syntax Highlighting */}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+{{/* Reading Progress */}}
+{{ if .IsPage }}
+{{ $readingProgress := resources.Get "js/reading-progress.js" | resources.Minify }}
+<script src="{{ $readingProgress.Permalink }}"></script>
+{{ end }}
+
+{{/* TOC Highlight */}}
+{{ if .IsPage }}
+{{ $tocHighlight := resources.Get "js/toc-highlight.js" | resources.Minify }}
+<script src="{{ $tocHighlight.Permalink }}"></script>
+{{ end }}
+
+{{/* Code Copy Button */}}
+{{ if .IsPage }}
+{{ $codeCopy := resources.Get "js/code-copy.js" | resources.Minify }}
+<script src="{{ $codeCopy.Permalink }}"></script>
+{{ end }}

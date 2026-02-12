@@ -1,0 +1,36 @@
+<header class="site-header">
+  <div class="header-content">
+    <div class="site-logo">
+      <h1><a href="{{ "/" | relLangURL }}" style="color: inherit; text-decoration: none;">Global Tech Insights</a></h1>
+      <span class="site-tagline">Where Silicon Valley meets Seoul</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="{{ "/" | relLangURL }}">Latest</a>
+      <a href="{{ "/popular/" | relLangURL }}">Popular</a>
+      <a href="{{ "/archive/" | relLangURL }}">Archive</a>
+    </nav>
+
+    <div class="header-actions">
+      {{/* Language Switcher */}}
+      {{ if .IsTranslated }}
+      <div class="lang-switcher">
+        {{ range .Translations }}
+          <a href="{{ .Permalink }}" class="lang-link">{{ .Language.LanguageName }}</a>
+          {{ if not (eq (add 1 (len $.Translations)) (len $.Translations)) }}
+            <span class="lang-separator">/</span>
+          {{ end }}
+        {{ end }}
+        <span class="lang-separator">/</span>
+        <a href="{{ .Permalink }}" class="lang-link active">{{ .Language.LanguageName }}</a>
+      </div>
+      {{ else }}
+      <div class="lang-switcher">
+        <a href="/en/" class="lang-link {{ if eq .Language.Lang "en" }}active{{ end }}">EN</a>
+        <span class="lang-separator">/</span>
+        <a href="/ko/" class="lang-link {{ if eq .Language.Lang "ko" }}active{{ end }}">KO</a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</header>

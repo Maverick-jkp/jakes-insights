@@ -5769,7 +5769,7 @@
       "category": "business",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-12T07:54:31.698206",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5794,7 +5794,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-12T10:46:59.351245+00:00",
+      "completed_at": "2026-02-12T10:51:35.154151+00:00"
     },
     {
       "id": "537-en-tech-ryan-beiermeister",
@@ -5802,7 +5804,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-12T07:54:31.698234",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5827,7 +5829,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-12T10:46:59.351245+00:00",
+      "completed_at": "2026-02-12T10:55:00.691149+00:00"
     },
     {
       "id": "538-ko-society-국시원",
@@ -5835,7 +5839,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-12T07:54:31.698252",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5860,7 +5864,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-12T10:46:59.351245+00:00",
+      "completed_at": "2026-02-12T10:59:53.857092+00:00"
     },
     {
       "id": "539-ko-tech-클라우드-컴퓨팅-기초",
@@ -5868,7 +5874,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-12T07:54:31.698314",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5892,7 +5898,9 @@
           "source": "www.ibm.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-12T10:46:59.351245+00:00",
+      "completed_at": "2026-02-12T11:05:34.689323+00:00"
     }
   ]
 }

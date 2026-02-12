@@ -15,54 +15,70 @@
       "published_at": "2026-02-11T14:09:16.208314+00:00",
       "title": "Yahoo Finance: Your Free Gateway to Market Success",
       "status": "published"
+    },
+    "content/en/tech/2026-01-22-oblivion-remastered.md": {
+      "devto_article_id": 3251688,
+      "devto_url": "https://dev.to/maverickjkp/oblivion-remastered-epic-rpg-gets-stunning-visual-upgrade-1nfd",
+      "canonical_url": "https://jakeinsight.com/tech/2026-01-22-oblivion-remastered/",
+      "published_at": "2026-02-12T14:03:54.083140+00:00",
+      "title": "Oblivion Remastered: Epic RPG Gets Stunning Visual Upgrade",
+      "status": "published"
+    },
+    "content/en/society/2026-01-22-blizzard-warning.md": {
+      "devto_article_id": 3251689,
+      "devto_url": "https://dev.to/maverickjkp/blizzard-warning-how-to-stay-safe-during-winter-storms-32l7",
+      "canonical_url": "https://jakeinsight.com/society/2026-01-22-blizzard-warning/",
+      "published_at": "2026-02-12T14:03:56.527512+00:00",
+      "title": "Blizzard Warning: How to Stay Safe During Winter Storms",
+      "status": "published"
     }
   },
   "failed_articles": {
     "content/en/business/2026-01-21-붉은사막.md": {
       "error": "HTTP 422: {\"error\":\"Canonical url is not a valid URL, Main image is not a valid URL, Tag \\\"red-desert\\\" contains non-alphanumeric or prohibited unicode characters, Tag \\\"korean-game\\\" contains non-alphanumeric or prohibited unicode characters, and Tag \\\"pearl-abyss\\\" contains non-alphanumeric or prohibited un",
-      "failed_at": "2026-02-11T14:09:13.682486+00:00",
-      "retry_count": 1
-    },
-    "content/en/tech/2026-01-22-oblivion-remastered.md": {
-      "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:09:32.719410+00:00",
-      "retry_count": 1
-    },
-    "content/en/society/2026-01-22-blizzard-warning.md": {
-      "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:09:47.295420+00:00",
-      "retry_count": 1
+      "failed_at": "2026-02-12T14:03:51.492697+00:00",
+      "retry_count": 2
     },
     "content/en/sports/2026-01-22-trae-taylor.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:10:01.878132+00:00",
-      "retry_count": 1
+      "failed_at": "2026-02-12T14:04:13.141858+00:00",
+      "retry_count": 2
     },
     "content/en/business/2026-01-22-진에어.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:10:16.563052+00:00",
-      "retry_count": 1
+      "failed_at": "2026-02-12T14:04:27.747892+00:00",
+      "retry_count": 2
     },
     "content/en/sports/2026-01-22-jackson-lacombe.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:10:31.010800+00:00",
-      "retry_count": 1
+      "failed_at": "2026-02-12T14:04:42.506070+00:00",
+      "retry_count": 2
     },
     "content/en/tech/2026-01-22-爆弾-映画.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:10:45.862886+00:00",
-      "retry_count": 1
+      "failed_at": "2026-02-12T14:04:57.309464+00:00",
+      "retry_count": 2
     },
     "content/en/society/2026-01-22-james-beard-semifinalists-2026.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-11T14:11:00.452408+00:00",
+      "failed_at": "2026-02-12T14:05:12.144785+00:00",
+      "retry_count": 2
+    },
+    "content/en/society/2026-01-22-しゃぶ葉.md": {
+      "error": "Max retries exceeded",
+      "failed_at": "2026-02-12T14:05:26.910192+00:00",
+      "retry_count": 1
+    },
+    "content/en/business/2026-01-22-current-interest-rates.md": {
+      "error": "Max retries exceeded",
+      "failed_at": "2026-02-12T14:05:41.503969+00:00",
       "retry_count": 1
     }
   },
-  "last_run": "2026-02-11T14:11:00.453305+00:00",
+  "last_run": "2026-02-12T14:05:41.505028+00:00",
   "stats": {
-    "total_published": 2,
+    "total_published": 4,
     "total_failed": 8,
-    "total_skipped": 0
+    "total_skipped": 2
   }
 }

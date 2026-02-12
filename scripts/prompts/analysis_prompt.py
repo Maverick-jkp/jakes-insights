@@ -184,15 +184,21 @@ THINGS TO AVOID:
 - Making unsubstantiated predictions
 - Personal opinions stated as facts
 
-AI PHRASE BLACKLIST (NEVER USE):
+AI PHRASE BLACKLIST (NEVER USE - 2025 Research Based):
 - "game-changer", "revolutionary", "revolutionize"
 - "cutting-edge", "state-of-the-art", "groundbreaking"
 - "leverage", "robust", "seamlessly", "synergy"
+- "delve", "tapestry", "realm", "testament"
+- "pivotal", "multifaceted", "comprehensive"
+- "foster", "endeavour", "facilitate", "optimize", "utilize"
 - "In today's rapidly evolving...", "In the ever-changing landscape..."
+- "In the realm of...", "In essence", "In summary", "In conclusion"
 - "It's important to note that...", "It's worth mentioning..."
+- "Certainly!", "Absolutely!", "Great question!"
 - "Whether you're a... or a...", "dive deep", "dive into"
 - "comprehensive guide", "everything you need to know"
-- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each)
+- "Let me break down", "You might be thinking"
+- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each total)
 
 CITATION REQUIREMENTS (MANDATORY):
 - Every statistic MUST have an inline source: "According to [Source Name]..."
@@ -282,11 +288,13 @@ REQUIRED: REAL EXAMPLES ONLY
 - 처음부터 끝까지 대화체 유지 - 중간에 갑자기 보고서체로 전환 금지
 - "전략적 포지셔닝", "명확한 차별화" 같은 컨설팅 용어 금지
 
-금지 표현:
+금지 표현 (2025 AI 탐지 기반):
 - "이런 경험 있으시죠?" (남발 금지 - 도입부에만 가끔 사용)
 - "~거든요" 연속 사용 (문단당 최대 1-2회)
 - "결합", "활용", "최적화" (번역투 - "합치다", "쓰다", "잘 맞추다"로)
 - "전략적", "효율적", "체계적" (추상적 - 구체적으로 풀어서)
+- "물론", "~할 수 있습니다", "중요합니다", "주목할만한"
+- "~하는 것이 중요하다", "혁신적", "게임체인저"
 
 필수 사항:
 - 문장 끝 변화 주기: "~예요", "~죠", "~인 셈이에요", "~더라고요" 섞어 쓰기

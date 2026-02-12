@@ -192,15 +192,21 @@ IMPORTANT:
 - Do NOT use excessive marketing language or hype
 - Do NOT make claims you cannot back up with code examples
 
-AI PHRASE BLACKLIST (NEVER USE):
+AI PHRASE BLACKLIST (NEVER USE - 2025 Research Based):
 - "game-changer", "revolutionary", "revolutionize"
 - "cutting-edge", "state-of-the-art", "groundbreaking"
 - "leverage", "robust", "seamlessly", "synergy"
+- "delve", "tapestry", "realm", "testament"
+- "pivotal", "multifaceted", "comprehensive"
+- "foster", "endeavour", "facilitate", "optimize", "utilize"
 - "In today's rapidly evolving...", "In the ever-changing landscape..."
+- "In the realm of...", "In essence", "In summary", "In conclusion"
 - "It's important to note that...", "It's worth mentioning..."
+- "Certainly!", "Absolutely!", "Great question!"
 - "Whether you're a... or a...", "dive deep", "dive into"
 - "comprehensive guide", "everything you need to know"
-- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each)
+- "Let me break down", "You might be thinking"
+- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each total)
 
 FACTUAL ACCURACY (MANDATORY):
 - All code examples MUST be tested and working
@@ -306,9 +312,12 @@ BANNED PHRASES:
 - "~거든요" 문단당 최대 1회
 - "활용", "구현", "최적화" 같은 딱딱한 표현 피하기 → "쓰다", "만들다", "빠르게 하다"
 
-금지 표현:
+금지 표현 (2025 AI 탐지 기반):
 - "이런 경험 있으시죠?" (튜토리얼에 부적절)
 - "간단하게 X를 하면 됩니다" (실제로 복잡할 때)
+- "물론", "~할 수 있습니다", "중요합니다", "주목할만한"
+- "~하는 것이 중요하다", "혁신적", "게임체인저"
+- "활용", "구현", "최적화" → "쓰다", "만들다", "빠르게 하다"
 """,
     }
     return rules.get(language, '')

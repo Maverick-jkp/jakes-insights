@@ -163,15 +163,21 @@ THINGS TO AVOID:
 - Vague timeframes ("soon", "recently" - be specific)
 - Filler content just to reach word count
 
-AI PHRASE BLACKLIST (NEVER USE):
+AI PHRASE BLACKLIST (NEVER USE - 2025 Research Based):
 - "game-changer", "revolutionary", "revolutionize"
 - "cutting-edge", "state-of-the-art", "groundbreaking"
 - "leverage", "robust", "seamlessly", "synergy"
+- "delve", "tapestry", "realm", "testament"
+- "pivotal", "multifaceted", "comprehensive"
+- "foster", "endeavour", "facilitate", "optimize", "utilize"
 - "In today's rapidly evolving...", "In the ever-changing landscape..."
+- "In the realm of...", "In essence", "In summary", "In conclusion"
 - "It's important to note that...", "It's worth mentioning..."
+- "Certainly!", "Absolutely!", "Great question!"
 - "Whether you're a... or a...", "dive deep", "dive into"
 - "comprehensive guide", "everything you need to know"
-- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each)
+- "Let me break down", "You might be thinking"
+- Excessive hedging: "Moreover", "Furthermore", "Additionally" (max 1 each total)
 
 CITATION REQUIREMENTS (MANDATORY):
 - Every statistic MUST have an inline source: "According to [Source Name]..."
@@ -254,9 +260,11 @@ BANNED PHRASES:
 - "~거든요" 문단당 최대 1회
 - "결합", "활용", "최적화" 같은 번역투 금지
 
-금지 표현:
+금지 표현 (2025 AI 탐지 기반):
 - "이런 경험 있으시죠?" (뉴스에 부적절)
 - "한 업계 관계자에 따르면" (실명 사용 권장)
+- "물론", "~할 수 있습니다", "중요합니다", "주목할만한"
+- "~하는 것이 중요하다", "혁신적", "게임체인저"
 """,
     }
     return rules.get(language, '')

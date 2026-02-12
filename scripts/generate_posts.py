@@ -40,6 +40,8 @@ from affiliate_config import (
 from internal_linker import InternalLinker
 from ab_test_manager import ABTestManager
 from prompts import get_tutorial_prompt, get_analysis_prompt, get_news_prompt
+from utils.rag_pipeline import RAGPipeline
+from utils.community_miner import CommunityMiner
 
 try:
     from anthropic import Anthropic
@@ -286,6 +288,20 @@ class ContentGenerator:
         self.ab_test_manager = ABTestManager()
         safe_print("  🧪 A/B Test Manager initialized")
 
+        # Initialize RAG Pipeline
+        self.rag_pipeline = RAGPipeline()
+        if self.rag_pipeline.enabled:
+            safe_print("  🔍 RAG Pipeline enabled (Brave Search + Content Fetching)")
+        else:
+            safe_print("  ⚠️  RAG Pipeline disabled (missing Brave or Anthropic API key)")
+
+        # Initialize Community Miner
+        self.community_miner = CommunityMiner()
+        if self.community_miner.enabled:
+            safe_print("  💬 Community Miner enabled (HackerNews + Dev.to)")
+        else:
+            safe_print("  ⚠️  Community Miner disabled (missing Anthropic API key)")
+
     def generate_draft(self, topic: Dict) -> tuple[str, str]:
         """Generate initial draft using Draft Agent with Prompt Caching
 
@@ -305,6 +321,16 @@ class ContentGenerator:
         safe_print(f"  🎯 Content type: {content_type}")
         safe_print(f"  📝 Generating draft for: {keyword}")
 
+        # Get RAG context (if enabled)
+        rag_context = None
+        if self.rag_pipeline.enabled:
+            rag_context = self.rag_pipeline.get_context(keyword, max_sources=3)
+
+        # Get community insights (if enabled)
+        community_insights = None
+        if self.community_miner.enabled:
+            community_insights = self.community_miner.get_insights(keyword)
+
         # Get type-specific prompt
         if content_type == 'tutorial':
             user_prompt = get_tutorial_prompt(keyword, keywords, lang)
@@ -312,6 +338,20 @@ class ContentGenerator:
             user_prompt = get_analysis_prompt(keyword, keywords, lang)
         else:  # news
             user_prompt = get_news_prompt(keyword, keywords, lang)
+
+        # Prepend additional context if available
+        context_parts = []
+        if rag_context:
+            context_parts.append(rag_context)
+            safe_print(f"  ✅ RAG context added ({len(rag_context)} chars)")
+
+        if community_insights:
+            context_parts.append(community_insights)
+            safe_print(f"  ✅ Community insights added ({len(community_insights)} chars)")
+
+        if context_parts:
+            full_context = "\n\n---\n\n".join(context_parts)
+            user_prompt = f"{full_context}\n\n---\n\n{user_prompt}"
 
         # Append references if available
         if references and len(references) > 0:

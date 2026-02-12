@@ -1,10 +1,10 @@
 name: Dev.to Cross-Posting
 
+# DISABLED: Waiting for content quality improvement before cross-posting
+# Re-enable schedule when posts have code blocks, proper depth, and low AI-pattern detection
 on:
-  schedule:
-    # Run daily at 1:00 PM UTC (10:00 PM KST)
-    # After content generation (10 AM UTC) and deployment
-    - cron: '0 13 * * *'
+  # schedule:
+  #   - cron: '0 13 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

@@ -5762,6 +5762,137 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-02-11T10:51:54.984764+00:00",
       "completed_at": "2026-02-11T11:11:46.957307+00:00"
+    },
+    {
+      "id": "536-en-business-car-accident-attorne",
+      "keyword": "car accident attorney",
+      "category": "business",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-12T07:54:31.698206",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "User fears missing the legal deadline to file a claim and losing their right to compensation forever",
+      "angle": "Law firms with billion-dollar track records are competing for clients—acting now secures leverage before statutes of limitation expire",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Are you Looking for a Car Accident Lawyer in NYC? | New York Accident Lawyers",
+          "url": "https://www.gairgair.com/automobile-accidents.html",
+          "source": "www.gairgair.com"
+        },
+        {
+          "title": "Best Pittsburgh, PA Car Accident Attorneys | Super Lawyers",
+          "url": "https://attorneys.superlawyers.com/motor-vehicle-accidents/pennsylvania/pittsburgh/",
+          "source": "attorneys.superlawyers.com"
+        },
+        {
+          "title": "Valdosta Car Accident Lawyers | Farah & Farah",
+          "url": "https://farahandfarah.com/valdosta/car-accident-lawyer/",
+          "source": "farahandfarah.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "537-en-tech-ryan-beiermeister",
+      "keyword": "ryan beiermeister",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-12T07:54:31.698234",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "User wants to know if AI companies are prioritizing profit over child safety and what harmful features they're hiding",
+      "angle": "A top safety executive was removed right before a controversial launch—revealing the internal power struggle between safety and monetization",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "An OpenAI Executive Was Fired for Sexual Discrimination. She Had Warned About Harmful Features of a ",
+          "url": "https://www.inc.com/ava-levinson/openai-executive-fired-warning-update/91301168",
+          "source": "www.inc.com"
+        },
+        {
+          "title": "OpenAI policy exec who opposed chatbot's 'adult mode' reportedly fired on discrimination claim | Tec",
+          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "OpenAI has 'fired' woman researcher who opposed 'Adult Mode' in ChatGPT, here's what her termination",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/openai-has-fired-woman-researcher-who-opposed-adult-mode-in-chatgpt-heres-what-her-termination-note-says/articleshow/128206950.cms",
+          "source": "timesofindia.indiatimes.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "538-ko-society-국시원",
+      "keyword": "국시원",
+      "category": "society",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-12T07:54:31.698252",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "수험생들이 전국 수석의 학습법과 전략을 알아내 자신의 준비 방향을 재점검하려는 절박함",
+      "angle": "국시원 발표 직후 수석 합격자의 학습 전략과 점수 분포를 분석해 합격 확률을 높이는 인사이트 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "동신대 한의학과 김수현씨, 한의사 국시 ‘전국 수석’ 영예 - 남도일보",
+          "url": "https://www.namdonews.com/news/articleView.html?idxno=900570",
+          "source": "www.namdonews.com"
+        },
+        {
+          "title": "원나라 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%9B%90%EB%82%98%EB%9D%BC",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "동신대 한의학과 김수현씨, 한의사 국시 전국 수석",
+          "url": "https://www.sentv.co.kr/article/view/sentv202602050049",
+          "source": "www.sentv.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "539-ko-tech-클라우드-컴퓨팅-기초",
+      "keyword": "클라우드 컴퓨팅 기초",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-12T07:54:31.698314",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "클라우드 컴퓨팅 기술을 처음 배우고자 하는 입문자가 기본 개념, 서비스 모델(IaaS, PaaS, SaaS), 주요 플랫폼(AWS, Azure, GCP)의 특징을 이해하고 학습 방향을 설정하기 위함",
+      "angle": "초보자 친화적 교육 가이드 - 복잡한 기술 개념을 쉬운 비유와 실생활 예시로 설명하고, 단계별 학습 로드맵과 실습 방법을 제시하는 종합 입문서",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and Types - AWS",
+          "url": "https://aws.amazon.com/what-is-cloud-computing/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "클라우드 컴퓨팅 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%BB%B4%ED%93%A8%ED%8C%85",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "클라우드 컴퓨팅이란 무엇인가요?",
+          "url": "https://www.ibm.com/think/topics/cloud-computing",
+          "source": "www.ibm.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

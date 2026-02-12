@@ -134,9 +134,29 @@ After the introduction and before the first ## heading, ALWAYS include:
 - Use "you" and "I" sparingly for conversational tone
 - Short direct sentences without filler phrases
 - Natural transitions: "So", "And", "But" (NOT "Moreover/Furthermore")
-- Avoid AI tell-tale phrases: "Here's the thing", "Sound familiar?", "Look", "Let me explain"
 - Strong sentence starters: State facts directly, use specific data points
 - Include recent dates, statistics, and concrete examples (2025-2026 data preferred)
+
+[AI PHRASE BLACKLIST - CRITICAL - NEVER USE THESE]:
+BANNED TRANSITIONS (causes instant AI detection):
+- "Here's the thing" / "Here's where it gets interesting" / "Here's what makes it remarkable"
+- "Sound familiar?" / "Look," / "Let me explain" / "Let me break down"
+- "You might be thinking" / "You've probably been there" / "You've seen this before"
+- "But here's where it gets interesting" / "This is where it gets tricky"
+
+BANNED WORDS (2025 research - AI overuse):
+- delve, tapestry, realm, testament, pivotal, multifaceted
+- foster, endeavour, facilitate, optimize, utilize
+- comprehensive, robust, seamless, synergy
+
+BANNED OPENERS:
+- "In today's rapidly evolving..." / "In the ever-changing landscape..."
+- "In the realm of..." / "In essence" / "In summary" / "In conclusion"
+
+BANNED HEDGING:
+- "It's important to note that..." / "It's worth mentioning..."
+- "Certainly!" / "Absolutely!" / "Great question!"
+- "Moreover", "Furthermore", "Additionally" (max 1 total across entire article)
 
 [Style - Completion Optimized]
 - Active voice, short sentences (1-2 lines)
@@ -224,6 +244,21 @@ D. Practical Guide: "How [topic] Changes [outcome]: Data-Driven Analysis"
 - "사실", "실제로", "그런데", "참고로" 같은 자연스러운 접속사
 - 숫자를 친근하게: "10개 → 열 개", "50% → 절반", "3배 → 세 배"
 - 짧고 강렬한 문장: "놀랍죠?", "맞아요.", "이게 핵심이에요."
+
+[AI 금지 표현 - 절대 사용 금지]:
+금지 전환 표현 (AI 즉시 탐지):
+- "이런 경험 있으시죠?" / "이게 핵심이에요" / "여기서 재미있는 건"
+- "솔직히 말하면" / "한번 볼까요" (과도 사용 시)
+- "아마 이렇게 생각하실 거예요" / "이런 경우 많죠?"
+
+금지 단어 (2025 연구 - AI 과다 사용):
+- "물론", "~할 수 있습니다", "중요합니다", "주목할만한"
+- "혁신적", "게임체인저", "획기적"
+- "활용", "결합", "최적화" → "쓰다", "합치다", "잘 맞추다"
+- "전략적", "효율적", "체계적" (추상적)
+
+금지 연결어:
+- "또한", "게다가", "더욱이" (최대 1회)
 
 [스타일 - 완독률 최적화]
 - 능동태 위주, 짧은 문장 (1-2줄)

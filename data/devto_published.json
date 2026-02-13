@@ -31,54 +31,70 @@
       "published_at": "2026-02-12T14:03:56.527512+00:00",
       "title": "Blizzard Warning: How to Stay Safe During Winter Storms",
       "status": "published"
+    },
+    "content/en/sports/2026-01-22-trae-taylor.md": {
+      "devto_article_id": 3254356,
+      "devto_url": "https://dev.to/maverickjkp/trae-taylor-rising-stars-journey-to-success-story-1i8n",
+      "canonical_url": "https://jakeinsight.com/sports/2026-01-22-trae-taylor/",
+      "published_at": "2026-02-13T13:55:04.377790+00:00",
+      "title": "Trae Taylor: Rising Star's Journey to Success Story",
+      "status": "published"
+    },
+    "content/en/sports/2026-01-22-jackson-lacombe.md": {
+      "devto_article_id": 3254357,
+      "devto_url": "https://dev.to/maverickjkp/jackson-lacombe-rising-nhl-stars-journey-to-success-139k",
+      "canonical_url": "https://jakeinsight.com/sports/2026-01-22-jackson-lacombe/",
+      "published_at": "2026-02-13T13:55:13.748597+00:00",
+      "title": "Jackson Lacombe: Rising NHL Star's Journey to Success",
+      "status": "published"
     }
   },
   "failed_articles": {
     "content/en/business/2026-01-21-붉은사막.md": {
       "error": "HTTP 422: {\"error\":\"Canonical url is not a valid URL, Main image is not a valid URL, Tag \\\"red-desert\\\" contains non-alphanumeric or prohibited unicode characters, Tag \\\"korean-game\\\" contains non-alphanumeric or prohibited unicode characters, and Tag \\\"pearl-abyss\\\" contains non-alphanumeric or prohibited un",
-      "failed_at": "2026-02-12T14:03:51.492697+00:00",
-      "retry_count": 2
-    },
-    "content/en/sports/2026-01-22-trae-taylor.md": {
-      "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:04:13.141858+00:00",
-      "retry_count": 2
+      "failed_at": "2026-02-13T13:55:01.708226+00:00",
+      "retry_count": 3
     },
     "content/en/business/2026-01-22-진에어.md": {
-      "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:04:27.747892+00:00",
-      "retry_count": 2
-    },
-    "content/en/sports/2026-01-22-jackson-lacombe.md": {
-      "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:04:42.506070+00:00",
-      "retry_count": 2
+      "error": "HTTP 422: {\"error\":\"Canonical url is not a valid URL, Main image is not a valid URL, Tag \\\"jin-air\\\" contains non-alphanumeric or prohibited unicode characters, Tag \\\"budget-airline\\\" contains non-alphanumeric or prohibited unicode characters, and Tag \\\"korea-aviation\\\" contains non-alphanumeric or prohibited",
+      "failed_at": "2026-02-13T13:55:11.202437+00:00",
+      "retry_count": 3
     },
     "content/en/tech/2026-01-22-爆弾-映画.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:04:57.309464+00:00",
-      "retry_count": 2
+      "failed_at": "2026-02-13T13:55:30.282854+00:00",
+      "retry_count": 3
     },
     "content/en/society/2026-01-22-james-beard-semifinalists-2026.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:05:12.144785+00:00",
-      "retry_count": 2
+      "failed_at": "2026-02-13T13:55:44.725558+00:00",
+      "retry_count": 3
     },
     "content/en/society/2026-01-22-しゃぶ葉.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:05:26.910192+00:00",
-      "retry_count": 1
+      "failed_at": "2026-02-13T13:55:59.268955+00:00",
+      "retry_count": 2
     },
     "content/en/business/2026-01-22-current-interest-rates.md": {
       "error": "Max retries exceeded",
-      "failed_at": "2026-02-12T14:05:41.503969+00:00",
+      "failed_at": "2026-02-13T13:56:13.759171+00:00",
+      "retry_count": 2
+    },
+    "content/en/entertainment/2026-01-22-sydney-sweeney.md": {
+      "error": "Max retries exceeded",
+      "failed_at": "2026-02-13T13:56:28.254410+00:00",
+      "retry_count": 1
+    },
+    "content/en/sports/2026-01-22-jannik-sinner.md": {
+      "error": "Max retries exceeded",
+      "failed_at": "2026-02-13T13:56:42.715316+00:00",
       "retry_count": 1
     }
   },
-  "last_run": "2026-02-12T14:05:41.505028+00:00",
+  "last_run": "2026-02-13T13:56:42.716915+00:00",
   "stats": {
-    "total_published": 4,
+    "total_published": 6,
     "total_failed": 8,
-    "total_skipped": 2
+    "total_skipped": 4
   }
 }

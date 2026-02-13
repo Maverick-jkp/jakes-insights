@@ -5908,7 +5908,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-13T07:51:38.446102",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5933,7 +5933,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-13T10:40:07.864077+00:00",
+      "completed_at": "2026-02-13T10:44:33.376490+00:00"
     },
     {
       "id": "541-en-society-nh",
@@ -5941,7 +5943,7 @@
       "category": "society",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-13T07:51:38.446134",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5961,7 +5963,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-13T10:40:07.864077+00:00",
+      "completed_at": "2026-02-13T10:47:15.833783+00:00"
     },
     {
       "id": "542-ko-business-명절",
@@ -5969,7 +5973,7 @@
       "category": "business",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-13T07:51:38.446151",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5994,7 +5998,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-13T10:40:07.864077+00:00",
+      "completed_at": "2026-02-13T10:53:33.758215+00:00"
     },
     {
       "id": "543-ko-society-고양시장",
@@ -6002,7 +6008,7 @@
       "category": "society",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-13T07:51:38.446166",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6027,7 +6033,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-13T10:40:07.864077+00:00",
+      "completed_at": "2026-02-13T11:05:37.150905+00:00"
     },
     {
       "id": "544-ko-tech-AI-입문-가이드",
@@ -6035,7 +6043,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-13T07:51:38.446182",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6059,7 +6067,9 @@
           "source": "royzero.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-02-13T10:40:07.864077+00:00",
+      "completed_at": "2026-02-13T11:00:05.399976+00:00"
     }
   ]
 }

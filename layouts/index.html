@@ -8,55 +8,105 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
-        <div class="header-content">
-            <a href="/{{ .Site.Language.Lang }}/" class="logo">{{ .Site.Title }}</a>
-            <div class="nav">
-                <a href="/en/" class="{{ if eq .Site.Language.Lang "en" }}active{{ end }}">EN</a>
-                <a href="/ko/" class="{{ if eq .Site.Language.Lang "ko" }}active{{ end }}">KO</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand-group">
+                <a href="/{{ .Site.Language.Lang }}/" class="brand">
+                    <span class="brand-primary">JAKE'S</span>
+                    <span class="brand-secondary">INSIGHTS</span>
+                </a>
+                <p class="tagline">In-depth tech analysis with community insights</p>
             </div>
+            <nav class="header-nav">
+                <a href="/en/" class="{{ if eq .Site.Language.Lang "en" }}active{{ end }}">English</a>
+                <a href="/ko/" class="{{ if eq .Site.Language.Lang "ko" }}active{{ end }}">한국어</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- Container -->
-    <div class="container">
-        {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
-        {{ $posts := where $pages "Type" "!=" "page" }}
+    {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+    {{ $posts := where $pages "Type" "!=" "page" }}
+    {{ $featured := index $posts 0 }}
 
-        <!-- Post Grid - All Same Size -->
-        <div class="posts-grid">
-            {{ range first 12 $posts }}
-            <article class="post-card">
-                <a href="{{ .Permalink }}">
+    <!-- Hero Feature -->
+    {{ with $featured }}
+    <section class="hero-feature">
+        <a href="{{ .Permalink }}" class="hero-card">
+            <div class="hero-visual">
+                {{ with .Params.image }}
+                <img src="{{ . }}" alt="{{ $.Title }}">
+                {{ end }}
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="hero-text">
+                <div class="hero-label">Featured</div>
+                <h1 class="hero-heading">{{ .Title }}</h1>
+                <p class="hero-description">{{ .Summary | plainify | truncate 200 }}</p>
+                <div class="hero-meta">
+                    <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                    <span class="meta-dot">•</span>
+                    <span>{{ .ReadingTime }} min read</span>
+                </div>
+            </div>
+        </a>
+    </section>
+    {{ end }}
+
+    <!-- Grid Layout -->
+    <section class="grid-layout">
+        <!-- Large Card -->
+        {{ $large := index $posts 1 }}
+        {{ with $large }}
+        <article class="grid-card large">
+            <a href="{{ .Permalink }}">
+                <div class="card-visual">
                     {{ with .Params.image }}
-                    <div class="post-image">
-                        <img src="{{ . }}" alt="{{ $.Title }}">
-                    </div>
+                    <img src="{{ . }}" alt="{{ $.Title }}">
                     {{ end }}
-                    <div class="post-content">
-                        <div class="post-meta">
-                            <span class="post-date">{{ .Date.Format "Jan 2" }}</span>
-                            {{ with .Params.categories }}
-                            <span class="post-category">{{ index . 0 }}</span>
-                            {{ end }}
-                        </div>
-                        <h2 class="post-title">{{ .Title }}</h2>
-                        <p class="post-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
-                    </div>
+                </div>
+                <div class="card-text">
+                    <div class="card-label">Analysis</div>
+                    <h2 class="card-heading">{{ .Title }}</h2>
+                    <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
+                    <div class="card-meta">{{ .Date.Format "Jan 2" }}</div>
+                </div>
+            </a>
+        </article>
+        {{ end }}
+
+        <!-- Medium Cards -->
+        {{ range after 2 $posts | first 4 }}
+        <article class="grid-card medium">
+            <a href="{{ .Permalink }}">
+                <div class="card-visual">
+                    {{ with .Params.image }}
+                    <img src="{{ . }}" alt="{{ $.Title }}">
+                    {{ end }}
+                </div>
+                <div class="card-text">
+                    <h3 class="card-heading">{{ .Title }}</h3>
+                    <div class="card-meta">{{ .Date.Format "Jan 2" }}</div>
+                </div>
+            </a>
+        </article>
+        {{ end }}
+
+        <!-- List Section -->
+        <aside class="grid-list">
+            <h4 class="list-title">Latest</h4>
+            {{ range after 6 $posts | first 8 }}
+            <article class="list-item">
+                <a href="{{ .Permalink }}">
+                    <h5 class="list-heading">{{ .Title }}</h5>
+                    <div class="list-meta">{{ .Date.Format "Jan 2" }}</div>
                 </a>
             </article>
             {{ end }}
-        </div>
-
-        <!-- View All -->
-        <div class="view-all">
-            <a href="{{ "all-posts" | relLangURL }}" class="view-all-btn">View All Articles</a>
-        </div>
-    </div>
+            <a href="{{ "all-posts" | relLangURL }}" class="list-more">View All →</a>
+        </aside>
+    </section>
 
     <!-- Footer -->
     {{ partial "footer.html" . }}
-
-    {{ partial "ga4-events.html" . }}
 </body>
 </html>

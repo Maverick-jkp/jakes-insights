@@ -6,6 +6,8 @@ High-quality tech writing examples for style learning.
 Extracted patterns from: Vercel, Stripe, Toss, Dev.to top articles
 """
 
+from typing import Dict
+
 # English Analysis/Tutorial Examples
 EN_EXAMPLES = {
     "analysis": """

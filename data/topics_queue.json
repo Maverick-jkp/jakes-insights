@@ -4684,7 +4684,7 @@
       "category": "entertainment",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-08T07:41:26.234540",
       "retry_count": 1,
       "keyword_type": "trend",
@@ -4710,7 +4710,9 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-14T01:57:22.863813+00:00",
+      "completed_at": "2026-02-14T02:01:32.231968+00:00"
     },
     {
       "id": "483-en-tech-arc-raiders",
@@ -4819,7 +4821,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-08T18:10:41.801200",
       "retry_count": 1,
       "keyword_type": "trend",
@@ -4845,7 +4847,9 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-14T01:57:22.863813+00:00",
+      "completed_at": "2026-02-14T02:06:10.386864+00:00"
     },
     {
       "id": "490-en-sports-afghanistan-vs-new-z",
@@ -4888,7 +4892,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "in_progress",
       "created_at": "2026-02-08T18:10:41.801293",
       "retry_count": 1,
       "keyword_type": "trend",
@@ -4909,7 +4913,8 @@
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-14T01:57:22.863813+00:00"
     },
     {
       "id": "492-ko-society-정원오",
@@ -5023,7 +5028,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-08T18:27:00.413302",
       "retry_count": 1,
       "keyword_type": "trend",
@@ -5033,7 +5038,9 @@
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-14T01:47:15.561418+00:00",
+      "completed_at": "2026-02-14T01:50:36.528629+00:00"
     },
     {
       "id": "500-en-tech-DoNotNotify",
@@ -5041,7 +5048,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-08T18:27:00.413333",
       "retry_count": 1,
       "keyword_type": "trend",
@@ -5051,7 +5058,9 @@
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-14T02:09:52.253027+00:00",
+      "completed_at": "2026-02-14T02:13:59.548902+00:00"
     },
     {
       "id": "504-ko-business-쿠팡",
@@ -5078,7 +5087,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-08T18:27:00.413568",
       "retry_count": 1,
       "keyword_type": "trend",
@@ -5088,7 +5097,9 @@
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
-      "last_error": "Stuck in progress for 0+ hours"
+      "last_error": "Stuck in progress for 0+ hours",
+      "reserved_at": "2026-02-14T01:47:15.561418+00:00",
+      "completed_at": "2026-02-14T01:55:05.569628+00:00"
     },
     {
       "id": "507-ko-tech-오픈소스-보안",
@@ -5661,6 +5672,203 @@
       ],
       "content_type_hint": "GUIDE",
       "last_error": "Stuck in progress for 0+ hours"
+    },
+    {
+      "id": "533-en-tech-ai-real-estate",
+      "keyword": "ai real estate",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "in_progress",
+      "created_at": "2026-02-12T15:48:22.286996",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Real estate professionals fear their jobs are being automated away by AI tools like virtual staging, CRM automation, and predictive analytics—they need to know if they should pivot now or risk becoming irrelevant",
+      "angle": "Job displacement anxiety in real estate industry due to rapid AI adoption",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Virtual Staging AI : Elevate Your Real Estate Listings | Collov AI",
+          "url": "https://collov.ai/",
+          "source": "collov.ai"
+        },
+        {
+          "title": "AI and Analytics in Real Estate Software: Smarter Insights for Better Decisions | Breaking AC",
+          "url": "https://breakingac.com/news/2026/feb/09/ai-and-analytics-in-real-estate-software-smarter-insights-for-better-decisions/",
+          "source": "breakingac.com"
+        },
+        {
+          "title": "Zillow at 20: Real estate giant leans on AI to make homebuying hurt less – GeekWire",
+          "url": "https://www.geekwire.com/2026/zillow-at-20-real-estate-giant-leans-on-ai-to-make-homebuying-hurt-less/",
+          "source": "www.geekwire.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-14T01:47:15.561418+00:00"
+    },
+    {
+      "id": "534-en-tech-ryan-beiermeister",
+      "keyword": "ryan beiermeister",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-12T15:48:22.287055",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Tech workers and AI ethics advocates are alarmed by reports of a safety executive being fired after opposing controversial features—they need to know if OpenAI is prioritizing profits over safety and if internal dissent is being punished",
+      "angle": "Corporate retaliation against AI safety concerns and ethical whistleblowing",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "An OpenAI Executive Was Fired for Sexual Discrimination. She Had Warned About Harmful Features of a ",
+          "url": "https://www.inc.com/ava-levinson/openai-executive-fired-warning-update/91301168",
+          "source": "www.inc.com"
+        },
+        {
+          "title": "OpenAI policy exec who opposed chatbot's 'adult mode' reportedly fired on discrimination claim | Tec",
+          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "OpenAI has 'fired' woman researcher who opposed 'Adult Mode' in ChatGPT, here's what her termination",
+          "url": "https://timesofindia.indiatimes.com/technology/tech-news/openai-has-fired-woman-researcher-who-opposed-adult-mode-in-chatgpt-heres-what-her-termination-note-says/articleshow/128206950.cms",
+          "source": "timesofindia.indiatimes.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "535-ko-business-대한통운",
+      "keyword": "대한통운",
+      "category": "business",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-12T15:48:22.287088",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "CJ대한통운이 역대 최대 실적을 냈지만 주7일 배송 서비스 확대로 택배 노동자들의 과로와 안전 문제가 심각해지고 있다는 우려—소비자들은 편리함 뒤에 숨겨진 노동 착취 실태를 알고 싶어함",
+      "angle": "기업 이익 증대 뒤에 가려진 노동자 착취와 과로 문제",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "CJ대한통운, 작년 4분기 영업익 1,596억으로 역대 최대 기록",
+          "url": "https://www.klnews.co.kr/news/articleView.html?idxno=319977",
+          "source": "www.klnews.co.kr"
+        },
+        {
+          "title": "CJ대한통운, 작년 4분기 영업익 역대 최대…‘매일오네‘ 효과 톡톡",
+          "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=240956",
+          "source": "www.insightkorea.co.kr"
+        },
+        {
+          "title": "‘주 7일 배송’ 안착 CJ대한통운, 4분기 최대 실적",
+          "url": "https://www.hani.co.kr/arti/economy/consumer/1244259.html",
+          "source": "www.hani.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "536-ko-entertainment-롯데시네마",
+      "keyword": "롯데시네마",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-12T15:48:22.287115",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "설 연휴 영화관 할인 이벤트를 기대했던 소비자들이 실제 혜택이 미미하거나 조건이 까다로워 실망감을 느끼고 있음—진짜 할인인지 마케팅 전략인지 확인 필요",
+      "angle": "명절 할인 이벤트의 실체와 소비자 기만 가능성",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "롯데시네마, 설 연휴 ‘롯시 운세 Pick!’로 신년 운세·할인 혜택 제공 | 신유건 기자 | 톱스타뉴스",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=15964840",
+          "source": "www.topstarnews.net"
+        },
+        {
+          "title": "'굿 윌 헌팅' 3월 롯데시네마 재개봉…맷 데이먼X로빈 윌리엄스의 감동, 다시 만난다 - 한국연예스포츠신문",
+          "url": "https://www.koreaes.com/news/articleView.html?idxno=402743",
+          "source": "www.koreaes.com"
+        },
+        {
+          "title": "롯데시네마, 설 연휴 ‘롯시 운세 픽’ 이벤트",
+          "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=351291",
+          "source": "www.smedaily.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "537-en-tech-best-laptops-for-dev",
+      "keyword": "best laptops for developers",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-12T15:48:22.287152",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers need to make informed purchasing decisions when buying laptops that can handle coding, compilation, virtual machines, and multiple development tools efficiently",
+      "angle": "Comprehensive buying guide with technical specifications, performance benchmarks, and recommendations for different developer types (web, mobile, data science)",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "The 4 Best Laptops For Programming of 2026 - RTINGS.com",
+          "url": "https://www.rtings.com/laptop/reviews/best/by-usage/programming",
+          "source": "www.rtings.com"
+        },
+        {
+          "title": "The Best Laptops for Programmers We've Tested for 2026 | PCMag",
+          "url": "https://www.pcmag.com/picks/the-best-laptops-for-programmers?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=A",
+          "source": "www.pcmag.com"
+        },
+        {
+          "title": "How to choose a laptop for programming | IT Pro",
+          "url": "https://www.itpro.com/hardware/laptops/360012/4-best-laptops-for-programming",
+          "source": "www.itpro.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "538-ko-business-연봉-협상-전략",
+      "keyword": "연봉 협상 전략",
+      "category": "business",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-12T15:48:22.287180",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구직자나 이직 준비자가 연봉 협상 과정에서 실질적으로 사용할 수 있는 전략과 화법을 배워 더 나은 처우를 받고자 함",
+      "angle": "실전 협상 시나리오별 대응 전략, 준비 단계부터 마무리까지의 단계별 가이드, 실제 협상 화법 예시 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "이직 연봉 인상률 업계수준·업무일지작성 팁까지 협상전략 한눈에 보세요",
+          "url": "https://asalgom.tistory.com/2624",
+          "source": "asalgom.tistory.com"
+        },
+        {
+          "title": "경력직 연봉 협상 팁: 원하는 조건을 끌어내는 7가지 전략 - 캔디드 공식 블로그",
+          "url": "https://teamcandid.kr/blog/salary-negotiation-tips",
+          "source": "teamcandid.kr"
+        },
+        {
+          "title": "작아지지 마세요! 연봉 협상 13가지 꿀팁 · 위픽레터",
+          "url": "https://letter.wepick.kr/510/4419641/",
+          "source": "letter.wepick.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

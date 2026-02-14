@@ -1,221 +1,66 @@
 {{ define "main" }}
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
+<link rel="stylesheet" href="{{ "css/all-posts.css" | relURL }}">
 
-    {{- /* Generate multilingual meta description */ -}}
-    {{- $totalPosts := len .Site.RegularPages -}}
-    {{- $metaDescription := "" -}}
-    {{- if eq .Site.Language.Lang "ko" -}}
-        {{- $metaDescription = printf "%d개의 글로 구성된 전체 아카이브입니다. 기술, 비즈니스, 사회, 엔터테인먼트, 스포츠 카테고리의 모든 인사이트를 한 곳에서 만나보세요." $totalPosts -}}
-    {{- else -}}
-        {{- $metaDescription = printf "Complete archive of all %d articles. Explore insights across Tech, Business, Society, Entertainment, and Sports categories in one place." $totalPosts -}}
-    {{- end -}}
-
-    <meta name="description" content="{{ $metaDescription }}">
-    <meta name="author" content="{{ .Site.Params.author }}">
-    {{- with site.Params.naverVerification }}
-    <meta name="naver-site-verification" content="{{ . }}">
-    {{- end }}
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ .Permalink }}" />
-
-    <!-- Hreflang for multilingual SEO -->
-    {{ partial "hreflang.html" . }}
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta property="og:description" content="{{ $metaDescription }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}/favicon.svg">
-    <meta property="og:site_name" content="{{ .Site.Title }}">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="{{ .Permalink }}">
-    <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
-    <meta name="twitter:description" content="{{ $metaDescription }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}/favicon.svg">
-
-    <!-- CollectionPage Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "{{ .Title }}",
-      "description": "{{ $metaDescription }}",
-      "url": "{{ .Permalink }}",
-      "mainEntity": {
-        "@type": "ItemList",
-        "numberOfItems": {{ $totalPosts }},
-        "itemListElement": [
-          {{- range $index, $page := first 50 .Site.RegularPages -}}
-          {{- if $index }},{{ end }}
-          {
-            "@type": "ListItem",
-            "position": {{ add $index 1 }},
-            "url": "{{ $page.Permalink }}",
-            "name": "{{ $page.Title }}"
-          }
-          {{- end -}}
-        ]
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ .Site.Title }}",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.BaseURL }}/favicon.svg"
-        }
-      }
-    }
-    </script>
-
-    <link rel="stylesheet" href="{{ "css/all-posts.css" | relURL }}">
-</head>
-<body>
-    <!-- Force Dark Theme -->
-    <script>
-    </script>
-
-    <!-- Fixed Header -->
-    <div class="top-bar">
-        <div class="header-box">
-            <a href="{{ "/" | relLangURL }}" class="logo">
-                JAKE<span class="apostrophe">'</span>S INSIGHTS
-            </a>
-            <div class="lang-switch">
-                <a href="/all-posts/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
-                <a href="/ko/all-posts/" {{ if eq .Site.Language.Lang "ko" }}class="active"{{ end }}>KO</a>
-            </div>
-        </div>
+<div class="container">
+    <div class="page-header">
+        <h1 class="page-title">{{ i18n "all_posts" }}</h1>
+        <p class="page-subtitle">{{ .Summary }}</p>
     </div>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Page Header -->
-        <div class="page-header">
-            <h1 class="page-title">{{ i18n "all_posts" }}</h1>
-            <p class="page-subtitle">{{ .Summary }}</p>
-        </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">{{ i18n "all_posts" }}</button>
+        <button class="filter-btn" data-filter="tech">💻 Tech</button>
+    </div>
 
-        <!-- Filter Buttons -->
-        <div class="filter-bar">
-            <button class="filter-btn active" data-filter="all">{{ i18n "all_posts" }}</button>
-            <button class="filter-btn" data-filter="tech">💻 Tech</button>
-            <button class="filter-btn" data-filter="business">💼 Business</button>
-            <button class="filter-btn" data-filter="society">🌍 Society</button>
-            <button class="filter-btn" data-filter="entertainment">🎬 Entertainment</button>
-            <button class="filter-btn" data-filter="sports">⚽ Sports</button>
-        </div>
-
-        <!-- Posts Grid -->
-        <div class="posts-grid" id="postsGrid">
-            {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
-            {{ $posts := where $currentLangPages "Type" "in" (slice "tech" "business" "society" "entertainment" "sports") }}
-            {{ range $posts }}
-            <a href="{{ .Permalink }}" class="post-card" data-category="{{ index .Params.categories 0 }}">
-                {{ if .Params.image }}
-                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="post-card-thumbnail">
-                {{ end }}
-                <div class="post-card-content">
-                    <div class="post-card-header">
-                        <span class="post-card-date">
-                            {{ if eq $.Site.Language.Lang "ko" }}
-                                {{ .Date.Format "2006.01.02" }}
-                            {{ else }}
-                                {{ .Date.Format "Jan 02, 2006" }}
-                            {{ end }}
-                        </span>
-                        <span class="post-card-category">{{ index .Params.categories 0 }}</span>
-                    </div>
-                    <h2 class="post-card-title">{{ .Title }}</h2>
-                    <div class="post-card-excerpt">{{ .Summary | plainify | truncate 150 }}</div>
+    <div class="posts-grid" id="postsGrid">
+        {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+        {{ $posts := where $currentLangPages "Type" "in" (slice "tech") }}
+        {{ range $posts }}
+        <a href="{{ .Permalink }}" class="post-card" data-category="{{ index .Params.categories 0 }}">
+            {{ if .Params.image }}
+            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="post-card-thumbnail">
+            {{ end }}
+            <div class="post-card-content">
+                <div class="post-card-header">
+                    <span class="post-card-date">
+                        {{ if eq $.Site.Language.Lang "ko" }}
+                            {{ .Date.Format "2006.01.02" }}
+                        {{ else }}
+                            {{ .Date.Format "Jan 02, 2006" }}
+                        {{ end }}
+                    </span>
+                    <span class="post-card-category">{{ index .Params.categories 0 }}</span>
                 </div>
-            </a>
-            {{ end }}
-        </div>
-    </div>
-
-    <!-- Footer -->
-    {{ partial "footer.html" . }}
-
-    <!-- Floating Menu -->
-    <div class="floating-menu">
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-        <div class="menu-panel" id="menuPanel">
-            <a href="#top">↑ Top</a>
-            <a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
-            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border);">Categories</div>
-            <div class="category-grid">
-            {{ if eq .Site.Language.Lang "en" }}
-            <a href="/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
-            <a href="/categories/business/"><span class="cat-icon">💼</span><span class="cat-text">Business</span></a>
-            <a href="/categories/society/"><span class="cat-icon">🌍</span><span class="cat-text">Society</span></a>
-            <a href="/categories/entertainment/"><span class="cat-icon">🎬</span><span class="cat-text">Entertainment</span></a>
-            <a href="/categories/sports/"><span class="cat-icon">⚽</span><span class="cat-text">Sports</span></a>
-            {{ else }}
-            <a href="/{{ .Site.Language.Lang }}/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
-            <a href="/{{ .Site.Language.Lang }}/categories/business/"><span class="cat-icon">💼</span><span class="cat-text">Business</span></a>
-            <a href="/{{ .Site.Language.Lang }}/categories/society/"><span class="cat-icon">🌍</span><span class="cat-text">Society</span></a>
-            <a href="/{{ .Site.Language.Lang }}/categories/entertainment/"><span class="cat-icon">🎬</span><span class="cat-text">Entertainment</span></a>
-            <a href="/{{ .Site.Language.Lang }}/categories/sports/"><span class="cat-icon">⚽</span><span class="cat-text">Sports</span></a>
-            {{ end }}
+                <h2 class="post-card-title">{{ .Title }}</h2>
+                <div class="post-card-excerpt">{{ .Summary | plainify | truncate 150 }}</div>
             </div>
-        </div>
+        </a>
+        {{ end }}
     </div>
+</div>
 
-    <script>
-        function toggleMenu() {
-            const panel = document.getElementById('menuPanel');
-            panel.classList.toggle('active');
-        }
+<script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const postCards = document.querySelectorAll('.post-card');
 
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.querySelector('.floating-menu');
-            const panel = document.getElementById('menuPanel');
-            if (!menu.contains(event.target) && panel.classList.contains('active')) {
-                panel.classList.remove('active');
-            }
-        });
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
 
-        // Filter functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const postCards = document.querySelectorAll('.post-card');
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
 
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const filter = this.getAttribute('data-filter');
-
-                // Update active button
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-
-                // Filter posts
-                postCards.forEach(card => {
-                    const category = card.getAttribute('data-category');
-                    if (filter === 'all' || category === filter) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
+            postCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
             });
         });
+    });
+</script>
 
-    </script>
-
-    <!-- GA4 Event Tracking -->
-    {{ partial "ga4-events.html" . }}
-</body>
-</html>
+{{ partial "ga4-events.html" . }}
 {{ end }}

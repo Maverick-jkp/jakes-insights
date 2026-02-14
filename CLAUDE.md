@@ -89,6 +89,7 @@ data/topics_queue.json       # Topic queue (state machine)
 
 | Task | Read |
 |------|------|
+| **New PC setup (5 min)** | `.claude/docs/quick-setup.md` |
 | Content pipeline details | `.claude/docs/architecture.md` |
 | All command reference | `.claude/docs/commands.md` |
 | Step-by-step guides | `.claude/docs/development.md` |

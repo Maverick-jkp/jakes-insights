@@ -1,7 +1,7 @@
 ---
 title: "The James Franco Case Study: Institutional Accountability Costs"
 date: 2026-02-14T11:01:32+0900
-draft: false
+draft: true
 author: "Jake Park"
 categories: ["entertainment"]
 tags: ["james", "franco"]

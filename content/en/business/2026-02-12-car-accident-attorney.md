@@ -1,7 +1,7 @@
 ---
 title: "Car Accident Attorney Tech: AI, Drones & Accessibility Issues"
 date: 2026-02-12T19:51:35+0900
-draft: false
+draft: true
 author: "Jake Park"
 categories: ["business"]
 tags: ["car", "accident", "attorney"]

@@ -1,7 +1,7 @@
 ---
 title: "Seamus Culleton ICE Detention: Legal Worker Held 5 Months"
 date: 2026-02-11T20:00:53+0900
-draft: false
+draft: true
 author: "Jake Park"
 categories: ["society"]
 tags: ["seamus", "culleton", "ice"]

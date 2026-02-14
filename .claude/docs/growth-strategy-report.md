@@ -39,10 +39,15 @@
 - "Key Takeaways" 블록 (generate_posts.py 프롬프트에 3-5개 핵심 문장)
 - 선언적 데이터 문장 → AI 검색 인용률 3배 증가 기대
 
-### 2. CPC 가중 키워드 스코어링
-- **범위 한정**: Tech/SaaS ($5-15 CPC)에 집중
-- 보험/법률 YMYL ($10-50+)은 DA 0 사이트에서 비현실적
-- 스포츠/엔터 비중 축소 (CPC $0.3-2)
+### 2. Tech 100% + 커뮤니티 기반 토픽 전략 (CORE STRATEGY)
+- **범위**: **Tech/SaaS/Dev 100%** (Business, Society, Sports, Entertainment 완전 제외)
+- **토픽 소스** (구현 완료):
+  - 🌍 해외: Dev.to, HackerNews, Hashnode → `community_miner.py`
+  - 🇰🇷 국내: GeekNews, Velog, 44BITS, 요즘IT, Toss/Kakao 블로그 → `korean_community_miner.py`
+  - 📊 Google Trends: 보조 (최신성 확인용)
+- **전략**: 커뮤니티에서 논의되는 핫한 주제 + 깊이 있는 데이터 분석
+- **CPC**: Tech/SaaS ($5-15) 집중, YMYL ($10-50+) 및 저CPC 주제 ($0.3-2) 제외
+- **현황**: 커뮤니티 마이너 활성화됨, generate_posts.py에 통합 완료
 
 ### 3. 콘텐츠 신디케이션 (EN만 우선)
 | 플랫폼 | 방법 | 대기 기간 |

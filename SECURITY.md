@@ -19,18 +19,18 @@
    ```bash
    # ✅ CORRECT - Use placeholders
    ANTHROPIC_API_KEY=your-anthropic-api-key-here
-   GOOGLE_API_KEY=your-google-api-key-here
+   BRAVE_API_KEY=your-brave-api-key-here
 
    # ❌ WRONG - Real keys
    ANTHROPIC_API_KEY=sk-ant-api03-xxxxx
-   GOOGLE_API_KEY=AIzaSyAY5xxxxx
+   BRAVE_API_KEY=BSA...xxxxx
    ```
 
 3. **Before committing any new file:**
    ```bash
    # Check for API keys
    grep -r "sk-ant-" .
-   grep -r "AIzaSy" .
+   grep -r "BSA" . --include="*.md"
    grep -r "api.*key.*=" . --include="*.md"
    ```
 
@@ -55,7 +55,7 @@
 
 1. **Immediately revoke the exposed key**
    - Anthropic Console: https://console.anthropic.com/settings/keys
-   - Google Cloud Console: https://console.cloud.google.com/apis/credentials
+   - Brave Search: https://brave.com/search/api/ (Dashboard → API Keys)
    - Unsplash: https://unsplash.com/oauth/applications
 
 2. **Generate new key**
@@ -96,7 +96,7 @@
 ## Automation Workflow
 
 ```bash
-# 1. Generate keywords (uses Google API + Claude API)
+# 1. Generate keywords (uses Brave Search API + Claude API)
 python3 scripts/keyword_curator.py --count 15
 
 # 2. Generate posts (uses Claude API + Unsplash API)
@@ -121,5 +121,17 @@ All API keys are loaded from `.env` automatically - **never hardcode them!**
 
 ---
 
-**Last Updated:** 2026-01-17
-**Incident:** API keys in GOOGLE_SEARCH_INTEGRATION.md (resolved)
+## API Migration History
+
+### 2026-01-22: Google Custom Search → Brave Search API
+- **Reason**: Google Custom Search JSON API discontinued for new users
+- **Impact**: GOOGLE_API_KEY and GOOGLE_CX no longer required
+- **New API**: BRAVE_API_KEY (from https://brave.com/search/api/)
+- **Security Note**: All previous Google API keys were rotated as precaution
+
+---
+
+**Last Updated:** 2026-02-14
+**Recent Incidents:**
+- 2026-01-22: BRAVE_API_KEY exposed in git history (resolved, key rotated)
+- 2026-01-17: API keys in GOOGLE_SEARCH_INTEGRATION.md (resolved)

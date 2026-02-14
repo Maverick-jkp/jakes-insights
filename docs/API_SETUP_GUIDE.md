@@ -1,42 +1,41 @@
 # API Setup Guide
 
-## Critical: Missing API Credentials
+## Critical: API Credentials Required
 
-Your content generation is failing because **Google Custom Search API credentials are not configured**. This causes:
+Your content generation requires the following API credentials to be configured:
 
-1. ❌ Keywords generated WITHOUT references
-2. ❌ Posts published WITHOUT credible sources
-3. ❌ Reduced SEO value and user trust
+1. ✅ **Brave Search API** - For keyword research and references
+2. ✅ **Unsplash API** - For featured images
+3. ✅ **Claude API** - For content generation
 
 ---
 
 ## 🔴 IMMEDIATE ACTION REQUIRED
 
-### Step 1: Set Up Google Custom Search API
+### Step 1: Set Up Brave Search API (REQUIRED)
 
-#### 1.1 Create Google Cloud Project
-1. Go to https://console.cloud.google.com/
-2. Create a new project (or select existing)
-3. Enable "Custom Search API"
-4. Go to "Credentials" → "Create Credentials" → "API Key"
-5. **Copy the API Key** → This is your `GOOGLE_API_KEY`
+**Why Brave?** Google Custom Search API was deprecated for new users as of January 2026.
 
-#### 1.2 Create Custom Search Engine
-1. Go to https://programmablesearchengine.google.com/
-2. Click "Add" to create new search engine
-3. Configure:
-   - **Search the entire web**: Enable
-   - **Search engine name**: "Tech Insights Reference Search"
-4. Click "Create"
-5. Go to "Setup" → Copy the **Search engine ID** → This is your `GOOGLE_CX`
+#### 1.1 Create Brave Search API Account
+1. Go to https://brave.com/search/api/
+2. Click **Sign Up**
+3. Complete email verification
+4. Navigate to Dashboard → **API Keys** section
+5. Click **Create New Key**
+6. **Copy the API Key** → This is your `BRAVE_API_KEY`
+
+#### 1.2 Pricing & Limits
+- **Free Tier**: 2,000 queries/month (~66 queries/day)
+- **Overage Cost**: $0.55 per 1,000 queries
+- **Expected Usage**: ~120 queries/month (well within free tier)
 
 #### 1.3 Configure GitHub Secrets
 1. Go to your GitHub repository
 2. Settings → Secrets and variables → Actions
 3. Add the following repository secrets:
-   - `GOOGLE_API_KEY`: Your Google Cloud API key
-   - `GOOGLE_CX`: Your Custom Search Engine ID
+   - `BRAVE_API_KEY`: Your Brave Search API key
    - `UNSPLASH_ACCESS_KEY`: Your Unsplash Access Key (see Step 2)
+   - `ANTHROPIC_API_KEY`: Your Claude API key
 
 ---
 
@@ -56,26 +55,40 @@ Your content generation is failing because **Google Custom Search API credential
 
 ---
 
+### Step 3: Set Up Claude API
+
+#### 3.1 Create Anthropic Account
+1. Go to https://console.anthropic.com/settings/keys
+2. Create a new API key
+3. Copy your **API Key** → This is your `ANTHROPIC_API_KEY`
+
+#### 3.2 Add to GitHub Secrets
+1. Settings → Secrets and variables → Actions
+2. Add new secret:
+   - Name: `ANTHROPIC_API_KEY`
+   - Value: Your Anthropic API key
+
+---
+
 ## 🧪 Testing Locally
 
 ### Test Keyword Curation
 ```bash
 export ANTHROPIC_API_KEY="your-key"
-export GOOGLE_API_KEY="your-google-key"
-export GOOGLE_CX="your-search-engine-id"
+export BRAVE_API_KEY="your-brave-api-key"
 
 python scripts/keyword_curator.py --count 5
 ```
 
 **Expected Output:**
 - ✓ Should fetch trending topics from Google Trends
-- ✓ Should search for references using Google Custom Search
+- ✓ Should search for references using Brave Search
 - ✓ Should extract 2 references per keyword
 - ✓ Should show "All 5 keywords have references!" message
 
 **If you see warnings:**
-- ⚠️ "Google Custom Search not configured" → API keys not set
-- ⚠️ "X keywords have NO references" → Google API quota exceeded or invalid credentials
+- ⚠️ "Brave Search API key not found" → API key not set
+- ⚠️ "X keywords have NO references" → Brave API quota exceeded or invalid credentials
 
 ### Test Content Generation
 ```bash
@@ -86,7 +99,7 @@ python scripts/generate_posts.py --count 1
 ```
 
 **Expected Output:**
-- ✓ Pre-flight check should show both API keys configured
+- ✓ Pre-flight check should show all API keys configured
 - ✓ Should download real Unsplash images (not placeholders)
 - ✓ Should include references section in generated posts
 - ✓ Quality check should PASS with no warnings
@@ -96,12 +109,12 @@ python scripts/generate_posts.py --count 1
 ## 🚨 Common Issues
 
 ### Issue 1: "No references generated"
-**Cause:** Google Custom Search API credentials missing or invalid
+**Cause:** Brave Search API credentials missing or invalid
 
 **Fix:**
-1. Verify `GOOGLE_API_KEY` and `GOOGLE_CX` are set correctly
-2. Check Google Cloud Console: Is Custom Search API enabled?
-3. Check billing: Google requires a billing account (free tier available)
+1. Verify `BRAVE_API_KEY` is set correctly
+2. Check Brave Dashboard: Is API key active?
+3. Check usage limits: Free tier is 2,000 queries/month
 
 ### Issue 2: "Placeholder images used"
 **Cause:** `UNSPLASH_ACCESS_KEY` not configured
@@ -112,14 +125,14 @@ python scripts/generate_posts.py --count 1
 3. Verify the key is valid by testing locally
 
 ### Issue 3: "API quota exceeded"
-**Cause:** Google Custom Search has limits (100 queries/day on free tier)
+**Cause:** Brave Search has limits (2,000 queries/month on free tier)
 
 **Temporary Fix:**
 - Reduce keyword count: `--count 5` instead of `--count 15`
 
 **Permanent Fix:**
-- Upgrade to paid tier (100 queries/day → unlimited)
-- Or implement caching/batching strategy
+- Monitor usage in Brave Dashboard
+- Upgrade to paid tier if needed ($0.55/1,000 queries)
 
 ---
 
@@ -129,7 +142,7 @@ python scripts/generate_posts.py --count 1
 1. Go to Actions tab in GitHub
 2. Click on "Daily Keyword Curation" workflow
 3. Look for warnings:
-   - "Google Custom Search not configured"
+   - "Brave Search API key not found"
    - "X keywords have NO references"
 
 ### Validate Generated Content
@@ -158,10 +171,33 @@ When properly configured, you should see:
 
 ## 🔧 Emergency Fallback
 
-If you can't configure Google API immediately:
+If you can't configure Brave API immediately:
 
 1. **Option A**: Use existing keywords from queue (already curated)
 2. **Option B**: Manually add references to posts after generation
 3. **Option C**: Generate keywords without references (not recommended - SEO impact)
 
-**Long-term:** You MUST configure Google Custom Search API for sustainable content generation.
+**Long-term:** You MUST configure Brave Search API for sustainable content generation.
+
+---
+
+## 📝 Migration Notes
+
+### Google Custom Search API → Brave Search API (2026-01-22)
+
+**Why we switched:**
+- Google Custom Search JSON API discontinued for new users
+- All Google API requests returned 403 Forbidden
+- Brave Search offers better pricing and higher quotas
+
+**Benefits:**
+- 20x more free queries (2,000/month vs 100/day)
+- 11x cheaper ($0.55/1K vs $5/1K)
+- Simpler setup (no Custom Search Engine required)
+- Better privacy (no user tracking)
+
+**For detailed migration report:** See `.claude/reports/active/brave-api-migration-success-2026-01-22.md`
+
+---
+
+**Last Updated:** 2026-02-14

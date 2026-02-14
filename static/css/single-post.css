@@ -1,5 +1,6 @@
 /* Single Post - Professional & Readable */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('/css/shared-header.css');
 
 :root {
     --bg: #fafafa;
@@ -28,87 +29,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Header Styles (matching homepage) */
-.site-header {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 0;
-}
-
-.header-content {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-logo h1 {
-    font-family: var(--serif);
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.site-logo h1 a {
-    color: var(--text);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.site-logo h1 a:hover {
-    color: var(--accent);
-}
-
-.site-tagline {
-    display: block;
-    font-size: 0.75rem;
-    color: var(--text-light);
-    margin-top: 0.25rem;
-}
-
-.main-nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.main-nav a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.2s;
-}
-
-.main-nav a:hover {
-    color: var(--accent);
-}
-
-.lang-switcher {
-    display: flex;
-    gap: 0.5rem;
-    font-size: 0.85rem;
-}
-
-.lang-link {
-    padding: 0.4rem 0.8rem;
-    color: var(--text-secondary);
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all 0.2s;
-}
-
-.lang-link:hover,
-.lang-link.active {
-    color: var(--accent);
-    background: rgba(37, 99, 235, 0.1);
-}
-
-.lang-separator {
-    color: var(--border);
-}
+/* Header styles now in shared-header.css */
 
 /* Post Container - Clean Layout */
 .post-container {
@@ -124,12 +45,12 @@ body {
 
 .post-title {
     font-family: var(--serif);
-    font-size: 2.75rem;
-    font-weight: 700;
-    line-height: 1.15;
-    color: var(--text);
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
 }
 
 .post-meta {

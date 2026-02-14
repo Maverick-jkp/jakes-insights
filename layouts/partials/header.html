@@ -1,22 +1,18 @@
 <header class="site-header">
-  <div class="header-content">
-    <div class="site-logo">
-      <h1><a href="{{ "/" | relLangURL }}" style="color: inherit; text-decoration: none;">Global Tech Insights</a></h1>
-      <span class="site-tagline">Where Silicon Valley meets Seoul</span>
+  <div class="header-inner">
+    <div class="brand-group">
+      <a href="/{{ if eq .Language.Lang "ko" }}ko{{ else }}en{{ end }}/" class="brand">
+        <span class="brand-primary">JAKE'S</span>
+        <span class="brand-secondary">INSIGHTS</span>
+      </a>
+      <p class="tagline">In-depth tech analysis with community insights</p>
     </div>
-
-    <nav class="main-nav">
-      <a href="{{ "/" | relLangURL }}">Home</a>
-      <a href="{{ "/all-posts/" | relLangURL }}">All Posts</a>
+    <nav class="header-nav">
+      <a href="/{{ if eq .Language.Lang "ko" }}ko{{ else }}en{{ end }}/">Home</a>
+      <a href="/{{ if eq .Language.Lang "ko" }}ko{{ else }}en{{ end }}/all-posts/">All Posts</a>
+      <span class="nav-divider">|</span>
+      <a href="/en/" class="{{ if eq .Language.Lang "en" }}active{{ end }}">English</a>
+      <a href="/ko/" class="{{ if eq .Language.Lang "ko" }}active{{ end }}">한국어</a>
     </nav>
-
-    <div class="header-actions">
-      {{/* Language Switcher - Fixed */}}
-      <div class="lang-switcher">
-        <a href="/en/" class="lang-link {{ if eq .Language.Lang "en" }}active{{ end }}">EN</a>
-        <span class="lang-separator">/</span>
-        <a href="/ko/" class="lang-link {{ if eq .Language.Lang "ko" }}active{{ end }}">KO</a>
-      </div>
-    </div>
   </div>
 </header>

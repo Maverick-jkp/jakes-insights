@@ -7,22 +7,8 @@
     <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="brand-group">
-                <a href="/{{ .Site.Language.Lang }}/" class="brand">
-                    <span class="brand-primary">JAKE'S</span>
-                    <span class="brand-secondary">INSIGHTS</span>
-                </a>
-                <p class="tagline">In-depth tech analysis with community insights</p>
-            </div>
-            <nav class="header-nav">
-                <a href="/en/" class="{{ if eq .Site.Language.Lang "en" }}active{{ end }}">English</a>
-                <a href="/ko/" class="{{ if eq .Site.Language.Lang "ko" }}active{{ end }}">한국어</a>
-            </nav>
-        </div>
-    </header>
+    <!-- Header - Use Shared Partial -->
+    {{ partial "header.html" . }}
 
     {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
     {{ $posts := where $pages "Type" "!=" "page" }}

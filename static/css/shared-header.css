@@ -1,0 +1,77 @@
+/* Shared Header Styles - Used by All Pages */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+}
+
+.header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.brand {
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.brand-primary {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: -0.02em;
+}
+
+.brand-secondary {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2563eb;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 0.8125rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-nav a {
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+}
+
+.header-nav a.active {
+    color: #000;
+}
+
+.header-nav a:hover {
+    color: #2563eb;
+}
+
+.nav-divider {
+    color: #e5e7eb;
+}

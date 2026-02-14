@@ -5641,39 +5641,6 @@
       "completed_at": "2026-02-09T12:32:51.403885+00:00"
     },
     {
-      "id": "532-ko-tech-코딩-부트캠프-추천",
-      "keyword": "코딩 부트캠프 추천",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-12T11:49:54.381920",
-      "retry_count": 1,
-      "keyword_type": "evergreen",
-      "search_intent": "프로그래밍 커리어 전환을 위해 부트캠프 선택 기준과 비교 정보를 찾고자 함",
-      "angle": "비교 가이드 - 국내 주요 부트캠프의 특징, 비용, 취업률, 커리큘럼을 체계적으로 비교 분석",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "2025 부트캠프 TOP5 종류별 추천과 가격, 비전공자 등 정보 총정리 - 내일배움캠프 블로그",
-          "url": "https://nbcamp.spartaclub.kr/blog/2025-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-top5-%EC%A2%85%EB%A5%98%EB%B3%84-%EC%B6%94%EC%B2%9C%EA%B3%BC-%EA%B0%80%EA%B2%A9-%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90-%EB%93%B1-%EC%A0%95%EB%B3%B4-%EC%B4%9D%EC%A0%95%EB%A6%AC-56201?traffic_type=internal",
-          "source": "nbcamp.spartaclub.kr"
-        },
-        {
-          "title": "2025년 코딩 부트캠프 추천 리스트",
-          "url": "https://greenutopia.tistory.com/entry/2025%EB%85%84-%EC%BD%94%EB%94%A9-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-%EC%B6%94%EC%B2%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8",
-          "source": "greenutopia.tistory.com"
-        },
-        {
-          "title": "코딩 부트캠프 - 위키백과, 우리 모두의 백과사전",
-          "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%94%A9_%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84",
-          "source": "ko.wikipedia.org"
-        }
-      ],
-      "content_type_hint": "GUIDE",
-      "last_error": "Stuck in progress for 0+ hours"
-    },
-    {
       "id": "533-en-tech-ai-real-estate",
       "keyword": "ai real estate",
       "category": "tech",
@@ -5706,235 +5673,6 @@
       "expiry_days": 3,
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-14T01:47:15.561418+00:00"
-    },
-    {
-      "id": "534-en-tech-ryan-beiermeister",
-      "keyword": "ryan beiermeister",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-12T15:48:22.287055",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Tech workers and AI ethics advocates are alarmed by reports of a safety executive being fired after opposing controversial features—they need to know if OpenAI is prioritizing profits over safety and if internal dissent is being punished",
-      "angle": "Corporate retaliation against AI safety concerns and ethical whistleblowing",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "An OpenAI Executive Was Fired for Sexual Discrimination. She Had Warned About Harmful Features of a ",
-          "url": "https://www.inc.com/ava-levinson/openai-executive-fired-warning-update/91301168",
-          "source": "www.inc.com"
-        },
-        {
-          "title": "OpenAI policy exec who opposed chatbot's 'adult mode' reportedly fired on discrimination claim | Tec",
-          "url": "https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/",
-          "source": "techcrunch.com"
-        },
-        {
-          "title": "OpenAI has 'fired' woman researcher who opposed 'Adult Mode' in ChatGPT, here's what her termination",
-          "url": "https://timesofindia.indiatimes.com/technology/tech-news/openai-has-fired-woman-researcher-who-opposed-adult-mode-in-chatgpt-heres-what-her-termination-note-says/articleshow/128206950.cms",
-          "source": "timesofindia.indiatimes.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "535-ko-business-대한통운",
-      "keyword": "대한통운",
-      "category": "business",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-12T15:48:22.287088",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "CJ대한통운이 역대 최대 실적을 냈지만 주7일 배송 서비스 확대로 택배 노동자들의 과로와 안전 문제가 심각해지고 있다는 우려—소비자들은 편리함 뒤에 숨겨진 노동 착취 실태를 알고 싶어함",
-      "angle": "기업 이익 증대 뒤에 가려진 노동자 착취와 과로 문제",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "CJ대한통운, 작년 4분기 영업익 1,596억으로 역대 최대 기록",
-          "url": "https://www.klnews.co.kr/news/articleView.html?idxno=319977",
-          "source": "www.klnews.co.kr"
-        },
-        {
-          "title": "CJ대한통운, 작년 4분기 영업익 역대 최대…‘매일오네‘ 효과 톡톡",
-          "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=240956",
-          "source": "www.insightkorea.co.kr"
-        },
-        {
-          "title": "‘주 7일 배송’ 안착 CJ대한통운, 4분기 최대 실적",
-          "url": "https://www.hani.co.kr/arti/economy/consumer/1244259.html",
-          "source": "www.hani.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "536-ko-entertainment-롯데시네마",
-      "keyword": "롯데시네마",
-      "category": "entertainment",
-      "lang": "ko",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-02-12T15:48:22.287115",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "설 연휴 영화관 할인 이벤트를 기대했던 소비자들이 실제 혜택이 미미하거나 조건이 까다로워 실망감을 느끼고 있음—진짜 할인인지 마케팅 전략인지 확인 필요",
-      "angle": "명절 할인 이벤트의 실체와 소비자 기만 가능성",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "롯데시네마, 설 연휴 ‘롯시 운세 Pick!’로 신년 운세·할인 혜택 제공 | 신유건 기자 | 톱스타뉴스",
-          "url": "https://www.topstarnews.net/news/articleView.html?idxno=15964840",
-          "source": "www.topstarnews.net"
-        },
-        {
-          "title": "'굿 윌 헌팅' 3월 롯데시네마 재개봉…맷 데이먼X로빈 윌리엄스의 감동, 다시 만난다 - 한국연예스포츠신문",
-          "url": "https://www.koreaes.com/news/articleView.html?idxno=402743",
-          "source": "www.koreaes.com"
-        },
-        {
-          "title": "롯데시네마, 설 연휴 ‘롯시 운세 픽’ 이벤트",
-          "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=351291",
-          "source": "www.smedaily.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "537-en-tech-best-laptops-for-dev",
-      "keyword": "best laptops for developers",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-12T15:48:22.287152",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Developers need to make informed purchasing decisions when buying laptops that can handle coding, compilation, virtual machines, and multiple development tools efficiently",
-      "angle": "Comprehensive buying guide with technical specifications, performance benchmarks, and recommendations for different developer types (web, mobile, data science)",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "The 4 Best Laptops For Programming of 2026 - RTINGS.com",
-          "url": "https://www.rtings.com/laptop/reviews/best/by-usage/programming",
-          "source": "www.rtings.com"
-        },
-        {
-          "title": "The Best Laptops for Programmers We've Tested for 2026 | PCMag",
-          "url": "https://www.pcmag.com/picks/the-best-laptops-for-programmers?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=A",
-          "source": "www.pcmag.com"
-        },
-        {
-          "title": "How to choose a laptop for programming | IT Pro",
-          "url": "https://www.itpro.com/hardware/laptops/360012/4-best-laptops-for-programming",
-          "source": "www.itpro.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "538-ko-business-연봉-협상-전략",
-      "keyword": "연봉 협상 전략",
-      "category": "business",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-12T15:48:22.287180",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "구직자나 이직 준비자가 연봉 협상 과정에서 실질적으로 사용할 수 있는 전략과 화법을 배워 더 나은 처우를 받고자 함",
-      "angle": "실전 협상 시나리오별 대응 전략, 준비 단계부터 마무리까지의 단계별 가이드, 실제 협상 화법 예시 제공",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "이직 연봉 인상률 업계수준·업무일지작성 팁까지 협상전략 한눈에 보세요",
-          "url": "https://asalgom.tistory.com/2624",
-          "source": "asalgom.tistory.com"
-        },
-        {
-          "title": "경력직 연봉 협상 팁: 원하는 조건을 끌어내는 7가지 전략 - 캔디드 공식 블로그",
-          "url": "https://teamcandid.kr/blog/salary-negotiation-tips",
-          "source": "teamcandid.kr"
-        },
-        {
-          "title": "작아지지 마세요! 연봉 협상 13가지 꿀팁 · 위픽레터",
-          "url": "https://letter.wepick.kr/510/4419641/",
-          "source": "letter.wepick.kr"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "539-en-society-pima-county-sheriff",
-      "keyword": "pima county sheriff",
-      "category": "society",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-14T14:26:52.540528",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Users fear law enforcement incompetence could mean justice delayed or denied in critical missing person cases affecting their own communities",
-      "angle": "Exposing systemic failures in sheriff's department handling of sensitive investigations with national media attention",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Pima County Sheriff's Department - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Pima_County_Sheriff's_Department",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Pima County Sheriff under a microscope as Nancy Guthrie remains missing",
-          "url": "https://www.azfamily.com/2026/02/13/pima-county-sheriff-under-microscope-nancy-guthrie-remains-missing/",
-          "source": "www.azfamily.com"
-        },
-        {
-          "title": "Pima County sheriff no stranger to controversy as criticism in Nancy Guthrie case ramps up",
-          "url": "https://www.foxnews.com/us/pima-county-sheriff-no-stranger-controversy-criticism-nancy-guthrie-case-ramps-up",
-          "source": "www.foxnews.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "540-ko-entertainment-백사장3",
-      "keyword": "백사장3",
-      "category": "entertainment",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-14T14:26:52.540569",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "갑질 논란으로 추락한 스타가 조용히 복귀했지만 시청률 폭락으로 대중의 냉담한 반응이 확인되어, 내가 응원하던 인물의 진짜 평판을 확인하고 싶은 불안감",
-      "angle": "논란 이후 홍보 없이 방송 복귀한 유명인의 처참한 시청률로 본 대중 신뢰 회복 실패 사례",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "세계밥장사 도전기 백사장3 1화 | TVING",
-          "url": "https://www.tving.com/contents/P001782555",
-          "source": "www.tving.com"
-        },
-        {
-          "title": "'백사장3'로 돌아오는 백종원, 이미지 회복할까 - 오마이스타",
-          "url": "https://star.ohmynews.com/NWS_Web/OhmyStar/at_pg.aspx?CNTN_CD=A0003205938",
-          "source": "star.ohmynews.com"
-        },
-        {
-          "title": "'장사천재' 뺀 '백사장3', 조용히 첫방송…시청률 반토막",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=05749846645349536&mediaCodeNo=257",
-          "source": "www.edaily.co.kr"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
     },
     {
       "id": "999-en-tech-cursor-ai-142743",
@@ -5971,6 +5709,149 @@
       "expiry_days": 7,
       "reserved_at": "2026-02-14T05:27:44.474568+00:00",
       "completed_at": "2026-02-14T05:38:35.252111+00:00"
+    },
+    {
+      "id": "1000-en-sports-sidney-crosby",
+      "keyword": "sidney crosby",
+      "category": "sports",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-14T07:35:42.705469",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fans fear missing Crosby's potentially final Olympic performance as the 37-year-old legend competes in what could be his last Winter Games",
+      "angle": "Legacy-defining moment for aging superstar—last chance to witness greatness",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Sidney Crosby - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sidney_Crosby",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Sidney Crosby: Captain Canada eyes gold in Winter Olympics 2026 men’s ice hockey",
+          "url": "https://www.olympics.com/en/milano-cortina-2026/news/2026-winter-olympics-canada-mens-team-captain-sidney-crosby-age-and-experience-no-guarantee-olympic-success",
+          "source": "www.olympics.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1001-en-tech-sql-tap",
+      "keyword": "sql-tap",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-14T07:35:42.705493",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers fear their applications are making hidden, inefficient database calls that could be causing performance issues or security vulnerabilities",
+      "angle": "Real-time database traffic visibility tool reveals what traditional monitoring misses",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1002-ko-tech-도깨비",
+      "keyword": "도깨비",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-14T07:35:42.705510",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "게이머들은 펄어비스의 적자 전환 소식에 기대작 '도깨비'의 출시가 취소되거나 무기한 연기될까 봐 불안해함",
+      "angle": "회사 실적 악화로 신작 개발 중단 가능성—기다림의 끝이 실망일 수 있다",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "🏨[호텔 도깨비 4회 리뷰] “안 가면 안 돼?” 처음이라 더 아쉬운, <호텔 도깨비> 첫 체크아웃 260210 :: 라끄의 예능, 드라마 리뷰",
+          "url": "https://lacsosicktvclips.tistory.com/3109",
+          "source": "lacsosicktvclips.tistory.com"
+        },
+        {
+          "title": "펄어비스, '도깨비' 개발현황 올해 중 공개 예정 - 인벤",
+          "url": "https://www.inven.co.kr/webzine/news/?news=313555",
+          "source": "www.inven.co.kr"
+        },
+        {
+          "title": "‘호텔 도깨비’ 스테이씨 시은, 뉴페이스 ‘황금 알바생’의 등장! - 스포츠경향",
+          "url": "https://sports.khan.co.kr/article/202602091142003",
+          "source": "sports.khan.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1003-ko-entertainment-솔로지옥-리유니언",
+      "keyword": "솔로지옥 리유니언",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-14T07:35:42.705525",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "시청자들은 자신이 좋아했던 커플이 실제로는 이미 결별했거나 관계가 악화됐을지 모른다는 불안감에 즉시 확인하고 싶어함",
+      "angle": "숨겨진 연애 실패담과 이별 스토리—방송 후 현실의 잔혹함",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "솔로지옥 리유니언 | 공식 예고편 | 넷플릭스 - YouTube",
+          "url": "https://www.youtube.com/watch?v=DYkZte010s4",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "이명박 손자가 ‘솔로지옥’ 출연 소문…제작진 직접 답했다 | 서울신문",
+          "url": "https://www.seoul.co.kr/news/newsView.php?id=20260213500323",
+          "source": "www.seoul.co.kr"
+        },
+        {
+          "title": "`솔로지옥` 현커=임수빈♥박희선뿐? \"꽤 있다! 솔직하게 공유할 것\" [MD인터뷰②] - 마이데일리",
+          "url": "https://www.mydaily.co.kr/page/view/2026021402123234188",
+          "source": "www.mydaily.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1004-ko-tech-클라우드-컴퓨팅-기초",
+      "keyword": "클라우드 컴퓨팅 기초",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-14T07:35:42.705539",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "클라우드 컴퓨팅의 개념을 이해하고 기초 지식을 체계적으로 학습하여 실무 또는 개인 프로젝트에 적용하고 싶어함",
+      "angle": "초보자 관점에서 클라우드 컴퓨팅의 기본 개념, 주요 서비스(AWS, Azure, GCP), 활용 사례, 학습 로드맵을 단계별로 설명하는 종합 교육 가이드",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and Types - AWS",
+          "url": "https://aws.amazon.com/what-is-cloud-computing/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "클라우드 컴퓨팅 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%BB%B4%ED%93%A8%ED%8C%85",
+          "source": "ko.wikipedia.org"
+        },
+        {
+          "title": "클라우드 컴퓨팅이란 무엇인가요?",
+          "url": "https://www.ibm.com/think/topics/cloud-computing",
+          "source": "www.ibm.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

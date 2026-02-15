@@ -5711,144 +5711,111 @@
       "completed_at": "2026-02-14T05:38:35.252111+00:00"
     },
     {
-      "id": "1000-en-sports-sidney-crosby",
-      "keyword": "sidney crosby",
-      "category": "sports",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-14T07:35:42.705469",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Fans fear missing Crosby's potentially final Olympic performance as the 37-year-old legend competes in what could be his last Winter Games",
-      "angle": "Legacy-defining moment for aging superstar—last chance to witness greatness",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "Sidney Crosby - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Sidney_Crosby",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Sidney Crosby: Captain Canada eyes gold in Winter Olympics 2026 men’s ice hockey",
-          "url": "https://www.olympics.com/en/milano-cortina-2026/news/2026-winter-olympics-canada-mens-team-captain-sidney-crosby-age-and-experience-no-guarantee-olympic-success",
-          "source": "www.olympics.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1001-en-tech-sql-tap",
-      "keyword": "sql-tap",
+      "id": "1000-en-tech-My-smart-sleep-mask-",
+      "keyword": "My smart sleep mask broadcasts users' brainwaves to an open MQTT broker",
       "category": "tech",
       "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-02-14T07:35:42.705493",
+      "created_at": "2026-02-15T07:39:53.490985",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Developers fear their applications are making hidden, inefficient database calls that could be causing performance issues or security vulnerabilities",
-      "angle": "Real-time database traffic visibility tool reveals what traditional monitoring misses",
-      "competition_level": "low",
+      "search_intent": "Users need to immediately check if their sleep tracking devices are leaking private biometric data before it's exploited by bad actors or sold to data brokers",
+      "angle": "Expose the hidden security vulnerabilities in consumer wellness tech that puts users' most intimate neural data at risk",
+      "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1002-ko-tech-도깨비",
-      "keyword": "도깨비",
-      "category": "tech",
-      "lang": "ko",
+      "id": "1001-en-society-dublin-airport-fligh",
+      "keyword": "dublin airport flights",
+      "category": "society",
+      "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-14T07:35:42.705510",
+      "created_at": "2026-02-15T07:39:53.491034",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "게이머들은 펄어비스의 적자 전환 소식에 기대작 '도깨비'의 출시가 취소되거나 무기한 연기될까 봐 불안해함",
-      "angle": "회사 실적 악화로 신작 개발 중단 가능성—기다림의 끝이 실망일 수 있다",
-      "competition_level": "medium",
+      "search_intent": "Travelers need to verify their flight status immediately before arriving at the airport to avoid being stranded with no alternative options during the ongoing strike disruptions",
+      "angle": "Highlight the chaos of mass flight cancellations and the lack of airline accountability leaving passengers abandoned",
+      "competition_level": "high",
       "references": [
         {
-          "title": "🏨[호텔 도깨비 4회 리뷰] “안 가면 안 돼?” 처음이라 더 아쉬운, <호텔 도깨비> 첫 체크아웃 260210 :: 라끄의 예능, 드라마 리뷰",
-          "url": "https://lacsosicktvclips.tistory.com/3109",
-          "source": "lacsosicktvclips.tistory.com"
+          "title": "Dublin Airport (DUB/EIDW): DEPARTURES, ARRIVALS, FLIGHT INFORMATION",
+          "url": "https://www.flightera.net/en/airport/Dublin/EIDW/",
+          "source": "www.flightera.net"
         },
         {
-          "title": "펄어비스, '도깨비' 개발현황 올해 중 공개 예정 - 인벤",
-          "url": "https://www.inven.co.kr/webzine/news/?news=313555",
-          "source": "www.inven.co.kr"
-        },
-        {
-          "title": "‘호텔 도깨비’ 스테이씨 시은, 뉴페이스 ‘황금 알바생’의 등장! - 스포츠경향",
-          "url": "https://sports.khan.co.kr/article/202602091142003",
-          "source": "sports.khan.co.kr"
+          "title": "Eight flights cancelled at Dublin Airport as almost 800 Lufthansa departures halted after pilots and",
+          "url": "https://www.independent.ie/world-news/europe/eight-flights-cancelled-at-dublin-airport-as-almost-800-lufthansa-departures-halted-after-pilots-and-cabin-crew-walk-out/a731880080.html",
+          "source": "www.independent.ie"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1003-ko-entertainment-솔로지옥-리유니언",
-      "keyword": "솔로지옥 리유니언",
-      "category": "entertainment",
+      "id": "1002-ko-sports-서울-sk-대-안양-정관장",
+      "keyword": "서울 sk 대 안양 정관장",
+      "category": "sports",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-14T07:35:42.705525",
+      "created_at": "2026-02-15T07:39:53.491055",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "시청자들은 자신이 좋아했던 커플이 실제로는 이미 결별했거나 관계가 악화됐을지 모른다는 불안감에 즉시 확인하고 싶어함",
-      "angle": "숨겨진 연애 실패담과 이별 스토리—방송 후 현실의 잔혹함",
+      "search_intent": "팬들은 팀의 반복되는 실수와 전략 부재가 시즌 전체를 망칠까봐 지금 당장 경기 분석과 대책을 확인해야 함",
+      "angle": "SK의 반복되는 파울 실책과 수비 붕괴가 시즌 우승 경쟁에서 어떻게 치명타가 되고 있는지 폭로",
       "competition_level": "medium",
       "references": [
         {
-          "title": "솔로지옥 리유니언 | 공식 예고편 | 넷플릭스 - YouTube",
-          "url": "https://www.youtube.com/watch?v=DYkZte010s4",
-          "source": "www.youtube.com"
+          "title": "[프로농구 주간전망] 정관장, 외곽 난조 극복하고 후반 뒷심 발휘할까 - 중부일보",
+          "url": "https://www.joongboo.com/news/articleView.html?idxno=363716786",
+          "source": "www.joongboo.com"
         },
         {
-          "title": "이명박 손자가 ‘솔로지옥’ 출연 소문…제작진 직접 답했다 | 서울신문",
-          "url": "https://www.seoul.co.kr/news/newsView.php?id=20260213500323",
+          "title": "당하기만 했던 유기상, 달라졌다…흐름 바꾼 3점 바스켓카운트→1위 사수 전화위복 [SD 안양 인터뷰]",
+          "url": "https://sports.donga.com/sports/article/all/20260208/133320302/1",
+          "source": "sports.donga.com"
+        },
+        {
+          "title": "프로농구 선두 창원 LG, 2위 안양 정관장 잡고 4연승…유기상, 마줄스 감독 앞에서 화력쇼 | 서울신문",
+          "url": "https://www.seoul.co.kr/news/sport/basketball/2026/02/08/20260208500129",
           "source": "www.seoul.co.kr"
-        },
-        {
-          "title": "`솔로지옥` 현커=임수빈♥박희선뿐? \"꽤 있다! 솔직하게 공유할 것\" [MD인터뷰②] - 마이데일리",
-          "url": "https://www.mydaily.co.kr/page/view/2026021402123234188",
-          "source": "www.mydaily.co.kr"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1004-ko-tech-클라우드-컴퓨팅-기초",
-      "keyword": "클라우드 컴퓨팅 기초",
-      "category": "tech",
+      "id": "1003-ko-sports-근력-운동-기초",
+      "keyword": "근력 운동 기초",
+      "category": "sports",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-14T07:35:42.705539",
+      "created_at": "2026-02-15T07:39:53.491101",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "클라우드 컴퓨팅의 개념을 이해하고 기초 지식을 체계적으로 학습하여 실무 또는 개인 프로젝트에 적용하고 싶어함",
-      "angle": "초보자 관점에서 클라우드 컴퓨팅의 기본 개념, 주요 서비스(AWS, Azure, GCP), 활용 사례, 학습 로드맵을 단계별로 설명하는 종합 교육 가이드",
-      "competition_level": "medium",
+      "search_intent": "근력 운동을 안전하고 효과적으로 시작하기 위한 기초 지식과 실전 방법 학습",
+      "angle": "초보자 눈높이에 맞춘 단계별 교육 가이드 (기본 개념 → 주요 운동 동작 → 루틴 구성 → 주의사항)",
+      "competition_level": "low",
       "references": [
         {
-          "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and Types - AWS",
-          "url": "https://aws.amazon.com/what-is-cloud-computing/",
-          "source": "aws.amazon.com"
-        },
-        {
-          "title": "클라우드 컴퓨팅 - 위키백과, 우리 모두의 백과사전",
-          "url": "https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%BB%B4%ED%93%A8%ED%8C%85",
+          "title": "근력 트레이닝 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EA%B7%BC%EB%A0%A5_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D",
           "source": "ko.wikipedia.org"
         },
         {
-          "title": "클라우드 컴퓨팅이란 무엇인가요?",
-          "url": "https://www.ibm.com/think/topics/cloud-computing",
-          "source": "www.ibm.com"
+          "title": "“없던 근육도 불끈”…운동 초보에게 좋은 근력 운동 3가지는? - 코메디닷컴",
+          "url": "https://kormedi.com/2712022/",
+          "source": "kormedi.com"
+        },
+        {
+          "title": "운동 프로그램 시작하기 - 기초 - MSD 매뉴얼 - 일반인용",
+          "url": "https://www.msdmanuals.com/ko/home/%EA%B8%B0%EC%B4%88/%EC%9A%B4%EB%8F%99%EA%B3%BC-%EA%B1%B4%EA%B0%95/%EC%9A%B4%EB%8F%99-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0",
+          "source": "www.msdmanuals.com"
         }
       ],
       "content_type_hint": "GUIDE"

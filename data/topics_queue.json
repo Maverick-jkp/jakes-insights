@@ -5711,111 +5711,145 @@
       "completed_at": "2026-02-14T05:38:35.252111+00:00"
     },
     {
-      "id": "1000-en-tech-My-smart-sleep-mask-",
-      "keyword": "My smart sleep mask broadcasts users' brainwaves to an open MQTT broker",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-02-15T07:39:53.490985",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Users need to immediately check if their sleep tracking devices are leaking private biometric data before it's exploited by bad actors or sold to data brokers",
-      "angle": "Expose the hidden security vulnerabilities in consumer wellness tech that puts users' most intimate neural data at risk",
-      "competition_level": "medium",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1001-en-society-dublin-airport-fligh",
-      "keyword": "dublin airport flights",
-      "category": "society",
+      "id": "1000-en-sports-iva-jovic",
+      "keyword": "iva jovic",
+      "category": "sports",
       "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-15T07:39:53.491034",
+      "created_at": "2026-02-16T07:56:33.494024",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Travelers need to verify their flight status immediately before arriving at the airport to avoid being stranded with no alternative options during the ongoing strike disruptions",
-      "angle": "Highlight the chaos of mass flight cancellations and the lack of airline accountability leaving passengers abandoned",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "Dublin Airport (DUB/EIDW): DEPARTURES, ARRIVALS, FLIGHT INFORMATION",
-          "url": "https://www.flightera.net/en/airport/Dublin/EIDW/",
-          "source": "www.flightera.net"
-        },
-        {
-          "title": "Eight flights cancelled at Dublin Airport as almost 800 Lufthansa departures halted after pilots and",
-          "url": "https://www.independent.ie/world-news/europe/eight-flights-cancelled-at-dublin-airport-as-almost-800-lufthansa-departures-halted-after-pilots-and-cabin-crew-walk-out/a731880080.html",
-          "source": "www.independent.ie"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1002-ko-sports-서울-sk-대-안양-정관장",
-      "keyword": "서울 sk 대 안양 정관장",
-      "category": "sports",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-02-15T07:39:53.491055",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "팬들은 팀의 반복되는 실수와 전략 부재가 시즌 전체를 망칠까봐 지금 당장 경기 분석과 대책을 확인해야 함",
-      "angle": "SK의 반복되는 파울 실책과 수비 붕괴가 시즌 우승 경쟁에서 어떻게 치명타가 되고 있는지 폭로",
+      "search_intent": "Fans and sports bettors need to know if their favorite emerging player is injured, retiring, or facing hidden career threats",
+      "angle": "The unexplained silence of a 18-year-old athlete at her career peak raises questions about burnout, injury, or management disputes",
       "competition_level": "medium",
       "references": [
         {
-          "title": "[프로농구 주간전망] 정관장, 외곽 난조 극복하고 후반 뒷심 발휘할까 - 중부일보",
-          "url": "https://www.joongboo.com/news/articleView.html?idxno=363716786",
-          "source": "www.joongboo.com"
+          "title": "Iva Jovic - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Iva_Jovic",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "당하기만 했던 유기상, 달라졌다…흐름 바꾼 3점 바스켓카운트→1위 사수 전화위복 [SD 안양 인터뷰]",
-          "url": "https://sports.donga.com/sports/article/all/20260208/133320302/1",
-          "source": "sports.donga.com"
+          "title": "Iva Jovic shares the reason why she hasn’t played a tournament since the Australian Open - Yahoo Spo",
+          "url": "https://sports.yahoo.com/articles/iva-jovic-shares-reason-why-200000860.html",
+          "source": "sports.yahoo.com"
         },
         {
-          "title": "프로농구 선두 창원 LG, 2위 안양 정관장 잡고 4연승…유기상, 마줄스 감독 앞에서 화력쇼 | 서울신문",
-          "url": "https://www.seoul.co.kr/news/sport/basketball/2026/02/08/20260208500129",
-          "source": "www.seoul.co.kr"
+          "title": "H2H, prediction of Iva Jovic vs Kamilla Rakhimova in Dubai with odds, preview, pick | 16th February ",
+          "url": "https://tennistonic.com/tennis-news/960510/h2h-prediction-of-iva-jovic-vs-kamilla-rakhimova-in-dubai-with-odds-preview-pick-16th-february-2026/",
+          "source": "tennistonic.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1003-ko-sports-근력-운동-기초",
-      "keyword": "근력 운동 기초",
-      "category": "sports",
+      "id": "1001-en-society-frankfurt-airport-fl",
+      "keyword": "frankfurt airport flights",
+      "category": "society",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-16T07:56:33.494052",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Travelers urgently checking if their flight status changed in the last hour to avoid missing connections or losing non-refundable bookings",
+      "angle": "Europe's busiest hub experiencing real-time disruptions that booking apps don't update fast enough",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Departures | Frankfurt Airport",
+          "url": "https://www.frankfurt-airport.com/en/flights-and-transfer/departures.html",
+          "source": "www.frankfurt-airport.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1002-ko-entertainment-넷플릭스",
+      "keyword": "넷플릭스",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-16T07:56:33.494070",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "시즌5 시청자들이 방송에서 보지 못한 뒷이야기와 출연자들의 실제 관계 결말을 지금 당장 확인하려는 욕구",
+      "angle": "리얼리티 쇼의 편집되지 않은 진실이 리유니언에서 폭로되면서 시청자들의 판단이 완전히 뒤바뀔 수 있음",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "솔로지옥 리유니언 | 공식 예고편 | 넷플릭스 - YouTube",
+          "url": "https://www.youtube.com/watch?v=DYkZte010s4",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1003-ko-society-지예은",
+      "keyword": "지예은",
+      "category": "society",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-15T07:39:53.491101",
+      "created_at": "2026-02-16T07:56:33.494084",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "근력 운동을 안전하고 효과적으로 시작하기 위한 기초 지식과 실전 방법 학습",
-      "angle": "초보자 눈높이에 맞춘 단계별 교육 가이드 (기본 개념 → 주요 운동 동작 → 루틴 구성 → 주의사항)",
-      "competition_level": "low",
+      "keyword_type": "trend",
+      "search_intent": "런닝맨 시청자들이 연예인의 실제 건강 상태와 자신의 체력을 비교하며 운동 동기를 찾거나 건강 불안을 확인하려는 심리",
+      "angle": "겉으로 보기엔 멀쩡한 연예인의 실제 체력이 일반인보다 못하다는 사실이 주는 경각심과 공감",
+      "competition_level": "medium",
       "references": [
         {
-          "title": "근력 트레이닝 - 위키백과, 우리 모두의 백과사전",
-          "url": "https://ko.wikipedia.org/wiki/%EA%B7%BC%EB%A0%A5_%ED%8A%B8%EB%A0%88%EC%9D%B4%EB%8B%9D",
+          "title": "지예은, 인바디 공개에 김종국도 놀랐다…“21kg 초등학생 근육량”",
+          "url": "https://sports.donga.com/ent/article/all/20260209/133326818/1",
+          "source": "sports.donga.com"
+        },
+        {
+          "title": "Ji Ye-eun, her trainer did not recognize her even though she is an actress… “They gave me socks, so ",
+          "url": "https://sports.khan.co.kr/en/article/202602091747017",
+          "source": "sports.khan.co.kr"
+        },
+        {
+          "title": "로이킴, 지예은 실물 보더니…\"더 예쁘다, 주변서 진짜 인기 많아\" ('런닝맨') [종합]",
+          "url": "https://tvreport.co.kr/broadcast/article/1001079/",
+          "source": "tvreport.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1004-ko-tech-클라우드-컴퓨팅-기초",
+      "keyword": "클라우드 컴퓨팅 기초",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-16T07:56:33.494102",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "클라우드 컴퓨팅의 개념을 이해하고 학습 방향을 설정하기 위해",
+      "angle": "초보자 관점에서 클라우드 컴퓨팅의 기본 개념, 주요 서비스(AWS, Azure, GCP), 학습 로드맵, 실무 활용 사례를 단계별로 설명하는 교육 가이드",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "What is Cloud Computing? - Cloud Computing Services, Benefits, and Types - AWS",
+          "url": "https://aws.amazon.com/what-is-cloud-computing/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "클라우드 컴퓨팅 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%BB%B4%ED%93%A8%ED%8C%85",
           "source": "ko.wikipedia.org"
         },
         {
-          "title": "“없던 근육도 불끈”…운동 초보에게 좋은 근력 운동 3가지는? - 코메디닷컴",
-          "url": "https://kormedi.com/2712022/",
-          "source": "kormedi.com"
-        },
-        {
-          "title": "운동 프로그램 시작하기 - 기초 - MSD 매뉴얼 - 일반인용",
-          "url": "https://www.msdmanuals.com/ko/home/%EA%B8%B0%EC%B4%88/%EC%9A%B4%EB%8F%99%EA%B3%BC-%EA%B1%B4%EA%B0%95/%EC%9A%B4%EB%8F%99-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0",
-          "source": "www.msdmanuals.com"
+          "title": "클라우드 컴퓨팅이란 무엇인가요?",
+          "url": "https://www.ibm.com/think/topics/cloud-computing",
+          "source": "www.ibm.com"
         }
       ],
       "content_type_hint": "GUIDE"

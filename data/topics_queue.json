@@ -5711,129 +5711,111 @@
       "completed_at": "2026-02-14T05:38:35.252111+00:00"
     },
     {
-      "id": "1000-en-sports-iva-jovic",
-      "keyword": "iva jovic",
+      "id": "1000-en-sports-yuvraj-samra",
+      "keyword": "yuvraj samra",
       "category": "sports",
       "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-16T07:56:33.494024",
+      "created_at": "2026-02-17T07:52:38.684103",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Fans and sports bettors need to know if their favorite emerging player is injured, retiring, or facing hidden career threats",
-      "angle": "The unexplained silence of a 18-year-old athlete at her career peak raises questions about burnout, injury, or management disputes",
+      "search_intent": "Witness a historic cricket milestone before it becomes old news and you're left out of sports conversations",
+      "angle": "Underdog breakthrough story - teenage phenom from non-elite cricket nation shatters records at the world's biggest stage",
       "competition_level": "medium",
       "references": [
         {
-          "title": "Iva Jovic - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Iva_Jovic",
-          "source": "en.wikipedia.org"
+          "title": "Yuvraj Samra goes large in Chennai | T20WC 2026 | ICC Men's T20 World Cup, 2026 | ICC",
+          "url": "https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/videos/yuvraj-samra-goes-large-in-chennai-t20wc-2026",
+          "source": "www.icc-cricket.com"
         },
         {
-          "title": "Iva Jovic shares the reason why she hasn’t played a tournament since the Australian Open - Yahoo Spo",
-          "url": "https://sports.yahoo.com/articles/iva-jovic-shares-reason-why-200000860.html",
-          "source": "sports.yahoo.com"
+          "title": "Who is Yuvraj Samra? This 19-year-old batsman's name is inspired by India's Yuvraj Singh | Khaleej T",
+          "url": "https://www.khaleejtimes.com/sports/who-is-yuvraj-samra-this-19-year-old-batsmans-name-is-inspired-by-indias-yuvraj-singh",
+          "source": "www.khaleejtimes.com"
         },
         {
-          "title": "H2H, prediction of Iva Jovic vs Kamilla Rakhimova in Dubai with odds, preview, pick | 16th February ",
-          "url": "https://tennistonic.com/tennis-news/960510/h2h-prediction-of-iva-jovic-vs-kamilla-rakhimova-in-dubai-with-odds-preview-pick-16th-february-2026/",
-          "source": "tennistonic.com"
+          "title": "Yuvraj Samra becomes first player from Associate nation to score a T20 World Cup hundred, reaches th",
+          "url": "https://sportstar.thehindu.com/cricket/yuvraj-samra-associate-first-century-vs-new-zealand/article70641893.ece",
+          "source": "sportstar.thehindu.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1001-en-society-frankfurt-airport-fl",
-      "keyword": "frankfurt airport flights",
-      "category": "society",
+      "id": "1001-en-tech-spectrum-outage",
+      "keyword": "spectrum outage",
+      "category": "tech",
       "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-02-16T07:56:33.494052",
+      "created_at": "2026-02-17T07:52:38.684131",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Travelers urgently checking if their flight status changed in the last hour to avoid missing connections or losing non-refundable bookings",
-      "angle": "Europe's busiest hub experiencing real-time disruptions that booking apps don't update fast enough",
+      "search_intent": "Confirm if the outage is widespread to demand compensation or switch providers before missing critical work/entertainment",
+      "angle": "Consumer rights violation - mass service failure with financial impact on subscribers who deserve refunds",
       "competition_level": "high",
       "references": [
         {
-          "title": "Departures | Frankfurt Airport",
-          "url": "https://www.frankfurt-airport.com/en/flights-and-transfer/departures.html",
-          "source": "www.frankfurt-airport.com"
+          "title": "Outage Information and Troubleshooting | Spectrum Support",
+          "url": "https://www.spectrum.net/support/internet/troubleshooting-your-spectrum-services-after-outage",
+          "source": "www.spectrum.net"
+        },
+        {
+          "title": "Spectrum Outage Map & Network Status – Live Updates",
+          "url": "https://geoblackout.com/us/report/internet/spectrum",
+          "source": "geoblackout.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1002-ko-entertainment-넷플릭스",
-      "keyword": "넷플릭스",
+      "id": "1002-ko-entertainment-제니",
+      "keyword": "제니",
       "category": "entertainment",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-16T07:56:33.494070",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "시즌5 시청자들이 방송에서 보지 못한 뒷이야기와 출연자들의 실제 관계 결말을 지금 당장 확인하려는 욕구",
-      "angle": "리얼리티 쇼의 편집되지 않은 진실이 리유니언에서 폭로되면서 시청자들의 판단이 완전히 뒤바뀔 수 있음",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "솔로지옥 리유니언 | 공식 예고편 | 넷플릭스 - YouTube",
-          "url": "https://www.youtube.com/watch?v=DYkZte010s4",
-          "source": "www.youtube.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1003-ko-society-지예은",
-      "keyword": "지예은",
-      "category": "society",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-16T07:56:33.494084",
+      "created_at": "2026-02-17T07:52:38.684147",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "런닝맨 시청자들이 연예인의 실제 건강 상태와 자신의 체력을 비교하며 운동 동기를 찾거나 건강 불안을 확인하려는 심리",
-      "angle": "겉으로 보기엔 멀쩡한 연예인의 실제 체력이 일반인보다 못하다는 사실이 주는 경각심과 공감",
+      "search_intent": "연예인의 부동산 투자 성공 스토리를 확인하며 자신의 재테크 실패를 비교하고 뒤처진 불안감 해소",
+      "angle": "부의 격차 가시화 - 또래 연예인의 200억 현금 매입이 드러내는 일반인과의 절망적 경제력 차이",
       "competition_level": "medium",
       "references": [
         {
-          "title": "지예은, 인바디 공개에 김종국도 놀랐다…“21kg 초등학생 근육량”",
-          "url": "https://sports.donga.com/ent/article/all/20260209/133326818/1",
-          "source": "sports.donga.com"
+          "title": "Jennie (singer) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Jennie_(singer)",
+          "source": "en.wikipedia.org"
         },
         {
-          "title": "Ji Ye-eun, her trainer did not recognize her even though she is an actress… “They gave me socks, so ",
-          "url": "https://sports.khan.co.kr/en/article/202602091747017",
-          "source": "sports.khan.co.kr"
+          "title": "블핑 제니, 200억 용산 건물주 됐다…이라크 대사관 있던 곳 - 뉴스1",
+          "url": "https://www.news1.kr/realestate/general/6070313",
+          "source": "www.news1.kr"
         },
         {
-          "title": "로이킴, 지예은 실물 보더니…\"더 예쁘다, 주변서 진짜 인기 많아\" ('런닝맨') [종합]",
-          "url": "https://tvreport.co.kr/broadcast/article/1001079/",
-          "source": "tvreport.co.kr"
+          "title": "블랙핑크 제니, 용산 ‘200억’ 건물주 됐다…전액 현금 매입 추정 - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10674514",
+          "source": "biz.heraldcorp.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1004-ko-tech-클라우드-컴퓨팅-기초",
+      "id": "1003-ko-tech-클라우드-컴퓨팅-기초",
       "keyword": "클라우드 컴퓨팅 기초",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-16T07:56:33.494102",
+      "created_at": "2026-02-17T07:52:38.684196",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "클라우드 컴퓨팅의 개념을 이해하고 학습 방향을 설정하기 위해",
-      "angle": "초보자 관점에서 클라우드 컴퓨팅의 기본 개념, 주요 서비스(AWS, Azure, GCP), 학습 로드맵, 실무 활용 사례를 단계별로 설명하는 교육 가이드",
+      "search_intent": "클라우드 컴퓨팅의 기본 개념을 이해하고 주요 플랫폼(AWS, Azure, GCP)을 학습하여 실무에 활용하거나 커리어 전환을 준비하기 위함",
+      "angle": "초보자 중심의 단계별 학습 가이드로, 클라우드의 기본 개념부터 주요 서비스, 실습 방법까지 체계적으로 안내",
       "competition_level": "medium",
       "references": [
         {

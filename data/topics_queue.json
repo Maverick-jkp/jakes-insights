@@ -5711,111 +5711,144 @@
       "completed_at": "2026-02-14T05:38:35.252111+00:00"
     },
     {
-      "id": "1000-en-sports-yuvraj-samra",
-      "keyword": "yuvraj samra",
-      "category": "sports",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-17T07:52:38.684103",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Witness a historic cricket milestone before it becomes old news and you're left out of sports conversations",
-      "angle": "Underdog breakthrough story - teenage phenom from non-elite cricket nation shatters records at the world's biggest stage",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Yuvraj Samra goes large in Chennai | T20WC 2026 | ICC Men's T20 World Cup, 2026 | ICC",
-          "url": "https://www.icc-cricket.com/tournaments/mens-t20-world-cup-2026/videos/yuvraj-samra-goes-large-in-chennai-t20wc-2026",
-          "source": "www.icc-cricket.com"
-        },
-        {
-          "title": "Who is Yuvraj Samra? This 19-year-old batsman's name is inspired by India's Yuvraj Singh | Khaleej T",
-          "url": "https://www.khaleejtimes.com/sports/who-is-yuvraj-samra-this-19-year-old-batsmans-name-is-inspired-by-indias-yuvraj-singh",
-          "source": "www.khaleejtimes.com"
-        },
-        {
-          "title": "Yuvraj Samra becomes first player from Associate nation to score a T20 World Cup hundred, reaches th",
-          "url": "https://sportstar.thehindu.com/cricket/yuvraj-samra-associate-first-century-vs-new-zealand/article70641893.ece",
-          "source": "sportstar.thehindu.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1001-en-tech-spectrum-outage",
-      "keyword": "spectrum outage",
-      "category": "tech",
+      "id": "1000-en-society-winter-storm-warning",
+      "keyword": "winter storm warnings issued midwest",
+      "category": "society",
       "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-02-17T07:52:38.684131",
+      "created_at": "2026-02-18T07:52:31.693184",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Confirm if the outage is widespread to demand compensation or switch providers before missing critical work/entertainment",
-      "angle": "Consumer rights violation - mass service failure with financial impact on subscribers who deserve refunds",
+      "search_intent": "Urgent need to assess personal safety risk and preparation gaps before roads become impassable and stores sell out",
+      "angle": "Emergency preparedness failure—readers who didn't stock up now face dangerous isolation",
       "competition_level": "high",
       "references": [
         {
-          "title": "Outage Information and Troubleshooting | Spectrum Support",
-          "url": "https://www.spectrum.net/support/internet/troubleshooting-your-spectrum-services-after-outage",
-          "source": "www.spectrum.net"
+          "title": "New Winter Storm Warnings Issued in Midwest as 15 Inches of Snow Set to Hit - Newsweek",
+          "url": "https://www.newsweek.com/new-winter-storm-warnings-issued-in-midwest-as-15-inches-of-snow-set-to-hit-11531961",
+          "source": "www.newsweek.com"
         },
         {
-          "title": "Spectrum Outage Map & Network Status – Live Updates",
-          "url": "https://geoblackout.com/us/report/internet/spectrum",
-          "source": "geoblackout.com"
+          "title": "Heavy Snowstorm and Blizzard Warnings Issued for 9 Counties in Minnesota and Wisconsin",
+          "url": "https://www.travelinglifestyle.net/heavy-snowstorm-and-blizzard-warnings-issued-for-9-counties-in-minnesota-and-wisconsin/",
+          "source": "www.travelinglifestyle.net"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1002-ko-entertainment-제니",
-      "keyword": "제니",
-      "category": "entertainment",
-      "lang": "ko",
+      "id": "1001-en-sports-rampage-jackson",
+      "keyword": "rampage jackson",
+      "category": "sports",
+      "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-17T07:52:38.684147",
+      "created_at": "2026-02-18T07:52:31.693211",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "연예인의 부동산 투자 성공 스토리를 확인하며 자신의 재테크 실패를 비교하고 뒤처진 불안감 해소",
-      "angle": "부의 격차 가시화 - 또래 연예인의 200억 현금 매입이 드러내는 일반인과의 절망적 경제력 차이",
+      "search_intent": "Curiosity about viral confrontation and concern about fighter emotional stability after retirement",
+      "angle": "Celebrity mental health crisis—exploring the psychological toll of fight careers and what happens when cameras capture unfiltered rage",
       "competition_level": "medium",
       "references": [
         {
-          "title": "Jennie (singer) - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Jennie_(singer)",
+          "title": "Rampage Jackson - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rampage_Jackson",
           "source": "en.wikipedia.org"
         },
         {
-          "title": "블핑 제니, 200억 용산 건물주 됐다…이라크 대사관 있던 곳 - 뉴스1",
-          "url": "https://www.news1.kr/realestate/general/6070313",
-          "source": "www.news1.kr"
+          "title": "r/ufc on Reddit: Rampage Jackson gotta be the most emotional ufc fighter ever",
+          "url": "https://www.reddit.com/r/ufc/comments/1r4uxm1/rampage_jackson_gotta_be_the_most_emotional_ufc/",
+          "source": "www.reddit.com"
         },
         {
-          "title": "블랙핑크 제니, 용산 ‘200억’ 건물주 됐다…전액 현금 매입 추정 - 헤럴드경제",
-          "url": "https://biz.heraldcorp.com/article/10674514",
-          "source": "biz.heraldcorp.com"
+          "title": "Larry Wheels slaps Deen the Great after he flirts with wife Sheyla Wheels on Quinton “Rampage” Jacks",
+          "url": "https://timesofindia.indiatimes.com/sports/international-sports/larry-wheels-slaps-deen-the-great-after-he-flirts-with-wife-sheyla-wheels-on-quinton-rampage-jacksons-double-date-livestream/articleshow/128464930.cms",
+          "source": "timesofindia.indiatimes.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1003-ko-tech-클라우드-컴퓨팅-기초",
+      "id": "1002-ko-society-정유라",
+      "keyword": "정유라",
+      "category": "society",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-18T07:52:31.693227",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국정농단 사건 후속 처리에 대한 분노와 사법 정의 실현 여부 확인 욕구",
+      "angle": "특권 불평등—일반인은 즉시 구속되지만 최순실 딸은 수년간 재판 회피 후 이제야 수감",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "‘재판 불출석’…최서원 딸 정유연 교도소 수감 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25405505",
+          "source": "www.joongang.co.kr"
+        },
+        {
+          "title": "최순실 딸 정유라, 재판 불출석 교도소 수감 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026021893547",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "최순실 딸 정유라, 재판 불출석으로 체포...의정부교도소 수감[only 이데일리]",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02220566645351832&mediaCodeNo=257",
+          "source": "www.edaily.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1003-ko-entertainment-차지연",
+      "keyword": "차지연",
+      "category": "entertainment",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-18T07:52:31.693241",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "인기 서바이벌 프로그램 순위 변동과 출연자 생존 전략에 대한 즉각적 호기심",
+      "angle": "장르 파괴 생존기—뮤지컬 배우가 대중 경연에서 살아남기 위해 정체성을 바꾸는 과정",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "[클린버전] 차지연 - 테스형｜현역가왕3 8회 260210 방송｜CReAstudio - YouTube",
+          "url": "https://www.youtube.com/watch?v=MMOjRXG2XFU",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "'현역가왕3' 차지연-스테파니, 준결승 위해 파격 변신 - 중앙이코노미뉴스",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=495119",
+          "source": "www.joongangenews.com"
+        },
+        {
+          "title": "솔지·차지연·빈예서 생존한 ‘현역가왕3’…시청률 기근 속 11.8% 독야청청 | 문화일보",
+          "url": "https://www.munhwa.com/article/11567683",
+          "source": "www.munhwa.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1004-ko-tech-클라우드-컴퓨팅-기초",
       "keyword": "클라우드 컴퓨팅 기초",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-17T07:52:38.684196",
+      "created_at": "2026-02-18T07:52:31.693256",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "클라우드 컴퓨팅의 기본 개념을 이해하고 주요 플랫폼(AWS, Azure, GCP)을 학습하여 실무에 활용하거나 커리어 전환을 준비하기 위함",
-      "angle": "초보자 중심의 단계별 학습 가이드로, 클라우드의 기본 개념부터 주요 서비스, 실습 방법까지 체계적으로 안내",
+      "search_intent": "클라우드 컴퓨팅의 기본 개념을 이해하고 AWS, Azure, GCP 등 주요 플랫폼의 차이점을 파악하여 학습 방향을 결정하기 위함",
+      "angle": "초보자 중심의 단계별 학습 가이드, 주요 클라우드 서비스 비교 및 실습 방법 제시",
       "competition_level": "medium",
       "references": [
         {

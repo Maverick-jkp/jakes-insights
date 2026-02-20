@@ -1,98 +1,87 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-<head>
-    {{ partial "head.html" . }}
-    <title>{{ .Site.Title }} - {{ .Site.Params.description }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
-</head>
-<body>
-    <!-- Header - Use Shared Partial -->
-    {{ partial "header.html" . }}
+{{ define "main" }}
 
-    {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
-    {{ $posts := where $pages "Type" "!=" "page" }}
-    {{ $featured := index $posts 0 }}
+{{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+{{ $posts := where $pages "Type" "!=" "page" }}
+{{ $featured := index $posts 0 }}
 
-    <!-- Hero Feature -->
-    {{ with $featured }}
-    <section class="hero-feature">
-        <a href="{{ .Permalink }}" class="hero-card">
-            <div class="hero-visual">
-                {{ with .Params.image }}
-                <img src="{{ . }}" alt="{{ $.Title }}">
-                {{ end }}
-                <div class="hero-gradient"></div>
-            </div>
-            <div class="hero-text">
-                <div class="hero-label">Featured</div>
-                <h1 class="hero-heading">{{ .Title }}</h1>
-                <p class="hero-description">{{ .Summary | plainify | truncate 200 }}</p>
-                <div class="hero-meta">
-                    <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-                    <span class="meta-dot">•</span>
-                    <span>{{ .ReadingTime }} min read</span>
-                </div>
-            </div>
-        </a>
-    </section>
+<!-- Hero Feature -->
+{{ with $featured }}
+<section class="hero-feature">
+  <a href="{{ .Permalink }}" class="hero-card">
+    <div class="hero-visual">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="eager">
+      {{ end }}
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-text">
+      <div class="hero-label">{{ if eq $.Site.Language.Lang "ko" }}추천{{ else }}Featured{{ end }}</div>
+      <h1 class="hero-heading">{{ .Title }}</h1>
+      <p class="hero-description">{{ .Summary | plainify | truncate 200 }}</p>
+      <div class="hero-meta">
+        <span>{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</span>
+        <span class="meta-dot">•</span>
+        <span>{{ .ReadingTime }}{{ if eq $.Site.Language.Lang "ko" }}분{{ else }} min read{{ end }}</span>
+      </div>
+    </div>
+  </a>
+</section>
+{{ end }}
+
+<!-- Grid Layout -->
+<section class="grid-layout">
+
+  <!-- Large Card: 2nd post -->
+  {{ $large := index $posts 1 }}
+  {{ with $large }}
+  <article class="grid-card large">
+    <a href="{{ .Permalink }}">
+      <div class="card-visual">
+        {{ with .Params.image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ end }}
+      </div>
+      <div class="card-text">
+        <div class="card-label">{{ if eq $.Site.Language.Lang "ko" }}분석{{ else }}Analysis{{ end }}</div>
+        <h2 class="card-heading">{{ .Title }}</h2>
+        <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
+        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+
+  <!-- Medium Cards: 3rd–6th posts -->
+  {{ range after 2 $posts | first 4 }}
+  <article class="grid-card medium">
+    <a href="{{ .Permalink }}">
+      <div class="card-visual">
+        {{ with .Params.image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ end }}
+      </div>
+      <div class="card-text">
+        <h3 class="card-heading">{{ .Title }}</h3>
+        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+
+  <!-- List Sidebar: 7th–14th posts -->
+  <aside class="grid-list">
+    <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
+    {{ range after 6 $posts | first 8 }}
+    <article class="list-item">
+      <a href="{{ .Permalink }}">
+        <h5 class="list-heading">{{ .Title }}</h5>
+        <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+      </a>
+    </article>
     {{ end }}
+    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
+  </aside>
 
-    <!-- Grid Layout -->
-    <section class="grid-layout">
-        <!-- Large Card -->
-        {{ $large := index $posts 1 }}
-        {{ with $large }}
-        <article class="grid-card large">
-            <a href="{{ .Permalink }}">
-                <div class="card-visual">
-                    {{ with .Params.image }}
-                    <img src="{{ . }}" alt="{{ $.Title }}">
-                    {{ end }}
-                </div>
-                <div class="card-text">
-                    <div class="card-label">Analysis</div>
-                    <h2 class="card-heading">{{ .Title }}</h2>
-                    <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
-                    <div class="card-meta">{{ .Date.Format "Jan 2" }}</div>
-                </div>
-            </a>
-        </article>
-        {{ end }}
+</section>
 
-        <!-- Medium Cards -->
-        {{ range after 2 $posts | first 4 }}
-        <article class="grid-card medium">
-            <a href="{{ .Permalink }}">
-                <div class="card-visual">
-                    {{ with .Params.image }}
-                    <img src="{{ . }}" alt="{{ $.Title }}">
-                    {{ end }}
-                </div>
-                <div class="card-text">
-                    <h3 class="card-heading">{{ .Title }}</h3>
-                    <div class="card-meta">{{ .Date.Format "Jan 2" }}</div>
-                </div>
-            </a>
-        </article>
-        {{ end }}
-
-        <!-- List Section -->
-        <aside class="grid-list">
-            <h4 class="list-title">Latest</h4>
-            {{ range after 6 $posts | first 8 }}
-            <article class="list-item">
-                <a href="{{ .Permalink }}">
-                    <h5 class="list-heading">{{ .Title }}</h5>
-                    <div class="list-meta">{{ .Date.Format "Jan 2" }}</div>
-                </a>
-            </article>
-            {{ end }}
-            <a href="{{ "all-posts" | relLangURL }}" class="list-more">View All →</a>
-        </aside>
-    </section>
-
-    <!-- Footer -->
-    {{ partial "footer.html" . }}
-</body>
-</html>
+{{ end }}

@@ -604,16 +604,17 @@ Category: {category}
 
 🎯 HOOKING STRATEGY (Critical!):
 1. **Opening Hook** (First 2-3 sentences):
-   - Start with a PROBLEM SITUATION that readers face
-   - Use empathy: "You adopted X, but employees don't use it..."
-   - Include specific failure stat: "60% of X projects fail because..."
-   - NOT generic intro like "X is becoming popular..."
+   - Start with a concrete number, cost figure, or failure stat — not empathy fluff
+   - Good: "Running local AI in 2026 costs $80,000 upfront. Cloud AI costs $20/month. The math isn't close."
+   - Good: "GitHub Copilot cut PR review time by 40% at Microsoft. But 60% of enterprises still haven't deployed it."
+   - BAD: "You've probably been there..." / "Sound familiar?" / "Here's the thing..." (banned phrases)
+   - NOT generic: "X is becoming popular..."
 
-2. **Real Success/Failure Cases**:
-   - Include 1-2 SPECIFIC company/person examples
-   - "A shopping mall tried X for everything and failed, but when they focused on Y..."
+2. **Real Success/Failure Cases — Named Sources Required**:
+   - Use named companies from your RAG context/references FIRST: Stripe, Vercel, Notion, GitHub, etc.
+   - Only fall back to "One e-commerce startup..." when NO named source is available in context
+   - NEVER invent company names — only use companies mentioned in the provided references
    - Show what DOESN'T work, not just what works
-   - Avoid abstract: "Many companies..." → Use: "One e-commerce startup..."
 
 3. **Limitations & Pitfalls**:
    - Dedicate 1 section to "When X Actually Hurts"
@@ -660,17 +661,26 @@ Write the complete blog post now (body only, no title or metadata):""",
 - 생각을 자극하는 질문으로 마무리
 
 🎯 후킹 전략 (필수!):
-1. **오프닝 후킹** (첫 2-3문장):
-   - 독자가 직면한 문제 상황으로 시작
-   - 공감 유도: "회사에서 X를 도입했는데 직원들이 쓰지 않고..."
-   - 구체적 실패 통계 포함: "X 프로젝트의 60%가 실패하는 이유는..."
-   - 일반적 시작 금지: "X가 인기를 끌고 있습니다..." ❌
+1. **오프닝 후킹 — 토스 스타일** (첫 2-3문장):
+   독자의 상황/고민을 먼저, 정보는 그 다음에.
 
-2. **실제 성공/실패 사례**:
-   - 구체적인 회사/사람 사례 1-2개 포함
-   - "한 쇼핑몰은 X를 모든 것에 적용했다가 실패했지만, Y에만 집중하니까..."
+   ✅ 좋은 예시:
+   - "팀장이 또 물어봤어요. '그래서 우리 AI 언제 써요?' 근데 막상 뭘 써야 할지 모르겠죠."
+   - "작년에 구독한 툴, 지금도 쓰고 있나요? 대부분 아닐 거예요. AI 도구도 똑같아요."
+   - "비용 계산해봤어요? 클라우드 AI 한 달 2만원, 로컬 서버 구축하면 8천만원이에요."
+
+   ❌ 나쁜 예시 (절대 금지):
+   - "2026년 2월, X는 더 이상 실험실 개념이 아닙니다..." (정보 선행)
+   - "X가 주목받고 있습니다. 왜 그럴까요?" (기자식 도입)
+   - "X는 중요합니다. 이 글에서 알아봅니다." (보고서식)
+
+   핵심: 독자가 "맞아, 나도 그래"라고 느끼게 시작하세요.
+
+2. **실제 성공/실패 사례 — 실명 우선**:
+   - RAG나 참고자료에 실명 기업이 있으면 반드시 사용 (토스, 카카오, 네이버, Stripe, Notion 등)
+   - 실명이 없을 때만: "한 핀테크 스타트업은..." 사용
+   - 절대 금지: 근거 없이 기업명 지어내기
    - 안 되는 것도 보여주기 (성공만 말하지 말기)
-   - 추상적 표현 금지: "많은 기업들..." → "한 스타트업은..." ✅
 
 3. **한계점과 함정**:
    - "X가 오히려 역효과인 경우" 섹션 1개 할애
@@ -747,23 +757,37 @@ Write the complete blog post now (body only, no title or metadata):""",
 
 {length_req}
 
+🚨 BANNED PHRASE PURGE (Do this FIRST before anything else):
+Scan the entire draft and REPLACE every instance of these phrases — they trigger AI detection:
+- "Here's the thing" → rewrite the sentence directly
+- "Here's where it gets interesting" / "Here's where it gets tricky" → cut filler, state the point
+- "Sound familiar?" → delete or rephrase as a direct statement
+- "You've been there" / "You've probably been there" → cut entirely
+- "You might be thinking" → rewrite as "The obvious question is..." or just make the point
+- "Look," (as sentence opener) → state the claim directly
+- "Let me explain" / "Let me break down" → just explain/break it down
+- "But here's where..." → start with the actual content
+- "In today's rapidly evolving..." / "In the ever-changing..." → cut, start with the data
+- "Moreover" / "Furthermore" / "Additionally" → use "And", "But", "So" or restructure
+
 🎯 CRITICAL ENHANCEMENTS:
 1. **Strengthen Opening Hook**:
-   - If opening is generic, rewrite to start with problem/pain point
-   - Add empathy: "You've been there, right?"
-   - Make it personal and relatable
+   - If opening is generic, rewrite to start with a specific problem, failure stat, or cost figure
+   - Make it concrete: "Running local AI in 2026 costs $80,000 upfront." (not vague empathy)
+   - Avoid clichéd empathy openers
 
 2. **Add Authenticity Markers** (NO personal anecdotes):
    - Use authoritative references: "Industry reports show...", "According to recent data..."
    - Add failure acknowledgment: "This approach can fail when..."
    - Show balanced perspective: "This isn't always the answer..."
-   - AVOID: "In my experience...", "I spoke with...", "I thought..." (credibility issues on anonymous blogs)
+   - AVOID: "In my experience...", "I spoke with...", "I thought..."
 
-3. **Enhance Examples**:
-   - Make vague examples specific: "Many companies" → "One fintech startup" or "A Silicon Valley tech company"
-   - Add concrete details: numbers, outcomes, timelines
+3. **Enhance Examples — Named Sources Required**:
+   - Replace anonymous examples with named companies when RAG data provides them
+   - "Many companies" → "Stripe", "Notion", "Vercel" (use names from the draft's context)
+   - If no named source exists, use: "Case studies show...", "Reports indicate..."
+   - NEVER invent names: only use companies already mentioned in the draft
    - Include what went WRONG, not just success stories
-   - AVOID: "I worked with", "I spoke to" → Use: "Case studies show", "Reports indicate"
 
 4. **Balance Perspective**:
    - Ensure there's a "When this doesn't work" section
@@ -771,15 +795,14 @@ Write the complete blog post now (body only, no title or metadata):""",
    - Avoid absolute claims: "always", "never", "guaranteed"
 
 Tasks:
-1. **Medium style conversion**: Add "you/I", conversational tone
-2. **Eliminate all AI tells**: "certainly", "moreover", "it's important to note"
-3. **Natural connectors**: "Look", "Here's why", "The truth is"
-4. **Break fourth wall**: "You might be thinking...", "Sound familiar?"
-5. **Punchy sentences**: "Here's the thing.", "Let me explain.", "Stop it."
-6. **Smooth transitions**: "Now", "Here's where it gets interesting"
-7. Keep all factual information intact
-8. **Complete ending**: Finish conclusion fully
-9. **Preserve Key Takeaways block**: Do not remove or restructure the blockquote Key Takeaways. Improve wording only.
+1. **Banned phrase purge** (MANDATORY FIRST STEP — see above)
+2. **Medium style conversion**: conversational tone, use "you" naturally
+3. **Eliminate all AI tells**: "certainly", "moreover", "it's important to note", "delve", "tapestry"
+4. **Natural connectors**: "So", "And", "But", "The truth is", "That's why"
+5. **Punchy sentences**: vary length — mix 5-word sentences with 30-word ones
+6. Keep all factual information intact
+7. **Complete ending**: Finish conclusion fully
+8. **Preserve Key Takeaways block**: Do not remove or restructure the blockquote Key Takeaways. Improve wording only.
 
 Return improved version (body only, no title):""",
 
@@ -787,35 +810,43 @@ Return improved version (body only, no title):""",
 
 {length_req}
 
+🚨 AI 금지 표현 제거 (가장 먼저 할 것):
+초안 전체를 스캔하여 아래 표현을 반드시 교체하세요:
+- "왜 그럴까요?" (2회 이상 사용 시) → 1회 초과분은 삭제하거나 직접 설명으로 대체
+- "이런 경험 있으시죠?" → "맞죠?", "그렇죠?" 또는 직접 서술로 대체
+- "솔직히 말하면" → 그냥 직접 말하기
+- "아마 이렇게 생각하실 거예요" → 삭제하고 바로 요점 전달
+- "이게 핵심이에요" (과도 사용 시) → 1-2회로 제한
+- "또한", "게다가", "더욱이" → 최대 1회만 허용, 나머지는 "그리고", "하지만", "그래서"로 교체
+- "물론", "~할 수 있습니다", "중요합니다" → 삭제하거나 구체적 표현으로 대체
+
 🎯 핵심 개선사항:
-1. **오프닝 강화**:
-   - 일반적 시작이면 문제/고민 상황으로 재작성
-   - 공감 추가: "이런 경험 있으시죠?"
-   - 개인적이고 공감 가능하게
+1. **오프닝 강화 — 토스 스타일**:
+   - 정보 선행 도입부면 독자 상황으로 재작성
+   - 예: "2026년 X가 주목받고 있어요" ❌ → "팀장이 또 물어봐요. '그래서 우리 X 언제 써요?'" ✅
+   - 독자가 "맞아, 나도 그래"라고 느끼게 시작
 
 2. **정보 밀도 최우선** (한국 독자 = 빠른 정보 선호):
    - 핵심 정보 먼저: 수치, 단계, 방법
    - 실용 정보 즉시 제공: "계산법: 1) ~ 2) ~"
-   - "의외로...", "놀랍게도..." 같은 자연스러운 표현
    - 한계 언급: "항상 답은 아니에요..."
 
-3. **예시 구체화** (개인 경험 배제):
-   - 추상적 예시를 구체적으로: "많은 회사들" → "한 핀테크 스타트업은" 또는 "토스의 경우"
-   - 구체적 디테일: 숫자, 결과, 타임라인
-   - 실패한 것도 포함: 성공만 말하지 말기
-   - 피할 것: "제 경험상", "제가 봤을 때" → 대신: "사례 연구에 따르면", "데이터는 보여줍니다"
+3. **예시 구체화 — 실명 우선** (개인 경험 배제):
+   - 초안에 실명 기업이 있으면 그대로 사용 (토스, 카카오, 네이버 등)
+   - 실명이 없을 때만: "한 핀테크 스타트업은..." 사용
+   - 절대 금지: 근거 없이 기업명 만들어내기
+   - 실패 사례 포함: 성공만 말하지 말기
 
 4. **균형잡힌 관점**:
    - "이런 경우엔 안 통해요" 섹션 확인/추가
-   - 뉘앙스: "이게 통하려면...", "하지만 이런 경우엔..."
    - 절대적 표현 피하기: "항상", "절대", "무조건"
 
 작업:
-1. **토스 말투로 변환**: "~습니다" → "~해요", 친근한 질문형 추가
-2. AI 느낌 완전 제거: "물론", "~할 수 있습니다", "중요합니다" 모두 삭제
+1. **AI 금지 표현 제거** (필수 첫 단계 — 위 목록 참조)
+2. **토스 말투로 변환**: "~습니다" → "~해요", 친근한 질문형 추가
 3. 자연스러운 접속사: "사실", "실제로", "그런데", "참고로"
 4. 숫자를 친근하게: "50% → 절반", "3배 → 세 배"
-5. 짧고 강렬한 문장 추가: "놀랍죠?", "맞아요.", "이게 핵심이에요."
+5. 짧고 강렬한 문장 추가: "놀랍죠?", "맞아요."
 6. 섹션 간 매끄러운 전환: "자, 이제 ~", "그럼 ~"
 7. 모든 사실 정보는 그대로 유지
 8. **마지막 문장까지 완결**: 결론을 반드시 완성

@@ -1,154 +1,36 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-<head>
-    {{ partial "head.html" . }}
-    <title>{{ if eq .Site.Language.Lang "ko" }}전체 글{{ else }}All Posts{{ end }} | {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
-    <style>
-        .all-posts-header {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 3rem 2rem 2rem;
-            border-bottom: 1px solid var(--gray-200);
-            margin-bottom: 3rem;
-        }
-        .all-posts-header h1 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            letter-spacing: -0.03em;
-            color: var(--black);
-            line-height: 1.1;
-        }
-        .all-posts-header p {
-            margin-top: 0.5rem;
-            font-size: 0.9375rem;
-            color: var(--gray-600);
-        }
-        .all-posts-grid {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem 6rem;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-        .all-post-card {
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.3s;
-            display: block;
-            text-decoration: none;
-        }
-        .all-post-card:hover {
-            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-            transform: translateY(-4px);
-        }
-        .all-post-card .card-visual {
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-            background: var(--gray-100);
-        }
-        .all-post-card .card-visual img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        .all-post-card:hover .card-visual img {
-            transform: scale(1.08);
-        }
-        .all-post-card .card-text {
-            padding: 1.5rem;
-        }
-        .all-post-card .card-heading {
-            font-size: 1.125rem;
-            font-weight: 800;
-            color: var(--black);
-            line-height: 1.3;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.75rem;
-        }
-        .all-post-card .card-description {
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            line-height: 1.6;
-            margin-bottom: 0.75rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .all-post-card .card-meta {
-            font-size: 0.8125rem;
-            color: var(--gray-600);
-            font-weight: 500;
-            display: flex;
-            gap: 0.75rem;
-        }
-        /* Dark mode */
-        [data-theme="dark"] .all-posts-header h1 { color: #E6EDF3; }
-        [data-theme="dark"] .all-posts-header { border-bottom-color: #30363D; }
-        [data-theme="dark"] .all-posts-header p { color: #8B949E; }
-        [data-theme="dark"] .all-post-card {
-            background: #161B22;
-            border-color: #30363D;
-        }
-        [data-theme="dark"] .all-post-card .card-heading { color: #E6EDF3; }
-        [data-theme="dark"] .all-post-card .card-description { color: #8B949E; }
-        [data-theme="dark"] .all-post-card .card-meta { color: #8B949E; }
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .all-posts-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .all-posts-grid {
-                grid-template-columns: 1fr;
-                padding: 0 1rem 3rem;
-            }
-            .all-posts-header {
-                padding: 2rem 1rem 1.5rem;
-            }
-            .all-posts-header h1 { font-size: 1.75rem; }
-        }
-    </style>
-</head>
-<body>
-    {{ partial "header.html" . }}
+{{ define "main" }}
+<div class="all-posts-page">
 
-    <div class="all-posts-header">
-        <h1>{{ if eq .Site.Language.Lang "ko" }}전체 글{{ else }}All Posts{{ end }}</h1>
-        {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
-        {{ $posts := where $currentLangPages "Type" "!=" "page" }}
-        <p>{{ len $posts }}{{ if eq .Site.Language.Lang "ko" }}개의 글{{ else }} articles{{ end }}</p>
-    </div>
+  <div class="all-posts-header">
+    <h1 class="all-posts-title">{{ if eq .Language.Lang "ko" }}전체 글{{ else }}All Posts{{ end }}</h1>
+    {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+    {{ $posts := where $currentLangPages "Type" "!=" "page" }}
+    <p class="all-posts-count">{{ len $posts }}{{ if eq .Language.Lang "ko" }}개의 글{{ else }} articles{{ end }}</p>
+  </div>
 
-    <div class="all-posts-grid">
-        {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
-        {{ $posts := where $currentLangPages "Type" "!=" "page" }}
-        {{ range $posts }}
-        <a href="{{ .Permalink }}" class="all-post-card">
-            <div class="card-visual">
-                {{ with .Params.image }}
-                <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-                {{ end }}
-            </div>
-            <div class="card-text">
-                <h2 class="card-heading">{{ .Title }}</h2>
-                <p class="card-description">{{ .Summary | plainify | truncate 120 }}</p>
-                <div class="card-meta">
-                    <span>{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</span>
-                    <span>{{ .ReadingTime }}{{ if eq $.Site.Language.Lang "ko" }}분{{ else }} min{{ end }}</span>
-                </div>
-            </div>
-        </a>
+  <div class="all-posts-grid">
+    {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+    {{ $posts := where $currentLangPages "Type" "!=" "page" }}
+    {{ range $posts }}
+    <a href="{{ .Permalink }}" class="post-card">
+      <div class="post-card-image-wrap">
+        {{ with .Params.image }}
+        <img class="post-card-image" src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ else }}
+        <div class="post-card-image post-card-image--placeholder"></div>
         {{ end }}
-    </div>
+      </div>
+      <div class="post-card-content">
+        <h2 class="post-card-title">{{ .Title }}</h2>
+        <p class="post-card-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
+        <div class="post-card-meta">
+          <span>{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</span>
+          <span>{{ .ReadingTime }}{{ if eq $.Site.Language.Lang "ko" }}분{{ else }} min{{ end }}</span>
+        </div>
+      </div>
+    </a>
+    {{ end }}
+  </div>
 
-    {{ partial "footer.html" . }}
-    {{ partial "scripts.html" . }}
-    {{ partial "ga4-events.html" . }}
-</body>
-</html>
+</div>
+{{ end }}

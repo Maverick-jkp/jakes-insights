@@ -17,7 +17,7 @@ load_dotenv()
 COUPANG_PARTNERS_ID = os.getenv("COUPANG_PARTNERS_ID", "")
 AMAZON_ASSOCIATES_TAG = os.getenv("AMAZON_ASSOCIATES_TAG", "")
 
-# Product keyword mapping for auto-detection
+# Product keyword mapping for auto-detection (tech-only strategy)
 AFFILIATE_KEYWORDS = {
     "tech": {
         "en": ["iphone", "macbook", "laptop", "headphone", "speaker", "camera",
@@ -27,14 +27,6 @@ AFFILIATE_KEYWORDS = {
                "키보드", "마우스", "모니터", "태블릿", "아이패드", "에어팟",
                "스마트워치", "게이밍 PC", "그래픽카드", "SSD", "외장하드"],
     },
-    "finance": {
-        "en": ["book", "financial planning", "investing guide", "credit card"],
-        "ko": ["책", "재테크", "투자", "신용카드"],
-    },
-    "entertainment": {
-        "en": ["movie", "book", "game", "subscription", "streaming service"],
-        "ko": ["영화", "책", "게임", "구독", "스트리밍"],
-    }
 }
 
 # Affiliate link templates by program and language
@@ -226,13 +218,9 @@ def get_affiliate_disclosure(lang: str, programs: List[str]) -> str:
 
 # Configuration: Which categories should include affiliate links
 # DISABLED: Focusing on Google AdSense first for better ROI
+# Tech-only strategy - only "tech" category exists
 AFFILIATE_ENABLED_CATEGORIES = {
     "tech": False,  # Disabled: AdSense priority
-    "finance": False,
-    "entertainment": False,  # Disabled: AdSense priority
-    "business": False,
-    "science": False,
-    "travel": False
 }
 
 

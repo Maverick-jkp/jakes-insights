@@ -65,7 +65,7 @@ class RAGPipeline:
 
         # Initialize Anthropic client
         self.client = Anthropic(api_key=self.anthropic_api_key)
-        self.model = "claude-sonnet-4-5-20250929"
+        self.model = "claude-sonnet-4-6"
 
     def search_brave(self, query: str, count: int = 10, freshness: str = "py") -> List[Dict]:
         """

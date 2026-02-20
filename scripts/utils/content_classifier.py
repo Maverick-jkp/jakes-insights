@@ -107,9 +107,8 @@ class ContentClassifier:
         topic_lower = topic.lower()
         keywords_str = ' '.join(keywords).lower()
 
-        # Tutorial classification only for tech/education categories
-        # Business/finance/lifestyle topics should not be tutorials
-        allow_tutorial = category in ['tech', 'education']
+        # Tutorial classification only for tech (tech-only strategy)
+        allow_tutorial = category == 'tech'
 
         # Check for Tutorial indicators (15%)
         # Must have strong tutorial signal (not just "shows" or "trends")

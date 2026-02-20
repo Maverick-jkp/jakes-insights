@@ -688,9 +688,9 @@ class QualityGate:
         category = frontmatter.get('categories', [''])[0] if 'categories' in frontmatter else ''
         description = frontmatter.get('description', '').lower()
 
-        # If title suggests one topic but description/content suggests another
-        # Example: Title mentions celebrity name but content is about finance
-        if category == 'finance' and any(keyword in title for keyword in ['음악', 'music', '아이돌', 'idol', '가수', 'singer']):
+        # If title suggests non-tech topic but category is tech (tech-only strategy)
+        # Check for clear topic mismatch in tech posts
+        if category == 'tech' and any(keyword in title for keyword in ['음악', 'music', '아이돌', 'idol', '가수', 'singer', 'kpop']):
             if '암호화폐' in body_lower or 'crypto' in body_lower or '투자' in body_lower or 'trading' in body_lower:
                 checks['critical_failures'].append(
                     "Suspected clickbait: Title suggests entertainment/celebrity content but body is about finance/crypto"

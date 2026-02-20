@@ -130,7 +130,7 @@ class AIReviewer:
             )
 
         self.client = Anthropic(api_key=self.api_key)
-        self.model = "claude-sonnet-4-5-20250929"
+        self.model = "claude-sonnet-4-6"
 
     def review_post(self, filepath: Path) -> Dict:
         """Review a single blog post"""

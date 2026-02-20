@@ -178,7 +178,7 @@
 
     <div class="container">
         <div class="page-header">
-            <h1 class="page-title">{{ if eq .Site.Language.Lang "ko" }}Technology Hub{{ else }}Technology Hub{{ end }}</h1>
+            <h1 class="page-title">{{ if eq .Site.Language.Lang "ko" }}기술 허브{{ else }}Technology Hub{{ end }}</h1>
             <p class="page-description">{{ if eq .Site.Language.Lang "ko" }}기술별로 정리된 심층 분석과 데이터 기반 리포트{{ else }}In-depth analysis organized by technology{{ end }}</p>
         </div>
 
@@ -186,12 +186,12 @@
             {{ range .Data.Terms.Alphabetical }}
             <a href="{{ .Page.Permalink }}" class="tech-card">
                 <span class="tech-name">{{ .Page.Title }}</span>
-                <span class="tech-count">{{ .Count }} {{ if eq .Count 1 }}article{{ else }}articles{{ end }}</span>
+                <span class="tech-count">{{ .Count }} {{ if eq $.Site.Language.Lang "ko" }}글{{ else }}{{ if eq .Count 1 }}article{{ else }}articles{{ end }}{{ end }}</span>
             </a>
             {{ end }}
         </div>
 
-        <a href="/{{ .Site.Language.Lang }}/" class="back-link">&larr; {{ if eq .Site.Language.Lang "ko" }}Home{{ else }}Home{{ end }}</a>
+        <a href="/{{ .Site.Language.Lang }}/" class="back-link">&larr; {{ if eq .Site.Language.Lang "ko" }}홈{{ else }}Home{{ end }}</a>
     </div>
 
     {{ partial "footer.html" . }}

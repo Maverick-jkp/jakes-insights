@@ -210,7 +210,7 @@ class SEOTracker:
             parts = url.split('/')
             category = 'other'
             for part in parts:
-                if part in ['tech', 'business', 'lifestyle', 'society', 'entertainment', 'sports', 'finance', 'education']:
+                if part in ['tech']:  # tech-only strategy
                     category = part
                     break
 

@@ -112,14 +112,9 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 중요:
 - keyword_type은 "trend"만 사용 (이 프롬프트는 트렌드 전용)
-- category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
-- **카테고리 분배 비율 (중요)**:
-  * tech: 40% (가장 높은 CPM, 우선순위 최고)
-  * business: 20%
-  * society: 15%
-  * sports: 15%
-  * entertainment: 10%
-- Tech 관련 키워드는 최대한 많이 선택할 것 (AI, ML, cloud, programming, frameworks, devops 등)
+- category는 **"tech" 하나만** 사용 (테크 전문 퍼블리케이션 전략)
+- **모든 키워드는 반드시 category: "tech"로 설정**
+- 선택 가능한 키워드 범위: AI, ML, 클라우드, 프로그래밍, 소프트웨어, 앱, 게임, 사이버보안, 반도체, 스타트업 기술, EdTech, DevOps, 오픈소스 등
 - language는 "en", "ko" 중 하나 (비율: EN 50%, KO 50%)
 - competition_level은 "low", "medium", "high" 중 하나
 - priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
@@ -128,14 +123,10 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - intent_signal은 "STATE_CHANGE", "PROMISE_BROKEN", "SILENCE", "DEADLINE_LOST", "COMPARISON" 중 하나
 - **중요**: 위 실시간 트렌드 데이터의 Query를 keyword 필드에 그대로 복사할 것
 - **keyword 필드는 절대 재작성하지 말고 Query를 정확히 그대로 사용**
-- **중요**: 5개 카테고리(tech, business, society, entertainment, sports)를 반드시 고르게 분배할 것
+- **테크 관련 트렌드만 선택**: tech가 아닌 키워드(연예인, 스포츠, 정치 등)는 제외할 것
 
-**🔴 카테고리 분류 가이드 (5개 카테고리):**
-- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, 교육 기술(EdTech)
-- **business**: 경제, 기업, 주식, 부동산, 창업, 금융, 투자
-- **society**: 사회 이슈, 정치, 정책, 건강, 여행, 라이프스타일
-- **entertainment**: 영화, 드라마, 음악, 예능, 연예인 (스포츠 선수 제외)
-- **sports**: 모든 운동 경기, 선수, 팀
+**🔴 카테고리 분류 가이드 (tech only):**
+- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, 교육 기술(EdTech), 사이버보안, 반도체, 클라우드
 
 언어별 톤 차이:
 - 🇺🇸 English: rights, compensation, legal leverage, lawsuits 중심
@@ -159,7 +150,7 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - 🇺🇸 English (US) Trends에서 {en_count}개 키워드 추출 → language: "en"
 - 🇰🇷 Korean (KR) Trends에서 {ko_count}개 키워드 추출 → language: "ko"
 
-각 언어 내에서 5개 카테고리를 최대한 균등하게 분배할 것."""
+모든 키워드의 category는 반드시 "tech"로 설정할 것."""
 
 
 CURATION_PROMPT_EVERGREEN = """역할:
@@ -215,7 +206,7 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 
 중요:
 - keyword_type은 "evergreen"만 사용 (이 프롬프트는 에버그린 전용)
-- category는 **5개 카테고리만** 사용: "tech", "business", "society", "entertainment", "sports"
+- category는 **"tech" 하나만** 사용 (테크 전문 퍼블리케이션 전략)
 - language는 "en", "ko" 중 하나 (비율: EN 50%, KO 50%)
 - competition_level은 "low", "medium"만 사용 (high 금지)
 - priority는 6-9 사이 (Evergreen은 장기 가치가 높으므로 우선순위 상향)
@@ -228,7 +219,7 @@ Evergreen 키워드 풀 (언어별로 구분됨):
 - 한국어(ko): 정확히 {ko_count}개
 - 총합: 정확히 {count}개
 
-각 언어 내에서 5개 카테고리를 균등하게 분배할 것.
+모든 키워드의 category는 반드시 "tech"로 설정할 것.
 """
 
 
@@ -258,7 +249,7 @@ class KeywordCurator:
 
         try:
             self.client = Anthropic(api_key=self.api_key)
-            self.model = "claude-sonnet-4-5-20250929"
+            self.model = "claude-sonnet-4-6"
             safe_print("  ✓ Anthropic API client initialized successfully")
         except Exception as e:
             safe_print(f"❌ ERROR: Failed to initialize Anthropic client")
@@ -956,29 +947,35 @@ class KeywordCurator:
             safe_print(f"\n⚠️  Removed {duplicates_removed} duplicate keywords from Claude's response")
             safe_print(f"    Policy: One keyword = one category (first occurrence wins)\n")
 
-        # STEP 2: Auto-correct sports keywords category
-        sports_keywords = ['vs', 'vs.', 'game', 'match', 'league', 'cup', 'tournament', 'championship',
-                          'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
-                          'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
-                          'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma',
-                          'u23', 'u-23', 'u21', 'u-21', 'player', 'team', 'squad']
+        # STEP 2: Enforce tech-only category (reject non-tech keywords)
+        non_tech_keywords = ['vs', 'game', 'match', 'league', 'cup', 'tournament', 'championship',
+                             'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
+                             'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
+                             'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma',
+                             'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama']
 
-        corrected_count = 0
+        rejected_non_tech = []
+        filtered_dedup = []
         for candidate in dedup_candidates:
             keyword_lower = candidate.get('keyword', '').lower()
-            category = candidate.get('category', '')
+            category = candidate.get('category', 'tech')
 
-            # Auto-detect sports keywords
-            if category != 'sports':
-                is_sports = any(sport_term in keyword_lower for sport_term in sports_keywords)
-                if is_sports:
-                    old_category = category
-                    candidate['category'] = 'sports'
-                    corrected_count += 1
-                    safe_print(f"  ✅ AUTO-CORRECTED: {candidate.get('keyword')} ({old_category} → sports)")
+            # Force all categories to tech
+            if category != 'tech':
+                candidate['category'] = 'tech'
 
-        if corrected_count > 0:
-            safe_print(f"\n✅ Auto-corrected {corrected_count} sports keywords\n")
+            # Reject clearly non-tech keywords
+            is_non_tech = any(term in keyword_lower for term in non_tech_keywords)
+            if is_non_tech:
+                rejected_non_tech.append(candidate.get('keyword'))
+                safe_print(f"  🔴 REJECTED (non-tech): {candidate.get('keyword')}")
+            else:
+                filtered_dedup.append(candidate)
+
+        dedup_candidates = filtered_dedup
+
+        if rejected_non_tech:
+            safe_print(f"\n⚠️  Rejected {len(rejected_non_tech)} non-tech keywords (tech-only strategy)\n")
 
         # Apply risk filtering
         filtered_candidates = self.filter_by_risk(dedup_candidates)

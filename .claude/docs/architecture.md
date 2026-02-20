@@ -153,14 +153,7 @@ layouts/
 ```
 content/
 ├── en/          # English posts
-│   ├── tech/
-│   ├── business/
-│   ├── lifestyle/
-│   ├── society/
-│   ├── entertainment/
-│   ├── sports/
-│   ├── finance/
-│   └── education/
+│   └── tech/    # Tech-only strategy (AI, SaaS, developer tools, EdTech)
 └── ko/          # Korean posts (same structure)
 ```
 

@@ -90,30 +90,13 @@ python scripts/quality_gate.py
 
 ---
 
-## 5. Add New Category
+## 5. Category Strategy (Tech-Only)
 
-1. **Update `hugo.toml`**: Add menu items for EN/KO (lines ~30-130)
-   ```toml
-   [[languages.en.menu.main]]
-     name = "🆕 NewCategory"
-     url = "/categories/newcategory/"
-     weight = 11
-   ```
+**현재 전략**: Tech 단일 카테고리 (AI, SaaS, 개발자 도구, EdTech, 사이버보안 등)
 
-2. **Update validation**: Edit `scripts/utils/validation.py`
-   ```python
-   VALID_CATEGORIES = [
-       "tech", "business", "lifestyle",
-       "society", "entertainment", "sports",
-       "finance", "education", "newcategory"  # Add here
-   ]
-   ```
-
-3. **Create directories**:
-   ```bash
-   mkdir -p content/en/newcategory
-   mkdir -p content/ko/newcategory
-   ```
+- `VALID_CATEGORIES = ['tech']` in `scripts/utils/validation.py`
+- 모든 키워드는 `category: "tech"`로 생성됨
+- 카테고리 추가 시 전략적 검토 필요 (현재 권장하지 않음)
 
 4. **Test**:
    ```bash

@@ -1,18 +1,53 @@
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="header-inner">
     <div class="brand-group">
-      <a href="/{{ if eq .Language.Lang "ko" }}ko{{ else }}en{{ end }}/" class="brand">
+      <a href="{{ "/" | relLangURL }}" class="brand">
         <span class="brand-primary">JAKE'S</span>
         <span class="brand-secondary">INSIGHTS</span>
       </a>
-      <p class="tagline">In-depth tech analysis with community insights</p>
+      <p class="tagline">{{ if eq .Language.Lang "ko" }}커뮤니티 인사이트로 읽는 테크 분석{{ else }}In-depth tech analysis with community insights{{ end }}</p>
     </div>
-    <nav class="header-nav">
-      <a href="/{{ if eq .Language.Lang "ko" }}ko{{ else }}en{{ end }}/">Home</a>
-      <a href="/{{ if eq .Language.Lang "ko" }}ko{{ else }}en{{ end }}/all-posts/">All Posts</a>
-      <span class="nav-divider">|</span>
-      <a href="/en/" class="{{ if eq .Language.Lang "en" }}active{{ end }}">English</a>
-      <a href="/ko/" class="{{ if eq .Language.Lang "ko" }}active{{ end }}">한국어</a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="{{ "/" | relLangURL }}"
+         {{ if .IsHome }}class="active" aria-current="page"{{ end }}>
+        {{ if eq .Language.Lang "ko" }}홈{{ else }}Home{{ end }}
+      </a>
+      <a href="{{ "/all-posts/" | relLangURL }}">
+        {{ if eq .Language.Lang "ko" }}전체 글{{ else }}All Posts{{ end }}
+      </a>
+      <span class="nav-divider" aria-hidden="true"></span>
+      <a href="/en/" class="{{ if eq .Language.Lang "en" }}active{{ end }}" lang="en" hreflang="en">EN</a>
+      <a href="/ko/" class="{{ if eq .Language.Lang "ko" }}active{{ end }}" lang="ko" hreflang="ko">한국어</a>
     </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" type="button">
+      <span class="theme-icon">☀️</span>
+    </button>
   </div>
 </header>
+
+<script>
+(function() {
+  var stored = localStorage.getItem('theme');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var theme = stored || (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('theme-toggle');
+    var icon = btn && btn.querySelector('.theme-icon');
+    if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    if (btn) btn.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      icon.textContent = next === 'dark' ? '☀️' : '🌙';
+    });
+  });
+
+  // Sticky header shadow on scroll
+  window.addEventListener('scroll', function() {
+    var header = document.getElementById('site-header');
+    if (header) header.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+})();
+</script>

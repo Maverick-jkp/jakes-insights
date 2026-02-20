@@ -59,7 +59,7 @@ class CommunityMiner:
 
         # Initialize Anthropic client
         self.client = Anthropic(api_key=self.anthropic_api_key)
-        self.model = "claude-sonnet-4-5-20250929"
+        self.model = "claude-sonnet-4-6"
 
     def search_hackernews(self, query: str, max_results: int = 5) -> List[Dict]:
         """

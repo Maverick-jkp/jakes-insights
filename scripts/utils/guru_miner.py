@@ -77,7 +77,7 @@ class GuruMiner:
         self.enabled = True
         self.fetcher = ContentFetcher()
         self.client = Anthropic(api_key=self.anthropic_api_key)
-        self.model = "claude-sonnet-4-5-20250929"
+        self.model = "claude-sonnet-4-6"
 
     def search_rss_feed(self, feed_url: str, keyword: str, max_results: int = 3) -> List[Dict]:
         """

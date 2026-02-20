@@ -4,14 +4,9 @@ Input validation utilities for topic queue and content generation.
 import re
 from typing import Optional, List
 
-# Allowed categories (6 streamlined categories - updated 2026-01-25)
-# Migration: education→tech, finance→business, lifestyle→society
+# Allowed categories (tech-only strategy - updated 2026-02-20)
 VALID_CATEGORIES = [
-    'tech',          # Tech + Education (EdTech, innovation)
-    'business',      # Business + Finance (economy, markets)
-    'society',       # Society + Lifestyle (social issues, wellness)
-    'entertainment', # Movies, TV, music, celebrities
-    'sports'         # All sports content
+    'tech',          # Tech, AI, software, EdTech — only category
 ]
 
 # Allowed languages

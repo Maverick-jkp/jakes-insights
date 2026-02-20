@@ -308,7 +308,7 @@ class ContentGenerator:
                     "anthropic-beta": "prompt-caching-2024-07-31"
                 }
             )
-            self.model = "claude-sonnet-4-5-20250929"
+            self.model = "claude-sonnet-4-6"
             safe_print("  ✓ Anthropic API client initialized successfully")
         except Exception as e:
             safe_print(f"❌ ERROR: Failed to initialize Anthropic client: {mask_secrets(str(e))}")
@@ -1122,16 +1122,9 @@ JSON 배열만 반환:
                     if is_ascii and len(word) > 2 and word.lower() not in noise_words:
                         translated_keywords.append(word)
 
-            # Add category context (more specific than before)
+            # Add category context (tech-only strategy)
             category_context = {
                 'tech': ['technology', 'digital innovation', 'tech workspace', 'coding', 'software'],
-                'business': ['business', 'professional office', 'meeting', 'strategy', 'corporate'],
-                'finance': ['finance', 'money investment', 'stock market', 'banking', 'wealth'],
-                'society': ['society', 'community people', 'social gathering', 'urban life', 'culture'],
-                'entertainment': ['entertainment', 'cinema theater', 'music concert', 'art gallery', 'performance'],
-                'lifestyle': ['lifestyle', 'daily life', 'home interior', 'wellness', 'travel'],
-                'sports': ['sports', 'athletic training', 'stadium', 'competition', 'fitness'],
-                'education': ['education', 'learning classroom', 'study', 'books', 'school']
             }
 
             # Build flexible, contextual query with fallback strategies

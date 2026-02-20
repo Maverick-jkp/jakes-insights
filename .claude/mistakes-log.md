@@ -264,6 +264,31 @@ hugo server -D
 
 ---
 
-**Last Updated**: 2026-02-07
+---
+
+## 2026-02-20: Old Categories Left in Scripts (Tech-Only Pivot Not Fully Applied)
+
+**What happened**: Strategy changed to tech-only but multiple scripts still had 5-category logic (sports, entertainment, society, business, finance) causing mismatches.
+
+**Affected files**:
+- `scripts/generate_posts.py` - category_context had 8 categories
+- `scripts/topic_queue.py` - docstring + stats had old 5 categories
+- `scripts/keyword_curator.py` - auto-corrected to 'sports' instead of rejecting
+- `scripts/affiliate_config.py` - still had finance/entertainment configs
+- `scripts/quality_gate.py` - checked for 'finance' category
+- `scripts/seo_tracker.py` - parsed 8 categories
+- `scripts/utils/content_classifier.py` - allowed tutorial for 'education'
+- `.claude/docs/architecture.md` - showed 8 content directories
+- `.claude/docs/development.md` - showed multi-category VALID_CATEGORIES list
+
+**Root cause**: Partial migration - `validation.py` was updated to tech-only but consuming scripts were not updated.
+
+**Also fixed**: Claude API model updated from `claude-sonnet-4-5-20250929` → `claude-sonnet-4-6` across all 7 scripts.
+
+**Prevention**: When changing strategy, grep ALL scripts for old values and update in one commit.
+
+---
+
+**Last Updated**: 2026-02-20
 **Maintained By**: All agents
-**System Version**: 6.2
+**System Version**: 7.1

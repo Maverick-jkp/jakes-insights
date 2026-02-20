@@ -5711,116 +5711,83 @@
       "completed_at": "2026-02-14T05:38:35.252111+00:00"
     },
     {
-      "id": "1000-en-society-yoon-suk-yeol",
-      "keyword": "yoon suk yeol",
-      "category": "society",
+      "id": "1000-en-tech-gta-6-release-date",
+      "keyword": "gta 6 release date",
+      "category": "tech",
       "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-02-19T07:50:47.229420",
+      "created_at": "2026-02-20T07:50:44.546694",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Understanding the unprecedented legal consequences and whether democratic institutions will enforce the ultimate punishment",
-      "angle": "Constitutional crisis and the extreme legal accountability of political leaders",
+      "search_intent": "Users fear missing critical updates on whether their long-awaited game will ever actually launch, after multiple delays have already broken trust",
+      "angle": "Focus on Rockstar's pattern of delays and what this means for gaming industry trust and pre-order commitments",
       "competition_level": "high",
       "references": [
         {
-          "title": "Yoon Suk Yeol - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Yoon_Suk_Yeol",
-          "source": "en.wikipedia.org"
+          "title": "GTA 6 Release Date Twist — Did Rockstar Just Change Everything? - Battleofguardians",
+          "url": "https://battleofguardians.com/gta-6-release-date-twist-did-rockstar/",
+          "source": "battleofguardians.com"
         },
         {
-          "title": "Ousted South Korean president Yoon Suk Yeol faces death penalty - The Washington Post",
-          "url": "https://www.washingtonpost.com/world/2026/02/18/south-korea-president-insurrection-death-penalty/",
-          "source": "www.washingtonpost.com"
+          "title": "GTA 6 Launch Twist: Rockstar to Delay Again? November Release, Marketing Strategy & Why Fans Are Cal",
+          "url": "https://sundayguardianlive.com/tech-news/gta-6-launch-twist-rockstar-to-delay-again-november-release-expected-price-marketing-strategy-why-fans-are-calling-it-a-twist-170752/",
+          "source": "sundayguardianlive.com"
         },
         {
-          "title": "‘I just want to stop hearing about it’: a weary South Korea awaits verdict on Yoon insurrection char",
-          "url": "https://www.theguardian.com/world/2026/feb/17/yoon-suk-yeol-south-korea-trial-verdict",
-          "source": "www.theguardian.com"
+          "title": "GTA 6 LIVE: Release date wait hits key milestone",
+          "url": "https://www.indy100.com/gaming/gta-6-release-date-trailer-2675279130",
+          "source": "www.indy100.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1001-en-entertainment-millie-bobby-brown",
-      "keyword": "millie bobby brown",
+      "id": "1001-en-entertainment-pokemon-fire-red",
+      "keyword": "pokemon fire red",
       "category": "entertainment",
       "lang": "en",
-      "priority": 7,
+      "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-19T07:50:47.229451",
+      "created_at": "2026-02-20T07:50:44.546723",
       "retry_count": 0,
       "keyword_type": "trend",
-      "search_intent": "Uncovering potential drama or conflicts within the beloved Stranger Things cast that could signal the end of their public friendship",
-      "angle": "Celebrity relationship tension and the hidden dynamics behind public friendships",
+      "search_intent": "Nostalgia-driven fans urgently search to confirm if the leaked Switch 2 port is real and whether they need to prepare their old saves before a limited release window closes",
+      "angle": "Emphasize the 30th anniversary timing, potential Nintendo Switch Online exclusivity, and HOME support uncertainty",
       "competition_level": "medium",
       "references": [
         {
-          "title": "Why Millie Bobby Brown, David Harbor, and Noah Schnapp (Seemingly!) Skipped Maya Hawke's Wedding",
-          "url": "https://www.cosmopolitan.com/entertainment/celebs/a70379542/why-millie-bobby-brown-david-harbor-noah-schnapp-skipped-maya-hawke-wedding/",
-          "source": "www.cosmopolitan.com"
+          "title": "Pokémon Day 2026 Could Be Massive - Here’s Every Game Rumored So Far",
+          "url": "https://www.vice.com/en/article/pokemon-day-2026-could-be-massive-heres-every-game-rumored-so-far/",
+          "source": "www.vice.com"
         },
         {
-          "title": "Millie Bobby Brown Gets Playful & Stretches in Miniskirt for Her Brand - theFashionSpot",
-          "url": "https://www.thefashionspot.com/fashion-news/930998-millie-bobby-brown-miniskirt-photos-tennis-balls-stretch-brand/",
-          "source": "www.thefashionspot.com"
+          "title": "r/pokemon on Reddit: My Predictions for 30th Anniversary Pokemon Direct on Feb 27",
+          "url": "https://www.reddit.com/r/pokemon/comments/1r67b5e/my_predictions_for_30th_anniversary_pokemon/",
+          "source": "www.reddit.com"
         },
         {
-          "title": "Millie Bobby Brown Poses in Daring Shorts Set for Florence by Mills Drop",
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/millie-bobby-brown-poses-daring-162141504.html",
-          "source": "www.yahoo.com"
+          "title": "Pokemon FireRed and LeafGreen listings appear on Nintendo eShop",
+          "url": "https://nintendoeverything.com/pokemon-firered-and-leafgreen-listings-appear-on-nintendo-eshop/",
+          "source": "nintendoeverything.com"
         }
       ],
       "expiry_days": 3,
       "content_type_hint": "BREAKING"
     },
     {
-      "id": "1002-ko-society-목현태",
-      "keyword": "목현태",
-      "category": "society",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-02-19T07:50:47.229468",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "경찰 고위직의 내란 가담 사실이 확정되면서 국가 안보 시스템 전체에 대한 신뢰가 붕괴되는 순간을 목격하려는 충격과 불안",
-      "angle": "국가 권력기관의 배신과 민주주의 수호 시스템의 근본적 붕괴",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "[속보] 법원 \"목현태 前서울청 국회경비대장도 내란중요임무죄 성립\" | 연합뉴스",
-          "url": "https://www.yna.co.kr/view/AKR20260219112600004",
-          "source": "www.yna.co.kr"
-        },
-        {
-          "title": "법원 목현태 前서울청 국회경비대장도 내란중요임무죄 성립 | 한국경제",
-          "url": "https://www.hankyung.com/article/2026021916367",
-          "source": "www.hankyung.com"
-        },
-        {
-          "title": "[속보] 법원 \"목현태 전 국회경비대장, 내란죄 인정\"",
-          "url": "https://www.gukjenews.com/news/articleView.html?idxno=3509117",
-          "source": "www.gukjenews.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1003-ko-tech-코딩-부트캠프-추천",
+      "id": "1002-ko-tech-코딩-부트캠프-추천",
       "keyword": "코딩 부트캠프 추천",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-19T07:50:47.229513",
+      "created_at": "2026-02-20T07:50:44.546793",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "개발자로 커리어 전환을 고려하며 자신에게 적합한 코딩 부트캠프를 찾기 위해 비교 기준과 추천 프로그램을 알고 싶음",
-      "angle": "비교 및 선택 가이드 - 커리큘럼, 비용, 취업 지원, 학습 방식별 부트캠프 비교 분석",
+      "search_intent": "코딩 부트캠프 등록 전 다양한 옵션을 비교하고 자신에게 최적의 프로그램을 선택하기 위한 의사결정",
+      "angle": "비교 가이드 - 국내외 주요 부트캠프의 커리큘럼, 수강료, 수강 기간, 취업 지원, 후기를 객관적으로 비교 분석",
       "competition_level": "medium",
       "references": [
         {
@@ -5829,14 +5796,14 @@
           "source": "nbcamp.spartaclub.kr"
         },
         {
-          "title": "코딩 부트캠프 - 위키백과, 우리 모두의 백과사전",
-          "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%94%A9_%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84",
-          "source": "ko.wikipedia.org"
-        },
-        {
           "title": "2025년 코딩 부트캠프 추천 리스트",
           "url": "https://greenutopia.tistory.com/entry/2025%EB%85%84-%EC%BD%94%EB%94%A9-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-%EC%B6%94%EC%B2%9C-%EB%A6%AC%EC%8A%A4%ED%8A%B8",
           "source": "greenutopia.tistory.com"
+        },
+        {
+          "title": "코딩 부트캠프 - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%94%A9_%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84",
+          "source": "ko.wikipedia.org"
         }
       ],
       "content_type_hint": "GUIDE"

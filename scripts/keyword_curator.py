@@ -948,11 +948,15 @@ class KeywordCurator:
             safe_print(f"    Policy: One keyword = one category (first occurrence wins)\n")
 
         # STEP 2: Enforce tech-only category (reject non-tech keywords)
-        non_tech_keywords = ['vs', 'game', 'match', 'league', 'cup', 'tournament', 'championship',
+        non_tech_keywords = ['vs', 'match', 'league', 'cup', 'tournament', 'championship',
                              'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
                              'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
                              'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma',
-                             'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama']
+                             'gta', 'release date', 'icc', 'cricket', 'weather', 'snow storm',
+                             'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama',
+                             'attorney', 'lawyer', 'accident', 'injury', 'lawsuit',
+                             '축구', '야구', '농구', '배구', '테니스', '골프', '선수권',
+                             '연예인', '드라마', '아이돌', '가수', '배우']
 
         rejected_non_tech = []
         filtered_dedup = []

@@ -123,7 +123,11 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - intent_signal은 "STATE_CHANGE", "PROMISE_BROKEN", "SILENCE", "DEADLINE_LOST", "COMPARISON" 중 하나
 - **중요**: 위 실시간 트렌드 데이터의 Query를 keyword 필드에 그대로 복사할 것
 - **keyword 필드는 절대 재작성하지 말고 Query를 정확히 그대로 사용**
-- **테크 관련 트렌드만 선택**: tech가 아닌 키워드(연예인, 스포츠, 정치 등)는 제외할 것
+- **테크 관련 트렌드만 선택**: tech가 아닌 키워드는 제외할 것
+  - ❌ 제외: 스포츠 팀/구단명(예: 전북 현대 모터스, 맨유, 레알마드리드), 선수명, 경기 결과
+  - ❌ 제외: 연예인, 드라마, 영화, 음악, 아이돌
+  - ❌ 제외: "스포츠 테크 관점" 억지 연결 금지 — 구단명 자체가 키워드면 무조건 제외
+  - ✅ 포함: AI, 클라우드, 앱, 소프트웨어, 반도체, 사이버보안, EdTech, DevOps
 
 **🔴 카테고리 분류 가이드 (tech only):**
 - **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, 교육 기술(EdTech), 사이버보안, 반도체, 클라우드
@@ -948,15 +952,26 @@ class KeywordCurator:
             safe_print(f"    Policy: One keyword = one category (first occurrence wins)\n")
 
         # STEP 2: Enforce tech-only category (reject non-tech keywords)
-        non_tech_keywords = ['vs', 'match', 'league', 'cup', 'tournament', 'championship',
-                             'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
-                             'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
-                             'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma',
-                             'gta', 'release date', 'icc', 'cricket', 'weather', 'snow storm',
-                             'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama',
-                             'attorney', 'lawyer', 'accident', 'injury', 'lawsuit',
-                             '축구', '야구', '농구', '배구', '테니스', '골프', '선수권',
-                             '연예인', '드라마', '아이돌', '가수', '배우']
+        # Strategy: block obvious non-tech terms. Claude is already instructed to pick
+        # tech-only, but sometimes reframes sports/entertainment keywords as "tech angle".
+        non_tech_keywords = [
+            # Sports (EN)
+            'vs', 'match', 'league', 'cup', 'tournament', 'championship', 'season',
+            'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
+            'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
+            'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma', 'cricket', 'icc',
+            # Sports clubs / teams (EN) — Claude sometimes wraps these as "sports tech"
+            'united', 'city fc', 'real madrid', 'barcelona',
+            # Games / entertainment (non-tech)
+            'gta', 'release date', 'weather', 'snow storm',
+            'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama',
+            'attorney', 'lawyer', 'accident', 'injury', 'lawsuit',
+            # Sports (KO)
+            '축구', '야구', '농구', '배구', '테니스', '골프', '선수권', '리그', '경기', '결승',
+            '현대 모터스', '전북', '전남', '울산 hd', '수원',  # K-League clubs
+            # Entertainment (KO)
+            '연예인', '드라마', '아이돌', '가수', '배우', '예능', '영화',
+        ]
 
         rejected_non_tech = []
         filtered_dedup = []

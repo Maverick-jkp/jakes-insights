@@ -125,8 +125,11 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - **keyword 필드는 절대 재작성하지 말고 Query를 정확히 그대로 사용**
 - **테크 관련 트렌드만 선택**: tech가 아닌 키워드는 제외할 것
   - ❌ 제외: 스포츠 팀/구단명(예: 전북 현대 모터스, 맨유, 레알마드리드), 선수명, 경기 결과
-  - ❌ 제외: 연예인, 드라마, 영화, 음악, 아이돌
-  - ❌ 제외: "스포츠 테크 관점" 억지 연결 금지 — 구단명 자체가 키워드면 무조건 제외
+  - ❌ 제외: 연예인, 드라마, 영화, 음악, 아이돌, TV 쇼, 애니메이션(예: invincible, 웹툰, 만화)
+  - ❌ 제외: 날씨/기상 뉴스(예: freeze watch, 한파주의보, 폭설경보, 태풍)
+  - ❌ 제외: 사람 이름 + 이벤트(예: 홍길동 결혼, 서주경, 전경민 결혼) — 연예인 실명 뉴스는 무조건 제외
+  - ❌ 제외: 결혼/이혼/출산/사건사고 뉴스
+  - ❌ 제외: "애니메이션 기술", "날씨 앱", "스포츠 테크" 같은 억지 기술 연결 금지 — 핵심이 기술이 아니면 제외
   - ✅ 포함: AI, 클라우드, 앱, 소프트웨어, 반도체, 사이버보안, EdTech, DevOps
 
 **🔴 카테고리 분류 가이드 (tech only):**
@@ -962,17 +965,28 @@ class KeywordCurator:
             'basketball', 'football', 'soccer', 'baseball', 'hockey', 'tennis', 'golf',
             'nba', 'nfl', 'mlb', 'nhl', 'premier league', 'uefa', 'champions league',
             'world cup', 'olympics', 'ufc', 'boxing', 'wrestling', 'mma', 'cricket', 'icc',
-            # Sports clubs / teams (EN) — Claude sometimes wraps these as "sports tech"
+            # Sports clubs / teams (EN)
             'united', 'city fc', 'real madrid', 'barcelona',
-            # Games / entertainment (non-tech)
-            'gta', 'release date', 'weather', 'snow storm',
-            'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama',
+            # Entertainment / Animation (EN)
+            'gta', 'release date',
+            'invincible', 'superhero', 'animated series', 'animation', 'cartoon', 'anime', 'manga',
+            'tv series', 'tv show', 'streaming show', 'episode', 'season finale',
+            'celebrity', 'actor', 'singer', 'idol', 'kpop', 'drama', 'movie',
+            'wedding', 'marriage', 'divorce',
+            # Weather / natural disasters (EN)
+            'weather', 'snow storm', 'freeze watch', 'frost warning', 'blizzard',
+            'tornado', 'hurricane', 'storm watch', 'weather alert',
+            # Legal non-tech (EN)
             'attorney', 'lawyer', 'accident', 'injury', 'lawsuit',
             # Sports (KO)
             '축구', '야구', '농구', '배구', '테니스', '골프', '선수권', '리그', '경기', '결승',
             '현대 모터스', '전북', '전남', '울산 hd', '수원',  # K-League clubs
             # Entertainment (KO)
             '연예인', '드라마', '아이돌', '가수', '배우', '예능', '영화',
+            '애니메이션', '만화', '웹툰', '라노벨',
+            '결혼', '이혼', '웨딩', '출산', '열애', '교제', '연애',
+            # Weather / natural disasters (KO)
+            '날씨', '폭우', '한파', '폭설', '주의보', '경보', '태풍', '폭풍', '기상청',
         ]
 
         rejected_non_tech = []
@@ -987,9 +1001,18 @@ class KeywordCurator:
 
             # Reject clearly non-tech keywords
             is_non_tech = any(term in keyword_lower for term in non_tech_keywords)
-            if is_non_tech:
-                rejected_non_tech.append(candidate.get('keyword'))
-                safe_print(f"  🔴 REJECTED (non-tech): {candidate.get('keyword')}")
+
+            # Reject Korean person names: pure Hangul 2-4 chars (e.g. "서주경")
+            # or person name + life event (e.g. "전경민 결혼")
+            import re
+            keyword_orig = candidate.get('keyword', '')
+            is_person_name = bool(re.match(r'^[가-힣]{2,4}$', keyword_orig)) or \
+                             bool(re.match(r'^[가-힣]{2,4}\s+(결혼|이혼|출산|사망|사고|논란|파문|열애|연애|교제)$', keyword_orig))
+
+            if is_non_tech or is_person_name:
+                rejected_non_tech.append(keyword_orig)
+                reason = "person name" if is_person_name else "non-tech"
+                safe_print(f"  🔴 REJECTED ({reason}): {keyword_orig}")
             else:
                 filtered_dedup.append(candidate)
 

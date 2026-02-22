@@ -5702,17 +5702,139 @@
       "expiry_days": 7
     },
     {
-      "id": "1004-ko-tech-클라우드-컴퓨팅-기초",
+      "id": "1003-en-tech-invincible",
+      "keyword": "invincible",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-22T07:38:26.208533",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users rushing to check if their streaming platform will hold up on March 18 launch day — missing the premiere means being spoiled everywhere",
+      "angle": "Streaming platform reliability vs. massive simultaneous viewership demand — who breaks first",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Invincible (TV series) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Invincible_(TV_series)",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Invincible Season 4 Confirms Episode Release Schedule (With Big Premiere Plans)",
+          "url": "https://comicbook.com/tv-shows/news/invincible-season-4-confirms-episode-release-schedule-with-big-premiere-plans/",
+          "source": "comicbook.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1004-en-tech-freeze-watch",
+      "keyword": "freeze watch",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-22T07:38:26.208562",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Homeowners scrambling to verify whether their IoT freeze alert systems and smart home apps are configured correctly before temperatures drop below 32°F",
+      "angle": "IoT sensor reliability and smart home app failure rates during critical freeze warning windows",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Watch/Warning/Advisory Definitions",
+          "url": "https://www.weather.gov/lwx/warningsdefined",
+          "source": "www.weather.gov"
+        },
+        {
+          "title": "Houston Weather: Goodbye arctic air, hello 70-degree weather - ABC13 Houston",
+          "url": "https://abc13.com/post/houston-weather-forecast-today-near-me-texas-rain-storm-predictions/39346/",
+          "source": "abc13.com"
+        },
+        {
+          "title": "Freeze watch - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Freeze_watch",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1005-ko-tech-서주경",
+      "keyword": "서주경",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-22T07:38:26.208579",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "음원 플랫폼의 수익 배분 구조에 의문을 가진 사용자들이 실제 정산 시스템의 투명성을 확인하려는 상황",
+      "angle": "스트리밍 플랫폼 수익 배분 알고리즘의 불투명성과 창작자 착취 구조 고발",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "서주경, 후배 강문경과 수익 배분 방식 공개 “개런티 다 준다” (‘동치미’)",
+          "url": "https://www.chosun.com/entertainments/broadcast/2026/02/22/GEZTKMJXMZSTKMLEGFSGCN3BG4/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "빈예서, 솔지 꺾었다.. 이수연, 서주경 혹평에도 우승후보 저력 발휘 ('현역가왕3')[종합]",
+          "url": "https://tvreport.co.kr/broadcast/article/1001712/",
+          "source": "tvreport.co.kr"
+        },
+        {
+          "title": "홍자가 꼴찌인데 이수연이 2위…결승 직행 가능성 높아('현역가왕3') | 텐아시아",
+          "url": "https://www.tenasia.co.kr/article/2026021894074",
+          "source": "www.tenasia.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1006-ko-tech-전경민-결혼",
+      "keyword": "전경민 결혼",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-22T07:38:26.208594",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "SNS와 포털 알고리즘이 개인 관심사를 실시간 추적해 맞춤 노출하는 구조에 불안감을 느끼며 개인정보 침해 여부를 확인하려는 사용자",
+      "angle": "포털·SNS 추천 알고리즘의 개인정보 수집 범위와 사용자 감시 구조 폭로",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "전소민, 8살 연하 아이돌 '♥핑크빛' 무드 그리더니…와인잔 들고 전한 '아찔 미모' | 텐아시아",
+          "url": "https://www.tenasia.co.kr/article/2026022153804",
+          "source": "www.tenasia.co.kr"
+        },
+        {
+          "title": "부모님 계시는데 혼주석 다 비우고 결혼한 탑배우 | 올빼미기자",
+          "url": "https://m.view.nate.com/enter/view/359002/",
+          "source": "m.view.nate.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1007-ko-tech-클라우드-컴퓨팅-기초",
       "keyword": "클라우드 컴퓨팅 기초",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-21T07:35:08.225757",
+      "created_at": "2026-02-22T07:38:26.208608",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "클라우드 컴퓨팅의 기본 개념을 처음 배우거나, AWS·GCP·Azure 등 플랫폼 학습 전 기초를 다지려는 학습 목적",
-      "angle": "교육 및 단계별 가이드 — 핵심 용어 설명부터 실습 진입점까지 순차적으로 안내",
+      "search_intent": "클라우드 컴퓨팅의 기본 개념을 이해하고 실무나 학습에 적용하기 위한 지식 습득",
+      "angle": "초보자 친화적 개념 설명 + 실습 진입점 안내 가이드",
       "competition_level": "medium",
       "references": [
         {
@@ -5731,9 +5853,7 @@
           "source": "www.ibm.com"
         }
       ],
-      "content_type_hint": "GUIDE",
-      "reserved_at": "2026-02-21T06:48:25.635217+00:00",
-      "completed_at": "2026-02-21T06:55:59.792115+00:00"
+      "content_type_hint": "GUIDE"
     }
   ]
 }

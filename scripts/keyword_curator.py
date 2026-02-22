@@ -706,8 +706,10 @@ class KeywordCurator:
 
         return safe_candidates
 
-    def fetch_evergreen_references(self, keyword: str, lang: str) -> List[Dict]:
-        """Fetch references for evergreen keywords on-demand using Brave Search"""
+    def fetch_evergreen_references(self, keyword: str, lang: str, freshness: str = "py") -> List[Dict]:
+        """Fetch references for a keyword via Brave Search.
+        freshness: 'pw' = past week (trend), 'py' = past year (evergreen)
+        """
         if not self.brave_api_key:
             safe_print(f"  ⚠️  No Brave API key - skipping references for: {keyword}")
             return []
@@ -721,7 +723,7 @@ class KeywordCurator:
             params = {
                 "q": keyword,
                 "count": 3,
-                "freshness": "py"  # Past year (for evergreen content)
+                "freshness": freshness
             }
 
             time.sleep(0.5)  # Rate limiting
@@ -1009,11 +1011,10 @@ class KeywordCurator:
             lang = candidate.get("language", "en")
             kw_type = candidate.get("keyword_type", "trend")
 
-            # For evergreen keywords, fetch references on-demand
-            if kw_type == "evergreen" and not self.search_results:
-                references = self.fetch_evergreen_references(keyword, lang)
-            else:
-                references = self.extract_references(self.search_results, keyword, lang)
+            # Fetch references directly by keyword via Brave Search.
+            # trend: freshness='pw' (past week), evergreen: freshness='py' (past year)
+            freshness = "pw" if kw_type == "trend" else "py"
+            references = self.fetch_evergreen_references(keyword, lang, freshness)
 
             candidate["references"] = references
             if references:
@@ -1028,9 +1029,8 @@ class KeywordCurator:
         if keywords_without_refs > 0:
             safe_print(f"⚠️  WARNING: {keywords_without_refs}/{len(filtered_candidates)} keywords have NO references")
             safe_print(f"   This means generated posts will lack credible sources!")
-            if not self.google_api_key or not self.google_cx:
-                safe_print(f"   ROOT CAUSE: Google Custom Search API credentials not configured")
-                safe_print(f"   FIX: Set GOOGLE_API_KEY and GOOGLE_CX environment variables\n")
+            if not self.brave_api_key:
+                safe_print(f"   ROOT CAUSE: BRAVE_API_KEY not configured\n")
         else:
             safe_print(f"✅ All {keywords_with_refs} keywords have references!\n")
 

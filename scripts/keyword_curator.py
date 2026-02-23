@@ -42,26 +42,35 @@ except ImportError:
 
 
 CURATION_PROMPT_WITH_TRENDS = """역할:
-너는 광고 수익 최적화를 위한 기술 전문 키워드 큐레이터다.
-아래 커뮤니티 토픽(HackerNews, Dev.to, Lobsters, ProductHunt)을 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
+너는 **해외 테크 미디어 에디터**다. 영문 커뮤니티(HackerNews, Dev.to, Lobsters, ProductHunt)에서
+지금 가장 핫한 기술 이슈를 발굴해, **영어 독자**와 **한국어 독자** 모두를 위한 키워드를 제안한다.
 
-📊 **소스**: Community 100% (HackerNews, Dev.to, Lobsters, ProductHunt)
+이 블로그의 컨셉: **"해외 테크 뉴스를 가장 빠르게, 한국어로도 전달하는 외신 테크 블로그"**
+
+📊 **소스**: HackerNews + Dev.to + Lobsters + ProductHunt (모두 영문 커뮤니티)
 📊 **언어 비중**: EN 50% ({en_count}개), KO 50% ({ko_count}개)
 
-🌐 **Community Topics (HackerNews, Dev.to, Lobsters, ProductHunt)**:
+🌐 **오늘의 해외 커뮤니티 핫 토픽**:
 {community_topics}
 
 ---
 
-**🌏 EN → KO 번역 전략 (KO 키워드 생성 핵심 규칙):**
-커뮤니티 토픽은 대부분 영어지만, KO 키워드는 그 영어 핫 토픽을 **한국어 독자 관점**으로 재해석해서 만들어라.
-- EN 커뮤니티 토픽 → 한국 독자에게 의미 있는 KO 키워드로 변환
-- 단순 번역이 아닌, 한국 개발자/테크 사용자가 실제 검색할 만한 표현으로 적절히 변환
-- 예시:
-  - "OpenAI releases GPT-5" → KO: "GPT-5 출시 한국 개발자 영향"
-  - "Apple Silicon M4 benchmark" → KO: "애플 M4 성능 실제 체감"
-  - "GitHub Copilot now free" → KO: "깃허브 코파일럿 무료 전환 어떻게"
-  - "Linux kernel 7.0 released" → KO: "리눅스 커널 7.0 업데이트 변경사항"
+**🌏 KO 키워드 생성 전략 — 외신 현지화 (핵심 규칙):**
+KO 키워드는 단순 번역이 아니라 **한국 개발자/테크 유저가 실제로 네이버·구글에 검색할 표현**으로 만들어라.
+"해외에서 이미 핫한 이슈인데 한국어 글이 없다" → 그 공백을 파고드는 것이 목표.
+
+변환 방식:
+- 해외 이슈의 핵심을 유지하면서 한국 독자의 검색 패턴에 맞게 표현
+- 영어 약어/브랜드명은 그대로 써도 됨 (예: "GPT", "M4", "VS Code")
+- 한국 독자가 "이게 나한테 어떤 영향이지?"라고 느낄 표현 우선
+
+예시:
+  - "OpenAI releases GPT-5" → KO: "GPT-5 출시 국내 개발자 실제 영향"
+  - "Apple M4 MacBook Pro benchmark" → KO: "M4 맥북 성능 실제 써보니"
+  - "GitHub Copilot free for all" → KO: "깃허브 코파일럿 무료화 어떻게 쓰나"
+  - "Linux kernel 7.0 major changes" → KO: "리눅스 커널 7.0 뭐가 바뀌었나"
+  - "Cloudflare outage post-mortem" → KO: "클라우드플레어 장애 원인 분석"
+  - "VS Code AI features 2025" → KO: "VS Code AI 기능 실전 활용법"
 
 **🚨 언어 문자 검증 규칙 (반드시 준수):**
 - **영어(en) 키워드**: 한글(가-힣) 포함 금지
@@ -121,11 +130,11 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 - risk_level은 "safe", "caution", "high_risk" 중 하나 (기본값: "safe")
 - name_policy는 "no_real_names" (기본값)
 - intent_signal은 "STATE_CHANGE", "PROMISE_BROKEN", "SILENCE", "DEADLINE_LOST", "COMPARISON" 중 하나
-- source_topic 필드: 참고한 커뮤니티 토픽 원문을 반드시 기재 (추적용)
+- source_topic 필드: 참고한 해외 커뮤니티 토픽 원문 제목을 반드시 기재 (추적용)
 
 **언어별 톤 차이:**
-- 🇺🇸 English: developer impact, performance, workflow disruption 중심
-- 🇰🇷 Korean: 한국 개발자/사용자 관점, 실제 체감, 국내 영향 중심
+- 🇺🇸 English: 해외 커뮤니티 원문 톤 그대로 — developer impact, performance, workflow disruption 중심
+- 🇰🇷 Korean: "해외에서 이미 뜨거운 이슈, 한국 독자에게 어떤 의미인가" — 실제 체감, 국내 적용 가능성 중심
 
 **🔴 안전 가이드라인:**
 - 명예훼손/비난/비방 표현 금지

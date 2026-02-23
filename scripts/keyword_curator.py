@@ -333,9 +333,9 @@ class KeywordCurator:
             hn_top_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
             response = requests.get(hn_top_url, timeout=10, verify=verify_ssl)
             response.raise_for_status()
-            story_ids = response.json()[:10]  # Top 10 stories
+            story_ids = response.json()[:25]  # Top 25 stories
 
-            for story_id in story_ids[:5]:  # Fetch details for top 5
+            for story_id in story_ids[:25]:  # Fetch details for top 25
                 try:
                     item_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
                     item_resp = requests.get(item_url, timeout=5, verify=verify_ssl)
@@ -343,9 +343,9 @@ class KeywordCurator:
                     item = item_resp.json()
 
                     if item and item.get('title'):
-                        # Fetch top 3 comments for additional context
+                        # Fetch top 2 comments for context (reduced from 3 for speed)
                         top_comments = []
-                        comment_ids = item.get('kids', [])[:3]  # Top 3 comment IDs
+                        comment_ids = item.get('kids', [])[:2]
                         for comment_id in comment_ids:
                             try:
                                 comment_url = f"https://hacker-news.firebaseio.com/v0/item/{comment_id}.json"
@@ -353,11 +353,10 @@ class KeywordCurator:
                                 comment_resp.raise_for_status()
                                 comment = comment_resp.json()
                                 if comment and comment.get('text'):
-                                    # Strip HTML tags and limit length
                                     import re
                                     clean_text = re.sub('<[^<]+?>', '', comment.get('text', ''))
-                                    if len(clean_text) > 500:
-                                        clean_text = clean_text[:500] + '...'
+                                    if len(clean_text) > 300:
+                                        clean_text = clean_text[:300] + '...'
                                     top_comments.append(clean_text)
                             except Exception:
                                 continue
@@ -368,7 +367,7 @@ class KeywordCurator:
                             'url': item.get('url', f"https://news.ycombinator.com/item?id={story_id}"),
                             'score': item.get('score', 0),
                             'comments': item.get('descendants', 0),
-                            'top_comments': top_comments  # NEW: Developer insights
+                            'top_comments': top_comments
                         })
                 except Exception:
                     continue
@@ -382,13 +381,13 @@ class KeywordCurator:
         # 2. Dev.to - Developer community (free, no auth needed)
         try:
             safe_print("  → Fetching from Dev.to (top articles)...")
-            devto_url = "https://dev.to/api/articles?top=1&per_page=5"
+            devto_url = "https://dev.to/api/articles?top=1&per_page=25"
             headers = {'User-Agent': 'JakesTechInsights/1.0'}
             response = requests.get(devto_url, headers=headers, timeout=10, verify=verify_ssl)
             response.raise_for_status()
             data = response.json()
 
-            for article in data[:5]:
+            for article in data[:25]:
                 if article.get('title'):
                     community_topics.append({
                         'title': article['title'],
@@ -412,7 +411,7 @@ class KeywordCurator:
             response.raise_for_status()
             data = response.json()
 
-            for article in data[:5]:
+            for article in data[:25]:
                 if article.get('title'):
                     community_topics.append({
                         'title': article['title'],
@@ -441,7 +440,7 @@ class KeywordCurator:
             atom_ns = {'atom': 'http://www.w3.org/2005/Atom'}
             entries = root.findall('atom:entry', atom_ns)
 
-            for entry in entries[:5]:
+            for entry in entries[:25]:
                 title_elem = entry.find('atom:title', atom_ns)
                 link_elem = entry.find('atom:link', atom_ns)
                 content_elem = entry.find('atom:content', atom_ns)  # Atom uses 'content' not 'description'
@@ -873,7 +872,7 @@ class KeywordCurator:
 
             community_topics_formatted = "\n".join([
                 format_community_topic(t)
-                for t in community_topics_list[:15]  # Top 15 community topics
+                for t in community_topics_list[:60]  # Up to 60 topics (25 per source × 4 sources)
             ]) or "No community topics available"
 
             # Generate prompt with community data only
@@ -1276,12 +1275,10 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Keyword Curator for blog content")
-    parser.add_argument('--count', type=int, default=15, help="Number of candidates to generate (default: 15)")
+    parser.add_argument('--count', type=int, default=10, help="Number of candidates to generate (default: 10)")
     parser.add_argument('--auto', action='store_true', help="Automatically add all candidates without interactive selection")
-    parser.add_argument('--type', choices=['trend', 'evergreen', 'mixed'], default='trend',
-                       help="Keyword type: trend (default), evergreen, or mixed")
-    parser.add_argument('--evergreen-ratio', type=float, default=0.2,
-                       help="Ratio of evergreen keywords in mixed mode (default: 0.2)")
+    parser.add_argument('--type', choices=['trend', 'evergreen'], default='trend',
+                       help="Keyword type: trend (default) or evergreen")
     args = parser.parse_args()
 
     # Check API key
@@ -1292,34 +1289,8 @@ def main():
     # Initialize curator
     curator = KeywordCurator()
 
-    # Generate candidates based on type
-    if args.type == 'mixed':
-        # Mixed mode: Community 80% + Evergreen 20%
-        # trend candidates come from HackerNews, Dev.to, Lobsters, ProductHunt only
-        evergreen_count = int(args.count * args.evergreen_ratio)
-        trend_count = args.count - evergreen_count
-
-        safe_print(f"\n📊 Mixed Mode: {trend_count} trend (Community sources) + {evergreen_count} evergreen keywords")
-        safe_print(f"   Sources: HackerNews + Dev.to + Lobsters + ProductHunt + Evergreen {evergreen_count}\n")
-
-        # Generate trend keywords
-        if trend_count > 0:
-            trend_candidates = curator.generate_candidates(count=trend_count, keyword_type="trend")
-        else:
-            trend_candidates = []
-
-        # Generate evergreen keywords
-        if evergreen_count > 0:
-            evergreen_candidates = curator.generate_candidates(count=evergreen_count, keyword_type="evergreen")
-        else:
-            evergreen_candidates = []
-
-        # Combine candidates
-        candidates = trend_candidates + evergreen_candidates
-
-    else:
-        # Single type mode
-        candidates = curator.generate_candidates(count=args.count, keyword_type=args.type)
+    # Generate candidates
+    candidates = curator.generate_candidates(count=args.count, keyword_type=args.type)
 
     # Display candidates
     curator.display_candidates(candidates)

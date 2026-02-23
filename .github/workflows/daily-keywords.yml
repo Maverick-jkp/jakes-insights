@@ -11,13 +11,9 @@ on:
         required: false
         default: '10'
       keyword_type:
-        description: 'Keyword type (trend, evergreen, or mixed)'
+        description: 'Keyword type (trend or evergreen)'
         required: false
-        default: 'mixed'
-      evergreen_ratio:
-        description: 'Ratio of evergreen keywords in mixed mode (0.0-1.0)'
-        required: false
-        default: '0.3'
+        default: 'trend'
 
 jobs:
   curate-keywords:
@@ -85,11 +81,10 @@ jobs:
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
           COUNT="${{ github.event.inputs.count || '10' }}"
-          TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
-          RATIO="${{ github.event.inputs.evergreen_ratio || '0.3' }}"
+          TYPE="${{ github.event.inputs.keyword_type || 'trend' }}"
 
-          echo "📝 Generating $COUNT new keywords (type: $TYPE, evergreen ratio: $RATIO)..."
-          python scripts/keyword_curator.py --count "$COUNT" --type "$TYPE" --evergreen-ratio "$RATIO" --auto
+          echo "📝 Generating $COUNT new keywords (type: $TYPE)..."
+          python scripts/keyword_curator.py --count "$COUNT" --type "$TYPE" --auto
 
       - name: Commit and push keywords
         run: |
@@ -119,7 +114,7 @@ jobs:
 
       - name: Summary
         run: |
-          TYPE="${{ github.event.inputs.keyword_type || 'mixed' }}"
+          TYPE="${{ github.event.inputs.keyword_type || 'trend' }}"
           echo "✅ Keyword curation complete"
           echo "📊 Queue updated with $TYPE keywords"
           echo "🔄 Next: Content generation workflow will consume these keywords"

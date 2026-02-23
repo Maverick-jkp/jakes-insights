@@ -42,65 +42,67 @@ except ImportError:
 
 
 CURATION_PROMPT_WITH_TRENDS = """역할:
-너는 광고 수익 최적화를 위한 키워드 큐레이터다.
-아래 실시간 트렌드 검색 결과와 커뮤니티 토픽을 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
+너는 광고 수익 최적화를 위한 기술 전문 키워드 큐레이터다.
+아래 커뮤니티 토픽(HackerNews, Dev.to, Lobsters, ProductHunt)을 바탕으로 **고CPC, 감정 반응형** 키워드를 제안하라.
 
-📊 **소스 비중**: Google Trends 40% + Community 40% + Evergreen 20%
+📊 **소스**: Community 100% (HackerNews, Dev.to, Lobsters, ProductHunt)
 📊 **언어 비중**: EN 50% ({en_count}개), KO 50% ({ko_count}개)
-
-실시간 트렌드 데이터 (언어별로 구분됨):
-
-🇺🇸 English (US) Trends:
-{trends_en}
-
-🇰🇷 Korean (KR) Trends:
-{trends_ko}
 
 🌐 **Community Topics (HackerNews, Dev.to, Lobsters, ProductHunt)**:
 {community_topics}
 
-**중요**: Community Topics는 영어 원문이지만, 한국 독자에게도 유용한 내용이면 KO 버전으로도 제안하라.
-예: "OpenAI releases new model" → EN 원문 + KO "OpenAI 새 모델 출시"
+---
 
-**🔴 중요 규칙: 언어-키워드 매칭 (CRITICAL - 위반 시 즉시 거부)**
-1. English (US) 트렌드의 Query → language: "en"으로만 사용
-2. Korean (KR) 트렌드의 Query → language: "ko"로만 사용
-3. 위 트렌드 데이터의 Query를 그대로 keyword로 사용하라. 절대 재해석하거나 재작성하지 말 것.
+**🌏 EN → KO 번역 전략 (KO 키워드 생성 핵심 규칙):**
+커뮤니티 토픽은 대부분 영어지만, KO 키워드는 그 영어 핫 토픽을 **한국어 독자 관점**으로 재해석해서 만들어라.
+- EN 커뮤니티 토픽 → 한국 독자에게 의미 있는 KO 키워드로 변환
+- 단순 번역이 아닌, 한국 개발자/테크 사용자가 실제 검색할 만한 표현으로 적절히 변환
+- 예시:
+  - "OpenAI releases GPT-5" → KO: "GPT-5 출시 한국 개발자 영향"
+  - "Apple Silicon M4 benchmark" → KO: "애플 M4 성능 실제 체감"
+  - "GitHub Copilot now free" → KO: "깃허브 코파일럿 무료 전환 어떻게"
+  - "Linux kernel 7.0 released" → KO: "리눅스 커널 7.0 업데이트 변경사항"
 
 **🚨 언어 문자 검증 규칙 (반드시 준수):**
 - **영어(en) 키워드**: 한글(가-힣) 포함 금지
-  - 올바른 예: "NBA", "Kobe Bryant", "quad cortex"
+  - 올바른 예: "OpenAI GPT-5 developer impact", "GitHub Copilot free tier"
   - 잘못된 예: "붉은사막" (한글 포함)
 - **한국어(ko) 키워드**: 반드시 한글(가-힣) 포함 필요
-  - 올바른 예: "붉은사막", "김연아", "u23" (영문 약어는 허용)
-  - 잘못된 예: "red desert" (한글 없음)
+  - 올바른 예: "GPT-5 출시 영향", "애플 M4 성능" (영문 약어 혼용 허용)
+  - 잘못된 예: "GPT-5 release" (한글 없음)
 
-목표:
+**목표:**
 한국어 / 영어 각각에서
-**불안, 분노, 궁금증**을 유발하는 키워드만 제안하라.
+**불안, 분노, 궁금증**을 유발하는 테크 키워드만 제안하라.
 
-금지:
-- 추상적인 트렌드 요약 ("AI 트렌드", "새로운 기술")
-- 교육/정보성 키워드 ("~하는 방법", "~란 무엇인가")
-- 긍정적이고 평화로운 키워드
-- **Query를 재해석하거나 다시 쓰는 것**
-- **같은 키워드를 다른 카테고리로 중복 제안하는 것**
+**금지:**
+- 추상적인 요약 ("AI 트렌드", "새로운 기술")
+- 긍정적이고 평화로운 키워드 (자극 없는 단순 정보)
+- **같은 키워드를 다른 언어로 중복 제안하는 것** (EN/KO 각각 독립적 키워드)
+- **테크와 무관한 키워드**:
+  - ❌ 제외: 스포츠, 연예인, 드라마, 영화, 아이돌, 음악
+  - ❌ 제외: 날씨/자연재해 (태풍, 한파, 폭설)
+  - ❌ 제외: 사람 이름 단독 (연예인 실명, 정치인 이름)
+  - ❌ 제외: 결혼/이혼/출산/사건사고
+  - ❌ 제외: "스포츠 테크", "날씨 앱" 같은 억지 기술 연결 — 핵심이 기술이 아니면 제외
+  - ✅ 포함: AI, 클라우드, 프로그래밍, 소프트웨어, 앱, 게임, 사이버보안, 반도체, 스타트업 기술, EdTech, DevOps, 오픈소스
 
 출력 형식:
 반드시 JSON 형식으로만 응답하라.
 
 [
   {{
-    "keyword": "위 트렌드 데이터의 Query를 그대로 복사 (재해석 금지)",
-    "raw_search_title": "사용자가 구글에 검색할 때 정확히 입력하는 검색어 (keyword와 동일하게)",
+    "keyword": "커뮤니티 토픽 기반 키워드 (EN: 영어 원문 스타일, KO: 한국 독자 관점 표현)",
+    "raw_search_title": "사용자가 구글에 검색할 때 정확히 입력하는 검색어",
     "editorial_title": "기사 제목 형식의 독자 친화적 제목",
     "core_fear_question": "사용자의 핵심 두려움을 담은 질문 한 문장",
     "language": "ko",
     "category": "tech",
-    "search_intent": "사용자가 지금 당장 검색하는 이유 (행동하지 않으면 무엇을 잃는지)",
+    "source_topic": "참고한 커뮤니티 토픽 원문 제목 (HackerNews/Dev.to/Lobsters/ProductHunt)",
+    "search_intent": "사용자가 지금 당장 검색하는 이유",
     "angle": "이 키워드를 다룰 때의 관점",
     "competition_level": "low",
-    "why_it_works": "사용자가 지금 행동하지 않으면 영구적으로 무엇을 잃는지 (마감/기회 손실 중심)",
+    "why_it_works": "이 키워드가 효과적인 이유 (트래픽/공감 근거)",
     "purpose": "high competition인 경우에만: Traffic acquisition / Brand positioning / Viral content 중 하나",
     "keyword_type": "trend",
     "priority": 7,
@@ -113,35 +115,21 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 중요:
 - keyword_type은 "trend"만 사용 (이 프롬프트는 트렌드 전용)
 - category는 **"tech" 하나만** 사용 (테크 전문 퍼블리케이션 전략)
-- **모든 키워드는 반드시 category: "tech"로 설정**
-- 선택 가능한 키워드 범위: AI, ML, 클라우드, 프로그래밍, 소프트웨어, 앱, 게임, 사이버보안, 반도체, 스타트업 기술, EdTech, DevOps, 오픈소스 등
-- language는 "en", "ko" 중 하나 (비율: EN 50%, KO 50%)
+- language는 "en", "ko" 중 하나
 - competition_level은 "low", "medium", "high" 중 하나
-- priority는 1-10 사이의 숫자 (높을수록 우선순위 높음)
+- priority는 1-10 사이의 숫자
 - risk_level은 "safe", "caution", "high_risk" 중 하나 (기본값: "safe")
-- name_policy는 "no_real_names", "generic_only" 중 하나 (기본값: "no_real_names")
+- name_policy는 "no_real_names" (기본값)
 - intent_signal은 "STATE_CHANGE", "PROMISE_BROKEN", "SILENCE", "DEADLINE_LOST", "COMPARISON" 중 하나
-- **중요**: 위 실시간 트렌드 데이터의 Query를 keyword 필드에 그대로 복사할 것
-- **keyword 필드는 절대 재작성하지 말고 Query를 정확히 그대로 사용**
-- **테크 관련 트렌드만 선택**: tech가 아닌 키워드는 제외할 것
-  - ❌ 제외: 스포츠 팀/구단명(예: 전북 현대 모터스, 맨유, 레알마드리드), 선수명, 경기 결과
-  - ❌ 제외: 연예인, 드라마, 영화, 음악, 아이돌, TV 쇼, 애니메이션(예: invincible, 웹툰, 만화)
-  - ❌ 제외: 날씨/기상 뉴스(예: freeze watch, 한파주의보, 폭설경보, 태풍)
-  - ❌ 제외: 사람 이름 + 이벤트(예: 홍길동 결혼, 서주경, 전경민 결혼) — 연예인 실명 뉴스는 무조건 제외
-  - ❌ 제외: 결혼/이혼/출산/사건사고 뉴스
-  - ❌ 제외: "애니메이션 기술", "날씨 앱", "스포츠 테크" 같은 억지 기술 연결 금지 — 핵심이 기술이 아니면 제외
-  - ✅ 포함: AI, 클라우드, 앱, 소프트웨어, 반도체, 사이버보안, EdTech, DevOps
+- source_topic 필드: 참고한 커뮤니티 토픽 원문을 반드시 기재 (추적용)
 
-**🔴 카테고리 분류 가이드 (tech only):**
-- **tech**: 기술, IT, AI, 게임, 앱, 소프트웨어, 교육 기술(EdTech), 사이버보안, 반도체, 클라우드
-
-언어별 톤 차이:
-- 🇺🇸 English: rights, compensation, legal leverage, lawsuits 중심
-- 🇰🇷 Korean: 불공정, 좌절, 소비자 보호, 책임 추궁 중심
+**언어별 톤 차이:**
+- 🇺🇸 English: developer impact, performance, workflow disruption 중심
+- 🇰🇷 Korean: 한국 개발자/사용자 관점, 실제 체감, 국내 영향 중심
 
 **🔴 안전 가이드라인:**
 - 명예훼손/비난/비방 표현 금지
-- 사실 기반의 trending 키워드는 실명 사용 가능
+- 실명은 공적 인물(CEO, 창업자) + 기술 맥락에서만 허용
 
 **중복 방지 규칙:**
 - Intent signals: STATE_CHANGE, PROMISE_BROKEN, SILENCE, DEADLINE_LOST, COMPARISON
@@ -149,13 +137,9 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 **🚨 언어별 키워드 생성 규칙 (절대 준수):**
 반드시 정확히 {count}개의 키워드를 생성하라:
-- 영어(en): 정확히 {en_count}개
-- 한국어(ko): 정확히 {ko_count}개
+- 영어(en): 정확히 {en_count}개 — 커뮤니티 토픽을 영어 키워드로 직접 활용
+- 한국어(ko): 정확히 {ko_count}개 — 커뮤니티 토픽을 한국 독자 관점으로 재해석
 - 총합: 정확히 {count}개
-
-**언어별 트렌드 데이터 사용 규칙:**
-- 🇺🇸 English (US) Trends에서 {en_count}개 키워드 추출 → language: "en"
-- 🇰🇷 Korean (KR) Trends에서 {ko_count}개 키워드 추출 → language: "ko"
 
 모든 키워드의 category는 반드시 "tech"로 설정할 것."""
 
@@ -854,11 +838,9 @@ class KeywordCurator:
             self.search_results = []
 
         else:  # trend
-            # Fetch trending topics from Google (store for reference extraction)
-            self.search_results = []  # Store search results
-            trends_by_lang = self.fetch_trending_topics()
-
-            # Fetch community topics (HackerNews, Dev.to, Lobsters, ProductHunt)
+            # Fetch community topics only (HackerNews, Dev.to, Lobsters, ProductHunt)
+            # Google Trends RSS removed: it produced non-tech (entertainment, weather, sports) keywords
+            self.search_results = []
             community_data = self.fetch_community_topics()
             community_topics_list = community_data.get('en', [])
 
@@ -885,10 +867,8 @@ class KeywordCurator:
                 for t in community_topics_list[:15]  # Top 15 community topics
             ]) or "No community topics available"
 
-            # Generate prompt with trending data (grouped by language)
+            # Generate prompt with community data only
             prompt = CURATION_PROMPT_WITH_TRENDS.format(
-                trends_en=trends_by_lang.get('en', 'No English trends available'),
-                trends_ko=trends_by_lang.get('ko', 'No Korean trends available'),
                 community_topics=community_topics_formatted,
                 count=count,
                 en_count=en_count,
@@ -1305,14 +1285,13 @@ def main():
 
     # Generate candidates based on type
     if args.type == 'mixed':
-        # Mixed mode: Google Trends 40% + Community 40% + Evergreen 20%
-        # trend candidates (80%) include both Google Trends and Community sources
-        # The prompt instructs Claude to split trend candidates 50/50 between Trends and Community
+        # Mixed mode: Community 80% + Evergreen 20%
+        # trend candidates come from HackerNews, Dev.to, Lobsters, ProductHunt only
         evergreen_count = int(args.count * args.evergreen_ratio)
         trend_count = args.count - evergreen_count
 
-        safe_print(f"\n📊 Mixed Mode: {trend_count} trend (Trends+Community) + {evergreen_count} evergreen keywords")
-        safe_print(f"   Source ratio: Google Trends ~{trend_count//2} + Community ~{trend_count - trend_count//2} + Evergreen {evergreen_count}\n")
+        safe_print(f"\n📊 Mixed Mode: {trend_count} trend (Community sources) + {evergreen_count} evergreen keywords")
+        safe_print(f"   Sources: HackerNews + Dev.to + Lobsters + ProductHunt + Evergreen {evergreen_count}\n")
 
         # Generate trend keywords
         if trend_count > 0:

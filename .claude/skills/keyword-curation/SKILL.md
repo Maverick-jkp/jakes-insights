@@ -169,8 +169,8 @@ add_topic(
 → **See decision #3**
 
 **Validation**:
-- Category must be one of 8 valid
-- Language must be en/ko/ja
+- Category must be "tech" (tech-only strategy)
+- Language must be en/ko
 - Priority 1-10 (10 = highest)
 - Duplicates automatically prevented
 
@@ -335,8 +335,6 @@ python scripts/keyword_curator.py --count 10 --auto
 **Valid category** (tech-only strategy):
 
 1. **tech** - Technology, AI, software, cloud, cybersecurity, dev tools
-7. **finance** - Investing, economics
-8. **education** - Learning, courses
 
 ---
 

@@ -620,7 +620,7 @@ assets/css/
 
 ```bash
 # 1. 새 키워드 5개 큐레이션
-python scripts/keyword_curator.py --count 5 --type mixed --tech-only
+python scripts/keyword_curator.py --count 10 --auto
 
 # 2. 첫 배치 생성 (5 topics × 2 langs = 10 posts)
 python scripts/generate_posts.py --count 5

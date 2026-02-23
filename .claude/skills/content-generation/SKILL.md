@@ -71,7 +71,7 @@ Generate high-quality multilingual blog posts (EN/KO/JA) using Claude API with D
 **Required Python packages:**
 - `anthropic==0.18.1` - Claude API client
 - `pyyaml==6.0` - YAML frontmatter parsing
-- `feedparser==6.0.10` - Google Trends RSS parsing (for topic queue)
+- `feedparser==6.0.10` - RSS feed parsing (community sources, guru miner)
 - `requests==2.31.0` - Unsplash API for featured images
 - `python-dateutil==2.8.2` - Date handling
 
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 **Verification:**
 ```bash
-python -c "import anthropic, yaml, feedparser, requests, dateutil; print('✓ All dependencies installed')"
+python -c "import anthropic, yaml, requests, dotenv; print('✓ All dependencies installed')"
 ```
 
 **Critical**: Set `ANTHROPIC_API_KEY` environment variable

@@ -33,10 +33,10 @@
 
 **Jake's Tech Insights** - In-depth tech analysis and data-driven reports
 
-- **Tech Stack**: Hugo, Python 3.x, Claude API (Sonnet 4.5), GitHub Actions
+- **Tech Stack**: Hugo, Python 3.x, Claude API (Sonnet 4.6), GitHub Actions
 - **Languages**: English (EN), Korean (KO)
 - **Deployment**: Cloudflare Pages (https://jakeinsight.com)
-- **Automation**: Daily content generation, 5 posts/day (configured via GitHub Actions schedule)
+- **Automation**: Daily content generation, 10 posts/day EN+KO (configured via GitHub Actions schedule)
 
 ---
 

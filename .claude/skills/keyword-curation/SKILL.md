@@ -346,10 +346,10 @@ python scripts/keyword_curator.py --count 10 --auto
 |----------|-------------|
 | 10 | Urgent / breaking news |
 | 8-9 | High interest / trending |
-| 5-7 | Normal / evergreen |
+| 5-7 | Normal / standard |
 | 3-4 | Low interest / backup |
 
-**Default**: 8 (trending keywords from Google Trends)
+**Default**: 8 (trending keywords from community sources)
 
 ---
 

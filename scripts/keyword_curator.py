@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
-Keyword Curator - Semi-automated keyword research for blog content
+Keyword Curator - Automated keyword research for blog content
 
-Generates keyword candidates using Claude API based on KEYWORD_STRATEGY.md
-Provides interactive selection interface for human filtering (5 minutes weekly)
+Fetches hot topics from community sources (HackerNews, Dev.to, Lobsters, ProductHunt),
+uses Claude API to select 10 trend keywords (EN 5 + KO 5), adds to topics queue.
 
 Usage:
-    python scripts/keyword_curator.py
-    python scripts/keyword_curator.py --count 15
+    python scripts/keyword_curator.py --count 10 --auto
 """
 
 import json

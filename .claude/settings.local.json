@@ -119,7 +119,10 @@
       "mcp__plugin_playwright_playwright__browser_resize",
       "mcp__plugin_playwright_playwright__browser_console_messages",
       "mcp__plugin_playwright_playwright__browser_run_code",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(# Check npc.gd for animation names too grep -rn \"\"walk\\\\|idle\\\\|anim\"\" /Users/jake/new-game-project/scripts/entities/npc.gd)",
+      "Bash(/Users/jake/new-game-project/scenes/world/dungeon_area.tscn:*)",
+      "Bash(/Users/jake/new-game-project/scenes/world/boss_room.tscn:*)"
     ]
   }
 }

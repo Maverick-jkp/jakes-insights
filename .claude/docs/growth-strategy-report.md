@@ -1,5 +1,7 @@
 # 성장 전략 보고서 (Updated)
 
+> ⚠️ **NOTE (2026-02-23)**: 이 문서는 역사적 참고 자료입니다. 현재 전략은 trend-only (community sources: HN, Dev.to, Lobsters, ProductHunt), 10 posts/day EN+KO. "mixed mode"와 "Google Trends" 참조는 구버전 계획입니다.
+
 **Created**: 2026-02-10
 **Last Updated**: 2026-02-10
 **Status**: Phase 0 완료, Phase 1 준비 중

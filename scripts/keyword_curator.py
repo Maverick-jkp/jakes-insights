@@ -153,75 +153,6 @@ KO 키워드는 단순 번역이 아니라 **한국 개발자/테크 유저가 �
 모든 키워드의 category는 반드시 "tech"로 설정할 것."""
 
 
-CURATION_PROMPT_EVERGREEN = """역할:
-너는 **장기 트래픽** 확보를 위한 Evergreen 키워드 큐레이터다.
-아래 Evergreen 키워드 풀에서 **검색량이 지속되는, 교육/가이드성** 키워드를 제안하라.
-
-Evergreen 키워드 풀 (언어별로 구분됨):
-
-🇺🇸 English Keywords:
-{evergreen_en}
-
-🇰🇷 Korean Keywords:
-{evergreen_ko}
-
-**🚫 이미 큐에 존재하는 키워드 (절대 중복 제안 금지):**
-{existing_keywords}
-
-**목표:**
-- **지속적 검색 수요**: 1년 후에도 검색되는 주제
-- **교육/가이드성**: "how to", "guide", "방법", "가이드" 등
-- **낮은 경쟁**: low~medium competition 위주
-- **실용적 가치**: 독자에게 실질적 도움이 되는 내용
-
-**금지:**
-- 시사성 토픽 (속보, 사건 사고)
-- 실명 인물 관련 (연예인, 정치인)
-- 논란/감정 자극형 키워드
-- 추상적 주제 ("AI의 미래", "기술 트렌드")
-- **위 "이미 큐에 존재하는 키워드" 목록과 동일하거나 유사한 키워드**
-
-출력 형식:
-반드시 JSON 형식으로만 응답하라.
-
-[
-  {{
-    "keyword": "위 Evergreen 키워드 풀에서 선택한 키워드 (또는 유사 변형)",
-    "raw_search_title": "사용자가 구글에 검색할 때 정확히 입력하는 검색어",
-    "editorial_title": "기사 제목 형식의 독자 친화적 제목",
-    "core_question": "사용자가 해결하고 싶은 핵심 질문 (교육적)",
-    "language": "ko",
-    "category": "tech",
-    "search_intent": "사용자가 이 키워드를 검색하는 실질적 이유 (학습, 문제 해결, 의사 결정 등)",
-    "angle": "이 키워드를 다룰 때의 관점 (교육, 비교, 가이드 등)",
-    "competition_level": "low",
-    "why_evergreen": "이 키워드가 장기간 검색될 이유 (지속적 수요 근거)",
-    "keyword_type": "evergreen",
-    "priority": 6,
-    "risk_level": "safe",
-    "name_policy": "no_real_names",
-    "content_depth": "comprehensive"
-  }}
-]
-
-중요:
-- keyword_type은 "evergreen"만 사용 (이 프롬프트는 에버그린 전용)
-- category는 **"tech" 하나만** 사용 (테크 전문 퍼블리케이션 전략)
-- language는 "en", "ko" 중 하나 (비율: EN 50%, KO 50%)
-- competition_level은 "low", "medium"만 사용 (high 금지)
-- priority는 6-9 사이 (Evergreen은 장기 가치가 높으므로 우선순위 상향)
-- risk_level은 무조건 "safe"
-- content_depth는 "comprehensive"
-
-**🚨 언어별 키워드 생성 규칙:**
-반드시 정확히 {count}개의 키워드를 생성하라:
-- 영어(en): 정확히 {en_count}개
-- 한국어(ko): 정확히 {ko_count}개
-- 총합: 정확히 {count}개
-
-모든 키워드의 category는 반드시 "tech"로 설정할 것.
-"""
-
 
 class KeywordCurator:
     def __init__(self, api_key: str = None, google_api_key: str = None, google_cx: str = None):
@@ -479,203 +410,6 @@ class KeywordCurator:
 
         return {'en': community_topics}  # All community sources are English
 
-    def fetch_trending_from_rss(self) -> Dict[str, List[str]]:
-        """Fetch trending topics from Google Trends RSS feeds grouped by language"""
-        import xml.etree.ElementTree as ET
-
-        rss_urls = {
-            "KR": "https://trends.google.co.kr/trending/rss?geo=KR",
-            "US": "https://trends.google.co.kr/trending/rss?geo=US"
-        }
-
-        # Map region to language
-        region_to_lang = {
-            "KR": "ko",
-            "US": "en"
-        }
-
-        # Group trends by language
-        trends_by_lang = {"ko": [], "en": []}
-
-        for geo, url in rss_urls.items():
-            try:
-                verify_ssl = certifi.where() if certifi else True
-                response = requests.get(url, timeout=10, verify=verify_ssl)
-                response.raise_for_status()
-
-                # Parse XML
-                root = ET.fromstring(response.content)
-
-                # Find all items (trending topics)
-                items = root.findall('.//item')
-
-                lang = region_to_lang[geo]
-                for item in items[:5]:  # Top 5 per region (15 total)
-                    title_elem = item.find('title')
-                    if title_elem is not None and title_elem.text:
-                        trends_by_lang[lang].append(title_elem.text.strip())
-
-                safe_print(f"  ✓ Found {min(len(items), 5)} trends from {geo} → {lang}")
-
-            except requests.exceptions.Timeout:
-                safe_print(f"  ⚠️  RSS fetch timeout for {geo}: Request took too long")
-                continue
-            except requests.exceptions.HTTPError as e:
-                safe_print(f"  ⚠️  RSS HTTP error for {geo}: {e.response.status_code if e.response else 'unknown'}")
-                continue
-            except ET.ParseError as e:
-                safe_print(f"  ⚠️  RSS parse error for {geo}: Invalid XML format")
-                safe_print(f"     Error: {str(e)}")
-                continue
-            except Exception as e:
-                safe_print(f"  ⚠️  RSS fetch error for {geo}: {mask_secrets(str(e))}")
-                continue
-
-        return trends_by_lang
-
-    def fetch_trending_topics(self) -> Dict[str, str]:
-        """Fetch trending topics using Google Trends RSS feeds, grouped by language"""
-        safe_print(f"\n{'='*60}")
-        safe_print(f"  🔥 Fetching REAL-TIME trending topics from Google Trends RSS...")
-        safe_print(f"{'='*60}\n")
-
-        # Try RSS feeds first (most reliable method)
-        trends_by_lang = self.fetch_trending_from_rss()
-
-        # Check if we got any trends
-        total_trends = sum(len(trends) for trends in trends_by_lang.values())
-
-        if total_trends > 0:
-            safe_print(f"\n  🎉 Total {total_trends} real-time trending topics from RSS!")
-            safe_print(f"     EN: {len(trends_by_lang['en'])}, KO: {len(trends_by_lang['ko'])}\n")
-        else:
-            safe_print("  ⚠️  RSS feeds failed. Falling back to pattern-based queries...\n")
-            # Fallback to pattern queries (grouped by language)
-            trends_by_lang = {
-                "en": [
-                    "account banned after update no response",
-                    "service outage promised compensation denied",
-                    "class action deadline passed too late",
-                    "refund promised but denied suddenly",
-                    "government support supposed to but denied",
-                    "new policy suddenly stricter than announced",
-                    "celebrity apology issued but backlash continues"
-                ],
-                "ko": [
-                    "앱 업데이트 후 갑자기 먹통",
-                    "집단소송 신청 마감 놓침",
-                    "정부지원 조건 발표와 다름",
-                    "사과문 냈지만 논란 계속",
-                    "리콜 발표했는데 환불 거부"
-                ]
-            }
-
-        # Flatten for search queries (but keep language tracking)
-        all_queries = []
-        for lang, queries in trends_by_lang.items():
-            for query in queries:
-                all_queries.append((query, lang))
-
-        # If no Brave Search API, skip search results
-        if not self.brave_api_key:
-            safe_print("  🚨 CRITICAL WARNING: Brave Search API not configured")
-            safe_print("  📌 References will NOT be generated for keywords!")
-            safe_print("  📌 Set BRAVE_API_KEY environment variable")
-            safe_print("  📌 OR: Add it as GitHub Secret for automated workflows\n")
-            self.search_results = []
-
-            # Format trends by language for prompt
-            trends_formatted = {}
-            for lang, queries in trends_by_lang.items():
-                trends_formatted[lang] = "\n".join([f"Query: {q}" for q in queries[:10]])
-
-            return trends_formatted
-
-        all_results = []
-        for query, query_lang in all_queries:
-            try:
-                # Brave Search API endpoint
-                url = "https://api.search.brave.com/res/v1/web/search"
-                headers = {
-                    "Accept": "application/json",
-                    "X-Subscription-Token": self.brave_api_key
-                }
-                params = {
-                    "q": query,
-                    "count": 3,  # Get top 3 results per query for better quality
-                    "freshness": "pw"  # Past week (최신 뉴스)
-                }
-
-                # Add delay to avoid rate limiting
-                time.sleep(0.5)
-
-                verify_ssl = certifi.where() if certifi else True
-                response = requests.get(url, headers=headers, params=params, verify=verify_ssl)
-                response.raise_for_status()
-
-                data = response.json()
-
-                # Brave API returns results in "web" -> "results" structure
-                web_results = data.get("web", {}).get("results", [])
-
-                if web_results:
-                    # Detect intent signals for this query
-                    signals = self.detect_intent_signals(query)
-
-                    for item in web_results:
-                        all_results.append({
-                            "query": query,
-                            "query_lang": query_lang,  # Track which language this query belongs to
-                            "signals": signals,  # Add intent signals
-                            "title": item.get("title", ""),
-                            "snippet": item.get("description", ""),  # Brave uses "description" not "snippet"
-                            "link": item.get("url", ""),  # Brave uses "url" not "link"
-                            "source": item.get("url", "").split("/")[2] if item.get("url") else ""  # Extract domain
-                        })
-
-                safe_print(f"  ✓ Fetched {len(web_results)} results for: {query}")
-
-            except requests.exceptions.Timeout:
-                safe_print(f"  ⚠️  Timeout fetching results for '{query[:50]}...'")
-                continue
-            except requests.exceptions.HTTPError as e:
-                status_code = e.response.status_code if e.response else 'unknown'
-                safe_print(f"  ⚠️  HTTP error ({status_code}) for '{query[:50]}...'")
-                if status_code == 403:
-                    safe_print(f"     ⚠️  Brave API Access Forbidden - check API key")
-                elif status_code == 429:
-                    safe_print(f"     Rate limit exceeded (2000/month limit)")
-                continue
-            except json.JSONDecodeError:
-                safe_print(f"  ⚠️  Invalid JSON response for '{query[:50]}...'")
-                continue
-            except requests.exceptions.RequestException as e:
-                safe_print(f"  ⚠️  Network error for '{query[:50]}...': {mask_secrets(str(e))}")
-                continue
-            except Exception as e:
-                safe_print(f"  ⚠️  Unexpected error for '{query[:50]}...': {mask_secrets(str(e))}")
-                continue
-
-        safe_print(f"\n✅ Total {len(all_results)} trending topics fetched\n")
-
-        # Store results for reference extraction
-        self.search_results = all_results
-
-        # Format results for Claude, grouped by language
-        trends_by_lang_formatted = {"en": [], "ko": []}
-        for r in all_results:
-            lang = r.get('query_lang', 'en')
-            if lang in trends_by_lang_formatted:
-                trends_by_lang_formatted[lang].append(
-                    f"Query: {r['query']}\nTitle: {r['title']}\nSnippet: {r['snippet']}\n"
-                )
-
-        # Convert to string format per language
-        trends_formatted = {}
-        for lang in ["en", "ko"]:
-            trends_formatted[lang] = "\n\n".join(trends_by_lang_formatted[lang][:10])  # Top 10 per language
-
-        return trends_formatted
 
     def filter_by_risk(self, candidates: List[Dict]) -> List[Dict]:
         """Filter out high-risk keywords automatically"""
@@ -755,133 +489,56 @@ class KeywordCurator:
             safe_print(f"  ⚠️  Failed to fetch references for '{keyword}': {mask_secrets(str(e))}")
             return []
 
-    def extract_references(self, all_results: List[Dict], keyword: str, lang: str) -> List[Dict]:
-        """Extract top 3 references for a keyword based on search results"""
-        # Find relevant results for this keyword
-        # Match by language and keyword similarity
-        relevant = []
 
-        for result in all_results:
-            query = result.get("query", "").lower()
-            # Simple matching: if keyword words appear in query
-            keyword_words = set(keyword.lower().split())
-            query_words = set(query.split())
-
-            # Check language match (simple heuristic)
-            is_relevant = len(keyword_words & query_words) > 0
-
-            if is_relevant:
-                relevant.append(result)
-
-        # Take top 3 unique sources
-        references = []
-        seen_domains = set()
-
-        for result in relevant[:10]:  # Check first 10 relevant results
-            link = result.get("link", "")
-            source = result.get("source", "")
-            title = result.get("title", "")
-
-            if link and source and source not in seen_domains:
-                references.append({
-                    "title": title[:100],  # Truncate long titles
-                    "url": link,
-                    "source": source
-                })
-                seen_domains.add(source)
-
-            if len(references) >= 3:  # Get 3 references per keyword for AdSense quality
-                break
-
-        return references
-
-    def load_evergreen_keywords(self) -> Dict[str, Dict[str, List[str]]]:
-        """Load evergreen keywords from JSON file"""
-        evergreen_path = Path("data/evergreen_keywords.json")
-        if not evergreen_path.exists():
-            safe_print("⚠️  Evergreen keywords file not found, using empty pool")
-            return {"tech": {"en": [], "ko": []}, "business": {"en": [], "ko": []}}
-
-        with open(evergreen_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-
-    def generate_candidates(self, count: int = 15, keyword_type: str = "trend") -> List[Dict]:
+    def generate_candidates(self, count: int = 10) -> List[Dict]:
         """Generate keyword candidates using Claude API
 
         Args:
-            count: Number of keywords to generate
-            keyword_type: "trend" or "evergreen"
+            count: Number of keywords to generate (EN 50%, KO 50%)
         """
         safe_print(f"\n{'='*60}")
-        safe_print(f"  🔍 Generating {count} {keyword_type} keyword candidates...")
+        safe_print(f"  🔍 Generating {count} trend keyword candidates (EN {count//2} + KO {count - count//2})...")
         safe_print(f"{'='*60}\n")
 
         # Calculate per-language count (EN 50%, KO 50%)
         en_count = count // 2
         ko_count = count - en_count  # Remainder to KO
 
-        if keyword_type == "evergreen":
-            # Load evergreen keywords pool
-            evergreen_pool = self.load_evergreen_keywords()
+        # Fetch community topics only (HackerNews, Dev.to, Lobsters, ProductHunt)
+        self.search_results = []
+        community_data = self.fetch_community_topics()
+        community_topics_list = community_data.get('en', [])
 
-            # Format evergreen keywords for prompt
-            evergreen_en = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("en", [])])
-            evergreen_ko = "\n".join([f"- {kw}" for cat in evergreen_pool.values() for kw in cat.get("ko", [])])
+        # Format community topics for prompt (with additional context)
+        def format_community_topic(t):
+            base = f"- [{t['source']}] {t['title']} (score: {t['score']}, comments: {t['comments']})\n  URL: {t['url']}"
 
-            # Collect existing keywords from queue to prevent duplicates
-            existing_keywords = [t['keyword'] for t in self.queue_data.get('topics', [])]
-            existing_keywords_text = "\n".join([f"- {kw}" for kw in existing_keywords[-100:]]) if existing_keywords else "없음"
+            # Add HackerNews top comments if available
+            if t.get('top_comments'):
+                comments_text = "\n  💬 Top developer comments:\n"
+                for i, comment in enumerate(t['top_comments'][:2], 1):  # Max 2 comments
+                    comments_text += f"    {i}. {comment[:200]}...\n" if len(comment) > 200 else f"    {i}. {comment}\n"
+                base += comments_text
 
-            # Generate prompt with evergreen data
-            prompt = CURATION_PROMPT_EVERGREEN.format(
-                evergreen_en=evergreen_en,
-                evergreen_ko=evergreen_ko,
-                count=count,
-                en_count=en_count,
-                ko_count=ko_count,
-                existing_keywords=existing_keywords_text
-            )
+            # Add ProductHunt description if available
+            if t.get('description'):
+                desc = t['description'][:300] + '...' if len(t['description']) > 300 else t['description']
+                base += f"\n  📝 Description: {desc}"
 
-            # For evergreen, we don't need real-time search results
-            self.search_results = []
+            return base
 
-        else:  # trend
-            # Fetch community topics only (HackerNews, Dev.to, Lobsters, ProductHunt)
-            # Google Trends RSS removed: it produced non-tech (entertainment, weather, sports) keywords
-            self.search_results = []
-            community_data = self.fetch_community_topics()
-            community_topics_list = community_data.get('en', [])
+        community_topics_formatted = "\n".join([
+            format_community_topic(t)
+            for t in community_topics_list[:60]  # Up to 60 topics (25 per source × 4 sources)
+        ]) or "No community topics available"
 
-            # Format community topics for prompt (with additional context)
-            def format_community_topic(t):
-                base = f"- [{t['source']}] {t['title']} (score: {t['score']}, comments: {t['comments']})\n  URL: {t['url']}"
-
-                # Add HackerNews top comments if available
-                if t.get('top_comments'):
-                    comments_text = "\n  💬 Top developer comments:\n"
-                    for i, comment in enumerate(t['top_comments'][:2], 1):  # Max 2 comments
-                        comments_text += f"    {i}. {comment[:200]}...\n" if len(comment) > 200 else f"    {i}. {comment}\n"
-                    base += comments_text
-
-                # Add ProductHunt description if available
-                if t.get('description'):
-                    desc = t['description'][:300] + '...' if len(t['description']) > 300 else t['description']
-                    base += f"\n  📝 Description: {desc}"
-
-                return base
-
-            community_topics_formatted = "\n".join([
-                format_community_topic(t)
-                for t in community_topics_list[:60]  # Up to 60 topics (25 per source × 4 sources)
-            ]) or "No community topics available"
-
-            # Generate prompt with community data only
-            prompt = CURATION_PROMPT_WITH_TRENDS.format(
-                community_topics=community_topics_formatted,
-                count=count,
-                en_count=en_count,
-                ko_count=ko_count
-            )
+        # Generate prompt with community data only
+        prompt = CURATION_PROMPT_WITH_TRENDS.format(
+            community_topics=community_topics_formatted,
+            count=count,
+            en_count=en_count,
+            ko_count=ko_count
+        )
 
         try:
             response = self.client.messages.create(
@@ -1277,8 +934,6 @@ def main():
     parser = argparse.ArgumentParser(description="Keyword Curator for blog content")
     parser.add_argument('--count', type=int, default=10, help="Number of candidates to generate (default: 10)")
     parser.add_argument('--auto', action='store_true', help="Automatically add all candidates without interactive selection")
-    parser.add_argument('--type', choices=['trend', 'evergreen'], default='trend',
-                       help="Keyword type: trend (default) or evergreen")
     args = parser.parse_args()
 
     # Check API key
@@ -1290,7 +945,7 @@ def main():
     curator = KeywordCurator()
 
     # Generate candidates
-    candidates = curator.generate_candidates(count=args.count, keyword_type=args.type)
+    candidates = curator.generate_candidates(count=args.count)
 
     # Display candidates
     curator.display_candidates(candidates)

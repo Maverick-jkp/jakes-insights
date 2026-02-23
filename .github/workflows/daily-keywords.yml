@@ -10,10 +10,6 @@ on:
         description: 'Number of keywords to generate'
         required: false
         default: '10'
-      keyword_type:
-        description: 'Keyword type (trend or evergreen)'
-        required: false
-        default: 'trend'
 
 jobs:
   curate-keywords:
@@ -81,10 +77,9 @@ jobs:
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
           COUNT="${{ github.event.inputs.count || '10' }}"
-          TYPE="${{ github.event.inputs.keyword_type || 'trend' }}"
 
-          echo "📝 Generating $COUNT new keywords (type: $TYPE)..."
-          python scripts/keyword_curator.py --count "$COUNT" --type "$TYPE" --auto
+          echo "📝 Generating $COUNT new trend keywords (EN/KO 50/50)..."
+          python scripts/keyword_curator.py --count "$COUNT" --auto
 
       - name: Commit and push keywords
         run: |
@@ -114,7 +109,6 @@ jobs:
 
       - name: Summary
         run: |
-          TYPE="${{ github.event.inputs.keyword_type || 'trend' }}"
           echo "✅ Keyword curation complete"
-          echo "📊 Queue updated with $TYPE keywords"
+          echo "📊 Queue updated with trend keywords (community sources: HN, Dev.to, Lobsters, ProductHunt)"
           echo "🔄 Next: Content generation workflow will consume these keywords"

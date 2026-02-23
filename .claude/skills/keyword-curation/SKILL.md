@@ -1,11 +1,11 @@
 ---
 name: keyword-curation
-description: Google Trends-based keyword research and topic queue state management (pending → in_progress → completed). Use when curating new keywords from Google Trends (KR/US/JP), adding topics to queue, checking queue status, or fixing stuck topics. Includes duplicate prevention and priority management (1-10 scale).
+description: Community-sourced keyword research and topic queue state management (pending → in_progress → completed). Use when curating new keywords from community sources (HackerNews, Dev.to, Lobsters, ProductHunt), adding topics to queue, checking queue status, or fixing stuck topics. Includes duplicate prevention and priority management (1-10 scale).
 ---
 
 # Keyword Curation Skill
 
-Google Trends-based keyword research and topic queue state management for content generation.
+Community-sourced (HackerNews, Dev.to, Lobsters, ProductHunt) keyword research and topic queue state management for content generation.
 
 ---
 
@@ -13,7 +13,7 @@ Google Trends-based keyword research and topic queue state management for conten
 
 **Activate this skill when:**
 - User requests "keywords", "topic queue", "curate keywords", or "add topic"
-- Need to fetch trending keywords from Google Trends
+- Need to fetch trending keywords from community sources (HN, Dev.to, Lobsters, ProductHunt)
 - Managing topic queue (check status, add/remove topics)
 - Fixing stuck topics (in_progress for 24+ hours)
 - Checking queue health (pending count, priority distribution)
@@ -34,7 +34,7 @@ Google Trends-based keyword research and topic queue state management for conten
 ## Skill Boundaries
 
 **This skill handles:**
-- ✅ Google Trends keyword fetching (KR/US/JP)
+- ✅ Community keyword fetching (HackerNews, Dev.to, Lobsters, ProductHunt)
 - ✅ Topic queue state management (pending/in_progress/completed)
 - ✅ Manual topic addition with priority
 - ✅ Stuck topic cleanup (24+ hours)
@@ -52,21 +52,16 @@ Google Trends-based keyword research and topic queue state management for conten
 ## Dependencies
 
 **Required Python packages:**
-- `feedparser==6.0.10` - Google Trends RSS feed parsing
-- `pyyaml==6.0` - Topic queue JSON/YAML handling
-- `requests==2.31.0` - HTTP requests (if needed)
+- `anthropic` - Claude API for keyword selection
+- `requests` - HTTP requests to community APIs
+- `python-dotenv` - Environment variable loading
 
 **Installation:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**Verification:**
-```bash
-python -c "import feedparser, yaml; print('✓ All dependencies installed')"
-```
-
-**Note**: This skill does NOT require Claude API (no API costs).
+**Note**: Requires `ANTHROPIC_API_KEY`. `BRAVE_API_KEY` is optional (used for reference fetching).
 
 ---
 
@@ -76,8 +71,8 @@ python -c "import feedparser, yaml; print('✓ All dependencies installed')"
 # View queue status
 python scripts/topic_queue.py stats
 
-# Curate new keywords (manual filtering required)
-python scripts/keyword_curator.py --count 15
+# Curate new keywords (auto mode, 10 trend keywords)
+python scripts/keyword_curator.py --count 10 --auto
 
 # Fix stuck topics
 python scripts/topic_queue.py cleanup 24
@@ -136,12 +131,12 @@ pending → in_progress → completed
 → **When to use**: Before generating content, health check
 
 **Healthy queue indicators**:
-- ✅ Pending: 15-30 topics
+- ✅ Pending: 10-20 topics (daily 10 keywords in, 10 posts out)
 - ✅ In progress: 0-3 topics
 - ✅ Completed: Growing steadily
 
 **Unhealthy indicators**:
-- ⚠️ Pending <10 → Need to curate keywords
+- ⚠️ Pending <5 → Need to curate keywords
 - ⚠️ In progress >3 → Topics stuck, run cleanup
 - ⚠️ Pending >50 → Backlog piling up
 
@@ -181,31 +176,24 @@ add_topic(
 
 ---
 
-### 3. Curate Keywords from Google Trends
+### 3. Curate Keywords from Community Sources
 
-**Goal**: Add 15 trending keywords to queue
+**Goal**: Add 10 trending tech keywords to queue (EN 5 + KO 5)
 
-→ **Command**: `python scripts/keyword_curator.py --count 15`
-→ **Process**: Interactive (prompts for keep/skip)
-→ **When to use**: Weekly maintenance, queue running low
+→ **Command**: `python scripts/keyword_curator.py --count 10 --auto`
+→ **Process**: Fully automated (Claude selects from ~100 community candidates)
+→ **When to use**: Daily automation, or manually when queue is low
 
 **Curation flow**:
-1. Script fetches RSS from Google Trends (KR/US/JP)
-2. Presents each keyword with context
-3. You decide: **Keep (y)** or **Skip (n)**
-4. Script adds kept keywords to queue
-5. Duplicates automatically prevented
+1. Script fetches ~25 top posts from each source (HN, Dev.to, Lobsters, ProductHunt)
+2. Claude selects 10 tech-relevant keywords (EN 5 + KO 5)
+3. Non-tech keywords auto-filtered (sports, entertainment, weather)
+4. Brave Search fetches references per keyword
+5. Keywords added to queue (duplicates auto-prevented)
 
 **Filtering criteria**:
-- ✅ **Keep** if:
-  - Relevant to blog topics
-  - Trending/high search volume
-  - Suitable for 800-2000 word article
-- ❌ **Skip** if:
-  - Celebrity gossip, sports scores
-  - Too specific (city events)
-  - Too broad (single words)
-  - Already in queue
+- ✅ **Keep** if: Tech-related (AI, cloud, dev tools, cybersecurity, OSS)
+- ❌ **Auto-rejected**: Sports, entertainment, weather, person names
 
 ---
 
@@ -310,53 +298,43 @@ python scripts/topic_queue.py cleanup 24
 
 ## Keyword Curation
 
-### Google Trends Sources
+### Community Sources
 
-**RSS Feeds**:
-- **Korea (KR)**: Google Trends Korea
-- **US (EN)**: Google Trends US
-- **Japan (JP)**: Google Trends Japan
+**All free, no auth required**:
+- **HackerNews**: Firebase API (top/new stories, 25 items)
+- **Dev.to**: REST API (top articles, 25 items)
+- **Lobsters**: JSON feed (recent posts, 25 items)
+- **ProductHunt**: Atom RSS (today's launches, 25 items)
 
 ### Curation Process
 
 ```bash
-# Step 1: Fetch trends
-python scripts/keyword_curator.py --count 15
+# Automated (daily via GitHub Actions at 4 PM KST)
+python scripts/keyword_curator.py --count 10 --auto
 
-# Step 2: Manual filtering (script prompts)
-# Keep: y
-# Skip: n
-
-# Step 3: Review additions
-# Script confirms all added keywords
+# Manual run (same, no prompts)
+python scripts/keyword_curator.py --count 10 --auto
 ```
+
+**Flow**: ~100 community candidates → Claude selects 10 (EN 5 + KO 5) → Brave Search adds references → queue
 
 ### Filtering Criteria
 
-**Keep if**:
-- ✅ Relevant to blog topics (tech, business, lifestyle, etc.)
-- ✅ Trending / high search volume
-- ✅ Suitable for 800-2000 word article
-- ✅ Not already in queue (auto-checked)
+**Auto-kept if**:
+- ✅ Tech-related (AI, cloud, dev tools, cybersecurity, open source, startups)
+- ✅ Not already in queue
 
-**Skip if**:
-- ❌ Irrelevant (celebrity gossip, sports scores)
-- ❌ Too specific (city-specific events)
-- ❌ Too broad (single-word topics)
-- ❌ Duplicate (already in queue)
+**Auto-rejected if**:
+- ❌ Sports, entertainment, weather, person names
+- ❌ Non-tech keywords (prompt + post-processing filter)
 
 ---
 
 ## Categories
 
-**Valid categories** (8 total):
+**Valid category** (tech-only strategy):
 
-1. **tech** - Technology, AI, software
-2. **business** - Entrepreneurship, startups
-3. **lifestyle** - Productivity, health, travel
-4. **society** - Social issues, culture
-5. **entertainment** - Media, gaming
-6. **sports** - Fitness, athletic events
+1. **tech** - Technology, AI, software, cloud, cybersecurity, dev tools
 7. **finance** - Investing, economics
 8. **education** - Learning, courses
 
@@ -379,15 +357,15 @@ python scripts/keyword_curator.py --count 15
 
 ### Ideal Queue State
 
-**Pending topics**: 15-30
-- Too few (< 10): Risk of queue empty
+**Pending topics**: 10-20
+- Too few (< 5): Risk of queue empty
 - Too many (> 50): Backlog piling up
 
 **In progress**: 0-3
 - 0 = Good (no active generation)
 - > 3 = Stuck (needs cleanup)
 
-**Completed**: Growing by 9/day (3 runs × 3 posts)
+**Completed**: Growing by 10/day (1 run × 10 posts)
 
 ---
 
@@ -400,7 +378,7 @@ python scripts/keyword_curator.py --count 15
 **Fix**:
 ```bash
 # Immediate: Curate keywords
-python scripts/keyword_curator.py --count 15
+python scripts/keyword_curator.py --count 10 --auto
 ```
 
 ### Issue 2: Topics Stuck
@@ -421,12 +399,13 @@ python scripts/topic_queue.py cleanup 24
 ## Automation
 
 **GitHub Actions**: `.github/workflows/daily-keywords.yml`
-**Schedule**: Fridays, 17:05 KST
-**Count**: 15 keywords per run
+**Schedule**: Daily, 4 PM KST
+**Count**: 10 keywords per run (EN 5 + KO 5)
+**Sources**: HackerNews, Dev.to, Lobsters, ProductHunt (~100 candidates → 10 selected)
 
 **Content Generation**: `.github/workflows/daily-content.yml`
-**Schedule**: 6 AM, 12 PM, 6 PM KST
-**Consumption**: 9 topics/day (3 runs × 3 posts)
+**Schedule**: 7 PM KST
+**Consumption**: 10 topics/day (1 run × 10 posts)
 
 ---
 

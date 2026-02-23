@@ -99,7 +99,7 @@ Topics in `data/topics_queue.json` flow through these states:
 | `generate_posts.py` | Content generation | `generate_post()` (Draft + Editor agents) | Manual or automated (1x daily, 5 posts) |
 | `quality_gate.py` | Validation checks | `validate_content()`, `check_ai_phrases()` | After generation (automated) |
 | `ai_reviewer.py` | 5-criteria scoring | `review_content()`, provides recommendations | Optional (manual review) |
-| `keyword_curator.py` | Keyword research | Fetches Google Trends, mixed mode (trend 70% + evergreen 30%) | Daily (4 PM KST, 5 keywords) |
+| `keyword_curator.py` | Keyword research | Fetches community sources (HackerNews, Dev.to, Lobsters, ProductHunt), trend-only | Daily (4 PM KST, 10 keywords) |
 | `affiliate_config.py` | Affiliate link management | `detect_product_mentions()`, `generate_affiliate_link()` | Imported by generate_posts.py |
 
 ---

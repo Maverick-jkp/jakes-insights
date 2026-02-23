@@ -254,7 +254,7 @@ git commit -m "Update topics"
 ## 🔄 Automation Workflow
 
 ### Daily Schedule (GitHub Actions)
-- **Keywords**: 4 PM KST - Curate 5 mixed keywords (trend 70% + evergreen 30%)
+- **Keywords**: 4 PM KST - Curate 10 trend keywords from community sources (HN, Dev.to, Lobsters, ProductHunt)
 - **Content**: 7 PM KST - Generate 5 posts from queue
 - Quality gate + AI review runs automatically
 - Auto-commit to main on quality pass
@@ -449,7 +449,7 @@ MIT License - See [LICENSE](LICENSE) file
 - **Phase 4.3**: Keyword curation system (semi-automated, human-filtered)
 - **keyword_curator.py**: Weekly 5-minute workflow for quality keywords
 - **Strategy docs**: KEYWORD_STRATEGY.md + KEYWORD_CURATION_GUIDE.md
-- **Topic queue**: Enhanced with trend/evergreen support
+- **Topic queue**: Enhanced with trend-only (community sources) support
 - **Phase 4**: Complete (Optimization phase finished)
 
 **2026-01-17 (v2.9)**:

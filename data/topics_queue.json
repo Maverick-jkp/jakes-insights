@@ -5837,6 +5837,144 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-02-22T10:26:43.899037+00:00",
       "completed_at": "2026-02-22T10:35:27.237180+00:00"
+    },
+    {
+      "id": "1012-en-tech-usgs-earthquake",
+      "keyword": "usgs earthquake",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-23T07:57:24.065406",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users are urgently checking real-time seismic sensor data after recent earthquake activity, fearing that delayed or incomplete tech infrastructure could cost lives",
+      "angle": "Critical infrastructure tech failure — early warning systems vs. real-time data gaps",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Latest Earthquakes",
+          "url": "https://earthquake.usgs.gov/earthquakes/map/",
+          "source": "earthquake.usgs.gov"
+        },
+        {
+          "title": "Earthquake Hazards Program | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/programs/earthquake-hazards",
+          "source": "www.usgs.gov"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1013-en-tech-earthquake-today",
+      "keyword": "earthquake today",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-23T07:57:24.065433",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users are frantically cross-checking multiple tech platforms and seismic apps after feeling tremors or seeing alerts, worried that real-time data pipelines are lagging",
+      "angle": "Real-time data reliability crisis — when live tech infrastructure fails under pressure",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Latest Earthquakes",
+          "url": "https://earthquake.usgs.gov/earthquakes/map/",
+          "source": "earthquake.usgs.gov"
+        },
+        {
+          "title": "Earthquakes | U.S. Geological Survey",
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/earthquakes",
+          "source": "www.usgs.gov"
+        },
+        {
+          "title": "Map of Earthquakes Today",
+          "url": "https://earthquaketrack.com/",
+          "source": "earthquaketrack.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1014-ko-tech-모텔-살인-피의자",
+      "keyword": "모텔 살인 피의자",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-23T07:57:24.065451",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "피의자가 챗GPT에 수면제 과다복용 사망 가능성을 검색했다는 보도 이후, 사용자들이 AI 플랫폼의 악용 방지 시스템과 콘텐츠 필터링 기술의 실효성에 분노하며 검색",
+      "angle": "AI 안전 필터링 기술의 실패 — 생성형 AI의 범죄 악용 방지 책임 추궁",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "[단독] ‘모텔 연쇄살인’ 20대, 출석 미뤄진 사이 ‘1명 더 살해’",
+          "url": "https://news.jtbc.co.kr/article/NB12286251",
+          "source": "news.jtbc.co.kr"
+        },
+        {
+          "title": "남성 연쇄살인 피의자, 범행 뒤에도 ‘#맞팔디엠’ 올렸다 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25405878",
+          "source": "www.joongang.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1015-ko-tech-아이오아이",
+      "keyword": "아이오아이",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-02-23T07:57:24.065465",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "아이오아이 9인 재결합 발표 직후 일부 멤버 제외 논란이 터지며, 팬들이 엔터테인먼트 플랫폼의 팬덤 관리 시스템과 소속사 데이터 투명성에 의문을 품고 검색",
+      "angle": "EdTech·엔터테인먼트 테크의 팬덤 데이터 관리 실패 — 불투명한 멤버 관리 시스템 책임 추궁",
+      "competition_level": "medium",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1016-ko-tech-AI-입문-가이드",
+      "keyword": "AI 입문 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-23T07:57:24.065480",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI에 관심은 있지만 어디서부터 시작해야 할지 몰라 기초 학습 경로와 추천 자료를 찾는 학습 목적",
+      "angle": "단계별 학습 가이드 — 개념 이해 → 무료 도구 체험 → 실습 프로젝트 순으로 진입 장벽을 낮추는 교육적 관점",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "인사혁신처_인공지능(AI) 활용가이드_20250318 | 공공데이터포털",
+          "url": "https://www.data.go.kr/data/15142458/fileData.do?recommendDataYn=Y",
+          "source": "www.data.go.kr"
+        },
+        {
+          "title": "머신러닝 수학 필요성과 비전공자 파이썬 선형대수 입문 가이드",
+          "url": "https://notavoid.tistory.com/955",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "[SNS수익화](1강) 입문① AI 수익화 입문:완전 초보자 가이드 :: AI & 로봇 플러스 정보 채널",
+          "url": "https://aibotplus.tistory.com/entry/AI-%EC%88%98%EC%9D%B5%ED%99%94-%EC%9E%85%EB%AC%B8-%EC%99%84%EC%A0%84-%EC%B4%88%EB%B3%B4%EC%9E%90-%EA%B0%80%EC%9D%B4%EB%93%9C",
+          "source": "aibotplus.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

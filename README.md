@@ -30,7 +30,7 @@ In-depth tech analysis and data-driven reports in English and Korean
          │
          ▼
 ┌─────────────────┐
-│ Content Gen     │  Draft Agent → Editor Agent (Claude Sonnet 4.5)
+│ Content Gen     │  Draft Agent → Editor Agent (Claude Sonnet 4.6)
 │ (generate_posts)│  Language-specific prompts (EN/KO)
 └────────┬────────┘
          │
@@ -255,7 +255,7 @@ git commit -m "Update topics"
 
 ### Daily Schedule (GitHub Actions)
 - **Keywords**: 4 PM KST - Curate 10 trend keywords from community sources (HN, Dev.to, Lobsters, ProductHunt)
-- **Content**: 7 PM KST - Generate 5 posts from queue
+- **Content**: 7 PM KST - Generate 10 posts from queue (EN 5 + KO 5)
 - Quality gate + AI review runs automatically
 - Auto-commit to main on quality pass
 
@@ -265,7 +265,7 @@ git commit -m "Update topics"
 - Editor refinement: 12000 max_tokens
 - Structure-based: 3-4 sections
 - Expected output: 800-2,000 words (EN/KO)
-- Est. cost: ~$0.09/post × 5 posts/day = $13.5/month
+- Est. cost: ~$0.09/post × 10 posts/day = $27/month
 - Prompt Caching: ~20-25% cost reduction
 
 ### Manual Trigger
@@ -374,7 +374,7 @@ UNSPLASH_ACCESS_KEY=your-unsplash-access-key-here
 5. Regular publishing schedule
 
 ### For Scaling
-1. **Current**: 5 posts/day (quality-first, EN/KO bilingual)
+1. **Current**: 10 posts/day (quality-first, EN/KO bilingual)
 2. **Next**: Focus on depth over volume (report-style content)
 3. **Future**: Scale based on AdSense performance data
 

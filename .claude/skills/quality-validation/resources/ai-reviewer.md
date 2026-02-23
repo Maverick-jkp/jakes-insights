@@ -7,7 +7,7 @@ Optional AI-powered content quality review using Claude API.
 ## Overview
 
 **Script**: `scripts/ai_reviewer.py`
-**Model**: Claude Sonnet 4.5
+**Model**: Claude Sonnet 4.6
 **Output**: `ai_review_report.json`
 
 **Status**: Optional (non-blocking)

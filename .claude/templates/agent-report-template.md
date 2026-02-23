@@ -65,7 +65,7 @@ This template is used by all agents (CTO, Designer, QA) to report work completio
 
 {detailed description}
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 ## Next Steps
@@ -165,7 +165,7 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 
 {detailed description}
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 ## Next Steps
@@ -269,7 +269,7 @@ Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
 
 Coverage: {before}% → {after}% (+{change}%)
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 ## Next Steps
@@ -340,7 +340,7 @@ All agents should recommend commit messages in this format:
 
 {Additional context if needed}
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 ### Commit Types
@@ -365,7 +365,7 @@ perf: Optimize build time by 45% with caching
 
 Build time reduced from 45s to 25s.
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 **Designer**:
@@ -379,7 +379,7 @@ feat: Add dark mode support with system preference detection
 
 All color contrast ratios exceed 7:1.
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 **QA**:
@@ -395,7 +395,7 @@ Coverage breakdown:
 - content_generator.py: 45% → 70%
 - image_processor.py: 50% → 65%
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ```
 
 ---

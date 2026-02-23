@@ -222,7 +222,7 @@ Script automatically reserves topics from queue:
 
 **Parameters**:
 ```python
-model="claude-sonnet-4-5-20250929"
+model="claude-sonnet-4-6"
 max_tokens=12000
 system_prompt=LANGUAGE_SPECIFIC_PROMPT
 prompt_caching=True  # 20-25% cost reduction

@@ -93,8 +93,8 @@ python scripts/topic_queue.py stats
 ## Content Generation Pipeline
 
 ```bash
-# 1. Curate keywords (weekly, ~5 min manual filtering)
-python scripts/keyword_curator.py --count 15
+# 1. Curate keywords (daily, fully automated)
+python scripts/keyword_curator.py --count 10 --auto
 
 # 2. Generate posts (automated, uses topic queue)
 python scripts/generate_posts.py --count 3
@@ -162,7 +162,7 @@ git commit -m "$(cat <<'EOF'
 
 [Optional details]
 
-Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 EOF
 )"
 

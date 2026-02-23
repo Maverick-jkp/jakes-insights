@@ -19,14 +19,14 @@
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│              Draft Agent (Claude API - Sonnet 4.5)              │
+│              Draft Agent (Claude API - Sonnet 4.6)              │
 │                  System Prompt: EN/KO specific                  │
 │                  max_tokens: 12000                              │
 │                  Prompt Caching: Enabled (20% cost reduction)   │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
-│             Editor Agent (Claude API - Sonnet 4.5)              │
+│             Editor Agent (Claude API - Sonnet 4.6)              │
 │                  Refinement: Tone, Structure, SEO               │
 │                  max_tokens: 12000                              │
 └─────────────────────────────────────────────────────────────────┘
@@ -59,7 +59,7 @@
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
 │          GitHub Actions (.github/workflows/daily-content.yml)   │
-│   Schedule: 7 PM KST daily (5 posts/day, quality-first)         │
+│   Schedule: 7 PM KST daily (10 posts/day EN+KO, quality-first)  │
 │   Steps: pytest → generate → quality gate → create PR          │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
@@ -96,7 +96,7 @@ Topics in `data/topics_queue.json` flow through these states:
 | Script | Purpose | Key Functions | When to Run |
 |--------|---------|---------------|-------------|
 | `topic_queue.py` | Topic state management | `reserve_topics()`, `mark_completed()`, `cleanup()` | Always (imported by others) |
-| `generate_posts.py` | Content generation | `generate_post()` (Draft + Editor agents) | Manual or automated (1x daily, 5 posts) |
+| `generate_posts.py` | Content generation | `generate_post()` (Draft + Editor agents) | Daily (7 PM KST, 10 posts EN+KO) |
 | `quality_gate.py` | Validation checks | `validate_content()`, `check_ai_phrases()` | After generation (automated) |
 | `ai_reviewer.py` | 5-criteria scoring | `review_content()`, provides recommendations | Optional (manual review) |
 | `keyword_curator.py` | Keyword research | Fetches community sources (HackerNews, Dev.to, Lobsters, ProductHunt), trend-only | Daily (4 PM KST, 10 keywords) |

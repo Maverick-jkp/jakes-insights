@@ -62,7 +62,7 @@ git commit -m "..."
 - ❌ `gh run list` → "command not found"
 - ✅ `/opt/homebrew/bin/gh run list` → works
 
-**Full reference**: `.claude/commands/quickstart.md`
+**Full reference**: `.claude/docs/commands.md`
 
 ---
 

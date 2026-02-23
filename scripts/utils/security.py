@@ -10,8 +10,7 @@ def get_sensitive_patterns() -> List[str]:
     return [
         os.getenv("ANTHROPIC_API_KEY", ""),
         os.getenv("UNSPLASH_ACCESS_KEY", ""),
-        os.getenv("GOOGLE_API_KEY", ""),
-        os.getenv("GOOGLE_CX", ""),
+        os.getenv("BRAVE_API_KEY", ""),
     ]
 
 def mask_secrets(text: str) -> str:

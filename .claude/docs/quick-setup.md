@@ -267,7 +267,7 @@ BRAVE_API_KEY=BSAxxxxx
 | Search API | Google Custom Search | Brave Search | ✅ Active |
 | Content Pipeline | Single-language | Bilingual (EN/KO) | ✅ Active |
 | Image Source | Unsplash | Unsplash | ✅ Same |
-| AI Model | Claude Sonnet 3.5 | Claude Sonnet 4.5 | ✅ Updated |
+| AI Model | Claude Sonnet 3.5 | Claude Sonnet 4.6 | ✅ Updated |
 | Deployment | Cloudflare Pages | Cloudflare Pages | ✅ Same |
 | Domain | jakes-tech-insights.pages.dev | jakeinsight.com | ✅ Updated |
 

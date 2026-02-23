@@ -48,7 +48,7 @@ Automated content validation with word count, AI phrase detection, SEO checks, a
 ## Skill Boundaries
 
 **This skill handles:**
-- ✅ Word count validation (800-2000 words for EN/KO, 3000-7500 chars for JA)
+- ✅ Word count validation (800-2000 words for EN/KO)
 - ✅ AI phrase blacklist detection
 - ✅ SEO validation (meta descriptions, keywords, images)
 - ✅ Frontmatter verification (YAML syntax, required fields)
@@ -109,10 +109,9 @@ cat ai_review_report.json
 |----------|---------|--------|---------|
 | English  | 800     | 900-1,200 | 2,000 |
 | Korean   | 800     | 900-1,200 | 2,000 |
-| Japanese | 3,000 chars | 4,000-5,000 chars | 7,500 chars |
 
 **Check**:
-- Counts words (EN/KO) or characters (JA)
+- Counts words (EN/KO)
 - FAIL if below minimum
 - WARN if above maximum
 - PASS if within range
@@ -122,8 +121,6 @@ cat ai_review_report.json
 **English**: "revolutionary", "game-changer", "cutting-edge", "it's important to note", "in today's digital landscape"
 
 **Korean**: "물론", "혁신적", "게임체인저", "디지털 시대", "중요한 점은"
-
-**Japanese**: "もちろん", "革新的", "ゲームチェンジャー", "重要なのは", "結論として"
 
 **Check**:
 - Searches content for blacklisted phrases
@@ -164,7 +161,7 @@ tags: ["tag1", "tag2"]
 description: "120-160 char description"
 image: "https://images.unsplash.com/..."
 imageCredit: "Photo by [Name](URL)"
-lang: "en"  # or "ko" or "ja"
+lang: "en"  # or "ko"
 ```
 
 **Check**:
@@ -172,7 +169,7 @@ lang: "en"  # or "ko" or "ja"
 - ✅ All required fields present
 - ✅ Date format correct (ISO 8601 with KST)
 - ✅ Category valid (8 categories)
-- ✅ Language valid (en/ko/ja)
+- ✅ Language valid (en/ko)
 
 ---
 

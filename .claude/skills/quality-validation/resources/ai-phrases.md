@@ -56,27 +56,6 @@ Complete list of banned phrases that trigger quality gate failures.
 
 ---
 
-## Japanese Banned Phrases (日本語)
-
-**AI特有の表現**:
-- "もちろん"
-- "革新的"
-- "ゲームチェンジャー"
-- "パラダイムシフト"
-
-**不要な強調**:
-- "デジタル時代"
-- "現代社会"
-- "重要なのは"
-- "言うまでもなく"
-
-**結論表現** (結論セクションのみ許可):
-- "結論として"
-- "要約すると"
-- "まとめると"
-
----
-
 ## Usage in Quality Gate
 
 **Script**: `scripts/quality_gate.py`
@@ -110,7 +89,7 @@ def check_ai_phrases(content, language):
 **To add a new banned phrase**:
 
 1. Edit `scripts/quality_gate.py`
-2. Add to appropriate list (EN/KO/JA)
+2. Add to appropriate list (EN/KO)
 3. Test with existing content
 
 **Example**:

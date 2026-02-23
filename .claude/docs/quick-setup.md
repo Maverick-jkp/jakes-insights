@@ -273,15 +273,14 @@ BRAVE_API_KEY=BSAxxxxx
 
 ---
 
-## API Cost Estimates (for 5 posts/day)
+## API Cost Estimates (for 10 posts/day EN+KO)
 
 | API | Usage | Cost/Month (Estimated) |
 |-----|-------|------------------------|
-| **Claude (Anthropic)** | ~150k tokens/day | $15-30/month |
-| **Unsplash** | 5 images/day | Free (50/hr limit) |
+| **Claude (Anthropic)** | ~300k tokens/day | ~$27/month |
+| **Unsplash** | 10 images/day | Free (50/hr limit) |
 | **Brave Search** | 10 queries/day | Free tier |
-| **Dev.to** | 5 posts/day | Free |
-| **Google Indexing** | 5 URLs/day | Free |
+| **Google Indexing** | 10 URLs/day | Free |
 
 **Total**: ~$15-30/month (just Claude API)
 

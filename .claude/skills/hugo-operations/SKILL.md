@@ -1,6 +1,6 @@
 ---
 name: hugo-operations
-description: Hugo static site operations including development server (with live reload), production builds (with minification), multilingual content preview (EN/KO/JA), and Cloudflare Pages deployment. Use when building the site, previewing content locally, or troubleshooting Hugo configuration issues. Critical - Hugo is installed at /opt/homebrew/bin/hugo (not in PATH).
+description: Hugo static site operations including development server (with live reload), production builds (with minification), multilingual content preview (EN/KO), and Cloudflare Pages deployment. Use when building the site, previewing content locally, or troubleshooting Hugo configuration issues. Critical - Hugo is installed at /opt/homebrew/bin/hugo (not in PATH).
 ---
 
 # Hugo Operations Skill
@@ -16,7 +16,7 @@ Hugo static site generator operations for Jake's Tech Insights multilingual blog
 - Need to start development server for content preview
 - Building site for production deployment
 - Troubleshooting Hugo configuration or template issues
-- Testing multilingual features (EN/KO/JA)
+- Testing multilingual features (EN/KO)
 
 **Do NOT use this skill for:**
 - Content creation → Use `content-generation` skill
@@ -37,7 +37,7 @@ Hugo static site generator operations for Jake's Tech Insights multilingual blog
 - ✅ Production builds (minification, optimization)
 - ✅ Hugo configuration (hugo.toml)
 - ✅ Template troubleshooting (layouts/)
-- ✅ Multilingual site operations (EN/KO/JA)
+- ✅ Multilingual site operations (EN/KO)
 - ✅ Build performance analysis
 
 **Defer to other skills:**
@@ -188,10 +188,10 @@ brew upgrade hugo
 
 ### 5. Preview Specific Language
 
-**Goal**: View EN, KO, or JA content only
+**Goal**: View EN or KO content only
 
 → **Not directly supported** by Hugo server
-→ **Workaround**: Navigate to `/en/`, `/ko/`, or `/ja/` in browser
+→ **Workaround**: Navigate to `/en/` or `/ko/` in browser
 → **Example**: http://localhost:1313/ko/
 
 ---
@@ -267,8 +267,7 @@ Pages: 63
 content/
 ├── en/          # English posts
 │   ├── tech/, business/, lifestyle/, etc.
-├── ko/          # Korean posts (same structure)
-└── ja/          # Japanese posts (same structure)
+└── ko/          # Korean posts (same structure)
 ```
 
 **Post format**: `content/en/tech/2026-01-23-ai-trends.md`
@@ -345,7 +344,6 @@ rm -rf public/
 # Verify pages
 ls -la public/en/tech/
 ls -la public/ko/tech/
-ls -la public/ja/tech/
 ```
 
 ---

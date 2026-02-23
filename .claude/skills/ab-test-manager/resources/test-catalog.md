@@ -60,17 +60,17 @@ variants = manager.generate_title_variants(
 
 **Variants**:
 - **Variant A**: 800 words (Quick read)
-  - Target: 800-1000 words (EN/KO), 3200-4000 chars (JA)
+  - Target: 800-1000 words (EN/KO)
   - Style: Concise, focused, scannable
   - Sections: 3-4 with bullet points
 
 - **Variant B**: 1500 words (Standard)
-  - Target: 1500-1800 words (EN/KO), 6000-7200 chars (JA)
+  - Target: 1500-1800 words (EN/KO)
   - Style: Comprehensive, detailed
   - Sections: 4-5 with examples
 
 - **Variant C**: 2500 words (Comprehensive)
-  - Target: 2500-3000 words (EN/KO), 10000-12000 chars (JA)
+  - Target: 2500-3000 words (EN/KO)
   - Style: In-depth, authoritative, tutorial-like
   - Sections: 6-8 with code examples, images
 

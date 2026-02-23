@@ -282,7 +282,7 @@ from topic_queue import add_topic
 add_topic(
     keyword="Your Keyword",
     category="tech",  # or business, lifestyle, etc.
-    language="en",    # or ko, ja
+    language="en",    # or ko
     priority=8        # 1-10 (10 = highest)
 )
 ```

@@ -1,13 +1,13 @@
 ---
 name: content-generation
-description: Generates high-quality multilingual blog posts (EN/KO/JA) using Claude API with Draft + Editor agents. Use when generating content from trending keywords, creating articles (800-2000 words), or adding posts to the blog. Includes automatic quality validation and SEO optimization.
+description: Generates high-quality bilingual blog posts (EN/KO) using Claude API with Draft + Editor agents. Use when generating content from trending keywords, creating articles (800-2000 words), or adding posts to the blog. Includes automatic quality validation and SEO optimization.
 disable-model-invocation: true
 user-invocable: true
 ---
 
 # Content Generation Skill
 
-Generate high-quality multilingual blog posts (EN/KO/JA) using Claude API with Draft + Editor agents.
+Generate high-quality multilingual blog posts (EN/KO) using Claude API with Draft + Editor agents.
 
 ## Contents
 
@@ -34,7 +34,7 @@ Generate high-quality multilingual blog posts (EN/KO/JA) using Claude API with D
 **Activate this skill when:**
 - User requests "generate posts", "create content", or "write article"
 - Task involves creating blog content from keywords
-- Need to produce 800-2000 word articles in EN/KO/JA
+- Need to produce 800-2000 word articles in EN/KO
 - Working with topic queue for content automation
 
 **Do NOT use this skill for:**
@@ -56,7 +56,7 @@ Generate high-quality multilingual blog posts (EN/KO/JA) using Claude API with D
 - ✅ Topic queue reservation and completion
 - ✅ Frontmatter creation (title, date, categories, tags, description, image)
 - ✅ File saving to content directories
-- ✅ Multilingual post creation (EN/KO/JA)
+- ✅ Multilingual post creation (EN/KO)
 
 **Defer to other skills:**
 - ❌ Quality validation → Use `quality-validation` skill
@@ -127,7 +127,7 @@ Git Commit → GitHub Actions → Deploy
 
 **Key Components**:
 - **Topic Queue**: `data/topics_queue.json` (state machine: pending → in_progress → completed)
-- **Draft Agent**: Creates initial content (EN/KO/JA prompts)
+- **Draft Agent**: Creates initial content (EN/KO prompts)
 - **Editor Agent**: Refines tone, structure, SEO
 - **Quality Gate**: Validates word count, AI phrases, SEO
 
@@ -141,7 +141,6 @@ Git Commit → GitHub Actions → Deploy
 |----------|---------|--------|---------|
 | English  | 800     | 900-1,200 | 2,000 |
 | Korean   | 800     | 900-1,200 | 2,000 |
-| Japanese | 3,000 chars | 4,000-5,000 chars | 7,500 chars |
 
 ### Structure
 
@@ -161,10 +160,6 @@ Git Commit → GitHub Actions → Deploy
 **Korean**:
 - "물론", "혁신적", "게임체인저"
 - "디지털 시대", "중요한 점은"
-
-**Japanese**:
-- "もちろん", "革新的", "ゲームチェンジャー"
-- "重要なのは", "結論として"
 
 ---
 
@@ -218,7 +213,6 @@ Script automatically reserves topics from queue:
 **System Prompts** (in `scripts/generate_posts.py`):
 - **English**: Lines ~63-450
 - **Korean**: Lines ~450-850
-- **Japanese**: Lines ~850-1250
 
 **Parameters**:
 ```python
@@ -377,9 +371,9 @@ python scripts/topic_queue.py cleanup 24
 - education
 
 **To add new category**:
-1. Update `hugo.toml` (menu items for EN/KO/JA)
+1. Update `hugo.toml` (menu items for EN/KO)
 2. Update `scripts/utils/validation.py` (VALID_CATEGORIES)
-3. Create directories: `content/{en,ko,ja}/{category}/`
+3. Create directories: `content/{en,ko}/{category}/`
 
 ---
 
@@ -388,8 +382,8 @@ python scripts/topic_queue.py cleanup 24
 ### Claude API
 
 - **Cost per post**: ~$0.09 (with prompt caching)
-- **Daily cost**: $0.27 (3 posts/day × 3 runs)
-- **Monthly cost**: ~$8.10
+- **Daily cost**: $0.90 (10 posts/day)
+- **Monthly cost**: ~$27
 
 **Optimizations**:
 - ✅ Prompt caching enabled (20-25% reduction)
@@ -503,14 +497,6 @@ KOREAN_DRAFT_PROMPT = """
 """
 ```
 
-**Japanese** (lines ~850-1250):
-```python
-JAPANESE_DRAFT_PROMPT = """
-日本のテックブログ風に...
-[customize here]
-"""
-```
-
 ### Affiliate Links
 
 **Auto-detection** (in `scripts/affiliate_config.py`):
@@ -521,7 +507,6 @@ JAPANESE_DRAFT_PROMPT = """
 **Supported**:
 - Amazon
 - Coupang (Korea)
-- Rakuten (Japan)
 
 ---
 

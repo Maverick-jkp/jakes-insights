@@ -5946,7 +5946,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935783",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5971,7 +5971,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T10:59:43.572751+00:00"
     },
     {
       "id": "1022-en-tech-Age-verification-dat",
@@ -5979,7 +5981,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935845",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5999,7 +6001,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T10:54:01.726424+00:00"
     },
     {
       "id": "1023-en-tech-FreeBSD-AI-written-W",
@@ -6007,7 +6011,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935865",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6032,7 +6036,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:03:06.063275+00:00"
     },
     {
       "id": "1024-en-tech-PgDog-Postgres-shard",
@@ -6040,7 +6046,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935883",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6049,7 +6055,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:12:39.394388+00:00"
     },
     {
       "id": "1025-en-tech-X86-CPU-emulator-wri",
@@ -6057,7 +6065,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935899",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6077,7 +6085,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:22:10.592750+00:00"
     },
     {
       "id": "1026-ko-tech-Ladybird-브라우저-Rust-전",
@@ -6085,7 +6095,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935922",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6094,7 +6104,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:06:27.030836+00:00"
     },
     {
       "id": "1027-ko-tech-나이-인증-개인정보-감시-함정-해외-",
@@ -6102,7 +6114,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935943",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6127,7 +6139,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T10:57:20.804395+00:00"
     },
     {
       "id": "1028-ko-tech-AI가-FreeBSD-WiFi-드라이",
@@ -6135,7 +6149,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935973",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6144,7 +6158,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:09:23.651247+00:00"
     },
     {
       "id": "1029-ko-tech-Firefox-AI-킬스위치-기능-개",
@@ -6152,7 +6168,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.935998",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6177,7 +6193,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:15:37.886474+00:00"
     },
     {
       "id": "1030-ko-tech-Postgres-샤딩-앱-코드-수정-",
@@ -6185,7 +6203,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-02-24T07:53:14.936021",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6205,7 +6223,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-02-24T10:51:16.290635+00:00",
+      "completed_at": "2026-02-24T11:18:56.117869+00:00"
     }
   ]
 }

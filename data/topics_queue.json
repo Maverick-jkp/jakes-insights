@@ -6226,6 +6226,270 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-24T10:51:16.290635+00:00",
       "completed_at": "2026-02-24T11:18:56.117869+00:00"
+    },
+    {
+      "id": "1031-en-tech-Anthropic-safety-ple",
+      "keyword": "Anthropic safety pledge dropped AI race pressure",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221048",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and researchers alarmed by Anthropic reversing its foundational safety commitments want to understand the real implications",
+      "angle": "Corporate accountability vs. AI safety theater — the gap between mission statements and revenue targets",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Anthropic Drops Flagship Safety Pledge | TIME",
+          "url": "https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/",
+          "source": "time.com"
+        },
+        {
+          "title": "Anthropic Adds Caveat to AI Safety Policy in Race Against Rivals - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-25/anthropic-adds-caveat-to-ai-safety-policy-in-race-against-rivals",
+          "source": "www.bloomberg.com"
+        },
+        {
+          "title": "AP report: Hegseth warns Anthropic to let the military use company's AI tech as it sees fit | PBS Ne",
+          "url": "https://www.pbs.org/newshour/world/ap-report-hegseth-warns-anthropic-to-let-the-military-use-companys-ai-tech-as-it-sees-fit",
+          "source": "www.pbs.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1032-en-tech-setHTML-XSS-protecti",
+      "keyword": "setHTML XSS protection Firefox 148 innerHTML replacement",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221080",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Frontend developers urgently checking if their current codebase is affected and how to migrate safely",
+      "angle": "Security migration urgency — practical code-level impact with real vulnerability consequences",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Goodbye innerHTML, Hello setHTML: Stronger XSS Protection in Firefox 148 – Mozilla Hacks - the Web d",
+          "url": "https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/",
+          "source": "hacks.mozilla.org"
+        },
+        {
+          "title": "Goodbye InnerHTML, Hello SetHTML: Stronger XSS Protection in Firefox 148 | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47136611",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "The Death of innerHTML: How Firefox 148’s setHTML() API Rewrites the Rules on Cross-Site Scripting D",
+          "url": "https://www.webpronews.com/the-death-of-innerhtml-how-firefox-148s-sethtml-api-rewrites-the-rules-on-cross-site-scripting-defense/",
+          "source": "www.webpronews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1033-en-tech-Go-binary-size-77%-r",
+      "keyword": "Go binary size 77% reduction Datadog production technique",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221098",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Go developers looking for concrete, production-tested optimization techniques to reduce deploy footprint and cold start times",
+      "angle": "Engineering deep-dive — real production numbers with reproducible methodology, not theoretical optimization",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Datadog - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Datadog",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "The Real Cost of Datadog Log Management in 2026 (And How to Cut It by 90%) | Parseable Blog | Parsea",
+          "url": "https://www.parseable.com/blog/datadog-log-management-cost",
+          "source": "www.parseable.com"
+        },
+        {
+          "title": "Datadog Pricing 2026: Full Cost Breakdown + How to Save 40-90% | Last9",
+          "url": "https://last9.io/blog/datadog-pricing-all-your-questions-answered/",
+          "source": "last9.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1034-ko-tech-Anthropic-안전-서약-철회-A",
+      "keyword": "Anthropic 안전 서약 철회 AI 규제 공백",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221115",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Claude를 업무에 활용 중인 국내 개발자·기업 담당자가 AI 안전성 후퇴의 실질적 의미를 파악하려 검색",
+      "angle": "해외 핫이슈 현지화 — AI 안전 규제 공백이 국내 기업의 AI 도입 리스크에 어떤 신호를 보내는가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Anthropic won’t budge as Pentagon escalates AI dispute | TechCrunch",
+          "url": "https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "\"美 국방장관, 앤트로픽 AI 안전 장치 철회 않으면 제재\" - 뉴스1",
+          "url": "https://www.news1.kr/world/usa-canada/6081861",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "Hegseth Reportedly Gives Anthropic Ultimatum in Demand to Drop Mass Surveillance AI Safeguards",
+          "url": "https://www.yahoo.com/news/articles/hegseth-reportedly-gives-anthropic-ultimatum-220841945.html",
+          "source": "www.yahoo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1035-ko-tech-Mac-mini-미국-생산-애플-공급",
+      "keyword": "Mac mini 미국 생산 애플 공급망 관세 실제 영향",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221130",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Mac mini 구매를 고려 중인 국내 사용자와 애플 공급망 변화를 추적하는 IT 관계자가 가격·출시 일정 영향을 검색",
+      "angle": "미중 무역전쟁 → 애플 제조 전략 변화 → 한국 소비자 체감 가격 연결고리 분석",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "[데일리연합 (SNSJTV)] 트럼프의 관세 폭탄에 대법원 제동, 애플은 결국 '메이드 인 USA' 선택",
+          "url": "https://www.dailyan.com/news/article.html?no=765319",
+          "source": "www.dailyan.com"
+        },
+        {
+          "title": "애플 미국산 칩 공급망 구축 본격화…1650억 달러 투자 : 글로벌 : 재경일보",
+          "url": "https://news.jkn.co.kr/post/856442",
+          "source": "news.jkn.co.kr"
+        },
+        {
+          "title": "사막이 반도체성지로애플이 그리는 미국산 칩의 미래",
+          "url": "https://bbs.ruliweb.com/news/board/1004/read/2285288",
+          "source": "bbs.ruliweb.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1036-ko-tech-Mercury-2-확산-기반-LLM-",
+      "keyword": "Mercury 2 확산 기반 LLM 추론 속도 GPT 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221144",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "LLM API 비용과 응답속도에 민감한 국내 스타트업 개발자가 새로운 아키텍처 실용성을 판단하려 검색",
+      "angle": "해외 첫 등장한 diffusion LLM 아키텍처를 한국어로 가장 먼저 정리 — 기술 격차 해소 포지셔닝",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Inception Launches Mercury 2, the Fastest Reasoning LLM — 5x Faster Than Leading Speed-Optimized LLM",
+          "url": "https://www.morningstar.com/news/business-wire/20260224034496/inception-launches-mercury-2-the-fastest-reasoning-llm-5x-faster-than-leading-speed-optimized-llms-with-dramatically-lower-inference-cost",
+          "source": "www.morningstar.com"
+        },
+        {
+          "title": "Inception Launches Mercury 2, the Fastest Reasoning LLM — 5x Faster Than Leading Speed-Optimized LLM",
+          "url": "https://www.businesswire.com/news/home/20260224034496/en/Inception-Launches-Mercury-2-the-Fastest-Reasoning-LLM-5x-Faster-Than-Leading-Speed-Optimized-LLMs-with-Dramatically-Lower-Inference-Cost",
+          "source": "www.businesswire.com"
+        },
+        {
+          "title": "Inception Launches Mercury 2, the Fastest Reasoning LLM — 5x Faster Than Leading Speed-Optimized LLM",
+          "url": "https://finance.yahoo.com/news/inception-launches-mercury-2-fastest-160000133.html",
+          "source": "finance.yahoo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1037-ko-tech-innerHTML-보안-취약점-set",
+      "keyword": "innerHTML 보안 취약점 setHTML Firefox 마이그레이션",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221159",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "레거시 프론트엔드 코드를 유지보수 중인 국내 웹 개발자가 보안 마이그레이션 영향 범위를 긴급 확인하려 검색",
+      "angle": "실전 보안 코드 마이그레이션 — 국내 개발자가 즉시 적용할 수 있는 체크리스트 형태로 전달",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Goodbye innerHTML, Hello setHTML: Stronger XSS Protection in Firefox 148 – Mozilla Hacks - the Web d",
+          "url": "https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/",
+          "source": "hacks.mozilla.org"
+        },
+        {
+          "title": "The Death of innerHTML: How Firefox 148’s setHTML() API Rewrites the Rules on Cross-Site Scripting D",
+          "url": "https://www.webpronews.com/the-death-of-innerhtml-how-firefox-148s-sethtml-api-rewrites-the-rules-on-cross-site-scripting-defense/",
+          "source": "www.webpronews.com"
+        },
+        {
+          "title": "SetHTML en Firefox 148: Nueva protección XSS para developers - El Ecosistema Startup",
+          "url": "https://ecosistemastartup.com/sethtml-en-firefox-148-nueva-proteccion-xss-para-developers/",
+          "source": "ecosistemastartup.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1038-ko-tech-Amazon-가격-담합-알고리즘-독과",
+      "keyword": "Amazon 가격 담합 알고리즘 독과점 소송 국내 이커머스 시사점",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-25T07:54:42.221179",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 이커머스 플랫폼 가격 알고리즘에 의구심을 가진 소비자·개발자가 구조적 문제를 이해하려 검색",
+      "angle": "해외 규제 이슈를 국내 플랫폼 비교로 연결 — 독자에게 '이건 남의 나라 이야기가 아니다' 라는 인식 전환 유도",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "檢, ‘전분당 담합 의혹’ 삼양사‧사조 등 압수수색…공정위·검찰 압박에 가격 3~5% 인하",
+          "url": "https://www.thepublic.kr/news/articleView.html?idxno=295181",
+          "source": "www.thepublic.kr"
+        },
+        {
+          "title": "법원, 명품 플랫폼 발란 파산 선고…회생 신청 11개월만 | 한국경제",
+          "url": "https://www.hankyung.com/article/202602253628g",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "전분당 담합 의혹에 업체들 줄줄이 '가격 인하' - 한국NGO신문",
+          "url": "https://www.ngonews.kr/news/articleView.html?idxno=224833",
+          "source": "www.ngonews.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
     }
   ]
 }

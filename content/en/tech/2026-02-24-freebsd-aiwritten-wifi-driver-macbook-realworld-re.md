@@ -1,5 +1,5 @@
 ---
-title: "# FreeBSD AI-Written WiFi Driver for MacBook: Real-World Result"
+title: "FreeBSD AI-Written WiFi Driver for MacBook: Real-World Result"
 date: 2026-02-24T20:03:06+0900
 draft: false
 author: "Jake Park"

@@ -1,5 +1,5 @@
 ---
-title: "# Postgres 샤딩, 앱 코드 수정 없이 가능한가 — PgDog 실전 검증"
+title: "Postgres 샤딩, 앱 코드 수정 없이 가능한가 — PgDog 실전 검증"
 date: 2026-02-24T20:18:56+0900
 draft: false
 author: "Jake Park"

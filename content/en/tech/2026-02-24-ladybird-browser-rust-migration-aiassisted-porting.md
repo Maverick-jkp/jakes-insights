@@ -1,5 +1,5 @@
 ---
-title: "# Ladybird Browser Rust Migration: AI-Assisted Porting Risks"
+title: "Ladybird Browser Rust Migration: AI-Assisted Porting Risks"
 date: 2026-02-24T19:59:43+0900
 draft: false
 author: "Jake Park"

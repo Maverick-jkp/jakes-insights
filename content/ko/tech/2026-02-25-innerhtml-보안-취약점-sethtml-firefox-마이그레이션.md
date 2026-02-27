@@ -1,5 +1,5 @@
 ---
-title: "# innerHTML 보안 취약점과 Firefox 148 setHTML() 마이그레이션 가이드"
+title: "innerHTML 보안 취약점과 Firefox 148 setHTML() 마이그레이션 가이드"
 date: 2026-02-25T20:03:33+0900
 draft: false
 author: "Jake Park"

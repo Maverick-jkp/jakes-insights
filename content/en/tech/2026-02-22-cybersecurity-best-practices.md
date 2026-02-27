@@ -1,5 +1,5 @@
 ---
-title: "# Cybersecurity Best Practices to Reduce Data Breach Risk"
+title: "Cybersecurity Best Practices to Reduce Data Breach Risk"
 date: 2026-02-22T19:32:49+0900
 draft: false
 author: "Jake Park"

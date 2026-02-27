@@ -1,5 +1,5 @@
 ---
-title: "# LLM Deanonymization Is Exposing Real Identities Online"
+title: "LLM Deanonymization Is Exposing Real Identities Online"
 date: 2026-02-26T19:58:42+0900
 draft: false
 author: "Jake Park"

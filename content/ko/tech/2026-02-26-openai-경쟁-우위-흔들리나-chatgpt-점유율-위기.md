@@ -1,5 +1,5 @@
 ---
-title: "# OpenAI 경쟁 우위 흔들리나: Anthropic·Google·Meta가 ChatGPT 점유율을 압박하는 방식"
+title: "OpenAI 경쟁 우위 흔들리나: Anthropic·Google·Meta가 ChatGPT 점유율을 압박하는 방식"
 date: 2026-02-26T20:09:44+0900
 draft: false
 author: "Jake Park"

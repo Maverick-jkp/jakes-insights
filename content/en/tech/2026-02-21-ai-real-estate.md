@@ -1,5 +1,5 @@
 ---
-title: "# AI Real Estate Tools: Strong Adoption, Messy Outcomes"
+title: "AI Real Estate Tools: Strong Adoption, Messy Outcomes"
 date: 2026-02-21T15:51:50+0900
 draft: false
 author: "Jake Park"

@@ -1,5 +1,5 @@
 ---
-title: "# How Taalas Prints an LLM onto a Chip With $169M in Funding"
+title: "How Taalas Prints an LLM onto a Chip With $169M in Funding"
 date: 2026-02-22T19:30:17+0900
 draft: false
 author: "Jake Park"

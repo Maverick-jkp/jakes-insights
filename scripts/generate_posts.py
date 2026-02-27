@@ -866,7 +866,8 @@ Return improved version (body only, no title):""",
         # This handles "Here's a title: **Actual Title**" pattern
         bold_matches = re.findall(r'\*\*(.+?)\*\*', text)
         if bold_matches:
-            return bold_matches[-1].strip().strip('"').strip("'")
+            title = bold_matches[-1].strip().strip('"').strip("'")
+            return re.sub(r'^#+\s*', '', title)
 
         # If no bold, take first non-empty line (handles multi-line explanations)
         lines = [l.strip() for l in text.splitlines() if l.strip()]
@@ -875,9 +876,9 @@ Return improved version (body only, no title):""",
             # If first line looks like preamble (ends with colon or is very long), take last line
             if candidate.endswith(':') or len(candidate) > 120:
                 candidate = lines[-1].strip('"').strip("'").strip('*')
-            return candidate
+            return re.sub(r'^#+\s*', '', candidate)
 
-        return text.strip('"').strip("'").strip('*')
+        return re.sub(r'^#+\s*', '', text.strip('"').strip("'").strip('*'))
 
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""

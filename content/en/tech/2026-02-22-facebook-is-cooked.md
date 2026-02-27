@@ -1,5 +1,5 @@
 ---
-title: "# Facebook Is Cooked as a Social Network—But Still a Cash Machine"
+title: "Facebook Is Cooked as a Social Network—But Still a Cash Machine"
 date: 2026-02-22T13:32:35+0900
 draft: false
 author: "Jake Park"

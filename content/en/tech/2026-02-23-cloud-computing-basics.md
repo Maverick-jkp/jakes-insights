@@ -1,5 +1,5 @@
 ---
-title: "# Cloud Computing Basics Still Trip Up Experienced Engineers"
+title: "Cloud Computing Basics Still Trip Up Experienced Engineers"
 date: 2026-02-23T19:59:21+0900
 draft: false
 author: "Jake Park"

@@ -1,5 +1,5 @@
 ---
-title: "# Windows 11 Notepad Markdown RCE Flaw: CVE-2026-20841"
+title: "Windows 11 Notepad Markdown RCE Flaw: CVE-2026-20841"
 date: 2026-02-26T20:01:24+0900
 draft: false
 author: "Jake Park"

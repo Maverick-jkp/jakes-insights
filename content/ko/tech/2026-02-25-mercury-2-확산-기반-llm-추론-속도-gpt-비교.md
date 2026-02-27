@@ -1,5 +1,5 @@
 ---
-title: "# Mercury 2: 확산 기반 아키텍처로 GPT 계열 대비 추론 속도 5배 달성한 LLM 분석"
+title: "Mercury 2: 확산 기반 아키텍처로 GPT 계열 대비 추론 속도 5배 달성한 LLM 분석"
 date: 2026-02-25T20:09:44+0900
 draft: false
 author: "Jake Park"

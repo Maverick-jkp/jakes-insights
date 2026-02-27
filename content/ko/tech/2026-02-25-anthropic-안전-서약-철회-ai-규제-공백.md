@@ -1,5 +1,5 @@
 ---
-title: "# Anthropic이 미 국방부의 안전 서약 철회 압박에 맞선 배경과 AI 규제 공백의 현실"
+title: "Anthropic이 미 국방부의 안전 서약 철회 압박에 맞선 배경과 AI 규제 공백의 현실"
 date: 2026-02-25T20:00:36+0900
 draft: false
 author: "Jake Park"

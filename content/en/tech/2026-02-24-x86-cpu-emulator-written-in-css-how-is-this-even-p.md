@@ -1,5 +1,5 @@
 ---
-title: "# X86 CPU Emulator Written in CSS: How Is This Even Possible?"
+title: "X86 CPU Emulator Written in CSS: How Is This Even Possible?"
 date: 2026-02-24T20:22:10+0900
 draft: false
 author: "Jake Park"

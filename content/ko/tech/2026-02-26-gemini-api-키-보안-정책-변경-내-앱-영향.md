@@ -1,5 +1,5 @@
 ---
-title: "# Gemini API 키 노출 시 계정 영구 차단, 내 앱은 안전한가"
+title: "Gemini API 키 노출 시 계정 영구 차단, 내 앱은 안전한가"
 date: 2026-02-26T20:04:00+0900
 draft: false
 author: "Jake Park"

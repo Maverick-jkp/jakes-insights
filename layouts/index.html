@@ -1,5 +1,25 @@
 {{ define "main" }}
 
+{{/* WebSite Schema — enables Sitelinks Searchbox in Google */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ .Site.Title | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "description": {{ .Site.Params.description | jsonify }},
+  "inLanguage": ["en", "ko"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": {{ printf "%s/search?q={search_term_string}" .Site.BaseURL | jsonify }}
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
 {{ $posts := where $pages "Type" "!=" "page" }}
 {{ $featured := index $posts 0 }}

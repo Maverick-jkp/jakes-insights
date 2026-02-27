@@ -880,8 +880,8 @@ Return improved version (body only, no title):""",
 
         return re.sub(r'^#+\s*', '', text.strip('"').strip("'").strip('*'))
 
-    def _generate_tags(self, keyword: str, category: str) -> List[str]:
-        """Generate meaningful tags from keyword and category."""
+    def _generate_tags(self, keyword: str, category: str, technologies: list = None) -> List[str]:
+        """Generate meaningful tags from keyword, category, and technologies."""
         tags = []
         # Use whole keyword as first tag if multi-word, else just the word
         kw = keyword.strip()
@@ -897,7 +897,13 @@ Return improved version (body only, no title):""",
                 w = word.lower()
                 if w not in stop_words and w not in [t.lower() for t in tags] and len(w) > 2:
                     tags.append(word.lower())
-        return tags[:5]  # Limit to 5 tags
+        # Add first technology as tag (e.g. "Claude", "AWS")
+        if technologies:
+            for tech in technologies[:2]:
+                t = str(tech).strip()
+                if t and t.lower() not in [x.lower() for x in tags]:
+                    tags.append(t)
+        return tags[:6]  # Limit to 6 tags
 
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""
@@ -1539,7 +1545,7 @@ JSON 배열만 반환:
             "draft: false",
             'author: "Jake Park"',
             f'categories: ["{category}"]',
-            f'tags: {json.dumps(self._generate_tags(keyword, category))}',
+            f'tags: {json.dumps(self._generate_tags(keyword, category, technologies))}',
             f'description: "{safe_description}"',
             f'image: "{image_path}"'
         ]

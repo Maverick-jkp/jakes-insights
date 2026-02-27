@@ -6786,6 +6786,454 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-26T10:47:25.733666+00:00",
       "completed_at": "2026-02-26T11:12:54.232020+00:00"
+    },
+    {
+      "id": "1048-en-tech-Anthropic-Claude-mil",
+      "keyword": "Anthropic Claude military contract controversy",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283196",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers want to know if working with Anthropic APIs makes them complicit in military AI applications",
+      "angle": "Ethics betrayal — RSP safety commitments vs. military partnership reality",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Anthropic says it ‘cannot in good conscience’ allow Pentagon to remove AI checks | US military | The",
+          "url": "https://www.theguardian.com/us-news/2026/feb/26/anthropic-pentagon-claude",
+          "source": "www.theguardian.com"
+        },
+        {
+          "title": "Pentagon officials sent Anthropic best and final offer for military use of its AI amid dispute, sour",
+          "url": "https://www.cbsnews.com/news/pentagon-anthropic-offer-ai-unrestricted-military-use-sources/",
+          "source": "www.cbsnews.com"
+        },
+        {
+          "title": "Anthropic rejects Pentagon’s AI demands - POLITICO",
+          "url": "https://www.politico.com/news/2026/02/26/anthropic-rejects-pentagons-ai-demands-00802554",
+          "source": "www.politico.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1049-en-tech-Block-layoffs-Jack-D",
+      "keyword": "Block layoffs Jack Dorsey AI replacement 2026",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283230",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Tech workers are searching for the layoff letter details and trying to assess if their own roles are at risk from AI-justified cuts",
+      "angle": "AI as layoff cover story — separating real restructuring from AI-washing workforce cuts",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Jack Dorsey’s Block to cut nearly half its workforce in AI overhaul, shares surge | Reuters",
+          "url": "https://www.reuters.com/business/blocks-fourth-quarter-profit-rises-announces-over-4000-job-cuts-2026-02-26/",
+          "source": "www.reuters.com"
+        },
+        {
+          "title": "Block lays off nearly half its staff because of AI. Its CEO said most companies will do the same | C",
+          "url": "https://www.cnn.com/2026/02/26/business/block-layoffs-ai-jack-dorsey",
+          "source": "www.cnn.com"
+        },
+        {
+          "title": "Jack Dorsey Just Fired The Starting Gun On AI Layoffs",
+          "url": "https://www.forbes.com/sites/boazsobrado/2026/02/26/jack-dorsey-just-fired-the-starting-gun-on-ai-layoffs/",
+          "source": "www.forbes.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1050-en-tech-AirSnitch-Wi-Fi-clie",
+      "keyword": "AirSnitch Wi-Fi client isolation bypass attack",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283250",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Security-conscious developers and sysadmins searching for technical details of the exploit and practical mitigations",
+      "angle": "Infrastructure trust collapse — attacks that exploit core protocol design, not just misconfigurations",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises - Ars Technica",
+          "url": "https://arstechnica.com/security/2026/02/new-airsnitch-attack-breaks-wi-fi-encryption-in-homes-offices-and-enterprises/",
+          "source": "arstechnica.com"
+        },
+        {
+          "title": "Researchers discover massive Wi-Fi vulnerability affecting multiple access points — AirSnitch lets a",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/researchers-discover-massive-wi-fi-vulnerability-affecting-multiple-access-points-airsnitch-lets-attackers-on-the-same-network-intercept-data-and-launch-machine-in-the-middle-attacks",
+          "source": "www.tomshardware.com"
+        },
+        {
+          "title": "r/firewalla on Reddit: New AirSnitch attack breaks Wi-Fi encryption in homes, offices, and enterpris",
+          "url": "https://www.reddit.com/r/firewalla/comments/1rfdqdf/new_airsnitch_attack_breaks_wifi_encryption_in/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1051-en-tech-Claude-Code-chooses-",
+      "keyword": "Claude Code chooses frameworks LLM invisible advertising",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283268",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers questioning whether AI coding tools give neutral recommendations or are inadvertently (or deliberately) biased toward certain ecosystems",
+      "angle": "Hidden influence — LLMs as the most powerful invisible marketing channel ever built",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "r/ClaudeCode on Reddit: Is Claude actually writing better code than most of us?",
+          "url": "https://www.reddit.com/r/ClaudeCode/comments/1rbets0/is_claude_actually_writing_better_code_than_most/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Claude (language model) - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Claude_(language_model)",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Terminal-Based Agent Engineering: The 'Claude Code' Workflow",
+          "url": "https://www.sitepoint.com/terminal-based-agent-engineering-the--claude-code--workflow/",
+          "source": "www.sitepoint.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1052-en-tech-Google-mandatory-And",
+      "keyword": "Google mandatory Android developer registration open letter",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283286",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Android developers and open-source contributors searching for details on the policy and how to join the protest",
+      "angle": "Platform control vs. open ecosystem — Google tightening the screws on Android independence",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Google's Mandatory Android Dev Registration Rule Faces Revolt",
+          "url": "https://winbuzzer.com/2026/02/25/eff-f-droid-open-letter-google-mandatory-android-developer-registration-xcxwbn/",
+          "source": "winbuzzer.com"
+        },
+        {
+          "title": "Android dev groups push back on Google’s verification plan • The Register",
+          "url": "https://www.theregister.com/2026/02/24/google_android_developer_verification_plan/",
+          "source": "www.theregister.com"
+        },
+        {
+          "title": "An Open Letter to Google regarding Mandatory Developer Registration for Android App Distribution",
+          "url": "https://archive.is/lseTz",
+          "source": "archive.is"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1053-ko-tech-앤트로픽-군사-계약-AI-윤리-배신",
+      "keyword": "앤트로픽 군사 계약 AI 윤리 배신",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283302",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Claude를 업무에 활용 중인 국내 개발자·기업 담당자들이 파트너사의 군사 계약이 자신에게 어떤 의미인지 파악하려 함",
+      "angle": "AI 안전 원칙(RSP)과 군사 협력의 충돌 — '책임감 있는 AI'가 무기에 쓰인다면?",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "美 국방부, ‘클로드’ 무기화 요구…앤트로픽 존폐 위기 – 바이라인네트워크",
+          "url": "https://byline.network/2026/02/25-519/",
+          "source": "byline.network"
+        },
+        {
+          "title": "펜타곤 ‘AI 킬체인’ 가속에 앤트로픽 2억 달러 계약 파기 위기… ‘안전 윤리’ 정면 충돌 - 글로벌이코노믹",
+          "url": "https://www.g-enews.com/article/Global-Biz/2026/02/202602231805117641fbbec65dfb_1",
+          "source": "www.g-enews.com"
+        },
+        {
+          "title": "“군사용 전면 개방은 NO” 앤트로픽, 美 국방부 최종 요구에도 거부 - 더에이아이",
+          "url": "https://www.newstheai.com/news/articleView.html?idxno=20201",
+          "source": "www.newstheai.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1054-ko-tech-Block-대규모-해고-AI-명분-테",
+      "keyword": "Block 대규모 해고 AI 명분 테크 일자리 위기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283318",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자·IT 종사자가 해외 빅테크 해고 트렌드를 국내 상황과 비교하며 자신의 커리어 리스크를 가늠하려 함",
+      "angle": "AI를 해고의 방패막이로 쓰는 경영진 — 진짜 구조조정인가, AI워싱인가",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "AI발 '해고 쇼크' 현실화 … 블록 \"절반 자른다\" | Save Internet 뉴데일리",
+          "url": "https://www.newdaily.co.kr/site/data/html/2026/02/27/2026022700268.html",
+          "source": "www.newdaily.co.kr"
+        },
+        {
+          "title": "잭 도시 \"AI가 일자리 바꾼다\"…블록, 직원 절반 감원",
+          "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03073366645354784",
+          "source": "edaily.co.kr"
+        },
+        {
+          "title": "\"AI가 바꾸는 일자리 지형···경영진은 감소, 직원은 증가 예상\" 전미경제연구소 | CIO",
+          "url": "https://www.cio.com/article/4135643/ai%EA%B0%80-%EB%B0%94%EA%BE%B8%EB%8A%94-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%A7%80%ED%98%95%C2%B7%C2%B7%C2%B7%EA%B2%BD%EC%98%81%EC%A7%84%EC%9D%80-%EA%B0%90%EC%86%8C-%EC%A7%81%EC%9B%90%EC%9D%80-%EC%A6%9D.html",
+          "source": "www.cio.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1055-ko-tech-구글-안드로이드-개발자-강제-실명-등",
+      "keyword": "구글 안드로이드 개발자 강제 실명 등록 오픈소스 위기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283340",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 안드로이드 개발자·개인 앱 출시 경험자가 정책 세부 내용과 자신에게 미치는 영향을 검색",
+      "angle": "플랫폼 독점 심화 — 구글이 안드로이드를 iOS처럼 통제하려 한다",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "앱 배포를 위한 개발자 등록 의무화에 대한 구글 공개서한 | GeekNews",
+          "url": "https://news.hada.io/topic?id=27002",
+          "source": "news.hada.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1056-ko-tech-AI-코딩-도구-프레임워크-편향-추천",
+      "keyword": "AI 코딩 도구 프레임워크 편향 추천 신뢰 문제",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283357",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코딩 도구를 실무에 도입한 개발자가 추천의 신뢰성과 편향 가능성에 의문을 품고 검색",
+      "angle": "LLM의 학습 데이터 편향이 개발자의 기술 선택을 무의식 중에 조종한다",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026년 MLOps 혁신, MCP로 AI 모델 신뢰성 5배 강화 비결은? - IT AI Totality",
+          "url": "https://blog.ai.dmomo.co.kr/tech/20720",
+          "source": "blog.ai.dmomo.co.kr"
+        },
+        {
+          "title": "AI가 만든 ‘보이지 않는 편향’, 정치·젠더 갈등까지 증폭 - 디지털포용뉴스",
+          "url": "https://www.dginclusion.com/news/articleView.html?idxno=1457",
+          "source": "www.dginclusion.com"
+        },
+        {
+          "title": "AI 상사!",
+          "url": "https://news.aikoreacommunity.com/ai-sangsa/",
+          "source": "news.aikoreacommunity.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1057-ko-tech-공유-와이파이-보안-취약점-AirSn",
+      "keyword": "공유 와이파이 보안 취약점 AirSnitch 클라이언트 격리 우회",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283373",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "보안 담당자·개발자·일반 사용자가 공공장소 Wi-Fi 사용의 실제 위험을 파악하고 대응책을 찾으려 함",
+      "angle": "프로토콜 설계 결함 — 패치가 아닌 구조 자체의 문제라는 점이 핵심 공포 포인트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "100% 방어는 불가능하다? 2026 사이버 보안 키워드 ‘회복력’ - BESPIN GLOBAL , Todays Pick",
+          "url": "https://www.bespinglobal.com/blog/ai-cyber-security-resilience-strategy/",
+          "source": "www.bespinglobal.com"
+        },
+        {
+          "title": "IPTIME 공유기 초기화 및 설치 비밀번호 설정 팁 - mobilewitch",
+          "url": "https://www.mobilewitch.com/iptime-%EA%B3%B5%EC%9C%A0%EA%B8%B0-%EC%B4%88%EA%B8%B0%ED%99%94-%EB%B0%8F-%EC%84%A4%EC%B9%98-%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8-%EC%84%A4%EC%A0%95-%ED%8C%81/",
+          "source": "www.mobilewitch.com"
+        },
+        {
+          "title": "오픈클로서 SSRF·인증 우회 등 중·고위험 취약점 6건 확인 | ITWorld",
+          "url": "https://www.itworld.co.kr/article/4134928/%EC%98%A4%ED%94%88%ED%81%B4%EB%A1%9C%EC%84%9C-ssrf%C2%B7%EC%9D%B8%EC%A6%9D-%EC%9A%B0%ED%9A%8C-%EB%93%B1-%EC%A4%91%C2%B7%EA%B3%A0%EC%9C%84%ED%97%98-%EC%B7%A8%EC%95%BD%EC%A0%90-6%EA%B1%B4-%ED%99%95.html",
+          "source": "www.itworld.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1058-en-tech-how-to-set-up-a-self",
+      "keyword": "how to set up a self-hosted VPN with WireGuard",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283390",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "직접 VPN 서버를 구축해 프라이버시와 비용을 통제하려는 개발자·파워유저",
+      "angle": "WireGuard를 이용한 셀프호스팅 VPN 단계별 실전 설치 가이드 (클라우드 VM 기준)",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "WireGuard VPS - The Definitive Guide For Self-Hosted Approach | Contabo Blog",
+          "url": "https://contabo.com/blog/wireguard-vps-the-definitive-guide-for-self-hosted-approach/",
+          "source": "contabo.com"
+        },
+        {
+          "title": "How to Set Up a WireGuard Server (self hosted VPN) - YouTube",
+          "url": "https://www.youtube.com/watch?v=zzTDsaNpwXs",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "Set Up Your Own VPN with WireGuard - SelfHostHero",
+          "url": "https://selfhosthero.com/set-up-your-own-vpn-with-wireguard/",
+          "source": "selfhosthero.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1059-en-tech-Docker-vs-Podman:-wh",
+      "keyword": "Docker vs Podman: which container tool should you use",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283407",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "컨테이너 도구 선택을 앞두고 두 옵션의 차이와 장단점을 비교하려는 개발자·DevOps 엔지니어",
+      "angle": "데몬리스 구조·보안·호환성·학습곡선 4가지 축으로 Docker와 Podman을 실전 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Podman vs Docker 2026: Security, Performance & Which to Choose | Last9",
+          "url": "https://last9.io/blog/podman-vs-docker/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Podman vs Docker: Complete 2026 Comparison Guide for DevOps Teams | Xurrent Blog",
+          "url": "https://www.xurrent.com/blog/podman-vs-docker-complete-2025-comparison-guide-for-devops-teams",
+          "source": "www.xurrent.com"
+        },
+        {
+          "title": "Podman vs. Docker: Containerization Tools Comparison",
+          "url": "https://spacelift.io/blog/podman-vs-docker",
+          "source": "spacelift.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1060-ko-tech-GitHub-Actions-입문-가이",
+      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283423",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI/CD 개념은 알지만 실제 워크플로우 작성 경험이 없어 GitHub Actions로 첫 자동화를 구현하고 싶은 개발자",
+      "angle": "YAML 문법부터 실제 배포 파이프라인까지, 따라하면 완성되는 단계별 실습 튜토리얼",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
+          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
+          "source": "inblog.ai"
+        },
+        {
+          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
+          "url": "https://notavoid.tistory.com/157",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "P4_기존 프로젝트에 배포 자동화 구축하기(github actions)_1 :: Fadet's coding box",
+          "url": "https://fadet-coding.tistory.com/92",
+          "source": "fadet-coding.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1061-ko-tech-클라우드-스토리지-비교:-S3-vs-",
+      "keyword": "클라우드 스토리지 비교: S3 vs Google Cloud Storage vs Azure Blob",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-02-27T07:28:24.283439",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "프로젝트에 맞는 오브젝트 스토리지를 선택하기 위해 3대 클라우드의 가격·성능·기능을 비교하려는 개발자·아키텍트",
+      "angle": "가격 계산 시뮬레이션·전송 속도·SDK 편의성·무료 티어 기준으로 실전 선택 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "S3 Vs. GCS Vs. Azure Blob Storage: Cloud Storage Comparison | Airbyte",
+          "url": "https://airbyte.com/data-engineering-resources/s3-gcs-and-azure-blob-storage-compared",
+          "source": "airbyte.com"
+        },
+        {
+          "title": "Object Storage Face-Off: Cloudflare R2 vs S3 vs Azure Blob vs Google Cloud Storage",
+          "url": "https://inventivehq.com/blog/cloudflare-r2-vs-aws-s3-vs-azure-blob-vs-google-cloud-storage-comparison",
+          "source": "inventivehq.com"
+        },
+        {
+          "title": "기업에 가장 적합한 클라우드 스토리지 옵션은 무엇일까요?",
+          "url": "https://www.youstable.com/ko/blog/best-cloud-storage-options-for-businesses",
+          "source": "www.youstable.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

@@ -857,6 +857,28 @@ Return improved version (body only, no title):""",
 
         return prompts[lang]
 
+    def _clean_title(self, raw: str) -> str:
+        """Extract clean title from model response, removing markdown and explanatory text."""
+        import re
+        text = raw.strip()
+
+        # If model returned bold markdown (**title**), extract the last bold block
+        # This handles "Here's a title: **Actual Title**" pattern
+        bold_matches = re.findall(r'\*\*(.+?)\*\*', text)
+        if bold_matches:
+            return bold_matches[-1].strip().strip('"').strip("'")
+
+        # If no bold, take first non-empty line (handles multi-line explanations)
+        lines = [l.strip() for l in text.splitlines() if l.strip()]
+        if lines:
+            candidate = lines[0].strip('"').strip("'").strip('*')
+            # If first line looks like preamble (ends with colon or is very long), take last line
+            if candidate.endswith(':') or len(candidate) > 120:
+                candidate = lines[-1].strip('"').strip("'").strip('*')
+            return candidate
+
+        return text.strip('"').strip("'").strip('*')
+
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""
         # Get current year in KST
@@ -887,8 +909,8 @@ Return improved version (body only, no title):""",
             refs_context = f"\n\nREFERENCE TOPICS:\n{refs_list}\n"
 
         prompts = {
-            "en": f"Generate a factual, SEO-friendly blog title (50-60 chars) for this post about '{keyword}'.\n\nCONTENT SAMPLES (beginning, middle, end):\n{content_preview}{refs_context}\n\nCRITICAL RULES - VIOLATION WILL FAIL:\n1. Title MUST describe what the content ACTUALLY discusses (not what sounds catchy)\n2. NO exaggeration, speculation, or clickbait (e.g., \"confirmed\", \"revealed\", \"secret\")\n3. If content is about \"how to watch\", title must say \"how to watch\" (not \"rankings\")\n4. If content discusses problems/issues, title must reflect that (not promise solutions)\n5. ONLY use facts explicitly stated in the content samples\n6. Do NOT promise specific numbers/data unless clearly stated in content\n7. Include keyword '{keyword}' naturally\n8. Current year is {current_year}\n9. Return ONLY the title",
-            "ko": f"'{keyword}'에 대한 사실적이고 SEO 친화적인 제목을 생성하세요 (50-60자).\n\n본문 샘플 (시작, 중간, 끝):\n{content_preview}{refs_context}\n\n핵심 규칙 - 위반 시 실패:\n1. 제목은 본문이 실제로 다루는 내용을 설명해야 함 (매력적으로 들리는 것이 아님)\n2. 과장, 추측, 클릭베이트 금지 (예: \"확정\", \"폭로\", \"충격\")\n3. 본문이 \"시청 방법\"에 대한 것이면 제목도 \"시청 방법\"이어야 함 (\"랭킹\" 아님)\n4. 본문이 문제점을 논의하면 제목도 그것을 반영해야 함 (해결책 약속 금지)\n5. 본문 샘플에 명시적으로 언급된 사실만 사용\n6. 본문에 명확히 나와있지 않으면 구체적 숫자/데이터 약속 금지\n7. '{keyword}' 키워드를 자연스럽게 포함\n8. 현재 연도는 {current_year}년\n9. 제목만 반환"
+            "en": f"Generate a factual, SEO-friendly blog title (50-60 chars) for this post about '{keyword}'.\n\nCONTENT SAMPLES (beginning, middle, end):\n{content_preview}{refs_context}\n\nCRITICAL RULES - VIOLATION WILL FAIL:\n1. Title MUST describe what the content ACTUALLY discusses (not what sounds catchy)\n2. NO exaggeration, speculation, or clickbait (e.g., \"confirmed\", \"revealed\", \"secret\")\n3. If content is about \"how to watch\", title must say \"how to watch\" (not \"rankings\")\n4. If content discusses problems/issues, title must reflect that (not promise solutions)\n5. ONLY use facts explicitly stated in the content samples\n6. Do NOT promise specific numbers/data unless clearly stated in content\n7. Include keyword '{keyword}' naturally\n8. Current year is {current_year}\n9. Return ONLY the plain title text — no asterisks, no markdown, no explanations, no quotes",
+            "ko": f"'{keyword}'에 대한 사실적이고 SEO 친화적인 제목을 생성하세요 (50-60자).\n\n본문 샘플 (시작, 중간, 끝):\n{content_preview}{refs_context}\n\n핵심 규칙 - 위반 시 실패:\n1. 제목은 본문이 실제로 다루는 내용을 설명해야 함 (매력적으로 들리는 것이 아님)\n2. 과장, 추측, 클릭베이트 금지 (예: \"확정\", \"폭로\", \"충격\")\n3. 본문이 \"시청 방법\"에 대한 것이면 제목도 \"시청 방법\"이어야 함 (\"랭킹\" 아님)\n4. 본문이 문제점을 논의하면 제목도 그것을 반영해야 함 (해결책 약속 금지)\n5. 본문 샘플에 명시적으로 언급된 사실만 사용\n6. 본문에 명확히 나와있지 않으면 구체적 숫자/데이터 약속 금지\n7. '{keyword}' 키워드를 자연스럽게 포함\n8. 현재 연도는 {current_year}년\n9. 제목 텍스트만 반환 — 별표, 마크다운, 설명, 따옴표 없이"
         }
 
         response = self.client.messages.create(
@@ -900,7 +922,7 @@ Return improved version (body only, no title):""",
             }]
         )
 
-        generated_title = response.content[0].text.strip().strip('"').strip("'")
+        generated_title = self._clean_title(response.content[0].text)
 
         # Validate title-content alignment (STRICT check for critical mismatches only)
         validation_prompts = {
@@ -927,8 +949,8 @@ Return improved version (body only, no title):""",
 
             # Regenerate with stricter prompt
             regenerate_prompts = {
-                "en": f"Generate a title that EXACTLY matches what this content discusses. Do NOT promise specifics that aren't in the content. Do NOT use words like 'confirmed', 'breaking', or future dates unless explicitly stated.\n\nContent preview:\n{content_preview}\n\nKeyword to include: {keyword}\n\nTitle (60-70 chars):",
-                "ko": f"본문이 실제로 다루는 내용과 정확히 일치하는 제목을 생성하세요. 본문에 없는 구체적 내용을 약속하지 마세요. '확정', '속보', 미래 날짜는 본문에 명시되지 않으면 사용하지 마세요.\n\n본문 미리보기:\n{content_preview}\n\n포함할 키워드: {keyword}\n\n제목 (40-50자):"
+                "en": f"Generate a title that EXACTLY matches what this content discusses. Do NOT promise specifics that aren't in the content. Do NOT use words like 'confirmed', 'breaking', or future dates unless explicitly stated.\n\nContent preview:\n{content_preview}\n\nKeyword to include: {keyword}\n\nReturn ONLY the plain title text (60-70 chars), no asterisks, no markdown, no explanations:",
+                "ko": f"본문이 실제로 다루는 내용과 정확히 일치하는 제목을 생성하세요. 본문에 없는 구체적 내용을 약속하지 마세요. '확정', '속보', 미래 날짜는 본문에 명시되지 않으면 사용하지 마세요.\n\n본문 미리보기:\n{content_preview}\n\n포함할 키워드: {keyword}\n\n제목 텍스트만 반환 (40-50자), 별표·마크다운·설명 없이:"
             }
 
             regenerate_response = self.client.messages.create(
@@ -940,7 +962,7 @@ Return improved version (body only, no title):""",
                 }]
             )
 
-            generated_title = regenerate_response.content[0].text.strip().strip('"').strip("'")
+            generated_title = self._clean_title(regenerate_response.content[0].text)
             safe_print(f"  ✓ Regenerated title: {generated_title}")
 
         return generated_title

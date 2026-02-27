@@ -14,6 +14,10 @@ on:
         description: 'Skip AI review step'
         required: false
         default: 'false'
+      index_days:
+        description: 'Notify Google Indexing API for posts from last N days (0 = skip)'
+        required: false
+        default: '0'
 
 jobs:
   test:
@@ -218,7 +222,7 @@ jobs:
           fi
 
       - name: Notify Google Indexing API
-        if: steps.commit_changes.outputs.pushed == 'true'
+        if: steps.commit_changes.outputs.pushed == 'true' || (github.event_name == 'workflow_dispatch' && github.event.inputs.index_days != '0')
         continue-on-error: true
         env:
           GOOGLE_INDEXING_CREDENTIALS: ${{ secrets.GOOGLE_INDEXING_CREDENTIALS }}
@@ -231,8 +235,14 @@ jobs:
             mkdir -p credentials
             echo "$GOOGLE_INDEXING_CREDENTIALS" > credentials/google-indexing-credentials.json
 
-            echo "📤 Notifying Google about new content..."
-            python scripts/google_indexing.py --days 1
+            # Use index_days if manually triggered, otherwise default to 1
+            INDEX_DAYS="${{ github.event.inputs.index_days }}"
+            if [ -z "$INDEX_DAYS" ] || [ "$INDEX_DAYS" = "0" ]; then
+              INDEX_DAYS="1"
+            fi
+
+            echo "📤 Notifying Google about content from last ${INDEX_DAYS} day(s)..."
+            python scripts/google_indexing.py --days "$INDEX_DAYS" --force
 
             rm -f credentials/google-indexing-credentials.json
             echo "✅ Google Indexing API notified"

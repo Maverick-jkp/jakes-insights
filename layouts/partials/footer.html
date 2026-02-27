@@ -3,8 +3,10 @@
     <p>&copy; {{ now.Year }} Jake's Insights</p>
 
     <nav class="footer-nav">
-      <a href="{{ "/about/" | relLangURL }}">About</a>
-      <a href="https://github.com/Maverick-jkp/jakes-tech-insights" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ "/about/" | relLangURL }}">{{ if eq .Language.Lang "ko" }}소개{{ else }}About{{ end }}</a>
+      <a href="{{ "/contact/" | relLangURL }}">{{ if eq .Language.Lang "ko" }}문의{{ else }}Contact{{ end }}</a>
+      <a href="{{ "/privacy/" | relLangURL }}">{{ if eq .Language.Lang "ko" }}개인정보처리방침{{ else }}Privacy{{ end }}</a>
+      <a href="https://github.com/Maverick-jkp/jakes-insights" target="_blank" rel="noopener">GitHub</a>
       <a href="{{ "/index.xml" | relLangURL }}">RSS</a>
     </nav>
   </div>

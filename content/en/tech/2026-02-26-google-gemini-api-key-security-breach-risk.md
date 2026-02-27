@@ -4,7 +4,7 @@ date: 2026-02-26T19:56:14+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Google", "Gemini", "API"]
+tags: ["google gemini api key security breach risk", "tech", "google", "gemini", "api", "key"]
 description: "Protect your Google Gemini API key now. Learn how breaches happen, what attackers exploit, and steps to lock down your credentials today."
 image: "/images/20260226-google-gemini-api-key-security.jpg"
 technologies: ["JavaScript", "AWS", "GCP", "Claude", "OpenAI"]

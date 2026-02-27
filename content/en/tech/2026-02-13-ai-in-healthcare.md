@@ -4,7 +4,7 @@ date: 2026-02-13T19:44:33+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["ai", "in", "healthcare"]
+tags: ["ai in healthcare", "tech", "healthcare", "Rust", "Go"]
 description: "Discover how AI in healthcare is revolutionizing patient care, improving diagnostics, and transforming medical research for better outcomes."
 image: "/images/20260213-ai-in-healthcare.jpg"
 technologies: ["Rust", "Go"]

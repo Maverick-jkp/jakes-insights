@@ -4,7 +4,7 @@ date: 2026-02-14T14:31:19+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Cursor", "AI", "editor"]
+tags: ["cursor ai editor", "tech", "cursor", "editor", "TypeScript", "Claude"]
 description: "Discover how Cursor AI editor transforms coding with intelligent autocomplete, natural language commands, and seamless workflow integration for developers."
 image: "/images/20260214-cursor-ai-editor.jpg"
 technologies: ["TypeScript", "Claude", "GPT", "OpenAI", "Anthropic"]

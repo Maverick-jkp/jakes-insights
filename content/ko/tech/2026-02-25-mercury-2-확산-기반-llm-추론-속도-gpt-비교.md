@@ -4,7 +4,7 @@ date: 2026-02-25T20:09:44+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Mercury", "2", "\ud655\uc0b0"]
+tags: ["mercury 2 확산 기반 llm 추론 속도 gpt 비교", "tech", "mercury", "llm", "gpt", "OpenAI"]
 description: "Mercury 2 확산 기반 LLM의 추론 속도를 GPT와 직접 비교했습니다. 벤치마크 데이터와 실제 테스트로 두 모델의 성능 차이를 확인하세요."
 image: "/images/20260225-mercury-2-확산-기반-llm-추론-속도-gpt-.jpg"
 technologies: ["GPT", "OpenAI", "LangChain", "Go", "Gemini"]

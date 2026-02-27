@@ -4,7 +4,7 @@ date: 2026-02-24T19:54:01+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Age", "verification", "data"]
+tags: ["age verification data privacy surveillance trap ie", "tech", "age", "verification", "data", "privacy"]
 description: "Discover how age verification systems create surveillance traps threatening data privacy. IEEE researchers reveal what's really at stake for your rights."
 image: "/images/20260224-age-verification-data-privacy-.jpg"
 technologies: ["AWS", "Rust", "Go"]

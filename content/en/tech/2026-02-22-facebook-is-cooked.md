@@ -4,7 +4,7 @@ date: 2026-02-22T13:32:35+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["facebook", "is", "cooked"]
+tags: ["facebook is cooked", "tech", "facebook", "cooked", "React", "GPT"]
 description: "Facebook is cooked and here's the data to prove it. Discover why users are fleeing and what this means for your social strategy."
 image: "/images/20260222-facebook-is-cooked.jpg"
 technologies: ["React", "GPT", "Rust", "Go", "ChatGPT"]

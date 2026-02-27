@@ -4,7 +4,7 @@ date: 2026-02-26T19:58:42+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["LLM", "deanonymization", "privacy"]
+tags: ["llm deanonymization privacy risk real identities e", "tech", "llm", "deanonymization", "privacy", "risk"]
 description: "Discover how LLM deanonymization exposes real identities and what you must do now to protect your personal data from AI privacy risks."
 image: "/images/20260226-llm-deanonymization-privacy-ri.jpg"
 technologies: ["GPT", "Go"]

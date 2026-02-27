@@ -4,7 +4,7 @@ date: 2026-02-22T13:28:45+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Keep", "Android", "Open"]
+tags: ["keep android open", "tech", "keep", "android", "open", "Linux"]
 description: "Discover why keeping Android open matters for innovation, user freedom, and app diversity. Learn how openness shapes the future of mobile tech."
 image: "/images/20260222-keep-android-open.jpg"
 technologies: ["Linux", "Rust", "Go"]

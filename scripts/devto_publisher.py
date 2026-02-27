@@ -160,7 +160,8 @@ class HugoToDevtoConverter:
         clean_tags = []
         seen = set()
         for tag in raw_tags:
-            normalized = re.sub(r'[^a-z0-9-]', '', tag.lower().replace(' ', '-'))
+            # Dev.to only allows alphanumeric (no hyphens)
+            normalized = re.sub(r'[^a-z0-9]', '', tag.lower().replace(' ', '').replace('-', ''))
             normalized = normalized[:30]
             if normalized and normalized not in seen:
                 seen.add(normalized)

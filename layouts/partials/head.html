@@ -42,17 +42,28 @@
 
 {{/* Open Graph */}}
 <meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ .Description }}">
+<meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ .Language.Lang | default "en" }}">
 {{ with .Params.image }}
 <meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{ end }}
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:author" content="{{ .Params.author | default "Jake Park" }}">
+{{ with index .Params.categories 0 }}<meta property="article:section" content="{{ . }}">{{ end }}
 {{ end }}
 
 {{/* Twitter Card */}}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ .Description }}">
+<meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
+{{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 
 {{/* RSS */}}
 {{ with .OutputFormats.Get "rss" -}}

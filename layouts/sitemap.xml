@@ -1,6 +1,7 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   {{ range .Data.Pages }}
     {{- if and (not .Params.private) (not .Params.unlisted) -}}
     <url>
@@ -44,6 +45,12 @@
                   hreflang="{{ .Language.Lang }}"
                   href="{{ .Permalink }}"
                   />
+      {{ end }}
+      {{- with .Params.image }}
+      <image:image>
+        <image:loc>{{ . | absURL }}</image:loc>
+        <image:title>{{ $.Title | htmlEscape }}</image:title>
+      </image:image>
       {{ end }}
     </url>
     {{ end }}

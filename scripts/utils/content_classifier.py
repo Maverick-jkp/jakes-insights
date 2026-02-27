@@ -49,8 +49,8 @@ class ContentClassifier:
     CONTENT_TYPE_CONFIG = {
         'tutorial': {
             'word_count': {
-                'en': (2500, 3500),
-                'ko': (2500, 3500),
+                'en': (1200, 1800),
+                'ko': (1200, 1800),
             },
             'prompt_template': 'tutorial',
             'priority': 1.5,
@@ -64,8 +64,8 @@ class ContentClassifier:
         },
         'analysis': {
             'word_count': {
-                'en': (1500, 2000),
-                'ko': (1500, 2000),
+                'en': (900, 1400),
+                'ko': (900, 1400),
             },
             'prompt_template': 'analysis',
             'priority': 1.0,

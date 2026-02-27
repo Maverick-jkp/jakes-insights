@@ -2,7 +2,7 @@
 Tutorial Prompt Template
 
 For comprehensive, in-depth tutorials with code examples, comparison tables,
-and step-by-step guides. Target: 2,500-3,500 words (EN/KO).
+and step-by-step guides. Target: 1,200-1,800 words (EN/KO).
 """
 
 def get_tutorial_prompt(topic: str, keywords: list, language: str, audience: str = "developers and engineers") -> str:
@@ -23,9 +23,9 @@ def get_tutorial_prompt(topic: str, keywords: list, language: str, audience: str
 
     # Language-specific word count targets
     word_count = {
-        'en': '2,500-3,500 words',
-        'ko': '2,500-3,500 단어',
-    }.get(language, '2,500-3,500 words')
+        'en': '1,200-1,800 words',
+        'ko': '1,200-1,800 단어',
+    }.get(language, '1,200-1,800 words')
 
     # Language-specific instructions
     lang_instructions = {
@@ -226,57 +226,57 @@ Now write the complete tutorial article following this structure exactly."""
 def _get_intro_words(language: str) -> str:
     """Get intro section word count by language"""
     return {
-        'en': '200-250 words',
-        'ko': '200-250 단어',
-    }.get(language, '200-250 words')
+        'en': '100-120 words',
+        'ko': '100-120 단어',
+    }.get(language, '100-120 words')
 
 
 def _get_background_words(language: str) -> str:
     """Get background section word count by language"""
     return {
-        'en': '350-400 words',
-        'ko': '350-400 단어',
-    }.get(language, '350-400 words')
+        'en': '150-200 words',
+        'ko': '150-200 단어',
+    }.get(language, '150-200 words')
 
 
 def _get_comparison_words(language: str) -> str:
     """Get comparison section word count by language"""
     return {
-        'en': '300-350 words',
-        'ko': '300-350 단어',
-    }.get(language, '300-350 words')
+        'en': '150-180 words',
+        'ko': '150-180 단어',
+    }.get(language, '150-180 words')
 
 
 def _get_guide_words(language: str) -> str:
     """Get guide section word count by language"""
     return {
-        'en': '900-1,200 words',
-        'ko': '900-1,200 단어',
-    }.get(language, '900-1,200 words')
+        'en': '400-600 words',
+        'ko': '400-600 단어',
+    }.get(language, '400-600 words')
 
 
 def _get_examples_words(language: str) -> str:
     """Get examples section word count by language"""
     return {
-        'en': '400-500 words',
-        'ko': '400-500 단어',
-    }.get(language, '400-500 words')
+        'en': '200-250 words',
+        'ko': '200-250 단어',
+    }.get(language, '200-250 words')
 
 
 def _get_tips_words(language: str) -> str:
     """Get tips section word count by language"""
     return {
-        'en': '300-400 words',
-        'ko': '300-400 단어',
-    }.get(language, '300-400 words')
+        'en': '150-200 words',
+        'ko': '150-200 단어',
+    }.get(language, '150-200 words')
 
 
 def _get_conclusion_words(language: str) -> str:
     """Get conclusion section word count by language"""
     return {
-        'en': '200-250 words',
-        'ko': '200-250 단어',
-    }.get(language, '200-250 words')
+        'en': '100-120 words',
+        'ko': '100-120 단어',
+    }.get(language, '100-120 words')
 
 
 def _get_language_specific_rules(language: str) -> str:

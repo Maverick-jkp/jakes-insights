@@ -2,7 +2,7 @@
 Analysis Prompt Template
 
 For standard analysis articles with structured sections and comparison elements.
-Target: 1,500-2,000 words (EN/KO).
+Target: 900-1,400 words (EN/KO).
 """
 
 def get_analysis_prompt(topic: str, keywords: list, language: str, audience: str = "tech professionals") -> str:
@@ -22,9 +22,9 @@ def get_analysis_prompt(topic: str, keywords: list, language: str, audience: str
     keywords_str = ', '.join(keywords[:5])
 
     word_count = {
-        'en': '1,500-2,000 words',
-        'ko': '1,500-2,000 단어',
-    }.get(language, '1,500-2,000 words')
+        'en': '900-1,400 words',
+        'ko': '900-1,400 단어',
+    }.get(language, '900-1,400 words')
 
     lang_instructions = {
         'en': 'English',

@@ -129,6 +129,10 @@ jobs:
       - name: Validate content quality (references & images)
         id: content_quality
         run: |
+          if [ ! -f generated_files.json ]; then
+            echo "ℹ️  No generated_files.json found, skipping validation"
+            exit 0
+          fi
           python scripts/validate_content_quality.py
 
       - name: AI Review

@@ -1,13 +1,5 @@
 ---
-title: "Here's a title that accurately reflects the content:
-
-**Anthropic Safety Pledge Dropped Amid AI Race Pressure**
-
-Character count: 52 chars — if you need it closer to 60–70, here's an expanded version:
-
-**Anthropic's Safety Pledge Dropped Under AI Race Pressure**
-
-(60 chars) — This reflects the actual content: a policy revision with a competitive caveat, reported by Bloomberg, without overstating"
+title: "Anthropic's Safety Pledge Dropped Under AI Race Pressure"
 date: 2026-02-25T19:54:54+0900
 draft: false
 author: "Jake Park"

@@ -1,5 +1,5 @@
 ---
-title: "**Age Verification's Surveillance Trap: What the IEEE Analysis Found**"
+title: "Age Verification's Surveillance Trap: What the IEEE Analysis Found"
 date: 2026-02-24T19:54:01+0900
 draft: false
 author: "Jake Park"

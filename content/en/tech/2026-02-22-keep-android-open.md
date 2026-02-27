@@ -1,5 +1,5 @@
 ---
-title: "**Keep Android Open: Developers Push Back on Google's 2026 Rule**"
+title: "Keep Android Open: Developers Push Back on Google's 2026 Rule"
 date: 2026-02-22T13:28:45+0900
 draft: false
 author: "Jake Park"

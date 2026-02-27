@@ -1,5 +1,5 @@
 ---
-title: "**Google Gemini API Key Security Breach Risk: The Rules Changed**"
+title: "Google Gemini API Key Security Breach Risk: The Rules Changed"
 date: 2026-02-26T19:56:14+0900
 draft: false
 author: "Jake Park"

@@ -880,6 +880,25 @@ Return improved version (body only, no title):""",
 
         return re.sub(r'^#+\s*', '', text.strip('"').strip("'").strip('*'))
 
+    def _generate_tags(self, keyword: str, category: str) -> List[str]:
+        """Generate meaningful tags from keyword and category."""
+        tags = []
+        # Use whole keyword as first tag if multi-word, else just the word
+        kw = keyword.strip()
+        if kw:
+            tags.append(kw)
+        # Add category as tag
+        if category and category not in tags:
+            tags.append(category)
+        # Add individual words for multi-word keywords (skip stop words)
+        stop_words = {'a', 'an', 'the', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was'}
+        if ' ' in kw:
+            for word in kw.split():
+                w = word.lower()
+                if w not in stop_words and w not in [t.lower() for t in tags] and len(w) > 2:
+                    tags.append(word.lower())
+        return tags[:5]  # Limit to 5 tags
+
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""
         # Get current year in KST
@@ -1520,7 +1539,7 @@ JSON 배열만 반환:
             "draft: false",
             'author: "Jake Park"',
             f'categories: ["{category}"]',
-            f'tags: {json.dumps(keyword.split()[:3])}',
+            f'tags: {json.dumps(self._generate_tags(keyword, category))}',
             f'description: "{safe_description}"',
             f'image: "{image_path}"'
         ]

@@ -1,5 +1,5 @@
 ---
-title: "**Firefox 148's setHTML() API: An innerHTML Replacement for XSS Protection**"
+title: "Firefox 148's setHTML() API: An innerHTML Replacement for XSS Protection"
 date: 2026-02-25T19:57:42+0900
 draft: false
 author: "Jake Park"

@@ -254,6 +254,20 @@ jobs:
             echo "ℹ️  Google Indexing API credentials not configured (optional)"
           fi
 
+      - name: Cross-post to Dev.to
+        if: steps.commit_changes.outputs.pushed == 'true'
+        continue-on-error: true
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: |
+          if [ -n "$DEVTO_API_KEY" ]; then
+            echo "📤 Cross-posting eligible posts to Dev.to (3-day delay)..."
+            python scripts/devto_publisher.py --delay-days 3
+            echo "✅ Dev.to cross-posting complete"
+          else
+            echo "ℹ️  DEVTO_API_KEY not configured (optional)"
+          fi
+
       - name: Deployment summary
         if: steps.commit_changes.outputs.pushed == 'true'
         run: |

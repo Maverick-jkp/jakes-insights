@@ -310,10 +310,14 @@ def get_eligible_posts(delay_days: int = 3) -> list:
                 continue
 
             if isinstance(date_val, str):
-                # Handle ISO format with timezone
-                post_date = datetime.fromisoformat(date_val)
+                # Normalize +0900 → +09:00 for Python 3.9 compatibility
+                date_str = re.sub(r'([+-])(\d{2})(\d{2})$', r'\1\2:\3', date_val)
+                post_date = datetime.fromisoformat(date_str)
             elif isinstance(date_val, datetime):
                 post_date = date_val
+            elif hasattr(date_val, 'year'):
+                # datetime.date object (from python-frontmatter YAML parsing)
+                post_date = datetime(date_val.year, date_val.month, date_val.day, tzinfo=timezone.utc)
             else:
                 continue
 

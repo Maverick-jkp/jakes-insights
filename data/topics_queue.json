@@ -7128,17 +7128,314 @@
       "completed_at": "2026-02-27T10:52:46.612939+00:00"
     },
     {
-      "id": "1058-en-tech-how-to-set-up-a-self",
+      "id": "1058-en-tech-OpenAI-Department-of",
+      "keyword": "OpenAI Department of War classified AI deployment",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163343",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and founders want to know if OpenAI's military deal changes the safety guarantees and ethics of the models they ship to users",
+      "angle": "Platform trust crisis — how a B2B deal reshapes what it means to build on OpenAI's API",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenAI reaches deal to deploy AI models on U.S. Department of War classified network | Reuters",
+          "url": "https://www.reuters.com/business/openai-reaches-deal-deploy-ai-models-us-department-war-classified-network-2026-02-28/",
+          "source": "www.reuters.com"
+        },
+        {
+          "title": "OpenAI Reaches Agreement With Pentagon to Deploy AI Models - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-28/openai-reaches-agreement-with-pentagon-to-deploy-ai-models",
+          "source": "www.bloomberg.com"
+        },
+        {
+          "title": "OpenAI reaches deal to deploy AI models on U.S. Department of War classified network By Reuters",
+          "url": "https://www.investing.com/news/politics-news/openai-reaches-deal-to-deploy-ai-models-on-us-department-of-war-classified-network-4533184",
+          "source": "www.investing.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1059-en-tech-Anthropic-refuses-Do",
+      "keyword": "Anthropic refuses DoW surveillance OpenAI accepts — AI ethics split",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163403",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers actively choosing between Claude and GPT APIs want a clear ethical comparison before committing infrastructure",
+      "angle": "COMPARISON: Anthropic's public refusal vs OpenAI's classified deal as a forcing function for platform selection",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Anthropic lose-lose situation in Pentagon demand for AI policy change",
+          "url": "https://www.cnbc.com/2026/02/27/anthropic-pentagon-ai-policy-war-spying.html",
+          "source": "www.cnbc.com"
+        },
+        {
+          "title": "Trump has ordered government agencies to stop using Anthropic AI tools",
+          "url": "https://www.bbc.com/news/articles/cn48jj3y8ezo",
+          "source": "www.bbc.com"
+        },
+        {
+          "title": "Pentagon approves OpenAI safety red lines after dumping Anthropic",
+          "url": "https://www.axios.com/2026/02/27/pentagon-openai-safety-red-lines-anthropic",
+          "source": "www.axios.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1060-en-tech-California-OS-age-ve",
+      "keyword": "California OS age verification law Linux open source impact",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163439",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Open source contributors and Linux maintainers need to know if they are legally liable under this law",
+      "angle": "Regulatory overreach vs. open source reality — the technical impossibility lawmakers are ignoring",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "A new California law says all operating systems need to have age verification | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47181208",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "California Law to Require Linux, Windows Implement Age Verification by Jan 1, 2027",
+          "url": "https://lunduke.substack.com/p/california-law-to-require-linux-windows",
+          "source": "lunduke.substack.com"
+        },
+        {
+          "title": "New California law will require operating systems to have age verification | Shacknews",
+          "url": "https://www.shacknews.com/article/148077/california-assembly-bill-1043-operating-system-os-age-verify-2027",
+          "source": "www.shacknews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1061-en-tech-don't-use-passkeys-f",
+      "keyword": "don't use passkeys for encrypting user data PRF extension warning",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163498",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Security engineers who shipped passkey-based encryption are checking right now whether their implementation is broken",
+      "angle": "Misuse pattern exposé — the difference between authentication and key derivation that the passkey hype glossed over",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Please, please, please stop using passkeys for encrypting user data · Timbits",
+          "url": "https://blog.timcappalli.me/p/passkeys-prf-warning/",
+          "source": "blog.timcappalli.me"
+        },
+        {
+          "title": "Why Passkeys Aren't Ready for Encrypting Your User Data (Yet) - DEV Community",
+          "url": "https://dev.to/nader0913/why-passkeys-arent-ready-for-encrypting-your-user-data-yet-437p",
+          "source": "dev.to"
+        },
+        {
+          "title": "Please, please, please stop using passkeys for encrypting user data · Timbits",
+          "url": "https://archive.is/y6LtG",
+          "source": "archive.is"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1062-en-tech-OpenAI-$730B-valuati",
+      "keyword": "OpenAI $730B valuation $110B funding round sustainable business model",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163541",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Startup founders and developers relying on OpenAI's API want to stress-test the platform's long-term viability",
+      "angle": "The circular investment problem — AWS spends, Nvidia buys chips, OpenAI spends on compute, repeat until scaling stops working",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "OpenAI Finalizes $110 Billion Funding at $730 Billion Value - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-02-27/openai-finalizes-110-billion-funding-at-730-billion-valuation",
+          "source": "www.bloomberg.com"
+        },
+        {
+          "title": "OpenAI hits $730B valuation as Amazon, NVIDIA, and SoftBank inject $110B",
+          "url": "https://finance.yahoo.com/news/openai-hits-730b-valuation-amazon-141020036.html",
+          "source": "finance.yahoo.com"
+        },
+        {
+          "title": "OpenAI raises $110B in one of the largest private funding rounds in history | TechCrunch",
+          "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
+          "source": "techcrunch.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1063-ko-tech-OpenAI-군사-계약-AI-윤리-개",
+      "keyword": "OpenAI 군사 계약 AI 윤리 개발자 영향",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163581",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "OpenAI API로 서비스를 운영하는 국내 개발자·스타트업이 플랫폼 신뢰성과 윤리적 리스크를 지금 당장 확인하려 함",
+      "angle": "해외에서 이미 폭발한 논란 — 한국 B2B 서비스·스타트업 관점에서 OpenAI 의존도를 재검토해야 하는 이유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "미군 ‘좌파 AI’ 무기가 민주주의까지 해친다면 | 서울경제",
+          "url": "https://www.sedaily.com/article/20013828",
+          "source": "www.sedaily.com"
+        },
+        {
+          "title": "AI 활용은 어디까지…美 국방부, 윤리 고수하는 앤스로픽에 계약 취소” 으름장 | 한국경제",
+          "url": "https://www.hankyung.com/article/202602254204i",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "“안보위해 필요” “살상용 안돼”…킬러AI, 어떻게 생각하십니까 | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25407416",
+          "source": "www.joongang.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1064-ko-tech-캘리포니아-OS-나이-인증-법-리눅스",
+      "keyword": "캘리포니아 OS 나이 인증 법 리눅스 오픈소스 규제",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163620",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "리눅스 사용자·오픈소스 기여자·국내 소프트웨어 개발사가 미국 주법이 국내 서비스에 미칠 영향을 검색",
+      "angle": "입법자가 기술을 모를 때 벌어지는 일 — 한국 개발자 시각에서 본 규제 리스크 실전 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "윈도11 막혀 고민이라면 구형 PC 살리는 리눅스 뜬다",
+          "url": "https://bbs.ruliweb.com/pc/board/300006/read/2342604",
+          "source": "bbs.ruliweb.com"
+        },
+        {
+          "title": "South Korea overhauls public IT safety, shifts sensitive data to private cloud - CHOSUNBIZ",
+          "url": "https://biz.chosun.com/en/en-it/2026/02/25/ZMAM37PBCRGOFBSN5M6TFRWFDI/",
+          "source": "biz.chosun.com"
+        },
+        {
+          "title": "Kali Linux로 윤리적 해킹 시작하기: 초보자를 위한 필수 도구 10가지 정리 :: 쵸코쿠키의 연습장",
+          "url": "https://jjeongil.tistory.com/3314",
+          "source": "jjeongil.tistory.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1065-ko-tech-패스키-암호화-보안-함정-실무-개발자",
+      "keyword": "패스키 암호화 보안 함정 실무 개발자 주의",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163661",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "패스키 도입을 검토 중이거나 이미 구현한 국내 백엔드·보안 개발자가 구체적 위험을 확인하려 함",
+      "angle": "국내 패스키 도입 열풍 속에서 아무도 번역 안 한 치명적 오용 패턴 — 실무 코드 레벨 경고",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "비밀번호 65년, 더 나은 기술이 있는데 왜 아직도 못 버리나 - 디지털포커스",
+          "url": "https://www.digitalfocus.news/news/articleView.html?idxno=18943",
+          "source": "www.digitalfocus.news"
+        },
+        {
+          "title": "DB 암호화 CC인증 1호의 기술력…파라택시스이더리움, 금융·공공 석권",
+          "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=432448",
+          "source": "www.pinpointnews.co.kr"
+        },
+        {
+          "title": "팩스 신청 방법과 유의사항: 꼭 알아야 할 5가지! - 정보투컴",
+          "url": "https://bootcom.co.kr/32521/",
+          "source": "bootcom.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1066-ko-tech-OpenAI-기업가치-730조-투자-",
+      "keyword": "OpenAI 기업가치 730조 투자 구조 지속 가능성 분석",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-02-28T07:30:34.163682",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "OpenAI API로 수익화 중인 국내 스타트업과 개발자가 플랫폼 장기 생존 가능성을 비용 구조 관점에서 검색",
+      "angle": "순환 투자 구조 해부 — AWS·엔비디아·OpenAI가 서로의 돈으로 돌아가는 구조의 국내 영향",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenAI, 7300억 달러 가치 평가로 1100억 달러 투자 유치 By Investing.com",
+          "url": "https://kr.investing.com/news/stock-market-news/article-1844437",
+          "source": "kr.investing.com"
+        },
+        {
+          "title": "오픈AI 1100억달러 투자 유치…‘자전 거래’ 의혹 재부상 | 디지털타임스",
+          "url": "https://www.dt.co.kr/article/12048856",
+          "source": "www.dt.co.kr"
+        },
+        {
+          "title": "오픈AI, 160조원 신규투자 유치…샘 올트먼 \"모든 투자자 접근 열 것\" IPO 시사",
+          "url": "https://www.sentv.co.kr/article/view/sentv202602280002",
+          "source": "www.sentv.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1067-en-tech-how-to-set-up-a-self",
       "keyword": "how to set up a self-hosted VPN with WireGuard",
       "category": "tech",
       "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-02-27T07:50:47.016995",
+      "created_at": "2026-02-28T07:30:34.163700",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "개인 VPN 서버를 직접 구축해 비용 절감 및 프라이버시를 확보하려는 개발자·파워유저",
-      "angle": "WireGuard 설치부터 클라이언트 연결까지 단계별 실습 가이드 (Linux 서버 기준)",
+      "search_intent": "개인 프라이버시 보호 또는 비용 절감을 위해 직접 VPN 서버를 구축하려는 개발자 및 기술 사용자",
+      "angle": "WireGuard를 이용한 셀프호스팅 VPN 단계별 설치 가이드 (클라우드 서버 기준)",
       "competition_level": "low",
       "references": [
         {
@@ -7152,25 +7449,25 @@
           "source": "www.youtube.com"
         },
         {
-          "title": "Set Up Your Own VPN with WireGuard - SelfHostHero",
-          "url": "https://selfhosthero.com/set-up-your-own-vpn-with-wireguard/",
-          "source": "selfhosthero.com"
+          "title": "How to Self-Host Your Own WireGuard VPN: A Comprehensive Guide",
+          "url": "https://onedollarvps.com/blogs/wireguard-self-hosted",
+          "source": "onedollarvps.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1059-en-tech-Docker-vs-Podman:-wh",
+      "id": "1068-en-tech-Docker-vs-Podman:-wh",
       "keyword": "Docker vs Podman: which container tool should you use",
       "category": "tech",
       "lang": "en",
-      "priority": 7,
+      "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-27T07:50:47.017013",
+      "created_at": "2026-02-28T07:30:34.163717",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "컨테이너 도구를 선택해야 하는 DevOps 엔지니어·개발자가 두 도구의 차이를 비교하려 함",
-      "angle": "데몬리스 구조·보안·CLI 호환성·기업 도입 사례 중심으로 상황별 선택 기준 제시",
+      "search_intent": "컨테이너 도구를 선택해야 하는 DevOps 엔지니어 및 백엔드 개발자가 두 도구의 차이점과 장단점을 비교하려 함",
+      "angle": "데몬리스 구조, 루트리스 실행, Docker Compose 호환성 등 실무 관점에서의 비교 분석",
       "competition_level": "low",
       "references": [
         {
@@ -7192,17 +7489,17 @@
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1060-ko-tech-GitHub-Actions-입문-가이",
+      "id": "1069-ko-tech-GitHub-Actions-입문-가이",
       "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-27T07:50:47.017029",
+      "created_at": "2026-02-28T07:30:34.163734",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "CI/CD를 처음 접하는 개발자가 GitHub Actions로 빌드·테스트·배포를 자동화하는 방법을 배우고 싶어함",
-      "angle": "YAML 워크플로우 기본 문법부터 실제 Node.js 프로젝트 자동 배포까지 따라하기 형식으로 구성",
+      "search_intent": "배포 자동화를 처음 배우려는 주니어 개발자 또는 GitHub를 사용하는 개인 프로젝트 운영자",
+      "angle": "YAML 문법부터 실제 배포 워크플로우까지 한국어로 단계별 설명하는 실전 입문 튜토리얼",
       "competition_level": "low",
       "references": [
         {
@@ -7216,41 +7513,41 @@
           "source": "notavoid.tistory.com"
         },
         {
-          "title": "P4_기존 프로젝트에 배포 자동화 구축하기(github actions)_1 :: Fadet's coding box",
-          "url": "https://fadet-coding.tistory.com/92",
-          "source": "fadet-coding.tistory.com"
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1061-ko-tech-Terraform-vs-Pulumi-",
-      "keyword": "Terraform vs Pulumi 비교: IaC 도구 어떤 걸 써야 할까",
+      "id": "1070-ko-tech-RAG란-무엇인가:-LLM-환각-줄이",
+      "keyword": "RAG란 무엇인가: LLM 환각 줄이는 검색 증강 생성 원리 설명",
       "category": "tech",
       "lang": "ko",
-      "priority": 7,
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-02-27T07:50:47.017044",
+      "created_at": "2026-02-28T07:30:34.163749",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "인프라 코드화(IaC) 도입을 검토 중인 DevOps·클라우드 엔지니어가 두 도구의 차이와 선택 기준을 알고 싶어함",
-      "angle": "학습 곡선·언어 지원·상태 관리·커뮤니티 생태계를 표 형태로 비교하고 팀 규모별 추천 시나리오 제공",
+      "search_intent": "AI 서비스를 기획하거나 LLM 기반 앱을 개발하려는 사람이 RAG 개념과 작동 원리를 이해하고 싶어 함",
+      "angle": "RAG의 개념, 벡터 DB와의 연동 구조, 실제 사용 사례를 비기술자도 이해할 수 있도록 시각적으로 설명",
       "competition_level": "low",
       "references": [
         {
-          "title": "Terraform vs. Pulumi IaC | Pulumi Docs",
-          "url": "https://www.pulumi.com/docs/iac/comparisons/terraform/",
-          "source": "www.pulumi.com"
+          "title": "RAG란? - 검색 증강 생성 AI 설명",
+          "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+          "source": "aws.amazon.com"
         },
         {
-          "title": "Terraform vs. Pulumi vs. Crossplane: Choosing the right IaC Tool for your platform",
-          "url": "https://platformengineering.org/blog/terraform-vs-pulumi-vs-crossplane-iac-tool",
-          "source": "platformengineering.org"
+          "title": "RAG(검색 증강 생성)란? - LLM 단점을 보완하는 기술 | 블로그 | 모두의연구소",
+          "url": "https://modulabs.co.kr/blog/retrieval-augmented-generation",
+          "source": "modulabs.co.kr"
         },
         {
-          "title": "Infrastructure as Code: Terraform vs OpenTofu vs Pulumi - A 2026 Comparison · Technical news about A",
-          "url": "https://dasroot.net/posts/2026/01/infrastructure-as-code-terraform-opentofu-pulumi-comparison-2026/",
-          "source": "dasroot.net"
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #1 : 핵심 개념과 시스템 구조 이해",
+          "url": "https://tech.ktcloud.com/entry/2025-08-ktcloud-ai-rag-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%ED%95%B4",
+          "source": "tech.ktcloud.com"
         }
       ],
       "content_type_hint": "GUIDE"

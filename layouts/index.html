@@ -51,9 +51,8 @@
 <!-- Grid Layout -->
 <section class="grid-layout">
 
-  <!-- Large Card: 2nd post -->
-  {{ $large := index $posts 1 }}
-  {{ with $large }}
+  <!-- Large Cards: 2nd–3rd posts (2 columns) -->
+  {{ range after 1 $posts | first 2 }}
   <article class="grid-card large">
     <a href="{{ .Permalink }}">
       <div class="card-visual">
@@ -62,17 +61,19 @@
         {{ end }}
       </div>
       <div class="card-text">
-        {{ with index .Params.categories 0 }}<div class="card-label">{{ . }}</div>{{ end }}
         <h2 class="card-heading">{{ .Title }}</h2>
-        <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
-        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+        <p class="card-description">{{ .Summary | plainify | truncate 100 }}</p>
+        <div class="card-footer">
+          <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+          {{ partial "subtopic-chip.html" . }}
+        </div>
       </div>
     </a>
   </article>
   {{ end }}
 
-  <!-- Medium Cards: 3rd–6th posts -->
-  {{ range after 2 $posts | first 4 }}
+  <!-- Medium Cards: 4th–7th posts (2x2) -->
+  {{ range after 3 $posts | first 4 }}
   <article class="grid-card medium">
     <a href="{{ .Permalink }}">
       <div class="card-visual">
@@ -82,26 +83,31 @@
       </div>
       <div class="card-text">
         <h3 class="card-heading">{{ .Title }}</h3>
-        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+        <div class="card-footer">
+          <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+          {{ partial "subtopic-chip.html" . }}
+        </div>
       </div>
     </a>
   </article>
   {{ end }}
 
-  <!-- List Sidebar: 7th–14th posts -->
-  <aside class="grid-list">
-    <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
-    {{ range after 6 $posts | first 8 }}
-    <article class="list-item">
-      <a href="{{ .Permalink }}">
-        <h5 class="list-heading">{{ .Title }}</h5>
-        <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-      </a>
-    </article>
-    {{ end }}
-    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
-  </aside>
+</section>
 
+<!-- Latest Strip -->
+<section class="latest-strip">
+  <div class="latest-strip-inner">
+    <h4 class="latest-strip-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
+    <div class="latest-strip-items">
+      {{ range after 6 $posts | first 6 }}
+      <a href="{{ .Permalink }}" class="latest-strip-item">
+        <span class="latest-strip-heading">{{ .Title }}</span>
+        <span class="latest-strip-date">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</span>
+      </a>
+      {{ end }}
+    </div>
+    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
+  </div>
 </section>
 
 {{ end }}

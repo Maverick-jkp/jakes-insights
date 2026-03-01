@@ -22,25 +22,22 @@
 
 {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
 {{ $posts := where $pages "Type" "!=" "page" }}
-{{ $featured := index $posts 0 }}
 
-<!-- Hero Feature -->
-{{ with $featured }}
-<section class="hero-feature">
-  <a href="{{ .Permalink }}" class="hero-card">
-    <div class="hero-visual">
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="eager">
-      {{ end }}
-      <div class="hero-gradient"></div>
+{{/* ── Hero ── */}}
+{{ with index $posts 0 }}
+<section class="hp-hero">
+  <a href="{{ .Permalink }}" class="hp-hero__card">
+    <div class="hp-hero__visual">
+      {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" loading="eager">{{ end }}
+      <div class="hp-hero__gradient"></div>
     </div>
-    <div class="hero-text">
-      <div class="hero-label">{{ if eq $.Site.Language.Lang "ko" }}추천{{ else }}Featured{{ end }}</div>
-      <h1 class="hero-heading">{{ .Title }}</h1>
-      <p class="hero-description">{{ .Summary | plainify | truncate 200 }}</p>
-      <div class="hero-meta">
+    <div class="hp-hero__text">
+      <div class="hp-hero__label">{{ if eq $.Site.Language.Lang "ko" }}추천{{ else }}Featured{{ end }}</div>
+      <h1 class="hp-hero__heading">{{ .Title }}</h1>
+      <p class="hp-hero__desc">{{ .Summary | plainify | truncate 200 }}</p>
+      <div class="hp-hero__meta">
         <span>{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</span>
-        <span class="meta-dot">•</span>
+        <span class="hp-dot">•</span>
         <span>{{ .ReadingTime }}{{ if eq $.Site.Language.Lang "ko" }}분{{ else }} min read{{ end }}</span>
       </div>
     </div>
@@ -48,61 +45,38 @@
 </section>
 {{ end }}
 
-<!-- Grid Layout -->
-<section class="grid-layout">
+{{/* ── Main grid: 2x2 cards + sidebar ── */}}
+<section class="hp-main">
 
-  <!-- Large Card: 2nd post -->
-  {{ $large := index $posts 1 }}
-  {{ with $large }}
-  <article class="grid-card large">
-    <a href="{{ .Permalink }}">
-      <div class="card-visual">
+  {{/* 2×2 card grid */}}
+  <div class="hp-cards">
+    {{ range after 1 $posts | first 4 }}
+    <a href="{{ .Permalink }}" class="hp-card">
+      <div class="hp-card__visual">
         {{ with .Params.image }}
         <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
         {{ end }}
       </div>
-      <div class="card-text">
+      <div class="hp-card__body">
         {{ partial "subtopic-chip.html" . }}
-        <h2 class="card-heading">{{ .Title }}</h2>
-        <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
-        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+        <h2 class="hp-card__title">{{ .Title }}</h2>
+        <p class="hp-card__excerpt">{{ .Summary | plainify | truncate 100 }}</p>
+        <div class="hp-card__meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
       </div>
     </a>
-  </article>
-  {{ end }}
-
-  <!-- Medium Cards: 3rd–6th posts (wrapped to force new row) -->
-  <div class="medium-row">
-  {{ range after 2 $posts | first 4 }}
-  <article class="grid-card medium">
-    <a href="{{ .Permalink }}">
-      <div class="card-visual">
-        {{ with .Params.image }}
-        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-        {{ end }}
-      </div>
-      <div class="card-text">
-        {{ partial "subtopic-chip.html" . }}
-        <h3 class="card-heading">{{ .Title }}</h3>
-        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-      </div>
-    </a>
-  </article>
-  {{ end }}
+    {{ end }}
   </div>
 
-  <!-- List Sidebar: 7th–14th posts -->
-  <aside class="grid-list">
-    <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
-    {{ range after 6 $posts | first 8 }}
-    <article class="list-item">
-      <a href="{{ .Permalink }}">
-        <h5 class="list-heading">{{ .Title }}</h5>
-        <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-      </a>
-    </article>
+  {{/* Latest sidebar */}}
+  <aside class="hp-latest">
+    <h4 class="hp-latest__title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
+    {{ range after 5 $posts | first 8 }}
+    <a href="{{ .Permalink }}" class="hp-latest__item">
+      <span class="hp-latest__name">{{ .Title }}</span>
+      <span class="hp-latest__date">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</span>
+    </a>
     {{ end }}
-    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
+    <a href="{{ "all-posts" | relLangURL }}" class="hp-latest__more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
   </aside>
 
 </section>

@@ -133,7 +133,6 @@
 /* Medium Cards */
 .grid-card.medium {
   grid-column: span 6;
-  grid-row: 2;
 }
 
 .grid-card.medium .card-visual {

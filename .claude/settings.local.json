@@ -122,7 +122,26 @@
       "Bash(python3:*)",
       "Bash(# Check npc.gd for animation names too grep -rn \"\"walk\\\\|idle\\\\|anim\"\" /Users/jake/new-game-project/scripts/entities/npc.gd)",
       "Bash(/Users/jake/new-game-project/scenes/world/dungeon_area.tscn:*)",
-      "Bash(/Users/jake/new-game-project/scenes/world/boss_room.tscn:*)"
+      "Bash(/Users/jake/new-game-project/scenes/world/boss_room.tscn:*)",
+      "Bash(# Active docs \\(non-archive\\) 에서 남은 stale 패턴 종합 체크 echo \"\"=== ja/japanese references \\(content is EN+KO now\\) ===\"\" grep -r \"\"\\\\bja\\\\b\\\\|japanese\\\\|日本語\\\\|JA\\\\b\"\" . --include=\"\"*.md\"\" --include=\"\"*.py\"\" --include=\"\"*.yml\"\" -l --exclude-dir=.git --exclude-dir=archive --exclude-dir=\"\"\\\\.claude/archive\"\")",
+      "Bash(__NEW_LINE_8cf552f13502f734__ echo \"\")",
+      "Bash(__NEW_LINE_3bcdd42022123977__ echo \"\")",
+      "Bash(# Google Indexing API workflow 동작 확인 grep -A 30 \"\"google.indexing\\\\|google_indexing\\\\|indexing\"\" .github/workflows/daily-content.yml)",
+      "Bash(mdfind:*)",
+      "Bash(do grep '^title:' \"content/en/tech/$f\")",
+      "Bash(__NEW_LINE_081de41ce21c39cd__ echo \"\")",
+      "Bash(do grep '^title:' \"content/ko/tech/$f\")",
+      "Bash(__NEW_LINE_e9c97f291e6a35a8__ echo \"\")",
+      "Bash(# Check Open Graph / Schema.org in Hugo templates grep -r \"\"og:\\\\|twitter:\\\\|schema\\\\|application/ld+json\\\\|og:title\\\\|og:description\"\" /Users/jake/jakes-insights/layouts/)",
+      "Bash(# Check existing Schema.org structured data grep -r \"\"application/ld+json\\\\|schema.org\\\\|@type\\\\|Article\\\\|BlogPosting\\\\|FAQPage\"\" /Users/jake/jakes-insights/layouts/)",
+      "Bash(# Check if FAQPage schema is already implemented grep -r \"\"FAQPage\\\\|faq\\\\|HowTo\\\\|BlogPosting\\\\|Article.*schema\"\" /Users/jake/jakes-insights/layouts/ # Check what partials are loaded in single.html / baseof.html grep -r \"\"partial\\\\|block\"\" /Users/jake/jakes-insights/layouts/_default/baseof.html)",
+      "Bash(# 현재 포스트 현황 echo \"\"=== 포스트 수 ===\"\" ls /Users/jake/jakes-insights/content/en/tech/*.md)",
+      "Bash(# KO AI 포스트들도 확인 grep -l \"\"AI\\\\|LLM\\\\|GPT\\\\|Claude\\\\|Gemini\\\\|ChatGPT\\\\|anthropic\\\\|openai\"\" /Users/jake/jakes-insights/content/ko/tech/*.md)",
+      "Bash(# 수익화 관련 현황 echo \"\"=== AdSense 현황 ===\"\" grep -r \"\"adsbygoogle\\\\|ca-pub\\\\|adsense\"\" /Users/jake/jakes-insights/layouts/)",
+      "Bash(# 방금 만든 pillar 페이지들만 플레이스홀더 - 정상 # 다음 우선순위 파악: 수익화, UX, 콘텐츠 전략 echo \"\"=== 수익화 현황 ===\"\" grep -r \"\"affiliate\\\\|amazon\\\\|coupang\\\\|쿠팡\"\" /Users/jake/jakes-insights/scripts/affiliate_config.py)",
+      "Read(//opt/homebrew/Cellar/gh/2.87.3/bin/**)",
+      "Bash(# 이미지 스크립트 에이전트 결과 확인 cat /private/tmp/claude-501/-Users-jake-jakes-insights/tasks/ad31fe6.output)",
+      "Bash(UNSPLASH_ACCESS_KEY=dDi7UAuHSDBVyq-31s32MgzHxZmxKt2ThEO_B_rpaZ8 python3:*)"
     ]
   }
 }

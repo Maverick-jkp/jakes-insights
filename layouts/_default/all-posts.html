@@ -33,6 +33,11 @@
         {{ $subtopic = strings.TrimPrefix "subtopic:" . }}
       {{ end }}
     {{ end }}
+    {{/*
+      Card: <a> wraps everything for clickability.
+      Chip is INSIDE the <a> but uses pointer-events:none so clicks pass through
+      to the <a>, while JS intercepts chip clicks for filtering.
+    */}}
     <a href="{{ .Permalink }}" class="post-card" data-subtopic="{{ $subtopic }}">
       <div class="post-card-image-wrap">
         {{ with .Params.image }}
@@ -42,9 +47,7 @@
         {{ end }}
       </div>
       <div class="post-card-content">
-        {{ if $subtopic }}
         {{ partial "subtopic-chip.html" . }}
-        {{ end }}
         <h2 class="post-card-title">{{ .Title }}</h2>
         <p class="post-card-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
         <div class="post-card-meta">
@@ -63,7 +66,6 @@
 
 <script>
 (function () {
-  // Read ?subtopic= from URL on page load
   const urlParams = new URLSearchParams(window.location.search);
   const initialFilter = urlParams.get('subtopic') || 'all';
 
@@ -76,47 +78,33 @@
   function applyFilter(filter) {
     let visible = 0;
     cards.forEach(card => {
-      const cardSubtopic = card.dataset.subtopic || '';
-      const show = filter === 'all' || cardSubtopic === filter;
+      const show = filter === 'all' || (card.dataset.subtopic || '') === filter;
       card.dataset.hidden = show ? 'false' : 'true';
       if (show) visible++;
     });
     noResults.classList.toggle('visible', visible === 0);
+    buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === filter));
 
-    buttons.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.filter === filter);
-    });
-
-    // Update URL without reload
     const url = new URL(window.location);
-    if (filter === 'all') {
-      url.searchParams.delete('subtopic');
-    } else {
-      url.searchParams.set('subtopic', filter);
-    }
+    if (filter === 'all') url.searchParams.delete('subtopic');
+    else url.searchParams.set('subtopic', filter);
     window.history.replaceState({}, '', url);
   }
 
-  // Button clicks
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
-  });
+  buttons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
 
-  // Chip clicks inside cards — navigate to all-posts with filter (chip is <a>, default behavior handles it)
-  // But we can intercept to keep SPA-like feel
+  // Chip clicks — intercept to filter instead of navigating
   cards.forEach(card => {
     const chip = card.querySelector('.subtopic-chip');
     if (chip) {
       chip.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const subtopic = chip.dataset.subtopic;
-        applyFilter(subtopic);
+        applyFilter(chip.dataset.subtopic);
       });
     }
   });
 
-  // Apply on load
   applyFilter(initialFilter);
 })();
 </script>

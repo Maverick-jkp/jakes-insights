@@ -2,6 +2,9 @@
   subtopic-chip.html — renders a colored Notion-style subtopic chip.
   Usage: {{ partial "subtopic-chip.html" . }}
   Expects a Page context. Reads the "subtopic:*" tag from .Params.tags.
+
+  Uses <span> (not <a>) to avoid nested <a> issues when inside card links.
+  Filtering/navigation is handled via JS in all-posts.html and single.html.
 */}}
 
 {{ $subtopic := "" }}
@@ -23,7 +26,7 @@
   "other"    "Tech"
 }}
 {{ $label := index $labels $subtopic | default "Tech" }}
-<a href="{{ "/all-posts" | relLangURL }}?subtopic={{ $subtopic }}"
-   class="subtopic-chip"
-   data-subtopic="{{ $subtopic }}">{{ $label }}</a>
+<span class="subtopic-chip"
+      data-subtopic="{{ $subtopic }}"
+      data-subtopic-url="{{ "/all-posts" | relLangURL }}?subtopic={{ $subtopic }}">{{ $label }}</span>
 {{ end }}

@@ -71,7 +71,8 @@
   </article>
   {{ end }}
 
-  <!-- Medium Cards: 3rd–6th posts -->
+  <!-- Medium Cards: 3rd–6th posts (wrapped to force new row) -->
+  <div class="medium-row">
   {{ range after 2 $posts | first 4 }}
   <article class="grid-card medium">
     <a href="{{ .Permalink }}">
@@ -88,6 +89,7 @@
     </a>
   </article>
   {{ end }}
+  </div>
 
   <!-- List Sidebar: 7th–14th posts -->
   <aside class="grid-list">

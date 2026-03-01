@@ -130,10 +130,18 @@
   font-size: var(--text-2xl);
 }
 
+/* Medium Cards row wrapper — spans full 12 cols, makes its own 2-col grid */
+.medium-row {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
 /* Medium Cards */
 .grid-card.medium {
-  grid-column: span 6;
-  grid-row: 2;
+  grid-column: span 1;
 }
 
 .grid-card.medium .card-visual {
@@ -307,8 +315,8 @@
     grid-column: span 6;
   }
 
-  .grid-card.medium {
-    grid-column: span 3;
+  .medium-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .grid-list {
@@ -341,9 +349,13 @@
   }
 
   .grid-card.large,
-  .grid-card.medium,
   .grid-list {
     grid-column: span 1;
+  }
+
+  .medium-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
   }
 
   .grid-card.large .card-visual,
@@ -363,5 +375,9 @@
 
   .hero-description {
     display: none;
+  }
+
+  .medium-row {
+    grid-template-columns: 1fr;
   }
 }

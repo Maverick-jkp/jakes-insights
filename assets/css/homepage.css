@@ -111,15 +111,29 @@
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--space-xl) var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Top Row: Large Card + Sidebar */
+.grid-top {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: stretch;
+}
+
+/* Bottom Row: 2x2 Medium Cards */
+.grid-bottom {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-xl);
 }
 
 /* Large Card */
 .grid-card.large {
-  grid-column: span 8;
-  grid-row: 1;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .grid-card.large .card-visual {
@@ -131,21 +145,12 @@
 }
 
 /* Medium Cards */
-.grid-card.medium {
-  grid-column: span 6;
-}
-
 .grid-card.medium .card-visual {
   height: 200px;
 }
 
 .grid-card.medium .card-heading {
   font-size: var(--text-lg);
-}
-
-/* Sidebar: row 1 only, next to large card */
-.grid-list {
-  grid-row: 1;
 }
 
 /* Shared Card Styles */
@@ -225,14 +230,12 @@
 /* === List Sidebar === */
 
 .grid-list {
-  grid-column: span 4;
+  flex: 0 0 320px;
   background: var(--bg-tertiary);
   border: 1px solid var(--accent-gray);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
-  align-self: start;
-  position: sticky;
-  top: 80px;
+  overflow-y: auto;
 }
 
 .list-title {
@@ -298,21 +301,12 @@
 /* === Responsive === */
 
 @media (max-width: 1024px) {
-  .grid-layout {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .grid-card.large {
-    grid-column: span 6;
-  }
-
-  .grid-card.medium {
-    grid-column: span 3;
-  }
-
   .grid-list {
-    grid-column: span 6;
-    position: static;
+    flex: 0 0 260px;
+  }
+
+  .grid-bottom {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -334,15 +328,17 @@
   }
 
   .grid-layout {
-    grid-template-columns: 1fr;
     padding: 0 var(--space-md) var(--space-3xl);
     gap: var(--space-lg);
   }
 
-  .grid-card.large,
-  .grid-card.medium,
+  .grid-top {
+    flex-direction: column;
+  }
+
   .grid-list {
-    grid-column: span 1;
+    flex: none;
+    width: 100%;
   }
 
   .grid-card.large .card-visual,

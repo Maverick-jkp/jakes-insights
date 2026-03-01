@@ -119,6 +119,7 @@
 /* Large Card */
 .grid-card.large {
   grid-column: span 8;
+  grid-row: 1;
 }
 
 .grid-card.large .card-visual {
@@ -132,6 +133,7 @@
 /* Medium Cards */
 .grid-card.medium {
   grid-column: span 6;
+  grid-row: 2;
 }
 
 .grid-card.medium .card-visual {
@@ -140,6 +142,11 @@
 
 .grid-card.medium .card-heading {
   font-size: var(--text-lg);
+}
+
+/* Sidebar stays in row 1, spanning rows */
+.grid-list {
+  grid-row: 1 / 3;
 }
 
 /* Shared Card Styles */
@@ -220,7 +227,6 @@
 
 .grid-list {
   grid-column: span 4;
-  grid-row: span 3;
   background: var(--bg-tertiary);
   border: 1px solid var(--accent-gray);
   border-radius: var(--radius-lg);

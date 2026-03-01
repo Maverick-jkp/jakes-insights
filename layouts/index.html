@@ -62,7 +62,7 @@
         {{ end }}
       </div>
       <div class="card-text">
-        <div class="card-label">{{ if eq $.Site.Language.Lang "ko" }}분석{{ else }}Analysis{{ end }}</div>
+        {{ with index .Params.categories 0 }}<div class="card-label">{{ . }}</div>{{ end }}
         <h2 class="card-heading">{{ .Title }}</h2>
         <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
         <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>

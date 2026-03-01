@@ -71,6 +71,20 @@
   </article>
   {{ end }}
 
+  <!-- List Sidebar: 7th–14th posts -->
+  <aside class="grid-list">
+    <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
+    {{ range after 6 $posts | first 8 }}
+    <article class="list-item">
+      <a href="{{ .Permalink }}">
+        <h5 class="list-heading">{{ .Title }}</h5>
+        <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+      </a>
+    </article>
+    {{ end }}
+    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
+  </aside>
+
   <!-- Medium Cards: 3rd–6th posts -->
   {{ range after 2 $posts | first 4 }}
   <article class="grid-card medium">
@@ -87,20 +101,6 @@
     </a>
   </article>
   {{ end }}
-
-  <!-- List Sidebar: 7th–14th posts -->
-  <aside class="grid-list">
-    <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
-    {{ range after 6 $posts | first 8 }}
-    <article class="list-item">
-      <a href="{{ .Permalink }}">
-        <h5 class="list-heading">{{ .Title }}</h5>
-        <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-      </a>
-    </article>
-    {{ end }}
-    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
-  </aside>
 
 </section>
 

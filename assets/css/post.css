@@ -20,8 +20,12 @@
 }
 
 .post-header .subtopic-chip {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
   display: inline-flex;
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  letter-spacing: 0.07em;
 }
 
 .post-title {

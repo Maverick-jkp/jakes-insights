@@ -9,18 +9,17 @@
   </div>
 
   <!-- Subtopic Filter Bar -->
-  <div class="subtopic-filter-bar" id="subtopicFilterBar">
-    <span class="filter-label">{{ if eq .Language.Lang "ko" }}필터:{{ else }}Filter:{{ end }}</span>
-    <button class="subtopic-filter-btn active" data-filter="all">
+  <div class="apf-bar" id="subtopicFilterBar">
+    <button class="apf-btn apf-btn--all active" data-filter="all">
       {{ if eq .Language.Lang "ko" }}전체{{ else }}All{{ end }}
     </button>
-    <button class="subtopic-filter-btn" data-filter="ai">AI</button>
-    <button class="subtopic-filter-btn" data-filter="security">Security</button>
-    <button class="subtopic-filter-btn" data-filter="devtools">DevTools</button>
-    <button class="subtopic-filter-btn" data-filter="cloud">Cloud</button>
-    <button class="subtopic-filter-btn" data-filter="data">Data</button>
-    <button class="subtopic-filter-btn" data-filter="web">Web</button>
-    <button class="subtopic-filter-btn" data-filter="mobile">Mobile</button>
+    <button class="apf-btn" data-filter="ai" data-color="ai">✦ AI</button>
+    <button class="apf-btn" data-filter="security" data-color="security">✦ Security</button>
+    <button class="apf-btn" data-filter="devtools" data-color="devtools">✦ DevTools</button>
+    <button class="apf-btn" data-filter="cloud" data-color="cloud">✦ Cloud</button>
+    <button class="apf-btn" data-filter="data" data-color="data">✦ Data</button>
+    <button class="apf-btn" data-filter="web" data-color="web">✦ Web</button>
+    <button class="apf-btn" data-filter="mobile" data-color="mobile">✦ Mobile</button>
   </div>
 
   <div class="all-posts-grid" id="allPostsGrid">
@@ -33,11 +32,8 @@
         {{ $subtopic = strings.TrimPrefix "subtopic:" . }}
       {{ end }}
     {{ end }}
-    {{/*
-      Card: <a> wraps everything for clickability.
-      Chip is INSIDE the <a> but uses pointer-events:none so clicks pass through
-      to the <a>, while JS intercepts chip clicks for filtering.
-    */}}
+    {{ $labels := dict "ai" "AI" "security" "Security" "devtools" "DevTools" "cloud" "Cloud" "data" "Data" "web" "Web" "mobile" "Mobile" "other" "Tech" }}
+    {{ $label := index $labels $subtopic | default "Tech" }}
     <a href="{{ .Permalink }}" class="post-card" data-subtopic="{{ $subtopic }}">
       <div class="post-card-image-wrap">
         {{ with .Params.image }}
@@ -47,12 +43,14 @@
         {{ end }}
       </div>
       <div class="post-card-content">
-        {{ partial "subtopic-chip.html" . }}
         <h2 class="post-card-title">{{ .Title }}</h2>
         <p class="post-card-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
         <div class="post-card-meta">
           <span>{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</span>
           <span>{{ .ReadingTime }}{{ if eq $.Site.Language.Lang "ko" }}분{{ else }} min{{ end }}</span>
+          {{ if $subtopic }}
+          <span class="post-card-chip post-card-chip--{{ $subtopic }}" data-subtopic="{{ $subtopic }}">{{ $label }}</span>
+          {{ end }}
         </div>
       </div>
     </a>
@@ -72,38 +70,48 @@
   const filterBar = document.getElementById('subtopicFilterBar');
   const grid = document.getElementById('allPostsGrid');
   const noResults = document.getElementById('noResultsMsg');
-  const cards = grid ? Array.from(grid.querySelectorAll('.post-card')) : [];
-  const buttons = filterBar ? Array.from(filterBar.querySelectorAll('.subtopic-filter-btn')) : [];
+  const cards = grid ? Array.from(grid.querySelectorAll('a.post-card')) : [];
+  const buttons = filterBar ? Array.from(filterBar.querySelectorAll('.apf-btn')) : [];
 
   function applyFilter(filter) {
     let visible = 0;
     cards.forEach(card => {
-      const show = filter === 'all' || (card.dataset.subtopic || '') === filter;
-      card.dataset.hidden = show ? 'false' : 'true';
-      if (show) visible++;
+      const subtopic = card.getAttribute('data-subtopic') || '';
+      const show = filter === 'all' || subtopic === filter;
+      if (show) {
+        card.style.display = '';
+        visible++;
+      } else {
+        card.style.display = 'none';
+      }
     });
-    noResults.classList.toggle('visible', visible === 0);
-    buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === filter));
+    if (noResults) noResults.classList.toggle('visible', visible === 0);
+    buttons.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-filter') === filter));
 
-    const url = new URL(window.location);
+    const url = new URL(window.location.href);
     if (filter === 'all') url.searchParams.delete('subtopic');
     else url.searchParams.set('subtopic', filter);
-    window.history.replaceState({}, '', url);
+    window.history.replaceState({}, '', url.toString());
   }
 
-  buttons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.filter)));
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      applyFilter(this.getAttribute('data-filter'));
+    });
+  });
 
-  // Chip clicks — intercept to filter instead of navigating
-  cards.forEach(card => {
-    const chip = card.querySelector('.subtopic-chip');
-    if (chip) {
-      chip.addEventListener('click', (e) => {
+  // Chip clicks inside cards — filter without navigating
+  if (grid) {
+    grid.addEventListener('click', function(e) {
+      const chip = e.target.closest('.post-card-chip');
+      if (chip) {
         e.preventDefault();
         e.stopPropagation();
-        applyFilter(chip.dataset.subtopic);
-      });
-    }
-  });
+        applyFilter(chip.getAttribute('data-subtopic'));
+      }
+    });
+  }
 
   applyFilter(initialFilter);
 })();

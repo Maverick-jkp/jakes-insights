@@ -4,7 +4,7 @@ date: 2026-02-21T15:51:50+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["ai real estate", "tech", "real", "estate", "React", "Rust"]
+tags: ["ai real estate", "tech", "real", "estate", "React", "Rust", "subtopic:ai"]
 description: "Discover how AI real estate tools are transforming property search, pricing, and investment decisions. Start making smarter moves today."
 image: "/images/20260221-ai-real-estate.jpg"
 technologies: ["React", "Rust", "Go"]

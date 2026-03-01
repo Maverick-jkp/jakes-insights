@@ -4,7 +4,7 @@ date: 2026-03-01T21:01:55+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Docker vs Podman: which container tool should you use", "tech", "docker", "podman:", "which", "container"]
+tags: ["Docker vs Podman: which container tool should you use", "tech", "docker", "podman:", "which", "container", "subtopic:devtools"]
 description: "Docker vs Podman compared side by side. Discover key differences in security, performance, and workflow to choose the right container tool for your needs."
 image: "/images/20260301-docker-vs-podman-which-contain.jpg"
 technologies: ["Docker", "Kubernetes", "GitHub Actions", "Linux", "Go"]

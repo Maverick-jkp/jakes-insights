@@ -4,7 +4,7 @@ date: 2026-02-23T19:59:21+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["cloud computing basics", "tech", "cloud", "computing", "basics", "Kubernetes"]
+tags: ["cloud computing basics", "tech", "cloud", "computing", "basics", "Kubernetes", "subtopic:cloud"]
 description: "Discover cloud computing basics and learn how storage, servers, and software work together to power modern business. Start building your knowledge today."
 image: "/images/20260223-cloud-computing-basics.jpg"
 technologies: ["Kubernetes", "AWS", "Azure", "GCP", "OpenAI"]

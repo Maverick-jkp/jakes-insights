@@ -8,11 +8,32 @@
     <p class="all-posts-count">{{ len $posts }}{{ if eq .Language.Lang "ko" }}개의 글{{ else }} articles{{ end }}</p>
   </div>
 
-  <div class="all-posts-grid">
+  <!-- Subtopic Filter Bar -->
+  <div class="subtopic-filter-bar" id="subtopicFilterBar">
+    <span class="filter-label">{{ if eq .Language.Lang "ko" }}필터:{{ else }}Filter:{{ end }}</span>
+    <button class="subtopic-filter-btn active" data-filter="all">
+      {{ if eq .Language.Lang "ko" }}전체{{ else }}All{{ end }}
+    </button>
+    <button class="subtopic-filter-btn" data-filter="ai">AI</button>
+    <button class="subtopic-filter-btn" data-filter="security">Security</button>
+    <button class="subtopic-filter-btn" data-filter="devtools">DevTools</button>
+    <button class="subtopic-filter-btn" data-filter="cloud">Cloud</button>
+    <button class="subtopic-filter-btn" data-filter="data">Data</button>
+    <button class="subtopic-filter-btn" data-filter="web">Web</button>
+    <button class="subtopic-filter-btn" data-filter="mobile">Mobile</button>
+  </div>
+
+  <div class="all-posts-grid" id="allPostsGrid">
     {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
     {{ $posts := where $currentLangPages "Type" "!=" "page" }}
     {{ range $posts }}
-    <a href="{{ .Permalink }}" class="post-card">
+    {{ $subtopic := "" }}
+    {{ range .Params.tags }}
+      {{ if hasPrefix . "subtopic:" }}
+        {{ $subtopic = strings.TrimPrefix "subtopic:" . }}
+      {{ end }}
+    {{ end }}
+    <a href="{{ .Permalink }}" class="post-card" data-subtopic="{{ $subtopic }}">
       <div class="post-card-image-wrap">
         {{ with .Params.image }}
         <img class="post-card-image" src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
@@ -21,6 +42,9 @@
         {{ end }}
       </div>
       <div class="post-card-content">
+        {{ if $subtopic }}
+        {{ partial "subtopic-chip.html" . }}
+        {{ end }}
         <h2 class="post-card-title">{{ .Title }}</h2>
         <p class="post-card-excerpt">{{ .Summary | plainify | truncate 120 }}</p>
         <div class="post-card-meta">
@@ -30,7 +54,71 @@
       </div>
     </a>
     {{ end }}
+    <p class="no-results-msg" id="noResultsMsg">
+      {{ if eq .Language.Lang "ko" }}해당 카테고리의 글이 없습니다.{{ else }}No posts found for this topic.{{ end }}
+    </p>
   </div>
 
 </div>
+
+<script>
+(function () {
+  // Read ?subtopic= from URL on page load
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialFilter = urlParams.get('subtopic') || 'all';
+
+  const filterBar = document.getElementById('subtopicFilterBar');
+  const grid = document.getElementById('allPostsGrid');
+  const noResults = document.getElementById('noResultsMsg');
+  const cards = grid ? Array.from(grid.querySelectorAll('.post-card')) : [];
+  const buttons = filterBar ? Array.from(filterBar.querySelectorAll('.subtopic-filter-btn')) : [];
+
+  function applyFilter(filter) {
+    let visible = 0;
+    cards.forEach(card => {
+      const cardSubtopic = card.dataset.subtopic || '';
+      const show = filter === 'all' || cardSubtopic === filter;
+      card.dataset.hidden = show ? 'false' : 'true';
+      if (show) visible++;
+    });
+    noResults.classList.toggle('visible', visible === 0);
+
+    buttons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.filter === filter);
+    });
+
+    // Update URL without reload
+    const url = new URL(window.location);
+    if (filter === 'all') {
+      url.searchParams.delete('subtopic');
+    } else {
+      url.searchParams.set('subtopic', filter);
+    }
+    window.history.replaceState({}, '', url);
+  }
+
+  // Button clicks
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+  });
+
+  // Chip clicks inside cards — navigate to all-posts with filter (chip is <a>, default behavior handles it)
+  // But we can intercept to keep SPA-like feel
+  cards.forEach(card => {
+    const chip = card.querySelector('.subtopic-chip');
+    if (chip) {
+      chip.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const subtopic = chip.dataset.subtopic;
+        applyFilter(subtopic);
+      });
+    }
+  });
+
+  // Apply on load
+  applyFilter(initialFilter);
+})();
+</script>
+
 {{ end }}

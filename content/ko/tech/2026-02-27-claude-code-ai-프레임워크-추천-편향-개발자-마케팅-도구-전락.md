@@ -4,7 +4,7 @@ date: 2026-02-27T19:52:46+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Claude Code AI \ud504\ub808\uc784\uc6cc\ud06c \ucd94\ucc9c \ud3b8\ud5a5 \uac1c\ubc1c\uc790 \ub9c8\ucf00\ud305 \ub3c4\uad6c \uc804\ub77d", "tech", "claude", "code", "\ud504\ub808\uc784\uc6cc\ud06c", "\uac1c\ubc1c\uc790"]
+tags: ["Claude Code AI 프레임워크 추천 편향 개발자 마케팅 도구 전락", "tech", "claude", "code", "프레임워크", "개발자", "subtopic:web"]
 description: "Claude Code가 특정 AI 프레임워크를 편향 추천하며 개발자 마케팅 도구로 전락하는 문제를 분석합니다. 실제 사례와 데이터로 편향성을 확인하고 현명한 기술 선택법을 알아보세요."
 image: "/images/20260227-claude-code-ai-프레임워크-추천-편향-개발자.jpg"
 technologies: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js"]

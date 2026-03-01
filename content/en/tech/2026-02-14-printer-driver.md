@@ -4,7 +4,7 @@ date: 2026-02-14T11:06:10+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["printer driver", "tech", "printer", "driver", "Python", "React"]
+tags: ["printer driver", "tech", "printer", "driver", "Python", "React", "subtopic:web"]
 description: "Learn how to install, update, and troubleshoot printer drivers with our step-by-step guide. Fix common issues and optimize your printing setup today."
 image: "/images/20260214-printer-driver.jpg"
 technologies: ["Python", "React", "Azure", "Linux", "Rust"]

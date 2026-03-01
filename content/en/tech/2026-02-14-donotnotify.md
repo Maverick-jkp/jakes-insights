@@ -4,7 +4,7 @@ date: 2026-02-14T11:13:59+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["donotnotify", "tech", "React", "AWS"]
+tags: ["donotnotify", "tech", "React", "AWS", "subtopic:devtools"]
 description: "Take control of your notifications with DoNotNotify. Learn how to reduce digital distractions, boost productivity, and reclaim your focus today."
 image: "/images/20260214-donotnotify.jpg"
 technologies: ["React", "AWS", "Linux", "Rust", "Go"]

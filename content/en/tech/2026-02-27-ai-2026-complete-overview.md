@@ -4,7 +4,7 @@ date: 2026-02-27T16:18:24+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["ai 2026", "tech", "ai", "llm", "openai", "artificial intelligence"]
+tags: ["ai 2026", "tech", "ai", "llm", "openai", "artificial intelligence", "subtopic:ai"]
 description: "A comprehensive guide to AI in 2026: LLM benchmarks, coding tools, safety debates, privacy risks, and real-world deployment outcomes."
 image: "/images/2026-02-27-ai-2026-complete-overview.jpg"
 ---

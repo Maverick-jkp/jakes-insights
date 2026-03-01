@@ -880,6 +880,71 @@ Return improved version (body only, no title):""",
 
         return re.sub(r'^#+\s*', '', text.strip('"').strip("'").strip('*'))
 
+    # Subtopic keyword mapping — used by _assign_subtopic()
+    SUBTOPIC_KEYWORDS = {
+        "ai": [
+            "ai", "artificial intelligence", "machine learning", "deep learning", "llm",
+            "gpt", "claude", "gemini", "openai", "anthropic", "mistral", "llama",
+            "chatgpt", "copilot", "generative", "neural", "transformer", "diffusion",
+            "stable diffusion", "midjourney", "dall-e", "hugging face", "pytorch",
+            "tensorflow", "inference", "rag", "embedding", "vector", "fine-tuning",
+            "prompt", "agent", "multimodal", "vision model", "speech recognition",
+        ],
+        "security": [
+            "security", "cybersecurity", "vulnerability", "exploit", "cve", "hack",
+            "breach", "malware", "ransomware", "phishing", "zero-day", "encryption",
+            "authentication", "oauth", "jwt", "ssl", "tls", "firewall", "soc",
+            "penetration", "pentest", "infosec", "devsecops", "compliance", "gdpr",
+            "supply chain attack", "social engineering", "insider threat",
+        ],
+        "devtools": [
+            "devtools", "developer tools", "ide", "vscode", "cursor", "neovim",
+            "github", "gitlab", "git", "ci/cd", "github actions", "docker",
+            "kubernetes", "k8s", "terraform", "ansible", "jest", "pytest",
+            "testing", "debugging", "lint", "formatter", "package manager",
+            "npm", "pnpm", "bun", "cargo", "poetry", "uv", "mise",
+            "cli", "terminal", "shell", "zsh", "bash", "scripting",
+        ],
+        "cloud": [
+            "cloud", "aws", "azure", "gcp", "google cloud", "serverless", "lambda",
+            "ec2", "s3", "cloudflare", "vercel", "netlify", "heroku", "render",
+            "kubernetes", "container", "microservice", "infrastructure", "iaas",
+            "paas", "saas", "multi-cloud", "hybrid cloud", "edge computing",
+            "cdn", "load balancer", "auto scaling", "terraform", "pulumi",
+        ],
+        "data": [
+            "data", "database", "sql", "nosql", "postgresql", "mysql", "mongodb",
+            "redis", "elasticsearch", "analytics", "data science", "pandas",
+            "spark", "hadoop", "kafka", "data pipeline", "etl", "warehouse",
+            "snowflake", "bigquery", "dbt", "airflow", "grafana", "tableau",
+            "data engineering", "data lakehouse", "real-time", "streaming",
+        ],
+        "web": [
+            "web", "frontend", "backend", "fullstack", "react", "vue", "angular",
+            "svelte", "next.js", "nuxt", "astro", "remix", "javascript", "typescript",
+            "css", "html", "tailwind", "api", "rest", "graphql", "websocket",
+            "seo", "performance", "core web vitals", "accessibility", "pwa",
+            "browser", "chrome", "web assembly", "wasm",
+        ],
+        "mobile": [
+            "mobile", "ios", "android", "swift", "kotlin", "react native",
+            "flutter", "expo", "app store", "play store", "xcode", "android studio",
+            "push notification", "deep link", "in-app", "mobile app",
+        ],
+    }
+
+    def _assign_subtopic(self, keyword: str) -> str:
+        """Assign a subtopic based on keyword content. Returns subtopic slug."""
+        kw_lower = keyword.lower()
+        scores = {subtopic: 0 for subtopic in self.SUBTOPIC_KEYWORDS}
+        for subtopic, terms in self.SUBTOPIC_KEYWORDS.items():
+            for term in terms:
+                if term in kw_lower:
+                    # Longer matches score higher
+                    scores[subtopic] += len(term.split())
+        best = max(scores, key=lambda s: scores[s])
+        return best if scores[best] > 0 else "other"
+
     def _generate_tags(self, keyword: str, category: str, technologies: list = None) -> List[str]:
         """Generate meaningful tags from keyword, category, and technologies."""
         tags = []
@@ -890,6 +955,10 @@ Return improved version (body only, no title):""",
         # Add category as tag
         if category and category not in tags:
             tags.append(category)
+        # Add subtopic tag (always present, prefixed so it's identifiable)
+        subtopic = self._assign_subtopic(kw)
+        subtopic_tag = f"subtopic:{subtopic}"
+        tags.append(subtopic_tag)
         # Add individual words for multi-word keywords (skip stop words)
         stop_words = {'a', 'an', 'the', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was'}
         if ' ' in kw:
@@ -903,7 +972,7 @@ Return improved version (body only, no title):""",
                 t = str(tech).strip()
                 if t and t.lower() not in [x.lower() for x in tags]:
                     tags.append(t)
-        return tags[:6]  # Limit to 6 tags
+        return tags[:7]  # Limit to 7 tags (1 extra slot for subtopic)
 
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""

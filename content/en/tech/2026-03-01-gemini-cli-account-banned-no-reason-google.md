@@ -4,7 +4,7 @@ date: 2026-03-01T19:30:40+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Gemini CLI account banned no reason Google", "tech", "gemini", "cli", "account", "banned"]
+tags: ["Gemini CLI account banned no reason Google", "tech", "gemini", "cli", "account", "banned", "subtopic:ai"]
 description: "Gemini CLI account banned with no reason from Google? Discover why this happens and how to appeal or recover your access fast."
 image: "/images/20260301-gemini-cli-account-banned-no-r.jpg"
 technologies: ["AWS", "Claude", "GPT", "OpenAI", "Anthropic"]

@@ -4,7 +4,7 @@ date: 2026-02-24T20:03:06+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["FreeBSD", "AI-written", "WiFi"]
+tags: ["FreeBSD", "AI-written", "WiFi", "subtopic:devtools"]
 description: "Discover how a FreeBSD AI-written WiFi driver performs on MacBook in real-world tests. See actual speeds, stability, and surprising results."
 image: "/images/20260224-freebsd-aiwritten-wifi-driver-.jpg"
 technologies: ["Linux", "Rust", "Go"]

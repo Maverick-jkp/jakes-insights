@@ -4,7 +4,7 @@ date: 2026-02-25T20:03:33+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["innerhtml 보안 취약점 sethtml firefox 마이그레이션", "tech", "innerhtml", "취약점", "sethtml", "firefox"]
+tags: ["innerhtml 보안 취약점 sethtml firefox 마이그레이션", "tech", "innerhtml", "취약점", "sethtml", "firefox", "subtopic:web"]
 description: "innerHTML 보안 취약점을 setHTML API로 해결하는 방법을 알아보세요. Firefox 지원 현황과 실제 마이그레이션 코드 예제로 XSS 공격을 차단하고 더 안전한 웹 앱을 구현하세요."
 image: "/images/20260225-innerhtml-보안-취약점-sethtml-firef.jpg"
 technologies: ["JavaScript", "Go", "Java"]

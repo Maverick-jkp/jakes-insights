@@ -4,7 +4,7 @@ date: 2026-02-27T19:43:20+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Anthropic \uad6d\ubc29\ubd80 \uacc4\uc57d AI \uc548\uc804\uc131 \ud3ec\uae30 \ub17c\ub780", "tech", "anthropic", "\uad6d\ubc29\ubd80", "\uc548\uc804\uc131", "Claude"]
+tags: ["Anthropic 국방부 계약 AI 안전성 포기 논란", "tech", "anthropic", "국방부", "안전성", "Claude", "subtopic:ai"]
 description: "Anthropic의 국방부 계약이 AI 안전성 원칙과 충돌한다는 논란을 분석합니다. 이 결정이 AI 윤리와 미래에 미치는 영향을 지금 확인하세요."
 image: "/images/20260227-anthropic-국방부-계약-ai-안전성-포기-논란.jpg"
 technologies: ["Claude", "GPT", "OpenAI", "Anthropic", "Go"]

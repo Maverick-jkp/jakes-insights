@@ -1,0 +1,29 @@
+{{/*
+  subtopic-chip.html — renders a colored Notion-style subtopic chip.
+  Usage: {{ partial "subtopic-chip.html" . }}
+  Expects a Page context. Reads the "subtopic:*" tag from .Params.tags.
+*/}}
+
+{{ $subtopic := "" }}
+{{ range .Params.tags }}
+  {{ if hasPrefix . "subtopic:" }}
+    {{ $subtopic = strings.TrimPrefix "subtopic:" . }}
+  {{ end }}
+{{ end }}
+
+{{ if $subtopic }}
+{{ $labels := dict
+  "ai"       "AI"
+  "security" "Security"
+  "devtools" "DevTools"
+  "cloud"    "Cloud"
+  "data"     "Data"
+  "web"      "Web"
+  "mobile"   "Mobile"
+  "other"    "Tech"
+}}
+{{ $label := index $labels $subtopic | default "Tech" }}
+<a href="{{ "/all-posts" | relLangURL }}?subtopic={{ $subtopic }}"
+   class="subtopic-chip"
+   data-subtopic="{{ $subtopic }}">{{ $label }}</a>
+{{ end }}

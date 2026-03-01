@@ -455,3 +455,254 @@
     text-align: center;
   }
 }
+
+/* === Subtopic Chips === */
+/* Notion-style colored status chips for tech subtopics */
+
+.subtopic-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.subtopic-chip:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Subtopic colors — each unique */
+.subtopic-chip[data-subtopic="ai"] {
+  background: rgba(139, 92, 246, 0.15);
+  color: #7c3aed;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="ai"] {
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.subtopic-chip[data-subtopic="security"] {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="security"] {
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.38);
+}
+
+.subtopic-chip[data-subtopic="devtools"] {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="devtools"] {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.38);
+}
+
+.subtopic-chip[data-subtopic="cloud"] {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="cloud"] {
+  background: rgba(59, 130, 246, 0.18);
+  color: #60a5fa;
+  border-color: rgba(59, 130, 246, 0.38);
+}
+
+.subtopic-chip[data-subtopic="data"] {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="data"] {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.38);
+}
+
+.subtopic-chip[data-subtopic="web"] {
+  background: rgba(236, 72, 153, 0.12);
+  color: #db2777;
+  border: 1px solid rgba(236, 72, 153, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="web"] {
+  background: rgba(236, 72, 153, 0.18);
+  color: #f472b6;
+  border-color: rgba(236, 72, 153, 0.38);
+}
+
+.subtopic-chip[data-subtopic="mobile"] {
+  background: rgba(249, 115, 22, 0.12);
+  color: #ea580c;
+  border: 1px solid rgba(249, 115, 22, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="mobile"] {
+  background: rgba(249, 115, 22, 0.18);
+  color: #fb923c;
+  border-color: rgba(249, 115, 22, 0.38);
+}
+
+.subtopic-chip[data-subtopic="other"] {
+  background: rgba(107, 114, 128, 0.12);
+  color: #4b5563;
+  border: 1px solid rgba(107, 114, 128, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="other"] {
+  background: rgba(107, 114, 128, 0.18);
+  color: #9ca3af;
+  border-color: rgba(107, 114, 128, 0.38);
+}
+
+/* === All Posts Filter Bar === */
+
+.subtopic-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+  align-items: center;
+}
+
+.filter-label {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+  font-weight: var(--weight-medium);
+  margin-right: var(--space-xs);
+}
+
+.subtopic-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: 1px solid var(--accent-gray);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  transition: all var(--transition-base);
+}
+
+.subtopic-filter-btn:hover,
+.subtopic-filter-btn.active {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.subtopic-filter-btn[data-filter="all"].active {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.subtopic-filter-btn[data-filter="ai"].active {
+  background: rgba(139, 92, 246, 0.15);
+  color: #7c3aed;
+  border-color: rgba(139, 92, 246, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="ai"].active {
+  color: #a78bfa;
+}
+
+.subtopic-filter-btn[data-filter="security"].active {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="security"].active {
+  color: #f87171;
+}
+
+.subtopic-filter-btn[data-filter="devtools"].active {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="devtools"].active {
+  color: #34d399;
+}
+
+.subtopic-filter-btn[data-filter="cloud"].active {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+  border-color: rgba(59, 130, 246, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="cloud"].active {
+  color: #60a5fa;
+}
+
+.subtopic-filter-btn[data-filter="data"].active {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="data"].active {
+  color: #fbbf24;
+}
+
+.subtopic-filter-btn[data-filter="web"].active {
+  background: rgba(236, 72, 153, 0.12);
+  color: #db2777;
+  border-color: rgba(236, 72, 153, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="web"].active {
+  color: #f472b6;
+}
+
+.subtopic-filter-btn[data-filter="mobile"].active {
+  background: rgba(249, 115, 22, 0.12);
+  color: #ea580c;
+  border-color: rgba(249, 115, 22, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="mobile"].active {
+  color: #fb923c;
+}
+
+.subtopic-filter-btn[data-filter="other"].active {
+  background: rgba(107, 114, 128, 0.12);
+  color: #4b5563;
+  border-color: rgba(107, 114, 128, 0.4);
+}
+[data-theme="dark"] .subtopic-filter-btn[data-filter="other"].active {
+  color: #9ca3af;
+}
+
+/* Post cards hidden by filter */
+.post-card[data-hidden="true"] {
+  display: none;
+}
+
+.no-results-msg {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-4xl) var(--space-xl);
+  color: var(--text-tertiary);
+  font-size: var(--text-lg);
+  display: none;
+}
+
+.no-results-msg.visible {
+  display: block;
+}

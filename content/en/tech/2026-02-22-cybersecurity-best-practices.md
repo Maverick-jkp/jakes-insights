@@ -4,7 +4,7 @@ date: 2026-02-22T19:32:49+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["cybersecurity best practices", "tech", "cybersecurity", "best", "practices", "Rust"]
+tags: ["cybersecurity best practices", "tech", "cybersecurity", "best", "practices", "Rust", "subtopic:security"]
 description: "Protect your data with proven cybersecurity best practices. Learn simple steps to defend against threats and keep hackers out for good."
 image: "/images/20260222-cybersecurity-best-practices.jpg"
 technologies: ["Rust", "Go"]

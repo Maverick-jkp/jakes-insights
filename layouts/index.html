@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{/* WebSite Schema — enables Sitelinks Searchbox in Google */}}
+{{/* WebSite Schema */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -8,15 +8,7 @@
   "name": {{ .Site.Title | jsonify }},
   "url": {{ .Site.BaseURL | jsonify }},
   "description": {{ .Site.Params.description | jsonify }},
-  "inLanguage": ["en", "ko"],
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": {{ printf "%s/search?q={search_term_string}" .Site.BaseURL | jsonify }}
-    },
-    "query-input": "required name=search_term_string"
-  }
+  "inLanguage": ["en", "ko"]
 }
 </script>
 

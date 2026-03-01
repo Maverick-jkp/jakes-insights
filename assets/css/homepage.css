@@ -111,29 +111,15 @@
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--space-xl) var(--space-4xl);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xl);
-}
-
-/* Top Row: Large Card + Sidebar */
-.grid-top {
-  display: flex;
-  gap: var(--space-xl);
-  align-items: stretch;
-}
-
-/* Bottom Row: 2x2 Medium Cards */
-.grid-bottom {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: var(--space-xl);
 }
 
 /* Large Card */
 .grid-card.large {
-  flex: 1 1 0;
-  min-width: 0;
+  grid-column: span 8;
+  grid-row: 1;
 }
 
 .grid-card.large .card-visual {
@@ -145,12 +131,22 @@
 }
 
 /* Medium Cards */
+.grid-card.medium {
+  grid-column: span 6;
+  grid-row: 2;
+}
+
 .grid-card.medium .card-visual {
   height: 200px;
 }
 
 .grid-card.medium .card-heading {
   font-size: var(--text-lg);
+}
+
+/* Sidebar stays in row 1, spanning rows */
+.grid-list {
+  grid-row: 1 / 3;
 }
 
 /* Shared Card Styles */
@@ -230,12 +226,14 @@
 /* === List Sidebar === */
 
 .grid-list {
-  flex: 0 0 320px;
+  grid-column: span 4;
   background: var(--bg-tertiary);
   border: 1px solid var(--accent-gray);
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
-  overflow-y: auto;
+  align-self: start;
+  position: sticky;
+  top: 80px;
 }
 
 .list-title {
@@ -301,12 +299,21 @@
 /* === Responsive === */
 
 @media (max-width: 1024px) {
-  .grid-list {
-    flex: 0 0 260px;
+  .grid-layout {
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  .grid-bottom {
-    grid-template-columns: repeat(2, 1fr);
+  .grid-card.large {
+    grid-column: span 6;
+  }
+
+  .grid-card.medium {
+    grid-column: span 3;
+  }
+
+  .grid-list {
+    grid-column: span 6;
+    position: static;
   }
 }
 
@@ -328,17 +335,15 @@
   }
 
   .grid-layout {
+    grid-template-columns: 1fr;
     padding: 0 var(--space-md) var(--space-3xl);
     gap: var(--space-lg);
   }
 
-  .grid-top {
-    flex-direction: column;
-  }
-
+  .grid-card.large,
+  .grid-card.medium,
   .grid-list {
-    flex: none;
-    width: 100%;
+    grid-column: span 1;
   }
 
   .grid-card.large .card-visual,

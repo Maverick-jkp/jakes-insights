@@ -51,59 +51,56 @@
 <!-- Grid Layout -->
 <section class="grid-layout">
 
-  <!-- Top Row: Large Card + Sidebar -->
-  <div class="grid-top">
-    {{ $large := index $posts 1 }}
-    {{ with $large }}
-    <article class="grid-card large">
+  <!-- Large Card: 2nd post -->
+  {{ $large := index $posts 1 }}
+  {{ with $large }}
+  <article class="grid-card large">
+    <a href="{{ .Permalink }}">
+      <div class="card-visual">
+        {{ with .Params.image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ end }}
+      </div>
+      <div class="card-text">
+        {{ with index .Params.categories 0 }}<div class="card-label">{{ . }}</div>{{ end }}
+        <h2 class="card-heading">{{ .Title }}</h2>
+        <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
+        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+
+  <!-- Medium Cards: 3rd–6th posts -->
+  {{ range after 2 $posts | first 4 }}
+  <article class="grid-card medium">
+    <a href="{{ .Permalink }}">
+      <div class="card-visual">
+        {{ with .Params.image }}
+        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        {{ end }}
+      </div>
+      <div class="card-text">
+        <h3 class="card-heading">{{ .Title }}</h3>
+        <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+
+  <!-- List Sidebar: 7th–14th posts -->
+  <aside class="grid-list">
+    <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
+    {{ range after 6 $posts | first 8 }}
+    <article class="list-item">
       <a href="{{ .Permalink }}">
-        <div class="card-visual">
-          {{ with .Params.image }}
-          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-          {{ end }}
-        </div>
-        <div class="card-text">
-          {{ with index .Params.categories 0 }}<div class="card-label">{{ . }}</div>{{ end }}
-          <h2 class="card-heading">{{ .Title }}</h2>
-          <p class="card-description">{{ .Summary | plainify | truncate 140 }}</p>
-          <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-        </div>
+        <h5 class="list-heading">{{ .Title }}</h5>
+        <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
       </a>
     </article>
     {{ end }}
-
-    <aside class="grid-list">
-      <h4 class="list-title">{{ if eq .Site.Language.Lang "ko" }}최신 글{{ else }}Latest{{ end }}</h4>
-      {{ range after 6 $posts | first 8 }}
-      <article class="list-item">
-        <a href="{{ .Permalink }}">
-          <h5 class="list-heading">{{ .Title }}</h5>
-          <div class="list-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-        </a>
-      </article>
-      {{ end }}
-      <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
-    </aside>
-  </div>
-
-  <!-- Bottom Row: 2x2 Medium Cards -->
-  <div class="grid-bottom">
-    {{ range after 2 $posts | first 4 }}
-    <article class="grid-card medium">
-      <a href="{{ .Permalink }}">
-        <div class="card-visual">
-          {{ with .Params.image }}
-          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-          {{ end }}
-        </div>
-        <div class="card-text">
-          <h3 class="card-heading">{{ .Title }}</h3>
-          <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-        </div>
-      </a>
-    </article>
-    {{ end }}
-  </div>
+    <a href="{{ "all-posts" | relLangURL }}" class="list-more">{{ if eq .Site.Language.Lang "ko" }}전체 보기 →{{ else }}View All →{{ end }}</a>
+  </aside>
 
 </section>
 

@@ -144,9 +144,9 @@
   font-size: var(--text-lg);
 }
 
-/* Sidebar stays in row 1, spanning rows */
+/* Sidebar: row 1 only, next to large card */
 .grid-list {
-  grid-row: 1 / 3;
+  grid-row: 1;
 }
 
 /* Shared Card Styles */

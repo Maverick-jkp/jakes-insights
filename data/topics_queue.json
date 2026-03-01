@@ -7163,39 +7163,6 @@
       "completed_at": "2026-02-28T10:26:43.857211+00:00"
     },
     {
-      "id": "1059-en-tech-Anthropic-refuses-Do",
-      "keyword": "Anthropic refuses DoW surveillance OpenAI accepts — AI ethics split",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-02-28T07:30:34.163403",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Developers actively choosing between Claude and GPT APIs want a clear ethical comparison before committing infrastructure",
-      "angle": "COMPARISON: Anthropic's public refusal vs OpenAI's classified deal as a forcing function for platform selection",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Anthropic lose-lose situation in Pentagon demand for AI policy change",
-          "url": "https://www.cnbc.com/2026/02/27/anthropic-pentagon-ai-policy-war-spying.html",
-          "source": "www.cnbc.com"
-        },
-        {
-          "title": "Trump has ordered government agencies to stop using Anthropic AI tools",
-          "url": "https://www.bbc.com/news/articles/cn48jj3y8ezo",
-          "source": "www.bbc.com"
-        },
-        {
-          "title": "Pentagon approves OpenAI safety red lines after dumping Anthropic",
-          "url": "https://www.axios.com/2026/02/27/pentagon-openai-safety-red-lines-anthropic",
-          "source": "www.axios.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "1060-en-tech-California-OS-age-ve",
       "keyword": "California OS age verification law Linux open source impact",
       "category": "tech",
@@ -7229,72 +7196,6 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-02-28T10:24:20.828428+00:00",
       "completed_at": "2026-02-28T10:31:58.683466+00:00"
-    },
-    {
-      "id": "1061-en-tech-don't-use-passkeys-f",
-      "keyword": "don't use passkeys for encrypting user data PRF extension warning",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-28T07:30:34.163498",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Security engineers who shipped passkey-based encryption are checking right now whether their implementation is broken",
-      "angle": "Misuse pattern exposé — the difference between authentication and key derivation that the passkey hype glossed over",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Please, please, please stop using passkeys for encrypting user data · Timbits",
-          "url": "https://blog.timcappalli.me/p/passkeys-prf-warning/",
-          "source": "blog.timcappalli.me"
-        },
-        {
-          "title": "Why Passkeys Aren't Ready for Encrypting Your User Data (Yet) - DEV Community",
-          "url": "https://dev.to/nader0913/why-passkeys-arent-ready-for-encrypting-your-user-data-yet-437p",
-          "source": "dev.to"
-        },
-        {
-          "title": "Please, please, please stop using passkeys for encrypting user data · Timbits",
-          "url": "https://archive.is/y6LtG",
-          "source": "archive.is"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "1062-en-tech-OpenAI-$730B-valuati",
-      "keyword": "OpenAI $730B valuation $110B funding round sustainable business model",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-02-28T07:30:34.163541",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Startup founders and developers relying on OpenAI's API want to stress-test the platform's long-term viability",
-      "angle": "The circular investment problem — AWS spends, Nvidia buys chips, OpenAI spends on compute, repeat until scaling stops working",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "OpenAI Finalizes $110 Billion Funding at $730 Billion Value - Bloomberg",
-          "url": "https://www.bloomberg.com/news/articles/2026-02-27/openai-finalizes-110-billion-funding-at-730-billion-valuation",
-          "source": "www.bloomberg.com"
-        },
-        {
-          "title": "OpenAI hits $730B valuation as Amazon, NVIDIA, and SoftBank inject $110B",
-          "url": "https://finance.yahoo.com/news/openai-hits-730b-valuation-amazon-141020036.html",
-          "source": "finance.yahoo.com"
-        },
-        {
-          "title": "OpenAI raises $110B in one of the largest private funding rounds in history | TechCrunch",
-          "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
-          "source": "techcrunch.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
     },
     {
       "id": "1063-ko-tech-OpenAI-군사-계약-AI-윤리-개",
@@ -7471,17 +7372,277 @@
       "completed_at": "2026-02-28T10:42:13.777418+00:00"
     },
     {
-      "id": "1068-en-tech-Docker-vs-Podman:-wh",
+      "id": "1068-en-tech-MCP-server-Claude-Co",
+      "keyword": "MCP server Claude Code context 98% reduction",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309021",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers hitting Claude Code token limits want a concrete workaround before paying for more usage",
+      "angle": "Technical deep-dive on FTS5 indexing vs. raw context dumping — what the 98% claim actually means in practice",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Code Mode: give agents an entire API in 1,000 tokens",
+          "url": "https://blog.cloudflare.com/code-mode-mcp/",
+          "source": "blog.cloudflare.com"
+        },
+        {
+          "title": "Claude Code MCP Tool Search: Save 95% Context",
+          "url": "https://claudefa.st/blog/tools/mcp-extensions/mcp-tool-search",
+          "source": "claudefa.st"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1069-en-tech-OpenAI-Department-of",
+      "keyword": "OpenAI Department of War AI agreement controversy",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309068",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and researchers want to understand the real-world ethical implications before continuing to use OpenAI products",
+      "angle": "Contract language analysis vs. public statements — the gap between what's promised and what's permitted",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "OpenAI Reaches A.I. Agreement With Defense Dept. After Anthropic Clash - The New York Times",
+          "url": "https://www.nytimes.com/2026/02/27/technology/openai-agreement-pentagon-ai.html",
+          "source": "www.nytimes.com"
+        },
+        {
+          "title": "\"Cancel ChatGPT\" movement goes mainstream after OpenAI closes deal with U.S. Department of War — as ",
+          "url": "https://www.windowscentral.com/artificial-intelligence/cancel-chatgpt-movement-goes-mainstream-after-openai-closes-deal-with-u-s-department-of-war-as-anthropic-refuses-to-surveil-american-citizens",
+          "source": "www.windowscentral.com"
+        },
+        {
+          "title": "OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’ | TechCrunch",
+          "url": "https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/",
+          "source": "techcrunch.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1070-en-tech-Gemini-CLI-account-b",
+      "keyword": "Gemini CLI account banned no reason Google",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309100",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers who use Google AI tools want to know if they are at risk of sudden account termination affecting all Google services",
+      "angle": "Platform risk: the hidden danger of tying professional workflows to a single cloud account with opaque enforcement policies",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Google restricting Google AI Pro/Ultra subscribers for using OpenClaw | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47115805",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "Google Antigravity falls to Earth under compute burden • The Register",
+          "url": "https://www.theregister.com/2026/02/23/google_antigravity_compute_burden/",
+          "source": "www.theregister.com"
+        },
+        {
+          "title": "What’s behind the OpenClaw ban wave | PCWorld",
+          "url": "https://www.pcworld.com/article/3068842/whats-behind-the-openclaw-ban-wave.html",
+          "source": "www.pcworld.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1071-en-tech-Obsidian-Sync-headle",
+      "keyword": "Obsidian Sync headless client CLI server NAS setup",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309131",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Obsidian power users with home servers or NAS devices want to eliminate the hack of running a virtual display just for sync",
+      "angle": "Practical workflow upgrade: step-by-step breakdown of what the headless client actually enables that wasn't possible before",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/ObsidianMD on Reddit: Headless client for Obsidian Sync (open beta)",
+          "url": "https://www.reddit.com/r/ObsidianMD/comments/1rgg4n6/headless_client_for_obsidian_sync_open_beta/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Ob sync-setup fails on headless Linux (keychain unavailable) - Bug reports - Obsidian Forum",
+          "url": "https://forum.obsidian.md/t/ob-sync-setup-fails-on-headless-linux-keychain-unavailable/111679",
+          "source": "forum.obsidian.md"
+        },
+        {
+          "title": "Obsidian Sync now has a headless client | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47197267",
+          "source": "news.ycombinator.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1072-ko-tech-Gemini-CLI-계정-정지-Goo",
+      "keyword": "Gemini CLI 계정 정지 Google 서비스 전체 차단 위험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309161",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Google AI 서비스를 업무에 쓰는 개발자들이 갑작스러운 계정 차단 리스크를 파악하고 대안을 찾으려 검색",
+      "angle": "플랫폼 의존성의 함정 — 구글 생태계에 올인했을 때 한 번의 정책 위반으로 모든 업무 도구를 잃는 시나리오",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1073-ko-tech-Claude-Code-컨텍스트-한계-",
+      "keyword": "Claude Code 컨텍스트 한계 MCP로 98% 줄이는 법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309190",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Claude Code를 업무에 쓰는 국내 개발자가 매달 API 비용 폭탄을 맞고 원인과 해결책을 찾아 검색",
+      "angle": "비용 절감 실전 가이드 — FTS5 인덱싱 방식이 단순 컨텍스트 덤핑보다 나은 이유와 실제 적용 시 주의점",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Разработчик продлил сессии Claude Code с 30 минут до 3 часов — одним MCP-сервером / Хабр",
+          "url": "https://habr.com/ru/news/1005026/",
+          "source": "habr.com"
+        },
+        {
+          "title": "Context Mode: reduce 98% el contexto en Claude Code con MCP - El Ecosistema Startup",
+          "url": "https://ecosistemastartup.com/context-mode-reduce-98-el-contexto-en-claude-code-con-mcp/",
+          "source": "ecosistemastartup.com"
+        },
+        {
+          "title": "Claude Code MCP Tool Search: Save 95% Context",
+          "url": "https://claudefa.st/blog/tools/mcp-extensions/mcp-tool-search",
+          "source": "claudefa.st"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1074-ko-tech-Qwen3.5-122B-로컬-실행-C",
+      "keyword": "Qwen3.5 122B 로컬 실행 Claude Sonnet 수준 가능한가",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309218",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI API 비용 절감을 원하는 국내 개발자·스타트업이 로컬 모델 전환 가능성을 타진하며 실사용 후기를 검색",
+      "angle": "벤치마크 vs 실전 — 알리바바 오픈소스 모델이 주장하는 성능이 한국어 태스크에서도 유효한지 검증",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1075-ko-tech-OpenAI-군사-계약-AI-윤리-개",
+      "keyword": "OpenAI 군사 계약 AI 윤리 개발자 이탈 논란",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309252",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "OpenAI 제품을 업무에 쓰는 국내 개발자·기업이 군사 계약의 윤리적 함의와 서비스 약관 변화 여부를 파악하려 검색",
+      "angle": "계약서 원문 vs 공개 발표 — 실제 허용 범위와 '안전 레드라인'의 법적 구속력에 대한 비판적 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "美 국방부, ‘무기화 거부’ 앤스로픽에 최후통첩…심화하는 AI 윤리 갈등",
+          "url": "https://www.chosun.com/economy/tech_it/2026/02/25/E26IH3YJ4NFQBOFVTQLC6QFCRY/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "미군 ‘좌파 AI’ 무기가 민주주의까지 해친다면 | 서울경제",
+          "url": "https://www.sedaily.com/article/20013828",
+          "source": "www.sedaily.com"
+        },
+        {
+          "title": "AI 무기화 논란에도…오픈AI, 美국방부에 서비스 제공 합의 | 연합뉴스",
+          "url": "https://www.yna.co.kr/amp/view/AKR20260228047100009",
+          "source": "www.yna.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1076-ko-tech-macOS-Tahoe-강제-업그레이드",
+      "keyword": "macOS Tahoe 강제 업그레이드 알림 차단 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-01T07:36:19.309281",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "맥을 개발 환경으로 쓰는 국내 개발자들이 업무 중 반복되는 OS 업그레이드 팝업을 제거하는 확실한 방법을 찾아 검색",
+      "angle": "실용 튜토리얼 — 해외 오픈소스 스크립트(stop-tahoe-update)를 국내 환경에서 적용하는 방법과 주의사항",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Explainer: macOS updates – The Eclectic Light Company",
+          "url": "https://eclecticlight.co/2026/02/28/explainer-macos-updates/",
+          "source": "eclecticlight.co"
+        },
+        {
+          "title": "Mac 느려짐 오류 20가지 macOS Tahoe 기준 속도·부팅·복구 설정 - 노랗IT월드",
+          "url": "https://yellowit.co.kr/it-review/mac-%EB%8A%90%EB%A0%A4%EC%A7%90-%EC%98%A4%EB%A5%98-20%EA%B0%80%EC%A7%80-macos-tahoe-%EA%B8%B0%EC%A4%80-%EC%86%8D%EB%8F%84%C2%B7%EB%B6%80%ED%8C%85%C2%B7%EB%B3%B5%EA%B5%AC-%EC%84%A4%EC%A0%95/",
+          "source": "yellowit.co.kr"
+        },
+        {
+          "title": "How to downgrade from macOS 26 Tahoe on a new Mac - Ars Technica",
+          "url": "https://arstechnica.com/gadgets/2026/02/how-to-downgrade-from-macos-26-tahoe-on-a-new-mac/",
+          "source": "arstechnica.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1077-en-tech-Docker-vs-Podman:-wh",
       "keyword": "Docker vs Podman: which container tool should you use",
       "category": "tech",
       "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-28T07:30:34.163717",
+      "created_at": "2026-03-01T07:36:19.309346",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "컨테이너 도구를 선택해야 하는 DevOps 엔지니어 및 백엔드 개발자가 두 도구의 차이점과 장단점을 비교하려 함",
-      "angle": "데몬리스 구조, 루트리스 실행, Docker Compose 호환성 등 실무 관점에서의 비교 분석",
+      "search_intent": "컨테이너 도구를 선택해야 하는 DevOps 엔지니어 및 백엔드 개발자가 두 도구의 차이를 비교하고 싶음",
+      "angle": "데몬리스 구조·보안·호환성·생산성 측면에서 Docker와 Podman을 실전 비교하고 상황별 선택 기준 제시",
       "competition_level": "low",
       "references": [
         {
@@ -7503,17 +7664,17 @@
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1069-ko-tech-GitHub-Actions-입문-가이",
+      "id": "1078-ko-tech-GitHub-Actions-입문-가이",
       "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-02-28T07:30:34.163734",
+      "created_at": "2026-03-01T07:36:19.309376",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "배포 자동화를 처음 배우려는 주니어 개발자 또는 GitHub를 사용하는 개인 프로젝트 운영자",
-      "angle": "YAML 문법부터 실제 배포 워크플로우까지 한국어로 단계별 설명하는 실전 입문 튜토리얼",
+      "search_intent": "CI/CD 개념은 알지만 실제 GitHub Actions 설정을 어떻게 시작해야 할지 모르는 개발자",
+      "angle": "워크플로우 파일 작성부터 자동 배포까지 초보자도 따라할 수 있는 단계별 실전 튜토리얼",
       "competition_level": "low",
       "references": [
         {
@@ -7535,17 +7696,17 @@
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1070-ko-tech-RAG란-무엇인가:-LLM-환각-줄이",
+      "id": "1079-ko-tech-RAG란-무엇인가:-LLM-환각-줄이",
       "keyword": "RAG란 무엇인가: LLM 환각 줄이는 검색 증강 생성 원리 설명",
       "category": "tech",
       "lang": "ko",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-02-28T07:30:34.163749",
+      "created_at": "2026-03-01T07:36:19.309403",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "AI 서비스를 기획하거나 LLM 기반 앱을 개발하려는 사람이 RAG 개념과 작동 원리를 이해하고 싶어 함",
-      "angle": "RAG의 개념, 벡터 DB와의 연동 구조, 실제 사용 사례를 비기술자도 이해할 수 있도록 시각적으로 설명",
+      "search_intent": "AI 서비스 개발 또는 도입을 검토 중인 개발자·기획자가 RAG 개념과 작동 원리를 정확히 이해하고 싶음",
+      "angle": "RAG의 정의·구조·파인튜닝과의 차이·실제 적용 사례를 비전공자도 이해할 수 있게 시각적으로 풀어내는 개념 해설",
       "competition_level": "low",
       "references": [
         {

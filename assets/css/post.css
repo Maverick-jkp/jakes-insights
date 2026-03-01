@@ -19,6 +19,11 @@
   margin-bottom: var(--space-2xl);
 }
 
+.post-header .subtopic-chip {
+  margin-bottom: var(--space-md);
+  display: inline-flex;
+}
+
 .post-title {
   font-size: var(--text-3xl);
   font-weight: var(--weight-bold);

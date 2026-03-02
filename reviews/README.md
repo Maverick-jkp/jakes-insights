@@ -1,1 +1,0 @@
-# ChatGPT Code Reviews

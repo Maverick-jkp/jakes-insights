@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Related post clicks
-    const relatedLinks = document.querySelectorAll('.related-card');
+    const relatedLinks = document.querySelectorAll('.post-card');
     relatedLinks.forEach(link => {
         link.addEventListener('click', function() {
             const postTitle = this.querySelector('h4')?.textContent || 'unknown';

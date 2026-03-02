@@ -4,7 +4,7 @@ date: 2026-03-02T20:04:47+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["\ubaa8\ud1a0\ub85c\ub77c GrapheneOS \ud30c\ud2b8\ub108\uc2ed \ud504\ub77c\uc774\ubc84\uc2dc \ud3f0 \uc2e4\uc81c \uc758\ubbf8", "tech", "subtopic:other", "\ubaa8\ud1a0\ub85c\ub77c", "grapheneos", "\ud30c\ud2b8\ub108\uc2ed", "\ud504\ub77c\uc774\ubc84\uc2dc"]
+tags: ["\ubaa8\ud1a0\ub85c\ub77c GrapheneOS \ud30c\ud2b8\ub108\uc2ed \ud504\ub77c\uc774\ubc84\uc2dc \ud3f0 \uc2e4\uc81c \uc758\ubbf8", "tech", "subtopic:security", "\ubaa8\ud1a0\ub85c\ub77c", "grapheneos", "\ud30c\ud2b8\ub108\uc2ed", "\ud504\ub77c\uc774\ubc84\uc2dc"]
 description: "모토로라와 GrapheneOS 파트너십이 프라이버시 폰 시장에 미치는 실제 영향을 분석합니다. 일반 사용자에게 이 협력이 의미하는 바와 보안 강화 효과를 지금 확인하세요."
 image: "/images/20260302-모토로라-grapheneos-파트너십-프라이버시-폰-실.jpg"
 faq:

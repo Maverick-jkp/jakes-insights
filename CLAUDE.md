@@ -13,7 +13,6 @@
 1. **CLAUDE.md** (this file) - Overview & essentials
 2. **`.claude/docs/[relevant].md`** - Details on-demand (see index below)
 3. **`.claude/session-state.json`** - Current project state
-4. **`.claude/mistakes-log.md`** - Past errors to avoid
 
 ---
 
@@ -76,7 +75,7 @@ data/topics_queue.json       # Topic queue (state machine)
 .claude/
   ├─ docs/                   # Detailed docs (on-demand)
   ├─ skills/                 # Task-specific (Week 2)
-  └─ sessions/               # Per-session state (Week 4)
+  └─ skills/                 # Task-specific skills
 ```
 
 **Details**: `.claude/docs/architecture.md`

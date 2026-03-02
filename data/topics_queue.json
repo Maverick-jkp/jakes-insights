@@ -7372,34 +7372,6 @@
       "completed_at": "2026-02-28T10:42:13.777418+00:00"
     },
     {
-      "id": "1068-en-tech-MCP-server-Claude-Co",
-      "keyword": "MCP server Claude Code context 98% reduction",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-03-01T07:36:19.309021",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Developers hitting Claude Code token limits want a concrete workaround before paying for more usage",
-      "angle": "Technical deep-dive on FTS5 indexing vs. raw context dumping — what the 98% claim actually means in practice",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Code Mode: give agents an entire API in 1,000 tokens",
-          "url": "https://blog.cloudflare.com/code-mode-mcp/",
-          "source": "blog.cloudflare.com"
-        },
-        {
-          "title": "Claude Code MCP Tool Search: Save 95% Context",
-          "url": "https://claudefa.st/blog/tools/mcp-extensions/mcp-tool-search",
-          "source": "claudefa.st"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "1069-en-tech-OpenAI-Department-of",
       "keyword": "OpenAI Department of War AI agreement controversy",
       "category": "tech",
@@ -7522,39 +7494,6 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-03-01T10:26:01.187614+00:00",
       "completed_at": "2026-03-01T10:33:20.340695+00:00"
-    },
-    {
-      "id": "1073-ko-tech-Claude-Code-컨텍스트-한계-",
-      "keyword": "Claude Code 컨텍스트 한계 MCP로 98% 줄이는 법",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-03-01T07:36:19.309190",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Claude Code를 업무에 쓰는 국내 개발자가 매달 API 비용 폭탄을 맞고 원인과 해결책을 찾아 검색",
-      "angle": "비용 절감 실전 가이드 — FTS5 인덱싱 방식이 단순 컨텍스트 덤핑보다 나은 이유와 실제 적용 시 주의점",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Разработчик продлил сессии Claude Code с 30 минут до 3 часов — одним MCP-сервером / Хабр",
-          "url": "https://habr.com/ru/news/1005026/",
-          "source": "habr.com"
-        },
-        {
-          "title": "Context Mode: reduce 98% el contexto en Claude Code con MCP - El Ecosistema Startup",
-          "url": "https://ecosistemastartup.com/context-mode-reduce-98-el-contexto-en-claude-code-con-mcp/",
-          "source": "ecosistemastartup.com"
-        },
-        {
-          "title": "Claude Code MCP Tool Search: Save 95% Context",
-          "url": "https://claudefa.st/blog/tools/mcp-extensions/mcp-tool-search",
-          "source": "claudefa.st"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
     },
     {
       "id": "1074-ko-tech-Qwen3.5-122B-로컬-실행-C",
@@ -7680,38 +7619,6 @@
       "completed_at": "2026-03-01T12:01:55.938701+00:00"
     },
     {
-      "id": "1078-ko-tech-GitHub-Actions-입문-가이",
-      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-01T07:36:19.309376",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "CI/CD 개념은 알지만 실제 GitHub Actions 설정을 어떻게 시작해야 할지 모르는 개발자",
-      "angle": "워크플로우 파일 작성부터 자동 배포까지 초보자도 따라할 수 있는 단계별 실전 튜토리얼",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
-          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
-          "source": "inblog.ai"
-        },
-        {
-          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
-          "url": "https://notavoid.tistory.com/157",
-          "source": "notavoid.tistory.com"
-        },
-        {
-          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
-          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
-          "source": "apidog.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1079-ko-tech-RAG란-무엇인가:-LLM-환각-줄이",
       "keyword": "RAG란 무엇인가: LLM 환각 줄이는 검색 증강 생성 원리 설명",
       "category": "tech",
@@ -7744,6 +7651,276 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-01T11:54:23.075441+00:00",
       "completed_at": "2026-03-01T11:59:43.501143+00:00"
+    },
+    {
+      "id": "1080-en-tech-WebMCP-Chrome-browse",
+      "keyword": "WebMCP Chrome browser AI agent standard",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210184",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers want to understand whether WebMCP will break their sites, enable unwanted bot access, or become a new mandatory standard they must implement",
+      "angle": "Security and control: who really owns your web surface once AI agents can natively browse it via Chrome",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "WebMCP: AI Agent Browser Interaction | by JIN | 𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨 | Mar, 2026 | Medium",
+          "url": "https://medium.com/aimonks/webmcp-ai-agent-browser-interaction-f86838a564ec",
+          "source": "medium.com"
+        },
+        {
+          "title": "WebMCP (Web Model Context Protocol): Agents are learning to browse better | by A B Vijay Kumar | Feb",
+          "url": "https://abvijaykumar.medium.com/webmcp-web-model-context-protocol-agents-are-learning-to-browse-better-22fcefc981d7",
+          "source": "abvijaykumar.medium.com"
+        },
+        {
+          "title": "WebMCP: Chrome Is About to Make Every Website an AI Agent Tool - DEV Community",
+          "url": "https://dev.to/midastools/webmcp-chrome-is-about-to-make-every-website-an-ai-agent-tool-6p7",
+          "source": "dev.to"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1081-en-tech-AI-code-commit-histo",
+      "keyword": "AI code commit history session transparency debate",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210231",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and engineering leads searching for best practices around AI-assisted coding accountability and audit trails",
+      "angle": "Workflow disruption: version control conventions built for humans are fundamentally broken in an AI-first coding environment",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1082-en-tech-Flock-camera-network",
+      "keyword": "Flock camera network shut down public records ruling surveillance",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210268",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Privacy advocates and civic technologists searching for legal precedent around automated license plate readers and public records law",
+      "angle": "Systemic risk: municipalities deploying surveillance tech without understanding its legal exposure — and citizens paying the price either way",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Flock Safety License Plate Reader Cameras Lawsuit – Gibbs Mura, A Law Group",
+          "url": "https://www.classlawgroup.com/flock-safety-license-plate-reader-cameras-lawsuit",
+          "source": "www.classlawgroup.com"
+        },
+        {
+          "title": "Everett temporarily pauses Flock camera network | HeraldNet.com",
+          "url": "https://www.heraldnet.com/2026/02/25/everett-temporarily-pauses-flock-camera-network/",
+          "source": "www.heraldnet.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1083-en-tech-LLMfit-right-size-lo",
+      "keyword": "LLMfit right-size local LLM RAM CPU GPU automatically",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210300",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and hobbyists running local LLMs who are frustrated by trial-and-error model selection and out-of-memory crashes",
+      "angle": "Workflow fix: practical tooling that eliminates one of the most annoying friction points in local AI development",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "llmfit — command-line utility in Rust // Lib.rs",
+          "url": "https://lib.rs/crates/llmfit",
+          "source": "lib.rs"
+        },
+        {
+          "title": "The Complete Developer's Guide to Running LLMs Locally",
+          "url": "https://www.sitepoint.com/local-llms-complete-guide/",
+          "source": "www.sitepoint.com"
+        },
+        {
+          "title": "r/LocalLLaMA on Reddit: LLmFit - One command to find what model runs on your hardware",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rg94wu/llmfit_one_command_to_find_what_model_runs_on/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1084-ko-tech-WebMCP-크롬-AI-에이전트-내-",
+      "keyword": "WebMCP 크롬 AI 에이전트 내 웹사이트 보안 위협",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210331",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 웹 개발자가 WebMCP가 자신의 서비스에 미치는 보안·접근 제어 영향을 파악하려는 목적",
+      "angle": "내 서비스 관점: 해외에선 이미 논쟁 중인 표준인데 한국 개발자는 아직 모른다 — 선제 대응 필요성 강조",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1085-ko-tech-AI-코딩-세션-git-커밋-기록-책",
+      "keyword": "AI 코딩 세션 git 커밋 기록 책임 소재 논란",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210359",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코딩 툴을 실무에 도입한 개발자·팀 리드가 감사 추적과 책임 소재 문제를 해결하려는 목적",
+      "angle": "실무 충격: 해외에선 이미 뜨거운 논쟁인데 국내 개발 문화에선 아직 논의조차 없다 — 한국 독자에게 긴박감 부여",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 에이전트 시대, AX가 기업 시스템을 재정의하다 | CIO",
+          "url": "https://www.cio.com/article/4137658/ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%8B%9C%EB%8C%80-ax%EA%B0%80-%EA%B8%B0%EC%97%85-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84-%EC%9E%AC%EC%A0%95%EC%9D%98%ED%95%98%EB%8B%A4.html",
+          "source": "www.cio.com"
+        },
+        {
+          "title": "깃 (소프트웨어) - 위키백과, 우리 모두의 백과사전",
+          "url": "https://ko.wikipedia.org/wiki/%EA%B9%83_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)",
+          "source": "ko.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1086-ko-tech-모토로라-GrapheneOS-파트너십",
+      "keyword": "모토로라 GrapheneOS 파트너십 프라이버시 폰 실제 의미",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210387",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "개인정보 보호에 민감한 국내 개발자·보안 전문가가 GrapheneOS 기반 기기의 실용성과 국내 지원 가능성을 검색",
+      "angle": "시장 변화 신호: 틈새였던 보안 OS가 글로벌 제조사와 협력하며 주류 진입 — 국내 기업용 보안 기기 시장에 미칠 파장",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Leak confirms GrapheneOS & Motorola partnership for non-Pixel hardware - PiunikaWeb",
+          "url": "https://piunikaweb.com/2026/02/27/leak-confirms-grapheneos-motorola-partnership-for-non-pixel-hardware/",
+          "source": "piunikaweb.com"
+        },
+        {
+          "title": "Kommen neue Motorola-Smartphones auf Basis von GrapheneOS?",
+          "url": "https://tarnkappe.info/artikel/smartphones/kommen-neue-motorola-smartphones-auf-basis-von-grapheneos-326878.html",
+          "source": "tarnkappe.info"
+        },
+        {
+          "title": "Motorola is reportedly preparing a GrapheneOS-powered smartphone",
+          "url": "https://tech.sportskeeda.com/mobiles/news-motorola-reportedly-preparing-grapheneos-powered-smartphone",
+          "source": "tech.sportskeeda.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1087-ko-tech-AI-뇌-활동-생각-읽기-기술-형사-",
+      "keyword": "AI 뇌 활동 생각 읽기 기술 형사 사법 활용 위험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210420",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 윤리와 디지털 프라이버시에 관심 있는 독자가 뇌-AI 인터페이스 기술의 사회적 위험을 파악하려는 목적",
+      "angle": "공포 유발 시나리오: 기술 자체보다 '오용 가능성'에 집중 — 해외 커뮤니티의 '형사 절차 악용' 예측을 한국 독자 맥락으로 번역",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1088-ko-tech-GitHub-Actions-입문-가이",
+      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210516",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI/CD 개념은 알지만 GitHub Actions 설정을 어떻게 시작해야 할지 모르는 개발자",
+      "angle": "실제 Node.js 프로젝트를 예시로 워크플로우 파일 작성부터 배포 자동화까지 단계별 실습 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
+          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
+          "source": "inblog.ai"
+        },
+        {
+          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
+          "url": "https://notavoid.tistory.com/157",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1089-ko-tech-Prometheus-vs-Grafan",
+      "keyword": "Prometheus vs Grafana 차이점과 모니터링 스택 구성법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-02T07:51:50.210546",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "서버/애플리케이션 모니터링 도구를 도입하려는 DevOps 입문자 또는 사이드 프로젝트 운영자",
+      "angle": "두 도구의 역할 차이를 명확히 설명하고, 함께 쓰는 이유와 기본 스택 구성 방법을 실용적으로 안내",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "MyService 마이크로서비스 통합 모니터링 시스템 구축기 :: 백봉 컬럼",
+          "url": "https://mrbb.tistory.com/97",
+          "source": "mrbb.tistory.com"
+        },
+        {
+          "title": "Prometheus 및 Grafana를 사용한 모니터링 :: SUSE Manager Documentation",
+          "url": "https://documentation.suse.com/suma/4.3/ko/suse-manager/administration/monitoring.html",
+          "source": "documentation.suse.com"
+        },
+        {
+          "title": "Prometheus와 Grafana를 활용한 모니터링 환경 구축",
+          "url": "https://kyxxgsoo.tistory.com/entry/Grafana%EC%99%80-Prometheus",
+          "source": "kyxxgsoo.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

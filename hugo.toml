@@ -40,7 +40,6 @@ pagerSize = 50
 [taxonomies]
   category = "categories"
   tag = "tags"
-  technology = "technologies"
 
 [languages]
   [languages.en]
@@ -65,25 +64,6 @@ pagerSize = 50
       url = "/categories/tech/"
       weight = 3
 
-    [[languages.en.menu.main]]
-      name = "💼 Business"
-      url = "/categories/business/"
-      weight = 4
-
-    [[languages.en.menu.main]]
-      name = "🌍 Society"
-      url = "/categories/society/"
-      weight = 5
-
-    [[languages.en.menu.main]]
-      name = "🎬 Entertainment"
-      url = "/categories/entertainment/"
-      weight = 6
-
-    [[languages.en.menu.main]]
-      name = "⚽ Sports"
-      url = "/categories/sports/"
-      weight = 8
 
   [languages.ko]
     languageName = "한국어"
@@ -107,25 +87,6 @@ pagerSize = 50
       url = "/ko/categories/tech/"
       weight = 3
 
-    [[languages.ko.menu.main]]
-      name = "💼 비즈니스"
-      url = "/ko/categories/business/"
-      weight = 4
-
-    [[languages.ko.menu.main]]
-      name = "🌍 사회"
-      url = "/ko/categories/society/"
-      weight = 5
-
-    [[languages.ko.menu.main]]
-      name = "🎬 엔터"
-      url = "/ko/categories/entertainment/"
-      weight = 6
-
-    [[languages.ko.menu.main]]
-      name = "⚽ 스포츠"
-      url = "/ko/categories/sports/"
-      weight = 8
 
 [params]
   env = "production"
@@ -154,21 +115,6 @@ pagerSize = 50
   name = "💻 Tech"
   url = "/categories/tech"
 
-[[params.profileMode.buttons]]
-  name = "💼 Business"
-  url = "/categories/business"
-
-[[params.profileMode.buttons]]
-  name = "🌍 Society"
-  url = "/categories/society"
-
-[[params.profileMode.buttons]]
-  name = "🎬 Entertainment"
-  url = "/categories/entertainment"
-
-[[params.profileMode.buttons]]
-  name = "⚽ Sports"
-  url = "/categories/sports"
 
 [related]
   includeNewer = true
@@ -187,6 +133,3 @@ pagerSize = 50
     name = "date"
     weight = 10
 
-  [[related.indices]]
-    name = "technologies"
-    weight = 70

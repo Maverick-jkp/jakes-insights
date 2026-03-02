@@ -3,7 +3,8 @@ defaultContentLanguage = 'en'
 title = "Jake's Insights"
 theme = 'PaperMod'
 timeZone = 'Asia/Seoul'
-googleAnalytics = 'G-3ML8CHS112'
+[services.googleAnalytics]
+  ID = 'G-3ML8CHS112'
 
 # Performance optimization
 [minify]

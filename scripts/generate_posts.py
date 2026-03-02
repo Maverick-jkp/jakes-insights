@@ -943,7 +943,7 @@ Return improved version (body only, no title):""",
                     # Longer matches score higher
                     scores[subtopic] += len(term.split())
         best = max(scores, key=lambda s: scores[s])
-        return best if scores[best] > 0 else "other"
+        return best if scores[best] > 0 else "web"
 
     def _generate_tags(self, keyword: str, category: str, technologies: list = None) -> List[str]:
         """Generate meaningful tags from keyword, category, and technologies."""

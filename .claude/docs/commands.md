@@ -62,7 +62,7 @@ export ANTHROPIC_API_KEY='your-key'
 export UNSPLASH_ACCESS_KEY='your-key'  # For featured images
 
 # Load from .env file (recommended)
-# File location: /Users/jakepark/projects/jakes-tech-insights/.env
+# File location: /Users/jake/jakes-insights/.env
 python -c "from dotenv import load_dotenv; load_dotenv()"
 ```
 

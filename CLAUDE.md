@@ -8,11 +8,19 @@
 
 ## ⚠️ MANDATORY FIRST ACTION
 
-**Before ANY work, read these in order:**
+**Before ANY work:**
 
-1. **CLAUDE.md** (this file) - Overview & essentials
-2. **`.claude/docs/[relevant].md`** - Details on-demand (see index below)
-3. **`.claude/session-state.json`** - Current project state
+1. **Run session-start verification** (inline, non-negotiable):
+```bash
+git status          # What's the actual current state?
+git log -1 --oneline  # What was the last commit?
+```
+If git status shows unexpected changes, investigate before proceeding.
+If last commit is about a different topic, **do not assume prior session context is current**.
+
+2. **Read relevant docs** on-demand based on your task (see index below)
+
+**Rule**: Session summaries and previous context are hints, not facts. Always verify with git/grep before acting.
 
 ---
 
@@ -32,7 +40,7 @@
 
 **Jake's Tech Insights** - In-depth tech analysis and data-driven reports
 
-- **Tech Stack**: Hugo, Python 3.x, Claude API (Sonnet 4.6), GitHub Actions
+- **Tech Stack**: Hugo, Python 3.11+, Claude API (Sonnet 4.6), GitHub Actions
 - **Languages**: English (EN), Korean (KO)
 - **Deployment**: Cloudflare Pages (https://jakeinsight.com)
 - **Automation**: Daily content generation, 10 posts/day EN+KO (configured via GitHub Actions schedule)
@@ -74,7 +82,7 @@ layouts/                     # Hugo templates
 data/topics_queue.json       # Topic queue (state machine)
 .claude/
   ├─ docs/                   # Detailed docs (on-demand)
-  ├─ skills/                 # Task-specific (Week 2)
+  ├─ rules/                  # Process guidelines & protocols
   └─ skills/                 # Task-specific skills
 ```
 
@@ -96,6 +104,8 @@ data/topics_queue.json       # Topic queue (state machine)
 | Quality criteria | `.claude/docs/quality-standards.md` |
 | UI/UX guidelines | `.claude/docs/design-system.md` |
 | Security & costs | `.claude/docs/security.md` |
+| **Before fixing issues** | `.claude/rules/verification.md` |
+| **When changing config** | `.claude/rules/config-change-protocol.md` |
 
 **Why on-demand loading?**
 - Each doc is 60-200 lines (focused)
@@ -140,7 +150,7 @@ Topic Queue → Draft Agent → Editor Agent → Quality Gate → AI Review → 
 ## Important Links
 
 - **Live Site**: https://jakeinsight.com (verify: `grep baseURL hugo.toml`)
-- **GitHub**: https://github.com/Maverick-jkp/jakes-tech-insights
+- **GitHub**: https://github.com/Maverick-jkp/jakes-insights
 - **Hugo Docs**: https://gohugo.io/documentation/
 - **Claude API**: https://docs.anthropic.com/en/api/
 

@@ -21,5 +21,12 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /society/* / 301
 /finance/* / 301
 
+# Legacy KO category routes (삭제된 카테고리 → KO 홈)
+/ko/business/* /ko/ 301
+/ko/sports/* /ko/ 301
+/ko/entertainment/* /ko/ 301
+/ko/society/* /ko/ 301
+/ko/finance/* /ko/ 301
+
 # Legacy categories/tags (without language prefix)
 /categories/* / 301

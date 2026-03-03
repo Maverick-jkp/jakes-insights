@@ -22,7 +22,7 @@
   <a href="{{ .Permalink }}" class="hero-card">
     <div class="hero-visual">
       {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="eager">
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="eager" fetchpriority="high">
       {{ end }}
       <div class="hero-gradient"></div>
     </div>

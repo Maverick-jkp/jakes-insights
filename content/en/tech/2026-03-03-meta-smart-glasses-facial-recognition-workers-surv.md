@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-web", "meta", "smart", "glasses", "facial"]
 description: "Discover how Meta smart glasses facial recognition raises urgent questions about worker surveillance, privacy rights, and the future of public safety."
-image: "/images/20260303-meta-smart-glasses-facial-reco.jpg"
+image: "/images/20260303-meta-smart-glasses-facial-reco.webp"
 technologies: ["React", "AWS", "Go"]
 faq:
   - question: "What is Meta's Name Tag feature for smart glasses?"

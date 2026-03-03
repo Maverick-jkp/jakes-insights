@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["cloud computing basics", "cloud", "computing", "basics", "Kubernetes"]
 description: "Discover cloud computing basics and learn how storage, servers, and software work together to power modern business. Start building your knowledge today."
-image: "/images/20260223-cloud-computing-basics.jpg"
+image: "/images/20260223-cloud-computing-basics.webp"
 technologies: ["Kubernetes", "AWS", "Azure", "GCP", "OpenAI"]
 faq:
   - question: "what are cloud computing basics everyone should know"

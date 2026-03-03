@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["macos", "tahoe", "업그레이드", "subtopic-web"]
 description: "macOS Tahoe 강제 업그레이드 알림을 차단하는 방법을 단계별로 안내합니다. 설정 변경부터 터미널 명령어까지, 업무 흐름을 방해하는 팝업을 완전히 제거하세요."
-image: "/images/20260301-macos-tahoe-강제-업그레이드-알림-차단-방법.jpg"
+image: "/images/20260301-macos-tahoe-강제-업그레이드-알림-차단-방법.webp"
 faq:
   - question: "macOS Tahoe 강제 업그레이드 알림 차단 방법 터미널로 하는거 있나요"
     answer: "터미널에서 'sudo softwareupdate --ignore 'macOS Tahoe'' 명령어를 입력하면 해당 버전의 업그레이드 알림을 숨길 수 있어요. 다만 macOS Ventura 이후 버전에서는 동작이 불안정하다는 보고가 있어서, Tahoe 환경에서는 알림이 완전히 사라지지 않고 간격만 길어지는 경우도 있어요. 되돌리려면 'sudo softwareupdate --reset-ignored' 명령어로 무시 목록을 초기화하면 돼요."

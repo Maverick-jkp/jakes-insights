@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["deanonymization", "privacy", "risk", "subtopic-ai"]
 description: "Discover how LLM deanonymization exposes real identities and what you must do now to protect your personal data from AI privacy risks."
-image: "/images/20260226-llm-deanonymization-privacy-ri.jpg"
+image: "/images/20260226-llm-deanonymization-privacy-ri.webp"
 technologies: ["GPT", "Go"]
 faq:
   - question: "can LLMs deanonymize people from their online posts"

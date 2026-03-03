@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-ai", "claude", "openai"]
 description: "Claude AI 오류 급증으로 OpenAI 이탈 사용자까지 몰리며 서비스 장애가 발생했습니다. 원인과 현황, 대처 방법을 지금 확인하세요."
-image: "/images/20260303-claude-ai-오류-급증-openai-이탈-사용자-.jpg"
+image: "/images/20260303-claude-ai-오류-급증-openai-이탈-사용자-.webp"
 technologies: ["GCP", "Claude", "GPT", "OpenAI", "Anthropic"]
 faq:
   - question: "Claude AI 오류 급증 OpenAI 이탈 사용자 몰림 장애 원인이 뭔가요?"

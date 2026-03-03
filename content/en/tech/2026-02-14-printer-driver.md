@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["printer driver", "printer", "driver", "Python", "React"]
 description: "Learn how to install, update, and troubleshoot printer drivers with our step-by-step guide. Fix common issues and optimize your printing setup today."
-image: "/images/20260214-printer-driver.jpg"
+image: "/images/20260214-printer-driver.webp"
 technologies: ["Python", "React", "Azure", "Linux", "Rust"]
 faq:
   - question: "why did microsoft stop supporting printer drivers in 2026"

@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-data", "prometheus", "grafana", "차이점과", "모니터링"]
 description: "Prometheus와 Grafana의 핵심 차이점을 명확히 이해하고, 두 도구를 결합한 실전 모니터링 스택 구성법을 단계별로 배워보세요. 효율적인 시스템 관찰을 시작하세요."
-image: "/images/20260302-prometheus-vs-grafana-차이점과-모니터.jpg"
+image: "/images/20260302-prometheus-vs-grafana-차이점과-모니터.webp"
 technologies: ["Docker", "Kubernetes", "Go", "Slack"]
 faq:
   - question: "Prometheus vs Grafana 차이점이 뭔가요?"

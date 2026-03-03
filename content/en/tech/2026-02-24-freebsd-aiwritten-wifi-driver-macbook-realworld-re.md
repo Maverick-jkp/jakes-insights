@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["FreeBSD", "AI-written", "WiFi", "subtopic-devtools"]
 description: "Discover how a FreeBSD AI-written WiFi driver performs on MacBook in real-world tests. See actual speeds, stability, and surprising results."
-image: "/images/20260224-freebsd-aiwritten-wifi-driver-.jpg"
+image: "/images/20260224-freebsd-aiwritten-wifi-driver-.webp"
 technologies: ["Linux", "Rust", "Go"]
 faq:
   - question: "FreeBSD AI-written WiFi driver MacBook real-world result — does it actually work?"

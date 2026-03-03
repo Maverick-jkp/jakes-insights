@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["facebook is cooked", "facebook", "cooked", "React", "subtopic-ai"]
 description: "Facebook is cooked and here's the data to prove it. Discover why users are fleeing and what this means for your social strategy."
-image: "/images/20260222-facebook-is-cooked.jpg"
+image: "/images/20260222-facebook-is-cooked.webp"
 technologies: ["React", "GPT", "Rust", "Go", "ChatGPT"]
 faq:
   - question: "is facebook is cooked or still worth using in 2025"

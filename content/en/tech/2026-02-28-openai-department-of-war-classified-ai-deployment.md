@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["openai", "department", "classified", "subtopic-ai"]
 description: "Explore how OpenAI Department of War classified AI deployment reshapes modern defense strategy and raises urgent ethical questions you must consider."
-image: "/images/20260228-openai-department-of-war-class.jpg"
+image: "/images/20260228-openai-department-of-war-class.webp"
 technologies: ["Azure", "GPT", "OpenAI", "Anthropic", "Go"]
 faq:
   - question: "OpenAI Department of War classified AI deployment — what exactly was announced?"

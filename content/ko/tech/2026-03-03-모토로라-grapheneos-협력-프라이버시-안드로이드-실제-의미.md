@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-web", "모토로라", "grapheneos", "프라이버시", "안드로이드"]
 description: "모토로라와 GrapheneOS의 협력이 프라이버시 안드로이드 생태계에 미치는 실제 의미를 분석합니다. 이 협력이 일반 사용자에게 가져올 보안 변화와 실질적 영향을 지금 확인하세요."
-image: "/images/20260303-모토로라-grapheneos-협력-프라이버시-안드로이드.jpg"
+image: "/images/20260303-모토로라-grapheneos-협력-프라이버시-안드로이드.webp"
 technologies: ["Go"]
 faq:
   - question: "모토로라 GrapheneOS 협력 프라이버시 안드로이드 실제 의미가 뭔가요"

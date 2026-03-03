@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["ladybird", "browser", "rust", "migration", "subtopic-web"]
 description: "Discover how Ladybird browser Rust migration uses AI-assisted porting and the real risks developers face when automating legacy code conversion."
-image: "/images/20260224-ladybird-browser-rust-migratio.jpg"
+image: "/images/20260224-ladybird-browser-rust-migratio.webp"
 technologies: ["JavaScript", "Rust", "Go", "Java", "C++"]
 faq:
   - question: "What are the main risks of Ladybird browser Rust migration AI-assisted porting?"

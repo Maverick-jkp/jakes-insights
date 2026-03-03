@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-ai", "gram"]
 description: "Zed 에디터 AI 기능에 반발한 개발자들이 GRAM 포크를 출시했습니다. AI 없는 순수 코드 편집기를 원하는 이유와 GRAM의 핵심 차이점을 지금 확인하세요."
-image: "/images/20260303-gram-에디터-ai-없는-zed-포크-개발자-반란.jpg"
+image: "/images/20260303-gram-에디터-ai-없는-zed-포크-개발자-반란.webp"
 technologies: ["Claude", "Linux", "Rust", "Gemini", "Copilot"]
 faq:
   - question: "GRAM 에디터 AI 없는 Zed 포크 개발자 반란 뭔가요"

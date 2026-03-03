@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-security", "모토로라", "grapheneos", "파트너십", "프라이버시"]
 description: "모토로라와 GrapheneOS 파트너십이 프라이버시 폰 시장에 미치는 실제 영향을 분석합니다. 일반 사용자에게 이 협력이 의미하는 바와 보안 강화 효과를 지금 확인하세요."
-image: "/images/20260302-모토로라-grapheneos-파트너십-프라이버시-폰-실.jpg"
+image: "/images/20260302-모토로라-grapheneos-파트너십-프라이버시-폰-실.webp"
 faq:
   - question: "모토로라 GrapheneOS 파트너십 프라이버시 폰 실제 의미가 뭔가요"
     answer: "모토로라 GrapheneOS 파트너십 프라이버시 폰 실제 의미는 크게 두 가지예요. 첫째, GrapheneOS가 픽셀 전용 정책을 처음으로 깨면서 보안 OS 시장의 경쟁 구도가 바뀔 수 있어요. 둘째, 800달러 이하 가격대에 안드로이드 자체를 재설계한 하드화 보안 OS가 탑재된 폰이 처음 등장할 가능성이 열린 거예요."

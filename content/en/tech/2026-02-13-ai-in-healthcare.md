@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["ai in healthcare", "healthcare", "Rust", "subtopic-devtools"]
 description: "Discover how AI in healthcare is revolutionizing patient care, improving diagnostics, and transforming medical research for better outcomes."
-image: "/images/20260213-ai-in-healthcare.jpg"
+image: "/images/20260213-ai-in-healthcare.webp"
 technologies: ["Rust", "Go"]
 faq:
   - question: "what is ai in healthcare used for in 2026"

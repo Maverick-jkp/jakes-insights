@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-devtools", "github", "actions", "cicd"]
 description: "GitHub Actions로 CI/CD 자동화를 처음 설정하는 완벽 입문 가이드. 워크플로우 파일 작성부터 자동 빌드, 테스트, 배포까지 단계별로 따라하며 개발 생산성을 높여보세요."
-image: "/images/20260303-github-actions-입문-가이드-cicd-자동화.jpg"
+image: "/images/20260303-github-actions-입문-가이드-cicd-자동화.webp"
 technologies: ["Node.js", "Docker", "AWS", "GitHub Actions", "Linux"]
 faq:
   - question: "GitHub Actions 처음 설정하는 법 모르겠어요 어디서 시작해야 하나요"

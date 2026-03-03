@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["windows", "notepad", "markdown", "support", "subtopic-security"]
 description: "Discover how Windows 11 Notepad Markdown support enabled a critical CVE remote code execution flaw and learn how to protect your system now."
-image: "/images/20260226-windows-11-notepad-markdown-su.jpg"
+image: "/images/20260226-windows-11-notepad-markdown-su.webp"
 technologies: ["AWS", "Rust", "Go", "VS Code"]
 faq:
   - question: "What is the Windows 11 Notepad Markdown support remote code execution CVE?"

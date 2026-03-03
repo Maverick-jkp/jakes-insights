@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["innerhtml", "sethtml", "firefox", "subtopic-web"]
 description: "innerHTML 보안 취약점을 setHTML API로 해결하는 방법을 알아보세요. Firefox 지원 현황과 실제 마이그레이션 코드 예제로 XSS 공격을 차단하고 더 안전한 웹 앱을 구현하세요."
-image: "/images/20260225-innerhtml-보안-취약점-sethtml-firef.jpg"
+image: "/images/20260225-innerhtml-보안-취약점-sethtml-firef.webp"
 technologies: ["JavaScript", "Go", "Java"]
 faq:
   - question: "innerHTML XSS 공격 왜 위험한가요"

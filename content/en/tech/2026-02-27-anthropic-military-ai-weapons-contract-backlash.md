@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["anthropic", "military", "weapons", "contract", "subtopic-ai"]
 description: "Anthropic military AI weapons contract backlash sparks fierce debate. Explore what it means for AI safety, ethics, and the future of responsible tech."
-image: "/images/20260227-anthropic-military-ai-weapons-.jpg"
+image: "/images/20260227-anthropic-military-ai-weapons-.webp"
 technologies: ["Azure", "Claude", "OpenAI", "Anthropic", "Rust"]
 faq:
   - question: "what happened with the Anthropic military AI weapons contract backlash"

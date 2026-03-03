@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["google", "gemini", "subtopic-ai"]
 description: "Protect your Google Gemini API key now. Learn how breaches happen, what attackers exploit, and steps to lock down your credentials today."
-image: "/images/20260226-google-gemini-api-key-security.jpg"
+image: "/images/20260226-google-gemini-api-key-security.webp"
 technologies: ["JavaScript", "AWS", "GCP", "Claude", "OpenAI"]
 faq:
   - question: "what is the Google Gemini API key security breach risk and why does it matter now"

@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-ai", "apple", "neural", "engine", "reverse"]
 description: "Unlock Apple M4 Neural Engine secrets through reverse engineering and discover how its ML architecture delivers groundbreaking AI performance."
-image: "/images/20260303-apple-m4-neural-engine-reverse.jpg"
+image: "/images/20260303-apple-m4-neural-engine-reverse.webp"
 technologies: ["Python", "Linux", "Rust", "Go", "PyTorch"]
 faq:
   - question: "Apple M4 Neural Engine reverse engineering secrets ML how does it actually work"

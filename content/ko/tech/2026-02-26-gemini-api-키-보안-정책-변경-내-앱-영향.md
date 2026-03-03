@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["gemini", "Firebase", "subtopic-cloud"]
 description: "Gemini API 키 보안 정책이 변경되었습니다. 새로운 정책이 내 앱에 미치는 영향을 분석하고, 서비스 중단 없이 대응하는 실질적인 방법을 지금 확인하세요."
-image: "/images/20260226-gemini-api-키-보안-정책-변경-내-앱-영향.jpg"
+image: "/images/20260226-gemini-api-키-보안-정책-변경-내-앱-영향.webp"
 technologies: ["Go", "Firebase", "Gemini"]
 faq:
   - question: "Gemini API 키 보안 정책 변경 내 앱 영향 어떻게 되나요"

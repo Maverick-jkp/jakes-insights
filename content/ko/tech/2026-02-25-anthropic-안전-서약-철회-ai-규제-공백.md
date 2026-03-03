@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["anthropic", "Claude", "subtopic-ai"]
 description: "Anthropic의 안전 서약 철회가 AI 규제 공백을 심화시키고 있습니다. 이번 결정의 배경과 글로벌 AI 거버넌스에 미치는 영향을 지금 확인하세요."
-image: "/images/20260225-anthropic-안전-서약-철회-ai-규제-공백.jpg"
+image: "/images/20260225-anthropic-안전-서약-철회-ai-규제-공백.webp"
 technologies: ["Claude", "GPT", "OpenAI", "Anthropic", "Go"]
 faq:
   - question: "Anthropic 안전 서약 철회 AI 규제 공백 무슨 일인가요"

@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["openai", "department", "agreement", "subtopic-ai"]
 description: "Explore the OpenAI Department of War AI agreement controversy—what it means for ethics, global security, and the future of artificial intelligence."
-image: "/images/20260301-openai-department-of-war-ai-ag.jpg"
+image: "/images/20260301-openai-department-of-war-ai-ag.webp"
 technologies: ["Azure", "Claude", "GPT", "OpenAI", "Anthropic"]
 faq:
   - question: "What is the OpenAI Department of War AI agreement controversy?"

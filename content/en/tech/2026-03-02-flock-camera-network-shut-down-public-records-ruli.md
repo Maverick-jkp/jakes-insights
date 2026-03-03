@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-security", "flock", "camera", "network", "shut"]
 description: "Flock camera network shut down after landmark public records ruling exposes surveillance data. Learn what this means for privacy rights."
-image: "/images/20260302-flock-camera-network-shut-down.jpg"
+image: "/images/20260302-flock-camera-network-shut-down.webp"
 technologies: ["AWS", "Go"]
 faq:
   - question: "why did Everett Washington shut down its Flock camera network"

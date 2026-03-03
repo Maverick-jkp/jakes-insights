@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["mercury", "OpenAI", "subtopic-ai"]
 description: "Mercury 2 확산 기반 LLM의 추론 속도를 GPT와 직접 비교했습니다. 벤치마크 데이터와 실제 테스트로 두 모델의 성능 차이를 확인하세요."
-image: "/images/20260225-mercury-2-확산-기반-llm-추론-속도-gpt-.jpg"
+image: "/images/20260225-mercury-2-확산-기반-llm-추론-속도-gpt-.webp"
 technologies: ["GPT", "OpenAI", "LangChain", "Go", "Gemini"]
 faq:
   - question: "Mercury 2 확산 기반 LLM 추론 속도 GPT 비교 어떻게 되나요"

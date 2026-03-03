@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["ryan beiermeister", "ryan", "beiermeister", "Claude", "subtopic-ai"]
 description: "Discover Ryan Beiermeister's journey, insights, and expertise in this comprehensive profile exploring his background, achievements, and impact."
-image: "/images/20260212-ryan-beiermeister.jpg"
+image: "/images/20260212-ryan-beiermeister.webp"
 technologies: ["Claude", "GPT", "OpenAI", "Anthropic", "Rust"]
 faq:
   - question: "who is ryan beiermeister"

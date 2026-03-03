@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-ai", "meta", "smart", "glasses", "privacy"]
 description: "Discover how Meta AI smart glasses are reshaping worker surveillance and what privacy risks employees face as wearable data collection expands."
-image: "/images/20260303-meta-ai-smart-glasses-privacy-.jpg"
+image: "/images/20260303-meta-ai-smart-glasses-privacy-.webp"
 technologies: ["Go"]
 faq:
   - question: "can Meta AI smart glasses workers see your footage"

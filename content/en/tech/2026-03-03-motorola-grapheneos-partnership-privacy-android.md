@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-mobile", "motorola", "grapheneos", "partnership", "privacy"]
 description: "Discover how the Motorola GrapheneOS partnership is reshaping Android privacy. See what this means for your data security today."
-image: "/images/20260303-motorola-grapheneos-partnershi.jpg"
+image: "/images/20260303-motorola-grapheneos-partnershi.webp"
 technologies: ["Rust", "Go"]
 faq:
   - question: "Motorola GrapheneOS partnership privacy Android - what does it mean for users?"

@@ -1486,7 +1486,7 @@ JSON 배열만 반환:
             from datetime import timezone, timedelta
             kst = timezone(timedelta(hours=9))
             date_str = datetime.now(kst).strftime("%Y%m%d")
-            filename = f"{date_str}-{slug}.jpg"
+            filename = f"{date_str}-{slug}.webp"
             filepath = images_dir / filename
 
             # Trigger Unsplash download tracking (required by API terms)
@@ -1504,9 +1504,9 @@ JSON 배열만 반환:
             download_url = image_info.get('url', '')
             # Add additional optimization parameters
             if '?' in download_url:
-                optimized_url = f"{download_url}&w=1200&q=85&fm=jpg"
+                optimized_url = f"{download_url}&w=1200&q=85&fm=webp"
             else:
-                optimized_url = f"{download_url}?w=1200&q=85&fm=jpg"
+                optimized_url = f"{download_url}?w=1200&q=85&fm=webp"
 
             safe_print(f"  📥 Downloading optimized image (1200px, q85)...")
             # Use certifi for SSL verification (Windows compatibility)
@@ -1520,7 +1520,7 @@ JSON 배열만 반환:
 
             # Check for duplicate images by hash
             duplicate_found = False
-            for existing_file in images_dir.glob("*.jpg"):
+            for existing_file in images_dir.glob("*.webp"):
                 if existing_file.exists():
                     try:
                         with open(existing_file, 'rb') as f:

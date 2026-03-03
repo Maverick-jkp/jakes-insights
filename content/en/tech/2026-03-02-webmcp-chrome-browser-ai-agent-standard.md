@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-web", "webmcp", "chrome", "browser", "agent"]
 description: "Discover how WebMCP Chrome browser AI agent standard is reshaping automation. Learn to build smarter, faster web agents today."
-image: "/images/20260302-webmcp-chrome-browser-ai-agent.jpg"
+image: "/images/20260302-webmcp-chrome-browser-ai-agent.webp"
 technologies: ["REST API", "Claude", "GPT", "OpenAI", "Anthropic"]
 faq:
   - question: "what is WebMCP Chrome browser AI agent standard and how does it work"

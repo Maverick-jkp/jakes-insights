@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-ai", "technica", "저널리즘"]
 description: "Ars Technica 기자가 AI 가짜 인용 기사로 해고된 사건을 분석합니다. AI 저널리즘의 신뢰 위기와 윤리적 문제를 확인하고 미디어의 미래를 생각해보세요."
-image: "/images/20260303-ars-technica-ai-가짜-인용-기자-해고-ai.jpg"
+image: "/images/20260303-ars-technica-ai-가짜-인용-기자-해고-ai.webp"
 technologies: ["GPT", "OpenAI", "Anthropic", "Rust", "Go"]
 faq:
   - question: "Ars Technica AI 가짜 인용 기자 해고 사건 무슨 일이야"

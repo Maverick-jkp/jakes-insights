@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["ai real estate", "real", "estate", "React", "Rust"]
 description: "Discover how AI real estate tools are transforming property search, pricing, and investment decisions. Start making smarter moves today."
-image: "/images/20260221-ai-real-estate.jpg"
+image: "/images/20260221-ai-real-estate.webp"
 technologies: ["React", "Rust", "Go"]
 faq:
   - question: "how is ai real estate technology being used by brokerages in 2025"

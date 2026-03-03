@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["anthropic", "Claude", "subtopic-ai"]
 description: "Anthropic의 국방부 계약이 AI 안전성 원칙과 충돌한다는 논란을 분석합니다. 이 결정이 AI 윤리와 미래에 미치는 영향을 지금 확인하세요."
-image: "/images/20260227-anthropic-국방부-계약-ai-안전성-포기-논란.jpg"
+image: "/images/20260227-anthropic-국방부-계약-ai-안전성-포기-논란.webp"
 technologies: ["Claude", "GPT", "OpenAI", "Anthropic", "Go"]
 faq:
   - question: "Anthropic 국방부 계약 AI 안전성 포기 논란 무슨 일이야"

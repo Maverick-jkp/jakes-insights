@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["taalas", "subtopic-ai"]
 description: "Discover how Taalas prints LLM onto a chip, revolutionizing AI deployment with faster, efficient on-device intelligence. Learn the process now."
-image: "/images/20260222-how-taalas-prints-llm-onto-a-c.jpg"
+image: "/images/20260222-how-taalas-prints-llm-onto-a-c.webp"
 technologies: ["GPT", "OpenAI", "Anthropic", "Go", "Llama"]
 faq:
   - question: "How Taalas prints LLM onto a chip and why does it matter"

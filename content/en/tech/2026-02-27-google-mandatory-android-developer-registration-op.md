@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["google", "mandatory", "android", "developer", "subtopic-mobile"]
 description: "Developers push back against Google mandatory Android developer registration. Read why the open letter is sparking debate across the tech community."
-image: "/images/20260227-google-mandatory-android-devel.jpg"
+image: "/images/20260227-google-mandatory-android-devel.webp"
 technologies: ["Go"]
 faq:
   - question: "what is the Google mandatory Android developer registration open letter backlash about"

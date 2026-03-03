@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["sethtml", "protection", "firefox", "subtopic-web"]
 description: "Discover how Firefox 148 setHTML API replaces innerHTML to block XSS attacks and why developers should adopt this safer DOM method today."
-image: "/images/20260225-sethtml-xss-protection-firefox.jpg"
+image: "/images/20260225-sethtml-xss-protection-firefox.webp"
 technologies: ["JavaScript", "React", "Angular", "Rust", "Go"]
 faq:
   - question: "what is setHTML XSS protection Firefox 148 innerHTML replacement"

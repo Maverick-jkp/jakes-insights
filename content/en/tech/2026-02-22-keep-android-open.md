@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["keep android open", "keep", "android", "open", "Linux"]
 description: "Discover why keeping Android open matters for innovation, user freedom, and app diversity. Learn how openness shapes the future of mobile tech."
-image: "/images/20260222-keep-android-open.jpg"
+image: "/images/20260222-keep-android-open.webp"
 technologies: ["Linux", "Rust", "Go"]
 faq:
   - question: "What is the Keep Android Open movement and what does it want?"

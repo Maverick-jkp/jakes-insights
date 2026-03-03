@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["airsnitch", "wi-fi", "client", "isolation", "subtopic-security"]
 description: "Discover how the AirSnitch Wi-Fi client isolation bypass attack works, what networks are vulnerable, and steps to protect your devices today."
-image: "/images/20260227-airsnitch-wifi-client-isolatio.jpg"
+image: "/images/20260227-airsnitch-wifi-client-isolatio.webp"
 technologies: ["Rust", "Go"]
 faq:
   - question: "what is the AirSnitch Wi-Fi client isolation bypass attack 2026"

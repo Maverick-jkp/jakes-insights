@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["anthropic", "safety", "pledge", "dropped", "subtopic-ai"]
 description: "Anthropic safety pledge dropped AI race pressure—discover how this bold commitment reshapes the future of responsible AI development today."
-image: "/images/20260225-anthropic-safety-pledge-droppe.jpg"
+image: "/images/20260225-anthropic-safety-pledge-droppe.webp"
 technologies: ["AWS", "Claude", "GPT", "OpenAI", "Anthropic"]
 faq:
   - question: "what is the Anthropic safety pledge dropped AI race pressure story about"

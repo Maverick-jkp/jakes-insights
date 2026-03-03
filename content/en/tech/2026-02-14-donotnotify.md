@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["donotnotify", "React", "subtopic-devtools"]
 description: "Take control of your notifications with DoNotNotify. Learn how to reduce digital distractions, boost productivity, and reclaim your focus today."
-image: "/images/20260214-donotnotify.jpg"
+image: "/images/20260214-donotnotify.webp"
 technologies: ["React", "AWS", "Linux", "Rust", "Go"]
 faq:
   - question: "what is DoNotNotify app"

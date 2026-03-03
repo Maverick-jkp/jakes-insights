@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-ai", "gram", "editor", "fork"]
 description: "Discover GRAM editor, the Zed fork built for 2026 with no AI bloat and full open source freedom. Take control of your coding experience today."
-image: "/images/20260303-gram-editor-zed-fork-no-ai-ope.jpg"
+image: "/images/20260303-gram-editor-zed-fork-no-ai-ope.webp"
 technologies: ["Anthropic", "Linux", "Rust", "Go", "VS Code"]
 faq:
   - question: "What is GRAM editor and how is it different from Zed?"

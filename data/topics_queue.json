@@ -3790,6 +3790,351 @@
       "retry_count": 0,
       "reserved_at": "2026-03-03T00:01:08.865690+00:00",
       "completed_at": "2026-03-03T00:04:18.042758+00:00"
+    },
+    {
+      "id": "1103-en-tech-Motorola-GrapheneOS-",
+      "keyword": "Motorola GrapheneOS partnership privacy Android",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220553",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and privacy-conscious users want to know if this partnership is genuine or a marketing stunt",
+      "angle": "Skeptical analysis — corporate adoption of open-source privacy tools and what gets compromised",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Motorola confirms GrapheneOS support for a future phone, bringing over features",
+          "url": "https://9to5google.com/2026/03/01/motorola-confirms-grapheneos-partnership-for-a-future-smartphone-porting-features/",
+          "source": "9to5google.com"
+        },
+        {
+          "title": "Motorola is bringing the world's most privacy-focused Android OS to its phones - PhoneArena",
+          "url": "https://www.phonearena.com/news/motorola-has-partnered-with-grapheneos_id178609",
+          "source": "www.phonearena.com"
+        },
+        {
+          "title": "Motorola News | Motorola's new partnership with GrapheneOS",
+          "url": "https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/",
+          "source": "motorolanews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1104-en-tech-Ars-Technica-reporte",
+      "keyword": "Ars Technica reporter fired AI fabricated quotes journalism crisis",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220601",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Tech readers and journalists want to understand how the incident happened and what it signals about AI in newsrooms",
+      "angle": "Industry accountability — the hidden risk of AI tools creeping into editorial workflows without oversight",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes",
+          "url": "https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes",
+          "source": "futurism.com"
+        },
+        {
+          "title": "Ars Technica pulls story after AI reporter fabricated quotes | Media Copilot",
+          "url": "https://mediacopilot.ai/ars-technica-ai-reporter-fabricated-quotes-disaster/",
+          "source": "mediacopilot.ai"
+        },
+        {
+          "title": "An AI Agent Published a Hit Piece on Me – More Things Have Happened",
+          "url": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/",
+          "source": "theshamblog.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1105-en-tech-Meta-AI-smart-glasse",
+      "keyword": "Meta AI smart glasses privacy workers surveillance data",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220639",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "People alarmed by reports of Meta employees reviewing footage are searching for what the glasses actually collect",
+      "angle": "Surveillance capitalism — how ambient AI hardware erases the line between product feature and mass data collection",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Meta’s AI Smart Glasses and Data Privacy Concerns: Workers Say “We See Everything”",
+          "url": "https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything",
+          "source": "www.svd.se"
+        },
+        {
+          "title": "The workers behind Meta's smart glasses can see everything | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47225130",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "This App Warns You if Someone Is Wearing Smart Glasses Nearby",
+          "url": "https://www.404media.co/this-app-warns-you-if-someone-is-wearing-smart-glasses-nearby/",
+          "source": "www.404media.co"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1106-en-tech-GRAM-editor-Zed-fork",
+      "keyword": "GRAM editor Zed fork no AI open source 2026",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220702",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers frustrated with mandatory AI integrations in editors are looking for clean, minimal alternatives",
+      "angle": "Developer autonomy — the quiet rebellion against AI being baked into every layer of the development toolchain",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Cursor Alternatives 2026: 8 AI Coding Tools Compared",
+          "url": "https://www.morphllm.com/comparisons/cursor-alternatives",
+          "source": "www.morphllm.com"
+        },
+        {
+          "title": "Hyping an Editor (Zed) in the Age of AI | by tildehacker | Feb, 2026 | Medium",
+          "url": "https://medium.com/@tildehacker/hyping-an-editor-in-the-age-of-ai-0d91cd4d68cc",
+          "source": "medium.com"
+        },
+        {
+          "title": "Best AI Coding Agents 2026: The Senior Editor’s Guide",
+          "url": "https://cssauthor.com/best-ai-coding-agents/",
+          "source": "cssauthor.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1107-ko-tech-모토로라-GrapheneOS-협력-프",
+      "keyword": "모토로라 GrapheneOS 협력 프라이버시 안드로이드 실제 의미",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220732",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "구글·메타 감시에 지친 국내 사용자들이 탈구글 안드로이드 대안을 검색 중",
+      "angle": "탈구글 현실 가능성 — 일반 사용자도 GrapheneOS 폰을 쓸 수 있는 시대가 오는가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GrapheneOS and Motorola collaboration could lead to more secure smartphone options. | The Verge",
+          "url": "https://www.theverge.com/gadgets/887769/grapheneos-and-motorola-collaboration-could-lead-to-more-secure-smartphone-options",
+          "source": "www.theverge.com"
+        },
+        {
+          "title": "Motorola to deliver privacy-focused phones by offering GrapheneOS as alternative to Android - Notebo",
+          "url": "https://www.notebookcheck.net/Motorola-to-deliver-privacy-focused-phones-by-offering-GrapheneOS-as-alternative-to-Android.1239380.0.html",
+          "source": "www.notebookcheck.net"
+        },
+        {
+          "title": "Motorola Announces a Deal with Security-First Android Project GrapheneOS for \"Future Devices\" - Hack",
+          "url": "https://www.hackster.io/news/motorola-announces-a-deal-with-security-first-android-project-grapheneos-for-future-devices-d77823707ef9",
+          "source": "www.hackster.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1108-ko-tech-메타-AI-스마트글라스-개인정보-침해",
+      "keyword": "메타 AI 스마트글라스 개인정보 침해 직원 모니터링",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220780",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "스마트글라스 관련 해외 논란을 접한 국내 사용자가 국내법 적용 가능성과 실제 위험을 검색",
+      "angle": "국내 적용 — 개인정보보호법 관점에서 메타 글라스가 한국에서 합법인가",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "메타, 프라다 안경 출시 예고?",
+          "url": "https://startuprecipe.co.kr/archives/5807878",
+          "source": "startuprecipe.co.kr"
+        },
+        {
+          "title": "오픈AI, 'AI 악의적 사용 차단' 보고서 공개...“위협 행위자, 단일 모델 아닌 복수 AI·플랫폼 결합 활용”",
+          "url": "https://www.aitimes.kr/news/articleView.html?idxno=38839",
+          "source": "www.aitimes.kr"
+        },
+        {
+          "title": "메타, 연내 스테이블코인 결제 시장 진출 추진 | 한국경제",
+          "url": "https://www.hankyung.com/article/202602252495B",
+          "source": "www.hankyung.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1109-ko-tech-Claude-AI-오류-급증-Open",
+      "keyword": "Claude AI 오류 급증 OpenAI 이탈 사용자 몰림 장애",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220820",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "OpenAI 논란 이후 Claude로 갈아탄 국내 개발자·직장인이 장애 원인과 대안을 검색 중",
+      "angle": "AI 서비스 의존 리스크 — 핵심 업무를 단일 AI에 맡기는 것의 위험성",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "클로드, 수요 급증으로 접속 장애…챗GPT 구독 취소도 이어져 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=207440",
+          "source": "www.aitimes.com"
+        },
+        {
+          "title": "Claude AI down! Platforms present instability and frustrate users due to service interruptions – Mix",
+          "url": "https://www.mixvale.com.br/2026/03/02/claude-ai-down-platforms-present-instability-and-frustrate-users-due-to-service-interruptions-en/",
+          "source": "www.mixvale.com.br"
+        },
+        {
+          "title": "Anthropic: The Claude API is working correctly; the issues are mainly concentrated on the web interf",
+          "url": "https://www.panewslab.com/en/articles/019cae89-11ab-77ce-af52-689b119a146a",
+          "source": "www.panewslab.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1110-ko-tech-Ars-Technica-AI-가짜-인",
+      "keyword": "Ars Technica AI 가짜 인용 기자 해고 AI 저널리즘 신뢰",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220856",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 도구로 작성된 기사의 신뢰성에 의문을 품은 독자·미디어 종사자가 사건 경위를 검색",
+      "angle": "미디어 신뢰 붕괴 — AI 보조 저널리즘이 정보 품질을 어떻게 위협하는가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes – DNYUZ",
+          "url": "https://dnyuz.com/2026/03/03/ars-technica-fires-reporter-after-ai-controversy-involving-fabricated-quotes/",
+          "source": "dnyuz.com"
+        },
+        {
+          "title": "Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes",
+          "url": "https://futurism.com/artificial-intelligence/ars-technica-fires-reporter-ai-quotes",
+          "source": "futurism.com"
+        },
+        {
+          "title": "Ars Technica pulls story after AI reporter fabricated quotes | Media Copilot",
+          "url": "https://mediacopilot.ai/ars-technica-ai-reporter-fabricated-quotes-disaster/",
+          "source": "mediacopilot.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1111-ko-tech-GRAM-에디터-Zed-포크-AI-없",
+      "keyword": "GRAM 에디터 Zed 포크 AI 없는 코드 에디터 등장",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220885",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "VS Code·Cursor·Zed의 AI 강제 수집에 피로감을 느끼는 국내 개발자가 대안 에디터를 검색",
+      "angle": "개발자 자율성 — AI 통합 거부 운동이 오픈소스 에디터 생태계를 어떻게 바꾸는가",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1112-ko-tech-GitHub-Actions-입문-가이",
+      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.220978",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI/CD 개념은 알지만 실제 적용 경험이 없는 개발자가 GitHub Actions로 자동화를 처음 구현하려 함",
+      "angle": "YAML 문법부터 실제 배포 파이프라인 구성까지, 개념 설명 없이 바로 따라할 수 있는 실전 튜토리얼",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
+          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
+          "source": "inblog.ai"
+        },
+        {
+          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
+          "url": "https://notavoid.tistory.com/157",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1113-ko-tech-클라우드-스토리지-비교:-S3-vs-",
+      "keyword": "클라우드 스토리지 비교: S3 vs Google Cloud Storage vs Azure Blob",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-03T07:45:52.221008",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "프로젝트에 맞는 클라우드 스토리지를 선택하려는 개발자 또는 스타트업 기술 담당자가 비용·성능·생태계를 비교하고 싶어함",
+      "angle": "가격 구조, 데이터 전송 비용, SDK 지원, 실제 사용 사례를 기준으로 세 서비스를 표 형태로 직관적 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "S3 Vs. GCS Vs. Azure Blob Storage: Cloud Storage Comparison | Airbyte",
+          "url": "https://airbyte.com/data-engineering-resources/s3-gcs-and-azure-blob-storage-compared",
+          "source": "airbyte.com"
+        },
+        {
+          "title": "Object Storage Face-Off: Cloudflare R2 vs S3 vs Azure Blob vs Google Cloud Storage",
+          "url": "https://inventivehq.com/blog/cloudflare-r2-vs-aws-s3-vs-azure-blob-vs-google-cloud-storage-comparison",
+          "source": "inventivehq.com"
+        },
+        {
+          "title": "AWS S3 vs Azure Blob Storage vs Google Cloud Storage for Data Lakes - Branch Boston",
+          "url": "https://branchboston.com/aws-s3-vs-azure-blob-storage-vs-google-cloud-storage-for-data-lakes/",
+          "source": "branchboston.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

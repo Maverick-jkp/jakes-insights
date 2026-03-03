@@ -18,6 +18,16 @@
 {{/* Favicon */}}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
+{{/* LCP image preload — homepage hero only */}}
+{{ if .IsHome }}
+  {{ $pages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
+  {{ $posts := where $pages "Type" "!=" "page" }}
+  {{ $featured := index $posts 0 }}
+  {{ with $featured }}{{ with .Params.image }}
+  <link rel="preload" as="image" href="{{ . }}" fetchpriority="high">
+  {{ end }}{{ end }}
+{{ end }}
+
 {{/* CSS */}}
 {{ $variables := resources.Get "css/variables.css" }}
 {{ $main := resources.Get "css/main.css" }}

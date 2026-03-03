@@ -94,10 +94,16 @@
       {{ .Content }}
     </div>
 
-    {{/* Tags */}}
-    {{ with .Params.tags }}
+    {{/* Tags — skip subtopic-* (internal classification) and short noise words */}}
+    {{ $visibleTags := slice }}
+    {{ range .Params.tags }}
+      {{ if and (not (hasPrefix . "subtopic-")) (gt (len .) 3) }}
+        {{ $visibleTags = $visibleTags | append . }}
+      {{ end }}
+    {{ end }}
+    {{ if $visibleTags }}
     <div class="tag-list">
-      {{ range . }}
+      {{ range $visibleTags }}
         <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag-pill">{{ . }}</a>
       {{ end }}
     </div>

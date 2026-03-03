@@ -261,7 +261,7 @@ def _unsplash_search(query: str, unsplash_key: str, verify_ssl) -> Optional[Dict
     """Search Unsplash and return first photo or None."""
     search_url = "https://api.unsplash.com/search/photos"
     headers = {"Authorization": f"Client-ID {unsplash_key}"}
-    params = {"query": query[:50], "per_page": 5, "orientation": "landscape"}
+    params = {"query": query[:50], "per_page": 30, "orientation": "landscape"}
     resp = requests.get(search_url, params=params, headers=headers,
                         timeout=10, verify=verify_ssl)
     resp.raise_for_status()
@@ -269,38 +269,44 @@ def _unsplash_search(query: str, unsplash_key: str, verify_ssl) -> Optional[Dict
     return results[0] if results else None
 
 
-# Fallback queries per subtopic when original keyword returns no results
-SUBTOPIC_FALLBACKS = {
-    "freelancing":      "freelance work laptop",
-    "digital-products": "digital product laptop",
-    "ai-income":        "artificial intelligence laptop",
-    "saas":             "software startup laptop",
-    "content":          "content creator laptop",
-    "passive":          "passive income money",
-    "security":         "cybersecurity code",
-    "jobs":             "remote work laptop",
-    "general":          "developer side hustle",
+# English image queries per subtopic — used as primary query for all languages
+# KO keywords would return no Unsplash results, so always search in English
+SUBTOPIC_IMAGE_QUERIES = {
+    "freelancing":      "freelance developer laptop workspace",
+    "digital-products": "digital product design laptop",
+    "ai-income":        "artificial intelligence developer laptop",
+    "saas":             "software startup saas product",
+    "content":          "content creator writing laptop",
+    "passive":          "passive income investment money",
+    "security":         "cybersecurity hacking code",
+    "jobs":             "remote work developer laptop",
+    "general":          "developer side project income",
 }
 
 
-def fetch_image(keyword: str, unsplash_key: str, subtopic: str = "") -> tuple[Optional[str], Optional[Dict]]:
-    """Fetch image from Unsplash with fallback queries. Never returns None if key is set."""
+def fetch_image(keyword: str, unsplash_key: str, subtopic: str = "", lang: str = "en") -> tuple[Optional[str], Optional[Dict]]:
+    """Fetch image from Unsplash. For KO keywords, uses English subtopic query directly
+    since Unsplash returns no results for Korean text."""
     if not unsplash_key:
         return None, None
 
     try:
         verify_ssl = certifi.where() if certifi else True
-        headers = {"Authorization": f"Client-ID {unsplash_key}"}
 
-        # Try original keyword, then subtopic fallback, then generic fallback
-        fallback = SUBTOPIC_FALLBACKS.get(subtopic, "developer laptop money")
-        queries = [keyword, fallback, "developer laptop"]
+        # For Korean keywords: skip the Korean keyword entirely, use English subtopic query
+        # For English keywords: try keyword first, then fall back to subtopic query
+        subtopic_query = SUBTOPIC_IMAGE_QUERIES.get(subtopic, "developer laptop money")
+        if lang == "ko":
+            queries = [subtopic_query, "developer laptop money"]
+        else:
+            queries = [keyword, subtopic_query, "developer laptop money"]
+
         photo = None
         for q in queries:
             photo = _unsplash_search(q, unsplash_key, verify_ssl)
             if photo:
                 if q != keyword:
-                    safe_print(f"  ℹ️  Image fallback used: '{q}'")
+                    safe_print(f"  ℹ️  Image query: '{q}'")
                 break
 
         if not photo:
@@ -385,7 +391,18 @@ Requirements:
 - Start with a specific income number or surprising stat
 - Include realistic income ranges throughout
 - Mention actual platform names, rates, timelines
-- End with a concrete next step
+
+CONCLUSION RULES (critical — this is where most articles fail):
+- Final section must be titled "## Next Step" (EN) or "## 지금 당장 할 수 있는 것" (KO)
+- Give ONE specific, actionable task with exact details:
+  EN example: "Go to upwork.com, create a profile in the 'Web Development' category,
+  set your rate at $65/hr, and apply to 3 jobs posted in the last 24 hours. Do this today."
+  KO example: "지금 upwork.com에서 'Web Development' 카테고리로 프로필을 만들고,
+  시급 $65로 설정한 뒤, 오늘 올라온 공고 3개에 바로 지원해보세요."
+- Include a specific URL, platform name, or tool name
+- Give a realistic time estimate: "takes 20 minutes", "30분이면 충분"
+- NO vague motivational phrases like "가장 나쁜 상태는...", "언젠가 해봐야지", "Start today!"
+- End with a single direct sentence about what happens AFTER that first step
 
 Write the full article body in Markdown (##, ###, bullet points).
 Do NOT include a title line (no # heading at top) — just the body."""
@@ -556,7 +573,7 @@ def main():
 
             # Fetch image
             safe_print("  🖼️  Fetching image...")
-            image_path, image_credit = fetch_image(kw["keyword"], unsplash_key, kw["subtopic"])
+            image_path, image_credit = fetch_image(kw["keyword"], unsplash_key, kw["subtopic"], lang)
 
             # Generate content
             try:

@@ -4,7 +4,7 @@ date: 2026-03-03T08:38:29+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Apple M4 Neural Engine reverse engineering secrets ML", "tech", "subtopic:ai", "apple", "neural", "engine", "reverse"]
+tags: ["subtopic-ai", "apple", "neural", "engine", "reverse"]
 description: "Unlock Apple M4 Neural Engine secrets through reverse engineering and discover how its ML architecture delivers groundbreaking AI performance."
 image: "/images/20260303-apple-m4-neural-engine-reverse.jpg"
 technologies: ["Python", "Linux", "Rust", "Go", "PyTorch"]

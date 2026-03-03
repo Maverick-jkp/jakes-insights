@@ -4,7 +4,7 @@ date: 2026-03-02T19:46:45+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["WebMCP Chrome browser AI agent standard", "tech", "subtopic:web", "webmcp", "chrome", "browser", "agent"]
+tags: ["subtopic-web", "webmcp", "chrome", "browser", "agent"]
 description: "Discover how WebMCP Chrome browser AI agent standard is reshaping automation. Learn to build smarter, faster web agents today."
 image: "/images/20260302-webmcp-chrome-browser-ai-agent.jpg"
 technologies: ["REST API", "Claude", "GPT", "OpenAI", "Anthropic"]

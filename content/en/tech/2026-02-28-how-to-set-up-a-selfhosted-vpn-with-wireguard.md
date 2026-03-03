@@ -4,7 +4,7 @@ date: 2026-02-28T19:42:13+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["how to set up a self-hosted VPN with WireGuard", "tech", "how", "set", "self-hosted", "vpn", "subtopic:devtools"]
+tags: ["self-hosted", "subtopic-devtools"]
 description: "Learn how to set up a self-hosted VPN with WireGuard in minutes. Take control of your privacy with this fast, secure, step-by-step guide."
 image: "/images/20260228-how-to-set-up-a-selfhosted-vpn.jpg"
 technologies: ["Linux", "Rust", "Go", "Slack"]

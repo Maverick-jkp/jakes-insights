@@ -4,7 +4,7 @@ date: 2026-02-28T19:31:58+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["California OS age verification law Linux open source impact", "tech", "california", "age", "verification", "law", "subtopic:devtools"]
+tags: ["california", "verification", "subtopic-devtools"]
 description: "Discover how California's OS age verification law threatens Linux and open source projects—and what developers must do to protect digital freedom now."
 image: "/images/20260228-california-os-age-verification.jpg"
 technologies: ["AWS", "Azure", "Linux", "Go", "Slack"]

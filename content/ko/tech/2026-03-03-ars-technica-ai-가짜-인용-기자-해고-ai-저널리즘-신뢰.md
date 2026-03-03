@@ -4,7 +4,7 @@ date: 2026-03-03T19:59:55+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Ars Technica AI \uac00\uc9dc \uc778\uc6a9 \uae30\uc790 \ud574\uace0 AI \uc800\ub110\ub9ac\uc998 \uc2e0\ub8b0", "tech", "subtopic:ai", "ars", "technica", "\uc800\ub110\ub9ac\uc998", "GPT"]
+tags: ["subtopic-ai", "technica", "저널리즘"]
 description: "Ars Technica 기자가 AI 가짜 인용 기사로 해고된 사건을 분석합니다. AI 저널리즘의 신뢰 위기와 윤리적 문제를 확인하고 미디어의 미래를 생각해보세요."
 image: "/images/20260303-ars-technica-ai-가짜-인용-기자-해고-ai.jpg"
 technologies: ["GPT", "OpenAI", "Anthropic", "Rust", "Go"]

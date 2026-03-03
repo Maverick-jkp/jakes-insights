@@ -4,7 +4,7 @@ date: 2026-03-02T20:07:21+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Prometheus vs Grafana \ucc28\uc774\uc810\uacfc \ubaa8\ub2c8\ud130\ub9c1 \uc2a4\ud0dd \uad6c\uc131\ubc95", "tech", "subtopic:data", "prometheus", "grafana", "\ucc28\uc774\uc810\uacfc", "\ubaa8\ub2c8\ud130\ub9c1"]
+tags: ["subtopic-data", "prometheus", "grafana", "차이점과", "모니터링"]
 description: "Prometheus와 Grafana의 핵심 차이점을 명확히 이해하고, 두 도구를 결합한 실전 모니터링 스택 구성법을 단계별로 배워보세요. 효율적인 시스템 관찰을 시작하세요."
 image: "/images/20260302-prometheus-vs-grafana-차이점과-모니터.jpg"
 technologies: ["Docker", "Kubernetes", "Go", "Slack"]

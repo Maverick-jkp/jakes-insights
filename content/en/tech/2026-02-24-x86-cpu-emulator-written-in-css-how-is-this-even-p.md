@@ -4,7 +4,7 @@ date: 2026-02-24T20:22:10+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["x86 cpu emulator written in css how is this even p", "tech", "x86", "cpu", "emulator", "subtopic:web"]
+tags: ["emulator", "subtopic-web"]
 description: "Discover how a working X86 CPU emulator written in CSS defies logic. Explore the mind-bending trick that makes this impossible feat reality."
 image: "/images/20260224-x86-cpu-emulator-written-in-cs.jpg"
 technologies: ["JavaScript", "React", "Rust", "Go", "Java"]

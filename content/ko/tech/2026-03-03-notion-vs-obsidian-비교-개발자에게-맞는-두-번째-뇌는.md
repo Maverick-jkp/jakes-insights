@@ -4,7 +4,7 @@ date: 2026-03-03T09:04:18+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Notion vs Obsidian \ube44\uad50 \uac1c\ubc1c\uc790\uc5d0\uac8c \ub9de\ub294 \ub450 \ubc88\uc9f8 \ub1cc\ub294", "tech", "subtopic:web", "notion", "obsidian", "\uac1c\ubc1c\uc790\uc5d0\uac8c", "Copilot"]
+tags: ["subtopic-web", "notion", "obsidian", "개발자에게", "Copilot"]
 description: "Notion과 Obsidian, 개발자에게 진짜 맞는 두 번째 뇌는 무엇일까요? 협업·데이터베이스 강점의 Notion과 로컬 마크다운·그래프 뷰의 Obsidian을 직접 비교해 나에게 맞는 도"
 image: "/images/20260303-notion-vs-obsidian-비교-개발자에게-맞는.jpg"
 technologies: ["Notion", "Copilot"]

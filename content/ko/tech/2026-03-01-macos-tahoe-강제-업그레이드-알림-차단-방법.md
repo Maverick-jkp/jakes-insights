@@ -4,7 +4,7 @@ date: 2026-03-01T19:40:55+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["macOS Tahoe 강제 업그레이드 알림 차단 방법", "tech", "macos", "tahoe", "업그레이드", "subtopic:web"]
+tags: ["macos", "tahoe", "업그레이드", "subtopic-web"]
 description: "macOS Tahoe 강제 업그레이드 알림을 차단하는 방법을 단계별로 안내합니다. 설정 변경부터 터미널 명령어까지, 업무 흐름을 방해하는 팝업을 완전히 제거하세요."
 image: "/images/20260301-macos-tahoe-강제-업그레이드-알림-차단-방법.jpg"
 faq:

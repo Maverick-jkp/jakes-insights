@@ -4,7 +4,7 @@ date: 2026-02-27T16:32:24+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["cybersecurity 2026", "tech", "security", "vulnerability", "malware", "subtopic:security"]
+tags: ["cybersecurity 2026", "security", "vulnerability", "malware", "subtopic-security"]
 description: "A practical security guide for developers in 2026: API key exposure, browser vulnerabilities, social engineering attacks, and privacy erosion from LLMs."
 image: "/images/2026-02-27-cybersecurity-2026-developer-guide.jpg"
 ---

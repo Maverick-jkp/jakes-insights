@@ -4,7 +4,7 @@ date: 2026-03-02T19:54:19+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Flock camera network shut down public records ruling surveillance", "tech", "subtopic:security", "flock", "camera", "network", "shut"]
+tags: ["subtopic-security", "flock", "camera", "network", "shut"]
 description: "Flock camera network shut down after landmark public records ruling exposes surveillance data. Learn what this means for privacy rights."
 image: "/images/20260302-flock-camera-network-shut-down.jpg"
 technologies: ["AWS", "Go"]

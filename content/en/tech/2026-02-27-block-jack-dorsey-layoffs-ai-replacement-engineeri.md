@@ -4,7 +4,7 @@ date: 2026-02-27T19:45:17+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Block Jack Dorsey layoffs AI replacement engineering teams", "tech", "block", "jack", "dorsey", "layoffs", "subtopic:ai"]
+tags: ["block", "jack", "dorsey", "layoffs", "subtopic-ai"]
 description: "Block lays off engineering teams as Jack Dorsey bets on AI replacement. Learn what this means for tech workers and the future of software development."
 image: "/images/20260227-block-jack-dorsey-layoffs-ai-r.jpg"
 technologies: ["Claude", "GPT", "Anthropic", "Go", "Stripe"]

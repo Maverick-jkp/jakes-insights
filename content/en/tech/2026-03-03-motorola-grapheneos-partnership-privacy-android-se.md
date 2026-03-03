@@ -4,7 +4,7 @@ date: 2026-03-03T08:32:52+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Motorola GrapheneOS partnership privacy Android security", "tech", "subtopic:security", "motorola", "grapheneos", "partnership", "privacy"]
+tags: ["subtopic-security", "motorola", "grapheneos", "partnership", "privacy"]
 description: "Discover how a Motorola GrapheneOS partnership could redefine Android security and give users real privacy without sacrificing usability."
 image: "/images/20260303-motorola-grapheneos-partnershi.jpg"
 technologies: ["Go"]

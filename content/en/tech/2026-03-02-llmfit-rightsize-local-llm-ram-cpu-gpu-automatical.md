@@ -4,7 +4,7 @@ date: 2026-03-02T20:02:15+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["LLMfit right-size local LLM RAM CPU GPU automatically", "tech", "subtopic:ai", "llmfit", "right-size", "local", "llm"]
+tags: ["subtopic-ai", "llmfit", "right-size", "local"]
 description: "Discover how LLMfit automatically right-sizes local LLM RAM, CPU, and GPU resources so your models run faster with zero manual tuning."
 image: "/images/20260302-llmfit-rightsize-local-llm-ram.jpg"
 technologies: ["Linux", "Rust", "Go", "Ollama", "Hugging Face"]

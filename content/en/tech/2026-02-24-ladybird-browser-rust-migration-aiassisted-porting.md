@@ -4,7 +4,7 @@ date: 2026-02-24T19:59:43+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["ladybird browser rust migration aiassisted porting", "tech", "ladybird", "browser", "rust", "migration", "subtopic:web"]
+tags: ["ladybird", "browser", "rust", "migration", "subtopic-web"]
 description: "Discover how Ladybird browser Rust migration uses AI-assisted porting and the real risks developers face when automating legacy code conversion."
 image: "/images/20260224-ladybird-browser-rust-migratio.jpg"
 technologies: ["JavaScript", "Rust", "Go", "Java", "C++"]

@@ -4,7 +4,7 @@ date: 2026-03-03T19:49:51+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Ars Technica reporter fired AI fabricated quotes journalism crisis", "tech", "subtopic:ai", "ars", "technica", "reporter", "fired"]
+tags: ["subtopic-ai", "technica", "reporter", "fired"]
 description: "Ars Technica reporter fired after AI fabricated quotes exposes a deepening journalism crisis. Discover what went wrong and what it means for media trust."
 image: "/images/20260303-ars-technica-reporter-fired-ai.jpg"
 technologies: ["Claude", "GPT", "Rust", "Go", "Gemini"]

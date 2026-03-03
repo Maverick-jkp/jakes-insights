@@ -4,7 +4,7 @@ date: 2026-02-26T20:09:44+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["openai 경쟁 우위 흔들리나 chatgpt 점유율 위기", "tech", "openai", "흔들리나", "chatgpt", "점유율", "subtopic:ai"]
+tags: ["openai", "흔들리나", "chatgpt", "subtopic-ai"]
 description: "OpenAI의 ChatGPT 점유율이 흔들리고 있습니다. 경쟁사들의 급성장 속에서 OpenAI가 직면한 위기와 앞으로의 전략을 분석하고 AI 시장의 변화를 확인하세요."
 image: "/images/20260226-openai-경쟁-우위-흔들리나-chatgpt-점유율-.jpg"
 technologies: ["Claude", "GPT", "OpenAI", "Anthropic", "Go"]

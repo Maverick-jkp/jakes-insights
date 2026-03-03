@@ -4,7 +4,7 @@ date: 2026-02-27T19:56:56+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Claude Code framework preference bias developer marketing", "tech", "claude", "code", "framework", "preference", "subtopic:web"]
+tags: ["claude", "code", "framework", "preference", "subtopic-web"]
 description: "Discover how Claude Code framework preference bias shapes developer marketing strategies and influences which tools gain adoption in competitive tech ecosystems."
 image: "/images/20260227-claude-code-framework-preferen.jpg"
 technologies: ["TypeScript", "React", "Next.js", "FastAPI", "PostgreSQL"]

@@ -4,7 +4,7 @@ date: 2026-03-03T20:05:30+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["\ud074\ub77c\uc6b0\ub4dc \uc2a4\ud1a0\ub9ac\uc9c0 \ube44\uad50: S3 vs Google Cloud Storage vs Azure Blob", "tech", "subtopic:cloud", "\ud074\ub77c\uc6b0\ub4dc", "\uc2a4\ud1a0\ub9ac\uc9c0", "\ube44\uad50:", "google"]
+tags: ["subtopic-cloud", "클라우드", "스토리지", "google"]
 description: "S3, Google Cloud Storage, Azure Blob의 핵심 기능과 가격을 심층 비교합니다. 성능, 보안, 확장성 차이를 분석해 비즈니스에 맞는 클라우드 스토리지를 선택하세요."
 image: "/images/20260303-클라우드-스토리지-비교-s3-vs-google-clou.jpg"
 technologies: ["AWS", "Azure", "Go", "Cloudflare"]

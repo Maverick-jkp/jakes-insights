@@ -4,7 +4,7 @@ date: 2026-03-03T08:53:51+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["GRAM \uc5d0\ub514\ud130 AI \uc5c6\ub294 Zed \ud3ec\ud06c \uac1c\ubc1c\uc790 \ubc18\ub780", "tech", "subtopic:ai", "gram", "\uc5d0\ub514\ud130", "zed", "\uac1c\ubc1c\uc790"]
+tags: ["subtopic-ai", "gram"]
 description: "Zed 에디터 AI 기능에 반발한 개발자들이 GRAM 포크를 출시했습니다. AI 없는 순수 코드 편집기를 원하는 이유와 GRAM의 핵심 차이점을 지금 확인하세요."
 image: "/images/20260303-gram-에디터-ai-없는-zed-포크-개발자-반란.jpg"
 technologies: ["Claude", "Linux", "Rust", "Gemini", "Copilot"]

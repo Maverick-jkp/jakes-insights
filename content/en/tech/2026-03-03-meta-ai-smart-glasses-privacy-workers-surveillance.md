@@ -4,7 +4,7 @@ date: 2026-03-03T19:42:38+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Meta AI smart glasses privacy workers surveillance data", "tech", "subtopic:ai", "meta", "smart", "glasses", "privacy"]
+tags: ["subtopic-ai", "meta", "smart", "glasses", "privacy"]
 description: "Discover how Meta AI smart glasses are reshaping worker surveillance and what privacy risks employees face as wearable data collection expands."
 image: "/images/20260303-meta-ai-smart-glasses-privacy-.jpg"
 technologies: ["Go"]

@@ -4,7 +4,7 @@ date: 2026-03-03T19:54:50+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Claude AI \uc624\ub958 \uae09\uc99d OpenAI \uc774\ud0c8 \uc0ac\uc6a9\uc790 \ubab0\ub9bc \uc7a5\uc560", "tech", "subtopic:ai", "claude", "openai", "\uc0ac\uc6a9\uc790", "GCP"]
+tags: ["subtopic-ai", "claude", "openai"]
 description: "Claude AI 오류 급증으로 OpenAI 이탈 사용자까지 몰리며 서비스 장애가 발생했습니다. 원인과 현황, 대처 방법을 지금 확인하세요."
 image: "/images/20260303-claude-ai-오류-급증-openai-이탈-사용자-.jpg"
 technologies: ["GCP", "Claude", "GPT", "OpenAI", "Anthropic"]

@@ -4,7 +4,7 @@ date: 2026-02-22T19:30:17+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["how taalas prints llm onto a chip", "tech", "taalas", "llm", "subtopic:ai"]
+tags: ["taalas", "subtopic-ai"]
 description: "Discover how Taalas prints LLM onto a chip, revolutionizing AI deployment with faster, efficient on-device intelligence. Learn the process now."
 image: "/images/20260222-how-taalas-prints-llm-onto-a-c.jpg"
 technologies: ["GPT", "OpenAI", "Anthropic", "Go", "Llama"]

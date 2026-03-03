@@ -4,7 +4,7 @@ date: 2026-03-01T19:35:39+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Obsidian Sync headless client CLI server NAS setup", "tech", "obsidian", "sync", "headless", "client", "subtopic:devtools"]
+tags: ["obsidian", "sync", "headless", "client", "subtopic-devtools"]
 description: "Sync your Obsidian vault seamlessly across devices using a headless CLI client on your NAS server. Step-by-step setup guide inside."
 image: "/images/20260301-obsidian-sync-headless-client-.jpg"
 technologies: ["Docker", "Linux", "Go"]

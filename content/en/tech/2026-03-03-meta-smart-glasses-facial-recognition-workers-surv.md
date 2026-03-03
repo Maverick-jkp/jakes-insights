@@ -4,7 +4,7 @@ date: 2026-03-03T08:35:47+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["Meta smart glasses facial recognition workers surveillance", "tech", "subtopic:web", "meta", "smart", "glasses", "facial"]
+tags: ["subtopic-web", "meta", "smart", "glasses", "facial"]
 description: "Discover how Meta smart glasses facial recognition raises urgent questions about worker surveillance, privacy rights, and the future of public safety."
 image: "/images/20260303-meta-smart-glasses-facial-reco.jpg"
 technologies: ["React", "AWS", "Go"]

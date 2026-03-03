@@ -4,7 +4,7 @@ date: 2026-03-03T08:44:31+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["sub-500ms voice agent latency build from scratch 2026", "tech", "subtopic:ai", "sub-500ms", "voice", "agent", "latency"]
+tags: ["subtopic-ai", "sub-500ms", "voice", "agent", "latency"]
 description: "Build a sub-500ms voice agent from scratch in 2026. Learn the architecture, tools, and optimizations that make real-time AI voice feel instant."
 image: "/images/20260303-sub500ms-voice-agent-latency-b.jpg"
 technologies: ["AWS", "Azure", "Claude", "GPT", "Anthropic"]

@@ -4,7 +4,7 @@ date: 2026-02-27T19:54:59+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["AirSnitch Wi-Fi client isolation bypass attack 2026", "tech", "airsnitch", "wi-fi", "client", "isolation", "subtopic:security"]
+tags: ["airsnitch", "wi-fi", "client", "isolation", "subtopic-security"]
 description: "Discover how the AirSnitch Wi-Fi client isolation bypass attack works, what networks are vulnerable, and steps to protect your devices today."
 image: "/images/20260227-airsnitch-wifi-client-isolatio.jpg"
 technologies: ["Rust", "Go"]

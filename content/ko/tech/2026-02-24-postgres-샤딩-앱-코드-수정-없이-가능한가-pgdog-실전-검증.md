@@ -4,7 +4,7 @@ date: 2026-02-24T20:18:56+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["postgres 샤딩 앱 코드 수정 없이 가능한가 pgdog 실전 검증", "tech", "postgres", "가능한가", "pgdog", "Docker", "subtopic:cloud"]
+tags: ["postgres", "가능한가", "pgdog", "Docker", "subtopic-cloud"]
 description: "PgDog으로 앱 코드 수정 없이 PostgreSQL 샤딩을 구현하는 방법을 실전 테스트로 검증합니다. 설정 방법부터 성능 결과까지 직접 확인하세요."
 image: "/images/20260224-postgres-샤딩-앱-코드-수정-없이-가능한가-pg.jpg"
 technologies: ["Docker", "AWS", "Azure", "PostgreSQL", "Vite"]

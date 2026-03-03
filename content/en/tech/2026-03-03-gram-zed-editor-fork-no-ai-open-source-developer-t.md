@@ -4,7 +4,7 @@ date: 2026-03-03T08:41:17+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["GRAM Zed editor fork no AI open source developer tools", "tech", "subtopic:devtools", "gram", "zed", "editor", "fork"]
+tags: ["subtopic-devtools", "gram", "editor", "fork"]
 description: "Discover GRAM, the Zed editor fork built for developers who want powerful open source tools without AI features cluttering their workflow."
 image: "/images/20260303-gram-zed-editor-fork-no-ai-ope.jpg"
 technologies: ["Linux", "Rust", "Go", "C++", "VS Code"]

@@ -4,7 +4,7 @@ date: 2026-03-03T09:00:54+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["GitHub Actions \uc785\ubb38 \uac00\uc774\ub4dc CICD \uc790\ub3d9\ud654 \ucc98\uc74c \uc124\uc815\ud558\ub294 \ubc95", "tech", "subtopic:devtools", "github", "actions", "\uac00\uc774\ub4dc", "cicd"]
+tags: ["subtopic-devtools", "github", "actions", "cicd"]
 description: "GitHub Actions로 CI/CD 자동화를 처음 설정하는 완벽 입문 가이드. 워크플로우 파일 작성부터 자동 빌드, 테스트, 배포까지 단계별로 따라하며 개발 생산성을 높여보세요."
 image: "/images/20260303-github-actions-입문-가이드-cicd-자동화.jpg"
 technologies: ["Node.js", "Docker", "AWS", "GitHub Actions", "Linux"]

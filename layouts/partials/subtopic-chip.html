@@ -9,23 +9,45 @@
 
 {{ $subtopic := "" }}
 {{ range .Params.tags }}
-  {{ if hasPrefix . "subtopic:" }}
-    {{ $subtopic = strings.TrimPrefix "subtopic:" . }}
+  {{ if hasPrefix . "subtopic-" }}
+    {{ $subtopic = strings.TrimPrefix "subtopic-" . }}
   {{ end }}
 {{ end }}
 
+{{/* Normalize side-income subtopics to a single value */}}
+{{ if or (eq $subtopic "freelancing") (eq $subtopic "saas") (eq $subtopic "digital-products") (eq $subtopic "passive") (eq $subtopic "content") (eq $subtopic "jobs") (eq $subtopic "ai-income") (eq $subtopic "general") }}
+  {{ $subtopic = "side-income" }}
+{{ end }}
+
 {{ if $subtopic }}
-{{ $labels := dict
-  "ai"       "AI"
-  "security" "Security"
-  "devtools" "DevTools"
-  "cloud"    "Cloud"
-  "data"     "Data"
-  "web"      "Web"
-  "mobile"   "Mobile"
-  "other"    "Tech"
+{{ $enLabels := dict
+  "ai"          "AI"
+  "security"    "Security"
+  "devtools"    "DevTools"
+  "cloud"       "Cloud"
+  "data"        "Data"
+  "web"         "Web"
+  "mobile"      "Mobile"
+  "side-income" "Side Income"
+  "other"       "Tech"
 }}
-{{ $label := index $labels $subtopic | default "Tech" }}
+{{ $koLabels := dict
+  "ai"          "AI"
+  "security"    "보안"
+  "devtools"    "개발도구"
+  "cloud"       "클라우드"
+  "data"        "데이터"
+  "web"         "웹"
+  "mobile"      "모바일"
+  "side-income" "부업"
+  "other"       "테크"
+}}
+{{ $label := "" }}
+{{ if eq $.Site.Language.Lang "ko" }}
+  {{ $label = index $koLabels $subtopic | default "테크" }}
+{{ else }}
+  {{ $label = index $enLabels $subtopic | default "Tech" }}
+{{ end }}
 <span class="subtopic-chip"
       data-subtopic="{{ $subtopic }}"
       data-subtopic-url="{{ "/all-posts" | relLangURL }}?subtopic={{ $subtopic }}">{{ $label }}</span>

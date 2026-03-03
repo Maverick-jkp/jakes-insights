@@ -257,30 +257,55 @@ def get_community_context(keyword: str, api_key: str) -> str:
 
 # ── Image Fetching ────────────────────────────────────────────────────────────
 
-def fetch_image(keyword: str, unsplash_key: str) -> tuple[Optional[str], Optional[Dict]]:
-    """Fetch image from Unsplash and save to static/images/."""
+def _unsplash_search(query: str, unsplash_key: str, verify_ssl) -> Optional[Dict]:
+    """Search Unsplash and return first photo or None."""
+    search_url = "https://api.unsplash.com/search/photos"
+    headers = {"Authorization": f"Client-ID {unsplash_key}"}
+    params = {"query": query[:50], "per_page": 5, "orientation": "landscape"}
+    resp = requests.get(search_url, params=params, headers=headers,
+                        timeout=10, verify=verify_ssl)
+    resp.raise_for_status()
+    results = resp.json().get("results", [])
+    return results[0] if results else None
+
+
+# Fallback queries per subtopic when original keyword returns no results
+SUBTOPIC_FALLBACKS = {
+    "freelancing":      "freelance work laptop",
+    "digital-products": "digital product laptop",
+    "ai-income":        "artificial intelligence laptop",
+    "saas":             "software startup laptop",
+    "content":          "content creator laptop",
+    "passive":          "passive income money",
+    "security":         "cybersecurity code",
+    "jobs":             "remote work laptop",
+    "general":          "developer side hustle",
+}
+
+
+def fetch_image(keyword: str, unsplash_key: str, subtopic: str = "") -> tuple[Optional[str], Optional[Dict]]:
+    """Fetch image from Unsplash with fallback queries. Never returns None if key is set."""
     if not unsplash_key:
         return None, None
 
     try:
-        # Search Unsplash
         verify_ssl = certifi.where() if certifi else True
-        search_url = "https://api.unsplash.com/search/photos"
-        params = {
-            "query": keyword[:50],
-            "per_page": 5,
-            "orientation": "landscape"
-        }
         headers = {"Authorization": f"Client-ID {unsplash_key}"}
-        resp = requests.get(search_url, params=params, headers=headers,
-                            timeout=10, verify=verify_ssl)
-        resp.raise_for_status()
 
-        results = resp.json().get("results", [])
-        if not results:
+        # Try original keyword, then subtopic fallback, then generic fallback
+        fallback = SUBTOPIC_FALLBACKS.get(subtopic, "developer laptop money")
+        queries = [keyword, fallback, "developer laptop"]
+        photo = None
+        for q in queries:
+            photo = _unsplash_search(q, unsplash_key, verify_ssl)
+            if photo:
+                if q != keyword:
+                    safe_print(f"  ℹ️  Image fallback used: '{q}'")
+                break
+
+        if not photo:
             return None, None
 
-        photo = results[0]
         image_url = photo["urls"]["regular"]
         download_url = photo["links"]["download_location"]
         photographer = photo["user"]["name"]
@@ -531,7 +556,7 @@ def main():
 
             # Fetch image
             safe_print("  🖼️  Fetching image...")
-            image_path, image_credit = fetch_image(kw["keyword"], unsplash_key)
+            image_path, image_credit = fetch_image(kw["keyword"], unsplash_key, kw["subtopic"])
 
             # Generate content
             try:

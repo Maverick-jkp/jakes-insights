@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-freelancing", "developers", "make", "$50/hr"]
 description: "Upwork developers hit $50–$95/hr in 2026 — but 73% quit before they get there. Here's the pricing system that changes that."
-image: "/images/placeholder-side-income.jpg"
+image: "/images/20260303-upwork-freelance-developer.webp"
 ---
 
 73% of developers who quit Upwork do it in the first 90 days. Not because freelancing doesn't work — because they priced themselves at $25/hr, burned out on low-quality clients, and never saw the ramp-up coming. The ones who stuck it out and hit $50/hr or more? They treated the platform like a system, not a lottery ticket.
@@ -102,3 +102,7 @@ Competition is global. Developers from lower cost-of-living regions do compete o
 ---
 
 If you're starting this week, do one thing: spend two hours rewriting your Upwork profile title and overview using the positioning framework above — specific stack, specific client type, specific problem solved. Then send five quality proposals before the end of the week. Not ten mediocre ones. Five real ones. That's the actual first step.
+
+---
+
+*Photo by [Kasra Askari](https://unsplash.com/@kasraskari) on [Unsplash](https://unsplash.com/photos/a-laptop-sits-on-top-of-a-desk-NTGQxXpNnj8)*

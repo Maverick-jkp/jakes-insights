@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-ai-income", "claude", "api", "side"]
 description: "Solo developers are earning $800–$4,000/mo building Claude API-powered tools — here's what the income math actually looks like in 2026."
-image: "/images/placeholder-side-income.jpg"
+image: "/images/20260303-ai-api-side-project.webp"
 ---
 
 47% of developers who shipped an AI-powered side project in 2026 reported their first paying customer within 60 days. The median revenue after six months? $1,200/month. Not life-changing, but enough to cover a car payment, a mortgage contribution, or a reinvestment fund for your next build. The Claude API is sitting at the center of a lot of those success stories — and it's worth understanding exactly why, and what the income math actually looks like.
@@ -96,3 +96,7 @@ The danger zone: if you offer unlimited usage without rate limiting, one heavy u
 ## Your Next Step
 
 Pick one narrow problem in an industry you understand — even tangentially. Write a two-paragraph description of the tool and the target user. Post it in a relevant community (a Slack group, a subreddit, a LinkedIn group) and ask if anyone would pay $20/month for it. If three people say yes in the first week, build the MVP. If nobody responds, change the problem. Don't spend a single hour coding before you have that signal.
+
+---
+
+*Photo by [paolo tognoni](https://unsplash.com/@ptognoni) on [Unsplash](https://unsplash.com/photos/a-bunch-of-bees-that-are-in-a-beehive-3ogvpY8agiQ)*

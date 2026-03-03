@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-digital-products", "sell", "notion", "templates"]
 description: "Notion template sellers average $300–$1,800/mo — but 63% make under $50 total. Here's the process gap that decides which group you land in."
-image: "/images/placeholder-side-income.jpg"
+image: "/images/20260303-notion-templates-digital-produ.webp"
 ---
 
 63% of Notion template sellers on Gumroad make less than $50 total. The other 37% — the ones who treat it like a product launch, not a side project — are averaging $300–$1,800/month within six months. That gap isn't talent. It's process.
@@ -115,3 +115,7 @@ Gumroad takes 10% of each sale. There's no monthly fee. For a $19 template, you 
 ## Your Next Step
 
 Pick one niche from the list above — or better, think about the last workflow problem you solved for yourself as a developer. Build a clean, tested template this weekend. Set up a Gumroad page with tight outcome-focused copy. Then spend the next 30 days posting consistently in one community where your target buyer already hangs out. Don't wait for perfect. The first version ships, the second version sells.
+
+---
+
+*Photo by [Marielle Ursua](https://unsplash.com/@heyimmarielle_03) on [Unsplash](https://unsplash.com/photos/a-person-typing-on-a-laptop-at-a-table--fbrWV0SULA)*

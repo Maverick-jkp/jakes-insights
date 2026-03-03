@@ -950,9 +950,9 @@ Return improved version (body only, no title):""",
         tags = []
         kw = keyword.strip()
 
-        # Subtopic tag (for internal filtering - always first)
+        # Subtopic tag (for internal filtering - always first, no colon in URL)
         subtopic = self._assign_subtopic(kw)
-        tags.append(f"subtopic:{subtopic}")
+        tags.append(f"subtopic-{subtopic}")
 
         # Keyword as tag (whole phrase if meaningful, or individual key terms)
         stop_words = {'a', 'an', 'the', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was',
@@ -973,11 +973,7 @@ Return improved version (body only, no title):""",
                 if t and t.lower() not in [x.lower() for x in tags]:
                     tags.append(t)
 
-        # Category as last tag (least specific)
-        if category and category.lower() not in [t.lower() for t in tags]:
-            tags.append(category)
-
-        return tags[:6]
+        return tags[:5]
 
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""

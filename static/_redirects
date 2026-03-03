@@ -7,6 +7,13 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /ja/ / 301
 /ja/* / 301
 
+# /en/ prefix → actual paths (EN content has no /en/ prefix in Hugo output)
+/en/all-posts/ /all-posts/ 301
+/en/all-posts/* /all-posts/:splat 301
+/en/tech/* /tech/:splat 301
+/en/tags/* /tags/:splat 301
+/en/categories/* /categories/ 301
+
 # Legacy category routes (without language prefix)
 /sports/* / 301
 /business/* / 301
@@ -14,14 +21,5 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /society/* / 301
 /finance/* / 301
 
-# Legacy tech routes (without language prefix) → EN equivalent
-/tech/:year-:month-:day-:slug /en/tech/:year-:month-:day-:slug 301
-/tech/* /en/tech/:splat 301
-
-# Legacy all-posts (without language prefix)
-/all-posts/ /en/all-posts/ 301
-/all-posts/* /en/all-posts/:splat 301
-
 # Legacy categories/tags (without language prefix)
 /categories/* / 301
-/tags/* /en/tags/:splat 301

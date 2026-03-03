@@ -87,6 +87,13 @@
 <meta name="naver-site-verification" content="{{ . }}">
 {{ end }}
 
+{{/* Redirect pages.dev to canonical domain */}}
+<script>
+  if (window.location.hostname.indexOf('pages.dev') !== -1) {
+    window.location.replace('https://jakeinsight.com' + window.location.pathname + window.location.search);
+  }
+</script>
+
 {{/* Google Analytics 4 */}}
 {{ with .Site.Config.Services.GoogleAnalytics.ID }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>

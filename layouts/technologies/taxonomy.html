@@ -196,6 +196,11 @@
             .posts-grid { grid-template-columns: 1fr; gap: 1.5rem; }
         }
     </style>
+    <script>
+      if (window.location.hostname.indexOf('pages.dev') !== -1) {
+        window.location.replace('https://jakeinsight.com' + window.location.pathname + window.location.search);
+      }
+    </script>
     {{- with .Site.Config.Services.GoogleAnalytics.ID }}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
     <script>

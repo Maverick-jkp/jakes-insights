@@ -948,31 +948,36 @@ Return improved version (body only, no title):""",
     def _generate_tags(self, keyword: str, category: str, technologies: list = None) -> List[str]:
         """Generate meaningful tags from keyword, category, and technologies."""
         tags = []
-        # Use whole keyword as first tag if multi-word, else just the word
         kw = keyword.strip()
-        if kw:
-            tags.append(kw)
-        # Add category as tag
-        if category and category not in tags:
-            tags.append(category)
-        # Add subtopic tag (always present, prefixed so it's identifiable)
+
+        # Subtopic tag (for internal filtering - always first)
         subtopic = self._assign_subtopic(kw)
-        subtopic_tag = f"subtopic:{subtopic}"
-        tags.append(subtopic_tag)
-        # Add individual words for multi-word keywords (skip stop words)
-        stop_words = {'a', 'an', 'the', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was'}
-        if ' ' in kw:
-            for word in kw.split():
-                w = word.lower()
-                if w not in stop_words and w not in [t.lower() for t in tags] and len(w) > 2:
+        tags.append(f"subtopic:{subtopic}")
+
+        # Keyword as tag (whole phrase if meaningful, or individual key terms)
+        stop_words = {'a', 'an', 'the', 'in', 'on', 'at', 'to', 'for', 'of', 'and', 'or', 'is', 'are', 'was',
+                      'how', 'what', 'why', 'when', 'guide', 'tutorial', 'intro', 'introduction', 'with', 'using'}
+        if kw:
+            words = [w for w in kw.split() if w.lower() not in stop_words and len(w) > 2]
+            # Use full keyword phrase if 1-3 significant words, else add significant words individually
+            if len(words) <= 3:
+                tags.append(kw)
+            else:
+                for word in words[:3]:
                     tags.append(word.lower())
-        # Add first technology as tag (e.g. "Claude", "AWS")
+
+        # Technologies (e.g. "Claude", "AWS", "React")
         if technologies:
             for tech in technologies[:2]:
                 t = str(tech).strip()
                 if t and t.lower() not in [x.lower() for x in tags]:
                     tags.append(t)
-        return tags[:7]  # Limit to 7 tags (1 extra slot for subtopic)
+
+        # Category as last tag (least specific)
+        if category and category.lower() not in [t.lower() for t in tags]:
+            tags.append(category)
+
+        return tags[:6]
 
     def generate_title(self, content: str, keyword: str, lang: str, references: List[Dict] = None) -> str:
         """Generate SEO-friendly title based on actual content and references"""
@@ -1064,9 +1069,36 @@ Return improved version (body only, no title):""",
 
     def generate_description(self, content: str, keyword: str, lang: str) -> str:
         """Generate meta description optimized for SEO (120-160 chars)"""
+        # Extract first ~400 chars of content body for context
+        content_snippet = content[:400].strip() if content else ""
+
         prompts = {
-            "en": f"Generate a compelling meta description for a blog post about '{keyword}'.\n\nREQUIREMENTS:\n- Length: EXACTLY 120-160 characters (strict)\n- Include keyword naturally\n- Action-oriented and engaging\n- NO quotes, NO marketing fluff\n\nReturn ONLY the description, nothing else.",
-            "ko": f"'{keyword}'에 대한 블로그 글의 메타 설명을 생성하세요.\n\n요구사항:\n- 길이: 정확히 120-160자 (엄격)\n- 키워드 자연스럽게 포함\n- 행동 지향적이고 매력적으로\n- 따옴표 없이, 마케팅 문구 금지\n\n설명만 반환하세요."
+            "en": f"""Write a meta description for a blog post about '{keyword}'.
+
+Content excerpt:
+{content_snippet}
+
+REQUIREMENTS:
+- Length: 120-160 characters (strict)
+- Include a specific fact, number, or actionable insight from the content
+- Include the keyword naturally
+- NO generic phrases like "learn everything", "comprehensive guide", "in this article"
+- NO quotes
+
+Return ONLY the description.""",
+            "ko": f"""'{keyword}'에 대한 블로그 글의 메타 설명을 작성하세요.
+
+글 일부:
+{content_snippet}
+
+요구사항:
+- 길이: 120-160자 (엄격)
+- 실제 내용에서 구체적인 수치, 사실, 실용적 인사이트 포함
+- 키워드 자연스럽게 포함
+- "모든 것을 알아보세요", "완벽 가이드" 같은 범용 문구 금지
+- 따옴표 없이
+
+설명만 반환하세요."""
         }
 
         response = self.client.messages.create(

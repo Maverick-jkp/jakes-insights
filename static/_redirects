@@ -30,3 +30,6 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 
 # Legacy categories/tags (without language prefix)
 /categories/* / 301
+
+# Legacy KO categories prefix
+/ko/categories/* /ko/ 301

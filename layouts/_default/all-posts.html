@@ -14,12 +14,12 @@
       {{ if eq .Language.Lang "ko" }}전체{{ else }}All{{ end }}
     </button>
     <button class="apf-btn" data-filter="ai">✦ AI</button>
-    <button class="apf-btn" data-filter="security">✦ Security</button>
-    <button class="apf-btn" data-filter="devtools">✦ DevTools</button>
-    <button class="apf-btn" data-filter="cloud">✦ Cloud</button>
-    <button class="apf-btn" data-filter="data">✦ Data</button>
-    <button class="apf-btn" data-filter="web">✦ Web</button>
-    <button class="apf-btn" data-filter="mobile">✦ Mobile</button>
+    <button class="apf-btn" data-filter="security">✦ {{ if eq .Language.Lang "ko" }}보안{{ else }}Security{{ end }}</button>
+    <button class="apf-btn" data-filter="devtools">✦ {{ if eq .Language.Lang "ko" }}개발도구{{ else }}DevTools{{ end }}</button>
+    <button class="apf-btn" data-filter="cloud">✦ {{ if eq .Language.Lang "ko" }}클라우드{{ else }}Cloud{{ end }}</button>
+    <button class="apf-btn" data-filter="data">✦ {{ if eq .Language.Lang "ko" }}데이터{{ else }}Data{{ end }}</button>
+    <button class="apf-btn" data-filter="web">✦ {{ if eq .Language.Lang "ko" }}웹{{ else }}Web{{ end }}</button>
+    <button class="apf-btn" data-filter="mobile">✦ {{ if eq .Language.Lang "ko" }}모바일{{ else }}Mobile{{ end }}</button>
     <button class="apf-btn" data-filter="side-income">{{ if eq .Language.Lang "ko" }}💰 부업{{ else }}💰 Side Income{{ end }}</button>
   </div>
 

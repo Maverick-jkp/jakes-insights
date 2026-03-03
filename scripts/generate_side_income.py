@@ -109,11 +109,15 @@ SYSTEM_PROMPTS = {
 - Compare: active income (time-for-money) vs passive (upfront work, delayed return)
 - If a method requires capital or rare skills, say so upfront
 
-[HEADLINE PATTERNS - use one]:
-- "How Developers Make $X/[period] with [method]: Real Numbers"
-- "[Platform A] vs [Platform B] for Developers: What the Data Shows"
-- "The $X/mo [method] Side Income for Developers: A Realistic Guide"
-- "[method] Income for Developers: Honest Numbers from {YEAR}"
+[HEADLINE PATTERNS - pick ONE that fits the topic best, do NOT default to income numbers every time]:
+- "[Platform A] vs [Platform B] for Developers: What the Data Shows in {YEAR}"
+- "I Tried [method] for 3 Months: Here's What Actually Happened"
+- "The Developer's Guide to [method]: Step-by-Step with Real Numbers"
+- "Why Most Developers Fail at [method] (and What the Successful Ones Do)"
+- "[method] Side Income: Realistic Timeline from $0 to First Paycheck"
+- "How to [specific action] as a Developer Without Quitting Your Job"
+- "[method] in {YEAR}: Is It Still Worth It for Developers?"
+- "The Honest [method] Breakdown: Costs, Time, and What You'll Actually Earn"
 
 ⚠️ Write a complete 900-1,200 word article. Include real numbers.""",
 
@@ -167,11 +171,15 @@ SYSTEM_PROMPTS = {
 - 능동 수입(시간-돈 교환) vs 패시브(초기 투자, 지연 수익) 비교
 - 한국 특수 상황: 세금 처리, 플랫폼 접근성, 언어 장벽
 
-[제목 패턴 — 하나 선택]:
-- "해외 개발자들이 [방법]으로 월 $X 버는 법: 한국 적용기"
+[제목 패턴 — 주제에 맞는 것 하나 선택, 수익 숫자로만 시작하지 말 것]:
 - "[플랫폼A] vs [플랫폼B] 개발자 단가 비교: {YEAR}년 실제 데이터"
-- "개발자 부업 [방법] 현실적인 월수익 분석"
-- "[방법]으로 월 XX만원: 해외 성공 사례와 한국 현실"
+- "[방법] 3개월 직접 해봤습니다: 현실적인 후기"
+- "개발자가 [방법]으로 첫 수익 내기까지: 단계별 가이드"
+- "왜 대부분의 개발자가 [방법]에서 실패하는가"
+- "[방법] 시작 전에 알았으면 좋았을 것들"
+- "직장 다니면서 [방법]으로 부업하는 현실적인 방법"
+- "{YEAR}년 [방법]: 아직도 해볼 만한가?"
+- "[방법] 솔직한 분석: 비용, 시간, 실제 수익"
 
 ⚠️ 완성된 900-1,200 단어 글을 작성하세요. 실제 수치를 포함하세요."""
 }
@@ -319,7 +327,7 @@ def fetch_image(keyword: str, unsplash_key: str, subtopic: str = "", lang: str =
         unsplash_url = photo["links"]["html"]
 
         # Trigger download tracking (Unsplash API ToS)
-        requests.get(download_url, headers=headers, timeout=5, verify=verify_ssl)
+        requests.get(download_url, headers={"Authorization": f"Client-ID {unsplash_key}"}, timeout=5, verify=verify_ssl)
 
         # Download image
         slug = re.sub(r'[^a-z0-9\s-]', '', keyword.lower())[:30].strip().replace(' ', '-')

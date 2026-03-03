@@ -574,6 +574,16 @@
   color: #9ca3af;
   border-color: rgba(107, 114, 128, 0.38);
 }
+.subtopic-chip[data-subtopic="side-income"] {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.28);
+}
+[data-theme="dark"] .subtopic-chip[data-subtopic="side-income"] {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.38);
+}
 
 /* === All Posts Filter Bar (apf-*) === */
 

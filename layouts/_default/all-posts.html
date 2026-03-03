@@ -33,10 +33,16 @@
         {{ $subtopic = strings.TrimPrefix "subtopic-" . }}
       {{ end }}
     {{ end }}
-    {{ $labels := dict "ai" "AI" "security" "Security" "devtools" "DevTools" "cloud" "Cloud" "data" "Data" "web" "Web" "mobile" "Mobile" "side-income" "Side Income" "freelancing" "Side Income" "saas" "Side Income" "digital-products" "Side Income" "passive" "Side Income" "content" "Side Income" "jobs" "Side Income" "ai-income" "Side Income" "general" "Side Income" "other" "Tech" }}
-    {{ $label := index $labels $subtopic | default "Tech" }}
     {{ if or (eq $subtopic "freelancing") (eq $subtopic "saas") (eq $subtopic "digital-products") (eq $subtopic "passive") (eq $subtopic "content") (eq $subtopic "jobs") (eq $subtopic "ai-income") (eq $subtopic "general") }}
       {{ $subtopic = "side-income" }}
+    {{ end }}
+    {{ $koLabels := dict "ai" "AI" "security" "보안" "devtools" "개발도구" "cloud" "클라우드" "data" "데이터" "web" "웹" "mobile" "모바일" "side-income" "부업" "other" "테크" }}
+    {{ $enLabels := dict "ai" "AI" "security" "Security" "devtools" "DevTools" "cloud" "Cloud" "data" "Data" "web" "Web" "mobile" "Mobile" "side-income" "Side Income" "other" "Tech" }}
+    {{ $label := "" }}
+    {{ if eq $.Site.Language.Lang "ko" }}
+      {{ $label = index $koLabels $subtopic | default "테크" }}
+    {{ else }}
+      {{ $label = index $enLabels $subtopic | default "Tech" }}
     {{ end }}
     <a href="{{ .Permalink }}" class="post-card" data-subtopic="{{ $subtopic }}">
       <div class="post-card-image-wrap">

@@ -5,6 +5,7 @@ omit =
     scripts/chatgpt-review.py
     scripts/ai_reviewer.py
     scripts/generate_posts.py
+    scripts/generate_side_income.py
     scripts/keyword_curator.py
     scripts/cleanup_expired.py
     scripts/fetch_images_for_posts.py

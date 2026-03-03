@@ -625,25 +625,28 @@
 .apf-btn[data-filter="cloud"].active    { background: rgba(59,130,246,0.15);  color: #60a5fa; border-color: rgba(59,130,246,0.4); }
 .apf-btn[data-filter="data"].active     { background: rgba(245,158,11,0.15);  color: #fbbf24; border-color: rgba(245,158,11,0.4); }
 .apf-btn[data-filter="web"].active      { background: rgba(236,72,153,0.15);  color: #f472b6; border-color: rgba(236,72,153,0.4); }
-.apf-btn[data-filter="mobile"].active   { background: rgba(249,115,22,0.15);  color: #fb923c; border-color: rgba(249,115,22,0.4); }
+.apf-btn[data-filter="mobile"].active      { background: rgba(249,115,22,0.15);  color: #fb923c; border-color: rgba(249,115,22,0.4); }
+.apf-btn[data-filter="side-income"].active { background: rgba(16,185,129,0.15);  color: #34d399; border-color: rgba(16,185,129,0.4); }
 
 /* Light mode overrides for colored active */
 @media (prefers-color-scheme: light) {
-  .apf-btn[data-filter="ai"].active       { color: #7c3aed; }
-  .apf-btn[data-filter="security"].active { color: #dc2626; }
-  .apf-btn[data-filter="devtools"].active { color: #059669; }
-  .apf-btn[data-filter="cloud"].active    { color: #2563eb; }
-  .apf-btn[data-filter="data"].active     { color: #d97706; }
-  .apf-btn[data-filter="web"].active      { color: #db2777; }
-  .apf-btn[data-filter="mobile"].active   { color: #ea580c; }
+  .apf-btn[data-filter="ai"].active          { color: #7c3aed; }
+  .apf-btn[data-filter="security"].active    { color: #dc2626; }
+  .apf-btn[data-filter="devtools"].active    { color: #059669; }
+  .apf-btn[data-filter="cloud"].active       { color: #2563eb; }
+  .apf-btn[data-filter="data"].active        { color: #d97706; }
+  .apf-btn[data-filter="web"].active         { color: #db2777; }
+  .apf-btn[data-filter="mobile"].active      { color: #ea580c; }
+  .apf-btn[data-filter="side-income"].active { color: #059669; }
 }
-[data-theme="light"] .apf-btn[data-filter="ai"].active       { color: #7c3aed; }
-[data-theme="light"] .apf-btn[data-filter="security"].active { color: #dc2626; }
-[data-theme="light"] .apf-btn[data-filter="devtools"].active { color: #059669; }
-[data-theme="light"] .apf-btn[data-filter="cloud"].active    { color: #2563eb; }
-[data-theme="light"] .apf-btn[data-filter="data"].active     { color: #d97706; }
-[data-theme="light"] .apf-btn[data-filter="web"].active      { color: #db2777; }
-[data-theme="light"] .apf-btn[data-filter="mobile"].active   { color: #ea580c; }
+[data-theme="light"] .apf-btn[data-filter="ai"].active          { color: #7c3aed; }
+[data-theme="light"] .apf-btn[data-filter="security"].active    { color: #dc2626; }
+[data-theme="light"] .apf-btn[data-filter="devtools"].active    { color: #059669; }
+[data-theme="light"] .apf-btn[data-filter="cloud"].active       { color: #2563eb; }
+[data-theme="light"] .apf-btn[data-filter="data"].active        { color: #d97706; }
+[data-theme="light"] .apf-btn[data-filter="web"].active         { color: #db2777; }
+[data-theme="light"] .apf-btn[data-filter="mobile"].active      { color: #ea580c; }
+[data-theme="light"] .apf-btn[data-filter="side-income"].active { color: #059669; }
 
 /* === Inline card chip (meta row) === */
 
@@ -679,15 +682,17 @@
 .post-card-chip--data     { background: rgba(245,158,11,0.18);  color: #fbbf24; }
 .post-card-chip--web      { background: rgba(236,72,153,0.18);  color: #f472b6; }
 .post-card-chip--mobile   { background: rgba(249,115,22,0.18);  color: #fb923c; }
-.post-card-chip--other    { background: rgba(107,114,128,0.18); color: #9ca3af; }
+.post-card-chip--other       { background: rgba(107,114,128,0.18); color: #9ca3af; }
+.post-card-chip--side-income { background: rgba(16,185,129,0.18);  color: #34d399; }
 
-[data-theme="light"] .post-card-chip--ai       { color: #7c3aed; }
-[data-theme="light"] .post-card-chip--security { color: #dc2626; }
-[data-theme="light"] .post-card-chip--devtools { color: #059669; }
-[data-theme="light"] .post-card-chip--cloud    { color: #2563eb; }
-[data-theme="light"] .post-card-chip--data     { color: #d97706; }
-[data-theme="light"] .post-card-chip--web      { color: #db2777; }
-[data-theme="light"] .post-card-chip--mobile   { color: #ea580c; }
+[data-theme="light"] .post-card-chip--ai          { color: #7c3aed; }
+[data-theme="light"] .post-card-chip--security    { color: #dc2626; }
+[data-theme="light"] .post-card-chip--devtools    { color: #059669; }
+[data-theme="light"] .post-card-chip--cloud       { color: #2563eb; }
+[data-theme="light"] .post-card-chip--data        { color: #d97706; }
+[data-theme="light"] .post-card-chip--web         { color: #db2777; }
+[data-theme="light"] .post-card-chip--mobile      { color: #ea580c; }
+[data-theme="light"] .post-card-chip--side-income { color: #059669; }
 
 .no-results-msg {
   grid-column: 1 / -1;

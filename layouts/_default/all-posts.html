@@ -13,13 +13,14 @@
     <button class="apf-btn apf-btn--all active" data-filter="all">
       {{ if eq .Language.Lang "ko" }}전체{{ else }}All{{ end }}
     </button>
-    <button class="apf-btn" data-filter="ai" data-color="ai">✦ AI</button>
-    <button class="apf-btn" data-filter="security" data-color="security">✦ Security</button>
-    <button class="apf-btn" data-filter="devtools" data-color="devtools">✦ DevTools</button>
-    <button class="apf-btn" data-filter="cloud" data-color="cloud">✦ Cloud</button>
-    <button class="apf-btn" data-filter="data" data-color="data">✦ Data</button>
-    <button class="apf-btn" data-filter="web" data-color="web">✦ Web</button>
-    <button class="apf-btn" data-filter="mobile" data-color="mobile">✦ Mobile</button>
+    <button class="apf-btn" data-filter="ai">✦ AI</button>
+    <button class="apf-btn" data-filter="security">✦ Security</button>
+    <button class="apf-btn" data-filter="devtools">✦ DevTools</button>
+    <button class="apf-btn" data-filter="cloud">✦ Cloud</button>
+    <button class="apf-btn" data-filter="data">✦ Data</button>
+    <button class="apf-btn" data-filter="web">✦ Web</button>
+    <button class="apf-btn" data-filter="mobile">✦ Mobile</button>
+    <button class="apf-btn" data-filter="side-income">{{ if eq .Language.Lang "ko" }}💰 부업{{ else }}💰 Side Income{{ end }}</button>
   </div>
 
   <div class="all-posts-grid" id="allPostsGrid">
@@ -28,12 +29,15 @@
     {{ range $posts }}
     {{ $subtopic := "" }}
     {{ range .Params.tags }}
-      {{ if hasPrefix . "subtopic:" }}
-        {{ $subtopic = strings.TrimPrefix "subtopic:" . }}
+      {{ if hasPrefix . "subtopic-" }}
+        {{ $subtopic = strings.TrimPrefix "subtopic-" . }}
       {{ end }}
     {{ end }}
-    {{ $labels := dict "ai" "AI" "security" "Security" "devtools" "DevTools" "cloud" "Cloud" "data" "Data" "web" "Web" "mobile" "Mobile" "other" "Tech" }}
+    {{ $labels := dict "ai" "AI" "security" "Security" "devtools" "DevTools" "cloud" "Cloud" "data" "Data" "web" "Web" "mobile" "Mobile" "side-income" "Side Income" "freelancing" "Side Income" "saas" "Side Income" "digital-products" "Side Income" "passive" "Side Income" "content" "Side Income" "jobs" "Side Income" "ai-income" "Side Income" "general" "Side Income" "other" "Tech" }}
     {{ $label := index $labels $subtopic | default "Tech" }}
+    {{ if or (eq $subtopic "freelancing") (eq $subtopic "saas") (eq $subtopic "digital-products") (eq $subtopic "passive") (eq $subtopic "content") (eq $subtopic "jobs") (eq $subtopic "ai-income") (eq $subtopic "general") }}
+      {{ $subtopic = "side-income" }}
+    {{ end }}
     <a href="{{ .Permalink }}" class="post-card" data-subtopic="{{ $subtopic }}">
       <div class="post-card-image-wrap">
         {{ with .Params.image }}

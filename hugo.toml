@@ -64,6 +64,11 @@ pagerSize = 50
       url = "/categories/tech/"
       weight = 3
 
+    [[languages.en.menu.main]]
+      name = "💰 Side Income"
+      url = "/side-income/"
+      weight = 4
+
 
   [languages.ko]
     languageName = "한국어"
@@ -86,6 +91,11 @@ pagerSize = 50
       name = "💻 테크"
       url = "/ko/categories/tech/"
       weight = 3
+
+    [[languages.ko.menu.main]]
+      name = "💰 부업"
+      url = "/ko/side-income/"
+      weight = 4
 
 
 [params]

@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-passive", "passive", "income", "open"]
 description: "Open source tools you've already built can earn $200–$8,400/mo — here's what the 2026 data says about GitHub Sponsors, Polar.sh, and Sponsorware."
-image: "/images/placeholder-side-income.jpg"
+image: "/images/side-income-passive-Z8yWSsx8.jpg"
 ---
 
 63 developers surveyed in a 2026 OSS Monetization Report reported earning between $200 and $8,400/month from open source tools they'd already built — most without adding a single new feature. The top earner? A CLI tool for database migrations with 4,200 GitHub stars and a $9/month Sponsorware tier.

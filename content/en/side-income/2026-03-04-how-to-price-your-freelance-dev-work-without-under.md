@@ -6,7 +6,7 @@ author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-freelancing", "price", "your", "freelance"]
 description: "Freelance developers with 2+ years of experience are leaving $20–$40/hr on the table — here's the pricing strategy that gets you to $85–$150/hr faster."
-image: "/images/placeholder-side-income.jpg"
+image: "/images/side-income-freelancing-GPsdWNwo.jpg"
 ---
 
 67% of freelance developers on Upwork charge less than $50/hr in their first year — even when their skills justify $85+. That gap isn't about experience. It's about not knowing how to price.

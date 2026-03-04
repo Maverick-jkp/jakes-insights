@@ -36,6 +36,7 @@ resume_project/
 
 # Google Search Console credentials
 config/gsc-service-account.json
+credentials/
 
 # Work log (personal notes, not for git)
 docs/WORK_LOG.md

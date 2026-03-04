@@ -95,12 +95,92 @@
       "published_at": "2026-02-27T08:05:18.881595+00:00",
       "title": "Facebook Is Cooked as a Social Network—But Still a Cash Machine",
       "status": "published"
+    },
+    "content/en/tech/2026-02-24-age-verification-data-privacy-surveillance-trap-ie.md": {
+      "devto_article_id": 3291668,
+      "devto_url": "https://dev.to/maverickjkp/age-verifications-surveillance-trap-what-the-ieee-analysis-found-1l2f",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-24-age-verification-data-privacy-surveillance-trap-ie/",
+      "published_at": "2026-03-04T14:33:30.921479+00:00",
+      "title": "Age Verification's Surveillance Trap: What the IEEE Analysis Found",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-24-freebsd-aiwritten-wifi-driver-macbook-realworld-re.md": {
+      "devto_article_id": 3295762,
+      "devto_url": "https://dev.to/maverickjkp/freebsd-ai-written-wifi-driver-for-macbook-real-world-result-533h",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-24-freebsd-aiwritten-wifi-driver-macbook-realworld-re/",
+      "published_at": "2026-03-04T14:33:30.921614+00:00",
+      "title": "FreeBSD AI-Written WiFi Driver for MacBook: Real-World Result",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-24-ladybird-browser-rust-migration-aiassisted-porting.md": {
+      "devto_article_id": 3291669,
+      "devto_url": "https://dev.to/maverickjkp/ladybird-browser-rust-migration-ai-assisted-porting-risks-k83",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-24-ladybird-browser-rust-migration-aiassisted-porting/",
+      "published_at": "2026-03-04T14:33:30.921618+00:00",
+      "title": "Ladybird Browser Rust Migration: AI-Assisted Porting Risks",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-24-x86-cpu-emulator-written-in-css-how-is-this-even-p.md": {
+      "devto_article_id": 3295763,
+      "devto_url": "https://dev.to/maverickjkp/x86-cpu-emulator-written-in-css-how-is-this-even-possible-46kj",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-24-x86-cpu-emulator-written-in-css-how-is-this-even-p/",
+      "published_at": "2026-03-04T14:33:30.921622+00:00",
+      "title": "X86 CPU Emulator Written in CSS: How Is This Even Possible?",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-25-anthropic-safety-pledge-dropped-ai-race-pressure.md": {
+      "devto_article_id": 3298153,
+      "devto_url": "https://dev.to/maverickjkp/anthropics-safety-pledge-dropped-under-ai-race-pressure-5hlg",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-25-anthropic-safety-pledge-dropped-ai-race-pressure/",
+      "published_at": "2026-03-04T14:33:30.921625+00:00",
+      "title": "Anthropic's Safety Pledge Dropped Under AI Race Pressure",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-25-sethtml-xss-protection-firefox-148-innerhtml-repla.md": {
+      "devto_article_id": 3298154,
+      "devto_url": "https://dev.to/maverickjkp/firefox-148s-sethtml-api-an-innerhtml-replacement-for-xss-protection-1g17",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-25-sethtml-xss-protection-firefox-148-innerhtml-repla/",
+      "published_at": "2026-03-04T14:33:30.921629+00:00",
+      "title": "Firefox 148's setHTML() API: An innerHTML Replacement for XSS Protection",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-26-fake-job-interview-backdoor-malware-developer-mach.md": {
+      "devto_article_id": 3298309,
+      "devto_url": "https://dev.to/maverickjkp/fake-job-interview-backdoor-malware-targeting-developer-machines-33g",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-26-fake-job-interview-backdoor-malware-developer-mach/",
+      "published_at": "2026-03-04T14:33:30.921633+00:00",
+      "title": "Fake Job Interview Backdoor Malware Targeting Developer Machines",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-26-google-gemini-api-key-security-breach-risk.md": {
+      "devto_article_id": 3298310,
+      "devto_url": "https://dev.to/maverickjkp/google-gemini-api-key-security-breach-risk-the-rules-changed-15g3",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-26-google-gemini-api-key-security-breach-risk/",
+      "published_at": "2026-03-04T14:33:30.921636+00:00",
+      "title": "Google Gemini API Key Security Breach Risk: The Rules Changed",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-26-llm-deanonymization-privacy-risk-real-identities-e.md": {
+      "devto_article_id": 3302012,
+      "devto_url": "https://dev.to/maverickjkp/llm-deanonymization-is-exposing-real-identities-online-48pg",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-26-llm-deanonymization-privacy-risk-real-identities-e/",
+      "published_at": "2026-03-04T14:33:30.921639+00:00",
+      "title": "LLM Deanonymization Is Exposing Real Identities Online",
+      "status": "published"
+    },
+    "content/en/tech/2026-02-26-windows-11-notepad-markdown-support-remote-code-ex.md": {
+      "devto_article_id": 3302013,
+      "devto_url": "https://dev.to/maverickjkp/windows-11-notepad-markdown-rce-flaw-cve-2026-20841-1nah",
+      "canonical_url": "https://jakeinsight.com/tech/2026-02-26-windows-11-notepad-markdown-support-remote-code-ex/",
+      "published_at": "2026-03-04T14:33:30.921643+00:00",
+      "title": "Windows 11 Notepad Markdown RCE Flaw: CVE-2026-20841",
+      "status": "published"
     }
   },
   "failed_articles": {},
   "last_run": "2026-02-27T08:05:18.881643+00:00",
   "stats": {
-    "total_published": 12,
+    "total_published": 22,
     "total_failed": 2,
     "total_skipped": 11
   }

@@ -4091,38 +4091,6 @@
       "completed_at": "2026-03-03T11:02:48.731592+00:00"
     },
     {
-      "id": "1112-ko-tech-GitHub-Actions-입문-가이",
-      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-03T07:45:52.220978",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "CI/CD 개념은 알지만 실제 적용 경험이 없는 개발자가 GitHub Actions로 자동화를 처음 구현하려 함",
-      "angle": "YAML 문법부터 실제 배포 파이프라인 구성까지, 개념 설명 없이 바로 따라할 수 있는 실전 튜토리얼",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
-          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
-          "source": "inblog.ai"
-        },
-        {
-          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
-          "url": "https://notavoid.tistory.com/157",
-          "source": "notavoid.tistory.com"
-        },
-        {
-          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
-          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
-          "source": "apidog.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1113-ko-tech-클라우드-스토리지-비교:-S3-vs-",
       "keyword": "클라우드 스토리지 비교: S3 vs Google Cloud Storage vs Azure Blob",
       "category": "tech",
@@ -4155,6 +4123,347 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-03T10:40:07.610772+00:00",
       "completed_at": "2026-03-03T11:05:30.317273+00:00"
+    },
+    {
+      "id": "1114-en-tech-MacBook-Pro-M5-Pro-M",
+      "keyword": "MacBook Pro M5 Pro Max benchmark real-world performance",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478111",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and power users deciding whether to upgrade from M3/M4 machines are hunting for honest benchmarks before spending $2000+",
+      "angle": "Skeptical buyer's guide — cutting through Apple marketing to find actual performance gains for dev workloads",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "Apple debuts M5 Pro and M5 Max to supercharge the most demanding pro workflows - Apple",
+          "url": "https://www.apple.com/newsroom/2026/03/apple-debuts-m5-pro-and-m5-max-to-supercharge-the-most-demanding-pro-workflows/",
+          "source": "www.apple.com"
+        },
+        {
+          "title": "M5 Pro and M5 Max arrive in MacBook Pro, but little else has changed",
+          "url": "https://appleinsider.com/articles/26/03/03/macbook-pro-with-m5-pro-and-m5-max-arrive-with-few-surprises",
+          "source": "appleinsider.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1115-en-tech-Intel-18A-process-no",
+      "keyword": "Intel 18A process node 288-core Xeon make or break moment",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478172",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Engineers and cloud architects are evaluating whether Intel's server roadmap is viable again or if they should fully commit to AMD/ARM alternatives",
+      "angle": "Competitive analysis — Intel's manufacturing credibility on the line with real silicon shipping",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Intel's make-or-break 18A process node debuts for data center with 288-core Xeon 6+ CPU — multi-chip",
+          "url": "https://www.tomshardware.com/pc-components/cpus/intels-make-or-break-18a-process-node-debuts-for-data-center-with-288-core-xeon-6-cpu-multi-chip-monster-sports-12-channels-of-ddr5-8000-foveros-direct-3d-packaging-tech",
+          "source": "www.tomshardware.com"
+        },
+        {
+          "title": "Intel's make-or-break 18A process node debuts for data center with 288-core Xeon | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47236958",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "Intel's 288-Core Xeon 6 Behemoth: The 18A Chip That Could Decide the Company's Future in the Data Ce",
+          "url": "https://www.webpronews.com/intels-288-core-xeon-6-behemoth-the-18a-chip-that-could-decide-the-companys-future-in-the-data-center-wars/",
+          "source": "www.webpronews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1116-en-tech-TikTok-refuses-end-t",
+      "keyword": "TikTok refuses end-to-end encryption child safety excuse",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478214",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Privacy-conscious developers and users are alarmed by a major platform actively rejecting encryption while framing it as a safety feature",
+      "angle": "Surveillance capitalism critique — the weaponization of child safety rhetoric against user privacy",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "TikTok says it won't encrypt DMs claiming it puts users at risk",
+          "url": "https://www.bbc.com/news/articles/cly2m5e5ke4o",
+          "source": "www.bbc.com"
+        },
+        {
+          "title": "TikTok won't protect DMs with controversial privacy tech, saying it would put users at risk - MyJoyO",
+          "url": "https://www.myjoyonline.com/tiktok-wont-protect-dms-with-controversial-privacy-tech-saying-it-would-put-users-at-risk/",
+          "source": "www.myjoyonline.com"
+        },
+        {
+          "title": "TikTok won't add E2EE to DMs because it would prevent police and safety teams from reading messages ",
+          "url": "https://digg.com/technology/ZIt4bAg/tiktok-wont-add-e2ee-to-dms",
+          "source": "digg.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1117-en-tech-when-AI-writes-softw",
+      "keyword": "when AI writes software who verifies correctness formal verification",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478242",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Senior engineers and tech leads are confronting the realization that vibe-coded AI output can pass CI/CD while being fundamentally wrong",
+      "angle": "Engineering quality crisis — the gap between test-passing and correct code in the AI coding era",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "The Man Who Built Lean Says AI Will Write the World's Software — But Only If We Solve the Proof Prob",
+          "url": "https://www.webpronews.com/the-man-who-built-lean-says-ai-will-write-the-worlds-software-but-only-if-we-solve-the-proof-problem-first/",
+          "source": "www.webpronews.com"
+        },
+        {
+          "title": "An AI Odyssey, Part 1: Correctness Conundrum",
+          "url": "https://www.johndcook.com/blog/2026/03/02/an-ai-odyssey-part-1-correctness-conundrum/",
+          "source": "www.johndcook.com"
+        },
+        {
+          "title": "Why AI Needs Formal Verification - Alex Skidanov + Christian Szegedy - YouTube",
+          "url": "https://www.youtube.com/watch?v=d385TTn-0L8",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1118-en-tech-GPT-5.3-Instant-Open",
+      "keyword": "GPT-5.3 Instant OpenAI new model branding confusion developer reaction",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478262",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers integrating OpenAI APIs need to understand where this model sits in the lineup and whether to switch from current production models",
+      "angle": "API strategy — cutting through OpenAI's accelerating release cadence to find what actually matters for production use",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "ChatGPT's new GPT-5.3 Instant model will stop telling you to calm down | TechCrunch",
+          "url": "https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "r/OpenAI on Reddit: GPT-5.3 is out",
+          "url": "https://www.reddit.com/r/OpenAI/comments/1rjwoiy/gpt53_is_out/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "'More Accurate, Less Cringe': OpenAI Rolls Out GPT-5.3 Instant in ChatGPT - Decrypt",
+          "url": "https://decrypt.co/359837/more-accurate-less-cringe-openai-gpt-5-3-instant-chatgpt",
+          "source": "decrypt.co"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1119-ko-tech-M5-맥북-프로-실제-성능-개발자-업",
+      "keyword": "M5 맥북 프로 실제 성능 개발자 업그레이드 해야 하나",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478283",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자·디자이너들이 애플 신제품 발표 직후 '지금 살까 말까'를 결정하려고 실체적 비교 정보를 찾는 시점",
+      "angle": "실사용자 관점 — 애플 마케팅 문구가 아닌 개발 워크플로우·컴파일 속도·AI 추론 등 실무 성능 중심으로 판단",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "애플 맥북 프로 M5 Pro 및 M5 Max 출시: 사양, 가격 및 성능",
+          "url": "https://zeerawireless.com/blogs/news/%EC%95%A0%ED%94%8C-%EB%A7%A5%EB%B6%81-%ED%94%84%EB%A1%9C-m5-pro-%EB%B0%8F-m5-max-%EC%B6%9C%EC%8B%9C-%EC%82%AC%EC%96%91-%EA%B0%80%EA%B2%A9-%EB%B0%8F-%EC%84%B1%EB%8A%A5",
+          "source": "zeerawireless.com"
+        },
+        {
+          "title": "10 Things To Know About Apple's New M5 Pro and M5 Max MacBook Pros | Popular Science",
+          "url": "https://www.popsci.com/gear/apple-m5-pro-max-chips-macbook-pros-details/",
+          "source": "www.popsci.com"
+        },
+        {
+          "title": "M5 프로·맥스 맥북 프로 공개…\"LLM 처리속도 4배, 가격 400달러 인상\" - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260304075449",
+          "source": "zdnet.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1120-ko-tech-AI가-코드-짜면-누가-검증하나-실무",
+      "keyword": "AI가 코드 짜면 누가 검증하나 실무 개발자 딜레마",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478300",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코딩 툴을 실무에 도입한 개발자·팀 리드들이 코드 품질 검증 체계를 어떻게 재설계해야 할지 방법을 찾는 상황",
+      "angle": "실무 위기 관점 — 바이브 코딩 확산 속에서 테스트 통과와 진짜 정확성이 다르다는 경고를 국내 개발자 맥락으로 풀어냄",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI Native News | AI 시대에도 ADR이 필요한 이유: 아키텍처 결정 기록의 중요성 - OPENMARU APM",
+          "url": "https://www.openmaru.io/ai-native-news/",
+          "source": "www.openmaru.io"
+        },
+        {
+          "title": "2026 바이브 코딩 툴 5가지 추천: AI 코딩 툴로 달라진 개발자의 역할 - 코드트리 블로그",
+          "url": "https://www.codetree.ai/blog/2026-%EB%B0%94%EC%9D%B4%EB%B8%8C-%EC%BD%94%EB%94%A9-%ED%88%B4-5%EA%B0%80%EC%A7%80-%EC%B6%94%EC%B2%9C-ai-%EC%BD%94%EB%94%A9-%ED%88%B4%EB%A1%9C-%EB%8B%AC%EB%9D%BC%EC%A7%84-%EA%B0%9C%EB%B0%9C%EC%9E%90/",
+          "source": "www.codetree.ai"
+        },
+        {
+          "title": "질문의 기술을 넘어, 동료를 만드는 '설계법' : 컨텍스트 엔지니어링",
+          "url": "https://redgura.tistory.com/545",
+          "source": "redgura.tistory.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1121-ko-tech-틱톡-E2EE-거부-아동-안전-핑계-",
+      "keyword": "틱톡 E2EE 거부 아동 안전 핑계 개인정보 논란",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478336",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "틱톡을 쓰는 일반 사용자와 개인정보에 민감한 개발자들이 플랫폼의 데이터 수집 실태를 파악하려는 상황",
+      "angle": "감시 자본주의 비판 — 정부와 플랫폼이 공동으로 사용하는 '아동 안전' 논리가 암호화 반대 도구로 전용되는 구조를 국내 독자에게 설명",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "‘연령 인증의 덫’에 빠진 소셜 미디어 기업들",
+          "url": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=51766",
+          "source": "www.fortunekorea.co.kr"
+        },
+        {
+          "title": "카톡 차단 단체방 확인법 및 100% 차단 확인 방법, 2026 최신판 - 자유로운 인생",
+          "url": "https://freedom.greatsisyphus.com/kakaotalk-block/",
+          "source": "freedom.greatsisyphus.com"
+        },
+        {
+          "title": "이동통신사 종단 암호화(E2EE)의 한계와 과제",
+          "url": "https://www.pentasecurity.co.kr/insight/mobile-carrier-end-to-end-encryption-e2ee-limitations-and-challenges/",
+          "source": "www.pentasecurity.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1122-ko-tech-인텔-18A-공정-288코어-제온-A",
+      "keyword": "인텔 18A 공정 288코어 제온 AMD 대비 경쟁력 분석",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478372",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 서버·인프라 담당 엔지니어와 클라우드 아키텍트들이 인텔의 실제 경쟁력 회복 여부를 판단해 도입 결정에 반영하려는 상황",
+      "angle": "인프라 의사결정 관점 — 인텔의 제조 신뢰성 회복이 국내 데이터센터 구매 결정에 미치는 실질적 영향 분석",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1123-ko-tech-GPT-5.3-출시-API-어떻게-달",
+      "keyword": "GPT-5.3 출시 API 어떻게 달라졌나 개발자 실전 정리",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478427",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "OpenAI API를 실무에 연동한 국내 개발자·스타트업이 새 모델 출시 때마다 반복되는 버전 혼란 속에서 실용적 판단 근거를 찾는 상황",
+      "angle": "API 실무 전략 — 빠른 모델 출시 사이클 속에서 국내 개발자가 프로덕션 안정성과 신기능 도입 사이에서 어떻게 결정해야 하는지",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "GPT‑5.3 Codex Spark vs GPT‑5.3 Codex: 종합 분석 - CometAPI - 모든 AI 모델을 하나의 API로",
+          "url": "https://www.cometapi.com/ko/gpt%E2%80%915-3-codex-spark-vs-gpt%E2%80%915-3-codex/",
+          "source": "www.cometapi.com"
+        },
+        {
+          "title": "오픈AI, 'GPT-5.3 인스턴트' 출시… 정확도 향상·환각 감소·대화개선 | 아주경제",
+          "url": "https://www.ajunews.com/view/20260304084140534",
+          "source": "www.ajunews.com"
+        },
+        {
+          "title": "오픈AI, GPT-5.3 인스턴트 출시...챗GPT 대화 톤 개선 - 테크42",
+          "url": "https://www.tech42.co.kr/%EC%98%A4%ED%94%88ai-gpt-5-3-%EC%9D%B8%EC%8A%A4%ED%84%B4%ED%8A%B8-%EC%B6%9C%EC%8B%9C-%EC%B1%97gpt-%EB%8C%80%ED%99%94-%ED%86%A4-%EA%B0%9C%EC%84%A0/",
+          "source": "www.tech42.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1124-ko-tech-GitHub-Actions-입문-가이",
+      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-04T07:41:00.478536",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI/CD를 처음 도입하려는 개발자가 GitHub Actions 사용법을 한국어로 배우고 싶을 때",
+      "angle": "코드 푸시부터 자동 배포까지 GitHub Actions 워크플로우를 예제 중심으로 단계별 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
+          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
+          "source": "inblog.ai"
+        },
+        {
+          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
+          "url": "https://notavoid.tistory.com/157",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

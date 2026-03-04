@@ -4130,7 +4130,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478111",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4150,7 +4150,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:45:34.135506+00:00"
     },
     {
       "id": "1115-en-tech-Intel-18A-process-no",
@@ -4158,7 +4160,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478172",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4183,7 +4185,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:56:09.978031+00:00"
     },
     {
       "id": "1116-en-tech-TikTok-refuses-end-t",
@@ -4191,7 +4195,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478214",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4216,7 +4220,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:58:20.619652+00:00"
     },
     {
       "id": "1117-en-tech-when-AI-writes-softw",
@@ -4224,7 +4230,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478242",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4249,7 +4255,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:48:07.083849+00:00"
     },
     {
       "id": "1118-en-tech-GPT-5.3-Instant-Open",
@@ -4257,7 +4265,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478262",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4282,7 +4290,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:40:50.418540+00:00"
     },
     {
       "id": "1119-ko-tech-M5-맥북-프로-실제-성능-개발자-업",
@@ -4290,7 +4300,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478283",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4315,7 +4325,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:50:25.245901+00:00"
     },
     {
       "id": "1120-ko-tech-AI가-코드-짜면-누가-검증하나-실무",
@@ -4323,7 +4335,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478300",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4348,7 +4360,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:53:22.055633+00:00"
     },
     {
       "id": "1121-ko-tech-틱톡-E2EE-거부-아동-안전-핑계-",
@@ -4356,7 +4370,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478336",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4381,7 +4395,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T11:00:52.586998+00:00"
     },
     {
       "id": "1122-ko-tech-인텔-18A-공정-288코어-제온-A",
@@ -4389,7 +4405,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478372",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4398,7 +4414,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T11:03:32.235934+00:00"
     },
     {
       "id": "1123-ko-tech-GPT-5.3-출시-API-어떻게-달",
@@ -4406,7 +4424,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-04T07:41:00.478427",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4431,7 +4449,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-04T10:38:47.558041+00:00",
+      "completed_at": "2026-03-04T10:43:12.093861+00:00"
     },
     {
       "id": "1124-ko-tech-GitHub-Actions-입문-가이",

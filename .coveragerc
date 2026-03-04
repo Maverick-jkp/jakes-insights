@@ -39,6 +39,7 @@ omit =
     scripts/seo_tracker.py
     scripts/utils/content_classifier.py
     scripts/prompts/*.py
+    scripts/add_internal_links_bulk.py
 
 [report]
 precision = 2

@@ -137,3 +137,14 @@ The clearest single action: **instrument your pipeline by stage before touching 
 ---
 
 *Photo by [wtrsnvc _](https://unsplash.com/@wtrsnvc) on [Unsplash](https://unsplash.com/photos/a-close-up-of-a-microphone-on-a-table-SOcnni6gIRw)*
+
+
+## Related Posts
+
+
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+- [Meta AI Smart Glasses Privacy: Workers Who See Everything](/en/tech/meta-ai-smart-glasses-privacy-workers-surveillance/)
+

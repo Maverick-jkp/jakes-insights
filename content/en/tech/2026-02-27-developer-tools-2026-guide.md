@@ -52,3 +52,14 @@ Microsoft's decisions — printer driver deprecation, Notepad markdown, security
 
 
 *Photo by [BoliviaInteligente](https://unsplash.com/@boliviainteligente) on [Unsplash](https://unsplash.com/photos/the-year-2026-in-metallic-3d-numbers-77fB7YX9bow)*
+
+
+## Related Posts
+
+
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [WebMCP Chrome Browser AI Agent Standard Explained](/en/tech/webmcp-chrome-browser-ai-agent-standard/)
+- [Google Mandatory Android Developer Registration Open Letter Backlash](/en/tech/google-mandatory-android-developer-registration-op/)
+- [Ladybird Browser Rust Migration: AI-Assisted Porting Risks](/en/tech/ladybird-browser-rust-migration-aiassisted-porting/)
+- [Keep Android Open: Developers Push Back on Google's 2026 Rule](/en/tech/keep-android-open/)
+

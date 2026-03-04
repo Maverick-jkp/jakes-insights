@@ -153,6 +153,17 @@ The question worth sitting with isn't abstract. It's operational: what is your c
 
 *References: Simon Lermen, "Large-Scale Online Deanonymization with LLMs," Substack, February 2026; The Hacker News, "How Exposed Endpoints Increase Risk Across LLM Infrastructure," February 2026; The Register, "AI takes a swing at online anonymity," February 26, 2026.*
 
+
+
+## Related Posts
+
+
+- [Meta AI Smart Glasses Privacy: Workers Who See Everything](/en/tech/meta-ai-smart-glasses-privacy-workers-surveillance/)
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+
 ## References
 
 1. [How Exposed Endpoints Increase Risk Across LLM Infrastructure](https://thehackernews.com/2026/02/how-exposed-endpoints-increase-risk.html)

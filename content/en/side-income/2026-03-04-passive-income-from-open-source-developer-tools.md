@@ -89,3 +89,13 @@ Avoid tools that overlap heavily with free tier SaaS products. If Vercel or Netl
 ## Next Step
 
 Go to **polar.sh/signup** and create a free account. Takes 15 minutes. Connect your GitHub, pick one existing repo (even an older one with some stars), and set up two tiers: a $5/mo "supporter" tier and a $19/mo "early access" tier with a benefit listed — even something as simple as "Access to private changelog and roadmap." Then post a single tweet or Bluesky post linking to the Polar page with one sentence about what the tool does. Once that page is live and your repo links to it, you've built the infrastructure — the next step is your first Show HN post.
+
+## Related Posts
+
+
+- [How Developers Make $75-$150/hr Freelancing Without Underselling: Real Numbers](/en/side-income/how-to-price-your-freelance-dev-work-without-under/)
+- [How Developers Make $1,000–$5,000/mo Selling Chrome Extensions: Real Numbers](/en/side-income/build-and-sell-a-chrome-extension-as-a-developer/)
+- [Claude API Side Project Income for Developers: Honest Numbers from 2026](/en/side-income/claude-api-side-project-that-makes-money/)
+- [How Developers Make $50/hr on Upwork in 2026: Real Numbers](/en/side-income/how-developers-make-50hr-on-upwork-in-2026/)
+- [Notion Template Income for Developers: Honest Numbers from 2026](/en/side-income/sell-notion-templates-on-gumroad-step-by-step/)
+

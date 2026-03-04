@@ -4,7 +4,7 @@ date: 2026-03-03T22:01:22+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
-tags: ["subtopic-ai-income", "claude", "api로", "사이드"]
+tags: ["subtopic-ai-income", "claude", "api로"]
 description: "풀타임 개발자가 Claude API 하나로 월 $3,200 버는 실제 방법—한국 적용 가능성과 현실적인 장벽을 수치로 분석했어요."
 image: "/images/20260303-claude-api.webp"
 ---
@@ -72,3 +72,14 @@ image: "/images/20260303-claude-api.webp"
 ---
 
 *Photo by [Matilda Alloway](https://unsplash.com/@matildaonthemove) on [Unsplash](https://unsplash.com/photos/two-scrabble-tiles-spelling-project-update-on-a-table-21mUU21Z20Q)*
+
+
+## 관련 글
+
+
+- [해외 개발자들이 기술 블로그로 월 $2,000 버는 법: 한국 적용 현실 분석](/ko/side-income/해외-기술-블로그-운영으로-달러-버는-법/)
+- [해외 개발자들이 Fiverr로 월 $1,500 버는 법: 한국 적용 현실 분석](/ko/side-income/미국-개발자들이-fiverr로-부수입-버는-방법-한국-적용기/)
+- [해외 개발자들이 마이크로 SaaS로 월 $500 버는 법: 한국 적용 현실 분석](/ko/side-income/개발자-부업-아이디어-월-50만원-현실적인-방법/)
+- [크몽 vs Upwork 개발자 단가 비교: 같은 실력으로 월수익 3배 차이 나는 이유](/ko/side-income/크몽-vs-해외-프리랜서-플랫폼-단가-비교-2026/)
+- [해외 개발자들이 Upwork으로 월 $3,000 버는 법: 한국에서 진짜 가능한가](/ko/side-income/개발자-upwork-시작하는-법-한국에서-가능한가/)
+

@@ -149,6 +149,17 @@ So the question worth sitting with is structural, not personal: if commitment er
 
 *Sources: Bloomberg (February 25, 2026), TIME, PBS NewsHour / AP report on Hegseth warning. All policy characterizations based on publicly reported information as of publication date.*
 
+
+
+## Related Posts
+
+
+- [Anthropic military AI weapons contract backlash after Pentagon talks collapse](/en/tech/anthropic-military-ai-weapons-contract-backlash/)
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+
 ## References
 
 1. [Anthropic Drops Flagship Safety Pledge | TIME](https://time.com/7380854/exclusive-anthropic-drops-flagship-safety-pledge/)

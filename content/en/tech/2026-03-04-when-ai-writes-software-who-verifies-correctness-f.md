@@ -4,7 +4,7 @@ date: 2026-03-04T19:48:07+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["subtopic-ai", "writes", "software", "who", "Python"]
+tags: ["subtopic-ai", "writes", "software", "Python"]
 description: "40% of code is now AI-assisted. But who verifies it's actually correct? Explore the formal verification gap threatening production software quality."
 image: "/images/20260304-when-ai-writes-software-who-ve.webp"
 technologies: ["Python", "AWS", "Go", "Copilot", "Cursor"]
@@ -122,6 +122,17 @@ Watch two developments in the next 6-12 months. First, whether Microsoft's Copil
 The mindset shift is this: correctness verification isn't a QA problem anymore. When AI writes software at scale, verification becomes a first-class engineering concern that deserves its own tooling, investment, and team capability — not a checkbox at the end of the sprint.
 
 Ask your team this week: if AI wrote that function, how do you *know* it's correct?
+
+
+
+## Related Posts
+
+
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+- [Meta AI Smart Glasses Privacy: Workers Who See Everything](/en/tech/meta-ai-smart-glasses-privacy-workers-surveillance/)
+- [Sub-500ms Voice Agent Latency: How to Build It in 2026](/en/tech/sub500ms-voice-agent-latency-build-from-scratch-20/)
 
 ## References
 

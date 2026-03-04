@@ -129,6 +129,17 @@ If you distribute Linux software that reaches California consumers, get legal ad
 
 *What's your take on how the Linux Foundation should respond to AB 1043? The comment section is open.*
 
+
+
+## Related Posts
+
+
+- [Docker vs Podman: Which Container Tool Should You Use](/en/tech/docker-vs-podman-which-container-tool-should-you-u/)
+- [Obsidian Sync Headless Client CLI Setup for NAS and Servers](/en/tech/obsidian-sync-headless-client-cli-server-nas-setup/)
+- [How to Set Up a Self-Hosted VPN with WireGuard on a VPS](/en/tech/how-to-set-up-a-selfhosted-vpn-with-wireguard/)
+- [FreeBSD AI-Written WiFi Driver for MacBook: Real-World Result](/en/tech/freebsd-aiwritten-wifi-driver-macbook-realworld-re/)
+- [Age Verification's Surveillance Trap: What the IEEE Analysis Found](/en/tech/age-verification-data-privacy-surveillance-trap-ie/)
+
 ## References
 
 1. [A new California law says all operating systems need to have age verification | Hacker News](https://news.ycombinator.com/item?id=47181208)

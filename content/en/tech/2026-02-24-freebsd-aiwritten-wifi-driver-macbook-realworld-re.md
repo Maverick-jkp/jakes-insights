@@ -151,6 +151,17 @@ That's a meaningful change for an OS that's spent years watching its hardware co
 
 ---
 
+
+
+## Related Posts
+
+
+- [Docker vs Podman: Which Container Tool Should You Use](/en/tech/docker-vs-podman-which-container-tool-should-you-u/)
+- [Obsidian Sync Headless Client CLI Setup for NAS and Servers](/en/tech/obsidian-sync-headless-client-cli-server-nas-setup/)
+- [How to Set Up a Self-Hosted VPN with WireGuard on a VPS](/en/tech/how-to-set-up-a-selfhosted-vpn-with-wireguard/)
+- [California OS Age Verification Law Linux Open Source Impact](/en/tech/california-os-age-verification-law-linux-open-sour/)
+- [DoNotNotify: Android App Filters Promotional Notifications](/en/tech/donotnotify/)
+
 ## References
 
 1. Varankin, Vladimir. *"FreeBSD doesn't have Wi-Fi driver for my old MacBook. AI build one for me."* February 2026. [vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/](https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/)

@@ -137,6 +137,17 @@ Ars Technica의 2026년 2월 보도에서도 언급됐듯, 신형 Mac에서 Taho
 
 알림을 끄는 것보다, 언제 업그레이드할지를 내가 결정하는 것. 그게 맞는 방향이에요.
 
+
+
+## 관련 글
+
+
+- [틱톡이 E2EE를 거부하는 이유: 아동 안전인가 데이터 수집인가](/ko/tech/틱톡-e2ee-거부-아동-안전-핑계-개인정보-논란/)
+- [모토로라 GrapheneOS 협력이 프라이버시 안드로이드 시장에 갖는 실제 의미](/ko/tech/모토로라-grapheneos-협력-프라이버시-안드로이드-실제-의미/)
+- [Notion vs Obsidian 비교: 개발자에게 맞는 두 번째 뇌는 무엇인가](/ko/tech/notion-vs-obsidian-비교-개발자에게-맞는-두-번째-뇌는/)
+- [M4 애플 뉴럴엔진 역분석 ML 개발자 실전: FP16 양자화와 Core ML 실행 경로 분석](/ko/tech/m4-애플-뉴럴엔진-역분석-ml-개발자-실전/)
+- [메타 Ray-Ban 스마트글래스 AI 얼굴인식 탑재 계획 유출과 감시 논란](/ko/tech/메타-스마트글래스-직원-얼굴인식-감시-논란/)
+
 ## 참고자료
 
 1. [Explainer: macOS updates – The Eclectic Light Company](https://eclecticlight.co/2026/02/28/explainer-macos-updates/)

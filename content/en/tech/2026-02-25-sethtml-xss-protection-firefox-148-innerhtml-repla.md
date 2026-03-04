@@ -174,7 +174,18 @@ Running ESLint's `no-unsanitized` rule is the fastest way to find out exactly wh
 
 ---
 
-### References
+#
+
+## Related Posts
+
+
+- [Intel 18A Process Node 288-Core Xeon Make or Break Moment](/en/tech/intel-18a-process-node-288core-xeon-make-or-break-/)
+- [MacBook Pro M5 Pro Max Benchmark Real-World Performance](/en/tech/macbook-pro-m5-pro-max-benchmark-realworld-perform/)
+- [WebMCP Chrome Browser AI Agent Standard Explained](/en/tech/webmcp-chrome-browser-ai-agent-standard/)
+- [Claude Code Framework Preference Bias and Developer Marketing](/en/tech/claude-code-framework-preference-bias-developer-ma/)
+- [Fake Job Interview Backdoor Malware Targeting Developer Machines](/en/tech/fake-job-interview-backdoor-malware-developer-mach/)
+
+## References
 
 1. Mozilla Hacks – *Goodbye innerHTML, Hello setHTML: Stronger XSS Protection in Firefox 148* (February 2026): https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/
 2. Hacker News discussion thread on Firefox 148 `setHTML()` launch: https://news.ycombinator.com/item?id=47136611

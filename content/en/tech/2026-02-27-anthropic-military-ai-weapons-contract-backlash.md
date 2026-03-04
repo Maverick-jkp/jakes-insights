@@ -144,6 +144,17 @@ The conversation just became public. Which side of that line does your organizat
 
 *Sources: NPR (February 26, 2026), Politico (February 26, 2026), CBS News (February 26, 2026)*
 
+
+
+## Related Posts
+
+
+- [Anthropic's Safety Pledge Dropped Under AI Race Pressure](/en/tech/anthropic-safety-pledge-dropped-ai-race-pressure/)
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+
 ## References
 
 1. [Deadline looms as Anthropic rejects Pentagon demands it remove AI safeguards](https://www.npr.org/2026/02/26/nx-s1-5727847/anthropic-defense-hegseth-ai-weapons-surveillance)

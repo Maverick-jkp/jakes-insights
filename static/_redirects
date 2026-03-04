@@ -29,7 +29,11 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /ko/society/* /ko/ 301
 /ko/finance/* /ko/ 301
 
-# Legacy categories/tags (without language prefix)
+# Live category pages — must be listed BEFORE the catch-all below
+/categories/tech/ /categories/tech/ 200
+/categories/tech /categories/tech/ 301
+
+# Legacy categories/tags (without language prefix) — catch-all after live routes
 /categories/* / 301
 
 # Legacy KO categories prefix

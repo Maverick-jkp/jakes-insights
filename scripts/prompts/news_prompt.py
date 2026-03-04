@@ -51,11 +51,12 @@ MANDATORY STRUCTURE:
 
 Write this as 2-3 sentences that capture the essence of the story.
 
-**KEY TAKEAWAYS BLOCK (MANDATORY)** - Insert immediately after Lead Paragraph, before ## 2:
-> **Key Takeaways**
-> - 3-5 bullet points summarizing the most important facts
-> - Each point: complete, standalone declarative sentence with specific data
-> - These should be directly quotable by AI search engines (Perplexity, Google SGE)
+**SUMMARY BLOCK (MANDATORY)** - Insert immediately after Lead Paragraph, before ## 2.
+Choose ONE of these formats (vary per article):
+- Format A: `> **Key Takeaways** \\n> - fact 1 \\n> - fact 2 ...` (blockquote)
+- Format B: `> **TL;DR** \\n> [2-3 sentence plain summary]` (no bullets)
+- Format C: Bold paragraph: `**What you need to know:** [3-4 sentences covering who/what/why/impact]`
+Rotate formats — do NOT use the same format in consecutive articles.
 
 ## 2. Key Details ({_get_details_words(language)})
 
@@ -103,20 +104,15 @@ Use bullet lists OR markdown tables for clarity:
 
 ## 4. Impact & Analysis ({_get_impact_words(language)})
 
-### Who is Affected?
-- **Developers/Engineers**: Specific impact on their work
-- **Businesses/Organizations**: Business implications
-- **End Users/Consumers**: How their experience changes
+Write this section using ONE of these formats (vary per article — do NOT always use audience segmentation):
 
-### What Changes?
-- **Immediate effects** (this week/month):
-  - Change 1
-  - Change 2
-- **Medium-term implications** (next 3-6 months):
-  - Implication 1
-  - Implication 2
+**Format A** — "Who gets hit and how": Describe impact for 2-3 specific groups with concrete consequences.
 
-### What to Watch Next
+**Format B** — "What actually changes": Focus on the single most important practical change, then walk through ripple effects.
+
+**Format C** — "The number that matters": Lead with the most impactful statistic or data point, then explain what it means for the industry.
+
+End with a short "What to Watch Next" paragraph (NOT a heading — just a paragraph):
 - Upcoming milestones or dates to track
 - Potential issues or concerns to monitor
 - Follow-up developments likely to happen

@@ -304,6 +304,17 @@ We have powerful technology and immature implementation processes. Closing that 
 
 The question isn't whether AI belongs in healthcare. It's whether we have the discipline to implement it safely.
 
+
+
+## Related Posts
+
+
+- [Docker vs Podman: Which Container Tool Should You Use](/en/tech/docker-vs-podman-which-container-tool-should-you-u/)
+- [Obsidian Sync Headless Client CLI Setup for NAS and Servers](/en/tech/obsidian-sync-headless-client-cli-server-nas-setup/)
+- [How to Set Up a Self-Hosted VPN with WireGuard on a VPS](/en/tech/how-to-set-up-a-selfhosted-vpn-with-wireguard/)
+- [California OS Age Verification Law Linux Open Source Impact](/en/tech/california-os-age-verification-law-linux-open-sour/)
+- [FreeBSD AI-Written WiFi Driver for MacBook: Real-World Result](/en/tech/freebsd-aiwritten-wifi-driver-macbook-realworld-re/)
+
 ## References
 
 1. [Health Advice From A.I. Chatbots Is Frequently Wrong, Study Shows - The New York Times](https://www.nytimes.com/2026/02/09/well/chatgpt-health-advice.html)

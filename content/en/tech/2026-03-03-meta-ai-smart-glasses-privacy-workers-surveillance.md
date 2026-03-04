@@ -144,6 +144,17 @@ The workers who say "we see everything" aren't warning you. They're describing t
 
 *What's your organization's current policy on AI-enabled wearables in the workplace? If you can't answer that off the top of your head, that's the gap that needs closing first.*
 
+
+
+## Related Posts
+
+
+- [LLM Deanonymization Is Exposing Real Identities Online](/en/tech/llm-deanonymization-privacy-risk-real-identities-e/)
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+
 ## References
 
 1. [Meta’s AI Smart Glasses and Data Privacy Concerns: Workers Say “We See Everything”](https://www.svd.se/a/K8nrV4/metas-ai-smart-glasses-and-data-privacy-concerns-workers-say-we-see-everything)

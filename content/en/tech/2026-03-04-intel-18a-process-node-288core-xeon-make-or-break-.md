@@ -4,7 +4,7 @@ date: 2026-03-04T19:56:09+0900
 draft: false
 author: "Jake Park"
 categories: ["tech"]
-tags: ["subtopic-web", "intel", "18a", "process", "AWS"]
+tags: ["subtopic-web", "intel", "process"]
 description: "Intel's 18A process node arrives Q1 2026 with 288-core Xeon. After years of delays, this is the chip that decides Intel's data center future."
 image: "/images/20260304-intel-18a-process-node-288core.webp"
 technologies: ["AWS", "Go", "Mistral", "Llama"]
@@ -127,6 +127,17 @@ If your server refresh timeline is 2026, this benchmark cycle determines your pl
 ---
 
 *References: Tom's Hardware (Feb 2026), Mercury Research via AnandTech, AMD EPYC Turin official product page, Ampere Computing Altra Max specs, Barron's (late 2025) on Intel Foundry customer discussions, WebProNews Intel 18A analysis (2026).*
+
+
+
+## Related Posts
+
+
+- [MacBook Pro M5 Pro Max Benchmark Real-World Performance](/en/tech/macbook-pro-m5-pro-max-benchmark-realworld-perform/)
+- [WebMCP Chrome Browser AI Agent Standard Explained](/en/tech/webmcp-chrome-browser-ai-agent-standard/)
+- [Claude Code Framework Preference Bias and Developer Marketing](/en/tech/claude-code-framework-preference-bias-developer-ma/)
+- [Fake Job Interview Backdoor Malware Targeting Developer Machines](/en/tech/fake-job-interview-backdoor-malware-developer-mach/)
+- [Firefox 148's setHTML() API: An innerHTML Replacement for XSS Protection](/en/tech/sethtml-xss-protection-firefox-148-innerhtml-repla/)
 
 ## References
 

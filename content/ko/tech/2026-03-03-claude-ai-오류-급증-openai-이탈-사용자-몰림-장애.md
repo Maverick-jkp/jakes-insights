@@ -122,6 +122,17 @@ API 기반 비즈니스는 트래픽을 예측하고 자원을 미리 배분할 
 
 *이 글에서 인용된 정보는 AI타임스, Mixvale, PA News Lab의 2026년 3월 보도를 바탕으로 작성되었습니다.*
 
+
+
+## 관련 글
+
+
+- [OpenAI 군사 계약 체결 후 AI 윤리 논란과 개발자 이탈 흐름 분석](/ko/tech/openai-군사-계약-ai-윤리-개발자-이탈-논란/)
+- [OpenAI 기업가치 730조, 투자 구조와 지속 가능성 분석](/ko/tech/openai-기업가치-730조-투자-구조-지속-가능성-분석/)
+- [OpenAI 군사 계약 확대와 AI 윤리 논쟁: 개발자들이 던지는 질문](/ko/tech/openai-군사-계약-ai-윤리-개발자-영향/)
+- [OpenAI 경쟁 우위 흔들리나: Anthropic·Google·Meta가 ChatGPT 점유율을 압박하는 방식](/ko/tech/openai-경쟁-우위-흔들리나-chatgpt-점유율-위기/)
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+
 ## 참고자료
 
 1. [클로드, 수요 급증으로 접속 장애…챗GPT 구독 취소도 이어져 - AI타임스](https://www.aitimes.com/news/articleView.html?idxno=207440)

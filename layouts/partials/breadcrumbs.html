@@ -1,12 +1,23 @@
 {{- if not .IsHome }}
+{{- /* EN lives at /, KO lives at /ko/ */}}
+{{- $homeURL := "/" }}
+{{- $homeName := "Home" }}
+{{- if ne .Site.Language.Lang "en" }}
+  {{- $homeURL = printf "/%s/" .Site.Language.Lang }}
+  {{- $homeName = .Site.Params.homeName | default "Home" }}
+{{- end }}
 <nav id="breadcrumbs" class="breadcrumbs" aria-label="Breadcrumb">
-  <a href="/{{ .Site.Language.Lang }}/">Home</a>
+  <a href="{{ $homeURL }}">{{ $homeName }}</a>
   {{- $currentPage := . }}
   {{- /* Add category breadcrumb if available */ -}}
   {{- with .Params.categories }}
     {{- $category := index . 0 }}
     <span class="breadcrumb-separator">›</span>
+    {{- if eq $.Site.Language.Lang "en" }}
+    <a href="/categories/{{ $category | urlize }}/">{{ $category }}</a>
+    {{- else }}
     <a href="/{{ $.Site.Language.Lang }}/categories/{{ $category | urlize }}/">{{ $category }}</a>
+    {{- end }}
   {{- end }}
   {{- /* Current page */ -}}
   {{- if $currentPage.Title }}
@@ -25,15 +36,19 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "{{ .Site.BaseURL }}/{{ .Site.Language.Lang }}/"
+      "item": "{{ .Site.BaseURL }}{{ $homeURL | strings.TrimPrefix "/" }}"
     }
     {{- with .Params.categories }}
     {{- $category := index . 0 }}
+    {{- $catURL := printf "%scategories/%s/" $.Site.BaseURL ($category | urlize) }}
+    {{- if ne $.Site.Language.Lang "en" }}
+      {{- $catURL = printf "%s%s/categories/%s/" $.Site.BaseURL $.Site.Language.Lang ($category | urlize) }}
+    {{- end }}
     ,{
       "@type": "ListItem",
       "position": 2,
       "name": "{{ $category }}",
-      "item": "{{ $.Site.BaseURL }}/{{ $.Site.Language.Lang }}/categories/{{ $category | urlize }}/"
+      "item": "{{ $catURL }}"
     }
     ,{
       "@type": "ListItem",

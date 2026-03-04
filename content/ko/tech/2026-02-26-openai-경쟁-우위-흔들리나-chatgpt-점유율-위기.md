@@ -139,6 +139,17 @@ Claude.ai를 한 번 써보세요. ChatGPT와 비교했을 때 긴 문서를 다
 - 전자신문, "인터넷 없이도 폭주하는 AI, 스마트폰 속 챗봇이 돌변하는 지점 예측", 2026년 2월 19일, https://www.etnews.com/20260219000220
 - 뉴스스페이스, 2026년 2월, https://www.newsspace.kr/news/article.html?no=12795
 
+
+
+## 관련 글
+
+
+- [Claude AI 오류 급증, OpenAI 이탈 사용자 몰림으로 웹 접속 장애 발생](/ko/tech/claude-ai-오류-급증-openai-이탈-사용자-몰림-장애/)
+- [OpenAI 군사 계약 체결 후 AI 윤리 논란과 개발자 이탈 흐름 분석](/ko/tech/openai-군사-계약-ai-윤리-개발자-이탈-논란/)
+- [OpenAI 기업가치 730조, 투자 구조와 지속 가능성 분석](/ko/tech/openai-기업가치-730조-투자-구조-지속-가능성-분석/)
+- [OpenAI 군사 계약 확대와 AI 윤리 논쟁: 개발자들이 던지는 질문](/ko/tech/openai-군사-계약-ai-윤리-개발자-영향/)
+- [2026년 AI 완전 정리: 트렌드, 도구, 위험 요소 총정리](/ko/tech/ai-2026-완전-정리/)
+
 ## 참고자료
 
 1. [It is predicted that sales of generative artificial intelligence (AI) startup Ansropic could overtak](https://www.mk.co.kr/en/it/11968572)

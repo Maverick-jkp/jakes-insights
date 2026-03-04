@@ -128,6 +128,17 @@ This approach can fail quietly. Teams discover the mismatch six months in, after
 
 *What frameworks has your team found Claude Code consistently under-recommending? The answer probably says something interesting about where documentation investment hasn't caught up with technical quality.*
 
+
+
+## Related Posts
+
+
+- [Intel 18A Process Node 288-Core Xeon Make or Break Moment](/en/tech/intel-18a-process-node-288core-xeon-make-or-break-/)
+- [MacBook Pro M5 Pro Max Benchmark Real-World Performance](/en/tech/macbook-pro-m5-pro-max-benchmark-realworld-perform/)
+- [WebMCP Chrome Browser AI Agent Standard Explained](/en/tech/webmcp-chrome-browser-ai-agent-standard/)
+- [Fake Job Interview Backdoor Malware Targeting Developer Machines](/en/tech/fake-job-interview-backdoor-malware-developer-mach/)
+- [Firefox 148's setHTML() API: An innerHTML Replacement for XSS Protection](/en/tech/sethtml-xss-protection-firefox-148-innerhtml-repla/)
+
 ## References
 
 1. [Claude Skills: Build Your First AI Marketing Team in 16 Minutes (Claude Code) - YouTube](https://www.youtube.com/watch?v=X8afcX2s2Mo)

@@ -178,6 +178,17 @@ If you're already running Obsidian Sync and have a NAS or home server, the open 
 
 *References: r/ObsidianMD headless client open beta thread; Obsidian Forum bug report "ob sync-setup fails on headless Linux (keychain unavailable)"; Hacker News discussion "Obsidian Sync now has a headless client" (2026).*
 
+
+
+## Related Posts
+
+
+- [Docker vs Podman: Which Container Tool Should You Use](/en/tech/docker-vs-podman-which-container-tool-should-you-u/)
+- [How to Set Up a Self-Hosted VPN with WireGuard on a VPS](/en/tech/how-to-set-up-a-selfhosted-vpn-with-wireguard/)
+- [California OS Age Verification Law Linux Open Source Impact](/en/tech/california-os-age-verification-law-linux-open-sour/)
+- [AirSnitch Wi-Fi Client Isolation Bypass Attack 2026 Explained](/en/tech/airsnitch-wifi-client-isolation-bypass-attack-2026/)
+- [FreeBSD AI-Written WiFi Driver for MacBook: Real-World Result](/en/tech/freebsd-aiwritten-wifi-driver-macbook-realworld-re/)
+
 ## References
 
 1. [r/ObsidianMD on Reddit: Headless client for Obsidian Sync (open beta)](https://www.reddit.com/r/ObsidianMD/comments/1rgg4n6/headless_client_for_obsidian_sync_open_beta/)

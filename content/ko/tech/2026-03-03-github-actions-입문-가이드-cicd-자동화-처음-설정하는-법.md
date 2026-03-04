@@ -322,3 +322,14 @@ jobs:
 ---
 
 *Photo by [Enchanted Tools](https://unsplash.com/@enchantedtools) on [Unsplash](https://unsplash.com/photos/close-up-of-an-orange-robot-with-a-sensor-array-1lHqfaLjnRA)*
+
+
+## 관련 글
+
+
+- [취업 코딩 테스트 위장 악성코드, 백도어로 개발자 피해 확산](/ko/tech/취업-코딩-테스트-악성코드-백도어-개발자-피해/)
+- [코딩 부트캠프 추천: SSAFY·우테코·내배캠 등 5개 비교 분석](/ko/tech/코딩-부트캠프-추천/)
+- [틱톡이 E2EE를 거부하는 이유: 아동 안전인가 데이터 수집인가](/ko/tech/틱톡-e2ee-거부-아동-안전-핑계-개인정보-논란/)
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+- [GPT-5.3 출시, API 어떻게 달라졌나: 개발자 실전 정리](/ko/tech/gpt53-출시-api-어떻게-달라졌나-개발자-실전-정리/)
+

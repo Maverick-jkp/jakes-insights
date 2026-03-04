@@ -144,6 +144,17 @@ The threat is live. The tools to defend against it exist. The gap is execution.
 
 *Sources: Simon Willison, "Google API Keys Weren't Secrets. But then Gemini Changed the Rules" (February 26, 2026); TechNadu, "PromptSpy: First Documented Android Malware to Use Generative AI" (February 2026); weDevs, "How to Generate a Gemini API Key Without a Credit Card in 2026"; Google Cloud Pricing documentation (February 2026).*
 
+
+
+## Related Posts
+
+
+- [Gemini CLI Account Banned No Reason Google AI Pro Ultra](/en/tech/gemini-cli-account-banned-no-reason-google/)
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+
 ## References
 
 1. [How to Generate a Gemini API Key Without a Credit Card in 2026 - weDevs](https://wedevs.com/blog/510096/how-to-generate-gemini-api-key/)

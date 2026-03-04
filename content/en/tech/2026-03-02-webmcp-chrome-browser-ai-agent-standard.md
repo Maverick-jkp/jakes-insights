@@ -137,6 +137,17 @@ The web has always evolved to meet how people actually use it. People increasing
 
 The question worth sitting with: is your product's functionality visible to an AI agent today? If not, that's the gap to close — and the window to close it cheaply is shorter than most teams realize.
 
+
+
+## Related Posts
+
+
+- [Ladybird Browser Rust Migration: AI-Assisted Porting Risks](/en/tech/ladybird-browser-rust-migration-aiassisted-porting/)
+- [Intel 18A Process Node 288-Core Xeon Make or Break Moment](/en/tech/intel-18a-process-node-288core-xeon-make-or-break-/)
+- [MacBook Pro M5 Pro Max Benchmark Real-World Performance](/en/tech/macbook-pro-m5-pro-max-benchmark-realworld-perform/)
+- [Sub-500ms Voice Agent Latency: How to Build It in 2026](/en/tech/sub500ms-voice-agent-latency-build-from-scratch-20/)
+- [Claude Code Framework Preference Bias and Developer Marketing](/en/tech/claude-code-framework-preference-bias-developer-ma/)
+
 ## References
 
 1. [WebMCP: AI Agent Browser Interaction | by JIN | 𝐀𝐈 𝐦𝐨𝐧𝐤𝐬.𝐢𝐨 | Mar, 2026 | Medium](https://medium.com/aimonks/webmcp-ai-agent-browser-interaction-f86838a564ec)

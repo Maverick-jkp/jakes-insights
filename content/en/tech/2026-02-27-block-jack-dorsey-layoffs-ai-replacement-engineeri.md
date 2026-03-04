@@ -134,6 +134,17 @@ The next 6–12 months will be telling. If Block's revenue-per-employee metrics 
 
 The mindset shift worth making now: stop asking "will AI affect my job?" and start asking "which parts of my job should I be the one automating first?" Engineers who answer that question proactively are the ones getting hired into Block's new team structure—not laid off from the old one.
 
+
+
+## Related Posts
+
+
+- [When AI Writes Software, Who Verifies Correctness?](/en/tech/when-ai-writes-software-who-verifies-correctness-f/)
+- [GPT-5.3 Instant: OpenAI's New Model Sparks Developer Confusion](/en/tech/gpt53-instant-openai-new-model-branding-confusion-/)
+- [GRAM Editor: The Zed Fork Ditching AI in 2026 Open Source Space](/en/tech/gram-editor-zed-fork-no-ai-open-source-2026/)
+- [Ars Technica Reporter Fired Over AI Fabricated Quotes](/en/tech/ars-technica-reporter-fired-ai-fabricated-quotes-j/)
+- [Meta AI Smart Glasses Privacy: Workers Who See Everything](/en/tech/meta-ai-smart-glasses-privacy-workers-surveillance/)
+
 ## References
 
 1. [Jack Dorsey Says He's Hiring AI Engineers Amid 40% Workforce Reduction - Business Insider](https://www.businessinsider.com/jack-dorsey-block-hiring-senior-ai-talent-iafter-layoffs-2026-2)

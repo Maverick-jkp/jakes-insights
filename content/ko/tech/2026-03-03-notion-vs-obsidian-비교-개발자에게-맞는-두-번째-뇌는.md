@@ -148,3 +148,14 @@ Obsidian의 로컬 파일 구조는 로컬 LLM 연동에 유리해요. 민감한
 ---
 
 *Photo by [ThisisEngineering](https://unsplash.com/@thisisengineering) on [Unsplash](https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-using-black-laptop-computer-ZPeXrWxOjRQ)*
+
+
+## 관련 글
+
+
+- [틱톡이 E2EE를 거부하는 이유: 아동 안전인가 데이터 수집인가](/ko/tech/틱톡-e2ee-거부-아동-안전-핑계-개인정보-논란/)
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+- [모토로라 GrapheneOS 협력이 프라이버시 안드로이드 시장에 갖는 실제 의미](/ko/tech/모토로라-grapheneos-협력-프라이버시-안드로이드-실제-의미/)
+- [M4 애플 뉴럴엔진 역분석 ML 개발자 실전: FP16 양자화와 Core ML 실행 경로 분석](/ko/tech/m4-애플-뉴럴엔진-역분석-ml-개발자-실전/)
+- [메타 Ray-Ban 스마트글래스 AI 얼굴인식 탑재 계획 유출과 감시 논란](/ko/tech/메타-스마트글래스-직원-얼굴인식-감시-논란/)
+

@@ -4,7 +4,7 @@ date: 2026-03-03T21:56:37+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
-tags: ["subtopic-ai-income", "claude", "api", "side"]
+tags: ["subtopic-ai-income", "claude", "side"]
 description: "Solo developers are earning $800–$4,000/mo building Claude API-powered tools — here's what the income math actually looks like in 2026."
 image: "/images/20260303-ai-api-side-project.webp"
 ---
@@ -100,3 +100,14 @@ Pick one narrow problem in an industry you understand — even tangentially. Wri
 ---
 
 *Photo by [paolo tognoni](https://unsplash.com/@ptognoni) on [Unsplash](https://unsplash.com/photos/a-bunch-of-bees-that-are-in-a-beehive-3ogvpY8agiQ)*
+
+
+## Related Posts
+
+
+- [Open Source Developer Tools Income for Developers: Honest Numbers from 2026](/en/side-income/passive-income-from-open-source-developer-tools/)
+- [How Developers Make $75-$150/hr Freelancing Without Underselling: Real Numbers](/en/side-income/how-to-price-your-freelance-dev-work-without-under/)
+- [How Developers Make $1,000–$5,000/mo Selling Chrome Extensions: Real Numbers](/en/side-income/build-and-sell-a-chrome-extension-as-a-developer/)
+- [How Developers Make $50/hr on Upwork in 2026: Real Numbers](/en/side-income/how-developers-make-50hr-on-upwork-in-2026/)
+- [Notion Template Income for Developers: Honest Numbers from 2026](/en/side-income/sell-notion-templates-on-gumroad-step-by-step/)
+

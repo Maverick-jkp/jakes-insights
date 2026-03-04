@@ -149,6 +149,17 @@ LLM 속도 경쟁은 이제 서빙 인프라가 아닌 아키텍처 레이어로
 
 *이 글의 Mercury 2 관련 수치는 Inception Labs가 Business Wire를 통해 2026년 2월 24일 발표한 공식 보도자료를 기반으로 작성됐어요. 외부 독립 벤치마크가 공개되면 업데이트할 예정이에요.*
 
+
+
+## 관련 글
+
+
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+- [GPT-5.3 출시, API 어떻게 달라졌나: 개발자 실전 정리](/ko/tech/gpt53-출시-api-어떻게-달라졌나-개발자-실전-정리/)
+- [Ars Technica 기자, AI 가짜 인용문 삽입으로 해고…AI 저널리즘 신뢰 흔들](/ko/tech/ars-technica-ai-가짜-인용-기자-해고-ai-저널리즘-신뢰/)
+- [Claude AI 오류 급증, OpenAI 이탈 사용자 몰림으로 웹 접속 장애 발생](/ko/tech/claude-ai-오류-급증-openai-이탈-사용자-몰림-장애/)
+- [메타 AI 스마트글라스, 직장 내 개인정보 침해와 직원 모니터링 우려](/ko/tech/메타-ai-스마트글라스-개인정보-침해-직원-모니터링/)
+
 ## 참고자료
 
 1. [Inception Launches Mercury 2, the Fastest Reasoning LLM — 5x Faster Than Leading Speed-Optimized LLM](https://www.morningstar.com/news/business-wire/20260224034496/inception-launches-mercury-2-the-fastest-reasoning-llm-5x-faster-than-leading-speed-optimized-llms-with-dramatically-lower-inference-cost)

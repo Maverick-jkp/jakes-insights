@@ -110,3 +110,14 @@ GRAM과 AI 없는 Zed 포크는 단순한 반AI 정서가 아니에요. "나는 
 ---
 
 *Photo by [Jonathan Kemper](https://unsplash.com/@jupp) on [Unsplash](https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-the-words-mid-journey-on-it-hpz88a0NUS8)*
+
+
+## 관련 글
+
+
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+- [GPT-5.3 출시, API 어떻게 달라졌나: 개발자 실전 정리](/ko/tech/gpt53-출시-api-어떻게-달라졌나-개발자-실전-정리/)
+- [Ars Technica 기자, AI 가짜 인용문 삽입으로 해고…AI 저널리즘 신뢰 흔들](/ko/tech/ars-technica-ai-가짜-인용-기자-해고-ai-저널리즘-신뢰/)
+- [Claude AI 오류 급증, OpenAI 이탈 사용자 몰림으로 웹 접속 장애 발생](/ko/tech/claude-ai-오류-급증-openai-이탈-사용자-몰림-장애/)
+- [메타 AI 스마트글라스, 직장 내 개인정보 침해와 직원 모니터링 우려](/ko/tech/메타-ai-스마트글라스-개인정보-침해-직원-모니터링/)
+

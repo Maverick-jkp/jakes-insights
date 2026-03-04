@@ -119,6 +119,17 @@ Anthropic의 안전성을 믿고 Claude를 도입한 기업들 — 특히 의료
 
 Anthropic의 선택이 그 답을 보여줄 거예요. 그리고 그 답은 앞으로 모든 AI 기업이 어떻게 행동할지의 기준점이 될 거예요.
 
+
+
+## 관련 글
+
+
+- [Anthropic이 미 국방부의 안전 서약 철회 압박에 맞선 배경과 AI 규제 공백의 현실](/ko/tech/anthropic-안전-서약-철회-ai-규제-공백/)
+- [OpenAI 군사 계약 체결 후 AI 윤리 논란과 개발자 이탈 흐름 분석](/ko/tech/openai-군사-계약-ai-윤리-개발자-이탈-논란/)
+- [OpenAI 군사 계약 확대와 AI 윤리 논쟁: 개발자들이 던지는 질문](/ko/tech/openai-군사-계약-ai-윤리-개발자-영향/)
+- [MCP 토큰 비용 문제: AI 에이전트 실제 청구 금액이 예상보다 높은 이유](/ko/tech/mcp-토큰-비용-문제-ai-에이전트-실제-청구-금액/)
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+
 ## 참고자료
 
 1. [‘Incoherent’: Hegseth’s Anthropic ultimatum confounds AI policymakers - POLITICO](https://www.politico.com/news/2026/02/26/incoherent-hegseths-anthropic-ultimatum-confounds-ai-policymakers-00800135)

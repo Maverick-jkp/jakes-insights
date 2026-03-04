@@ -135,6 +135,17 @@ The question worth answering this week: what is your current guest network segme
 
 *Sources: Ars Technica (February 2026), Tom's Hardware (February 2026), AirSnitch research paper discussion via Hacker News (February 2026). Firmware update status reflects publicly available information as of 2026-02-27.*
 
+
+
+## Related Posts
+
+
+- [TikTok Refuses End-to-End Encryption: Child Safety Excuse?](/en/tech/tiktok-refuses-endtoend-encryption-child-safety-ex/)
+- [Motorola GrapheneOS Partnership Brings Privacy to Android Security](/en/tech/motorola-grapheneos-partnership-privacy-android-se/)
+- [Flock Camera Network Shut Down Over Public Records Ruling](/en/tech/flock-camera-network-shut-down-public-records-ruli/)
+- [Obsidian Sync Headless Client CLI Setup for NAS and Servers](/en/tech/obsidian-sync-headless-client-cli-server-nas-setup/)
+- [Cybersecurity in 2026: Developer Threats, Vulnerabilities, and Defenses](/en/tech/cybersecurity-2026-developer-guide/)
+
 ## References
 
 1. [New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises - Ars Technica](https://arstechnica.com/security/2026/02/new-airsnitch-attack-breaks-wi-fi-encryption-in-homes-offices-and-enterprises/)

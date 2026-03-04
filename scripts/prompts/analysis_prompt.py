@@ -47,11 +47,13 @@ MANDATORY STRUCTURE:
 - **Thesis statement**: Your main argument or insight
 - **Preview**: Quick bullet list of key points (3-4 items)
 
-**KEY TAKEAWAYS BLOCK (MANDATORY)** - Insert immediately after Introduction, before ## 2:
-> **Key Takeaways**
-> - 3-5 bullet points summarizing the most important findings
-> - Each point: complete, standalone declarative sentence with specific data
-> - These should be directly quotable by AI search engines (Perplexity, Google SGE)
+**SUMMARY BLOCK (MANDATORY)** - Insert immediately after Introduction, before ## 2.
+Choose ONE of these formats (vary per article — do NOT always use the same format):
+- Format A: `> **Key Takeaways** \\n> - bullet 1 \\n> - bullet 2 ...` (blockquote bullets)
+- Format B: A short 3-4 sentence paragraph summarizing the main argument, NO blockquote
+- Format C: `**In brief:** [2-sentence summary]` followed by a numbered list of 3 points
+Each point/sentence must be a complete, standalone declarative sentence with specific data.
+These should be directly quotable by AI search engines (Perplexity, Google SGE).
 
 ## 2. Background & Context ({_get_background_words(language)})
 - What led to the current situation?
@@ -118,25 +120,24 @@ After the comparison, provide 2-3 paragraphs analyzing the trade-offs.
 
 ## 4. Practical Implications ({_get_implications_words(language)})
 
-### Who Should Care?
-- **Developers/Engineers**: Why they should pay attention
-- **Companies/Organizations**: Business implications
-- **End Users**: How it affects them
+Write this section in ONE of these formats (vary per article):
 
-### How to Prepare or Respond
-- **Short-term actions** (next 1-3 months):
-  - Action 1
-  - Action 2
-- **Long-term strategy** (next 6-12 months):
-  - Strategy 1
-  - Strategy 2
+**Format A — Audience segmentation** (use when different groups are affected differently):
+- Describe impact for 2-3 specific groups (e.g., developers, companies, users)
+- Include concrete actions each group should take
+- Add a "What to watch" subsection with 2-3 upcoming signals
 
-### Opportunities & Challenges
-- **Opportunity #1**: Describe the potential upside
-  - How to capitalize on it
-- **Challenge #1**: Describe the potential downside
-  - How to mitigate it
-- **Opportunity #2 / Challenge #2**: Continue as needed
+**Format B — Problem/Solution framing** (use when there's a clear challenge):
+- State the core challenge this topic creates or solves
+- Walk through 2-3 specific real-world scenarios
+- Give one concrete recommendation per scenario
+
+**Format C — Timeline framing** (use only when timing genuinely matters):
+- Near-term impact (next 4-8 weeks): specific, concrete changes
+- Medium-term shift (next 3-6 months): strategic implications
+- One open question worth tracking
+
+Do NOT default to "Who Should Care / Short-term / Long-term" every time — that pattern is overused. Pick the format that fits the topic's actual nature.
 
 ## 5. Conclusion & Future Outlook ({_get_conclusion_words(language)})
 - **Summary**: Recap the 3-4 key insights in bullet points
@@ -183,6 +184,9 @@ THINGS TO AVOID:
 - Excessive technical jargon without explanation
 - Making unsubstantiated predictions
 - Personal opinions stated as facts
+- Uniform section headings across articles ("Who Should Care", "Short-term/Long-term", "This approach can fail") — vary them
+- Repeating the same opening hook style every article
+- Ending every post with a Photo credit line in the body text
 
 AI PHRASE BLACKLIST (NEVER USE - 2025 Research Based):
 - "game-changer", "revolutionary", "revolutionize"

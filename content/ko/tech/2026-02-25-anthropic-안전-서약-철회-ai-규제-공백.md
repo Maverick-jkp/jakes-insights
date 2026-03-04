@@ -149,6 +149,17 @@ Anthropic이 이번에 보여준 건 용기이기도 하지만, 동시에 AI 규
 
 *이 글에 인용된 사실 관계는 TechCrunch(2026년 2월 24일), 뉴스1, Yahoo News의 보도를 기반으로 했어요. 국방부와 Anthropic의 협상 세부 내용은 아직 완전히 공개되지 않았으며, 추가 보도에 따라 내용이 달라질 수 있어요.*
 
+
+
+## 관련 글
+
+
+- [Anthropic, 미 국방부의 AI 안전 장치 제거 요구 거부 논란](/ko/tech/anthropic-국방부-계약-ai-안전성-포기-논란/)
+- [OpenAI 군사 계약 체결 후 AI 윤리 논란과 개발자 이탈 흐름 분석](/ko/tech/openai-군사-계약-ai-윤리-개발자-이탈-논란/)
+- [OpenAI 군사 계약 확대와 AI 윤리 논쟁: 개발자들이 던지는 질문](/ko/tech/openai-군사-계약-ai-윤리-개발자-영향/)
+- [MCP 토큰 비용 문제: AI 에이전트 실제 청구 금액이 예상보다 높은 이유](/ko/tech/mcp-토큰-비용-문제-ai-에이전트-실제-청구-금액/)
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+
 ## 참고자료
 
 1. [Anthropic won’t budge as Pentagon escalates AI dispute | TechCrunch](https://techcrunch.com/2026/02/24/anthropic-wont-budge-as-pentagon-escalates-ai-dispute/)

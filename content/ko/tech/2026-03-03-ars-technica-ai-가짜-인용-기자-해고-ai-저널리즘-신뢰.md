@@ -99,6 +99,17 @@ Edelman Trust Barometer 2026 데이터를 보면, 기술 미디어에 대한 신
 
 *이 글에서 언급된 데이터는 Stanford HAI 2025 보고서, Reuters Institute 디지털 뉴스 리포트 2025, Edelman Trust Barometer 2026을 참조했어요. Ars Technica 사건 관련 사실 관계는 Futurism, DNYUZ, Media Copilot의 2026년 3월 3일자 보도를 기반으로 했어요.*
 
+
+
+## 관련 글
+
+
+- [AI가 코드 짜면 누가 검증하나: 실무 개발자 딜레마와 ADR 활용법](/ko/tech/ai가-코드-짜면-누가-검증하나-실무-개발자-딜레마/)
+- [GPT-5.3 출시, API 어떻게 달라졌나: 개발자 실전 정리](/ko/tech/gpt53-출시-api-어떻게-달라졌나-개발자-실전-정리/)
+- [Claude AI 오류 급증, OpenAI 이탈 사용자 몰림으로 웹 접속 장애 발생](/ko/tech/claude-ai-오류-급증-openai-이탈-사용자-몰림-장애/)
+- [메타 AI 스마트글라스, 직장 내 개인정보 침해와 직원 모니터링 우려](/ko/tech/메타-ai-스마트글라스-개인정보-침해-직원-모니터링/)
+- [500ms 이하 AI 음성 에이전트 직접 구축 방법: STT·LLM·TTS 구성 가이드](/ko/tech/500ms-이하-ai-음성-에이전트-직접-구축-방법/)
+
 ## 참고자료
 
 1. [Ars Technica Fires Reporter After AI Controversy Involving Fabricated Quotes – DNYUZ](https://dnyuz.com/2026/03/03/ars-technica-fires-reporter-after-ai-controversy-involving-fabricated-quotes/)

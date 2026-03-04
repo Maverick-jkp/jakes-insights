@@ -143,6 +143,17 @@ What is your platform's verification vendor retaining? That's the question worth
 
 *References: IEEE Spectrum, "Is Age Verification a Trap?" (spectrum.ieee.org/age-verification); r/Futurology discussion thread, reddit.com/r/Futurology/comments/1rcqxn5; EU eIDAS 2.0 Regulation text; W3C Verifiable Credentials Data Model 2.0 specification.*
 
+
+
+## Related Posts
+
+
+- [Meta AI Smart Glasses Privacy: Workers Who See Everything](/en/tech/meta-ai-smart-glasses-privacy-workers-surveillance/)
+- [Motorola GrapheneOS Partnership Brings Privacy to Android Security](/en/tech/motorola-grapheneos-partnership-privacy-android-se/)
+- [California OS Age Verification Law Linux Open Source Impact](/en/tech/california-os-age-verification-law-linux-open-sour/)
+- [LLM Deanonymization Is Exposing Real Identities Online](/en/tech/llm-deanonymization-privacy-risk-real-identities-e/)
+- [TikTok Refuses End-to-End Encryption: Child Safety Excuse?](/en/tech/tiktok-refuses-endtoend-encryption-child-safety-ex/)
+
 ## References
 
 1. [Is Age Verification a Trap? - IEEE Spectrum](https://spectrum.ieee.org/age-verification)

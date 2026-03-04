@@ -8,6 +8,7 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /ja/* / 301
 
 # /en/ prefix → actual paths (EN content has no /en/ prefix in Hugo output)
+/en/ / 301
 /en/all-posts/ /all-posts/ 301
 /en/all-posts/* /all-posts/:splat 301
 /en/tech/* /tech/:splat 301

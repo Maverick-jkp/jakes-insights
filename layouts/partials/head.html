@@ -95,7 +95,11 @@
 {{ end -}}
 
 {{/* SEO */}}
+{{ if eq .Kind "term" }}
+<meta name="robots" content="noindex, follow">
+{{ else }}
 <meta name="robots" content="index, follow">
+{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{/* Naver verification */}}

@@ -4492,7 +4492,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912015",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4512,7 +4512,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:44:28.567726+00:00"
     },
     {
       "id": "1126-en-tech-Google-Workspace-CLI",
@@ -4520,7 +4522,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912067",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4535,7 +4537,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:52:52.844462+00:00"
     },
     {
       "id": "1127-en-tech-Newgrounds-rebuildin",
@@ -4543,7 +4547,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912106",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4568,7 +4572,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T11:00:03.279542+00:00"
     },
     {
       "id": "1128-ko-tech-맥북-네오-599달러-실제-스펙-함정",
@@ -4576,7 +4582,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912134",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4601,7 +4607,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:42:37.866091+00:00"
     },
     {
       "id": "1129-ko-tech-Qwen3.5-알리바바-내부-갈등-오",
@@ -4609,7 +4617,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912162",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4634,7 +4642,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:47:33.212691+00:00"
     },
     {
       "id": "1130-ko-tech-OpenAI-앤트로픽-국방부-계약-거",
@@ -4642,7 +4652,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912188",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4667,7 +4677,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:49:51.264809+00:00"
     },
     {
       "id": "1131-ko-tech-AMD-Ryzen-AI-400-데스크",
@@ -4675,7 +4687,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912223",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4700,7 +4712,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T11:02:34.091899+00:00"
     },
     {
       "id": "1132-ko-tech-구글-Workspace-CLI-AI-",
@@ -4708,7 +4722,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912252",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4733,7 +4747,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:55:23.979902+00:00"
     },
     {
       "id": "1133-ko-tech-GitHub-Actions-입문-가이",
@@ -4773,7 +4789,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912374",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -4797,7 +4813,9 @@
           "source": "modulabs.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-05T10:40:03.598480+00:00",
+      "completed_at": "2026-03-05T10:57:58.123457+00:00"
     }
   ]
 }

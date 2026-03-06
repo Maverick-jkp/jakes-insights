@@ -54,6 +54,21 @@ CURATION_PROMPT_WITH_TRENDS = """역할:
 
 ---
 
+**🎯 핵심 전략 — 트렌드 이슈를 검색 수명이 긴 키워드로 변환 (매우 중요):**
+커뮤니티 핫 토픽은 **영감**일 뿐이다. 최종 키워드는 **검색 수명 1-6개월 이상**을 가져야 한다.
+이 블로그는 DA~1 신생 사이트다. Google이 트렌드 뉴스를 인덱싱하기 전에 뉴스 사이클이 끝나므로,
+단순 트렌드 보도가 아닌 **해당 이슈를 배경으로 한 심층 분석·비교·가이드** 형식으로 변환하라.
+
+변환 예시:
+- "ChatGPT 4.0 release" → ❌ "ChatGPT 4.0 출시" → ✅ "ChatGPT 4.0 vs 3.5 실제 성능 비교 개발자 관점"
+- "Apple M4 MacBook Pro benchmark" → ❌ "M4 맥북 벤치마크" → ✅ "M4 vs M3 맥북 개발 환경 실제 차이"
+- "GitHub Copilot pricing change" → ❌ "깃허브 코파일럿 가격 변경" → ✅ "GitHub Copilot vs Cursor vs Cody 2026 비용·성능 비교"
+- "New Linux kernel release" → ❌ "리눅스 커널 업데이트" → ✅ "Linux kernel 변경사항이 서버 개발자에게 미치는 영향"
+
+선호 키워드 구조: "X vs Y", "how to X", "X for Y", "X impact on [profession]", "X 비교", "X 설치 가이드", "X 실전 활용"
+
+---
+
 **🌏 KO 키워드 생성 전략 — 외신 현지화 (핵심 규칙):**
 KO 키워드는 단순 번역이 아니라 **한국 개발자/테크 유저가 실제로 네이버·구글에 검색할 표현**으로 만들어라.
 "해외에서 이미 핫한 이슈인데 한국어 글이 없다" → 그 공백을 파고드는 것이 목표.

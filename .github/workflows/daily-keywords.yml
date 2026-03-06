@@ -76,10 +76,10 @@ jobs:
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
-          COUNT="${{ github.event.inputs.count || '10' }}"
+          COUNT="${{ github.event.inputs.count || '6' }}"
 
-          echo "📝 Generating $COUNT new trend keywords (EN/KO 50/50)..."
-          python scripts/keyword_curator.py --count "$COUNT" --auto
+          echo "📝 Generating $COUNT trend + 10 evergreen keywords (EN/KO 50/50)..."
+          python scripts/keyword_curator.py --count "$COUNT" --evergreen 10 --auto
 
       - name: Commit and push keywords
         run: |

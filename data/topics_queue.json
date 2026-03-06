@@ -5002,6 +5002,417 @@
       "reserved_at": "2026-03-06T04:54:04.438517+00:00",
       "retry_count": 0,
       "completed_at": "2026-03-06T05:30:42.044160+00:00"
+    },
+    {
+      "id": "1145-en-tech-GPT-5.4-1M-context-w",
+      "keyword": "GPT-5.4 1M context window developer workflow impact",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953400",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers want to know if GPT-5.4's 1M context window is a genuine productivity leap or just a spec number",
+      "angle": "Practical developer perspective: what actually changes in day-to-day coding, debugging, and codebase navigation",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "GPT-5.4 is here — and OpenAI just made every other AI model look slow | Tom's Guide",
+          "url": "https://www.tomsguide.com/ai/gpt-5-4-is-here-and-openai-just-made-every-other-ai-model-look-slow",
+          "source": "www.tomsguide.com"
+        },
+        {
+          "title": "r/codex on Reddit: GPT 5.4 (with 1m context) is Officialy OUT",
+          "url": "https://www.reddit.com/r/codex/comments/1rlp7rh/gpt_54_with_1m_context_is_officialy_out/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "GPT-5.4 Just Dropped. Paste This Prompt to Find Out What It Means for YOU.",
+          "url": "https://limitededitionjonathan.substack.com/p/gpt-54-just-dropped-paste-this-prompt",
+          "source": "limitededitionjonathan.substack.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1146-en-tech-Wikipedia-XSS-worm-m",
+      "keyword": "Wikipedia XSS worm mass admin compromise how it worked",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953451",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Security engineers and developers want a post-mortem on exactly how the MediaWiki JS injection worm propagated and persisted",
+      "angle": "Technical attack chain analysis: JS injection → MediaWiki:Common.js persistence → mass account takeover vector",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Cross-site scripting - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cross-site_scripting",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Wikipedia in read-only mode following mass admin account compromise | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47263323",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "Stored XSS Vulnerability in RustFS Console Puts S3 Admin Credentials at Risk",
+          "url": "https://gbhackers.com/stored-xss-vulnerability-in-rustfs-console-puts-s3-admin-credentials-at-risk/",
+          "source": "gbhackers.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1147-en-tech-AI-generated-pull-re",
+      "keyword": "AI-generated pull requests 406 protocol open source maintainer response",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953514",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Open source maintainers searching for a standard, defensible way to reject and communicate rejection of AI-generated junk PRs",
+      "angle": "Maintainer-side workflow: adopting the 406 standard, setting contribution policies, protecting project health from generative noise",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "An AI Agent Got Its Code Rejected. So It Published a Hit Piece on the Developer. - DEV Community",
+          "url": "https://dev.to/mothasa/an-ai-agent-got-its-code-rejected-so-it-published-a-hit-piece-on-the-developer-3516",
+          "source": "dev.to"
+        },
+        {
+          "title": "GitHub Is Thinking About Killing Pull Requests — jd:/dev/blog",
+          "url": "https://julien.danjou.info/blog/github-is-thinking-about-killing-pull-requests/",
+          "source": "julien.danjou.info"
+        },
+        {
+          "title": "From idea to pull request: A practical guide to building with GitHub Copilot CLI - The GitHub Blog",
+          "url": "https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/",
+          "source": "github.blog"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1148-ko-tech-위키피디아-해킹-JS-웜-공격-원리-",
+      "keyword": "위키피디아 해킹 JS 웜 공격 원리 보안 분석",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953546",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자·보안 담당자가 공격 기법의 기술적 원리를 파악하고 자사 플랫폼의 동일 취약점 여부를 확인하고 싶어함",
+      "angle": "MediaWiki Common.js 인젝션 → 자기복제 → 세션 탈취 공격 체인을 한국어로 쉽게 설명 + 방어 포인트 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "개발자를 위한 보안 완전 가이드 — 암호화부터 Zero Trust까지 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/architecture/2026-03-03-security-fundamentals-for-developers",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "North Korean Hackers Target Devs with Fake Job Scams | ZerodAI Security News | ZerodAI",
+          "url": "https://zerodai.com/en/news/phishing-attacks-against-people-seeking-programming-jobs-f78g8u",
+          "source": "zerodai.com"
+        },
+        {
+          "title": "“기술 과제인 줄 알았는데 백도어”…MS, 넥스트JS 위장 공격 캠페인 공개 | CIO",
+          "url": "https://www.cio.com/article/4138296/%EA%B8%B0%EC%88%A0-%EA%B3%BC%EC%A0%9C%EC%9D%B8-%EC%A4%84-%EC%95%8C%EC%95%98%EB%8A%94%EB%8D%B0-%EB%B0%B1%EB%8F%84%EC%96%B4ms-%EB%84%A5%EC%8A%A4%ED%8A%B8js-%EC%9C%84%EC%9E%A5.html",
+          "source": "www.cio.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1149-ko-tech-AI가-노동시장에-미치는-영향-개발자",
+      "keyword": "AI가 노동시장에 미치는 영향 개발자 직군 실제 데이터",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953575",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자들이 해외 연구 기반의 실증 데이터를 통해 AI발 직업 대체 위협의 실제 규모를 파악하고 싶어함",
+      "angle": "Anthropic 연구의 핵심 수치를 한국 개발 직군 현실에 대입해 해석 — 대체 위험 직군 vs 보완 직군 구분",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "AI노출도 높은 직무 청년 고용 15% 감소 | 한국경제",
+          "url": "https://www.hankyung.com/article/2026030364791",
+          "source": "www.hankyung.com"
+        },
+        {
+          "title": "‘AI 쇼크’ 눈 앞…“정부, 일자리 개입해야” vs “보편적 고소득”",
+          "url": "https://www.hani.co.kr/arti/economy/economy_general/1247329.html",
+          "source": "www.hani.co.kr"
+        },
+        {
+          "title": "직장인 62% \"AI 활용 능력따라 연봉 격차 10% 벌어 질 것\" [알파고 쇼크 10년] | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25408978",
+          "source": "www.joongang.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1150-en-tech-how-to-reduce-AWS-co",
+      "keyword": "how to reduce AWS costs for small teams",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953678",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Startups and indie developers looking for actionable ways to cut cloud billing",
+      "angle": "Practical checklist of 10+ cost-saving techniques including Reserved Instances, S3 lifecycle, and right-sizing",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "How to Reduce AWS Costs Without Sacrificing Performance?",
+          "url": "https://www.cloudjournee.com/blog/how-to-reduce-aws-costs-without-sacrificing-performance/",
+          "source": "www.cloudjournee.com"
+        },
+        {
+          "title": "22 Best AWS Cost Optimization Tools & 12+ Strategies for You | Sedai",
+          "url": "https://sedai.io/blog/how-to-optimize-for-cost-in-ec2-aws",
+          "source": "sedai.io"
+        },
+        {
+          "title": "AWS cost optimization tools and tips: Ultimate guide [2025]",
+          "url": "https://www.flexera.com/blog/finops/aws-cost-optimization-8-tools-and-tips-to-reduce-your-cloud-costs/",
+          "source": "www.flexera.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1151-en-tech-best-open-source-alt",
+      "keyword": "best open source alternatives to popular SaaS tools 2024",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953711",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Teams and developers wanting to replace paid SaaS subscriptions with self-hostable tools",
+      "angle": "Curated list replacing Notion, Slack, GitHub, and Figma equivalents with self-hosted open source options",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "12 Open-Source Alternatives to Your Paid SaaS Tools You Must Try | by Deep concept | Let’s Code Futu",
+          "url": "https://medium.com/lets-code-future/12-open-source-alternatives-to-your-paid-saas-tools-you-must-try-604391b02086",
+          "source": "medium.com"
+        },
+        {
+          "title": "r/selfhosted on Reddit: There is an open-source alternative to almost any SaaS, what do you use?",
+          "url": "https://www.reddit.com/r/selfhosted/comments/1ge7s07/there_is_an_opensource_alternative_to_almost_any/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1152-en-tech-CI/CD-pipeline-tutor",
+      "keyword": "CI/CD pipeline tutorial for beginners using GitHub Actions",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953743",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Junior developers or solo builders who want to automate testing and deployment for the first time",
+      "angle": "End-to-end walkthrough building a real pipeline from zero: lint, test, build, and deploy to a cloud server",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Creating Your First CI/CD Pipeline Using GitHub Actions | by Brandon Kindred | Medium",
+          "url": "https://brandonkindred.medium.com/creating-your-first-ci-cd-pipeline-using-github-actions-81c668008582",
+          "source": "brandonkindred.medium.com"
+        },
+        {
+          "title": "How to Set Up a CI/CD Pipeline with GitHub Actions for Automated Deployments - DEV Community",
+          "url": "https://dev.to/vishnusatheesh/how-to-set-up-a-cicd-pipeline-with-github-actions-for-automated-deployments-j39",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1153-ko-tech-RAG란-무엇인가---검색-증강-생성",
+      "keyword": "RAG란 무엇인가 - 검색 증강 생성 완벽 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953761",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI 개념을 공부하는 개발자나 기획자가 RAG의 원리와 활용법을 이해하고 싶어 검색",
+      "angle": "RAG의 작동 원리를 그림과 예시로 쉽게 설명하고, LangChain 기반 실습 코드까지 포함한 입문 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "RAG란? - 검색 증강 생성 AI 설명",
+          "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #1 : 핵심 개념과 시스템 구조 이해",
+          "url": "https://tech.ktcloud.com/entry/2025-08-ktcloud-ai-rag-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%ED%95%B4",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "검색 증강 생성(RAG)이란 무엇인가요?",
+          "url": "https://www.ibm.com/think/topics/retrieval-augmented-generation",
+          "source": "www.ibm.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1154-ko-tech-GitHub-Actions-vs-Je",
+      "keyword": "GitHub Actions vs Jenkins 비교 - CI/CD 도구 선택 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953777",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "DevOps 환경을 구축하려는 개발자가 두 도구의 차이를 파악하고 팀에 맞는 선택을 하고 싶어 검색",
+      "angle": "설치 복잡도, 비용, 확장성, 커뮤니티 생태계 기준으로 실무 관점에서 비교 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions vs. Jenkins: Which one's right for your team? | Buildkite",
+          "url": "https://buildkite.com/resources/ci-cd-perspectives/github-actions-vs-jenkins-which-one-s-right-for-your-team/",
+          "source": "buildkite.com"
+        },
+        {
+          "title": "GitHub Actions vs. Jenkins: Popular CI/CD Tools Comparison",
+          "url": "https://spacelift.io/blog/github-actions-vs-jenkins",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "CI/CD Pipeline Comparison: GitHub Actions vs Jenkins vs GitLab CI/CD vs Bambo | by Vishal | Medium",
+          "url": "https://medium.com/@vishal2159/ci-cd-pipeline-comparison-github-actions-vs-jenkins-vs-gitlab-ci-cd-vs-bambo-322f16b70042",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1155-ko-tech-리눅스-서버-보안-설정-초보자-가이드",
+      "keyword": "리눅스 서버 보안 설정 초보자 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953791",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "처음 VPS나 클라우드 서버를 개설한 개발자가 기본 보안 세팅 방법을 알고 싶어 검색",
+      "angle": "SSH 키 인증, 방화벽(UFW), Fail2Ban 설정까지 신규 서버 개설 후 30분 안에 완료하는 체크리스트 형식",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "리눅스 서버 보안 설정 완벽 가이드: 해킹을 막는 필수 설정 10가지",
+          "url": "https://yjshin.tistory.com/1287",
+          "source": "yjshin.tistory.com"
+        },
+        {
+          "title": "Linux 시스템 강화: 10가지 보안 팁",
+          "url": "https://tuxcare.com/blog/linux-hardening/",
+          "source": "tuxcare.com"
+        },
+        {
+          "title": "[홍석범 CISO 보안팁-2] 리눅스 서버 보안 필수 수칙과 실수하지 말아야 할 점들 - 데일리시큐",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=167453",
+          "source": "www.dailysecu.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1156-ko-tech-Docker-입문-가이드---컨테이너",
+      "keyword": "Docker 입문 가이드 - 컨테이너 개념부터 실전 배포까지",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953805",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Docker를 처음 접하는 백엔드 개발자나 학생이 개념과 실습을 한 번에 익히고 싶어 검색",
+      "angle": "가상머신과의 차이 설명 → 이미지/컨테이너 개념 → Dockerfile 작성 → docker-compose 실전 예제로 이어지는 단계별 튜토리얼",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "도커(Docker) 입문편 컨테이너 기초부터 서버 배포까지 - 44BITS",
+          "url": "https://www.44bits.io/ko/post/easy-deploy-with-docker",
+          "source": "www.44bits.io"
+        },
+        {
+          "title": "[Docker] 도커 컨테이너 완벽 가이드: 개념부터 명령어, 실전 활용까지",
+          "url": "https://yeo-computerclass.tistory.com/592",
+          "source": "yeo-computerclass.tistory.com"
+        },
+        {
+          "title": "Docker와 Kubernetes 입문 가이드: 컨테이너 기술의 모든 것 | SpacePlanning Blog",
+          "url": "https://spaceplanning.ai/blog/docker-kubernetes-guide-2025",
+          "source": "spaceplanning.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1157-ko-tech-Notion-vs-Obsidian-비",
+      "keyword": "Notion vs Obsidian 비교 - 개발자를 위한 지식 관리 도구 선택법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-06T07:41:37.953820",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "개발자나 테크 직군 종사자가 업무 메모와 지식 아카이빙에 맞는 툴을 비교하고 결정하려고 검색",
+      "angle": "개발자 관점에서 마크다운 호환성, 오프라인 사용, 플러그인 생태계, 데이터 소유권을 중심으로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "개발자용 생산성 앱 비교: Notion vs Obsidian vs Logseq - 2025년 완벽 가이드",
+          "url": "https://notavoid.tistory.com/205",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "생산성 2배 상승! 노션 vs 코다 vs 옵시디언 비교 가이드 :: 유디팩토리 소프트웨어 정보",
+          "url": "https://factoryud.tistory.com/128",
+          "source": "factoryud.tistory.com"
+        },
+        {
+          "title": "Notion vs Obsidian – All Features Compared (2026)",
+          "url": "https://productive.io/blog/notion-vs-obsidian/",
+          "source": "productive.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

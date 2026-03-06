@@ -4455,11 +4455,11 @@
     },
     {
       "id": "1124-en-tech-MacBook-Neo-$599-spe",
-      "keyword": "MacBook Neo $599 specs hidden trade-offs",
+      "keyword": "MacBook Neo 599 dollar specs hidden trade-offs",
       "category": "tech",
       "lang": "en",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.911968",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -4484,7 +4484,10 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "language": "en",
+      "reserved_at": "2026-03-06T04:50:26.361380+00:00",
+      "completed_at": "2026-03-06T04:52:57.901350+00:00"
     },
     {
       "id": "1125-en-tech-Dario-Amodei-OpenAI-",
@@ -4753,11 +4756,11 @@
     },
     {
       "id": "1133-ko-tech-GitHub-Actions-입문-가이",
-      "keyword": "GitHub Actions 입문 가이드: CI/CD 파이프라인 처음 만들기",
+      "keyword": "GitHub Actions 입문 가이드 CICD 파이프라인 처음 만들기",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-05T07:45:52.912347",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -4781,7 +4784,10 @@
           "source": "notavoid.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "language": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "completed_at": "2026-03-06T05:04:08.006420+00:00"
     },
     {
       "id": "1134-ko-tech-RAG란-무엇인가:-LLM-환각-줄이",
@@ -4826,9 +4832,14 @@
       "angle": "비용·정확도·난이도 기준 실전 비교",
       "competition_level": "low",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826298",
-      "editorial_title": "LLM 환각 vs RAG vs 파인튜닝: 언제 뭘 써야 할까?"
+      "editorial_title": "LLM 환각 vs RAG vs 파인튜닝: 언제 뭘 써야 할까?",
+      "id": "1135-ko-tech-LLM-환각-vs-RAG-vs-파인튜",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:07:24.160156+00:00"
     },
     {
       "keyword": "API 인증 방식 비교 OAuth JWT mTLS API Key 2026",
@@ -4839,9 +4850,14 @@
       "angle": "보안 수준·구현 난이도·사용 상황별 선택 가이드",
       "competition_level": "low",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826304",
-      "editorial_title": "2026년 API 인증 방식 비교: OAuth vs JWT vs mTLS vs API Key"
+      "editorial_title": "2026년 API 인증 방식 비교: OAuth vs JWT vs mTLS vs API Key",
+      "id": "1136-ko-tech-API-인증-방식-비교-OAuth-J",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:10:55.770397+00:00"
     },
     {
       "keyword": "WebSocket vs Server-Sent Events 실시간 앱 아키텍처 비교",
@@ -4852,9 +4868,14 @@
       "angle": "지연시간·브라우저 호환성·서버 비용 실전 비교",
       "competition_level": "low",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826305",
-      "editorial_title": "WebSocket vs Server-Sent Events: 실시간 앱에 뭘 써야 할까"
+      "editorial_title": "WebSocket vs Server-Sent Events: 실시간 앱에 뭘 써야 할까",
+      "id": "1137-ko-tech-WebSocket-vs-ServerS",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:17:58.537442+00:00"
     },
     {
       "keyword": "쿠버네티스 vs 도커 컴포즈 1인 개발자 인프라 선택 기준",
@@ -4865,9 +4886,14 @@
       "angle": "복잡도·학습 곡선·프로덕션 준비도 비교",
       "competition_level": "low",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826306",
-      "editorial_title": "쿠버네티스 vs 도커 컴포즈: 1인 개발자는 뭘 써야 할까"
+      "editorial_title": "쿠버네티스 vs 도커 컴포즈: 1인 개발자는 뭘 써야 할까",
+      "id": "1138-ko-tech-쿠버네티스-vs-도커-컴포즈-1인-개",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:20:53.028578+00:00"
     },
     {
       "keyword": "Ollama 설치 로컬 LLM 완전 가이드 2026",
@@ -4878,9 +4904,14 @@
       "angle": "설치부터 모델 선택·활용까지 단계별 가이드",
       "competition_level": "low",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826307",
-      "editorial_title": "Ollama 설치부터 활용까지: 로컬 LLM 완전 가이드 2026"
+      "editorial_title": "Ollama 설치부터 활용까지: 로컬 LLM 완전 가이드 2026",
+      "id": "1139-ko-tech-Ollama-설치-로컬-LLM-완전",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T04:57:21.445726+00:00"
     },
     {
       "keyword": "LLM API 비용 비교 GPT-4 Claude Gemini 2026",
@@ -4891,9 +4922,14 @@
       "angle": "토큰 단가·무료 티어·성능 대비 가격 실전 비교",
       "competition_level": "low",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826308",
-      "editorial_title": "LLM API 비용 비교: GPT-4 vs Claude vs Gemini 실제 가격 정리 2026"
+      "editorial_title": "LLM API 비용 비교: GPT-4 vs Claude vs Gemini 실제 가격 정리 2026",
+      "id": "1140-ko-tech-LLM-API-비용-비교-GPT4-C",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:01:03.893506+00:00"
     },
     {
       "keyword": "AI 코딩 도구 비교 Cursor vs GitHub Copilot vs Cody 2026",
@@ -4904,9 +4940,14 @@
       "angle": "가격·자동완성 품질·컨텍스트 이해도 실전 비교",
       "competition_level": "low",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826309",
-      "editorial_title": "AI 코딩 도구 비교: Cursor vs GitHub Copilot vs Cody 실전 리뷰 2026"
+      "editorial_title": "AI 코딩 도구 비교: Cursor vs GitHub Copilot vs Cody 실전 리뷰 2026",
+      "id": "1141-ko-tech-AI-코딩-도구-비교-Cursor-v",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:14:15.822568+00:00"
     },
     {
       "keyword": "Prometheus Grafana 모니터링 스택 설정 가이드",
@@ -4917,9 +4958,14 @@
       "angle": "설치·대시보드 구성·알림 설정 실전 가이드",
       "competition_level": "low",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826309",
-      "editorial_title": "Prometheus + Grafana 모니터링 스택 완전 설정 가이드"
+      "editorial_title": "Prometheus + Grafana 모니터링 스택 완전 설정 가이드",
+      "id": "1142-ko-tech-Prometheus-Grafana-모",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:23:59.085016+00:00"
     },
     {
       "keyword": "GitHub Actions 입문 CI CD 자동화 가이드",
@@ -4930,9 +4976,14 @@
       "angle": "기초 개념부터 실전 워크플로우 예제까지",
       "competition_level": "low",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826310",
-      "editorial_title": "GitHub Actions 입문 가이드: CI/CD 자동화 처음부터 끝까지"
+      "editorial_title": "GitHub Actions 입문 가이드: CI/CD 자동화 처음부터 끝까지",
+      "id": "1143-ko-tech-GitHub-Actions-입문-CI",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:27:31.364752+00:00"
     },
     {
       "keyword": "개발자 기술 블로그 Hugo vs Next.js vs Ghost 비교",
@@ -4943,9 +4994,14 @@
       "angle": "속도·SEO·커스터마이징·유지비용 실전 비교",
       "competition_level": "low",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-06T13:46:26.826311",
-      "editorial_title": "개발자 기술 블로그 시작하기: Hugo vs Next.js vs Ghost 비교"
+      "editorial_title": "개발자 기술 블로그 시작하기: Hugo vs Next.js vs Ghost 비교",
+      "id": "1144-ko-tech-개발자-기술-블로그-Hugo-vs-N",
+      "lang": "ko",
+      "reserved_at": "2026-03-06T04:54:04.438517+00:00",
+      "retry_count": 0,
+      "completed_at": "2026-03-06T05:30:42.044160+00:00"
     }
   ]
 }

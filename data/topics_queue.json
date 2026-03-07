@@ -5349,7 +5349,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185058",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5374,7 +5374,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:26:49.156968+00:00"
     },
     {
       "id": "1158-en-tech-LLM-acceptance-crite",
@@ -5382,7 +5384,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185118",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5407,7 +5409,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:40:08.550477+00:00"
     },
     {
       "id": "1159-en-tech-C#-Dapper-nvarchar-v",
@@ -5443,7 +5447,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185194",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5468,7 +5472,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:32:19.200589+00:00"
     },
     {
       "id": "1161-ko-tech-테크-고용-2008-금융위기보다-나쁘",
@@ -5476,7 +5482,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185225",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5501,7 +5507,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:29:15.832035+00:00"
     },
     {
       "id": "1162-ko-tech-Firefox-대규모-UI-개편-20",
@@ -5526,7 +5534,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185390",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5550,7 +5558,9 @@
           "source": "www.xda-developers.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:42:00.072236+00:00"
     },
     {
       "id": "1164-en-tech-how-to-secure-a-Linu",
@@ -5558,7 +5568,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185414",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5582,7 +5592,9 @@
           "source": "tuxcare.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:34:57.608598+00:00"
     },
     {
       "id": "1165-en-tech-what-is-vector-datab",
@@ -5590,7 +5602,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185432",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5614,7 +5626,9 @@
           "source": "www.geeksforgeeks.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:44:22.683562+00:00"
     },
     {
       "id": "1166-ko-tech-GitHub-Actions-입문-가이",
@@ -5686,7 +5700,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185485",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5710,7 +5724,9 @@
           "source": "jibinary.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:37:27.726389+00:00"
     },
     {
       "id": "1169-ko-tech-Python-가상환경-설정법:-ven",
@@ -5718,7 +5734,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185500",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5737,7 +5753,9 @@
           "source": "blog.park-labs.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:46:26.805191+00:00"
     },
     {
       "id": "1170-ko-tech-SaaS-보안-체크리스트:-스타트업이",
@@ -5745,7 +5763,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-07T07:32:13.185516",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5769,7 +5787,9 @@
           "source": "www.sentinelone.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-07T10:25:04.304270+00:00",
+      "completed_at": "2026-03-07T10:48:48.364540+00:00"
     }
   ]
 }

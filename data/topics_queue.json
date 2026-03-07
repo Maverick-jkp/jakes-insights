@@ -5242,33 +5242,6 @@
       "completed_at": "2026-03-06T10:59:12.600167+00:00"
     },
     {
-      "id": "1152-en-tech-CI/CD-pipeline-tutor",
-      "keyword": "CI/CD pipeline tutorial for beginners using GitHub Actions",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-03-06T07:41:37.953743",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Junior developers or solo builders who want to automate testing and deployment for the first time",
-      "angle": "End-to-end walkthrough building a real pipeline from zero: lint, test, build, and deploy to a cloud server",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Creating Your First CI/CD Pipeline Using GitHub Actions | by Brandon Kindred | Medium",
-          "url": "https://brandonkindred.medium.com/creating-your-first-ci-cd-pipeline-using-github-actions-81c668008582",
-          "source": "brandonkindred.medium.com"
-        },
-        {
-          "title": "How to Set Up a CI/CD Pipeline with GitHub Actions for Automated Deployments - DEV Community",
-          "url": "https://dev.to/vishnusatheesh/how-to-set-up-a-cicd-pipeline-with-github-actions-for-automated-deployments-j39",
-          "source": "dev.to"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1153-ko-tech-RAG란-무엇인가---검색-증강-생성",
       "keyword": "RAG란 무엇인가 - 검색 증강 생성 완벽 가이드",
       "category": "tech",
@@ -5301,38 +5274,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-06T10:35:42.933782+00:00",
       "completed_at": "2026-03-06T10:42:11.353854+00:00"
-    },
-    {
-      "id": "1154-ko-tech-GitHub-Actions-vs-Je",
-      "keyword": "GitHub Actions vs Jenkins 비교 - CI/CD 도구 선택 가이드",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-06T07:41:37.953777",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "DevOps 환경을 구축하려는 개발자가 두 도구의 차이를 파악하고 팀에 맞는 선택을 하고 싶어 검색",
-      "angle": "설치 복잡도, 비용, 확장성, 커뮤니티 생태계 기준으로 실무 관점에서 비교 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "GitHub Actions vs. Jenkins: Which one's right for your team? | Buildkite",
-          "url": "https://buildkite.com/resources/ci-cd-perspectives/github-actions-vs-jenkins-which-one-s-right-for-your-team/",
-          "source": "buildkite.com"
-        },
-        {
-          "title": "GitHub Actions vs. Jenkins: Popular CI/CD Tools Comparison",
-          "url": "https://spacelift.io/blog/github-actions-vs-jenkins",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "CI/CD Pipeline Comparison: GitHub Actions vs Jenkins vs GitLab CI/CD vs Bambo | by Vishal | Medium",
-          "url": "https://medium.com/@vishal2159/ci-cd-pipeline-comparison-github-actions-vs-jenkins-vs-gitlab-ci-cd-vs-bambo-322f16b70042",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1155-ko-tech-리눅스-서버-보안-설정-초보자-가이드",
@@ -5403,33 +5344,429 @@
       "completed_at": "2026-03-06T10:44:54.985042+00:00"
     },
     {
-      "id": "1157-ko-tech-Notion-vs-Obsidian-비",
-      "keyword": "Notion vs Obsidian 비교 - 개발자를 위한 지식 관리 도구 선택법",
+      "id": "1157-en-tech-tech-employment-wors",
+      "keyword": "tech employment worse than 2008 recession AI layoffs developer jobs 2026",
+      "category": "tech",
+      "lang": "en",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185058",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and engineers searching for validation of what they're experiencing in the job market and whether this downturn is structural rather than cyclical",
+      "angle": "Data-driven breakdown of the bimodal job market: top-tier talent commanding record salaries while average developers face historically brutal hiring conditions — and why AI is the structural cause",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Tech jobs are getting demolished in ways not seen since 2008 and the dot-com bust",
+          "url": "https://www.businessinsider.com/tech-jobs-getting-demolished-great-recession-dot-com-era-2026-3",
+          "source": "www.businessinsider.com"
+        },
+        {
+          "title": "Hundreds of applications, no jobs and AI competition: California's brutal tech work landscape",
+          "url": "https://www.latimes.com/business/story/2026-03-06/tech-layoffs-pile-up-as-sllicon-valley-shakeout-continues-into-2026",
+          "source": "www.latimes.com"
+        },
+        {
+          "title": "The week the AI scare turned real and America realized maybe it isn't ready for what's coming | Fort",
+          "url": "https://fortune.com/2026/02/28/ai-scare-trade-mass-layoffs-white-collar-recession-citrini-shumer-viral-doomsday-essays/",
+          "source": "fortune.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1158-en-tech-LLM-acceptance-crite",
+      "keyword": "LLM acceptance criteria before coding how to get correct code from AI agents",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185118",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers frustrated with AI-generated code that looks plausible but fails in production, looking for a concrete workflow fix rather than another 'prompt tips' listicle",
+      "angle": "Practical framework: defining acceptance criteria before prompting forces the LLM into a verifiable contract rather than a semantic similarity game — with before/after workflow comparison",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Best AI Coding Agents Ranked: 15 Tools Tested with Real Benchmarks (2026)",
+          "url": "https://www.morphllm.com/ai-coding-agent",
+          "source": "www.morphllm.com"
+        },
+        {
+          "title": "Your LLM Doesn't Write Correct Code. It Writes Plausible Code.",
+          "url": "https://blog.katanaquant.com/p/your-llm-doesnt-write-correct-code",
+          "source": "blog.katanaquant.com"
+        },
+        {
+          "title": "Vibe coding - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vibe_coding",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1159-en-tech-C#-Dapper-nvarchar-v",
+      "keyword": "C# Dapper nvarchar varchar implicit conversion SQL Server index performance trap",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185159",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Backend developers debugging unexplained SQL Server slow queries, or proactively auditing Dapper usage after reading about the implicit conversion performance trap",
+      "angle": "Technical deep-dive: how .NET's default Unicode string type causes implicit nvarchar-to-varchar conversion that bypasses indexes entirely, with reproducible benchmarks and mitigation patterns",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How C# Strings Silently Kill Your SQL Server Indexes in Dapper",
+          "url": "https://consultwithgriff.com/dapper-nvarchar-implicit-conversion-performance-trap",
+          "source": "consultwithgriff.com"
+        },
+        {
+          "title": "Insert NULL into varbinary(max) field throws - Ignition - Inductive Automation Forum",
+          "url": "https://forum.inductiveautomation.com/t/insert-null-into-varbinary-max-field-throws/114291",
+          "source": "forum.inductiveautomation.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1160-ko-tech-AI-코딩-도구-60대-개발자-Cla",
+      "keyword": "AI 코딩 도구 60대 개발자 Claude Code 재도전 실제 사용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185194",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "비전공자, 경력 단절 개발자, 늦깎이 학습자들이 'AI 코딩 도구로 나도 가능한가'를 검색하며 실제 사용 경험을 찾는 상황",
+      "angle": "해외에서 이미 화제가 된 60대 개발자 사례를 기반으로, Claude Code·Cursor·Gemini 등 AI 코딩 도구가 '비전문가의 재진입 장벽'을 얼마나 낮추는지 한국 독자 관점에서 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Code 개발자 Boris Cherny의 실전 가이드 — raindrovvv 님의 블로그",
+          "url": "https://raindrovvv.tistory.com/153",
+          "source": "raindrovvv.tistory.com"
+        },
+        {
+          "title": "AI와 함께하는 DevOps: Claude Code로 생산성 10배 높이기 | by Yonghyun Kim | Medium",
+          "url": "https://medium.com/@baramboys0615/ai%EC%99%80-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-devops-claude-code%EB%A1%9C-%EC%83%9D%EC%82%B0%EC%84%B1-10%EB%B0%B0-%EB%86%92%EC%9D%B4%EA%B8%B0-629a2ce68d62",
+          "source": "medium.com"
+        },
+        {
+          "title": "[AI] Claude Code(클로드 코드)의 활용을 극대화해주는 설정과 도구들의 모음(Claude Code Skills, Plugins, ETC) - MangKyu's Diary",
+          "url": "https://mangkyu.tistory.com/463",
+          "source": "mangkyu.tistory.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1161-ko-tech-테크-고용-2008-금융위기보다-나쁘",
+      "keyword": "테크 고용 2008 금융위기보다 나쁘다 AI 개발자 취업 현실 2026",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185225",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자·취준생이 체감하는 취업난의 원인이 AI인지 경기침체인지 확인하고, 해외 상황과 비교해 자신의 상황을 판단하려는 검색",
+      "angle": "HN 834점 스레드 분석을 기반으로 '양극화된 고용 시장(탑 개발자 연봉 사상 최고 vs 평범한 개발자 취업 불가)' 현상이 한국 개발자 시장에도 동일하게 적용되는지 비교 분석",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "테크기업 대규모 감원… AI가 일자리 줄인다",
+          "url": "https://www.biznewsusa.com/post/20260306-9",
+          "source": "www.biznewsusa.com"
+        },
+        {
+          "title": "\"경력직은 웃는데 신입은 웁니다\"… 기업들이 AI 도입 후 조용히 바꾼 '채용 공식'",
+          "url": "https://econmingle.com/economy/ai-youth-employment-paradox-hiring-cliff/",
+          "source": "econmingle.com"
+        },
+        {
+          "title": "AI 발전 때문에, 되레 실물 경제 침체 빠진다고? | 중앙일보",
+          "url": "https://www.joongang.co.kr/article/25408390",
+          "source": "www.joongang.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1162-ko-tech-Firefox-대규모-UI-개편-20",
+      "keyword": "Firefox 대규모 UI 개편 2026 크롬 대비 달라진 점 실제 비교",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-03-06T07:41:37.953820",
+      "created_at": "2026-03-07T07:32:13.185255",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "크롬 의존도에 불안감을 느끼거나 프라이버시를 중시하는 국내 사용자·개발자가 Firefox 전환 가치를 재평가하려는 검색",
+      "angle": "Lobsters 60점 스레드 반응을 기반으로, Firefox 리디자인의 실제 UI 변경 사항과 크롬·엣지와의 UX 비교, 그리고 Anthropic 레드팀 보안 강화 이슈까지 묶어 '2026 브라우저 선택 가이드'로 확장",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1163-en-tech-best-open-source-alt",
+      "keyword": "best open source alternatives to Notion for self-hosting",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185390",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "개발자나 테크 직군 종사자가 업무 메모와 지식 아카이빙에 맞는 툴을 비교하고 결정하려고 검색",
-      "angle": "개발자 관점에서 마크다운 호환성, 오프라인 사용, 플러그인 생태계, 데이터 소유권을 중심으로 비교",
+      "search_intent": "Notion 대신 데이터를 직접 관리하고 싶은 개발자 및 프라이버시 중시 사용자",
+      "angle": "AppFlowy, AFFiNE 등 오픈소스 Notion 대안 툴 기능·설치 난이도 비교",
       "competition_level": "low",
       "references": [
         {
-          "title": "개발자용 생산성 앱 비교: Notion vs Obsidian vs Logseq - 2025년 완벽 가이드",
-          "url": "https://notavoid.tistory.com/205",
+          "title": "5 Open-Source Alternatives to Notion",
+          "url": "https://docmost.com/blog/open-source-notion-alternatives/",
+          "source": "docmost.com"
+        },
+        {
+          "title": "Self-Hosting Guide to Alternatives: Notion",
+          "url": "https://selfh.st/alternatives/notion/",
+          "source": "selfh.st"
+        },
+        {
+          "title": "I'm never going back to Notion after mastering this open-source self-hosted tool",
+          "url": "https://www.xda-developers.com/never-going-back-to-notion-after-mastering-open-source-self-hosted-tool/",
+          "source": "www.xda-developers.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1164-en-tech-how-to-secure-a-Linu",
+      "keyword": "how to secure a Linux server for beginners",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185414",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "처음 리눅스 서버를 운영하며 보안 설정 방법을 모르는 입문자",
+      "angle": "SSH 설정·방화벽·자동 업데이트까지 리눅스 서버 보안 필수 체크리스트",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "40 Linux Server Hardening Security Tips - nixCraft",
+          "url": "https://www.cyberciti.biz/tips/linux-security.html",
+          "source": "www.cyberciti.biz"
+        },
+        {
+          "title": "Securing Linux Servers: Top Strategies For Safety | SUSE Blog",
+          "url": "https://www.suse.com/c/top-strategies-for-enhancing-linux-server-security/",
+          "source": "www.suse.com"
+        },
+        {
+          "title": "Linux System Hardening: Top 10 Security Tips, Tools & More",
+          "url": "https://tuxcare.com/blog/linux-hardening/",
+          "source": "tuxcare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1165-en-tech-what-is-vector-datab",
+      "keyword": "what is vector database and how does it work",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185432",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI·LLM 프로젝트에서 벡터 DB 개념을 이해하고 싶은 개발자",
+      "angle": "벡터 데이터베이스의 작동 원리와 Pinecone·Weaviate 실사용 비교",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "What is a Vector Database? - Vector Databases Explained - AWS",
+          "url": "https://aws.amazon.com/what-is/vector-databases/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "What Is a Vector Database? | IBM",
+          "url": "https://www.ibm.com/think/topics/vector-database",
+          "source": "www.ibm.com"
+        },
+        {
+          "title": "What is a Vector Database? - GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/data-science/what-is-a-vector-database/",
+          "source": "www.geeksforgeeks.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1166-ko-tech-GitHub-Actions-입문-가이",
+      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185450",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI/CD를 처음 도입하려는 개발자가 GitHub Actions 사용법을 찾는 경우",
+      "angle": "코드 푸시부터 자동 배포까지 GitHub Actions 워크플로우 실전 세팅법",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
+          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
+          "source": "inblog.ai"
+        },
+        {
+          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
+          "url": "https://notavoid.tistory.com/157",
           "source": "notavoid.tistory.com"
         },
         {
-          "title": "생산성 2배 상승! 노션 vs 코다 vs 옵시디언 비교 가이드 :: 유디팩토리 소프트웨어 정보",
-          "url": "https://factoryud.tistory.com/128",
-          "source": "factoryud.tistory.com"
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1167-ko-tech-클라우드-서비스-비교:-AWS-vs-",
+      "keyword": "클라우드 서비스 비교: AWS vs GCP vs Azure 어떤 걸 선택해야 할까",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185468",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "클라우드 플랫폼을 처음 선택하거나 전환을 고민하는 개발자·스타트업",
+      "angle": "비용·성능·서비스 생태계 기준으로 3대 클라우드를 실용적으로 비교",
+      "competition_level": "high",
+      "references": [
+        {
+          "title": "퍼블릭 클라우드 업체 3사 비교-2022",
+          "url": "https://brunch.co.kr/@@uSr/1242",
+          "source": "brunch.co.kr"
         },
         {
-          "title": "Notion vs Obsidian – All Features Compared (2026)",
-          "url": "https://productive.io/blog/notion-vs-obsidian/",
-          "source": "productive.io"
+          "title": "클라우드 서비스 제공업체 비교: AWS vs Azure vs Google Cloud",
+          "url": "https://dodokth.tistory.com/entry/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A0%9C%EA%B3%B5%EC%97%85%EC%B2%B4-%EB%B9%84%EA%B5%90-AWS-vs-Azure-vs-Google-Cloud",
+          "source": "dodokth.tistory.com"
+        },
+        {
+          "title": "AWS vs Azure vs GCP (2025): 클라우드 컴퓨팅 핵심 서비스 완벽 비교 (비용, 성능, 기능)",
+          "url": "https://commutemochabread.tistory.com/46",
+          "source": "commutemochabread.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1168-ko-tech-Docker-완전-정복:-컨테이너란-",
+      "keyword": "Docker 완전 정복: 컨테이너란 무엇이고 왜 써야 하는가",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185485",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Docker를 처음 접한 개발자가 개념부터 실습까지 한 번에 이해하고 싶은 경우",
+      "angle": "컨테이너 개념 설명 + Dockerfile 작성 + 실전 배포까지 원스톱 가이드",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "왜 굳이 도커(컨테이너)를 써야 하나요? 눈송이 서버의 한계를 넘어 컨테이너를 사용해야 하는 이유 - 44BITS",
+          "url": "https://www.44bits.io/ko/post/why-should-i-use-docker-container",
+          "source": "www.44bits.io"
+        },
+        {
+          "title": "Docker Image vs Container - Difference Between Application Deployment Technologies - AWS",
+          "url": "https://aws.amazon.com/compare/the-difference-between-docker-images-and-containers/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "[Docker] 도커와 컨테이너란? 아주 쉽게 설명!! (Container, Image) — 아주 쉽게 정리한 블로그",
+          "url": "https://jibinary.tistory.com/28",
+          "source": "jibinary.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1169-ko-tech-Python-가상환경-설정법:-ven",
+      "keyword": "Python 가상환경 설정법: venv vs conda 차이점과 사용법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185500",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Python 프로젝트 환경 분리 방법을 몰라 의존성 충돌을 겪는 입문 개발자",
+      "angle": "venv와 conda의 차이를 명확히 짚고 상황별 올바른 선택 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "파이썬 가상환경 완전 정리: Mac / Windows + venv / conda 사용법 비교 가이드 :: 데싸 되기",
+          "url": "https://faiiry9.tistory.com/212",
+          "source": "faiiry9.tistory.com"
+        },
+        {
+          "title": "Python 가상환경 완벽 가이드: venv, virtualenv, conda 비교와 활용법 | Park Labs",
+          "url": "https://blog.park-labs.com/posts/python-virtual-environment-guide/",
+          "source": "blog.park-labs.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1170-ko-tech-SaaS-보안-체크리스트:-스타트업이",
+      "keyword": "SaaS 보안 체크리스트: 스타트업이 반드시 지켜야 할 필수 보안 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-07T07:32:13.185516",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "SaaS 제품을 개발·운영하는 초기 스타트업이 보안 취약점을 점검하고 싶은 경우",
+      "angle": "인증·데이터 암호화·접근 제어·로깅 등 SaaS 보안 필수 항목 실전 체크리스트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "SaaS의 보안 : 클라우드 환경에서 지켜야 할 보안 기본 원칙",
+          "url": "https://bomz.tistory.com/77",
+          "source": "bomz.tistory.com"
+        },
+        {
+          "title": "중소기업 기술보호 시작 가이드 - B2B SaaS 보안, 엑소스피어 블로그",
+          "url": "https://exosp.com/blog/smbsecurityguide",
+          "source": "exosp.com"
+        },
+        {
+          "title": "What is SaaS Security?",
+          "url": "https://www.sentinelone.com/cybersecurity-101/cloud-security/what-is-saas-security/",
+          "source": "www.sentinelone.com"
         }
       ],
       "content_type_hint": "GUIDE"

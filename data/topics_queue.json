@@ -5688,7 +5688,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.089838",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5703,7 +5703,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:38:41.052807+00:00"
     },
     {
       "id": "1172-en-tech-Docker-containers-10",
@@ -5711,7 +5713,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.089875",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5736,7 +5738,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:31:04.866377+00:00"
     },
     {
       "id": "1173-ko-tech-PyPy-사실상-유지보수-종료-Pyt",
@@ -5744,7 +5748,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.089897",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5753,7 +5757,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:41:18.594926+00:00"
     },
     {
       "id": "1174-ko-tech-도커-10년-Dockerfile-아직",
@@ -5761,7 +5767,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.089915",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -5776,7 +5782,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:29:09.871085+00:00"
     },
     {
       "id": "1175-en-tech-how-to-use-GitHub-Ac",
@@ -5816,7 +5824,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.090034",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5840,7 +5848,9 @@
           "source": "www.elancer.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:33:30.255737+00:00"
     },
     {
       "id": "1177-ko-tech-GitHub-Copilot-vs-Ch",
@@ -5848,7 +5858,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.090054",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5872,7 +5882,9 @@
           "source": "spacelift.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:43:51.586843+00:00"
     },
     {
       "id": "1178-ko-tech-AWS-vs-GCP-vs-Azure-",
@@ -5880,7 +5892,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.090073",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5904,7 +5916,9 @@
           "source": "ilyylm.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:46:25.262981+00:00"
     },
     {
       "id": "1179-ko-tech-리눅스-서버-보안-설정-방법:-초보자",
@@ -5912,7 +5926,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.090089",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5936,7 +5950,9 @@
           "source": "tuxcare.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:48:47.089626+00:00"
     },
     {
       "id": "1180-ko-tech-RAG란-무엇인가:-LLM-검색-증강",
@@ -5944,7 +5960,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-08T07:34:02.090104",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -5968,7 +5984,9 @@
           "source": "peekaboolabs.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-08T10:26:32.719814+00:00",
+      "completed_at": "2026-03-08T10:36:05.134767+00:00"
     }
   ]
 }

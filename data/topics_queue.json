@@ -5414,34 +5414,6 @@
       "completed_at": "2026-03-07T10:40:08.550477+00:00"
     },
     {
-      "id": "1159-en-tech-C#-Dapper-nvarchar-v",
-      "keyword": "C# Dapper nvarchar varchar implicit conversion SQL Server index performance trap",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-07T07:32:13.185159",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Backend developers debugging unexplained SQL Server slow queries, or proactively auditing Dapper usage after reading about the implicit conversion performance trap",
-      "angle": "Technical deep-dive: how .NET's default Unicode string type causes implicit nvarchar-to-varchar conversion that bypasses indexes entirely, with reproducible benchmarks and mitigation patterns",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How C# Strings Silently Kill Your SQL Server Indexes in Dapper",
-          "url": "https://consultwithgriff.com/dapper-nvarchar-implicit-conversion-performance-trap",
-          "source": "consultwithgriff.com"
-        },
-        {
-          "title": "Insert NULL into varbinary(max) field throws - Ignition - Inductive Automation Forum",
-          "url": "https://forum.inductiveautomation.com/t/insert-null-into-varbinary-max-field-throws/114291",
-          "source": "forum.inductiveautomation.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "1160-ko-tech-AI-코딩-도구-60대-개발자-Cla",
       "keyword": "AI 코딩 도구 60대 개발자 Claude Code 재도전 실제 사용 후기",
       "category": "tech",
@@ -5510,23 +5482,6 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-03-07T10:25:04.304270+00:00",
       "completed_at": "2026-03-07T10:29:15.832035+00:00"
-    },
-    {
-      "id": "1162-ko-tech-Firefox-대규모-UI-개편-20",
-      "keyword": "Firefox 대규모 UI 개편 2026 크롬 대비 달라진 점 실제 비교",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-07T07:32:13.185255",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "크롬 의존도에 불안감을 느끼거나 프라이버시를 중시하는 국내 사용자·개발자가 Firefox 전환 가치를 재평가하려는 검색",
-      "angle": "Lobsters 60점 스레드 반응을 기반으로, Firefox 리디자인의 실제 UI 변경 사항과 크롬·엣지와의 UX 비교, 그리고 Anthropic 레드팀 보안 강화 이슈까지 묶어 '2026 브라우저 선택 가이드'로 확장",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
     },
     {
       "id": "1163-en-tech-best-open-source-alt",
@@ -5631,70 +5586,6 @@
       "completed_at": "2026-03-07T10:44:22.683562+00:00"
     },
     {
-      "id": "1166-ko-tech-GitHub-Actions-입문-가이",
-      "keyword": "GitHub Actions 입문 가이드: CI/CD 자동화 처음 시작하기",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-03-07T07:32:13.185450",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "CI/CD를 처음 도입하려는 개발자가 GitHub Actions 사용법을 찾는 경우",
-      "angle": "코드 푸시부터 자동 배포까지 GitHub Actions 워크플로우 실전 세팅법",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Github Actions 사용법과 명령어 정리 - 찬찬잉",
-          "url": "https://inblog.ai/chanchaning/github-actions-%EC%82%AC%EC%9A%A9%EB%B2%95%EA%B3%BC-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC-24428",
-          "source": "inblog.ai"
-        },
-        {
-          "title": "EC2와 GitHub Actions를 활용한 배포 파이프라인 구축: 효율적인 CI/CD 구현 가이드 — 기피말고깊이",
-          "url": "https://notavoid.tistory.com/157",
-          "source": "notavoid.tistory.com"
-        },
-        {
-          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
-          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
-          "source": "apidog.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1167-ko-tech-클라우드-서비스-비교:-AWS-vs-",
-      "keyword": "클라우드 서비스 비교: AWS vs GCP vs Azure 어떤 걸 선택해야 할까",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-07T07:32:13.185468",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "클라우드 플랫폼을 처음 선택하거나 전환을 고민하는 개발자·스타트업",
-      "angle": "비용·성능·서비스 생태계 기준으로 3대 클라우드를 실용적으로 비교",
-      "competition_level": "high",
-      "references": [
-        {
-          "title": "퍼블릭 클라우드 업체 3사 비교-2022",
-          "url": "https://brunch.co.kr/@@uSr/1242",
-          "source": "brunch.co.kr"
-        },
-        {
-          "title": "클라우드 서비스 제공업체 비교: AWS vs Azure vs Google Cloud",
-          "url": "https://dodokth.tistory.com/entry/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%A0%9C%EA%B3%B5%EC%97%85%EC%B2%B4-%EB%B9%84%EA%B5%90-AWS-vs-Azure-vs-Google-Cloud",
-          "source": "dodokth.tistory.com"
-        },
-        {
-          "title": "AWS vs Azure vs GCP (2025): 클라우드 컴퓨팅 핵심 서비스 완벽 비교 (비용, 성능, 기능)",
-          "url": "https://commutemochabread.tistory.com/46",
-          "source": "commutemochabread.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1168-ko-tech-Docker-완전-정복:-컨테이너란-",
       "keyword": "Docker 완전 정복: 컨테이너란 무엇이고 왜 써야 하는가",
       "category": "tech",
@@ -5790,6 +5681,294 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-07T10:25:04.304270+00:00",
       "completed_at": "2026-03-07T10:48:48.364540+00:00"
+    },
+    {
+      "id": "1171-en-tech-PyPy-unmaintained-wa",
+      "keyword": "PyPy unmaintained warning uv Python package manager 2026",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.089838",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Python developers using PyPy for performance-critical workloads are alarmed by the uv deprecation warning and need alternatives",
+      "angle": "PROMISE_BROKEN: PyPy promised 10x CPython speed — now it's being flagged as dead weight while Microsoft's Faster CPython team only hit 1.5x in 4 years",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Managing dependencies | uv",
+          "url": "https://docs.astral.sh/uv/concepts/projects/dependencies/",
+          "source": "docs.astral.sh"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1172-en-tech-Docker-containers-10",
+      "keyword": "Docker containers 10 years later what actually replaced Dockerfile",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.089875",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Senior engineers and architects want a retrospective take on containerization to validate or challenge their current stack decisions",
+      "angle": "STATE_CHANGE retrospective: Docker survived every replacement attempt — examining why Dockerfile's simplicity is an unbeatable moat",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Top 12 Most Useful Docker Alternatives for 2026 [List]",
+          "url": "https://spacelift.io/blog/docker-alternatives",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "Top Docker Alternatives for 2026: 5 Faster, Daemonless Tools",
+          "url": "https://www.huuphan.com/2026/03/top-docker-alternatives-2026.html",
+          "source": "www.huuphan.com"
+        },
+        {
+          "title": "A Decade of Docker Containers | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47289311",
+          "source": "news.ycombinator.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1173-ko-tech-PyPy-사실상-유지보수-종료-Pyt",
+      "keyword": "PyPy 사실상 유지보수 종료 Python 성능 대안 2026",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.089897",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "PyPy를 프로덕션이나 CI 환경에서 쓰던 한국 개발자가 uv의 경고 이슈를 접하고 대안을 급히 검색함",
+      "angle": "PROMISE_BROKEN: '빠른 Python'의 상징이던 PyPy가 조용히 죽어가는 현실 — CPython 대안들(GraalPy, Cython, Mypyc)과 실제 비교",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1174-ko-tech-도커-10년-Dockerfile-아직",
+      "keyword": "도커 10년 Dockerfile 아직도 쓰나 컨테이너 기술 현재",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.089915",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 백엔드·DevOps 개발자가 컨테이너 기술 스택을 재검토하면서 도커의 현재 위상을 확인하려 함",
+      "angle": "STATE_CHANGE 회고: Podman, BuildKit, Nix 등 수많은 대안이 등장했지만 도커가 살아남은 이유를 한국 개발자 관점에서 해석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker & Podman 명령어 완벽 가이드: 컨테이너 운영의 모든 것을 한 장에 정리하다 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/docker_podman_commands_complete_guide",
+          "source": "www.youngju.dev"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1175-en-tech-how-to-use-GitHub-Ac",
+      "keyword": "how to use GitHub Actions for CI/CD beginners guide",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.089974",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI/CD 파이프라인을 처음 구성하려는 개발자가 GitHub Actions의 기본 개념과 실제 적용법을 배우고 싶어함",
+      "angle": "실제 워크플로우 파일 예제와 함께 빌드→테스트→배포 자동화를 단계별로 설명하는 입문 튜토리얼",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Creating Your First CI/CD Pipeline Using GitHub Actions | by Brandon Kindred | Medium",
+          "url": "https://brandonkindred.medium.com/creating-your-first-ci-cd-pipeline-using-github-actions-81c668008582",
+          "source": "brandonkindred.medium.com"
+        },
+        {
+          "title": "How to Set Up a CI/CD Pipeline with GitHub Actions for Automated Deployments - DEV Community",
+          "url": "https://dev.to/vishnusatheesh/how-to-set-up-a-cicd-pipeline-with-github-actions-for-automated-deployments-j39",
+          "source": "dev.to"
+        },
+        {
+          "title": "How to Automate CI/CD with GitHub Actions and Streamline Your Workflow",
+          "url": "https://www.freecodecamp.org/news/automate-cicd-with-github-actions-streamline-workflow/",
+          "source": "www.freecodecamp.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1176-ko-tech-쿠버네티스-입문-가이드:-핵심-개념과",
+      "keyword": "쿠버네티스 입문 가이드: 핵심 개념과 실전 설정법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.090034",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Kubernetes를 처음 접하는 백엔드 개발자·DevOps 입문자가 Pod, Service, Deployment 등 핵심 개념을 실습과 함께 이해하고 싶어함",
+      "angle": "로컬 환경(minikube/kind)에서 시작해 실제 배포까지 이어지는 한국어 단계별 실습 튜토리얼",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "[자료다운로드] 쿠버네티스 아키텍처 완벽 가이드 : 구조와 동작 원리 A to Z - CNF",
+          "url": "https://www.cncf.co.kr/resource/kubernetes-architecture-guide/",
+          "source": "www.cncf.co.kr"
+        },
+        {
+          "title": "그림과 실습으로 배우는 쿠버네티스 입문",
+          "url": "https://tiaz.dev/book/3",
+          "source": "tiaz.dev"
+        },
+        {
+          "title": "Kubernetes(쿠버네티스)란? 20년차 개발자가 쉽게 풀어드립니다. I 이랜서 블로그",
+          "url": "https://www.elancer.co.kr/blog/detail/835",
+          "source": "www.elancer.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1177-ko-tech-GitHub-Copilot-vs-Ch",
+      "keyword": "GitHub Copilot vs ChatGPT 코딩 보조 도구 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.090054",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI 코딩 도구 도입을 고려 중인 개발자가 두 도구의 실질적인 차이와 생산성 향상 효과를 비교하고 싶어함",
+      "angle": "IDE 통합·코드 완성 품질·보안·비용·사용 시나리오 기준의 실전 비교 + 직군별(프론트/백엔드/데이터) 추천",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Copilot vs ChatGPT: Which AI Coding Assistant Wins?",
+          "url": "https://everhour.com/blog/github-copilot-vs-chatgpt/",
+          "source": "everhour.com"
+        },
+        {
+          "title": "I Tried GitHub Copilot vs. ChatGPT for Coding: What I Learned",
+          "url": "https://learn.g2.com/github-copilot-vs-chatgpt",
+          "source": "learn.g2.com"
+        },
+        {
+          "title": "GitHub Copilot vs. ChatGPT: Developer AI Tools Comparison",
+          "url": "https://spacelift.io/blog/github-copilot-vs-chatgpt",
+          "source": "spacelift.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1178-ko-tech-AWS-vs-GCP-vs-Azure-",
+      "keyword": "AWS vs GCP vs Azure 클라우드 서비스 비교: 스타트업 선택 기준",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.090073",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "클라우드 플랫폼을 처음 선택하거나 이전을 고려 중인 스타트업 CTO·개발자가 비용·서비스 생태계·국내 지원 등을 비교하려 함",
+      "angle": "무료 티어·컴퓨팅·AI 서비스·한국 리전 지원·가격 정책을 표 형식으로 정리하고 사용 목적별 추천 플로우 제공",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "퍼블릭 클라우드 업체 3사 비교-2022",
+          "url": "https://brunch.co.kr/@@uSr/1242",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "AWS vs Azure vs GCP (2025): 클라우드 컴퓨팅 핵심 서비스 완벽 비교 (비용, 성능, 기능)",
+          "url": "https://commutemochabread.tistory.com/46",
+          "source": "commutemochabread.tistory.com"
+        },
+        {
+          "title": "초보자를 위한 클라우드 서버 추천 비교 (AWS, GCP, Azure) :: ilyylm",
+          "url": "https://ilyylm.tistory.com/entry/%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B2%84-%EC%B6%94%EC%B2%9C-%EB%B9%84%EA%B5%90-AWS-GCP-Azure",
+          "source": "ilyylm.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1179-ko-tech-리눅스-서버-보안-설정-방법:-초보자",
+      "keyword": "리눅스 서버 보안 설정 방법: 초보자를 위한 체크리스트",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.090089",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "처음 VPS나 클라우드 서버를 운영하기 시작한 개발자가 기본 보안 설정을 놓치지 않고 적용하고 싶어함",
+      "angle": "SSH 키 인증·방화벽(ufw)·fail2ban·자동 보안 업데이트·불필요한 포트 차단 등을 체크리스트 형식으로 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Linux] 리눅스 보안 설정 :: 코딩하는 감자",
+          "url": "https://wccoding.tistory.com/267",
+          "source": "wccoding.tistory.com"
+        },
+        {
+          "title": "리눅스 서버 보안 설정 완벽 가이드: 해킹을 막는 필수 설정 10가지",
+          "url": "https://yjshin.tistory.com/1287",
+          "source": "yjshin.tistory.com"
+        },
+        {
+          "title": "Linux 시스템 강화: 10가지 보안 팁",
+          "url": "https://tuxcare.com/blog/linux-hardening/",
+          "source": "tuxcare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1180-ko-tech-RAG란-무엇인가:-LLM-검색-증강",
+      "keyword": "RAG란 무엇인가: LLM 검색 증강 생성 원리와 구현 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-08T07:34:02.090104",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "LLM 기반 서비스를 개발하려는 AI 엔지니어·백엔드 개발자가 RAG 아키텍처 개념과 실제 구현 방법을 이해하고 싶어함",
+      "angle": "RAG 작동 원리(임베딩→검색→생성)를 다이어그램과 함께 설명하고 LangChain·LlamaIndex를 활용한 Python 예제 코드 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "RAG란? - 검색 증강 생성 AI 설명",
+          "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "RAG(검색 증강 생성)란? - LLM 단점을 보완하는 기술 | 블로그 | 모두의연구소",
+          "url": "https://modulabs.co.kr/blog/retrieval-augmented-generation",
+          "source": "modulabs.co.kr"
+        },
+        {
+          "title": "RAG란? LLM의 한계를 극복하는 검색 증강 생성 기술 완벽 가이드 (2025) - 피카부랩스 블로그",
+          "url": "https://peekaboolabs.ai/blog/rag-retrieval-augmented-generation-guide",
+          "source": "peekaboolabs.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

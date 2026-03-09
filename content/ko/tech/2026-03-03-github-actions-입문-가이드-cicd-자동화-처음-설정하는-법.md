@@ -1,7 +1,7 @@
 ---
 title: "GitHub Actions 입문 가이드: CI/CD 자동화 처음 설정하는 법"
 date: 2026-03-03T09:00:54+0900
-draft: false
+draft: true
 author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-devtools", "github", "actions", "cicd"]

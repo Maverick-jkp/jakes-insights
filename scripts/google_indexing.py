@@ -184,6 +184,9 @@ def get_recent_posts(days: int = 1) -> List[str]:
 
             # Find recent markdown files
             for md_file in category_dir.glob("*.md"):
+                # Skip _index.md files (section pages, not regular posts)
+                if md_file.stem == "_index":
+                    continue
                 # Check modification time
                 mtime = datetime.fromtimestamp(md_file.stat().st_mtime)
                 if mtime >= cutoff:

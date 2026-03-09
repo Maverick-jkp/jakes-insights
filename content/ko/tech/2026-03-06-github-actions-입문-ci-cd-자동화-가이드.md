@@ -1,7 +1,7 @@
 ---
 title: "GitHub Actions 입문: YAML 파일 하나로 CI CD 자동화 파이프라인 구축 가이드"
 date: 2026-03-06T14:27:31+0900
-draft: false
+draft: true
 author: "Jake Park"
 categories: ["tech"]
 tags: ["subtopic-devtools", "github", "actions", "\uc790\ub3d9\ud654", "Node.js"]

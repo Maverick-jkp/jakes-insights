@@ -123,8 +123,7 @@ Newgrounds didn't just survive the Flash apocalypse. It's quietly become the int
 ## References
 
 1. [Browsers That Support Flash in 2026 (What Still Works) - Alvaro Trigo's Blog](https://alvarotrigo.com/blog/web-browsers-support-flash/)
-2. [NewGrounds Adult Games & 92+ Free Sex Games Like Newgrounds.com](https://theporndude.com/2658/newgrounds)
-3. [r/tipofmyjoystick on Reddit: [PC/FLASH][2013-2016] A game played on my early to mid childhood. It wa](https://www.reddit.com/r/tipofmyjoystick/comments/1rfe0ud/pcflash20132016_a_game_played_on_my_early_to_mid/)
+2. [r/tipofmyjoystick on Reddit: [PC/FLASH][2013-2016] A game played on my early to mid childhood. It wa](https://www.reddit.com/r/tipofmyjoystick/comments/1rfe0ud/pcflash20132016_a_game_played_on_my_early_to_mid/)
 
 
 ---

@@ -18,9 +18,6 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 # Legacy technologies taxonomy pages
 /technologies/* / 301
 
-# Legacy tech posts without language prefix
-/tech/* /tech/:splat 301
-
 # Legacy category routes (without language prefix)
 /sports/* / 301
 /business/* / 301
@@ -34,6 +31,9 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /ko/entertainment/* /ko/ 301
 /ko/society/* /ko/ 301
 /ko/finance/* /ko/ 301
+
+# Legacy KO post URLs (old category structure)
+/ko/entertainment/2026-01-24-ufc/ /ko/ 301
 
 # Live category pages — must be listed BEFORE the catch-all below
 /categories/tech/ /categories/tech/ 200

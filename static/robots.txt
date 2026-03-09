@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /index.xml
+Disallow: /*/index.xml
 
 # Sitemap
 Sitemap: https://jakeinsight.com/sitemap.xml

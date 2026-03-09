@@ -15,6 +15,12 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /en/tags/* /tags/:splat 301
 /en/categories/* /categories/ 301
 
+# Legacy technologies taxonomy pages
+/technologies/* / 301
+
+# Legacy tech posts without language prefix
+/tech/* /tech/:splat 301
+
 # Legacy category routes (without language prefix)
 /sports/* / 301
 /business/* / 301

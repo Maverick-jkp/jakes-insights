@@ -12,7 +12,7 @@ faq:
   - question: "Python 가상환경 venv conda 차이점 뭔가요"
     answer: "Python 가상환경 설정법: venv vs conda 차이점과 사용법을 한 줄로 정리하면, venv는 Python 패키지만 관리하는 표준 내장 도구이고 conda는 Python 버전 자체와 CUDA·MKL 같은 시스템 라이브러리까지 통합 관리하는 도구예요. 순수 웹 개발이라면 venv, 데이터 사이언스나 ML처럼 복잡한 의존성이 필요한 경우라면 conda가 적합해요."
   - question: "venv 가상환경 만들고 활성화하는 방법"
-    answer: "터미널에서 python -m venv my_env 명령으로 가상환경을 생성하고, Mac/Linux에서는 source my_env/bin/activate, Windows에서는 my_env\Scripts\activate로 활성화해요. 활성화 후 pip install로 패키지를 설치하면 해당 가상환경에만 적용되며, deactivate 명령으로 빠져나올 수 있어요."
+    answer: "터미널에서 python -m venv my_env 명령으로 가상환경을 생성하고, Mac/Linux에서는 source my_env/bin/activate, Windows에서는 my_env/Scripts/activate로 활성화해요. 활성화 후 pip install로 패키지를 설치하면 해당 가상환경에만 적용되며, deactivate 명령으로 빠져나올 수 있어요."
   - question: "conda venv 중에 데이터 사이언스할 때 뭐 써야 하나요"
     answer: "데이터 사이언스나 ML 작업에는 conda 사용을 권장해요. numpy, scipy, tensorflow 같은 패키지를 설치할 때 필요한 BLAS나 CUDA 같은 시스템 라이브러리를 conda가 자동으로 처리해주기 때문이에요. 설치 용량이 부담스럽다면 Anaconda 대신 Miniconda를 선택하면 약 400MB로 가볍게 시작할 수 있어요."
   - question: "Python 가상환경 설정법 venv vs conda 중 팀 협업할 때 어떻게 환경 공유하나요"

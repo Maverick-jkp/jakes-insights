@@ -206,13 +206,26 @@ def save_used(used: Dict):
         json.dump(used, f, ensure_ascii=False, indent=2)
 
 
+def get_published_slugs(lang: str) -> set:
+    """Get slugs of already-published side-income posts to prevent duplicates."""
+    if lang == "en":
+        content_dir = Path(__file__).parent.parent / "content" / "en" / "side-income"
+    else:
+        content_dir = Path(__file__).parent.parent / "content" / lang / "side-income"
+    if not content_dir.exists():
+        return set()
+    return {f.stem for f in content_dir.glob("*.md") if f.stem != "_index"}
+
+
 def pick_keywords(lang: str, count: int) -> List[Dict]:
-    """Pick next unused keywords for a language. Resets cycle when exhausted."""
+    """Pick next unused keywords for a language. Resets cycle when exhausted.
+    Skips keywords whose slug already exists as a published post."""
     keywords = load_keywords()
     used = load_used()
 
     pool = keywords.get(lang, [])
     used_ids = set(used.get(lang, []))
+    published_slugs = get_published_slugs(lang)
 
     available = [k for k in pool if k["id"] not in used_ids]
 
@@ -223,7 +236,31 @@ def pick_keywords(lang: str, count: int) -> List[Dict]:
         save_used(used)
         available = pool[:]
 
-    selected = available[:count]
+    # Filter out keywords that would produce duplicate slugs
+    def keyword_to_slug(keyword: str) -> str:
+        slug = keyword.lower()
+        slug = re.sub(r'[^a-z0-9가-힣\s-]', '', slug)
+        slug = re.sub(r'[\s]+', '-', slug.strip())
+        return slug[:60]
+
+    fresh = []
+    skipped = 0
+    for k in available:
+        candidate_slug = f"{TODAY}-{keyword_to_slug(k['keyword'])}"
+        # Check if any published slug contains this keyword's core slug
+        kw_slug = keyword_to_slug(k['keyword'])[:40]
+        if any(kw_slug in pub for pub in published_slugs):
+            safe_print(f"  ⏭️  [{lang}] Skipping duplicate topic: {k['keyword'][:50]}")
+            skipped += 1
+            continue
+        fresh.append(k)
+        if len(fresh) >= count:
+            break
+
+    if skipped > 0:
+        safe_print(f"  ℹ️  [{lang}] Skipped {skipped} already-published topics")
+
+    selected = fresh[:count]
 
     # Mark as used
     used[lang] = used.get(lang, []) + [k["id"] for k in selected]

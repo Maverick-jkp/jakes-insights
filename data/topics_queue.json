@@ -6108,82 +6108,6 @@
       "completed_at": "2026-03-09T11:01:23.669577+00:00"
     },
     {
-      "id": "1186-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge functions cold start latency reduction typescript bundler trick production",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-09T07:52:19.049490",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Developers frustrated by 800ms+ cold starts on Supabase Edge Functions wanting real mitigation",
-      "angle": "Bundle size audit + esbuild config changes that cut cold start from 900ms to under 300ms with data",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1187-en-tech-cloudflare-workers-k",
-      "keyword": "cloudflare workers kv storage 1000 write limit workaround real-time app architecture",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-09T07:52:19.049539",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Developers building near-real-time features on Workers who hit KV's write-per-second ceiling",
-      "angle": "Hybrid architecture using Durable Objects as a write buffer in front of KV — tested throughput numbers included",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Workers KV - free to try, with increased limits!",
-          "url": "https://blog.cloudflare.com/workers-kv-free-tier/",
-          "source": "blog.cloudflare.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1188-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter docker compose host network mode mac m-series not working fix 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-09T07:52:19.049593",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Mac M-chip users whose node_exporter shows no host metrics because host networking doesn't work on macOS Docker",
-      "angle": "Why host network mode silently fails on Mac + working alternative using host.docker.internal with annotated compose file",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "System Monitoring Series Part 1 | Host & Container Monitoring with Prometheus | by Sven van Ginkel |",
-          "url": "https://medium.com/@svenvanginkel/host-container-monitoring-with-grafana-prometheus-d880137b7cc0",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1189-ko-tech-M3-맥북-16GB-ollama-mi",
       "keyword": "M3 맥북 16GB ollama mistral 7B 한국어 토큰 생성 속도 실측 GPT-4o-mini 비교 2025",
       "category": "tech",
@@ -6320,65 +6244,6 @@
       "completed_at": "2026-03-09T11:06:26.233863+00:00"
     },
     {
-      "id": "1193-ko-tech-Supabase-RLS-정책-복잡한-",
-      "keyword": "Supabase RLS 정책 복잡한 조직 권한 구조 적용 삽질 후기 성능 저하 원인",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-09T07:52:19.049792",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase RLS를 다단계 권한에 적용하다 쿼리가 느려지는 문제를 겪는 개발자가 해결 사례 검색",
-      "angle": "잘못된 RLS 정책이 seq scan을 유발하는 이유 + auth.uid() 인덱스 트릭으로 해결한 실제 explain 결과",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Supabase Docs | Troubleshooting | RLS Performance and Best Practices",
-          "url": "https://supabase.com/docs/guides/troubleshooting/rls-performance-and-best-practices-Z5Jjwv",
-          "source": "supabase.com"
-        },
-        {
-          "title": "Supabase 완전 정복: 오픈소스 Firebase 대안의 모든 것",
-          "url": "https://joonfluence.tistory.com/876",
-          "source": "joonfluence.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1194-ko-tech-Cloudflare-Pages-Hug",
-      "keyword": "Cloudflare Pages Hugo 배포 빌드 실패 TOML 파싱 오류 버전 불일치 원인 해결 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-09T07:52:19.049823",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo 블로그를 Cloudflare Pages에 배포하다 갑자기 빌드가 깨진 개발자가 원인을 찾으려고 검색",
-      "angle": "Cloudflare Pages 기본 Hugo 버전과 로컬 버전 불일치가 원인인 사례 + 환경변수로 버전 고정하는 방법",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
-          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
-          "source": "www.heyjude.blog"
-        },
-        {
-          "title": "Hugo site on github deploy error on Cloudflare page - Cloudflare Pages - Cloudflare Community",
-          "url": "https://community.cloudflare.com/t/hugo-site-on-github-deploy-error-on-cloudflare-page/841077",
-          "source": "community.cloudflare.com"
-        },
-        {
-          "title": "[배포] Cloudflare Pages 배포에 인증 추가하기",
-          "url": "https://meal-coding.tistory.com/54",
-          "source": "meal-coding.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1195-ko-tech-WSL2-Docker-Desktop-",
       "keyword": "WSL2 Docker Desktop 없이 Ubuntu 24.04 containerd 직접 설치 윈도우11 실전 세팅",
       "category": "tech",
@@ -6411,6 +6276,478 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-09T10:46:05.008437+00:00",
       "completed_at": "2026-03-09T11:08:59.294158+00:00"
+    },
+    {
+      "id": "1196-en-tech-AI-coding-tools-prod",
+      "keyword": "AI coding tools production outages real causes",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472406",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Engineers worried that AI-generated code is passing review but failing in live systems want to understand the real failure patterns before it hits their org",
+      "angle": "Post-mortem forensics perspective — what class of bugs do LLM-written code introduce that human review misses, and what Amazon's internal emergency meeting reveals about industry-wide risk",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Did AI Coding Bots Cause AWS Outages & How to Prevent Them?",
+          "url": "https://codeconductor.ai/blog/aws-outages-ai-coding-bot",
+          "source": "codeconductor.ai"
+        },
+        {
+          "title": "The Black Box Problem: Why AI-Generated Code Stops Being Maintainable | Towards Data Science",
+          "url": "https://towardsdatascience.com/the-black-box-problem-why-ai-generated-code-stops-being-maintainable/",
+          "source": "towardsdatascience.com"
+        },
+        {
+          "title": "Amazon Engineers Investigate AI-Linked Outages as GenAI Coding Tools Raise Reliability Concerns - Ec",
+          "url": "http://www.econotimes.com/Amazon-Engineers-Investigate-AI-Linked-Outages-as-GenAI-Coding-Tools-Raise-Reliability-Concerns-1735799",
+          "source": "www.econotimes.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1197-ko-tech-AI-코딩-도구-실제-장애-사례-위험",
+      "keyword": "AI 코딩 도구 실제 장애 사례 위험성",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472449",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코드 리뷰를 통과했는데 실서비스에서 장애가 난 사례를 찾고 있는 국내 개발자 — 도입 여부나 사용 범위를 재검토할 근거가 필요한 상황",
+      "angle": "국내 개발팀 도입 현실 관점 — 아마존 사례를 기반으로 AI 코딩 도구가 어떤 조건에서 위험해지는지, 한국 스타트업·SI 환경에서 체크해야 할 포인트 중심",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Opacity or black box in AI: what it is and why it worries us",
+          "url": "https://mundobytes.com/en/What-is-opacity-or-the-black-box-in-AI-and-why-does-it-matter/",
+          "source": "mundobytes.com"
+        },
+        {
+          "title": "앤트로픽 클로드 서비스 전면 장애 발생, Claude 장애 확산, API·코드 도구까지 멈췄다 - 디지털포커스",
+          "url": "https://www.digitalfocus.news/news/articleView.html?idxno=19161",
+          "source": "www.digitalfocus.news"
+        },
+        {
+          "title": "클로드, 파이어폭스 브라우저에서 2주 만에 취약점 22개 발견 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=207702",
+          "source": "www.aitimes.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1198-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response quality korean benchmark macbook m3 16gb",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472523",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 16GB 환경에서 llama3.2 모델 사이즈별 한국어 품질과 속도를 실측 비교하려는 개발자",
+      "angle": "동일 프롬프트로 3B vs 8B 한국어 응답 품질·속도·메모리 사용량 직접 측정 결과 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Selecting the Optimal Open-Source Large Language Model for Coding on Apple M3 | by Dzianis Vashchuk ",
+          "url": "https://medium.com/@dzianisv/selecting-the-optimal-open-source-large-language-model-for-coding-on-apple-m3-8d2ba600d8ac",
+          "source": "medium.com"
+        },
+        {
+          "title": "r/ollama on Reddit: I tested 10 LLMs locally on my MacBook Air M1 (8GB RAM!) – Here's what actually ",
+          "url": "https://www.reddit.com/r/ollama/comments/1lktb12/i_tested_10_llms_locally_on_my_macbook_air_m1_8gb/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1199-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 apple silicon permission denied fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472563",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Apple Silicon Mac을 GitHub Actions 셀프 호스티드 러너로 쓸 때 Docker arm64 권한 오류를 해결 중인 개발자",
+      "angle": "실제 permission denied 에러 로그 분석 + Docker socket 마운트 권한 설정 단계별 삽질 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions: Self-hosted runners now support Apple M1 hardware - GitHub Changelog",
+          "url": "https://github.blog/changelog/2022-08-09-github-actions-self-hosted-runners-now-support-apple-m1-hardware/",
+          "source": "github.blog"
+        },
+        {
+          "title": "Github Actions Sef-hosted runners - Error: The process '/usr/bin/docker' failed with exit code 1 해결 ",
+          "url": "https://gerrymandering.tistory.com/entry/Github-Actions-Sef-hosted-runners-Error-The-process-usrbindocker-failed-with-exit-code-1-%ED%95%B4%EA%B2%B0",
+          "source": "gerrymandering.tistory.com"
+        },
+        {
+          "title": "How to install GitHub action runner on EC2 Mac | by Khoa Pham | Indie Goodies | Jan, 2026 | Medium",
+          "url": "https://medium.com/fantageek/how-to-install-github-action-runner-on-ec2-mac-088b7e62b8c4",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1200-en-tech-claude-api-vs-openai",
+      "keyword": "claude api vs openai api cost per 1000 requests real world rag app comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472606",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 앱을 실제로 운영하면서 Claude와 OpenAI API의 월 비용을 실측 비교하려는 개발자",
+      "angle": "동일 RAG 파이프라인에 두 API를 붙여 1000 요청 기준 실제 청구 금액과 응답 품질 동시 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI API Pricing Comparison (2026): Grok vs Gemini vs GPT-4o vs Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/ai-api-pricing-comparison-grok-gemini-openai-claude",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "Claude API vs OpenAI API 2026: Pricing, Speed & Quality Compared - AIToolVS",
+          "url": "https://aitoolvs.com/claude-api-vs-openai-api-2026/",
+          "source": "aitoolvs.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1201-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose single vps 1gb ram high memory usage fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472644",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "1GB RAM VPS에서 Prometheus + Node Exporter를 Docker Compose로 돌릴 때 메모리 부족으로 OOM이 뜨는 상황",
+      "angle": "scrape_interval 튜닝·retention 축소·경량 대안(VictoriaMetrics) 비교로 RAM 1GB 이하 실제 안정화 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "High Memory Usage in Prometheus Pod Even with 1GB Retention Config - Prometheus server - Prometheus ",
+          "url": "https://discuss.prometheus.io/t/high-memory-usage-in-prometheus-pod-even-with-1gb-retention-config/3433",
+          "source": "discuss.prometheus.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1202-en-tech-cloudflare-pages-hug",
+      "keyword": "cloudflare pages hugo deployment build fails unknown shortcode error troubleshooting",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472711",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그를 Cloudflare Pages에 배포할 때 unknown shortcode 에러로 빌드가 실패하는 상황",
+      "angle": "Cloudflare Pages의 Hugo 버전 고정 방법과 shortcode 호환성 오류 원인별 해결 체크리스트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Error when deploying with Cloudflare Pages - support - HUGO",
+          "url": "https://discourse.gohugo.io/t/error-when-deploying-with-cloudflare-pages/53915",
+          "source": "discourse.gohugo.io"
+        },
+        {
+          "title": "Hugo site on github deploy error on Cloudflare page - Cloudflare Pages - Cloudflare Community",
+          "url": "https://community.cloudflare.com/t/hugo-site-on-github-deploy-error-on-cloudflare-page/841077",
+          "source": "community.cloudflare.com"
+        },
+        {
+          "title": "Guillaume A | Fixing Hugo Theme Compatibility Issues in Cloudflare Pages",
+          "url": "https://blog.guillaumea.fr/post/fix-hugo-cloudflare-pages-version-compatibility/",
+          "source": "blog.guillaumea.fr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1203-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start latency reduce tips production 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472758",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Functions의 콜드 스타트 지연이 실제 서비스에 영향을 주는 개발자가 최적화 방법을 찾는 상황",
+      "angle": "콜드 스타트 실측 latency 데이터 + 번들 사이즈 축소·warming 전략 실험 결과 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions Architecture | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions/architecture",
+          "source": "supabase.com"
+        },
+        {
+          "title": "r/Supabase on Reddit: Edge functions cold start speed vs Firebase functions",
+          "url": "https://www.reddit.com/r/Supabase/comments/1jwghg7/edge_functions_cold_start_speed_vs_firebase/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1204-ko-tech-ollama-llama3.2-한국어-",
+      "keyword": "ollama llama3.2 한국어 답변 품질 GPT-4o-mini 실측 비교 M3 맥북 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472794",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM으로 비용을 0원으로 줄이고 싶지만 한국어 품질이 GPT 수준인지 직접 확인하고 싶은 개발자",
+      "angle": "동일 한국어 프롬프트 30개로 ollama llama3.2 vs GPT-4o-mini 응답 품질·속도·토큰 비용 동시 실측",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "올라마 v0.10.0 소개 및 한국어 지원 LLM모델",
+          "url": "https://brunch.co.kr/@b2439ea8fc654b8/92",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "[AI] Llama 3 설치 / llama 3.2 Bllossom 3B gguf 한국어 모델 사용하기 — seulll",
+          "url": "https://seulow-down.tistory.com/357",
+          "source": "seulow-down.tistory.com"
+        },
+        {
+          "title": "Ollama Models List 2025: 100+ 모델 비교 가이드 - Skywork ai",
+          "url": "https://skywork.ai/blog/llm/ollama-models-list-models-compared-ko/",
+          "source": "skywork.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1205-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 자동 배포 GitHub Actions cron 무시되는 원인 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472827",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그 예약 발행을 위해 GitHub Actions cron을 설정했는데 Cloudflare Pages 배포가 트리거되지 않는 상황",
+      "angle": "cron이 무시되는 3가지 원인(비활성 저장소 정책·트리거 누락·webhook 설정 오류) 직접 삽질로 찾아낸 해결법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/CloudFlare on Reddit: Github pages vs Cloudflare",
+          "url": "https://www.reddit.com/r/CloudFlare/comments/1pwgio6/github_pages_vs_cloudflare/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Scheduled Builds for Cloudflare Deployments with GitHub Actions | by BEN ABT | Medialesson | Medium",
+          "url": "https://medium.com/medialesson/scheduled-builds-for-cloudflare-deployments-with-github-actions-93341a112432",
+          "source": "medium.com"
+        },
+        {
+          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
+          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
+          "source": "chriswiegman.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1206-ko-tech-1인-개발자-월-$10-이하-인프라-",
+      "keyword": "1인 개발자 월 $10 이하 인프라 Docker Compose Fly.io Supabase 실제 비용 내역 공개",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472858",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 최소 비용으로 운영하고 싶은 개발자가 실제 청구 금액을 확인하고 싶은 상황",
+      "angle": "6개월 실제 운영 청구서 기반으로 서비스별 비용 분해 + 무료 티어 한계 도달 시점 정직하게 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "프로그램 개발 비용, 왜 비쌀까? CTO의 예산 최적화 가이드",
+          "url": "https://www.pooolingforest.com/blog/software-development-cost-optimization-secrets",
+          "source": "www.pooolingforest.com"
+        },
+        {
+          "title": "앱 개발 견적 산정, 어려우셨죠? | 데이터 기반 실제 견적 알아보기",
+          "url": "https://blog.gridge.co.kr/app-dev/",
+          "source": "blog.gridge.co.kr"
+        },
+        {
+          "title": "r/Supabase on Reddit: Supabase self hosted docker compose is here",
+          "url": "https://www.reddit.com/r/Supabase/comments/1r3uhr9/supabase_self_hosted_docker_compose_is_here/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1207-ko-tech-Prometheus-Grafana-D",
+      "keyword": "Prometheus Grafana Docker Compose VPS 메모리 2GB 이하 OOM 없이 안정화 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472891",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 모니터링 스택을 올렸다가 OOM으로 서버가 죽는 상황을 해결하려는 개발자",
+      "angle": "메모리 2GB 환경 실측 + scrape_interval·retention·Grafana 플러그인 최소화로 안정화한 docker-compose.yml 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
+          "source": "railly-linker.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1208-ko-tech-Claude-API-RAG-구현-청크",
+      "keyword": "Claude API RAG 구현 청크 사이즈 512 vs 1024 검색 정확도 실험 결과 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472922",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 파이프라인을 직접 만들면서 청크 사이즈가 검색 정확도에 어떤 영향을 주는지 데이터로 확인하려는 개발자",
+      "angle": "동일 문서셋으로 청크 256·512·1024 토큰 세 가지 조건에서 Top-K 검색 정확도와 Claude 최종 답변 품질 수치 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #1 : 핵심 개념과 시스템 구조 이해",
+          "url": "https://tech.ktcloud.com/entry/2025-08-ktcloud-ai-rag-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%ED%95%B4",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "LLM RAG 파이프라인: 청킹 전략과 임베딩 최적화 실전 2026 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/llm/2026-03-04-llm-rag-chunking-embedding-optimization-2026",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Amazon Bedrock Knowledge Bases: 데이터 특성을 고려한 분할 전략으로 검색 성능 최적화하기 | AWS 기술 블로그",
+          "url": "https://aws.amazon.com/ko/blogs/tech/amazon-bedrock-knowledge-bases-optimizing-search-with-data-driven-chunking/",
+          "source": "aws.amazon.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1209-ko-tech-GitHub-Actions-셀프-호스",
+      "keyword": "GitHub Actions 셀프 호스티드 러너 Apple Silicon Docker arm64 permission denied 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472954",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M1/M2/M3 맥을 CI 러너로 쓰다가 Docker arm64 권한 오류에 막힌 개발자",
+      "angle": "실제 에러 메시지별 원인 분석 + docker.sock 권한·그룹 설정·Colima 대체 사용 여부까지 단계별 해결 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Github Actions Sef-hosted runners - Error: The process '/usr/bin/docker' failed with exit code 1 해결 ",
+          "url": "https://gerrymandering.tistory.com/entry/Github-Actions-Sef-hosted-runners-Error-The-process-usrbindocker-failed-with-exit-code-1-%ED%95%B4%EA%B2%B0",
+          "source": "gerrymandering.tistory.com"
+        },
+        {
+          "title": "GitHub Actions: macOS 13 runner image is closing down - GitHub Changelog",
+          "url": "https://github.blog/changelog/2025-09-19-github-actions-macos-13-runner-image-is-closing-down/",
+          "source": "github.blog"
+        },
+        {
+          "title": "GitHub Actions Self-Hosted Runner 대규모 운영과 보안 하드닝 가이드 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-05-devops-github-actions-self-hosted-runner-ops",
+          "source": "www.youngju.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1210-ko-tech-Supabase-무료-플랜-Edge-",
+      "keyword": "Supabase 무료 플랜 Edge Functions 콜드 스타트 지연 실측 프로덕션 대응 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-10T07:44:03.472985",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase 무료 플랜으로 서비스를 운영하다가 Edge Function 응답이 첫 요청에서 수 초씩 느려지는 원인을 찾는 개발자",
+      "angle": "콜드 스타트 평균 latency 직접 측정 + 번들 경량화·warming ping 스케줄러 적용 전후 응답 시간 수치 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase 입문 가이드: 오픈소스 Firebase 대안의 모든 것 - [루닥스 블로그] 연습만이 살길이다",
+          "url": "https://rudaks.tistory.com/entry/Supabase-%EC%9E%85%EB%AC%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-Firebase-%EB%8C%80%EC%95%88%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83",
+          "source": "rudaks.tistory.com"
+        },
+        {
+          "title": "[Supabase 시작하기] - 회원 가입부터 기초 CRUD, RAG를 위한 pgvector 활성화 하기 :: 갓대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/377",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "Supabase, 왜 주목받나?",
+          "url": "https://matae0712.tistory.com/30",
+          "source": "matae0712.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

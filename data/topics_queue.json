@@ -6283,7 +6283,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472406",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6308,7 +6308,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:41:59.772655+00:00"
     },
     {
       "id": "1197-ko-tech-AI-코딩-도구-실제-장애-사례-위험",
@@ -6316,7 +6318,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472449",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -6341,7 +6343,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:44:48.698193+00:00"
     },
     {
       "id": "1198-en-tech-ollama-llama3.2-3b-v",
@@ -6349,7 +6353,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472523",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6373,7 +6377,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:46:58.116378+00:00"
     },
     {
       "id": "1199-en-tech-github-actions-self-",
@@ -6381,7 +6387,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472563",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6405,7 +6411,9 @@
           "source": "medium.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:56:40.525779+00:00"
     },
     {
       "id": "1200-en-tech-claude-api-vs-openai",
@@ -6413,7 +6421,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472606",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6432,7 +6440,9 @@
           "source": "aitoolvs.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:48:57.776656+00:00"
     },
     {
       "id": "1201-en-tech-prometheus-node-expo",
@@ -6504,7 +6514,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472758",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6523,7 +6533,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:58:52.652126+00:00"
     },
     {
       "id": "1204-ko-tech-ollama-llama3.2-한국어-",
@@ -6531,7 +6543,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472794",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6555,7 +6567,9 @@
           "source": "skywork.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:52:02.409271+00:00"
     },
     {
       "id": "1205-ko-tech-Cloudflare-Pages-Hug",
@@ -6563,7 +6577,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472827",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6587,7 +6601,9 @@
           "source": "chriswiegman.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T11:01:04.638232+00:00"
     },
     {
       "id": "1206-ko-tech-1인-개발자-월-$10-이하-인프라-",
@@ -6627,7 +6643,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472891",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6651,7 +6667,9 @@
           "source": "railly-linker.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T11:03:26.823182+00:00"
     },
     {
       "id": "1208-ko-tech-Claude-API-RAG-구현-청크",
@@ -6659,7 +6677,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-10T07:44:03.472922",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -6683,7 +6701,9 @@
           "source": "aws.amazon.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-10T10:40:21.756446+00:00",
+      "completed_at": "2026-03-10T10:54:33.594867+00:00"
     },
     {
       "id": "1209-ko-tech-GitHub-Actions-셀프-호스",

@@ -6801,70 +6801,6 @@
       "completed_at": "2026-03-11T10:59:34.390907+00:00"
     },
     {
-      "id": "1215-en-tech-prometheus-grafana-d",
-      "keyword": "prometheus grafana docker compose 2gb vps memory optimization actual config",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-11T07:46:12.638603",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus+Grafana 스택을 메모리 부족 없이 운영하려는 개발자",
-      "angle": "2GB RAM 서버에서 retention 설정·scrape interval 조정으로 메모리 사용량 줄인 실제 yml 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Set Up Prometheus and Grafana on Docker - A Guide | SigNoz",
-          "url": "https://signoz.io/guides/how-to-install-prometheus-and-grafana-on-docker/",
-          "source": "signoz.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1216-en-tech-cloudflare-workers-a",
-      "keyword": "cloudflare workers ai free tier rate limit real throughput test vs vercel edge",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-11T07:46:12.638643",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Cloudflare Workers AI 무료 한도 내에서 실제로 어느 정도 트래픽을 감당하는지 알고 싶은 개발자",
-      "angle": "동일 추론 엔드포인트를 Vercel Edge와 Workers AI에 각각 배포해 RPS·레이턴시 비교 측정",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Cloudflare Pages + Workers Review 2026 — Edge Deployment…",
-          "url": "https://vibecoding.app/blog/cloudflare-pages-review",
-          "source": "vibecoding.app"
-        },
-        {
-          "title": "Cloudflare vs Vercel vs Netlify: The Truth about Edge Performance 2026 - DEV Community",
-          "url": "https://dev.to/dataformathub/cloudflare-vs-vercel-vs-netlify-the-truth-about-edge-performance-2026-50h0",
-          "source": "dev.to"
-        },
-        {
-          "title": "r/webdev on Reddit: Vercel Edge vs Cloudflare Workers: My Benchmarks Show Theo (T3) Might Be Fooling",
-          "url": "https://www.reddit.com/r/webdev/comments/1ntfake/vercel_edge_vs_cloudflare_workers_my_benchmarks/",
-          "source": "www.reddit.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1217-en-tech-supabase-row-level-s",
       "keyword": "supabase row level security policy performance cost pgbouncer transaction mode conflict fix",
       "category": "tech",
@@ -6986,124 +6922,462 @@
       "completed_at": "2026-03-11T11:04:41.592473+00:00"
     },
     {
-      "id": "1221-ko-tech-Hugo-블로그-Cloudflare-",
-      "keyword": "Hugo 블로그 Cloudflare Pages 자동배포 GitHub Actions cron 트리거 안될 때 해결법",
+      "id": "1221-ko-tech-AI-얼굴인식-오인식-무고한-사람-구",
+      "keyword": "AI 얼굴인식 오인식 무고한 사람 구금 국내 도입 위험",
       "category": "tech",
       "lang": "ko",
-      "priority": 8,
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-03-11T07:46:12.638816",
+      "created_at": "2026-03-13T07:48:18.235214",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo + Cloudflare Pages 조합에서 cron 스케줄 배포가 묵묵히 실패하는 원인을 찾는 개발자",
-      "angle": "GitHub Actions cron 비활성화 정책·Cloudflare 캐시 퍼지 순서 문제를 직접 재현하고 단계별 해결",
+      "keyword_type": "trend",
+      "search_intent": "해외 AI 얼굴인식 오인식 사건이 국내 뉴스로 확산되면서 한국 독자들이 국내 공공기관·경찰의 AI 도입 현황과 법적 위험을 검색",
+      "angle": "미국 실제 사례(North Dakota 할머니 수개월 구금)를 근거로, 한국 경찰·공항·금융권의 AI 얼굴인식 도입 현황과 오인식 발생 시 피해 구제 방법 분석",
       "competition_level": "low",
       "references": [
         {
-          "title": "Scheduled Builds for Cloudflare Deployments with GitHub Actions | BEN ABT",
-          "url": "https://benjamin-abt.com/blog/2025/07/14/scheduled-builds-cloudflare-github-actions/",
-          "source": "benjamin-abt.com"
+          "title": "\"시술 부작용\"…AI로 사진 조작해 돈 뜯으려던 외국인 송치",
+          "url": "https://www.yonhapnewstv.co.kr/news/AKR20260312163340D9a",
+          "source": "www.yonhapnewstv.co.kr"
         },
         {
-          "title": "Host on Cloudflare",
-          "url": "https://gohugo.io/host-and-deploy/host-on-cloudflare/",
-          "source": "gohugo.io"
+          "title": "심리상담 받고보니 AI…가짜 전문가 판친다 | 서울경제",
+          "url": "https://www.sedaily.com/article/20017629",
+          "source": "www.sedaily.com"
         },
         {
-          "title": "r/CloudFlare on Reddit: Github pages vs Cloudflare",
-          "url": "https://www.reddit.com/r/CloudFlare/comments/1pwgio6/github_pages_vs_cloudflare/",
+          "title": "요청 거절당하자 공격과 협박…AI 에이전트가 사람을 괴롭히기 시작했다 - MIT 테크놀로지 리뷰 | MIT Technology Review Korea",
+          "url": "https://www.technologyreview.kr/%EC%9A%94%EC%B2%AD-%EA%B1%B0%EC%A0%88%EB%8B%B9%ED%95%98%EC%9E%90-%EA%B3%B5%EA%B2%A9%EC%97%90-%ED%98%91%EB%B0%95%EA%B9%8C%EC%A7%80ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EA%B0%80-%EC%82%AC/",
+          "source": "www.technologyreview.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1222-en-tech-fly.io-free-tier-col",
+      "keyword": "fly.io free tier cold start latency node.js express real benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235252",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers want actual measured cold start times on Fly.io free plan before committing to it for a side project",
+      "angle": "Run 50 repeated cold start tests on a Node.js Express app on Fly.io free tier and publish raw latency numbers with comparison to Railway and Render",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Why Fly.io Is the Best Free Docker Hosting You're Not Using | Vibe Coding With Fred",
+          "url": "https://vibecodingwithfred.com/blog/flyio-free-tier-guide/",
+          "source": "vibecodingwithfred.com"
+        },
+        {
+          "title": "What Is Fly.io? Complete Guide to Deployment, Pricing, and Limitations in 2026 • Kuberns",
+          "url": "https://kuberns.com/blogs/post/what-is-flyio/",
+          "source": "kuberns.com"
+        },
+        {
+          "title": "I Run 5 Elixir Apps on Fly.io for Under €50/Month — Here's the Breakdown - DEV Community",
+          "url": "https://dev.to/setas/i-run-5-elixir-apps-on-flyio-for-under-eu50month-heres-the-breakdown-3dl2",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1223-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b korean response quality speed tradeoff macbook m3 16gb",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235277",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 Mac owners want to know which llama3.2 model size gives the best Korean output without killing RAM",
+      "angle": "Side-by-side Korean Q&A quality scoring + tokens-per-second measurement for 3B vs 8B on 16GB unified memory",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best Local LLMs for Mac in 2026 — M1, M2, M3, M4 Tested | InsiderLLM",
+          "url": "https://insiderllm.com/guides/best-local-llms-mac-2026/",
+          "source": "insiderllm.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1224-en-tech-claude-api-cost-opti",
+      "keyword": "claude api cost optimization prompt caching vs batching real invoice comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235298",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers with real Claude API bills want to know which cost-reduction strategy actually saves more money",
+      "angle": "Show actual Anthropic invoices before and after applying prompt caching vs batch API on the same workload",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Pricing Explained: Subscription Plans & API Costs | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "Claude Code Pricing: Pro vs Max vs API Key — Which Saves You More? (2026)",
+          "url": "https://www.shareuhack.com/en/posts/openclaw-claude-code-oauth-cost",
+          "source": "www.shareuhack.com"
+        },
+        {
+          "title": "Claude API Pricing Calculator & Cost Guide (Mar 2026)",
+          "url": "https://costgoat.com/pricing/claude-api",
+          "source": "costgoat.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1225-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 m-series mac unexpected exit code fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235350",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers running self-hosted GitHub Actions on Apple Silicon hit mysterious exit code errors and need a working fix",
+      "angle": "Document the exact error, root cause (architecture mismatch in docker image), and the one-line fix with verified workflow YAML",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions: Self-hosted runners now support Apple M1 hardware - GitHub Changelog",
+          "url": "https://github.blog/changelog/2022-08-09-github-actions-self-hosted-runners-now-support-apple-m1-hardware/",
+          "source": "github.blog"
+        },
+        {
+          "title": "self hosted runner broken update to 2.327.0 · Issue #3955 · actions/runner",
+          "url": "https://github.com/actions/runner/issues/3955",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1226-en-tech-supabase-vs-planetsc",
+      "keyword": "supabase vs planetscale vs turso sqlite edge latency comparison solo developer 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235373",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Solo devs building a small SaaS want a honest latency and pricing comparison of edge-friendly databases",
+      "angle": "Measure p50/p95 read latency from three geographic regions for all three services on their free/cheapest tier with real code",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Database Software for Startups and SaaS (2026): A Developer's Guide",
+          "url": "https://makerkit.dev/blog/tutorials/best-database-software-startups",
+          "source": "makerkit.dev"
+        },
+        {
+          "title": "SQLite vs Supabase for Solo Developers (2026) | SoloDevStack",
+          "url": "https://solodevstack.com/blog/sqlite-vs-supabase-solo-developers",
+          "source": "solodevstack.com"
+        },
+        {
+          "title": "Best Turso Alternatives (2026): Edge Database Pricing",
+          "url": "https://www.buildmvpfast.com/alternatives/turso",
+          "source": "www.buildmvpfast.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1227-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose single vps 1gb ram oom kill prevention config",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235394",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers on cheap 1GB VPS get OOM-killed when running Prometheus and need a minimal working config",
+      "angle": "Provide a battle-tested docker-compose.yml with memory limits, scrape interval tuning, and retention settings that survive on 1GB RAM",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "Kubernetes OOM and CPU Throttling | Sysdig",
+          "url": "https://www.sysdig.com/blog/troubleshoot-kubernetes-oom",
+          "source": "www.sysdig.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1228-en-tech-warp-terminal-vs-gho",
+      "keyword": "warp terminal vs ghostty startup time plugin overhead real developer daily workflow review 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235421",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers choosing between Warp and Ghostty want an honest comparison from someone who used both daily for weeks",
+      "angle": "30-day daily driver switch log: startup time, RAM usage, key missing features, and which type of developer should pick which",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Warp Terminal vs Ghostty: The Ultimate Modern Terminal Guide",
+          "url": "https://apidog.com/blog/warp-terminal/",
+          "source": "apidog.com"
+        },
+        {
+          "title": "Warp vs Ghostty 2025: Which Terminal Is Better for Developers? - YouTube",
+          "url": "https://www.youtube.com/watch?v=f2h0TkAoQRg",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "r/macapps on Reddit: Best terminal emulator",
+          "url": "https://www.reddit.com/r/macapps/comments/1pr84uf/best_terminal_emulator/",
           "source": "www.reddit.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1222-ko-tech-Supabase-무료-플랜-postg",
-      "keyword": "Supabase 무료 플랜 postgres 연결 수 초과 오류 Next.js 서버리스 환경 해결 실전 가이드",
+      "id": "1229-ko-tech-Claude-API-스트리밍-응답-N",
+      "keyword": "Claude API 스트리밍 응답 Next.js App Router 엣지 함수 한국어 끊김 현상 해결",
       "category": "tech",
       "lang": "ko",
-      "priority": 8,
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-03-11T07:46:12.638851",
+      "created_at": "2026-03-13T07:48:18.235443",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Next.js App Router + Supabase 조합에서 서버리스 함수 콜드스타트 때마다 연결 풀이 터지는 문제를 해결하려는 개발자",
-      "angle": "연결 폭증 원인 분석 → pgBouncer 설정 → Supabase 대시보드 모니터링 수치 비교까지 실제 설정 파일 포함",
+      "search_intent": "Next.js App Router에서 Claude API 스트리밍을 구현했는데 한국어 문자가 깨지거나 끊기는 현상을 경험한 개발자",
+      "angle": "TextDecoder 인코딩 설정 누락이 원인임을 밝히고, Edge Runtime vs Node.js Runtime별 정상 동작하는 코드 스니펫 제공",
       "competition_level": "low",
       "references": [
         {
-          "title": "[개발일지#013] Supabase PostgreSQL 데이터베이스 연결하기 (가입부터 생성, 연결까지)",
-          "url": "https://ddururiiiiiii.tistory.com/709",
-          "source": "ddururiiiiiii.tistory.com"
-        },
-        {
-          "title": "Supabase 입문 가이드: 오픈소스 Firebase 대안의 모든 것 - [루닥스 블로그] 연습만이 살길이다",
-          "url": "https://rudaks.tistory.com/entry/Supabase-%EC%9E%85%EB%AC%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-Firebase-%EB%8C%80%EC%95%88%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83",
-          "source": "rudaks.tistory.com"
-        },
-        {
-          "title": "Supabase 시작하기: 프론트엔드 개발자를 위한 완전 기초 가이드",
-          "url": "https://jayb-log.tistory.com/363",
-          "source": "jayb-log.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1223-ko-tech-Mac-mini-홈서버-GitHub-",
-      "keyword": "Mac mini 홈서버 GitHub Actions 셀프호스팅 러너 전기세 vs 클라우드 CI 비용 비교 실측",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-11T07:46:12.638889",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "집에 남는 Mac mini를 CI 러너로 쓰는 것이 GitHub Actions 유료 플랜보다 실제로 저렴한지 계산하고 싶은 개발자",
-      "angle": "전력 소비 측정기로 월 전기세 산출 후 GitHub Actions 분당 요금과 손익분기점 계산 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "GitHub, 2026년 3월부터 셀프호스티드 액션 러너에 요금 부과 예정 | GeekNews",
-          "url": "https://news.hada.io/topic?id=25128",
-          "source": "news.hada.io"
-        },
-        {
-          "title": "Github Actions(GitHub-hosted runners) 가격 정책 & VM스펙",
-          "url": "https://yeongki0944.tistory.com/312",
-          "source": "yeongki0944.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1224-ko-tech-Cloudflare-Workers-A",
-      "keyword": "Cloudflare Workers AI 무료 한도 실제 처리량 테스트 Vercel Edge Functions 레이턴시 비교 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-11T07:46:12.638929",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "AI 추론 엣지 배포 플랫폼을 선택할 때 무료 한도 내 실제 성능 차이를 알고 싶은 개발자",
-      "angle": "동일 LLM 추론 요청을 두 플랫폼에 동시 배포해 p50·p99 레이턴시와 무료 소진 속도 비교 측정",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "r/webdev on Reddit: Vercel Edge vs Cloudflare Workers: My Benchmarks Show Theo (T3) Might Be Fooling",
-          "url": "https://www.reddit.com/r/webdev/comments/1ntfake/vercel_edge_vs_cloudflare_workers_my_benchmarks/",
-          "source": "www.reddit.com"
-        },
-        {
-          "title": "Cloudflare vs Vercel vs Netlify: The Truth about Edge Performance 2026 - DEV Community",
-          "url": "https://dev.to/dataformathub/cloudflare-vs-vercel-vs-netlify-the-truth-about-edge-performance-2026-50h0",
+          "title": "Claude Code 기능 10개, 중요한 순서대로 정리했다 (1/2) - DEV Community",
+          "url": "https://dev.to/ji_ai/claude-code-gineung-10gae-jungyohan-sunseodaero-jeongrihaessda-12-1540",
           "source": "dev.to"
         },
         {
-          "title": "Serverless Functions: Vercel Edge & Cloudflare Workers Guide",
-          "url": "https://www.digitalapplied.com/blog/serverless-functions-vercel-cloudflare-guide",
-          "source": "www.digitalapplied.com"
+          "title": "Claude Code 완벽 가이드 (1) - 설치부터 기본 기능까지",
+          "url": "https://yunwoong.tistory.com/415",
+          "source": "yunwoong.tistory.com"
+        },
+        {
+          "title": "Claude Code 완벽 마스터 가이드 V3: LSP, CLAUDE.md, MCP, Skills & Hooks",
+          "url": "https://javaexpert.tistory.com/1574",
+          "source": "javaexpert.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1230-ko-tech-Fly.io-무료-플랜-슬립-모드-방",
+      "keyword": "Fly.io 무료 플랜 슬립 모드 방지 GitHub Actions cron 핑 실제 비용 0원 유지 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235463",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 티어에 사이드 프로젝트를 올렸는데 슬립 모드 때문에 응답이 너무 느려 해결책을 찾는 개발자",
+      "angle": "GitHub Actions cron으로 5분마다 헬스체크 핑을 보내 슬립 방지하는 방법과 무료 한도 초과 없이 유지하는 설정 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Automating Fly.io Deployments with GitHub Actions",
+          "url": "https://cosminirimescu.com/automate-flyio-deployments-github-actions/",
+          "source": "cosminirimescu.com"
+        },
+        {
+          "title": "도커 컨테이너 5분 만에 무료로 배포하기(feat. fly.io) - 44BITS",
+          "url": "https://www.44bits.io/ko/post/docker-container-deploy-in-5-minitues-with-fly-io",
+          "source": "www.44bits.io"
+        },
+        {
+          "title": "r/webdev on Reddit: Simple and reliable infra for my web app - render, fly, versel or coolify?",
+          "url": "https://www.reddit.com/r/webdev/comments/1l23vrt/simple_and_reliable_infra_for_my_web_app_render/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1231-ko-tech-Supabase-Row-Level-S",
+      "keyword": "Supabase Row Level Security 실무 적용 실수 모음 서비스 키 클라이언트 노출 사고 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235481",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase를 처음 도입한 개발자가 RLS 설정 실수로 데이터가 노출될 뻔한 경험을 찾아보는 상황",
+      "angle": "service_role 키를 프론트에 실수로 노출한 실제 사례, anon 키와의 차이, RLS 정책 빠진 테이블 점검 쿼리 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
+        },
+        {
+          "title": "바이브코딩 Supabase 환경설정 API 키 찾는 방법",
+          "url": "https://www.mybiznow.kr/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9-supabase-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95-api-%ED%82%A4-%EC%B0%BE%EB%8A%94-%EB%B0%A9%EB%B2%95/",
+          "source": "www.mybiznow.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1232-ko-tech-ollama-로컬-LLM-맥북-M3-",
+      "keyword": "ollama 로컬 LLM 맥북 M3 16GB RAM 점유율 모델별 실측 비교 백그라운드 상시 실행 가능 여부",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235498",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 16GB 사용자가 ollama를 백그라운드에 상시 켜둬도 되는지 실제 메모리 점유 수치를 확인하고 싶은 상황",
+      "angle": "모델 로드 전/후/추론 중 3단계로 통합 메모리 점유를 Activity Monitor로 측정하고 일상 작업과 병행 가능한 모델 조합 추천",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenClaw (구 Moltbot, 구 Clawdbot) 리뷰(6) : Ollama 연동 가이드 - 로컬 LLM Ollama로 무료 AI 비서 만들기 :: 갓대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/509",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "Ollama 사용법: Ollama를 이용한 로컬 LLM 완전 초보 가이드",
+          "url": "https://apidog.com/kr/blog/how-to-use-ollama-kr/",
+          "source": "apidog.com"
+        },
+        {
+          "title": "로컬 LLM 실행도구, Ollama와 LM Studio 완벽 비교 분석 (2025년 최신) - 피카부랩스 블로그",
+          "url": "https://peekaboolabs.ai/blog/ollama-lm-studio-comparison",
+          "source": "peekaboolabs.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1233-ko-tech-Cloudflare-Workers-K",
+      "keyword": "Cloudflare Workers KV vs D1 vs R2 1인 개발자 사이드 프로젝트 실제 무료 한도 소진 속도 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235517",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare 스택으로 사이드 프로젝트를 만들려는 개발자가 어떤 스토리지를 써야 무료 한도 내에서 오래 버티는지 궁금한 상황",
+      "angle": "실제 DAU 100 수준의 앱 기준으로 KV reads, D1 rows read, R2 Class A 오퍼레이션이 한 달에 얼마나 소비되는지 청구서 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "클라우드플레어 무료 플랜, 어디까지 가능할까? (요청, 빌드, 스토리지 제한 총정리) - Sentio",
+          "url": "https://sentio5.com/entry/cloudflare-free-plan-limits/",
+          "source": "sentio5.com"
+        },
+        {
+          "title": "Serverless Showdown: Cloudflare Workers vs Lambda vs Cloud Functions vs Azure Functions",
+          "url": "https://inventivehq.com/blog/cloudflare-workers-vs-aws-lambda-vs-google-cloud-functions-vs-azure-functions-comparison",
+          "source": "inventivehq.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1234-ko-tech-GitHub-Actions-Docke",
+      "keyword": "GitHub Actions Docker 빌드 캐시 레이어 재사용 안 될 때 cache-from 설정 삽질 해결 기록",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235534",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GitHub Actions에서 Docker 레이어 캐시를 설정했는데 매번 풀빌드가 일어나 시간이 낭비되는 문제를 겪는 개발자",
+      "angle": "buildx cache-to/cache-from type=gha 설정 누락, actions/cache 충돌, multi-stage build 순서 문제 3가지 원인별 정확한 수정 YAML 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions에서 Docker Build 캐싱 적용하기",
+          "url": "https://byeongtil.tistory.com/104",
+          "source": "byeongtil.tistory.com"
+        },
+        {
+          "title": "Github Actions Docker 빌드 속도를 최적화 해보자.",
+          "url": "https://hstory0208.tistory.com/entry/Github-Actions-Docker-%EB%B9%8C%EB%93%9C-%EC%86%8D%EB%8F%84%EB%A5%BC-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%B4%EB%B3%B4%EC%9E%90",
+          "source": "hstory0208.tistory.com"
+        },
+        {
+          "title": "GitHub Actions 고급 CI/CD — Matrix, Cache, Self-hosted Runner | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-02-github-actions-advanced-cicd",
+          "source": "www.youngju.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1235-ko-tech-Vercel-스케줄-크론-무료-플랜-",
+      "keyword": "Vercel 스케줄 크론 무료 플랜 월 한도 초과 경고 Next.js API Route 대체 구현 실전 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-13T07:48:18.235549",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 플랜에서 cron job 한도가 초과됐다는 경고를 받고 대안을 찾는 개발자",
+      "angle": "Vercel cron 대신 GitHub Actions scheduled workflow로 외부에서 Next.js API Route를 호출하는 완전 무료 대체 구조 코드 포함 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel을 이용한 무료 웹 배포 이용해보기",
+          "url": "https://allinfor.tistory.com/76",
+          "source": "allinfor.tistory.com"
+        },
+        {
+          "title": "Next.js API Routes 마스터: 실무에서 3년간 써본 실전 가이드 가이드 | 정보의 둥지",
+          "url": "https://nestloghub.com/blog/coding/nextjs-api-routes-complete-guide",
+          "source": "nestloghub.com"
+        },
+        {
+          "title": "AWS 프리티어 끝나서 Vercel로 갈아타기 (비용 월 6만원 → 0원!) :: Hugh Q. Lee | AI, 로보틱스, 개발 블로그",
+          "url": "https://hughqlee.tistory.com/entry/AWS-%ED%94%84%EB%A6%AC%ED%8B%B0%EC%96%B4-%EB%81%9D%EB%82%98%EC%84%9C-Vercel%EB%A1%9C-%EA%B0%88%EC%95%84%ED%83%80%EA%B8%B0-%EB%B9%84%EC%9A%A9-%EC%9B%94-6%EB%A7%8C%EC%9B%90-%E2%86%92-0%EC%9B%90",
+          "source": "hughqlee.tistory.com"
         }
       ],
       "content_type_hint": "GUIDE"

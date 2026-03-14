@@ -18,6 +18,15 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 # Legacy technologies taxonomy pages
 /technologies/* / 301
 
+# Legacy tags (without language prefix)
+/tags/mini/ / 301
+/tags/* /tags/:splat 301
+
+# Legacy tech posts (no date prefix, old URL structure)
+/tech/motorola-grapheneos-partnership-privacy-android-se/ /tech/ 301
+/tech/google-gemini-api-key-security-breach-risk/ /tech/ 301
+/tech/2026-02-07-ai/ /tech/ 301
+
 # Legacy category routes (without language prefix)
 /sports/* / 301
 /business/* / 301

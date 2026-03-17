@@ -7575,7 +7575,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980408",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -7600,7 +7600,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T10:55:38.616836+00:00"
     },
     {
       "id": "1250-en-tech-ollama-llama3.2-3b-v",
@@ -7608,7 +7610,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980461",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7632,7 +7634,9 @@
           "source": "www.sitepoint.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T10:57:40.907019+00:00"
     },
     {
       "id": "1251-en-tech-fly.io-free-tier-col",
@@ -7640,7 +7644,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980501",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7664,7 +7668,9 @@
           "source": "kuberns.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:14:21.508517+00:00"
     },
     {
       "id": "1252-en-tech-claude-api-vs-openai",
@@ -7672,7 +7678,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980538",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7691,7 +7697,9 @@
           "source": "www.cloudidr.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T10:59:50.097114+00:00"
     },
     {
       "id": "1253-en-tech-github-actions-self-",
@@ -7699,7 +7707,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980576",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7718,7 +7726,9 @@
           "source": "dev.to"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:16:21.217777+00:00"
     },
     {
       "id": "1254-en-tech-supabase-pgvector-vs",
@@ -7726,7 +7736,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980613",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7750,7 +7760,9 @@
           "source": "encore.dev"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:02:08.709736+00:00"
     },
     {
       "id": "1255-en-tech-docker-compose-healt",
@@ -7822,7 +7834,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980730",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7846,7 +7858,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:04:45.305735+00:00"
     },
     {
       "id": "1258-ko-tech-Supabase-무료-플랜-Postg",
@@ -7854,7 +7868,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980762",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7873,7 +7887,9 @@
           "source": "ddururiiiiiii.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:06:59.032388+00:00"
     },
     {
       "id": "1259-ko-tech-1인-개발자-월-10달러-이하-풀스택",
@@ -7881,7 +7897,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980793",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -7905,7 +7921,9 @@
           "source": "damoang.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:09:40.453314+00:00"
     },
     {
       "id": "1260-ko-tech-GitHub-Actions-Hugo-",
@@ -8009,7 +8027,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-03-17T07:56:06.980920",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -8033,7 +8051,9 @@
           "source": "allinfor.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-03-17T10:52:57.914772+00:00",
+      "completed_at": "2026-03-17T11:12:07.407198+00:00"
     }
   ]
 }

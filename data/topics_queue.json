@@ -7765,70 +7765,6 @@
       "completed_at": "2026-03-17T11:02:08.709736+00:00"
     },
     {
-      "id": "1255-en-tech-docker-compose-healt",
-      "keyword": "docker compose healthcheck depends_on order not working postgres container startup fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-17T07:56:06.980650",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Docker Compose에서 depends_on 설정에도 PostgreSQL 컨테이너가 준비되기 전에 앱이 뜨는 문제를 해결하려는 개발자",
-      "angle": "healthcheck condition service_healthy 설정 실패 패턴 3가지와 확실히 동작하는 설정 코드 제공",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Docker Compose Health Checks: An Easy-to-follow Guide | Last9",
-          "url": "https://last9.io/blog/docker-compose-health-checks/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Docker Compose Health Checks Made Easy: A Practical Guide | by Cyril Baah | Medium",
-          "url": "https://medium.com/@cbaah123/docker-compose-health-checks-made-easy-a-practical-guide-3a340571b88e",
-          "source": "medium.com"
-        },
-        {
-          "title": "How to Use Docker Compose depends_on with Health Checks",
-          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
-          "source": "oneuptime.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1256-en-tech-cloudflare-workers-f",
-      "keyword": "cloudflare workers free tier cpu time limit workaround lightweight llm inference edge 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-17T07:56:06.980693",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Cloudflare Workers 무료 플랜 CPU 10ms 제한 안에서 경량 LLM 추론을 돌리는 방법을 찾는 개발자",
-      "angle": "Workers AI vs Workers 직접 추론 CPU 한도 우회 패턴 실험 — 스트리밍·분산 처리 실전 코드 포함",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "\"Worker exceeded CPU time limit\" at 10ms on paid tier - Cloudflare Workers - Cloudflare Community",
-          "url": "https://community.cloudflare.com/t/worker-exceeded-cpu-time-limit-at-10ms-on-paid-tier/832087",
-          "source": "community.cloudflare.com"
-        },
-        {
-          "title": "New Workers pricing — never pay to wait on I/O again",
-          "url": "https://blog.cloudflare.com/workers-pricing-scale-to-zero/",
-          "source": "blog.cloudflare.com"
-        },
-        {
-          "title": "Which Cloudflare Services Are Free? (2025 Free Tier Guide) - DEV Community",
-          "url": "https://dev.to/ioniacob/which-cloudflare-services-are-free-2025-free-tier-guide-53jl",
-          "source": "dev.to"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1257-ko-tech-M3-맥북에어-16GB-ollama-",
       "keyword": "M3 맥북에어 16GB ollama llama3.2 한국어 토큰 생성 속도 실측 GPT-4o-mini 비교 2025",
       "category": "tech",
@@ -7926,102 +7862,6 @@
       "completed_at": "2026-03-17T11:09:40.453314+00:00"
     },
     {
-      "id": "1260-ko-tech-GitHub-Actions-Hugo-",
-      "keyword": "GitHub Actions Hugo 블로그 Cloudflare Pages 자동 배포 cron 트리거 미작동 원인 해결",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-17T07:56:06.980825",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo + Cloudflare Pages 조합에서 GitHub Actions cron 스케줄이 예약된 시간에 실행되지 않는 문제를 겪는 블로거",
-      "angle": "cron 미작동 원인 3가지(레포 비활성화 정책·타임존 오해·워크플로우 큐 지연) 실험으로 확인 후 해결책 제시",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Scheduled Builds for Cloudflare Deployments with GitHub Actions | BEN ABT",
-          "url": "https://benjamin-abt.com/blog/2025/07/14/scheduled-builds-cloudflare-github-actions/",
-          "source": "benjamin-abt.com"
-        },
-        {
-          "title": "Scheduled Publishing with GitHub Actions Every 3 Hours | Codeslog",
-          "url": "https://www.codeslog.com/en/posts/github-actions-scheduled-publish-check/",
-          "source": "www.codeslog.com"
-        },
-        {
-          "title": "Hugo 블로그 만들기 - Git Submodule로 구성하고 배포하기",
-          "url": "https://minyeamer.github.io/blog/hugo-blog-1/",
-          "source": "minyeamer.github.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1261-ko-tech-Claude-API-스트리밍-응답-N",
-      "keyword": "Claude API 스트리밍 응답 Next.js App Router Server Action 구현 토큰 중간 끊김 디버깅",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-17T07:56:06.980856",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Next.js App Router에서 Claude API 스트리밍을 구현했는데 토큰이 중간에 끊기거나 지연되는 문제를 해결하려는 개발자",
-      "angle": "Server Action vs Route Handler 스트리밍 차이 실험 + ReadableStream 버퍼 설정 코드 완성본 제공",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "nextjs-reviewer skill by physics91/claude-vibe",
-          "url": "https://playbooks.com/skills/physics91/claude-vibe/nextjs-reviewer",
-          "source": "playbooks.com"
-        },
-        {
-          "title": "Routing: API Routes | Next.js",
-          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
-          "source": "nextjs.org"
-        },
-        {
-          "title": "Next.js App Router 인증 실전 가이드 — 미들웨어, Server Action, HttpOnly 쿠키, SSR 인증 완전 정복 | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/architecture/2026-03-08-sso-cookie-jwt-auth-nextjs",
-          "source": "www.youngju.dev"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1262-ko-tech-Docker-Compose-Prome",
-      "keyword": "Docker Compose Prometheus Grafana 단일 서버 RAM 1GB 메모리 최적화 설정 실전 기록",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-17T07:56:06.980889",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "RAM 1GB짜리 저사양 VPS에서 Prometheus + Grafana를 Docker Compose로 돌릴 때 OOM 없이 운영하는 설정을 찾는 개발자",
-      "angle": "기본 설정 OOM 재현 → retention 기간·스크레이프 간격·Grafana 플러그인 제거로 메모리 사용량 60% 감소 실측",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "TimescaleDB Time-Series Stack Docker Compose - Ready to Deploy | Docker Recipes",
-          "url": "https://docker.recipes/databases/timescaledb-stack",
-          "source": "docker.recipes"
-        },
-        {
-          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
-          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
-          "source": "railly-linker.tistory.com"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1263-ko-tech-Vercel-무료-플랜-함수-실행-시",
       "keyword": "Vercel 무료 플랜 함수 실행 시간 10초 초과 OpenAI API 타임아웃 Edge Runtime 우회 전략",
       "category": "tech",
@@ -8054,6 +7894,429 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-17T10:52:57.914772+00:00",
       "completed_at": "2026-03-17T11:12:07.407198+00:00"
+    },
+    {
+      "id": "1264-ko-tech-Mistral-Forge-파인튜닝-서",
+      "keyword": "Mistral Forge 파인튜닝 서비스 국내 개발자 OpenAI 대비 비용 성능 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490716",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 모델을 직접 파인튜닝하거나 기업 내부 데이터로 커스텀 LLM을 구축하려는 한국 개발자·스타트업이 비용·성능 차이를 비교하려는 목적",
+      "angle": "Mistral Forge vs OpenAI Fine-tuning vs AWS Bedrock 커스터마이징 — 한국 스타트업 관점에서 실제 비용 계산과 도입 가능성 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Mistral bets on ‘build-your-own AI’ as it takes on OpenAI, Anthropic in the enterprise | TechCrunch",
+          "url": "https://techcrunch.com/2026/03/17/mistral-forge-nvidia-gtc-build-your-own-ai-enterprise/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "Introducing Mistral Forge - YouTube",
+          "url": "https://www.youtube.com/watch?v=fAYznrUzFHY",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1265-en-tech-claude-api-context-w",
+      "keyword": "claude api context window cost optimization chunking strategy real benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490809",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API 비용이 예상보다 많이 나와 청크 전략을 최적화하려는 개발자",
+      "angle": "청크 사이즈 512 / 1024 / 2048 토큰별 API 비용 vs 검색 품질 실측 비교표 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "What Claude's 1M Token Context Window Means for WordPress Developers - Atto WP",
+          "url": "https://attowp.com/wordpress-development/claude-1m-context-window-wordpress-developers/",
+          "source": "attowp.com"
+        },
+        {
+          "title": "Claude Opus 4.6: 1M Context Window GA — Developer Guide (March 2026) | Karan Goyal",
+          "url": "https://karangoyal.cc/blog/claude-opus-4-6-1m-context-window-guide",
+          "source": "karangoyal.cc"
+        },
+        {
+          "title": "Tutorial: Claude 1M Context Window & Context Rot - Marketing Agent Blog",
+          "url": "https://marketingagent.blog/2026/03/14/tutorial-claude-1m-context-window-context-rot/",
+          "source": "marketingagent.blog"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1266-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed M2 MacBook 8GB RAM actual test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490849",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "8GB RAM Mac에서 어떤 모델 크기가 실사용 가능한지 판단하려는 사용자",
+      "angle": "토큰/초 속도, 메모리 점유율, 한국어 품질을 동일 환경에서 직접 측정한 결과 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best Local LLMs for Mac in 2026 — M1, M2, M3, M4 Tested | InsiderLLM",
+          "url": "https://insiderllm.com/guides/best-local-llms-mac-2026/",
+          "source": "insiderllm.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1267-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 qemu build timeout fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490886",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ARM64 이미지 빌드 중 QEMU 에뮬레이션 타임아웃으로 CI가 실패하는 문제를 해결하려는 DevOps",
+      "angle": "buildx native ARM runner 전환으로 빌드 시간 70% 단축한 실전 설정 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to build Multi-Arch Docker Images using GitHub Runners",
+          "url": "https://www.sredevops.org/en/kiss-goodbye-to-qemu-unleash-the-power-of-native-github-runners-for-multi-arch-docker-images/",
+          "source": "www.sredevops.org"
+        },
+        {
+          "title": "GitHub Actions Self-Hosted Runner: The Complete Practical Guide (2025 Edition) - DevOps Tooling",
+          "url": "https://thedevopstooling.com/github-actions-self-hosted-runner/",
+          "source": "thedevopstooling.com"
+        },
+        {
+          "title": "Your GitHub Actions Runners Are Slow And You Are Paying Too Much For Them.",
+          "url": "https://akhileshmishra.substack.com/p/your-github-actions-runners-are-slow",
+          "source": "akhileshmishra.substack.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1268-en-tech-supabase-vs-planetsc",
+      "keyword": "supabase vs planetscale vs neon serverless postgres cold start latency comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490912",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "서버리스 DB 선택 시 콜드 스타트 지연이 실제 UX에 미치는 영향을 알고 싶은 개발자",
+      "angle": "동일한 Next.js API Route에서 세 서비스의 콜드 스타트 응답 시간을 100회 측정한 실험 결과",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Serverless PostgreSQL 2025: The Truth About Supabase, Neon, and PlanetScale - DEV Community",
+          "url": "https://dev.to/dataformathub/serverless-postgresql-2025-the-truth-about-supabase-neon-and-planetscale-7lf",
+          "source": "dev.to"
+        },
+        {
+          "title": "Supabase vs PlanetScale vs Neon: The Best Serverless ...",
+          "url": "https://getsabo.com/blog/supabase-vs-neon",
+          "source": "getsabo.com"
+        },
+        {
+          "title": "Best Database Software for Startups and SaaS (2026): A Developer's Guide",
+          "url": "https://makerkit.dev/blog/tutorials/best-database-software-startups",
+          "source": "makerkit.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1269-en-tech-grafana-loki-docker-",
+      "keyword": "grafana loki docker compose single node log ingestion limit small vps setup",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490934",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "월 $6 VPS에서 Loki로 로그 수집 시스템을 구축하려는 1인 개발자",
+      "angle": "RAM 1GB 제약 환경에서 Loki retention 설정과 scrape interval 튜닝으로 OOM 없이 운영하는 방법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Run Loki in Docker and Docker Compose",
+          "url": "https://oneuptime.com/blog/post/2026-01-21-loki-docker-compose/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "5 Grafana in Docker examples to get started with metrics, logs, and traces - Quesma Blog",
+          "url": "https://quesma.com/blog/5-grafana-docker-examples-to-get-started-with-metrics-logs-and-traces/",
+          "source": "quesma.com"
+        },
+        {
+          "title": "Monitoring Stack with Prometheus, Grafana, and Loki using Docker | by Amol Mali | Medium",
+          "url": "https://devopswithamol.medium.com/monitoring-stack-with-prometheus-grafana-and-loki-using-docker-ed3759f0628b",
+          "source": "devopswithamol.medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1270-en-tech-warp-terminal-vs-gho",
+      "keyword": "warp terminal vs ghostty startup time memory usage developer workflow real comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490959",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Ghostty 출시 이후 Warp에서 갈아탈지 고민하는 개발자",
+      "angle": "동일 M3 Mac 환경에서 실행 속도, RAM 점유, AI 기능 실용성을 2주 병행 사용 후 솔직 비교",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1271-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 자동배포 GitHub Actions 빌드 캐시 적용 시간 단축 실전",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.490982",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그 배포 시간이 2분 넘게 걸려 Actions 캐시로 줄이려는 개발자",
+      "angle": "go modules 캐시와 Hugo extended 버전 캐싱으로 빌드 90초 → 18초로 줄인 yaml 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
+          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
+          "source": "www.heyjude.blog"
+        },
+        {
+          "title": "Scheduled Builds for Cloudflare Deployments with GitHub Actions | BEN ABT",
+          "url": "https://benjamin-abt.com/blog/2025/07/14/scheduled-builds-cloudflare-github-actions/",
+          "source": "benjamin-abt.com"
+        },
+        {
+          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
+          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
+          "source": "chriswiegman.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1272-ko-tech-Fly.io-1인-사이드프로젝트-월-",
+      "keyword": "Fly.io 1인 사이드프로젝트 월 실제 청구 금액 무료 한도 초과 경험 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.491000",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 플랜으로 시작했다가 예상치 못한 요금이 나온 사람들의 경험 검색",
+      "angle": "3개월 운영 후 실제 청구서 캡처 포함, 무료 한도 초과 트리거 항목과 절약 설정 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Free Trial started at 9:50AM and ended at 1:21PM (on the same day?) - Questions / Help - Fly.io",
+          "url": "https://community.fly.io/t/free-trial-started-at-9-50am-and-ended-at-1-21pm-on-the-same-day/27216",
+          "source": "community.fly.io"
+        },
+        {
+          "title": "r/nextjs on Reddit: Thoughts on Fly.io?",
+          "url": "https://www.reddit.com/r/nextjs/comments/1o2bu9c/thoughts_on_flyio/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Railway vs Fly.io vs Render: Which Cloud Gives You the Best ROI? | by R. Thompson (PhD) | AI Disrupt",
+          "url": "https://medium.com/ai-disruption/railway-vs-fly-io-vs-render-which-cloud-gives-you-the-best-roi-2e3305399e5b",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1273-ko-tech-ollama-gemma3-4b-한국어",
+      "keyword": "ollama gemma3 4b 한국어 코드 생성 GPT-4o-mini 비교 실측 2025 M3 Mac",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.491018",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM으로 코드 작성 보조가 가능한지 GPT 대비 품질을 알고 싶은 개발자",
+      "angle": "동일 20개 코딩 프롬프트를 두 모델에 입력해 정확도·속도·비용(0원 vs 유료)을 표로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ollama(올라마): 로컬에서 LLM(Gemma 3 모델) 실행하기 :: GGRS: Geoscience, GIS, & Remote Sensing",
+          "url": "https://foss4g.tistory.com/2088",
+          "source": "foss4g.tistory.com"
+        },
+        {
+          "title": "Best Ollama Models in 2026 — Top 10 Ranked by Use Case & Hardware - StudyHUB",
+          "url": "https://studyhub.net.in/techtools/best-ollama-models-in-2026-top-10-ranked-by-use-case-hardware/",
+          "source": "studyhub.net.in"
+        },
+        {
+          "title": "Open Code 리뷰(3) : 오픈소스, 무료 및 저가 LLM 모델 활용 해보기 with Ollama, Qwen3, glm4.7, MiniMax M2.1 등 :: 갓대희의 작은공",
+          "url": "https://goddaehee.tistory.com/488",
+          "source": "goddaehee.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1274-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 무중단 배포 blue-green 전환 nginx reload 실전 스크립트",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.491035",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "쿠버네티스 없이 혼자 운영하는 서버에서 다운타임 0으로 배포하고 싶은 개발자",
+      "angle": "nginx upstream 전환 + health check 스크립트 전체 공개, $5 VPS 환경에서 직접 검증",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[CD] 블루/그린 무중단 배포 구현하기 1편 (NGINX/Docker Compose) :: kimyu0218",
+          "url": "https://kimyu0218.tistory.com/55",
+          "source": "kimyu0218.tistory.com"
+        },
+        {
+          "title": "GitHub Actions + Docker + NGINX를 활용한 Blue/Green 무중단 배포 환경 구축 — jwooo's log",
+          "url": "https://jwooo.tistory.com/12",
+          "source": "jwooo.tistory.com"
+        },
+        {
+          "title": "무중단 배포(블루/그린 배포)로 서비스 중단 없이 배포하기 — alstn113's devlog",
+          "url": "https://alstn113.tistory.com/31",
+          "source": "alstn113.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1275-ko-tech-Cursor-AI-에디터-월-$20-",
+      "keyword": "Cursor AI 에디터 월 $20 실제 사용량 토큰 소진 패턴 절약 설정 경험담",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.491052",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor Pro 결제 후 빠른 토큰 소진에 당황해 사용 패턴을 최적화하려는 개발자",
+      "angle": "1달 사용 로그 분석으로 토큰을 가장 많이 소비하는 기능 순위와 slow request 전환 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[AI] Cursor 토큰 소비 구조와 절약 전략 (실사용 경험 기반)",
+          "url": "https://peterica.tistory.com/975",
+          "source": "peterica.tistory.com"
+        },
+        {
+          "title": "디자이너를 위한 Cursor AI 요금제는 무엇일까?",
+          "url": "https://brunch.co.kr/@ghidesigner/283",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "커서 AI 요금 폭탄 방지 가이드",
+          "url": "https://simoncha.tistory.com/102",
+          "source": "simoncha.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1276-ko-tech-Cloudflare-Zero-Trus",
+      "keyword": "Cloudflare Zero Trust SSH 터널 설정 포트 개방 없이 원격 서버 접속 삽질 기록",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.491069",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "22번 포트를 열지 않고 안전하게 VPS에 SSH 접속하는 방법을 찾는 개발자",
+      "angle": "cloudflared daemon 설정부터 브라우저 SSH 접속까지, 막혔던 인증서 오류 해결 과정 포함 전체 흐름",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "🔐 Cloudflare Tunnel, 포트 개방 없이 서버를 외부에 공개하는 방법 :: 메모리허브",
+          "url": "https://memoryhub.tistory.com/entry/Cloudflare-Tunnel-%E2%86%92-%EB%82%B4-PC-%EB%AC%B4%EB%A3%8C-HTTPS-%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9-%EB%B6%88%ED%95%84%EC%9A%94",
+          "source": "memoryhub.tistory.com"
+        },
+        {
+          "title": "드디어 Cloudflare Zero Trust 터널을 이해했다 - RosettaLens 번역",
+          "url": "https://rosettalens.com/s/ko/cloudflare-zero-trust-tunnels",
+          "source": "rosettalens.com"
+        },
+        {
+          "title": "Cloudflare Zero Trust 터널을 이제야 이해했다 | GeekNews",
+          "url": "https://news.hada.io/topic?id=24429",
+          "source": "news.hada.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1277-ko-tech-Supabase-무료-플랜-프로젝트-",
+      "keyword": "Supabase 무료 플랜 프로젝트 일시정지 자동 방지 cron 핑 설정 실전 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-18T07:55:46.491084",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase 무료 DB가 7일 비활성으로 정지되는 문제를 우회하려는 사이드 프로젝트 개발자",
+      "angle": "GitHub Actions cron으로 6일마다 헬스체크 요청 보내는 무료 자동화 설정 yaml 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "백엔드 서버에서 코드로 supabase 서버를 열지않고 활성화 할 수있는 방법 :: bdshi-tec",
+          "url": "https://bidshi-tec.tistory.com/415",
+          "source": "bidshi-tec.tistory.com"
+        },
+        {
+          "title": "Cron | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/cron",
+          "source": "supabase.com"
+        },
+        {
+          "title": "프리티어 Supabase 프로젝트, 자동으로 살려두는 방법 :: Life Journal",
+          "url": "https://inseong1204.tistory.com/183",
+          "source": "inseong1204.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

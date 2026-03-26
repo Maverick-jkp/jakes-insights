@@ -10354,60 +10354,6 @@
       "completed_at": "2026-03-25T11:16:16.758058+00:00"
     },
     {
-      "id": "1360-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge functions cold start latency reduction next.js app router 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-25T07:55:41.800964",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Next.js App Router에서 Supabase Edge Function 콜드 스타트 지연으로 UX가 나빠진 개발자",
-      "angle": "warming 전략·번들 사이즈 최적화·리전 선택으로 응답 시간을 실측 비교한 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1361-en-tech-warp-terminal-vs-gho",
-      "keyword": "warp terminal vs ghostty startup speed plugin compatibility m3 macbook daily use review",
-      "category": "tech",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-03-25T07:55:41.800988",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "M3 MacBook 메인 터미널을 Warp에서 Ghostty로 전환할지 고민하는 개발자",
-      "angle": "30일 실사용 후 시작 속도·플러그인 호환성·AI 기능 유무를 표로 정리한 솔직한 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Best Terminal Emulators 2026: Warp vs Ghostty vs Kitty vs Alacritty vs iTerm2 Compared | DevToolRevi",
-          "url": "https://www.devtoolreviews.com/reviews/best-terminal-emulators-2026",
-          "source": "www.devtoolreviews.com"
-        },
-        {
-          "title": "Warp vs. Ghostty: Finding Your Perfect Terminal Companion - Oreate AI Blog",
-          "url": "https://www.oreateai.com/blog/warp-vs-ghostty-finding-your-perfect-terminal-companion/74906de2912632a733a6d4545f354d7d",
-          "source": "www.oreateai.com"
-        },
-        {
-          "title": "Warp Terminal vs Ghostty: The Ultimate Modern Terminal Guide",
-          "url": "https://apidog.com/blog/warp-terminal/",
-          "source": "apidog.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1362-ko-tech-Fly.io-무료-플랜-Postgre",
       "keyword": "Fly.io 무료 플랜 PostgreSQL 연결 초과 오류 PgBouncer 설정 실전 해결",
       "category": "tech",
@@ -10563,17 +10509,201 @@
       "completed_at": "2026-03-25T11:14:10.695651+00:00"
     },
     {
-      "id": "1367-ko-tech-Prometheus-Grafana-D",
-      "keyword": "Prometheus Grafana Docker Compose 저사양 VPS 2GB 메모리 최적화 설정 실전",
+      "id": "1367-en-tech-EU-Chat-Control-priv",
+      "keyword": "EU Chat Control private message scanning 2026 what developers need to know",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306170",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and privacy-conscious users want to understand the technical implications of EU Chat Control and whether the apps they build or use will be forced to implement client-side scanning backdoors",
+      "angle": "Technical breakdown of what client-side scanning means for encryption integrity, with a comparison of how major messaging platforms would be impacted — framed as a developer's threat model",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Historic Chat Control Vote in the EU Parliament: MEPs Vote to End Untargeted Mass Scanning of Privat",
+          "url": "https://www.patrick-breyer.de/en/historic-chat-control-vote-in-the-eu-parliament-meps-vote-to-end-untargeted-mass-scanning-of-private-chats/",
+          "source": "www.patrick-breyer.de"
+        },
+        {
+          "title": "Major win for privacy? EU chat control hits wall",
+          "url": "https://brusselssignal.eu/2026/03/major-win-for-privacy-eu-chat-control-hits-wall/",
+          "source": "brusselssignal.eu"
+        },
+        {
+          "title": "The EU still wants to scan your private messages and photos | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47522709",
+          "source": "news.ycombinator.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1368-ko-tech-EU-채팅-감시법-암호화-메신저-백도",
+      "keyword": "EU 채팅 감시법 암호화 메신저 백도어 강제 논란",
       "category": "tech",
       "lang": "ko",
-      "priority": 7,
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-03-25T07:55:41.801099",
+      "created_at": "2026-03-26T08:04:07.306207",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "한국 개발자와 테크 유저가 EU의 프라이빗 메시지 스캔 법안이 자신들이 쓰는 앱과 서비스에 실제로 어떤 영향을 미치는지 알고 싶어 검색함",
+      "angle": "해외에서 이미 폭발적 반응을 얻은 EU 채팅 감시법을 국내 개발자 관점에서 재해석 — 엔드투엔드 암호화의 기술적 의미와 백도어 강제 시 국내 서비스 적용 가능성 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "헝가리, 'EU정보 러에 누설' 의혹에 궁지…\"도청당해\" 반박 | 연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20260323174200109",
+          "source": "www.yna.co.kr"
+        },
+        {
+          "title": "‘Pro-Russia’ Hungary is not the only one?···Germany also fears ‘EU information leaks’ to Russia - 경향",
+          "url": "https://www.khan.co.kr/en/article/202603251636007/",
+          "source": "www.khan.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1369-en-tech-claude-api-vs-openai",
+      "keyword": "claude api vs openai api cost per 1000 tokens real use case rag pipeline 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306252",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "RAM 2GB짜리 저렴한 VPS에서 모니터링 스택이 OOM으로 죽는 문제를 해결하려는 개발자",
-      "angle": "scrape_interval·tsdb retention·recording rules 조정으로 메모리 사용량 절반으로 줄인 설정 파일 공개",
+      "search_intent": "RAG 파이프라인 실제 운영 시 Claude와 OpenAI API 비용을 직접 비교한 데이터를 원하는 개발자",
+      "angle": "동일한 RAG 워크로드에 Claude Haiku vs GPT-4o-mini 실제 토큰 소비량과 월 비용 실측 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "LLM API Pricing Comparison (2025): OpenAI, Gemini, Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/llm-api-pricing-comparison-2025",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "AI API Pricing Comparison 2026: OpenAI vs Claude vs Gemini (Real Cost Examples) | Nicola Lazzari",
+          "url": "https://nicolalazzari.ai/articles/ai-api-pricing-comparison-2026",
+          "source": "nicolalazzari.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1370-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner raspberry pi 4 docker build time comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306275",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "라즈베리파이4에서 GitHub Actions 셀프호스티드 러너로 Docker 빌드 시간이 얼마나 걸리는지 궁금한 개발자",
+      "angle": "라즈베리파이4 셀프호스티드 러너 vs GitHub 제공 ubuntu-latest 빌드 시간 실측 + 월 비용 절감 계산",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Use Docker to Set Up a Self-Hosted GitHub Actions Runner in 10 Minutes — LeoTheLegion",
+          "url": "https://leothelegion.net/2025/07/28/use-docker-to-set-up-self-hosted-github-actions-runner-in-10-minutes/",
+          "source": "leothelegion.net"
+        },
+        {
+          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
+          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "r/devops on Reddit: Self-hosted github actions runners - any frameworks for this?",
+          "url": "https://www.reddit.com/r/devops/comments/1l2it6c/selfhosted_github_actions_runners_any_frameworks/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1371-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response quality korean text generation macbook m2 8gb",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306296",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M2 MacBook 8GB RAM에서 llama3.2 3b와 8b의 한국어 생성 품질 차이를 실측한 결과를 찾는 개발자",
+      "angle": "M2 8GB 환경에서 llama3.2 3b/8b 한국어 응답 품질·속도·메모리 점유율 동시 측정 실험",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Top 7 Small Language Models You Can Run on a Laptop - MachineLearningMastery.com",
+          "url": "https://machinelearningmastery.com/top-7-small-language-models-you-can-run-on-a-laptop/",
+          "source": "machinelearningmastery.com"
+        },
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Selecting the Optimal Open-Source Large Language Model for Coding on Apple M3 | by Dzianis Vashchuk ",
+          "url": "https://medium.com/@dzianisv/selecting-the-optimal-open-source-large-language-model-for-coding-on-apple-m3-8d2ba600d8ac",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1372-en-tech-supabase-vs-planetsc",
+      "keyword": "supabase vs planetscale free tier row limit real project migration experience",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306316",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase와 PlanetScale 무료 티어 한도에 실제로 걸려본 경험과 마이그레이션 방법을 찾는 개발자",
+      "angle": "사이드 프로젝트 운영 중 Supabase 무료 한도 초과 경험 → PlanetScale 마이그레이션 삽질 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase vs PlanetScale: Which is Better in 2025",
+          "url": "https://www.leanware.co/insights/supabase-vs-planetscale",
+          "source": "www.leanware.co"
+        },
+        {
+          "title": "Supabase vs Firebase vs PlanetScale: Which Backend-as-a-Service is Right for Your Budget?",
+          "url": "https://www.getmonetizely.com/articles/supabase-vs-firebase-vs-planetscale-which-backend-as-a-service-is-right-for-your-budget",
+          "source": "www.getmonetizely.com"
+        },
+        {
+          "title": "Best Database Tools 2025: Supabase vs Firebase vs PlanetScale [2025] | House of Loops",
+          "url": "https://www.houseofloops.com/blog/best-database-tools-2025",
+          "source": "www.houseofloops.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1373-en-tech-prometheus-grafana-d",
+      "keyword": "prometheus grafana docker compose 2gb ram vps memory tuning scrape interval",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306340",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "2GB RAM VPS에서 Prometheus+Grafana Docker Compose 운영 시 메모리 부족 문제 해결법을 찾는 개발자",
+      "angle": "2GB RAM 단독 VPS에서 Prometheus OOM 없이 운영하기 위한 scrape_interval·retention 실전 튜닝값",
       "competition_level": "low",
       "references": [
         {
@@ -10582,36 +10712,265 @@
           "source": "docker.recipes"
         },
         {
-          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
-          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
-          "source": "seekerslab.com"
-        },
-        {
           "title": "Monitor Docker Containers with Prometheus [Guide]",
           "url": "https://computingforgeeks.com/monitor-docker-containers-prometheus-grafana/",
           "source": "computingforgeeks.com"
+        },
+        {
+          "title": "How to Set Up Prometheus and Grafana on Docker - A Guide | SigNoz",
+          "url": "https://signoz.io/guides/how-to-install-prometheus-and-grafana-on-docker/",
+          "source": "signoz.io"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1368-ko-tech-Next.js-App-Router-S",
-      "keyword": "Next.js App Router Supabase Edge Function 콜드 스타트 지연 줄이는 방법 실측 2025",
+      "id": "1374-en-tech-cloudflare-workers-v",
+      "keyword": "cloudflare workers vs vercel edge functions cold start latency sqlite d1 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306364",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers D1과 Vercel Edge Functions의 실제 콜드 스타트 및 SQLite 쿼리 지연시간 차이를 비교하려는 개발자",
+      "angle": "동일한 SQLite 쿼리 워크로드로 CF Workers D1 vs Vercel Edge + Turso 응답시간 실측 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/webdev on Reddit: Vercel Edge vs Cloudflare Workers: My Benchmarks Show Theo (T3) Might Be Fooling",
+          "url": "https://www.reddit.com/r/webdev/comments/1ntfake/vercel_edge_vs_cloudflare_workers_my_benchmarks/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Serverless Functions: Vercel Edge & Cloudflare Workers Guide",
+          "url": "https://www.digitalapplied.com/blog/serverless-functions-vercel-cloudflare-guide",
+          "source": "www.digitalapplied.com"
+        },
+        {
+          "title": "Post-PostgreSQL: Is SQLite on the Edge Production Ready?",
+          "url": "https://www.sitepoint.com/sqlite-edge-production-readiness-2026/",
+          "source": "www.sitepoint.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1375-ko-tech-M3-맥북-16GB-ollama-mi",
+      "keyword": "M3 맥북 16GB ollama mistral 7b 한국어 토큰 생성 속도 실측 GPT-4o-mini 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306384",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 16GB에서 ollama mistral 7b 한국어 응답 속도가 GPT-4o-mini와 얼마나 차이 나는지 실측값을 원하는 개발자",
+      "angle": "M3 Pro 16GB 환경에서 mistral 7b 로컬 실행 시 초당 토큰 수·체감 품질을 GPT-4o-mini API와 나란히 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Open Code 리뷰(3) : 오픈소스, 무료 및 저가 LLM 모델 활용 해보기 with Ollama, Qwen3, glm4.7, MiniMax M2.1 등 :: 대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/488",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "Choosing the Best Ollama Model for Your Coding Projects: A 2025 Developer's Guide | CodeGPT",
+          "url": "https://www.codegpt.co/blog/choosing-best-ollama-model",
+          "source": "www.codegpt.co"
+        },
+        {
+          "title": "Best Local LLM Models 2026 | Developer Comparison",
+          "url": "https://www.sitepoint.com/best-local-llm-models-2026/",
+          "source": "www.sitepoint.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1376-ko-tech-1인-개발자-사이드-프로젝트-월-5달",
+      "keyword": "1인 개발자 사이드 프로젝트 월 5달러 이하 인프라 Fly.io Supabase Cloudflare 실제 구성",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306402",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "1인 개발자가 사이드 프로젝트를 월 $5 이하로 운영하는 실제 스택 구성을 알고 싶은 개발자",
+      "angle": "실제 운영 중인 사이드 프로젝트의 Fly.io+Supabase+Cloudflare 조합 월 청구서 공개 + 선택 이유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase CLI | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/local-development/cli/getting-started",
+          "source": "supabase.com"
+        },
+        {
+          "title": "SDK님과 개발자님은 뭘 만드시는 건지",
+          "url": "https://damoang.net/free/4218526",
+          "source": "damoang.net"
+        },
+        {
+          "title": "AI 시대, 오픈소스 백엔드의 강자 Supabase",
+          "url": "https://brunch.co.kr/@ywkim36/188",
+          "source": "brunch.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1377-ko-tech-GitHub-Actions-Hugo-",
+      "keyword": "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 스케줄 무시될 때 해결법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306420",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그 자동배포 GitHub Actions cron이 예약대로 실행되지 않는 문제를 해결하려는 개발자",
+      "angle": "GitHub Actions cron이 비활성 저장소에서 스킵되는 원인 분석 + Hugo+Cloudflare Pages 환경에서 우회 설정 실전 적용",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Scheduled Builds for Cloudflare Deployments with GitHub Actions | BEN ABT",
+          "url": "https://benjamin-abt.com/blog/2025/07/14/scheduled-builds-cloudflare-github-actions/",
+          "source": "benjamin-abt.com"
+        },
+        {
+          "title": "Scheduled Publishing with GitHub Actions Every 3 Hours | Codeslog",
+          "url": "https://www.codeslog.com/en/posts/github-actions-scheduled-publish-check/",
+          "source": "www.codeslog.com"
+        },
+        {
+          "title": "Hugo 블로그 만들기 - Git Submodule로 구성하고 배포하기",
+          "url": "https://minyeamer.github.io/blog/hugo-blog-1/",
+          "source": "minyeamer.github.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1378-ko-tech-Claude-API-RAG-청크-사이",
+      "keyword": "Claude API RAG 청크 사이즈 512 vs 1024 토큰 검색 정확도 실험 한국어 문서 기준",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306437",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API로 한국어 문서 RAG 구현 시 청크 사이즈에 따라 검색 정확도가 어떻게 달라지는지 실험 결과를 원하는 개발자",
+      "angle": "한국어 기술 문서 대상으로 청크 512/1024/2048 토큰별 recall@5 수치 실험 + Claude Haiku 비용 대비 정확도 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "Claude Code 1M Context 설정 가이드 - beta header 없이 자동 활성화 하기(Claude Code 1M Context 정식 출시) :: 갓대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/547",
+          "source": "goddaehee.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1379-ko-tech-Docker-Desktop-Mac-메",
+      "keyword": "Docker Desktop Mac 메모리 사용량 줄이기 VirtioFS 설정 M2 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306454",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Mac M2에서 Docker Desktop이 RAM을 과도하게 사용할 때 VirtioFS 등 설정으로 줄이는 방법을 찾는 개발자",
+      "angle": "Docker Desktop 4.x VirtioFS vs gRPC FUSE 전환 전후 M2 Mac 메모리 점유량 실측 + 권장 설정값 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "√ Containerize Your Workflow: Docker Desktop for Mac Complete Installation and Performance Guide - A",
+          "url": "https://www.applerepo.com/containerize-your-workflow-docker-desktop-for-mac-complete-installation-and-performance-guide/",
+          "source": "www.applerepo.com"
+        },
+        {
+          "title": "Docker Desktop 메모리 과부하 방지하는 방법 feat. WSL2 :: SWMAD",
+          "url": "https://swmad.tistory.com/16",
+          "source": "swmad.tistory.com"
+        },
+        {
+          "title": "맥 메모리 정리 방법, 맥 RAM 확보 및 메모리 사용량 줄이기 :: Tenorshare 4DDiG Korea",
+          "url": "https://4ddigkorea.tistory.com/537",
+          "source": "4ddigkorea.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1380-ko-tech-Vercel-무료-플랜-Next.js",
+      "keyword": "Vercel 무료 플랜 Next.js 서버리스 함수 실행시간 10초 한도 우회 실전 경험",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-03-25T07:55:41.801117",
+      "created_at": "2026-03-26T08:04:07.306469",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Supabase Edge Function 콜드 스타트로 인한 첫 응답 지연을 해결하려는 Next.js 개발자",
-      "angle": "번들 최적화·리전 근접화·워밍 요청 전략 적용 전후 응답 시간 실측 비교 및 코드 예시 제공",
+      "search_intent": "Vercel 무료 플랜에서 Next.js API Route 10초 제한에 걸렸을 때 해결법을 찾는 개발자",
+      "angle": "Vercel Hobby 플랜 10초 타임아웃 실제 경험 → Edge Runtime 전환·외부 큐 분리·Fly.io 이전 세 가지 옵션 비용·복잡도 비교",
       "competition_level": "low",
       "references": [
         {
-          "title": "Use Supabase with Next.js | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
-          "source": "supabase.com"
+          "title": "Vercel을 이용한 무료 웹 배포 이용해보기",
+          "url": "https://allinfor.tistory.com/76",
+          "source": "allinfor.tistory.com"
+        },
+        {
+          "title": "Vercel 가이드: 정의·활용법·비교·요금제까지 :: 인생살이도서관",
+          "url": "https://wirteandhobby.tistory.com/282",
+          "source": "wirteandhobby.tistory.com"
+        },
+        {
+          "title": "2025년 무료 웹 호스팅 완벽 가이드: Next.js, WordPress, Python ⋆ Blog * JackerLab",
+          "url": "https://blog.jackerlab.com/free-web-hosting-guide-nextjs-wordpress-python-2025/",
+          "source": "blog.jackerlab.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1381-ko-tech-Tailscale-개인-VPN-홈-서",
+      "keyword": "Tailscale 개인 VPN 홈 서버 원격 개발 환경 구성 VS Code Remote SSH 실전 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-26T08:04:07.306485",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Tailscale로 홈 서버에 VS Code Remote SSH 원격 개발 환경을 구성하는 실전 방법을 찾는 개발자",
+      "angle": "Tailscale 무료 플랜으로 홈 미니PC를 원격 개발 서버로 만드는 전체 과정 + 포트포워딩 없이 VS Code SSH 연결 삽질 해결",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Tailscale 가이드 - 안전한 매쉬 VPN 활용법 :: devopslog",
+          "url": "https://devopslog.tistory.com/169",
+          "source": "devopslog.tistory.com"
+        },
+        {
+          "title": "Visual Studio Code Remote - SSH 설정 방법: 원격 개발 환경 구축하기 | WP",
+          "url": "https://wp.ecomong.net/visual-studio-code-remote-ssh-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/",
+          "source": "wp.ecomong.net"
+        },
+        {
+          "title": "Tailscale로 어디서든 내 기기에 안전하게 접속하기 | Engineering Blog by Dale Seo",
+          "url": "https://daleseo.com/tailscale/",
+          "source": "daleseo.com"
         }
       ],
       "content_type_hint": "GUIDE"

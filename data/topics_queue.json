@@ -10603,38 +10603,6 @@
       "completed_at": "2026-03-26T11:00:06.732484+00:00"
     },
     {
-      "id": "1370-en-tech-github-actions-self-",
-      "keyword": "github actions self-hosted runner raspberry pi 4 docker build time comparison",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-26T08:04:07.306275",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "라즈베리파이4에서 GitHub Actions 셀프호스티드 러너로 Docker 빌드 시간이 얼마나 걸리는지 궁금한 개발자",
-      "angle": "라즈베리파이4 셀프호스티드 러너 vs GitHub 제공 ubuntu-latest 빌드 시간 실측 + 월 비용 절감 계산",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Use Docker to Set Up a Self-Hosted GitHub Actions Runner in 10 Minutes — LeoTheLegion",
-          "url": "https://leothelegion.net/2025/07/28/use-docker-to-set-up-self-hosted-github-actions-runner-in-10-minutes/",
-          "source": "leothelegion.net"
-        },
-        {
-          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
-          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "r/devops on Reddit: Self-hosted github actions runners - any frameworks for this?",
-          "url": "https://www.reddit.com/r/devops/comments/1l2it6c/selfhosted_github_actions_runners_any_frameworks/",
-          "source": "www.reddit.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1371-en-tech-ollama-llama3.2-3b-v",
       "keyword": "ollama llama3.2 3b vs 8b response quality korean text generation macbook m2 8gb",
       "category": "tech",
@@ -10701,38 +10669,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-26T10:53:04.754937+00:00",
       "completed_at": "2026-03-26T11:13:02.403020+00:00"
-    },
-    {
-      "id": "1373-en-tech-prometheus-grafana-d",
-      "keyword": "prometheus grafana docker compose 2gb ram vps memory tuning scrape interval",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-26T08:04:07.306340",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "2GB RAM VPS에서 Prometheus+Grafana Docker Compose 운영 시 메모리 부족 문제 해결법을 찾는 개발자",
-      "angle": "2GB RAM 단독 VPS에서 Prometheus OOM 없이 운영하기 위한 scrape_interval·retention 실전 튜닝값",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
-          "url": "https://docker.recipes/monitoring/prometheus-grafana",
-          "source": "docker.recipes"
-        },
-        {
-          "title": "Monitor Docker Containers with Prometheus [Guide]",
-          "url": "https://computingforgeeks.com/monitor-docker-containers-prometheus-grafana/",
-          "source": "computingforgeeks.com"
-        },
-        {
-          "title": "How to Set Up Prometheus and Grafana on Docker - A Guide | SigNoz",
-          "url": "https://signoz.io/guides/how-to-install-prometheus-and-grafana-on-docker/",
-          "source": "signoz.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1374-en-tech-cloudflare-workers-v",
@@ -10900,97 +10836,474 @@
       "completed_at": "2026-03-26T11:10:45.164921+00:00"
     },
     {
-      "id": "1379-ko-tech-Docker-Desktop-Mac-메",
-      "keyword": "Docker Desktop Mac 메모리 사용량 줄이기 VirtioFS 설정 M2 실측 비교 2025",
+      "id": "1379-en-tech-LiteLLM-supply-chain",
+      "keyword": "LiteLLM supply chain attack developer response guide",
       "category": "tech",
-      "lang": "ko",
-      "priority": 8,
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-03-26T08:04:07.306454",
+      "created_at": "2026-03-27T08:02:00.841473",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Mac M2에서 Docker Desktop이 RAM을 과도하게 사용할 때 VirtioFS 등 설정으로 줄이는 방법을 찾는 개발자",
-      "angle": "Docker Desktop 4.x VirtioFS vs gRPC FUSE 전환 전후 M2 Mac 메모리 점유량 실측 + 권장 설정값 정리",
+      "keyword_type": "trend",
+      "search_intent": "Developers using LiteLLM in production are urgently searching for what the attack vector was, whether they are affected, and how to audit or remediate their environment",
+      "angle": "Incident post-mortem + actionable hardening checklist — framed as 'what the first responder learned so you don't have to find out the hard way'",
       "competition_level": "low",
       "references": [
         {
-          "title": "√ Containerize Your Workflow: Docker Desktop for Mac Complete Installation and Performance Guide - A",
-          "url": "https://www.applerepo.com/containerize-your-workflow-docker-desktop-for-mac-complete-installation-and-performance-guide/",
-          "source": "www.applerepo.com"
+          "title": "LiteLLM Supply Chain Attack: What Happened, Who's Affected, and What You Should Do Right Now - Comet",
+          "url": "https://www.comet.com/site/blog/litellm-supply-chain-attack/",
+          "source": "www.comet.com"
         },
         {
-          "title": "Docker Desktop 메모리 과부하 방지하는 방법 feat. WSL2 :: SWMAD",
-          "url": "https://swmad.tistory.com/16",
-          "source": "swmad.tistory.com"
+          "title": "Supply Chain Attack in litellm 1.82.8 on PyPI",
+          "url": "https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/",
+          "source": "futuresearch.ai"
         },
         {
-          "title": "맥 메모리 정리 방법, 맥 RAM 확보 및 메모리 사용량 줄이기 :: Tenorshare 4DDiG Korea",
-          "url": "https://4ddigkorea.tistory.com/537",
-          "source": "4ddigkorea.tistory.com"
+          "title": "How GitGuardian Enables Rapid Response to the LiteLLM Supply Chain Attack",
+          "url": "https://blog.gitguardian.com/litellm-supply-chain-attack/",
+          "source": "blog.gitguardian.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1380-ko-tech-LiteLLM-악성코드-공격-AI-개",
+      "keyword": "LiteLLM 악성코드 공격 AI 개발 환경 보안 점검",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841517",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "LiteLLM을 프로젝트에 쓰고 있거나 AI API 래퍼 라이브러리를 사용 중인 국내 개발자가 '나도 영향받나'를 가장 먼저 검색하며, 한국어로 정리된 대응 가이드가 전무한 공백을 공략",
+      "angle": "해외 실제 사고 대응 타임라인을 한국 개발자 시각으로 재구성 — 'AI 툴체인 신뢰 = 새로운 공격 표면'이라는 인식 전환 유도",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1381-en-tech-ollama-llama3.2-resp",
+      "keyword": "ollama llama3.2 response speed benchmark M3 MacBook 16GB RAM 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841576",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 ollama llama3.2 실제 토큰 속도가 얼마나 나오는지 실측 수치 확인",
+      "angle": "직접 M3 MacBook 16GB에서 llama3.2 3B/8B 모델별 토큰/초 실측 후 GPT-4o-mini와 응답 품질 비교표 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Reach native speed with MacOS llama.cpp container inference | Red Hat Developer",
+          "url": "https://developers.redhat.com/articles/2025/09/18/reach-native-speed-macos-llamacpp-container-inference",
+          "source": "developers.redhat.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1380-ko-tech-Vercel-무료-플랜-Next.js",
-      "keyword": "Vercel 무료 플랜 Next.js 서버리스 함수 실행시간 10초 한도 우회 실전 경험",
+      "id": "1382-en-tech-Claude-API-streaming",
+      "keyword": "Claude API streaming response Next.js App Router edge runtime timeout fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841618",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js App Router에서 Claude API 스트리밍 응답이 edge runtime에서 타임아웃 나는 문제 해결책 탐색",
+      "angle": "Edge runtime 30초 제한 우회 방법, Node runtime 전환 트레이드오프, 실제 에러 로그와 함께 단계별 픽스 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Routing: API Routes | Next.js",
+          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
+          "source": "nextjs.org"
+        },
+        {
+          "title": "How to Fix 'API Route' Timeout Errors in Next.js",
+          "url": "https://oneuptime.com/blog/post/2026-01-24-fix-api-route-timeout-errors-nextjs/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1383-en-tech-Fly.io-free-tier-vs-",
+      "keyword": "Fly.io free tier vs Railway free tier hobby project actual monthly cost breakdown 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841658",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "소규모 사이드 프로젝트 배포 시 Fly.io와 Railway 중 실제로 어디가 더 저렴한지 구체적 비용 비교",
+      "angle": "동일 Node.js API 서버를 양쪽에 배포 후 1개월 실제 청구서 기반 비용 상세 분석, 숨겨진 과금 항목 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cost Management on Fly.io · Fly Docs",
+          "url": "https://fly.io/docs/about/cost-management/",
+          "source": "fly.io"
+        },
+        {
+          "title": "Top 6 Fly.io alternatives in 2026 | Blog — Northflank",
+          "url": "https://northflank.com/blog/flyio-alternatives",
+          "source": "northflank.com"
+        },
+        {
+          "title": "What Is Fly.io? Complete Guide to Deployment, Pricing, and Limitations in 2026 • Kuberns",
+          "url": "https://kuberns.com/blogs/post/what-is-flyio/",
+          "source": "kuberns.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1384-en-tech-Prometheus-scrape-in",
+      "keyword": "Prometheus scrape interval 15s vs 30s memory usage difference single VPS 1GB RAM",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841696",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Prometheus 스크랩 간격 설정이 메모리에 미치는 실제 영향 수치 파악",
+      "angle": "1GB RAM VPS에서 15s/30s/60s 스크랩 간격별 Prometheus 메모리 점유율 실측 비교 및 최적 설정값 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Configure Prometheus Scrape Intervals and Timeout Tuning",
+          "url": "https://oneuptime.com/blog/post/2026-02-09-prometheus-scrape-intervals-tuning/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Understanding and optimizing resource consumption in Prometheus | Tech blog | Palark",
+          "url": "https://palark.com/blog/prometheus-resource-consumption-optimization/",
+          "source": "palark.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1385-en-tech-GitHub-Actions-self-",
+      "keyword": "GitHub Actions self-hosted runner Docker container ARM64 M-series Mac setup pitfalls",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841732",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M시리즈 맥에서 Docker 기반 GitHub Actions self-hosted runner 설정 시 ARM64 아키텍처 문제 해결",
+      "angle": "실제 설정 중 마주친 amd64/arm64 이미지 호환 오류, qemu 설정, 멀티 아키텍처 빌드 삽질 과정 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Using Github's self-hosted runners",
+          "url": "https://meyer-laurent.com/using-github-self-hosted-runners",
+          "source": "meyer-laurent.com"
+        },
+        {
+          "title": "r/github on Reddit: What's the best way to create macOS self-hosted runners for GitHub?",
+          "url": "https://www.reddit.com/r/github/comments/1kopu1y/whats_the_best_way_to_create_macos_selfhosted/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
+          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1386-en-tech-RAG-chunk-size-512-v",
+      "keyword": "RAG chunk size 512 vs 1024 retrieval accuracy test LangChain Chroma local embedding 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841777",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 구현 시 청크 사이즈가 검색 정확도에 미치는 영향을 실험한 결과 데이터 탐색",
+      "angle": "동일 문서셋에 청크 256/512/1024 적용 후 질문 20개 기준 정답률 직접 측정, Chroma 로컬 환경 재현 가능한 코드 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Optimizing RAG Chunk Size: Your Definitive Guide to Better Retrieval Accuracy - machinelearningplus",
+          "url": "https://machinelearningplus.com/gen-ai/optimizing-rag-chunk-size-your-definitive-guide-to-better-retrieval-accuracy/",
+          "source": "machinelearningplus.com"
+        },
+        {
+          "title": "Best Chunking Strategies for RAG in 2025",
+          "url": "https://www.firecrawl.dev/blog/best-chunking-strategies-rag",
+          "source": "www.firecrawl.dev"
+        },
+        {
+          "title": "Document Chunking for RAG: 9 Strategies Tested (70% Accuracy Boost 2025) | LLM Practical Experience ",
+          "url": "https://langcopilot.com/posts/2025-10-11-document-chunking-for-rag-practical-guide",
+          "source": "langcopilot.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1387-en-tech-Cloudflare-Workers-K",
+      "keyword": "Cloudflare Workers KV vs D1 database latency comparison small SaaS read-heavy workload",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841815",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers에서 읽기 위주 소규모 SaaS 구축 시 KV와 D1 중 레이턴시/비용 측면 적합한 선택 탐색",
+      "angle": "동일 read-heavy 시나리오에서 KV vs D1 실제 응답 지연 측정, 월 요청 100만건 기준 비용 시뮬레이션 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Databases Compared: Cloudflare D1/KV/Durable Objects vs DynamoDB vs Cosmos DB vs Firestore",
+          "url": "https://inventivehq.com/blog/cloudflare-d1-kv-vs-dynamodb-vs-cosmos-db-vs-firestore-edge-databases",
+          "source": "inventivehq.com"
+        },
+        {
+          "title": "r/CloudFlare on Reddit: D1 hitting 5M daily limit despite 30-day cache - Workers architecture questi",
+          "url": "https://www.reddit.com/r/CloudFlare/comments/1q0h8cv/d1_hitting_5m_daily_limit_despite_30day_cache/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1388-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 답변 품질 GPT-4o-mini 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841845",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM으로 한국어 작업이 실제로 가능한지, GPT-4o-mini 대비 품질 차이가 얼마나 나는지 수치로 확인",
+      "angle": "번역, 요약, 코드 설명 3가지 한국어 태스크에서 llama3.2 8B vs GPT-4o-mini 직접 품질 점수 비교표 및 비용 절감 계산",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "올라마 v0.10.0 소개 및 한국어 지원 LLM모델",
+          "url": "https://brunch.co.kr/@b2439ea8fc654b8/92",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "[AI] Llama 3 설치 / llama 3.2 Bllossom 3B gguf 한국어 모델 사용하기 — seulll",
+          "url": "https://seulow-down.tistory.com/357",
+          "source": "seulow-down.tistory.com"
+        },
+        {
+          "title": "Best Small Language Models (March 2026): Run AI on 4GB RAM — Phi-4, Gemma 3, Qwen 3 | Local AI Maste",
+          "url": "https://localaimaster.com/blog/small-language-models-guide-2026",
+          "source": "localaimaster.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1389-ko-tech-Claude-API-한국어-RAG-구",
+      "keyword": "Claude API 한국어 RAG 구현 청크 분리 기준 조사 결과 실험 LangChain 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841873",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 RAG 구현 시 영어 기준 청크 설정을 그대로 써도 되는지, 한국어에 최적화된 청크 사이즈가 따로 있는지 확인",
+      "angle": "한국어 문서 특성(문장 길이, 조사 처리)을 고려한 청크 전략 실험 결과, 영어 기준 설정 대비 검색 정확도 차이 데이터 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "7. LangChain 커스텀 함수 구현 샘플 모음 - RAG + LangChain 전 단계",
+          "url": "https://devspoon.tistory.com/394",
+          "source": "devspoon.tistory.com"
+        },
+        {
+          "title": "제 3장 : API 정보 파악 :: 무작정 걷기",
+          "url": "https://junsik-hwang.tistory.com/126",
+          "source": "junsik-hwang.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1390-ko-tech-1인-개발자-사이드-프로젝트-월-10",
+      "keyword": "1인 개발자 사이드 프로젝트 월 10달러 이하 인프라 Fly.io Docker Compose 실제 비용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841902",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 최소 비용으로 운영 중인 사람의 실제 인프라 구성과 월 비용 확인",
+      "angle": "실제 운영 중인 프로젝트 기준 Fly.io + Cloudflare + Supabase free tier 조합으로 월 $8 이하 인프라 구성 방법 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cursor 2.0 가격 가이드: Free, Pro, Enterprise 플랜 전격 비교 분석 - Skywork ai",
+          "url": "https://skywork.ai/blog/vibecoding/cursor-2-0-pricing-ko/",
+          "source": "skywork.ai"
+        },
+        {
+          "title": "취준생&주니어 개발자를 위한 사이드 프로젝트 플랫폼 추천 - 코드잇 블로그",
+          "url": "https://sprint.codeit.kr/blog/%EC%B7%A8%EC%A4%80%EC%83%9D%EC%A3%BC%EB%8B%88%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%B6%94%EC%B2%9C",
+          "source": "sprint.codeit.kr"
+        },
+        {
+          "title": "도커 컨테이너 5분 만에 무료로 배포하기(feat. fly.io) - 44BITS",
+          "url": "https://www.44bits.io/ko/post/docker-container-deploy-in-5-minitues-with-fly-io",
+          "source": "www.44bits.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1391-ko-tech-Hugo-블로그-Cloudflare-",
+      "keyword": "Hugo 블로그 Cloudflare Pages 자동배포 GitHub Actions cron 트리거 작동 안 할 때 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.841930",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo + Cloudflare Pages 환경에서 GitHub Actions cron이 예약대로 실행되지 않는 문제의 원인과 해결법 탐색",
+      "angle": "GitHub Actions cron 지연 이슈 공식 설명, repository 비활성화 시 cron 중단 조건, 실제 workaround 3가지 방법 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Scheduled Publishing with GitHub Actions Every 3 Hours | Codeslog",
+          "url": "https://www.codeslog.com/en/posts/github-actions-scheduled-publish-check/",
+          "source": "www.codeslog.com"
+        },
+        {
+          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
+          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
+          "source": "chriswiegman.com"
+        },
+        {
+          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
+          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
+          "source": "www.caktusgroup.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1392-ko-tech-Supabase-Row-Level-S",
+      "keyword": "Supabase Row Level Security 설정 실수 사례 Next.js API 데이터 노출 방지 실전 체크리스트",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-03-26T08:04:07.306469",
+      "created_at": "2026-03-27T08:02:00.841960",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료 플랜에서 Next.js API Route 10초 제한에 걸렸을 때 해결법을 찾는 개발자",
-      "angle": "Vercel Hobby 플랜 10초 타임아웃 실제 경험 → Edge Runtime 전환·외부 큐 분리·Fly.io 이전 세 가지 옵션 비용·복잡도 비교",
+      "search_intent": "Supabase RLS를 Next.js 프로젝트에 적용할 때 자주 하는 설정 실수와 보안 취약점 방지 방법 탐색",
+      "angle": "RLS 미적용 상태로 배포된 실제 사례 패턴 분석, anon key vs service_role key 혼용 위험, 체크리스트 형태로 정리",
       "competition_level": "low",
       "references": [
         {
-          "title": "Vercel을 이용한 무료 웹 배포 이용해보기",
-          "url": "https://allinfor.tistory.com/76",
-          "source": "allinfor.tistory.com"
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
         },
         {
-          "title": "Vercel 가이드: 정의·활용법·비교·요금제까지 :: 인생살이도서관",
-          "url": "https://wirteandhobby.tistory.com/282",
-          "source": "wirteandhobby.tistory.com"
-        },
-        {
-          "title": "2025년 무료 웹 호스팅 완벽 가이드: Next.js, WordPress, Python ⋆ Blog * JackerLab",
-          "url": "https://blog.jackerlab.com/free-web-hosting-guide-nextjs-wordpress-python-2025/",
-          "source": "blog.jackerlab.com"
+          "title": "new row violates row-level security policy for table",
+          "url": "https://www.answeroverflow.com/m/1399188217491619881",
+          "source": "www.answeroverflow.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1381-ko-tech-Tailscale-개인-VPN-홈-서",
-      "keyword": "Tailscale 개인 VPN 홈 서버 원격 개발 환경 구성 VS Code Remote SSH 실전 설정",
+      "id": "1393-ko-tech-Prometheus-Grafana-D",
+      "keyword": "Prometheus Grafana Docker Compose 2GB 이하 VPS 메모리 최적화 실전 설정값",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-03-26T08:04:07.306485",
+      "created_at": "2026-03-27T08:02:00.841989",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Tailscale로 홈 서버에 VS Code Remote SSH 원격 개발 환경을 구성하는 실전 방법을 찾는 개발자",
-      "angle": "Tailscale 무료 플랜으로 홈 미니PC를 원격 개발 서버로 만드는 전체 과정 + 포트포워딩 없이 VS Code SSH 연결 삽질 해결",
+      "search_intent": "저사양 VPS에서 Prometheus + Grafana 스택을 OOM 없이 안정적으로 돌리기 위한 구체적 설정값 탐색",
+      "angle": "2GB RAM VPS 기준 Prometheus 메모리 상한 설정, Grafana 최소 리소스 설정, 실제 docker stats 수치와 함께 docker-compose.yml 전체 공개",
       "competition_level": "low",
       "references": [
         {
-          "title": "Tailscale 가이드 - 안전한 매쉬 VPN 활용법 :: devopslog",
-          "url": "https://devopslog.tistory.com/169",
-          "source": "devopslog.tistory.com"
+          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
+          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
+          "source": "seekerslab.com"
         },
         {
-          "title": "Visual Studio Code Remote - SSH 설정 방법: 원격 개발 환경 구축하기 | WP",
-          "url": "https://wp.ecomong.net/visual-studio-code-remote-ssh-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/",
-          "source": "wp.ecomong.net"
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
         },
         {
-          "title": "Tailscale로 어디서든 내 기기에 안전하게 접속하기 | Engineering Blog by Dale Seo",
-          "url": "https://daleseo.com/tailscale/",
-          "source": "daleseo.com"
+          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/prometheus-grafana",
+          "source": "docker.recipes"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1394-ko-tech-Next.js-App-Router-E",
+      "keyword": "Next.js App Router Edge Runtime vs Node.js Runtime Claude API 스트리밍 타임아웃 차이 실험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-27T08:02:00.842020",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js에서 AI API 스트리밍 구현 시 Edge Runtime과 Node.js Runtime 중 어떤 걸 써야 타임아웃 없이 안정적인지 확인",
+      "angle": "Claude API 스트리밍을 두 runtime 환경에서 각각 구현하고 30초 이상 응답 시 동작 차이, Vercel 배포 환경 제약 포함 실험 결과 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "API Reference: Edge Runtime | Next.js",
+          "url": "https://nextjs.org/docs/app/api-reference/edge",
+          "source": "nextjs.org"
+        },
+        {
+          "title": "Edge Runtime vs Node Runtime in Next.js (Complete Practical Guide) | by Chandan | Full-Stack Develop",
+          "url": "https://medium.com/codetodeploy/edge-runtime-vs-node-runtime-in-next-js-complete-practical-guide-b853dea38751",
+          "source": "medium.com"
+        },
+        {
+          "title": "Lobehub",
+          "url": "https://lobehub.com/ko/skills/davila7-claude-code-templates-nextjs-best-practices",
+          "source": "lobehub.com"
         }
       ],
       "content_type_hint": "GUIDE"

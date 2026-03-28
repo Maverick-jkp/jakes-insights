@@ -11011,38 +11011,6 @@
       "completed_at": "2026-03-27T11:18:12.423435+00:00"
     },
     {
-      "id": "1385-en-tech-GitHub-Actions-self-",
-      "keyword": "GitHub Actions self-hosted runner Docker container ARM64 M-series Mac setup pitfalls",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-27T08:02:00.841732",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "M시리즈 맥에서 Docker 기반 GitHub Actions self-hosted runner 설정 시 ARM64 아키텍처 문제 해결",
-      "angle": "실제 설정 중 마주친 amd64/arm64 이미지 호환 오류, qemu 설정, 멀티 아키텍처 빌드 삽질 과정 기록",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Using Github's self-hosted runners",
-          "url": "https://meyer-laurent.com/using-github-self-hosted-runners",
-          "source": "meyer-laurent.com"
-        },
-        {
-          "title": "r/github on Reddit: What's the best way to create macOS self-hosted runners for GitHub?",
-          "url": "https://www.reddit.com/r/github/comments/1kopu1y/whats_the_best_way_to_create_macos_selfhosted/",
-          "source": "www.reddit.com"
-        },
-        {
-          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
-          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
-          "source": "oneuptime.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1386-en-tech-RAG-chunk-size-512-v",
       "keyword": "RAG chunk size 512 vs 1024 retrieval accuracy test LangChain Chroma local embedding 2025",
       "category": "tech",
@@ -11075,33 +11043,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-27T10:51:41.184427+00:00",
       "completed_at": "2026-03-27T11:04:36.672761+00:00"
-    },
-    {
-      "id": "1387-en-tech-Cloudflare-Workers-K",
-      "keyword": "Cloudflare Workers KV vs D1 database latency comparison small SaaS read-heavy workload",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-27T08:02:00.841815",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Cloudflare Workers에서 읽기 위주 소규모 SaaS 구축 시 KV와 D1 중 레이턴시/비용 측면 적합한 선택 탐색",
-      "angle": "동일 read-heavy 시나리오에서 KV vs D1 실제 응답 지연 측정, 월 요청 100만건 기준 비용 시뮬레이션 포함",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Edge Databases Compared: Cloudflare D1/KV/Durable Objects vs DynamoDB vs Cosmos DB vs Firestore",
-          "url": "https://inventivehq.com/blog/cloudflare-d1-kv-vs-dynamodb-vs-cosmos-db-vs-firestore-edge-databases",
-          "source": "inventivehq.com"
-        },
-        {
-          "title": "r/CloudFlare on Reddit: D1 hitting 5M daily limit despite 30-day cache - Workers architecture questi",
-          "url": "https://www.reddit.com/r/CloudFlare/comments/1q0h8cv/d1_hitting_5m_daily_limit_despite_30day_cache/",
-          "source": "www.reddit.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1388-ko-tech-M3-맥북-ollama-llama3.",
@@ -11172,129 +11113,6 @@
       "completed_at": "2026-03-27T11:10:47.820107+00:00"
     },
     {
-      "id": "1390-ko-tech-1인-개발자-사이드-프로젝트-월-10",
-      "keyword": "1인 개발자 사이드 프로젝트 월 10달러 이하 인프라 Fly.io Docker Compose 실제 비용 후기",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-27T08:02:00.841902",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "사이드 프로젝트를 최소 비용으로 운영 중인 사람의 실제 인프라 구성과 월 비용 확인",
-      "angle": "실제 운영 중인 프로젝트 기준 Fly.io + Cloudflare + Supabase free tier 조합으로 월 $8 이하 인프라 구성 방법 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Cursor 2.0 가격 가이드: Free, Pro, Enterprise 플랜 전격 비교 분석 - Skywork ai",
-          "url": "https://skywork.ai/blog/vibecoding/cursor-2-0-pricing-ko/",
-          "source": "skywork.ai"
-        },
-        {
-          "title": "취준생&주니어 개발자를 위한 사이드 프로젝트 플랫폼 추천 - 코드잇 블로그",
-          "url": "https://sprint.codeit.kr/blog/%EC%B7%A8%EC%A4%80%EC%83%9D%EC%A3%BC%EB%8B%88%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%B6%94%EC%B2%9C",
-          "source": "sprint.codeit.kr"
-        },
-        {
-          "title": "도커 컨테이너 5분 만에 무료로 배포하기(feat. fly.io) - 44BITS",
-          "url": "https://www.44bits.io/ko/post/docker-container-deploy-in-5-minitues-with-fly-io",
-          "source": "www.44bits.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1391-ko-tech-Hugo-블로그-Cloudflare-",
-      "keyword": "Hugo 블로그 Cloudflare Pages 자동배포 GitHub Actions cron 트리거 작동 안 할 때 해결",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-27T08:02:00.841930",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo + Cloudflare Pages 환경에서 GitHub Actions cron이 예약대로 실행되지 않는 문제의 원인과 해결법 탐색",
-      "angle": "GitHub Actions cron 지연 이슈 공식 설명, repository 비활성화 시 cron 중단 조건, 실제 workaround 3가지 방법 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Scheduled Publishing with GitHub Actions Every 3 Hours | Codeslog",
-          "url": "https://www.codeslog.com/en/posts/github-actions-scheduled-publish-check/",
-          "source": "www.codeslog.com"
-        },
-        {
-          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
-          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
-          "source": "chriswiegman.com"
-        },
-        {
-          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
-          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
-          "source": "www.caktusgroup.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1392-ko-tech-Supabase-Row-Level-S",
-      "keyword": "Supabase Row Level Security 설정 실수 사례 Next.js API 데이터 노출 방지 실전 체크리스트",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-27T08:02:00.841960",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase RLS를 Next.js 프로젝트에 적용할 때 자주 하는 설정 실수와 보안 취약점 방지 방법 탐색",
-      "angle": "RLS 미적용 상태로 배포된 실제 사례 패턴 분석, anon key vs service_role key 혼용 위험, 체크리스트 형태로 정리",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Row Level Security | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
-          "source": "supabase.com"
-        },
-        {
-          "title": "new row violates row-level security policy for table",
-          "url": "https://www.answeroverflow.com/m/1399188217491619881",
-          "source": "www.answeroverflow.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1393-ko-tech-Prometheus-Grafana-D",
-      "keyword": "Prometheus Grafana Docker Compose 2GB 이하 VPS 메모리 최적화 실전 설정값",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-27T08:02:00.841989",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus + Grafana 스택을 OOM 없이 안정적으로 돌리기 위한 구체적 설정값 탐색",
-      "angle": "2GB RAM VPS 기준 Prometheus 메모리 상한 설정, Grafana 최소 리소스 설정, 실제 docker stats 수치와 함께 docker-compose.yml 전체 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
-          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
-          "source": "seekerslab.com"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
-          "url": "https://docker.recipes/monitoring/prometheus-grafana",
-          "source": "docker.recipes"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1394-ko-tech-Next.js-App-Router-E",
       "keyword": "Next.js App Router Edge Runtime vs Node.js Runtime Claude API 스트리밍 타임아웃 차이 실험",
       "category": "tech",
@@ -11327,6 +11145,468 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-27T10:51:41.184427+00:00",
       "completed_at": "2026-03-27T11:13:23.414223+00:00"
+    },
+    {
+      "id": "1395-en-tech-Windows-11-mandatory",
+      "keyword": "Windows 11 mandatory Microsoft account removal insider fight",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719368",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and power users frustrated by forced account lock-in during Windows 11 setup are searching for workarounds and whether this will ever change officially",
+      "angle": "Internal Microsoft politics vs user autonomy — framing the account requirement as a marketing land-grab, not a security feature, with practical bypass options while the fight continues",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "People inside Microsoft are fighting to drop Windows 11's mandatory Microsoft Account requirements d",
+          "url": "https://www.windowscentral.com/microsoft/windows-11/people-inside-microsoft-are-fighting-to-drop-windows-11s-mandatory-microsoft-account-requirements-during-setup",
+          "source": "www.windowscentral.com"
+        },
+        {
+          "title": "Windows Might Finally Fix One of Its Most Annoying Setup Problems",
+          "url": "https://ground.news/article/some-microsoft-insiders-fight-to-drop-windows-11s-microsoft-account-requirements_aec0cc",
+          "source": "ground.news"
+        },
+        {
+          "title": "Microsoft VP hints at ending Windows 11's Microsoft Account requirement | PCWorld",
+          "url": "https://www.pcworld.com/article/3096314/microsoft-vp-hints-at-ending-windows-11-microsoft-account-requirement.html",
+          "source": "www.pcworld.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1396-ko-tech-Windows-11-마이크로소프트-계",
+      "keyword": "Windows 11 마이크로소프트 계정 강제 설정 우회 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719407",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "윈도우11 설치 시 MS 계정 강제 요구에 불만을 가진 국내 사용자·개발자·IT 관리자가 로컬 계정 우회 방법과 정책 변화 가능성을 검색",
+      "angle": "해외 커뮤니티에서 이미 폭발적으로 반응 중인 이슈를 국내 독자 관점으로 해석 — '내 PC의 주도권을 MS가 가져가는 것'이라는 분노 프레임 + 실제 우회 가이드 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "윈도우 포럼 - 최신 정보 - Windows 11 설치 시 필수적으로 요구되는 마이크로소프트 계정 설정을 없애기 위한...",
+          "url": "https://windowsforum.kr/info/22087197",
+          "source": "windowsforum.kr"
+        },
+        {
+          "title": "\"나도 싫다\"…마이크로소프트 내부에서 터진 계정 강제 반발 - 디지털포커스",
+          "url": "https://www.digitalfocus.news/news/articleView.html?idxno=19620",
+          "source": "www.digitalfocus.news"
+        },
+        {
+          "title": "비트로커 복구키 없을 때 해결 + 복구키 확인/해지후기 - 노랗IT월드",
+          "url": "https://yellowit.co.kr/it-review/%EB%B9%84%ED%8A%B8%EB%A1%9C%EC%BB%A4-%EB%B3%B5%EA%B5%AC%ED%82%A4-%EC%97%86%EC%9D%84-%EB%95%8C-%ED%95%B4%EA%B2%B0-%EB%B3%B5%EA%B5%AC%ED%82%A4-%ED%99%95%EC%9D%B8-%ED%95%B4%EC%A7%80%ED%9B%84%EA%B8%B0/",
+          "source": "yellowit.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1397-en-tech-ollama-llama3.2-vs-m",
+      "keyword": "ollama llama3.2 vs mistral 7b response speed M2 MacBook 8GB RAM benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719452",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "8GB RAM MacBook에서 로컬 LLM 속도 차이를 실측 데이터로 비교하고 싶은 개발자",
+      "angle": "동일 하드웨어 조건에서 토큰/초, 첫 응답 대기시간 실측 비교표 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Llama 3.2 vs Mistral 7B vs CodeLlama: Which Wins? (Tested) | Local AI Master",
+          "url": "https://localaimaster.com/blog/llama-vs-mistral-vs-codellama",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best Local LLM Models 2026 | Developer Comparison",
+          "url": "https://www.sitepoint.com/best-local-llm-models-2026/",
+          "source": "www.sitepoint.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1398-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker socket permission denied fix ubuntu 22.04",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719474",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Self-hosted runner에서 Docker 명령이 permission denied로 실패해서 원인을 찾는 DevOps 엔지니어",
+      "angle": "docker group 추가 vs sudo 설정 vs rootless Docker 세 가지 방법 비교 후 실제 동작한 방법만 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "v2.332.0: Container jobs fail with permission denied on GITHUB_ENV and workspace after upgrade from ",
+          "url": "https://github.com/actions/runner/issues/4302",
+          "source": "github.com"
+        },
+        {
+          "title": "How to Set Up a Self-Hosted GitHub Actions Runner on Ubuntu",
+          "url": "https://oneuptime.com/blog/post/2026-01-07-ubuntu-github-actions-runner/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1399-en-tech-claude-api-context-w",
+      "keyword": "claude api context window cost optimization chunking strategy real experiment",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719495",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API 비용이 예상보다 많이 나와서 토큰 최적화 방법을 실험 데이터로 찾는 개발자",
+      "angle": "청크 사이즈 512/1024/2048 토큰별 API 비용 vs 답변 품질 실험 결과 수치 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Code Context Window: Optimize Your Token Usage",
+          "url": "https://claudefa.st/blog/guide/mechanics/context-management",
+          "source": "claudefa.st"
+        },
+        {
+          "title": "Claude Code 1M Context Window: Cost, Limits, and When to Use It",
+          "url": "https://www.claudecodecamp.com/p/claude-code-1m-context-window",
+          "source": "www.claudecodecamp.com"
+        },
+        {
+          "title": "r/ClaudeAI on Reddit: My Claude Code Context Window Strategy (200k Is Not the Problem)",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1p05r7p/my_claude_code_context_window_strategy_200k_is/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1400-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start latency workaround production 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719513",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Functions 콜드 스타트 지연 때문에 사용자 경험이 나빠져 해결책을 찾는 개발자",
+      "angle": "keep-alive ping 스케줄러, Deno 캐싱, 대안으로 Cloudflare Workers 전환 비교 실측",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions",
+          "source": "supabase.com"
+        },
+        {
+          "title": "r/Supabase on Reddit: Edge functions cold start speed vs Firebase functions",
+          "url": "https://www.reddit.com/r/Supabase/comments/1jwghg7/edge_functions_cold_start_speed_vs_firebase/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1401-en-tech-wsl2-docker-desktop-",
+      "keyword": "wsl2 docker desktop memory leak windows 11 .wslconfig optimization real fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719536",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "WSL2 + Docker Desktop 사용 중 RAM이 계속 증가해서 .wslconfig 설정으로 해결하려는 개발자",
+      "angle": "memory, swap, processors 값을 직접 조정하며 메모리 사용량 변화를 스크린샷과 수치로 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Configure Docker Desktop Memory and CPU Limits on Windows",
+          "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-configure-docker-desktop-memory-and-cpu-limits-on-windows/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "How to Reclaim Memory from Docker WSL - DEV Community",
+          "url": "https://dev.to/colin-williams-dev/how-to-reclaim-memory-from-docker-wsl-2lkf",
+          "source": "dev.to"
+        },
+        {
+          "title": "Docker Desktop Using Too Much Memory (VmmemWSL): Cause and Solution | by Worapon Asavanik | DevOps.d",
+          "url": "https://blog.devops.dev/docker-desktop-using-too-much-memory-vmmemwsl-cause-and-solution-0a54998ab65a",
+          "source": "blog.devops.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1402-en-tech-hetzner-vps-4gb-ram-",
+      "keyword": "hetzner vps 4gb ram nginx docker compose multiple domains ssl caddy comparison solo developer",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719561",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hetzner 저가 VPS에서 여러 도메인을 운영하며 리버스 프록시로 Nginx vs Caddy 중 선택하려는 1인 개발자",
+      "angle": "실제 월 €4 서버에서 3개 서비스 운영하며 Nginx 수동 SSL 갱신과 Caddy 자동화 비교 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Setting up a dockerised Caddy-based webserver on Hetzner Cloud",
+          "url": "https://zarino.co.uk/post/hetzner-docker-caddy/",
+          "source": "zarino.co.uk"
+        },
+        {
+          "title": "r/selfhosted on Reddit: First time running a VPS — what tools/services do you recommend self-hosting",
+          "url": "https://www.reddit.com/r/selfhosted/comments/1rshh3p/first_time_running_a_vps_what_toolsservices_do/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "How to Host Your Own n8n Automation Server on Hetzner Cloud for Less Than $6/Month - DEV Community",
+          "url": "https://dev.to/alexanderschneider/how-to-host-your-own-n8n-automation-server-on-hetzner-cloud-for-less-than-6month-149d",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1403-ko-tech-M3-맥북-16GB-ollama-ge",
+      "keyword": "M3 맥북 16GB ollama gemma3 한국어 답변 품질 실측 GPT-4o-mini 비용 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719582",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM으로 API 비용을 절약하면서 한국어 품질이 실제로 쓸만한지 확인하려는 개발자",
+      "angle": "같은 한국어 프롬프트 20개를 gemma3 로컬과 GPT-4o-mini에 돌려서 품질 점수 + 비용 차이 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "맥미니 대란 - OpenClaw가 만든 AI 서버 시대, 모델별 구매 가이드",
+          "url": "https://blog.kwt.co.kr/%EB%A7%A5%EB%AF%B8%EB%8B%88-%EB%8C%80%EB%9E%80-openclaw%EA%B0%80-%EB%A7%8C%EB%93%A0-ai-%EC%84%9C%EB%B2%84-%EC%8B%9C%EB%8C%80-%EB%AA%A8%EB%8D%B8%EB%B3%84-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4/",
+          "source": "blog.kwt.co.kr"
+        },
+        {
+          "title": "r/LocalLLM on Reddit: Best LLM Local for Mac Mini M4",
+          "url": "https://www.reddit.com/r/LocalLLM/comments/1ju64ue/best_llm_local_for_mac_mini_m4/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Open Code 리뷰(3) : 오픈소스, 무료 및 저가 LLM 모델 활용 해보기 with Ollama, Qwen3, glm4.7, MiniMax M2.1 등 :: 대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/488",
+          "source": "goddaehee.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1404-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 배포 빌드 시간 초과 오류 무료 플랜 해결 실전 기록",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719600",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그를 Cloudflare Pages에 올렸는데 빌드가 타임아웃으로 실패해서 원인과 해결책을 찾는 블로거",
+      "angle": "포스트 수 증가에 따른 빌드 시간 측정 + 이미지 최적화 및 캐시 설정으로 빌드 50% 단축한 과정",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
+          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
+          "source": "www.heyjude.blog"
+        },
+        {
+          "title": "[배포] Cloudflare Pages 배포에 인증 추가하기",
+          "url": "https://meal-coding.tistory.com/54",
+          "source": "meal-coding.tistory.com"
+        },
+        {
+          "title": "[도메인 & 호스팅] Cloudflare로 도메인 구매 및 무료 호스팅까지 해결하기 - devNote",
+          "url": "https://sddev.tistory.com/382",
+          "source": "sddev.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1405-ko-tech-1인-개발자-AWS-vs-Fly.io",
+      "keyword": "1인 개발자 AWS vs Fly.io vs Hetzner 월 실비용 비교 사이드프로젝트 실제 청구서 공개",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719617",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트 인프라 비용을 최소화하려는 1인 개발자가 플랫폼별 실제 비용을 알고 싶어 검색",
+      "angle": "동일 스펙 서비스를 3개 플랫폼에 올려서 3개월간 실제 청구된 금액과 숨은 비용 항목 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/Hosting on Reddit: Scaleway vs OVHcloud vs Fly.io vs Hetzner for microservices (solo dev)",
+          "url": "https://www.reddit.com/r/Hosting/comments/1rs81z6/scaleway_vs_ovhcloud_vs_flyio_vs_hetzner_for/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "개발자 1명이 월 1억? Micro SaaS 진짜 비밀 :: imwh0im.log()",
+          "url": "https://imwh0im.tistory.com/entry/micro-saas-guide",
+          "source": "imwh0im.tistory.com"
+        },
+        {
+          "title": "AWS의 진정한 비용을 파헤치다: 숨겨진 요금, 비교, 그리고 최적화 전략",
+          "url": "https://coverletter.tistory.com/entry/AWS%EC%9D%98-%EC%A7%84%EC%A0%95%ED%95%9C-%EB%B9%84%EC%9A%A9%EC%9D%84-%ED%8C%8C%ED%97%A4%EC%B9%98%EB%8B%A4-%EC%88%A8%EA%B2%A8%EC%A7%84-%EC%9A%94%EA%B8%88-%EB%B9%84%EA%B5%90-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%A0%84%EB%9E%B5",
+          "source": "coverletter.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1406-ko-tech-GitHub-Actions-모노레포-",
+      "keyword": "GitHub Actions 모노레포 변경된 패키지만 선택 빌드 paths-filter 실전 설정법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719634",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "모노레포에서 전체 빌드 시간이 너무 길어서 변경된 패키지만 골라 빌드하는 방법을 찾는 DevOps 담당자",
+      "angle": "dorny/paths-filter 액션으로 packages/A 변경 시에만 A 빌드 트리거 되도록 YAML 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Turborepo로 Next.js 모노레포 구축하기 - 대규모 프로젝트 관리 가이드 | 정보의 둥지",
+          "url": "https://nestloghub.com/blog/coding/nextjs-turborepo-monorepo-setup",
+          "source": "nestloghub.com"
+        },
+        {
+          "title": "GitHub Actions 고급 CI/CD — Matrix, Cache, Self-hosted Runner | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-02-github-actions-advanced-cicd",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Turborepo로 Next.js 16 모노레포 구축하기",
+          "url": "https://javaexpert.tistory.com/1506",
+          "source": "javaexpert.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1407-ko-tech-Supabase-RLS-정책-적용-후",
+      "keyword": "Supabase RLS 정책 적용 후 쿼리 속도 10배 느려짐 원인 분석 인덱스 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719650",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase RLS를 활성화했더니 갑자기 쿼리가 느려져서 원인과 해결책을 찾는 백엔드 개발자",
+      "angle": "EXPLAIN ANALYZE 결과로 RLS auth.uid() 호출이 인덱스를 무력화하는 원인 규명 + 복합 인덱스로 해결한 과정",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI Prompt: Database: Create RLS policies | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/getting-started/ai-prompts/database-rls-policies",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Lobehub",
+          "url": "https://lobehub.com/ko/skills/adaptationio-skrillz-supabase-troubleshooting",
+          "source": "lobehub.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1408-ko-tech-Python-uv-패키지-매니저-po",
+      "keyword": "Python uv 패키지 매니저 poetry 대비 실제 설치 속도 비교 CI 환경 도입 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719667",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "poetry가 느려서 uv로 전환을 고민 중인 파이썬 개발자가 실제 속도 차이를 보고 결정하려 검색",
+      "angle": "동일 requirements 기준 poetry vs uv 설치 시간 실측 + GitHub Actions CI에서 캐시 포함 전후 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Python 프로젝트를 Poetry에서 UV로 마이그레이션하기: 10배 빠른 의존성 관리 — kwanghyun's Blog",
+          "url": "https://mgh3326.tistory.com/231",
+          "source": "mgh3326.tistory.com"
+        },
+        {
+          "title": "(Python)⚡️ 차세대 Python 패키지 매니저 uv :: Digital Nomad and FIRE",
+          "url": "https://jjnomad.tistory.com/75",
+          "source": "jjnomad.tistory.com"
+        },
+        {
+          "title": "Python MSA를 위한 Monorepo 구성기 — 왜 uv를 선택했는가",
+          "url": "https://probehub.tistory.com/97",
+          "source": "probehub.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1409-ko-tech-Vercel-무료-플랜-함수-실행-시",
+      "keyword": "Vercel 무료 플랜 함수 실행 시간 10초 제한 Next.js API Route 우회 전략 실전",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-28T07:45:54.719682",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 티어에서 API Route 처리 시간이 10초를 넘겨 504 에러가 발생하는 문제를 해결하려는 개발자",
+      "angle": "스트리밍 응답 전환, 백그라운드 작업 분리, Vercel Cron + 외부 큐 세 가지 우회 방법 비교 및 코드 예시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel을 이용한 무료 웹 배포 이용해보기",
+          "url": "https://allinfor.tistory.com/76",
+          "source": "allinfor.tistory.com"
+        },
+        {
+          "title": "Next.js 15 + React 19 완전 가이드: Server Components부터 Server Actions까지 2025 실전 정복 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/culture/2026-03-23-nextjs-15-react-19-complete-guide-2025",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Next.js API Routes 마스터: 실무에서 3년간 써본 실전 가이드 가이드 | 정보의 둥지",
+          "url": "https://nestloghub.com/blog/coding/nextjs-api-routes-complete-guide",
+          "source": "nestloghub.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

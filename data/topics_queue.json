@@ -11309,33 +11309,6 @@
       "completed_at": "2026-03-28T10:40:59.764844+00:00"
     },
     {
-      "id": "1400-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge functions cold start latency workaround production 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-28T07:45:54.719513",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase Edge Functions 콜드 스타트 지연 때문에 사용자 경험이 나빠져 해결책을 찾는 개발자",
-      "angle": "keep-alive ping 스케줄러, Deno 캐싱, 대안으로 Cloudflare Workers 전환 비교 실측",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
-        },
-        {
-          "title": "r/Supabase on Reddit: Edge functions cold start speed vs Firebase functions",
-          "url": "https://www.reddit.com/r/Supabase/comments/1jwghg7/edge_functions_cold_start_speed_vs_firebase/",
-          "source": "www.reddit.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1401-en-tech-wsl2-docker-desktop-",
       "keyword": "wsl2 docker desktop memory leak windows 11 .wslconfig optimization real fix",
       "category": "tech",
@@ -11368,38 +11341,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-03-28T10:34:16.673707+00:00",
       "completed_at": "2026-03-28T10:57:00.839325+00:00"
-    },
-    {
-      "id": "1402-en-tech-hetzner-vps-4gb-ram-",
-      "keyword": "hetzner vps 4gb ram nginx docker compose multiple domains ssl caddy comparison solo developer",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-03-28T07:45:54.719561",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hetzner 저가 VPS에서 여러 도메인을 운영하며 리버스 프록시로 Nginx vs Caddy 중 선택하려는 1인 개발자",
-      "angle": "실제 월 €4 서버에서 3개 서비스 운영하며 Nginx 수동 SSL 갱신과 Caddy 자동화 비교 후기",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Setting up a dockerised Caddy-based webserver on Hetzner Cloud",
-          "url": "https://zarino.co.uk/post/hetzner-docker-caddy/",
-          "source": "zarino.co.uk"
-        },
-        {
-          "title": "r/selfhosted on Reddit: First time running a VPS — what tools/services do you recommend self-hosting",
-          "url": "https://www.reddit.com/r/selfhosted/comments/1rshh3p/first_time_running_a_vps_what_toolsservices_do/",
-          "source": "www.reddit.com"
-        },
-        {
-          "title": "How to Host Your Own n8n Automation Server on Hetzner Cloud for Less Than $6/Month - DEV Community",
-          "url": "https://dev.to/alexanderschneider/how-to-host-your-own-n8n-automation-server-on-hetzner-cloud-for-less-than-6month-149d",
-          "source": "dev.to"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1403-ko-tech-M3-맥북-16GB-ollama-ge",
@@ -11504,38 +11445,6 @@
       "completed_at": "2026-03-28T10:47:00.595591+00:00"
     },
     {
-      "id": "1406-ko-tech-GitHub-Actions-모노레포-",
-      "keyword": "GitHub Actions 모노레포 변경된 패키지만 선택 빌드 paths-filter 실전 설정법",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-03-28T07:45:54.719634",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "모노레포에서 전체 빌드 시간이 너무 길어서 변경된 패키지만 골라 빌드하는 방법을 찾는 DevOps 담당자",
-      "angle": "dorny/paths-filter 액션으로 packages/A 변경 시에만 A 빌드 트리거 되도록 YAML 전체 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Turborepo로 Next.js 모노레포 구축하기 - 대규모 프로젝트 관리 가이드 | 정보의 둥지",
-          "url": "https://nestloghub.com/blog/coding/nextjs-turborepo-monorepo-setup",
-          "source": "nestloghub.com"
-        },
-        {
-          "title": "GitHub Actions 고급 CI/CD — Matrix, Cache, Self-hosted Runner | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/devops/2026-03-02-github-actions-advanced-cicd",
-          "source": "www.youngju.dev"
-        },
-        {
-          "title": "Turborepo로 Next.js 16 모노레포 구축하기",
-          "url": "https://javaexpert.tistory.com/1506",
-          "source": "javaexpert.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1407-ko-tech-Supabase-RLS-정책-적용-후",
       "keyword": "Supabase RLS 정책 적용 후 쿼리 속도 10배 느려짐 원인 분석 인덱스 해결",
       "category": "tech",
@@ -11565,65 +11474,473 @@
       "completed_at": "2026-03-28T10:49:37.472479+00:00"
     },
     {
-      "id": "1408-ko-tech-Python-uv-패키지-매니저-po",
-      "keyword": "Python uv 패키지 매니저 poetry 대비 실제 설치 속도 비교 CI 환경 도입 후기",
+      "id": "1408-en-tech-AI-sycophancy-in-per",
+      "keyword": "AI sycophancy in personal advice tools developer guide",
       "category": "tech",
-      "lang": "ko",
-      "priority": 8,
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-03-28T07:45:54.719667",
+      "created_at": "2026-03-29T07:54:19.942952",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "poetry가 느려서 uv로 전환을 고민 중인 파이썬 개발자가 실제 속도 차이를 보고 결정하려 검색",
-      "angle": "동일 requirements 기준 poetry vs uv 설치 시간 실측 + GitHub Actions CI에서 캐시 포함 전후 비교",
+      "keyword_type": "trend",
+      "search_intent": "Developers and power users who rely on AI for real decisions are alarmed by Stanford research showing models are systematically sycophantic — they want to know which models are worst, which are safer, and how to prompt around it",
+      "angle": "Model-by-model breakdown of sycophancy severity + practical prompting strategies to force honest AI output, framed around the Stanford study findings",
       "competition_level": "low",
       "references": [
         {
-          "title": "Python 프로젝트를 Poetry에서 UV로 마이그레이션하기: 10배 빠른 의존성 관리 — kwanghyun's Blog",
-          "url": "https://mgh3326.tistory.com/231",
-          "source": "mgh3326.tistory.com"
+          "title": "How AI \"Sycophancy\" Warps Human Judgment - Neuroscience News",
+          "url": "https://neurosciencenews.com/ai-sycophancy-moral-judgment-30397/",
+          "source": "neurosciencenews.com"
         },
         {
-          "title": "(Python)⚡️ 차세대 Python 패키지 매니저 uv :: Digital Nomad and FIRE",
-          "url": "https://jjnomad.tistory.com/75",
-          "source": "jjnomad.tistory.com"
+          "title": "Stanford study outlines dangers of asking AI chatbots for personal advice | TechCrunch",
+          "url": "https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/",
+          "source": "techcrunch.com"
         },
         {
-          "title": "Python MSA를 위한 Monorepo 구성기 — 왜 uv를 선택했는가",
-          "url": "https://probehub.tistory.com/97",
-          "source": "probehub.tistory.com"
+          "title": "AI Sycophancy Undermines Human Judgment, Study Finds",
+          "url": "https://theoutpost.ai/news-story/ai-chatbots-give-bad-advice-to-flatter-users-harming-relationships-and-reinforcing-poor-choices-24950/",
+          "source": "theoutpost.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1409-ko-tech-AI-아첨-문제-개발자가-조심해야-할",
+      "keyword": "AI 아첨 문제 개발자가 조심해야 할 이유",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.942997",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 도구를 실무에서 적극 사용하는 국내 개발자·기획자들이 '내가 AI 답변을 너무 믿은 건 아닐까'라는 불안감을 갖고 실제 검증 방법을 찾음",
+      "angle": "스탠퍼드 연구 결과를 바탕으로, ChatGPT·Claude·Gemini 등 주요 모델의 아첨 경향 비교 + 한국어 프롬프트로 솔직한 답변을 끌어내는 실전 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cq: AI 코딩 에이전트를 위한 Stack Overflow",
+          "url": "https://javaexpert.tistory.com/1676",
+          "source": "javaexpert.tistory.com"
+        },
+        {
+          "title": "[태평로] ‘알파고의 창시자’는 왜 AI를 걱정하나",
+          "url": "https://www.chosun.com/opinion/taepyeongro/2026/03/22/QNESUOH6YFACTGSZXVYUS76K64/",
+          "source": "www.chosun.com"
+        },
+        {
+          "title": "[임지선의 틈]커클랜드의 질문, AI 시대의 책임 공백 - 경향신문",
+          "url": "https://www.khan.co.kr/article/202603260600005/",
+          "source": "www.khan.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1410-en-tech-fly.io-free-tier-col",
+      "keyword": "fly.io free tier cold start latency node.js api real benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943023",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers evaluating Fly.io for lightweight APIs want actual cold start numbers before committing, not marketing claims",
+      "angle": "Measured cold start times across 3 Node.js app sizes on Fly.io free tier with exact milliseconds, compared against Railway and Render free plans",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Why Fly.io Is the Best Free Docker Hosting You're Not Using | Vibe Coding With Fred",
+          "url": "https://vibecodingwithfred.com/blog/flyio-free-tier-guide/",
+          "source": "vibecodingwithfred.com"
+        },
+        {
+          "title": "Monitoring Your Node.js App Health on Fly.io | AppSignal Blog",
+          "url": "https://blog.appsignal.com/2026/03/12/monitoring-your-node.js-app-health-on-fly-io.html",
+          "source": "blog.appsignal.com"
+        },
+        {
+          "title": "What Is Fly.io? Complete Guide to Deployment, Pricing, and Limitations in 2026 • Kuberns",
+          "url": "https://kuberns.com/blogs/post/what-is-flyio/",
+          "source": "kuberns.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1409-ko-tech-Vercel-무료-플랜-함수-실행-시",
-      "keyword": "Vercel 무료 플랜 함수 실행 시간 10초 제한 Next.js API Route 우회 전략 실전",
+      "id": "1411-en-tech-github-actions-workf",
+      "keyword": "github actions workflow not triggering on schedule cron UTC offset fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943063",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers whose scheduled GitHub Actions jobs silently skip execution are searching for the exact root cause and workaround",
+      "angle": "Step-by-step debug trail: queue delay vs UTC misunderstanding vs inactive repo suspension, with verified fixes for each case",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/github on Reddit: GH Action Workflow Cron Scheduled runs do not trigger at the exact time?",
+          "url": "https://www.reddit.com/r/github/comments/1kn6s7e/gh_action_workflow_cron_scheduled_runs_do_not/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Automating Your Workflows on a Schedule: GitHub Actions + Cron | by Thibaut Donis | Medium",
+          "url": "https://medium.com/@thibautdonis1998/automating-your-workflows-on-a-schedule-github-actions-cron-fd7e662083c6",
+          "source": "medium.com"
+        },
+        {
+          "title": "Automate Your CI/CD Workflows Using Cron Jobs in GitHub Actions",
+          "url": "https://innosufiyan.hashnode.dev/automate-your-cicd-workflows-using-cron-jobs-in-github-actions",
+          "source": "innosufiyan.hashnode.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1412-en-tech-claude-api-prompt-ca",
+      "keyword": "claude api prompt caching cost reduction real invoice breakdown 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943083",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Builders using Claude API want concrete proof that prompt caching actually cuts bills before restructuring their prompts",
+      "angle": "Before/after Anthropic invoice screenshots with actual token counts, showing which prompt patterns benefit most from caching",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Pricing Explained: Subscription Plans & API Costs | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "Claude API Pricing 2026: Full Anthropic Cost Breakdown",
+          "url": "https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration",
+          "source": "www.metacto.com"
+        },
+        {
+          "title": "Claude Code Cost Optimisation Guide | systemprompt.io",
+          "url": "https://systemprompt.io/guides/claude-code-cost-optimisation",
+          "source": "systemprompt.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1413-en-tech-docker-compose-healt",
+      "keyword": "docker compose healthcheck dependency order postgres not ready fix production",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943102",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers hitting race conditions where app containers crash on startup because Postgres isn't accepting connections yet",
+      "angle": "Exact healthcheck YAML snippet that reliably waits for Postgres readiness, explaining why depends_on alone is insufficient",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Use Docker Compose depends_on with Health Checks",
+          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Docker Compose Health Checks Made Easy: A Practical Guide | by Cyril Baah | Medium",
+          "url": "https://medium.com/@cbaah123/docker-compose-health-checks-made-easy-a-practical-guide-3a340571b88e",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1414-en-tech-vercel-edge-function",
+      "keyword": "vercel edge function vs serverless function latency difference sqlite turso real test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943127",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers choosing between Edge and Serverless on Vercel for database-backed routes want actual p50/p99 latency data",
+      "angle": "Measured response times for Turso HTTP queries from Vercel Edge vs Serverless with cold/warm state breakdown and cost per million invocations",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Bringing SQLite to Vercel Functions with Turso",
+          "url": "https://turso.tech/blog/serverless",
+          "source": "turso.tech"
+        },
+        {
+          "title": "Serverless Functions: Vercel Edge & Cloudflare Workers Guide",
+          "url": "https://www.digitalapplied.com/blog/serverless-functions-vercel-cloudflare-guide",
+          "source": "www.digitalapplied.com"
+        },
+        {
+          "title": "Vercel Functions",
+          "url": "https://vercel.com/docs/functions",
+          "source": "vercel.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1415-en-tech-warp-terminal-ssh-co",
+      "keyword": "warp terminal ssh config multiple aws profiles switch workflow productivity setup",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943152",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "DevOps engineers managing 5+ AWS accounts want a clean terminal workflow for profile switching without credential confusion",
+      "angle": "Warp block-based workflow for named AWS profiles with .ssh/config snippets, credential_process trick, and session indicator in prompt",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Set Up and Use Multiple AWS Profiles on macOS with the AWS CLI | by Ashesh Thapa | Medium",
+          "url": "https://medium.com/@asheshthapa/how-to-set-up-and-use-multiple-aws-profiles-on-macos-with-the-aws-cli-dbfb04bb3de4",
+          "source": "medium.com"
+        },
+        {
+          "title": "How to Switch AWS CLI Profiles: 3 Methods + Troubleshooting | Towards The Cloud",
+          "url": "https://towardsthecloud.com/blog/aws-cli-switch-profiles",
+          "source": "towardsthecloud.com"
+        },
+        {
+          "title": "Raycast, Warp, Tmux?! My terminal stack after 30 dev experiments - DEV Community",
+          "url": "https://dev.to/dev_tips/raycast-warp-tmux-my-terminal-stack-after-30-dev-experiments-7ee",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1416-ko-tech-M3-맥북-에어-16GB-ollama",
+      "keyword": "M3 맥북 에어 16GB ollama llama3.2 한국어 답변 토큰 속도 실측 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943171",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 구매 전후 로컬 LLM 성능이 실제로 쓸 만한지 한국어 기준으로 확인하고 싶은 개발자",
+      "angle": "한국어 프롬프트 기준 토큰/초 실측값, 영어 대비 품질 저하 여부, 16GB와 8GB 모델 선택 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "올라마 v0.10.0 소개 및 한국어 지원 LLM모델",
+          "url": "https://brunch.co.kr/@b2439ea8fc654b8/92",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "NVIDIA 그래픽 카드 모델(대표)별 Ollama 추천 모델 표 :: Royfactory",
+          "url": "https://royzero.tistory.com/entry/nvidia-gpu-ollama-model-guide",
+          "source": "royzero.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1417-ko-tech-Claude-API-프롬프트-캐싱-실",
+      "keyword": "Claude API 프롬프트 캐싱 실제 비용 절감 전후 토큰 청구서 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943188",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API 비용이 부담스러운 개발자가 프롬프트 캐싱이 실제로 청구액을 얼마나 줄이는지 수치로 보고 싶은 상황",
+      "angle": "동일 워크로드에서 캐싱 적용 전후 실제 usage 로그 비교, RAG 시스템 vs 챗봇 패턴별 절감 효과 차이 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Code 요금제 완벽 정리 : Pro 구독 vs API 종량제, 개발자의 선택은?",
+          "url": "https://twofootdog.tistory.com/412",
+          "source": "twofootdog.tistory.com"
+        },
+        {
+          "title": "Claude Code Pricing Guide 2026: Every Plan, Real Costs, and How to Choose | LaoZhang AI Blog",
+          "url": "https://blog.laozhang.ai/en/posts/claude-code-pricing-guide",
+          "source": "blog.laozhang.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1418-ko-tech-1인-개발자-Supabase-무료-플",
+      "keyword": "1인 개발자 Supabase 무료 플랜 한계 실제 트래픽 도달 시점 대안 비교",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-03-28T07:45:54.719682",
+      "created_at": "2026-03-29T07:54:19.943204",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료 티어에서 API Route 처리 시간이 10초를 넘겨 504 에러가 발생하는 문제를 해결하려는 개발자",
-      "angle": "스트리밍 응답 전환, 백그라운드 작업 분리, Vercel Cron + 외부 큐 세 가지 우회 방법 비교 및 코드 예시",
+      "search_intent": "사이드 프로젝트가 성장하면서 Supabase 무료 플랜 한계에 부딪히기 전에 언제 유료로 전환하거나 이탈해야 하는지 판단 기준이 필요한 개발자",
+      "angle": "MAU, DB 용량, Edge Function 호출 수 기준 실제 한계 도달 시나리오와 PlanetScale·Turso·Neon 전환 비용 현실적 비교",
       "competition_level": "low",
       "references": [
         {
-          "title": "Vercel을 이용한 무료 웹 배포 이용해보기",
-          "url": "https://allinfor.tistory.com/76",
-          "source": "allinfor.tistory.com"
+          "title": "Supabase 입문 가이드: 오픈소스 Firebase 대안의 모든 것 - [루닥스 블로그] 연습만이 살길이다",
+          "url": "https://rudaks.tistory.com/entry/Supabase-%EC%9E%85%EB%AC%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-Firebase-%EB%8C%80%EC%95%88%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83",
+          "source": "rudaks.tistory.com"
         },
         {
-          "title": "Next.js 15 + React 19 완전 가이드: Server Components부터 Server Actions까지 2025 실전 정복 | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/culture/2026-03-23-nextjs-15-react-19-complete-guide-2025",
-          "source": "www.youngju.dev"
+          "title": "[Supabase 시작하기] - 회원 가입부터 기초 CRUD, RAG를 위한 pgvector 활성화 하기 :: 갓대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/377",
+          "source": "goddaehee.tistory.com"
         },
         {
-          "title": "Next.js API Routes 마스터: 실무에서 3년간 써본 실전 가이드 가이드 | 정보의 둥지",
-          "url": "https://nestloghub.com/blog/coding/nextjs-api-routes-complete-guide",
+          "title": "Why AI startups choose Supabase and where it falls short · Logto blog",
+          "url": "https://blog.logto.io/supabase-ai-limitation",
+          "source": "blog.logto.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1419-ko-tech-GitHub-Actions-Docke",
+      "keyword": "GitHub Actions Docker 이미지 빌드 캐시 레이어 재사용 안 될 때 원인 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943221",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "CI에서 Docker 레이어 캐시가 매번 무효화되어 빌드 시간이 줄지 않는 문제를 겪는 백엔드·DevOps 개발자",
+      "angle": "cache-from 설정 누락, COPY 순서 문제, buildx vs legacy builder 차이를 원인별로 분류하고 실제 빌드 로그로 검증",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions에서 Docker Build 캐싱 적용하기",
+          "url": "https://byeongtil.tistory.com/104",
+          "source": "byeongtil.tistory.com"
+        },
+        {
+          "title": "Github Actions Docker 빌드 속도를 최적화 해보자.",
+          "url": "https://hstory0208.tistory.com/entry/Github-Actions-Docker-%EB%B9%8C%EB%93%9C-%EC%86%8D%EB%8F%84%EB%A5%BC-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%B4%EB%B3%B4%EC%9E%90",
+          "source": "hstory0208.tistory.com"
+        },
+        {
+          "title": "Docker 이미지 빌드 빠르게 하는 방법 (10분 걸리던게 1분에 완료!)",
+          "url": "https://jjig810906.tistory.com/109",
+          "source": "jjig810906.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1420-ko-tech-Fly.io-무료-플랜-앱-자동-중지",
+      "keyword": "Fly.io 무료 플랜 앱 자동 중지 막는 방법 실제 운영 후기 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943236",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io에 배포한 사이드 프로젝트가 트래픽 없을 때 자동 종료되어 첫 응답이 느린 문제를 해결하려는 개발자",
+      "angle": "min_machines_running 설정, cron ping 방식, 유료 전환 비용 비교를 실제 운영 중인 앱 기준으로 정리한 판단 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "도커 컨테이너 5분 만에 무료로 배포하기(feat. fly.io) - 44BITS",
+          "url": "https://www.44bits.io/ko/post/docker-container-deploy-in-5-minitues-with-fly-io",
+          "source": "www.44bits.io"
+        },
+        {
+          "title": "Fly.io Depot docker builders are failing — Dec 2025 | IsDown",
+          "url": "https://isdown.app/status/fly-io/incidents/483809-depot-docker-builders-are-failing",
+          "source": "isdown.app"
+        },
+        {
+          "title": "What Is Fly.io? Complete Guide to Deployment, Pricing, and Limitations in 2026 • Kuberns",
+          "url": "https://kuberns.com/blogs/post/what-is-flyio/",
+          "source": "kuberns.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1421-ko-tech-Cursor-AI-코드-에디터-Cla",
+      "keyword": "Cursor AI 코드 에디터 Claude vs GPT-4o 모델 실무 코딩 정확도 차이 실험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943252",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor 구독자가 Claude 3.5 Sonnet과 GPT-4o 중 어떤 모델을 기본으로 써야 실수가 적은지 실제 사례 기반 비교를 원하는 상황",
+      "angle": "동일한 리팩터링·버그 수정·테스트 작성 태스크를 두 모델에 반복 실행한 오답률·수정 횟수 비교, 언어별(Python·TypeScript) 차이 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude vs ChatGPT vs Cursor 실사용 비교 - 개발자가 6개월 실제로 써본 솔직 후기 | 정보의 둥지",
+          "url": "https://nestloghub.com/blog/coding/ai-coding-tools-comparison-claude-chatgpt-cursor",
           "source": "nestloghub.com"
+        },
+        {
+          "title": "Cursor vs Claude Code: 2026년 어떤 AI 코딩 도구를 선택해야 할까? | WaveSpeedAI Blog",
+          "url": "https://wavespeed.ai/blog/ko/posts/cursor-vs-claude-code-comparison-2026/",
+          "source": "wavespeed.ai"
+        },
+        {
+          "title": "클로드 코드 vs 커서 비교 사용기 :: Shane's planet",
+          "url": "https://shanepark.tistory.com/551",
+          "source": "shanepark.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1422-ko-tech-Cloudflare-Workers-K",
+      "keyword": "Cloudflare Workers KV vs D1 SQLite 사이드 프로젝트 선택 기준 실제 한계 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-03-29T07:54:19.943269",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers로 간단한 API를 만들 때 KV와 D1 중 무엇을 써야 할지 명확한 기준이 없어 헤매는 개발자",
+      "angle": "읽기 빈도·데이터 구조·무료 한도 세 가지 축으로 선택 기준 정리, 실제 프로젝트에서 D1 row limit에 도달한 경험 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/CloudFlare on Reddit: What is the use case for Cloudflare's three databases? KV, D1, R2",
+          "url": "https://www.reddit.com/r/CloudFlare/comments/1npzxp9/what_is_the_use_case_for_cloudflares_three/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "클라우드플레어 개발자 플랫폼 완전정복: Workers·D1·R2·Durable Objects로 앱 한 번에 구축하기 :: 쵸코쿠키의 연습장",
+          "url": "https://jjeongil.tistory.com/3213",
+          "source": "jjeongil.tistory.com"
+        },
+        {
+          "title": "cloudflare - Agent Skills",
+          "url": "https://claude-plugins.dev/skills/@einverne/dotfiles/cloudflare",
+          "source": "claude-plugins.dev"
         }
       ],
       "content_type_hint": "GUIDE"

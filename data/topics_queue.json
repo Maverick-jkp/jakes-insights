@@ -13143,7 +13143,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.103862",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -13168,7 +13168,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:36:40.672870+00:00"
     },
     {
       "id": "1470-ko-tech-npm-공급망-공격-axios-사태-",
@@ -13176,7 +13178,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.103899",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -13201,7 +13203,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:39:17.054423+00:00"
     },
     {
       "id": "1471-en-tech-ollama-mistral-7b-vs",
@@ -13209,7 +13213,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.103946",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13228,7 +13232,9 @@
           "source": "www.sitepoint.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:41:09.149384+00:00"
     },
     {
       "id": "1472-en-tech-github-actions-self-",
@@ -13236,7 +13242,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.103968",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13255,7 +13261,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:53:03.226902+00:00"
     },
     {
       "id": "1473-en-tech-claude-api-streaming",
@@ -13263,7 +13271,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.103988",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13282,7 +13290,9 @@
           "source": "nextjs.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:43:14.095331+00:00"
     },
     {
       "id": "1474-en-tech-supabase-postgres-ro",
@@ -13312,7 +13322,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.104035",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13326,7 +13336,9 @@
           "source": "developers.cloudflare.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:55:02.758612+00:00"
     },
     {
       "id": "1476-en-tech-docker-compose-healt",
@@ -13361,7 +13373,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.104080",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13385,7 +13397,9 @@
           "source": "royzero.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:45:31.443739+00:00"
     },
     {
       "id": "1478-ko-tech-Supabase-무료-플랜-프로젝트-",
@@ -13393,7 +13407,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.104098",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13417,7 +13431,9 @@
           "source": "inseong1204.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:58:05.250345+00:00"
     },
     {
       "id": "1479-ko-tech-1인-개발자-월-5달러-이하-풀스택-",
@@ -13425,7 +13441,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.104115",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13444,7 +13460,9 @@
           "source": "www.srvrlss.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:48:00.124569+00:00"
     },
     {
       "id": "1480-ko-tech-GitHub-Actions-무료-플랜",
@@ -13479,7 +13497,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-04T07:51:04.104148",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13503,7 +13521,9 @@
           "source": "gasbugs.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-04T10:34:39.231467+00:00",
+      "completed_at": "2026-04-04T10:50:52.032748+00:00"
     },
     {
       "id": "1482-ko-tech-Next.js-14-App-Route",

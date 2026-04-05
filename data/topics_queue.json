@@ -13295,28 +13295,6 @@
       "completed_at": "2026-04-04T10:43:14.095331+00:00"
     },
     {
-      "id": "1474-en-tech-supabase-postgres-ro",
-      "keyword": "supabase postgres row level security performance degradation high traffic real test",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-04T07:51:04.104009",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase RLS 정책이 트래픽 증가 시 실제로 쿼리 성능에 얼마나 영향을 주는지 실측 데이터를 원하는 개발자",
-      "angle": "RLS 활성화/비활성화 상태에서 동일 쿼리의 실행 계획과 응답 시간을 직접 비교 측정",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Row Level Security | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1475-en-tech-cloudflare-workers-k",
       "keyword": "cloudflare workers kv vs d1 sqlite latency solo developer side project cost breakdown",
       "category": "tech",
@@ -13339,33 +13317,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-04-04T10:34:39.231467+00:00",
       "completed_at": "2026-04-04T10:55:02.758612+00:00"
-    },
-    {
-      "id": "1476-en-tech-docker-compose-healt",
-      "keyword": "docker compose healthcheck depends_on order not working postgres ready state fix 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-04T07:51:04.104060",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Docker Compose에서 depends_on과 healthcheck를 설정했는데도 Postgres가 준비되기 전에 앱이 뜨는 문제를 해결하려는 개발자",
-      "angle": "depends_on condition: service_healthy가 실제로 작동하지 않는 엣지 케이스 원인 분석 및 해결 스크립트 제공",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Use Docker Compose depends_on with Health Checks",
-          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "Docker Compose Service Dependencies: Solving Database Startup Sequence with Healthchecks · BetterLin",
-          "url": "https://eastondev.com/blog/en/posts/dev/20251217-docker-compose-healthcheck/",
-          "source": "eastondev.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1477-ko-tech-M3-맥북-ollama-llama3.",
@@ -13465,33 +13416,6 @@
       "completed_at": "2026-04-04T10:48:00.124569+00:00"
     },
     {
-      "id": "1480-ko-tech-GitHub-Actions-무료-플랜",
-      "keyword": "GitHub Actions 무료 플랜 월 2000분 소진 방지 캐시 최적화 실전 설정",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-04-04T07:51:04.104132",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "GitHub Actions 무료 플랜 한도를 초과하지 않도록 CI 파이프라인을 최적화하려는 개인 개발자",
-      "angle": "actions/cache 전략과 조건부 실행 설정으로 동일 워크플로 실행 시간을 70% 단축한 실전 yaml 예제",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "GitHub Actions 고급 CI/CD — Matrix, Cache, Self-hosted Runner | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/devops/2026-03-02-github-actions-advanced-cicd",
-          "source": "www.youngju.dev"
-        },
-        {
-          "title": "S3 cache for GitHub Actions - RunsOn",
-          "url": "https://runs-on.com/caching/s3-cache-for-github-actions/",
-          "source": "runs-on.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1481-ko-tech-Claude-API-비용-절감-프롬프",
       "keyword": "Claude API 비용 절감 프롬프트 캐싱 실제 토큰 사용량 before after 비교",
       "category": "tech",
@@ -13526,65 +13450,394 @@
       "completed_at": "2026-04-04T10:50:52.032748+00:00"
     },
     {
-      "id": "1482-ko-tech-Next.js-14-App-Route",
-      "keyword": "Next.js 14 App Router Vercel 무료 플랜 함수 실행 시간 초과 Edge 전환 트러블슈팅",
+      "id": "1482-en-tech-Linux-7.0-PostgreSQL",
+      "keyword": "Linux 7.0 PostgreSQL performance regression developer impact",
       "category": "tech",
-      "lang": "ko",
-      "priority": 7,
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-04-04T07:51:04.104166",
+      "created_at": "2026-04-05T07:56:50.385536",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료 플랜에서 서버리스 함수가 10초 제한에 걸려 타임아웃이 발생할 때 해결 방법을 찾는 개발자",
-      "angle": "Node.js 런타임에서 Edge Runtime으로 전환하는 과정에서 발생한 호환성 문제와 해결책을 단계별로 기록한 삽질 후기",
+      "keyword_type": "trend",
+      "search_intent": "Backend and DevOps engineers running PostgreSQL on Linux want to know if they are affected and whether a fix or workaround exists before upgrading production systems",
+      "angle": "Performance regression analysis — what changed in Linux 7.0, why it hits PostgreSQL specifically, and what AWS engineers are actually doing about it",
       "competition_level": "low",
       "references": [
         {
-          "title": "Next.js App Router in 2026: The Complete Guide for Full-Stack Developers - DEV Community",
-          "url": "https://dev.to/ottoaria/nextjs-app-router-in-2026-the-complete-guide-for-full-stack-developers-5bjl",
-          "source": "dev.to"
+          "title": "AWS Engineer Reports PostgreSQL Performance Halved By Linux 7.0, But A Fix May Not Be Easy - Phoroni",
+          "url": "https://www.phoronix.com/news/Linux-7.0-AWS-PostgreSQL-Drop",
+          "source": "www.phoronix.com"
         },
         {
-          "title": "Next.js 15 + React 19 완전 가이드: Server Components부터 Server Actions까지 2025 실전 정복 | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/culture/2026-03-23-nextjs-15-react-19-complete-guide-2025",
-          "source": "www.youngju.dev"
+          "title": "PostgreSQL: The world's most advanced open source database",
+          "url": "https://www.postgresql.org/",
+          "source": "www.postgresql.org"
         },
         {
-          "title": "라우팅 기본 사항 – Nextjs 한글 문서",
-          "url": "https://nextjs-ko.org/docs/app/building-your-application/routing",
-          "source": "nextjs-ko.org"
+          "title": "Ubuntu 26.04 LTS Features: Kernel 7.0, GNOME 50, What's New [2026]",
+          "url": "https://computingforgeeks.com/ubuntu-2604-lts-features/",
+          "source": "computingforgeeks.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1483-ko-tech-Microsoft-Copilot-브랜",
+      "keyword": "Microsoft Copilot 브랜드 혼란 개발자 실무 영향",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385572",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자·IT 담당자가 Microsoft 365 Copilot, GitHub Copilot, Copilot Studio 등 제품 간 차이를 구분하지 못해 도입 결정이나 팀 내 설명에 어려움을 겪고 있어 실질적 비교 정보를 검색",
+      "angle": "혼란의 구조적 원인 분석 + 역할별(개발자 / 기획자 / IT관리자) 실무 선택 가이드 — 해외 커뮤니티에서 이미 584점을 받을 만큼 공감대가 큰 이슈를 한국어로 최초 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Microsoft: Copilot is for entertainment purposes only | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47587866",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "Microsoft Is Going Multi-Model with Copilot. Does the Enterprise King Win Again? | The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/04/04/microsoft-multi-model-copilot-enterprise-stock/",
+          "source": "www.fool.com"
+        },
+        {
+          "title": "Microsoft Is Going Multi-Model with Copilot. Does the Enterprise King Win Again?",
+          "url": "https://www.aol.com/articles/microsoft-going-multi-model-copilot-182000811.html",
+          "source": "www.aol.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1484-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed MacBook M3 16GB benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385654",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 로컬 LLM 모델 크기별 실제 속도 차이를 확인하려는 개발자",
+      "angle": "3B vs 8B 토큰 생성 속도, 메모리 점유율, 한국어 품질 실측 비교표 제공",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1485-en-tech-claude-api-tool-use-",
+      "keyword": "claude api tool use streaming response partial json parse python",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385684",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude Tool Use + 스트리밍을 동시에 쓸 때 JSON 파싱 오류를 해결하려는 개발자",
+      "angle": "스트리밍 중 부분 JSON 조각을 안전하게 누적·파싱하는 파이썬 코드 패턴 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Code execution tool - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
+          "source": "platform.claude.com"
+        },
+        {
+          "title": "Run Claude Code programmatically - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/headless",
+          "source": "code.claude.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1483-ko-tech-Prometheus-Grafana-D",
-      "keyword": "Prometheus Grafana Docker Compose RAM 2GB 단독 서버 메모리 최적화 실전 설정",
+      "id": "1486-en-tech-github-actions-docke",
+      "keyword": "github actions docker build cache not working arm64 m-series mac",
       "category": "tech",
-      "lang": "ko",
-      "priority": 8,
+      "lang": "en",
+      "priority": 7,
       "status": "pending",
-      "created_at": "2026-04-04T07:51:04.104183",
+      "created_at": "2026-04-05T07:56:50.385704",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "메모리 2GB 저사양 VPS에서 Prometheus와 Grafana를 Docker Compose로 운영할 때 OOM 없이 안정적으로 설정하는 방법을 찾는 DevOps 개발자",
-      "angle": "retention 기간, scrape interval, Grafana 플러그인 제한 등 실제 OOM 경험 후 도출한 최소 메모리 설정값 공유",
+      "search_intent": "M 시리즈 맥에서 빌드한 arm64 이미지가 GitHub Actions 캐시를 무시하는 문제 해결",
+      "angle": "buildx + cache-from/cache-to 설정에서 플랫폼 불일치로 캐시 미스 발생하는 원인과 fix",
       "competition_level": "low",
       "references": [
         {
-          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
-          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
-          "source": "seekerslab.com"
+          "title": "r/rust on Reddit: GitHub Actions container builds take forever",
+          "url": "https://www.reddit.com/r/rust/comments/1n4s4xb/github_actions_container_builds_take_forever/",
+          "source": "www.reddit.com"
         },
         {
-          "title": "Monitor Docker Containers with Prometheus [Guide]",
-          "url": "https://computingforgeeks.com/monitor-docker-containers-prometheus-grafana/",
-          "source": "computingforgeeks.com"
+          "title": "Failing to push build cache should not fail the workflow · Issue #1409 · docker/build-push-action",
+          "url": "https://github.com/docker/build-push-action/issues/1409",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1487-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start latency reduction production tips",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385722",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Functions의 콜드 스타트 지연을 줄이고 싶은 개발자",
+      "angle": "실 프로덕션에서 측정한 콜드 스타트 시간과 워밍업 크론 전략, Deno 번들 사이즈 최적화 실험",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1488-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose 2gb vps high memory usage fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385745",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "2GB RAM VPS에서 Prometheus + Node Exporter가 메모리를 과다 점유할 때 해결 방법",
+      "angle": "scrape_interval, retention 조정 및 --storage.tsdb 플래그로 메모리 300MB 이하로 줄인 실측 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
+          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
+          "source": "grafana.com"
         },
         {
           "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
           "url": "https://last9.io/blog/prometheus-with-docker-compose/",
           "source": "last9.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1489-en-tech-vercel-hobby-plan-ai",
+      "keyword": "vercel hobby plan ai sdk streaming timeout workaround nextjs app router",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385768",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 플랜에서 AI 스트리밍 응답이 10초 제한에 걸리는 문제를 해결하려는 Next.js 개발자",
+      "angle": "Edge Runtime 전환 vs chunked polling 패턴 vs Cloudflare Workers 이전 비용-복잡도 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI SDK v5 Streaming Works Server-Side But Not in UI - OpenRouter - AI SDK - Vercel Community",
+          "url": "https://community.vercel.com/t/ai-sdk-v5-streaming-works-server-side-but-not-in-ui-openrouter/20672",
+          "source": "community.vercel.com"
+        },
+        {
+          "title": "How to solve Next.js timeouts - Inngest Blog",
+          "url": "https://www.inngest.com/blog/how-to-solve-nextjs-timeouts",
+          "source": "www.inngest.com"
+        },
+        {
+          "title": "Real-time AI in Next.js: How to stream responses with the Vercel AI SDK - LogRocket Blog",
+          "url": "https://blog.logrocket.com/nextjs-vercel-ai-sdk-streaming/",
+          "source": "blog.logrocket.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1490-ko-tech-Claude-API-스트리밍-한국어-",
+      "keyword": "Claude API 스트리밍 한국어 토큰 분절 문제 Next.js App Router 실전 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385787",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js에서 Claude 스트리밍 쓸 때 한국어가 글자 단위로 깨져서 나오는 문제를 해결하려는 개발자",
+      "angle": "한국어 멀티바이트 토큰이 청크 경계에서 잘리는 원인과 TextDecoder 스트림 버퍼링으로 해결하는 코드 공개",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1491-ko-tech-Fly.io-1인-개발자-월-비용-실",
+      "keyword": "Fly.io 1인 개발자 월 비용 실측 PostgreSQL Redis 포함 $15 이하 운영 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385805",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io로 사이드 프로젝트를 운영할 때 실제 청구 금액이 얼마인지 확인하려는 개발자",
+      "angle": "DB, 앱, 볼륨 스토리지 각각의 실제 청구 내역 스크린샷과 비용 줄이는 scale-to-zero 설정법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly.io | Review, Pricing & Alternatives",
+          "url": "https://getdeploying.com/flyio",
+          "source": "getdeploying.com"
+        },
+        {
+          "title": "Fly.io Pricing 2026: $0–$500+/month + Hidden Costs Explained",
+          "url": "https://costbench.com/software/developer-tools/flyio/",
+          "source": "costbench.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1492-ko-tech-ollama-로컬-LLM-M3-맥북-",
+      "keyword": "ollama 로컬 LLM M3 맥북 한국어 답변 품질 GPT-4o-mini 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385820",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GPT API 비용 절감을 위해 로컬 LLM으로 대체 가능한지 직접 비교 데이터를 원하는 개발자",
+      "angle": "동일 프롬프트 20개로 한국어 요약·코드 생성·번역 정확도를 점수화한 실험 결과표 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Open Code 리뷰(3) : 오픈소스, 무료 및 저가 LLM 모델 활용 해보기 with Ollama, Qwen3, glm4.7, MiniMax M2.1 등 :: 갓대희의 작은공",
+          "url": "https://goddaehee.tistory.com/488",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "Ollama Models List 2025: 100+ 모델 비교 가이드 - Skywork ai",
+          "url": "https://skywork.ai/blog/llm/ollama-models-list-models-compared-ko/",
+          "source": "skywork.ai"
+        },
+        {
+          "title": "Ollama로 OpenClaw 로컬 AI 모델 연동하기 | twitter_username",
+          "url": "https://leejams.github.io/openclaw-ollama/",
+          "source": "leejams.github.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1493-ko-tech-GitHub-Actions-self-",
+      "keyword": "GitHub Actions self-hosted runner Apple Silicon 메모리 누수 장시간 실행 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385838",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M 시리즈 맥에서 self-hosted runner가 몇 시간 후 OOM으로 죽는 문제를 해결하려는 개발자",
+      "angle": "러너 프로세스 메모리 추이 모니터링 방법과 ephemeral 모드 + launchd 자동 재시작으로 안정화한 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions Self-Hosted Runner 대규모 운영과 보안 하드닝 가이드 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-05-devops-github-actions-self-hosted-runner-ops",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Self-Hosted Github actions runner listener uses huge amount of virtual memory when idle · Issue #379",
+          "url": "https://github.com/actions/runner/issues/3796",
+          "source": "github.com"
+        },
+        {
+          "title": "GitHub Actions: Self-Hosted Runners - Dominic Rodemer's Blog",
+          "url": "https://blog.dominicrodemer.com/github-actions-self-hosted-runners/",
+          "source": "blog.dominicrodemer.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1494-ko-tech-Supabase-RLS-정책-성능-저",
+      "keyword": "Supabase RLS 정책 성능 저하 실측 인덱스 설정으로 쿼리 10배 개선 사례",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385854",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Row Level Security 활성화 후 쿼리가 급격히 느려진 원인을 찾는 개발자",
+      "angle": "EXPLAIN ANALYZE로 RLS 정책 평가 비용 확인 후 auth.uid() 기반 인덱스 추가로 개선한 before/after 수치",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1495-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 무중단 배포 blue-green 전략 nginx 설정 실전 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385870",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "쿠버네티스 없이 단일 서버에서 다운타임 없이 배포하는 방법을 찾는 1인 개발자",
+      "angle": "nginx upstream 교체 + Docker network 전환으로 구현하는 blue-green 배포 스크립트와 헬스체크 설정 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[CI/CD] blue/green 무중단 배포 (Docker, Github Actions, Nginx) — J_hzlo",
+          "url": "https://jhzlo.tistory.com/82",
+          "source": "jhzlo.tistory.com"
+        },
+        {
+          "title": "Gighub Action , Docker Compose, Nginx, code deploy 무중단 배포",
+          "url": "https://jsw5913.tistory.com/15",
+          "source": "jsw5913.tistory.com"
+        },
+        {
+          "title": "How I Set Up a Resilient Blue/Green Deployment with Docker Compose and Nginx | by Chinecherem Udegbu",
+          "url": "https://medium.com/@ChinecheremU/how-i-set-up-a-resilient-blue-green-deployment-with-docker-compose-and-nginx-9726a9a068bf",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1496-ko-tech-Cloudflare-Workers-A",
+      "keyword": "Cloudflare Workers AI llama3 한국어 품질 유료 플랜 없이 무료 한도 실제 사용량 측정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-05T07:56:50.385886",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers AI 무료 한도 내에서 한국어 LLM 서비스가 실제로 가능한지 확인하려는 개발자",
+      "angle": "일일 뉴런 한도 소진 속도 실측, 한국어 답변 품질 평가, 한도 초과 시 fallback 전략까지 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing · Cloudflare Workers AI docs",
+          "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "source": "developers.cloudflare.com"
         }
       ],
       "content_type_hint": "GUIDE"

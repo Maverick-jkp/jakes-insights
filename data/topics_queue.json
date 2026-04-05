@@ -13455,7 +13455,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385536",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -13480,7 +13480,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:37:26.251695+00:00"
     },
     {
       "id": "1483-ko-tech-Microsoft-Copilot-브랜",
@@ -13488,7 +13490,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385572",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -13513,7 +13515,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:49:23.580066+00:00"
     },
     {
       "id": "1484-en-tech-ollama-llama3.2-3b-v",
@@ -13521,7 +13525,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385654",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13529,7 +13533,9 @@
       "angle": "3B vs 8B 토큰 생성 속도, 메모리 점유율, 한국어 품질 실측 비교표 제공",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:40:02.946082+00:00"
     },
     {
       "id": "1485-en-tech-claude-api-tool-use-",
@@ -13537,7 +13543,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385684",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13556,7 +13562,9 @@
           "source": "code.claude.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:51:38.758180+00:00"
     },
     {
       "id": "1486-en-tech-github-actions-docke",
@@ -13607,7 +13615,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385745",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13631,7 +13639,9 @@
           "source": "spacelift.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:53:55.261326+00:00"
     },
     {
       "id": "1489-en-tech-vercel-hobby-plan-ai",
@@ -13639,7 +13649,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385768",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13663,7 +13673,9 @@
           "source": "blog.logrocket.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:41:42.391914+00:00"
     },
     {
       "id": "1490-ko-tech-Claude-API-스트리밍-한국어-",
@@ -13671,7 +13683,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385787",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13679,7 +13691,9 @@
       "angle": "한국어 멀티바이트 토큰이 청크 경계에서 잘리는 원인과 TextDecoder 스트림 버퍼링으로 해결하는 코드 공개",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:44:14.670666+00:00"
     },
     {
       "id": "1491-ko-tech-Fly.io-1인-개발자-월-비용-실",
@@ -13714,7 +13728,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385820",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13738,7 +13752,9 @@
           "source": "leejams.github.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:46:45.558279+00:00"
     },
     {
       "id": "1493-ko-tech-GitHub-Actions-self-",
@@ -13778,7 +13794,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385854",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13786,7 +13802,9 @@
       "angle": "EXPLAIN ANALYZE로 RLS 정책 평가 비용 확인 후 auth.uid() 기반 인덱스 추가로 개선한 before/after 수치",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:56:19.637752+00:00"
     },
     {
       "id": "1495-ko-tech-Docker-Compose-단독-VP",
@@ -13794,7 +13812,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-05T07:56:50.385870",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -13818,7 +13836,9 @@
           "source": "medium.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-05T10:35:32.240958+00:00",
+      "completed_at": "2026-04-05T10:59:12.097199+00:00"
     },
     {
       "id": "1496-ko-tech-Cloudflare-Workers-A",

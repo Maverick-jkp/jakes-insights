@@ -15786,70 +15786,6 @@
       "completed_at": "2026-04-12T10:53:27.416975+00:00"
     },
     {
-      "id": "1579-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter docker compose single vps 1gb ram high memory usage tuning",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-12T08:05:34.271768",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "1GB RAM VPS에서 Prometheus + Node Exporter Docker Compose 구성 시 메모리 부족 문제 해결",
-      "angle": "scrape_interval 조정, retention 축소, --storage.tsdb.retention.size 옵션으로 1GB 환경 최적화 실전 설정",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
-        },
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1580-en-tech-warp-terminal-ai-sla",
-      "keyword": "warp terminal ai slash commands vs cursor ide ai autocomplete which is faster real workflow 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-04-12T08:05:34.271792",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Warp AI 터미널 커맨드 제안과 Cursor AI 자동완성 중 실무에서 어느 쪽이 더 빠른지 비교",
-      "angle": "백엔드 개발 실무 시나리오 5가지로 Warp vs Cursor 작업 속도 직접 비교 후기",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Cursor vs Warp Review: Warp 3x Faster & 1/6th of the cost of Cursor | by Chris Dunlop | Realworld AI",
-          "url": "https://medium.com/realworld-ai-use-cases/cursor-vs-warp-review-warp-3x-faster-1-6th-of-the-cost-of-cursor-dd0587df1f29",
-          "source": "medium.com"
-        },
-        {
-          "title": "Warp vs Cursor (2026): Terminal‑First ADE or Agentic IDE? | Augment Code",
-          "url": "https://www.augmentcode.com/tools/warp-vs-cursor",
-          "source": "www.augmentcode.com"
-        },
-        {
-          "title": "AI in your IDE (e.g. Cursor) vs AI in your terminal (Claude Code) — what’s the better flow? : Vibeco",
-          "url": "https://www.producthunt.com/p/vibecoding/ai-in-your-ide-e-g-cursor-vs-ai-in-your-terminal-claude-code-what-s-the-better-flow",
-          "source": "www.producthunt.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1581-ko-tech-맥북-M3-ollama-llama3.",
       "keyword": "맥북 M3 ollama llama3.2 한국어 답변 품질 GPT-4o-mini 실측 비교 2025",
       "category": "tech",
@@ -15986,65 +15922,6 @@
       "completed_at": "2026-04-12T10:57:52.947603+00:00"
     },
     {
-      "id": "1585-ko-tech-Fly.io-vs-Railway-사이",
-      "keyword": "Fly.io vs Railway 사이드 프로젝트 월 $5 이하 Node.js 백엔드 실제 운영 비용 후기",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-12T08:05:34.271882",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저비용으로 Node.js 백엔드를 배포할 플랫폼을 선택하려는 1인 개발자",
-      "angle": "동일 Express 앱을 Fly.io·Railway에 올려 3개월간 실제 청구 금액·콜드스타트·DX 비교 정리",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Railway vs. Fly | Railway Docs",
-          "url": "https://docs.railway.com/platform/compare-to-fly",
-          "source": "docs.railway.com"
-        },
-        {
-          "title": "Deploying Node.js Apps: Comparing Railway, Render, and Fly.io - DEV Community",
-          "url": "https://dev.to/whoffagents/deploying-nodejs-apps-comparing-railway-render-and-flyio-4cfj",
-          "source": "dev.to"
-        },
-        {
-          "title": "Fly.io vs Railway",
-          "url": "https://getdeploying.com/flyio-vs-railway",
-          "source": "getdeploying.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1586-ko-tech-Docker-Compose-단일-VP",
-      "keyword": "Docker Compose 단일 VPS PostgreSQL 백업 자동화 rclone S3 호환 스토리지 무료 설정",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-12T08:05:34.271899",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "VPS에서 혼자 운영하는 PostgreSQL 데이터를 돈 안 들이고 자동 백업하고 싶은 개발자",
-      "angle": "pg_dump + rclone + Backblaze B2(무료 10GB) 조합으로 일 1회 자동 백업 cron 전체 설정 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "[윈도우 개발 환경 설정] 8편: PostgreSQL 컨테이너 설정",
-          "url": "https://polarcompass.tistory.com/314",
-          "source": "polarcompass.tistory.com"
-        },
-        {
-          "title": "n8n Self-Hosting on Hetzner: Complete Docker Setup Guide (2026) - DEV Community",
-          "url": "https://dev.to/nevik_schmidt_3635afa2b85/n8n-self-hosting-on-hetzner-complete-docker-setup-guide-2026-2poa",
-          "source": "dev.to"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1587-ko-tech-Cursor-IDE-규칙-파일-.cu",
       "keyword": "Cursor IDE 규칙 파일 .cursorrules 실무 프롬프트 설정 TypeScript Next.js 프로젝트 최적화",
       "category": "tech",
@@ -16077,6 +15954,482 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-04-12T10:39:20.423537+00:00",
       "completed_at": "2026-04-12T11:00:27.725476+00:00"
+    },
+    {
+      "id": "1588-ko-tech-AI-벤치마크-조작-실태-—-점수-믿",
+      "keyword": "AI 벤치마크 조작 실태 — 점수 믿었다가 낭패 본 개발자들",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445206",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 도구 도입을 검토 중인 개발자·기업 담당자가 벤치마크 수치를 그대로 믿어도 되는지 불안함을 느끼고 검색",
+      "angle": "UC버클리 연구 결과를 바탕으로, 국내 개발자가 AI 에이전트 선택 시 벤치마크 수치를 어떻게 해석해야 하는지 실전 판단 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI, 동료 살리려 거짓말·점수 조작…버클리 실험서 드러나",
+          "url": "https://www.donga.com/news/It/article/all/20260406/133683643/2",
+          "source": "www.donga.com"
+        },
+        {
+          "title": "엉뚱한 질문으로 구성된 '헛소리벤치' 등장...앤트로픽이 상위권 싹쓸이 < 뉴테크 < AI기술 < 기사본문 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=208860",
+          "source": "www.aitimes.com"
+        },
+        {
+          "title": "당신이 바이브코딩으로 만든 앱, 출시 즉시 '폭파' 될 가능성이 높습니다 - 오마이뉴스",
+          "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003223255&PAGE_CD=N0002&CMPT_CD=M0112",
+          "source": "www.ohmynews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1589-en-tech-ollama-llama3.2-M3-M",
+      "keyword": "ollama llama3.2 M3 MacBook 16GB RAM token speed benchmark vs GPT-4o-mini 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445248",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 Mac 사용자가 로컬 LLM 실행 시 실제 성능이 GPT-4o-mini 대비 얼마나 되는지 실측값을 찾는 중",
+      "angle": "실제 토큰/초 수치, 한국어 응답 품질, 비용 대비 효용 직접 비교 실험 결과 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Ollama Models: 12 Models Ranked for Coding, RAG & Agents (2026) | Morph",
+          "url": "https://www.morphllm.com/best-ollama-models",
+          "source": "www.morphllm.com"
+        },
+        {
+          "title": "Best Small AI Models to Run with Ollama (2026): Phi-4, Gemma 3, Qwen 3, GGUF Picks | Local AI Master",
+          "url": "https://localaimaster.com/blog/small-language-models-guide-2026",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "r/ollama on Reddit: Hows your experience running Ollama on Apple Sillicon M1, M2, M3 or M4",
+          "url": "https://www.reddit.com/r/ollama/comments/1n7uhkv/hows_your_experience_running_ollama_on_apple/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1590-en-tech-Claude-API-RAG-chunk",
+      "keyword": "Claude API RAG chunk size 512 vs 1024 retrieval accuracy experiment Python 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445274",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 파이프라인 구축 시 청크 사이즈가 검색 정확도에 미치는 영향을 실험 데이터로 확인하려는 개발자",
+      "angle": "청크 사이즈 512/768/1024별 recall@k 수치 실험, Claude API 비용과 정확도 트레이드오프 실측",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Document Chunking for RAG: 9 Strategies Tested (70% Accuracy Boost 2025) | LLM Practical Experience ",
+          "url": "https://langcopilot.com/posts/2025-10-11-document-chunking-for-rag-practical-guide",
+          "source": "langcopilot.com"
+        },
+        {
+          "title": "Optimizing RAG Chunk Size: Your Definitive Guide to Better Retrieval Accuracy - machinelearningplus",
+          "url": "https://machinelearningplus.com/gen-ai/optimizing-rag-chunk-size-your-definitive-guide-to-better-retrieval-accuracy/",
+          "source": "machinelearningplus.com"
+        },
+        {
+          "title": "Rethinking Chunk Size for Long-Document Retrieval: A Multi-Dataset Analysis",
+          "url": "https://arxiv.org/html/2505.21700v2",
+          "source": "arxiv.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1591-en-tech-fly.io-vs-render.com",
+      "keyword": "fly.io vs render.com solo developer hobby project real monthly cost breakdown 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445296",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "1인 개발자가 사이드 프로젝트 배포 플랫폼을 선택할 때 실제 청구서 기반 비용을 비교하려는 상황",
+      "angle": "실제 계정 청구서 스크린샷 기반 Fly.io vs Render 월별 비용 전수 비교, 트래픽 시나리오별 시뮬레이션",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Sealos vs. Render vs. Fly.io: A 2025 Guide to the Best Heroku Alternatives | Sealos Blog",
+          "url": "https://sealos.io/blog/sealos-vs-render-vs-flyio-a-2025-guide-to-the-best-heroku-alternatives/",
+          "source": "sealos.io"
+        },
+        {
+          "title": "Render vs Fly.io (2026): Simple PaaS vs Global Edge Containers",
+          "url": "https://www.buildmvpfast.com/compare/render-vs-fly-io",
+          "source": "www.buildmvpfast.com"
+        },
+        {
+          "title": "Fly.io vs Render",
+          "url": "https://getdeploying.com/flyio-vs-render",
+          "source": "getdeploying.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1592-en-tech-Prometheus-Grafana-D",
+      "keyword": "Prometheus Grafana Docker Compose 2GB RAM VPS memory OOM crash fix configuration",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445318",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Prometheus+Grafana 스택 실행 중 OOM 크래시를 경험한 개발자가 해결책을 찾는 중",
+      "angle": "2GB RAM 환경에서 scrape_interval, retention, chunk 캐시 등 메모리 최적화 설정값 삽질 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/prometheus-grafana",
+          "source": "docker.recipes"
+        },
+        {
+          "title": "Docker CPU & Memory Limits: Prevent Container Resource Exhaustion",
+          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-limit-cpu-memory/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
+          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
+          "source": "grafana.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1593-en-tech-Hugo-Cloudflare-Page",
+      "keyword": "Hugo Cloudflare Pages GitHub Actions deploy cron job not triggering troubleshoot 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445339",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그를 Cloudflare Pages에 자동배포 설정했는데 cron 트리거가 동작하지 않아 원인을 찾는 개발자",
+      "angle": "cron 미작동 5가지 실제 원인 분석 및 workflow_dispatch 대안, Cloudflare Wrangler 연동 해결법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo support in Cloudflare Workers - support - HUGO",
+          "url": "https://discourse.gohugo.io/t/hugo-support-in-cloudflare-workers/54866",
+          "source": "discourse.gohugo.io"
+        },
+        {
+          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
+          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
+          "source": "www.caktusgroup.com"
+        },
+        {
+          "title": "Hugo · Cloudflare Pages docs",
+          "url": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1594-en-tech-Cursor-IDE-vs-GitHub",
+      "keyword": "Cursor IDE vs GitHub Copilot real world Python FastAPI project code quality comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445362",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "실제 FastAPI 프로젝트에서 Cursor와 Copilot 중 어느 쪽이 코드 품질과 생산성 면에서 나은지 비교 데이터를 원하는 개발자",
+      "angle": "동일 스펙 FastAPI 엔드포인트 구현 작업을 두 도구로 각각 수행, 코드 라인 수·버그율·완성 시간 실측 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cursor 2.0 vs GitHub Copilot 2025: Which One Should You Use? - Skywork ai",
+          "url": "https://skywork.ai/blog/vibecoding/cursor-2-0-vs-github-copilot/",
+          "source": "skywork.ai"
+        },
+        {
+          "title": "Claude Code vs Cursor vs GitHub Copilot: Honest Comparison After 30 Days - DEV Community",
+          "url": "https://dev.to/dextralabs/claude-code-vs-cursor-vs-github-copilot-honest-comparison-after-30-days-1030",
+          "source": "dev.to"
+        },
+        {
+          "title": "GitHub Copilot vs Cursor 2026: 0 vs 0 — Which AI Codes Better?",
+          "url": "https://tech-insider.org/github-copilot-vs-cursor-2026/",
+          "source": "tech-insider.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1595-en-tech-Supabase-self-hosted",
+      "keyword": "Supabase self-hosted Docker Compose ARM64 Raspberry Pi 5 setup error fix 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445391",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Raspberry Pi 5(ARM64)에서 Supabase를 셀프호스팅하다가 컨테이너 아키텍처 오류를 만난 개발자",
+      "angle": "ARM64 이미지 호환성 문제, kong/postgrest 빌드 에러 실제 해결 과정, 동작 가능한 compose 파일 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Self-Hosting with Docker | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/self-hosting/docker",
+          "source": "supabase.com"
+        },
+        {
+          "title": "r/Supabase on Reddit: Self Hosting in Raspberry Pi",
+          "url": "https://www.reddit.com/r/Supabase/comments/1larkef/self_hosting_in_raspberry_pi/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1596-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 답변 속도 실측 GPT-4o-mini 비용 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445412",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 로컬 LLM을 돌리는 게 GPT API 쓰는 것보다 실제로 빠르고 저렴한지 수치로 확인하고 싶은 개발자",
+      "angle": "토큰/초 실측값, 한국어 자연스러움 체감 비교, 월 사용량 기준 실제 비용 절감액 계산",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "맥미니 대란 - OpenClaw가 만든 AI 서버 시대, 모델별 구매 가이드",
+          "url": "https://blog.kwt.co.kr/%EB%A7%A5%EB%AF%B8%EB%8B%88-%EB%8C%80%EB%9E%80-openclaw%EA%B0%80-%EB%A7%8C%EB%93%A0-ai-%EC%84%9C%EB%B2%84-%EC%8B%9C%EB%8C%80-%EB%AA%A8%EB%8D%B8%EB%B3%84-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4/",
+          "source": "blog.kwt.co.kr"
+        },
+        {
+          "title": "Best Ollama Models 2025: Performance Comparison Guide",
+          "url": "https://collabnix.com/best-ollama-models-in-2025-complete-performance-comparison/",
+          "source": "collabnix.com"
+        },
+        {
+          "title": "r/ollama on Reddit: Hows your experience running Ollama on Apple Sillicon M1, M2, M3 or M4",
+          "url": "https://www.reddit.com/r/ollama/comments/1n7uhkv/hows_your_experience_running_ollama_on_apple/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1597-ko-tech-1인-개발자-사이드-프로젝트-월-$1",
+      "keyword": "1인 개발자 사이드 프로젝트 월 $10 이하 인프라 Fly.io Docker Compose 실제 비용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445431",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트 인프라 비용을 최소화하고 싶은 1인 개발자가 현실적인 스택과 비용 구조를 찾는 중",
+      "angle": "실제 계정 청구서 기반 Fly.io 무료 플랜 한계, Docker Compose VPS 조합 총비용 월별 상세 내역",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[윈도우 개발 환경 설정] 13편: 클라우드 서버 비교 & 선택 가이드",
+          "url": "https://polarcompass.tistory.com/319",
+          "source": "polarcompass.tistory.com"
+        },
+        {
+          "title": "Docker Desktop 유료화 대안: 무료/오픈소스 도구와 실전 전환 가이드",
+          "url": "https://notavoid.tistory.com/387",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "프로그램 개발 비용, 왜 비쌀까? CTO의 예산 최적화 가이드",
+          "url": "https://www.pooolingforest.com/blog/software-development-cost-optimization-secrets",
+          "source": "www.pooolingforest.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1598-ko-tech-Claude-API-vs-GPT-4o",
+      "keyword": "Claude API vs GPT-4o FastAPI RAG 파이프라인 실제 응답 품질 속도 비용 비교 실험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445449",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 서비스에 어떤 LLM API를 붙일지 결정하려는 개발자가 실측 데이터가 필요한 상황",
+      "angle": "동일 벡터DB + 동일 청크로 Claude/GPT-4o 각각 연결, 정답률·latency·1000회 호출 비용 실험 결과",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenClaw Best Model Selection Guide: Claude vs GPT vs Gemini vs DeepSeek (2026) | LaoZhang AI Blog",
+          "url": "https://blog.laozhang.ai/en/posts/openclaw-best-model-selection-guide",
+          "source": "blog.laozhang.ai"
+        },
+        {
+          "title": "GPT-5 vs 클로드 오푸스: API 가격 비교 및 코딩 최적 솔루션",
+          "url": "https://apidog.com/kr/blog/gpt-5-vs-claude-opus-kr/",
+          "source": "apidog.com"
+        },
+        {
+          "title": "Backoffice AI Agent 구축기 — RAG+MCP 기반 플레이스AI 특화 지식 검색 시스템 | by UJ | 네이버 플레이스 개발 블로그 | Medium",
+          "url": "https://medium.com/naver-place-dev/backoffice-ai-agent-%EA%B5%AC%EC%B6%95%EA%B8%B0-rag-mcp-%EA%B8%B0%EB%B0%98-%ED%94%8C%EB%A0%88%EC%9D%B4%EC%8A%A4ai-%ED%8A%B9%ED%99%94-%EC%A7%80%EC%8B%9D-%EA%B2%80%EC%83%89-%EC%8B%9C%EC%8A%A4%ED%85%9C-9a66b4afa1aa",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1599-ko-tech-Prometheus-Grafana-2",
+      "keyword": "Prometheus Grafana 2GB VPS Docker Compose OOM 해결 메모리 최적화 설정 삽질 기록",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445482",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 서버에서 Prometheus 스택을 운영하다 메모리 부족으로 컨테이너가 죽는 문제를 해결하려는 개발자",
+      "angle": "실제 OOM 킬 로그 분석, scrape_interval·retention·캐시 설정 최적화로 메모리 사용량 40% 줄인 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Monitor Docker Containers with Prometheus and Grafana",
+          "url": "https://computingforgeeks.com/monitor-docker-containers-prometheus-grafana/",
+          "source": "computingforgeeks.com"
+        },
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "VictoriaMetrics Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/victoria-metrics",
+          "source": "docker.recipes"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1600-ko-tech-Cursor-IDE-실제-업무-투입-",
+      "keyword": "Cursor IDE 실제 업무 투입 후기 GitHub Copilot 대비 Python 코드 품질 생산성 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445500",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor로 갈아탈지 고민하는 개발자가 실제 업무 환경 기준 비교 경험담을 찾는 중",
+      "angle": "실제 FastAPI 프로젝트 2주 사용 후 코드 완성 속도, 오류율, 컨텍스트 이해력 항목별 주관+객관 평가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cursor vs GitHub Copilot 비교 - 네이버 프리미엄콘텐츠",
+          "url": "https://contents.premium.naver.com/absinf/absinf99/contents/251111113408829mf",
+          "source": "contents.premium.naver.com"
+        },
+        {
+          "title": "3년 차 개발자가 직접 써보고 정리한 IT 고수들의 필수 프로그램 TOP 10 (2026년 최신판) :: 중년디지털노마드",
+          "url": "https://dijiteolnomadeuibagu.tistory.com/entry/3%EB%85%84-%EC%B0%A8-%EA%B0%9C%EB%B0%9C%EC%9E%90%EA%B0%80-%EC%A7%81%EC%A0%91-%EC%8D%A8%EB%B3%B4%EA%B3%A0-%EC%A0%95%EB%A6%AC%ED%95%9C-IT-%EA%B3%A0%EC%88%98%EB%93%A4%EC%9D%98-%ED%95%84%EC%88%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-TOP-10-2026%EB%85%84-%EC%B5%9C%EC%8B%A0%ED%8C%90",
+          "source": "dijiteolnomadeuibagu.tistory.com"
+        },
+        {
+          "title": "Cursor vs GitHub Copilot vs Claude — AI 코딩 도구 실전 비교 - 코드벤터 - AI Product Development Company",
+          "url": "https://www.codeventer.com/cursor-vs-copilot-vs-claude-comparison/",
+          "source": "www.codeventer.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1601-ko-tech-Supabase-셀프호스팅-ARM64",
+      "keyword": "Supabase 셀프호스팅 ARM64 라즈베리파이5 Docker 오류 해결 실전 가이드 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445516",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "라즈베리파이5에서 Supabase를 직접 구동하려다 ARM 아키텍처 호환 문제로 막힌 개발자",
+      "angle": "공식 docker-compose 그대로 올리면 터지는 이유, ARM64 호환 이미지 교체법과 동작 확인된 compose 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Scribbly | 16. Supabase 셀프 호스팅 가이드",
+          "url": "https://blog.jongchoi.com/post/16-supabase",
+          "source": "blog.jongchoi.com"
+        },
+        {
+          "title": "Self-Hosting with Docker | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/self-hosting/docker",
+          "source": "supabase.com"
+        },
+        {
+          "title": "[n8n] n8n 셀프 호스팅 입문 & 실전 오류 해결 가이드 - vol2 blog",
+          "url": "https://vol2.tistory.com/entry/n8n-Day1-n8n-%EC%85%80%ED%94%84-%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%B2%AB-%EC%8B%9C%EC%9E%91",
+          "source": "vol2.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1602-ko-tech-Hugo-블로그-Cloudflare-",
+      "keyword": "Hugo 블로그 Cloudflare Pages GitHub Actions cron 자동배포 안될 때 원인 5가지 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-13T09:02:50.445533",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo + Cloudflare Pages 조합에서 예약 배포가 동작하지 않아 원인을 모르는 개발자",
+      "angle": "cron 트리거 미작동 실제 원인(비활성 레포 정책, 브랜치 명칭, 권한 토큰 만료 등) 5가지 케이스별 해결책",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
+          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
+          "source": "www.caktusgroup.com"
+        },
+        {
+          "title": "Hugo support in Cloudflare Workers - support - HUGO",
+          "url": "https://discourse.gohugo.io/t/hugo-support-in-cloudflare-workers/54866",
+          "source": "discourse.gohugo.io"
+        },
+        {
+          "title": "Host on Cloudflare",
+          "url": "https://gohugo.io/host-and-deploy/host-on-cloudflare/",
+          "source": "gohugo.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

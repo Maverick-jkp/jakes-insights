@@ -16492,65 +16492,6 @@
       "completed_at": "2026-04-14T11:23:47.003672+00:00"
     },
     {
-      "id": "1607-en-tech-GitHub-Actions-self-",
-      "keyword": "GitHub Actions self-hosted runner Docker container memory limit OOM kill fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-14T08:29:27.369684",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "셀프 호스팅 GitHub Actions 러너가 빌드 중 메모리 부족으로 종료되는 문제 해결 탐색",
-      "angle": "OOM 원인 진단 명령어 + cgroups 메모리 제한 조정 + swap 설정 단계별 트러블슈팅",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Runner pod hangs indefinitely on memory limit instead of OOMKilling (cgroup v2 file-backed page thra",
-          "url": "https://github.com/actions/actions-runner-controller/issues/4436",
-          "source": "github.com"
-        },
-        {
-          "title": "r/devops on Reddit: I wrote a tool to prevent OOM-killed builds on our CI runners",
-          "url": "https://www.reddit.com/r/devops/comments/1lrg0x4/i_wrote_a_tool_to_prevent_oomkilled_builds_on_our/",
-          "source": "www.reddit.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1608-en-tech-Prometheus-scrape-in",
-      "keyword": "Prometheus scrape interval vs evaluation interval difference high cardinality label cost",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-14T08:29:27.369728",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Prometheus 설정 최적화 중 두 인터벌 혼동과 고카디널리티 레이블로 인한 메모리 폭증 원인 탐색",
-      "angle": "두 인터벌의 역할 차이 + 고카디널리티 레이블 실수 사례 + 2GB 서버 기준 안전 설정값 제시",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Configure Prometheus Scrape Intervals and Timeout Tuning",
-          "url": "https://oneuptime.com/blog/post/2026-02-09-prometheus-scrape-intervals-tuning/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "Taming Prometheus Scrapes - Understanding and Analyzing Your Metrics Endpoints - DEV Community",
-          "url": "https://dev.to/frosnerd/taming-prometheus-scrapes-understanding-and-analyzing-your-metrics-endpoints-ik5",
-          "source": "dev.to"
-        },
-        {
-          "title": "VictoriaMetrics vs Prometheus: Differences in Efficiency, Cost, and Scalability",
-          "url": "https://apprecode.com/blog/a-complete-guide-to-victoriametrics-a-prometheus-comparison-and-kubernetes-monitoring-implementation",
-          "source": "apprecode.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1609-en-tech-Supabase-pgvector-em",
       "keyword": "Supabase pgvector embedding search slow query index HNSW vs IVFFlat small dataset under 100k rows",
       "category": "tech",
@@ -16648,129 +16589,6 @@
       "completed_at": "2026-04-14T11:18:29.262815+00:00"
     },
     {
-      "id": "1612-ko-tech-Fly.io-월-10달러-이하-Nex",
-      "keyword": "Fly.io 월 10달러 이하 Next.js 풀스택 배포 실제 비용 청구서 공개 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-04-14T08:29:27.369865",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Fly.io로 사이드 프로젝트 배포 시 실제 월 비용이 얼마나 나오는지 확인하려는 1인 개발자",
-      "angle": "실제 청구서 캡처 + 비용 발생 항목별 분석 + 10달러 이하 유지 설정 팁 공유",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Deploying Node.js Apps: Comparing Railway, Render, and Fly.io - DEV Community",
-          "url": "https://dev.to/whoffagents/deploying-nodejs-apps-comparing-railway-render-and-flyio-4cfj",
-          "source": "dev.to"
-        },
-        {
-          "title": "Fly.io | Review, Pricing & Alternatives",
-          "url": "https://getdeploying.com/flyio",
-          "source": "getdeploying.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1613-ko-tech-GitHub-Actions-Hugo-",
-      "keyword": "GitHub Actions Hugo 블로그 빌드 실패 Cloudflare Pages 배포 안될 때 원인 해결 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-14T08:29:27.369900",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo + Cloudflare Pages 자동배포 설정 중 빌드가 갑자기 실패하는 원인을 찾는 블로거",
-      "angle": "실제로 겪은 실패 로그 3가지 원인 분석 + Actions yml 수정 코드 + 재발 방지 체크리스트",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "[배포] Cloudflare Pages 배포에 인증 추가하기 - 밥 먹고 코딩",
-          "url": "https://meal-coding.tistory.com/54",
-          "source": "meal-coding.tistory.com"
-        },
-        {
-          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
-          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
-          "source": "www.caktusgroup.com"
-        },
-        {
-          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
-          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
-          "source": "www.heyjude.blog"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1614-ko-tech-Supabase-무료-플랜-한계-초과",
-      "keyword": "Supabase 무료 플랜 한계 초과 경험 프로젝트 이전 Neon PostgreSQL 비교 실사용 후기",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-04-14T08:29:27.369931",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase 무료 한도 초과 후 대안을 고민하는 개발자가 실사용 경험 탐색",
-      "angle": "Supabase 한계 도달 시점 + Neon으로 마이그레이션 과정 + 두 서비스 실사용 체감 차이 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Supabase vs Neon: Which Serverless Database Should Your Startup Use?",
-          "url": "https://www.getautonoma.com/blog/supabase-vs-neon",
-          "source": "www.getautonoma.com"
-        },
-        {
-          "title": "Neon vs Supabase: Benchmarks, Pricing & When to Use Each",
-          "url": "https://designrevision.com/blog/supabase-vs-neon",
-          "source": "designrevision.com"
-        },
-        {
-          "title": "[Supabase 시작하기] - 회원 가입부터 기초 CRUD, RAG를 위한 pgvector 활성화 하기 :: 갓대희의 작은공간",
-          "url": "https://goddaehee.tistory.com/377",
-          "source": "goddaehee.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1615-ko-tech-Docker-Compose-단독-서버",
-      "keyword": "Docker Compose 단독 서버 2GB RAM Prometheus Grafana Node Exporter 메모리 최적화 설정",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-14T08:29:27.369962",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus 스택을 띄웠더니 메모리가 부족해서 설정 최적화 방법을 찾는 개발자",
-      "angle": "2GB 서버 실제 메모리 사용량 측정 + 스크레이프 간격·보존 기간 튜닝 + compose 파일 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1616-ko-tech-1인-개발자-SaaS-인증-구현-Cl",
       "keyword": "1인 개발자 SaaS 인증 구현 Clerk vs NextAuth v5 비용 기능 실제 선택 기준 2025",
       "category": "tech",
@@ -16803,6 +16621,436 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-04-14T11:03:45.080431+00:00",
       "completed_at": "2026-04-14T11:20:35.695713+00:00"
+    },
+    {
+      "id": "1617-en-tech-Fiverr-data-breach-p",
+      "keyword": "Fiverr data breach public files tax returns exposed",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621421",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Freelancers and clients urgently checking whether their private documents shared on Fiverr are publicly accessible after the data exposure report",
+      "angle": "Security failure post-mortem: what data was exposed, who is at risk, and what freelancers should do right now to protect themselves",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Scammers are coming for your tax returns - POLITICO",
+          "url": "https://www.politico.com/newsletters/weekly-cybersecurity/2026/04/13/scammers-are-coming-for-your-tax-returns-00868753",
+          "source": "www.politico.com"
+        },
+        {
+          "title": "List of data breaches - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "How Scammers Steal Your Tax Refund in 2026",
+          "url": "https://www.omniwatch.com/blog/how-scammers-steal-your-tax-refund-in-2026/",
+          "source": "www.omniwatch.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1618-ko-tech-Fiverr-파일-유출-프리랜서-개인",
+      "keyword": "Fiverr 파일 유출 프리랜서 개인정보 노출 대처법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621479",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Fiverr를 사용 중인 국내 프리랜서·디자이너·개발자가 자신의 파일 유출 여부를 확인하고 즉각적인 대응 방법을 찾기 위해 검색",
+      "angle": "해외에서 터진 보안 사고가 국내 Fiverr 이용자에게 미치는 영향 — 피해 확인 방법, 즉시 취해야 할 조치, 향후 플랫폼 신뢰성 판단 기준",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "스마트폰 개인정보 노출 막는 설정 10가지 — 3년 차 보안 덕후가 직접 정리한 체크리스 :: 중년디지털노마드",
+          "url": "https://dijiteolnomadeuibagu.tistory.com/entry/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EB%85%B8%EC%B6%9C-%EB%A7%89%EB%8A%94-%EC%84%A4%EC%A0%95-10%EA%B0%80%EC%A7%80-%E2%80%94-3%EB%85%84-%EC%B0%A8-%EB%B3%B4%EC%95%88-%EB%8D%95%ED%9B%84%EA%B0%80-%EC%A7%81%EC%A0%91-%EC%A0%95%EB%A6%AC%ED%95%9C-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4",
+          "source": "dijiteolnomadeuibagu.tistory.com"
+        },
+        {
+          "title": "How to Use a VPN for Fiverr Sellers in 2026 (Stay Safe & Avoid Risks) – Ai Tools Lab",
+          "url": "https://aitoolslab.wordpress.com/2026/04/03/how-to-use-a-vpn-for-fiverr-sellers-in-2026-stay-safe-avoid-risks/",
+          "source": "aitoolslab.wordpress.com"
+        },
+        {
+          "title": "개인정보 유출 방지와 GDPR 보안 전략 - blue rev",
+          "url": "https://www.bluerev.co.kr/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4-%EC%9C%A0%EC%B6%9C-%EB%B0%A9%EC%A7%80%EC%99%80-gdpr-%EB%B3%B4%EC%95%88-%EC%A0%84%EB%9E%B5/",
+          "source": "www.bluerev.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1619-en-tech-fly.io-free-tier-pos",
+      "keyword": "fly.io free tier postgres connection limit workaround single developer 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621518",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 플랜에서 Postgres 연결 수 제한에 걸린 1인 개발자가 실제 해결책 탐색",
+      "angle": "실제 연결 풀링 설정(PgBouncer)과 Fly.io 환경 변수 조합으로 무료 한도 내 운영한 실전 트러블슈팅 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly Managed Postgres and database connection limit using the PG Bouncer - Phoenix - Fly.io",
+          "url": "https://community.fly.io/t/fly-managed-postgres-and-database-connection-limit-using-the-pg-bouncer/27103",
+          "source": "community.fly.io"
+        },
+        {
+          "title": "Cost Management on Fly.io · Fly Docs",
+          "url": "https://fly.io/docs/about/cost-management/",
+          "source": "fly.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1620-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b korean response quality M2 MacBook benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621607",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M2 MacBook에서 ollama로 llama3.2 모델 사이즈별 한국어 품질 차이를 실측 데이터로 확인하려는 개발자",
+      "angle": "3B vs 8B 모델을 동일 한국어 프롬프트 20개로 응답 속도·품질·메모리 사용량 직접 비교한 실험 결과",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Home GPU LLM Leaderboard: Best Open Source Models by VRAM Tier with Token/s Benchmarks | Awesome Age",
+          "url": "https://awesomeagents.ai/leaderboards/home-gpu-llm-leaderboard/",
+          "source": "awesomeagents.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1621-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start latency reduce production tips 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621675",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Functions의 콜드 스타트 지연이 실제 서비스에 미치는 영향을 줄이려는 개발자",
+      "angle": "워밍업 cron 트릭, Deno 번들 사이즈 최소화, 리전 선택 전략으로 p95 레이턴시 실측 전후 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase Edge Functions: Persistent Storage and Lightning-Fast Cold Starts Transform Serverless Work",
+          "url": "https://joshuaberkowitz.us/blog/news-1/supabase-edge-functions-persistent-storage-and-lightning-fast-cold-starts-transform-serverless-workflows-563",
+          "source": "joshuaberkowitz.us"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1622-en-tech-prometheus-grafana-d",
+      "keyword": "prometheus grafana docker compose 2gb ram vps memory oom killer tuning",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621716",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "2GB 이하 저사양 VPS에서 Prometheus+Grafana 스택 실행 시 OOM으로 컨테이너가 죽는 문제 해결",
+      "angle": "scrape interval 조정, retention 단축, Grafana 메모리 캡 설정, --storage.tsdb 플래그 실전 튜닝값 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/prometheus-grafana",
+          "source": "docker.recipes"
+        },
+        {
+          "title": "How to Monitor NVIDIA GPUs with Prometheus & Grafana (Docker Guide)",
+          "url": "https://www.servermo.com/howto/monitor-nvidia-gpu-prometheus-grafana/",
+          "source": "www.servermo.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1623-en-tech-weaviate-vs-qdrant-l",
+      "keyword": "weaviate vs qdrant local docker single node rag retrieval speed comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621757",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 단일 노드 환경에서 RAG 파이프라인에 쓸 벡터DB를 Weaviate와 Qdrant 중 선택하려는 개발자",
+      "angle": "동일 1만 개 청크 데이터셋으로 인덱싱 시간·쿼리 레이턴시·메모리 점유율 Docker Compose 환경 직접 측정",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Top Vector Database for RAG: Qdrant vs Weaviate vs Pinecone",
+          "url": "https://research.aimultiple.com/vector-database-for-rag/",
+          "source": "research.aimultiple.com"
+        },
+        {
+          "title": "Best Vector Databases for RAG: Complete 2025 Comparison Guide - Latenode Blog",
+          "url": "https://latenode.com/blog/ai-frameworks-technical-infrastructure/vector-databases-embeddings/best-vector-databases-for-rag-complete-2025-comparison-guide",
+          "source": "latenode.com"
+        },
+        {
+          "title": "Weaviate vs Qdrant: Vector Database Comparison 2025 | Cipher Projects Blog",
+          "url": "https://cipherprojects.com/blog/posts/weaviate-vs-qdrant-vector-database-comparison-2025/",
+          "source": "cipherprojects.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1624-ko-tech-M3-맥북-도커-데스크탑-메모리-6G",
+      "keyword": "M3 맥북 도커 데스크탑 메모리 6GB 제한 설정 로컬 LLM 동시 실행 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621790",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 Docker Desktop 메모리를 6GB로 제한했을 때 로컬 LLM 컨테이너와 충돌하는 문제 해결책 탐색",
+      "angle": "Docker Desktop .wslconfig 대신 macOS settings.json 직접 수정, ollama + 개발 컨테이너 병렬 실행 실측 메모리 배분 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "맥미니 대란 - OpenClaw가 만든 AI 서버 시대, 모델별 구매 가이드",
+          "url": "https://blog.kwt.co.kr/%EB%A7%A5%EB%AF%B8%EB%8B%88-%EB%8C%80%EB%9E%80-openclaw%EA%B0%80-%EB%A7%8C%EB%93%A0-ai-%EC%84%9C%EB%B2%84-%EC%8B%9C%EB%8C%80-%EB%AA%A8%EB%8D%B8%EB%B3%84-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4/",
+          "source": "blog.kwt.co.kr"
+        },
+        {
+          "title": "M1 맥북 프로에서 로컬 LLM을 구동해보자",
+          "url": "https://velog.io/@dev-smile/M1-%EB%A7%A5%EB%B6%81-%ED%94%84%EB%A1%9C%EC%97%90%EC%84%9C-%EB%A1%9C%EC%BB%AC-LLM%EC%9D%84-%EA%B5%AC%EB%8F%99%ED%95%B4%EB%B3%B4%EC%9E%90",
+          "source": "velog.io"
+        },
+        {
+          "title": "로컬 설정에 Openclaw 가리키기 : r/LocalLLM",
+          "url": "https://www.reddit.com/r/LocalLLM/comments/1qt148w/howto_point_openclaw_at_a_local_setup/?tl=en",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1625-ko-tech-Cloudflare-Workers-A",
+      "keyword": "Cloudflare Workers AI llama3 한국어 응답 품질 Claude Haiku 비용 대비 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621825",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers AI의 무료 llama3 모델이 Claude Haiku 대비 한국어 처리에서 얼마나 쓸 만한지 실제 데이터로 확인",
+      "angle": "동일 한국어 QA 50개 프롬프트로 정확도·속도·비용을 직접 측정하고 스타트업 MVP 적용 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Models overview - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+          "source": "platform.claude.com"
+        },
+        {
+          "title": "Replicate · Cloudflare AI Gateway docs",
+          "url": "https://developers.cloudflare.com/ai-gateway/usage/providers/replicate/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Claude - 나무위키",
+          "url": "https://namu.wiki/w/Claude",
+          "source": "namu.wiki"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1626-ko-tech-Vercel-스케줄-cron-함수-무",
+      "keyword": "Vercel 스케줄 cron 함수 무료 플랜 실행 안될 때 GitHub Actions 대체 구현 실전 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621857",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 플랜에서 cron이 동작하지 않아 GitHub Actions로 대체 구현한 방법을 실제 사례로 찾는 개발자",
+      "angle": "Vercel cron 무료 제한 상황 재현, GitHub Actions schedule + fetch 조합으로 동일 기능 구현하는 코드 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How can I use GitHub Actions with Vercel? | Vercel Knowledge Base",
+          "url": "https://vercel.com/kb/guide/how-can-i-use-github-actions-with-vercel",
+          "source": "vercel.com"
+        },
+        {
+          "title": "How to Run Cron Jobs in a Vercel Serverless Environment (Without Paying Extra) - DEV Community",
+          "url": "https://dev.to/hexshift/how-to-run-cron-jobs-in-a-vercel-serverless-environment-without-paying-extra-502h",
+          "source": "dev.to"
+        },
+        {
+          "title": "Kept seeing racked up Vercel bills every now and then, built a tool to fix this once and for all - O",
+          "url": "https://community.vercel.com/t/kept-seeing-racked-up-vercel-bills-every-now-and-then-built-a-tool-to-fix-this-once-and-for-all/34159",
+          "source": "community.vercel.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1627-ko-tech-1인-개발자-월-15달러-이하-풀스택",
+      "keyword": "1인 개발자 월 15달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 청구서 공개",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621884",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "실제 서비스 운영 중인 1인 개발자의 구체적 인프라 비용 내역과 아키텍처를 보고 싶은 개발자",
+      "angle": "6개월 실제 청구서 스크린샷 포함, 트래픽 증가 구간별 비용 변화, 무료 티어 한계 도달 시점과 대응 전략 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "풀스택 개발자 1인 외주, 정말 더 저렴할까? - 제로백데브",
+          "url": "https://zero100dev.tistory.com/entry/%ED%92%80%EC%8A%A4%ED%83%9D-%EA%B0%9C%EB%B0%9C%EC%9E%90-1%EC%9D%B8-%EC%99%B8%EC%A3%BC-%EC%A0%95%EB%A7%90-%EB%8D%94-%EC%A0%80%EB%A0%B4%ED%95%A0%EA%B9%8C",
+          "source": "zero100dev.tistory.com"
+        },
+        {
+          "title": "1인 개발자의 다수 프로젝트 운영을 위한 Supab... - Inflearn | Community Q&A",
+          "url": "https://www.inflearn.com/en/community/questions/1780024/1%EC%9D%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EB%8B%A4%EC%88%98-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9A%B4%EC%98%81%EC%9D%84-%EC%9C%84%ED%95%9C-supabase-%EB%B9%84%EC%9A%A9-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%A0%84%EB%9E%B5-db-%ED%86%B5%ED%95%A9-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%A1%B0%EC%96%B8%EC%9D%84-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4",
+          "source": "www.inflearn.com"
+        },
+        {
+          "title": "AI 시대, 오픈소스 백엔드의 강자 Supabase",
+          "url": "https://brunch.co.kr/@ywkim36/188",
+          "source": "brunch.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1628-ko-tech-LangChain-vs-LlamaIn",
+      "keyword": "LangChain vs LlamaIndex 한국어 RAG 청크 사이즈 512 1024 검색 정확도 실험 결과",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621917",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 RAG 구현 시 LangChain과 LlamaIndex 중 어느 프레임워크가 청크 전략에서 유리한지 실험 데이터 탐색",
+      "angle": "한국어 기술 문서 100페이지 기준 청크 사이즈 512·1024·2048별 Hit@3 정확도 측정 후 프레임워크별 결과 비교표 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "RAG Frameworks: LangChain vs LangGraph vs LlamaIndex",
+          "url": "https://aimultiple.com/rag-frameworks",
+          "source": "aimultiple.com"
+        },
+        {
+          "title": "LlamaIndex vs LangChain: RAG framework differences",
+          "url": "https://www.statsig.com/perspectives/llamaindex-vs-langchain-rag",
+          "source": "www.statsig.com"
+        },
+        {
+          "title": "Building a Private RAG System with Ollama: Chat with Your Documents Locally | Markaicode",
+          "url": "https://markaicode.com/ollama-rag-private-documents/",
+          "source": "markaicode.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1629-ko-tech-GitHub-Copilot-vs-Cu",
+      "keyword": "GitHub Copilot vs Cursor AI 실무 TypeScript 코드 리뷰 정확도 한달 사용 솔직 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621950",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GitHub Copilot과 Cursor를 실제 TypeScript 프로젝트에 한 달간 써본 개발자의 솔직한 비교 후기 탐색",
+      "angle": "동일 PR 20개에서 두 도구의 제안 수용률·오류 탐지율·컨텍스트 이해도를 직접 기록한 일지 형식 비교 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2025년 AI 코딩 도구 총정리! GitHub Copilot vs Cursor vs Claude 실사용 후기 :: 코드마스터 로그(CodeMaster Log)",
+          "url": "https://tyfghxcvbn.tistory.com/18",
+          "source": "tyfghxcvbn.tistory.com"
+        },
+        {
+          "title": "“AI 코딩 도우미 3대장 비교 분석 : Copilot, Codex, Cursor 정리” - 노퇴근",
+          "url": "https://xn--6i0b29d222b.com/ai-%EC%BD%94%EB%94%A9-%EB%8F%84%EC%9A%B0%EB%AF%B8-3%EB%8C%80%EC%9E%A5-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D-copilot-codex-cursor/",
+          "source": "xn--6i0b29d222b.com"
+        },
+        {
+          "title": "커서 AI 대 GitHub 코파일럿: 어떤 AI 도구가 당신에게 적합할까요?",
+          "url": "https://apidog.com/kr/blog/cursor-ai-vs-github-copilot-3/",
+          "source": "apidog.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1630-ko-tech-Tailscale-홈서버-외부-접속-",
+      "keyword": "Tailscale 홈서버 외부 접속 Cloudflare Tunnel 병행 설정 보안 트레이드오프 실전 구성",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-15T08:29:22.621981",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "홈서버를 Tailscale과 Cloudflare Tunnel 두 방식으로 외부에 노출할 때 보안·편의성 트레이드오프가 궁금한 개발자",
+      "angle": "두 방식을 동일 홈서버에 병행 설정해 트래픽 노출 범위·인증 방식·장애 시나리오별 차이를 직접 테스트한 구성 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Tailscale로 어디서든 내 기기에 안전하게 접속하기 | Engineering Blog by Dale Seo",
+          "url": "https://daleseo.com/tailscale/",
+          "source": "daleseo.com"
+        },
+        {
+          "title": "Tailscale 가이드 - 안전한 매쉬 VPN 활용법 :: devopslog",
+          "url": "https://devopslog.tistory.com/169",
+          "source": "devopslog.tistory.com"
+        },
+        {
+          "title": "[Cloudflare] Cloudflare Tunnel로 포트포워딩 없이 홈 서버 웹 서비스를 외부에 공개하기",
+          "url": "https://velog.io/@mrcocoball2/Cloudflare-Cloudflare-Tunnel%EB%A1%9C-%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%97%86%EC%9D%B4-%ED%99%88-%EC%84%9C%EB%B2%84-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%99%B8%EB%B6%80%EC%97%90-%EA%B3%B5%EA%B0%9C%ED%95%98%EA%B8%B0",
+          "source": "velog.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

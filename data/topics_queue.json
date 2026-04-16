@@ -16955,7 +16955,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312155",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -16975,7 +16975,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:06:41.926504+00:00"
     },
     {
       "id": "1629-ko-tech-Cal.com-오픈소스-클로즈드소스-",
@@ -16983,7 +16985,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312208",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -17008,7 +17010,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:20:51.051488+00:00"
     },
     {
       "id": "1630-en-tech-ollama-llama3.2-3b-v",
@@ -17016,7 +17020,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312269",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17030,7 +17034,9 @@
           "source": "localaimaster.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:08:49.480702+00:00"
     },
     {
       "id": "1631-en-tech-github-actions-free-",
@@ -17038,7 +17044,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312295",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17062,7 +17068,9 @@
           "source": "github.blog"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:23:12.699957+00:00"
     },
     {
       "id": "1632-en-tech-claude-api-vs-openai",
@@ -17070,7 +17078,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312318",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17089,7 +17097,9 @@
           "source": "intuitionlabs.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:11:37.794214+00:00"
     },
     {
       "id": "1633-en-tech-docker-compose-healt",
@@ -17097,7 +17107,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312340",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17116,7 +17126,9 @@
           "source": "oneuptime.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:25:11.065060+00:00"
     },
     {
       "id": "1634-en-tech-vercel-serverless-fu",
@@ -17124,7 +17136,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312366",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17143,7 +17155,9 @@
           "source": "vercel.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:27:13.661665+00:00"
     },
     {
       "id": "1635-en-tech-tailscale-exit-node-",
@@ -17178,7 +17192,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312413",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17202,7 +17216,9 @@
           "source": "signpen.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:13:55.940038+00:00"
     },
     {
       "id": "1637-ko-tech-1인-개발자-AWS-EC2-t3.mi",
@@ -17210,7 +17226,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312431",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17234,7 +17250,9 @@
           "source": "aws.amazon.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:16:39.809700+00:00"
     },
     {
       "id": "1638-ko-tech-Supabase-무료-플랜-프로젝트-",
@@ -17306,7 +17324,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-16T08:28:35.312483",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -17330,7 +17348,9 @@
           "source": "nextjs.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-16T11:03:48.082109+00:00",
+      "completed_at": "2026-04-16T11:18:37.649905+00:00"
     },
     {
       "id": "1641-ko-tech-Cloudflare-Pages-Hug",

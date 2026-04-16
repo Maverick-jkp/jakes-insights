@@ -16751,33 +16751,6 @@
       "completed_at": "2026-04-15T11:06:18.637122+00:00"
     },
     {
-      "id": "1621-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge functions cold start latency reduce production tips 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-15T08:29:22.621675",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase Edge Functions의 콜드 스타트 지연이 실제 서비스에 미치는 영향을 줄이려는 개발자",
-      "angle": "워밍업 cron 트릭, Deno 번들 사이즈 최소화, 리전 선택 전략으로 p95 레이턴시 실측 전후 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
-        },
-        {
-          "title": "Supabase Edge Functions: Persistent Storage and Lightning-Fast Cold Starts Transform Serverless Work",
-          "url": "https://joshuaberkowitz.us/blog/news-1/supabase-edge-functions-persistent-storage-and-lightning-fast-cold-starts-transform-serverless-workflows-563",
-          "source": "joshuaberkowitz.us"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1622-en-tech-prometheus-grafana-d",
       "keyword": "prometheus grafana docker compose 2gb ram vps memory oom killer tuning",
       "category": "tech",
@@ -16977,97 +16950,443 @@
       "completed_at": "2026-04-15T11:13:32.328328+00:00"
     },
     {
-      "id": "1628-ko-tech-LangChain-vs-LlamaIn",
-      "keyword": "LangChain vs LlamaIndex 한국어 RAG 청크 사이즈 512 1024 검색 정확도 실험 결과",
+      "id": "1628-en-tech-Google-user-data-ICE",
+      "keyword": "Google user data ICE subpoena privacy betrayal developer guide",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312155",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and privacy-conscious builders urgently searching for what the Google-ICE data disclosure means for their own apps, their users, and whether they need to migrate off Google services",
+      "angle": "Platform trust collapse — breaking down what actually happened legally and technically, what data was exposed, and which alternative infrastructure choices reduce government subpoena exposure",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Google Broke Its Promise to Me. Now ICE Has My Data. | Electronic Frontier Foundation",
+          "url": "https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data",
+          "source": "www.eff.org"
+        },
+        {
+          "title": "Privacy advocates want Google to stop handing consumer data over to ICE | The Verge",
+          "url": "https://www.theverge.com/news/911789/eff-google-giving-data-ice-california-new-york",
+          "source": "www.theverge.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1629-ko-tech-Cal.com-오픈소스-클로즈드소스-",
+      "keyword": "Cal.com 오픈소스 클로즈드소스 전환 내 서비스 어떻게 되나",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-04-15T08:29:22.621917",
+      "created_at": "2026-04-16T08:28:35.312208",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "한국어 문서 RAG 구현 시 LangChain과 LlamaIndex 중 어느 프레임워크가 청크 전략에서 유리한지 실험 데이터 탐색",
-      "angle": "한국어 기술 문서 100페이지 기준 청크 사이즈 512·1024·2048별 Hit@3 정확도 측정 후 프레임워크별 결과 비교표 제공",
+      "keyword_type": "trend",
+      "search_intent": "Cal.com을 직접 사용하거나 self-host 중인 한국 개발자·스타트업이 '내 운영 환경에 어떤 영향이 있는지', '대안이 있는지' 긴급하게 검색하는 상황",
+      "angle": "오픈소스 지속가능성 위기 — Cal.com 사례를 중심으로 오픈소스→클로즈드소스 전환 패턴, 라이선스 변경 시 실제 법적·운영적 리스크, 그리고 Thunderbird Appointment 등 대안 비교까지 다루는 실전 가이드",
       "competition_level": "low",
       "references": [
         {
-          "title": "RAG Frameworks: LangChain vs LangGraph vs LlamaIndex",
-          "url": "https://aimultiple.com/rag-frameworks",
-          "source": "aimultiple.com"
+          "title": "Open Agents : Vercel의 자율 에이전트 SDK",
+          "url": "https://javaexpert.tistory.com/1735",
+          "source": "javaexpert.tistory.com"
         },
         {
-          "title": "LlamaIndex vs LangChain: RAG framework differences",
-          "url": "https://www.statsig.com/perspectives/llamaindex-vs-langchain-rag",
-          "source": "www.statsig.com"
+          "title": "오케스트로 클라우드, ‘2026년 서비스형 소프트웨어(SaaS) 전환 컨설팅 지원사업’ 공급기업으로 선정 < IT < 기사본문 - 데일리시큐",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=206247",
+          "source": "www.dailysecu.com"
         },
         {
-          "title": "Building a Private RAG System with Ollama: Chat with Your Documents Locally | Markaicode",
-          "url": "https://markaicode.com/ollama-rag-private-documents/",
-          "source": "markaicode.com"
+          "title": "Cal.com: Funding, Team & Investors",
+          "url": "https://startupintros.com/orgs/cal-com",
+          "source": "startupintros.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1630-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs mistral 7b coding tasks macbook air m2 8gb speed accuracy tradeoff",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312269",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M2 MacBook Air owners with 8GB RAM need to know which local LLM fits in memory without swap and still produces usable code",
+      "angle": "Side-by-side token/sec measurements + code correctness scoring on 20 real tasks, with swap usage monitoring",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1629-ko-tech-GitHub-Copilot-vs-Cu",
-      "keyword": "GitHub Copilot vs Cursor AI 실무 TypeScript 코드 리뷰 정확도 한달 사용 솔직 후기",
+      "id": "1631-en-tech-github-actions-free-",
+      "keyword": "github actions free minutes exhausted private repo workaround self-hosted runner raspberry pi 4",
       "category": "tech",
-      "lang": "ko",
-      "priority": 7,
+      "lang": "en",
+      "priority": 8,
       "status": "pending",
-      "created_at": "2026-04-15T08:29:22.621950",
+      "created_at": "2026-04-16T08:28:35.312295",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "GitHub Copilot과 Cursor를 실제 TypeScript 프로젝트에 한 달간 써본 개발자의 솔직한 비교 후기 탐색",
-      "angle": "동일 PR 20개에서 두 도구의 제안 수용률·오류 탐지율·컨텍스트 이해도를 직접 기록한 일지 형식 비교 분석",
+      "search_intent": "Solo developers who burned through 2000 free CI minutes need a cheap fallback that doesn't cost $4/month extra",
+      "angle": "Step-by-step guide converting a Raspberry Pi 4 into a self-hosted runner for a private repo, with actual build time comparison",
       "competition_level": "low",
       "references": [
         {
-          "title": "2025년 AI 코딩 도구 총정리! GitHub Copilot vs Cursor vs Claude 실사용 후기 :: 코드마스터 로그(CodeMaster Log)",
-          "url": "https://tyfghxcvbn.tistory.com/18",
-          "source": "tyfghxcvbn.tistory.com"
+          "title": "Running GitHub Actions on Your Desk Instead of Renting Compute | dhewy.dev - Platform Engineering & ",
+          "url": "https://dhewy.dev/posts/running-github-actions-on-your-desk-instead-of-renting-compute/",
+          "source": "dhewy.dev"
         },
         {
-          "title": "“AI 코딩 도우미 3대장 비교 분석 : Copilot, Codex, Cursor 정리” - 노퇴근",
-          "url": "https://xn--6i0b29d222b.com/ai-%EC%BD%94%EB%94%A9-%EB%8F%84%EC%9A%B0%EB%AF%B8-3%EB%8C%80%EC%9E%A5-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D-copilot-codex-cursor/",
-          "source": "xn--6i0b29d222b.com"
+          "title": "r/devops on Reddit: Github Actions introducing a per-minute fee for self-hosted runners",
+          "url": "https://www.reddit.com/r/devops/comments/1po8hj5/github_actions_introducing_a_perminute_fee_for/",
+          "source": "www.reddit.com"
         },
         {
-          "title": "커서 AI 대 GitHub 코파일럿: 어떤 AI 도구가 당신에게 적합할까요?",
-          "url": "https://apidog.com/kr/blog/cursor-ai-vs-github-copilot-3/",
-          "source": "apidog.com"
+          "title": "Update to GitHub Actions pricing - GitHub Changelog",
+          "url": "https://github.blog/changelog/2025-12-16-coming-soon-simpler-pricing-and-a-better-experience-for-github-actions/",
+          "source": "github.blog"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1630-ko-tech-Tailscale-홈서버-외부-접속-",
-      "keyword": "Tailscale 홈서버 외부 접속 Cloudflare Tunnel 병행 설정 보안 트레이드오프 실전 구성",
+      "id": "1632-en-tech-claude-api-vs-openai",
+      "keyword": "claude api vs openai api cost per 1000 requests real app json extraction task comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312318",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers building JSON extraction pipelines want to know true cost difference, not token-count marketing math",
+      "angle": "Ran identical structured-output tasks 1000 times on both APIs, tracked actual invoice cost and error rate",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI API Pricing Comparison 2026: OpenAI vs Claude vs Gemini (Real Cost Examples) | Nicola Lazzari",
+          "url": "https://nicolalazzari.ai/articles/ai-api-pricing-comparison-2026",
+          "source": "nicolalazzari.ai"
+        },
+        {
+          "title": "AI API Pricing Comparison (2026): Grok vs Gemini vs GPT-4o vs Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/ai-api-pricing-comparison-grok-gemini-openai-claude",
+          "source": "intuitionlabs.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1633-en-tech-docker-compose-healt",
+      "keyword": "docker compose healthcheck depends_on not working postgres container startup race condition fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312340",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers whose app container crashes because Postgres isn't ready despite depends_on condition: service_healthy",
+      "angle": "Root cause explanation of the race condition + three proven fix patterns with minimal compose file examples",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker Status Unhealthy: What It Means and How to Fix It | Last9",
+          "url": "https://last9.io/blog/docker-status-unhealthy-how-to-fix-it/",
+          "source": "last9.io"
+        },
+        {
+          "title": "How to Create Docker Compose Health Checks",
+          "url": "https://oneuptime.com/blog/post/2026-01-30-docker-compose-health-checks/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1634-en-tech-vercel-serverless-fu",
+      "keyword": "vercel serverless function timeout 10 seconds workaround streaming response nextjs app router 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312366",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js developers hitting Vercel's 10s hobby plan timeout on LLM API calls want a streaming workaround without upgrading",
+      "angle": "Implementing ReadableStream in Next.js App Router API route to stream LLM response and bypass the timeout wall",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to solve Next.js timeouts - Inngest Blog",
+          "url": "https://www.inngest.com/blog/how-to-solve-nextjs-timeouts",
+          "source": "www.inngest.com"
+        },
+        {
+          "title": "Vercel Functions Limits",
+          "url": "https://vercel.com/docs/functions/limitations",
+          "source": "vercel.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1635-en-tech-tailscale-exit-node-",
+      "keyword": "tailscale exit node vs cloudflare warp latency speed test home server self-hosted vpn 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312392",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Home lab owners want to know if Tailscale exit node or Cloudflare WARP gives better real-world latency for their self-hosted apps",
+      "angle": "Latency and throughput benchmark from three locations using a home server exit node vs WARP, with setup complexity comparison",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/Tailscale on Reddit: How to make cloudflare WARP to compatible with tailscale exit node?",
+          "url": "https://www.reddit.com/r/Tailscale/comments/1n7ziie/how_to_make_cloudflare_warp_to_compatible_with/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Cloudflare vs Tailscale 2025 — Here’s the Brutal Truth - YouTube",
+          "url": "https://www.youtube.com/watch?v=qBYD583N7H4",
+          "source": "www.youtube.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1636-ko-tech-M3-맥북-프로-16GB-ollama",
+      "keyword": "M3 맥북 프로 16GB ollama llama3.1 8B 한국어 코딩 질문 실측 토큰 속도 GPT-4o-mini 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312413",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 구매자가 로컬 LLM으로 GPT-4o-mini를 대체할 수 있는지 실제 속도와 답변 품질을 확인하고 싶음",
+      "angle": "한국어 코딩 질문 30개 기준 토큰/초, 답변 정확도, API 비용 절감액을 실측 데이터로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Open Code 리뷰(3) : 오픈소스, 무료 및 저가 LLM 모델 활용 해보기 with Ollama, Qwen3, glm4.7, MiniMax M2.1 등 :: 갓대희의 작은공",
+          "url": "https://goddaehee.tistory.com/488",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "r/LocalLLaMA on Reddit: Why so much hype around the Mac Mini for ClawdBot?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1qnbegl/why_so_much_hype_around_the_mac_mini_for_clawdbot/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "OpenRouter 모델 가성비 비교 - 오픈클로 에이전트 작업 적합 모델 찾기 | 싸인펜의 Lifelog",
+          "url": "https://signpen.net/2519196",
+          "source": "signpen.net"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1637-ko-tech-1인-개발자-AWS-EC2-t3.mi",
+      "keyword": "1인 개발자 AWS EC2 t3.micro 월 청구서 실제 내역 예상 외 비용 항목 정리 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312431",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "프리티어 종료 후 갑자기 청구서가 커진 개발자가 어느 항목에서 비용이 발생했는지 파악하고 싶음",
+      "angle": "실제 6개월 청구서 캡처 기반으로 EBS, 데이터 전송, NAT Gateway 등 예상 외 항목을 조목조목 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AWS EC2 비용 완벽 가이드 – 초보도 이해하는 과금 구조와 절감 팁",
+          "url": "https://hoilog.tistory.com/372",
+          "source": "hoilog.tistory.com"
+        },
+        {
+          "title": "AWS 비용 계산(2차 버전) :: 성준이의 개발블로그",
+          "url": "https://dev-sungjun.tistory.com/61",
+          "source": "dev-sungjun.tistory.com"
+        },
+        {
+          "title": "EC2 온디맨드 인스턴스 요금",
+          "url": "https://aws.amazon.com/ec2/pricing/on-demand/",
+          "source": "aws.amazon.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1638-ko-tech-Supabase-무료-플랜-프로젝트-",
+      "keyword": "Supabase 무료 플랜 프로젝트 일시정지 해제 자동화 cron GitHub Actions 실전 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312448",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "7일 비활성화로 Supabase 프로젝트가 자동 정지되는 문제를 해결하고 싶은 개인 개발자",
+      "angle": "GitHub Actions cron job으로 6일마다 ping 쿼리를 보내 정지를 막는 완전한 설정 파일과 삽질 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Set Up a GitHub Actions Cron Job to Prevent Supabase Inactivity - DEV Community",
+          "url": "https://dev.to/nasreenkhalid/how-to-set-up-a-github-actions-cron-job-to-prevent-supabase-inactivity-3m6b",
+          "source": "dev.to"
+        },
+        {
+          "title": "* 무료 플랜 특징 1. Supabase 무료 플랜은 개인 프로젝트나 학습용으로 충분 2. 가장 중요한 건, 1주일간 활동이 없으면 프로젝트가 자동 중지. 3. 중지된 프로젝트는 ",
+          "url": "https://www.threads.com/@ghil_book_pic/post/DPsojPbE2KK/-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%8A%B9%EC%A7%951-supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C%EC%9D%80-%EA%B0%9C%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%82%98-%ED%95%99%EC%8A%B5%EC%9A%A9%EC%9C%BC%EB%A1%9C-%EC%B6%A9%EB%B6%842-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EA%B1%B4-1%EC%A3%BC%EC%9D%BC%EA%B0%84-%ED%99%9C%EB%8F%99%EC%9D%B4-%EC%97%86%EC%9C%BC%EB%A9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B0%80-%EC%9E%90%EB%8F%99-%EC%A4%91%EC%A7%803",
+          "source": "www.threads.com"
+        },
+        {
+          "title": "Cron | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/cron",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1639-ko-tech-Docker-Compose-단독-서버",
+      "keyword": "Docker Compose 단독 서버 Prometheus Grafana 메모리 500MB 이하로 줄이는 설정 실전",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312466",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAM 1-2GB 저사양 VPS에서 모니터링 스택을 올리려는 개발자가 OOM 없이 구동하는 설정을 찾는 중",
+      "angle": "scrape_interval, retention, Grafana 플러그인 제거 등 항목별 메모리 절감 수치를 before/after로 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
+        },
+        {
+          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
+          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
+          "source": "seekerslab.com"
+        },
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/51",
+          "source": "railly-linker.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1640-ko-tech-Claude-API-스트리밍-응답-N",
+      "keyword": "Claude API 스트리밍 응답 Next.js 14 App Router 서버 액션 적용 시 끊기는 문제 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312483",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js Server Action에서 Claude 스트리밍을 붙였는데 청크가 버퍼링되거나 끊기는 현상을 겪는 개발자",
+      "angle": "Server Action 대신 Route Handler + ReadableStream 패턴으로 전환하는 이유와 실제 코드 diff 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "문제 해결 - Claude Code Docs",
+          "url": "https://code.claude.com/docs/ko/troubleshooting",
+          "source": "code.claude.com"
+        },
+        {
+          "title": "nextjs-developer • claude-skills • jeffallan • Skills • Registry • Tessl",
+          "url": "https://tessl.io/registry/skills/github/jeffallan/claude-skills/nextjs-developer",
+          "source": "tessl.io"
+        },
+        {
+          "title": "Routing: API Routes | Next.js",
+          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
+          "source": "nextjs.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1641-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 배포 빌드 시간 초과 오류 무료 플랜 해결 실전 트러블슈팅",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-04-15T08:29:22.621981",
+      "created_at": "2026-04-16T08:28:35.312499",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "홈서버를 Tailscale과 Cloudflare Tunnel 두 방식으로 외부에 노출할 때 보안·편의성 트레이드오프가 궁금한 개발자",
-      "angle": "두 방식을 동일 홈서버에 병행 설정해 트래픽 노출 범위·인증 방식·장애 시나리오별 차이를 직접 테스트한 구성 공개",
+      "search_intent": "Hugo 블로그 포스트가 100개를 넘어가면서 Cloudflare Pages 무료 빌드가 타임아웃되는 문제를 겪는 개발자",
+      "angle": "캐시 디렉토리 설정, Hugo 버전 고정, 증분 빌드 우회법 등 실제로 효과 있었던 3가지 방법 비교",
       "competition_level": "low",
       "references": [
         {
-          "title": "Tailscale로 어디서든 내 기기에 안전하게 접속하기 | Engineering Blog by Dale Seo",
-          "url": "https://daleseo.com/tailscale/",
-          "source": "daleseo.com"
+          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
+          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
+          "source": "www.heyjude.blog"
         },
         {
-          "title": "Tailscale 가이드 - 안전한 매쉬 VPN 활용법 :: devopslog",
-          "url": "https://devopslog.tistory.com/169",
-          "source": "devopslog.tistory.com"
+          "title": "클라우드플레어 무료 플랜, 어디까지 가능할까? (요청, 빌드, 스토리지 제한 총정리) - Sentio",
+          "url": "https://sentio5.com/entry/cloudflare-free-plan-limits/",
+          "source": "sentio5.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1642-ko-tech-Vercel-hobby-플랜-함수-실",
+      "keyword": "Vercel hobby 플랜 함수 실행 시간 10초 제한 LLM 스트리밍으로 우회하는 방법 실전 코드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-16T08:28:35.312515",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 플랜에서 OpenAI/Claude API 호출이 10초를 넘겨 504 오류가 나는 개발자",
+      "angle": "Edge Runtime + ReadableStream 조합으로 타임아웃 없이 스트리밍하는 완전한 코드 예제와 주의사항",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel 무료 배포 실전 가이드 2026 — Hobby 플랜으로 사이드 프로젝트 운영하기 | DevFinance",
+          "url": "https://www.devfinance.cloud/tech/vercel-free-deploy",
+          "source": "www.devfinance.cloud"
         },
         {
-          "title": "[Cloudflare] Cloudflare Tunnel로 포트포워딩 없이 홈 서버 웹 서비스를 외부에 공개하기",
-          "url": "https://velog.io/@mrcocoball2/Cloudflare-Cloudflare-Tunnel%EB%A1%9C-%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%97%86%EC%9D%B4-%ED%99%88-%EC%84%9C%EB%B2%84-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%99%B8%EB%B6%80%EC%97%90-%EA%B3%B5%EA%B0%9C%ED%95%98%EA%B8%B0",
-          "source": "velog.io"
+          "title": "Vercel 무료버전 서버속도 - 인프런 | 커뮤니티 질문&답변",
+          "url": "https://www.inflearn.com/en/community/questions/1641763/vercel-%EB%AC%B4%EB%A3%8C%EB%B2%84%EC%A0%84-%EC%84%9C%EB%B2%84%EC%86%8D%EB%8F%84",
+          "source": "www.inflearn.com"
+        },
+        {
+          "title": "--- title: Vercel Hobby Plan product: vercel url: /docs/plans/hobby",
+          "url": "https://vercel.com/docs/plans/hobby",
+          "source": "vercel.com"
         }
       ],
       "content_type_hint": "GUIDE"

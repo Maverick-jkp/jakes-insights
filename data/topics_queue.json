@@ -17715,38 +17715,6 @@
       "completed_at": "2026-04-18T10:45:13.854113+00:00"
     },
     {
-      "id": "1657-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter docker compose single vps 1gb ram memory optimization",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-18T08:01:35.321896",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus 스택을 올리려다 OOM으로 고생한 개발자가 설정법을 찾는 상황",
-      "angle": "1GB RAM VPS에서 scrape_interval·retention 조정으로 메모리를 300MB 이하로 줄인 실전 설정 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
-        },
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1658-en-tech-cloudflare-workers-k",
       "keyword": "cloudflare workers kv vs d1 sqlite latency real benchmark edge api 2025",
       "category": "tech",
@@ -17912,70 +17880,6 @@
       "completed_at": "2026-04-18T11:03:51.020574+00:00"
     },
     {
-      "id": "1663-ko-tech-GitHub-Actions-Hugo-",
-      "keyword": "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 스케줄 미작동 트러블슈팅",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-04-18T08:01:35.322015",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo + Cloudflare Pages 자동배포를 세팅했는데 cron 트리거가 안 되는 상황의 개발자",
-      "angle": "cron 스킵 원인(비활성 저장소 정책)·우회법(workflow_dispatch 조합)을 직접 삽질하며 정리한 해결 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
-          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
-          "source": "www.caktusgroup.com"
-        },
-        {
-          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
-          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
-          "source": "chriswiegman.com"
-        },
-        {
-          "title": "Hugo 블로그 만들기 - Git Submodule로 구성하고 배포하기",
-          "url": "https://minyeamer.github.io/blog/hugo-blog-1/",
-          "source": "minyeamer.github.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1664-ko-tech-Docker-Compose-Traef",
-      "keyword": "Docker Compose Traefik Let's Encrypt 단일 VPS HTTPS 설정 메모리 500MB 이하 최적화",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-18T08:01:35.322033",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 리버스 프록시와 SSL을 최소 자원으로 세팅하려는 개발자",
-      "angle": "Traefik 컨테이너 메모리를 80MB 이하로 줄이는 실전 설정값과 인증서 자동갱신 검증 결과 공유",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Traefik: Docker와 Let's Encrypt로 HTTPS 자동화 완전 정복 · MINOSAUR",
-          "url": "https://minosaur.kr/posts/hosting/traefik/traefik-setup/",
-          "source": "minosaur.kr"
-        },
-        {
-          "title": "Ultimate Traefik v3 Docker Compose Guide [2024]: LE, SSL, Reverse Proxy | SimpleHomelab",
-          "url": "https://www.simplehomelab.com/traefik-v3-docker-compose-guide-2024/",
-          "source": "www.simplehomelab.com"
-        },
-        {
-          "title": "How to Deploy with Docker Compose and Traefik in Production - Botmonster Tech",
-          "url": "https://botmonster.com/posts/deploy-docker-compose-traefik-production/",
-          "source": "botmonster.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1665-ko-tech-Cursor-AI-유료-vs-Wind",
       "keyword": "Cursor AI 유료 vs Windsurf 무료 플랜 실제 코드 자동완성 품질 비교 2주 사용 후기",
       "category": "tech",
@@ -18010,33 +17914,420 @@
       "completed_at": "2026-04-18T10:54:38.993621+00:00"
     },
     {
-      "id": "1666-ko-tech-Vercel-무료-플랜-Edge-Fu",
-      "keyword": "Vercel 무료 플랜 Edge Function 실행 시간 제한 Next.js 스트리밍 응답 실측 한계",
+      "id": "1666-ko-tech-타자기로-AI-표절-막는-대학-교수-",
+      "keyword": "타자기로 AI 표절 막는 대학 교수 — 한국 교육 현장에도 통할까",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-04-18T08:01:35.322065",
+      "created_at": "2026-04-19T08:08:01.375897",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료 플랜에서 LLM 스트리밍 API를 붙이려다 타임아웃에 막힌 개발자",
-      "angle": "Edge Function 25초 제한 실측·Serverless Function 전환 비교·Cloudflare Workers 대안 검토까지 정리",
+      "keyword_type": "trend",
+      "search_intent": "AI 과제 대필 문제가 이미 해외에서 심각한 이슈가 됐다는 걸 알게 된 한국 독자가 국내 상황과 비교하고 싶어서 검색",
+      "angle": "해외 실제 사례를 발판 삼아 한국 대학·직장 환경에서 AI 사용 기준이 어디까지 허용되는지 실질적으로 따져보는 시각",
       "competition_level": "low",
       "references": [
         {
-          "title": "Vercel 무료 배포 실전 가이드 2026 — Hobby 플랜으로 사이드 프로젝트 운영하기 | DevFinance",
-          "url": "https://www.devfinance.cloud/tech/vercel-free-deploy",
-          "source": "www.devfinance.cloud"
+          "title": "부 하 반 교수 \"대학 수학 교육, 여전히 '학점 따기용' 대처에 급급해\" - Xin Chao Vietnam",
+          "url": "https://chaovietnam.co.kr/125352/",
+          "source": "chaovietnam.co.kr"
         },
         {
-          "title": "Vercel 무료버전 서버속도 - 인프런 | 커뮤니티 질문&답변",
-          "url": "https://www.inflearn.com/en/community/questions/1641763/vercel-%EB%AC%B4%EB%A3%8C%EB%B2%84%EC%A0%84-%EC%84%9C%EB%B2%84%EC%86%8D%EB%8F%84",
-          "source": "www.inflearn.com"
+          "title": "[청년 취업 대란]⑦ AI가 바꾼 채용시장…대학 교육은 아직도 '이론형'",
+          "url": "https://www.newspim.com/news/view/20260417000141",
+          "source": "www.newspim.com"
         },
         {
-          "title": "How I Made My Next.js App Blazing Fast with CDN and Edge Caching | by ThinkChain | Feb, 2026 | Mediu",
-          "url": "https://medium.com/@thinkchain/how-i-made-my-next-js-app-blazing-fast-with-cdn-and-edge-caching-11eb82079091",
+          "title": "[AI혁명](195)AI가 교육에 적용되면 벌어지는 일…서술형 채점 맡겨보면 안다",
+          "url": "https://www.asiae.co.kr/article/2026041710540934861",
+          "source": "www.asiae.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1667-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response quality korean coding tasks macbook m3 ram usage",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376003",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Korean developers on Apple Silicon want to know which Llama3.2 model size gives acceptable Korean output without killing RAM on a 16GB machine",
+      "angle": "Run identical Korean coding prompts on 3B and 8B models, measure tokens/sec, RAM spike, and answer coherence — include actual model output screenshots",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Selecting the Optimal Open-Source Large Language Model for Coding on Apple M3 | by Dzianis Vashchuk ",
+          "url": "https://medium.com/@dzianisv/selecting-the-optimal-open-source-large-language-model-for-coding-on-apple-m3-8d2ba600d8ac",
           "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1668-en-tech-cloudflare-workers-k",
+      "keyword": "cloudflare workers kv vs d1 sqlite edge latency comparison small saas 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376042",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Solo SaaS builders want to pick the right Cloudflare storage primitive without over-engineering for under 10k daily users",
+      "angle": "Build the same read-heavy feature twice (KV and D1), measure p50/p99 latency from Asia and EU edges, give a decision matrix based on data shape and access pattern",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Computing with Cloudflare Workers: A Practical Guide for Devs | Postry",
+          "url": "https://www.postry.com.br/en/blog/edge-computing-cloudflare-workers-guide",
+          "source": "www.postry.com.br"
+        },
+        {
+          "title": "Cloudflare Workers KV vs D1: Complete Performance Guide | PropTechUSA.ai",
+          "url": "https://www.proptechusa.ai/news/cloudflare-workers-kv-vs-d1-performance-comparison",
+          "source": "www.proptechusa.ai"
+        },
+        {
+          "title": "Cloudflare Workers KV · Cloudflare Workers KV docs",
+          "url": "https://developers.cloudflare.com/kv/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1669-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 m1 mac cost vs github hosted minutes",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376081",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Indie developers burning through GitHub Actions minutes on a private repo want to know if running a self-hosted runner on their own Mac actually saves money",
+      "angle": "Calculate real monthly cost at current GitHub pricing, show actual setup steps for ARM64 runner on macOS, list gotchas like runner going offline during sleep",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/devops on Reddit: Github Actions introducing a per-minute fee for self-hosted runners",
+          "url": "https://www.reddit.com/r/devops/comments/1po8hj5/github_actions_introducing_a_perminute_fee_for/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Updates to GitHub Actions pricing · community · Discussion #182186",
+          "url": "https://github.com/orgs/community/discussions/182186",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1670-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start too slow workaround production 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376117",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers hitting Supabase Edge Function cold starts in production are searching for practical mitigations before switching to a different backend",
+      "angle": "Reproduce cold start with timing data, test keepalive cron ping workaround, compare with moving logic to Postgres functions — give a go/no-go recommendation per use case",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase Docs | Troubleshooting | Edge Function takes too long to respond",
+          "url": "https://supabase.com/docs/guides/troubleshooting/edge-function-takes-too-long-to-respond",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1671-en-tech-claude-api-context-w",
+      "keyword": "claude api context window cost optimization chunking strategy real experiment results",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376155",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers building Claude-powered apps want to reduce API token costs without degrading answer quality",
+      "angle": "Test three chunking strategies (fixed 512, semantic, sliding window) on the same document set, measure retrieval accuracy and cost per query, publish raw numbers",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Token Optimization and Cost Management for ChatGPT & Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/token-optimization-chatgpt-claude-costs",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "Claude Code Context Window: Optimize Your Token Usage",
+          "url": "https://claudefa.st/blog/guide/mechanics/context-management",
+          "source": "claudefa.st"
+        },
+        {
+          "title": "Context windows - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+          "source": "platform.claude.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1672-en-tech-prometheus-grafana-d",
+      "keyword": "prometheus grafana docker compose 2gb vps memory oom killer tuning scrape interval",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376199",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers running a monitoring stack on a cheap $6/mo VPS keep getting OOM kills and want concrete memory settings that actually work",
+      "angle": "Document the exact docker-compose resource limits, Prometheus scrape_interval and retention flags, and Grafana memory caps that keep the stack under 1.8GB RSS on a real 2GB Hetzner box",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Monitor NVIDIA GPUs with Prometheus & Grafana (Docker Guide)",
+          "url": "https://www.servermo.com/howto/monitor-nvidia-gpu-prometheus-grafana/",
+          "source": "www.servermo.com"
+        },
+        {
+          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
+          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
+          "source": "grafana.com"
+        },
+        {
+          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/prometheus-grafana",
+          "source": "docker.recipes"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1673-ko-tech-M3-맥북-16GB-ollama-ll",
+      "keyword": "M3 맥북 16GB ollama llama3.2 한국어 코딩 질문 응답 속도 실측 토큰 초당",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376234",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북을 쓰는 한국 개발자가 로컬 LLM이 실제로 쓸 만한지 숫자로 확인하고 싶어 검색",
+      "angle": "동일한 한국어 코딩 프롬프트 10개를 3B/8B 모델에 돌려 토큰/초, 메모리 점유율, 답변 정확도를 표로 정리 — 실제 터미널 로그 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Llama3 한국어 성능 테스트 | Colab에서 Meta-Llama-3 모델 사용해보기🦙 :: 아기여우의 자기계발로그",
+          "url": "https://littlefoxdiary.tistory.com/128",
+          "source": "littlefoxdiary.tistory.com"
+        },
+        {
+          "title": "r/LocalLLaMA on Reddit: 최고의 로컬 LLM - 2025년 10월",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1obqkpe/best_local_llms_october_2025/?tl=ko",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "API 비용 아끼는 무료 로컬 LLM Ollama 사용법 (M1 맥북 프로 실사용기) :: 화성인의 블로그",
+          "url": "https://mardish.blog/4",
+          "source": "mardish.blog"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1674-ko-tech-1인-개발자-월-10달러-이하-인프라",
+      "keyword": "1인 개발자 월 10달러 이하 인프라 Fly.io Cloudflare Workers Docker Compose 실제 청구서 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376270",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 운영 중인 개발자가 클라우드 비용을 최소화하면서도 신뢰할 수 있는 스택을 찾고 있음",
+      "angle": "동일한 API 서비스를 세 가지 스택에 배포하고 실제 월 청구서 스크린샷과 함께 트레이드오프(콜드스타트, 디버깅 난이도, 스케일 한계)를 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cloudflare 가격 완전정복 | 무료부터 엔터프라이즈까지 요금제 비교 및 비용절감 팁",
+          "url": "https://notavoid.tistory.com/740",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "클라우드플레어 워커(cloudflare workers)와 AWS 람다(AWS Lambda) 비교 | marinesnow34",
+          "url": "https://marinesnow34.github.io/2024/04/25/worker1/",
+          "source": "marinesnow34.github.io"
+        },
+        {
+          "title": "Pricing · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1675-ko-tech-Supabase-Row-Level-S",
+      "keyword": "Supabase Row Level Security 설정 실수 실제 데이터 노출 사례 점검 체크리스트",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376304",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase로 서비스를 런칭했거나 준비 중인 개발자가 RLS 설정이 실제로 안전한지 불안해서 검색",
+      "angle": "RLS를 잘못 설정했을 때 다른 유저 데이터가 노출되는 시나리오를 직접 재현하고, 런칭 전 셀프 점검 SQL 쿼리 5개를 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase Row Level Security (RLS) — Test & Fix Your Policies",
+          "url": "https://vibeappscanner.com/supabase-row-level-security",
+          "source": "vibeappscanner.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1676-ko-tech-GitHub-Actions-무료-플랜",
+      "keyword": "GitHub Actions 무료 플랜 월 2000분 소진 안 되게 아끼는 캐시 설정 실전 예시",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376335",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "개인 프로젝트 CI/CD를 돌리다 무료 분을 너무 빨리 써버린 개발자가 절약법을 찾고 있음",
+      "angle": "Node.js, Python, Docker 빌드 각각에 대해 cache 키 전략과 workflow 트리거 조건을 조정했을 때 분 소비가 얼마나 줄었는지 before/after 수치로 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions Self-Hosted Runner 대규모 운영과 보안 하드닝 가이드 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-05-devops-github-actions-self-hosted-runner-ops",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Stop Waiting for Builds: 3 Essential Caching Tips for GitHub Actions | by Vincent Kim | Medium",
+          "url": "https://medium.com/@armyost1/make-your-actions-pipeline-faster-with-cache-5b003b77cbb3",
+          "source": "medium.com"
+        },
+        {
+          "title": "S3 cache for GitHub Actions - RunsOn",
+          "url": "https://runs-on.com/caching/s3-cache-for-github-actions/",
+          "source": "runs-on.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1677-ko-tech-Claude-API-vs-GPT-4o",
+      "keyword": "Claude API vs GPT-4o mini 한국어 RAG 답변 품질 청크 512 vs 1024 실험 비용 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376368",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 기반 RAG 서비스를 만들려는 개발자가 어떤 모델과 청크 크기 조합이 가장 효율적인지 실험 결과를 원함",
+      "angle": "동일한 한국어 기술 문서 RAG 파이프라인을 두 모델에 돌리고, 청크 512/1024별로 정답률과 쿼리당 비용을 표로 정리해 최적 조합 추천",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude - 나무위키",
+          "url": "https://namu.wiki/w/Claude",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "어떤 AI API를 써야 할까?",
+          "url": "https://brunch.co.kr/@kk2daddy/23",
+          "source": "brunch.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1678-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 자동배포 빌드 캐시 안 지워져서 구버전 노출되는 문제 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376399",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo + Cloudflare Pages 조합으로 블로그를 운영 중인데 배포 후에도 이전 글이 보이는 캐시 문제를 겪고 있음",
+      "angle": "Cloudflare Pages 빌드 캐시 무효화 타이밍 문제를 재현하고, Pages 설정에서 캐시 제어 헤더 규칙과 GitHub Actions purge 스텝으로 해결하는 방법을 단계별로 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
+          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
+          "source": "www.heyjude.blog"
+        },
+        {
+          "title": "Automatic publishing of my Hugo website using Github and Cloudflare Pages - Virtual to the Core",
+          "url": "https://www.virtualtothecore.com/hugo-github-cloudflare-pages/",
+          "source": "www.virtualtothecore.com"
+        },
+        {
+          "title": "How to Deploy a Hugo Site to Cloudflare Pages With Github Actions | Caktus Group",
+          "url": "https://www.caktusgroup.com/blog/2025/08/20/how-to-deploy-a-hugo-site-to-cloudflare-pages-with-github-actions/",
+          "source": "www.caktusgroup.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1679-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 2GB 메모리 Prometheus Grafana Loki 동시 운영 OOM 방지 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-19T08:08:01.376431",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저렴한 VPS에 모니터링 스택을 올렸다가 OOM으로 서버가 죽는 경험을 한 개발자가 실제로 동작하는 설정을 찾고 있음",
+      "angle": "2GB Hetzner VPS에서 세 컨테이너가 공존하도록 docker-compose mem_limit, Prometheus 보존 기간, Loki 청크 설정을 튜닝한 실제 yml 파일과 htop 스크린샷 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
+          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
+          "source": "grafana.com"
+        },
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
+          "source": "railly-linker.tistory.com"
+        },
+        {
+          "title": "Monitoring Stack with Prometheus, Grafana, and Loki using Docker | by Amol Mali | Medium",
+          "url": "https://devopswithamol.medium.com/monitoring-stack-with-prometheus-grafana-and-loki-using-docker-ed3759f0628b",
+          "source": "devopswithamol.medium.com"
         }
       ],
       "content_type_hint": "GUIDE"

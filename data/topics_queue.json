@@ -19198,7 +19198,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.431952",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -19223,7 +19223,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:14:55.744387+00:00"
     },
     {
       "id": "1718-ko-tech-Qwen3.6-27B-로컬-AI-모델",
@@ -19231,7 +19233,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.431989",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -19256,7 +19258,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:12:54.036472+00:00"
     },
     {
       "id": "1719-en-tech-fly.io-free-tier-pos",
@@ -19264,7 +19268,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432012",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19278,7 +19282,9 @@
           "source": "community.fly.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:25:56.718295+00:00"
     },
     {
       "id": "1720-en-tech-ollama-llama3.2-3b-v",
@@ -19286,7 +19292,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432033",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19310,7 +19316,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:17:13.016038+00:00"
     },
     {
       "id": "1721-en-tech-github-actions-self-",
@@ -19318,7 +19326,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432055",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19337,7 +19345,9 @@
           "source": "github.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:28:20.395964+00:00"
     },
     {
       "id": "1722-en-tech-claude-api-vs-openai",
@@ -19345,7 +19355,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432077",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19364,7 +19374,9 @@
           "source": "nicolalazzari.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:19:17.007329+00:00"
     },
     {
       "id": "1723-en-tech-prometheus-node-expo",
@@ -19453,7 +19465,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432192",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19477,7 +19489,9 @@
           "source": "medium.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:21:42.418994+00:00"
     },
     {
       "id": "1727-ko-tech-GitHub-Actions-cron-",
@@ -19485,7 +19499,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432210",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19509,7 +19523,9 @@
           "source": "github.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:30:30.200670+00:00"
     },
     {
       "id": "1728-ko-tech-Claude-API-RAG-구현-청크",
@@ -19517,7 +19533,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432227",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19536,7 +19552,9 @@
           "source": "help.apiyi.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:24:17.135617+00:00"
     },
     {
       "id": "1729-ko-tech-Docker-Compose-단독-VP",
@@ -19544,7 +19562,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-23T08:55:11.432247",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -19568,7 +19586,9 @@
           "source": "github.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-23T11:10:08.844960+00:00",
+      "completed_at": "2026-04-23T11:32:40.268762+00:00"
     },
     {
       "id": "1730-ko-tech-Supabase-RLS-활성화-후-쿼",

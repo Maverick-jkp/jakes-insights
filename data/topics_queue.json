@@ -18867,39 +18867,6 @@
       "completed_at": "2026-04-21T11:29:55.311202+00:00"
     },
     {
-      "id": "1705-en-tech-SpaceX-Cursor-acquis",
-      "keyword": "SpaceX Cursor acquisition $60B deal what it means for AI coding tools",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-04-22T08:50:33.170870",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Developers worried their primary AI coding tool will change, get paywalled, or be deprioritized after a $60B acquisition by a non-software company",
-      "angle": "Developer workflow disruption — what Cursor users should watch for as SpaceX absorbs a leading AI dev tool into its GPU-heavy infrastructure empire",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "SpaceX says it has option to acquire startup Cursor for $60 billion | Reuters",
-          "url": "https://www.reuters.com/technology/spacex-says-it-has-option-acquire-startup-cursor-60-billion-2026-04-21/",
-          "source": "www.reuters.com"
-        },
-        {
-          "title": "SpaceX Strikes Deal With Cursor for $60 Billion - The New York Times",
-          "url": "https://www.nytimes.com/2026/04/21/business/spacex-cursor-deal.html",
-          "source": "www.nytimes.com"
-        },
-        {
-          "title": "SpaceX is working with Cursor and has an option to buy the startup for $60B | TechCrunch",
-          "url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
-          "source": "techcrunch.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "1706-ko-tech-Vercel-보안-사고-OAuth-환",
       "keyword": "Vercel 보안 사고 OAuth 환경변수 유출 국내 개발자 대응법",
       "category": "tech",
@@ -18996,38 +18963,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-04-22T11:06:13.055767+00:00",
       "completed_at": "2026-04-22T11:18:00.985133+00:00"
-    },
-    {
-      "id": "1709-en-tech-prometheus-grafana-2",
-      "keyword": "prometheus grafana 2gb vps docker compose memory tuning disable unused exporters",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-22T08:50:33.171018",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus+Grafana 스택이 메모리를 과도하게 잡아먹어 최적화하려는 개발자",
-      "angle": "불필요한 exporter 비활성화 + retention 축소 + chunk 캐시 조정으로 RAM 점유 1GB 이하 달성 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "How to Monitor GPU, CPU, and Memory Usage of a vLLM Server Using Prometheus, DCGM Exporter, cAdvisor",
-          "url": "https://medium.com/@kimdoil1211/how-to-monitor-gpu-cpu-and-memory-usage-of-a-vllm-server-using-prometheus-dcgm-exporter-f988afd70460",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1710-en-tech-cursor-ide-vs-windsu",
@@ -19258,33 +19193,438 @@
       "completed_at": "2026-04-22T11:44:32.729811+00:00"
     },
     {
-      "id": "1717-ko-tech-Prometheus-Grafana-2",
-      "keyword": "Prometheus Grafana 2GB VPS Docker Compose 메모리 최적화 불필요 exporter 비활성화 설정",
+      "id": "1717-en-tech-Firefox-Tor-IndexedD",
+      "keyword": "Firefox Tor IndexedDB fingerprinting vulnerability privacy breakdown",
       "category": "tech",
-      "lang": "ko",
-      "priority": 7,
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-04-22T08:50:33.171180",
+      "created_at": "2026-04-23T08:55:11.431952",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 모니터링 스택이 메모리를 과하게 써서 OOM이 발생하는 문제를 해결하려는 개발자",
-      "angle": "기본 설치 대비 최적화 후 RSS 메모리 점유 변화를 htop 스크린샷으로 보여주는 단계별 튜닝 가이드",
+      "keyword_type": "trend",
+      "search_intent": "Developers and privacy-conscious users want to understand how deep the Firefox/Tor anonymity failure goes and whether their workflow is compromised",
+      "angle": "Technical post-mortem of the IndexedDB leak — how a single persistent identifier silently destroys Tor's anonymity promise, and what browser-level fixes actually mean for opsec in 2026",
       "competition_level": "low",
       "references": [
         {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
+          "title": "We Found a Stable Firefox Identifier Linking All Your Private Tor Identities",
+          "url": "https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/",
+          "source": "fingerprint.com"
         },
+        {
+          "title": "We found a stable Firefox identifier linking all your private Tor identities | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47866697",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "Canvas fingerprinting - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Canvas_fingerprinting",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1718-ko-tech-Qwen3.6-27B-로컬-AI-모델",
+      "keyword": "Qwen3.6-27B 로컬 AI 모델 성능 Claude 대비 실사용 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 10,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.431989",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발자들이 Claude Code 비용 부담을 느끼는 시점에서 오픈소스 로컬 모델이 실제 대안이 될 수 있는지 판단하려 함",
+      "angle": "HackerNews에서 837점을 받은 Qwen3.6-27B를 한국 개발자 관점에서 분석 — 16GB 맥북/윈도우 PC에서 실제 설치·사용 가능성, Claude 대비 코딩 품질, 비용 절감 현실성을 구체적 수치로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series developed by Qwen team, Alibaba ",
+          "url": "https://github.com/QwenLM/Qwen3.6",
+          "source": "github.com"
+        },
+        {
+          "title": "Qwen3.6 - How to Run Locally | Unsloth Documentation",
+          "url": "https://unsloth.ai/docs/models/qwen3.6",
+          "source": "unsloth.ai"
+        },
+        {
+          "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=47863217",
+          "source": "news.ycombinator.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1719-en-tech-fly.io-free-tier-pos",
+      "keyword": "fly.io free tier postgres connection pool exhausted fix 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432012",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 플랜에서 Postgres 연결 풀 고갈 오류를 실제로 겪고 해결법을 찾는 개발자",
+      "angle": "실제 발생 에러 로그 + pgBouncer 설정으로 해결한 삽질 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly Managed Postgres and database connection limit using the PG Bouncer - Phoenix - Fly.io",
+          "url": "https://community.fly.io/t/fly-managed-postgres-and-database-connection-limit-using-the-pg-bouncer/27103",
+          "source": "community.fly.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1720-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed MacBook M3 16GB benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432033",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 ollama 모델 선택 시 속도와 품질 트레이드오프를 실측값으로 확인하려는 사용자",
+      "angle": "동일 프롬프트로 3B vs 8B 토큰/초 실측 비교 + 한국어 품질 차이 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best LLM for MacBook (2026): Top 15 Models Tested - ModelFit",
+          "url": "https://modelfit.io/guides/best-llm-for-macbook/",
+          "source": "modelfit.io"
+        },
+        {
+          "title": "r/ollama on Reddit: I tested 10 LLMs locally on my MacBook Air M1 (8GB RAM!) – Here's what actually ",
+          "url": "https://www.reddit.com/r/ollama/comments/1lktb12/i_tested_10_llms_locally_on_my_macbook_air_m1_8gb/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1721-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 apple silicon timeout issue workaround",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432055",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Apple Silicon Mac을 self-hosted runner로 쓰다가 arm64 Docker 빌드 타임아웃 문제를 만난 개발자",
+      "angle": "실제 오류 재현 → QEMU 에뮬레이션 vs native arm64 빌드 비교 해결책",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/github on Reddit: Self-hosted github runner just fails without any error sometimes",
+          "url": "https://www.reddit.com/r/github/comments/1nd9pkp/selfhosted_github_runner_just_fails_without_any/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Releases · actions/runner",
+          "url": "https://github.com/actions/runner/releases",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1722-en-tech-claude-api-vs-openai",
+      "keyword": "claude api vs openai api cost per 1000 tokens real world rag app comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432077",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 앱을 실제로 운영하면서 Claude와 OpenAI API 중 어느 쪽이 저렴한지 실비용을 계산하려는 개발자",
+      "angle": "동일 RAG 파이프라인에서 월 1만 쿼리 기준 실제 청구 금액 비교표",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI API Pricing Comparison (2026): Grok vs Gemini vs GPT-4o vs Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/ai-api-pricing-comparison-grok-gemini-openai-claude",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "AI API Pricing Comparison 2026: OpenAI vs Claude vs Gemini (Real Cost Examples) | Nicola Lazzari",
+          "url": "https://nicolalazzari.ai/articles/ai-api-pricing-comparison-2026",
+          "source": "nicolalazzari.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1723-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose single vps 1gb ram high memory usage fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432098",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "1GB RAM VPS에서 Prometheus + Node Exporter 돌리다가 메모리 부족으로 서버 다운되는 문제 해결 원하는 사람",
+      "angle": "scrape_interval 조정 + retention 축소 + 경량 대안(VictoriaMetrics) 실험 결과",
+      "competition_level": "low",
+      "references": [
         {
           "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
           "url": "https://last9.io/blog/prometheus-with-docker-compose/",
           "source": "last9.io"
         },
         {
-          "title": "Grafana 및 prometheus 활용 #2 - 나만의 코딩기록 - 티스토리",
-          "url": "https://cdchan.tistory.com/282",
-          "source": "cdchan.tistory.com"
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "High Memory Usage in Prometheus Pod Even with 1GB Retention Config - Prometheus server - Prometheus ",
+          "url": "https://discuss.prometheus.io/t/high-memory-usage-in-prometheus-pod-even-with-1gb-retention-config/3433",
+          "source": "discuss.prometheus.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1724-en-tech-vercel-hobby-plan-se",
+      "keyword": "vercel hobby plan serverless function cold start latency next.js 14 edge runtime vs nodejs actual measurement",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432127",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel Hobby 플랜에서 Edge Runtime과 Node.js Runtime 콜드 스타트 차이를 실측하고 싶은 개발자",
+      "angle": "동일 API route를 두 런타임으로 배포 후 100회 측정 p50/p95 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Runtimes",
+          "url": "https://vercel.com/docs/functions/runtimes",
+          "source": "vercel.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1725-en-tech-supabase-free-tier-r",
+      "keyword": "supabase free tier row level security performance overhead real benchmark pgbench 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432152",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase에서 RLS 활성화 시 쿼리 성능이 얼마나 떨어지는지 실측값으로 확인하려는 개발자",
+      "angle": "RLS on/off pgbench 결과 + 인덱스 전략으로 오버헤드 최소화하는 실험",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Benchmarks | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/realtime/benchmarks",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase Review 2026: We Tested the Firebase Alternative (Database, Auth, Real-Time & Pricing)",
+          "url": "https://hackceleration.com/supabase-review/",
+          "source": "hackceleration.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1726-ko-tech-Fly.io-vs-Railway-1인",
+      "keyword": "Fly.io vs Railway 1인 개발자 사이드 프로젝트 월 실비용 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432192",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트 배포 플랫폼 선택 시 실제 청구 금액을 비교하고 싶은 개발자",
+      "angle": "동일 Node.js + Postgres 앱을 두 플랫폼에 배포 후 30일 실청구 금액 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly.io vs Railway",
+          "url": "https://getdeploying.com/flyio-vs-railway",
+          "source": "getdeploying.com"
+        },
+        {
+          "title": "Railway vs. Fly | Railway Docs",
+          "url": "https://docs.railway.com/platform/compare-to-fly",
+          "source": "docs.railway.com"
+        },
+        {
+          "title": "Railway vs Fly.io vs Render: Which Cloud Gives You the Best ROI? | by R. Thompson (PhD) | AI Disrupt",
+          "url": "https://medium.com/ai-disruption/railway-vs-fly-io-vs-render-which-cloud-gives-you-the-best-roi-2e3305399e5b",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1727-ko-tech-GitHub-Actions-cron-",
+      "keyword": "GitHub Actions cron 스케줄 실제로 안 실행될 때 원인 디버깅 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432210",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "cron 표현식은 맞는데 워크플로우가 트리거되지 않아서 원인을 모르는 개발자",
+      "angle": "GitHub 공식 딜레이 정책 + 비활성 repo 자동 비활성화 함정 + 실제 해결 순서",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        },
+        {
+          "title": "github action 간단 사용법 | marinesnow34",
+          "url": "https://marinesnow34.github.io/2024/09/15/gitaction/",
+          "source": "marinesnow34.github.io"
+        },
+        {
+          "title": "Cron jobs not getting triggered as intended. · community · Discussion #190423",
+          "url": "https://github.com/orgs/community/discussions/190423",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1728-ko-tech-Claude-API-RAG-구현-청크",
+      "keyword": "Claude API RAG 구현 청크 사이즈 512 vs 1024 검색 정확도 실험 결과",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432227",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 파이프라인 최적화 중 청크 크기 결정 기준을 실험 데이터로 확인하려는 개발자",
+      "angle": "동일 문서에 청크 사이즈만 바꿔서 Top-3 정확도 측정 + 실패 사례 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "Claude API 인터넷 검색 완벽 가이드: 네이티브 web_search 도구와 3가지 구현 방식 비교 (2026) - Apiyi.com Blog",
+          "url": "https://help.apiyi.com/ko/claude-api-web-search-guide-ko.html",
+          "source": "help.apiyi.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1729-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 2GB 메모리 Prometheus Grafana 같이 띄우면 OOM 나는 이유와 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432247",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 모니터링 스택을 올리려다 메모리 부족으로 컨테이너가 죽는 문제를 해결하려는 사람",
+      "angle": "메모리 사용량 실측 + --storage.tsdb.retention.size 튜닝 + 경량 대안 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker 컨테이너 메모리 관리 및 OOM 대응 - 성장하는 개발자",
+          "url": "https://bluedreamer-twenty.tistory.com/6",
+          "source": "bluedreamer-twenty.tistory.com"
+        },
+        {
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
+        },
+        {
+          "title": "Consider enabling memory cgroup by default in 64-bit Lite builds (for Docker users) · Issue #917 · R",
+          "url": "https://github.com/RPi-Distro/pi-gen/issues/917",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1730-ko-tech-Supabase-RLS-활성화-후-쿼",
+      "keyword": "Supabase RLS 활성화 후 쿼리 느려졌을 때 인덱스 전략 실전 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432263",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase에서 Row Level Security 켠 뒤 갑자기 응답이 느려져서 원인과 해결책을 찾는 개발자",
+      "angle": "EXPLAIN ANALYZE 결과 비교 + auth.uid() 인덱스 추가 전후 실측 수치 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[260402 TIL] 검색 쿼리 최적화 트러블슈팅 — elseif",
+          "url": "https://ifelseif.tistory.com/332",
+          "source": "ifelseif.tistory.com"
+        },
+        {
+          "title": "Supabase Docs | Troubleshooting | RLS Performance and Best Practices",
+          "url": "https://supabase.com/docs/guides/troubleshooting/rls-performance-and-best-practices-Z5Jjwv",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1731-ko-tech-Vercel-Hobby-플랜-Edge",
+      "keyword": "Vercel Hobby 플랜 Edge Function Node.js Runtime 콜드 스타트 실측 비교 Next.js 14",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-23T08:55:11.432280",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "무료 플랜에서 API 응답 속도를 최적화하려고 Edge와 Node.js 런타임 차이를 실데이터로 보고 싶은 개발자",
+      "angle": "동일 엔드포인트 100회 호출 p50/p95 레이턴시 + 비용 0원 유지 조건 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel Hobby Plan",
+          "url": "https://vercel.com/docs/plans/hobby",
+          "source": "vercel.com"
+        },
+        {
+          "title": "Next.js middleware fails on Edge Runtime but works with Node.js runtime on Vercel - Help - Vercel Co",
+          "url": "https://community.vercel.com/t/next-js-middleware-fails-on-edge-runtime-but-works-with-node-js-runtime-on-vercel/35553",
+          "source": "community.vercel.com"
+        },
+        {
+          "title": "Next.js Tutorial: Build a Full-Stack App in 13 Steps [2026]",
+          "url": "https://tech-insider.org/nextjs-tutorial-full-stack-app-router-2026/",
+          "source": "tech-insider.org"
         }
       ],
       "content_type_hint": "GUIDE"

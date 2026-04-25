@@ -19716,65 +19716,6 @@
       "completed_at": "2026-04-24T11:20:25.884148+00:00"
     },
     {
-      "id": "1736-en-tech-docker-compose-healt",
-      "keyword": "docker compose healthcheck dependency order postgres not ready spring boot startup fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-24T09:02:34.542941",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Docker Compose에서 Postgres 준비 전에 앱이 먼저 뜨는 레이스 컨디션 해결하려고",
-      "angle": "depends_on condition: service_healthy 설정 + pg_isready 헬스체크 정확한 설정법 삽질 기록",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Use Docker Compose depends_on with Health Checks",
-          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "Docker Compose: The Dependency Trap — ‘depends_on’ Doesn’t Mean Ready – cr0x.net",
-          "url": "https://cr0x.net/en/docker-compose-depends-on-readiness-trap/",
-          "source": "cr0x.net"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1737-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter docker compose 2gb ram vps cpu spike alert rule minimal config",
-      "category": "tech",
-      "lang": "en",
-      "priority": 6,
-      "status": "pending",
-      "created_at": "2026-04-24T09:02:34.542983",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus가 오히려 리소스를 잡아먹지 않게 최소 설정으로 모니터링 구축하려고",
-      "angle": "2GB RAM 서버 기준 scrape_interval 조정 + 꼭 필요한 alert rule만 추린 실전 compose 파일 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "How to Configure Node Exporter for Prometheus",
-          "url": "https://oneuptime.com/blog/post/2026-01-25-prometheus-node-exporter/view",
-          "source": "oneuptime.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1738-ko-tech-M3-맥북-ollama-llama3.",
       "keyword": "M3 맥북 ollama llama3.2 한국어 답변 GPT-4o-mini 비교 실측 토큰 속도 2025",
       "category": "tech",
@@ -19877,70 +19818,6 @@
       "completed_at": "2026-04-24T11:24:32.052412+00:00"
     },
     {
-      "id": "1741-ko-tech-Docker-Compose-postg",
-      "keyword": "Docker Compose postgres healthcheck depends_on 레이스컨디션 스프링부트 연결 실패 해결",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-24T09:02:34.543153",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "로컬 개발환경에서 앱 컨테이너가 DB보다 먼저 뜨는 타이밍 문제를 해결하려고",
-      "angle": "condition: service_healthy 정확한 문법 + pg_isready 헬스체크 실제 작동하는 설정 삽질 후기",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Docker환경 PostgreSQL 연결 거부(ECONNREFUSED) 해결 가이드【2026년 최신판】",
-          "url": "https://blog.path-finder.jp/troubleshooting/docker%ED%99%98%EA%B2%BD-postgresql-%EC%97%B0%EA%B2%B0-%EA%B1%B0%EB%B6%80econnrefused-%ED%95%B4%EA%B2%B0-%EA%B0%80%EC%9D%B4%EB%93%9C2026%EB%85%84/",
-          "source": "blog.path-finder.jp"
-        },
-        {
-          "title": "Docker Compose: The Dependency Trap — ‘depends_on’ Doesn’t Mean Ready – cr0x.net",
-          "url": "https://cr0x.net/en/docker-compose-depends-on-readiness-trap/",
-          "source": "cr0x.net"
-        },
-        {
-          "title": "Running Spring Boot with PostgreSQL in Docker Compose | Baeldung",
-          "url": "https://www.baeldung.com/spring-boot-postgresql-docker",
-          "source": "www.baeldung.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1742-ko-tech-Vercel-무료-플랜-함수-실행시간",
-      "keyword": "Vercel 무료 플랜 함수 실행시간 10초 제한 우회 Next.js API route 긴 작업 처리 방법",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-24T09:02:34.543183",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료로 쓰다가 타임아웃 에러 뜨는 상황에서 유료 안 쓰고 해결하고 싶어서",
-      "angle": "백그라운드 작업을 Vercel Cron + Upstash Redis 큐로 분리해 10초 제한 우회한 실전 아키텍처",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Vercel을 이용한 무료 웹 배포 이용해보기 - 코딩은재밌어",
-          "url": "https://allinfor.tistory.com/76",
-          "source": "allinfor.tistory.com"
-        },
-        {
-          "title": "Vercel 무료버전 서버속도 - 인프런 | 커뮤니티 질문&답변",
-          "url": "https://www.inflearn.com/en/community/questions/1641763/vercel-%EB%AC%B4%EB%A3%8C%EB%B2%84%EC%A0%84-%EC%84%9C%EB%B2%84%EC%86%8D%EB%8F%84",
-          "source": "www.inflearn.com"
-        },
-        {
-          "title": "How to solve Next.js timeouts - Inngest Blog",
-          "url": "https://www.inngest.com/blog/how-to-solve-nextjs-timeouts",
-          "source": "www.inngest.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1743-ko-tech-Cursor-AI-vs-GitHub-",
       "keyword": "Cursor AI vs GitHub Copilot 실무 코드리뷰 정확도 한국어 주석 프로젝트 실사용 비교 2025",
       "category": "tech",
@@ -19973,6 +19850,402 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-04-24T11:07:20.873011+00:00",
       "completed_at": "2026-04-24T11:26:48.528803+00:00"
+    },
+    {
+      "id": "1744-en-tech-fly.io-free-tier-pos",
+      "keyword": "fly.io free tier postgresql connection pool exhausted fix 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.971775",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 플랜에서 PostgreSQL 연결 풀 초과 에러를 해결하려는 개발자",
+      "angle": "실제 에러 로그와 pgBouncer 설정으로 해결하는 단계별 트러블슈팅",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly Managed Postgres and database connection limit using the PG Bouncer - Phoenix - Fly.io",
+          "url": "https://community.fly.io/t/fly-managed-postgres-and-database-connection-limit-using-the-pg-bouncer/27103",
+          "source": "community.fly.io"
+        },
+        {
+          "title": "Why Fly.io Is the Best Free Docker Hosting You're Not Using | Vibe Coding With Fred",
+          "url": "https://vibecodingwithfred.com/blog/flyio-free-tier-guide/",
+          "source": "vibecodingwithfred.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1745-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed apple silicon 16gb ram benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.971831",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M 시리즈 맥 16GB에서 llama3.2 모델 크기별 실제 속도 차이를 확인하려는 사용자",
+      "angle": "토큰/초 실측 데이터와 한국어 응답 품질까지 포함한 비교 실험 결과",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best Ollama Models in 2026: A Practical Guide by Use Case - ML Journey",
+          "url": "https://mljourney.com/best-ollama-models-in-2026-a-practical-guide-by-use-case/",
+          "source": "mljourney.com"
+        },
+        {
+          "title": "Your Mac's RAM is its GPU: How Much Unified Memory for Local AI? - SolidAITech",
+          "url": "https://www.solidaitech.com/2026/04/mac-ram-requirements-local-llms-apple-silicon.html",
+          "source": "www.solidaitech.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1746-en-tech-claude-api-streaming",
+      "keyword": "claude api streaming response nextjs app router server component implementation",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.971873",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js App Router에서 Claude API 스트리밍을 구현하려는 개발자",
+      "angle": "Server Component vs Route Handler 방식 차이점과 실제 동작하는 코드 예제",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Routing: API Routes | Next.js",
+          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
+          "source": "nextjs.org"
+        },
+        {
+          "title": "How to Stream Claude API Responses in a Next.js App (With Full Code) | Vadim Alakhverdov",
+          "url": "https://vadimall.com/posts/Stream-claude-api-responses-in-nextjs",
+          "source": "vadimall.com"
+        },
+        {
+          "title": "Claude Streaming API with Next.js Edge: Production-Ready Implementation Guide - Tech Edu Byte",
+          "url": "https://www.techedubyte.com/claude-streaming-api-nextjs-edge-guide/",
+          "source": "www.techedubyte.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1747-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker memory limit cgroup v2 ubuntu 24.04",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.971911",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Ubuntu 24.04에서 self-hosted runner 메모리 제한이 적용 안 되는 문제를 해결하려는 DevOps 엔지니어",
+      "angle": "cgroup v2 전환 이슈 원인 분석과 실제 해결한 설정 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Set Up a Self-Hosted GitHub Actions Runner on Ubuntu",
+          "url": "https://oneuptime.com/blog/post/2026-01-07-ubuntu-github-actions-runner/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Runner pod hangs indefinitely on memory limit instead of OOMKilling (cgroup v2 file-backed page thra",
+          "url": "https://github.com/actions/actions-runner-controller/issues/4436",
+          "source": "github.com"
+        },
+        {
+          "title": "Setting Up GitHub Actions Runners on Ubuntu 24.04: Self-Hosted CI/CD Guide | Markaicode",
+          "url": "https://markaicode.com/github-actions-runners-ubuntu-24-04/",
+          "source": "markaicode.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1748-en-tech-vps-2gb-ram-promethe",
+      "keyword": "vps 2gb ram prometheus grafana docker compose swap memory tuning production",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.971949",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Prometheus + Grafana 스택을 메모리 부족 없이 운영하려는 1인 개발자",
+      "angle": "swap 설정 + retention 조정 + scrape interval 최적화로 2GB 서버에서 실제 운영 중인 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/prometheus-grafana",
+          "source": "docker.recipes"
+        },
+        {
+          "title": "Configuring, Tuning, and Troubleshooting OpenClaw Memory Subsystem for Production Workloads - UBOS",
+          "url": "https://ubos.tech/configuring-tuning-and-troubleshooting-openclaw-memory-subsystem-for-production-workloads/",
+          "source": "ubos.tech"
+        },
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1749-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge function cold start latency reduce deno deploy optimization",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.971984",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Function 콜드 스타트 지연을 줄이려는 개발자",
+      "angle": "실측 latency 데이터와 함께 Deno 번들 크기 최적화 및 워밍업 전략 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase Database Functions vs Edge Functions (2026): When to Use Each and Why - CloseFuture",
+          "url": "https://www.closefuture.io/blogs/supabase-database-vs-edge-functions",
+          "source": "www.closefuture.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1750-en-tech-wsl2-docker-desktop-",
+      "keyword": "wsl2 docker desktop alternative rancher desktop memory usage comparison windows 11",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972020",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Docker Desktop 메모리 과다 사용 문제로 대안을 찾는 Windows 11 개발자",
+      "angle": "Rancher Desktop vs Docker Desktop 유휴/부하 시 실제 메모리 사용량 측정 결과 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Rancher Desktop vs Docker Desktop: Development Tools Comparison",
+          "url": "https://oneuptime.com/blog/post/2026-03-20-rancher-desktop-vs-docker-desktop/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Rancher Desktop vs Docker Desktop: Detailed Comparison of Features, Performance, and Licensing - you",
+          "url": "https://your-homepage.com/rancher-desktop-vs-docker-desktop-detailed-comparison-of-features-performance-and-licensing/",
+          "source": "your-homepage.com"
+        },
+        {
+          "title": "Docker Desktop vs Rancher Desktop – Comprehensive Comparison -",
+          "url": "https://www.devopsschool.com/blog/docker-desktop-vs-rancher-desktop-comprehensive-comparison/",
+          "source": "www.devopsschool.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1751-ko-tech-Fly.io-월-10달러-이하-1인-",
+      "keyword": "Fly.io 월 10달러 이하 1인 개발자 인프라 실제 비용 청구서 공개 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972099",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 저비용으로 운영하는 실제 비용 구조를 알고 싶은 개발자",
+      "angle": "3개월 실제 청구서 캡처와 함께 서비스별 비용 분해 및 절감 팁 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly.io Pricing 2026: $0–$500+/month + Hidden Costs Explained",
+          "url": "https://costbench.com/software/developer-tools/flyio/",
+          "source": "costbench.com"
+        },
+        {
+          "title": "Fly.io | Review, Pricing & Alternatives",
+          "url": "https://getdeploying.com/flyio",
+          "source": "getdeploying.com"
+        },
+        {
+          "title": "Fly.io 2026 News Review, Features and Pricing - AI Jet",
+          "url": "https://aijet.cc/item/flyio",
+          "source": "aijet.cc"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1752-ko-tech-Claude-API-vs-GPT-4o",
+      "keyword": "Claude API vs GPT-4o 코드 리뷰 실무 사용 한달 후기 토큰 비용 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972135",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI 코드 리뷰 도구 선택을 고민하는 개발자",
+      "angle": "실제 PR 50개에 적용한 결과 — 오류 검출률, 응답 속도, 월 토큰 비용 실측 데이터",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Code Pricing Guide 2026: Free Tier, Pro vs Max, API Costs, and Team Plans | LaoZhang AI Blog",
+          "url": "https://blog.laozhang.ai/en/posts/claude-code-pricing-guide",
+          "source": "blog.laozhang.ai"
+        },
+        {
+          "title": "GPT-4 - 나무위키",
+          "url": "https://namu.wiki/w/GPT-4",
+          "source": "namu.wiki"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1753-ko-tech-Next.js-App-Router-S",
+      "keyword": "Next.js App Router Supabase RLS 적용 후 쿼리 느려졌을 때 원인 분석 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972165",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RLS 활성화 후 갑자기 느려진 쿼리 원인을 찾는 Next.js 개발자",
+      "angle": "EXPLAIN ANALYZE 결과와 함께 인덱스 누락 + auth.uid() 반복 호출 문제 해결 과정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[트러블슈팅] Supabase Auth를 활용한 다양한 환경에서의 세션 유지",
+          "url": "https://inyoung.dev/troubleshooting-supabase-auth/",
+          "source": "inyoung.dev"
+        },
+        {
+          "title": "Lobehub",
+          "url": "https://lobehub.com/ko/skills/adaptationio-skrillz-supabase-troubleshooting",
+          "source": "lobehub.com"
+        },
+        {
+          "title": "Supabase Client Libraries",
+          "url": "https://supabase.com/ui/docs/nextjs/client",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1754-ko-tech-GitHub-Actions-무료-플랜",
+      "keyword": "GitHub Actions 무료 플랜 2000분 아끼는 실전 설정 path filter cache 전략",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972185",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GitHub Actions 무료 한도를 초과하지 않도록 최적화하려는 1인 개발자",
+      "angle": "path filter로 불필요한 트리거 차단 + cache 히트율 높이는 실전 yaml 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions 고급 CI/CD — Matrix, Cache, Self-hosted Runner | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-02-github-actions-advanced-cicd",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Stop Waiting for Builds: 3 Essential Caching Tips for GitHub Actions | by Vincent Kim | Medium",
+          "url": "https://medium.com/@armyost1/make-your-actions-pipeline-faster-with-cache-5b003b77cbb3",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1755-ko-tech-Ubuntu-22.04-VPS-2GB",
+      "keyword": "Ubuntu 22.04 VPS 2GB swap 설정 Node.js 빌드 메모리 부족 OOM 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972240",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Node.js 빌드 중 OOM으로 프로세스가 죽는 문제를 해결하려는 개발자",
+      "angle": "swap 크기별 빌드 성공률 실험 결과 + 영구 적용 설정 명령어 복붙 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ubuntu VPS Swap File Setup and Memory Management | MassiveGRID Blog",
+          "url": "https://massivegrid.com/blog/ubuntu-vps-swap-memory-management/",
+          "source": "massivegrid.com"
+        },
+        {
+          "title": "Ubuntu Servers: Best Swap & Memory Configurations",
+          "url": "https://mainvps.net/blog/ubuntu-swap-memory-configuration",
+          "source": "mainvps.net"
+        },
+        {
+          "title": "How to Add Swap Memory in Ubuntu 22.04 - Complete Guide | Vultr Docs",
+          "url": "https://docs.vultr.com/how-to-add-swap-memory-in-ubuntu-2204",
+          "source": "docs.vultr.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1756-ko-tech-Cursor-AI-실제로-한달-써본-",
+      "keyword": "Cursor AI 실제로 한달 써본 후기 GitHub Copilot 대비 코드 완성 품질 비용 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-25T08:07:15.972263",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor 구독을 결정하기 전 실사용 후기가 필요한 개발자",
+      "angle": "동일 작업 기준 Copilot vs Cursor 완성 수락률, 컨텍스트 이해도, 월 비용 직접 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Copilot vs Cursor 2026: Which Coding AI Is Worth Paying For? | NxCode",
+          "url": "https://www.nxcode.io/resources/news/github-copilot-vs-cursor-2026-which-to-pay-for",
+          "source": "www.nxcode.io"
+        },
+        {
+          "title": "2025년 AI 코딩 도구 총정리! GitHub Copilot vs Cursor vs Claude 실사용 후기 :: 코드마스터 로그(CodeMaster Log)",
+          "url": "https://tyfghxcvbn.tistory.com/18",
+          "source": "tyfghxcvbn.tistory.com"
+        },
+        {
+          "title": "GitHub Copilot vs Cursor vs Claude Code — 3가지 다 쓸어본 실화 비교 (2026년 기준) :: 하네스",
+          "url": "https://suesues.tistory.com/entry/2026%EB%85%84-AI-%EC%BD%94%EB%94%A9-%ED%88%B4-%EB%B9%84%EA%B5%90-%EC%B4%9D%EC%A0%95%EB%A6%AC-%E2%80%94-GitHub-Copilot-vs-Cursor-vs-Claude-Code-%EC%8B%A4%EC%A0%9C-%EC%8D%A8%EB%B3%B8-%ED%9B%84%EA%B8%B0",
+          "source": "suesues.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

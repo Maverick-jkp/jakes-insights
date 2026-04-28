@@ -20182,7 +20182,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.116962",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -20207,7 +20207,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T11:47:45.558717+00:00"
     },
     {
       "id": "1758-ko-tech-Microsoft-OpenAI-독점-",
@@ -20215,7 +20217,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117006",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -20240,7 +20242,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T11:50:11.478590+00:00"
     },
     {
       "id": "1759-en-tech-ollama-llama3.2-3b-v",
@@ -20248,7 +20252,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117052",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20262,7 +20266,9 @@
           "source": "localaimaster.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T11:52:31.901122+00:00"
     },
     {
       "id": "1760-en-tech-claude-api-streaming",
@@ -20270,7 +20276,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117073",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20289,7 +20295,9 @@
           "source": "oneuptime.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T11:54:03.093381+00:00"
     },
     {
       "id": "1761-en-tech-supabase-row-level-s",
@@ -20297,7 +20305,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117111",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20311,7 +20319,9 @@
           "source": "supabase.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T12:02:59.450211+00:00"
     },
     {
       "id": "1762-en-tech-docker-compose-healt",
@@ -20373,7 +20383,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117178",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20397,7 +20407,9 @@
           "source": "ollama.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T11:56:28.673867+00:00"
     },
     {
       "id": "1765-ko-tech-Supabase-Edge-Functi",
@@ -20405,7 +20417,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117196",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20429,7 +20441,9 @@
           "source": "supabase.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T12:05:16.033507+00:00"
     },
     {
       "id": "1766-ko-tech-1인-개발자-사이드프로젝트-월-1만원",
@@ -20437,7 +20451,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117213",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20461,7 +20475,9 @@
           "source": "no-intellectual.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T11:58:41.420086+00:00"
     },
     {
       "id": "1767-ko-tech-GitHub-Actions-cron-",
@@ -20469,7 +20485,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117229",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20493,7 +20509,9 @@
           "source": "github.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T12:07:33.530461+00:00"
     },
     {
       "id": "1768-ko-tech-Claude-API-vs-GPT-4o",
@@ -20501,7 +20519,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-28T09:25:18.117246",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20525,7 +20543,9 @@
           "source": "tali.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-28T11:45:34.161283+00:00",
+      "completed_at": "2026-04-28T12:00:56.651885+00:00"
     },
     {
       "id": "1769-ko-tech-Docker-Compose-단독-VP",

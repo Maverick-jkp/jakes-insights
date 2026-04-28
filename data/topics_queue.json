@@ -20046,38 +20046,6 @@
       "completed_at": "2026-04-25T11:07:18.120012+00:00"
     },
     {
-      "id": "1750-en-tech-wsl2-docker-desktop-",
-      "keyword": "wsl2 docker desktop alternative rancher desktop memory usage comparison windows 11",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-25T08:07:15.972020",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Docker Desktop 메모리 과다 사용 문제로 대안을 찾는 Windows 11 개발자",
-      "angle": "Rancher Desktop vs Docker Desktop 유휴/부하 시 실제 메모리 사용량 측정 결과 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Rancher Desktop vs Docker Desktop: Development Tools Comparison",
-          "url": "https://oneuptime.com/blog/post/2026-03-20-rancher-desktop-vs-docker-desktop/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "Rancher Desktop vs Docker Desktop: Detailed Comparison of Features, Performance, and Licensing - you",
-          "url": "https://your-homepage.com/rancher-desktop-vs-docker-desktop-detailed-comparison-of-features-performance-and-licensing/",
-          "source": "your-homepage.com"
-        },
-        {
-          "title": "Docker Desktop vs Rancher Desktop – Comprehensive Comparison -",
-          "url": "https://www.devopsschool.com/blog/docker-desktop-vs-rancher-desktop-comprehensive-comparison/",
-          "source": "www.devopsschool.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1751-ko-tech-Fly.io-월-10달러-이하-1인-",
       "keyword": "Fly.io 월 10달러 이하 1인 개발자 인프라 실제 비용 청구서 공개 2025",
       "category": "tech",
@@ -20175,65 +20143,6 @@
       "completed_at": "2026-04-25T11:00:19.167937+00:00"
     },
     {
-      "id": "1754-ko-tech-GitHub-Actions-무료-플랜",
-      "keyword": "GitHub Actions 무료 플랜 2000분 아끼는 실전 설정 path filter cache 전략",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-25T08:07:15.972185",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "GitHub Actions 무료 한도를 초과하지 않도록 최적화하려는 1인 개발자",
-      "angle": "path filter로 불필요한 트리거 차단 + cache 히트율 높이는 실전 yaml 설정 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "GitHub Actions 고급 CI/CD — Matrix, Cache, Self-hosted Runner | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/devops/2026-03-02-github-actions-advanced-cicd",
-          "source": "www.youngju.dev"
-        },
-        {
-          "title": "Stop Waiting for Builds: 3 Essential Caching Tips for GitHub Actions | by Vincent Kim | Medium",
-          "url": "https://medium.com/@armyost1/make-your-actions-pipeline-faster-with-cache-5b003b77cbb3",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1755-ko-tech-Ubuntu-22.04-VPS-2GB",
-      "keyword": "Ubuntu 22.04 VPS 2GB swap 설정 Node.js 빌드 메모리 부족 OOM 해결",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-04-25T08:07:15.972240",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Node.js 빌드 중 OOM으로 프로세스가 죽는 문제를 해결하려는 개발자",
-      "angle": "swap 크기별 빌드 성공률 실험 결과 + 영구 적용 설정 명령어 복붙 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Ubuntu VPS Swap File Setup and Memory Management | MassiveGRID Blog",
-          "url": "https://massivegrid.com/blog/ubuntu-vps-swap-memory-management/",
-          "source": "massivegrid.com"
-        },
-        {
-          "title": "Ubuntu Servers: Best Swap & Memory Configurations",
-          "url": "https://mainvps.net/blog/ubuntu-swap-memory-configuration",
-          "source": "mainvps.net"
-        },
-        {
-          "title": "How to Add Swap Memory in Ubuntu 22.04 - Complete Guide | Vultr Docs",
-          "url": "https://docs.vultr.com/how-to-add-swap-memory-in-ubuntu-2204",
-          "source": "docs.vultr.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1756-ko-tech-Cursor-AI-실제로-한달-써본-",
       "keyword": "Cursor AI 실제로 한달 써본 후기 GitHub Copilot 대비 코드 완성 품질 비용 비교",
       "category": "tech",
@@ -20266,6 +20175,416 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-04-25T10:44:10.107683+00:00",
       "completed_at": "2026-04-25T11:02:41.181932+00:00"
+    },
+    {
+      "id": "1757-en-tech-Microsoft-OpenAI-exc",
+      "keyword": "Microsoft OpenAI exclusive deal ended developer workflow impact",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.116962",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers using Azure OpenAI or OpenAI APIs are alarmed by the partnership split and want to know if pricing, availability, or API behavior will change — and whether they should migrate now",
+      "angle": "Practical developer impact: API reliability, pricing shifts, and whether Google TPU-backed alternatives now have a real opening — framed as a 'what do I do now?' guide",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "OpenAI Breaks Free From Exclusive AI Pact With Microsoft",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai",
+          "source": "www.bloomberg.com"
+        },
+        {
+          "title": "Microsoft, OpenAI change terms of deal so startup can court Amazon and others | Reuters",
+          "url": "https://www.reuters.com/legal/litigation/microsoft-end-exclusive-license-openais-technology-2026-04-27/",
+          "source": "www.reuters.com"
+        },
+        {
+          "title": "OpenAI shakes up partnership with Microsoft, capping revenue share payments",
+          "url": "https://www.cnbc.com/2026/04/27/openai-microsoft-partnership-revenue-cap.html",
+          "source": "www.cnbc.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1758-ko-tech-Microsoft-OpenAI-독점-",
+      "keyword": "Microsoft OpenAI 독점 계약 종료 개발자 영향",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117006",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Azure OpenAI API를 실무에 쓰는 한국 개발자·스타트업이 계약 종료 소식에 불안을 느끼며 '내 서비스에 실제로 어떤 영향이 오나'를 검색함",
+      "angle": "국내 개발자·스타트업 관점에서 Azure OpenAI 의존도 점검, 대안(Google Vertex AI, 자체 호스팅 오픈소스 LLM) 비교, 마이그레이션 타이밍 제언",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenAI - 나무위키",
+          "url": "https://namu.wiki/w/OpenAI",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "Microsoft, OpenAI change terms of deal so startup can court Amazon and others | Reuters",
+          "url": "https://www.reuters.com/legal/litigation/microsoft-end-exclusive-license-openais-technology-2026-04-27/",
+          "source": "www.reuters.com"
+        },
+        {
+          "title": "Microsoft (MSFT) to Stop Sharing Revenue With OpenAI - Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-04-27/microsoft-to-stop-sharing-revenue-with-main-ai-partner-openai",
+          "source": "www.bloomberg.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1759-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed M2 MacBook 16GB RAM benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117052",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M2 MacBook에서 llama3.2 모델 크기별 실제 추론 속도 차이를 수치로 확인하려는 검색",
+      "angle": "토큰/초 단위 실측 벤치마크 + 한국어 응답 품질 비교표 포함 실험 결과 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1760-en-tech-claude-api-streaming",
+      "keyword": "claude api streaming response nextjs app router server action timeout fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117073",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js App Router에서 Claude API 스트리밍 응답이 타임아웃되는 문제 해결을 찾는 검색",
+      "angle": "Vercel 배포 환경에서 Server Action 대신 Route Handler + ReadableStream 전환으로 해결한 실제 삽질기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[BUG] Claude Code hangs indefinitely when API streaming connection stalls (no read timeout) · Issue ",
+          "url": "https://github.com/anthropics/claude-code/issues/25979",
+          "source": "github.com"
+        },
+        {
+          "title": "How to Fix 'API Route' Timeout Errors in Next.js",
+          "url": "https://oneuptime.com/blog/post/2026-01-24-fix-api-route-timeout-errors-nextjs/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1761-en-tech-supabase-row-level-s",
+      "keyword": "supabase row level security performance slow query pgexplain real example",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117111",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase RLS 활성화 후 쿼리가 갑자기 느려진 원인을 EXPLAIN으로 분석하려는 개발자 검색",
+      "angle": "RLS 정책 추가 전후 EXPLAIN ANALYZE 결과 비교 + 인덱스 추가로 10배 속도 개선한 실측 사례",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1762-en-tech-docker-compose-healt",
+      "keyword": "docker compose healthcheck depends_on not working postgres ready workaround",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117135",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Docker Compose에서 depends_on healthcheck 설정이 Postgres 준비 전에 앱이 뜨는 문제를 해결하려는 검색",
+      "angle": "condition: service_healthy 단독으로 안 되는 이유 분석 + wait-for-it 스크립트 vs custom healthcheck 실전 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fix: Docker Compose Healthcheck Not Working — depends_on Not Waiting or Always Unhealthy - FixDevs",
+          "url": "https://fixdevs.com/blog/docker-compose-healthcheck-not-working/",
+          "source": "fixdevs.com"
+        },
+        {
+          "title": "How to Use Docker Compose depends_on with Health Checks",
+          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Docker Compose Service Dependencies: Solving Database Startup Sequence with Healthchecks · BetterLin",
+          "url": "https://eastondev.com/blog/en/posts/dev/20251217-docker-compose-healthcheck/",
+          "source": "eastondev.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1763-en-tech-cloudflare-workers-k",
+      "keyword": "cloudflare workers kv vs r2 vs d1 solo developer cost comparison under $5 month",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117157",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "1인 개발자가 Cloudflare 스토리지 옵션 중 실제 비용과 용도에 맞는 선택을 비교하려는 검색",
+      "angle": "읽기/쓰기 패턴별 실제 청구 시뮬레이션 + 사이드프로젝트 3가지 유형별 추천 조합 의사결정 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1764-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 응답 속도 토큰 실측 GPT-4o-mini 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117178",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM이 GPT API 대비 한국어로 얼마나 빠르고 정확한지 실제 수치로 확인하려는 개발자",
+      "angle": "토큰/초 속도 + 한국어 문법 오류율 + 비용 0원 vs API 비용 계산까지 포함한 실측 비교 리포트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "오픈클로(openclaw) 외부 모델/ollama 로컬모델 성능 테스트 : 클리앙",
+          "url": "https://www.clien.net/service/board/use/19145055",
+          "source": "www.clien.net"
+        },
+        {
+          "title": "library",
+          "url": "https://ollama.com/library",
+          "source": "ollama.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1765-ko-tech-Supabase-Edge-Functi",
+      "keyword": "Supabase Edge Function 콜드스타트 지연 Next.js 연동 실전 해결법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117196",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Function 첫 요청이 2-3초 지연되는 현상을 해결하려는 Next.js 개발자 검색",
+      "angle": "콜드스타트 발생 조건 분석 + 워밍업 크론잡 설정 + Vercel Edge와 응답 속도 실측 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Background Jobs and Async Task Patterns with Next.js and Supabase | Developer Guides | Iloveblogs.bl",
+          "url": "https://www.iloveblogs.blog/guides/nextjs-supabase-background-jobs-async-patterns",
+          "source": "www.iloveblogs.blog"
+        },
+        {
+          "title": "r/nextjs on Reddit: Supabase edge functions usage",
+          "url": "https://www.reddit.com/r/nextjs/comments/1nnakdc/supabase_edge_functions_usage/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Use Supabase with Next.js | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1766-ko-tech-1인-개발자-사이드프로젝트-월-1만원",
+      "keyword": "1인 개발자 사이드프로젝트 월 1만원 이하 인프라 Fly.io Cloudflare 실제 구성 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117213",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드프로젝트를 최소 비용으로 배포·운영하는 실제 인프라 구성을 참고하려는 개발자",
+      "angle": "Fly.io + Cloudflare Pages + Supabase 무료 티어 조합 실제 청구서 공개 + 트래픽 증가 시 병목 지점 경험담",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "팀 프로젝트 - 인프런 | 커뮤니티",
+          "url": "https://www.inflearn.com/community/projects",
+          "source": "www.inflearn.com"
+        },
+        {
+          "title": "취준생&주니어 개발자를 위한 사이드 프로젝트 플랫폼 추천 - 코드잇 블로그",
+          "url": "https://sprint.codeit.kr/blog/%EC%B7%A8%EC%A4%80%EC%83%9D%EC%A3%BC%EB%8B%88%EC%96%B4-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%B6%94%EC%B2%9C",
+          "source": "sprint.codeit.kr"
+        },
+        {
+          "title": "포트폴리오 제작기 [with Cloudflare Tunnel] — 개발세발네발",
+          "url": "https://no-intellectual.tistory.com/entry/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EC%A0%9C%EC%9E%91%EA%B8%B0-with-Cloudflare-Tunnel",
+          "source": "no-intellectual.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1767-ko-tech-GitHub-Actions-cron-",
+      "keyword": "GitHub Actions cron 스케줄 실제로 안 돌아갈 때 원인 분석 및 대안",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117229",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GitHub Actions cron 트리거가 설정대로 실행되지 않는 이유를 찾는 개발자",
+      "angle": "GitHub 공식 문서에 없는 비활성 레포 제한 정책 + 실제 지연 패턴 분석 + Cloudflare Workers cron으로 대체한 실전기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase Free Tier Will Pause Your App. Here’s the GitHub Actions Fix.",
+          "url": "https://levelup.gitconnected.com/supabase-free-tier-will-pause-your-app-heres-the-github-actions-fix-8c1fd35b49ca?gi=635926fc9413",
+          "source": "levelup.gitconnected.com"
+        },
+        {
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        },
+        {
+          "title": "[Feature]: Action Recorder → Cron Scheduler (hermes record) · Issue #4439 · NousResearch/hermes-agen",
+          "url": "https://github.com/NousResearch/hermes-agent/issues/4439",
+          "source": "github.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1768-ko-tech-Claude-API-vs-GPT-4o",
+      "keyword": "Claude API vs GPT-4o-mini 한국어 코드 리뷰 품질 실험 프롬프트별 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117246",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 코드 리뷰 자동화에 어떤 LLM API가 더 적합한지 실제 비교 결과를 찾는 개발자",
+      "angle": "동일 PR 코드 샘플에 동일 프롬프트 입력 후 지적 항목 수·정확도·비용 3가지 축 실측 비교표",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GPT vs Claude vs Gemini! 칭찬 생성기로 본 AI 코딩 감성 비교",
+          "url": "https://www.gpters.org/llm-service/post/gpt-vs-claude-vs-3TRjXJ2uytXftCw",
+          "source": "www.gpters.org"
+        },
+        {
+          "title": "Claude·GPT·Copilot·Gemini 사용리뷰",
+          "url": "https://brunch.co.kr/@2a50c213d2ac47c/69",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "코딩용으로 클로드AI가 GPT5 보다 나은 점 - 타리스만",
+          "url": "https://tali.kr/claude-vs-gpt",
+          "source": "tali.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1769-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 2GB RAM Prometheus Grafana 메모리 최적화 실전 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117263",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에 Prometheus+Grafana를 Docker Compose로 올릴 때 OOM 없이 운영하는 설정을 찾는 검색",
+      "angle": "retention 기간 단축 + scrape interval 조정 + cAdvisor 제거 후 메모리 사용량 before/after 실측 수치 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
+          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
+          "source": "seekerslab.com"
+        },
+        {
+          "title": "Prometheus + Grafana Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/monitoring/prometheus-grafana",
+          "source": "docker.recipes"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1770-ko-tech-Vercel-무료-플랜-함수-실행시간",
+      "keyword": "Vercel 무료 플랜 함수 실행시간 초과 Next.js API route 최적화 실전 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-04-28T09:25:18.117279",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 플랜 10초 제한에 걸리는 API Route를 최적화하거나 우회하는 방법을 찾는 개발자",
+      "angle": "DB 쿼리 시간 프로파일링 + Edge Runtime 전환 가능 여부 판단 기준 + Fly.io 마이그레이션 비용 비교까지 포함한 의사결정 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel 무료 배포 실전 가이드 2026 — Hobby 플랜으로 사이드 프로젝트 운영하기 | DevFinance",
+          "url": "https://www.devfinance.cloud/tech/vercel-free-deploy",
+          "source": "www.devfinance.cloud"
+        },
+        {
+          "title": "Min-inter",
+          "url": "https://min-inter.co.kr/wiki/vercel-vibe-coding-deploy-platform-guide",
+          "source": "min-inter.co.kr"
+        },
+        {
+          "title": "Vercel을 이용한 무료 웹 배포 이용해보기 - 코딩은재밌어",
+          "url": "https://allinfor.tistory.com/76",
+          "source": "allinfor.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

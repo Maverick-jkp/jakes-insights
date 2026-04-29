@@ -20499,7 +20499,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564340",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -20519,7 +20519,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:30:49.197810+00:00"
     },
     {
       "id": "1770-ko-tech-GitHub-탈출-러시-국내-개발자-",
@@ -20527,7 +20529,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564385",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -20552,7 +20554,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:33:33.888580+00:00"
     },
     {
       "id": "1771-en-tech-ollama-llama3.2-3b-v",
@@ -20560,7 +20564,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564425",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20574,7 +20578,9 @@
           "source": "localaimaster.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:35:57.760644+00:00"
     },
     {
       "id": "1772-en-tech-github-actions-self-",
@@ -20582,7 +20588,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564446",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20606,7 +20612,9 @@
           "source": "leothelegion.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:50:07.824776+00:00"
     },
     {
       "id": "1773-en-tech-prometheus-node-expo",
@@ -20646,7 +20654,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564506",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20670,7 +20678,9 @@
           "source": "mashable.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:37:46.670590+00:00"
     },
     {
       "id": "1775-en-tech-tailscale-exit-node-",
@@ -20678,7 +20688,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564528",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20702,7 +20712,9 @@
           "source": "dev.to"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:43:54.062336+00:00"
     },
     {
       "id": "1776-ko-tech-M3-맥북-에어-16GB-ollama",
@@ -20710,7 +20722,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564548",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20734,7 +20746,9 @@
           "source": "signpen.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:40:14.892771+00:00"
     },
     {
       "id": "1777-ko-tech-1인-개발자-Supabase-무료-플",
@@ -20742,7 +20756,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564564",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20766,7 +20780,9 @@
           "source": "www.threads.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:46:04.796492+00:00"
     },
     {
       "id": "1778-ko-tech-GitHub-Actions-OIDC-",
@@ -20774,7 +20790,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564581",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20798,7 +20814,9 @@
           "source": "github.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:48:10.445394+00:00"
     },
     {
       "id": "1779-ko-tech-Docker-Compose-healt",
@@ -20902,7 +20920,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-04-29T09:12:01.564646",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -20926,7 +20944,9 @@
           "source": "dev.to"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-04-29T11:28:55.552744+00:00",
+      "completed_at": "2026-04-29T11:42:14.881188+00:00"
     }
   ]
 }

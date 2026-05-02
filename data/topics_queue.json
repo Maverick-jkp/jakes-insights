@@ -21333,60 +21333,6 @@
       "completed_at": "2026-05-01T11:27:43.873049+00:00"
     },
     {
-      "id": "1802-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter docker compose single vps grafana dashboard minimal ram setup",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-01T09:04:03.236155",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "1인 개발자가 단일 VPS에서 Prometheus+Grafana를 최소 메모리로 운영하려고 검색",
-      "angle": "1GB RAM VPS에서 Prometheus retention 단축·scrape interval 조정으로 모니터링 스택 운영한 설정 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
-        },
-        {
-          "title": "How to Set Up a Monitoring Stack with Prometheus, Grafana, and Node Exporter Using Docker Compose - ",
-          "url": "https://dev.to/rafi021/how-to-set-up-a-monitoring-stack-with-prometheus-grafana-and-node-exporter-using-docker-compose-17cc",
-          "source": "dev.to"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1803-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge function cold start latency fix deno cache production workaround",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-01T09:04:03.236194",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase Edge Function의 cold start 지연이 프로덕션에서 문제가 되어 해결책을 찾는 개발자",
-      "angle": "Deno 캐시 전략과 keep-alive ping으로 cold start를 줄인 실험 결과와 코드 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Supabase Docs | Troubleshooting | Edge Function takes too long to respond",
-          "url": "https://supabase.com/docs/guides/troubleshooting/edge-function-takes-too-long-to-respond",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1804-ko-tech-M3-맥북-ollama-llama3.",
       "keyword": "M3 맥북 ollama llama3.2 한국어 토큰 생성 속도 GPT-4o-mini 실측 비교 2025",
       "category": "tech",
@@ -21489,70 +21435,6 @@
       "completed_at": "2026-05-01T11:30:15.452312+00:00"
     },
     {
-      "id": "1807-ko-tech-GitHub-Actions-cron-",
-      "keyword": "GitHub Actions cron job 스케줄 안 돌아갈 때 원인 분석 및 대안 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-05-01T09:04:03.236316",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "GitHub Actions cron 스케줄이 설정했는데도 실행 안 되는 문제로 검색하는 개발자",
-      "angle": "GitHub 공식 정책상 비활성 저장소 cron 비활성화 메커니즘 분석 + Cloudflare Workers cron 대안 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Troubleshooting GitHub Actions Cron Jobs: Resolving Scheduled Workflow Delays",
-          "url": "https://devactivity.com/insights/github-actions-cron-delays-a-community-insight-into-engineering-workflow-scheduling/",
-          "source": "devactivity.com"
-        },
-        {
-          "title": "Supabase Free Tier Will Pause Your App. Here’s the GitHub Actions Fix.",
-          "url": "https://levelup.gitconnected.com/supabase-free-tier-will-pause-your-app-heres-the-github-actions-fix-8c1fd35b49ca?gi=b0006ec43328",
-          "source": "levelup.gitconnected.com"
-        },
-        {
-          "title": "깃허브 액션(GitHub Actions) 완전 정복 - Miracle's Dev Log",
-          "url": "https://miracle-tech.tistory.com/9",
-          "source": "miracle-tech.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1808-ko-tech-Supabase-무료-플랜-프로젝트-",
-      "keyword": "Supabase 무료 플랜 프로젝트 1주일 정지 방지 keep-alive 자동화 실전 방법",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-01T09:04:03.236344",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase 무료 플랜 사용 중 1주일 미접속 시 프로젝트 pause 되는 문제를 해결하려는 개발자",
-      "angle": "GitHub Actions 무료 cron으로 Supabase ping 자동화해 pause 없이 운영하는 설정 코드 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "프리티어 Supabase 프로젝트, 자동으로 살려두는 방법 :: Life Journal",
-          "url": "https://inseong1204.tistory.com/183",
-          "source": "inseong1204.tistory.com"
-        },
-        {
-          "title": "* 무료 플랜 특징 1. Supabase 무료 플랜은 개인 프로젝트나 학습용으로 충분 2. 가장 중요한 건, 1주일간 활동이 없으면 프로젝트가 자동 중지. 3. 중지된 프로젝트는 ",
-          "url": "https://www.threads.com/@ghil_book_pic/post/DPsojPbE2KK/-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%8A%B9%EC%A7%951-supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C%EC%9D%80-%EA%B0%9C%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%82%98-%ED%95%99%EC%8A%B5%EC%9A%A9%EC%9C%BC%EB%A1%9C-%EC%B6%A9%EB%B6%842-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EA%B1%B4-1%EC%A3%BC%EC%9D%BC%EA%B0%84-%ED%99%9C%EB%8F%99%EC%9D%B4-%EC%97%86%EC%9C%BC%EB%A9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B0%80-%EC%9E%90%EB%8F%99-%EC%A4%91%EC%A7%803",
-          "source": "www.threads.com"
-        },
-        {
-          "title": "How to Keep Your Free Supabase Project Alive Forever Using Edge Functions: A Step-by-Step Guide 2026",
-          "url": "https://shadhujan.medium.com/how-to-keep-your-free-supabase-project-alive-forever-using-edge-functions-a-step-by-step-guide-6557fe59be90",
-          "source": "shadhujan.medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1809-ko-tech-Claude-API-vs-OpenAI",
       "keyword": "Claude API vs OpenAI API 한국어 코드 리뷰 품질 실무 비교 토큰 비용 계산 2025",
       "category": "tech",
@@ -21587,33 +21469,383 @@
       "completed_at": "2026-05-01T11:23:35.851383+00:00"
     },
     {
-      "id": "1810-ko-tech-Docker-Compose-단일-서버",
-      "keyword": "Docker Compose 단일 서버 무중단 배포 블루그린 없이 구현 헬스체크 실전 설정",
+      "id": "1810-ko-tech-소프트웨어-개발자-채용-2026-AI",
+      "keyword": "소프트웨어 개발자 채용 2026 AI 시대 살아남기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657181",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "취업 준비 중이거나 이직을 고민하는 한국 개발자들이 해외 채용 시장 회복 신호가 국내에도 적용되는지 확인하고 싶어함",
+      "angle": "해외 채용 지표 상승이 국내 개발자 시장에 실제로 의미하는 바를 AI 대체 공포와 함께 분석 — '나는 안전한가'라는 질문에 직접 답하는 구조",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[르포] \"취업 정보 찾으러 왔어요\"…채용박람회에 청년들 몰렸다",
+          "url": "https://www.newspim.com/news/view/20260428001074",
+          "source": "www.newspim.com"
+        },
+        {
+          "title": "AI 코딩 도구 시대, 개발자는 무엇부터 배워야 할까? 기본기와 학습 우선순위 정리 :: 쵸코쿠키의 연습장",
+          "url": "https://jjeongil.tistory.com/3378",
+          "source": "jjeongil.tistory.com"
+        },
+        {
+          "title": "티맥스소프트, AI 분야 인재채용 시작 < 산업 < 경제 < 기사본문 - 주간한국",
+          "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7161810",
+          "source": "weekly.hankooki.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1811-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed M3 MacBook 16GB RAM benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657265",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 llama 모델 크기별 실제 속도 차이를 수치로 확인하고 싶음",
+      "angle": "직접 토큰/초 측정값과 한국어 품질 비교를 실측 데이터로 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "The Ultimate Guide to Ollama Models (April 2026 Edition): Why Local AI is No Longer an Experiment - ",
+          "url": "https://practicalwebtools.com/blog/ollama-models-complete-guide-2025",
+          "source": "practicalwebtools.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1812-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 M2 Mac memory leak fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657347",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M2 Mac에서 self-hosted runner 돌릴 때 메모리 누수 문제 해결법 탐색",
+      "angle": "실제 발생한 OOM 상황 재현 + 워크어라운드 설정 코드 포함 트러블슈팅",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "EphemeralRunner and its pods left stuck Running after runner OOMKILL · Issue #4155 · actions/actions",
+          "url": "https://github.com/actions/actions-runner-controller/issues/4155",
+          "source": "github.com"
+        },
+        {
+          "title": "GitHub Actions running out of memory – HyperEnv for GitHub Actions Runner",
+          "url": "https://hyperenv.com/blog/github-actions-running-out-of-memory/",
+          "source": "hyperenv.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1813-en-tech-Cloudflare-Workers-K",
+      "keyword": "Cloudflare Workers KV vs D1 sqlite latency cold start solo app under 100k requests",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657420",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "소규모 앱에서 Workers KV와 D1 중 뭘 써야 할지 실측 레이턴시 기준으로 판단하고 싶음",
+      "angle": "동일 엔드포인트 cold start 포함 응답시간 측정 + 무료 플랜 한계치 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Cloudflare Workers KV in Practice: A Complete Guide to Distributed Key-Value Storage · BetterLink Bl",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260422-cloudflare-workers-kv-guide/",
+          "source": "eastondev.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1814-en-tech-Prometheus-node-expo",
+      "keyword": "Prometheus node exporter docker compose 2GB VPS high CPU usage reduce scrape interval fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657455",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Prometheus가 CPU를 과하게 잡아먹는 문제 해결법",
+      "angle": "scrape_interval 조정 + relabel_configs 경량화 실전 설정 파일 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
+          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
+          "source": "grafana.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1815-en-tech-Supabase-edge-functi",
+      "keyword": "Supabase edge functions cold start latency workaround production app 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657499",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Functions의 콜드 스타트 지연이 실제 서비스에 미치는 영향과 해결책",
+      "angle": "keep-alive ping 전략 vs Cloudflare Workers 마이그레이션 실측 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase Edge Functions: Persistent Storage and Lightning-Fast Cold Starts Transform Serverless Work",
+          "url": "https://joshuaberkowitz.us/blog/news-1/supabase-edge-functions-persistent-storage-and-lightning-fast-cold-starts-transform-serverless-workflows-563",
+          "source": "joshuaberkowitz.us"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1816-ko-tech-맥북-M3-올라마-llama3.2-한",
+      "keyword": "맥북 M3 올라마 llama3.2 한국어 답변 속도 토큰 실측 GPT-4o-mini 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657535",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥에서 로컬 LLM 한국어 품질이 실제로 쓸 만한지 GPT와 수치로 비교하고 싶음",
+      "angle": "동일 프롬프트 10개 한국어 질문으로 토큰/초, 답변 정확도 직접 측정 결과",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "올라마 v0.10.0 소개 및 한국어 지원 LLM모델",
+          "url": "https://brunch.co.kr/@b2439ea8fc654b8/92",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "간단한 오픈클로(OpenClaw) 사용기. 비 프로그래머의 입장에서 : 클리앙",
+          "url": "https://www.clien.net/service/board/use/19141034",
+          "source": "www.clien.net"
+        },
+        {
+          "title": "Ollama 0.19 MLX 전환 후기, 맥북 로컬 AI가 이렇게 달라졌다",
+          "url": "https://knightk.tistory.com/810",
+          "source": "knightk.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1817-ko-tech-1인-개발자-Fly.io-Cloudf",
+      "keyword": "1인 개발자 Fly.io Cloudflare Workers 월 비용 실제 청구서 스택 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657570",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "혼자 사이드 프로젝트 운영 시 실제로 얼마나 나오는지 청구 내역 기반으로 알고 싶음",
+      "angle": "3개월 실제 인보이스 스크린샷 + 트래픽 규모별 손익분기점 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "클라우드플레어 워커(cloudflare workers)와 AWS 람다(AWS Lambda) 비교 | marinesnow34",
+          "url": "https://marinesnow34.github.io/2024/04/25/worker1/",
+          "source": "marinesnow34.github.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1818-ko-tech-GitHub-Actions-Hugo-",
+      "keyword": "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 트리거 안될 때 해결법",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-05-01T09:04:03.236403",
+      "created_at": "2026-05-02T08:22:39.657605",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Kubernetes 없이 단일 서버에서 Docker Compose로 무중단 배포를 구현하려는 개발자",
-      "angle": "Traefik + healthcheck + depends_on 조합으로 블루그린 없이 다운타임 최소화한 docker-compose.yml 전체 공개",
+      "search_intent": "Hugo + Cloudflare Pages 조합에서 cron 자동배포가 간헐적으로 실패하는 문제 해결",
+      "angle": "workflow_dispatch 폴백 + 실패 알림 설정까지 포함한 실전 yaml 코드 공유",
       "competition_level": "low",
       "references": [
         {
-          "title": "[CI/CD] blue/green 무중단 배포 (Docker, Github Actions, Nginx) — J_hzlo",
-          "url": "https://jhzlo.tistory.com/82",
-          "source": "jhzlo.tistory.com"
+          "title": "Scheduled Publishing with GitHub Actions Every 3 Hours | Codeslog",
+          "url": "https://www.codeslog.com/en/posts/github-actions-scheduled-publish-check/",
+          "source": "www.codeslog.com"
         },
         {
-          "title": "Gighub Action , Docker Compose, Nginx, code deploy 무중단 배포",
-          "url": "https://jsw5913.tistory.com/15",
-          "source": "jsw5913.tistory.com"
+          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
+          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
+          "source": "chriswiegman.com"
         },
         {
-          "title": "가상환경도 부족하다. 재현성을 위해 Docker로 띄우는 배포 패턴, 환경관리 모범 사례 :: 데싸 되기",
-          "url": "https://faiiry9.tistory.com/214",
-          "source": "faiiry9.tistory.com"
+          "title": "How I Fixed My CI/CD: Fast, Optimized, and Pro-Level Deploys (Hugo + Cloudflare) - Oli Miah",
+          "url": "https://oli.bdtechx.com/blog/how-i-fixed-my-ci-cd-fast-optimized-and-pro-level-deploys-hugo-cloudflare/",
+          "source": "oli.bdtechx.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1819-ko-tech-Claude-API-RAG-청크-사이",
+      "keyword": "Claude API RAG 청크 사이즈 500 vs 1000 검색 정확도 실험 한국어 문서 기준",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657636",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 RAG 구현 시 청크 크기를 얼마로 잡아야 정확도가 높은지 실험 데이터",
+      "angle": "동일 한국어 PDF 10개 문서에 청크 500/1000/2000 토큰 적용 후 검색 정확도 수치 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #1 : 핵심 개념과 시스템 구조 이해",
+          "url": "https://tech.ktcloud.com/entry/2025-08-ktcloud-ai-rag-%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%ED%95%B4",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "Claude AI Context Window Explained: Size, Limits, and How It Works - Tygart Media",
+          "url": "https://tygartmedia.com/claude-ai-context-window/",
+          "source": "tygartmedia.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1820-ko-tech-Supabase-무료-플랜-한계-실제",
+      "keyword": "Supabase 무료 플랜 한계 실제 서비스 운영 후기 Row Limit 초과 대응 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657666",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase 무료 티어로 서비스를 운영하다가 한계에 부딪혔을 때 어떻게 대처하는지",
+      "angle": "500MB Row Limit 도달 직전 상황 + Neon/PlanetScale 마이그레이션 실측 삽질 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
+          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
+          "source": "lookfortaste.com"
+        },
+        {
+          "title": "[Supabase 시작하기] - 회원 가입부터 기초 CRUD, RAG를 위한 pgvector 활성화 하기 :: 갓대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/377",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "Supabase 입문 가이드: 오픈소스 Firebase 대안의 모든 것 - [루닥스 블로그] 연습만이 살길이다",
+          "url": "https://rudaks.tistory.com/entry/Supabase-%EC%9E%85%EB%AC%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-Firebase-%EB%8C%80%EC%95%88%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83",
+          "source": "rudaks.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1821-ko-tech-2GB-VPS-Docker-Compo",
+      "keyword": "2GB VPS Docker Compose Prometheus Grafana 메모리 부족 경량 설정 실전 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657699",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 서버에서 Prometheus+Grafana 스택을 메모리 초과 없이 돌리는 설정법",
+      "angle": "메모리 2GB 기준 실제 OOM 발생 재현 + retention, scrape_interval 최적화 설정값 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Grafana Tempo 분산 트레이싱과 TraceQL 운영 가이드 2026 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/observability/2026-03-04-observability-grafana-tempo-traceql-2026",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1822-ko-tech-Cursor-AI-vs-GitHub-",
+      "keyword": "Cursor AI vs GitHub Copilot 실무 한 달 사용 후기 자동완성 정확도 비용 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-02T08:22:39.657731",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor와 Copilot 중 실제 개발 생산성과 비용 측면에서 어느 쪽이 나은지 경험담",
+      "angle": "동일 프로젝트 작업 시간 측정 + 월 구독료 대비 체감 효율 솔직 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Copilot vs Cursor vs Claude Code — 3가지 다 쓸어본 실화 비교 (2026년 기준) :: 하네스",
+          "url": "https://suesues.tistory.com/entry/2026%EB%85%84-AI-%EC%BD%94%EB%94%A9-%ED%88%B4-%EB%B9%84%EA%B5%90-%EC%B4%9D%EC%A0%95%EB%A6%AC-%E2%80%94-GitHub-Copilot-vs-Cursor-vs-Claude-Code-%EC%8B%A4%EC%A0%9C-%EC%8D%A8%EB%B3%B8-%ED%9B%84%EA%B8%B0",
+          "source": "suesues.tistory.com"
+        },
+        {
+          "title": "커서 AI 대 GitHub 코파일럿: 어떤 AI 도구가 당신에게 적합할까요?",
+          "url": "https://apidog.com/kr/blog/cursor-ai-vs-github-copilot-3/",
+          "source": "apidog.com"
+        },
+        {
+          "title": "Cursor vs GitHub Copilot vs Claude — AI 코딩 도구 실전 비교 - 코드벤터 - AI Product Development Company",
+          "url": "https://www.codeventer.com/cursor-vs-copilot-vs-claude-comparison/",
+          "source": "www.codeventer.com"
         }
       ],
       "content_type_hint": "GUIDE"

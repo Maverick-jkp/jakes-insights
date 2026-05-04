@@ -21838,38 +21838,6 @@
       "completed_at": "2026-05-03T11:07:37.010556+00:00"
     },
     {
-      "id": "1825-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter high memory usage docker compose single vps 2gb ram fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-03T08:49:12.929678",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus 스택이 메모리를 과도하게 먹어 서비스가 불안정한 개발자",
-      "angle": "scrape_interval 조정, 불필요한 메트릭 필터링, retention 축소로 2GB RAM 환경에서 안정 운영하는 실전 config",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
-          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
-          "source": "last9.io"
-        },
-        {
-          "title": "Monitoring a Linux host with Prometheus, Node Exporter, and Docker Compose | Grafana Cloud documenta",
-          "url": "https://grafana.com/docs/grafana-cloud/send-data/metrics/metrics-prometheus/prometheus-config-examples/docker-compose-linux/",
-          "source": "grafana.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1826-en-tech-vercel-hobby-plan-ba",
       "keyword": "vercel hobby plan bandwidth limit exceeded alternative deployment nextjs app router 2025",
       "category": "tech",
@@ -22130,6 +22098,413 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-03T10:55:21.042258+00:00",
       "completed_at": "2026-05-03T11:16:42.449184+00:00"
+    },
+    {
+      "id": "1834-ko-tech-AI-자동차-물리-버튼-부활-머세데스",
+      "keyword": "AI 자동차 물리 버튼 부활 머세데스 터치스크린 포기 이유",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543669",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "터치스크린 가득한 신차를 구매했거나 구매 고려 중인 국내 소비자·자동차 테크 관심층이 '역시 불편했던 게 맞았나' 확인 및 자동차 UI 설계 트렌드 변화 탐색",
+      "angle": "소비자 배신감 + 중국 규제 압력이라는 이중 원인 분석 — 자동차 제조사가 자발적으로 회귀한 것이 아니라 규제와 이탈 고객이 강제한 것임을 드러내는 구조적 비판",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "반박불가 가장 편리한 자동차 기어봉",
+          "url": "https://bbs.ruliweb.com/community/board/300143/read/75033439",
+          "source": "bbs.ruliweb.com"
+        },
+        {
+          "title": "이젠 버튼 찾지 마세요… 말 한마디로 움직이는 현대차의 미래",
+          "url": "https://www.news-wa.com/article/automobiles/new-car/2026/04/30/20260430500038",
+          "source": "www.news-wa.com"
+        },
+        {
+          "title": "Gemini(인공지능 모델) - 나무위키",
+          "url": "https://namu.wiki/w/Gemini(%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EB%AA%A8%EB%8D%B8)",
+          "source": "namu.wiki"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1835-en-tech-claude-api-streaming",
+      "keyword": "claude api streaming response nextjs app router server component cost per token tracker",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543786",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Solo developers building Claude-powered apps with Next.js App Router struggle to implement streaming AND track token costs simultaneously without breaking RSC patterns",
+      "angle": "Step-by-step implementation showing how to stream Claude responses in App Router while logging token usage per request to a lightweight SQLite store — with actual monthly cost breakdown at 1k DAU",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Streaming API with Next.js Edge: Production-Ready Implementation Guide - Tech Edu Byte",
+          "url": "https://www.techedubyte.com/claude-streaming-api-nextjs-edge-guide/",
+          "source": "www.techedubyte.com"
+        },
+        {
+          "title": "Claude API Pricing: Per-Token Costs for Every Model (2026) - ClaudeAPIPricing.com",
+          "url": "https://claudeapipricing.com/",
+          "source": "claudeapipricing.com"
+        },
+        {
+          "title": "Claude Code Pricing: Subscriptions vs API, Token Visibility, and the Models That Actually Work",
+          "url": "https://www.productcompass.pm/p/claude-code-pricing",
+          "source": "www.productcompass.pm"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1836-en-tech-ollama-mistral-7b-vs",
+      "keyword": "ollama mistral 7b vs llama3.2 3b apple silicon 8gb ram inference speed tokens per second comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543830",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "MacBook Air M-series users with only 8GB RAM need to know which local LLM model is actually usable without swapping memory to death",
+      "angle": "Run both models on 8GB M2 MacBook Air with Activity Monitor open, record tokens/sec, memory pressure, and fan behavior across code completion, summarization, and chat tasks",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1837-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker container arm64 raspberry pi 5 setup pitfalls",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543874",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Indie hackers want to cut GitHub Actions minutes cost by running a self-hosted runner on a Raspberry Pi 5 but hit ARM64 Docker image compatibility walls",
+      "angle": "Document every failure point encountered setting up ephemeral Docker-based self-hosted runner on RPi 5: QEMU emulation traps, buildx manifest issues, runner token refresh — with working final config",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Use Docker to Set Up a Self-Hosted GitHub Actions Runner in 10 Minutes — LeoTheLegion",
+          "url": "https://leothelegion.net/2025/07/28/use-docker-to-set-up-self-hosted-github-actions-runner-in-10-minutes/",
+          "source": "leothelegion.net"
+        },
+        {
+          "title": "GitHub Actions Self-Hosted Runner: A Complete Guide to Private Environment Deployment · BetterLink B",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260423-github-actions-self-hosted-runner/",
+          "source": "eastondev.com"
+        },
+        {
+          "title": "Deploying FastAPI on Raspberry Pi using GitHub Actions (Self‑Hosted Runner) | by Kumar Shishir | Med",
+          "url": "https://tech-logger.medium.com/deploying-fastapi-on-raspberry-pi-using-github-actions-self-hosted-runner-44a41aa111bc",
+          "source": "tech-logger.medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1838-en-tech-supabase-pgvector-em",
+      "keyword": "supabase pgvector embedding search accuracy chunk size 256 vs 512 vs 1024 tokens real test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543911",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers building RAG on Supabase pgvector need empirical data on chunk size impact on retrieval precision before scaling to production",
+      "angle": "Index same 50-page PDF with three chunk sizes using text-embedding-3-small, run 30 identical queries, score retrieval precision manually, publish raw numbers and recommended sweet spot",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "pgvector: Embeddings and vector similarity | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/extensions/pgvector",
+          "source": "supabase.com"
+        },
+        {
+          "title": "A Guide to Embeddings and pgvector - DEV Community",
+          "url": "https://dev.to/googleai/a-guide-to-embeddings-and-pgvector-df0",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1839-en-tech-caddy-reverse-proxy-",
+      "keyword": "caddy reverse proxy docker compose ssl automatic renewal memory usage versus nginx traefik solo server",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543950",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Solo devs on $5 VPS need automatic HTTPS without Certbot cron hacks and want to know if Caddy's memory overhead is acceptable on 1GB RAM servers",
+      "angle": "Side-by-side Docker Compose setups for Caddy, Nginx+Certbot, and Traefik serving same app: measure idle RAM, SSL renewal reliability after 90 days, and config line count complexity",
+      "competition_level": "low",
+      "references": [],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1840-en-tech-warp-terminal-vs-gho",
+      "keyword": "warp terminal vs ghostty startup time plugin ecosystem macos developer daily workflow honest review",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.543993",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Mac developers who heard Ghostty hype want a no-fluff comparison from someone who actually switched from Warp and hit real friction points",
+      "angle": "30-day daily driver switch from Warp to Ghostty: document shell integration gaps, startup time measurements, SSH session stability, and three workflows where Warp still wins",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ghostty 1.0 vs Warp OSS vs WezTerm: 14 Days of Daily Use — Real Latency, Memory, and Workflow Number",
+          "url": "https://dev.to/michael_sun_18a5c4c96768d/ghostty-10-vs-warp-oss-vs-wezterm-14-days-of-daily-use-real-latency-memory-and-workflow-3ekp",
+          "source": "dev.to"
+        },
+        {
+          "title": "macOS Terminal Comparison: Warp vs. Ghostty vs. iTerm2 vs. Default",
+          "url": "https://blog.apps.deals/macos-terminal-comparison-warp-ghostty-default",
+          "source": "blog.apps.deals"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1841-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 답변 품질 실측 토큰 속도 메모리 점유율 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544028",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 구매자 또는 보유자가 로컬 LLM을 한국어로 실제 쓸 수 있는지 구매 전/도입 전에 확인하고 싶다",
+      "angle": "M3 Pro 18GB에서 ollama로 llama3.2:3b 실행, 한국어 요약·번역·코드 설명 각 10회 측정 후 토큰/초, 메모리 압력 단계, GPT-4o-mini 동일 태스크 품질과 나란히 비교표 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "What is Ollama? | Jeff Bailey",
+          "url": "https://jeffbailey.us/blog/2026/04/27/what-is-ollama/",
+          "source": "jeffbailey.us"
+        },
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1842-ko-tech-1인-개발자-월-10달러-이하-인프라",
+      "keyword": "1인 개발자 월 10달러 이하 인프라 Fly.io Supabase Cloudflare 실제 과금 명세 공개",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544057",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 런칭했거나 준비 중인 개발자가 현실적인 인프라 비용 구조를 실제 사례로 확인하고 싶다",
+      "angle": "MAU 300명 수준 실서비스 기준으로 Fly.io(앱), Supabase(DB+벡터), Cloudflare R2(스토리지)+Pages(프론트) 조합의 실제 청구서 스크린샷 공개 및 비용 폭탄 방지 설정 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "클로드, 고성능 AI 모델 추가 과금 논란…앤트로픽 \"표기 오류\"",
+          "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008544204",
+          "source": "news.sbs.co.kr"
+        },
+        {
+          "title": "Cloudflare 가격 완전정복 | 무료부터 엔터프라이즈까지 요금제 비교 및 비용절감 팁",
+          "url": "https://notavoid.tistory.com/740",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "Toss Payments 연동 가능 환경 및 요건 문의",
+          "url": "https://techchat.tosspayments.com/m/1420675354728861767",
+          "source": "techchat.tosspayments.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1843-ko-tech-Hugo-블로그-Cloudflare-",
+      "keyword": "Hugo 블로그 Cloudflare Pages 배포 GitHub Actions cron 트리거 안될 때 원인 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544085",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo+Cloudflare Pages 조합을 쓰는 블로거가 예약 발행을 위한 cron 트리거가 묵묵히 실패하는 이유를 찾지 못해 검색한다",
+      "angle": "cron 트리거가 60일 비활성 시 자동 비활성화되는 GitHub 정책, Cloudflare Pages 훅 인증 토큰 만료, UTC 시간대 오해 — 세 가지 원인별 재현 방법과 영구 해결 워크플로 yaml 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo · Cloudflare Pages docs",
+          "url": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
+          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
+          "source": "chriswiegman.com"
+        },
+        {
+          "title": "How I Fixed My CI/CD: Fast, Optimized, and Pro-Level Deploys (Hugo + Cloudflare) - Oli Miah",
+          "url": "https://oli.bdtechx.com/blog/how-i-fixed-my-ci-cd-fast-optimized-and-pro-level-deploys-hugo-cloudflare/",
+          "source": "oli.bdtechx.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1844-ko-tech-Claude-API-vs-OpenAI",
+      "keyword": "Claude API vs OpenAI API 한국어 코드 리뷰 품질 응답 속도 비용 실무 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544113",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사내 코드 리뷰 자동화 또는 개인 도구를 만들려는 개발자가 두 API 중 어느 쪽이 한국어 컨텍스트에서 더 실용적인지 판단 근거가 필요하다",
+      "angle": "실제 PR diff 20개(한국어 주석 포함 Python·TypeScript)를 동일 프롬프트로 각 API에 전송, 지적 정확도·할루시네이션 빈도·응답 시간·입출력 토큰 비용을 표로 정리 후 용도별 추천",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude - 나무위키",
+          "url": "https://namu.wiki/w/Claude",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "AI 코딩 플랫폼 비교 분석",
+          "url": "https://brunch.co.kr/@b2439ea8fc654b8/112",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "🔧 Open Code vs Claude Code, 터미널 AI 코딩 에이전트 완전 비교 :: 메모리허브",
+          "url": "https://memoryhub.tistory.com/entry/%F0%9F%94%A7-Open-Code-vs-Claude-Code-%ED%84%B0%EB%AF%B8%EB%84%90-AI-%EC%BD%94%EB%94%A9-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EC%99%84%EC%A0%84-%EB%B9%84%EA%B5%90",
+          "source": "memoryhub.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1845-ko-tech-Docker-Compose-단일-서버",
+      "keyword": "Docker Compose 단일 서버 Prometheus Grafana 메모리 2GB 이하 운영 최적화 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544141",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 모니터링 스택을 올리려는 개발자가 Prometheus 기본 설정이 메모리를 과도하게 먹어서 해결책을 찾는다",
+      "angle": "2GB RAM Hetzner CX21 기준으로 Prometheus retention 조정, scrape interval 최적화, Grafana 플러그인 최소화, tsdb 청크 설정까지 실측 메모리 before/after 수치와 함께 docker-compose.yml 전문 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
+          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
+          "source": "seekerslab.com"
+        },
+        {
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
+        },
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
+          "source": "railly-linker.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1846-ko-tech-Cursor-AI-에디터-Claude",
+      "keyword": "Cursor AI 에디터 Claude 3.5 Sonnet 컨텍스트 한계 대형 레포 실전 한계 경험담",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544168",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor를 도입하려는 개발자가 마케팅 자료가 아닌 실제 대형 코드베이스에서의 한계와 실패 사례를 알고 싶다",
+      "angle": "5만 줄 이상 Django 모노레포에서 Cursor Composer 사용 시 컨텍스트 잘림 현상, 잘못된 import 자동완성, .cursorrules 파일로 완화한 방법과 여전히 해결 안 된 3가지 문제를 솔직하게 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Code 잘 쓰는 법: 2026년 생산성 높이는 설정, 플러그인, MCP 서버 가이드 :: 쵸코쿠키의 연습장",
+          "url": "https://jjeongil.tistory.com/3367",
+          "source": "jjeongil.tistory.com"
+        },
+        {
+          "title": "클로드 코드 vs 커서 비교 사용기 - Shane's planet - 티스토리",
+          "url": "https://shanepark.tistory.com/551",
+          "source": "shanepark.tistory.com"
+        },
+        {
+          "title": "r/ClaudeAI on Reddit: I moved from Cursor to Claude Code (CLI). Here is what I learned about Sub-age",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1qbov4s/i_moved_from_cursor_to_claude_code_cli_here_is/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1847-ko-tech-Cloudflare-Workers-A",
+      "keyword": "Cloudflare Workers AI 무료 티어 실제 한도 초과 시 동작 유료 플랜 전환 시점 판단 기준",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-04T09:23:15.544199",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers AI 무료로 프로토타입을 만든 개발자가 트래픽 증가 시 요금 폭탄 없이 유료 전환 타이밍을 어떻게 잡아야 하는지 실제 경험 기반 정보가 필요하다",
+      "angle": "무료 티어 뉴런 한도 초과 시 실제로 어떤 에러가 반환되는지 재현, Cloudflare 대시보드에서 사용량 추이 읽는 법, Workers Paid $5/월 전환 후 단가 계산 및 월 1만 호출 기준 실비용 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "클라우드플레어 무료 플랜, 어디까지 가능할까? (요청, 빌드, 스토리지 제한 총정리) - Sentio",
+          "url": "https://sentio5.com/entry/cloudflare-free-plan-limits/",
+          "source": "sentio5.com"
+        },
+        {
+          "title": "Pricing · Cloudflare Workers AI docs",
+          "url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Is Cloudflare Workers AI Free? Free Tier Limits & Upgrade Triggers (2026)",
+          "url": "https://costbench.com/software/llm-api-providers/cloudflare-workers-ai/free-plan/",
+          "source": "costbench.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

@@ -22519,38 +22519,6 @@
       "completed_at": "2026-05-05T11:22:34.179559+00:00"
     },
     {
-      "id": "1850-en-tech-github-actions-self-",
-      "keyword": "github actions self-hosted runner docker arm64 apple silicon cost vs github hosted minutes",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-05T09:09:09.598718",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "GitHub Actions 분당 과금이 늘어 자체 러너 전환을 고려하는 개발자",
-      "angle": "Mac Mini M2 셀프 호스팅 러너 구축 실비용 vs GitHub 분당 요금 6개월 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "r/devops on Reddit: Github Actions introducing a per-minute fee for self-hosted runners",
-          "url": "https://www.reddit.com/r/devops/comments/1po8hj5/github_actions_introducing_a_perminute_fee_for/",
-          "source": "www.reddit.com"
-        },
-        {
-          "title": "Fastest GitHub Actions Runners: CPU Speed - RunsOn",
-          "url": "https://runs-on.com/benchmarks/github-actions-cpu-performance/",
-          "source": "runs-on.com"
-        },
-        {
-          "title": "Updates to GitHub Actions pricing · community · Discussion #182186",
-          "url": "https://github.com/orgs/community/discussions/182186",
-          "source": "github.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1851-en-tech-grafana-loki-docker-",
       "keyword": "grafana loki docker compose single node log ingestion limit low memory vps 1gb",
       "category": "tech",
@@ -22583,33 +22551,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-05T11:16:05.149716+00:00",
       "completed_at": "2026-05-05T11:31:52.543472+00:00"
-    },
-    {
-      "id": "1852-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge functions cold start latency vs vercel serverless real measurement next.js api route",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-05T09:09:09.598765",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase Edge Functions 도입 전 콜드 스타트 지연이 실서비스에 영향을 주는지 확인하려는 개발자",
-      "angle": "동일 로직 Supabase Edge vs Vercel Serverless 콜드스타트 50회 측정값 비교 차트",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Vercel Supabase: What Works and What Breaks in 2026 • Kuberns",
-          "url": "https://kuberns.com/blogs/vercel-supabase/",
-          "source": "kuberns.com"
-        },
-        {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "1853-en-tech-weaviate-vs-qdrant-l",
@@ -22782,38 +22723,6 @@
       "completed_at": "2026-05-05T11:38:50.308532+00:00"
     },
     {
-      "id": "1858-ko-tech-Supabase-무료-플랜-한계-실제",
-      "keyword": "Supabase 무료 플랜 한계 실제 사용량 초과 경험 Railway PostgreSQL 전환 비용 비교",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-05T09:09:09.598905",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase 무료 티어가 프로젝트 성장에 발목을 잡기 시작한 개발자가 이전 비용을 가늠하려는 상황",
-      "angle": "실제 초과 항목(DB 크기·함수 호출수·대역폭) 스크린샷 + Railway 전환 후 3개월 비용 차이 실계산",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Why AI startups choose Supabase and where it falls short · Logto blog",
-          "url": "https://blog.logto.io/supabase-ai-limitation",
-          "source": "blog.logto.io"
-        },
-        {
-          "title": "Supabase 입문 가이드: 오픈소스 Firebase 대안의 모든 것 - [루닥스 블로그] 연습만이 살길이다",
-          "url": "https://rudaks.tistory.com/entry/Supabase-%EC%9E%85%EB%AC%B8-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-Firebase-%EB%8C%80%EC%95%88%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83",
-          "source": "rudaks.tistory.com"
-        },
-        {
-          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
-          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
-          "source": "lookfortaste.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1859-ko-tech-로컬-RAG-파이프라인-청크-사이즈-",
       "keyword": "로컬 RAG 파이프라인 청크 사이즈 512 vs 1024 검색 정확도 실험 LangChain Chroma 한국어 문서",
       "category": "tech",
@@ -22846,6 +22755,411 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-05T11:16:05.149716+00:00",
       "completed_at": "2026-05-05T11:29:55.898457+00:00"
+    },
+    {
+      "id": "1860-en-tech-Google-Chrome-silent",
+      "keyword": "Google Chrome silent AI model install without consent",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.495748",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users are alarmed after discovering Chrome installed a large AI model without explicit permission and want to understand the privacy implications and how to disable or remove it",
+      "angle": "Privacy audit — what the model actually does, what data it touches, how to inspect or block it, and whether Google's 'it's just a spell-checker' defense holds up under scrutiny",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Google Chrome silently installs a 4 GB AI model on your device without consent. At a billion-device ",
+          "url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+          "source": "www.thatprivacyguy.com"
+        },
+        {
+          "title": "Google Chrome silently installing AI models on our devices​ | Cybernews",
+          "url": "https://cybernews.com/security/google-chrome-ai-model-device-no-consent/",
+          "source": "cybernews.com"
+        },
+        {
+          "title": "Google Chrome Silently Installs a 4 GB AI Model On Your Device - Without Your Consent - Gadget Revie",
+          "url": "https://www.gadgetreview.com/google-chrome-silently-installs-a-4-gb-ai-model-on-your-device-without-your-consent",
+          "source": "www.gadgetreview.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1861-ko-tech-구글-크롬-AI-모델-몰래-설치-개인",
+      "keyword": "구글 크롬 AI 모델 몰래 설치 개인정보 침해",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.495795",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "크롬 업데이트 후 디스크 용량이 갑자기 줄어든 이유를 검색하거나, 해외 커뮤니티발 뉴스를 접한 뒤 국내 환경에서도 동일하게 설치되는지 확인하고 비활성화 방법을 찾으려는 한국 사용자",
+      "angle": "국내 개발자·일반 사용자 관점에서 실제로 설치 여부를 확인하는 방법, Gemini Nano 모델의 정체, 개인정보보호법 관점에서의 문제점, 그리고 크롬 대신 쓸 수 있는 브라우저 대안 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Chrome, 동의 없이 4GB AI 모델 설치? 사생활 침해 논란",
+          "url": "https://fetch-diff.com/posts/chrome-silent-ai-model-install-privacy-concern/",
+          "source": "fetch-diff.com"
+        },
+        {
+          "title": "Gemini(인공지능 모델) - 나무위키",
+          "url": "https://namu.wiki/w/Gemini(%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%EB%AA%A8%EB%8D%B8)",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "구청 조직도 사진으로 AI 연인 합성물 제작, 성범죄일까? - 딥페이크 합성물의 법적 경계와 피해자 대응 가이드 - 법무법인 슈가스퀘어 공식 블로그",
+          "url": "https://blog.sugar.legal/%EA%B5%AC%EC%B2%AD-%EC%A1%B0%EC%A7%81%EB%8F%84-%EC%82%AC%EC%A7%84%EC%9C%BC%EB%A1%9C-ai-%EC%97%B0%EC%9D%B8-%ED%95%A9%EC%84%B1%EB%AC%BC-%EC%A0%9C%EC%9E%91-%EC%84%B1%EB%B2%94%EC%A3%84%EC%9D%BC%EA%B9%8C-%EB%94%A5%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%95%A9%EC%84%B1%EB%AC%BC%EC%9D%98-%EB%B2%95%EC%A0%81-%EA%B2%BD%EA%B3%84%EC%99%80-%ED%94%BC%ED%95%B4%EC%9E%90-%EB%8C%80%EC%9D%91-%EA%B0%80%EC%9D%B4%EB%93%9C-171337",
+          "source": "blog.sugar.legal"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1862-en-tech-Claude-API-vs-OpenAI",
+      "keyword": "Claude API vs OpenAI API cost per 1000 requests real project breakdown 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.495871",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "실제 프로젝트에 API를 붙이기 전에 월 비용이 얼마나 나올지 구체적으로 알고 싶은 개발자",
+      "angle": "동일한 RAG 챗봇 프로토타입을 두 API로 각각 1000 요청 돌렸을 때 실제 청구 금액 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "LLM API Pricing Comparison (2025): OpenAI, Gemini, Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/llm-api-pricing-comparison-2025",
+          "source": "intuitionlabs.ai"
+        },
+        {
+          "title": "LLM API Cost Breakdown: Claude, Gemini & OpenAI Compared",
+          "url": "https://mem0.ai/blog/llm-api-cost-breakdown-claude-gemini-openai-compared",
+          "source": "mem0.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1863-en-tech-GitHub-Actions-self-",
+      "keyword": "GitHub Actions self-hosted runner Docker container memory limit OOM kill fix 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.495945",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "셀프 호스티드 러너에서 Docker 빌드 중 OOM으로 잡이 죽는 문제를 해결하려는 DevOps 엔지니어",
+      "angle": "메모리 2GB VPS에서 self-hosted runner 컨테이너 빌드 OOM 원인 분석 + cgroup 제한 설정으로 해결한 삽질 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker in Docker is messing up Kubernetes metrics. · Issue #3863 · actions/runner",
+          "url": "https://github.com/actions/runner/issues/3863",
+          "source": "github.com"
+        },
+        {
+          "title": "How to Set Up GitHub Actions Self-Hosted Runners with Auto-Scaling on Kubernetes",
+          "url": "https://oneuptime.com/blog/post/2026-02-09-github-actions-self-hosted-runners-k8s/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1864-en-tech-Supabase-Edge-Functi",
+      "keyword": "Supabase Edge Functions cold start latency vs Vercel serverless function benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.495984",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase를 백엔드로 쓰면서 Edge Function 응답속도가 Vercel 함수보다 실제로 빠른지 비교하려는 개발자",
+      "angle": "동일 로직을 두 플랫폼에 배포해 지역별 콜드/웜 스타트 레이턴시를 측정한 실험 결과 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions vs Serverless: The 2025 Performance Battle | byteiota",
+          "url": "https://byteiota.com/edge-functions-vs-serverless-the-2025-performance-battle/",
+          "source": "byteiota.com"
+        },
+        {
+          "title": "Supabase Edge Functions vs Vercel Functions: Serverless Performance Benchmarks 2025 | Markaicode",
+          "url": "https://markaicode.com/supabase-vs-vercel-functions-performance-benchmarks/",
+          "source": "markaicode.com"
+        },
+        {
+          "title": "Edge Functions vs Serverless vs Containers — A Cost and Performance Shootout | CODERCOPS",
+          "url": "https://www.codercops.com/blog/edge-functions-vs-serverless-vs-containers",
+          "source": "www.codercops.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1865-en-tech-Prometheus-node-expo",
+      "keyword": "Prometheus node exporter high cardinality label memory spike single VPS 1GB fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496026",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "소형 VPS에서 Prometheus 메모리가 시간이 지날수록 폭증하는 원인을 찾으려는 개발자",
+      "angle": "high cardinality 레이블이 메모리 급증의 주범임을 tsdb 덤프로 확인하고 recording rules로 해결한 과정 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Optimize Prometheus Node Exporter Metrics Collection | by Karuthevar | Medium",
+          "url": "https://medium.com/@karuthevar22/optimize-prometheus-node-exporter-metrics-collection-33150760ccb2",
+          "source": "medium.com"
+        },
+        {
+          "title": "Understanding and optimizing resource consumption in Prometheus | Tech blog | Palark",
+          "url": "https://palark.com/blog/prometheus-resource-consumption-optimization/",
+          "source": "palark.com"
+        },
+        {
+          "title": "How to Fix the Collector Using Excessive Memory When Processing High-Cardinality Prometheus Metrics",
+          "url": "https://oneuptime.com/blog/post/2026-02-06-fix-collector-excessive-memory-high-cardinality-prometheus/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1866-en-tech-Cloudflare-Workers-K",
+      "keyword": "Cloudflare Workers KV vs D1 database read latency comparison small side project cost 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496067",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare 에지에서 KV와 D1 중 어떤 스토리지를 선택해야 할지 실제 수치로 판단하려는 개발자",
+      "angle": "동일한 읽기 워크로드를 KV/D1에서 각각 실행해 레이턴시·무료 쿼터 소진 속도·비용을 비교한 실험 포스트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1867-ko-tech-M3-MacBook-ollama-ll",
+      "keyword": "M3 MacBook ollama llama3.2 한국어 답변 GPT-4o-mini 품질 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496104",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 로컬 LLM이 GPT-4o-mini 수준의 한국어 답변을 낼 수 있는지 실제로 확인하려는 개발자",
+      "angle": "동일 한국어 프롬프트 20개를 ollama llama3.2와 GPT-4o-mini에 넣고 정확도·유창성·속도를 표로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "LLaMA - 나무위키",
+          "url": "https://namu.wiki/w/LLaMA",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "맥미니 대란 - OpenClaw가 만든 AI 서버 시대, 모델별 구매 가이드",
+          "url": "https://blog.kwt.co.kr/%EB%A7%A5%EB%AF%B8%EB%8B%88-%EB%8C%80%EB%9E%80-openclaw%EA%B0%80-%EB%A7%8C%EB%93%A0-ai-%EC%84%9C%EB%B2%84-%EC%8B%9C%EB%8C%80-%EB%AA%A8%EB%8D%B8%EB%B3%84-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4/",
+          "source": "blog.kwt.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1868-ko-tech-Fly.io-무료-플랜-사이드-프로젝",
+      "keyword": "Fly.io 무료 플랜 사이드 프로젝트 실제 월 비용 Railway Render 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496134",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Node.js 백엔드를 무료로 배포할 플랫폼을 고르려는 1인 개발자",
+      "angle": "동일 Express API를 세 플랫폼에 한 달 운영하며 실제 과금 내역과 콜드 스타트 체감을 기록한 실험 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Railway vs Fly.io vs Render: Which Cloud Gives You the Best ROI? | by R. Thompson (PhD) | AI Disrupt",
+          "url": "https://medium.com/ai-disruption/railway-vs-fly-io-vs-render-which-cloud-gives-you-the-best-roi-2e3305399e5b",
+          "source": "medium.com"
+        },
+        {
+          "title": "Railway vs. Fly | Railway Docs",
+          "url": "https://docs.railway.com/platform/compare-to-fly",
+          "source": "docs.railway.com"
+        },
+        {
+          "title": "Fly.io vs Railway",
+          "url": "https://getdeploying.com/flyio-vs-railway",
+          "source": "getdeploying.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1869-ko-tech-GitHub-Actions-셀프-호스",
+      "keyword": "GitHub Actions 셀프 호스티드 러너 Oracle Cloud 무료 ARM 설정 삽질 기록",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496164",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Oracle Cloud 무료 ARM 인스턴스에 GitHub Actions 러너를 올리려다 막힌 개발자",
+      "angle": "aarch64 환경에서 러너 등록·Docker 빌드·네트워크 방화벽 설정까지 실패 포함한 전 과정 실전 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Terraform execution using GitHub Actions with self-hosted runners on Oracle Cloud Infrastructure | b",
+          "url": "https://medium.com/@subhashchandra.b/terraform-execution-using-github-actions-with-self-hosted-runners-on-oracle-cloud-infrastructure-7bedfc31df20",
+          "source": "medium.com"
+        },
+        {
+          "title": "Oracle Cloud 인스턴스 자동 생성 매크로 만들기 | marinesnow34",
+          "url": "https://marinesnow34.github.io/2025/02/03/oracle-cloud-ampere/",
+          "source": "marinesnow34.github.io"
+        },
+        {
+          "title": "10. Github Action Hosted Runner 생성 :: Somaz의 IT 공부 일지",
+          "url": "https://somaz.tistory.com/371",
+          "source": "somaz.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1870-ko-tech-Supabase-RLS-정책-설정-후",
+      "keyword": "Supabase RLS 정책 설정 후 쿼리 응답 속도 저하 원인 분석 및 인덱스 해결법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496192",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase RLS를 켰더니 갑자기 쿼리가 느려진 이유를 찾으려는 개발자",
+      "angle": "RLS 활성화 전후 EXPLAIN ANALYZE 결과를 비교해 auth.uid() 호출 비용을 확인하고 인덱스로 해결한 과정",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Performance and Security Advisors | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/database-advisors?lint=0013_rls_disabled_in_public",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1871-ko-tech-Claude-API-RAG-청크-사이",
+      "keyword": "Claude API RAG 청크 사이즈 512 vs 1024 토큰 검색 정확도 실험 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496221",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 파이프라인 청크 크기를 어떻게 잡아야 답변 품질이 올라가는지 실측 데이터로 판단하려는 개발자",
+      "angle": "동일 문서를 512/1024 토큰으로 청킹해 Claude API에 붙인 뒤 20개 질문의 답변 정확도를 표로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1872-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 메모리 2GB Prometheus Grafana 같이 띄우기 OOM 방지 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496250",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "메모리 2GB 서버에서 앱과 모니터링 스택을 함께 올리려다 메모리 부족으로 죽는 문제를 해결하려는 개발자",
+      "angle": "mem_limit·swap 설정과 Prometheus 스크래이프 간격 조정으로 2GB VPS에서 전체 스택을 안정 운영하는 실전 설정 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker 컨테이너 메모리 관리 및 OOM 대응 - 성장하는 개발자",
+          "url": "https://bluedreamer-twenty.tistory.com/6",
+          "source": "bluedreamer-twenty.tistory.com"
+        },
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1873-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 자동 배포 빌드 실패 NODE_VERSION 환경변수 설정 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-06T09:26:06.496280",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그를 Cloudflare Pages에 배포하다가 빌드가 계속 실패하는 원인을 찾으려는 개발자",
+      "angle": "Cloudflare Pages의 기본 Node 버전 충돌로 Hugo 빌드가 깨지는 원인을 환경변수 설정 하나로 해결한 삽질 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Known issues · Cloudflare Pages docs",
+          "url": "https://developers.cloudflare.com/pages/platform/known-issues/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "I Built a Blazing Fast Website for $0/Month — Here's the Exact Stack (Hugo + Cloudflare Pages) - DEV",
+          "url": "https://dev.to/laser_expert/i-built-a-blazing-fast-website-for-0month-heres-the-exact-stack-hugo-cloudflare-pages-4en6",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

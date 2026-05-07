@@ -23074,7 +23074,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.875932",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -23099,7 +23099,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T12:02:58.529317+00:00"
     },
     {
       "id": "1873-ko-tech-직장에서-생산적으로-보이는-법-개발자",
@@ -23107,7 +23109,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.875969",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -23132,7 +23134,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T11:50:36.774396+00:00"
     },
     {
       "id": "1874-en-tech-fly.io-free-tier-col",
@@ -23140,7 +23144,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.875992",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23164,7 +23168,9 @@
           "source": "kuberns.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T12:04:33.404387+00:00"
     },
     {
       "id": "1875-en-tech-claude-api-vs-openai",
@@ -23172,7 +23178,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876015",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23191,7 +23197,9 @@
           "source": "collabnix.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T11:52:21.327366+00:00"
     },
     {
       "id": "1876-en-tech-github-actions-self-",
@@ -23231,7 +23239,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876055",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23255,7 +23263,9 @@
           "source": "designrevision.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T11:54:30.559859+00:00"
     },
     {
       "id": "1878-en-tech-ollama-mistral-7b-vs",
@@ -23263,7 +23273,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876076",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23277,7 +23287,9 @@
           "source": "localaimaster.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T12:06:24.946353+00:00"
     },
     {
       "id": "1879-en-tech-terraform-vs-pulumi-",
@@ -23349,7 +23361,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876143",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23373,7 +23385,9 @@
           "source": "localaimaster.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T11:56:50.345580+00:00"
     },
     {
       "id": "1882-ko-tech-Fly.io-무료-플랜-슬립-모드-N",
@@ -23381,7 +23395,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876159",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23405,7 +23419,9 @@
           "source": "rhei.me"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T12:08:53.241966+00:00"
     },
     {
       "id": "1883-ko-tech-1인-개발자-AWS-vs-Cloudf",
@@ -23413,7 +23429,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876175",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23437,7 +23453,9 @@
           "source": "developers.cloudflare.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T11:58:59.132416+00:00"
     },
     {
       "id": "1884-ko-tech-Supabase-Edge-Functi",
@@ -23541,7 +23559,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-07T09:35:53.876240",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -23565,7 +23583,9 @@
           "source": "bluedreamer-twenty.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-07T11:48:12.226241+00:00",
+      "completed_at": "2026-05-07T12:01:07.491655+00:00"
     }
   ]
 }

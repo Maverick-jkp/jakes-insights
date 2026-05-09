@@ -23592,60 +23592,6 @@
       "completed_at": "2026-05-08T11:38:24.533679+00:00"
     },
     {
-      "id": "1894-en-tech-hugo-cloudflare-page",
-      "keyword": "hugo cloudflare pages build cache invalid after theme update css not updating fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-08T08:23:20.531339",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Hugo blog owners on Cloudflare Pages frustrated that CSS changes after a theme update aren't reflecting in production",
-      "angle": "Exact cache-busting steps that worked: purging Cloudflare cache vs Hugo asset fingerprinting vs build config changes",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Known issues · Cloudflare Pages docs",
-          "url": "https://developers.cloudflare.com/pages/platform/known-issues/",
-          "source": "developers.cloudflare.com"
-        },
-        {
-          "title": "Cloudflare dev page site is not updated to latest site chages - Cloudflare Pages - Cloudflare Commun",
-          "url": "https://community.cloudflare.com/t/cloudflare-dev-page-site-is-not-updated-to-latest-site-chages/839568",
-          "source": "community.cloudflare.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1895-en-tech-supabase-edge-functi",
-      "keyword": "supabase edge functions cold start latency vs vercel serverless real measurement next.js api route 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-05-08T08:23:20.531366",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Developers choosing between Supabase Edge Functions and Vercel serverless for latency-sensitive Next.js endpoints",
-      "angle": "Measured cold start times (ms) from 50 requests each: Supabase Edge vs Vercel free tier with real Next.js API routes",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Vercel Supabase: What Works and What Breaks in 2026 • Kuberns",
-          "url": "https://kuberns.com/blogs/vercel-supabase/",
-          "source": "kuberns.com"
-        },
-        {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1896-ko-tech-M3-맥북-ollama-llama3.",
       "keyword": "M3 맥북 ollama llama3.2 한국어 답변 속도 실측 토큰 초당 GPT-4o-mini 비교 2025",
       "category": "tech",
@@ -23748,38 +23694,6 @@
       "completed_at": "2026-05-08T11:34:16.383274+00:00"
     },
     {
-      "id": "1899-ko-tech-Supabase-무료-플랜-프로젝트-",
-      "keyword": "Supabase 무료 플랜 프로젝트 일시정지 자동 해제 방법 cron ping 설정 실전 가이드",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-08T08:23:20.531461",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase 무료 플랜 사용 중 7일 미접속으로 DB가 일시정지되는 문제를 겪고 자동 유지 방법을 찾는 개발자",
-      "angle": "실제 작동 확인된 방법: GitHub Actions cron으로 Supabase REST API ping 보내 무료 플랜 정지 방지하는 전체 코드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
-          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
-          "source": "lookfortaste.com"
-        },
-        {
-          "title": "Supabase 무료 플랜 7일 비활성화 정책, 자동 활성화로 효율적으로 관리하기 - yangdongi",
-          "url": "https://yangdongi.com/programming/supabase-free-plan-auto-activation/",
-          "source": "yangdongi.com"
-        },
-        {
-          "title": "* 무료 플랜 특징 1. Supabase 무료 플랜은 개인 프로젝트나 학습용으로 충분 2. 가장 중요한 건, 1주일간 활동이 없으면 프로젝트가 자동 중지. 3. 중지된 프로젝트는 ",
-          "url": "https://www.threads.com/@ghil_book_pic/post/DPsojPbE2KK/-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%8A%B9%EC%A7%951-supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C%EC%9D%80-%EA%B0%9C%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%82%98-%ED%95%99%EC%8A%B5%EC%9A%A9%EC%9C%BC%EB%A1%9C-%EC%B6%A9%EB%B6%842-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EA%B1%B4-1%EC%A3%BC%EC%9D%BC%EA%B0%84-%ED%99%9C%EB%8F%99%EC%9D%B4-%EC%97%86%EC%9C%BC%EB%A9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B0%80-%EC%9E%90%EB%8F%99-%EC%A4%91%EC%A7%803",
-          "source": "www.threads.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1900-ko-tech-Vercel-무료-플랜-함수-실행-시",
       "keyword": "Vercel 무료 플랜 함수 실행 시간 10초 초과 해결 Next.js API route Edge Runtime 전환 실측",
       "category": "tech",
@@ -23814,33 +23728,463 @@
       "completed_at": "2026-05-08T11:36:22.513456+00:00"
     },
     {
-      "id": "1901-ko-tech-Cloudflare-Tunnel-홈서",
-      "keyword": "Cloudflare Tunnel 홈서버 외부 접속 설정 공유기 포트포워딩 없이 HTTPS 도메인 연결 실전",
+      "id": "1901-en-tech-Google-reCAPTCHA-bre",
+      "keyword": "Google reCAPTCHA breaking de-Googled Android users locked out",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.592888",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and privacy-conscious users running GrapheneOS or CalyxOS are suddenly locked out of websites and apps — they need to understand why and whether there's a workaround",
+      "angle": "Remote attestation as a de facto anti-privacy enforcement mechanism disguised as security infrastructure",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Google Broke reCAPTCHA for De-Googled Android Users",
+          "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
+          "source": "reclaimthenet.org"
+        },
+        {
+          "title": "The catch in Google's new reCAPTCHA is a nightmare for custom Android ROMs",
+          "url": "https://piunikaweb.com/2026/05/07/google-recaptcha-play-services-requirement/",
+          "source": "piunikaweb.com"
+        },
+        {
+          "title": "reCAPTCHA: Google blocca gli Android senza Play Services",
+          "url": "https://www.ceotech.it/recaptcha-google-blocca-gli-android-senza-play-services/",
+          "source": "www.ceotech.it"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1902-ko-tech-AWS-us-east-1-장애-반복-",
+      "keyword": "AWS us-east-1 장애 반복 원인 멀티리전 전략",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.592934",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AWS 장애 뉴스를 보고 자신의 인프라 설계가 안전한지 점검하려는 개발자·DevOps 엔지니어가 멀티리전 설계 필요성과 실제 대응 방법을 검색",
+      "angle": "단순 장애 보도가 아닌 'us-east-1 의존도가 높은 국내 스타트업·기업이 지금 당장 해야 할 아키텍처 점검' 관점",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "코인베이스, 서비스 중단 원인으로 AWS 다중 지역 장애 지목 – Bitcoin News",
+          "url": "https://news.bitcoin.com/ko/koinbeiseu-seobiseu-jungdan-wonineuro-aws-dajung-jiyeok-jangae-jimok/",
+          "source": "news.bitcoin.com"
+        },
+        {
+          "title": "아마존 AWS, 버지니아 북부 데이터센터 과열로 서비스 장애 - 뉴스1",
+          "url": "https://www.news1.kr/world/usa-canada/6160591",
+          "source": "www.news1.kr"
+        },
+        {
+          "title": "AI 장애로 헤매던 시대의 종말, 한눈에 보이는 워크플로우가 답인 이유 - 백서 다운로드",
+          "url": "https://www.openmaru.io/ai-workflow/",
+          "source": "www.openmaru.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1903-en-tech-ollama-llama3.2-3b-v",
+      "keyword": "ollama llama3.2 3b vs 8b response speed m2 macbook 8gb ram korean token benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.592977",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Mac users with limited RAM wanting measured speed/quality tradeoff data before committing to a model size",
+      "angle": "Side-by-side measured benchmarks: tokens/sec, Korean output quality score, and thermal throttling behavior on 8GB M2",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ollama on 8GB RAM: 7 Models That Actually Work (2026)",
+          "url": "https://webscraft.org/blog/ollama-na-8-gb-ram-yaki-modeli-pratsyuyut-u-2026?lang=en",
+          "source": "webscraft.org"
+        },
+        {
+          "title": "Best Ollama Models for 8GB RAM (2026): 12 Models Tested & Ranked | Local AI Master",
+          "url": "https://localaimaster.com/blog/best-local-ai-models-8gb-ram",
+          "source": "localaimaster.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1904-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner raspberry pi 5 docker build arm64 cache miss fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.592999",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hobbyist/indie devs running CI on Pi 5 frustrated by slow builds due to cache not working on arm64",
+      "angle": "Exact config that fixed cache misses: buildx layer caching with local exporter on Pi 5, with before/after build times",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/github on Reddit: We cut GitHub Actions build times by 6x with self-hosted runners — sharing our s",
+          "url": "https://www.reddit.com/r/github/comments/1rhpavo/we_cut_github_actions_build_times_by_6x_with/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Self-Hosting on Raspberry Pi: CI/CD with GitHub Actions and Secure Access via Cloudflare Tunnel - DE",
+          "url": "https://dev.to/alex_p_3aad3da07749e6adef/self-hosting-on-raspberry-pi-cicd-with-github-actions-and-secure-access-via-cloudflare-tunnel-50eo",
+          "source": "dev.to"
+        },
+        {
+          "title": "Use Docker to Set Up a Self-Hosted GitHub Actions Runner in 10 Minutes — LeoTheLegion",
+          "url": "https://leothelegion.net/2025/07/28/use-docker-to-set-up-self-hosted-github-actions-runner-in-10-minutes/",
+          "source": "leothelegion.net"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1905-en-tech-claude-api-streaming",
+      "keyword": "claude api streaming response fastapi server-sent events token cost calculation real project",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593021",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers building chat UIs with Claude API wanting working SSE streaming code plus actual cost data",
+      "angle": "Full working FastAPI + SSE implementation with per-request token logging and a month-end cost breakdown from a real side project",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Streaming Messages - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/build-with-claude/streaming",
+          "source": "platform.claude.com"
+        },
+        {
+          "title": "Streaming Claude agent responses in production: real-time output without waiting for completion - Un",
+          "url": "https://www.unpromptedmind.com/streaming-claude-agent-responses-production/",
+          "source": "www.unpromptedmind.com"
+        },
+        {
+          "title": "Claude API Streaming: Real-Time AI Responses in Production | CallSphere Blog",
+          "url": "https://callsphere.ai/blog/claude-api-streaming-production",
+          "source": "callsphere.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1906-en-tech-cloudflare-workers-k",
+      "keyword": "cloudflare workers kv vs d1 sqlite latency comparison edge read write small saas app",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593043",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers choosing between KV and D1 for a lightweight SaaS and needing concrete latency numbers, not just docs",
+      "angle": "Measured p50/p95 read-write latency for both, with decision framework for apps under 10k daily active users",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Cloudflare Workers KV vs D1: Complete Performance Guide | PropTechUSA.ai",
+          "url": "https://www.proptechusa.ai/news/cloudflare-workers-kv-vs-d1-performance-comparison",
+          "source": "www.proptechusa.ai"
+        },
+        {
+          "title": "Cloudflare Workers KV in Practice: A Complete Guide to Distributed Key-Value Storage · BetterLink Bl",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260422-cloudflare-workers-kv-guide/",
+          "source": "eastondev.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1907-en-tech-supabase-row-level-s",
+      "keyword": "supabase row level security policy performance overhead pgbench result indie hacker",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593068",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers worried that enabling RLS on Supabase will tank query performance before they enable it in production",
+      "angle": "pgbench results with RLS on vs off across three policy complexity levels, with a conclusion on when the overhead actually matters",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase RLS Guide: Policies That Actually Work",
+          "url": "https://designrevision.com/blog/supabase-row-level-security",
+          "source": "designrevision.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1908-en-tech-hetzner-vps-caddy-do",
+      "keyword": "hetzner vps caddy docker compose automatic https wildcard subdomain per tenant saas setup 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593092",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Solo founders building multi-tenant SaaS on cheap VPS wanting a complete HTTPS-per-tenant setup without Nginx complexity",
+      "angle": "Step-by-step Caddy + Docker Compose config for dynamic subdomain routing on a €4/mo Hetzner CAX11, with actual working Caddyfile",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub - caddy-dns/hetzner: Caddy module: dns.providers.hetzner · GitHub",
+          "url": "https://github.com/caddy-dns/hetzner",
+          "source": "github.com"
+        },
+        {
+          "title": "How to Run Caddy with Docker and Automatic HTTPS (Wildcard Certificates)",
+          "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-run-caddy-with-docker-and-automatic-https-wildcard-certificates/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "How to Self-Host Caddy with Docker | selfhosting.sh",
+          "url": "https://selfhosting.sh/apps/caddy/",
+          "source": "selfhosting.sh"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1909-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 답변 품질 토큰 속도 실측 8GB 16GB 메모리별 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593110",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "맥북 구매 전 또는 구매 후 로컬 LLM 성능을 메모리 용량별로 실제 수치로 확인하려는 개발자",
+      "angle": "8GB vs 16GB M3에서 동일 프롬프트 한국어 응답 품질 점수·토큰/초 직접 측정, 실구매 판단에 쓸 수 있는 결론 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "로컬 LLM 추천 2026 TOP 7 — 전문가가 정리한 오픈소스 모델",
+          "url": "https://blogtechnicus.com/%EB%A1%9C%EC%BB%AC-llm-%EC%B6%94%EC%B2%9C-2026/",
+          "source": "blogtechnicus.com"
+        },
+        {
+          "title": "How to Use Ollama to Run AI Models Locally: A Beginner's Setup Guide | MindStudio",
+          "url": "https://www.mindstudio.ai/blog/ollama-run-ai-models-locally-setup-guide",
+          "source": "www.mindstudio.ai"
+        },
+        {
+          "title": "NVIDIA 그래픽 카드 모델(대표)별 Ollama 추천 모델 표 :: Royfactory",
+          "url": "https://royzero.tistory.com/entry/nvidia-gpu-ollama-model-guide",
+          "source": "royzero.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1910-ko-tech-Supabase-Edge-Functi",
+      "keyword": "Supabase Edge Functions 콜드 스타트 지연 실측 Vercel Edge 비교 소규모 SaaS 선택 기준",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593128",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "엣지 함수 도입을 고민 중인 1인 개발자가 실제 응답 지연 데이터를 보고 플랫폼을 결정하려 할 때",
+      "angle": "같은 로직을 Supabase Edge Functions와 Vercel Edge에 배포해 콜드 스타트 p50/p99 직접 측정, 선택 기준 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Supabase vs Vercel",
+          "url": "https://getdeploying.com/supabase-vs-vercel",
+          "source": "getdeploying.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1911-ko-tech-GitHub-Actions-무료-플랜",
+      "keyword": "GitHub Actions 무료 플랜 월 2000분 초과 없이 모노레포 빌드 시간 줄인 실전 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593144",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "무료 GitHub Actions 한도가 부족해 빌드 최적화를 찾고 있는 사이드 프로젝트 개발자",
+      "angle": "모노레포 변경 감지 + 캐시 레이어 재설계로 평균 빌드 14분→3분 줄인 실제 워크플로우 파일과 분 단위 절감 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
+          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
+          "source": "lookfortaste.com"
+        },
+        {
+          "title": "Github Actions Docker 빌드 속도를 최적화 해보자.",
+          "url": "https://hstory0208.tistory.com/entry/Github-Actions-Docker-%EB%B9%8C%EB%93%9C-%EC%86%8D%EB%8F%84%EB%A5%BC-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%B4%EB%B3%B4%EC%9E%90",
+          "source": "hstory0208.tistory.com"
+        },
+        {
+          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
+          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
+          "source": "apidog.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1912-ko-tech-Claude-API-vs-GPT-4o",
+      "keyword": "Claude API vs GPT-4o mini 한국어 코드 리뷰 품질 실제 PR 10개 비교 비용 포함 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593160",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI 코드 리뷰 도구를 만들거나 사용하려는 개발자가 한국어 코드베이스 기준 실제 품질과 비용을 비교하고 싶을 때",
+      "angle": "실제 PR 10개에 두 모델 적용, 리뷰 유용성 점수·누락 버그 수·API 비용 직접 집계 후 용도별 추천",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2025년 상용 LLM API 가격 비교 완벽 가이드 - GPT-4o vs Claude 4 Sonnet vs Gemini 2.5 Pro 실제 비용 분석 :: baekdoojin 님",
+          "url": "https://baekdoojin.tistory.com/2",
+          "source": "baekdoojin.tistory.com"
+        },
+        {
+          "title": "AI 코딩 플랫폼 비교 분석",
+          "url": "https://brunch.co.kr/@b2439ea8fc654b8/112",
+          "source": "brunch.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1913-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 블로그 자동배포 빌드 실패 원인 3가지 트러블슈팅 실기록",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-05-08T08:23:20.531497",
+      "created_at": "2026-05-09T08:29:30.593176",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "공유기 포트포워딩이 불가능한 환경(ISP 제한, 회사망)에서 홈서버를 외부에 안전하게 노출하고 싶은 개발자",
-      "angle": "실제 설정 스크린샷 포함: Cloudflare Tunnel으로 집 NAS/라즈베리파이를 포트 개방 없이 커스텀 도메인 HTTPS로 연결한 전 과정",
+      "search_intent": "Hugo + Cloudflare Pages 조합에서 배포가 갑자기 안 되는 원인을 빠르게 찾으려는 블로거·개발자",
+      "angle": "실제로 겪은 Hugo 버전 불일치·서브모듈 미초기화·빌드 커맨드 누락 세 가지 원인과 즉시 적용 가능한 수정 방법",
       "competition_level": "low",
       "references": [
         {
-          "title": "Cloudflare Tunnel로 포트포워딩 없이 홈서버 운영하기",
-          "url": "https://blog.aqudi.me/cloudflare-tunnel-home-server-without-port-forwarding",
-          "source": "blog.aqudi.me"
+          "title": "Cloudflare 무료 요금제 제한: 빌드/요청 실패 막는 핵심 가이드 - Sentio",
+          "url": "https://sentio5.com/entry/cloudflare-%EB%AC%B4%EB%A3%8C-%EC%9A%94%EA%B8%88%EC%A0%9C-%EC%A0%9C%ED%95%9C/",
+          "source": "sentio5.com"
         },
         {
-          "title": "🔐 Cloudflare Tunnel, 포트 개방 없이 서버를 외부에 공개하는 방법 :: 메모리허브",
-          "url": "https://memoryhub.tistory.com/entry/Cloudflare-Tunnel-%E2%86%92-%EB%82%B4-PC-%EB%AC%B4%EB%A3%8C-HTTPS-%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9-%EB%B6%88%ED%95%84%EC%9A%94",
-          "source": "memoryhub.tistory.com"
+          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
+          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
+          "source": "www.heyjude.blog"
         },
         {
-          "title": "[Cloudflare] Cloudflare Tunnel로 포트포워딩 없이 홈 서버 웹 서비스를 외부에 공개하기",
-          "url": "https://velog.io/@mrcocoball2/Cloudflare-Cloudflare-Tunnel%EB%A1%9C-%ED%8F%AC%ED%8A%B8%ED%8F%AC%EC%9B%8C%EB%94%A9-%EC%97%86%EC%9D%B4-%ED%99%88-%EC%84%9C%EB%B2%84-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%99%B8%EB%B6%80%EC%97%90-%EA%B3%B5%EA%B0%9C%ED%95%98%EA%B8%B0",
-          "source": "velog.io"
+          "title": "Automatic publishing of my Hugo website using Github and Cloudflare Pages - Virtual to the Core",
+          "url": "https://www.virtualtothecore.com/hugo-github-cloudflare-pages/",
+          "source": "www.virtualtothecore.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1914-ko-tech-1인-개발자-월-$15-이하-풀스택-",
+      "keyword": "1인 개발자 월 $15 이하 풀스택 인프라 Hetzner Fly.io Cloudflare 조합 실제 청구서 공개",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593191",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트 인프라 비용을 최소화하면서도 안정적인 스택 구성을 실제 사례로 보고 싶은 개발자",
+      "angle": "6개월간 운영한 실제 청구서 스크린샷 포함, 서비스별 역할 분담과 트레이드오프를 솔직하게 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "풀스택 개발자 1인 외주, 정말 더 저렴할까? - 제로백데브",
+          "url": "https://zero100dev.tistory.com/entry/%ED%92%80%EC%8A%A4%ED%83%9D-%EA%B0%9C%EB%B0%9C%EC%9E%90-1%EC%9D%B8-%EC%99%B8%EC%A3%BC-%EC%A0%95%EB%A7%90-%EB%8D%94-%EC%A0%80%EB%A0%B4%ED%95%A0%EA%B9%8C",
+          "source": "zero100dev.tistory.com"
+        },
+        {
+          "title": "클라우드 서버 요금 비교 & 웹사이트 유지비용 총정리 (2026 기준)",
+          "url": "https://easy-scraping.com/entry/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%84%9C%EB%B2%84-%EC%9A%94%EA%B8%88-%EB%B9%84%EA%B5%90-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%9C%A0%EC%A7%80%EB%B9%84%EC%9A%A9-%EC%B4%9D%EC%A0%95%EB%A6%AC-2026-%EA%B8%B0%EC%A4%80",
+          "source": "easy-scraping.com"
+        },
+        {
+          "title": "Cloudflare 가격 완전정복 | 무료부터 엔터프라이즈까지 요금제 비교 및 비용절감 팁",
+          "url": "https://notavoid.tistory.com/740",
+          "source": "notavoid.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1915-ko-tech-Docker-Compose-단일-서버",
+      "keyword": "Docker Compose 단일 서버 RAM 2GB nginx certbot 메모리 초과 없이 운영하는 설정 최적화",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-09T08:29:30.593207",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Docker 기반 서비스가 OOM으로 죽는 문제를 해결하려는 개발자",
+      "angle": "컨테이너별 메모리 limit 설정·nginx worker 튜닝·swap 활용으로 2GB 서버에서 4개 서비스 안정 운영한 실제 compose 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ollama Production Deployment: Docker-Compose Setup Guide",
+          "url": "https://www.sitepoint.com/ollama-local-llm-production-deployment-docker/",
+          "source": "www.sitepoint.com"
+        },
+        {
+          "title": "Production Deployment: Django, Docker Compose, & Nginx on AWS - DEV Community",
+          "url": "https://dev.to/ajitkumar/production-deployment-django-docker-compose-nginx-on-aws-1gig",
+          "source": "dev.to"
+        },
+        {
+          "title": "NGINX + Let's Encrypt Docker Compose - Ready to Deploy | Docker Recipes",
+          "url": "https://docker.recipes/web-servers/nginx-letsencrypt",
+          "source": "docker.recipes"
         }
       ],
       "content_type_hint": "GUIDE"

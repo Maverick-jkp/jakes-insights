@@ -24055,7 +24055,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310512",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -24080,7 +24080,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:10:50.297246+00:00"
     },
     {
       "id": "1914-ko-tech-EU-VPN-규제-개발자-영향-202",
@@ -24088,7 +24090,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310551",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -24113,7 +24115,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:03:50.648522+00:00"
     },
     {
       "id": "1915-en-tech-claude-api-tool-use-",
@@ -24121,7 +24125,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310610",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24140,7 +24144,9 @@
           "source": "learn-prompting.fr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:06:09.163558+00:00"
     },
     {
       "id": "1916-en-tech-grafana-loki-docker-",
@@ -24148,7 +24154,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310648",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24172,7 +24178,9 @@
           "source": "community.grafana.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:17:05.552318+00:00"
     },
     {
       "id": "1917-en-tech-supabase-edge-functi",
@@ -24180,7 +24188,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310676",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24204,7 +24212,9 @@
           "source": "www.buildmvpfast.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:12:47.752602+00:00"
     },
     {
       "id": "1918-en-tech-cursor-ide-claude-so",
@@ -24212,7 +24222,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310700",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24236,7 +24246,9 @@
           "source": "forum.cursor.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:18:42.530870+00:00"
     },
     {
       "id": "1919-ko-tech-Claude-API-tool_use-",
@@ -24244,7 +24256,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310739",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24268,7 +24280,9 @@
           "source": "namu.wiki"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:08:38.148186+00:00"
     },
     {
       "id": "1920-ko-tech-1인-개발자-월-$15-이하-풀스택-",
@@ -24308,7 +24322,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310807",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24332,7 +24346,9 @@
           "source": "digitalbourgeois.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:21:11.123508+00:00"
     },
     {
       "id": "1922-ko-tech-Prometheus-Grafana-D",
@@ -24340,7 +24356,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310826",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24359,7 +24375,9 @@
           "source": "last9.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:23:31.351679+00:00"
     },
     {
       "id": "1923-ko-tech-Supabase-RLS-정책-실수로-",
@@ -24367,7 +24385,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-10T08:57:06.310842",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -24381,7 +24399,9 @@
           "source": "supabase.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-10T11:00:51.769856+00:00",
+      "completed_at": "2026-05-10T11:15:28.502743+00:00"
     }
   ]
 }

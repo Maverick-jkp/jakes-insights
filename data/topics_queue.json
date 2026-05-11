@@ -24285,38 +24285,6 @@
       "completed_at": "2026-05-10T11:08:38.148186+00:00"
     },
     {
-      "id": "1920-ko-tech-1인-개발자-월-$15-이하-풀스택-",
-      "keyword": "1인 개발자 월 $15 이하 풀스택 인프라 Fly.io Railway Supabase 실제 청구 비교 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-05-10T08:57:06.310758",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "사이드 프로젝트를 최소 비용으로 운영할 플랫폼 조합을 찾는 1인 개발자",
-      "angle": "동일 Next.js + PostgreSQL 앱을 세 조합으로 한 달 운영한 실제 청구서 캡처와 함께 숨겨진 비용 항목 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "풀스택 개발자 1인 외주, 정말 더 저렴할까? - 제로백데브",
-          "url": "https://zero100dev.tistory.com/entry/%ED%92%80%EC%8A%A4%ED%83%9D-%EA%B0%9C%EB%B0%9C%EC%9E%90-1%EC%9D%B8-%EC%99%B8%EC%A3%BC-%EC%A0%95%EB%A7%90-%EB%8D%94-%EC%A0%80%EB%A0%B4%ED%95%A0%EA%B9%8C",
-          "source": "zero100dev.tistory.com"
-        },
-        {
-          "title": "Fly.io vs Railway",
-          "url": "https://getdeploying.com/flyio-vs-railway",
-          "source": "getdeploying.com"
-        },
-        {
-          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
-          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
-          "source": "lookfortaste.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1921-ko-tech-Cursor-Rules-모노레포-대형",
       "keyword": "Cursor Rules 모노레포 대형 프로젝트 컨텍스트 오버플로 방지 실전 설정",
       "category": "tech",
@@ -24402,6 +24370,408 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-10T11:00:51.769856+00:00",
       "completed_at": "2026-05-10T11:15:28.502743+00:00"
+    },
+    {
+      "id": "1924-ko-tech-AI-코딩-도구-유지보수-비용-실제로",
+      "keyword": "AI 코딩 도구 유지보수 비용 실제로 늘어나나",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379616",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코딩 어시스턴트를 실무에 도입했거나 도입 중인 국내 개발자들이 '빠르게 만들었는데 왜 이렇게 고치기 힘들지?'라는 체감 불안을 검색으로 해소하려 함",
+      "angle": "단기 생산성 vs 장기 유지보수 비용의 실제 트레이드오프 — HN 커뮤니티에서 이미 검증된 사례를 한국 개발 환경에 대입해 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI Native News | 토스 · 당근 · 컬리가 선택한 Claude Code, 뭐가 다를까? - OPENMARU APM",
+          "url": "https://www.openmaru.io/ai-native-news-68/",
+          "source": "www.openmaru.io"
+        },
+        {
+          "title": "'AI 토큰' 많이 쓸수록 유능한 개발자?…10배 써도 실제 성과는 고작 2배",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=663741",
+          "source": "www.digitaltoday.co.kr"
+        },
+        {
+          "title": "AI 자동화 도구 생태계 이해하기 - TILNOTE",
+          "url": "https://tilnote.io/en/pages/69f863c2f294adb6c2d10005",
+          "source": "tilnote.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1925-en-tech-fly.io-free-tier-pos",
+      "keyword": "fly.io free tier postgres 512mb memory limit workaround 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379662",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 플랜에서 Postgres 메모리 초과 문제를 겪고 있는 개발자가 해결책을 찾기 위해 검색",
+      "angle": "실제 Fly.io 무료 티어 운영 중 메모리 초과로 앱이 죽는 상황을 재현하고, pg_tuning 파라미터 조정으로 해결한 실전 트러블슈팅 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Why Fly.io Is the Best Free Docker Hosting You're Not Using | Vibe Coding With Fred",
+          "url": "https://vibecodingwithfred.com/blog/flyio-free-tier-guide/",
+          "source": "vibecodingwithfred.com"
+        },
+        {
+          "title": "Can reasonable performance be obtained from Unmanaged Postgres running on shared-1x-cpu@256MB? - log",
+          "url": "https://community.fly.io/t/can-reasonable-performance-be-obtained-from-unmanaged-postgres-running-on-shared-1x-cpu-256mb/25473",
+          "source": "community.fly.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1926-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker container exits immediately fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379702",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Self-hosted runner를 Docker 컨테이너로 띄웠는데 바로 종료되는 문제를 겪는 DevOps 엔지니어",
+      "angle": "컨테이너가 즉시 종료되는 원인별(RUNNER_TOKEN 만료, entrypoint 설정 누락 등) 체크리스트와 실제 작동하는 Dockerfile 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
+          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Create a Docker based Self Hosted GitHub runner Linux container - DEV Community",
+          "url": "https://dev.to/pwd9000/create-a-docker-based-self-hosted-github-runner-linux-container-48dh",
+          "source": "dev.to"
+        },
+        {
+          "title": "r/github on Reddit: Self-hosted GitHub Actions runner stuck — Docker works fine, no logs appear",
+          "url": "https://www.reddit.com/r/github/comments/1l4mv0j/selfhosted_github_actions_runner_stuck_docker/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1927-en-tech-claude-api-cost-opti",
+      "keyword": "claude api cost optimization prompt caching vs batch api real usage comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379721",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API 비용을 줄이려는 개발자가 prompt caching과 batch API 중 어느 쪽이 실제로 더 저렴한지 알고 싶어 검색",
+      "angle": "동일한 반복 요청 시나리오(RAG, 문서 요약)에서 prompt caching과 batch API의 실제 청구 금액을 비교하고 사용 케이스별 선택 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "source": "platform.claude.com"
+        },
+        {
+          "title": "Claude API Cost Optimization: Caching, Batching, and 60% Token Reduction in Production - DEV Communi",
+          "url": "https://dev.to/whoffagents/claude-api-cost-optimization-caching-batching-and-60-token-reduction-in-production-3n49",
+          "source": "dev.to"
+        },
+        {
+          "title": "Anthropic API Pricing in 2026: Complete Guide — Models, Caching, Batch & Optimization",
+          "url": "https://www.finout.io/blog/anthropic-api-pricing",
+          "source": "www.finout.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1928-en-tech-hetzner-cloud-vs-vul",
+      "keyword": "hetzner cloud vs vultr $6 vps node.js app latency southeast asia test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379740",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "동남아시아 사용자를 대상으로 저가 VPS를 선택하려는 1인 개발자가 실측 레이턴시를 확인하려 검색",
+      "angle": "Hetzner Helsinki vs Vultr Singapore에서 Node.js Express 앱 응답속도를 동남아 여러 지점에서 ping/curl로 실측하고 월 $6 기준 성능 대비 비용 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hetzner vs Vultr: performance, features and prices | VPSBenchmarks",
+          "url": "https://www.vpsbenchmarks.com/compare/hetzner_vs_vultr",
+          "source": "www.vpsbenchmarks.com"
+        },
+        {
+          "title": "Vultr vs DigitalOcean vs Linode vs Hetzner: A Cloud Comparison",
+          "url": "https://serveravatar.com/vultr-vs-digitalocean-vs-linode-vs-hetzner/",
+          "source": "serveravatar.com"
+        },
+        {
+          "title": "Hetzner vs Vultr vs RackNerd: How I Slashed My Hosting Costs by 79% and Boosted Performance 2026 - G",
+          "url": "https://gauravtiwari.org/hetzner-vs-vultr-vs-racknerd/",
+          "source": "gauravtiwari.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1929-en-tech-docker-compose-healt",
+      "keyword": "docker compose healthcheck depends_on not working service startup order fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379782",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Docker Compose에서 healthcheck와 depends_on을 설정했는데도 서비스 시작 순서가 보장되지 않아 오류가 나는 개발자",
+      "angle": "depends_on condition: service_healthy가 실제로 작동하지 않는 흔한 실수(healthcheck interval 미설정, 잘못된 test 명령어 등)를 사례별로 분석하고 검증된 설정 스니펫 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker Compose Health Checks: An Easy-to-follow Guide | Last9",
+          "url": "https://last9.io/blog/docker-compose-health-checks/",
+          "source": "last9.io"
+        },
+        {
+          "title": "How to Use Docker Compose depends_on with Health Checks",
+          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Docker Compose Service Dependencies: Solving Database Startup Sequence with Healthchecks · BetterLin",
+          "url": "https://eastondev.com/blog/en/posts/dev/20251217-docker-compose-healthcheck/",
+          "source": "eastondev.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1930-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 응답 품질 GPT-4o-mini 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379802",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북에서 로컬 LLM으로 한국어 작업이 가능한지 GPT 대비 실제 품질 차이를 알고 싶은 개발자",
+      "angle": "M3 MacBook Pro 16GB에서 ollama llama3.2와 GPT-4o-mini에 동일한 한국어 프롬프트(요약, 코드 리뷰, 번역)를 입력해 응답 품질·속도·비용을 실측 비교한 결과 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "로컬 LLM 추천 2026 TOP 7 — 전문가가 정리한 오픈소스 모델",
+          "url": "https://blogtechnicus.com/%EB%A1%9C%EC%BB%AC-llm-%EC%B6%94%EC%B2%9C-2026/",
+          "source": "blogtechnicus.com"
+        },
+        {
+          "title": "library",
+          "url": "https://ollama.com/library",
+          "source": "ollama.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1931-ko-tech-1인-개발자-월-10달러-이하-풀스택",
+      "keyword": "1인 개발자 월 10달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379821",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "최소 비용으로 실제 서비스를 운영 중인 1인 개발자의 인프라 구성과 청구 금액이 궁금한 개발자",
+      "angle": "Fly.io(앱) + Supabase(DB) + Cloudflare(CDN/DNS)로 실제 SaaS를 운영하며 6개월간 청구된 금액 내역과 무료 티어 한계치 도달 시 대응 경험 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly.io vs Supabase",
+          "url": "https://getdeploying.com/flyio-vs-supabase",
+          "source": "getdeploying.com"
+        },
+        {
+          "title": "Supabase Review 2026 - Features, Pricing & Alternatives | srvrlss",
+          "url": "https://www.srvrlss.io/provider/supabase/",
+          "source": "www.srvrlss.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1932-ko-tech-Claude-API-RAG-청크-사이",
+      "keyword": "Claude API RAG 청크 사이즈 500 vs 1000 토큰 검색 정확도 실험 결과",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379837",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 파이프라인 구축 시 청크 사이즈가 실제 검색 품질에 얼마나 영향을 주는지 실험 데이터를 찾는 개발자",
+      "angle": "동일한 기술 문서를 500/750/1000 토큰으로 청크 분할하고 Claude API로 질의했을 때 정답률과 hallucination 빈도를 측정한 실험 설계·결과 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "How do usage and length limits work? | Claude Help Center",
+          "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work",
+          "source": "support.claude.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1933-ko-tech-GitHub-Actions-cron-",
+      "keyword": "GitHub Actions cron 스케줄 실제로 안 돌아갈 때 원인 체크리스트 Hugo 블로그",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379854",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GitHub Actions cron이 설정대로 실행되지 않는 문제를 겪는 블로그 운영자 또는 개발자",
+      "angle": "GitHub Actions cron이 누락되는 실제 원인(비활성 저장소 정책, UTC 시간대 오해, 브랜치 명칭 불일치 등)을 하나씩 검증한 트러블슈팅 체크리스트와 Hugo 자동배포 예시 설정 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Automated Hugo Releases (CI/CD) with Github Actions",
+          "url": "https://www.andrewconnell.com/blog/automated-hugo-releases-with-github-actions/",
+          "source": "www.andrewconnell.com"
+        },
+        {
+          "title": "n개월 째 날라오던 Github Actions 버그 고치기. 대부분의 개발은 귀차니즘에서 시작되었다(?) | by Yeshin Lee | Medium",
+          "url": "https://yeslee-v.medium.com/n%EA%B0%9C%EC%9B%94-%EC%A7%B8-%EB%82%A0%EB%9D%BC%EC%98%A4%EB%8D%98-github-action-%EB%B2%84%EA%B7%B8-%EA%B3%A0%EC%B9%98%EA%B8%B0-bbee7c1e3bb5",
+          "source": "yeslee-v.medium.com"
+        },
+        {
+          "title": "Incident with Actions – Resolved | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=48022900",
+          "source": "news.ycombinator.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1934-ko-tech-Prometheus-Grafana-D",
+      "keyword": "Prometheus Grafana Docker Compose 메모리 2GB 서버 실제 운영 설정 최적화",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379870",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 단독 서버(2GB RAM)에서 Prometheus+Grafana 스택을 올리려는 개발자가 메모리 부족 없이 운영 가능한 설정을 찾고 있음",
+      "angle": "2GB RAM VPS에서 Prometheus retention 기간, scrape_interval, Grafana 메모리 제한을 조정해 실제로 안정 운영하기까지의 설정값과 docker-compose.yml 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/51",
+          "source": "railly-linker.tistory.com"
+        },
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Grafana 및 prometheus 활용 #2 - 나만의 코딩기록 - 티스토리",
+          "url": "https://cdchan.tistory.com/282",
+          "source": "cdchan.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1935-ko-tech-Vercel-무료-플랜-함수-실행시간",
+      "keyword": "Vercel 무료 플랜 함수 실행시간 10초 초과 해결 Next.js API route 대안",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379886",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 무료 플랜에서 API route가 10초 제한에 걸려 504 오류가 나는 Next.js 개발자",
+      "angle": "Vercel 무료 플랜 함수 타임아웃 한계를 실제로 맞닥뜨린 상황을 재현하고, Edge Runtime 전환·백그라운드 큐 분리·Cloudflare Workers 이전 세 가지 대안을 비용·복잡도 기준으로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel을 이용한 무료 웹 배포 이용해보기 - 코딩은재밌어",
+          "url": "https://allinfor.tistory.com/76",
+          "source": "allinfor.tistory.com"
+        },
+        {
+          "title": "Routing: API Routes | Next.js",
+          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
+          "source": "nextjs.org"
+        },
+        {
+          "title": "Next.js API Routes 마스터: 실무에서 3년간 써본 실전 가이드 가이드 | 정보의 둥지",
+          "url": "https://nestloghub.com/blog/coding/nextjs-api-routes-complete-guide",
+          "source": "nestloghub.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1936-ko-tech-cursor-AI-유료-플랜-실제-월",
+      "keyword": "cursor AI 유료 플랜 실제 월 사용량 코드 생성 토큰 소진 패턴 분석 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-11T10:40:21.379900",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor Pro 구독 전에 실제 사용량과 토큰 소진 속도가 궁금한 개발자",
+      "angle": "Cursor Pro 3개월 실사용 중 fast request 소진 시점, 어떤 작업(대형 파일 리팩토링 vs 단순 자동완성)에서 토큰이 빨리 닳는지 패턴 분석과 절약 팁 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[AI] Cursor 토큰 소비 구조와 절약 전략 (실사용 경험 기반)",
+          "url": "https://peterica.tistory.com/975",
+          "source": "peterica.tistory.com"
+        },
+        {
+          "title": "💰 Cursor AI, 무료로 어디까지 쓸 수 있을까? 유료 전환이 필요한 순간은? - 지니코딩랩",
+          "url": "https://www.jiniai.biz/2025/05/15/%F0%9F%92%B0-cursor-ai-%EB%AC%B4%EB%A3%8C%EB%A1%9C-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%93%B8-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%9C%A0%EB%A3%8C-%EC%A0%84%ED%99%98%EC%9D%B4-%ED%95%84/",
+          "source": "www.jiniai.biz"
+        },
+        {
+          "title": "디자이너를 위한 Cursor AI 요금제는 무엇일까?",
+          "url": "https://brunch.co.kr/@ghidesigner/283",
+          "source": "brunch.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

@@ -1669,6 +1669,11 @@ JSON 배열만 반환:
 
         frontmatter = "\n".join(frontmatter_lines) + "\n"
 
+        # Sanitize backslash escapes in YAML frontmatter (e.g. Windows paths like C:\Users\)
+        # Hugo YAML parser treats \X as escape sequence and fails on unknown ones
+        import re as _re
+        frontmatter = _re.sub(r'\\([A-Za-z])', lambda m: '/' + m.group(1), frontmatter)
+
         # Hero image removed - PaperMod theme renders frontmatter image: as cover
         hero_image = ""
 

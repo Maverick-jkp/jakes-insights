@@ -552,6 +552,9 @@ def save_post(kw: Dict, lang: str, title: str, description: str, body: str,
 
     frontmatter = "\n".join(frontmatter_lines) + "\n"
 
+    import re as _re
+    frontmatter = _re.sub(r'\\([A-Za-z])', lambda m: '/' + m.group(1), frontmatter)
+
     credit_line = ""
     if image_credit:
         credit_line = (

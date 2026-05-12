@@ -95,11 +95,7 @@
 {{ end -}}
 
 {{/* SEO */}}
-{{ if and (eq .Kind "term") (eq .Language.Lang "ko") }}
-<meta name="robots" content="noindex, follow">
-{{ else }}
 <meta name="robots" content="index, follow">
-{{ end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{/* Naver verification */}}

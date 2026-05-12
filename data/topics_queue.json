@@ -24504,38 +24504,6 @@
       "completed_at": "2026-05-11T12:40:59.689484+00:00"
     },
     {
-      "id": "1928-en-tech-hetzner-cloud-vs-vul",
-      "keyword": "hetzner cloud vs vultr $6 vps node.js app latency southeast asia test",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-11T10:40:21.379740",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "동남아시아 사용자를 대상으로 저가 VPS를 선택하려는 1인 개발자가 실측 레이턴시를 확인하려 검색",
-      "angle": "Hetzner Helsinki vs Vultr Singapore에서 Node.js Express 앱 응답속도를 동남아 여러 지점에서 ping/curl로 실측하고 월 $6 기준 성능 대비 비용 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Hetzner vs Vultr: performance, features and prices | VPSBenchmarks",
-          "url": "https://www.vpsbenchmarks.com/compare/hetzner_vs_vultr",
-          "source": "www.vpsbenchmarks.com"
-        },
-        {
-          "title": "Vultr vs DigitalOcean vs Linode vs Hetzner: A Cloud Comparison",
-          "url": "https://serveravatar.com/vultr-vs-digitalocean-vs-linode-vs-hetzner/",
-          "source": "serveravatar.com"
-        },
-        {
-          "title": "Hetzner vs Vultr vs RackNerd: How I Slashed My Hosting Costs by 79% and Boosted Performance 2026 - G",
-          "url": "https://gauravtiwari.org/hetzner-vs-vultr-vs-racknerd/",
-          "source": "gauravtiwari.org"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1929-en-tech-docker-compose-healt",
       "keyword": "docker compose healthcheck depends_on not working service startup order fix",
       "category": "tech",
@@ -24730,65 +24698,457 @@
       "completed_at": "2026-05-11T13:01:26.351868+00:00"
     },
     {
-      "id": "1935-ko-tech-Vercel-무료-플랜-함수-실행시간",
-      "keyword": "Vercel 무료 플랜 함수 실행시간 10초 초과 해결 Next.js API route 대안",
+      "id": "1935-en-tech-NPM-supply-chain-att",
+      "keyword": "NPM supply chain attack prevention checklist for open source maintainers",
       "category": "tech",
-      "lang": "ko",
-      "priority": 8,
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-05-11T10:40:21.379886",
+      "created_at": "2026-05-12T09:43:55.216570",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료 플랜에서 API route가 10초 제한에 걸려 504 오류가 나는 Next.js 개발자",
-      "angle": "Vercel 무료 플랜 함수 타임아웃 한계를 실제로 맞닥뜨린 상황을 재현하고, Edge Runtime 전환·백그라운드 큐 분리·Cloudflare Workers 이전 세 가지 대안을 비용·복잡도 기준으로 비교",
+      "keyword_type": "trend",
+      "search_intent": "Developers who saw the TanStack breach want a concrete, actionable checklist to audit their own CI/CD pipelines and token hygiene before they become the next postmortem",
+      "angle": "Incident-driven hardening guide — use TanStack as the cautionary example, then walk through token rotation, Trusted Publishing pitfalls, systemd persistence mechanisms, and CI secret hygiene step by step",
       "competition_level": "low",
       "references": [
         {
-          "title": "Vercel을 이용한 무료 웹 배포 이용해보기 - 코딩은재밌어",
-          "url": "https://allinfor.tistory.com/76",
-          "source": "allinfor.tistory.com"
+          "title": "Mitigating supply chain attacks | pnpm",
+          "url": "https://pnpm.io/supply-chain-security",
+          "source": "pnpm.io"
         },
         {
-          "title": "Routing: API Routes | Next.js",
-          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
-          "source": "nextjs.org"
+          "title": "Postmortem: TanStack npm supply-chain compromise | TanStack Blog",
+          "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem",
+          "source": "tanstack.com"
         },
         {
-          "title": "Next.js API Routes 마스터: 실무에서 3년간 써본 실전 가이드 가이드 | 정보의 둥지",
-          "url": "https://nestloghub.com/blog/coding/nextjs-api-routes-complete-guide",
-          "source": "nestloghub.com"
+          "title": "Mini Shai-Hulud Is Back: npm Worm Hits over 160 Packages, including Mistral and Tanstack",
+          "url": "https://www.aikido.dev/blog/mini-shai-hulud-is-back-tanstack-compromised",
+          "source": "www.aikido.dev"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1936-ko-tech-NPM-공급망-공격-내-프로젝트-점검",
+      "keyword": "NPM 공급망 공격 내 프로젝트 점검 방법",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216606",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "TanStack 사태를 접한 한국 개발자·오픈소스 기여자가 자신의 NPM 토큰·GitHub Actions 설정·systemd 서비스가 오염됐는지 당장 확인하고 싶어서 검색",
+      "angle": "사고 재현 → 공격 벡터 설명(토큰 탈취, Trusted Publishing 한계, 데드맨 스위치 지속성) → 국내 개발자가 바로 실행할 수 있는 점검 체크리스트 순서로 구성",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1937-en-tech-ollama-llama3.2-quan",
+      "keyword": "ollama llama3.2 quantization q4 vs q8 mac m3 inference speed benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216631",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 Mac에서 llama3.2 양자화 수준별 실제 추론 속도 차이를 수치로 확인하고 싶음",
+      "angle": "Q4_0 vs Q8_0 실측 토큰/초 비교표 + 메모리 사용량 차이 포함 실험 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Local LLM Speed: RTX 3060, Qwen2 & Llama Benchmark Results - Ajit Singh",
+          "url": "https://singhajit.com/llm-inference-speed-comparison/",
+          "source": "singhajit.com"
+        },
+        {
+          "title": "Apple Silicon LLM Inference Optimization: The Complete Guide to Maximum Performance",
+          "url": "https://blog.starmorph.com/blog/apple-silicon-llm-inference-optimization-guide",
+          "source": "blog.starmorph.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "1936-ko-tech-cursor-AI-유료-플랜-실제-월",
-      "keyword": "cursor AI 유료 플랜 실제 월 사용량 코드 생성 토큰 소진 패턴 분석 후기",
+      "id": "1938-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker container memory leak fix ubuntu 22.04",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216675",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "셀프 호스팅 GitHub Actions 러너가 도커 컨테이너 안에서 메모리 누수 발생 시 해결법 탐색",
+      "angle": "실제 OOM Kill 로그 분석 → cgroup v2 설정으로 해결한 삽질 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Set Up a Self-Hosted GitHub Actions Runner on Ubuntu",
+          "url": "https://oneuptime.com/blog/post/2026-01-07-ubuntu-github-actions-runner/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Build a Self-Hosted CI/CD Pipeline with Gitea Actions and Docker - Botmonster Tech",
+          "url": "https://botmonster.com/posts/self-hosted-cicd-pipeline-gitea-actions-docker/",
+          "source": "botmonster.com"
+        },
+        {
+          "title": "Self-Hosted GitHub Actions Runners on AWS EC2: Solving Memory and Disk Space Challenges | by ELVIS G",
+          "url": "https://medium.com/@elvisgitau10/self-hosted-github-actions-runners-on-aws-ec2-solving-memory-and-disk-space-challenges-9c3299de9d2c",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1939-en-tech-claude-api-prompt-ca",
+      "keyword": "claude api prompt caching cost reduction real usage bill comparison anthropic 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216696",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API 프롬프트 캐싱 기능이 실제 청구 비용을 얼마나 줄여주는지 확인하고 싶음",
+      "angle": "동일 워크로드에서 캐싱 ON/OFF 한 달 실제 청구서 비교 + 적용 코드 예시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "source": "platform.claude.com"
+        },
+        {
+          "title": "Anthropic API Pricing in 2026: Complete Guide — Models, Caching, Batch & Optimization",
+          "url": "https://www.finout.io/blog/anthropic-api-pricing",
+          "source": "www.finout.io"
+        },
+        {
+          "title": "Claude API Pricing Explained: What Does It Really Cost in 2025? - DEV Community",
+          "url": "https://dev.to/kalyna_pro/claude-api-pricing-explained-what-does-it-really-cost-in-2025-50b0",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1940-en-tech-cloudflare-workers-k",
+      "keyword": "cloudflare workers kv storage vs d1 sqlite latency cold start comparison edge function",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216717",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers에서 KV와 D1 중 어떤 스토리지가 콜드 스타트와 지연시간에서 유리한지 판단하려 함",
+      "angle": "동일 엣지 함수에서 KV vs D1 응답 시간 실측 + 유스케이스별 선택 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Cloudflare Workers KV vs D1: Complete Performance Guide | PropTechUSA.ai",
+          "url": "https://www.proptechusa.ai/news/cloudflare-workers-kv-vs-d1-performance-comparison",
+          "source": "www.proptechusa.ai"
+        },
+        {
+          "title": "Cloudflare Workers KV in Practice: A Complete Guide to Distributed Key-Value Storage · BetterLink Bl",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260422-cloudflare-workers-kv-guide/",
+          "source": "eastondev.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1941-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose 1gb ram vps alert rule out of memory tuning",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216744",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAM 1GB VPS에서 Prometheus + Node Exporter를 Docker Compose로 돌릴 때 메모리 부족 문제 해결 원함",
+      "angle": "scrape_interval 조정 + TSDB retention 최소화로 1GB 서버에서 안정 운영한 설정 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "Prometheus Node Exporter - Metrics Configuration & Alerting | SigNoz",
+          "url": "https://signoz.io/guides/prometheus-node-exporter-metrics/",
+          "source": "signoz.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1942-en-tech-cursor-ide-vs-windsu",
+      "keyword": "cursor ide vs windsurf real coding workflow comparison context window token cost solo dev",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216770",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cursor와 Windsurf 중 실제 개발 워크플로우에서 어느 쪽이 더 비용 효율적인지 비교 정보가 필요함",
+      "angle": "2주 동안 동일 프로젝트를 두 툴로 번갈아 작업한 컨텍스트 소비량 + 체감 생산성 솔직 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cursor vs VS Code vs Windsurf: Choosing Your AI Code ...",
+          "url": "https://daily.dev/blog/cursor-vs-vs-code-vs-windsurf-ai-code-editor-comparison/",
+          "source": "daily.dev"
+        },
+        {
+          "title": "Windsurf vs Cursor: which is the better AI code editor?",
+          "url": "https://www.builder.io/blog/windsurf-vs-cursor",
+          "source": "www.builder.io"
+        },
+        {
+          "title": "Windsurf vs Cursor: A Comparison With Examples | DataCamp",
+          "url": "https://www.datacamp.com/blog/windsurf-vs-cursor",
+          "source": "www.datacamp.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1943-ko-tech-M3-맥북-16GB-메모리-ollam",
+      "keyword": "M3 맥북 16GB 메모리 ollama gemma3 한국어 답변 속도 실측 토큰 퍼 세컨드 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216790",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 16GB 환경에서 gemma3 모델의 한국어 응답 속도가 실제로 얼마나 나오는지 수치 확인",
+      "angle": "토큰/초 실측 데이터 + 같은 질문을 GPT-4o-mini에 던졌을 때와 품질 비교표",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Google Gemma Locally: Ollama Setup Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/gemma-local-setup-guide",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Ollama 설치 및 기초 사용방법 (feat 로컬 LLM 환경 구축해보기) :: 갓대희의 작은공간",
+          "url": "https://goddaehee.tistory.com/381",
+          "source": "goddaehee.tistory.com"
+        },
+        {
+          "title": "Ollama(올라마): 로컬에서 LLM(Gemma 3 모델) 실행하기 :: GGRS: Geoscience, GIS, & Remote Sensing",
+          "url": "https://foss4g.tistory.com/2088",
+          "source": "foss4g.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1944-ko-tech-Fly.io-월-5달러-이하-사이드-",
+      "keyword": "Fly.io 월 5달러 이하 사이드 프로젝트 인프라 실제 비용 구조 1인 개발자 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216808",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io로 사이드 프로젝트를 운영할 때 실제로 매달 얼마가 나오는지 구체적인 청구 내역이 궁금함",
+      "angle": "3개월 실제 청구서 캡처 + 과금 폭탄 방지를 위한 리소스 제한 설정 팁",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly.io Pricing 2026: 4 Plans from Free–$300/month",
+          "url": "https://costbench.com/software/developer-tools/flyio/",
+          "source": "costbench.com"
+        },
+        {
+          "title": "Fly.io Pricing Breakdown: $40/mo vs $5 VPS (2026)",
+          "url": "https://servercompass.app/blog/flyio-pricing-breakdown-vs-vps",
+          "source": "servercompass.app"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1945-ko-tech-Claude-API-vs-GPT-4o",
+      "keyword": "Claude API vs GPT-4o mini RAG 파이프라인 청크 사이즈 512 vs 1024 검색 정확도 실험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216827",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 구현 시 청크 사이즈와 LLM 선택이 검색 정확도에 미치는 영향을 실험 데이터로 보고 싶음",
+      "angle": "동일 문서셋으로 청크 512/1024 + Claude/GPT 조합 4가지 정확도 비교 실험 결과 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Complete Comparison of GPT and Claude Prompt Caching Billing: 5 Core Differences and the Real Cost I",
+          "url": "https://help.apiyi.com/en/gpt-vs-claude-prompt-caching-pricing-comparison-en.html",
+          "source": "help.apiyi.com"
+        },
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1946-ko-tech-GitHub-Actions-Hugo-",
+      "keyword": "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 스케줄 트리거 안될 때 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216844",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo + Cloudflare Pages 조합에서 GitHub Actions cron 배포가 예정 시각에 실행되지 않는 문제 해결책 탐색",
+      "angle": "GitHub Actions cron 지연 원인 분석 + workflow_dispatch 백업 트리거 조합으로 해결한 실제 yaml 파일",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Scheduled Publishing with GitHub Actions Every 3 Hours | Codeslog",
+          "url": "https://www.codeslog.com/en/posts/github-actions-scheduled-publish-check/",
+          "source": "www.codeslog.com"
+        },
+        {
+          "title": "How I Fixed My CI/CD: Fast, Optimized, and Pro-Level Deploys (Hugo + Cloudflare) - Oli Miah",
+          "url": "https://oli.bdtechx.com/blog/how-i-fixed-my-ci-cd-fast-optimized-and-pro-level-deploys-hugo-cloudflare/",
+          "source": "oli.bdtechx.com"
+        },
+        {
+          "title": "Deploying My Hugo Site to Cloudflare Workers - Chris Wiegman",
+          "url": "https://chriswiegman.com/2026/01/deploying-my-hugo-site-to-cloudflare-workers/",
+          "source": "chriswiegman.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1947-ko-tech-Docker-Compose-healt",
+      "keyword": "Docker Compose healthcheck depends_on 컨테이너 기동 순서 실패 트러블슈팅 실무 사례",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-05-11T10:40:21.379900",
+      "created_at": "2026-05-12T09:43:55.216862",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Cursor Pro 구독 전에 실제 사용량과 토큰 소진 속도가 궁금한 개발자",
-      "angle": "Cursor Pro 3개월 실사용 중 fast request 소진 시점, 어떤 작업(대형 파일 리팩토링 vs 단순 자동완성)에서 토큰이 빨리 닳는지 패턴 분석과 절약 팁 공유",
+      "search_intent": "Docker Compose에서 depends_on만으로 해결 안 되는 컨테이너 기동 순서 문제를 실제로 겪고 해결 방법을 찾는 중",
+      "angle": "healthcheck 조건 미충족으로 앱이 DB보다 먼저 뜨는 케이스 재현 + condition: service_healthy 설정 전후 비교",
       "competition_level": "low",
       "references": [
         {
-          "title": "[AI] Cursor 토큰 소비 구조와 절약 전략 (실사용 경험 기반)",
-          "url": "https://peterica.tistory.com/975",
-          "source": "peterica.tistory.com"
+          "title": "[팀 프로젝트 - 공동구매 플랫폼, zero9] 트러블 슈팅 - Docker Compose 배포 중 서비스 기동 실패: 컨테이너 네트워크 오해",
+          "url": "https://remnantcjy.tistory.com/entry/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EB%8F%99%EA%B5%AC%EB%A7%A4-%ED%94%8C%EB%9E%AB%ED%8F%BC-zero9-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85",
+          "source": "remnantcjy.tistory.com"
         },
         {
-          "title": "💰 Cursor AI, 무료로 어디까지 쓸 수 있을까? 유료 전환이 필요한 순간은? - 지니코딩랩",
-          "url": "https://www.jiniai.biz/2025/05/15/%F0%9F%92%B0-cursor-ai-%EB%AC%B4%EB%A3%8C%EB%A1%9C-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EC%93%B8-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C-%EC%9C%A0%EB%A3%8C-%EC%A0%84%ED%99%98%EC%9D%B4-%ED%95%84/",
-          "source": "www.jiniai.biz"
+          "title": "Health Check로 구축하는 장애 대응 자동화 – 한컴테크",
+          "url": "https://tech.hancom.com/automate-failover-with-health-check/",
+          "source": "tech.hancom.com"
         },
         {
-          "title": "디자이너를 위한 Cursor AI 요금제는 무엇일까?",
-          "url": "https://brunch.co.kr/@ghidesigner/283",
-          "source": "brunch.co.kr"
+          "title": "도커 트러블슈팅 - 컨테이너 실행환경 디버깅 run, exec, commit 명령어 활용하기 - 44BITS",
+          "url": "https://www.44bits.io/ko/post/docker-container-trouble-shooting-by-exec-and-commit",
+          "source": "www.44bits.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1948-ko-tech-Cursor-IDE-컨텍스트-윈도우-",
+      "keyword": "Cursor IDE 컨텍스트 윈도우 초과 오류 대형 모노레포 실전 대응법 .cursorignore 설정",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216879",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "모노레포 환경에서 Cursor가 컨텍스트 초과로 응답 품질이 떨어질 때 실질적인 해결책이 필요함",
+      "angle": ".cursorignore 파일 최적화 + 대용량 repo에서 Cursor 체감 성능 개선 전후 비교 실무 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cursor, Codex, Claude Code: 파일 읽기/쓰기 권한 제한, 한 번에 끝내는 실전 가이드 (2025) :: 메모리허브",
+          "url": "https://memoryhub.tistory.com/entry/Cursor-Codex-Claude-Code-%ED%8C%8C%EC%9D%BC-%EC%9D%BD%EA%B8%B0%EC%93%B0%EA%B8%B0-%EA%B6%8C%ED%95%9C-%EC%A0%9C%ED%95%9C-%ED%95%9C-%EB%B2%88%EC%97%90-%EB%81%9D%EB%82%B4%EB%8A%94-%EC%8B%A4%EC%A0%84-%EA%B0%80%EC%9D%B4%EB%93%9C-2025",
+          "source": "memoryhub.tistory.com"
+        },
+        {
+          "title": "Cursor 사용 가이드: 요금 폭탄 방지용 — All I Need Is Data.",
+          "url": "https://data-newbie.tistory.com/1057",
+          "source": "data-newbie.tistory.com"
+        },
+        {
+          "title": "cursor-multi-repo | Skills Marketplace",
+          "url": "https://lobehub.com/ko/skills/jeremylongshore-claude-code-plugins-plus-skills-cursor-multi-repo",
+          "source": "lobehub.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1949-ko-tech-Vercel-Edge-Function",
+      "keyword": "Vercel Edge Function vs Cloudflare Workers 한국 리전 응답 속도 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-12T09:43:55.216897",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국 사용자 대상 서비스에서 Vercel Edge와 Cloudflare Workers 중 어느 쪽이 실제로 더 빠른지 확인하고 싶음",
+      "angle": "서울 기준 p50/p95 레이턴시 직접 측정 데이터 + 엣지 캐시 히트율에 따른 차이 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Serverless Functions: Vercel Edge & Cloudflare Workers Guide",
+          "url": "https://www.digitalapplied.com/blog/serverless-functions-vercel-cloudflare-guide",
+          "source": "www.digitalapplied.com"
+        },
+        {
+          "title": "Cloudflare Workers vs Vercel 2026: Edge Compute Compared | Morph",
+          "url": "https://www.morphllm.com/comparisons/cloudflare-workers-vs-vercel",
+          "source": "www.morphllm.com"
+        },
+        {
+          "title": "r/webdev on Reddit: Vercel Edge vs Cloudflare Workers: My Benchmarks Show Theo (T3) Might Be Fooling",
+          "url": "https://www.reddit.com/r/webdev/comments/1ntfake/vercel_edge_vs_cloudflare_workers_my_benchmarks/",
+          "source": "www.reddit.com"
         }
       ],
       "content_type_hint": "GUIDE"

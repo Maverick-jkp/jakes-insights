@@ -25024,7 +25024,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880277",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -25049,7 +25049,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:06:48.294010+00:00"
     },
     {
       "id": "1951-ko-tech-Bambu-Lab-오픈소스-논란-3D",
@@ -25057,7 +25059,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880329",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -25082,7 +25084,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:15:38.695908+00:00"
     },
     {
       "id": "1952-en-tech-ollama-llama3.2-3B-q",
@@ -25090,7 +25094,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880351",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25114,7 +25118,9 @@
           "source": "llmpicker.blog"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:17:54.017176+00:00"
     },
     {
       "id": "1953-en-tech-Claude-API-claude-3-",
@@ -25122,7 +25128,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880389",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25146,7 +25152,9 @@
           "source": "www.vellum.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:08:46.327784+00:00"
     },
     {
       "id": "1954-en-tech-Cloudflare-Tunnel-ex",
@@ -25154,7 +25162,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880421",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25173,7 +25181,9 @@
           "source": "panelica.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:19:54.068753+00:00"
     },
     {
       "id": "1955-en-tech-Prometheus-scrape-in",
@@ -25213,7 +25223,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880465",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25237,7 +25247,9 @@
           "source": "uibakery.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:22:00.950520+00:00"
     },
     {
       "id": "1957-ko-tech-맥북-M3-Pro-16GB-ollam",
@@ -25245,7 +25257,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880483",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25269,7 +25281,9 @@
           "source": "medium.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:11:03.053016+00:00"
     },
     {
       "id": "1958-ko-tech-Fly.io-Docker-배포-빌드-",
@@ -25277,7 +25291,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880497",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25301,7 +25315,9 @@
           "source": "fadet-coding.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:24:05.788279+00:00"
     },
     {
       "id": "1959-ko-tech-Claude-API-비용-줄이기-프롬",
@@ -25309,7 +25325,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880510",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25333,7 +25349,9 @@
           "source": "www.stdy.blog"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:13:27.216079+00:00"
     },
     {
       "id": "1960-ko-tech-1인-개발자-월-15달러-이하-풀스택",
@@ -25341,7 +25359,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-13T09:48:06.880524",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25365,7 +25383,9 @@
           "source": "damoang.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-13T12:04:46.974615+00:00",
+      "completed_at": "2026-05-13T12:26:51.477532+00:00"
     },
     {
       "id": "1961-ko-tech-GitHub-Actions-cron-",

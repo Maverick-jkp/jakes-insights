@@ -25186,38 +25186,6 @@
       "completed_at": "2026-05-13T12:19:54.068753+00:00"
     },
     {
-      "id": "1955-en-tech-Prometheus-scrape-in",
-      "keyword": "Prometheus scrape interval memory spike docker compose 512MB container OOM kill fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-13T09:48:06.880444",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 서버에서 Prometheus가 메모리를 과도하게 잡아먹어 OOM이 발생한 DevOps 개발자",
-      "angle": "scrape_interval 조정, retention 축소, --storage.tsdb 옵션으로 512MB 이하 안정 운영 실측",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Kubernetes OOMKilled Error: How to Fix & Tips for Preventing It · Dash0",
-          "url": "https://www.dash0.com/guides/kubernetes-oomkilled-error-how-to-fix-and-tips-for-preventing-it",
-          "source": "www.dash0.com"
-        },
-        {
-          "title": "How to Fix OOMKilled Kubernetes Error (Exit Code 137)?",
-          "url": "https://komodor.com/learn/how-to-fix-oomkilled-exit-code-137/",
-          "source": "komodor.com"
-        },
-        {
-          "title": "Prometheus is using excessive amount of memory - Red Hat Customer Portal",
-          "url": "https://access.redhat.com/solutions/7052941",
-          "source": "access.redhat.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1956-en-tech-Supabase-edge-functi",
       "keyword": "Supabase edge functions cold start latency vs Vercel serverless real measurement 2025",
       "category": "tech",
@@ -25388,92 +25356,431 @@
       "completed_at": "2026-05-13T12:26:51.477532+00:00"
     },
     {
-      "id": "1961-ko-tech-GitHub-Actions-cron-",
-      "keyword": "GitHub Actions cron job 실제로 안 돌아갈 때 원인 5가지 디버깅 방법",
+      "id": "1961-en-tech-Linux-gaming-perform",
+      "keyword": "Linux gaming performance Windows API kernel integration 2026",
       "category": "tech",
-      "lang": "ko",
-      "priority": 7,
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-05-13T09:48:06.880538",
+      "created_at": "2026-05-14T09:36:59.214548",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "cron 스케줄을 설정했는데 GitHub Actions가 예약 시간에 실행되지 않는 개발자",
-      "angle": "공식 문서에 없는 비활성 리포지토리 정책, UTC 오프셋 오해, 워크플로우 파일 위치 문제 등 실패 사례 총정리",
-      "competition_level": "low",
+      "keyword_type": "trend",
+      "search_intent": "Developers and gamers seeing Linux benchmark results beat Windows want to understand if the platform shift is real and permanent",
+      "angle": "Technical deep-dive into how Proton/Wine-driven Windows API backports into the Linux kernel are closing — and now reversing — the gaming performance gap, with implications for developers choosing their platform",
+      "competition_level": "medium",
       "references": [
         {
-          "title": "로컬에서 Act로 GitHub Actions 실행하는 방법",
-          "url": "https://apidog.com/kr/blog/how-to-run-your-github-actions-locally-a-comprehensive-guide-kr/",
-          "source": "apidog.com"
+          "title": "Linux gaming is getting faster because Windows APIs are becoming Linux kernel features",
+          "url": "https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/",
+          "source": "www.xda-developers.com"
         },
         {
-          "title": "github action 간단 사용법 | marinesnow34",
-          "url": "https://marinesnow34.github.io/2024/09/15/gitaction/",
-          "source": "marinesnow34.github.io"
+          "title": "Linux gaming gets boost as Windows APIs go native",
+          "url": "https://www.msn.com/en-us/news/other/linux-gaming-gets-boost-as-windows-apis-go-native/gm-GM15262B23",
+          "source": "www.msn.com"
         },
         {
-          "title": "GitHub Actions: The Complete CI/CD Guide for Developers — env.dev",
-          "url": "https://env.dev/guides/github-actions-guide",
-          "source": "env.dev"
+          "title": "Linux embeds Windows NT synchronisation mechanisms directly in the kernel — gaming performance up to",
+          "url": "https://abit.ee/en/soft/operating-systems/linux-ntsync-wine-11-proton-11-gaming-performance-linux-kernel-windows-2026-en",
+          "source": "abit.ee"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
     },
     {
-      "id": "1962-ko-tech-Docker-Compose-healt",
-      "keyword": "Docker Compose healthcheck depends_on 순서 보장 안될 때 실전 해결 패턴",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-13T09:48:06.880552",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "DB가 준비되기 전에 앱 컨테이너가 실행돼 연결 오류가 반복되는 개발자",
-      "angle": "depends_on condition: service_healthy 설정법과 커스텀 healthcheck 스크립트 작성 실전 예제",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Use Docker Compose depends_on with Health Checks",
-          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-compose-depends-on-healthcheck/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "Fix: Docker Compose Healthcheck Not Working — depends_on Not Waiting or Always Unhealthy - FixDevs",
-          "url": "https://fixdevs.com/blog/docker-compose-healthcheck-not-working/",
-          "source": "fixdevs.com"
-        },
-        {
-          "title": "Docker Compose Health Checks: An Easy-to-follow Guide | Last9",
-          "url": "https://last9.io/blog/docker-compose-health-checks/",
-          "source": "last9.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "1963-ko-tech-Vercel-무료-플랜-함수-실행-시",
-      "keyword": "Vercel 무료 플랜 함수 실행 시간 10초 초과 해결 Edge Runtime 전환 실제 적용기",
+      "id": "1962-ko-tech-리눅스-게이밍-윈도우보다-빠른-이유-",
+      "keyword": "리눅스 게이밍 윈도우보다 빠른 이유 국내 개발자 영향",
       "category": "tech",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-05-13T09:48:06.880564",
+      "created_at": "2026-05-14T09:36:59.214588",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Vercel 무료 플랜에서 API Route 타임아웃이 발생해 Edge Runtime 전환을 고려하는 개발자",
-      "angle": "Node.js Runtime vs Edge Runtime 제약 차이, crypto/fs 모듈 대체재, 실제 마이그레이션 코드 비교",
+      "keyword_type": "trend",
+      "search_intent": "해외에서 '리눅스가 게임 성능에서 윈도우를 앞섰다'는 뉴스를 접한 국내 개발자·게이머가 실제로 OS 전환을 고민하며 검색",
+      "angle": "Proton과 Wine이 윈도우 API를 리눅스 커널 수준으로 끌어올린 기술적 배경을 설명하고, 국내 개발 환경(게임 개발, 서버 운영, 일반 개발자 워크플로)에서 실제로 리눅스 전환이 의미 있는지 체감 기준으로 분석",
       "competition_level": "low",
       "references": [
         {
-          "title": "Edge Functions (Deprecated)",
-          "url": "https://vercel.com/docs/functions/runtimes/edge/edge-functions.rsc",
-          "source": "vercel.com"
+          "title": "[D-BIZ 기획 리포트] AI 시대의 IT 표준 전쟁… '리눅스'가 최후의 승부처인 이유 - 데일리비즈온",
+          "url": "https://www.dailybizon.com/news/articleView.html?idxno=67227",
+          "source": "www.dailybizon.com"
         },
         {
-          "title": "Vercel 무료버전 서버속도 - 인프런 | 커뮤니티 질문&답변",
-          "url": "https://www.inflearn.com/en/community/questions/1641763/vercel-%EB%AC%B4%EB%A3%8C%EB%B2%84%EC%A0%84-%EC%84%9C%EB%B2%84%EC%86%8D%EB%8F%84",
-          "source": "www.inflearn.com"
+          "title": "한국에서 발견한 역대급 리눅스 취약점 - YouTube",
+          "url": "https://www.youtube.com/watch?v=0b-h_PfjeRc",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "수년 만에 최악의 리눅스 위협, 전세계 ‘긴장’ < 클라우드/데이터/사이버보안 < ICT < 기사본문 - 애플경제",
+          "url": "https://www.apple-economy.com/news/articleView.html?idxno=78950",
+          "source": "www.apple-economy.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "1963-en-tech-claude-api-haiku-vs-",
+      "keyword": "claude api haiku vs sonnet cost per 1000 requests real world app comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214649",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude API를 프로덕션에 붙이려는 개발자가 모델별 실제 비용을 계산하고 싶은 상황",
+      "angle": "RAG 앱 기준 월 요청 수 시나리오별 실비용 계산표 + 품질 트레이드오프 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "source": "platform.claude.com"
+        },
+        {
+          "title": "Claude Opus 4.6 vs Sonnet 4.6 vs Haiku 4.5 [2026 Tested]",
+          "url": "https://tech-insider.org/claude-opus-vs-sonnet-vs-haiku-2026/",
+          "source": "tech-insider.org"
+        },
+        {
+          "title": "Sonnet vs Haiku: Claude Model Comparison for Developers | Morph",
+          "url": "https://www.morphllm.com/sonnet-vs-haiku",
+          "source": "www.morphllm.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1964-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 m-series mac setup pitfalls",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214672",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M시리즈 맥을 셀프호스트 러너로 쓰려다가 arm64 아키텍처 문제를 만난 개발자",
+      "angle": "실제 에러 메시지별 원인 분석 + Dockerfile platform 플래그 설정 해결법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Configuring a GitHub Actions Runner on a Mac mini for enhanced CI/CD | Scaleway Documentation",
+          "url": "https://www.scaleway.com/en/docs/tutorials/install-github-actions-runner-mac/",
+          "source": "www.scaleway.com"
+        },
+        {
+          "title": "Using Github's self-hosted runners - Laurent Meyer's Devblog",
+          "url": "https://meyer-laurent.com/using-github-self-hosted-runners",
+          "source": "meyer-laurent.com"
+        },
+        {
+          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
+          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
+          "source": "oneuptime.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1965-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose single vps 1gb ram memory tuning",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214692",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Prometheus 스택을 돌리다가 OOM이 뜨는 상황을 해결하려는 개발자",
+      "angle": "scrape_interval 조정 + retention 축소 + tsdb 청크 설정값 실험 결과 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Prometheus with Docker Compose: Guide & Examples",
+          "url": "https://spacelift.io/blog/prometheus-docker-compose",
+          "source": "spacelift.io"
+        },
+        {
+          "title": "Prometheus with Docker Compose: The Complete Setup Guide | Last9",
+          "url": "https://last9.io/blog/prometheus-with-docker-compose/",
+          "source": "last9.io"
+        },
+        {
+          "title": "CPU and Memory Limits in Docker Compose - Docker Compose Guide | Docker Recipes",
+          "url": "https://docker.recipes/docs/resource-limits",
+          "source": "docker.recipes"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1966-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start latency workaround 2025 production",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214717",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase Edge Functions 콜드 스타트 지연 때문에 UX가 나빠진 개발자가 해결책을 탐색",
+      "angle": "실측 지연 시간 측정 + keep-warm 크론 패턴 적용 전후 p95 응답 시간 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1967-en-tech-cursor-ai-vs-github-",
+      "keyword": "cursor ai vs github copilot context window large codebase real usage difference",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214740",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "대형 모노레포에서 AI 코딩 어시스턴트를 선택하려는 개발자가 실제 차이를 알고 싶은 상황",
+      "angle": "1만 줄 이상 레포 기준 컨텍스트 누락 빈도 실험 + 요금제별 실비용 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Copilot vs Cursor : AI Code Editor Review for 2026 | DigitalOcean",
+          "url": "https://www.digitalocean.com/resources/articles/github-copilot-vs-cursor",
+          "source": "www.digitalocean.com"
+        },
+        {
+          "title": "Cursor vs Claude Code vs GitHub Copilot 2026: The Ultimate Comparison | NxCode",
+          "url": "https://www.nxcode.io/resources/news/cursor-vs-claude-code-vs-github-copilot-2026-ultimate-comparison",
+          "source": "www.nxcode.io"
+        },
+        {
+          "title": "Cursor vs GitHub Copilot: Which AI Coding Tool Should You Use in 2026?",
+          "url": "https://www.truefoundry.com/blog/cursor-vs-github-copilot",
+          "source": "www.truefoundry.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1968-ko-tech-M3-맥북-ollama-한국어-모델-",
+      "keyword": "M3 맥북 ollama 한국어 모델 EEVE vs Llama3 KoAlpaca 실제 답변 품질 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214773",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "맥북에서 로컬 한국어 LLM을 돌리려는 개발자가 어떤 모델이 한국어를 더 잘하는지 찾는 검색",
+      "angle": "동일 프롬프트 10개 기준 답변 비교표 + 토큰 속도 + 메모리 사용량 실측",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "Llama3 한국어 성능 테스트 | Colab에서 Meta-Llama-3 모델 사용해보기🦙 :: 아기여우의 자기계발로그",
+          "url": "https://littlefoxdiary.tistory.com/128",
+          "source": "littlefoxdiary.tistory.com"
+        },
+        {
+          "title": "Ollama LLM 모델 비교 분석~!! - AI 커피믹스 채널",
+          "url": "https://arca.live/b/coffeemix/159183100",
+          "source": "arca.live"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1969-ko-tech-Cloudflare-Workers-K",
+      "keyword": "Cloudflare Workers KV vs D1 1인 개발자 사이드프로젝트 실제 비용 한계 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214792",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare 무료 플랜으로 사이드프로젝트를 만들려는 개발자가 스토리지 선택 기준을 찾는 상황",
+      "angle": "읽기/쓰기 패턴별 무료 한도 소진 시나리오 + 초과 시 실비용 계산 실험",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Pricing · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "클라우드플레어 워커(cloudflare workers)와 AWS 람다(AWS Lambda) 비교 | marinesnow34",
+          "url": "https://marinesnow34.github.io/2024/04/25/worker1/",
+          "source": "marinesnow34.github.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1970-ko-tech-GitHub-Actions-빌드-시간",
+      "keyword": "GitHub Actions 빌드 시간 단축 캐시 전략 Node.js pnpm 실전 적용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214809",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "GitHub Actions CI 빌드가 느려서 캐시를 붙이려는 개발자가 실제 적용 사례를 찾는 검색",
+      "angle": "캐시 미적용 대비 pnpm store 캐시 적용 후 빌드 시간 실측 전후 비교 + 주의사항",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions CI/CD 완벽 가이드, YAML 문법부터 자동 배포까지",
+          "url": "https://itgenius.tistory.com/167",
+          "source": "itgenius.tistory.com"
+        },
+        {
+          "title": "GitHub Actions Self-Hosted Runner 대규모 운영과 보안 하드닝 가이드 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-05-devops-github-actions-self-hosted-runner-ops",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Github Actions Docker 빌드 속도를 최적화 해보자.",
+          "url": "https://hstory0208.tistory.com/entry/Github-Actions-Docker-%EB%B9%8C%EB%93%9C-%EC%86%8D%EB%8F%84%EB%A5%BC-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%B4%EB%B3%B4%EC%9E%90",
+          "source": "hstory0208.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1971-ko-tech-Vercel-무료-플랜-함수-실행-시",
+      "keyword": "Vercel 무료 플랜 함수 실행 시간 초과 Next.js API route 트러블슈팅 실제 사례",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214825",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel 배포 후 10초 제한에 걸린 개발자가 원인과 해결책을 찾는 검색",
+      "angle": "실제 타임아웃 에러 재현 + Edge Runtime 전환 vs 유료 플랜 비교 의사결정 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel을 이용한 무료 웹 배포 이용해보기 - 코딩은재밌어",
+          "url": "https://allinfor.tistory.com/76",
+          "source": "allinfor.tistory.com"
+        },
+        {
+          "title": "Vercel 무료 배포 실전 가이드 2026 — Hobby 플랜으로 사이드 프로젝트 운영하기 | DevFinance",
+          "url": "https://www.devfinance.cloud/tech/vercel-free-deploy",
+          "source": "www.devfinance.cloud"
+        },
+        {
+          "title": "Min-inter",
+          "url": "https://min-inter.co.kr/wiki/vercel-vibe-coding-deploy-platform-guide",
+          "source": "min-inter.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1972-ko-tech-Docker-Compose-개발-환경",
+      "keyword": "Docker Compose 개발 환경 Mac M3 볼륨 마운트 속도 느림 원인 해결 실험",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214840",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥에서 Docker 볼륨 마운트가 느려서 개발 생산성이 떨어진 개발자가 해결책을 탐색",
+      "angle": "virtiofs vs gRPC FUSE 옵션별 파일 I/O 속도 실측 벤치마크 + 권장 설정값",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Colima 도커 개발환경 파일 동기화·볼륨·리소스 튜닝 팁",
+          "url": "https://hoilog.tistory.com/583",
+          "source": "hoilog.tistory.com"
+        },
+        {
+          "title": "[윈도우 개발 환경 설정] 14편: 통합 Docker Compose & 최종 점검 (시리즈 완결)",
+          "url": "https://polarcompass.tistory.com/320",
+          "source": "polarcompass.tistory.com"
+        },
+        {
+          "title": "[Linux] Docker Compose로 컨테이너 관리하기 | yml 파일 구성법 완벽 정리 : 네이버 블로그",
+          "url": "https://m.blog.naver.com/thepoundcake/224150457267",
+          "source": "m.blog.naver.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1973-ko-tech-Claude-API-스트리밍-응답-N",
+      "keyword": "Claude API 스트리밍 응답 Next.js App Router 구현 삽질 기록 edge runtime 주의사항",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214856",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js에서 Claude 스트리밍을 붙이려다 Edge Runtime 제약에 막힌 개발자가 해결법을 찾는 상황",
+      "angle": "실제 에러 로그 + Route Handler vs Server Action 방식 비교 + 동작하는 최소 코드 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Routing: API Routes | Next.js",
+          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
+          "source": "nextjs.org"
+        },
+        {
+          "title": "nextjs-best-practices - Skills",
+          "url": "https://lobehub.com/skills/haniakrim21-everything-claude-code-nextjs-best-practices",
+          "source": "lobehub.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "1974-ko-tech-Tailscale-홈서버-원격-접속-",
+      "keyword": "Tailscale 홈서버 원격 접속 Raspberry Pi 5 외부 IP 없이 설정 실사용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-14T09:36:59.214871",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "공인 IP 없는 환경에서 집 서버에 안전하게 접근하고 싶은 개발자가 실제 구축 사례를 찾는 검색",
+      "angle": "설치부터 iPhone 원격 접속까지 실제 스크린샷 포함 + 무료 플랜 한계 및 대안 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Turning a Raspberry Pi into a Tailscale Exit Node · Raul Melo",
+          "url": "https://raulmelo.me/en/blog/tailscale-exit-node-raspberry-pi",
+          "source": "raulmelo.me"
+        },
+        {
+          "title": "Tailscale을 이용해서, 어디서나 서버에 연결하기. :: B.바보",
+          "url": "https://b-baboo.tistory.com/entry/Tailscale%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%96%B4%EB%94%94%EC%84%9C%EB%82%98-%EC%84%9C%EB%B2%84%EC%97%90-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0",
+          "source": "b-baboo.tistory.com"
+        },
+        {
+          "title": "Tailscale - 나무위키",
+          "url": "https://namu.wiki/w/Tailscale",
+          "source": "namu.wiki"
         }
       ],
       "content_type_hint": "GUIDE"

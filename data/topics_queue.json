@@ -25361,7 +25361,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214548",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -25386,7 +25386,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T11:56:10.778663+00:00"
     },
     {
       "id": "1962-ko-tech-리눅스-게이밍-윈도우보다-빠른-이유-",
@@ -25394,7 +25396,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214588",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -25419,7 +25421,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:07:47.282205+00:00"
     },
     {
       "id": "1963-en-tech-claude-api-haiku-vs-",
@@ -25427,7 +25431,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214649",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25451,7 +25455,9 @@
           "source": "www.morphllm.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T11:58:16.180484+00:00"
     },
     {
       "id": "1964-en-tech-github-actions-self-",
@@ -25491,7 +25497,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214692",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25515,7 +25521,9 @@
           "source": "docker.recipes"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:09:38.623951+00:00"
     },
     {
       "id": "1966-en-tech-supabase-edge-functi",
@@ -25545,7 +25553,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214740",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25569,7 +25577,9 @@
           "source": "www.truefoundry.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:11:34.191502+00:00"
     },
     {
       "id": "1968-ko-tech-M3-맥북-ollama-한국어-모델-",
@@ -25577,7 +25587,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214773",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25601,7 +25611,9 @@
           "source": "arca.live"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:00:35.669369+00:00"
     },
     {
       "id": "1969-ko-tech-Cloudflare-Workers-K",
@@ -25609,7 +25621,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214792",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25628,7 +25640,9 @@
           "source": "marinesnow34.github.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:14:25.701260+00:00"
     },
     {
       "id": "1970-ko-tech-GitHub-Actions-빌드-시간",
@@ -25636,7 +25650,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214809",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25660,7 +25674,9 @@
           "source": "hstory0208.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:16:39.992438+00:00"
     },
     {
       "id": "1971-ko-tech-Vercel-무료-플랜-함수-실행-시",
@@ -25668,7 +25684,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214825",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25692,7 +25708,9 @@
           "source": "min-inter.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:02:39.253789+00:00"
     },
     {
       "id": "1972-ko-tech-Docker-Compose-개발-환경",
@@ -25732,7 +25750,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-14T09:36:59.214856",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -25751,7 +25769,9 @@
           "source": "lobehub.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-14T11:53:57.715492+00:00",
+      "completed_at": "2026-05-14T12:04:44.325392+00:00"
     },
     {
       "id": "1974-ko-tech-Tailscale-홈서버-원격-접속-",

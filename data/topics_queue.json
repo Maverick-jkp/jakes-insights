@@ -26166,38 +26166,6 @@
       "completed_at": "2026-05-16T11:27:39.973625+00:00"
     },
     {
-      "id": "1993-en-tech-warp-terminal-vs-gho",
-      "keyword": "warp terminal vs ghostty developer workflow ssh tmux real usage comparison 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-16T08:50:43.789388",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Warp와 Ghostty 중 실무 SSH+tmux 환경에 더 맞는 터미널 선택을 고민하는 개발자",
-      "angle": "30일 실사용 후 AI 자동완성 실용성·렌더링 속도·플러그인 호환성 3가지 기준 솔직 후기",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "iTerm2 vs Warp vs Ghostty vs Alacritty Mac: Best Terminal 2026 | DevToolReviews",
-          "url": "https://www.devtoolreviews.com/reviews/iterm2-vs-warp-vs-ghostty-vs-alacritty-mac",
-          "source": "www.devtoolreviews.com"
-        },
-        {
-          "title": "Ghostty vs Warp 2.0 vs WezTerm: Best Terminal for AI CLI in 2026 | Termdock",
-          "url": "https://www.termdock.com/en/blog/best-terminal-emulator-ai-cli-2026",
-          "source": "www.termdock.com"
-        },
-        {
-          "title": "Best Terminal for Mac in 2026: Ghostty, Kitty, WezTerm, Alacritty, Warp & More - DEV Community",
-          "url": "https://dev.to/vibehackers/best-terminal-for-mac-in-2026-ghostty-kitty-wezterm-alacritty-warp-more-4pe6",
-          "source": "dev.to"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "1994-ko-tech-M3-맥북-ollama-llama3.",
       "keyword": "M3 맥북 ollama llama3.2 한국어 답변 속도 토큰 실측 GPT-4o-mini 비용 비교 2025",
       "category": "tech",
@@ -26368,65 +26336,441 @@
       "completed_at": "2026-05-16T11:23:39.656583+00:00"
     },
     {
-      "id": "1999-ko-tech-1인-개발자-월-10달러-이하-인프라",
-      "keyword": "1인 개발자 월 10달러 이하 인프라 Docker Compose Fly.io Cloudflare 실제 비용 구성",
+      "id": "1999-en-tech-moving-away-from-Tai",
+      "keyword": "moving away from Tailwind CSS structured CSS guide",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482342",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers who have grown frustrated with Tailwind's utility-class sprawl are actively searching for a credible exit path and alternative CSS architecture patterns",
+      "angle": "Post-Tailwind reality check — what real developers discovered when they returned to structured, semantic CSS after years of utility-first frameworks",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Moving away from Tailwind, and learning to structure my CSS",
+          "url": "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/",
+          "source": "jvns.ca"
+        },
+        {
+          "title": "Tailwind CSS - Kombai Blog",
+          "url": "https://kombai.com/tailwind/introduction/",
+          "source": "kombai.com"
+        },
+        {
+          "title": "Moving from Tailwind 3 to Tailwind 4 in Next.js 15 | 9thCO",
+          "url": "https://www.9thco.com/labs/moving-from-tailwind-3-to-tailwind-4",
+          "source": "www.9thco.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2000-ko-tech-Tailwind-CSS-한계-시맨틱-",
+      "keyword": "Tailwind CSS 한계 시맨틱 CSS 전환 실전",
       "category": "tech",
       "lang": "ko",
-      "priority": 7,
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-05-16T08:50:43.789471",
+      "created_at": "2026-05-17T09:08:26.482385",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "사이드 프로젝트를 최소 비용으로 운영하려는 개발자가 현실적인 인프라 조합 탐색",
-      "angle": "실제 운영 중인 3개 사이드 프로젝트의 서비스별 월 청구 금액을 공개하고 조합 선택 기준 설명",
+      "keyword_type": "trend",
+      "search_intent": "국내 프론트엔드 개발자들이 Tailwind 프로젝트의 유지보수 문제를 체감하고, 대안적인 CSS 설계 방식을 실제로 어떻게 적용하는지 탐색 중",
+      "angle": "해외에서 531점을 받으며 폭발적으로 공유된 탈-Tailwind 경험담을 한국 개발 환경에 비춰 실용적으로 재해석 — 국내 프로젝트 적용 가능성 분석",
       "competition_level": "low",
       "references": [
         {
-          "title": "Cloudflare Workers 비용과 속도 경험기 - 개발한당 | 다모앙 - 종합 커뮤니티",
-          "url": "https://damoang.net/development/2488",
-          "source": "damoang.net"
+          "title": "Moving away from Tailwind, and learning to structure my CSS",
+          "url": "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/",
+          "source": "jvns.ca"
         },
         {
-          "title": "Cloudflare 가격 완전정복 | 무료부터 엔터프라이즈까지 요금제 비교 및 비용절감 팁",
-          "url": "https://notavoid.tistory.com/740",
-          "source": "notavoid.tistory.com"
+          "title": "How to fix shadcn/ui components rendering without styles in a Vite + React project? · shadcn-ui/ui ·",
+          "url": "https://github.com/shadcn-ui/ui/discussions/10595",
+          "source": "github.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2001-en-tech-claude-api-context-w",
+      "keyword": "claude api context window cost optimization chunking strategy under $5 per month",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482448",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Indie developers trying to keep Claude API bills minimal while maintaining response quality in RAG pipelines",
+      "angle": "Actual token-counting experiments across chunk sizes 512/1024/2048 with real cost breakdown per 1000 queries",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Manage costs effectively - Claude Code Docs",
+          "url": "https://code.claude.com/docs/en/costs",
+          "source": "code.claude.com"
         },
         {
-          "title": "클라우드플레어(Cloudflare) 가입 및 도메인 할당",
-          "url": "https://knockknows.com/entry/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%ED%94%8C%EB%A0%88%EC%96%B4Cloudflare-%EA%B0%80%EC%9E%85-%EB%B0%8F-%EB%8F%84%EB%A9%94%EC%9D%B8-%ED%95%A0%EB%8B%B9",
-          "source": "knockknows.com"
+          "title": "Claude Pricing In 2026: Every Plan, API Cost, And Optimization Strategy Explained",
+          "url": "https://www.cloudzero.com/blog/claude-pricing/",
+          "source": "www.cloudzero.com"
+        },
+        {
+          "title": "Token Optimization and Cost Management for ChatGPT & Claude | IntuitionLabs",
+          "url": "https://intuitionlabs.ai/articles/token-optimization-chatgpt-claude-costs",
+          "source": "intuitionlabs.ai"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2000-ko-tech-Cursor-AI-코드-자동완성-Gi",
-      "keyword": "Cursor AI 코드 자동완성 GitHub Copilot 실무 한 달 사용 후 솔직 비교 후기",
+      "id": "2002-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner raspberry pi 4 docker build cache arm64 speed test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482471",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers wanting to run CI/CD on home hardware to avoid GitHub Actions minute limits, curious about real build times",
+      "angle": "Measured build time comparison: GitHub-hosted runner vs Raspberry Pi 4 self-hosted with and without layer caching",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Deploying FastAPI on Raspberry Pi using GitHub Actions (Self‑Hosted Runner) | by Kumar Shishir | Med",
+          "url": "https://tech-logger.medium.com/deploying-fastapi-on-raspberry-pi-using-github-actions-self-hosted-runner-44a41aa111bc",
+          "source": "tech-logger.medium.com"
+        },
+        {
+          "title": "Your GitHub Actions Runners Are Slow, And You Are Paying Too Much For Them. | by Akhilesh Mishra | M",
+          "url": "https://medium.com/@akhilesh-mishra/your-github-actions-runners-are-slow-and-you-are-paying-too-much-for-them-5406577314fe",
+          "source": "medium.com"
+        },
+        {
+          "title": "Running GitHub Actions on Your Desk Instead of Renting Compute | dhewy.dev - Platform Engineering & ",
+          "url": "https://dhewy.dev/posts/running-github-actions-on-your-desk-instead-of-renting-compute/",
+          "source": "dhewy.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2003-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter 2gb vps memory spike alert grafana dashboard minimal config",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482514",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Sysadmins running tight VPS budgets who need monitoring without the monitoring itself consuming all RAM",
+      "angle": "Exact prometheus scrape interval and retention tuning that kept stack under 300MB on a $6/month Hetzner VPS",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "The Playbook I Use To Keep A VPS Calm: Prometheus + Grafana + Node Exporter For Alerts That Actually",
+          "url": "https://www.dchost.com/blog/en/the-playbook-i-use-to-keep-a-vps-calm-prometheus-grafana-node-exporter-for-alerts-that-actually-help/",
+          "source": "www.dchost.com"
+        },
+        {
+          "title": "How to Configure Node Exporter for Prometheus",
+          "url": "https://oneuptime.com/blog/post/2026-01-25-prometheus-node-exporter/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "How to Set Up Prometheus and Grafana on Linux (Step-by-Step) › Shell & Coin",
+          "url": "https://cavecreekcoffee.com/linux-guides/how-to-set-up-prometheus-grafana-linux/",
+          "source": "cavecreekcoffee.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2004-en-tech-weaviate-vs-qdrant-v",
+      "keyword": "weaviate vs qdrant vs chroma local embedding search latency test 100k vectors laptop",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482543",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers prototyping RAG locally who need to pick a vector DB without cloud costs and want real latency numbers",
+      "angle": "Reproducible benchmark script with query latency p50/p99 results across all three DBs on a consumer MacBook",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Choosing the Right Vector Database: OpenSearch vs Pinecone vs Qdrant vs Weaviate vs Milvus vs Chroma",
+          "url": "https://medium.com/@elisheba.t.anderson/choosing-the-right-vector-database-opensearch-vs-pinecone-vs-qdrant-vs-weaviate-vs-milvus-vs-037343926d7e",
+          "source": "medium.com"
+        },
+        {
+          "title": "Top 10 Vector Databases in 2026: Ultimate Comparison, Benchmarks & Use Cases | by Karthikeyan Rathin",
+          "url": "https://karthikeyanrathinam.medium.com/top-10-vector-databases-in-2026-ultimate-comparison-benchmarks-use-cases-6b0e878256b5",
+          "source": "karthikeyanrathinam.medium.com"
+        },
+        {
+          "title": "Chroma vs FAISS vs Qdrant vs Weaviate: Vector Database Comparison 2026 | Local AI Master",
+          "url": "https://localaimaster.com/blog/vector-databases-comparison",
+          "source": "localaimaster.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2005-en-tech-tailscale-exit-node-",
+      "keyword": "tailscale exit node home server cloudflare tunnel conflict dns resolution fix 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482566",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Homelab users combining Tailscale and Cloudflare Tunnel who hit mysterious DNS failures and can't find a clear fix",
+      "angle": "Step-by-step diagnosis of the split-DNS conflict and the exact config change that resolved it on Ubuntu 24.04",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Tailscale is great until you try to stream locally, but one DNS trick fixed everything",
+          "url": "https://www.xda-developers.com/tailscale-great-until-stream-locally-but-one-dns-trick-fixed-everything/",
+          "source": "www.xda-developers.com"
+        },
+        {
+          "title": "Enhanced Tailscale for GL.iNet Routers › RemoteToHome Consulting",
+          "url": "https://remotetohome.io/blog/gl-tailscale-fix/",
+          "source": "remotetohome.io"
+        },
+        {
+          "title": "networking - How to solve DNS resolution for Tailscale and integrate into home network? - Super User",
+          "url": "https://superuser.com/questions/1930542/how-to-solve-dns-resolution-for-tailscale-and-integrate-into-home-network",
+          "source": "superuser.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2006-ko-tech-맥북-M3-16GB-ollama-ll",
+      "keyword": "맥북 M3 16GB ollama llama3.2 한국어 토큰 속도 실측 GPT-4o-mini 비용 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482586",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM과 API 중 어느 쪽이 한국어 작업에 실제로 이득인지 숫자로 확인하고 싶은 개발자",
+      "angle": "동일한 한국어 프롬프트 100개 기준 토큰/초, 품질 점수, 월 비용을 직접 측정한 결과표 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenRouter 모델 가성비 비교 - 오픈클로 에이전트 작업 적합 모델 찾기 | 싸인펜의 Lifelog",
+          "url": "https://signpen.net/2519196",
+          "source": "signpen.net"
+        },
+        {
+          "title": "맥미니 대란 - OpenClaw가 만든 AI 서버 시대, 모델별 구매 가이드",
+          "url": "https://blog.kwt.co.kr/%EB%A7%A5%EB%AF%B8%EB%8B%88-%EB%8C%80%EB%9E%80-openclaw%EA%B0%80-%EB%A7%8C%EB%93%A0-ai-%EC%84%9C%EB%B2%84-%EC%8B%9C%EB%8C%80-%EB%AA%A8%EB%8D%B8%EB%B3%84-%EA%B5%AC%EB%A7%A4-%EA%B0%80%EC%9D%B4/",
+          "source": "blog.kwt.co.kr"
+        },
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2007-ko-tech-Fly.io-무료-플랜-Postgre",
+      "keyword": "Fly.io 무료 플랜 Postgres 연결 수 초과 PgBouncer 설정 1인 개발자 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482604",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 티어에서 DB 연결 에러가 반복 발생해 원인과 해결책을 찾는 솔로 개발자",
+      "angle": "연결 초과 에러 로그 분석부터 PgBouncer 추가까지 실제 삽질 과정과 최종 설정 파일 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly Managed Postgres and database connection limit using the PG Bouncer - Phoenix - Fly.io",
+          "url": "https://community.fly.io/t/fly-managed-postgres-and-database-connection-limit-using-the-pg-bouncer/27103",
+          "source": "community.fly.io"
+        },
+        {
+          "title": "The Developer's Guide to Taming PostgreSQL: How We Tripled Throughput with PgBouncer | by HashCoder ",
+          "url": "https://hashcoder.medium.com/the-developers-guide-to-taming-postgresql-how-we-tripled-throughput-with-pgbouncer-8409854dd4af",
+          "source": "hashcoder.medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2008-ko-tech-Claude-API-청크-사이즈별-R",
+      "keyword": "Claude API 청크 사이즈별 RAG 검색 정확도 실험 512 vs 1024 vs 2048 토큰 한국어 문서",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482622",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 기반 RAG 파이프라인 품질을 올리려고 최적 청크 크기를 찾는 개발자",
+      "angle": "동일한 한국어 기술 문서셋으로 청크 크기만 바꿔가며 Top-3 검색 적중률을 측정한 실험 노트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude - 나무위키",
+          "url": "https://namu.wiki/w/Claude",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "할일이 한참 남았는데 한도 제한? 클로드 코드 토큰/사용량 최적화 절약법 10가지 핵심 요약! - 인프런 | 스토리",
+          "url": "https://www.inflearn.com/pages/claude-code-token-and-usage",
+          "source": "www.inflearn.com"
+        },
+        {
+          "title": "Claude의 두 가지 한도, 사용량과 길이의 차이를 정확히 이해하기 - 박재홍의 실리콘밸리",
+          "url": "https://wikidocs.net/blog/@jaehong/11823/",
+          "source": "wikidocs.net"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2009-ko-tech-Hetzner-VPS-2GB-Prom",
+      "keyword": "Hetzner VPS 2GB Prometheus Grafana Docker Compose 메모리 점유율 최적화 실전 설정",
       "category": "tech",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-05-16T08:50:43.789483",
+      "created_at": "2026-05-17T09:08:26.482641",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Cursor와 Copilot 중 하나를 유료 결제하려는 개발자가 실제 업무 효율 차이 확인",
-      "angle": "실제 TypeScript 프로젝트 작업 기준으로 컨텍스트 이해도·자동완성 속도·가격 대비 만족도를 수치와 함께 비교",
+      "search_intent": "저사양 VPS에서 모니터링 스택을 돌리다가 OOM이 반복돼 해결책을 찾는 개발자",
+      "angle": "스크레이프 간격·보존 기간·캐시 튜닝으로 전체 스택을 280MB 이하로 줄인 설정값 전체 공개",
       "competition_level": "low",
       "references": [
         {
-          "title": "GitHub Copilot vs Cursor vs Claude Code — 3가지 다 쓸어본 실화 비교 (2026년 기준) :: 하네스",
-          "url": "https://suesues.tistory.com/entry/2026%EB%85%84-AI-%EC%BD%94%EB%94%A9-%ED%88%B4-%EB%B9%84%EA%B5%90-%EC%B4%9D%EC%A0%95%EB%A6%AC-%E2%80%94-GitHub-Copilot-vs-Cursor-vs-Claude-Code-%EC%8B%A4%EC%A0%9C-%EC%8D%A8%EB%B3%B8-%ED%9B%84%EA%B8%B0",
-          "source": "suesues.tistory.com"
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
         },
         {
-          "title": "Cursor vs GitHub Copilot vs Claude — AI 코딩 도구 실전 비교 - 코드벤터 - AI Product Development Company",
-          "url": "https://www.codeventer.com/cursor-vs-copilot-vs-claude-comparison/",
-          "source": "www.codeventer.com"
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
+          "source": "railly-linker.tistory.com"
         },
         {
-          "title": "2026 코드 에디터 비교 — VS Code vs Cursor vs Zed, 셋 다 써본 개발자가 솔직하게 정리합니다",
-          "url": "https://techlog.io.kr/code-editor-comparison-2026-vscode-cursor-zed/",
-          "source": "techlog.io.kr"
+          "title": "Deploying a Private, Centralized Observability Stack with rsyslog ROSI (Rsyslog + Loki) | Hetzner Co",
+          "url": "https://community.hetzner.com/tutorials/deploy-rsyslog-rosi-stack/",
+          "source": "community.hetzner.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2010-ko-tech-GitHub-Actions-cron-",
+      "keyword": "GitHub Actions cron 스케줄 실제로 안 될 때 원인 분석 Hugo 블로그 자동 배포 Cloudflare Pages",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482658",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "cron 트리거를 설정했는데 빌드가 예약 시간에 돌지 않아 이유를 모르는 개발자",
+      "angle": "GitHub의 공개 레포 cron 지연 정책 + Cloudflare Pages 연동 시 추가로 발생하는 타이밍 버그 원인과 우회법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo · Cloudflare Pages docs",
+          "url": "https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/",
+          "source": "developers.cloudflare.com"
+        },
+        {
+          "title": "Automatic publishing of my Hugo website using Github and Cloudflare Pages - Virtual to the Core",
+          "url": "https://www.virtualtothecore.com/hugo-github-cloudflare-pages/",
+          "source": "www.virtualtothecore.com"
+        },
+        {
+          "title": "Deploy Hugo + Tailwind v4 to Cloudflare: Super Fast GitHub Workflow | Oli Miah",
+          "url": "https://oli.bdtechx.com/blog/deploy-hugo-to-cloudflare-github-workflow/",
+          "source": "oli.bdtechx.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2011-ko-tech-Weaviate-Qdrant-Chro",
+      "keyword": "Weaviate Qdrant Chroma 로컬 벡터DB 10만 벡터 검색 속도 비교 맥북 실측 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482674",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAG 프로토타입을 로컬에서 빠르게 돌리려는 개발자가 벡터DB 선택 전 실제 성능 수치를 원함",
+      "angle": "동일 임베딩 모델·동일 데이터셋 기준 p50/p99 쿼리 레이턴시와 메모리 사용량 비교 + 선택 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Vector Databases 2026: Pinecone vs Weaviate vs Qdrant vs Chroma | Get AI Perks",
+          "url": "https://www.getaiperks.com/en/blogs/47-vector-databases-2026-comparison",
+          "source": "www.getaiperks.com"
+        },
+        {
+          "title": "2026년 벡터 데이터베이스 완전 비교 — RAG 파이프라인에 어떤 벡터DB를 써야 할까?",
+          "url": "https://hoft.tistory.com/entry/vector-database-comparison-rag-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "Vector Database 엔지니어 커리어 가이드: Pinecone·Weaviate·Milvus·pgvector 완전 비교와 RAG 시대의 필수 역량 | Chaos and Ord",
+          "url": "https://www.youngju.dev/blog/culture/2026-03-23-vector-database-engineer-career-guide",
+          "source": "www.youngju.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2012-ko-tech-Tailscale-홈서버-Cloudf",
+      "keyword": "Tailscale 홈서버 Cloudflare Tunnel 동시 사용 DNS 충돌 해결 Ubuntu 24.04 실전 가이드",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-17T09:08:26.482691",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "홈랩에서 두 서비스를 함께 쓰다가 내부 도메인 DNS가 깨지는 문제를 겪는 개발자",
+      "angle": "split-DNS 충돌 발생 원인 도식화 + /etc/systemd/resolved.conf 수정으로 해결한 정확한 설정 단계",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[홈서버 VPN 끝판왕] WireGuard 대신 Tailscale + NPM + Split DNS 완벽 구축 가이드",
+          "url": "https://betwe.tistory.com/entry/%ED%99%88%EC%84%9C%EB%B2%84-VPN-%EB%81%9D%ED%8C%90%EC%99%95-WireGuard-%EB%8C%80%EC%8B%A0-Tailscale-NPM-Split-DNS-%EC%99%84%EB%B2%BD-%EA%B5%AC%EC%B6%95-%EA%B0%80%EC%9D%B4%EB%93%9C",
+          "source": "betwe.tistory.com"
+        },
+        {
+          "title": "Tailscale VPN 실무 가이드: 설치부터 운영까지의 실전 구성 방법 :: GilliLab - 정보관리기술사 노트",
+          "url": "https://rupijun.tistory.com/entry/Tailscale-VPN-%EC%8B%A4%EB%AC%B4-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%84%A4%EC%B9%98%EB%B6%80%ED%84%B0-%EC%9A%B4%EC%98%81%EA%B9%8C%EC%A7%80%EC%9D%98-%EC%8B%A4%EC%A0%84-%EA%B5%AC%EC%84%B1-%EB%B0%A9%EB%B2%95",
+          "source": "rupijun.tistory.com"
+        },
+        {
+          "title": "Tailscale - 나무위키",
+          "url": "https://namu.wiki/w/Tailscale",
+          "source": "namu.wiki"
         }
       ],
       "content_type_hint": "GUIDE"

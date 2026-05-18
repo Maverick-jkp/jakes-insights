@@ -26401,102 +26401,6 @@
       "completed_at": "2026-05-17T11:09:39.854580+00:00"
     },
     {
-      "id": "2001-en-tech-claude-api-context-w",
-      "keyword": "claude api context window cost optimization chunking strategy under $5 per month",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-05-17T09:08:26.482448",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Indie developers trying to keep Claude API bills minimal while maintaining response quality in RAG pipelines",
-      "angle": "Actual token-counting experiments across chunk sizes 512/1024/2048 with real cost breakdown per 1000 queries",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Manage costs effectively - Claude Code Docs",
-          "url": "https://code.claude.com/docs/en/costs",
-          "source": "code.claude.com"
-        },
-        {
-          "title": "Claude Pricing In 2026: Every Plan, API Cost, And Optimization Strategy Explained",
-          "url": "https://www.cloudzero.com/blog/claude-pricing/",
-          "source": "www.cloudzero.com"
-        },
-        {
-          "title": "Token Optimization and Cost Management for ChatGPT & Claude | IntuitionLabs",
-          "url": "https://intuitionlabs.ai/articles/token-optimization-chatgpt-claude-costs",
-          "source": "intuitionlabs.ai"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2002-en-tech-github-actions-self-",
-      "keyword": "github actions self-hosted runner raspberry pi 4 docker build cache arm64 speed test",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-17T09:08:26.482471",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Developers wanting to run CI/CD on home hardware to avoid GitHub Actions minute limits, curious about real build times",
-      "angle": "Measured build time comparison: GitHub-hosted runner vs Raspberry Pi 4 self-hosted with and without layer caching",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Deploying FastAPI on Raspberry Pi using GitHub Actions (Self‑Hosted Runner) | by Kumar Shishir | Med",
-          "url": "https://tech-logger.medium.com/deploying-fastapi-on-raspberry-pi-using-github-actions-self-hosted-runner-44a41aa111bc",
-          "source": "tech-logger.medium.com"
-        },
-        {
-          "title": "Your GitHub Actions Runners Are Slow, And You Are Paying Too Much For Them. | by Akhilesh Mishra | M",
-          "url": "https://medium.com/@akhilesh-mishra/your-github-actions-runners-are-slow-and-you-are-paying-too-much-for-them-5406577314fe",
-          "source": "medium.com"
-        },
-        {
-          "title": "Running GitHub Actions on Your Desk Instead of Renting Compute | dhewy.dev - Platform Engineering & ",
-          "url": "https://dhewy.dev/posts/running-github-actions-on-your-desk-instead-of-renting-compute/",
-          "source": "dhewy.dev"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2003-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter 2gb vps memory spike alert grafana dashboard minimal config",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-17T09:08:26.482514",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Sysadmins running tight VPS budgets who need monitoring without the monitoring itself consuming all RAM",
-      "angle": "Exact prometheus scrape interval and retention tuning that kept stack under 300MB on a $6/month Hetzner VPS",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "The Playbook I Use To Keep A VPS Calm: Prometheus + Grafana + Node Exporter For Alerts That Actually",
-          "url": "https://www.dchost.com/blog/en/the-playbook-i-use-to-keep-a-vps-calm-prometheus-grafana-node-exporter-for-alerts-that-actually-help/",
-          "source": "www.dchost.com"
-        },
-        {
-          "title": "How to Configure Node Exporter for Prometheus",
-          "url": "https://oneuptime.com/blog/post/2026-01-25-prometheus-node-exporter/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "How to Set Up Prometheus and Grafana on Linux (Step-by-Step) › Shell & Coin",
-          "url": "https://cavecreekcoffee.com/linux-guides/how-to-set-up-prometheus-grafana-linux/",
-          "source": "cavecreekcoffee.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2004-en-tech-weaviate-vs-qdrant-v",
       "keyword": "weaviate vs qdrant vs chroma local embedding search latency test 100k vectors laptop",
       "category": "tech",
@@ -26662,38 +26566,6 @@
       "completed_at": "2026-05-17T11:17:27.689675+00:00"
     },
     {
-      "id": "2009-ko-tech-Hetzner-VPS-2GB-Prom",
-      "keyword": "Hetzner VPS 2GB Prometheus Grafana Docker Compose 메모리 점유율 최적화 실전 설정",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-17T09:08:26.482641",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 모니터링 스택을 돌리다가 OOM이 반복돼 해결책을 찾는 개발자",
-      "angle": "스크레이프 간격·보존 기간·캐시 튜닝으로 전체 스택을 280MB 이하로 줄인 설정값 전체 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
-          "url": "https://denev6.tistory.com/entry/grafana",
-          "source": "denev6.tistory.com"
-        },
-        {
-          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
-          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
-          "source": "railly-linker.tistory.com"
-        },
-        {
-          "title": "Deploying a Private, Centralized Observability Stack with rsyslog ROSI (Rsyslog + Loki) | Hetzner Co",
-          "url": "https://community.hetzner.com/tutorials/deploy-rsyslog-rosi-stack/",
-          "source": "community.hetzner.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2010-ko-tech-GitHub-Actions-cron-",
       "keyword": "GitHub Actions cron 스케줄 실제로 안 될 때 원인 분석 Hugo 블로그 자동 배포 Cloudflare Pages",
       "category": "tech",
@@ -26794,6 +26666,473 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-17T11:07:08.400649+00:00",
       "completed_at": "2026-05-17T11:31:40.738410+00:00"
+    },
+    {
+      "id": "2013-en-tech-AI-won't-speed-up-yo",
+      "keyword": "AI won't speed up your software processes — what it actually changes",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874009",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers and engineering managers are questioning ROI after pushing AI tools on their teams and seeing no velocity improvement",
+      "angle": "Contrarian take: AI accelerates individual output but amplifies upstream process dysfunction — requirements gaps, unclear ownership, and broken feedback loops become the bottleneck instead",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "How AI Reduces Development Time: What the Data Actually Shows",
+          "url": "https://hqsoftwarelab.com/blog/how-ai-reduces-development-time/",
+          "source": "hqsoftwarelab.com"
+        },
+        {
+          "title": "I don't think AI will make your processes go faster | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=48168221",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "r/cscareerquestions on Reddit: What exactly are you people doing who claim AI tools aren’t accelerat",
+          "url": "https://www.reddit.com/r/cscareerquestions/comments/1tdzjpm/what_exactly_are_you_people_doing_who_claim_ai/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2014-ko-tech-AI-개발-생산성-실제로-빨라지나-아",
+      "keyword": "AI 개발 생산성 실제로 빨라지나 아니면 착각인가",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874052",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "국내 개발팀에서도 Cursor·Copilot 도입 후 체감 효과가 없다는 불만이 늘면서, 해외 커뮤니티의 비판적 시각을 찾아보는 수요 증가",
+      "angle": "AI는 개인 코딩 속도를 높이지만, 요구사항 불명확·의사결정 지연 등 조직 프로세스 문제를 오히려 증폭시킨다는 현직 개발자 관점 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "로봇보다 먼저 온 미래 '엔지니어링 AI' 적용 빨라졌다 | 비즈한국",
+          "url": "https://www.bizhankook.com/bk/article/32265",
+          "source": "www.bizhankook.com"
+        },
+        {
+          "title": "[신간산책] 'AI 이후의 미래 어떻게 될 것인가' < 성인신간 < 도서 < 기사본문 - 베리타스알파",
+          "url": "https://www.veritas-a.com/news/articleView.html?idxno=609607",
+          "source": "www.veritas-a.com"
+        },
+        {
+          "title": "[창간기획- AI 패권전쟁②] 반도체 강국의 역설…AI 소프트웨어는 왜 약한가 - 비즈트리뷴",
+          "url": "https://www.biztribune.co.kr/news/articleView.html?idxno=353733",
+          "source": "www.biztribune.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2015-en-tech-claude-api-tool-use-",
+      "keyword": "claude api tool use vs openai function calling latency benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874091",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Tool calling 기능을 실제 프로덕션에 붙이기 전에 어느 API가 더 빠른지 실측 데이터를 보고 싶은 개발자",
+      "angle": "동일 프롬프트·동일 툴 정의 기준으로 응답 시간·토큰 비용·파싱 오류율 3가지 실측 비교표 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude API vs OpenAI API: 2025 Developer Insights",
+          "url": "https://collabnix.com/claude-api-vs-openai-api-2025-complete-developer-comparison-with-benchmarks-code-examples/",
+          "source": "collabnix.com"
+        },
+        {
+          "title": "OpenAI Realtime API vs Claude Voice 2025: Speed, Pricing & Audio Quality Tested - Skywork ai",
+          "url": "https://skywork.ai/blog/ai-agent/openai-realtime-api-vs-claude-voice-2025-speed-pricing-audio-quality-tested/",
+          "source": "skywork.ai"
+        },
+        {
+          "title": "OpenAI vs Claude vs Gemini API: Full Developer Comparison",
+          "url": "https://mongoengine.org/openai-vs-claude-vs-gemini-api/",
+          "source": "mongoengine.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2016-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner raspberry pi 5 docker build cache hit rate",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874111",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "클라우드 CI 비용 절감을 위해 라즈베리파이 5를 self-hosted runner로 쓰려는 개발자",
+      "angle": "실제 Node.js + Docker 프로젝트 기준 캐시 히트율·빌드 시간·전기요금 포함 총비용 실험 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions Self-Hosted Runner: A Complete Guide to Private Environment Deployment · BetterLink B",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260423-github-actions-self-hosted-runner/",
+          "source": "eastondev.com"
+        },
+        {
+          "title": "Deploying FastAPI on Raspberry Pi using GitHub Actions (Self‑Hosted Runner) | by Kumar Shishir | Med",
+          "url": "https://tech-logger.medium.com/deploying-fastapi-on-raspberry-pi-using-github-actions-self-hosted-runner-44a41aa111bc",
+          "source": "tech-logger.medium.com"
+        },
+        {
+          "title": "r/github on Reddit: We cut GitHub Actions build times by 6x with self-hosted runners — sharing our s",
+          "url": "https://www.reddit.com/r/github/comments/1rhpavo/we_cut_github_actions_build_times_by_6x_with/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2017-en-tech-ollama-mistral-7b-vs",
+      "keyword": "ollama mistral 7b vs llama3.2 3b apple silicon m2 8gb ram inference speed tokens per second",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874130",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAM 8GB MacBook에서 로컬 LLM을 돌릴 때 어느 모델이 실용적인지 확인하려는 사용자",
+      "angle": "동일 프롬프트 10개 기준 토큰/초, 메모리 점유, 스왑 발생 여부 실측 비교 + 추천 시나리오 분류",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Ollama Models for 8GB RAM (2026): 12 Models Tested & Ranked | Local AI Master",
+          "url": "https://localaimaster.com/blog/best-local-ai-models-8gb-ram",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best Local LLM Models 2026 | Developer Comparison",
+          "url": "https://www.sitepoint.com/best-local-llm-models-2026/",
+          "source": "www.sitepoint.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2018-en-tech-cloudflare-workers-k",
+      "keyword": "cloudflare workers kv vs d1 sqlite read latency cold start real world test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874149",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare edge에서 소형 앱 스토리지를 선택하기 전에 실제 레이턴시 차이를 알고 싶은 개발자",
+      "angle": "동일 엣지 리전에서 KV read vs D1 SELECT 각 100회 실측 후 p50·p95·cold start 분포 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Cloudflare Workers KV in Practice: A Complete Guide to Distributed Key-Value Storage · BetterLink Bl",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260422-cloudflare-workers-kv-guide/",
+          "source": "eastondev.com"
+        },
+        {
+          "title": "Cloudflare Workers KV vs D1: Complete Performance Guide | PropTechUSA.ai",
+          "url": "https://www.proptechusa.ai/news/cloudflare-workers-kv-vs-d1-performance-comparison",
+          "source": "www.proptechusa.ai"
+        },
+        {
+          "title": "Choosing a data or storage product. · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/storage-options/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2019-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter custom metric python script scrape interval memory overhead solo server",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874174",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "단일 저사양 서버에서 커스텀 Python 메트릭을 Prometheus에 밀어넣으려는 개발자",
+      "angle": "scrape_interval 15s·30s·60s별 메모리·CPU 오버헤드 측정 + 최소 구성 docker-compose.yml 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Optimize Prometheus Node Exporter Metrics Collection | by Karuthevar | Medium",
+          "url": "https://medium.com/@karuthevar22/optimize-prometheus-node-exporter-metrics-collection-33150760ccb2",
+          "source": "medium.com"
+        },
+        {
+          "title": "How to Implement Prometheus Node Exporter for Host-Level Metrics Collection",
+          "url": "https://oneuptime.com/blog/post/2026-02-09-prometheus-node-exporter-host-metrics/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Prometheus Node Exporter - Metrics Configuration & Alerting | SigNoz",
+          "url": "https://signoz.io/guides/prometheus-node-exporter-metrics/",
+          "source": "signoz.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2020-en-tech-supabase-edge-functi",
+      "keyword": "supabase edge functions cold start time vs vercel serverless node 18 api route benchmark",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874219",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "풀스택 SaaS 사이드 프로젝트의 백엔드 선택 전 엣지 함수 콜드 스타트 실측값이 필요한 개발자",
+      "angle": "동일 JSON 응답 엔드포인트 기준 콜드·웜 스타트 각 50회 측정, 무료 플랜 제한 포함 실용 판단 기준 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Edge Functions Architecture | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/functions/architecture",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Edge Functions vs Serverless vs Containers — A Cost and Performance Shootout | CODERCOPS",
+          "url": "https://www.codercops.com/blog/edge-functions-vs-serverless-vs-containers",
+          "source": "www.codercops.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2021-ko-tech-맥북-M3-Pro-16GB-ollam",
+      "keyword": "맥북 M3 Pro 16GB ollama llama3.2 한국어 코드 리뷰 실제 속도 측정 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874239",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 Pro MacBook에서 로컬 LLM으로 한국어 코드 리뷰가 실용적인지 확인하고 싶은 개발자",
+      "angle": "실제 PR diff 5개 기준 응답 품질·속도·메모리 점유 측정, GPT-4o-mini 결과와 나란히 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ollama Just Got 2x Faster on Mac (Here's How) - YouTube",
+          "url": "https://www.youtube.com/watch?v=HDlMRaJq8FE",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "r/LocalLLaMA on Reddit: Ran Qwen 3.5 9B on M1 Pro (16GB) as an actual agent, not just a chat demo. H",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1rll349/ran_qwen_35_9b_on_m1_pro_16gb_as_an_actual_agent/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2022-ko-tech-1인-개발자-Fly.io-Supaba",
+      "keyword": "1인 개발자 Fly.io Supabase 무료 플랜 사이드 프로젝트 6개월 실제 비용 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874256",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 최소 비용으로 운영 중인 개발자가 실제 청구 내역과 함정을 알고 싶은 상황",
+      "angle": "6개월 실제 인보이스 캡처 공개, 무료 한도 초과 시나리오별 과금 구조 분석 및 회피 설정 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "1인 개발자의 다수 프로젝트 운영을 위한 Supab... - Inflearn | Community Q&A",
+          "url": "https://www.inflearn.com/en/community/questions/1780024/1%EC%9D%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-%EB%8B%A4%EC%88%98-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9A%B4%EC%98%81%EC%9D%84-%EC%9C%84%ED%95%9C-supabase-%EB%B9%84%EC%9A%A9-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%A0%84%EB%9E%B5-db-%ED%86%B5%ED%95%A9-%EC%97%90-%EB%8C%80%ED%95%B4-%EC%A1%B0%EC%96%B8%EC%9D%84-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4",
+          "source": "www.inflearn.com"
+        },
+        {
+          "title": "* 무료 플랜 특징 1. Supabase 무료 플랜은 개인 프로젝트나 학습용으로 충분 2. 가장 중요한 건, 1주일간 활동이 없으면 프로젝트가 자동 중지. 3. 중지된 프로젝트는 ",
+          "url": "https://www.threads.com/@ghil_book_pic/post/DPsojPbE2KK/-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%8A%B9%EC%A7%951-supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C%EC%9D%80-%EA%B0%9C%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%82%98-%ED%95%99%EC%8A%B5%EC%9A%A9%EC%9C%BC%EB%A1%9C-%EC%B6%A9%EB%B6%842-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EA%B1%B4-1%EC%A3%BC%EC%9D%BC%EA%B0%84-%ED%99%9C%EB%8F%99%EC%9D%B4-%EC%97%86%EC%9C%BC%EB%A9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B0%80-%EC%9E%90%EB%8F%99-%EC%A4%91%EC%A7%803",
+          "source": "www.threads.com"
+        },
+        {
+          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
+          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
+          "source": "lookfortaste.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2023-ko-tech-GitHub-Actions-캐시-미스",
+      "keyword": "GitHub Actions 캐시 미스 원인 Docker layer node_modules 모노레포 삽질 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874272",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "모노레포 환경에서 CI 캐시가 매번 무효화되어 빌드 시간이 폭증하는 문제를 겪는 개발자",
+      "angle": "캐시 키 설계 실수 유형 4가지 정리 + 수정 전후 빌드 시간 비교, 실제 workflow YAML 전체 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Actions 아티팩트 & 캐시 | CI 속도·결과 관리 핵심 기술",
+          "url": "https://velog.io/@okorion/GitHub-Actions-%EC%95%84%ED%8B%B0%ED%8C%A9%ED%8A%B8-%EC%BA%90%EC%8B%9C-CI-%EC%86%8D%EB%8F%84%EA%B2%B0%EA%B3%BC-%EA%B4%80%EB%A6%AC-%ED%95%B5%EC%8B%AC-%EA%B8%B0%EC%88%A0-1dfjtj31",
+          "source": "velog.io"
+        },
+        {
+          "title": "S3 cache for GitHub Actions - RunsOn",
+          "url": "https://runs-on.com/caching/s3-cache-for-github-actions/",
+          "source": "runs-on.com"
+        },
+        {
+          "title": "GitHub Actions Self-Hosted Runner 대규모 운영과 보안 하드닝 가이드 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/devops/2026-03-05-devops-github-actions-self-hosted-runner-ops",
+          "source": "www.youngju.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2024-ko-tech-Claude-API-스트리밍-응답-R",
+      "keyword": "Claude API 스트리밍 응답 React 프론트엔드 연결 끊김 재시도 로직 구현 실전",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874287",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Claude 스트리밍을 붙였는데 네트워크 불안정 시 응답이 끊겨 UX가 망가지는 문제를 해결하려는 개발자",
+      "angle": "SSE 재연결 로직 + AbortController 조합 패턴을 코드 전체 포함하여 단계별 구현, 실패 케이스 재현 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "17. 트러블슈팅 - 클로드 코드 가이드",
+          "url": "https://wikidocs.net/333432",
+          "source": "wikidocs.net"
+        },
+        {
+          "title": "Claude 콘솔 API 오류 해결: 401, 429, 응답 중단 빠른 수정 가이드 - 클로드 | Titikey | Titikey",
+          "url": "https://www.titikey.com/ko/article/article-1771171134785",
+          "source": "www.titikey.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2025-ko-tech-Cloudflare-Pages-Hug",
+      "keyword": "Cloudflare Pages Hugo 블로그 빌드 실패 원인 분석 테마 서브모듈 캐시 문제 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874303",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그를 Cloudflare Pages에 배포 중 빌드가 갑자기 실패하기 시작한 개발자",
+      "angle": "서브모듈 미초기화·Hugo 버전 불일치·캐시 고착 3가지 원인별 에러 로그 패턴과 해결 명령어 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Hugo를 사용하여 블로그를 구축하고 Cloudflare Pages에 배포하기 | Heyjude's Blog",
+          "url": "https://www.heyjude.blog/ko/posts/deploy-hugo-to-cloudflare/",
+          "source": "www.heyjude.blog"
+        },
+        {
+          "title": "Cloudflare가 뭐길래? 클라우드플레어 무한로딩 / 에러코드 500 진짜 원인 : 네이버 블로그",
+          "url": "https://m.blog.naver.com/techref/224095995661",
+          "source": "m.blog.naver.com"
+        },
+        {
+          "title": "Cloudflare Pages와 GitHub을 활용한 무료 웹 서비스 배포 가이드",
+          "url": "https://easy-scraping.com/entry/Cloudflare-Pages%EC%99%80-GitHub%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%AC%B4%EB%A3%8C-%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%B0%B0%ED%8F%AC-%EA%B0%80%EC%9D%B4%EB%93%9C",
+          "source": "easy-scraping.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2026-ko-tech-Grafana-Loki-Docker-",
+      "keyword": "Grafana Loki Docker Compose RAM 1GB 서버 설치 메모리 최적화 설정 실전",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874319",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 로그 수집 스택을 올리려는데 Loki가 메모리를 폭식해서 서버가 죽는 문제를 겪는 개발자",
+      "angle": "chunk_store·ingester·retention 설정 조합별 실측 메모리 사용량 표 + 1GB 서버 생존 가능한 최소 설정 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
+          "source": "railly-linker.tistory.com"
+        },
+        {
+          "title": "How to Run Loki in Docker and Docker Compose",
+          "url": "https://oneuptime.com/blog/post/2026-01-21-loki-docker-compose/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "그라파나(Grafana) 마스터 가이드: 설치부터 대시보드 구축, 알림, 실전 활용까지 완벽 정리",
+          "url": "https://puffinknight.tistory.com/256",
+          "source": "puffinknight.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2027-ko-tech-Vercel-AI-SDK-useCha",
+      "keyword": "Vercel AI SDK useChat 토큰 스트리밍 한국어 깨짐 multibyte 인코딩 버그 해결 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-18T11:09:11.874335",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Vercel AI SDK로 한국어 스트리밍 구현 시 글자가 깨지거나 잘리는 현상을 겪는 개발자",
+      "angle": "UTF-8 멀티바이트 청크 분할 문제 원인 코드 레벨 분석 + TextDecoder 버퍼링 패턴으로 해결하는 코드 전체 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI SDK",
+          "url": "https://vercel.com/docs/ai-sdk",
+          "source": "vercel.com"
+        },
+        {
+          "title": "GitHub - vercel/ai: The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a fre",
+          "url": "https://github.com/vercel/ai",
+          "source": "github.com"
+        },
+        {
+          "title": "Vercel AI SDK Complete Guide: Building Production-Ready AI Chat Apps with Next.js - DEV Community",
+          "url": "https://dev.to/pockit_tools/vercel-ai-sdk-complete-guide-building-production-ready-ai-chat-apps-with-nextjs-4cp6",
+          "source": "dev.to"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

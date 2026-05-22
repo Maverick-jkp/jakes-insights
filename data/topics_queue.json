@@ -27784,33 +27784,6 @@
       "completed_at": "2026-05-21T13:03:04.488423+00:00"
     },
     {
-      "id": "2057-en-tech-GitHub-Actions-self-",
-      "keyword": "GitHub Actions self-hosted runner Docker container memory limit OOM killed troubleshooting 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-21T10:42:09.829970",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "self-hosted runner가 OOM으로 죽는 문제를 해결하려는 DevOps 엔지니어",
-      "angle": "실제 OOM 원인 분석과 --memory 플래그, swap 설정으로 해결한 삽질 후기",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Use Self-Hosted Runners in GitHub Actions",
-          "url": "https://oneuptime.com/blog/post/2025-12-20-self-hosted-runners-github-actions/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "Self-Hosted GitHub Actions Runners on AWS EC2: Solving Memory and Disk Space Challenges | by ELVIS G",
-          "url": "https://medium.com/@elvisgitau10/self-hosted-github-actions-runners-on-aws-ec2-solving-memory-and-disk-space-challenges-9c3299de9d2c",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2058-en-tech-Cursor-AI-vs-GitHub-",
       "keyword": "Cursor AI vs GitHub Copilot actual token usage cost solo developer monthly bill comparison",
       "category": "tech",
@@ -27843,38 +27816,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-21T12:44:59.472078+00:00",
       "completed_at": "2026-05-21T12:48:58.721246+00:00"
-    },
-    {
-      "id": "2059-en-tech-Prometheus-node-expo",
-      "keyword": "Prometheus node exporter Docker Compose single VPS 1GB RAM scrape interval tuning OOM fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-21T10:42:09.830015",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "저사양 VPS에서 Prometheus 스택이 메모리 부족으로 죽는 문제를 해결하려는 개발자",
-      "angle": "scrape_interval, retention, --storage.tsdb 옵션 조정으로 1GB RAM 안에서 안정 운영하는 설정 공유",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Monitoring for Efficiency: Leveraging Grafana and Prometheus to Track VPS Utilization - DoHost",
-          "url": "https://dohost.us/index.php/2026/05/21/monitoring-for-efficiency-leveraging-grafana-and-prometheus-to-track-vps-utilization/",
-          "source": "dohost.us"
-        },
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "Prometheus Node Exporter - Metrics Configuration & Alerting | SigNoz",
-          "url": "https://signoz.io/guides/prometheus-node-exporter-metrics/",
-          "source": "signoz.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "2060-ko-tech-M3-맥북-16GB-ollama-ll",
@@ -28042,65 +27983,478 @@
       "completed_at": "2026-05-21T12:57:09.024344+00:00"
     },
     {
-      "id": "2065-ko-tech-Claude-API-vs-OpenAI",
-      "keyword": "Claude API vs OpenAI API 한국어 코드 리뷰 품질 비용 대비 실무 사용 비교 2025",
+      "id": "2065-en-tech-AI-memory-demand-kil",
+      "keyword": "AI memory demand killing cheap smartphones 2026",
       "category": "tech",
-      "lang": "ko",
+      "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-05-21T10:42:09.830132",
+      "created_at": "2026-05-22T10:26:33.199519",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "한국어 개발 환경에서 어떤 LLM API가 더 실용적인지 판단하려는 개발자",
-      "angle": "동일 PR diff를 두 API에 넣고 코드 리뷰 품질, 속도, 토큰 비용을 항목별로 실측 비교",
+      "keyword_type": "trend",
+      "search_intent": "Developers and tech-aware consumers noticing smartphone prices creeping up want to understand the structural cause behind the trend",
+      "angle": "Supply chain economics angle: how AI datacenter DRAM demand is directly competing with consumer device memory, creating a hidden tax on every new phone purchase",
       "competition_level": "low",
       "references": [
         {
-          "title": "AI 코딩 플랫폼 비교 분석",
-          "url": "https://brunch.co.kr/@b2439ea8fc654b8/112",
-          "source": "brunch.co.kr"
+          "title": "AI is killing the cheap smartphone - David Oks",
+          "url": "https://davidoks.blog/p/ai-is-killing-the-cheap-smartphone",
+          "source": "davidoks.blog"
         },
         {
-          "title": "Claude Code vs OpenAI Codex 완전 가이드: 설치부터 실전 명령어·예시까지",
-          "url": "https://www.ranketai.com/ko/blog/explainer-claude-code-vs-openai-codex-2026-03-17",
-          "source": "www.ranketai.com"
+          "title": "BT warns of smartphone price rises due to chip shortages from AI boom | BT | The Guardian",
+          "url": "https://www.theguardian.com/business/2026/may/21/bt-smartphone-price-rises-chip-shortages-ai-boom",
+          "source": "www.theguardian.com"
         },
         {
-          "title": "Claude Code vs Codex, 어떤 AI 코딩 에이전트가 더 나을까? | 이랜서 블로그",
-          "url": "https://www.elancer.co.kr/blog/detail/1074",
-          "source": "www.elancer.co.kr"
+          "title": "What Is RAMageddon? Why AI Is Making Laptops and Phones More Expensive - CNET",
+          "url": "https://www.cnet.com/tech/services-and-software/what-is-ramageddon-why-ai-is-making-laptops-and-phones-more-expensive/",
+          "source": "www.cnet.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2066-ko-tech-AI-데이터센터-메모리-수요가-스마트",
+      "keyword": "AI 데이터센터 메모리 수요가 스마트폰 가격 올리는 이유",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199557",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "가격이 오른 스마트폰·전자기기를 구매하려는 소비자와 반도체 업황을 추적하는 개발자·투자자가 원인을 검색",
+      "angle": "국내 삼성·SK하이닉스 DRAM 생산 비중과 AI 서버 수요 연결 — 한국 독자에게 가장 직접적인 피해 경로를 짚는 로컬 앵글",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "\"AI, 너 다이어트 해야겠다\"…메모리 쇼크에 애플·삼성 승부수",
+          "url": "https://m.dailian.co.kr/amp/news/view/1644733/AI-%EB%84%88-%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8-%ED%95%B4%EC%95%BC%EA%B2%A0%EB%8B%A4%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%87%BC%ED%81%AC-2026",
+          "source": "m.dailian.co.kr"
+        },
+        {
+          "title": "[AI로 읽는 경제] ① ﻿전쟁이 바꾼 세계 공장…효율의 시대가 끝났다",
+          "url": "https://www.newspim.com/news/view/20260518001195",
+          "source": "www.newspim.com"
+        },
+        {
+          "title": "\"AI 돈잔치의 그늘\"…외신이 본 삼성 파업의 본질[한국에 무슨 일이⑥]",
+          "url": "https://v.daum.net/v/20260517060227030",
+          "source": "v.daum.net"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2067-en-tech-claude-api-vs-openai",
+      "keyword": "claude api vs openai api cost per 1000 requests python script actual invoice comparison",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199604",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers building LLM-powered apps want real invoice-level cost data before choosing between Claude and OpenAI APIs",
+      "angle": "Side-by-side cost breakdown using a real Python script sending 1000 mixed-length requests to both APIs with actual billing screenshots",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude API vs OpenAI API Pricing: Which Is Cheaper for Your Workload? | LaoZhang AI Blog",
+          "url": "https://blog.laozhang.ai/en/posts/claude-api-vs-openai-api-pricing",
+          "source": "blog.laozhang.ai"
+        },
+        {
+          "title": "Gemini API vs OpenAI vs Claude: Complete 2026 Cost Decision Guide - API Pricing Comparison with Real",
+          "url": "https://www.aifreeapi.com/en/posts/gemini-api-vs-openai-vs-claude-2026-cost-guide",
+          "source": "www.aifreeapi.com"
+        },
+        {
+          "title": "Pricing - Claude API Docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+          "source": "platform.claude.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2066-ko-tech-Docker-Desktop-없이-Ma",
-      "keyword": "Docker Desktop 없이 Mac M3 Colima 설정 메모리 CPU 할당 실전 트러블슈팅 2025",
+      "id": "2068-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner raspberry pi 4 docker build time vs github hosted",
       "category": "tech",
-      "lang": "ko",
-      "priority": 7,
+      "lang": "en",
+      "priority": 8,
       "status": "pending",
-      "created_at": "2026-05-21T10:42:09.830148",
+      "created_at": "2026-05-22T10:26:33.199628",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Docker Desktop 유료화 이후 Colima로 전환하려는 Mac 개발자",
-      "angle": "Colima 설치부터 메모리/CPU 튜닝, Volume 마운트 이슈 해결까지 실제 삽질 과정을 단계별로 기록",
+      "search_intent": "Makers and indie devs want to know if a Raspberry Pi 4 self-hosted runner is actually faster or cheaper than GitHub-hosted for Docker builds",
+      "angle": "Timed experiment running identical Docker build workflows on Pi 4 self-hosted vs GitHub-hosted, with real minute-cost math",
       "competition_level": "low",
       "references": [
         {
-          "title": "Mac에서 Colima + Docker + docker-compose 실전 명령어 정리",
-          "url": "https://trytoso.tistory.com/entry/%F0%9F%90%B3-Mac%EC%97%90%EC%84%9C-Colima-Docker-docker-compose-%EC%8B%A4%EC%A0%84-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC",
-          "source": "trytoso.tistory.com"
+          "title": "Use Docker to Set Up a Self-Hosted GitHub Actions Runner in 10 Minutes — LeoTheLegion",
+          "url": "https://leothelegion.net/2025/07/28/use-docker-to-set-up-self-hosted-github-actions-runner-in-10-minutes/",
+          "source": "leothelegion.net"
         },
         {
-          "title": "MacOS에서 Colima 사용 완벽정리! - Covenant - 티스토리",
-          "url": "https://covenant.tistory.com/298",
-          "source": "covenant.tistory.com"
+          "title": "GitHub Actions Self-Hosted Runner: A Complete Guide to Private Environment Deployment · BetterLink B",
+          "url": "https://eastondev.com/blog/en/posts/dev/20260423-github-actions-self-hosted-runner/",
+          "source": "eastondev.com"
         },
         {
-          "title": "Colima로 Docker Desktop 없이 컨테이너 개발하기 | Engineering Blog by Dale Seo",
-          "url": "https://daleseo.com/colima/",
-          "source": "daleseo.com"
+          "title": "GitHub Actions vs Self-Hosted Runners",
+          "url": "https://rafftechnologies.com/learn/guides/github-actions-vs-self-hosted-runners",
+          "source": "rafftechnologies.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2069-en-tech-supabase-free-tier-r",
+      "keyword": "supabase free tier row limit hit what happens real behavior test 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199648",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Developers on Supabase free plan want to know exactly what happens when they approach or exceed the 500MB/50k row limit",
+      "angle": "Stress-test documenting actual error messages, insert behavior, and degradation steps when Supabase free tier limits are reached",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Supabase Free Tier Limits: What You Actually Get In 2026",
+          "url": "https://aiagencyplus.com/supabase-free-tier-limits/",
+          "source": "aiagencyplus.com"
+        },
+        {
+          "title": "Supabase Free Tier Limits in 2026: What You Actually Get (And When You Will Hit Them) | I Love Blogs",
+          "url": "https://www.iloveblogs.blog/post/supabase-free-tier-limits-2026",
+          "source": "www.iloveblogs.blog"
+        },
+        {
+          "title": "Making the Most of Supabase’s Free Tier: A Practical Guide | by Reliable Data Engineering | Medium",
+          "url": "https://medium.com/@reliabledataengineering/making-the-most-of-supabases-free-tier-a-practical-guide-ef4817d84a26",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2070-en-tech-wsl2-ubuntu-24.04-do",
+      "keyword": "wsl2 ubuntu 24.04 docker desktop memory leak fix windows 11 16gb ram",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199666",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Windows developers are losing RAM to WSL2 and Docker Desktop and need a confirmed working fix specific to Ubuntu 24.04",
+      "angle": "Step-by-step troubleshooting log with .wslconfig tuning, before/after Task Manager screenshots on a 16GB Windows 11 machine",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Regarding WSL Network and Docker Memory Consumption Following Windows Update - Microsoft Q&A",
+          "url": "https://learn.microsoft.com/en-us/answers/questions/5621996/regarding-wsl-network-and-docker-memory-consumptio",
+          "source": "learn.microsoft.com"
+        },
+        {
+          "title": "How to Reclaim Memory from Docker WSL - DEV Community",
+          "url": "https://dev.to/colin-williams-dev/how-to-reclaim-memory-from-docker-wsl-2lkf",
+          "source": "dev.to"
+        },
+        {
+          "title": "Docker with wsl2 using ALL my memory : r/docker",
+          "url": "https://www.reddit.com/r/docker/comments/1lk0wtf/docker_with_wsl2_using_all_my_memory/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2071-en-tech-obsidian-git-plugin-",
+      "keyword": "obsidian git plugin sync conflict resolution workflow solo developer daily notes",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199691",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Solo developers using Obsidian across multiple devices want a reliable Git sync workflow that avoids daily note merge conflicts",
+      "angle": "My personal vault structure and .gitignore setup that eliminated merge conflicts across 3 devices over 6 months",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "XIYO's Hole - Obsidian Sync Guide",
+          "url": "https://blog.xiyo.dev/en-us/posts/tools/note-taking/obsidian/obsidian-sync-guide",
+          "source": "blog.xiyo.dev"
+        },
+        {
+          "title": "GitHub - mnott/Obsidian-iCloud: Obsidian iCloud Sync · GitHub",
+          "url": "https://github.com/mnott/Obsidian-iCloud",
+          "source": "github.com"
+        },
+        {
+          "title": "How I am Using Git and Obsidian for Note Version Management",
+          "url": "https://itsfoss.com/git-with-obsidian/",
+          "source": "itsfoss.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2072-en-tech-hetzner-cx22-vs-digi",
+      "keyword": "hetzner cx22 vs digitalocean basic droplet $6 node.js api response time actual ab test",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199716",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Budget-conscious developers want real performance data to choose between Hetzner and DigitalOcean at the lowest price tier",
+      "angle": "Apache Bench load test results on identical Node.js Express APIs deployed on both VPS, with p95 latency and CPU throttling observations",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "DigitalOcean vs. Hetzner Cloud: a side-by-side comparison for 2026 | Better Stack Community",
+          "url": "https://betterstack.com/community/guides/web-servers/digitalocean-vs-hetzner/",
+          "source": "betterstack.com"
+        },
+        {
+          "title": "Hetzner vs DigitalOcean for Solo Developers (2026) | SoloDevStack",
+          "url": "https://solodevstack.com/blog/hetzner-vs-digitalocean-solo-developers",
+          "source": "solodevstack.com"
+        },
+        {
+          "title": "Hetzner vs DigitalOcean Comparison for Modern Teams | Gart",
+          "url": "https://gartsolutions.com/hetzner-vs-digitalocean/",
+          "source": "gartsolutions.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2073-ko-tech-M3-맥북-16GB-ollama-ll",
+      "keyword": "M3 맥북 16GB ollama llama3.2 3B vs 8B 한국어 답변 속도 토큰 실측 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199736",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 맥북 사용자가 로컬 LLM 실행 시 3B와 8B 모델 중 한국어 작업에 실제로 어느 게 빠르고 쓸만한지 알고 싶음",
+      "angle": "동일한 한국어 프롬프트 20개를 양쪽 모델에 돌려 토큰/초, 체감 품질, 메모리 점유를 직접 측정한 실험 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Run Llama 3 on Mac M1/M2/M3/M4: 2026 Step-by-Step Guide | Local AI Master",
+          "url": "https://localaimaster.com/blog/run-llama3-on-mac",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "LLaMA - 나무위키",
+          "url": "https://namu.wiki/w/LLaMA",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "Open Code 리뷰(3) : 오픈소스, 무료 및 저가 LLM 모델 활용 해보기 with Ollama, Qwen3, glm4.7, MiniMax M2.1 등 :: 갓대희의 작은공",
+          "url": "https://goddaehee.tistory.com/488",
+          "source": "goddaehee.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2074-ko-tech-cloudflare-pages-hug",
+      "keyword": "cloudflare pages hugo 배포 빌드 실패 exit code 1 원인 찾기 삽질 후기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199754",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo 블로그를 Cloudflare Pages에 연결했는데 빌드가 계속 실패하는 개발자가 원인과 해결법을 찾는 중",
+      "angle": "실제 빌드 로그 스크린샷과 함께 테마 서브모듈 누락, Hugo 버전 불일치, 환경변수 설정 오류 세 가지 원인을 순서대로 찾아낸 디버깅 일지",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[배포] Cloudflare Pages 배포에 인증 추가하기 - 밥 먹고 코딩",
+          "url": "https://meal-coding.tistory.com/54",
+          "source": "meal-coding.tistory.com"
+        },
+        {
+          "title": "Known issues · Cloudflare Pages docs",
+          "url": "https://developers.cloudflare.com/pages/platform/known-issues/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2075-ko-tech-1인-개발자-월-5달러-서버-운영-실",
+      "keyword": "1인 개발자 월 5달러 서버 운영 실제 스택 Docker Compose fly.io railway 비용 정산",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199772",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드 프로젝트를 최소 비용으로 운영하고 싶은 1인 개발자가 실제 월정산 내역이 궁금함",
+      "angle": "6개월간 세 가지 플랫폼을 실제로 사용하며 받은 청구서를 공개하고 트래픽 규모별 최적 선택을 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "1인 개발 서비스 운영 비용 공유 호스팅 서버 : Railway [5$/월(Hobby 플랜)] - 최초가입시 5$ Trial 제공 - SSL 인증서 자동발급, CI/CD 지원 - ",
+          "url": "https://www.threads.com/@yamang_dev/post/DKVZxo5zTE7/1%EC%9D%B8-%EA%B0%9C%EB%B0%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9A%B4%EC%98%81-%EB%B9%84%EC%9A%A9-%EA%B3%B5%EC%9C%A0%ED%98%B8%EC%8A%A4%ED%8C%85-%EC%84%9C%EB%B2%84-railway-5%EC%9B%94hobby-%ED%94%8C%EB%9E%9C-%EC%B5%9C%EC%B4%88%EA%B0%80%EC%9E%85%EC%8B%9C-5-trial-%EC%A0%9C%EA%B3%B5-ssl-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%9E%90%EB%8F%99%EB%B0%9C%EA%B8%89-cicd-%EC%A7%80",
+          "source": "www.threads.com"
+        },
+        {
+          "title": "2026년 최고의 Heroku 대안 10가지 — 비교 | Back4App",
+          "url": "https://www.back4app.com/heroku-alternatives-ko",
+          "source": "www.back4app.com"
+        },
+        {
+          "title": "앱 개발 견적 산정, 어려우셨죠? | 데이터 기반 실제 견적 알아보기",
+          "url": "https://blog.gridge.co.kr/app-dev/",
+          "source": "blog.gridge.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2076-ko-tech-GitHub-Copilot-vs-Cu",
+      "keyword": "GitHub Copilot vs Cursor IDE 실무 3개월 사용 후기 자동완성 품질 실제 코드 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199789",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI 코딩 도구 구독을 하나만 선택해야 하는 개발자가 실제 사용 경험 기반 비교를 원함",
+      "angle": "동일한 실무 태스크(API 연동, 리팩토링, 테스트 작성)를 양쪽으로 시도한 결과를 코드 캡처와 함께 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2025년 AI 코딩 도구 총정리! GitHub Copilot vs Cursor vs Claude 실사용 후기 :: 코드마스터 로그(CodeMaster Log)",
+          "url": "https://tyfghxcvbn.tistory.com/18",
+          "source": "tyfghxcvbn.tistory.com"
+        },
+        {
+          "title": "2026 코드 에디터 비교 — VS Code vs Cursor vs Zed, 셋 다 써본 개발자가 솔직하게 정리합니다",
+          "url": "https://techlog.io.kr/code-editor-comparison-2026-vscode-cursor-zed/",
+          "source": "techlog.io.kr"
+        },
+        {
+          "title": "Cursor vs GitHub Copilot vs Claude — AI 코딩 도구 실전 비교 - 코드벤터 - AI Product Development Company",
+          "url": "https://www.codeventer.com/cursor-vs-copilot-vs-claude-comparison/",
+          "source": "www.codeventer.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2077-ko-tech-Supabase-vs-PlanetSc",
+      "keyword": "Supabase vs PlanetScale 무료 플랜 종료 이후 대안 비교 소규모 프로젝트 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199806",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "PlanetScale 무료 플랜 종료로 대안을 찾는 개발자가 Supabase와 다른 옵션의 실질적 차이를 알고 싶음",
+      "angle": "실제 마이그레이션 경험을 바탕으로 스키마 이전 난이도, 쿼리 성능, 무료 한도, 락인 위험을 항목별로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "PlanetScale vs Supabase: 2025년 MySQL & PostgreSQL 클라우드 DB 서비스 완전 비교 — 기피말고깊이",
+          "url": "https://notavoid.tistory.com/338",
+          "source": "notavoid.tistory.com"
+        },
+        {
+          "title": "Supabase vs PlanetScale: Which is Better in 2025",
+          "url": "https://www.leanware.co/insights/supabase-vs-planetscale",
+          "source": "www.leanware.co"
+        },
+        {
+          "title": "supabase Pro 플랜 > 자유게시판 | 다모앙",
+          "url": "https://damoang.net/free/5165147",
+          "source": "damoang.net"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2078-ko-tech-Claude-API-스트리밍-응답-P",
+      "keyword": "Claude API 스트리밍 응답 Python FastAPI 연동 청크 깨짐 인코딩 오류 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199822",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "FastAPI로 Claude API 스트리밍을 구현하다가 한국어 청크가 깨지거나 SSE가 끊기는 문제를 겪는 개발자",
+      "angle": "실제 오류 재현 코드와 함께 스트리밍 인코딩 설정, 버퍼 처리, 클라이언트 EventSource 설정까지 완전히 동작하는 구현 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "문제 해결 - Claude Code Docs",
+          "url": "https://code.claude.com/docs/ko/troubleshooting",
+          "source": "code.claude.com"
+        },
+        {
+          "title": "17. 트러블슈팅 - 클로드 코드 가이드",
+          "url": "https://wikidocs.net/333432",
+          "source": "wikidocs.net"
+        },
+        {
+          "title": "[Claude] Claude API Python SDK 사용법 완벽 가이드",
+          "url": "https://observerlife.tistory.com/212",
+          "source": "observerlife.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2079-ko-tech-WSL2-Ubuntu-Docker-메",
+      "keyword": "WSL2 Ubuntu Docker 메모리 반환 안됨 Windows 11 작업관리자 vmmem 해결 실제 적용 결과",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-22T10:26:33.199839",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "WSL2 사용 후 RAM이 반환되지 않아 vmmem 프로세스가 메모리를 잡아먹는 문제를 겪는 윈도우 개발자",
+      "angle": ".wslconfig 설정값 변경 전후 메모리 사용량을 작업관리자 스크린샷으로 비교하고 실제 효과가 있는 설정만 추려서 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "WSL2 재설치 이슈 해결(+도커 데스크탑 재설치)",
+          "url": "https://refine-thinking.tistory.com/64",
+          "source": "refine-thinking.tistory.com"
+        },
+        {
+          "title": "[리눅스 기초 #28] 내 램이 다 어디 갔지? .wslconfig로 WSL2 자원 관리 끝내기",
+          "url": "https://sunyjiny.tistory.com/31",
+          "source": "sunyjiny.tistory.com"
+        },
+        {
+          "title": "컴퓨터 갑자기 느려짐? 이유 없는 메모리 점유율 100%, 작업 관리자 Vmmem 메모리 점유율부터 확인! - 데브쌤 블로그",
+          "url": "https://peach-lagoon.tistory.com/entry/%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B0%91%EC%9E%90%EA%B8%B0-%EB%8A%90%EB%A0%A4%EC%A7%90-%EC%9D%B4%EC%9C%A0-%EC%97%86%EB%8A%94-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8-100-%EC%9E%91%EC%97%85-%EA%B4%80%EB%A6%AC%EC%9E%90-Vmmem-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A0%90%EC%9C%A0%EC%9C%A8%EB%B6%80%ED%84%B0-%ED%99%95%EC%9D%B8",
+          "source": "peach-lagoon.tistory.com"
         }
       ],
       "content_type_hint": "GUIDE"

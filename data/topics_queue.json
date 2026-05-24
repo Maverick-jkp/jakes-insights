@@ -28657,7 +28657,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501757",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -28682,7 +28682,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:26:49.274428+00:00"
     },
     {
       "id": "2092-ko-tech-마이크로소프트-DOS-소스코드-공개-",
@@ -28690,7 +28692,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501805",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -28715,7 +28717,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:20:20.089824+00:00"
     },
     {
       "id": "2093-en-tech-ollama-llama3.2-3b-v",
@@ -28723,7 +28727,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501862",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -28747,7 +28751,9 @@
           "source": "www.sitepoint.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:22:07.867078+00:00"
     },
     {
       "id": "2094-en-tech-claude-api-context-w",
@@ -28755,7 +28761,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501881",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -28779,7 +28785,9 @@
           "source": "code.claude.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:24:22.932145+00:00"
     },
     {
       "id": "2095-en-tech-github-actions-self-",
@@ -28787,7 +28795,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501900",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -28811,7 +28819,9 @@
           "source": "computingarts.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:28:51.600136+00:00"
     },
     {
       "id": "2096-en-tech-prometheus-node-expo",
@@ -28846,7 +28856,7 @@
       "category": "tech",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501941",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -28870,7 +28880,9 @@
           "source": "www.iloveblogs.blog"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:31:05.190655+00:00"
     },
     {
       "id": "2098-en-tech-tailscale-vs-wiregua",
@@ -28910,7 +28922,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.501999",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -28934,7 +28946,9 @@
           "source": "miracle-tech.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:33:33.725259+00:00"
     },
     {
       "id": "2100-ko-tech-Next.js-14-Vercel-무료",
@@ -28942,7 +28956,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.502015",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -28961,7 +28975,9 @@
           "source": "leapcell.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:35:58.517886+00:00"
     },
     {
       "id": "2101-ko-tech-Claude-API-vs-GPT-4o",
@@ -29001,7 +29017,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.502050",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -29025,7 +29041,9 @@
           "source": "alstn113.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:38:22.960565+00:00"
     },
     {
       "id": "2103-ko-tech-Supabase-무료-플랜-DB-일시",
@@ -29065,7 +29083,7 @@
       "category": "tech",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-05-24T09:23:28.502081",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -29089,7 +29107,9 @@
           "source": "blog.cloudflare.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-05-24T11:17:41.396742+00:00",
+      "completed_at": "2026-05-24T11:41:04.448294+00:00"
     }
   ]
 }

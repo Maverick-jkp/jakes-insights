@@ -28824,33 +28824,6 @@
       "completed_at": "2026-05-24T11:28:51.600136+00:00"
     },
     {
-      "id": "2096-en-tech-prometheus-node-expo",
-      "keyword": "prometheus node exporter docker compose low memory under 512mb config",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-24T09:23:28.501918",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "RAM 512MB 이하 저사양 VPS에서 Prometheus+Node Exporter를 돌리려는 개발자",
-      "angle": "scrape_interval 조정, 불필요한 collector 비활성화로 메모리 사용량 실측 줄인 설정 파일 공유",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Prometheus with Docker Compose: Guide & Examples",
-          "url": "https://spacelift.io/blog/prometheus-docker-compose",
-          "source": "spacelift.io"
-        },
-        {
-          "title": "Docker CPU & Memory Limits: Prevent Container Resource Exhaustion",
-          "url": "https://oneuptime.com/blog/post/2026-01-16-docker-limit-cpu-memory/view",
-          "source": "oneuptime.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2097-en-tech-nextjs-14-app-router",
       "keyword": "nextjs 14 app router supabase row level security policy infinite loop debug",
       "category": "tech",
@@ -28883,38 +28856,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-24T11:17:41.396742+00:00",
       "completed_at": "2026-05-24T11:31:05.190655+00:00"
-    },
-    {
-      "id": "2098-en-tech-tailscale-vs-wiregua",
-      "keyword": "tailscale vs wireguard self-hosted vps solo developer actual setup comparison",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-24T09:23:28.501963",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "혼자 운영하는 VPS 환경에서 Tailscale과 직접 설치 WireGuard 중 무엇이 더 실용적인지 비교 탐색",
-      "angle": "설치 시간, NAT 통과, 키 관리 편의성을 1인 개발자 관점에서 실제 사용 후 비교한 글",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "WireGuard vs Tailscale: Performance, Configuration, and Costs | Contabo Blog",
-          "url": "https://contabo.com/blog/wireguard-vs-tailscale/",
-          "source": "contabo.com"
-        },
-        {
-          "title": "r/selfhosted on Reddit: self hosted wireguard vs tailscale?",
-          "url": "https://www.reddit.com/r/selfhosted/comments/1rzediq/self_hosted_wireguard_vs_tailscale/",
-          "source": "www.reddit.com"
-        },
-        {
-          "title": "Tailscale vs WireGuard 2026: 5M Users, 8 Gbps Kernel Mesh",
-          "url": "https://tech-insider.org/tailscale-vs-wireguard-2026/",
-          "source": "tech-insider.org"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "2099-ko-tech-Fly.io-무료-플랜-슬립-방지-c",
@@ -28980,38 +28921,6 @@
       "completed_at": "2026-05-24T11:35:58.517886+00:00"
     },
     {
-      "id": "2101-ko-tech-Claude-API-vs-GPT-4o",
-      "keyword": "Claude API vs GPT-4o-mini 1인 SaaS 월 $20 이하 실제 비용 시나리오 비교",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-05-24T09:23:28.502033",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "소규모 SaaS를 만들면서 LLM API 비용을 $20 이하로 유지하는 현실적인 방법을 찾는 개발자",
-      "angle": "일일 호출 수 500회 기준 토큰 비용 시뮬레이션과 캐싱 전략 적용 전후 비교표",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "베스트 AI 요금제 | GPT, Gemini, Claude 플랜 비교 (2026년 1/4분기) – nextplatform",
-          "url": "https://nextplatform.net/gpt-vs-gemini-vs-claude-subcription-plan-comparison/",
-          "source": "nextplatform.net"
-        },
-        {
-          "title": "Claude Code Pricing Guide 2026: Free Tier, Pro vs Max, API Costs, and Team Plans | LaoZhang AI Blog",
-          "url": "https://blog.laozhang.ai/en/posts/claude-code-pricing-guide",
-          "source": "blog.laozhang.ai"
-        },
-        {
-          "title": "2026년 AI 서비스 완벽 비교 — 클로드, GPT, 제미나이부터 젠스파크, Lovable까지 용도별 정리",
-          "url": "https://hoft.tistory.com/entry/ai-service-comparison-guide-2026",
-          "source": "hoft.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2102-ko-tech-Docker-Compose-단일-VP",
       "keyword": "Docker Compose 단일 VPS 무중단 배포 GitHub Actions blue-green 삽질 후기",
       "category": "tech",
@@ -29046,38 +28955,6 @@
       "completed_at": "2026-05-24T11:38:22.960565+00:00"
     },
     {
-      "id": "2103-ko-tech-Supabase-무료-플랜-DB-일시",
-      "keyword": "Supabase 무료 플랜 DB 일시정지 방지 pg_cron 설정 실전 경험",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-24T09:23:28.502065",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Supabase 무료 플랜의 7일 비활성 일시정지 문제를 자동 쿼리로 방지하려는 개발자",
-      "angle": "pg_cron 활성화부터 더미 쿼리 스케줄 설정까지 복붙 가능한 SQL과 주의사항 정리",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
-          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
-          "source": "lookfortaste.com"
-        },
-        {
-          "title": "[Supabase 시작하기] - 회원 가입부터 기초 CRUD, RAG를 위한 pgvector 활성화 하기 :: 갓대희의 작은공간",
-          "url": "https://goddaehee.tistory.com/377",
-          "source": "goddaehee.tistory.com"
-        },
-        {
-          "title": "Cron | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/cron",
-          "source": "supabase.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2104-ko-tech-Cloudflare-Workers-A",
       "keyword": "Cloudflare Workers AI llama3 한국어 응답 속도 무료 할당량 실측 리뷰 2025",
       "category": "tech",
@@ -29110,6 +28987,440 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-24T11:17:41.396742+00:00",
       "completed_at": "2026-05-24T11:41:04.448294+00:00"
+    },
+    {
+      "id": "2105-ko-tech-AI-코딩-에이전트-제약-붕괴-실제-",
+      "keyword": "AI 코딩 에이전트 제약 붕괴 실제 사례 백엔드 코드 품질 문제",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210024",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코드 생성 도구를 실무에 쓰는 개발자들이 '왜 복잡한 조건일수록 LLM이 틀리는가'를 이해하고 싶어함",
+      "angle": "학술 논문(arXiv)을 한국 개발자 실무 관점으로 풀어내기 — 어떤 상황에서 Constraint Decay가 발생하고, 어떻게 방어할 수 있나",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI-DLC 를 팀 프로젝트에 적용하기: Subagent 와 Custom Skill 로 확장한 Armiq 사례 | AWS 기술 블로그",
+          "url": "https://aws.amazon.com/ko/blogs/tech/aidlc-armiq-subagent-customskills/",
+          "source": "aws.amazon.com"
+        },
+        {
+          "title": "코딩 에이전트 DESIGN.md란? - DEV Community",
+          "url": "https://dev.to/rihpig/koding-eijeonteu-designmdran-2kc5",
+          "source": "dev.to"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2106-en-tech-ollama-llama3.2-vs-m",
+      "keyword": "ollama llama3.2 vs mistral 7b local inference speed macbook m3 pro benchmark 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210073",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "M3 Pro 맥북에서 로컬 LLM 실제 추론 속도를 직접 비교하고 싶은 개발자",
+      "angle": "토큰/초 실측 수치와 메모리 사용량을 모델별로 표로 정리한 벤치마크 리포트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Llama 3.2 vs Mistral 7B vs CodeLlama: Which Wins? (Tested) | Local AI Master",
+          "url": "https://localaimaster.com/blog/llama-vs-mistral-vs-codellama",
+          "source": "localaimaster.com"
+        },
+        {
+          "title": "Best Local LLM Models 2026 | Developer Comparison",
+          "url": "https://www.sitepoint.com/best-local-llm-models-2026/",
+          "source": "www.sitepoint.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2107-en-tech-fly.io-free-tier-pos",
+      "keyword": "fly.io free tier postgres connection limit workaround pgbouncer real cost 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210099",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료 플랜에서 Postgres 연결 초과 오류를 겪고 해결책을 찾는 개발자",
+      "angle": "PgBouncer 설정으로 연결 수 줄이는 실전 트러블슈팅 + 실제 월 비용 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fly Managed Postgres and database connection limit using the PG Bouncer - Phoenix - Fly.io",
+          "url": "https://community.fly.io/t/fly-managed-postgres-and-database-connection-limit-using-the-pg-bouncer/27103",
+          "source": "community.fly.io"
+        },
+        {
+          "title": "Fly.io pricing: Plans and cost breakdown for 2025 - Orb Billing",
+          "url": "https://www.withorb.com/blog/flyio-pricing",
+          "source": "www.withorb.com"
+        },
+        {
+          "title": "Fly.io | Review, Pricing & Alternatives",
+          "url": "https://getdeploying.com/flyio",
+          "source": "getdeploying.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2108-en-tech-claude-api-tool-use-",
+      "keyword": "claude api tool use vs openai function calling latency cost comparison solo developer",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210122",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "1인 개발자가 에이전트 구축 시 Claude tool use와 OpenAI function calling 중 무엇을 쓸지 비교",
+      "angle": "동일한 태스크에 두 API 적용 후 응답 시간·비용·정확도 실측 비교표 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenAI vs Claude vs Gemini API: Full Developer Comparison",
+          "url": "https://mongoengine.org/openai-vs-claude-vs-gemini-api/",
+          "source": "mongoengine.org"
+        },
+        {
+          "title": "Claude API vs OpenAI API for Enterprise: Which Should You Build On in 2026? — Muhammad Moid Shams",
+          "url": "https://moidshams.dev/blog/claude-api-vs-openai-enterprise",
+          "source": "moidshams.dev"
+        },
+        {
+          "title": "OpenAI vs Claude for Production: A Practical Decision Guide for 2026",
+          "url": "https://zenvanriel.com/ai-engineer-blog/openai-vs-claude-for-production/",
+          "source": "zenvanriel.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2109-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker arm64 raspberry pi 5 cold start time fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210144",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "라즈베리파이 5에서 GitHub Actions 셀프 호스팅 러너 콜드스타트가 느린 문제를 해결하려는 개발자",
+      "angle": "Docker arm64 이미지 캐싱 전략으로 빌드 시간 단축한 실제 설정 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Deploying FastAPI on Raspberry Pi using GitHub Actions (Self‑Hosted Runner) | by Kumar Shishir | Med",
+          "url": "https://tech-logger.medium.com/deploying-fastapi-on-raspberry-pi-using-github-actions-self-hosted-runner-44a41aa111bc",
+          "source": "tech-logger.medium.com"
+        },
+        {
+          "title": "Use Docker to Set Up a Self-Hosted GitHub Actions Runner in 10 Minutes — LeoTheLegion",
+          "url": "https://leothelegion.net/2025/07/28/use-docker-to-set-up-self-hosted-github-actions-runner-in-10-minutes/",
+          "source": "leothelegion.net"
+        },
+        {
+          "title": "r/github on Reddit: We cut GitHub Actions build times by 6x with self-hosted runners — sharing our s",
+          "url": "https://www.reddit.com/r/github/comments/1rhpavo/we_cut_github_actions_build_times_by_6x_with/",
+          "source": "www.reddit.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2110-en-tech-prometheus-node-expo",
+      "keyword": "prometheus node exporter docker compose 512mb vps memory spike oom killer tuning",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210166",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 Prometheus 운영 중 OOM Killer가 프로세스를 죽이는 문제를 해결하려는 개발자",
+      "angle": "scrape_interval 조정 및 retention 제한으로 메모리 사용량을 절반으로 줄인 실전 설정",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "The Complete Guide to Docker Resource Limits: Stop Memory Leaks from Crashing Your Server · BetterLi",
+          "url": "https://eastondev.com/blog/en/posts/dev/20251218-docker-resource-limits-guide/",
+          "source": "eastondev.com"
+        },
+        {
+          "title": "How to Monitor Ubuntu Servers with Prometheus node_exporter",
+          "url": "https://oneuptime.com/blog/post/2026-01-07-ubuntu-prometheus-node-exporter/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Prometheus Node Exporter - Metrics Configuration & Alerting | SigNoz",
+          "url": "https://signoz.io/guides/prometheus-node-exporter-metrics/",
+          "source": "signoz.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2111-en-tech-weaviate-vs-qdrant-s",
+      "keyword": "weaviate vs qdrant self-hosted 1 million vectors single node ram usage real test 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210187",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "벡터 DB 직접 운영 시 Weaviate와 Qdrant의 메모리 사용량 차이를 알고 싶은 ML 엔지니어",
+      "angle": "100만 벡터 기준 단일 노드 실측 RAM·쿼리 속도 비교 + 추천 시나리오 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Top Vector Database for RAG: Qdrant vs Weaviate vs Pinecone",
+          "url": "https://aimultiple.com/vector-database-for-rag",
+          "source": "aimultiple.com"
+        },
+        {
+          "title": "Vector Databases Compared: Pinecone vs Weaviate vs Qdrant for AI Apps | CallSphere Blog",
+          "url": "https://callsphere.ai/blog/vector-databases-pinecone-weaviate-qdrant-comparison",
+          "source": "callsphere.ai"
+        },
+        {
+          "title": "Vector Database Infrastructure | Introl Blog",
+          "url": "https://introl.com/blog/vector-database-infrastructure-pinecone-weaviate-qdrant-scale",
+          "source": "introl.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2112-en-tech-nextjs-14-app-router",
+      "keyword": "nextjs 14 app router vercel edge function cold start latency workaround real measurement",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210215",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js 14 App Router를 Vercel Edge에 배포했을 때 콜드스타트 지연을 줄이고 싶은 개발자",
+      "angle": "미들웨어 경량화·캐시 전략으로 콜드스타트를 300ms 이하로 줄인 실험 결과 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/nextjs on Reddit: I measured Vercel vs Netlify vs Cloudflare cold start timings and here are my fi",
+          "url": "https://www.reddit.com/r/nextjs/comments/1r1zlhj/i_measured_vercel_vs_netlify_vs_cloudflare_cold/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Catch Metrics - the web performance experts - The Ultimate Guide to improving Next.js TTFB slowness:",
+          "url": "https://www.catchmetrics.io/blog/the-ultimate-guide-to-improving-nextjs-ttfb-slowness-from-800ms-to-less100ms",
+          "source": "www.catchmetrics.io"
+        },
+        {
+          "title": "Edge Runtime and Edge Functions in Next.js — Explained the Easy Way",
+          "url": "https://abeer.hashnode.dev/edge-runtime-and-edge-functions-in-nextjs-explained-the-easy-way",
+          "source": "abeer.hashnode.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2113-ko-tech-맥북-M3-16GB-ollama-ll",
+      "keyword": "맥북 M3 16GB ollama llama3.2 한국어 답변 토큰 속도 GPT-4o-mini 실측 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210238",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "맥북 M3에서 로컬 LLM이 실제로 쓸 만한지 GPT-4o-mini와 성능을 비교해보고 싶은 개발자",
+      "angle": "한국어 프롬프트 기준 토큰/초 실측 수치와 답변 품질 점수를 표로 정리한 비교 리포트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "LLaMA - 나무위키",
+          "url": "https://namu.wiki/w/LLaMA",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "Best Local LLMs May 2026: Ollama, LM Studio, Hardware ...",
+          "url": "https://www.promptquorum.com/local-llms",
+          "source": "www.promptquorum.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2114-ko-tech-Claude-API-RAG-청크-사이",
+      "keyword": "Claude API RAG 청크 사이즈 512 vs 1024 검색 정확도 실험 한국어 문서 기준",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210258",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 RAG 구현 시 최적 청크 사이즈를 데이터 기반으로 알고 싶은 개발자",
+      "angle": "동일 한국어 문서셋에 청크 크기만 바꿔 정밀도·재현율 직접 측정한 실험 결과 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #3 : 청킹(Chunking) 전략과 최적화",
+          "url": "https://tech.ktcloud.com/entry/2025-11-ktcloud-rag-ai-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5-%EC%B5%9C%EC%A0%81%ED%99%94",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "Claude API 인터넷 검색 완벽 가이드: 네이티브 web_search 도구와 3가지 구현 방식 비교 (2026) - Apiyi.com Blog",
+          "url": "https://help.apiyi.com/ko/claude-api-web-search-guide-ko.html",
+          "source": "help.apiyi.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2115-ko-tech-Hugo-블로그-Cloudflare-",
+      "keyword": "Hugo 블로그 Cloudflare Pages 자동배포 GitHub Actions cron 스케줄 안될 때 원인 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210298",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo + Cloudflare Pages 조합에서 GitHub Actions cron이 예약대로 안 돌아가는 문제를 해결하려는 블로거",
+      "angle": "GitHub Actions cron 비활성화 정책과 워크어라운드(외부 트리거) 적용 실전 설정 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "サボりのAlice、そして意図せず増殖した記事、制御不能の自動投稿！GitHub Actionsのcronが動かなかった話｜えいりす",
+          "url": "https://note.com/alice_ai_blog/n/nd200e3274b1a",
+          "source": "note.com"
+        },
+        {
+          "title": "Automatic publishing of my Hugo website using Github and Cloudflare Pages - Virtual to the Core",
+          "url": "https://www.virtualtothecore.com/hugo-github-cloudflare-pages/",
+          "source": "www.virtualtothecore.com"
+        },
+        {
+          "title": "Host on Cloudflare",
+          "url": "https://gohugo.io/host-and-deploy/host-on-cloudflare/",
+          "source": "gohugo.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2116-ko-tech-Docker-Compose-단독-VP",
+      "keyword": "Docker Compose 단독 VPS 메모리 2GB Prometheus Grafana Loki 동시 운영 설정 최적화",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210316",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "2GB RAM VPS에서 모니터링 스택을 올리려다 OOM이 뜨는 문제를 해결하려는 개발자",
+      "angle": "각 컨테이너 메모리 상한 설정과 retention 단축으로 전체 사용량을 1.2GB 이하로 줄인 compose 파일 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
+        },
+        {
+          "title": "서버 모니터링 시스템 Docker 로 구성하기(Grafana, Prometheus, Loki, Promtail, Springboot) — Railly`s IT 정리노트",
+          "url": "https://railly-linker.tistory.com/entry/%EC%84%9C%EB%B2%84-%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%EC%8B%9C%EC%8A%A4%ED%85%9C-Docker-%EB%A1%9C-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0Grafana-Prometheus-Loki-Promtail",
+          "source": "railly-linker.tistory.com"
+        },
+        {
+          "title": "Grafana + Loki + Promtail 로그 파이프라인 구축 가이드 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/observability/2026-03-02-grafana-loki-promtail-log-pipeline",
+          "source": "www.youngju.dev"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2117-ko-tech-Supabase-Row-Level-S",
+      "keyword": "Supabase Row Level Security 실무 적용 멀티테넌트 SaaS 설계 삽질 후기 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210334",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase RLS로 멀티테넌트를 구현하다 정책 충돌·성능 저하를 경험한 개발자가 해결책을 찾는 상황",
+      "angle": "RLS 정책 설계 실수 사례와 인덱스 추가로 쿼리 속도를 회복한 실전 트러블슈팅 기록",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Enforcing Row Level Security in Supabase: A Deep Dive into LockIn's Multi-Tenant Architecture - DEV ",
+          "url": "https://dev.to/blackie360/-enforcing-row-level-security-in-supabase-a-deep-dive-into-lockins-multi-tenant-architecture-4hd2",
+          "source": "dev.to"
+        },
+        {
+          "title": "Supabase RLS Guide: Policies That Actually Work",
+          "url": "https://designrevision.com/blog/supabase-row-level-security",
+          "source": "designrevision.com"
+        },
+        {
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2118-ko-tech-Vercel-AI-SDK-vs-Lan",
+      "keyword": "Vercel AI SDK vs LangChain.js 스트리밍 응답 실제 번들 사이즈 비교 Next.js 14 적용기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-25T11:13:28.210352",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js 14에서 LLM 스트리밍을 붙이려는 개발자가 두 라이브러리 중 무엇을 쓸지 고르는 상황",
+      "angle": "동일한 챗 기능 구현 후 번들 크기·초기 로딩 시간·코드량을 직접 측정해 비교한 실험 포스트",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Vercel AI SDK vs LangChain (2026 Guide) - FRE|Nxt Labs",
+          "url": "https://www.frenxt.com/compare/vercel-ai-sdk-vs-langchain",
+          "source": "www.frenxt.com"
+        },
+        {
+          "title": "LangChain vs Vercel AI SDK: Which TypeScript AI Framework Should You Use? - Developers Digest",
+          "url": "https://www.developersdigest.tech/blog/langchain-vs-vercel-ai-sdk",
+          "source": "www.developersdigest.tech"
+        },
+        {
+          "title": "Build an AI Chatbot in 15 Min with Vercel AI SDK [2026]",
+          "url": "https://tech-insider.org/vercel-ai-sdk-tutorial-chatbot-nextjs-2026/",
+          "source": "tech-insider.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

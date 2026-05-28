@@ -29442,38 +29442,6 @@
       "completed_at": "2026-05-27T13:00:56.333972+00:00"
     },
     {
-      "id": "2123-en-tech-grafana-loki-docker-",
-      "keyword": "grafana loki docker compose single server under 1gb ram tuning",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-27T10:57:44.540950",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "1GB RAM 단독 서버에서 Loki + Grafana를 Docker Compose로 운영하려다 OOM으로 죽는 문제를 겪는 개발자",
-      "angle": "chunk_store_config, ingester 메모리 파라미터 최소화 설정값 실측 + $5 VPS 생존 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Run Loki in Docker and Docker Compose",
-          "url": "https://oneuptime.com/blog/post/2026-01-21-loki-docker-compose/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "r/selfhosted on Reddit: Homelab monitoring: Docker + Grafana + Loki for a small public site",
-          "url": "https://www.reddit.com/r/selfhosted/comments/1soc8td/homelab_monitoring_docker_grafana_loki_for_a/",
-          "source": "www.reddit.com"
-        },
-        {
-          "title": "Run Loki-Grafana Locally with Docker | by Emmanuel Owodunni | Medium",
-          "url": "https://medium.com/@touchtech413/run-loki-grafana-locally-d81514200a98",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2124-en-tech-supabase-pgvector-em",
       "keyword": "supabase pgvector embedding search accuracy chunk overlap 50 vs 200 experiment",
       "category": "tech",
@@ -29496,38 +29464,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-27T12:54:11.033423+00:00",
       "completed_at": "2026-05-27T13:13:13.848545+00:00"
-    },
-    {
-      "id": "2125-en-tech-tailscale-exit-node-",
-      "keyword": "tailscale exit node raspberry pi 5 wireguard split tunnel home lab setup",
-      "category": "tech",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-27T10:57:44.540995",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "라즈베리파이 5를 Tailscale exit node로 만들어 집 밖에서 홈랩 접근 + 스플릿 터널 설정을 원하는 사람",
-      "angle": "Pi 5에서 Tailscale + WireGuard 충돌 없이 exit node 구성한 단계별 실전 설정 + 속도 실측",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Turning a Raspberry Pi into a Tailscale Exit Node · Raul Melo",
-          "url": "https://raulmelo.me/en/blog/tailscale-exit-node-raspberry-pi",
-          "source": "raulmelo.me"
-        },
-        {
-          "title": "Tailscale VPN - RaspAP Documentation",
-          "url": "https://docs.raspap.com/features-insiders/tailscale/",
-          "source": "docs.raspap.com"
-        },
-        {
-          "title": "I set up a Tailscale exit node at home, and it's more useful than just exposing services",
-          "url": "https://www.xda-developers.com/i-set-up-a-tailscale-exit-node-at-home/",
-          "source": "www.xda-developers.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "2126-ko-tech-Mac-M3-16GB-ollama-l",
@@ -29666,70 +29602,6 @@
       "completed_at": "2026-05-27T13:18:09.299026+00:00"
     },
     {
-      "id": "2130-ko-tech-GitHub-Actions-secre",
-      "keyword": "GitHub Actions secrets 환경변수 Docker build ARG 제대로 안 넘어갈 때 원인 정리",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-05-27T10:57:44.541089",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "GitHub Actions에서 secrets를 Docker ARG로 넘겼는데 컨테이너 안에서 빈 값으로 뜨는 문제를 겪는 DevOps 입문자",
-      "angle": "ARG vs ENV 생명주기 차이 도식화 + --build-arg 누락 패턴 4가지 실제 사례별 해결 코드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Docker Compose 완전 정복: 지저분한 환경변수, GitHub Actions에서 탈출하기",
-          "url": "https://velog.io/@harperkwon/Docker-Compose-%EC%99%84%EC%A0%84-%EC%A0%95%EB%B3%B5-%EC%A7%80%EC%A0%80%EB%B6%84%ED%95%9C-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98-GitHub-Actions%EC%97%90%EC%84%9C-%ED%83%88%EC%B6%9C%ED%95%98%EA%B8%B0",
-          "source": "velog.io"
-        },
-        {
-          "title": "How to Safely Pass GitHub Actions Secrets to Docker ENV Variables (No Crashes) - ReviewInsights.com",
-          "url": "https://openillumi.com/en/en-github-actions-docker-secrets-env-arg-fix/",
-          "source": "openillumi.com"
-        },
-        {
-          "title": "[CI-CD] GitHub Actions과 GitHub Secrets 개념 - Go for IT",
-          "url": "https://claremont.tistory.com/entry/CI-CD-GitHub-Actions%EA%B3%BC-GitHub-Secrets-%EA%B0%9C%EB%85%90",
-          "source": "claremont.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2131-ko-tech-Prometheus-단독-서버-2GB",
-      "keyword": "Prometheus 단독 서버 2GB RAM Docker Compose 메모리 최적화 실전 설정",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-05-27T10:57:44.541105",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "2GB RAM VPS에서 Prometheus + Grafana 스택을 올렸더니 OOM으로 서버가 죽는 문제를 겪는 개발자",
-      "angle": "storage.tsdb retention, chunk 설정 최소화 값 실측 + Grafana 메모리 제한 docker-compose.yml 전문 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Docker 컨테이너가 나만 죽는 이유와 해결방안",
-          "url": "https://velog.io/@js03210/Docker-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EA%B0%80-%EB%82%98%EB%A7%8C-%EC%A3%BD%EB%8A%94-%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0%EB%B0%A9%EC%95%88",
-          "source": "velog.io"
-        },
-        {
-          "title": "How to Use Docker Compose shm_size Configuration",
-          "url": "https://oneuptime.com/blog/post/2026-02-08-how-to-use-docker-compose-shmsize-configuration/view",
-          "source": "oneuptime.com"
-        },
-        {
-          "title": "OpenStack + Ceph 프라이빗 클라우드 모니터링: Prometheus, Grafana, Alertmanager 실전 아키텍처 | SeekersLab",
-          "url": "https://seekerslab.com/en/resources/blog/openstack-ceph-monitoring-prometheus-grafana-1772448069238",
-          "source": "seekerslab.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "2132-ko-tech-Claude-API-vs-OpenAI",
       "keyword": "Claude API vs OpenAI API 한국어 코드 리뷰 품질 실측 비교 토큰 비용 포함 2025",
       "category": "tech",
@@ -29762,6 +29634,463 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-05-27T12:54:11.033423+00:00",
       "completed_at": "2026-05-27T13:08:59.590999+00:00"
+    },
+    {
+      "id": "2133-en-tech-Anthropic-OpenAI-pro",
+      "keyword": "Anthropic OpenAI product-market fit developer dependency risk",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.363953",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Developers are reading the Simon Willison post going viral on HN and want a critical, long-term analysis of what AI vendor lock-in actually means for their stack and careers",
+      "angle": "Vendor lock-in risk and power asymmetry: when a tool becomes a daily driver, the vendor gains leverage — explore switching costs, pricing trajectory, and what alternatives exist",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "I think Anthropic and OpenAI have found product-market fit",
+          "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+          "source": "simonwillison.net"
+        },
+        {
+          "title": "I think Anthropic and OpenAI have found product-market fit | Hacker News",
+          "url": "https://news.ycombinator.com/item?id=48296794",
+          "source": "news.ycombinator.com"
+        },
+        {
+          "title": "Anthropic revenue, valuation & funding | Sacra",
+          "url": "https://sacra.com/c/anthropic/",
+          "source": "sacra.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2134-ko-tech-구글-AI-검색-강제-도입-후-Duc",
+      "keyword": "구글 AI 검색 강제 도입 후 DuckDuckGo 급증 의미",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.363996",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "구글 AI 검색 결과에 불만을 느끼는 개발자·테크 유저가 대안 검색엔진을 찾고 있으며, 해외에서 이미 반발이 수치로 증명된 사실에 공감하고 국내 적용 가능성을 확인하고 싶어함",
+      "angle": "구글의 AI 검색 강제화에 대한 사용자 반발을 실제 트래픽 데이터로 검증하고, DuckDuckGo·Brave·Kagi 등 대안 검색엔진을 개발자 관점에서 실용적으로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "구글 AI 검색 반발에 덕덕고 설치 30% 급증… '강제 AI' 거부 확산 - ZDNet korea",
+          "url": "https://zdnet.co.kr/view/?no=20260528134847",
+          "source": "zdnet.co.kr"
+        },
+        {
+          "title": "[빅테크칼럼] “AI 강제 주입 싫다”…구글 AI검색 대수술 직후 '덕덕고' 설치 70% 급증",
+          "url": "https://www.newsspace.kr/news/article.html?no=14089",
+          "source": "www.newsspace.kr"
+        },
+        {
+          "title": "구글 I/O 역풍 맞았나…덕덕고 'AI 없는 검색' 방문자 22% 급증",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=669326",
+          "source": "www.digitaltoday.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2135-en-tech-Cloudflare-Workers-f",
+      "keyword": "Cloudflare Workers free tier rate limit workaround KV storage real usage 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364043",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Cloudflare Workers 무료 플랜의 요청 제한에 걸린 개발자가 KV로 우회하는 실전 방법 탐색",
+      "angle": "무료 플랜 한도 내에서 KV 캐싱으로 실제 요청 수를 줄인 구체적 코드 패턴 공유",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Limits · Cloudflare Workers docs",
+          "url": "https://developers.cloudflare.com/workers/platform/limits/",
+          "source": "developers.cloudflare.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2136-en-tech-fly.io-postgres-conn",
+      "keyword": "fly.io postgres connection pool limit solo developer side project actual cost breakdown",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364066",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Fly.io 무료/저가 플랜에서 Postgres 커넥션 풀 제한으로 서비스 장애를 겪은 1인 개발자",
+      "angle": "PgBouncer 직접 설정 후 실제 커넥션 수·비용 변화 수치 공개 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Managed Postgres pricing - login-only - Fly.io",
+          "url": "https://community.fly.io/t/managed-postgres-pricing/25734",
+          "source": "community.fly.io"
+        },
+        {
+          "title": "Fly.io Pricing Breakdown: $40/mo vs $5 VPS (2026)",
+          "url": "https://servercompass.app/blog/flyio-pricing-breakdown-vs-vps",
+          "source": "servercompass.app"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2137-en-tech-github-actions-self-",
+      "keyword": "github actions self-hosted runner docker cache not working arm64 mac mini fix",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364088",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Mac Mini(arm64)를 self-hosted runner로 쓸 때 Docker 레이어 캐시가 안 먹히는 문제 해결법 검색",
+      "angle": "buildx + cache-from 플래그 조합 실험 과정과 최종 동작하는 workflow yaml 전문 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Running GitHub Actions on a Mac Mini - Matthieu Napoli",
+          "url": "https://mnapoli.fr/running-github-actions-mac-mini",
+          "source": "mnapoli.fr"
+        },
+        {
+          "title": "How to Configure Self-Hosted Runners in GitHub Actions",
+          "url": "https://oneuptime.com/blog/post/2026-01-25-github-actions-self-hosted-runners/view",
+          "source": "oneuptime.com"
+        },
+        {
+          "title": "Your GitHub Actions Runners Are Slow, And You Are Paying Too Much For Them. | by Akhilesh Mishra | M",
+          "url": "https://medium.com/@akhilesh-mishra/your-github-actions-runners-are-slow-and-you-are-paying-too-much-for-them-5406577314fe",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2138-en-tech-claude-api-streaming",
+      "keyword": "claude api streaming response nextjs app router edge runtime latency comparison 2025",
+      "category": "tech",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364110",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js App Router Edge Runtime에서 Claude API 스트리밍 구현 시 지연 문제를 겪는 개발자",
+      "angle": "Edge vs Node runtime 실측 TTFB 비교 + 스트리밍 청크 처리 코드 패턴 차이 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Streaming API with Next.js Edge: Production-Ready Implementation Guide - Tech Edu Byte",
+          "url": "https://www.techedubyte.com/claude-streaming-api-nextjs-edge-guide/",
+          "source": "www.techedubyte.com"
+        },
+        {
+          "title": "How to Stream Claude API Responses in a Next.js App (With Full Code) | Vadim Alakhverdov",
+          "url": "https://vadimall.com/posts/Stream-claude-api-responses-in-nextjs",
+          "source": "vadimall.com"
+        },
+        {
+          "title": "API Reference: Edge Runtime | Next.js",
+          "url": "https://nextjs.org/docs/app/api-reference/edge",
+          "source": "nextjs.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2139-en-tech-prometheus-grafana-s",
+      "keyword": "prometheus grafana single vps 1gb ram docker compose memory optimization actual config",
+      "category": "tech",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364136",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "RAM 1GB VPS에서 Prometheus+Grafana를 Docker Compose로 돌리다 OOM 킬 당한 개발자",
+      "angle": "retention 기간·scrape interval·메모리 limit 값 조합 실험으로 안정 동작한 최소 설정값 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Grafana and Prometheus on a VPS for Server Monitoring | Blog | RDP.sh",
+          "url": "https://rdp.sh/en/blog/grafana-and-prometheus-on-a-vps-for-server-monitoring",
+          "source": "rdp.sh"
+        },
+        {
+          "title": "Set Up Prometheus and Grafana on Ubuntu VPS: Production Monitoring Stack | MassiveGRID Blog",
+          "url": "https://massivegrid.com/blog/prometheus-grafana-ubuntu-vps/",
+          "source": "massivegrid.com"
+        },
+        {
+          "title": "How to Deploy Grafana and Prometheus Monitoring Stack on Hong Kong VPS (2026) - Server.HK",
+          "url": "https://server.hk/blog/grafana-prometheus-monitoring-hong-kong-vps/",
+          "source": "server.hk"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2140-en-tech-supabase-row-level-s",
+      "keyword": "supabase row level security policy performance degradation real query benchmark small team",
+      "category": "tech",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364162",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase RLS 정책 적용 후 쿼리가 느려진 원인을 찾는 소규모 팀 개발자",
+      "angle": "RLS ON/OFF 상태별 EXPLAIN ANALYZE 결과 비교 + auth.uid() 인덱스 전략 실전 적용기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Row Level Security | Supabase Docs",
+          "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+          "source": "supabase.com"
+        },
+        {
+          "title": "Optimize RLS Policies for Performance - Postgres Best Practice | SupaExplorer",
+          "url": "https://supaexplorer.com/best-practices/supabase-postgres/security-rls-performance/",
+          "source": "supaexplorer.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2141-ko-tech-M3-맥북-ollama-llama3.",
+      "keyword": "M3 맥북 ollama llama3.2 한국어 답변 품질 GPT-4o-mini 실측 비교 토큰 속도 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364183",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "로컬 LLM이 실제로 GPT-4o-mini를 대체할 수 있는지 한국어 기준으로 확인하려는 개발자",
+      "angle": "한국어 요약·코드 생성·번역 3가지 태스크별 정성·정량 평가표와 M3 발열 관측 데이터 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
+          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
+          "source": "hoft.tistory.com"
+        },
+        {
+          "title": "LLaMA - 나무위키",
+          "url": "https://namu.wiki/w/LLaMA",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "로컬 LLM 추천 2026 TOP 7 — 전문가가 정리한 오픈소스 모델",
+          "url": "https://blogtechnicus.com/%EB%A1%9C%EC%BB%AC-llm-%EC%B6%94%EC%B2%9C-2026/",
+          "source": "blogtechnicus.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2142-ko-tech-Fly.io-1인-개발자-사이드프로젝",
+      "keyword": "Fly.io 1인 개발자 사이드프로젝트 월 실제 비용 청구서 분석 Railway 비교 2025",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364201",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "사이드프로젝트 인프라 비용을 최소화하려는 1인 개발자가 실제 청구 금액 기반 비교 자료 탐색",
+      "angle": "3개월 실제 인보이스 캡처 공개 + 트래픽 패턴별 어느 플랫폼이 유리한지 분기표 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Railway vs. Fly | Railway Docs",
+          "url": "https://docs.railway.com/platform/compare-to-fly",
+          "source": "docs.railway.com"
+        },
+        {
+          "title": "Railway vs Fly.io 2026: Which Is Worth It?",
+          "url": "https://www.saaspricepulse.com/compare/railway-vs-flyio-vs-render",
+          "source": "www.saaspricepulse.com"
+        },
+        {
+          "title": "Railway vs Fly.io vs Render: Which Cloud Gives You the Best ROI? | by R. Thompson (PhD) | AI Disrupt",
+          "url": "https://medium.com/ai-disruption/railway-vs-fly-io-vs-render-which-cloud-gives-you-the-best-roi-2e3305399e5b",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2143-ko-tech-Claude-API-청크-사이즈별-R",
+      "keyword": "Claude API 청크 사이즈별 RAG 검색 정확도 실험 한국어 문서 임베딩 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364217",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 문서 RAG 구현 시 청크 크기가 검색 품질에 미치는 영향을 실험 데이터로 확인하려는 개발자",
+      "angle": "256/512/1024 토큰 청크 3가지 조건에서 Hit Rate·MRR 직접 측정 결과표와 최적 설정 권고",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[Tech Series] kt cloud AI 검색 증강 생성(RAG) #4 : 임베딩(Embedding)과 벡터 인덱싱 기술",
+          "url": "https://tech.ktcloud.com/entry/2026-03-ktcloud-rag-embedding-vectorindex-%EA%B2%80%EC%83%89-%EC%83%89%EC%9D%B8",
+          "source": "tech.ktcloud.com"
+        },
+        {
+          "title": "임베딩 모델 선택 가이드 - 개념부터 한국어 벤치마크까지",
+          "url": "https://www.data-dynamics.io/ko/blog/embedding-model-guide",
+          "source": "www.data-dynamics.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2144-ko-tech-GitHub-Actions-Hugo-",
+      "keyword": "GitHub Actions Hugo 블로그 Cloudflare Pages 자동배포 cron 트리거 안될 때 해결",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364234",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Hugo + Cloudflare Pages 조합에서 cron 스케줄 배포가 묵묵히 실패하는 원인을 찾는 블로거",
+      "angle": "GitHub Actions cron 지연 이슈·Cloudflare webhook 토큰 만료 두 가지 원인별 실제 로그와 수정 yaml 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "サボりのAlice、そして意図せず増殖した記事、制御不能の自動投稿！GitHub Actionsのcronが動かなかった話｜えいりす",
+          "url": "https://note.com/alice_ai_blog/n/nd200e3274b1a",
+          "source": "note.com"
+        },
+        {
+          "title": "GitHub Actions로 Cloudflare Pages에 Swagger 배포하기",
+          "url": "https://velog.io/@milkskfk5677/Cloudflare-Pages",
+          "source": "velog.io"
+        },
+        {
+          "title": "[배포] Cloudflare Pages 배포에 인증 추가하기",
+          "url": "https://meal-coding.tistory.com/54",
+          "source": "meal-coding.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2145-ko-tech-Supabase-RLS-적용-후-쿼리",
+      "keyword": "Supabase RLS 적용 후 쿼리 느려짐 원인 분석 인덱스 전략 실전 트러블슈팅",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364249",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Supabase RLS 켠 이후 특정 쿼리가 10배 이상 느려진 원인을 찾는 백엔드 개발자",
+      "angle": "auth.uid() 조건에 함수 기반 인덱스 추가 전후 실행계획 스크린샷 비교 + 적용 SQL 전문 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[260402 TIL] 검색 쿼리 최적화 트러블슈팅 - elseif - 티스토리",
+          "url": "https://ifelseif.tistory.com/332",
+          "source": "ifelseif.tistory.com"
+        },
+        {
+          "title": "Supabase Postgres Best Practices - 함께해요 바이브 코딩",
+          "url": "https://wikidocs.net/339066",
+          "source": "wikidocs.net"
+        },
+        {
+          "title": "Supabase RLS 성능 경고 해결(auth.uid() 리팩토링)",
+          "url": "https://velog.io/@rlaugs15/Supabase-RLS-%EC%84%B1%EB%8A%A5-%EA%B2%BD%EA%B3%A0-%ED%95%B4%EA%B2%B0auth.uid-%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81",
+          "source": "velog.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2146-ko-tech-Prometheus-Grafana-D",
+      "keyword": "Prometheus Grafana Docker Compose VPS 1GB 메모리 OOM 방지 최소 설정 실전기",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364267",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "저사양 VPS에서 모니터링 스택을 올리다 메모리 부족으로 죽는 문제를 겪는 개발자",
+      "angle": "--storage.tsdb.retention.time·메모리 limit·scrape_interval 조합 실험 결과와 최종 docker-compose.yml 전문 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Grafana Tempo 분산 트레이싱과 TraceQL 운영 가이드 2026 | Chaos and Order",
+          "url": "https://www.youngju.dev/blog/observability/2026-03-04-observability-grafana-tempo-traceql-2026",
+          "source": "www.youngju.dev"
+        },
+        {
+          "title": "Docker 컨테이너 메모리 관리 및 OOM 대응 - 성장하는 개발자",
+          "url": "https://bluedreamer-twenty.tistory.com/6",
+          "source": "bluedreamer-twenty.tistory.com"
+        },
+        {
+          "title": "Docker 컨테이너 모니터링: cAdvisor + Prometheus + Grafana",
+          "url": "https://denev6.tistory.com/entry/grafana",
+          "source": "denev6.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2147-ko-tech-Next.js-App-Router-E",
+      "keyword": "Next.js App Router Edge Runtime Claude 스트리밍 응답 지연 원인 및 Node runtime 전환 비교",
+      "category": "tech",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-05-28T10:58:28.364286",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "Next.js 14+ App Router에서 Claude API 스트리밍 구현 시 첫 응답이 느린 원인을 찾는 프론트엔드 개발자",
+      "angle": "Edge vs Node.js runtime TTFB 실측 비교 + ReadableStream 처리 코드 패턴 차이 분석 및 권장 구성 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Next.js에서 Edge Runtime은 언제 쓰는 걸까? (Node.js와 비교 정리)",
+          "url": "https://velog.io/@do_dam/Next.js%EC%97%90%EC%84%9C-Edge-Runtime%EC%9D%80-%EC%96%B8%EC%A0%9C-%EC%93%B0%EB%8A%94-%EA%B1%B8%EA%B9%8C-Node.js%EC%99%80-%EB%B9%84%EA%B5%90-%EC%A0%95%EB%A6%AC",
+          "source": "velog.io"
+        },
+        {
+          "title": "Lobehub",
+          "url": "https://lobehub.com/ko/skills/davila7-claude-code-templates-nextjs-best-practices",
+          "source": "lobehub.com"
+        },
+        {
+          "title": "Edge Runtime vs Node Runtime in Next.js (Complete Practical Guide) | by Chandan | Full-Stack Develop",
+          "url": "https://medium.com/codetodeploy/edge-runtime-vs-node-runtime-in-next-js-complete-practical-guide-b853dea38751",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

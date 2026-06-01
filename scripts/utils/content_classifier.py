@@ -45,6 +45,22 @@ class ContentClassifier:
         '발표했다', '출시했다', '공개했다', '인수했다', '투자 유치', '펀딩',
     ]
 
+    # Comparison indicators — head-to-head matchups (was getting buried in 'analysis')
+    COMPARISON_INDICATORS = [
+        ' vs ', ' vs. ', ' versus ', 'compared to', 'comparison',
+        'difference between', 'or which', 'which is better',
+        'pros and cons', 'side by side', 'head to head',
+        ' 비교', '차이', '어느 게', '어떤 게', '뭐가 나은', '뭐가 더',
+    ]
+
+    # Troubleshoot indicators — "something broke, how do I fix it"
+    TROUBLESHOOT_INDICATORS = [
+        'not working', 'doesn\'t work', 'fails', 'failing', 'error', 'errors',
+        'broken', 'crash', 'crashes', 'crashing', 'won\'t start', 'stuck',
+        'fix', 'solve', 'resolve', 'debugging', 'troubleshoot',
+        '안 됨', '안돼', '안 돼', '실패', '에러', '오류', '고장', '해결', '안 돌아',
+    ]
+
     # Content type configurations
     CONTENT_TYPE_CONFIG = {
         'tutorial': {
@@ -89,20 +105,51 @@ class ContentClassifier:
                 'impact'
             ],
             'description': 'Concise news article with key facts and context'
-        }
+        },
+        'comparison': {
+            'word_count': {
+                'en': (1000, 1400),
+                'ko': (1000, 1400),
+            },
+            'prompt_template': 'comparison',
+            'priority': 1.2,
+            'requires': [
+                'comparison_table',
+                'verdict',
+                'failure_modes',
+            ],
+            'description': 'Head-to-head comparison with verdict-first structure and matrix'
+        },
+        'troubleshoot': {
+            'word_count': {
+                'en': (900, 1300),
+                'ko': (900, 1300),
+            },
+            'prompt_template': 'troubleshoot',
+            'priority': 1.3,
+            'requires': [
+                'symptom',
+                'quick_fix',
+                'verification_steps',
+                'prevention',
+            ],
+            'description': 'Diagnostic article with symptom → likely causes → fixes'
+        },
     }
 
     def classify(self, topic: str, keywords: List[str], category: str) -> str:
         """
         Classify content type based on topic, keywords, and category.
 
-        Args:
-            topic: The topic/title of the content
-            keywords: List of keywords
-            category: Content category (tech, business, etc.)
+        Returns one of: 'tutorial', 'analysis', 'news', 'comparison', 'troubleshoot'.
 
-        Returns:
-            'tutorial' | 'analysis' | 'news'
+        Why two extra types: previously ~90% of generated posts ended up as
+        'analysis' regardless of intent, so the site looked uniform to crawlers.
+        Most posts that scored as 'analysis' were actually head-to-head matchups
+        (X vs Y) or fix-this-broken-thing pieces; routing them to dedicated
+        templates yields visibly different article structures (verdict-first
+        tables for comparison, symptom-first quick-fix blocks for troubleshoot),
+        which is a stronger signal for both readers and Google.
         """
         topic_lower = topic.lower()
         keywords_str = ' '.join(keywords).lower()
@@ -110,50 +157,65 @@ class ContentClassifier:
         # Tutorial classification only for tech (tech-only strategy)
         allow_tutorial = category == 'tech'
 
-        # Check for Tutorial indicators (15%)
-        # Must have strong tutorial signal (not just "shows" or "trends")
         tutorial_score = 0
         for indicator in self.TUTORIAL_INDICATORS:
             if indicator in topic_lower:
-                # Strong tutorial words get higher score
                 if indicator in ['guide', 'tutorial', 'how to', 'step by step', 'walkthrough', '가이드']:
                     tutorial_score += 3
                 else:
                     tutorial_score += 1
-
-        # Complex tech topics boost tutorial score
         if any(tech in keywords_str for tech in self.COMPLEX_TECH):
             tutorial_score += 1
 
-        # Check for News indicators (25%)
-        # News should have time-sensitive action verbs
         news_score = 0
         for indicator in self.NEWS_INDICATORS:
             if indicator in topic_lower:
-                # Strong news words (past tense actions)
-                if indicator in ['announced', 'launched', 'released', 'acquired', 'raised $', 'confirms', '발표했다', '출시했다']:
+                if indicator in ['announces', 'announced', 'launching', 'launched', 'released', 'acquires', 'acquired', 'raises $', 'raised $', 'confirms', '발표했다', '출시했다']:
                     news_score += 3
-                # Weaker news signals
                 elif indicator in ['unveils', 'introduces', 'reveals']:
                     news_score += 2
                 else:
                     news_score += 1
 
-        # Decision logic with scores
-        if allow_tutorial and tutorial_score >= 3:
-            return 'tutorial'
+        comparison_score = 0
+        for indicator in self.COMPARISON_INDICATORS:
+            if indicator in topic_lower:
+                # " vs " is the strongest comparison signal
+                if indicator in [' vs ', ' vs. ', ' versus ', '비교']:
+                    comparison_score += 3
+                else:
+                    comparison_score += 1
 
-        if news_score >= 3:
-            return 'news'
+        troubleshoot_score = 0
+        for indicator in self.TROUBLESHOOT_INDICATORS:
+            if indicator in topic_lower:
+                if indicator in ['not working', 'doesn\'t work', 'error', 'fix', '안 됨', '에러', '해결']:
+                    troubleshoot_score += 3
+                else:
+                    troubleshoot_score += 1
 
-        # If has some tutorial/news signal but not strong enough, check context
-        if allow_tutorial and tutorial_score >= 1 and 'complete' in topic_lower:
-            return 'tutorial'
+        # Decision precedence: strongest signal wins.
+        # News is most time-sensitive, so it takes priority when tied.
+        scores = {
+            'news': news_score,
+            'troubleshoot': troubleshoot_score,
+            'comparison': comparison_score,
+            'tutorial': tutorial_score if allow_tutorial else 0,
+        }
+        best_type, best_score = max(scores.items(), key=lambda kv: kv[1])
 
+        if best_score >= 3:
+            return best_type
+
+        # Weak signals: news with a year word still counts as news
         if news_score >= 1 and any(year in topic_lower for year in ['2024', '2025', '2026', 'latest', 'new']):
             return 'news'
 
-        # Default to Analysis (60%)
+        # Weak comparison signal still routes to comparison if there's any "vs"-like word
+        if comparison_score >= 1:
+            return 'comparison'
+
+        # Default to Analysis
         return 'analysis'
 
     def get_config(self, content_type: str, language: str = 'en') -> Dict:
@@ -181,34 +243,21 @@ class ContentClassifier:
         return config
 
     def get_distribution(self) -> Dict[str, float]:
-        """
-        Get target distribution for content types.
-
-        Returns:
-            Dictionary with percentages for each type
-        """
+        """Target distribution across the 5 content types."""
         return {
-            'tutorial': 0.15,
-            'analysis': 0.60,
-            'news': 0.25
+            'tutorial': 0.10,
+            'analysis': 0.40,
+            'news': 0.20,
+            'comparison': 0.15,
+            'troubleshoot': 0.15,
         }
 
     def get_target_counts(self, total_posts: int) -> Dict[str, int]:
-        """
-        Calculate target counts for each content type.
-
-        Args:
-            total_posts: Total number of posts to generate
-
-        Returns:
-            Dictionary with target counts for each type
-        """
+        """Calculate target counts for each content type."""
         distribution = self.get_distribution()
-
         return {
-            'tutorial': round(total_posts * distribution['tutorial']),
-            'analysis': round(total_posts * distribution['analysis']),
-            'news': round(total_posts * distribution['news'])
+            content_type: round(total_posts * pct)
+            for content_type, pct in distribution.items()
         }
 
     def should_generate_type(

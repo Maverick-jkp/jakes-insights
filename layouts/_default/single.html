@@ -109,6 +109,9 @@
     </div>
     {{ end }}
 
+    {{/* Author bio — E-E-A-T signal, shown at the end of every post */}}
+    {{ partial "author-bio.html" . }}
+
     {{/* Share Buttons */}}
     <div class="share-buttons">
       <button class="share-btn" onclick="navigator.share({title: '{{ .Title }}', url: '{{ .Permalink }}'})">

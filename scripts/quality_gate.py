@@ -297,6 +297,50 @@ class QualityGate:
                     "News article missing specific date references: should include when events occurred"
                 )
 
+        elif content_type == 'comparison':
+            # A comparison post that doesn't have a markdown comparison table
+            # isn't really a comparison post — it's just two side-by-side
+            # paragraphs, which is what was failing before.
+            tables = re.findall(r'\|[^\n]+\|', body)
+            table_count = len(tables)
+            checks['info']['tables'] = table_count
+
+            if table_count == 0:
+                checks['critical_failures'].append(
+                    "Comparison missing markdown table: expected at least 1 head-to-head matrix"
+                )
+
+            # The verdict must be stated upfront, not buried. Look for one of
+            # several verdict markers in the first 30% of the article.
+            head = body[:max(500, len(body) // 3)]
+            verdict_markers = ['TL;DR', 'tl;dr', 'Bottom Line', 'bottom line',
+                               'Use ', 'Pick ', 'Choose ', '결론', '한 줄로']
+            has_verdict = any(m in head for m in verdict_markers)
+            if not has_verdict:
+                checks['warnings'].append(
+                    "Comparison missing upfront verdict: open with TL;DR / Bottom Line / 결론"
+                )
+
+        elif content_type == 'troubleshoot':
+            # Troubleshoot posts must have code blocks (commands/configs) and
+            # should structure causes as headings.
+            code_blocks = re.findall(r'```[\w]*\n', body)
+            code_count = len(code_blocks)
+            checks['info']['code_blocks'] = code_count
+
+            if code_count < 2:
+                checks['critical_failures'].append(
+                    f"Troubleshoot missing code examples: found {code_count}, expected 2+ commands or config snippets"
+                )
+
+            # Look for "Cause N:" or "원인 N:" style headings (the template prescribes this).
+            cause_headings = re.findall(r'^###?\s*(Cause|Issue|원인)\s*\d*[:.]', body, re.MULTILINE | re.IGNORECASE)
+            checks['info']['cause_headings'] = len(cause_headings)
+            if len(cause_headings) < 2:
+                checks['warnings'].append(
+                    f"Troubleshoot has few cause sections: found {len(cause_headings)}, expected 3"
+                )
+
     def _check_word_count(self, body: str, checks: Dict):
         """Check if word count is within range"""
         lang = checks['language']

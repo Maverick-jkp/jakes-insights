@@ -39,6 +39,98 @@ from utils.validation import (
 )
 
 
+# Tokens that appear in many keywords but don't define the topic. Used to skip
+# them when computing topic-noun overlap between two keywords.
+_TOPIC_NOUN_STOPWORDS = frozenset({
+    "a", "an", "the", "and", "or", "but", "for", "to", "of", "in", "on", "at",
+    "by", "from", "with", "into", "vs", "vs.", "versus", "is", "are", "was",
+    "the", "this", "that", "how", "what", "why", "when", "where", "which",
+    "do", "does", "did", "best", "top", "new", "guide", "tutorial", "review",
+    "complete", "real", "actual", "actually", "worth", "use", "using", "used",
+    "via", "without", "with", "single", "solo", "developer", "developers",
+    "user", "users", "free", "tier", "pro", "plan", "plans", "open", "source",
+    "self", "hosted", "hosting", "local", "remote", "first", "second", "third",
+    "before", "after", "vs", "versus", "between", "compared", "comparison",
+    "test", "tests", "testing", "tested", "month", "year", "week", "day",
+    "hour", "minute", "second", "2024", "2025", "2026", "2027",
+    # Generic tech adjectives — not specific topics
+    "api", "apis", "app", "apps", "tool", "tools", "cli", "ide", "cloud",
+    "data", "code", "build", "builds", "run", "runs", "log", "logs",
+    "size", "speed", "cost", "costs", "price", "prices", "memory", "cpu",
+    "disk", "network", "latency", "performance", "benchmark", "experiment",
+    "production", "development", "prod", "dev",
+    # Generic verbs and prepositions that survived the basic filter
+    "not", "fix", "fixing", "fixed", "solve", "solving", "solved", "issue",
+    "issues", "problem", "problems", "working", "broken", "error", "errors",
+    "running", "starting", "stopping", "installing", "installed", "setup",
+    "configure", "configured", "config", "configuration",
+    # Korean stopwords (very small set — we deliberately keep tech nouns)
+    "그", "이", "저", "는", "은", "이", "가", "을", "를", "에", "의",
+    "비교", "후기", "실제", "실전", "방법", "사용", "사용법", "개발자",
+})
+
+
+def _extract_topic_nouns(keyword: str) -> set:
+    """Pull the meaningful tokens out of a keyword for overlap comparison.
+
+    Lowercased, alphanumerics + CJK only, stopwords removed, very short tokens
+    (1-2 chars) dropped. Returns a set so overlap is set-intersection.
+    """
+    s = keyword.lower()
+    s = "".join(c if (c.isalnum() or c.isspace() or ord(c) > 127) else " " for c in s)
+    tokens = {t for t in s.split() if len(t) > 2 and t not in _TOPIC_NOUN_STOPWORDS}
+    return tokens
+
+
+def _collect_recent_noun_sets(topics: list, days: int = 7) -> list:
+    """Return the noun-set of every topic completed within the last `days`.
+
+    Used to enforce "don't ship another weaviate post within 7 days of the
+    last one." Pulls from `completed_at` (preferred) or `reserved_at`.
+    """
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+    out = []
+    for t in topics:
+        if t.get('status') != 'completed':
+            continue
+        ts_str = t.get('completed_at') or t.get('reserved_at')
+        if not ts_str:
+            continue
+        try:
+            ts = datetime.fromisoformat(ts_str.replace('Z', '+00:00'))
+        except (ValueError, AttributeError):
+            continue
+        if ts < cutoff:
+            continue
+        out.append(_extract_topic_nouns(t['keyword']))
+    return out
+
+
+def _find_overlapping_set(candidate: set, others: list, min_overlap: int = 1):
+    """Return the intersection set if `candidate` shares a meaningful noun
+    with any set in `others`. None if no overlap reaches the threshold.
+
+    Strategy: even a single shared noun like 'weaviate' or 'claude' is enough
+    to block, because once we've stripped generic stopwords (api, ide, tool,
+    benchmark, etc.) what's left is almost always a proper-noun product name
+    or a specific technical concept. The 5/30 incident was two weaviate posts
+    on the same day even though their other words differed — that's exactly
+    what min_overlap=1 (post-stopword) catches.
+
+    False positives are still possible (e.g., two posts that both mention
+    "docker" but on unrelated topics). Acceptable trade-off because each
+    workflow run reserves 4x count topics, so a blocked topic just defers
+    to a later run.
+    """
+    if not candidate:
+        return None
+    for other in others:
+        intersection = candidate & other
+        if len(intersection) >= min_overlap:
+            return intersection
+    return None
+
+
 class TopicQueue:
     def __init__(self, queue_file: str = "data/topics_queue.json"):
         self.queue_file = Path(queue_file)
@@ -62,23 +154,30 @@ class TopicQueue:
 
     def reserve_topics(self, count: int = 3, priority_min: int = 1) -> List[Dict]:
         """
-        Reserve topics by moving them from pending to in_progress
+        Reserve topics by moving them from pending to in_progress.
 
-        Args:
-            count: Number of topics to reserve
-            priority_min: Minimum priority level (1-10)
-
-        Returns:
-            List of reserved topics
+        Prevents two kinds of duplication:
+        1. Exact keyword+lang already completed (existing behavior).
+        2. Topic-overlap with anything published in the last 7 days, in either
+           language. This is new: previously the queue could ship two "weaviate"
+           posts on the same day because their keywords differed in wording
+           but the core noun set was identical, and Google flagged the cluster
+           as low-value duplication.
         """
         data = self._load_queue()
 
-        # Get completed keywords to prevent duplicates
+        # Get completed keywords to prevent exact duplicates (existing)
         completed_keywords = {
             (t['keyword'].lower(), t.get('lang', t.get('language', 'en'))): t['id']
             for t in data['topics']
             if t['status'] == 'completed'
         }
+
+        # Collect core nouns from topics completed in the last 7 days (any lang).
+        # We compare against this set during reservation, AND incrementally
+        # against topics we reserve in this same batch, so a single 10-post
+        # run can't ship two weaviate posts either.
+        recent_noun_sets = _collect_recent_noun_sets(data['topics'], days=7)
 
         # Find available topics sorted by priority (high to low) and created_at
         # Note: Only 'pending' status is used (unified from 'available' on 2026-01-25)
@@ -88,22 +187,27 @@ class TopicQueue:
         ]
         available.sort(key=lambda x: (-x.get('priority', 5), x.get('created_at', '')))
 
-        # Reserve top N topics
         reserved = []
+        reserved_noun_sets = []
         now = datetime.now(timezone.utc).isoformat()
 
-        for topic in available[:count * 2]:  # Check more topics to account for duplicates
-            # Skip if already completed for same keyword+lang
+        # We look at up to 4x count to give the dedup filter room to work
+        for topic in available[:count * 4]:
             topic_lang = topic.get('lang', topic.get('language', 'en'))
             topic_key = (topic['keyword'].lower(), topic_lang)
             if topic_key in completed_keywords:
-                print(f"⚠️  Skipping duplicate: {topic['keyword']} ({topic_lang}) - already completed as {completed_keywords[topic_key]}")
+                print(f"⚠️  Skipping duplicate keyword: {topic['keyword']} ({topic_lang}) — already completed as {completed_keywords[topic_key]}")
                 continue
 
-            # Validate topic data before reserving
+            # Topic-overlap dedup (the new check)
+            nouns = _extract_topic_nouns(topic['keyword'])
+            overlap_with = _find_overlapping_set(nouns, recent_noun_sets + reserved_noun_sets, min_overlap=1)
+            if overlap_with is not None:
+                print(f"⚠️  Skipping topic-overlap: {topic['keyword']} — shares {overlap_with} with recent/batch")
+                continue
+
             errors = validate_topic_data(topic)
             if errors:
-                # Skip invalid topics
                 print(f"⚠️  Skipping invalid topic {topic.get('id', 'unknown')}: {errors}")
                 continue
 
@@ -111,8 +215,8 @@ class TopicQueue:
             topic['reserved_at'] = now
             topic['retry_count'] = topic.get('retry_count', 0)
             reserved.append(topic)
+            reserved_noun_sets.append(nouns)
 
-            # Stop when we have enough topics
             if len(reserved) >= count:
                 break
 

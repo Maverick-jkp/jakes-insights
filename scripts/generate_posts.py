@@ -39,7 +39,13 @@ from affiliate_config import (
 )
 from internal_linker import InternalLinker
 from ab_test_manager import ABTestManager
-from prompts import get_tutorial_prompt, get_analysis_prompt, get_news_prompt
+from prompts import (
+    get_tutorial_prompt,
+    get_analysis_prompt,
+    get_news_prompt,
+    get_comparison_prompt,
+    get_troubleshoot_prompt,
+)
 from utils.rag_pipeline import RAGPipeline
 from utils.community_miner import CommunityMiner
 from utils.guru_miner import GuruMiner
@@ -288,6 +294,102 @@ D. 실전 가이드: "[주제]가 [결과]를 바꾸는 방법: 데이터 기반
 }
 
 
+# Words that don't carry meaning in a slug. We strip them after the keyword is
+# normalized so the remaining slug is denser in actual topic nouns.
+SLUG_STOPWORDS_EN = frozenset({
+    "a", "an", "the", "and", "or", "but", "for", "to", "of", "in", "on", "at",
+    "by", "from", "with", "into", "onto", "as", "is", "are", "was", "were", "be",
+    "been", "being", "do", "does", "did", "doing", "have", "has", "had", "having",
+    "i", "you", "he", "she", "it", "we", "they", "my", "your", "his", "her", "its",
+    "our", "their", "this", "that", "these", "those", "what", "which", "who",
+    "whom", "where", "when", "why", "how", "all", "any", "both", "each", "few",
+    "more", "most", "some", "such", "no", "not", "only", "own", "same", "than",
+    "too", "very", "can", "will", "just", "should", "now", "actually",
+    "really", "still", "also", "even", "vs",
+})
+
+
+def make_slug(keyword: str, max_length: int = 50) -> str:
+    """Create a URL-safe slug from a keyword.
+
+    Why: longtail SEO keywords (8-15 words) produce slugs that get truncated
+    mid-word ("...productivity-differen") and trigger Google's "low quality"
+    signals. Strategy: lowercase, strip stopwords, normalize separators, then
+    cut on a word boundary at most max_length characters.
+
+    Preserves CJK characters (Korean keywords use them meaningfully).
+    """
+    s = keyword.lower().strip()
+    # Keep alphanumerics, spaces, and non-ASCII (CJK). Drop everything else.
+    s = "".join(c if (c.isalnum() or c.isspace() or ord(c) > 127) else " " for c in s)
+    tokens = [t for t in s.split() if t and t not in SLUG_STOPWORDS_EN]
+    if not tokens:
+        # Fallback: keyword was entirely stopwords (extremely unlikely)
+        tokens = [t for t in keyword.lower().split() if t]
+
+    # Greedy fill up to max_length, cutting only on word boundaries
+    out = ""
+    for token in tokens:
+        candidate = token if not out else f"{out}-{token}"
+        if len(candidate) > max_length:
+            break
+        out = candidate
+    # If even the first token exceeds max_length, hard-truncate it
+    if not out and tokens:
+        out = tokens[0][:max_length].rstrip("-")
+    return out
+
+
+def _filter_keyword_stuffed_faqs(faq_items: list, keyword: str) -> list:
+    """Drop FAQ items that look like keyword stuffing.
+
+    Why: the model occasionally ignores the prompt and dumps the full longtail
+    keyword into the question, or generates near-duplicate questions that share
+    most of their words. Both patterns trip Google's "low quality" detector.
+
+    Filters applied in order:
+      1. Reject if the question contains 5+ consecutive words from the keyword
+      2. Reject if two questions share more than 60% of their tokens
+    """
+    if not faq_items:
+        return faq_items
+
+    keyword_tokens = [t for t in keyword.lower().split() if t]
+
+    def is_stuffed(question: str) -> bool:
+        q_tokens = question.lower().split()
+        if len(keyword_tokens) < 5:
+            return False
+        # Sliding window: any 5-token run from the keyword appearing verbatim in question
+        for i in range(len(keyword_tokens) - 4):
+            run = keyword_tokens[i:i + 5]
+            for j in range(len(q_tokens) - 4):
+                if q_tokens[j:j + 5] == run:
+                    return True
+        return False
+
+    kept = []
+    for item in faq_items:
+        q = item.get("question", "")
+        if is_stuffed(q):
+            continue
+        # Near-duplicate check against already-kept questions
+        q_set = set(q.lower().split())
+        is_duplicate = False
+        for prior in kept:
+            prior_set = set(prior.get("question", "").lower().split())
+            if not q_set or not prior_set:
+                continue
+            overlap = len(q_set & prior_set) / max(len(q_set), len(prior_set))
+            if overlap > 0.6:
+                is_duplicate = True
+                break
+        if not is_duplicate:
+            kept.append(item)
+
+    return kept
+
+
 class ContentGenerator:
     def __init__(self, api_key: Optional[str] = None, unsplash_key: Optional[str] = None):
         """Initialize content generator with Claude API and Unsplash API"""
@@ -397,12 +499,14 @@ class ContentGenerator:
         few_shot = get_examples(lang, content_type)
 
         # Get type-specific prompt
-        if content_type == 'tutorial':
-            user_prompt = get_tutorial_prompt(keyword, keywords, lang)
-        elif content_type == 'analysis':
-            user_prompt = get_analysis_prompt(keyword, keywords, lang)
-        else:  # news
-            user_prompt = get_news_prompt(keyword, keywords, lang)
+        prompt_dispatcher = {
+            'tutorial': get_tutorial_prompt,
+            'analysis': get_analysis_prompt,
+            'news': get_news_prompt,
+            'comparison': get_comparison_prompt,
+            'troubleshoot': get_troubleshoot_prompt,
+        }
+        user_prompt = prompt_dispatcher.get(content_type, get_analysis_prompt)(keyword, keywords, lang)
 
         # Build full context
         context_parts = []
@@ -1109,17 +1213,44 @@ Return ONLY the description.""",
         return response.content[0].text.strip().strip('"').strip("'")
 
     def generate_faq(self, content: str, keyword: str, lang: str) -> list:
-        """Generate 3-5 FAQ pairs based on article content for FAQPage schema"""
+        """Generate 3-5 FAQ pairs based on article content for FAQPage schema.
+
+        Why this is rewritten: the previous prompt told Claude to "include the
+        keyword in at least 2 questions," and with longtail SEO keywords (8-15
+        words), that produced FAQs like:
+          - "cursor ide vs copilot actual productivity difference solo developer 3 month review worth it"
+          - "cursor ide vs copilot actual productivity difference solo developer 3 month review price comparison"
+        Google flagged these as keyword stuffing → "Crawled - currently not indexed".
+
+        New approach: extract the core topic (1-3 nouns) from the keyword, ban
+        verbatim keyword reuse, require each question to start with a different
+        interrogative word, and validate post-hoc.
+        """
         prompts = {
-            "en": f"""Based on this blog post about '{keyword}', generate 3-5 FAQ pairs that someone might search for.
+            "en": f"""You are writing FAQ questions for a blog post about: {keyword}
 
-RULES:
-- Questions must be natural search queries (how people actually type in Google)
-- Answers must be 2-3 sentences, factual, directly answering the question
-- Include the keyword '{keyword}' naturally in at least 2 questions
-- Each answer should be self-contained (understandable without reading the article)
+Generate 3-5 FAQ pairs that a real person would search on Google.
 
-Return ONLY a JSON array:
+HARD RULES (failures are rejected):
+1. DO NOT include the full keyword phrase verbatim in any question. Use only 1-3 core nouns.
+2. Each question must start with a different word (How, What, Why, When, Is, Does, Can — vary them).
+3. No two questions may share more than 3 consecutive words.
+4. Questions must be 8-15 words and sound like a tired developer typing into Google at 11pm.
+5. Avoid jargon-stuffed permutations like "X vs Y comparison guide best practice 2026".
+
+GOOD examples (notice the variety):
+  - "Is Cursor actually worth $20 a month over Copilot?"
+  - "What breaks when you self-host a runner on a Raspberry Pi?"
+  - "How much RAM do you really need for local vector search?"
+
+BAD examples (do not produce these):
+  - "cursor ide vs copilot productivity comparison solo developer review"
+  - "best practices cursor ide copilot real world usage 2026"
+
+Answers: 2-3 sentences, factual, directly answering the question. Each answer
+must be understandable on its own (a reader who hasn't read the article).
+
+Return ONLY a JSON array, no commentary:
 [
   {{"question": "...", "answer": "..."}},
   {{"question": "...", "answer": "..."}}
@@ -1127,15 +1258,29 @@ Return ONLY a JSON array:
 
 Article content:
 {content[:3000]}""",
-            "ko": f"""이 '{keyword}' 블로그 글을 기반으로 3-5개 FAQ 쌍을 생성하세요.
+            "ko": f"""다음 블로그 글의 FAQ를 작성합니다. 주제: {keyword}
 
-규칙:
-- 질문은 자연스러운 검색 쿼리여야 함 (실제 구글에 타이핑하는 형태)
-- 답변은 2-3문장, 사실적, 질문에 직접 답변
-- 최소 2개 질문에 '{keyword}' 키워드 자연스럽게 포함
-- 각 답변은 독립적으로 이해 가능해야 함
+실제 사람이 구글에 검색할 만한 FAQ 3-5쌍을 만드세요.
 
-JSON 배열만 반환:
+엄격 규칙 (위반 시 거부됨):
+1. 키워드 문구 전체를 질문에 그대로 넣지 마세요. 핵심 명사 1-3개만 사용.
+2. 각 질문은 서로 다른 단어로 시작해야 함 (왜, 어떻게, 무엇이, 언제, ~인가요, 가능한가요 등 다양화).
+3. 두 질문 사이에 3단어 이상 연속으로 같은 표현 금지.
+4. 질문은 8-15단어, 밤 11시에 개발자가 검색창에 치는 톤으로.
+5. "X vs Y 비교 가이드 베스트 프랙티스 2026" 같은 키워드 나열식 금지.
+
+좋은 예 (다양성 주목):
+  - "Cursor가 한 달 2만원 값어치 정말 하나요?"
+  - "라즈베리파이로 셀프호스트 러너 돌리면 뭐가 깨지나요?"
+  - "로컬 벡터 검색에 램이 실제로 얼마나 필요한가요?"
+
+나쁜 예 (절대 금지):
+  - "cursor ide copilot 생산성 비교 1인 개발자 후기"
+  - "베스트 프랙티스 cursor ide copilot 실사용 2026"
+
+답변: 2-3문장, 사실적, 질문에 직접 답변. 글을 안 읽은 독자도 이해할 수 있도록.
+
+JSON 배열만 반환, 추가 설명 없이:
 [
   {{"question": "...", "answer": "..."}},
   {{"question": "...", "answer": "..."}}
@@ -1155,6 +1300,7 @@ JSON 배열만 반환:
         json_match = re.search(r'\[[\s\S]*\]', text)
         if json_match:
             faq_items = json.loads(json_match.group())
+            faq_items = _filter_keyword_stuffed_faqs(faq_items, keyword)
             return faq_items[:5]
         return []
 
@@ -1477,11 +1623,8 @@ JSON 배열만 반환:
             images_dir = Path("static/images")
             images_dir.mkdir(parents=True, exist_ok=True)
 
-            # Generate filename
-            slug = keyword.lower()
-            # Allow Unicode characters (CJK) in filenames
-            slug = ''.join(c if c.isalnum() or c.isspace() or ord(c) > 127 else '' for c in slug)
-            slug = slug.replace(' ', '-')[:30]
+            # Generate filename (shared helper; CJK preserved, word-boundary cut)
+            slug = make_slug(keyword, max_length=30)
             # Use KST for image filename
             from datetime import timezone, timedelta
             kst = timezone(timedelta(hours=9))
@@ -1576,11 +1719,8 @@ JSON 배열만 반환:
         category = topic['category']
         keyword = topic['keyword']
 
-        # Generate filename from keyword
-        slug = keyword.lower()
-        # Remove special characters, keep alphanumeric and spaces
-        slug = ''.join(c if c.isalnum() or c.isspace() else '' for c in slug)
-        slug = slug.replace(' ', '-')[:50]
+        # Generate filename from keyword (word-boundary truncation, stopwords removed)
+        slug = make_slug(keyword, max_length=50)
 
         # Create directory
         content_dir = Path(f"content/{lang}/{category}")

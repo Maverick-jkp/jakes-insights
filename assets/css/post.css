@@ -223,6 +223,95 @@
   font-weight: var(--weight-bold);
 }
 
+/* === Author Bio (E-E-A-T block at the end of each post) === */
+
+.author-bio {
+  margin: var(--space-3xl) 0;
+  padding: var(--space-xl);
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-gray);
+  border-radius: var(--radius-md);
+}
+
+.author-bio-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.author-avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--weight-bold);
+  font-size: var(--text-md);
+  flex-shrink: 0;
+}
+
+.author-bio-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-bio-name {
+  font-weight: var(--weight-bold);
+  font-size: var(--text-md);
+  color: var(--text-primary);
+}
+
+.author-bio-role {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.author-bio-text {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 var(--space-md) 0;
+}
+
+.author-bio-text a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.author-bio-text a:hover {
+  text-decoration: underline;
+}
+
+.author-bio-links {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.author-bio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 6px 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--accent-gray);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.author-bio-link:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
 /* === Share Buttons === */
 
 .share-buttons {

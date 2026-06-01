@@ -11,9 +11,22 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /en/ / 301
 /en/all-posts/ /all-posts/ 301
 /en/all-posts/* /all-posts/:splat 301
-/en/tech/* /tech/:splat 301
 /en/tags/* /tags/:splat 301
 /en/categories/* /categories/ 301
+
+# /en/tech/<slug>/ → /tech/<slug>/ (currently-valid date-prefixed URLs)
+# Older slug-only /en/tech/<slug>/ URLs will redirect to /tech/<slug>/ which 404s;
+# those are unmappable without a Worker. The /en/* prefix removal is still useful
+# for the vast majority of inbound links that have correct date-prefixed slugs.
+/en/tech/* /tech/:splat 301
+
+# /en/side-income/* — same pattern; date-prefixed slugs map cleanly, undated slugs
+# from before the convention will land at /side-income/<old-slug>/ which 404s
+/en/side-income/* /side-income/:splat 301
+
+# Legacy section landings (no slug) for completeness
+/en/tech/ /tech/ 301
+/en/side-income/ /side-income/ 301
 
 # Live category pages — explicit 200 (no redirect)
 # These MUST be listed before any /categories/* catch-all

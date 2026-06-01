@@ -15,40 +15,57 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /en/tags/* /tags/:splat 301
 /en/categories/* /categories/ 301
 
-# Legacy technologies taxonomy pages
-/technologies/* / 301
+# Legacy technologies taxonomy pages — 410 Gone
+/technologies/* / 410
 
-# Legacy tags (without language prefix)
-/tags/mini/ / 301
+# Legacy tags (without language prefix) — 410 Gone
+/tags/mini/ / 410
 
-# Legacy tech posts (no date prefix, old URL structure)
-/tech/motorola-grapheneos-partnership-privacy-android-se/ /tech/ 301
-/tech/google-gemini-api-key-security-breach-risk/ /tech/ 301
-/tech/2026-02-07-ai/ /tech/ 301
+# Legacy tech posts (no date prefix, old URL structure) — 410 Gone
+/tech/motorola-grapheneos-partnership-privacy-android-se/ /tech/ 410
+/tech/google-gemini-api-key-security-breach-risk/ /tech/ 410
+/tech/2026-02-07-ai/ /tech/ 410
 
-# Legacy category routes (without language prefix)
-/sports/* / 301
-/business/* / 301
-/entertainment/* / 301
-/society/* / 301
-/finance/* / 301
+# Legacy category routes — 410 Gone (tells Google "permanently removed")
+/sports/* / 410
+/business/* / 410
+/entertainment/* / 410
+/society/* / 410
+/finance/* / 410
 
-# Legacy KO category routes (삭제된 카테고리 → KO 홈)
-/ko/business/* /ko/ 301
-/ko/sports/* /ko/ 301
-/ko/entertainment/* /ko/ 301
-/ko/society/* /ko/ 301
-/ko/finance/* /ko/ 301
+# Legacy KO category routes — 410 Gone
+/ko/business/* /ko/ 410
+/ko/sports/* /ko/ 410
+/ko/entertainment/* /ko/ 410
+/ko/society/* /ko/ 410
+/ko/finance/* /ko/ 410
 
 # Legacy KO post URLs (old category structure)
-/ko/entertainment/2026-01-24-ufc/ /ko/ 301
+/ko/entertainment/2026-01-24-ufc/ /ko/ 410
 
-# Live category pages — must be listed BEFORE the catch-all below
+# Live category pages — explicit 200 (no redirect)
+/categories/ /categories/ 200
 /categories/tech/ /categories/tech/ 200
+/categories/side-income/ /categories/side-income/ 200
+/ko/categories/ /ko/categories/ 200
+/ko/categories/tech/ /ko/categories/tech/ 200
+/ko/categories/side-income/ /ko/categories/side-income/ 200
+
+# Trailing-slash normalization for tech category
 /categories/tech /categories/tech/ 301
 
-# Legacy categories/tags (without language prefix) — catch-all after live routes
-/categories/* / 301
+# Legacy category index pages — 410 Gone
+/categories/business/ / 410
+/categories/entertainment/ / 410
+/categories/sports/ / 410
+/categories/society/ / 410
+/categories/finance/ / 410
+/ko/categories/business/ /ko/ 410
+/ko/categories/entertainment/ /ko/ 410
+/ko/categories/sports/ /ko/ 410
+/ko/categories/society/ /ko/ 410
+/ko/categories/finance/ /ko/ 410
 
-# Legacy KO categories prefix
-/ko/categories/* /ko/ 301
+# Any remaining unmatched categories — catch-all (must come last)
+/categories/* / 410
+/ko/categories/* /ko/ 410

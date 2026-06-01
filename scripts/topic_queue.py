@@ -41,6 +41,12 @@ from utils.validation import (
 
 # Tokens that appear in many keywords but don't define the topic. Used to skip
 # them when computing topic-noun overlap between two keywords.
+#
+# This list got expanded after the 6/1 incident: the previous version (smaller
+# stopword set + min_overlap=1) blocked 14 of 15 topics on a single run because
+# "cloudflare", "docker", "github" alone were enough to trigger overlap. Those
+# platform names show up in dozens of legitimately unrelated topics per week,
+# so they're now treated as stopwords and we require min_overlap=2 to block.
 _TOPIC_NOUN_STOPWORDS = frozenset({
     "a", "an", "the", "and", "or", "but", "for", "to", "of", "in", "on", "at",
     "by", "from", "with", "into", "vs", "vs.", "versus", "is", "are", "was",
@@ -64,9 +70,24 @@ _TOPIC_NOUN_STOPWORDS = frozenset({
     "issues", "problem", "problems", "working", "broken", "error", "errors",
     "running", "starting", "stopping", "installing", "installed", "setup",
     "configure", "configured", "config", "configuration",
-    # Korean stopwords (very small set — we deliberately keep tech nouns)
+    # Major platforms/vendors — these show up in dozens of unrelated topics.
+    # Including them here doesn't say "we'll publish two cloudflare posts on
+    # the same day"; it says "cloudflare alone is not enough to call two
+    # topics the same; require a second shared noun too."
+    "cloudflare", "docker", "github", "actions", "kubernetes", "k8s",
+    "aws", "azure", "gcp", "google", "amazon", "microsoft",
+    "linux", "macos", "windows", "ubuntu", "debian",
+    "python", "javascript", "typescript", "rust", "go", "java",
+    "react", "nextjs", "vue", "svelte", "node",
+    "postgres", "postgresql", "mysql", "sqlite",
+    "vercel", "netlify", "supabase", "fly", "flyio",
+    "edge", "serverless", "container", "containers",
+    "response", "request", "client", "server", "service", "services",
+    "runner", "workers", "worker",
+    # Korean stopwords (small set — we deliberately keep tech-product nouns)
     "그", "이", "저", "는", "은", "이", "가", "을", "를", "에", "의",
     "비교", "후기", "실제", "실전", "방법", "사용", "사용법", "개발자",
+    "한국어",  # was blocking unrelated KO posts that just mention the language
 })
 
 
@@ -106,29 +127,54 @@ def _collect_recent_noun_sets(topics: list, days: int = 7) -> list:
     return out
 
 
-def _find_overlapping_set(candidate: set, others: list, min_overlap: int = 1):
-    """Return the intersection set if `candidate` shares a meaningful noun
-    with any set in `others`. None if no overlap reaches the threshold.
+def _find_overlapping_set(candidate: set, others: list, min_overlap: int = 2):
+    """Return the intersection set if `candidate` shares enough meaningful
+    nouns with any set in `others`. None otherwise.
 
-    Strategy: even a single shared noun like 'weaviate' or 'claude' is enough
-    to block, because once we've stripped generic stopwords (api, ide, tool,
-    benchmark, etc.) what's left is almost always a proper-noun product name
-    or a specific technical concept. The 5/30 incident was two weaviate posts
-    on the same day even though their other words differed — that's exactly
-    what min_overlap=1 (post-stopword) catches.
+    History: min_overlap=1 with a small stopword list caused the 6/1
+    incident (14 of 15 topics blocked because each shared a common platform
+    name like cloudflare/docker/github). Pure min_overlap=2 then let real
+    duplicates through (two weaviate posts on the same day sharing only
+    'weaviate' since the other words differ).
 
-    False positives are still possible (e.g., two posts that both mention
-    "docker" but on unrelated topics). Acceptable trade-off because each
-    workflow run reserves 4x count topics, so a blocked topic just defers
-    to a later run.
+    Current rule, "narrow-noun shortcut":
+      - default needs >= min_overlap shared nouns to block
+      - BUT a single shared "narrow" noun (a specific product or library,
+        as listed in _NARROW_PRODUCT_NOUNS) is enough by itself
+
+    This catches the weaviate/pinecone case while letting cloudflare and
+    docker collide harmlessly.
     """
     if not candidate:
         return None
     for other in others:
         intersection = candidate & other
+        if not intersection:
+            continue
         if len(intersection) >= min_overlap:
             return intersection
+        # Single-shared-noun shortcut for narrow product names
+        if intersection & _NARROW_PRODUCT_NOUNS:
+            return intersection
     return None
+
+
+# Single-word product/library names that are specific enough that a single
+# shared occurrence between two topics is a real duplication signal. Curated
+# manually — keep it tight; broad terms (cloudflare, docker, github, edge,
+# serverless) belong in _TOPIC_NOUN_STOPWORDS, not here.
+_NARROW_PRODUCT_NOUNS = frozenset({
+    # Vector DBs / embeddings
+    "weaviate", "pinecone", "qdrant", "chromadb", "chroma", "milvus", "pgvector",
+    # Specific LLM products
+    "claude", "gemini", "sonnet", "opus", "haiku", "gpt4o", "gpt5",
+    "llama3", "mistral", "phi3", "gemma3", "deepseek",
+    # Smaller-footprint platforms (specific enough)
+    "ollama", "anthropic", "openai", "perplexity", "cursor", "windsurf",
+    "turnstile", "tailscale", "n8n", "langchain", "langgraph",
+    # Specific concepts that strongly identify a topic
+    "rag", "fingerprinting", "quantization", "embedding", "embeddings",
+})
 
 
 class TopicQueue:
@@ -201,7 +247,7 @@ class TopicQueue:
 
             # Topic-overlap dedup (the new check)
             nouns = _extract_topic_nouns(topic['keyword'])
-            overlap_with = _find_overlapping_set(nouns, recent_noun_sets + reserved_noun_sets, min_overlap=1)
+            overlap_with = _find_overlapping_set(nouns, recent_noun_sets + reserved_noun_sets, min_overlap=2)
             if overlap_with is not None:
                 print(f"⚠️  Skipping topic-overlap: {topic['keyword']} — shares {overlap_with} with recent/batch")
                 continue

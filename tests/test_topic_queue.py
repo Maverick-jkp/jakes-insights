@@ -70,15 +70,21 @@ class TestReserveTopics:
         assert len(reserved) == 0
 
     def test_reserve_topics_priority_sorted(self, tmp_path):
-        """Test that topics are reserved by priority (high to low)."""
+        """Test that topics are reserved by priority (high to low).
+
+        Keywords are deliberately on unrelated topics so the topic-overlap
+        dedup added in 2026-06 doesn't filter them out — this test is only
+        checking the priority sort, not dedup.
+        """
         queue_file = tmp_path / "priority_test.json"
 
-        # Create queue with different priorities
+        # Create queue with different priorities; unrelated topics to avoid
+        # the topic-overlap dedup blocking them.
         data = {
             "topics": [
                 {
                     "id": "001-en-tech-low",
-                    "keyword": "Low Priority",
+                    "keyword": "kubernetes pod scheduling",
                     "category": "tech",
                     "lang": "en",
                     "priority": 3,
@@ -87,7 +93,7 @@ class TestReserveTopics:
                 },
                 {
                     "id": "002-en-tech-high",
-                    "keyword": "High Priority",
+                    "keyword": "supabase realtime channels",
                     "category": "tech",
                     "lang": "en",
                     "priority": 9,
@@ -96,7 +102,7 @@ class TestReserveTopics:
                 },
                 {
                     "id": "003-en-tech-medium",
-                    "keyword": "Medium Priority",
+                    "keyword": "redis cluster failover",
                     "category": "tech",
                     "lang": "en",
                     "priority": 6,

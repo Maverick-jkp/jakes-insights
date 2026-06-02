@@ -30967,39 +30967,6 @@
       "completed_at": "2026-05-31T11:54:01.435348+00:00"
     },
     {
-      "id": "2188-en-tech-Cloudflare-Turnstile",
-      "keyword": "Cloudflare Turnstile WebGL fingerprinting privacy risk developers",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958631",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Developers and privacy-conscious users want to understand whether Cloudflare Turnstile violates GDPR/privacy expectations by silently enabling WebGL-based fingerprinting, and whether to keep using it",
-      "angle": "Technical deep-dive: how WebGL fingerprinting works inside Turnstile, what data is collected, and practical alternatives for privacy-respecting bot protection",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Cloudflare Turnstile requiring fingerprintable WebGL | Hacker News",
-          "url": "https://news.ycombinator.com/item?id=48345840",
-          "source": "news.ycombinator.com"
-        },
-        {
-          "title": "Cosmic Rundown: AI Subscription Fatigue, Cloudflare Fingerprinting, AV2 Video",
-          "url": "https://www.cosmicjs.com/blog/cosmic-rundown-ai-subscription-fatigue-cloudflare-fingerprinting-av2-video",
-          "source": "www.cosmicjs.com"
-        },
-        {
-          "title": "Cloudflare Turnstile Fingerprinting...",
-          "url": "https://www.squaredtech.co/cloudflare-turnstiles-shocking-webgl-fingerprinting-lock-out",
-          "source": "www.squaredtech.co"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "2189-ko-tech-클라우드플레어-턴스타일-WebGL-핑",
       "keyword": "클라우드플레어 턴스타일 WebGL 핑거프린팅 개인정보 침해",
       "category": "tech",
@@ -31035,439 +31002,510 @@
       "completed_at": "2026-06-01T16:01:16.646015+00:00"
     },
     {
-      "id": "2190-en-tech-ollama-llama3.2-quan",
-      "keyword": "ollama llama3.2 quantization q4 vs q8 inference speed M2 MacBook 16GB RAM benchmark",
-      "category": "tech",
+      "id": "2190-en-ai-Instagram-AI-agent-a",
+      "keyword": "Instagram AI agent account takeover how it actually works",
+      "category": "ai",
       "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958700",
+      "created_at": "2026-06-02T11:20:56.900740",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "M2 Mac 사용자가 ollama에서 모델 양자화 옵션별 실제 속도 차이를 알고 싶어 검색",
-      "angle": "q4/q8 양자화별 토큰 생성 속도, 메모리 사용량, 응답 품질 트레이드오프를 직접 측정한 실험 결과",
+      "keyword_type": "trend",
+      "search_intent": "Users are alarmed by viral reports of a surprisingly simple Instagram account takeover and want to understand if they're at risk",
+      "angle": "Non-technical explainer of how AI customer support agents become the weakest security link — and what regular users should do",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Meta AI Support Bot Helped Hackers Hijack Instagram Accounts - MacRumors",
+          "url": "https://www.macrumors.com/2026/06/01/meta-ai-instagram-attack/",
+          "source": "www.macrumors.com"
+        },
+        {
+          "title": "Hackers Tricked Meta AI Into Handing Out Access to Major Instagram Accounts",
+          "url": "https://gizmodo.com/hackers-tricked-meta-ai-into-handing-out-access-to-major-instagram-accounts-2000766087",
+          "source": "gizmodo.com"
+        },
+        {
+          "title": "Hackers duped Meta AI support chatbot to steal celebrity Instagram accounts - Ars Technica",
+          "url": "https://arstechnica.com/ai/2026/06/meta-ai-support-chatbot-gave-hackers-access-to-notable-instagram-accounts/",
+          "source": "arstechnica.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2191-ko-ai-인스타그램-AI-고객센터-계정-탈취-",
+      "keyword": "인스타그램 AI 고객센터 계정 탈취 내 계정도 위험한가",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.900789",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "SNS를 일상적으로 쓰는 직장인·대학생이 '나도 피해자가 될 수 있나' 불안감에 검색",
+      "angle": "기술 지식 없는 일반 사용자 관점에서 AI 고객지원의 보안 허점을 쉽게 설명하고 자기방어법 제시",
       "competition_level": "low",
       "references": [
         {
-          "title": "Best Local LLM Models 2026 | Developer Comparison",
-          "url": "https://www.sitepoint.com/best-local-llm-models-2026/",
-          "source": "www.sitepoint.com"
+          "title": "인스타그램/논란 및 문제점 - 나무위키",
+          "url": "https://namu.wiki/w/%EC%9D%B8%EC%8A%A4%ED%83%80%EA%B7%B8%EB%9E%A8/%EB%85%BC%EB%9E%80%20%EB%B0%8F%20%EB%AC%B8%EC%A0%9C%EC%A0%90",
+          "source": "namu.wiki"
         },
         {
-          "title": "Performance of llama.cpp on Apple Silicon M-series · ggml-org/llama.cpp · Discussion #4167",
-          "url": "https://github.com/ggml-org/llama.cpp/discussions/4167",
-          "source": "github.com"
+          "title": "메타 AI 고객지원 챗봇, 인스타그램 계정 탈취에 악용 - 디자인 나침반",
+          "url": "https://designcompass.org/2026/06/02/meta-ai-support-chatbot-instagram-account-takeover/",
+          "source": "designcompass.org"
         },
         {
-          "title": "LLM Quantization: Q4 vs Q5 vs Q8 Explained (When to Use ...",
-          "url": "https://www.promptquorum.com/local-llms/llm-quantization-explained",
-          "source": "www.promptquorum.com"
+          "title": "메타 AI 고객지원 허점 악용…해커들, 인스타그램 계정 대거 탈취 - Radio Seoul",
+          "url": "https://www.radioseoul1650.com/archives/140616",
+          "source": "www.radioseoul1650.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "2192-en-ai-Is-Claude-AI-better-",
+      "keyword": "Is Claude AI better than ChatGPT for writing in 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.900824",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "작가, 마케터, 콘텐츠 제작자가 둘 중 어느 AI를 구독할지 결정하려는 비교 의도",
+      "angle": "개발자가 아닌 글 쓰는 사람 관점에서 실제 사용 경험 기반 비교 — '나한테 맞는 건 어느 쪽?' 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude vs. ChatGPT: Which is best? [2026]",
+          "url": "https://zapier.com/blog/claude-vs-chatgpt/",
+          "source": "zapier.com"
+        },
+        {
+          "title": "ChatGPT vs Claude: My First Week Writing With Claud",
+          "url": "https://www.concretecms.com/about/blog/ai/chatgpt-vs-claude",
+          "source": "www.concretecms.com"
+        },
+        {
+          "title": "Claude vs. ChatGPT: What I Found After 30 Days of Use",
+          "url": "https://learn.g2.com/claude-vs-chatgpt",
+          "source": "learn.g2.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2191-en-tech-Claude-API-streaming",
-      "keyword": "Claude API streaming response Next.js 14 App Router edge runtime timeout fix",
-      "category": "tech",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958720",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Next.js 14 App Router에서 Claude 스트리밍 구현 시 edge runtime timeout 오류를 해결하려는 개발자",
-      "angle": "실제 배포 환경에서 겪은 edge runtime 30초 제한 문제와 Node.js runtime 전환 또는 chunked response로 우회하는 방법",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Routing: API Routes | Next.js",
-          "url": "https://nextjs.org/docs/pages/building-your-application/routing/api-routes",
-          "source": "nextjs.org"
-        },
-        {
-          "title": "Error reference - Claude Code Docs",
-          "url": "https://code.claude.com/docs/en/errors",
-          "source": "code.claude.com"
-        },
-        {
-          "title": "Claude Code Stream Idle Timeout? Fix the \"Partial Response Received\" Error Without Guessing | LaoZha",
-          "url": "https://blog.laozhang.ai/en/posts/claude-code-stream-idle-timeout",
-          "source": "blog.laozhang.ai"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2192-en-tech-Fly.io-single-instan",
-      "keyword": "Fly.io single instance Docker app persistent volume SQLite WAL mode production setup",
-      "category": "tech",
+      "id": "2193-en-ai-Best-AI-tools-for-fr",
+      "keyword": "Best AI tools for freelance designers in 2026",
+      "category": "ai",
       "lang": "en",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958739",
+      "created_at": "2026-06-02T11:20:56.900856",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Fly.io에서 SQLite를 프로덕션 DB로 사용하는 소규모 앱의 데이터 영속성 설정 방법을 찾는 개발자",
-      "angle": "Fly volume 마운트 + SQLite WAL 모드 조합으로 1인 개발자가 월 $5 이하로 운영하는 실제 구성 공개",
+      "search_intent": "프리랜서 디자이너가 실무에 바로 쓸 수 있는 AI 도구를 찾는 실용적 탐색 의도",
+      "angle": "포토샵 대체가 아니라 '내 작업 속도를 높여줄 도구' 관점 — 실제 워크플로우 기반 추천",
       "competition_level": "low",
       "references": [
         {
-          "title": "Configuring Swift Vapor on Fly.io with SQLite",
-          "url": "https://twocentstudios.com/2025/07/02/swift-vapor-fly-io-sqlite-config/",
-          "source": "twocentstudios.com"
+          "title": "15 AI Tools for Designers 2026: Save 10+ Hours Weekly",
+          "url": "https://aistoollab.com/en/best-ai-tools-for-designers-2026-2/",
+          "source": "aistoollab.com"
         },
         {
-          "title": "Blog: Tech Tales: Leveraging Fly Volumes to Transition from PostgreSQL to SQLite | Wawandco",
-          "url": "https://wawand.co/blog/posts/tech-tales-fly-sqlite-and-postgres/",
-          "source": "wawand.co"
+          "title": "The 17 Best AI Tools for Freelancers in 2026 - Upwork",
+          "url": "https://www.upwork.com/resources/ai-tools-for-freelancers",
+          "source": "www.upwork.com"
         },
         {
-          "title": "r/FastAPI on Reddit: Why I'm using SQLite as the only database for a production SaaS (and the tradeo",
-          "url": "https://www.reddit.com/r/FastAPI/comments/1ra1xlg/why_im_using_sqlite_as_the_only_database_for_a/",
+          "title": "031 Freelancer Ai Tools 2026 - Damongo",
+          "url": "https://damongo.com/031-freelancer-ai-tools-2026/",
+          "source": "damongo.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2194-en-ai-Will-AI-replace-mark",
+      "keyword": "Will AI replace marketing jobs by 2027",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.900884",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "마케터나 마케팅 전공 학생이 자신의 직업 미래에 대한 불안감에서 검색하는 정보 탐색 의도",
+      "angle": "공포 조장 대신 '어떤 마케팅 역할이 살아남고 어떤 게 바뀌는지' 현실적으로 분석하는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Will AI Replace Marketing? The Future of Marketing Jobs in the AI Age",
+          "url": "https://blog.brandsatplayllc.com/blog/will-ai-replace-marketing-the-future-of-marketing-jobs-in-the-ai-age",
+          "source": "blog.brandsatplayllc.com"
+        },
+        {
+          "title": "AI Will Shape the Future of Marketing - Professional & Executive Development | Harvard DCE",
+          "url": "https://professional.dce.harvard.edu/blog/ai-will-shape-the-future-of-marketing/",
+          "source": "professional.dce.harvard.edu"
+        },
+        {
+          "title": "65% of Marketing Jobs May Not Survive AI",
+          "url": "https://www.adweek.com/brand-marketing/65-of-marketing-jobs-may-not-survive-ai/",
+          "source": "www.adweek.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2195-en-buying-guide-MacBook-Air-M4-vs-Wi",
+      "keyword": "MacBook Air M4 vs Windows laptop for college students 2026",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.900915",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "대학 입학 시즌에 노트북 구매를 앞둔 학생 또는 부모가 OS/브랜드 결정을 위해 검색하는 구매 결정 의도",
+      "angle": "코딩 안 하는 일반 대학생 기준 — 과제, 유튜브, 줌 수업 관점의 솔직한 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Mac vs Windows for Students (2026): Which Is Better?",
+          "url": "https://mindlifeup.com/mac-vs-windows-for-students/",
+          "source": "mindlifeup.com"
+        },
+        {
+          "title": "Mac vs. Win : Which Laptop Should Students Actually Buy?",
+          "url": "https://techvaidyaglobal.com/public/en/news/mac-vs-pc-college-student-laptop-guide-2026",
+          "source": "techvaidyaglobal.com"
+        },
+        {
+          "title": "r/macbookair on Reddit: MacBook Air M4 15.3\" vs Windows Laptop – Which one should I buy for coding a",
+          "url": "https://www.reddit.com/r/macbookair/comments/1o7es6j/macbook_air_m4_153_vs_windows_laptop_which_one/",
           "source": "www.reddit.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2193-en-tech-Grafana-Alloy-replac",
-      "keyword": "Grafana Alloy replace Promtail Loki log pipeline Docker Compose minimal config 2025",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958758",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Promtail deprecated 이후 Grafana Alloy로 마이그레이션하는 방법을 찾는 DevOps 엔지니어",
-      "angle": "Promtail → Alloy 전환 시 config 문법 변화, Docker label 기반 로그 필터링 최소 설정 실전 예제",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Modern Logging with Grafana Alloy + Loki - DEV Community",
-          "url": "https://dev.to/sharonkynu/modern-logging-with-grafana-alloy-loki-53ll",
-          "source": "dev.to"
-        },
-        {
-          "title": "Docker Tutorial: Getting started with Grafana Loki and Alloy | Complete Promtail Migration Guide | b",
-          "url": "https://medium.com/@syed_usman_ahmed/docker-users-who-use-grafana-loki-with-promtail-need-to-migrate-to-grafana-alloy-as-promtail-the-a20a98ee2f15",
-          "source": "medium.com"
-        },
-        {
-          "title": "Grafana Loki on a VPS: Docker Compose Setup & LogQL Guide",
-          "url": "https://www.virtua.cloud/learn/en/tutorials/grafana-loki-log-pipeline-vps",
-          "source": "www.virtua.cloud"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2194-en-tech-GitHub-Actions-OIDC-",
-      "keyword": "GitHub Actions OIDC AWS assume role without access key secret zero trust CI pipeline example",
-      "category": "tech",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958778",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "GitHub Actions에서 AWS 액세스 키 없이 OIDC로 IAM Role을 assume하는 보안 강화 CI 설정을 원하는 개발자",
-      "angle": "액세스 키 노출 사고 없이 OIDC trust policy + role chaining으로 최소 권한 원칙을 적용한 실제 workflow 파일 전체 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "GitHub - aws-actions/configure-aws-credentials: Configure AWS credential environment variables for u",
-          "url": "https://github.com/aws-actions/configure-aws-credentials",
-          "source": "github.com"
-        },
-        {
-          "title": "Connect GitHub Actions to AWS with OIDC (No Access Keys)",
-          "url": "https://awsfundamentals.com/blog/github-actions-to-aws",
-          "source": "awsfundamentals.com"
-        },
-        {
-          "title": "AWS GitHub Actions OIDC: Secure Access Without Secrets",
-          "url": "https://www.kubeblogs.com/secure_aws_resources_using_oidc/",
-          "source": "www.kubeblogs.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2195-en-tech-pgvector-vs-Chroma-v",
-      "keyword": "pgvector vs Chroma vs Qdrant embedding search latency 100k vectors single server comparison 2025",
-      "category": "tech",
+      "id": "2196-en-ai-How-to-make-money-wi",
+      "keyword": "How to make money with AI art without coding in 2026",
+      "category": "ai",
       "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958805",
+      "created_at": "2026-06-02T11:20:56.900945",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "RAG 파이프라인용 벡터 DB를 선택하려는 개발자가 소규모 데이터셋 기준 실제 성능 비교를 원함",
-      "angle": "10만 벡터 기준 검색 지연시간, 메모리 사용량, 운영 복잡도를 단독 서버(4GB RAM)에서 직접 측정한 벤치마크",
+      "search_intent": "비개발자가 Midjourney나 DALL-E 같은 도구로 실제로 수익을 낼 수 있는지 알고 싶은 부업 탐색 의도",
+      "angle": "기술 없는 일반인 기준 — 실제로 팔 수 있는 플랫폼(Etsy, Gumroad 등)과 현실적인 수익 범위 소개",
       "competition_level": "low",
       "references": [
         {
-          "title": "Choosing the Right Vector Database: OpenSearch vs Pinecone vs Qdrant vs Weaviate vs Milvus vs Chroma",
-          "url": "https://medium.com/@elisheba.t.anderson/choosing-the-right-vector-database-opensearch-vs-pinecone-vs-qdrant-vs-weaviate-vs-milvus-vs-037343926d7e",
-          "source": "medium.com"
+          "title": "How to Make Money with AI in 2026: 12 Proven Ideas",
+          "url": "https://emergent.sh/learn/how-to-make-money-with-ai",
+          "source": "emergent.sh"
         },
         {
-          "title": "Best Vector Databases in 2026: A Complete Comparison Guide",
-          "url": "https://www.firecrawl.dev/blog/best-vector-databases",
-          "source": "www.firecrawl.dev"
+          "title": "How to Make Money with AI | ImagineArt",
+          "url": "https://www.imagine.art/blogs/how-to-make-money-with-ai",
+          "source": "www.imagine.art"
         },
         {
-          "title": "How to Choose the Right Vector Database: A Comparison Guide",
-          "url": "https://www.altexsoft.com/blog/vector-databases-compared/",
-          "source": "www.altexsoft.com"
+          "title": "How To Make Money With Artificial Intelligence (No Code, 2026) | AI Success Lab Blog",
+          "url": "https://aisuccesslabjuliangoldie.com/blog/how-to-make-money-with-artificial-intelligence/",
+          "source": "aisuccesslabjuliangoldie.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2196-en-tech-Cloudflare-Workers-A",
-      "keyword": "Cloudflare Workers AI llama 3.1 8b rate limit workaround free tier production app real usage",
-      "category": "tech",
+      "id": "2197-en-buying-guide-Notion-AI-vs-Obsidia",
+      "keyword": "Notion AI vs Obsidian for everyday note taking 2026",
+      "category": "buying-guide",
       "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958828",
+      "created_at": "2026-06-02T11:20:56.900981",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Cloudflare Workers AI 무료 티어로 실제 서비스를 운영하면서 rate limit 문제를 해결하려는 개발자",
-      "angle": "Workers AI 무료 한도(10k req/day) 내에서 캐싱, 요청 큐, fallback 전략으로 실서비스를 유지하는 방법 실전 후기",
+      "search_intent": "노트 앱을 바꾸거나 처음 선택하려는 직장인·학생이 두 앱 중 하나를 고르려는 비교 의도",
+      "angle": "기술 지식 없는 일반 사용자 — '복잡한 세팅 없이 그냥 쓰기엔 어느 게 낫나' 관점",
       "competition_level": "low",
       "references": [
         {
-          "title": "Limits · Cloudflare Workers AI docs",
-          "url": "https://developers.cloudflare.com/workers-ai/platform/limits/",
-          "source": "developers.cloudflare.com"
+          "title": "Notion vs Obsidian: 1 Clear Winner in 7 Tests [2026]",
+          "url": "https://tech-insider.org/notion-vs-obsidian-2026/",
+          "source": "tech-insider.org"
         },
         {
-          "title": "Complete Workers AI Tutorial: 10,000 Free LLM API Calls Daily, 90% Cheaper Than OpenAI · BetterLink ",
-          "url": "https://eastondev.com/blog/en/posts/ai/20251121-workers-ai-tutorial/",
-          "source": "eastondev.com"
+          "title": "Notion vs Obsidian – All Features Compared (2026)",
+          "url": "https://productive.io/blog/notion-vs-obsidian/",
+          "source": "productive.io"
         },
         {
-          "title": "Cloudflare’s bigger, better, faster AI platform",
-          "url": "https://blog.cloudflare.com/workers-ai-bigger-better-faster/",
-          "source": "blog.cloudflare.com"
+          "title": "Obsidian vs Notion: Honest comparison in 2026 (I tried both)",
+          "url": "https://www.productivetemply.com/blog/notion-vs-obsidian",
+          "source": "www.productivetemply.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2197-ko-tech-ollama-gemma3-한국어-코드",
-      "keyword": "ollama gemma3 한국어 코드 생성 실측 GPT-4o-mini 비용 대비 성능 비교 2025 로컬 LLM",
-      "category": "tech",
+      "id": "2198-en-ai-Are-AI-chatbots-safe",
+      "keyword": "Are AI chatbots safe to share personal information with",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.901014",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ChatGPT 등에 개인정보나 업무 데이터를 붙여넣기 전 불안함을 느끼는 일반 사용자의 보안 궁금증 의도",
+      "angle": "전문 보안 지식 없는 사람도 이해할 수 있게 — '이런 건 넣으면 안 됩니다' 실용 가이드 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Is It Safe to Share Personal Info with an AI Chatbot?",
+          "url": "https://www.trendmicro.com/internet-safety/blog/is-it-safe-to-share-personal-info-with-an-ai-chatbot/",
+          "source": "www.trendmicro.com"
+        },
+        {
+          "title": "The More You Reveal to AI, the Greater the Privacy Risk | IDX",
+          "url": "https://www.idx.us/knowledge-center/the-more-you-reveal-to-ai-the-greater-the-privacy-risk",
+          "source": "www.idx.us"
+        },
+        {
+          "title": "Think Twice Before You Talk to an AI Chatbot About These 5 Things",
+          "url": "https://www.rd.com/article/ai-chatbot-concerns/",
+          "source": "www.rd.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2199-ko-ai-ChatGPT-유료-구독-진짜-필요한",
+      "keyword": "ChatGPT 유료 구독 진짜 필요한지 2026 솔직 후기",
+      "category": "ai",
       "lang": "ko",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958847",
+      "created_at": "2026-06-02T11:20:56.901042",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "로컬 LLM으로 코드 생성 비용을 아끼려는 개발자가 gemma3와 GPT-4o-mini의 실제 품질 차이를 확인하고 싶어 검색",
-      "angle": "동일한 한국어 코딩 문제 20개를 두 모델에 돌려 정확도, 속도, 월간 예상 비용을 표로 정리한 실험 결과 공개",
+      "search_intent": "ChatGPT Plus 월 구독료를 낼지 말지 결정하려는 일반 직장인·학생의 구매 결정 의도",
+      "angle": "개발자 아닌 사무직/대학생 관점 — 실제로 어떤 기능이 유료에서만 되는지, 무료로도 충분한지 비교",
       "competition_level": "low",
       "references": [
         {
-          "title": "2026 로컬 LLM 한국어 성능 심층 비교 — EXAONE vs Qwen 3.5 vs Gemma 4(RAG·에이전트 기준)",
-          "url": "https://hoft.tistory.com/entry/local-llm-korean-performance-comparison-2026",
-          "source": "hoft.tistory.com"
+          "title": "AI 구독 추천 2026: 4개 다 써봤는데, 진짜 가치 있는 건 이거 | FindSkill.ai — 내 직업을 위해 AI 배우기",
+          "url": "https://findskill.ai/ko/blog/ai-gudog-gagyeog-bigyo-2026-weol-2man8ceonweon-jinjja-gaci-isseulgga/",
+          "source": "findskill.ai"
         },
         {
-          "title": "Ollama 설치 및 기초 사용방법 (feat 로컬 LLM 환경 구축해보기) :: 갓대희의 작은공간",
-          "url": "https://goddaehee.tistory.com/381",
-          "source": "goddaehee.tistory.com"
+          "title": "챗지피티 무료 vs 유료 차이, 2026 GPT 요금제 가격 비교 - AI가 궁금할 땐, 캐럿 블로그",
+          "url": "https://carat.im/blog/chatgpt-pricing-plans-comparison",
+          "source": "carat.im"
         },
         {
-          "title": "경량 LLM 로컬로 또 올리기 :: 언어학하고 있네",
-          "url": "https://linguisting.tistory.com/339",
-          "source": "linguisting.tistory.com"
+          "title": "챗GPT 유료 가격 총정리(2026) 최신 요금제 비교",
+          "url": "https://emotionte.com/%EC%B1%97gpt-%EC%9C%A0%EB%A3%8C-%EA%B0%80%EA%B2%A9-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%B5%9C%EC%8B%A0-%EC%9A%94%EA%B8%88%EC%A0%9C-%EA%B8%B0%EB%8A%A5-%EB%B9%84%EA%B5%90/",
+          "source": "emotionte.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2198-ko-tech-Supabase-Edge-Functi",
-      "keyword": "Supabase Edge Functions 콜드 스타트 지연 해결 Deno 캐싱 전략 실서비스 적용기",
-      "category": "tech",
+      "id": "2200-ko-tech-economy-AI가-디자이너-일자리-없앨까-202",
+      "keyword": "AI가 디자이너 일자리 없앨까 2026 현실적 전망",
+      "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958864",
+      "created_at": "2026-06-02T11:20:56.901068",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Supabase Edge Functions의 콜드 스타트가 UX에 영향을 준다고 느끼는 개발자가 해결책을 찾아 검색",
-      "angle": "콜드 스타트 원인 분석 + keepalive ping 스케줄링 + Deno 모듈 캐싱으로 지연을 200ms 이하로 줄인 실제 적용 사례",
+      "search_intent": "디자인 직종 종사자나 지망생이 자신의 커리어 방향을 고민하며 검색하는 불안 해소·정보 탐색 의도",
+      "angle": "겁주기 대신 '이 역할은 살아남고 이 역할은 바뀐다'는 현실 분석 — 디자이너가 공감할 실제 사례 중심",
       "competition_level": "low",
       "references": [
         {
-          "title": "Edge Functions | Supabase Docs",
-          "url": "https://supabase.com/docs/guides/functions",
-          "source": "supabase.com"
+          "title": "기술적 실업 - 나무위키",
+          "url": "https://namu.wiki/w/%EA%B8%B0%EC%88%A0%EC%A0%81%20%EC%8B%A4%EC%97%85",
+          "source": "namu.wiki"
         },
         {
-          "title": "Supabase Edge Functions in Practice: Deno Runtime and TypeScript Development Guide · BetterLink Blog",
-          "url": "https://eastondev.com/blog/en/posts/dev/20260419-supabase-edge-functions/",
-          "source": "eastondev.com"
+          "title": "AI 일자리 걱정했는데…“직업 중 63%는 사라지지 않아”",
+          "url": "https://www.donga.com/news/Society/article/all/20260514/133919312/1",
+          "source": "www.donga.com"
+        },
+        {
+          "title": "AI가 만든 10가지 일자리: 변화의 파도를 넘는 커리어 로드맵- 세일즈포스 (Salesforce) - Salesforce",
+          "url": "https://www.salesforce.com/kr/blog/ai-jobs/",
+          "source": "www.salesforce.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2199-ko-tech-1인-SaaS-인프라-Fly.io-C",
-      "keyword": "1인 SaaS 인프라 Fly.io Cloudflare Supabase 무료 플랜 조합 실제 월 운영비 공개 2025",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958880",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "사이드 프로젝트를 최소 비용으로 배포하려는 개발자가 실제 과금 내역을 참고하고 싶어 검색",
-      "angle": "MAU 500명 기준 Fly.io + Cloudflare R2 + Supabase 프리 티어 조합의 실제 청구서와 한계치 도달 시 플랜 업그레이드 기준",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "* 무료 플랜 특징 1. Supabase 무료 플랜은 개인 프로젝트나 학습용으로 충분 2. 가장 중요한 건, 1주일간 활동이 없으면 프로젝트가 자동 중지. 3. 중지된 프로젝트는 ",
-          "url": "https://www.threads.com/@ghil_book_pic/post/DPsojPbE2KK/-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%8A%B9%EC%A7%951-supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C%EC%9D%80-%EA%B0%9C%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%82%98-%ED%95%99%EC%8A%B5%EC%9A%A9%EC%9C%BC%EB%A1%9C-%EC%B6%A9%EB%B6%842-%EA%B0%80%EC%9E%A5-%EC%A4%91%EC%9A%94%ED%95%9C-%EA%B1%B4-1%EC%A3%BC%EC%9D%BC%EA%B0%84-%ED%99%9C%EB%8F%99%EC%9D%B4-%EC%97%86%EC%9C%BC%EB%A9%B4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%B0%80-%EC%9E%90%EB%8F%99-%EC%A4%91%EC%A7%803",
-          "source": "www.threads.com"
-        },
-        {
-          "title": "Supabase 무료 플랜, 2주면 잠든다? GitHub Actions로 자동 깨우는 법 - 비개발자 하랑의 AI 풀스택 도전기",
-          "url": "https://lookfortaste.com/supabase-%EB%AC%B4%EB%A3%8C-%ED%94%8C%EB%9E%9C-2%EC%A3%BC%EB%A9%B4-%EC%9E%A0%EB%93%A0%EB%8B%A4-github-actions%EB%A1%9C-%EC%9E%90%EB%8F%99-%EA%B9%A8%EC%9A%B0%EB%8A%94-%EB%B2%95/",
-          "source": "lookfortaste.com"
-        },
-        {
-          "title": "Min-inter",
-          "url": "https://min-inter.co.kr/wiki/cloudflare-business-model-revenue-structure",
-          "source": "min-inter.co.kr"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2200-ko-tech-GitHub-Actions-self-",
-      "keyword": "GitHub Actions self-hosted runner Apple Silicon M3 Docker buildx 멀티 아키텍처 빌드 설정 트러블슈팅",
-      "category": "tech",
+      "id": "2201-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
+      "keyword": "갤럭시 S25 vs 아이폰 16 AI 기능 실생활 비교",
+      "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958900",
+      "created_at": "2026-06-02T11:20:56.901092",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "M3 Mac을 self-hosted runner로 쓰면서 amd64/arm64 멀티 아키텍처 이미지 빌드 오류를 겪는 개발자",
-      "angle": "QEMU 에뮬레이션 vs 네이티브 buildx 비교, M3에서 발생하는 rosetta 충돌 오류 해결, 실제 빌드 시간 단축 결과",
+      "search_intent": "스마트폰 교체를 앞두고 두 제품의 AI 기능 차이가 실제로 쓸모 있는지 궁금한 일반 소비자의 구매 결정 의도",
+      "angle": "스펙표 대신 카톡, 사진 편집, 음성 메모 같은 일상 시나리오 기준 비교 — 비전문가 톤",
       "competition_level": "low",
       "references": [
         {
-          "title": "GitHub Actions Self-Hosted Runner 대규모 운영과 보안 하드닝 가이드 | Chaos and Order",
-          "url": "https://www.youngju.dev/blog/devops/2026-03-05-devops-github-actions-self-hosted-runner-ops",
-          "source": "www.youngju.dev"
+          "title": "아이폰 16프로 VS 갤럭시 S25 울트라 비교 솔직후기 : 네이버 블로그",
+          "url": "https://m.blog.naver.com/heading100/223891109693",
+          "source": "m.blog.naver.com"
         },
         {
-          "title": "GitHub Actions로 Docker 이미지 자동 빌드 및 배포하기 - 완벽 가이드 - DEV Community",
-          "url": "https://dev.to/dss99911/github-actionsro-docker-imiji-jadong-bildeu-mic-baepohagi-wanbyeog-gaideu-5e9",
-          "source": "dev.to"
+          "title": "갤럭시 S25 vs 아이폰 16, 뭐가 더 좋을까? 비교 분석 - 폰앤",
+          "url": "https://phonen.co.kr/recom/3307",
+          "source": "phonen.co.kr"
+        },
+        {
+          "title": "갤럭시 S25와 아이폰 16 성능 차이 알아보기 | 폰사와 정보마당",
+          "url": "https://www.phonesawa.co.kr/board/ps_info/18913",
+          "source": "www.phonesawa.co.kr"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "2201-ko-tech-Cursor-AI-에디터-대형-모노레",
-      "keyword": "Cursor AI 에디터 대형 모노레포 컨텍스트 초과 문제 .cursorrules 최적화 실무 적용 후기",
-      "category": "tech",
+      "id": "2202-ko-side-income-직장인이-AI로-부업하는-현실적인-방",
+      "keyword": "직장인이 AI로 부업하는 현실적인 방법 2026",
+      "category": "side-income",
       "lang": "ko",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958916",
+      "created_at": "2026-06-02T11:20:56.901115",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "Cursor를 실무 대형 프로젝트에 적용했을 때 컨텍스트 한계로 AI 답변 품질이 떨어지는 문제를 해결하려는 개발자",
-      "angle": ".cursorrules 파일로 컨텍스트 우선순위 제어, notepads 활용, 폴더별 규칙 분리로 응답 품질을 높인 실무 설정 전체 공개",
+      "search_intent": "본업 유지하면서 AI 도구를 활용해 추가 수익을 내고 싶은 직장인의 부업 아이디어 탐색 의도",
+      "angle": "코딩·디자인 전공 없는 평범한 직장인 기준 — 블로그 자동화, 번역, 강의 정리 등 실제 가능한 방법 소개",
       "competition_level": "low",
       "references": [
         {
-          "title": "Cursor, AI Coding #5 Rules 셋팅",
-          "url": "https://velog.io/@artbiit/Cursor-AI-Coding-5-Rules-%EC%85%8B%ED%8C%85",
+          "title": "[현실적 부업] 2026년 AI로 월 부수입 만드는 5가지 전략 (직장인 필독)",
+          "url": "https://kyun0218.tistory.com/342",
+          "source": "kyun0218.tistory.com"
+        },
+        {
+          "title": "2026 상반기 AI 부업 트렌드: 직장인이 지금 시작할 수 있는 자동화 수익화 아이디어 7가지",
+          "url": "https://mini-sugar.tistory.com/entry/2026-%EC%83%81%EB%B0%98%EA%B8%B0-AI-%EB%B6%80%EC%97%85-%ED%8A%B8%EB%A0%8C%EB%93%9C-%EC%A7%81%EC%9E%A5%EC%9D%B8%EC%9D%B4-%EC%A7%80%EA%B8%88-%EC%8B%9C%EC%9E%91%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%9E%90%EB%8F%99%ED%99%94-%EC%88%98%EC%9D%B5%ED%99%94-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4-7%EA%B0%80%EC%A7%80",
+          "source": "mini-sugar.tistory.com"
+        },
+        {
+          "title": "2026년 AI로 돈 버는 방법: 검증된 7가지 방법 | Naoma AI | Naoma AI",
+          "url": "https://www.naoma.ai/ko/articles/how-to-make-money-with-ai-2026",
+          "source": "www.naoma.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2203-ko-ai-노션-AI-한-달-써본-솔직-후기-비",
+      "keyword": "노션 AI 한 달 써본 솔직 후기 비전공자 관점",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.901141",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "노션 AI 구독을 고민 중인 사람이 실제 사용자의 경험을 참고해 결제 여부를 결정하려는 구매 결정 의도",
+      "angle": "개발자나 파워 유저 아닌 일반 직장인·학생 시점 — 기대했던 것과 실제 차이, 단점도 솔직하게",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "노션 AI 사용 후기",
+          "url": "https://brunch.co.kr/@playmylife/4",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "노션 리뷰 | 유연한 워크스페이스이자 가장 자유도 높은 생산성 앱 | ITWorld",
+          "url": "https://www.itworld.co.kr/article/4032375/%EB%85%B8%EC%85%98-%EB%A6%AC%EB%B7%B0-%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%B4%EC%9E%90-%EA%B0%80%EC%9E%A5-%EC%9E%90%EC%9C%A0%EB%8F%84-%EB%86%92.html",
+          "source": "www.itworld.co.kr"
+        },
+        {
+          "title": "노션 리뷰: 기능 분석, 장점 및 한계",
+          "url": "https://www.larksuite.com/ko_kr/blog/notion-review",
+          "source": "www.larksuite.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2204-ko-tech-economy-유튜브-알고리즘이-이상한-영상만-추천",
+      "keyword": "유튜브 알고리즘이 이상한 영상만 추천하는 이유 2026",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.901167",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "유튜브 추천 피드가 자신의 취향과 달라진 것에 의문을 느끼는 일반 사용자의 알고리즘 궁금증 의도",
+      "angle": "기술 설명보다 '왜 이런 일이 생기고 내가 뭘 할 수 있는지' 실용적 해석 — 가볍고 공감 가는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "유튜브 알고리즘 - 나무위키",
+          "url": "https://namu.wiki/w/%EC%9C%A0%ED%8A%9C%EB%B8%8C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "유튜브 추천 영상은 어떻게 정해질까?: 알고리즘 쉽게 이해하기",
+          "url": "https://dubuggyu1.com/2",
+          "source": "dubuggyu1.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "2205-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-및-",
+      "keyword": "토스 vs 카카오뱅크 AI 기능 및 혜택 비교 2026",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-06-02T11:20:56.901191",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "주거래 앱을 바꾸거나 둘 다 쓸지 고민하는 2030 직장인·대학생의 금융 앱 비교 결정 의도",
+      "angle": "금융 전문가 아닌 일상 사용자 기준 — 자동 저축, 소비 분석, AI 추천 혜택이 실제로 유용한지 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[금융 서비스 비교] 카카오뱅크 vs 토스: 신용카드 추천 기능",
+          "url": "https://velog.io/@aabb510/%EA%B8%88%EC%9C%B5-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%B9%84%EA%B5%90-%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-vs-%ED%86%A0%EC%8A%A4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C",
           "source": "velog.io"
         },
         {
-          "title": "cursor ai | 코딩 초보도 10배 빨라지는 AI 코드 에디터 활용법 - ai",
-          "url": "https://ai.it-hotissue.com/cursor-ai-%EC%BD%94%EB%94%A9-%EC%B4%88%EB%B3%B4%EB%8F%84-10%EB%B0%B0-%EB%B9%A8%EB%9D%BC%EC%A7%80%EB%8A%94-ai-%EC%BD%94%EB%93%9C-%EC%97%90%EB%94%94%ED%84%B0-%ED%99%9C%EC%9A%A9%EB%B2%95/",
-          "source": "ai.it-hotissue.com"
+          "title": "“카톡하다 AI가 알아서 결제”…카카오페이 ‘압도적 결제 편의’ 승부수 - 매일경제",
+          "url": "https://www.mk.co.kr/news/economy/12044573",
+          "source": "www.mk.co.kr"
         },
         {
-          "title": "Cursor 완전 가이드 2025: AI 코딩 워크플로우, rules·context 설정법 :: 쵸코쿠키의 연습장",
-          "url": "https://jjeongil.tistory.com/3171",
-          "source": "jjeongil.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2202-ko-tech-Cloudflare-Zero-Trus",
-      "keyword": "Cloudflare Zero Trust 팀 소규모 내부 도구 무료 플랜 설정 Tunnel 인증 실전 구축 가이드",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958932",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "VPN 없이 사내 내부 도구를 안전하게 외부 접근 가능하게 하려는 소규모 팀 또는 1인 개발자",
-      "angle": "Cloudflare Tunnel + Access 정책으로 GitHub OAuth 인증 붙인 내부 대시보드를 무료로 구축하는 단계별 실전 설정",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Cloudflare Access로 내부 애플리케이션에 Zero Trust 적용하기 | Engineering Blog by Dale Seo",
-          "url": "https://daleseo.com/cloudflare-access/",
-          "source": "daleseo.com"
-        },
-        {
-          "title": "드디어 Cloudflare Zero Trust 터널을 이해했다 - RosettaLens 번역",
-          "url": "https://rosettalens.com/s/ko/cloudflare-zero-trust-tunnels",
-          "source": "rosettalens.com"
-        },
-        {
-          "title": "Cloudflare - 나무위키",
-          "url": "https://namu.wiki/w/Cloudflare",
-          "source": "namu.wiki"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "2203-ko-tech-Vercel-AI-SDK-useCha",
-      "keyword": "Vercel AI SDK useChat 스트리밍 한국어 토큰 깨짐 인코딩 문제 해결 Next.js 실전",
-      "category": "tech",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-06-01T12:40:43.958947",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "Vercel AI SDK로 한국어 챗봇 구현 시 스트리밍 중 한글이 깨지거나 끊기는 현상을 겪는 개발자",
-      "angle": "한국어 멀티바이트 문자 스트리밍 인코딩 버그 원인 분석, TextDecoder 설정 수정 및 백엔드 버퍼링 조정으로 해결한 코드 전체 공개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Vercel AI SDK Complete Guide: Building Production-Ready AI Chat Apps with Next.js - Pockit Blog",
-          "url": "https://pockit.tools/blog/vercel-ai-sdk-nextjs-guide/",
-          "source": "pockit.tools"
-        },
-        {
-          "title": "Real-time AI in Next.js: How to stream responses with the Vercel AI SDK - LogRocket Blog",
-          "url": "https://blog.logrocket.com/nextjs-vercel-ai-sdk-streaming/",
-          "source": "blog.logrocket.com"
-        },
-        {
-          "title": "AI SDK",
-          "url": "https://vercel.com/docs/ai-sdk",
-          "source": "vercel.com"
+          "title": "토스, 카카오뱅크, 케이뱅크의 주목할만한 신규 서비스는? - 투이컨설팅",
+          "url": "https://www.2e.co.kr/news/articleView.html?idxno=304138",
+          "source": "www.2e.co.kr"
         }
       ],
       "content_type_hint": "GUIDE"

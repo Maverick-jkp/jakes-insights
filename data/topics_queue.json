@@ -31007,7 +31007,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.484960",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31032,7 +31032,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:40:20.547883+00:00"
     },
     {
       "id": "2191-en-tech-economy-foldable-iPhone-Ultr",
@@ -31040,7 +31042,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485010",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31065,7 +31067,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:42:46.907192+00:00"
     },
     {
       "id": "2192-en-side-income-AI-side-hustle-train",
@@ -31073,7 +31077,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485046",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31098,7 +31102,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:45:05.043577+00:00"
     },
     {
       "id": "2193-en-ai-DDR5-RAM-price-spike",
@@ -31106,7 +31112,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485079",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31115,7 +31121,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:58:57.063130+00:00"
     },
     {
       "id": "2194-ko-tech-economy-AI-에이전트-실제로-직원-대체-가능",
@@ -31123,7 +31131,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485134",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31148,7 +31156,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:33:51.909541+00:00"
     },
     {
       "id": "2195-ko-ai-ChatGPT-10억-유저-달성-무료",
@@ -31156,7 +31166,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485166",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31165,7 +31175,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:37:33.879959+00:00"
     },
     {
       "id": "2196-ko-tech-economy-폴더블-아이폰-울트라-출시-예정-지금",
@@ -31173,7 +31185,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485195",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31198,7 +31210,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:48:19.123676+00:00"
     },
     {
       "id": "2197-ko-side-income-AI-부업-데이터-라벨링-실제-수입-",
@@ -31206,7 +31220,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485227",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -31231,7 +31245,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:51:30.142462+00:00"
     },
     {
       "id": "2198-en-ai-Is-Claude-AI-better-",
@@ -31271,7 +31287,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485293",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -31295,7 +31311,9 @@
           "source": "zplatform.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:54:07.552967+00:00"
     },
     {
       "id": "2200-en-ai-How-AI-is-changing-m",
@@ -31367,7 +31385,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-03T11:59:50.485402",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -31391,7 +31409,9 @@
           "source": "www.printkk.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-03T14:30:15.045944+00:00",
+      "completed_at": "2026-06-03T14:56:50.182772+00:00"
     },
     {
       "id": "2203-en-buying-guide-MacBook-Air-M4-vs-Wi",

@@ -1,0 +1,51 @@
+{{/*
+  category-chip.html — renders a Notion-style chip for the post's primary
+  category (one of: ai, productivity, tech-economy, buying-guide, side-income).
+
+  Replaces subtopic-chip.html after the 2026-06 category reorg. Reads
+  .Params.categories[0]; falls back to inferring from the post path so
+  legacy posts without a categories: entry still chip correctly.
+
+  Usage: {{ partial "category-chip.html" . }}
+  Expects a Page context. Uses <span> (not <a>) so it can sit inside <a>.
+*/}}
+
+{{ $category := "" }}
+{{ with .Params.categories }}
+  {{ $category = index . 0 }}
+{{ end }}
+
+{{/* Fallback: infer from section if categories is empty or contains legacy 'tech' */}}
+{{ if or (not $category) (eq $category "tech") }}
+  {{ $section := .Section }}
+  {{ if and $section (ne $section "tech") }}
+    {{ $category = $section }}
+  {{ end }}
+{{ end }}
+
+{{ if $category }}
+{{ $enLabels := dict
+  "ai"           "AI"
+  "productivity" "Productivity"
+  "tech-economy" "Tech Economy"
+  "buying-guide" "Buying Guide"
+  "side-income"  "Side Income"
+}}
+{{ $koLabels := dict
+  "ai"           "AI"
+  "productivity" "생산성"
+  "tech-economy" "테크 경제"
+  "buying-guide" "구매 가이드"
+  "side-income"  "부업"
+}}
+{{ $label := "" }}
+{{ if eq $.Site.Language.Lang "ko" }}
+  {{ $label = index $koLabels $category }}
+{{ else }}
+  {{ $label = index $enLabels $category }}
+{{ end }}
+{{ if $label }}
+<span class="category-chip category-chip--{{ $category }}"
+      data-category="{{ $category }}">{{ $label }}</span>
+{{ end }}
+{{ end }}

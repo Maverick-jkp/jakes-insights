@@ -57,7 +57,7 @@
         <p class="card-description">{{ .Summary | plainify | truncate 100 }}</p>
         <div class="card-footer">
           <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-          {{ partial "subtopic-chip.html" . }}
+          {{ partial "category-chip.html" . }}
         </div>
       </div>
     </a>
@@ -77,7 +77,7 @@
         <h3 class="card-heading">{{ .Title }}</h3>
         <div class="card-footer">
           <div class="card-meta">{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "01.02" }}{{ else }}{{ .Date.Format "Jan 2" }}{{ end }}</div>
-          {{ partial "subtopic-chip.html" . }}
+          {{ partial "category-chip.html" . }}
         </div>
       </div>
     </a>

@@ -7,18 +7,26 @@
       </a>
       <p class="tagline">{{ if eq .Language.Lang "ko" }}커뮤니티 인사이트로 읽는 테크 분석{{ else }}In-depth tech analysis with community insights{{ end }}</p>
     </div>
-    <nav class="header-nav" aria-label="Main navigation">
-      <a href="{{ "/" | relLangURL }}"
-         {{ if .IsHome }}class="active" aria-current="page"{{ end }}>
-        {{ if eq .Language.Lang "ko" }}홈{{ else }}Home{{ end }}
+
+    {{/* Mobile hamburger — hidden on desktop via CSS */}}
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="header-nav" id="header-nav" aria-label="Main navigation">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}"
+         {{ if $.IsMenuCurrent "main" . }}class="active" aria-current="page"{{ end }}>
+        {{ .Name }}
       </a>
-      <a href="{{ "/all-posts/" | relLangURL }}">
-        {{ if eq .Language.Lang "ko" }}전체 글{{ else }}All Posts{{ end }}
-      </a>
+      {{ end }}
       <span class="nav-divider" aria-hidden="true"></span>
-      <a href="/en/" class="{{ if eq .Language.Lang "en" }}active{{ end }}" lang="en" hreflang="en">EN</a>
-      <a href="/ko/" class="{{ if eq .Language.Lang "ko" }}active{{ end }}" lang="ko" hreflang="ko">한국어</a>
+      <a href="/en/" class="nav-lang {{ if eq .Language.Lang "en" }}active{{ end }}" lang="en" hreflang="en">EN</a>
+      <a href="/ko/" class="nav-lang {{ if eq .Language.Lang "ko" }}active{{ end }}" lang="ko" hreflang="ko">한국어</a>
     </nav>
+
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" type="button">
       <span class="theme-icon">☀️</span>
     </button>
@@ -42,6 +50,16 @@
       localStorage.setItem('theme', next);
       icon.textContent = next === 'dark' ? '☀️' : '🌙';
     });
+
+    // Mobile nav toggle
+    var navToggle = document.getElementById('nav-toggle');
+    var nav = document.getElementById('header-nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', function() {
+        var open = nav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
   });
 
   // Sticky header shadow on scroll

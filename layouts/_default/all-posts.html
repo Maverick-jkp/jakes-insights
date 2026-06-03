@@ -8,43 +8,40 @@
     <p class="all-posts-count">{{ len $posts }}{{ if eq .Language.Lang "ko" }}개의 글{{ else }} articles{{ end }}</p>
   </div>
 
-  <!-- Subtopic Filter Bar -->
-  <div class="apf-bar" id="subtopicFilterBar">
+  <!-- Category Filter Bar (5 buckets + All) -->
+  <div class="apf-bar" id="categoryFilterBar">
     <button class="apf-btn apf-btn--all active" data-filter="all">
       {{ if eq .Language.Lang "ko" }}전체{{ else }}All{{ end }}
     </button>
-    <button class="apf-btn" data-filter="ai">✦ AI</button>
-    <button class="apf-btn" data-filter="security">✦ {{ if eq .Language.Lang "ko" }}보안{{ else }}Security{{ end }}</button>
-    <button class="apf-btn" data-filter="devtools">✦ {{ if eq .Language.Lang "ko" }}개발도구{{ else }}DevTools{{ end }}</button>
-    <button class="apf-btn" data-filter="cloud">✦ {{ if eq .Language.Lang "ko" }}클라우드{{ else }}Cloud{{ end }}</button>
-    <button class="apf-btn" data-filter="data">✦ {{ if eq .Language.Lang "ko" }}데이터{{ else }}Data{{ end }}</button>
-    <button class="apf-btn" data-filter="web">✦ {{ if eq .Language.Lang "ko" }}웹{{ else }}Web{{ end }}</button>
-    <button class="apf-btn" data-filter="mobile">✦ {{ if eq .Language.Lang "ko" }}모바일{{ else }}Mobile{{ end }}</button>
-    <button class="apf-btn" data-filter="side-income">{{ if eq .Language.Lang "ko" }}💰 부업{{ else }}💰 Side Income{{ end }}</button>
+    <button class="apf-btn" data-filter="ai">🤖 AI</button>
+    <button class="apf-btn" data-filter="productivity">⚡ {{ if eq .Language.Lang "ko" }}생산성{{ else }}Productivity{{ end }}</button>
+    <button class="apf-btn" data-filter="tech-economy">🌐 {{ if eq .Language.Lang "ko" }}테크 경제{{ else }}Tech Economy{{ end }}</button>
+    <button class="apf-btn" data-filter="buying-guide">🛍️ {{ if eq .Language.Lang "ko" }}구매 가이드{{ else }}Buying Guide{{ end }}</button>
+    <button class="apf-btn" data-filter="side-income">💰 {{ if eq .Language.Lang "ko" }}부업{{ else }}Side Income{{ end }}</button>
   </div>
 
   <div class="all-posts-grid" id="allPostsGrid">
     {{ $currentLangPages := where .Site.RegularPages "Language.Lang" .Site.Language.Lang }}
     {{ $posts := where $currentLangPages "Type" "!=" "page" }}
     {{ range $posts }}
-    {{ $subtopic := "" }}
-    {{ range .Params.tags }}
-      {{ if hasPrefix . "subtopic-" }}
-        {{ $subtopic = strings.TrimPrefix "subtopic-" . }}
+    {{/* Derive the post's category: prefer frontmatter categories[0], fall back
+         to .Section so legacy posts (e.g. in /tech/) still render a chip */}}
+    {{ $category := "" }}
+    {{ with .Params.categories }}{{ $category = index . 0 }}{{ end }}
+    {{ if or (not $category) (eq $category "tech") }}
+      {{ if and .Section (ne .Section "tech") }}
+        {{ $category = .Section }}
       {{ end }}
     {{ end }}
-    {{ if or (eq $subtopic "freelancing") (eq $subtopic "saas") (eq $subtopic "digital-products") (eq $subtopic "passive") (eq $subtopic "content") (eq $subtopic "jobs") (eq $subtopic "ai-income") (eq $subtopic "general") }}
-      {{ $subtopic = "side-income" }}
-    {{ end }}
-    {{ $koLabels := dict "ai" "AI" "security" "보안" "devtools" "개발도구" "cloud" "클라우드" "data" "데이터" "web" "웹" "mobile" "모바일" "side-income" "부업" "other" "테크" }}
-    {{ $enLabels := dict "ai" "AI" "security" "Security" "devtools" "DevTools" "cloud" "Cloud" "data" "Data" "web" "Web" "mobile" "Mobile" "side-income" "Side Income" "other" "Tech" }}
+    {{ $koLabels := dict "ai" "AI" "productivity" "생산성" "tech-economy" "테크 경제" "buying-guide" "구매 가이드" "side-income" "부업" }}
+    {{ $enLabels := dict "ai" "AI" "productivity" "Productivity" "tech-economy" "Tech Economy" "buying-guide" "Buying Guide" "side-income" "Side Income" }}
     {{ $label := "" }}
     {{ if eq $.Site.Language.Lang "ko" }}
-      {{ $label = index $koLabels $subtopic | default "테크" }}
+      {{ $label = index $koLabels $category }}
     {{ else }}
-      {{ $label = index $enLabels $subtopic | default "Tech" }}
+      {{ $label = index $enLabels $category }}
     {{ end }}
-    <a href="{{ .Permalink }}" class="post-card" data-subtopic="{{ $subtopic }}">
+    <a href="{{ .Permalink }}" class="post-card" data-category="{{ $category }}">
       <div class="post-card-image-wrap">
         {{ with .Params.image }}
         <img class="post-card-image" src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
@@ -58,15 +55,15 @@
         <div class="post-card-meta">
           <span>{{ if eq $.Site.Language.Lang "ko" }}{{ .Date.Format "2006.01.02" }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}</span>
           <span>{{ .ReadingTime }}{{ if eq $.Site.Language.Lang "ko" }}분{{ else }} min{{ end }}</span>
-          {{ if $subtopic }}
-          <span class="post-card-chip post-card-chip--{{ $subtopic }}" data-subtopic="{{ $subtopic }}">{{ $label }}</span>
+          {{ if and $category $label }}
+          <span class="post-card-chip post-card-chip--{{ $category }}" data-category="{{ $category }}">{{ $label }}</span>
           {{ end }}
         </div>
       </div>
     </a>
     {{ end }}
     <p class="no-results-msg" id="noResultsMsg">
-      {{ if eq .Language.Lang "ko" }}해당 카테고리의 글이 없습니다.{{ else }}No posts found for this topic.{{ end }}
+      {{ if eq .Language.Lang "ko" }}해당 카테고리의 글이 없습니다.{{ else }}No posts found for this category.{{ end }}
     </p>
   </div>
 
@@ -75,9 +72,10 @@
 <script>
 (function () {
   const urlParams = new URLSearchParams(window.location.search);
-  const initialFilter = urlParams.get('subtopic') || 'all';
+  // Accept both ?category= (new) and ?subtopic= (legacy redirect from old URLs)
+  const initialFilter = urlParams.get('category') || urlParams.get('subtopic') || 'all';
 
-  const filterBar = document.getElementById('subtopicFilterBar');
+  const filterBar = document.getElementById('categoryFilterBar');
   const grid = document.getElementById('allPostsGrid');
   const noResults = document.getElementById('noResultsMsg');
   const cards = grid ? Array.from(grid.querySelectorAll('a.post-card')) : [];
@@ -86,8 +84,8 @@
   function applyFilter(filter) {
     let visible = 0;
     cards.forEach(card => {
-      const subtopic = card.getAttribute('data-subtopic') || '';
-      const show = filter === 'all' || subtopic === filter;
+      const category = card.getAttribute('data-category') || '';
+      const show = filter === 'all' || category === filter;
       if (show) {
         card.style.display = '';
         visible++;
@@ -99,8 +97,9 @@
     buttons.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-filter') === filter));
 
     const url = new URL(window.location.href);
-    if (filter === 'all') url.searchParams.delete('subtopic');
-    else url.searchParams.set('subtopic', filter);
+    if (filter === 'all') url.searchParams.delete('category');
+    else url.searchParams.set('category', filter);
+    url.searchParams.delete('subtopic'); // strip legacy param
     window.history.replaceState({}, '', url.toString());
   }
 
@@ -118,7 +117,7 @@
       if (chip) {
         e.preventDefault();
         e.stopPropagation();
-        applyFilter(chip.getAttribute('data-subtopic'));
+        applyFilter(chip.getAttribute('data-category'));
       }
     });
   }

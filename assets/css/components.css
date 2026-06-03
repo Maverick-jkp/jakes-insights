@@ -74,6 +74,7 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  flex-wrap: nowrap;
 }
 
 .header-nav a {
@@ -84,6 +85,7 @@
   padding: 0.4rem 0.75rem;
   border-radius: var(--radius-md);
   transition: all var(--transition-base);
+  white-space: nowrap;
 }
 
 .header-nav a:hover {
@@ -103,6 +105,31 @@
   background: var(--accent-gray);
   margin: 0 0.5rem;
   flex-shrink: 0;
+}
+
+/* Mobile hamburger — hidden on desktop */
+.nav-toggle {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--accent-gray);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 1px;
 }
 
 /* Theme Toggle */
@@ -428,24 +455,66 @@
   }
 }
 
-/* === Mobile Nav === */
+/* === Mobile Nav ===
+   On screens <=768px the inline nav collapses into a hamburger that toggles a
+   stacked dropdown. Keeps brand + theme toggle on the top line, prevents the
+   "Home / All Posts / EN / 한국어" row from wrapping awkwardly. */
 
 @media (max-width: 768px) {
   .header-inner {
     padding: 0.75rem var(--space-md);
-  }
-
-  .header-nav {
-    gap: 0;
-  }
-
-  .header-nav a {
-    font-size: 13px;
-    padding: 0.35rem 0.5rem;
+    gap: var(--space-sm);
   }
 
   .tagline {
     display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+    order: 2;
+  }
+
+  .header-nav {
+    /* Hidden by default; .open class slides it down */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--accent-gray);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .header-nav.open {
+    display: flex;
+  }
+
+  .header-nav a {
+    font-size: var(--text-sm);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+  }
+
+  .header-nav .nav-divider {
+    width: 100%;
+    height: 1px;
+    margin: var(--space-xs) 0;
+  }
+
+  /* Language switchers go side-by-side on mobile */
+  .header-nav .nav-lang {
+    display: inline-block;
+    width: auto;
+  }
+
+  .theme-toggle {
+    order: 3;
   }
 }
 
@@ -457,8 +526,11 @@
   }
 }
 
-/* === Subtopic Chips (article page header) === */
+/* === Category & Subtopic Chips (article page header) ===
+   New posts ship .category-chip (5-category system). Legacy posts that still
+   carry subtopic-* tags ship .subtopic-chip. Both share styling and palette. */
 
+.category-chip,
 .subtopic-chip {
   display: inline-flex;
   align-items: center;
@@ -475,6 +547,7 @@
 }
 
 /* dot before label */
+.category-chip::before,
 .subtopic-chip::before {
   content: '';
   display: inline-block;
@@ -486,7 +559,64 @@
   flex-shrink: 0;
 }
 
-/* Subtopic colors — each unique */
+/* === New 5-category palette === */
+.category-chip[data-category="ai"] {
+  background: rgba(139, 92, 246, 0.15);
+  color: #7c3aed;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+[data-theme="dark"] .category-chip[data-category="ai"] {
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.category-chip[data-category="productivity"] {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.28);
+}
+[data-theme="dark"] .category-chip[data-category="productivity"] {
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.38);
+}
+
+.category-chip[data-category="tech-economy"] {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.28);
+}
+[data-theme="dark"] .category-chip[data-category="tech-economy"] {
+  background: rgba(59, 130, 246, 0.18);
+  color: #60a5fa;
+  border-color: rgba(59, 130, 246, 0.38);
+}
+
+.category-chip[data-category="buying-guide"] {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.28);
+}
+[data-theme="dark"] .category-chip[data-category="buying-guide"] {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fbbf24;
+  border-color: rgba(245, 158, 11, 0.38);
+}
+
+.category-chip[data-category="side-income"] {
+  background: rgba(236, 72, 153, 0.12);
+  color: #db2777;
+  border: 1px solid rgba(236, 72, 153, 0.28);
+}
+[data-theme="dark"] .category-chip[data-category="side-income"] {
+  background: rgba(236, 72, 153, 0.18);
+  color: #f472b6;
+  border-color: rgba(236, 72, 153, 0.38);
+}
+
+/* === Legacy subtopic palette (kept for migrated posts that still carry
+   subtopic-* tags; will be removed in a later cleanup) === */
 .subtopic-chip[data-subtopic="ai"] {
   background: rgba(139, 92, 246, 0.15);
   color: #7c3aed;
@@ -685,24 +815,35 @@
   flex-shrink: 0;
 }
 
-.post-card-chip--ai       { background: rgba(139,92,246,0.18);  color: #a78bfa; }
+/* New 5-category palette (2026-06 reorg). Old subtopic classes below are
+   kept for legacy posts that still ship the subtopic-* tag. */
+.post-card-chip--ai           { background: rgba(139,92,246,0.18); color: #a78bfa; }
+.post-card-chip--productivity { background: rgba(16,185,129,0.18); color: #34d399; }
+.post-card-chip--tech-economy { background: rgba(59,130,246,0.18); color: #60a5fa; }
+.post-card-chip--buying-guide { background: rgba(245,158,11,0.18); color: #fbbf24; }
+.post-card-chip--side-income  { background: rgba(236,72,153,0.18); color: #f472b6; }
+
+[data-theme="light"] .post-card-chip--ai           { color: #7c3aed; }
+[data-theme="light"] .post-card-chip--productivity { color: #059669; }
+[data-theme="light"] .post-card-chip--tech-economy { color: #2563eb; }
+[data-theme="light"] .post-card-chip--buying-guide { color: #d97706; }
+[data-theme="light"] .post-card-chip--side-income  { color: #db2777; }
+
+/* Legacy subtopic-based chip classes — kept so old posts still chip while
+   their /tech/ → /ai|productivity|tech-economy/ migration redirects flow */
 .post-card-chip--security { background: rgba(239,68,68,0.18);   color: #f87171; }
 .post-card-chip--devtools { background: rgba(16,185,129,0.18);  color: #34d399; }
 .post-card-chip--cloud    { background: rgba(59,130,246,0.18);  color: #60a5fa; }
 .post-card-chip--data     { background: rgba(245,158,11,0.18);  color: #fbbf24; }
 .post-card-chip--web      { background: rgba(236,72,153,0.18);  color: #f472b6; }
 .post-card-chip--mobile   { background: rgba(249,115,22,0.18);  color: #fb923c; }
-.post-card-chip--other       { background: rgba(107,114,128,0.18); color: #9ca3af; }
-.post-card-chip--side-income { background: rgba(16,185,129,0.18);  color: #34d399; }
-
-[data-theme="light"] .post-card-chip--ai          { color: #7c3aed; }
-[data-theme="light"] .post-card-chip--security    { color: #dc2626; }
-[data-theme="light"] .post-card-chip--devtools    { color: #059669; }
-[data-theme="light"] .post-card-chip--cloud       { color: #2563eb; }
-[data-theme="light"] .post-card-chip--data        { color: #d97706; }
-[data-theme="light"] .post-card-chip--web         { color: #db2777; }
-[data-theme="light"] .post-card-chip--mobile      { color: #ea580c; }
-[data-theme="light"] .post-card-chip--side-income { color: #059669; }
+.post-card-chip--other    { background: rgba(107,114,128,0.18); color: #9ca3af; }
+[data-theme="light"] .post-card-chip--security { color: #dc2626; }
+[data-theme="light"] .post-card-chip--devtools { color: #059669; }
+[data-theme="light"] .post-card-chip--cloud    { color: #2563eb; }
+[data-theme="light"] .post-card-chip--data     { color: #d97706; }
+[data-theme="light"] .post-card-chip--web      { color: #db2777; }
+[data-theme="light"] .post-card-chip--mobile   { color: #ea580c; }
 
 .no-results-msg {
   grid-column: 1 / -1;

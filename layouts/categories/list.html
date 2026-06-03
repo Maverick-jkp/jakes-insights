@@ -487,11 +487,17 @@
                 <div style="font-size: 0.75rem; color: var(--accent); padding: 0 1rem 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Categories</div>
                 <div class="category-grid">
                 {{ if eq .Site.Language.Lang "en" }}
-                <a href="/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
+                <a href="/ai/"><span class="cat-icon">🤖</span><span class="cat-text">AI</span></a>
+                <a href="/productivity/"><span class="cat-icon">⚡</span><span class="cat-text">Productivity</span></a>
+                <a href="/tech-economy/"><span class="cat-icon">🌐</span><span class="cat-text">Tech Economy</span></a>
+                <a href="/buying-guide/"><span class="cat-icon">🛍️</span><span class="cat-text">Buying Guide</span></a>
                 <a href="/side-income/"><span class="cat-icon">💰</span><span class="cat-text">Side Income</span></a>
                 {{ else }}
-                <a href="/{{ .Site.Language.Lang }}/categories/tech/"><span class="cat-icon">💻</span><span class="cat-text">Tech</span></a>
-                <a href="/{{ .Site.Language.Lang }}/side-income/"><span class="cat-icon">💰</span><span class="cat-text">부업</span></a>
+                <a href="/ko/ai/"><span class="cat-icon">🤖</span><span class="cat-text">AI</span></a>
+                <a href="/ko/productivity/"><span class="cat-icon">⚡</span><span class="cat-text">생산성</span></a>
+                <a href="/ko/tech-economy/"><span class="cat-icon">🌐</span><span class="cat-text">테크 경제</span></a>
+                <a href="/ko/buying-guide/"><span class="cat-icon">🛍️</span><span class="cat-text">구매 가이드</span></a>
+                <a href="/ko/side-income/"><span class="cat-icon">💰</span><span class="cat-text">부업</span></a>
                 {{ end }}
                 </div>
             </div>

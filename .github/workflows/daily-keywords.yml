@@ -51,36 +51,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Clear stale trend keywords (preserve evergreen & side-income)
+      - name: Clear all pending keywords (fresh start daily)
         run: |
-          echo "🗑️ Clearing stale trend pending keywords for fresh daily batch..."
-          echo "   (Evergreen and side-income candidates are preserved — they're"
-          echo "    long-lived; only the daily trend pool is rotated.)"
+          echo "🗑️ Clearing all pending keywords for fresh daily batch..."
           python3 << 'EOF'
           import json
           with open('data/topics_queue.json', 'r', encoding='utf-8') as f:
               data = json.load(f)
-
-          before = len([t for t in data['topics'] if t['status'] == 'pending'])
-
-          def is_stale_trend(t):
-              if t.get('status') != 'pending':
-                  return False
-              # Trend keywords are short-lived; clear them
-              if t.get('keyword_type') == 'trend':
-                  return True
-              # Side-income and evergreen candidates persist
-              return False
-
-          data['topics'] = [t for t in data['topics'] if not is_stale_trend(t)]
-
-          after = len([t for t in data['topics'] if t['status'] == 'pending'])
-          print(f"✅ Cleared {before - after} stale trend pending keywords")
-          print(f"   Remaining pending: {after} (evergreen + side-income preserved)")
-          print(f"   Total topics: {len(data['topics'])}")
-
+          pending_count = len([t for t in data['topics'] if t['status'] == 'pending'])
+          data['topics'] = [t for t in data['topics'] if t['status'] != 'pending']
           with open('data/topics_queue.json', 'w', encoding='utf-8') as f:
               json.dump(data, f, indent=2, ensure_ascii=False)
+          print(f"✅ Cleared {pending_count} pending keywords")
+          print(f"   Remaining: {len(data['topics'])} completed topics")
           EOF
 
       - name: Curate new keywords

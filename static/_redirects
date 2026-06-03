@@ -14,31 +14,28 @@ https://jakes-tech-insights.pages.dev/* https://jakeinsight.com/:splat 301!
 /en/tags/* /tags/:splat 301
 /en/categories/* /categories/ 301
 
-# /en/tech/<slug>/ → /tech/<slug>/ (currently-valid date-prefixed URLs)
-# Older slug-only /en/tech/<slug>/ URLs will redirect to /tech/<slug>/ which 404s;
-# those are unmappable without a Worker. The /en/* prefix removal is still useful
-# for the vast majority of inbound links that have correct date-prefixed slugs.
-/en/tech/* /tech/:splat 301
-
-# /en/side-income/* — same pattern; date-prefixed slugs map cleanly, undated slugs
-# from before the convention will land at /side-income/<old-slug>/ which 404s
+# /en/* prefix-removal: dev-prefixed URLs (slug already has date prefix → maps
+# cleanly to the new section/slug). Older slug-only URLs land at 404, which is
+# the right signal for Google to drop them from the index.
 /en/side-income/* /side-income/:splat 301
-
-# Legacy section landings (no slug) for completeness
-/en/tech/ /tech/ 301
 /en/side-income/ /side-income/ 301
 
-# Live category pages — explicit 200 (no redirect)
-# These MUST be listed before any /categories/* catch-all
-/categories/ /categories/ 200
-/categories/tech/ /categories/tech/ 200
-/categories/side-income/ /categories/side-income/ 200
-/ko/categories/ /ko/categories/ 200
-/ko/categories/tech/ /ko/categories/tech/ 200
-/ko/categories/side-income/ /ko/categories/side-income/ 200
+# /tech/ section was retired on 2026-06-03 (posts migrated to /ai|productivity|
+# tech-economy|buying-guide/; section _index.md removed). The 837 specific
+# /tech/<slug>/ → /<new-category>/<slug>/ rules are auto-appended below by
+# migrate_categories.py. The catch-alls here handle the bare section URL and
+# any /en/tech/* leftovers.
+/tech/ /ai/ 301
+/en/tech/ /ai/ 301
+/en/tech/* /ai/:splat 301
+/ko/tech/ /ko/ai/ 301
 
-# Trailing-slash normalization
-/categories/tech /categories/tech/ 301
+# /categories/tech/ taxonomy page is no longer built (no posts in "tech" since
+# the migration). Send legacy inbound links to /categories/ which lists all
+# active taxonomies.
+/categories/tech/ /categories/ 301
+/categories/tech /categories/ 301
+/ko/categories/tech/ /ko/categories/ 301
 
 # Legacy URLs are intentionally NOT listed — they fall through to Cloudflare's
 # default 404, which is sufficient to remove them from Google's index.

@@ -76,7 +76,7 @@ jobs:
           echo "::add-mask::${{ secrets.ANTHROPIC_API_KEY }}"
           echo "::add-mask::${{ secrets.BRAVE_API_KEY }}"
 
-          COUNT="${{ github.event.inputs.count || '2' }}"
+          COUNT="${{ github.event.inputs.count || '10' }}"
 
           echo "📝 Generating $COUNT trend + 14 evergreen keywords (EN/KO 50/50)..."
           python scripts/keyword_curator.py --count "$COUNT" --evergreen 14 --auto

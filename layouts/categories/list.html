@@ -4,37 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
-    {{- /* Category-specific meta descriptions */ -}}
-    {{- $metaDescription := printf "Browse all posts in %s category at %s" .Title .Site.Title -}}
-    {{- if eq .Title "Tech" -}}
-        {{- if eq $.Site.Language.Lang "ko" -}}
-            {{- $metaDescription = "최신 기술 트렌드, 개발 인사이트, 혁신적인 솔루션을 다루는 기술 카테고리입니다. 기술의 본질을 탐구하고 미래를 설계합니다." -}}
-        {{- else -}}
-            {{- $metaDescription = "Explore cutting-edge technology trends, development insights, and innovative solutions. Discover the essence of technology and design the future." -}}
+    {{- /* Category-specific meta descriptions — keyed off the URL slug rather
+         than .Title, so renames don't break SEO. Falls back to a generic
+         description for any taxonomy we don't have copy for. */ -}}
+    {{- $slug := lower .Title -}}
+    {{- $metaDescription := printf "Browse all posts in %s at %s" .Title .Site.Title -}}
+    {{- $isKo := eq $.Site.Language.Lang "ko" -}}
+    {{- if or (eq $slug "ai") (eq .Title "AI") -}}
+        {{- if $isKo -}}{{- $metaDescription = "ChatGPT, Claude, Gemini 등 AI 도구 리뷰와 비교. AI가 일상과 업무를 어떻게 바꾸는지 다룹니다." -}}
+        {{- else -}}{{- $metaDescription = "Reviews and comparisons of AI tools like ChatGPT, Claude, and Gemini — and how they're changing everyday work." -}}
         {{- end -}}
-    {{- else if eq .Title "Business" -}}
-        {{- if eq $.Site.Language.Lang "ko" -}}
-            {{- $metaDescription = "비즈니스 전략, 경영 인사이트, 성장 스토리를 다루는 비즈니스 카테고리입니다. 비즈니스의 숨은 원리를 발견하고 성장을 만듭니다." -}}
-        {{- else -}}
-            {{- $metaDescription = "Explore business strategies, management insights, and growth stories. Discover hidden principles of business and create sustainable growth." -}}
+    {{- else if eq $slug "productivity" -}}
+        {{- if $isKo -}}{{- $metaDescription = "노션, 슬랙, 옵시디언 등 실제로 쓰는 생산성 도구의 리뷰와 비교." -}}
+        {{- else -}}{{- $metaDescription = "Reviews and head-to-head comparisons of the productivity software people actually use — Notion, Slack, Obsidian, and more." -}}
         {{- end -}}
-    {{- else if eq .Title "Society" -}}
-        {{- if eq $.Site.Language.Lang "ko" -}}
-            {{- $metaDescription = "사회 이슈, 문화 현상, 트렌드 분석을 다루는 사회 카테고리입니다. 사회의 변화를 읽고 더 나은 내일을 상상합니다." -}}
-        {{- else -}}
-            {{- $metaDescription = "Explore social issues, cultural phenomena, and trend analysis. Read societal changes and imagine a better tomorrow together." -}}
+    {{- else if eq $slug "tech-economy" -}}
+        {{- if $isKo -}}{{- $metaDescription = "구글 vs 네이버, 애플 vs 삼성 — 빅테크 기업과 제품, 트렌드가 우리 일상에 미치는 영향." -}}
+        {{- else -}}{{- $metaDescription = "How big tech companies, products, and trends shape what we use — written for the people who use the products." -}}
         {{- end -}}
-    {{- else if eq .Title "Entertainment" -}}
-        {{- if eq $.Site.Language.Lang "ko" -}}
-            {{- $metaDescription = "영화, 음악, 문화 콘텐츠를 다루는 엔터테인먼트 카테고리입니다. 문화의 흐름을 따라가며 즐거움을 발견합니다." -}}
-        {{- else -}}
-            {{- $metaDescription = "Explore movies, music, and cultural content. Follow cultural trends and discover joy in entertainment." -}}
+    {{- else if eq $slug "buying-guide" -}}
+        {{- if $isKo -}}{{- $metaDescription = "정말 돈 쓸 만한가? 기기, 구독, 소프트웨어를 솔직하게 비교합니다." -}}
+        {{- else -}}{{- $metaDescription = "Should you actually pay for it? Honest comparisons of devices, subscriptions, and software for people about to spend money." -}}
         {{- end -}}
-    {{- else if eq .Title "Sports" -}}
-        {{- if eq $.Site.Language.Lang "ko" -}}
-            {{- $metaDescription = "스포츠 뉴스, 경기 분석, 선수 스토리를 다루는 스포츠 카테고리입니다. 열정과 도전의 순간들을 함께합니다." -}}
-        {{- else -}}
-            {{- $metaDescription = "Explore sports news, game analysis, and athlete stories. Share moments of passion and challenge." -}}
+    {{- else if eq $slug "side-income" -}}
+        {{- if $isKo -}}{{- $metaDescription = "부업, 사이드 프로젝트, AI 활용 수익화 — 일반인이 시작할 수 있는 현실적인 부수입." -}}
+        {{- else -}}{{- $metaDescription = "Side projects, side hustles, and AI-powered passive income — realistic paths for non-developers and developers alike." -}}
         {{- end -}}
     {{- end -}}
     <meta name="description" content="{{ $metaDescription }}">

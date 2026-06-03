@@ -4,9 +4,16 @@ Input validation utilities for topic queue and content generation.
 import re
 from typing import Optional, List
 
-# Allowed categories (tech-only strategy - updated 2026-02-20)
+# Allowed categories (5-category structure — updated 2026-06-02 reorg)
+# Legacy 'tech' kept for backwards compat with any in-flight or queued topics
+# that pre-date the migration; new topics route into the five real categories.
 VALID_CATEGORIES = [
-    'tech',          # Tech, AI, software, EdTech — only category
+    'ai',
+    'productivity',
+    'tech-economy',
+    'buying-guide',
+    'side-income',
+    'tech',  # legacy — accepts old in-queue items; remove in a later cleanup
 ]
 
 # Allowed languages

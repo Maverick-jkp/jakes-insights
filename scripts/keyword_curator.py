@@ -2,7 +2,7 @@
 """
 Keyword Curator - Automated keyword research for blog content
 
-Fetches hot topics from community sources (HackerNews, Dev.to, Lobsters, ProductHunt, Reddit),
+Fetches hot topics from community sources (Reddit, ProductHunt),
 uses Claude API to select 10 trend keywords (EN 5 + KO 5), adds to topics queue.
 
 Usage:
@@ -87,12 +87,12 @@ def _classify_to_new_category(keyword_lower: str) -> str:
 
 
 CURATION_PROMPT_WITH_TRENDS = """역할:
-너는 **해외 테크 미디어 에디터**다. 영문 커뮤니티(HackerNews, Dev.to, Lobsters, ProductHunt, Reddit)에서
+너는 **해외 테크 미디어 에디터**다. 영문 커뮤니티(Reddit, ProductHunt)에서
 지금 가장 핫한 기술 이슈를 발굴해, **영어 독자**와 **한국어 독자** 모두를 위한 키워드를 제안한다.
 
 이 블로그의 컨셉: **"해외 테크 뉴스를 가장 빠르게, 한국어로도 전달하는 외신 테크 블로그"**
 
-📊 **소스**: HackerNews + Dev.to + Lobsters + ProductHunt + Reddit (7 mainstream subreddits)
+📊 **소스**: Reddit (7 mainstream subreddits) + ProductHunt
 📊 **언어 비중**: EN 50% ({en_count}개), KO 50% ({ko_count}개)
 
 🌐 **오늘의 해외 커뮤니티 핫 토픽**:
@@ -169,7 +169,7 @@ KO 키워드는 단순 번역이 아니라 **한국 개발자/테크 유저가 �
     "core_fear_question": "사용자의 핵심 두려움을 담은 질문 한 문장",
     "language": "ko",
     "category": "ai / productivity / tech-economy / buying-guide / side-income 중 하나",
-    "source_topic": "참고한 커뮤니티 토픽 원문 제목 (HackerNews/Dev.to/Lobsters/ProductHunt/Reddit)",
+    "source_topic": "참고한 커뮤니티 토픽 원문 제목 (Reddit/ProductHunt)",
     "search_intent": "사용자가 지금 당장 검색하는 이유",
     "angle": "이 키워드를 다룰 때의 관점",
     "competition_level": "low",
@@ -405,7 +405,16 @@ class KeywordCurator:
         return signals if signals else ["GENERAL"]
 
     def fetch_community_topics(self) -> Dict[str, List[Dict]]:
-        """Fetch trending topics from HackerNews, Reddit, and ProductHunt"""
+        """Fetch trending topics from Reddit + ProductHunt.
+
+        History note: this used to fetch from HackerNews / Dev.to / Lobsters
+        too. Those three sources are heavily developer-focused, and after the
+        2026-06 pivot to a mainstream-tech audience they were producing pure
+        noise — the Claude curator had to translate every topic out of
+        developer-speak before using it. Dropped on 2026-06-03 in favor of
+        Reddit (mainstream subreddits) + ProductHunt (new product launches,
+        useful signal for buying-guide content).
+        """
         safe_print(f"\n{'='*60}")
         safe_print(f"  🌐 Fetching topics from community sources...")
         safe_print(f"{'='*60}\n")
@@ -413,107 +422,7 @@ class KeywordCurator:
         community_topics = []
         verify_ssl = certifi.where() if certifi else True
 
-        # 1. HackerNews - Top Stories + Top Comments (free, no auth)
-        try:
-            safe_print("  → Fetching from HackerNews (with top comments)...")
-            hn_top_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
-            response = requests.get(hn_top_url, timeout=10, verify=verify_ssl)
-            response.raise_for_status()
-            story_ids = response.json()[:25]  # Top 25 stories
-
-            for story_id in story_ids[:25]:  # Fetch details for top 25
-                try:
-                    item_url = f"https://hacker-news.firebaseio.com/v0/item/{story_id}.json"
-                    item_resp = requests.get(item_url, timeout=5, verify=verify_ssl)
-                    item_resp.raise_for_status()
-                    item = item_resp.json()
-
-                    if item and item.get('title'):
-                        # Fetch top 2 comments for context (reduced from 3 for speed)
-                        top_comments = []
-                        comment_ids = item.get('kids', [])[:2]
-                        for comment_id in comment_ids:
-                            try:
-                                comment_url = f"https://hacker-news.firebaseio.com/v0/item/{comment_id}.json"
-                                comment_resp = requests.get(comment_url, timeout=3, verify=verify_ssl)
-                                comment_resp.raise_for_status()
-                                comment = comment_resp.json()
-                                if comment and comment.get('text'):
-                                    import re
-                                    clean_text = re.sub('<[^<]+?>', '', comment.get('text', ''))
-                                    if len(clean_text) > 300:
-                                        clean_text = clean_text[:300] + '...'
-                                    top_comments.append(clean_text)
-                            except Exception:
-                                continue
-
-                        community_topics.append({
-                            'title': item['title'],
-                            'source': 'HackerNews',
-                            'url': item.get('url', f"https://news.ycombinator.com/item?id={story_id}"),
-                            'score': item.get('score', 0),
-                            'comments': item.get('descendants', 0),
-                            'top_comments': top_comments
-                        })
-                except Exception:
-                    continue
-
-            hn_count = len([t for t in community_topics if t['source'] == 'HackerNews'])
-            safe_print(f"    ✓ Found {hn_count} topics from HackerNews (with comments)")
-
-        except Exception as e:
-            safe_print(f"    ⚠️ HackerNews fetch failed: {mask_secrets(str(e))}")
-
-        # 2. Dev.to - Developer community (free, no auth needed)
-        try:
-            safe_print("  → Fetching from Dev.to (top articles)...")
-            devto_url = "https://dev.to/api/articles?top=1&per_page=25"
-            headers = {'User-Agent': 'JakesTechInsights/1.0'}
-            response = requests.get(devto_url, headers=headers, timeout=10, verify=verify_ssl)
-            response.raise_for_status()
-            data = response.json()
-
-            for article in data[:25]:
-                if article.get('title'):
-                    community_topics.append({
-                        'title': article['title'],
-                        'source': 'Dev.to',
-                        'url': article.get('url', ''),
-                        'score': article.get('positive_reactions_count', 0),
-                        'comments': article.get('comments_count', 0)
-                    })
-
-            devto_count = len([t for t in community_topics if t['source'] == 'Dev.to'])
-            safe_print(f"    ✓ Found {devto_count} topics from Dev.to")
-
-        except Exception as e:
-            safe_print(f"    ⚠️ Dev.to fetch failed: {mask_secrets(str(e))}")
-
-        # 3a. Lobsters - Tech community (free, no auth needed)
-        try:
-            safe_print("  → Fetching from Lobsters (hottest)...")
-            lobsters_url = "https://lobste.rs/hottest.json"
-            response = requests.get(lobsters_url, headers={'User-Agent': 'JakesTechInsights/1.0'}, timeout=10, verify=verify_ssl)
-            response.raise_for_status()
-            data = response.json()
-
-            for article in data[:25]:
-                if article.get('title'):
-                    community_topics.append({
-                        'title': article['title'],
-                        'source': 'Lobsters',
-                        'url': article.get('url') or article.get('short_id_url', ''),
-                        'score': article.get('score', 0),
-                        'comments': article.get('comment_count', 0)
-                    })
-
-            lobsters_count = len([t for t in community_topics if t['source'] == 'Lobsters'])
-            safe_print(f"    ✓ Found {lobsters_count} topics from Lobsters")
-
-        except Exception as e:
-            safe_print(f"    ⚠️ Lobsters fetch failed: {mask_secrets(str(e))}")
-
-        # 3. ProductHunt - Using Atom feed with descriptions (no auth needed)
+        # 1. ProductHunt - Using Atom feed with descriptions (no auth needed)
         try:
             safe_print("  → Fetching from ProductHunt (with descriptions)...")
             import xml.etree.ElementTree as ET
@@ -561,12 +470,10 @@ class KeywordCurator:
         except Exception as e:
             safe_print(f"    ⚠️ ProductHunt fetch failed: {mask_secrets(str(e))}")
 
-        # 4. Reddit - General-audience subreddits (free, no auth, public RSS)
-        # Why these subreddits: the site pivoted to mainstream-tech (not just
-        # developers) on 2026-06-02. HN/Dev.to/Lobsters skew heavily developer-
-        # focused; Reddit RSS fills the "what regular tech consumers are
-        # talking about" gap. All 7 are large (300K–18M subscribers) so the
-        # signal is real. Each maps loosely to one of our 5 categories.
+        # 2. Reddit - General-audience subreddits (free, no auth, public RSS)
+        # All 7 are large (300K–18M subscribers); each maps loosely to one of
+        # our 5 categories. This is now the primary topic source — Reddit's
+        # mainstream-tech voice is what the site is built around.
         try:
             safe_print("  → Fetching from Reddit (mainstream subreddits)...")
             import xml.etree.ElementTree as ET
@@ -717,7 +624,7 @@ class KeywordCurator:
         en_count = count // 2
         ko_count = count - en_count  # Remainder to KO
 
-        # Fetch community topics only (HackerNews, Dev.to, Lobsters, ProductHunt)
+        # Fetch community topics (Reddit + ProductHunt)
         self.search_results = []
         community_data = self.fetch_community_topics()
         community_topics_list = community_data.get('en', [])
@@ -726,10 +633,12 @@ class KeywordCurator:
         def format_community_topic(t):
             base = f"- [{t['source']}] {t['title']} (score: {t['score']}, comments: {t['comments']})\n  URL: {t['url']}"
 
-            # Add HackerNews top comments if available
+            # Top comments (legacy field — HN used to populate this; left in
+            # place so it gracefully no-ops now and stays ready if we add a
+            # commentary-bearing source later)
             if t.get('top_comments'):
-                comments_text = "\n  💬 Top developer comments:\n"
-                for i, comment in enumerate(t['top_comments'][:2], 1):  # Max 2 comments
+                comments_text = "\n  💬 Top comments:\n"
+                for i, comment in enumerate(t['top_comments'][:2], 1):
                     comments_text += f"    {i}. {comment[:200]}...\n" if len(comment) > 200 else f"    {i}. {comment}\n"
                 base += comments_text
 
@@ -742,7 +651,7 @@ class KeywordCurator:
 
         community_topics_formatted = "\n".join([
             format_community_topic(t)
-            for t in community_topics_list[:60]  # Up to 60 topics (25 per source × 4 sources)
+            for t in community_topics_list[:80]  # Up to ~80 topics from Reddit (56) + ProductHunt (25)
         ]) or "No community topics available"
 
         # Generate prompt with community data only

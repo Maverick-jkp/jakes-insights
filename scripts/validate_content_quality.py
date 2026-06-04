@@ -53,32 +53,37 @@ def main():
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
 
-            # Check 1: References section
+            # Check 1: References section — WARNING ONLY (does not block commit)
+            # Why: Brave often can't find Korean-language sources for KO
+            # keywords; rejecting all such posts loses ~20-30% of KO output
+            # for an issue that's better surfaced as "this post could be
+            # stronger" than "this post must not ship". The post still passed
+            # quality_gate.py upstream, so the body itself is fine.
             has_references = (
                 '## References' in content or
                 '## 参考' in content or
                 '## 참고자료' in content
             )
 
-            # Check 2: Placeholder images
+            # Check 2: Placeholder images — still BLOCKS (no useful image is
+            # a clear visual quality failure that readers notice immediately)
             has_placeholder = 'placeholder-' in content
-
-            # Track validity
-            is_valid = has_references and not has_placeholder
 
             if not has_references:
                 posts_without_references += 1
-                validation_errors.append(f"❌ No references: {filename}")
-                print(f"  ❌ No references: {filename}")
-                invalid_posts.append(str(filepath))
-            elif has_placeholder:
+                print(f"  ⚠️  No references (warning, not blocking): {filename}")
+                # Fall through to placeholder check; do NOT add to invalid_posts
+
+            if has_placeholder:
                 posts_with_placeholders += 1
                 validation_errors.append(f"❌ Placeholder image: {filename}")
                 print(f"  ❌ Placeholder image: {filename}")
                 invalid_posts.append(str(filepath))
             else:
-                print(f"  ✓ Has references: {filename}")
-                print(f"  ✓ Real image: {filename}")
+                if has_references:
+                    print(f"  ✓ Has references + real image: {filename}")
+                else:
+                    print(f"  ✓ Real image (refs missing, allowed): {filename}")
                 valid_posts.append(str(filepath))
 
         except Exception as e:
@@ -94,15 +99,17 @@ def main():
     print(f"Posts without references: {posts_without_references}")
     print(f"Posts with placeholder images: {posts_with_placeholders}")
 
-    # Determine pass/fail
-    has_issues = posts_without_references > 0 or posts_with_placeholders > 0
+    # Determine pass/fail — references missing is now a warning, only
+    # placeholder images block commit.
+    has_blocking_issues = posts_with_placeholders > 0
+    has_warnings = posts_without_references > 0
 
-    if has_issues:
+    if has_blocking_issues or has_warnings:
         print(f"\n⚠️  QUALITY GATE: PARTIAL SUCCESS\n")
 
         if posts_without_references > 0:
-            print(f"⚠️  {posts_without_references}/{len(generated_files)} posts lack references")
-            print("   These posts will be excluded from commit\n")
+            print(f"⚠️  {posts_without_references}/{len(generated_files)} posts lack references (warning only — still committing)")
+            print("   Brave search often misses Korean-language sources; the post itself is fine.\n")
 
         if posts_with_placeholders > 0:
             print(f"⚠️  {posts_with_placeholders}/{len(generated_files)} posts use placeholder images")

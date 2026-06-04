@@ -36,12 +36,17 @@ def validate_keyword(keyword: str) -> Optional[str]:
     if len(keyword) > 100:
         return "Keyword must be less than 100 characters"
 
-    # Character whitelist: alphanumeric, Korean, spaces, hyphens, colons, dots
-    # Block: path separators, special chars that could cause injection
-    if not re.match(r'^[\w\s가-힣\-\:\.]+$', keyword):
+    # Character whitelist: alphanumeric, Korean, common punctuation that
+    # legitimately appears in natural-language keywords. The 2026-06-04
+    # run rejected 7 candidates (mostly KO) because em-dash wasn't allowed —
+    # Claude kept emitting "ChatGPT 유료 플랜 한 달 써본 후기 — 진짜 돈값 하나"
+    # and our regex blocked it as "invalid characters". Now allows the
+    # punctuation a real headline would use.
+    allowed = r'[\w\s가-힣\-\:\.\,\?\!\'\"\(\)\&\+—–]'
+    if not re.match(rf'^{allowed}+$', keyword):
         return "Keyword contains invalid characters"
 
-    # Path traversal prevention
+    # Path traversal prevention (must still block these even though . is allowed)
     if '..' in keyword or '/' in keyword or '\\' in keyword:
         return "Keyword cannot contain path separators"
 

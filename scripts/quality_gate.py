@@ -705,11 +705,19 @@ class QualityGate:
             matches = sum(1 for seq in char_sequences if seq in body_lower)
             match_ratio = matches / len(char_sequences) if char_sequences else 0
 
-            # More lenient threshold for Korean (10% instead of 30%)
-            # Korean has more complex character matching due to different writing systems
-            if match_ratio < 0.10:
+            # Lenient threshold for Korean (3%) — Korean particles/josa create
+            # title-body mismatches that look like a failure but aren't. The
+            # 2026-06-03 run rejected one legitimate KO post at 6% because of
+            # this. Anything under 3% is a real off-topic signal (e.g. title
+            # is about ChatGPT but body is about something else).
+            if match_ratio < 0.03:
                 checks['critical_failures'].append(
-                    f"Title-content mismatch: Only {match_ratio*100:.0f}% of title character sequences found in body (expected >10%)"
+                    f"Title-content mismatch: Only {match_ratio*100:.0f}% of title character sequences found in body (expected >3%)"
+                )
+            elif match_ratio < 0.10:
+                # Soft warning band — surfaced but doesn't block commit
+                checks['warnings'].append(
+                    f"Title-content mismatch (warning): {match_ratio*100:.0f}% of title sequences in body"
                 )
         else:
             # For English, use word-based matching

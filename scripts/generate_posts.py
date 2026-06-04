@@ -317,11 +317,22 @@ def make_slug(keyword: str, max_length: int = 50) -> str:
     signals. Strategy: lowercase, strip stopwords, normalize separators, then
     cut on a word boundary at most max_length characters.
 
-    Preserves CJK characters (Korean keywords use them meaningfully).
+    Preserves CJK characters (Korean keywords use them meaningfully) but
+    explicitly drops non-ASCII punctuation (em-dash, en-dash, smart quotes,
+    ellipsis), which broke URL routing on Cloudflare Pages on 2026-06-04
+    when an em-dash leaked through.
     """
+    # Non-ASCII characters we still want to drop, even though their codepoint
+    # is > 127. These are typographic punctuation that would otherwise survive
+    # the "ord > 127" allow-rule below.
+    DROP_PUNCT = "—–‒―‐’‘“”«»…·•‰§¶†‡"
+
     s = keyword.lower().strip()
-    # Keep alphanumerics, spaces, and non-ASCII (CJK). Drop everything else.
-    s = "".join(c if (c.isalnum() or c.isspace() or ord(c) > 127) else " " for c in s)
+    s = "".join(
+        c if (c.isalnum() or c.isspace() or (ord(c) > 127 and c not in DROP_PUNCT))
+        else " "
+        for c in s
+    )
     tokens = [t for t in s.split() if t and t not in SLUG_STOPWORDS_EN]
     if not tokens:
         # Fallback: keyword was entirely stopwords (extremely unlikely)

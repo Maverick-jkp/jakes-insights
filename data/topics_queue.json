@@ -31978,7 +31978,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491584",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32003,7 +32003,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:38:37.402364+00:00"
     },
     {
       "id": "2245-en-ai-iOS-27-Siri-features",
@@ -32011,7 +32013,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491608",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32036,7 +32038,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:41:18.488921+00:00"
     },
     {
       "id": "2246-en-ai-Figure-AI-robot-work",
@@ -32077,7 +32081,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491647",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32102,7 +32106,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:30:40.227919+00:00"
     },
     {
       "id": "2248-ko-ai-맥도날드-AI-드라이브스루-도입,-실",
@@ -32110,7 +32116,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491664",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32135,7 +32141,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:44:59.012037+00:00"
     },
     {
       "id": "2249-ko-tech-economy-iOS-27-시리-기능-대기자-명단,",
@@ -32143,7 +32151,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491700",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32168,7 +32176,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:48:59.888691+00:00"
     },
     {
       "id": "2250-ko-side-income-AI로-부업-실제-가능한가,-2026",
@@ -32176,7 +32186,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491722",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32201,7 +32211,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:33:54.436622+00:00"
     },
     {
       "id": "2251-en-ai-Is-Claude-AI-better-",
@@ -32305,7 +32317,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491796",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -32329,7 +32341,9 @@
           "source": "effortlessacademic.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:58:13.676757+00:00"
     },
     {
       "id": "2255-en-ai-How-to-make-money-se",
@@ -32369,7 +32383,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491830",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -32393,7 +32407,9 @@
           "source": "www.techradar.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:36:10.746011+00:00"
     },
     {
       "id": "2257-en-tech-economy-Why-does-Spotify-kee",
@@ -32529,7 +32545,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491908",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -32553,7 +32569,9 @@
           "source": "rinrinrin16.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:52:28.666119+00:00"
     },
     {
       "id": "2262-ko-buying-guide-노션-vs-옵시디언-vs-애플-메모-",
@@ -32625,7 +32643,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-06T09:29:22.491949",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -32649,7 +32667,9 @@
           "source": "money-logic-guide.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-06T11:26:53.201738+00:00",
+      "completed_at": "2026-06-06T11:56:02.701612+00:00"
     }
   ]
 }

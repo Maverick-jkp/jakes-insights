@@ -32927,7 +32927,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102443",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -32952,7 +32952,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T13:03:40.438889+00:00"
     },
     {
       "id": "2312-en-ai-Figure-AI-robot-work",
@@ -33010,7 +33012,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102512",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33019,7 +33021,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T12:47:34.691656+00:00"
     },
     {
       "id": "2315-ko-ai-Claude-Mythos-5-출시,-",
@@ -33027,7 +33031,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102532",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33052,7 +33056,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T12:41:16.311205+00:00"
     },
     {
       "id": "2316-ko-ai-AI-코딩-도구-agmsg,-여러-A",
@@ -33060,7 +33066,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102554",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33085,7 +33091,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T13:06:58.484907+00:00"
     },
     {
       "id": "2317-ko-tech-economy-AI-로봇-30시간-무중단-작업,-내",
@@ -33093,7 +33101,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102573",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33102,7 +33110,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T12:51:14.753360+00:00"
     },
     {
       "id": "2318-en-ai-Is-Claude-AI-better-",
@@ -33142,7 +33152,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102608",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33150,7 +33160,9 @@
       "angle": "Midjourney, Adobe Firefly, Canva AI 등을 디자이너의 실무 시나리오(클라이언트 작업, 시안 빠르게 뽑기 등)로 비교",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T12:53:59.061812+00:00"
     },
     {
       "id": "2320-en-ai-Will-AI-replace-grap",
@@ -33302,7 +33314,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102704",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33326,7 +33338,9 @@
           "source": "www.gamsgo.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T12:44:22.418987+00:00"
     },
     {
       "id": "2326-ko-tech-economy-AI-때문에-디자이너-일자리-진짜-없",
@@ -33334,7 +33348,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102718",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33358,7 +33372,9 @@
           "source": "www.joongang.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T12:57:29.448143+00:00"
     },
     {
       "id": "2327-ko-side-income-직장인이-퇴근-후-GPT로-부수입-만",
@@ -33425,7 +33441,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102765",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33433,7 +33449,9 @@
       "angle": "IT 비전문가인 팀장·사무직 관점에서 실제 회의 정리, 할 일 관리, 공유 편의성 기준으로 어느 쪽이 더 편한지 실사용 비교",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T13:09:57.568390+00:00"
     },
     {
       "id": "2330-ko-tech-economy-AI-그림으로-만든-굿즈-팔면-저작권",
@@ -33441,7 +33459,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-09T10:37:17.102778",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33465,7 +33483,9 @@
           "source": "valuecreatorai.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-09T12:38:00.953848+00:00",
+      "completed_at": "2026-06-09T13:00:53.405089+00:00"
     },
     {
       "id": "2331-ko-tech-economy-유튜브-알고리즘이-이상한-영상만-추천",

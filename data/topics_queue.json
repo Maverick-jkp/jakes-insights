@@ -33163,7 +33163,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113192",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33188,7 +33188,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T12:59:54.839115+00:00"
     },
     {
       "id": "2332-en-buying-guide-Starlink-monthly-har",
@@ -33196,7 +33198,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113227",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33221,7 +33223,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T13:10:05.745292+00:00"
     },
     {
       "id": "2333-en-tech-economy-AI-coding-agents-wit",
@@ -33262,7 +33266,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113263",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33287,7 +33291,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T13:12:28.540286+00:00"
     },
     {
       "id": "2335-ko-ai-Claude-Fable-5-출시,-C",
@@ -33361,7 +33367,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113303",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33386,7 +33392,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T13:03:00.160658+00:00"
     },
     {
       "id": "2338-ko-side-income-AI-에이전트로-부업-자동화,-실제로",
@@ -33394,7 +33402,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113320",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33419,7 +33427,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T13:07:31.840837+00:00"
     },
     {
       "id": "2339-en-ai-Is-Claude-AI-better-",
@@ -33555,7 +33565,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113422",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33579,7 +33589,9 @@
           "source": "characterai.it.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T13:14:42.016764+00:00"
     },
     {
       "id": "2344-ko-ai-ChatGPT-유료-플랜-2026년에",
@@ -33774,7 +33786,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-10T10:59:28.113522",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33798,7 +33810,9 @@
           "source": "choojongbum.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-10T12:56:56.577147+00:00",
+      "completed_at": "2026-06-10T13:18:32.023736+00:00"
     }
   ]
 }

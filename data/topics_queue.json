@@ -33719,7 +33719,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118576",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33734,7 +33734,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:06:28.407338+00:00"
     },
     {
       "id": "2371-en-ai-AI-personal-assistan",
@@ -33742,7 +33744,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118621",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33767,7 +33769,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:09:18.326694+00:00"
     },
     {
       "id": "2372-en-tech-economy-eVTOL-air-taxi-booki",
@@ -33775,7 +33779,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118645",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33795,7 +33799,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:24:06.156010+00:00"
     },
     {
       "id": "2373-ko-ai-ChatGPT-이미지-생성-포토샵-대",
@@ -33820,7 +33826,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118682",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33845,7 +33851,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:12:37.705846+00:00"
     },
     {
       "id": "2375-ko-ai-Slack-AI-기능-추가,-팀-요금",
@@ -33853,7 +33861,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118698",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -33878,7 +33886,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:15:42.367892+00:00"
     },
     {
       "id": "2376-ko-tech-economy-자율비행-에어택시-예약-시대-열렸다,",
@@ -33973,7 +33983,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118812",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -33997,7 +34007,9 @@
           "source": "tech.sportskeeda.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:18:13.827519+00:00"
     },
     {
       "id": "2380-en-ai-How-to-make-money-se",
@@ -34069,7 +34081,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118862",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -34093,7 +34105,9 @@
           "source": "emotionte.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T12:57:02.752294+00:00"
     },
     {
       "id": "2383-ko-tech-economy-AI가-내-마케터-일자리-빼앗을까-2",
@@ -34101,7 +34115,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118876",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -34125,7 +34139,9 @@
           "source": "biz.heraldcorp.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:00:30.961516+00:00"
     },
     {
       "id": "2384-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
@@ -34165,7 +34181,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118905",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -34189,7 +34205,9 @@
           "source": "ventureplatform.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:03:57.080396+00:00"
     },
     {
       "id": "2386-ko-ai-노션-AI-한-달-써본-솔직-후기-비",
@@ -34197,7 +34215,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-12T11:04:41.118918",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -34216,7 +34234,9 @@
           "source": "vivia2020.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-12T12:54:06.669650+00:00",
+      "completed_at": "2026-06-12T13:21:11.384608+00:00"
     },
     {
       "id": "2387-ko-tech-economy-유튜브-알고리즘이-이상한-영상만-추천",

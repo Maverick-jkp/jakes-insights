@@ -35935,7 +35935,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188769",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -35960,7 +35960,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:43:45.852711+00:00"
     },
     {
       "id": "2495-en-ai-Darkmoon-autonomous-",
@@ -35968,7 +35970,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188818",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -35993,7 +35995,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T14:05:11.821601+00:00"
     },
     {
       "id": "2496-en-side-income-Unreal-Engine-5.8-AI",
@@ -36001,7 +36005,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188840",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36026,7 +36030,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:46:36.305261+00:00"
     },
     {
       "id": "2497-ko-tech-economy-AI-에이전트-시대,-비개발자도-MC",
@@ -36034,7 +36040,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188861",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36059,7 +36065,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:38:16.486210+00:00"
     },
     {
       "id": "2498-ko-tech-economy-AI-해킹-도구,-이제-내-사업-보안",
@@ -36100,7 +36108,7 @@
       "category": "productivity",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188891",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36125,7 +36133,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:50:08.768507+00:00"
     },
     {
       "id": "2500-ko-side-income-언리얼-엔진-5.8-AI-에이전트,-",
@@ -36133,7 +36143,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188906",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36153,7 +36163,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:53:42.647006+00:00"
     },
     {
       "id": "2501-en-ai-Is-Midjourney-worth-",
@@ -36161,7 +36173,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.188947",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -36185,7 +36197,9 @@
           "source": "cybernews.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:56:15.424426+00:00"
     },
     {
       "id": "2502-en-ai-Best-AI-tools-for-fr",
@@ -36193,7 +36207,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.189015",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -36217,7 +36231,9 @@
           "source": "fueler.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:58:58.272220+00:00"
     },
     {
       "id": "2503-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -36321,7 +36337,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.189081",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -36345,7 +36361,9 @@
           "source": "www.gamsgo.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T13:41:24.282832+00:00"
     },
     {
       "id": "2507-ko-tech-economy-AI-때문에-디자이너-직업-없어질까-",
@@ -36513,7 +36531,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-19T11:27:16.189182",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -36537,7 +36555,9 @@
           "source": "www.techdaily.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-19T13:34:59.392750+00:00",
+      "completed_at": "2026-06-19T14:02:23.166336+00:00"
     }
   ]
 }

@@ -36537,7 +36537,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.824855",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36562,7 +36562,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:23:07.631385+00:00"
     },
     {
       "id": "2532-en-tech-economy-Hyundai-buys-Boston-",
@@ -36570,7 +36572,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.824899",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36579,7 +36581,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:26:01.399430+00:00"
     },
     {
       "id": "2533-en-ai-Chinese-AI-token-pri",
@@ -36587,7 +36591,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.824925",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36612,7 +36616,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:14:08.062329+00:00"
     },
     {
       "id": "2534-en-tech-economy-AI-bots-playing-Worl",
@@ -36620,7 +36626,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.824949",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36645,7 +36651,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:16:55.228853+00:00"
     },
     {
       "id": "2535-en-ai-Anthropic-identity-v",
@@ -36714,7 +36722,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.825013",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36739,7 +36747,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:29:44.356130+00:00"
     },
     {
       "id": "2538-ko-tech-economy-현대차가-보스턴-다이나믹스를-인수했다",
@@ -36747,7 +36757,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.825037",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36772,7 +36782,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:20:18.570562+00:00"
     },
     {
       "id": "2539-ko-ai-WoW-서버에-AI-봇-1800개,-",
@@ -36780,7 +36792,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.825057",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -36800,7 +36812,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:33:01.170805+00:00"
     },
     {
       "id": "2540-ko-ai-Claude-신원-인증-시작,-한국-",
@@ -36841,7 +36855,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.825128",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -36865,7 +36879,9 @@
           "source": "www.zemith.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:35:41.723909+00:00"
     },
     {
       "id": "2542-en-buying-guide-Is-Notion-AI-worth-i",
@@ -37033,7 +37049,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.825332",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -37052,7 +37068,9 @@
           "source": "www.clien.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:38:53.467248+00:00"
     },
     {
       "id": "2548-ko-side-income-코딩-모르는-직장인이-AI로-부업하는",
@@ -37092,7 +37110,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-21T10:33:16.825381",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -37116,7 +37134,9 @@
           "source": "happy-metamong.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-21T12:11:02.309798+00:00",
+      "completed_at": "2026-06-21T12:41:38.628711+00:00"
     },
     {
       "id": "2550-ko-buying-guide-토스-vs-카카오뱅크-AI-금융-기능",

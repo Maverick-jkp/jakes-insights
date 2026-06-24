@@ -37381,7 +37381,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.948822",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37406,7 +37406,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:37:52.492093+00:00"
     },
     {
       "id": "2593-en-ai-Use-all-AI-tools-wit",
@@ -37414,7 +37416,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.948866",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37439,7 +37441,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:25:26.102933+00:00"
     },
     {
       "id": "2594-en-ai-ChatGPT-image-restor",
@@ -37497,7 +37501,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.948936",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37522,7 +37526,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:40:27.999723+00:00"
     },
     {
       "id": "2597-ko-tech-economy-AI-구독-여러-개-쓰는-직장인,-하",
@@ -37530,7 +37536,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.948972",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37539,7 +37545,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:29:14.270851+00:00"
     },
     {
       "id": "2598-ko-ai-ChatGPT-옛날-사진-복원-진짜-",
@@ -37547,7 +37555,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.948993",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37572,7 +37580,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:32:21.489212+00:00"
     },
     {
       "id": "2599-ko-tech-economy-내-컴퓨터를-AI가-알아서-조작,-편",
@@ -37608,7 +37618,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.949036",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37633,7 +37643,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:44:19.034157+00:00"
     },
     {
       "id": "2601-ko-ai-프롬프트-인젝션이-뭔지,-일반인도-당",
@@ -37641,7 +37653,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.949055",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37650,7 +37662,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:47:53.944116+00:00"
     },
     {
       "id": "2602-en-ai-Will-AI-replace-grap",
@@ -37754,7 +37768,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.949202",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -37778,7 +37792,9 @@
           "source": "www.arrisweb.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:50:23.050290+00:00"
     },
     {
       "id": "2606-ko-ai-ChatGPT-유료-구독-한-달-써본",
@@ -37818,7 +37834,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.949237",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -37842,7 +37858,9 @@
           "source": "namu.wiki"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:22:54.916548+00:00"
     },
     {
       "id": "2608-ko-productivity-노션으로-부업-관리-진짜-되나요-초보",
@@ -37877,7 +37895,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-24T10:25:50.949292",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -37901,7 +37919,9 @@
           "source": "mysecondai.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-24T12:19:23.579408+00:00",
+      "completed_at": "2026-06-24T12:35:29.289497+00:00"
     },
     {
       "id": "2610-ko-buying-guide-토스-vs-카카오뱅크-어떤-게-더-편",

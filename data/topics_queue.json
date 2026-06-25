@@ -37696,7 +37696,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789007",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37716,7 +37716,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:34:17.186301+00:00"
     },
     {
       "id": "2611-en-side-income-AI-sales-coach-apps:",
@@ -37724,7 +37726,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789043",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37749,7 +37751,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:50:40.866515+00:00"
     },
     {
       "id": "2612-en-ai-ChatGPT-image-genera",
@@ -37807,7 +37811,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789105",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37832,7 +37836,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:36:47.579083+00:00"
     },
     {
       "id": "2615-ko-tech-economy-Figma-모션-타임라인-기능,-디자",
@@ -37840,7 +37846,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789124",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37860,7 +37866,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:25:42.011358+00:00"
     },
     {
       "id": "2616-ko-ai-ChatGPT-이미지-2.0-달라진-",
@@ -37885,7 +37893,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789218",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37910,7 +37918,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:40:03.226127+00:00"
     },
     {
       "id": "2618-ko-tech-economy-AI-영업-도우미-앱,-세일즈-직군-",
@@ -37951,7 +37961,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789289",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -37976,7 +37986,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:29:21.093247+00:00"
     },
     {
       "id": "2620-en-ai-Best-AI-image-genera",
@@ -37984,7 +37996,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789337",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -38008,7 +38020,9 @@
           "source": "www.experte.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:42:39.073450+00:00"
     },
     {
       "id": "2621-en-ai-Will-AI-replace-mark",
@@ -38048,7 +38062,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789389",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -38072,7 +38086,9 @@
           "source": "www.inkeybit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:44:57.531994+00:00"
     },
     {
       "id": "2623-en-ai-How-to-make-side-inc",
@@ -38080,7 +38096,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789407",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -38104,7 +38120,9 @@
           "source": "medium.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:31:45.359731+00:00"
     },
     {
       "id": "2624-en-buying-guide-iPhone-16-vs-Samsung",
@@ -38208,7 +38226,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-25T10:18:39.789488",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -38232,7 +38250,9 @@
           "source": "blogger0408.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-25T12:22:18.315430+00:00",
+      "completed_at": "2026-06-25T12:48:18.144541+00:00"
     },
     {
       "id": "2628-ko-side-income-코딩-모르는-직장인이-AI로-부업하는",

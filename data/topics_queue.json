@@ -38964,7 +38964,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.700600",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -38989,7 +38989,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:16:17.604971+00:00"
     },
     {
       "id": "2678-en-tech-economy-AI-lead-conversion-t",
@@ -39030,7 +39032,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.700658",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -39039,7 +39041,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:07:04.375868+00:00"
     },
     {
       "id": "2680-ko-ai-ChatGPT-이미지-생성-업그레이드",
@@ -39097,7 +39101,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.700723",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -39122,7 +39126,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:20:04.400393+00:00"
     },
     {
       "id": "2683-ko-tech-economy-클라우드-비용-시뮬레이터로-AWS-요",
@@ -39130,7 +39136,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.700738",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -39139,7 +39145,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:23:14.830749+00:00"
     },
     {
       "id": "2684-ko-tech-economy-AI-코딩-도구가-매번-맥락을-잊어버",
@@ -39147,7 +39155,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.700759",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -39172,7 +39180,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:26:29.886351+00:00"
     },
     {
       "id": "2685-en-ai-Will-AI-replace-mark",
@@ -39180,7 +39190,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.700883",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -39204,7 +39214,9 @@
           "source": "www.nu.edu"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:09:40.497323+00:00"
     },
     {
       "id": "2686-en-ai-How-to-make-money-wi",
@@ -39276,7 +39288,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.701117",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -39300,7 +39312,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:29:24.233370+00:00"
     },
     {
       "id": "2689-ko-ai-직장인-AI-부업-현실적으로-월-얼마",
@@ -39308,7 +39322,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.701135",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -39332,7 +39346,9 @@
           "source": "findskill.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:13:29.292141+00:00"
     },
     {
       "id": "2690-ko-buying-guide-노션-AI-vs-클로드-노트-정리할-",
@@ -39340,7 +39356,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.701150",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -39364,7 +39380,9 @@
           "source": "www.gpters.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:32:12.549561+00:00"
     },
     {
       "id": "2691-ko-ai-개인정보-털릴까봐-AI-챗봇-쓰기-무",
@@ -39404,7 +39422,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-06-29T12:02:48.701180",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -39428,7 +39446,9 @@
           "source": "aijossi.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-06-29T14:04:05.089125+00:00",
+      "completed_at": "2026-06-29T14:35:30.111382+00:00"
     }
   ]
 }

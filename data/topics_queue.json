@@ -40251,7 +40251,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943290",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40276,7 +40276,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:40:39.671360+00:00"
     },
     {
       "id": "2740-en-ai-Glaze-by-Raycast:-ca",
@@ -40317,7 +40319,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943382",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40342,7 +40344,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:43:25.050303+00:00"
     },
     {
       "id": "2742-en-buying-guide-PhoneDeck-review:-us",
@@ -40383,7 +40387,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943481",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40408,7 +40412,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:47:38.127950+00:00"
     },
     {
       "id": "2744-ko-tech-economy-코딩-못해도-AI로-Mac-앱-만들-",
@@ -40416,7 +40422,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943510",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40441,7 +40447,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:30:53.256275+00:00"
     },
     {
       "id": "2745-ko-tech-economy-아이폰으로-맥북-제어-무료-앱,-스트",
@@ -40449,7 +40457,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943538",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40474,7 +40482,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:50:54.163779+00:00"
     },
     {
       "id": "2746-ko-ai-ChatGPT-이미지-생성-2.0-업",
@@ -40543,7 +40553,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943680",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -40567,7 +40577,9 @@
           "source": "www.jobbers.io"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:53:36.506420+00:00"
     },
     {
       "id": "2749-en-ai-Will-AI-replace-grap",
@@ -40607,7 +40619,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943778",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -40631,7 +40643,9 @@
           "source": "www.pcmag.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:56:04.017912+00:00"
     },
     {
       "id": "2751-en-ai-How-to-make-passive-",
@@ -40639,7 +40653,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943811",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -40663,7 +40677,9 @@
           "source": "talentsforai.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:33:26.771213+00:00"
     },
     {
       "id": "2752-en-ai-Is-Perplexity-AI-rep",
@@ -40735,7 +40751,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943892",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -40759,7 +40775,9 @@
           "source": "www.salesforce.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:59:17.150150+00:00"
     },
     {
       "id": "2755-ko-buying-guide-클로드-vs-챗GPT-한국어-글쓰기-",
@@ -40799,7 +40817,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-04T09:26:23.943946",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -40823,7 +40841,9 @@
           "source": "blog.windyflo.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-04T11:27:25.873785+00:00",
+      "completed_at": "2026-07-04T11:37:27.754663+00:00"
     },
     {
       "id": "2757-ko-buying-guide-갤럭시-S26-vs-아이폰-17-일반",

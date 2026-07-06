@@ -40941,7 +40941,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553293",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40966,7 +40966,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T14:13:06.001058+00:00"
     },
     {
       "id": "2776-en-tech-economy-AI-customer-service-",
@@ -40974,7 +40976,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553341",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -40999,7 +41001,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T13:51:37.097065+00:00"
     },
     {
       "id": "2777-en-ai-cutting-Claude-Code-",
@@ -41007,7 +41011,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553369",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41032,7 +41036,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T13:54:14.118788+00:00"
     },
     {
       "id": "2778-en-ai-ChatGPT-as-a-coding-",
@@ -41073,7 +41079,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553413",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41098,7 +41104,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T13:58:06.195517+00:00"
     },
     {
       "id": "2780-ko-tech-economy-AI-고객센터-대신-싸워주는-앱,-환",
@@ -41106,7 +41114,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553436",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41115,7 +41123,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T13:48:40.114579+00:00"
     },
     {
       "id": "2781-ko-tech-economy-AI-에이전트-툴-난립-시대,-일반인",
@@ -41123,7 +41133,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553455",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41148,7 +41158,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T14:01:35.403222+00:00"
     },
     {
       "id": "2782-en-ai-Is-Claude-AI-better-",
@@ -41199,7 +41211,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553529",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -41223,7 +41235,9 @@
           "source": "www.zemith.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T14:04:25.019369+00:00"
     },
     {
       "id": "2785-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -41327,7 +41341,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553644",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -41351,7 +41365,9 @@
           "source": "artcopost.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T14:07:19.632108+00:00"
     },
     {
       "id": "2789-ko-buying-guide-갤럭시-S26-vs-아이폰-17-카메",
@@ -41423,7 +41439,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553742",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -41431,7 +41447,9 @@
       "angle": "IT 비전문가 입장에서 회의록, 업무 정리, 아이디어 메모 등 실무 시나리오별 솔직한 사용 경험 공유",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T14:10:38.125207+00:00"
     },
     {
       "id": "2792-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-20",
@@ -41439,7 +41457,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-06T11:40:20.553774",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -41463,7 +41481,9 @@
           "source": "www.insidenews365.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-06T13:44:56.289066+00:00",
+      "completed_at": "2026-07-06T14:16:16.803492+00:00"
     }
   ]
 }

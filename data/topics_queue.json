@@ -41586,7 +41586,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243202",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41611,7 +41611,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T12:09:12.058545+00:00"
     },
     {
       "id": "2812-en-tech-economy-AI-agent-tools-for-n",
@@ -41619,7 +41621,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243262",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41639,7 +41641,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T11:59:31.990579+00:00"
     },
     {
       "id": "2813-en-ai-China-restricting-AI",
@@ -41647,7 +41651,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243288",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41672,7 +41676,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T12:11:35.714931+00:00"
     },
     {
       "id": "2814-ko-ai-오픈소스-AI가-ChatGPT-따라잡",
@@ -41680,7 +41686,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243310",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41705,7 +41711,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T11:50:14.001814+00:00"
     },
     {
       "id": "2815-ko-productivity-AI가-내-업무를-자동화한다는데,-비",
@@ -41713,7 +41721,7 @@
       "category": "productivity",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243328",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41738,7 +41746,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T12:03:15.223466+00:00"
     },
     {
       "id": "2816-ko-ai-중국-AI-모델-해외-차단-검토,-한",
@@ -41746,7 +41756,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243345",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -41771,7 +41781,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T11:53:31.249396+00:00"
     },
     {
       "id": "2817-ko-ai-Notion-AI-에이전트-iOS-앱",
@@ -41973,7 +41985,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243562",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -41997,7 +42009,9 @@
           "source": "seo.goover.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T12:06:19.784649+00:00"
     },
     {
       "id": "2824-ko-side-income-직장인-AI로-부수입-만드는-현실적인",
@@ -42005,7 +42019,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243579",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -42029,7 +42043,9 @@
           "source": "thinkweek.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T11:56:56.599604+00:00"
     },
     {
       "id": "2825-ko-buying-guide-노션-AI-vs-클로드-업무-정리에-",
@@ -42037,7 +42053,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243593",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -42061,7 +42077,9 @@
           "source": "daouoffice.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T12:14:11.962810+00:00"
     },
     {
       "id": "2826-ko-tech-economy-유튜브-알고리즘-왜-이상한-영상만-추",
@@ -42069,7 +42087,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-08T09:28:17.243606",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -42093,7 +42111,9 @@
           "source": "gobooki.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-08T11:46:42.643352+00:00",
+      "completed_at": "2026-07-08T12:17:10.171312+00:00"
     },
     {
       "id": "2827-ko-buying-guide-토스-vs-카카오뱅크-어떤-게-더-스",

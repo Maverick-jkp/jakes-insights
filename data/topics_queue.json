@@ -43053,7 +43053,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364055",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43078,7 +43078,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:31:24.095219+00:00"
     },
     {
       "id": "2892-en-tech-economy-AI-agent-debit-card:",
@@ -43119,7 +43121,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364146",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43144,7 +43146,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:48:55.643962+00:00"
     },
     {
       "id": "2894-en-tech-economy-file-transfer-with-n",
@@ -43152,7 +43156,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364184",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43177,7 +43181,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:52:00.290335+00:00"
     },
     {
       "id": "2895-ko-ai-ChatGPT-맥-앱-개인정보-침해-",
@@ -43185,7 +43191,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 10,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364218",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43210,7 +43216,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:28:46.602699+00:00"
     },
     {
       "id": "2896-ko-tech-economy-AI-에이전트에게-법인카드-주는-시대",
@@ -43218,7 +43226,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364248",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43243,7 +43251,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:34:41.625676+00:00"
     },
     {
       "id": "2897-ko-ai-Claude-AI-화면-보는-기능,-",
@@ -43251,7 +43261,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364278",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43276,7 +43286,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:42:24.392717+00:00"
     },
     {
       "id": "2898-ko-tech-economy-AI로-광고-소재-자동-제작,-실제로",
@@ -43284,7 +43296,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364316",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43309,7 +43321,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:46:10.513677+00:00"
     },
     {
       "id": "2899-ko-side-income-AI-부업으로-MCP-서버-만들어-돈",
@@ -43478,7 +43492,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364694",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -43497,7 +43511,9 @@
           "source": "www.joongang.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:38:26.928846+00:00"
     },
     {
       "id": "2905-ko-buying-guide-갤럭시-S25-vs-아이폰-16-일반",
@@ -43569,7 +43585,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-14T09:07:46.364810",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -43593,7 +43609,9 @@
           "source": "bbs.ruliweb.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-14T11:25:19.575433+00:00",
+      "completed_at": "2026-07-14T11:55:00.721178+00:00"
     },
     {
       "id": "2908-ko-buying-guide-클로드-vs-챗GPT-한국어-글쓰기-",

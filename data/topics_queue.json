@@ -43707,7 +43707,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536691",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43732,7 +43732,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T11:51:06.667691+00:00"
     },
     {
       "id": "2929-en-side-income-turn-Reddit-complain",
@@ -43740,7 +43742,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536729",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43749,7 +43751,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T11:54:11.515880+00:00"
     },
     {
       "id": "2930-en-tech-economy-AI-sales-agent-closi",
@@ -43757,7 +43761,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536754",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43782,7 +43786,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T11:42:09.924902+00:00"
     },
     {
       "id": "2931-en-ai-ChatGPT-SOL-5.6-maki",
@@ -43823,7 +43829,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536795",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43848,7 +43854,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T11:57:30.412375+00:00"
     },
     {
       "id": "2933-ko-ai-ChatGPT-SOL-5.6으로-게임",
@@ -43889,7 +43897,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536829",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43914,7 +43922,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T12:00:29.876155+00:00"
     },
     {
       "id": "2935-ko-tech-economy-AI-영업-사원이-B2B-계약을-직접",
@@ -43922,7 +43932,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536885",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43947,7 +43957,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T11:45:32.119070+00:00"
     },
     {
       "id": "2936-ko-tech-economy-Zapier-대신-Albato-써도-",
@@ -43955,7 +43967,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.536928",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -43980,7 +43992,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T12:03:31.916325+00:00"
     },
     {
       "id": "2937-en-ai-Will-AI-replace-grap",
@@ -44020,7 +44034,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.537028",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -44044,7 +44058,9 @@
           "source": "kingy.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T12:08:49.316960+00:00"
     },
     {
       "id": "2939-en-ai-Is-Notion-AI-worth-p",
@@ -44052,7 +44068,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.537046",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -44060,7 +44076,9 @@
       "angle": "중복 구독 피로를 느끼는 직장인/학생 관점 — 두 도구의 실제 겹치는 기능과 겹치지 않는 기능을 솔직 정리",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T12:06:11.556542+00:00"
     },
     {
       "id": "2940-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -44132,7 +44150,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-16T09:18:13.537098",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -44156,7 +44174,9 @@
           "source": "www.gamsgo.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-16T11:39:23.525635+00:00",
+      "completed_at": "2026-07-16T11:48:35.343501+00:00"
     },
     {
       "id": "2943-ko-tech-economy-AI-때문에-마케터-직업-사라질까-2",

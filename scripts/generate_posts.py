@@ -309,16 +309,6 @@ SLUG_STOPWORDS_EN = frozenset({
 })
 
 
-class DuplicatePostError(Exception):
-    """Raised when a post with the same slug already exists for this language.
-
-    The generator keeps no memory of past topics, so a recycled keyword would
-    otherwise emit a second post with an identical slug/title — duplicate
-    content that hurts SEO and AdSense review. Callers treat this as a skip,
-    not a hard failure.
-    """
-
-
 def make_slug(keyword: str, max_length: int = 50) -> str:
     """Create a URL-safe slug from a keyword.
 
@@ -1743,17 +1733,18 @@ JSON 배열만 반환, 추가 설명 없이:
         # Generate filename from keyword (word-boundary truncation, stopwords removed)
         slug = make_slug(keyword, max_length=50)
 
-        # Duplicate guard: skip if a post with this slug already exists anywhere
-        # in this language (any date, any category). The generator has no memory
-        # of past topics, so a recycled keyword would otherwise produce a second
-        # post with an identical slug/title — duplicate content that hurts SEO
-        # and AdSense review. Detected slug collisions are raised so the caller
-        # can mark the topic failed rather than silently emitting a near-dupe.
-        existing = list(Path(f"content/{lang}").rglob(f"*-{slug}.md"))
-        if existing:
-            raise DuplicatePostError(
-                f"slug '{slug}' already exists ({existing[0]}); skipping duplicate"
-            )
+        # Slug-collision guard. A recycled keyword produces the same slug as an
+        # earlier post. That's fine — the same topic can be covered from a new
+        # angle, and those posts have distinct bodies. What we must NOT do is
+        # emit two files that share a URL (they'd collide / overwrite). So when
+        # the slug already exists in this language, disambiguate with a numeric
+        # suffix (-2, -3, ...) instead of blocking generation. This keeps both
+        # posts live at unique URLs.
+        if list(Path(f"content/{lang}").rglob(f"*-{slug}.md")):
+            n = 2
+            while list(Path(f"content/{lang}").rglob(f"*-{slug}-{n}.md")):
+                n += 1
+            slug = f"{slug}-{n}"
 
         # Create directory
         content_dir = Path(f"content/{lang}/{category}")
@@ -2105,13 +2096,6 @@ def main():
             safe_print(f"  → Step 7/7: Saving post...")
             try:
                 filepath = generator.save_post(topic, title, description, final_content, image_path, image_credit, faq_items, technologies)
-            except DuplicatePostError as e:
-                # Not a failure — the topic was already covered. Mark it done so
-                # the queue doesn't retry it, and move on without emitting a dupe.
-                safe_print(f"  ⏭️  SKIPPED (duplicate): {mask_secrets(str(e))}\n")
-                if not args.topic_id:
-                    mark_completed(topic['id'])
-                continue
             except IOError as e:
                 safe_print(f"  ❌ ERROR: Failed to save post to filesystem")
                 safe_print(f"     Error: {str(e)}")

@@ -1,11 +1,11 @@
 ---
-title: "Technical Writing Income for Developers: Honest Numbers from 2026"
+title: "How to Land Technical Writing Gigs at $200+ per Article"
 date: 2026-04-30T01:43:04+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-content", "land", "technical", "writing"]
-description: "Technical writing pays developers $150–$300 per article — but 47% quit before landing their first check because they're pitching wrong."
+description: "A practical guide to finding, pitching, and landing technical writing gigs that pay $200 or more per article as a developer."
 image: "/images/20260430-how-to-land-technical-writing.webp"
 ---
 

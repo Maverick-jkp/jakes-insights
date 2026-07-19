@@ -1,11 +1,11 @@
 ---
-title: "Claude API Streaming Response Next.js App Router Edge Runtime Timeout Fix"
+title: "Why Claude Streaming Breaks on Next.js Edge Runtime (and the Fix)"
 date: 2026-04-21T20:15:11+0900
 draft: false
 author: "Jake Park"
 categories: ["ai"]
 tags: ["subtopic-ai", "claude", "api", "streaming", "TypeScript"]
-description: "Fix Claude API streaming response Next.js App Router Edge Runtime timeout issues before production hits. Edge Runtime's hard limits break AI streams silently."
+description: "The root conflict between Claude API streaming and Next.js App Router Edge Runtime timeouts, with a production-tested fix."
 image: "/images/20260421-claude-api-streaming-response-.webp"
 technologies: ["TypeScript", "Next.js", "Node.js", "Claude", "OpenAI"]
 faq:

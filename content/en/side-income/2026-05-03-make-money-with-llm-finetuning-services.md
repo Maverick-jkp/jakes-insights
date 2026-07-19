@@ -1,11 +1,11 @@
 ---
-title: "LLM Fine-Tuning Income for Developers: Honest Numbers from 2026"
+title: "Running an LLM Fine-Tuning Service as a Business: What It Really Takes"
 date: 2026-05-03T00:50:36+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-ai-income", "make", "money", "llm"]
-description: "Freelance LLM fine-tuning pays $95–$175/hr in 2026 — here's the honest timeline, real platform data, and what it actually takes to land your first contract."
+description: "The business side of offering LLM fine-tuning services — pricing, client expectations, tooling, and what makes it sustainable."
 image: "/images/20260503-make-money-with-llm-fine-tunin.webp"
 ---
 

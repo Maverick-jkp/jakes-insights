@@ -1,11 +1,11 @@
 ---
-title: "Ghost-Writing Income for Developers: Honest Numbers from 2026"
+title: "Why Executives Pay Developers to Ghost-Write Their Tech Articles"
 date: 2026-05-06T01:26:07+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-content", "developer", "ghost-writing", "tech"]
-description: "Developer ghost-writers earned $300–$1,500 per article in 2026 — here's the honest timeline, real platforms, and what it actually takes to land retainers."
+description: "The demand behind developer ghost-writing for executives, what it pays, and how to build a repeatable ghost-writing income stream."
 image: "/images/20260506-developer-ghost-writing-tech-a.webp"
 ---
 

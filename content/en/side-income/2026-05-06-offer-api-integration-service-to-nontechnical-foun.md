@@ -1,11 +1,11 @@
 ---
-title: "How Developers Make $3,000–$8,000/Month Offering API Integration Services to Non-Technical Founders: Real Numbers"
+title: "Selling API Integration Services to Non-Technical Founders"
 date: 2026-05-06T01:26:07+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-freelancing", "offer", "api", "integration"]
-description: "Non-technical founders pay $80–$150/hr for API integration help — here's how developers turn that into $3,000–$8,000/month in predictable side income."
+description: "How developers earn $3,000–$8,000/month building API integrations for non-technical founders, and why they're the ideal client."
 image: "/images/20260506-offer-api-integration-service.webp"
 ---
 

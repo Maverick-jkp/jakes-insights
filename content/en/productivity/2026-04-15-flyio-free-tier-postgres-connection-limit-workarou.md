@@ -1,11 +1,11 @@
 ---
-title: "Fly.io Free Tier Postgres Connection Limit Workaround for Solo Devs"
+title: "How Fly.io's Free-Tier Postgres Connection Limit Really Works"
 date: 2026-04-15T20:15:39+0900
 draft: false
 author: "Jake Park"
 categories: ["productivity"]
 tags: ["subtopic-web", "fly.io", "free", "tier", "Next.js"]
-description: "Fly.io free tier Postgres caps at 25 connections. Stop hitting too many clients errors in your Next.js app with this solo dev workaround."
+description: "A deep look at how Fly.io free-tier Postgres connection limits behave, the PgBouncer math, and practical workarounds for solo devs."
 image: "/images/20260415-flyio-free-tier-postgres-conne.webp"
 technologies: ["Next.js", "PostgreSQL", "Vercel", "Go", "Cloudflare"]
 faq:

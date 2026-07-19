@@ -1,11 +1,11 @@
 ---
-title: "Cloudflare Workers KV vs D1 SQLite Latency and Cold Start Guide"
+title: "Cloudflare Workers KV Storage vs D1 SQLite: Latency Benchmarks"
 date: 2026-05-12T21:18:37+0900
 draft: false
 author: "Jake Park"
 categories: ["tech-economy"]
 tags: ["subtopic-cloud", "cloudflare", "workers", "storage", "PostgreSQL"]
-description: "Cloudflare Workers KV vs D1 SQLite: wrong storage turns a 2ms compute into a 180ms round-trip. Compare real latency and cold start costs."
+description: "Measured latency and cold-start comparison between Cloudflare Workers KV and D1 SQLite, with guidance on when to pick each."
 image: "/images/20260512-cloudflare-workers-kv-storage-.webp"
 technologies: ["PostgreSQL", "Go", "Cloudflare", "Slack"]
 faq:

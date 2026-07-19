@@ -1,11 +1,11 @@
 ---
-title: "Code Review Income for Developers: Honest Numbers from 2026"
+title: "Charging for Code Review as a Service on Your Own Site (Not a Platform)"
 date: 2026-04-11T00:56:52+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-freelancing", "charge", "code", "review"]
-description: "Solo code review freelancing pays $800–$3,500/mo — here's the honest breakdown of rates, platforms, and how long it actually takes to land your first client."
+description: "Why running code review as a service from your own site beats platform fees, and how to price and structure the offer."
 image: "/images/20260411-charge-for-code-review-as-a-se.webp"
 ---
 

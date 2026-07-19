@@ -1,11 +1,11 @@
 ---
-title: "Technical Writing Income for Developers: Honest Numbers from 2026"
+title: "Which Tech Publications Actually Pay Developers to Write (Real Rates)"
 date: 2026-03-24T01:01:52+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-content", "developer", "writing", "publications"]
-description: "Developers publishing 2x/month on platforms like Smashing Magazine and LogRocket can realistically earn $400–$700/mo — here's the honest breakdown."
+description: "A breakdown of the developer-focused publications that pay for articles, what they actually pay per piece, and how to pitch them."
 image: "/images/20260324-developer-writing-for-publicat.webp"
 ---
 

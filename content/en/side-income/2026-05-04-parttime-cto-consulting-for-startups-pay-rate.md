@@ -1,11 +1,11 @@
 ---
-title: "Fractional CTO Income for Developers: Honest Numbers from 2026"
+title: "What a Part-Time (Fractional) CTO Actually Does — and Charges"
 date: 2026-05-04T00:51:44+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-freelancing", "part-time", "cto", "consulting"]
-description: "Fractional CTO consulting pays $3,000–$12,000/mo on retainer — here's what it actually takes to land your first startup client in 2026."
+description: "A clear look at the day-to-day of fractional CTO work for startups, typical pay rates, and how to position yourself for it."
 image: "/images/20260504-part-time-cto-consulting-for-s.webp"
 ---
 

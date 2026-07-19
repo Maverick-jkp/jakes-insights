@@ -1,11 +1,11 @@
 ---
-title: "No-Code SaaS Income for Developers: Honest Numbers from 2026"
+title: "Building a No-Code SaaS and Selling It: A 2026 Playbook"
 date: 2026-05-02T00:59:36+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-saas", "build", "saas", "no-code"]
-description: "Solo devs are building no-code SaaS on Bubble and Glide, hitting $300–$2,500 MRR, then flipping for up to $40K — here's the real breakdown."
+description: "What no-code SaaS really means in 2026, which tools to use, and how developers build and flip small SaaS products for profit."
 image: "/images/20260502-build-a-saas-with-no-code-tool.webp"
 ---
 

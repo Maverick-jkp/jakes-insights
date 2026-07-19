@@ -1,11 +1,11 @@
 ---
-title: "AI-Powered Document Tool Income for Developers: Honest Numbers from 2026"
+title: "Building an AI-Powered Document Tool You Can Charge Per Use For"
 date: 2026-05-07T01:43:37+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-ai-income", "build", "ai-powered", "pdf"]
-description: "Developers are earning $3,000–$8,000/month building AI document tools — here's the real cost breakdown, margins, and timeline to first dollar."
+description: "How to build a focused AI document or PDF tool, why specificity drives revenue, and how to price it per use."
 image: "/images/20260507-build-ai-powered-pdf-or-docume.webp"
 ---
 

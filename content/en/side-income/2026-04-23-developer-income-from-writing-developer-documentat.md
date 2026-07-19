@@ -1,11 +1,11 @@
 ---
-title: "Technical Writing Income for Developers: Honest Numbers from 2026"
+title: "Writing Developer Documentation for Money: Why Engineers Have the Edge"
 date: 2026-04-23T01:10:01+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-content", "developer", "income", "writing"]
-description: "Developers are earning $1,500–$4,000/month writing technical docs on the side — real platform rates, timelines, and what the grind actually looks like in 2026."
+description: "How developers can earn income writing technical documentation, why engineering experience is an unfair advantage, and what the work pays."
 image: "/images/20260423-developer-income-from-writing.webp"
 ---
 

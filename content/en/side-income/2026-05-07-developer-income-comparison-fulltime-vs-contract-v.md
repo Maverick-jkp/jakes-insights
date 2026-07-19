@@ -1,11 +1,11 @@
 ---
-title: "Full-Time vs Contract vs Indie Income for Developers: Honest Numbers from 2026"
+title: "Full-Time vs Contract vs Indie: Which Developer Path Pays More?"
 date: 2026-05-07T01:43:37+0900
 draft: false
 author: "Jake Park"
 categories: ["side-income"]
 tags: ["subtopic-general", "developer", "income", "comparison"]
-description: "Full-time, contract, or indie: the honest 2026 income breakdown — including the brutal variance that makes $115K–$165K+ salaries look safer than you'd think."
+description: "A side-by-side income comparison of full-time employment, contracting, and indie work for developers, with real trade-offs."
 image: "/images/20260507-developer-income-comparison-fu.webp"
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "엣지 런타임은 완전한 Node.js 환경이 아니라 Web API 표준을 따르기 때문에, Node.js 내장 `crypto` 모듈에 의존하는 `jsonwebtoken` 같은 패키지는 그대로 동작하지 않습니다. 이 경우 Web Crypto API 기반의 대체 라이브러리로 교체하거나, Cloudflare Workers의 `nodejs_compat` 플래그를 활용하는 방식으로 리팩토링이 필요합니다."
 aliases:
   - "/tech/2026-04-10-vercel-edge-function-vs-cloudflare-workers-콜드스타트-없/"
+  - "/ko/tech/2026-04-10-vercel-edge-function-vs-cloudflare-workers-콜드스타트-없/"
 
 ---
 

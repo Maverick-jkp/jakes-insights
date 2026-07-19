@@ -21,6 +21,7 @@ faq:
     answer: "가장 빠르게 성장하는 Python 개발 도구 두 개가 동시에 OpenAI 손에 들어가면서, Microsoft(pyright, GitHub Copilot)와 함께 두 빅테크가 Python 개발 환경의 양쪽 끝을 사실상 장악하는 구도가 형성되고 있어요. PSF나 독립 커뮤니티 프로젝트가 이 속도를 따라잡기 어렵다는 점에서 생태계 다양성 측면의 우려가 제기되고 있어요."
 aliases:
   - "/tech/2026-03-20-openai-astral-인수-ruff-uv-오픈소스-개발-도구-앞으로-어떻게-되나/"
+  - "/ko/tech/2026-03-20-openai-astral-인수-ruff-uv-오픈소스-개발-도구-앞으로-어떻게-되나/"
 
 ---
 

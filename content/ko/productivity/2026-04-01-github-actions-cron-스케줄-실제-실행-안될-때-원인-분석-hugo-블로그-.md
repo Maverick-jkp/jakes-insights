@@ -21,6 +21,7 @@ faq:
     answer: "Hugo 블로그 자동 배포에서 테마를 Git Submodule로 관리할 때 checkout 단계에 'submodules: true' 옵션을 빠뜨리면 테마 디렉토리가 비어서 빌드가 실패해요. actions/checkout@v4 사용 시 with 옵션에 'submodules: true'와 'fetch-depth: 0'을 함께 추가하면 정상적으로 테마를 포함해 빌드할 수 있어요."
 aliases:
   - "/tech/2026-04-01-github-actions-cron-스케줄-실제-실행-안될-때-원인-분석-hugo-블로그-/"
+  - "/ko/tech/2026-04-01-github-actions-cron-스케줄-실제-실행-안될-때-원인-분석-hugo-블로그-/"
 
 ---
 

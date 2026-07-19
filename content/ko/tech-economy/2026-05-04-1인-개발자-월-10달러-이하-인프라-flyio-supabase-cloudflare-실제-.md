@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 인프라 Fly.io Supabase Cloudflare 실제 과금 명세를 공개한 사례에서 MAU 300명, API 호출 40만 건, 파일 스토리지 2GB 기준 첫 달 비용은 $8.42였어요. 파일 업로드 기능 없이 순수 API 서비스라면 $0~4, Workers까지 유료로 전환해도 $7 수준으로 유지할 수 있어요. 과금이 $10을 넘는 시점은 볼륨 스토리지 초과와 DB 트래픽이 동시에 발생할 때예요."
 aliases:
   - "/tech/2026-05-04-1인-개발자-월-10달러-이하-인프라-flyio-supabase-cloudflare-실제-/"
+  - "/ko/tech/2026-05-04-1인-개발자-월-10달러-이하-인프라-flyio-supabase-cloudflare-실제-/"
 
 ---
 

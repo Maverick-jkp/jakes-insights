@@ -21,6 +21,7 @@ faq:
     answer: "에러 메시지 없이 exit code 1만 출력되는 경우는 Git 서브모듈 누락이나 빌드 커맨드 오탈자가 원인인 경우가 많아요. cloudflare pages hugo 배포 빌드 실패 exit code 1 원인 찾기 삽질 후기에 따르면 서브모듈 문제는 특히 아무 설명 없이 빌드가 종료되는 패턴을 보여요. Cloudflare Pages Known Issues 공식 문서에서 서브모듈 관련 제한사항을 확인하고, 빌드 커맨드 오탈자도 함께 점검해보는 것이 좋아요."
 aliases:
   - "/tech/2026-05-22-cloudflare-pages-hugo-배포-빌드-실패-exit-code-1-원인-찾기-삽/"
+  - "/ko/tech/2026-05-22-cloudflare-pages-hugo-배포-빌드-실패-exit-code-1-원인-찾기-삽/"
 
 ---
 

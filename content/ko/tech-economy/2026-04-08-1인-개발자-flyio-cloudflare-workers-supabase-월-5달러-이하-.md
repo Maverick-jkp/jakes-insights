@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 Fly.io Cloudflare Workers Supabase 월 5달러 이하 스택 실제 운영 후기 기준으로, 커스텀 백엔드가 필요하고 비용을 최소화하려면 Fly.io + Supabase 조합이 유리합니다. Railway + Neon은 Git push 배포 편의성이 높아 PostgreSQL 중심 앱에 적합하지만, 무료 용량과 트래픽 한도 면에서 Fly.io + Supabase 조합보다 제한적입니다."
 aliases:
   - "/tech/2026-04-08-1인-개발자-flyio-cloudflare-workers-supabase-월-5달러-이하-/"
+  - "/ko/tech/2026-04-08-1인-개발자-flyio-cloudflare-workers-supabase-월-5달러-이하-/"
 
 ---
 

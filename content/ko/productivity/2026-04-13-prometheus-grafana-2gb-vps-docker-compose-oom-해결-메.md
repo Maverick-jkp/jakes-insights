@@ -21,6 +21,7 @@ faq:
     answer: "VictoriaMetrics는 동일한 데이터 기준으로 Prometheus 대비 메모리를 절반 이하로 사용하는 대안입니다. 2GB VPS처럼 리소스가 제한된 환경에서 Prometheus의 메모리 최적화만으로 한계를 느낀다면 VictoriaMetrics로 교체하는 것이 근본적인 해결책이 될 수 있습니다."
 aliases:
   - "/tech/2026-04-13-prometheus-grafana-2gb-vps-docker-compose-oom-해결-메/"
+  - "/ko/tech/2026-04-13-prometheus-grafana-2gb-vps-docker-compose-oom-해결-메/"
 
 ---
 

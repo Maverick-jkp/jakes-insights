@@ -21,6 +21,7 @@ faq:
     answer: "개발자 기술 블로그 Hugo vs Next.js vs Ghost 비교에서 SEO 측면으로 보면 Hugo와 Next.js 모두 정적 HTML을 출력하기 때문에 AI 검색 엔진(Perplexity, Google SGE) 인용에 유리한 구조예요. Ghost도 SEO 설정이 내장돼 있지만, 정적 HTML 기반이 아닌 자체 서버 방식이라 Hugo·Next.js와 아키텍처 차이가 있어요."
 aliases:
   - "/tech/2026-03-06-개발자-기술-블로그-hugo-vs-nextjs-vs-ghost-비교/"
+  - "/ko/tech/2026-03-06-개발자-기술-블로그-hugo-vs-nextjs-vs-ghost-비교/"
 
 ---
 

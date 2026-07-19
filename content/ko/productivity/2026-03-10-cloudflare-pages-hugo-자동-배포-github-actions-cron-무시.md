@@ -21,6 +21,7 @@ faq:
     answer: "더미 커밋 방식은 의미 없는 파일 변경을 반복해서 저장소 히스토리를 오염시키고, 장기적으로 유지보수 부담이 높아집니다. Cloudflare Pages Hugo 자동 배포 환경에서는 GitHub Actions cron과 Deploy Hook을 조합하는 방식이 저장소를 오염시키지 않으면서 설정 복잡도도 낮아 대부분의 케이스에 권장됩니다. 빌드 환경을 직접 제어해야 하는 경우에만 Actions에서 직접 빌드하고 배포하는 방식을 선택하면 됩니다."
 aliases:
   - "/tech/2026-03-10-cloudflare-pages-hugo-자동-배포-github-actions-cron-무시/"
+  - "/ko/tech/2026-03-10-cloudflare-pages-hugo-자동-배포-github-actions-cron-무시/"
 
 ---
 

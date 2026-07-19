@@ -21,6 +21,7 @@ faq:
     answer: "기존 포스트의 URL을 변경하지 않고 404 에러를 해결하려면 Cloudflare Pages의 _redirects 파일을 활용하는 방법이 적합합니다. 기존 인코딩 URL에서 정상 URL로 리다이렉트 규칙을 추가하면 SEO 영향 없이 양쪽 URL을 모두 유지할 수 있습니다. 다만 포스트가 늘어날수록 리다이렉트 규칙이 누적되어 관리 부담이 생길 수 있어 장기적으로는 config 설정 조합 방식 전환을 권장합니다."
 aliases:
   - "/tech/2026-03-23-cloudflare-pages-hugo-블로그-배포-후-한국어-url-인코딩-404-에러-/"
+  - "/ko/tech/2026-03-23-cloudflare-pages-hugo-블로그-배포-후-한국어-url-인코딩-404-에러-/"
 
 ---
 

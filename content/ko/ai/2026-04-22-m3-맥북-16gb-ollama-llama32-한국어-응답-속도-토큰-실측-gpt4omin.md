@@ -21,6 +21,7 @@ faq:
     answer: "M3 맥북 16GB는 CPU와 GPU가 통합 메모리를 공유하는 Apple Silicon 구조 덕분에, VRAM 8GB 전용 그래픽카드가 달린 일반 Windows 노트북보다 7B 이하 모델에서 LLM 추론 속도가 오히려 빠른 경우가 많습니다. GPU별 Ollama 벤치마크에 따르면 두 환경의 토큰/초 수치가 7b 이하 모델에서 비슷한 수준으로 나타나, 별도 외장 GPU 없이도 경쟁력 있는 성능을 보여줍니다."
 aliases:
   - "/tech/2026-04-22-m3-맥북-16gb-ollama-llama32-한국어-응답-속도-토큰-실측-gpt4omin/"
+  - "/ko/tech/2026-04-22-m3-맥북-16gb-ollama-llama32-한국어-응답-속도-토큰-실측-gpt4omin/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 요청까지 제공되며, 한도를 초과하거나 안정적인 운영이 필요하면 월 $5 유료 플랜으로 무제한 요청 처리가 가능합니다. CDN 대역폭은 유료 플랜에서도 별도 과금이 없어 트래픽 비용 예측이 쉽습니다."
 aliases:
   - "/tech/2026-04-15-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+  - "/ko/tech/2026-04-15-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
 
 ---
 

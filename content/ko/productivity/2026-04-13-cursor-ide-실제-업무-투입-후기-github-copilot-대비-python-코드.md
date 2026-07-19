@@ -21,6 +21,7 @@ faq:
     answer: "Cursor IDE 실제 업무 투입 후기 GitHub Copilot 대비 Python 코드 품질 생산성 비교의 핵심 결론은 '더 좋은 도구'보다 '팀 워크플로우에 맞는 도구'가 생산성을 결정한다는 거예요. 맥락이 복잡한 Python 백엔드 프로젝트라면 Cursor가 유리하지만, 비용·기존 환경·팀 적응 비용까지 함께 고려해야 해요."
 aliases:
   - "/tech/2026-04-13-cursor-ide-실제-업무-투입-후기-github-copilot-대비-python-코드/"
+  - "/ko/tech/2026-04-13-cursor-ide-실제-업무-투입-후기-github-copilot-대비-python-코드/"
 
 ---
 

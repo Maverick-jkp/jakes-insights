@@ -21,6 +21,7 @@ faq:
     answer: "빈 커밋 방식은 git commit --allow-empty로 실제 변경 없이 커밋을 만들어 푸시하는 방법으로, GitHub 60일 비활성화 문제와 Cloudflare 빌드 트리거 문제를 동시에 해결할 수 있어요. 다만 매일 실행하면 한 달에 30개씩 'trigger' 커밋이 쌓여 커밋 히스토리가 지저분해지는 단점이 있어요. 커밋 히스토리 오염이 신경 쓰인다면 Deploy Hook 직접 호출 방식이 더 적합해요."
 aliases:
   - "/tech/2026-04-24-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
+  - "/ko/tech/2026-04-24-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
 
 ---
 

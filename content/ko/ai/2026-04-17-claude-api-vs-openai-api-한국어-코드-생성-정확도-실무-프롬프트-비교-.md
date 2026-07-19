@@ -21,6 +21,7 @@ faq:
     answer: "Claude Code는 긴 파일 컨텍스트 유지와 멀티 스텝 리팩토링에서 Codex CLI 대비 약 23% 높은 태스크 완성률을 기록했어요. 반면 Codex CLI는 빠른 단일 함수 생성과 영어 문서 기반 API 래핑 작업에서 더 일관된 결과를 내는 것으로 나타났어요. 따라서 복잡한 코드 수정 작업이 많다면 Claude Code, 단순 반복 생성 작업 중심이라면 Codex CLI가 상대적으로 유리해요."
 aliases:
   - "/tech/2026-04-17-claude-api-vs-openai-api-한국어-코드-생성-정확도-실무-프롬프트-비교-/"
+  - "/ko/tech/2026-04-17-claude-api-vs-openai-api-한국어-코드-생성-정확도-실무-프롬프트-비교-/"
 
 ---
 

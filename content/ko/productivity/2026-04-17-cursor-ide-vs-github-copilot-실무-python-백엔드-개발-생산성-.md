@@ -21,6 +21,7 @@ faq:
     answer: "Cursor IDE vs GitHub Copilot 실무 Python 백엔드 개발 생산성 한달 사용 비교 후기에 따르면 두 도구를 병행하는 팀 사례도 소개됩니다. Cursor로 복잡한 코드베이스 분석과 리팩토링을 처리하고, 빠른 스니펫 완성이나 GitHub Actions 연동은 Copilot을 활용하는 방식으로 업무 유형별 최적 도구를 나눠 쓰는 전략입니다."
 aliases:
   - "/tech/2026-04-17-cursor-ide-vs-github-copilot-실무-python-백엔드-개발-생산성-/"
+  - "/ko/tech/2026-04-17-cursor-ide-vs-github-copilot-실무-python-백엔드-개발-생산성-/"
 
 ---
 

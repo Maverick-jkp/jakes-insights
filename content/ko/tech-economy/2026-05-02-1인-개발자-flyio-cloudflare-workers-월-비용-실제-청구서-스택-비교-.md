@@ -21,6 +21,7 @@ faq:
     answer: "월 트래픽이 50만 요청 이하인 사이드 프로젝트라면 1인 개발자 Fly.io Cloudflare Workers 월 비용 실제 청구서 스택 비교 기준으로 Cloudflare Workers 무료 플랜이 가장 저렴해요. 하루 약 1만 6천 요청 수준이면 무료 한도(하루 10만 요청)의 6분의 1에 불과해 비용이 $0이에요. 단, 상태 관리나 DB가 필요하다면 Durable Objects나 KV 비용이 추가될 수 있어 사전에 확인이 필요해요."
 aliases:
   - "/tech/2026-05-02-1인-개발자-flyio-cloudflare-workers-월-비용-실제-청구서-스택-비교-/"
+  - "/ko/tech/2026-05-02-1인-개발자-flyio-cloudflare-workers-월-비용-실제-청구서-스택-비교-/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "Colima는 Docker Desktop을 대체하는 경량 솔루션으로, macOS 로그인 세션에 종속되지 않아 LaunchDaemon으로 실행되는 runner와의 소켓 권한 문제를 구조적으로 해소할 수 있습니다. Docker Desktop GUI가 없어도 colima start 명령으로 Docker 데몬을 백그라운드에서 안정적으로 유지할 수 있어 24/7 CI 머신에 적합합니다. 다만 arm64 환경에서 x86_64 이미지를 실행할 때는 --platform linux/amd64를 명시해야 아키텍처 불일치로 인한 오류를 방지할 수 있습니다."
 aliases:
   - "/tech/2026-03-25-github-actions-selfhosted-runner-apple-silicon-doc/"
+  - "/ko/tech/2026-03-25-github-actions-selfhosted-runner-apple-silicon-doc/"
 
 ---
 

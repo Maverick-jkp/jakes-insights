@@ -21,6 +21,7 @@ faq:
     answer: "Vercel Edge Network의 이점을 포기하지 않으면서 Claude 스트리밍 안정성을 확보하려면 하이브리드 구조가 현실적인 선택입니다. Claude API를 호출하는 Route Handler는 Node Runtime으로 설정하고, CDN 캐싱이나 인증 처리 같은 경량 작업만 Edge Runtime에 맡기는 방식입니다. 실제로 Next.js 공식 문서도 2026년 초부터 AI 스트리밍 예시의 기본 Runtime을 Node로 명시하기 시작했습니다."
 aliases:
   - "/tech/2026-05-28-nextjs-app-router-edge-runtime-claude-스트리밍-응답-지연-원/"
+  - "/ko/tech/2026-05-28-nextjs-app-router-edge-runtime-claude-스트리밍-응답-지연-원/"
 
 ---
 

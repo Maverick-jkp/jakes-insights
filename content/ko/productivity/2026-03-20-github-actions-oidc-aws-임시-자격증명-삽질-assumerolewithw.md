@@ -21,6 +21,7 @@ faq:
     answer: "네, 워크플로에서 `environment`를 지정하면 GitHub OIDC 토큰의 `sub` 클레임이 `repo:org/repo:environment:production` 형태로 생성됩니다. 브랜치 기반 조건인 `ref:refs/heads/main` 형식과는 완전히 다르기 때문에 신뢰 정책의 Condition도 실제 사용 방식에 맞게 별도로 작성해야 합니다. 환경 기반과 브랜치 기반을 혼용할 경우 `StringLike`와 와일드카드를 활용하되 보안 범위를 최소화하는 것이 좋습니다."
 aliases:
   - "/tech/2026-03-20-github-actions-oidc-aws-임시-자격증명-삽질-assumerolewithw/"
+  - "/ko/tech/2026-03-20-github-actions-oidc-aws-임시-자격증명-삽질-assumerolewithw/"
 
 ---
 

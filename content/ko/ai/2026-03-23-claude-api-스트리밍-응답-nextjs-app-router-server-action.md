@@ -21,6 +21,7 @@ faq:
     answer: "Next.js 공식 문서는 ai 패키지의 streamText와 Route Handler를 조합한 클라이언트 훅(useChat) 기반 접근만 권장하고 있어, Server Action과 Claude API stream 옵션을 직접 조합하는 방법은 2026년 현재도 공식적으로 다루어지지 않는 회색지대예요. 실제 프로젝트에서 Server Action 스트리밍이 필요한 경우에는 커뮤니티 사례나 직접 삽질을 통해 구현 패턴을 찾아야 하는 상황이에요."
 aliases:
   - "/tech/2026-03-23-claude-api-스트리밍-응답-nextjs-app-router-server-action/"
+  - "/ko/tech/2026-03-23-claude-api-스트리밍-응답-nextjs-app-router-server-action/"
 
 ---
 

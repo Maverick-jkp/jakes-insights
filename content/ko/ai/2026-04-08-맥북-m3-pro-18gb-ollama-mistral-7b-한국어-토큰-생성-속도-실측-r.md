@@ -21,6 +21,7 @@ faq:
     answer: "애플 M3 Pro는 CPU와 GPU가 동일한 통합 메모리 풀을 공유하는 구조 덕분에 모델 가중치가 GPU 방식으로 가속됩니다. 전통적인 Intel 맥이나 일반 PC에서 CPU로 추론하는 방식과 비교하면 속도가 약 3-5배 빠른 것으로 알려져 있습니다."
 aliases:
   - "/tech/2026-04-08-맥북-m3-pro-18gb-ollama-mistral-7b-한국어-토큰-생성-속도-실측-r/"
+  - "/ko/tech/2026-04-08-맥북-m3-pro-18gb-ollama-mistral-7b-한국어-토큰-생성-속도-실측-r/"
 
 ---
 

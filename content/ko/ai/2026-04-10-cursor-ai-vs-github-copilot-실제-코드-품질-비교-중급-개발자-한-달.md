@@ -21,6 +21,7 @@ faq:
     answer: "Cursor는 VS Code를 포크한 독립 에디터라서 JetBrains 계열 플러그인을 그대로 가져오지 못하는 경우가 종종 발생해요. 팀 전체가 JetBrains 환경을 유지해야 한다면 GitHub Copilot이 훨씬 현실적인 선택이며, 에디터 전환 비용이 Cursor의 성능 이점을 상쇄할 수 있어요."
 aliases:
   - "/tech/2026-04-10-cursor-ai-vs-github-copilot-실제-코드-품질-비교-중급-개발자-한-달/"
+  - "/ko/tech/2026-04-10-cursor-ai-vs-github-copilot-실제-코드-품질-비교-중급-개발자-한-달/"
 
 ---
 

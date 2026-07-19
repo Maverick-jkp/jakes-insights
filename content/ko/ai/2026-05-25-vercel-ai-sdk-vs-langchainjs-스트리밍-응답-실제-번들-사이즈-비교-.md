@@ -21,6 +21,7 @@ faq:
     answer: "Vercel AI SDK의 useChat 훅은 Next.js App Router와 네이티브 통합되어 있으며, Route Handler에서 streamText와 toDataStreamResponse()를 조합하면 약 10줄의 코드로 스트리밍 챗봇을 구현할 수 있습니다. OpenAI, Anthropic, Google Gemini 등 주요 모델은 provider만 교체하면 동일한 코드 구조로 사용 가능합니다."
 aliases:
   - "/tech/2026-05-25-vercel-ai-sdk-vs-langchainjs-스트리밍-응답-실제-번들-사이즈-비교-/"
+  - "/ko/tech/2026-05-25-vercel-ai-sdk-vs-langchainjs-스트리밍-응답-실제-번들-사이즈-비교-/"
 
 ---
 

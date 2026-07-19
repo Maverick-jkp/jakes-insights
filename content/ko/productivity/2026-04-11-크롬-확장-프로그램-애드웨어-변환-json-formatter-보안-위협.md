@@ -10,6 +10,7 @@ image: "/images/20260411-크롬-확장-프로그램-애드웨어-변환-json-for
 technologies: ["Go"]
 aliases:
   - "/tech/2026-04-11-크롬-확장-프로그램-애드웨어-변환-json-formatter-보안-위협/"
+  - "/ko/tech/2026-04-11-크롬-확장-프로그램-애드웨어-변환-json-formatter-보안-위협/"
 
 ---
 

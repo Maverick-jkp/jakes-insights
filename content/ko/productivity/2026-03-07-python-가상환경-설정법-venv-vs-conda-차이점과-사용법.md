@@ -21,6 +21,7 @@ faq:
     answer: "Anaconda 대신 Miniconda를 사용하면 conda 엔진만 설치되고 나머지 패키지는 필요할 때만 추가하는 방식으로 운영할 수 있어요. Anaconda가 4GB 이상의 공간을 차지하는 반면 Miniconda는 약 400MB 수준이라 10분의 1 정도예요. 현재 많은 ML 개발자들이 'Miniconda + conda-forge' 조합을 표준 셋업으로 사용하는 추세예요."
 aliases:
   - "/tech/2026-03-07-python-가상환경-설정법-venv-vs-conda-차이점과-사용법/"
+  - "/ko/tech/2026-03-07-python-가상환경-설정법-venv-vs-conda-차이점과-사용법/"
 
 ---
 

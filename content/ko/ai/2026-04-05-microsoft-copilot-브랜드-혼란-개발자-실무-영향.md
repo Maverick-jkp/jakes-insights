@@ -21,6 +21,7 @@ faq:
     answer: "2026년 4월 Microsoft가 발표한 멀티모델 전략은 하나의 Copilot 인터페이스 안에서 GPT-4o, Gemini, Grok 같은 외부 AI 모델을 골라 사용할 수 있게 한 것입니다. 엔터프라이즈 시장에서의 경쟁력을 높이려는 포석이지만, '지금 Copilot이 어떤 모델로 돌아가는 거야?'라는 새로운 불확실성이 추가되면서 기존 Microsoft Copilot 브랜드 혼란을 더욱 심화시켰다는 평가를 받고 있습니다."
 aliases:
   - "/tech/2026-04-05-microsoft-copilot-브랜드-혼란-개발자-실무-영향/"
+  - "/ko/tech/2026-04-05-microsoft-copilot-브랜드-혼란-개발자-실무-영향/"
 
 ---
 

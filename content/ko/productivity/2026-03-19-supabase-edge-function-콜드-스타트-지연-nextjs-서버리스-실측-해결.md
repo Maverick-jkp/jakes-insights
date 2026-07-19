@@ -21,6 +21,7 @@ faq:
     answer: "Supabase Edge Function 콜드 스타트 지연 Next.js 서버리스 실측 해결 방법 중 번들 최적화는 전체 패키지를 import하는 대신 필요한 기능만 가져오거나 fetch를 직접 사용하는 방식으로 적용해요. Deno 런타임은 함수 초기화 시 의존성 모듈을 전부 로드하는 구조라, import 범위를 줄이는 것만으로도 초기화 시간을 눈에 띄게 단축할 수 있어요."
 aliases:
   - "/tech/2026-03-19-supabase-edge-function-콜드-스타트-지연-nextjs-서버리스-실측-해결/"
+  - "/ko/tech/2026-03-19-supabase-edge-function-콜드-스타트-지연-nextjs-서버리스-실측-해결/"
 
 ---
 

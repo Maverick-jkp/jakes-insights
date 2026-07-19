@@ -21,6 +21,7 @@ faq:
     answer: "Claude API vs OpenAI API 1인 개발자 월 사용료 실제 청구서 비교 2025 데이터에 따르면, 사용 패턴에 맞는 API 선택이 가장 중요해요. 단발성 대용량 처리엔 OpenAI Batch API로 50% 할인을 받고, 반복 컨텍스트가 많은 서비스엔 Claude 프롬프트 캐싱으로 최대 90%를 절감하는 식으로 두 플랫폼을 용도에 맞게 나눠 쓰는 전략이 실질 청구액을 가장 효과적으로 줄여줘요."
 aliases:
   - "/tech/2026-04-12-claude-api-vs-openai-api-1인-개발자-월-사용료-실제-청구서-비교-20/"
+  - "/ko/tech/2026-04-12-claude-api-vs-openai-api-1인-개발자-월-사용료-실제-청구서-비교-20/"
 
 ---
 

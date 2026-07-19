@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Copilot vs Cursor IDE 실무 3개월 사용 후기 자동완성 품질 실제 코드 비교에서 보안 측면을 보면, Copilot은 GitHub Enterprise와의 연동이 잘 되어 있어 기업 보안 정책과의 호환성이 높습니다. Cursor는 자체 Privacy Mode를 제공하지만, 기존 기업 보안 인프라와의 통합 면에서는 Copilot 대비 초기 세팅 난이도가 상대적으로 높은 편입니다."
 aliases:
   - "/tech/2026-05-22-github-copilot-vs-cursor-ide-실무-3개월-사용-후기-자동완성-품질-/"
+  - "/ko/tech/2026-05-22-github-copilot-vs-cursor-ide-실무-3개월-사용-후기-자동완성-품질-/"
 
 ---
 

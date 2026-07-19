@@ -21,6 +21,7 @@ faq:
     answer: "OIDC 인증을 사용하면 AWS 시크릿 키를 저장소에 직접 저장하지 않아도 AWS 리소스에 접근할 수 있어 보안상 훨씬 안전해요. GitHub Actions 입문 CI CD 자동화 가이드에서도 OIDC 인증 방식을 권장하고 있으며, 시크릿 키 노출 위험을 근본적으로 차단할 수 있는 방법이에요."
 aliases:
   - "/tech/2026-03-06-github-actions-입문-ci-cd-자동화-가이드/"
+  - "/ko/tech/2026-03-06-github-actions-입문-ci-cd-자동화-가이드/"
 
 ---
 

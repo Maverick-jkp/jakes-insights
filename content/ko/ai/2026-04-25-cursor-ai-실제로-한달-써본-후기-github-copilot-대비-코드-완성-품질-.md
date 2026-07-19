@@ -21,6 +21,7 @@ faq:
     answer: "Cursor AI는 2주 무료 체험 티어를 제공하고 있어요. GitHub Copilot도 월 2,000회 코드 완성을 무료로 제공하는 무료 티어가 있으니, 두 도구 모두 유료 결제 전에 직접 사용해보고 본인 개발 스타일에 맞는 쪽을 선택하는 게 좋아요."
 aliases:
   - "/tech/2026-04-25-cursor-ai-실제로-한달-써본-후기-github-copilot-대비-코드-완성-품질-/"
+  - "/ko/tech/2026-04-25-cursor-ai-실제로-한달-써본-후기-github-copilot-대비-코드-완성-품질-/"
 
 ---
 

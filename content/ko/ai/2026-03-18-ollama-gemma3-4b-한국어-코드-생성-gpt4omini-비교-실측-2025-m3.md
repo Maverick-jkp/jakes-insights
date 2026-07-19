@@ -21,6 +21,7 @@ faq:
     answer: "Ollama 기반의 Gemma3 4B는 완전 오프라인 환경에서도 동작하며, 설치는 'ollama pull gemma3:4b' 단 두 줄로 끝납니다. 항공기나 보안망 내부 개발, 외부 서버로 전송해선 안 되는 민감한 코드 처리에 특히 적합한 선택지예요."
 aliases:
   - "/tech/2026-03-18-ollama-gemma3-4b-한국어-코드-생성-gpt4omini-비교-실측-2025-m3/"
+  - "/ko/tech/2026-03-18-ollama-gemma3-4b-한국어-코드-생성-gpt4omini-비교-실측-2025-m3/"
 
 ---
 

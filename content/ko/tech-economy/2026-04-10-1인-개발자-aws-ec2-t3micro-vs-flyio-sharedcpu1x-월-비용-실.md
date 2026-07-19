@@ -21,6 +21,7 @@ faq:
     answer: "Elastic IP는 인스턴스에 연결되어 있을 때는 무료지만, 인스턴스를 중지하거나 IP를 할당만 해두고 연결하지 않으면 시간당 $0.005가 과금돼 한 달이면 $3.65까지 나올 수 있어요. 인스턴스를 계속 켜두거나 사용하지 않는 Elastic IP는 즉시 해제하는 게 불필요한 비용을 막는 방법이에요."
 aliases:
   - "/tech/2026-04-10-1인-개발자-aws-ec2-t3micro-vs-flyio-sharedcpu1x-월-비용-실/"
+  - "/ko/tech/2026-04-10-1인-개발자-aws-ec2-t3micro-vs-flyio-sharedcpu1x-월-비용-실/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "빈 커밋 푸시 방식은 설정이 간단하지만 커밋 히스토리가 불필요하게 쌓이는 단점이 있어요. 반면 Cloudflare Deploy Hook을 curl로 호출하는 방식은 저장소를 오염시키지 않고 안정적으로 빌드를 트리거할 수 있어 운영 환경에 더 적합해요. GitHub Actions Hugo 블로그 Cloudflare Pages 자동배포 cron 스케줄 안 될 때 해결 목적으로는 Deploy Hook 방식에 workflow_dispatch를 병행 설정하는 조합이 가장 권장돼요."
 aliases:
   - "/tech/2026-04-02-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
+  - "/ko/tech/2026-04-02-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
 
 ---
 

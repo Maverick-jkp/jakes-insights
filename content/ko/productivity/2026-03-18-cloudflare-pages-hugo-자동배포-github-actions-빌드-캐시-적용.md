@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare Pages Hugo 자동배포 GitHub Actions 빌드 캐시 적용 시간 단축 실전 구성에서 cron 스케줄 빌드를 함께 사용할 경우 캐시 만료 정책을 7일로 설정하는 것이 권장돼요. 만료 기간이 너무 길면 stale 캐시로 인한 빌드 실패가 발생할 수 있고, 너무 짧으면 캐시 히트율이 낮아져 시간 단축 효과가 줄어들어요."
 aliases:
   - "/tech/2026-03-18-cloudflare-pages-hugo-자동배포-github-actions-빌드-캐시-적용/"
+  - "/ko/tech/2026-03-18-cloudflare-pages-hugo-자동배포-github-actions-빌드-캐시-적용/"
 
 ---
 

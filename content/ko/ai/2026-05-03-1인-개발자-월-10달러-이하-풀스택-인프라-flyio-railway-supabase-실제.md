@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 풀스택 인프라 Fly.io Railway Supabase 실제 운영 후기에서 확인할 수 있듯, AWS는 EC2와 RDS만 조합해도 월 70-80달러를 쉽게 넘기지만 Railway·Fly.io·Supabase 조합은 소규모 기준 월 5-8달러로 운영이 가능해요. 다만 트래픽이 증가하면 Supabase Pro 등으로 업그레이드가 필요하고, 각 플랫폼의 무료 정책이 지속적으로 변화하고 있어 정기적인 확인이 필요해요."
 aliases:
   - "/tech/2026-05-03-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-railway-supabase-실제/"
+  - "/ko/tech/2026-05-03-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-railway-supabase-실제/"
 
 ---
 

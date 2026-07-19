@@ -21,6 +21,7 @@ faq:
     answer: "Grafana는 기본적으로 200~300MB를 소비하며, GF_RENDERING_SERVER_URL 같은 플러그인을 로드하면 추가로 100~200MB가 더 필요합니다. 2GB RAM 서버에서는 Docker Compose의 mem_limit을 256m으로 제한하고 불필요한 플러그인을 최소화하는 것이 Prometheus Grafana Docker Compose 2GB RAM 서버 메모리 OOM 방지를 위한 현실적인 설정값입니다."
 aliases:
   - "/tech/2026-05-10-prometheus-grafana-docker-compose-2gb-ram-서버-메모리-o/"
+  - "/ko/tech/2026-05-10-prometheus-grafana-docker-compose-2gb-ram-서버-메모리-o/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 15달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 내역 기준으로, MAU 5,000명을 초과하거나 Supabase DB가 500MB를 넘기 시작하면 비용이 급격히 오를 수 있습니다. 특히 Supabase Pro 플랜(월 25달러) 전환 시점과 Fly.io 크레딧 초과 구간을 사전에 파악해 두는 것이 예상치 못한 청구를 막는 핵심입니다."
 aliases:
   - "/tech/2026-03-19-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+  - "/ko/tech/2026-03-19-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
 
 ---
 

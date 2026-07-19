@@ -21,6 +21,7 @@ faq:
     answer: "Cursor AI vs GitHub Copilot 실무 한 달 사용 후기 자동완성 정확도 비용 비교에 따르면, YC 포트폴리오 스타트업의 60% 이상이 Cursor를 선택하고 있습니다. Cursor의 Composer 기능이 'Next.js + Supabase로 로그인 페이지 만들어줘'처럼 자연어 한 줄로 여러 파일을 동시에 생성·수정해주기 때문에, 빠른 기능 개발이 필요한 소규모 팀에 특히 잘 맞습니다."
 aliases:
   - "/tech/2026-05-02-cursor-ai-vs-github-copilot-실무-한-달-사용-후기-자동완성-정확도-/"
+  - "/ko/tech/2026-05-02-cursor-ai-vs-github-copilot-실무-한-달-사용-후기-자동완성-정확도-/"
 
 ---
 

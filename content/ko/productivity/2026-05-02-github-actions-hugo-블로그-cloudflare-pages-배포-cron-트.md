@@ -21,6 +21,7 @@ faq:
     answer: "GitHub은 레포지토리에 60일 이상 커밋이 없으면 스케줄 워크플로우를 자동으로 비활성화해요. 별도 알림 없이 조용히 꺼지기 때문에 인지하기 어렵고, GitHub Actions 탭에 접속하면 배너 형태로 안내가 표시돼요. 해당 배너에서 직접 워크플로우를 다시 활성화하거나, 레포지토리에 커밋을 추가하면 스케줄이 재개돼요."
 aliases:
   - "/tech/2026-05-02-github-actions-hugo-블로그-cloudflare-pages-배포-cron-트/"
+  - "/ko/tech/2026-05-02-github-actions-hugo-블로그-cloudflare-pages-배포-cron-트/"
 
 ---
 

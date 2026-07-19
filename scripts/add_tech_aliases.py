@@ -34,11 +34,17 @@ def build_mapping():
             if not m:
                 continue
             old, new = m.group(1), m.group(2)
-            # Hugo prepends the language prefix to a KO post's alias automatically,
-            # so store KO aliases WITHOUT the leading /ko (else we get /ko/ko/...).
+            target = resolve(new)
             if old.startswith('/ko/'):
-                old = old[len('/ko'):]
-            mapping[resolve(new)].add(old)
+                # KO posts: store BOTH the bare /tech/ path and the /ko/tech/ path.
+                # Local Hugo (v0.156) auto-prefixes the language, so /tech/ ->
+                # /ko/tech/; Cloudflare Pages' Hugo does NOT auto-prefix, so the
+                # explicit /ko/tech/ entry is what lands there. Emitting both means
+                # the correct /ko/tech/ page is produced regardless of Hugo version.
+                mapping[target].add(old[len('/ko'):])  # /tech/...
+                mapping[target].add(old)               # /ko/tech/...
+            else:
+                mapping[target].add(old)
     return mapping
 
 

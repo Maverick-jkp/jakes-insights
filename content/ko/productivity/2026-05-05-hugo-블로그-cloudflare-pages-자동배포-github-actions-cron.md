@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare Pages API Deploy Hook을 GitHub Actions에서 직접 호출하는 방법이 가장 안정적으로 권장돼요. 빈 커밋 푸시 방식보다 Git 히스토리가 깔끔하게 유지되고, Cloudflare 대시보드에서 빌드 로그를 일관되게 확인할 수 있어요."
 aliases:
   - "/tech/2026-05-05-hugo-블로그-cloudflare-pages-자동배포-github-actions-cron/"
+  - "/ko/tech/2026-05-05-hugo-블로그-cloudflare-pages-자동배포-github-actions-cron/"
 
 ---
 

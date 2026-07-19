@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 AWS vs Cloudflare Workers 월 비용 실제 청구서 비교 관점에서 비용은 Workers가 유리하지만, VPC·RDS 연동이 필요하거나 PDF 생성·이미지 리사이징처럼 CPU를 많이 쓰는 작업엔 적합하지 않아요. Workers는 CPU 시간이 유료 플랜 기준 30ms로 제한되고 Node.js 내장 모듈도 지원하지 않아, 복잡한 백엔드 로직이 필요한 경우엔 AWS가 불가피해요."
 aliases:
   - "/tech/2026-05-07-1인-개발자-aws-vs-cloudflare-workers-월-비용-실제-청구서-비교-사이/"
+  - "/ko/tech/2026-05-07-1인-개발자-aws-vs-cloudflare-workers-월-비용-실제-청구서-비교-사이/"
 
 ---
 

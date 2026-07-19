@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare의 전 세계 320개 이상 PoP 덕분에 아시아-태평양 지역 사용자 기준 평균 60~80ms 더 빠른 응답을 제공하는 경우가 많습니다. Llama 3 8B 기준 한국에서의 평균 지연은 80~120ms로, Claude Haiku의 150~250ms보다 유리하며, 지연 시간이 UX에 민감한 서비스에서 엣지 추론의 실질적인 이점으로 작용합니다."
 aliases:
   - "/tech/2026-04-15-cloudflare-workers-ai-llama3-한국어-응답-품질-claude-haik/"
+  - "/ko/tech/2026-04-15-cloudflare-workers-ai-llama3-한국어-응답-품질-claude-haik/"
 
 ---
 

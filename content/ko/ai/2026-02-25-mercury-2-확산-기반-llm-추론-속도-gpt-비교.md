@@ -21,6 +21,7 @@ faq:
     answer: "Inception Labs는 Mercury 2가 추론 속도 향상과 함께 추론 비용도 대폭 낮아졌다고 밝혔어요. 구조적으로 Transformer의 KV Cache 메모리와 순차 연산 병목이 확산 모델에서는 다르게 작동해 배치 처리 시 GPU 효율이 높아지기 때문이며, 구체적인 달러/토큰 단가는 공개 API 출시 후 검증이 필요해요."
 aliases:
   - "/tech/2026-02-25-mercury-2-확산-기반-llm-추론-속도-gpt-비교/"
+  - "/ko/tech/2026-02-25-mercury-2-확산-기반-llm-추론-속도-gpt-비교/"
 
 ---
 

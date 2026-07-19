@@ -21,6 +21,7 @@ faq:
     answer: "아니요, Supabase에서 SELECT Policy는 읽기 접근만 제어하며 INSERT, UPDATE, DELETE는 별도의 Policy를 각각 설정해야 해요. SELECT만 막고 나머지를 설정하지 않으면 인증 여부와 관계없이 쓰기 작업이 전체 허용되는 높은 위험 상태가 됩니다."
 aliases:
   - "/tech/2026-04-19-supabase-row-level-security-설정-실수-실제-데이터-노출-사례-점검-/"
+  - "/ko/tech/2026-04-19-supabase-row-level-security-설정-실수-실제-데이터-노출-사례-점검-/"
 
 ---
 

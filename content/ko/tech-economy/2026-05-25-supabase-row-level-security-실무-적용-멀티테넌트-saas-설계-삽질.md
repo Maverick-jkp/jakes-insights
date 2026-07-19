@@ -21,6 +21,7 @@ faq:
     answer: "'Supabase Row Level Security 실무 적용 멀티테넌트 SaaS 설계 삽질 후기 2025'에 따르면, 기존 테이블에 RLS를 적용할 때는 tenant_id 컬럼 추가 및 데이터 채우기 → tenant_id 인덱스 생성 → RLS 활성화 및 정책 작성 → 다른 테넌트 JWT로 직접 쿼리 날려 격리 검증 순서로 진행해야 합니다. 특히 인덱스를 RLS 활성화보다 먼저 만들어야 정책 적용 직후 발생할 수 있는 성능 문제를 예방할 수 있습니다."
 aliases:
   - "/tech/2026-05-25-supabase-row-level-security-실무-적용-멀티테넌트-saas-설계-삽질/"
+  - "/ko/tech/2026-05-25-supabase-row-level-security-실무-적용-멀티테넌트-saas-설계-삽질/"
 
 ---
 

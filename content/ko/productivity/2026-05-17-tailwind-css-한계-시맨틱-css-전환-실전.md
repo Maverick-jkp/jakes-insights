@@ -21,6 +21,7 @@ faq:
     answer: "Tailwind CSS는 빌드 도구와 강하게 결합되어 있어 content 경로 설정 하나가 틀리면 프로덕션 빌드에서 스타일이 통째로 사라지는 문제가 발생합니다. Vite 버전 업그레이드나 모노레포 구조 변경 후 스타일이 깨지는 사례가 GitHub에서 수십 건씩 보고되고 있으며, vanilla CSS나 CSS Modules를 사용했다면 이런 빌드 의존성 문제 자체가 발생하지 않습니다."
 aliases:
   - "/tech/2026-05-17-tailwind-css-한계-시맨틱-css-전환-실전/"
+  - "/ko/tech/2026-05-17-tailwind-css-한계-시맨틱-css-전환-실전/"
 
 ---
 

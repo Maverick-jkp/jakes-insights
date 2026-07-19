@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 인프라 기준으로, 단기적으로 비용 예측이 쉬운 선택은 Railway Starter($5 고정)이지만 장기 운영 시 총비용 면에서는 VPS+Docker Compose 조합이 가장 유리해요. 플랫폼 정책 변경 위험도 없고 앱 수가 늘어도 비용이 고정되기 때문에, 초기 세팅 공수를 감수할 수 있다면 Hetzner 같은 저가 VPS에 Docker Compose를 올리는 방식이 장기적으로 가장 경제적이에요."
 aliases:
   - "/tech/2026-05-08-1인-개발자-월-10달러-이하-인프라-flyio-docker-compose-railway-/"
+  - "/ko/tech/2026-05-08-1인-개발자-월-10달러-이하-인프라-flyio-docker-compose-railway-/"
 
 ---
 

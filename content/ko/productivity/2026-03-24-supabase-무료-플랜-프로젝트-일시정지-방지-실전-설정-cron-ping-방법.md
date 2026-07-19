@@ -21,6 +21,7 @@ faq:
     answer: "세 가지 방법(cron-job.org, pg_cron, GitHub Actions) 중 설정 난이도가 가장 낮은 것은 cron-job.org를 이용한 외부 ping 방식입니다. 무료 계정을 만들고 URL과 헤더 두 가지만 입력하면 바로 동작하며, 별도 코드 작성이나 SQL 설정이 필요하지 않아 빠르게 적용할 수 있습니다."
 aliases:
   - "/tech/2026-03-24-supabase-무료-플랜-프로젝트-일시정지-방지-실전-설정-cron-ping-방법/"
+  - "/ko/tech/2026-03-24-supabase-무료-플랜-프로젝트-일시정지-방지-실전-설정-cron-ping-방법/"
 
 ---
 

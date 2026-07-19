@@ -21,6 +21,7 @@ faq:
     answer: "프로덕션 배포 전에는 모든 public 테이블의 RLS 활성화 여부를 SQL 쿼리로 점검하고, SELECT뿐 아니라 INSERT, UPDATE, DELETE 정책이 각각 존재하는지 확인해야 해요. 가장 확실한 예방법은 배포 전에 anon 역할로 직접 쿼리를 테스트해서 의도치 않은 접근이 가능한지 검증하는 습관을 들이는 거예요."
 aliases:
   - "/tech/2026-04-02-supabase-무료-플랜-row-level-security-설정-실수-데이터-유출-사례-/"
+  - "/ko/tech/2026-04-02-supabase-무료-플랜-row-level-security-설정-실수-데이터-유출-사례-/"
 
 ---
 

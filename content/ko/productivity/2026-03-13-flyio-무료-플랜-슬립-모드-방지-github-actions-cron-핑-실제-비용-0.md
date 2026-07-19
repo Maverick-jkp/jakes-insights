@@ -21,6 +21,7 @@ faq:
     answer: "`fly.toml`에서 `auto_stop_machines = false`를 지정하면 슬립 모드 없이 앱을 항상 실행 상태로 유지할 수 있는 근본적인 해결책입니다. 다만 이 옵션은 일부 플랜에서 추가 비용이 발생할 수 있어 반드시 본인 플랜 조건을 확인해야 하며, 비용 부담 없이 해결하려면 GitHub Actions cron 핑 방식이 더 안전한 대안입니다."
 aliases:
   - "/tech/2026-03-13-flyio-무료-플랜-슬립-모드-방지-github-actions-cron-핑-실제-비용-0/"
+  - "/ko/tech/2026-03-13-flyio-무료-플랜-슬립-모드-방지-github-actions-cron-핑-실제-비용-0/"
 
 ---
 

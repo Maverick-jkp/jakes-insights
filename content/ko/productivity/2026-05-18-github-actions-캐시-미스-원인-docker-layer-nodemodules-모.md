@@ -21,6 +21,7 @@ faq:
     answer: "500MB 이상의 큰 Docker 레이어에서는 S3 외부 캐시가 복원 속도가 최대 40% 빠르지만, 설정 복잡도가 높아서 팀 규모가 작으면 `type=gha` 방식이 훨씬 실용적이에요. `type=gha`는 GitHub Actions 캐시 스토리지에 바로 저장되므로 별도 인프라 없이 빠르게 적용할 수 있습니다. 레이어 크기와 팀 운영 역량을 함께 고려해 선택하는 게 좋아요."
 aliases:
   - "/tech/2026-05-18-github-actions-캐시-미스-원인-docker-layer-nodemodules-모/"
+  - "/ko/tech/2026-05-18-github-actions-캐시-미스-원인-docker-layer-nodemodules-모/"
 
 ---
 

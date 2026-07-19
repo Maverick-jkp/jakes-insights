@@ -21,6 +21,7 @@ faq:
     answer: "Microsoft Research가 공개한 Phi-4는 140억 파라미터 소형 언어 모델(SLM)로, 수학적 추론과 코딩 벤치마크에서 GPT-4 수준에 근접하는 성능을 기록했습니다. Azure AI Foundry에서 직접 호스팅되며 토큰 비용은 GPT-4o보다 훨씬 낮아, OpenAI 의존도를 줄이면서 비용을 최적화하려는 개발팀에게 현실적인 대안이 될 수 있어요. 독점 계약 종료 이후 Microsoft가 자체 모델 생태계 강화에 더 집중할 것으로 예상되는 만큼, Phi 시리즈의 성능 향상 속도에도 주목할 필요가 있습니다."
 aliases:
   - "/tech/2026-04-28-microsoft-openai-독점-계약-종료-개발자-영향/"
+  - "/ko/tech/2026-04-28-microsoft-openai-독점-계약-종료-개발자-영향/"
 
 ---
 

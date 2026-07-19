@@ -21,6 +21,7 @@ faq:
     answer: "Fly.io 단독 서버 Next.js 배포 콜드스타트 시간 줄이는 실전 설정은 크게 세 가지로 구성됩니다: `min_machines_running = 1`로 Machine 상시 가동, `output: 'standalone'`과 멀티스테이지 Dockerfile로 이미지 경량화, 그리고 헬스체크 타이밍 여유 있게 조정입니다. 애플리케이션 코드를 크게 수정하지 않아도 `fly.toml` 한 파일로 대부분의 콜드스타트 문제를 해결할 수 있습니다."
 aliases:
   - "/tech/2026-04-11-flyio-단독-서버-nextjs-배포-콜드스타트-시간-줄이는-실전-설정/"
+  - "/ko/tech/2026-04-11-flyio-단독-서버-nextjs-배포-콜드스타트-시간-줄이는-실전-설정/"
 
 ---
 

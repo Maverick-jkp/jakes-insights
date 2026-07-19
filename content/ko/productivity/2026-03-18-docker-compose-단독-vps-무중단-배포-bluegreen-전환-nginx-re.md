@@ -21,6 +21,7 @@ faq:
     answer: "새 버전 컨테이너를 올린 뒤 일정 시간(예: 30초) 동안 `/health` 엔드포인트에 HTTP 200이 오지 않으면 배포 스크립트에서 해당 Compose 서비스를 `docker compose down`으로 내리고 `exit 1`로 종료하면 돼요. nginx upstream은 아직 기존 버전 포트를 바라보고 있는 상태이므로 별도 롤백 명령 없이 자동으로 이전 버전이 트래픽을 계속 처리하게 돼요."
 aliases:
   - "/tech/2026-03-18-docker-compose-단독-vps-무중단-배포-bluegreen-전환-nginx-re/"
+  - "/ko/tech/2026-03-18-docker-compose-단독-vps-무중단-배포-bluegreen-전환-nginx-re/"
 
 ---
 

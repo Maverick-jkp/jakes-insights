@@ -21,6 +21,7 @@ faq:
     answer: "Claude Code AI 프레임워크 추천 편향 개발자 마케팅 도구 전락 논쟁에서 두 도구 모두 '왜 이 프레임워크를 추천하는가'를 명확히 설명하는 장치가 없다는 공통점이 있어요. 다만 Claude Code는 학습 데이터 출처를 부분적으로 공개하고 CLAUDE.md를 통한 커스터마이징이 가능한 반면, GitHub Copilot은 Microsoft-GitHub 생태계에 밀착되어 TypeScript와 Azure 관련 추천 빈도가 높다는 평가를 받으며 데이터 출처 자체를 비공개로 유지하고 있어요."
 aliases:
   - "/tech/2026-02-27-claude-code-ai-프레임워크-추천-편향-개발자-마케팅-도구-전락/"
+  - "/ko/tech/2026-02-27-claude-code-ai-프레임워크-추천-편향-개발자-마케팅-도구-전락/"
 
 ---
 

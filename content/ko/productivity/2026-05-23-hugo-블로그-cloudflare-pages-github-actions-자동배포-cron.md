@@ -21,6 +21,7 @@ faq:
     answer: "발행 신뢰성이 중요하다면 cron-job.org 같은 외부 cron 서비스로 Cloudflare Pages Deploy Hook을 직접 호출하는 방식이 GitHub Actions cron보다 안정적입니다. GitHub Actions cron은 60일 비활성화 위험과 수십 분의 best-effort 지연이 있는 반면, Deploy Hook 방식은 GitHub 의존도를 낮추고 무료로 높은 신뢰성을 확보할 수 있습니다."
 aliases:
   - "/tech/2026-05-23-hugo-블로그-cloudflare-pages-github-actions-자동배포-cron/"
+  - "/ko/tech/2026-05-23-hugo-블로그-cloudflare-pages-github-actions-자동배포-cron/"
 
 ---
 

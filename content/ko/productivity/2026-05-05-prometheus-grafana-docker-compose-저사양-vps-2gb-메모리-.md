@@ -21,6 +21,7 @@ faq:
     answer: "최적화 설정 기준으로 Prometheus 350–450MB, Grafana 180–220MB, Node Exporter 20–30MB, Docker 데몬과 커널 300–400MB로 총 850MB–1.1GB 수준이에요. 실제 서비스 컨테이너가 500MB를 추가로 사용해도 전체가 1.6GB 수준이라 스왑 없이도 운영 가능하지만, 보험용 스왑 512MB는 걸어두는 게 안전해요."
 aliases:
   - "/tech/2026-05-05-prometheus-grafana-docker-compose-저사양-vps-2gb-메모리-/"
+  - "/ko/tech/2026-05-05-prometheus-grafana-docker-compose-저사양-vps-2gb-메모리-/"
 
 ---
 

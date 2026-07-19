@@ -21,6 +21,7 @@ faq:
     answer: "--storage.tsdb.wal-compression은 Prometheus 2.11 버전 이후 지원되는 옵션으로, WAL 파일 크기를 평균 35~50% 줄여줍니다. Prometheus Grafana Docker Compose VPS 메모리 2GB 이하 OOM 없이 안정화 설정을 구성할 때 retention.time, retention.size와 함께 이 플래그를 추가하면 메모리와 디스크 사용량을 동시에 절감할 수 있어요. 설정 변경 후 수 시간 내에 메모리 점유 감소 효과를 확인할 수 있습니다."
 aliases:
   - "/tech/2026-03-10-prometheus-grafana-docker-compose-vps-메모리-2gb-이하-o/"
+  - "/ko/tech/2026-03-10-prometheus-grafana-docker-compose-vps-메모리-2gb-이하-o/"
 
 ---
 

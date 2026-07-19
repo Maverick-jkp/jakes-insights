@@ -21,6 +21,7 @@ faq:
     answer: "맥북 M3에서 Ollama로 Mistral 7B를 구동할 때 전원 연결 상태가 배터리 모드보다 약 20–30% 빠른 속도를 보여요. Metal 가속이 전력 제한의 영향을 받기 때문으로, 속도가 중요한 작업이라면 전원 연결 상태를 유지하는 것이 좋아요."
 aliases:
   - "/tech/2026-05-03-맥북-m3-16gb-ollama-mistral-7b-한국어-응답-속도-실측-gpt4omin/"
+  - "/ko/tech/2026-05-03-맥북-m3-16gb-ollama-mistral-7b-한국어-응답-속도-실측-gpt4omin/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "빈 커밋 방식은 git commit --allow-empty로 push 이벤트를 만들어 Cloudflare Pages 빌드를 유발하는 가장 단순한 방법이지만, 자동화가 반복될수록 의미 없는 커밋이 레포지터리 히스토리에 계속 쌓여 지저분해지는 단점이 있어요. 장기 운영 프로젝트라면 Cloudflare Pages API를 직접 호출하는 방식이 더 권장돼요."
 aliases:
   - "/tech/2026-04-20-cloudflare-pages-hugo-자동배포-github-actions-cron-미작동/"
+  - "/ko/tech/2026-04-20-cloudflare-pages-hugo-자동배포-github-actions-cron-미작동/"
 
 ---
 

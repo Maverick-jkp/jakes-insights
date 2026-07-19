@@ -21,6 +21,7 @@ faq:
     answer: "Prometheus Grafana Docker Compose를 2GB 서버에서 기본 설정으로 실행하면 OS가 300~400MB를 사용하고, Prometheus가 최대 1GB, Grafana가 200MB 이상을 소비해 실질 가용 메모리인 1.6GB를 초과하기 쉽습니다. 이를 방지하려면 Prometheus 500MB, Grafana 250MB, Node Exporter 30MB 이하로 컨테이너별 메모리 상한을 설정하는 최적화가 필수입니다."
 aliases:
   - "/tech/2026-05-11-prometheus-grafana-docker-compose-메모리-2gb-서버-실제-운영/"
+  - "/ko/tech/2026-05-11-prometheus-grafana-docker-compose-메모리-2gb-서버-실제-운영/"
 
 ---
 

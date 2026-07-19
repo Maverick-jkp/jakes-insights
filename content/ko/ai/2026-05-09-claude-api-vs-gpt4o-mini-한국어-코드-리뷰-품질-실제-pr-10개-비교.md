@@ -21,6 +21,7 @@ faq:
     answer: "PR당 평균 불필요 지적 수는 GPT-4o mini가 3.2개, Claude 3.5 Haiku가 1.8개로 Claude 쪽이 노이즈가 적었어요. GPT-4o mini는 팀에서 이미 ESLint 룰로 허용한 패턴처럼 맥락을 고려하지 않은 지적을 더 자주 내놓는 경향이 있어요."
 aliases:
   - "/tech/2026-05-09-claude-api-vs-gpt4o-mini-한국어-코드-리뷰-품질-실제-pr-10개-비교/"
+  - "/ko/tech/2026-05-09-claude-api-vs-gpt4o-mini-한국어-코드-리뷰-품질-실제-pr-10개-비교/"
 
 ---
 

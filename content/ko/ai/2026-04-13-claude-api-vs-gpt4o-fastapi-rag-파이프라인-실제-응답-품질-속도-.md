@@ -21,6 +21,7 @@ faq:
     answer: "Claude API vs GPT-4o FastAPI RAG 파이프라인 실제 응답 품질 속도 비용 비교 실험 결과를 보면, 스타트업에는 GPT-4o가 더 적합해요. 토큰 단가가 낮고 LangChain·LlamaIndex 등 연동 레퍼런스가 풍부해서 FastAPI RAG 파이프라인을 빠르게 구축할 수 있거든요. 초기에 개발 속도와 비용 효율이 중요한 팀이라면 GPT-4o로 시작해 규모와 요구사항이 커질 때 Claude 전환을 검토하는 방식이 현실적이에요."
 aliases:
   - "/tech/2026-04-13-claude-api-vs-gpt4o-fastapi-rag-파이프라인-실제-응답-품질-속도-/"
+  - "/ko/tech/2026-04-13-claude-api-vs-gpt4o-fastapi-rag-파이프라인-실제-응답-품질-속도-/"
 
 ---
 

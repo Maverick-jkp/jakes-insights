@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare Pages 무료 플랜은 빌드당 최대 20분, 월 500회 빌드 제한이 있어서 cron 주기를 설계할 때 이 수치를 먼저 확인해야 해요. 예를 들어 매시간 실행하면 월 약 720회로 제한을 초과할 수 있으므로, 매일 1회 또는 매주 단위로 cron 주기를 설정하는 것이 안전해요. push 트리거를 함께 쓰는 이중 구성은 빌드 횟수를 더 소비할 수 있으므로, 실제 글 발행 빈도와 월 빌드 제한을 함께 고려해서 주기를 결정해야 해요."
 aliases:
   - "/tech/2026-05-16-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
+  - "/ko/tech/2026-05-16-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
 
 ---
 

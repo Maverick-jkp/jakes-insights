@@ -21,6 +21,7 @@ faq:
     answer: "2026년 LLM API 비용 비교에서 GPT-4, Claude, Gemini를 한국어 처리 성능 기준으로 보면, Claude 4 Sonnet이 한국어 처리와 복잡한 추론에서 가장 높은 성능 평가를 받고 있습니다. 다만 Claude 4 Sonnet은 출력 $15.00/M으로 비용이 높은 편이라, 캐싱과 배치 처리를 함께 활용하지 않으면 실제 비용이 최대 두 배까지 올라갈 수 있어 전략적 설정이 필요합니다."
 aliases:
   - "/tech/2026-03-06-llm-api-비용-비교-gpt4-claude-gemini-2026/"
+  - "/ko/tech/2026-03-06-llm-api-비용-비교-gpt4-claude-gemini-2026/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions 모노레포 변경된 패키지만 선택적 빌드 paths-filter 실전 설정 삽질 기록에 따르면 패키지 5개 이하는 paths-filter 단독으로 충분하고, 5~20개 규모부터 Turborepo와 조합하는 것을 권장해요. 20개 이상이라면 Nx의 affected 명령어와 원격 캐시까지 활용하는 방식이 적합하며, 동일 커밋의 두 번째 빌드가 거의 즉시 완료될 수 있습니다."
 aliases:
   - "/tech/2026-05-31-github-actions-모노레포-변경된-패키지만-선택적-빌드-pathsfilter-실전/"
+  - "/ko/tech/2026-05-31-github-actions-모노레포-변경된-패키지만-선택적-빌드-pathsfilter-실전/"
 
 ---
 

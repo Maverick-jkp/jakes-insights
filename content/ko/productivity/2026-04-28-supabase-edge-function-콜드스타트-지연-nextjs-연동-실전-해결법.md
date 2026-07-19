@@ -21,6 +21,7 @@ faq:
     answer: "Supabase Edge Function은 Deno 환경에서 실행되므로 npm: prefix로 무거운 패키지를 불러오면 콜드스타트 시 모듈 전체를 로드해야 해서 지연이 커져요. 특히 Edge Function 내부에서 @supabase/supabase-js 전체를 다시 import하는 건 이미 Supabase 서버 환경 안에서 실행되기 때문에 불필요한 무게를 더하는 행위예요. 필요한 모듈만 선택적으로 import하고, 외부 패키지 대신 Deno 표준 라이브러리를 우선 사용하는 것이 콜드스타트 최적화의 기본 원칙이에요."
 aliases:
   - "/tech/2026-04-28-supabase-edge-function-콜드스타트-지연-nextjs-연동-실전-해결법/"
+  - "/ko/tech/2026-04-28-supabase-edge-function-콜드스타트-지연-nextjs-연동-실전-해결법/"
 
 ---
 

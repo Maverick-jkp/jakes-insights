@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 인프라로 Fly.io, Supabase, Cloudflare 실제 청구 내역을 공개한 사례들에 따르면 MVP나 사이드 프로젝트는 $0, MAU 500명 수준 소규모 SaaS는 $0~$3, MAU 2,000명 수준이면 $28~$35 정도가 현실적인 비용입니다. MAU 1,000명 이하라면 세 서비스 모두 무료 티어 조합으로 운영 가능하며, 대부분 Fly.io 스토리지 추가 정도만 소액 과금되는 패턴이 가장 많습니다."
 aliases:
   - "/tech/2026-04-20-1인-개발자-월-10달러-이하-인프라-flyio-supabase-cloudflare-실제-/"
+  - "/ko/tech/2026-04-20-1인-개발자-월-10달러-이하-인프라-flyio-supabase-cloudflare-실제-/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "빌드 명령어를 `hugo --gc --minify`로 설정하고, Cloudflare Pages의 자동 캐시 퍼지가 정상 작동하는지 확인하는 것이 가장 현실적인 조합이에요. 이 두 가지만 적용해도 대부분의 CSS 안 바뀌는 현상은 해결되며, 브라우저 캐시 문제까지 잡으려면 Hugo의 fingerprint 기능을 추가로 적용하면 돼요."
 aliases:
   - "/tech/2026-03-20-cloudflare-pages-hugo-배포-빌드-캐시-무효화-css-안-바뀔-때-원인-해/"
+  - "/ko/tech/2026-03-20-cloudflare-pages-hugo-배포-빌드-캐시-무효화-css-안-바뀔-때-원인-해/"
 
 ---
 

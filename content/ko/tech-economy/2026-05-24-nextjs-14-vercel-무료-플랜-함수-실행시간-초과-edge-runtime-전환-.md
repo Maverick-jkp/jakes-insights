@@ -21,6 +21,7 @@ faq:
     answer: "Edge Runtime과 ReadableStream을 조합해 응답을 스트리밍 방식으로 전환하면 실질적으로 10초 벽을 우회할 수 있어요. 응답이 완전히 끝날 때까지 기다리는 구조가 아니라 토큰이 하나씩 클라이언트로 전달되는 구조로 바뀌기 때문에, Vercel Hobby 플랜의 Edge Function 25초 제한 안에서 LLM 응답을 처리할 수 있어요."
 aliases:
   - "/tech/2026-05-24-nextjs-14-vercel-무료-플랜-함수-실행시간-초과-edge-runtime-전환-/"
+  - "/ko/tech/2026-05-24-nextjs-14-vercel-무료-플랜-함수-실행시간-초과-edge-runtime-전환-/"
 
 ---
 

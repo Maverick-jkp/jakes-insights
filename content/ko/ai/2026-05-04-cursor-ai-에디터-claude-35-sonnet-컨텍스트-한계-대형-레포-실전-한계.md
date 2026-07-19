@@ -10,6 +10,7 @@ image: "/images/20260504-cursor-ai-에디터-claude-35-sonnet.webp"
 technologies: ["Claude", "Anthropic", "VS Code", "Cursor"]
 aliases:
   - "/tech/2026-05-04-cursor-ai-에디터-claude-35-sonnet-컨텍스트-한계-대형-레포-실전-한계/"
+  - "/ko/tech/2026-05-04-cursor-ai-에디터-claude-35-sonnet-컨텍스트-한계-대형-레포-실전-한계/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "응답 속도 기준으로는 GPT-4o mini가 '매우 빠름', Claude 3 Haiku가 '빠름', Claude 3.5 Sonnet이 '중간' 수준입니다. 단순 스타일 검사나 오타 탐지처럼 속도가 중요한 1차 자동화 리뷰에는 GPT-4o mini가 유리하고, Claude 3 Haiku는 품질과 속도의 중간 지점을 원하는 경량 자동화에 적합합니다."
 aliases:
   - "/tech/2026-03-20-claude-api-vs-gpt4o-mini-한국어-코드-리뷰-품질-응답-비용-실무-비교-/"
+  - "/ko/tech/2026-03-20-claude-api-vs-gpt4o-mini-한국어-코드-리뷰-품질-응답-비용-실무-비교-/"
 
 ---
 

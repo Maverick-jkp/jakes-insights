@@ -21,6 +21,7 @@ faq:
     answer: "docker buildx build --progress=plain 옵션으로 빌드를 실행하면 출력 로그에서 CACHED 키워드가 포함된 라인 수를 통해 캐시 레이어 재사용률을 바로 확인할 수 있습니다. CACHED 라인이 거의 없다면 캐시가 제대로 작동하지 않는 것이므로 Dockerfile 레이어 순서와 cache-key 설정을 점검해야 합니다. GitHub Actions 워크플로우 로그에서도 동일하게 확인할 수 있어 별도 도구 없이 빠르게 진단이 가능합니다."
 aliases:
   - "/tech/2026-03-29-github-actions-docker-이미지-빌드-캐시-레이어-재사용-안-될-때-원인-해/"
+  - "/ko/tech/2026-03-29-github-actions-docker-이미지-빌드-캐시-레이어-재사용-안-될-때-원인-해/"
 
 ---
 

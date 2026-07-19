@@ -21,6 +21,7 @@ faq:
     answer: "가능해요. llama3.2:8b 기준 RAM 사용량은 약 6.5GB, gemma2:9b는 약 7.0GB 수준으로 16GB 통합 메모리에서 다른 작업과 병행 실행이 가능한 범위예요. M3의 통합 메모리 구조와 Metal API 덕분에 NVIDIA GPU 없이도 8B 이하 모델을 실용적으로 활용할 수 있어요."
 aliases:
   - "/tech/2026-03-31-m3-맥북-ollama-한국어-토큰-속도-llama32-gemma2-실측-비교-2025/"
+  - "/ko/tech/2026-03-31-m3-맥북-ollama-한국어-토큰-속도-llama32-gemma2-실측-비교-2025/"
 
 ---
 

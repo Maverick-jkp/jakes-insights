@@ -21,6 +21,7 @@ faq:
     answer: "workflow_dispatch 트리거를 cron과 함께 설정하면 예약 실행 외에도 GitHub UI에서 언제든 수동으로 워크플로우를 직접 실행할 수 있습니다. cron이 돌지 않는 상황에서 설정 문제인지 인프라 문제인지 빠르게 구분할 수 있어 디버깅이 훨씬 수월해집니다."
 aliases:
   - "/tech/2026-05-11-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-체크리스트-hugo-/"
+  - "/ko/tech/2026-05-11-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-체크리스트-hugo-/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "M3 맥북 Ollama llama3.2 한국어 토큰 생성 속도 GPT-4o-mini 실측 비교 2025 자료에 따르면, EXAONE 3.5 7.8B와 Qwen 3 8B 같은 한국어 특화 로컬 모델이 GPT-4o-mini와의 품질 격차를 15~20% 이내로 좁혔습니다. RAG 기반 한국어 태스크나 단순 답변 보조·코드 리뷰 수준에선 이 모델들이 충분한 대안이 될 수 있습니다."
 aliases:
   - "/tech/2026-05-01-m3-맥북-ollama-llama32-한국어-토큰-생성-속도-gpt4omini-실측-비교-/"
+  - "/ko/tech/2026-05-01-m3-맥북-ollama-llama32-한국어-토큰-생성-속도-gpt4omini-실측-비교-/"
 
 ---
 

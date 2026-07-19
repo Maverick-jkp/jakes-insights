@@ -21,6 +21,7 @@ faq:
     answer: "'Vercel 스케줄 cron 함수 무료 플랜 실행 안될 때 GitHub Actions 대체 구현 실전 후기'에서 다룬 GitHub Actions 방식 외에도 Vercel Pro 플랜으로 업그레이드($20/월)하는 방법이 있습니다. Pro 플랜은 설정 복잡도가 낮고 실행 정확도가 높으며 Vercel 대시보드에서 로그를 바로 확인할 수 있다는 장점이 있습니다. 이미 Pro 플랜을 사용 중이거나 정밀한 타이밍이 필요한 경우라면 Vercel 자체 cron을 그대로 쓰는 것이 더 나은 선택입니다."
 aliases:
   - "/tech/2026-04-15-vercel-스케줄-cron-함수-무료-플랜-실행-안될-때-github-actions-대체/"
+  - "/ko/tech/2026-04-15-vercel-스케줄-cron-함수-무료-플랜-실행-안될-때-github-actions-대체/"
 
 ---
 

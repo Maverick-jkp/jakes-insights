@@ -21,6 +21,7 @@ faq:
     answer: "영어는 대부분 1바이트 ASCII 범위 안에 있어 청크가 어느 위치에서 잘려도 글자가 완성되지만, 한국어는 UTF-8 기준 3바이트라 청크 경계에 걸리면 불완전한 바이트 시퀀스가 생깁니다. Vercel Edge Runtime은 V8 기반 경량 런타임이라 멀티바이트 경계 처리를 개발자가 직접 TextDecoder 설정으로 챙기지 않으면 깨진 글자가 그대로 화면에 출력됩니다."
 aliases:
   - "/tech/2026-03-13-claude-api-스트리밍-응답-nextjs-app-router-엣지-함수-한국어-끊김-/"
+  - "/ko/tech/2026-03-13-claude-api-스트리밍-응답-nextjs-app-router-엣지-함수-한국어-끊김-/"
 
 ---
 

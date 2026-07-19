@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 풀스택 인프라 Fly.io Cloudflare R2 Supabase 실제 청구서 공개 내용에 따르면, 한국 사용자를 대상으로 할 경우 Fly.io 배포 시 기본값인 버지니아(iad) 리전 대신 반드시 도쿄(nrt) 또는 인천(icn) 리전을 선택해야 합니다. 기본 리전으로 배포하면 레이턴시가 200ms 이상 추가되어 체감 속도가 크게 저하될 수 있습니다."
 aliases:
   - "/tech/2026-03-17-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-cloudflare-r2-supab/"
+  - "/ko/tech/2026-03-17-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-cloudflare-r2-supab/"
 
 ---
 

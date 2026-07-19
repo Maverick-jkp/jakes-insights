@@ -21,6 +21,7 @@ faq:
     answer: "월 100~500명 유저 규모의 인디 SaaS MVP라면 Fly.io + Supabase + Cloudflare 조합이 검증된 선택입니다. Supabase의 Row Level Security로 멀티테넌트 데이터 격리가 즉시 가능하고, Stripe 연동도 Fly.io에서 충분히 소화되며, 경쟁 스택인 Render + PlanetScale 조합 대비 월 7달러 이상 절감됩니다."
 aliases:
   - "/tech/2026-03-26-1인-개발자-사이드-프로젝트-월-5달러-이하-인프라-flyio-supabase-cloudf/"
+  - "/ko/tech/2026-03-26-1인-개발자-사이드-프로젝트-월-5달러-이하-인프라-flyio-supabase-cloudf/"
 
 ---
 

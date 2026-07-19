@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 15달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 내역 2025 기준으로, MAU 100명 서비스에서 AWS는 월 25~35달러인 반면 이 조합은 월 0~5달러로 운영 가능해요. MAU 1,000명 기준에서도 AWS가 35~50달러인 데 비해 Fly.io + Supabase + Cloudflare 조합은 5~14달러 수준으로 유지되어 초기 스타트업이나 사이드 프로젝트에 실질적인 비용 절감 효과를 제공해요."
 aliases:
   - "/tech/2026-05-13-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+  - "/ko/tech/2026-05-13-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
 
 ---
 

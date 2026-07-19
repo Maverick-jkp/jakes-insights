@@ -21,6 +21,7 @@ faq:
     answer: "Supabase Row Level Security 실제 서비스 적용 삽질 후기 Next.js 연동 경험을 바탕으로 정리하면, createServerClient를 사용해 Next.js의 cookies()에서 쿠키 값을 읽어 클라이언트를 초기화하는 방식이 공식 권장 패턴입니다. 이렇게 구성해야 서버 컴포넌트에서 인증된 사용자의 세션이 RLS 정책에 올바르게 반영됩니다."
 aliases:
   - "/tech/2026-04-11-supabase-row-level-security-실제-서비스-적용-삽질-후기-nextjs/"
+  - "/ko/tech/2026-04-11-supabase-row-level-security-실제-서비스-적용-삽질-후기-nextjs/"
 
 ---
 

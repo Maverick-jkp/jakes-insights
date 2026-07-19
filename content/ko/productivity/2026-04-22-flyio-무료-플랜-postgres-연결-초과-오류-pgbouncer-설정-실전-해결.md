@@ -21,6 +21,7 @@ faq:
     answer: "fly postgres connect -a <앱이름> 명령으로 Postgres에 접속한 뒤, SELECT count(*), state FROM pg_stat_activity GROUP BY state; 쿼리로 현재 연결 수와 상태를 확인할 수 있어요. Fly.io 무료 플랜 Postgres 연결 초과 오류를 PgBouncer 설정으로 실전 해결한 후에는 실제 DB 연결 수가 default_pool_size로 설정한 값(예: 10개) 이하로 유지되는지 이 쿼리로 검증하는 것이 좋아요."
 aliases:
   - "/tech/2026-04-22-flyio-무료-플랜-postgres-연결-초과-오류-pgbouncer-설정-실전-해결/"
+  - "/ko/tech/2026-04-22-flyio-무료-플랜-postgres-연결-초과-오류-pgbouncer-설정-실전-해결/"
 
 ---
 

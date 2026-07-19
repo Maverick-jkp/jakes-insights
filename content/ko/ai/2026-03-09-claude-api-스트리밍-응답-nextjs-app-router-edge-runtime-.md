@@ -21,6 +21,7 @@ faq:
     answer: "일반적인 스트리밍 상황에서는 Web Standard API인 TextDecoderStream이 코드가 단순하고 Edge Runtime과 완전히 호환되어 권장됩니다. 다만 청크를 직접 파싱하거나 변환 로직이 복잡한 경우에는 TransformStream과 수동 디코딩 조합이 더 유연하게 대응할 수 있으며, Vercel Edge Network 기준으로 두 방법 모두 안정적으로 동작합니다."
 aliases:
   - "/tech/2026-03-09-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
+  - "/ko/tech/2026-03-09-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
 
 ---
 

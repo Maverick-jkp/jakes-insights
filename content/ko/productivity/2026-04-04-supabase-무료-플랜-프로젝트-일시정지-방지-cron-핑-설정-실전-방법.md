@@ -21,6 +21,7 @@ faq:
     answer: "네, pg_cron과 pg_net 확장을 조합하면 GitHub Actions나 cron-job.org 같은 외부 서비스 없이 Supabase 프로젝트 내부에서 완결되는 핑 구조를 만들 수 있어요. SQL Editor에서 cron.schedule() 함수로 잡을 등록하면 데이터베이스가 직접 지정된 URL로 HTTP 요청을 보내요. 이 방식은 외부 의존성이 없어 유지 비용이 0원이고 별도 관리가 필요 없다는 장점이 있어요."
 aliases:
   - "/tech/2026-04-04-supabase-무료-플랜-프로젝트-일시정지-방지-cron-핑-설정-실전-방법/"
+  - "/ko/tech/2026-04-04-supabase-무료-플랜-프로젝트-일시정지-방지-cron-핑-설정-실전-방법/"
 
 ---
 

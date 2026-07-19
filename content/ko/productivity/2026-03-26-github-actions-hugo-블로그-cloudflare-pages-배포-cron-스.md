@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 스케줄이 무시될 때 해결법 중 하나로 workflow_dispatch를 함께 설정하면 스케줄이 멈춘 상황에서도 버튼 클릭 한 번으로 워크플로를 즉시 실행해 문제를 바로 재현하고 디버깅할 수 있습니다. 또한 cron과 workflow_dispatch를 병행하면 60일 비활성화 정책을 우회하는 빈 커밋 자동화 없이도 수동 실행으로 저장소 활동을 유지하는 데 도움이 됩니다. yaml 파일에 'workflow_dispatch:' 한 줄만 추가하면 적용됩니다."
 aliases:
   - "/tech/2026-03-26-github-actions-hugo-블로그-cloudflare-pages-배포-cron-스/"
+  - "/ko/tech/2026-03-26-github-actions-hugo-블로그-cloudflare-pages-배포-cron-스/"
 
 ---
 

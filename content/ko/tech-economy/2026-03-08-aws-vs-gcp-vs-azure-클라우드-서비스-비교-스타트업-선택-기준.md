@@ -21,6 +21,7 @@ faq:
     answer: "AWS vs GCP vs Azure 클라우드 서비스 비교: 스타트업 선택 기준에 따르면, 인스턴스 단가만 보면 GCP e2-medium이 월 약 $25로 AWS t3.medium($30), Azure B2ms($38)보다 저렴해 보여요. 하지만 네트워크 아웃바운드 트래픽, 스토리지 I/O 과금 방식을 합산하면 실제 청구액은 달라지며, FinOps Foundation 2025년 보고서에서도 예상치 못한 비용의 주범 1위로 네트워크 아웃바운드 트래픽을 꼽았어요."
 aliases:
   - "/tech/2026-03-08-aws-vs-gcp-vs-azure-클라우드-서비스-비교-스타트업-선택-기준/"
+  - "/ko/tech/2026-03-08-aws-vs-gcp-vs-azure-클라우드-서비스-비교-스타트업-선택-기준/"
 
 ---
 

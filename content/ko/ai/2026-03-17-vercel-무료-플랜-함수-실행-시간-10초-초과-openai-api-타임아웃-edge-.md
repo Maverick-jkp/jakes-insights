@@ -21,6 +21,7 @@ faq:
     answer: "Edge Runtime은 V8 Isolate 기반으로 동작해 fs, crypto 일부, 일부 npm 패키지를 사용할 수 없습니다. Vercel 공식 문서에 따르면 fetch, ReadableStream, TextEncoder 등 Web API 표준만 안정적으로 지원됩니다. 따라서 파일 시스템 접근이나 Node.js 전용 모듈이 필요한 기능은 Edge Runtime으로 마이그레이션하기 어렵습니다."
 aliases:
   - "/tech/2026-03-17-vercel-무료-플랜-함수-실행-시간-10초-초과-openai-api-타임아웃-edge-/"
+  - "/ko/tech/2026-03-17-vercel-무료-플랜-함수-실행-시간-10초-초과-openai-api-타임아웃-edge-/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "Hugo는 프론트매터의 date 필드가 빌드 시점보다 미래면 해당 포스트를 자동으로 미발행 처리해요. 예를 들어 KST 기준 날짜를 그대로 쓰면 UTC 변환 후 빌드 시점보다 미래가 되어 포스트가 숨겨질 수 있어요. 빌드 커맨드에 --buildFuture 플래그를 추가하거나, date 필드를 빌드 시점보다 충분히 이른 시간으로 설정하면 해결돼요."
 aliases:
   - "/tech/2026-04-12-github-actions-hugo-블로그-cloudflare-pages-배포-cron-트/"
+  - "/ko/tech/2026-04-12-github-actions-hugo-블로그-cloudflare-pages-배포-cron-트/"
 
 ---
 

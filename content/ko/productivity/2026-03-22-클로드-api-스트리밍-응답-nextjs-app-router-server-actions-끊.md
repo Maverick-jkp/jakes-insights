@@ -21,6 +21,7 @@ faq:
     answer: "클로드 API 스트리밍 응답 Next.js App Router Server Actions 끊김 현상을 Route Handler 전환으로 해결하면, 첫 청크까지 걸리는 시간(TTFB)이 평균 6~10초에서 0.8~1.2초로 단축되는 사례가 다수 보고되고 있습니다. 이는 JSON 직렬화 버퍼링 단계가 제거되어 Claude API의 SSE 청크가 클라이언트에 즉시 전달되기 때문입니다."
 aliases:
   - "/tech/2026-03-22-클로드-api-스트리밍-응답-nextjs-app-router-server-actions-끊/"
+  - "/ko/tech/2026-03-22-클로드-api-스트리밍-응답-nextjs-app-router-server-actions-끊/"
 
 ---
 

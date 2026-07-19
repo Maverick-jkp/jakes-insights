@@ -21,6 +21,7 @@ faq:
     answer: "서버에서 Claude API의 stream.toReadableStream()을 Response로 반환하면, 클라이언트에서는 fetch()로 해당 엔드포인트를 호출한 뒤 response.body를 ReadableStream으로 읽으면 돼요. 이렇게 하면 서버에서 토큰이 생성되는 즉시 청크 단위로 받아서 화면에 실시간으로 표시할 수 있어요."
 aliases:
   - "/tech/2026-04-16-claude-api-스트리밍-응답-nextjs-14-app-router-서버-액션-적용-시/"
+  - "/ko/tech/2026-04-16-claude-api-스트리밍-응답-nextjs-14-app-router-서버-액션-적용-시/"
 
 ---
 

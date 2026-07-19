@@ -21,6 +21,7 @@ faq:
     answer: "Supabase 무료 플랜 프로젝트 일시정지 해제 자동화 방법 중 GitHub Actions cron 설정은 별도 외부 서비스 의존 없이 리포지토리 하나로 완결되어 안정성과 관리 편의성 면에서 가장 우수해요. Uptime Robot 같은 외부 서비스도 무료로 사용 가능하지만, 해당 서비스 자체의 장애나 정책 변경에 영향을 받을 수 있어요. 이미 GitHub을 사용하는 개발자라면 GitHub Actions 방식이 설정 난이도도 낮고 추가 계정 관리도 필요 없어 더 실용적인 선택이에요."
 aliases:
   - "/tech/2026-04-06-supabase-무료-플랜-프로젝트-일시정지-해제-자동화-github-actions-cro/"
+  - "/ko/tech/2026-04-06-supabase-무료-플랜-프로젝트-일시정지-해제-자동화-github-actions-cro/"
 
 ---
 

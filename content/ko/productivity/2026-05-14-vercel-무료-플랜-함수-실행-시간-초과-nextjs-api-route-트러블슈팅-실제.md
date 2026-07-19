@@ -21,6 +21,7 @@ faq:
     answer: "Serverless Function은 Node.js 런타임 기반으로 콜드 스타트가 1-2초 발생하고 Hobby 플랜 기준 최대 10초 실행 제한이 있습니다. Edge Runtime은 V8 기반으로 동작해 콜드 스타트가 거의 없고 응답 속도가 빠르지만, Node.js 전용 API나 일부 npm 패키지를 사용할 수 없다는 제약이 있습니다."
 aliases:
   - "/tech/2026-05-14-vercel-무료-플랜-함수-실행-시간-초과-nextjs-api-route-트러블슈팅-실제/"
+  - "/ko/tech/2026-05-14-vercel-무료-플랜-함수-실행-시간-초과-nextjs-api-route-트러블슈팅-실제/"
 
 ---
 

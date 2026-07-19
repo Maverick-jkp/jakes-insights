@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 인프라를 Fly.io, Cloudflare Workers, Docker Compose 실제 청구서 기준으로 비교하면, 풀스택 앱에는 Fly.io가 가장 균형적입니다. Docker 이미지를 그대로 push하면 되고 PostgreSQL 포함 최소 구성 기준 월 4~6달러로 10달러 이하를 유지할 수 있습니다. 다만 장기적으로 여러 서비스를 운영할 계획이라면 Hetzner VPS + Docker Compose가 고정 비용으로 더 유리합니다."
 aliases:
   - "/tech/2026-04-19-1인-개발자-월-10달러-이하-인프라-flyio-cloudflare-workers-dock/"
+  - "/ko/tech/2026-04-19-1인-개발자-월-10달러-이하-인프라-flyio-cloudflare-workers-dock/"
 
 ---
 

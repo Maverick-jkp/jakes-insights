@@ -21,6 +21,7 @@ faq:
     answer: "Timeplus 2024 벤치마크 기준으로 WebSocket과 SSE의 처리량·지연시간 차이는 사실상 무시할 수준이에요. 초당 10만 이벤트 환경에서 두 프로토콜 모두 초당 약 300만 이벤트 처리에 도달했고, 지연시간도 WebSocket 45ms, SSE 48ms로 3ms 차이에 불과해요. 성능보다는 메모리 효율, 인프라 호환성, 구현 복잡도가 실제 선택 기준이 돼요."
 aliases:
   - "/tech/2026-03-06-websocket-vs-serversent-events-실시간-앱-아키텍처-비교/"
+  - "/ko/tech/2026-03-06-websocket-vs-serversent-events-실시간-앱-아키텍처-비교/"
 
 ---
 

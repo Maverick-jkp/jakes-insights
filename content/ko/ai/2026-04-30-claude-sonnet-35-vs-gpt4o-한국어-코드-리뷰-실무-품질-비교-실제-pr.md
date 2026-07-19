@@ -21,6 +21,7 @@ faq:
     answer: "Stack Overflow Developer Survey 2025에 따르면 응답자의 62%가 코드 리뷰 과정에 AI 도구를 정기적으로 사용한다고 답했으며, 이는 전년도 38%에서 크게 증가한 수치예요. 국내도 마찬가지로 JetBrains 2025 Developer Ecosystem Report에서 한국 개발자의 AI 보조 코드 리뷰 도구 사용률이 전년 대비 약 두 배 증가한 것으로 나타났어요."
 aliases:
   - "/tech/2026-04-30-claude-sonnet-35-vs-gpt4o-한국어-코드-리뷰-실무-품질-비교-실제-pr/"
+  - "/ko/tech/2026-04-30-claude-sonnet-35-vs-gpt4o-한국어-코드-리뷰-실무-품질-비교-실제-pr/"
 
 ---
 

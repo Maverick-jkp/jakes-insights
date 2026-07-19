@@ -21,6 +21,7 @@ faq:
     answer: "AI 스트리밍 워크로드에는 Node.js Runtime이 적합하고, 짧은 응답이나 인증·A/B 테스트처럼 빠른 응답이 중요한 경우에는 Edge Runtime이 유리해요. Claude API처럼 응답 생성에 수십 초 이상 걸릴 수 있는 작업은 Edge Runtime의 30초 제한에 걸릴 수 있으므로 Node.js Runtime에 maxDuration을 설정하는 방식을 권장해요."
 aliases:
   - "/tech/2026-03-27-nextjs-app-router-edge-runtime-vs-nodejs-runtime-c/"
+  - "/ko/tech/2026-03-27-nextjs-app-router-edge-runtime-vs-nodejs-runtime-c/"
 
 ---
 

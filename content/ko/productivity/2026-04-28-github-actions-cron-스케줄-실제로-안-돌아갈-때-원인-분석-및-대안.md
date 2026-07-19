@@ -21,6 +21,7 @@ faq:
     answer: "Supabase 프리 티어는 일정 기간 활동이 없으면 프로젝트가 paused 상태가 되는데, GitHub Actions cron으로 주기적 ping을 설정해도 60일 비활성화 정책 때문에 워크플로우 자체가 멈출 수 있습니다. Cron-job.org 무료 플랜에서 7일마다 repository_dispatch 이벤트를 트리거하도록 설정하면 GitHub의 비활성화 정책과 Supabase paused 문제를 동시에 해결할 수 있습니다. 이 방식은 외부 서비스 의존성이 생기지만 비용이 들지 않아 개인 프로젝트에 적합합니다."
 aliases:
   - "/tech/2026-04-28-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-및-대안/"
+  - "/ko/tech/2026-04-28-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-및-대안/"
 
 ---
 

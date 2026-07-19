@@ -21,6 +21,7 @@ faq:
     answer: "2025~2026년 기준 1인 개발자 월 10달러 이하 인프라로 Fly.io Docker Compose 실제 비용 청구서를 공개한 사례들이 Indie Hackers 등 커뮤니티에 다수 공유되어 있습니다. MAU 2,000명 규모 구독형 SaaS 기준으로 Fly.io, Supabase, Cloudflare, Resend 조합 시 핵심 인프라 비용이 월 0달러에 수렴하는 구조가 반복적으로 확인되고 있습니다."
 aliases:
   - "/tech/2026-03-11-1인-개발자-월-10달러-이하-인프라-flyio-docker-compose-실제-비용-청구/"
+  - "/ko/tech/2026-03-11-1인-개발자-월-10달러-이하-인프라-flyio-docker-compose-실제-비용-청구/"
 
 ---
 

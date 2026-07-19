@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 후기를 보면, 프론트엔드는 Cloudflare Pages, DB와 인증은 Supabase, API 서버나 백엔드 앱은 Fly.io로 역할을 나누는 조합이 가장 효율적이에요. Cloudflare는 콜드 스타트가 없는 엣지 환경이라 프론트엔드와 API 캐싱에 적합하고, Supabase는 PostgreSQL·Auth·스토리지를 한 번에 해결해줘서 백엔드 개발 부담을 크게 줄여줘요."
 aliases:
   - "/tech/2026-05-11-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+  - "/ko/tech/2026-05-11-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
 
 ---
 

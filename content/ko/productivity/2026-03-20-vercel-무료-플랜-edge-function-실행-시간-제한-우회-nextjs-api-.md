@@ -21,6 +21,7 @@ faq:
     answer: "Vercel 무료 플랜 Edge Function에서 LLM 스트리밍을 프록시하면 전체 연결 유지 시간이 실행 시간에 포함되어 25초 한도에 빠르게 걸립니다. 이 문제는 'export const runtime = nodejs'로 Node.js Serverless Function으로 전환하고 ReadableStream을 활용해 스트리밍 응답을 구현하면 최대 60초까지 연결을 유지할 수 있습니다. 응답이 더 길어질 가능성이 있다면 큐 패턴을 결합해 백그라운드에서 처리하는 구조를 고려하는 것이 좋습니다."
 aliases:
   - "/tech/2026-03-20-vercel-무료-플랜-edge-function-실행-시간-제한-우회-nextjs-api-/"
+  - "/ko/tech/2026-03-20-vercel-무료-플랜-edge-function-실행-시간-제한-우회-nextjs-api-/"
 
 ---
 

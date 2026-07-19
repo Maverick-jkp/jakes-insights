@@ -21,6 +21,7 @@ faq:
     answer: "textContent는 입력값을 HTML이 아닌 순수 텍스트로 처리하기 때문에 파싱 자체가 발생하지 않아 XSS를 방지할 수 있습니다. 다만 이 방식은 HTML 태그 자체가 필요 없는 단순 텍스트 출력 상황에만 적용 가능하며, 서식 있는 HTML을 동적으로 삽입해야 하는 경우에는 setHTML()이나 DOMPurify를 활용한 sanitize 처리가 필요합니다."
 aliases:
   - "/tech/2026-02-25-innerhtml-보안-취약점-sethtml-firefox-마이그레이션/"
+  - "/ko/tech/2026-02-25-innerhtml-보안-취약점-sethtml-firefox-마이그레이션/"
 
 ---
 

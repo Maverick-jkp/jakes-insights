@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare Pages 대시보드에서 Settings → Builds & Deployments → Deploy Hooks 메뉴로 이동해 Hook URL을 생성한 뒤, 해당 URL을 GitHub Secrets에 CF_DEPLOY_HOOK으로 저장합니다. GitHub Actions 워크플로우에서 curl -X POST '${{ secrets.CF_DEPLOY_HOOK }}' 명령을 실행하면 새 커밋 없이도 Cloudflare Pages 빌드를 직접 트리거할 수 있어 cron 기반 자동 배포를 더 안정적으로 운영할 수 있습니다."
 aliases:
   - "/tech/2026-05-20-github-actions-hugo-블로그-cloudflare-pages-자동-배포-cro/"
+  - "/ko/tech/2026-05-20-github-actions-hugo-블로그-cloudflare-pages-자동-배포-cro/"
 
 ---
 

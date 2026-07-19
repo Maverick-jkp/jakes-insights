@@ -21,6 +21,7 @@ faq:
     answer: "TeamPCP는 npm 레지스트리에서 신뢰받는 패키지를 탈취해 백도어를 심는 방식의 공격을 반복하는 해킹 그룹으로, 이번 @bitwarden/cli 공격은 'Shai-Hulud'라는 이름으로 추적되는 세 번째 변종 캠페인입니다. JFrog, OX Security, Endor Labs 세 곳의 보안 연구팀이 공격을 분석했으며, 이전 두 차례 공격보다 기법이 더 정교해진 형태로 재등장한 것이 특징입니다."
 aliases:
   - "/tech/2026-04-24-bitwarden-cli-해킹-공급망-공격-국내-개발자-대응/"
+  - "/ko/tech/2026-04-24-bitwarden-cli-해킹-공급망-공격-국내-개발자-대응/"
 
 ---
 

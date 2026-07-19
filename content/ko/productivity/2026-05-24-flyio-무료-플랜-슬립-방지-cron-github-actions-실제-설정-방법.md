@@ -21,6 +21,7 @@ faq:
     answer: "Fly.io 무료 플랜 슬립 방지 cron GitHub Actions 실제 설정 방법을 적용할 때 별도의 /health 엔드포인트가 없으면 curl 요청 시 404 또는 에러가 반환될 수 있어 엔드포인트를 추가하는 것이 권장됩니다. Express 기준으로 res.status(200).json({ status: 'ok' }) 형태의 가벼운 응답만 반환하면 충분하며, DB 조회 같은 무거운 작업은 포함하지 않는 것이 중요합니다."
 aliases:
   - "/tech/2026-05-24-flyio-무료-플랜-슬립-방지-cron-github-actions-실제-설정-방법/"
+  - "/ko/tech/2026-05-24-flyio-무료-플랜-슬립-방지-cron-github-actions-실제-설정-방법/"
 
 ---
 

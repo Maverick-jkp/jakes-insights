@@ -21,6 +21,7 @@ faq:
     answer: "Hugo 블로그 자동 배포 트러블슈팅에서 GitHub Actions cron 스케줄이 실제로 안 돌아갈 때 가장 먼저 확인해야 할 건 워크플로 파일 위치예요. `.github/workflows/deploy.yml` 파일이 반드시 리포지토리의 default branch(보통 main)에 있어야 schedule 트리거가 동작해요. 또한 배포 단계에서 권한 오류가 발생한다면 워크플로에 `permissions: contents: write` 설정을 추가해야 해요."
 aliases:
   - "/tech/2026-05-08-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-hugo-블로그/"
+  - "/ko/tech/2026-05-08-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-hugo-블로그/"
 
 ---
 

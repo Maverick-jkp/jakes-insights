@@ -21,6 +21,7 @@ faq:
     answer: "Tailscale 홈서버 Cloudflare Tunnel 동시 사용 DNS 충돌 해결 Ubuntu 24.04 실전 가이드에 따르면 Split DNS 방식이 더 권장됩니다. MagicDNS를 완전히 끄면 Tailscale 내부 도메인을 수동으로 관리해야 해 유지보수 부담이 커지는 반면, Split DNS는 한 번 설정해두면 두 도구가 각자 역할을 간섭 없이 수행하고 보안상 포트를 외부에 노출하지 않아도 됩니다."
 aliases:
   - "/tech/2026-05-17-tailscale-홈서버-cloudflare-tunnel-동시-사용-dns-충돌-해결-ub/"
+  - "/ko/tech/2026-05-17-tailscale-홈서버-cloudflare-tunnel-동시-사용-dns-충돌-해결-ub/"
 
 ---
 

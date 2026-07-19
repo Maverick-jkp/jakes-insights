@@ -21,6 +21,7 @@ faq:
     answer: "App Router 관련 규칙으로는 `pages/` 디렉토리 사용 금지, Server Component에서 직접 데이터 페칭, 클라이언트 컴포넌트 최상단에 `'use client'` 명시, Server Action은 `'use server'` 지시문과 함께 별도 파일로 분리하는 내용을 넣으면 돼요. AI가 학습 데이터에 Pages Router 패턴이 많이 섞여 있어서 명시하지 않으면 구형 패턴을 생성하는 경우가 있기 때문에, 이 규칙들을 `.cursorrules`에 적어두는 것이 중요해요."
 aliases:
   - "/tech/2026-04-12-cursor-ide-규칙-파일-cursorrules-실무-프롬프트-설정-typescript/"
+  - "/ko/tech/2026-04-12-cursor-ide-규칙-파일-cursorrules-실무-프롬프트-설정-typescript/"
 
 ---
 

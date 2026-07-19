@@ -21,6 +21,7 @@ faq:
     answer: "Fly.io는 매달 $5 크레딧을 제공하지만, 자체 PostgreSQL 인스턴스를 연결하면 DB 비용만 월 $2.5 안팎이 소진돼요. 남은 크레딧으로 앱 서버(shared-cpu-1x + 256MB RAM 기준 월 $1.94)를 돌리면 빠듯하게 맞지만, 트래픽이 늘면 egress 비용이 추가로 발생할 수 있어요."
 aliases:
   - "/tech/2026-03-24-1인-개발자-월-5달러-이하-풀스택-앱-배포-flyio-railway-render-실제-비/"
+  - "/ko/tech/2026-03-24-1인-개발자-월-5달러-이하-풀스택-앱-배포-flyio-railway-render-실제-비/"
 
 ---
 

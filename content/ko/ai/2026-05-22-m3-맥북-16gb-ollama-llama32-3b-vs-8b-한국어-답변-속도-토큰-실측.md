@@ -21,6 +21,7 @@ faq:
     answer: "Apple Silicon은 GPU와 CPU가 같은 메모리 풀을 공유하는 통합 메모리 구조라, 기존 PC처럼 VRAM과 RAM을 따로 관리할 필요가 없습니다. 덕분에 M3 맥북 16GB 환경에서 8B 모델까지 별도 그래픽 카드 없이 실행할 수 있으며, M3의 Neural Engine이 작은 모델일수록 더 효율적으로 동작해 3B에서 높은 토큰 속도를 낼 수 있어요."
 aliases:
   - "/tech/2026-05-22-m3-맥북-16gb-ollama-llama32-3b-vs-8b-한국어-답변-속도-토큰-실측/"
+  - "/ko/tech/2026-05-22-m3-맥북-16gb-ollama-llama32-3b-vs-8b-한국어-답변-속도-토큰-실측/"
 
 ---
 

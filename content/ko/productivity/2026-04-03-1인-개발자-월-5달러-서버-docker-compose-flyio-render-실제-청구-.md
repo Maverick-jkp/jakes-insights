@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 5달러 서버 Docker Compose Fly.io Render 실제 청구 금액 비교 2025 자료에 따르면, 초기 개발 단계에는 Render의 편리한 배포 경험을 활용하고, 서비스가 안정화되면 Hetzner 같은 VPS에 Docker Compose로 이전하는 방식이 비용과 편의성을 모두 챙기는 전략으로 꼽혀요. PaaS의 공시 가격만 보고 선택하면 실제 청구 금액이 35~60% 더 나올 수 있으니, 트래픽과 DB 비용까지 포함한 총비용을 반드시 시뮬레이션해보는 게 중요해요."
 aliases:
   - "/tech/2026-04-03-1인-개발자-월-5달러-서버-docker-compose-flyio-render-실제-청구-/"
+  - "/ko/tech/2026-04-03-1인-개발자-월-5달러-서버-docker-compose-flyio-render-실제-청구-/"
 
 ---
 

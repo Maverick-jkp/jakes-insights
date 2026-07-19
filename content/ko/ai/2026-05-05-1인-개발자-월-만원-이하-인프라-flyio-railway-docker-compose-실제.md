@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 만원 이하 인프라 Fly.io Railway Docker Compose 실제 청구 비용 6개월 후기에서는 플랫폼 선택의 핵심 변수로 '서버를 직접 관리할 시간이 있냐 없냐'를 꼽아요. 배포 편의성을 원하면 Railway(Git push 배포), 비용 최적화가 우선이면 VPS + Docker Compose, 그 중간이라면 Fly.io가 현실적인 선택지예요."
 aliases:
   - "/tech/2026-05-05-1인-개발자-월-만원-이하-인프라-flyio-railway-docker-compose-실제/"
+  - "/ko/tech/2026-05-05-1인-개발자-월-만원-이하-인프라-flyio-railway-docker-compose-실제/"
 
 ---
 

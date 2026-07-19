@@ -21,6 +21,7 @@ faq:
     answer: "Pro 업그레이드 없이 10초 제한을 우회하는 방법으로는 Edge Runtime 전환(30초로 연장), AI API route에 스트리밍 응답 적용, 무거운 작업을 Supabase Edge Functions나 외부 백그라운드 큐로 분리하는 세 가지 방식이 있습니다. 단순 JSON 처리나 외부 API 집계 route는 Edge Runtime 전환만으로도 충분히 해결되는 경우가 많습니다. 파일 파싱이나 이미지 처리처럼 복잡한 작업은 로직 자체를 분리하지 않으면 어떤 방법으로도 Hobby 플랜 안에서 해결하기 어렵습니다."
 aliases:
   - "/tech/2026-05-08-vercel-무료-플랜-함수-실행-시간-10초-초과-해결-nextjs-api-route-e/"
+  - "/ko/tech/2026-05-08-vercel-무료-플랜-함수-실행-시간-10초-초과-해결-nextjs-api-route-e/"
 
 ---
 

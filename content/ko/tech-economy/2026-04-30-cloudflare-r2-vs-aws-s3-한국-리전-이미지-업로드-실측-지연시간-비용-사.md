@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare R2 vs AWS S3 한국 리전 이미지 업로드 실측 지연시간 비용 사이드 프로젝트 전환 후기에 따르면 코드 변경은 최소 수준이에요. 기존에 사용하던 `@aws-sdk/client-s3` 라이브러리를 그대로 유지하면서 region을 'auto'로, endpoint를 R2 전용 URL로, credentials만 R2 키로 교체하면 전환이 완료돼요. S3 호환 API를 지원하기 때문에 버킷 생성과 자격증명 발급을 제외하면 실질적인 로직 수정은 거의 필요하지 않아요."
 aliases:
   - "/tech/2026-04-30-cloudflare-r2-vs-aws-s3-한국-리전-이미지-업로드-실측-지연시간-비용-사/"
+  - "/ko/tech/2026-04-30-cloudflare-r2-vs-aws-s3-한국-리전-이미지-업로드-실측-지연시간-비용-사/"
 
 ---
 

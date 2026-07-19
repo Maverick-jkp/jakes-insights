@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions OIDC Cloudflare Pages 배포 secrets 없이 설정하는 법 삽질 기록에 따르면 OIDC 설정 오류 시 에러 없이 조용히 실패하는 silent failure가 발생할 수 있어요. 디버깅 시 가장 먼저 확인할 사항은 permissions 블록의 id-token: write 누락 여부, wrangler-action 버전이 v3.4.0 이상인지, 그리고 Cloudflare 대시보드에서 해당 리포지토리와 브랜치에 대한 OIDC 신뢰 설정이 올바르게 되어 있는지 순서로 점검하는 게 효율적이에요."
 aliases:
   - "/tech/2026-04-29-github-actions-oidc-cloudflare-pages-배포-secrets-없이/"
+  - "/ko/tech/2026-04-29-github-actions-oidc-cloudflare-pages-배포-secrets-없이/"
 
 ---
 

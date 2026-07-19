@@ -21,6 +21,7 @@ faq:
     answer: "1GB RAM 서버에서 Linux 커널과 OS 기본 프로세스에 약 100MB, Docker 데몬에 약 100~150MB가 선점되어 실제 컨테이너에 배분 가능한 메모리는 700~750MB 수준입니다. Nginx 64MB, Postgres 256MB, Node 300MB로 총 620MB를 배분하면 남은 여유분으로 OS와 Docker 데몬 오버헤드를 감당할 수 있어 안정적인 운영이 가능합니다."
 aliases:
   - "/tech/2026-05-07-docker-compose-단일-서버-ram-1gb-nginx-postgres-node-동/"
+  - "/ko/tech/2026-05-07-docker-compose-단일-서버-ram-1gb-nginx-postgres-node-동/"
 
 ---
 

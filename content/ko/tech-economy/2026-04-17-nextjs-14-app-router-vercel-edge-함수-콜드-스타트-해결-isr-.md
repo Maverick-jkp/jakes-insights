@@ -21,6 +21,7 @@ faq:
     answer: "Next.js 14 App Router Vercel Edge 함수 콜드 스타트 해결 ISR 설정 실측 후기에 따르면 2026년 Vercel의 Fluid Compute 모드는 Edge 워커 재사용 방식을 변경하여 콜드 스타트 발생 빈도 자체를 낮추는 효과가 있습니다. 다만 모든 플랜에 적용되지는 않으므로, 현재 플랜에서 Fluid Compute 지원 여부를 Vercel 공식 문서에서 확인한 후 도입 여부를 판단하는 것이 좋습니다."
 aliases:
   - "/tech/2026-04-17-nextjs-14-app-router-vercel-edge-함수-콜드-스타트-해결-isr-/"
+  - "/ko/tech/2026-04-17-nextjs-14-app-router-vercel-edge-함수-콜드-스타트-해결-isr-/"
 
 ---
 

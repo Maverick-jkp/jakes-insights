@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Copilot Cursor 실무 3개월 병행 사용 TypeScript 풀스택 자동완성 수락률 비교 솔직 리뷰에서 측정한 결과, 전체 평균 수락률은 Cursor 약 38%, GitHub Copilot 약 27%였습니다. 작업 유형별로는 단순 함수에서 Copilot 41% 대 Cursor 35%, 멀티파일 리팩터링에서 Cursor 42% 대 Copilot 21%로 상황에 따라 역전되는 구조입니다."
 aliases:
   - "/tech/2026-04-06-github-copilot-cursor-실무-3개월-병행-사용-typescript-풀스택-/"
+  - "/ko/tech/2026-04-06-github-copilot-cursor-실무-3개월-병행-사용-typescript-풀스택-/"
 
 ---
 

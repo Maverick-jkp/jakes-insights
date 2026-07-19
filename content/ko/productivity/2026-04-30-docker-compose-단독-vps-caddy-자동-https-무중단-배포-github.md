@@ -21,6 +21,7 @@ faq:
     answer: "월 $20 수준의 단일 VPS에서 운영하는 사이드 프로젝트라면 Kubernetes는 관리 오버헤드 대비 실익이 거의 없어요. Docker Compose는 로컬 개발 환경과 프로덕션 환경의 구성 파일을 거의 그대로 공유할 수 있어서 환경 간 차이로 인한 문제가 줄고, GitHub Actions 무료 플랜(퍼블릭 레포 무제한, 프라이빗 월 2,000분)과 조합하면 추가 비용 없이 자동 배포 파이프라인을 구축할 수 있습니다."
 aliases:
   - "/tech/2026-04-30-docker-compose-단독-vps-caddy-자동-https-무중단-배포-github/"
+  - "/ko/tech/2026-04-30-docker-compose-단독-vps-caddy-자동-https-무중단-배포-github/"
 
 ---
 

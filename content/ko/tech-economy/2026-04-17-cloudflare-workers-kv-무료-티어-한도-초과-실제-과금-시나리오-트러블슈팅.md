@@ -21,6 +21,7 @@ faq:
     answer: "Cloudflare Workers KV 무료 티어 한도 초과 실제 과금 시나리오 트러블슈팅은 Cloudflare 대시보드에서 Workers & Pages → 해당 Worker → Metrics 탭을 통해 시작할 수 있습니다. kv_reads, kv_writes 등 작업별 호출 수를 시간대별로 확인해 어느 Worker에서 한도를 소진하는지 특정한 뒤, 캐시 미스 반복 읽기·list() 남발·무한 재시도 패턴 순으로 코드를 점검하면 대부분의 원인을 찾을 수 있습니다."
 aliases:
   - "/tech/2026-04-17-cloudflare-workers-kv-무료-티어-한도-초과-실제-과금-시나리오-트러블슈팅/"
+  - "/ko/tech/2026-04-17-cloudflare-workers-kv-무료-티어-한도-초과-실제-과금-시나리오-트러블슈팅/"
 
 ---
 

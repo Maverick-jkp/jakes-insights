@@ -21,6 +21,7 @@ faq:
     answer: "Next.js App Router Supabase RLS 적용 후 쿼리 느려졌을 때 원인 중 하나로 `cookies()` API를 여러 서버 컴포넌트에서 중복 호출하는 패턴이 있어요. 이 경우 세션 파싱이 요청마다 반복되어 평균 쿼리 시간이 2-4배 늘어날 수 있어요. `createServerClient`를 `cache()`로 감싼 유틸 함수로 일원화하면 `cookies()` 호출도 자연스럽게 요청당 한 번으로 줄어들어요."
 aliases:
   - "/tech/2026-04-25-nextjs-app-router-supabase-rls-적용-후-쿼리-느려졌을-때-원인-분/"
+  - "/ko/tech/2026-04-25-nextjs-app-router-supabase-rls-적용-후-쿼리-느려졌을-때-원인-분/"
 
 ---
 

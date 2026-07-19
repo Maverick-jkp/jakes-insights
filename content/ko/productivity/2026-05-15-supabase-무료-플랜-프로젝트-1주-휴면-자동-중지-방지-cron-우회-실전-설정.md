@@ -21,6 +21,7 @@ faq:
     answer: "Supabase의 pg_cron 확장과 Edge Function을 조합하면 외부 서비스 없이 DB 내부에서 self-healing 루프를 구성할 수 있어요. 다만 이 방식은 GitHub Actions나 외부 cron 서비스에 비해 설정 복잡도가 높아서, 간단한 사이드 프로젝트라면 GitHub Actions 방식이 더 실용적이에요."
 aliases:
   - "/tech/2026-05-15-supabase-무료-플랜-프로젝트-1주-휴면-자동-중지-방지-cron-우회-실전-설정/"
+  - "/ko/tech/2026-05-15-supabase-무료-플랜-프로젝트-1주-휴면-자동-중지-방지-cron-우회-실전-설정/"
 
 ---
 

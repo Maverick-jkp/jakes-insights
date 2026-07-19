@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions 기본 제공 Linux 러너는 월 2,000분 초과 시 분당 $0.008이 과금되어, 하루 100분씩 30일 사용하면 월 $24, 연간 $288에 달합니다. GitHub Actions 셀프 호스티드 러너 Oracle Cloud 무료 ARM 설정 삽질 기록에 따르면, Oracle Cloud의 Ampere A1 인스턴스(4 OCPU, 24GB RAM)를 활용하면 빌드 비용을 실질적으로 $0에 수렴시킬 수 있습니다. 다만 초기 설정 시간과 보안 관리 등 운영 유지 비용은 별도로 고려해야 합니다."
 aliases:
   - "/tech/2026-05-06-github-actions-셀프-호스티드-러너-oracle-cloud-무료-arm-설정-삽/"
+  - "/ko/tech/2026-05-06-github-actions-셀프-호스티드-러너-oracle-cloud-무료-arm-설정-삽/"
 
 ---
 

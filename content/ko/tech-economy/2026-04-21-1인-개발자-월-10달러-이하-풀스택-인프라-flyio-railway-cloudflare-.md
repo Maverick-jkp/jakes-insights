@@ -21,6 +21,7 @@ faq:
     answer: "Fly.io 무료 티어는 공유 CPU VM 슬롯을 3개 제공하는데, Fly Postgres도 VM 슬롯 하나를 사용합니다. 즉 백엔드 앱 1개와 DB 1개를 올리면 슬롯 2개가 소비되므로, 1인 개발자 월 10달러 이하 풀스택 인프라 운영 시에는 남은 슬롯 관리에 주의해야 합니다."
 aliases:
   - "/tech/2026-04-21-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-railway-cloudflare-/"
+  - "/ko/tech/2026-04-21-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-railway-cloudflare-/"
 
 ---
 

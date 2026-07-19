@@ -10,6 +10,7 @@ image: "/images/20260325-flyio-무료-플랜-postgresql-연결-초과-오.webp"
 technologies: ["Python", "Next.js", "Node.js", "PostgreSQL", "Supabase"]
 aliases:
   - "/tech/2026-03-25-flyio-무료-플랜-postgresql-연결-초과-오류-pgbouncer-설정-실전-해결/"
+  - "/ko/tech/2026-03-25-flyio-무료-플랜-postgresql-연결-초과-오류-pgbouncer-설정-실전-해결/"
 
 ---
 

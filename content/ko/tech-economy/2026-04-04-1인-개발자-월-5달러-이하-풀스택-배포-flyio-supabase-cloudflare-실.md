@@ -21,6 +21,7 @@ faq:
     answer: "월 2,000 MAU 구간에서는 Fly.io 리소스를 소폭 늘려야 해 합계 비용이 3~7달러 수준으로 올라갑니다. Supabase를 Free 플랜으로 유지하면 5달러 이하가 가능하지만, 이 시점부터 월 25달러 Pro 플랜 전환을 진지하게 고민해야 하는 단계입니다."
 aliases:
   - "/tech/2026-04-04-1인-개발자-월-5달러-이하-풀스택-배포-flyio-supabase-cloudflare-실/"
+  - "/ko/tech/2026-04-04-1인-개발자-월-5달러-이하-풀스택-배포-flyio-supabase-cloudflare-실/"
 
 ---
 

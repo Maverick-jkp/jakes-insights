@@ -21,6 +21,7 @@ faq:
     answer: "CX22 기준 월간 활성 사용자 1-2만 명 이하의 REST API + 프론트엔드 + PostgreSQL 스택을 안정적으로 운영할 수 있습니다. 트래픽이 수십만 명 규모로 성장하면 관리형 서비스 생태계가 풍부한 AWS로 전환을 고려하는 것이 현실적이며, 초기 런웨이 확보 단계에서 Hetzner가 유리합니다."
 aliases:
   - "/tech/2026-04-07-1인-개발자-월-10달러-이하-인프라-docker-compose-hetzner-vps-실제/"
+  - "/ko/tech/2026-04-07-1인-개발자-월-10달러-이하-인프라-docker-compose-hetzner-vps-실제/"
 
 ---
 

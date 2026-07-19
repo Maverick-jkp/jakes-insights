@@ -21,6 +21,7 @@ faq:
     answer: "Ollama는 Apple Silicon 환경에서 Metal 백엔드를 자동 감지해 GPU 추론을 기본으로 사용해요. CPU 전용 추론과 비교하면 속도는 약 4~5배 차이가 나고, CPU만 사용할 경우 온도도 더 높아 78°C까지 올라가는 것으로 실측됐어요."
 aliases:
   - "/tech/2026-03-23-맥북-m3-pro-18gb-로컬-llm-ollama-mistral-7b-한국어-실사용-속도/"
+  - "/ko/tech/2026-03-23-맥북-m3-pro-18gb-로컬-llm-ollama-mistral-7b-한국어-실사용-속도/"
 
 ---
 

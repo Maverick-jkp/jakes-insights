@@ -21,6 +21,7 @@ faq:
     answer: "로컬에서 llama3.2를 실행하면 API 비용이 월 0원으로 GPT-4o-mini의 사용량 기반 과금과 대비됩니다. 또한 데이터가 외부 서버로 전송되지 않아 프라이버시 보호가 필요한 워크플로우나 반복적인 배치 작업에서 로컬 추론이 실질적인 경제적 이점을 제공합니다."
 aliases:
   - "/tech/2026-04-10-m3-macbook-pro-16gb-ollama-llama32-한국어-답변-품질-실측-gp/"
+  - "/ko/tech/2026-04-10-m3-macbook-pro-16gb-ollama-llama32-한국어-답변-품질-실측-gp/"
 
 ---
 

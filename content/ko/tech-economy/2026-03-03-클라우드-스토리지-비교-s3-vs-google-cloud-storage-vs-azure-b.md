@@ -21,6 +21,7 @@ faq:
     answer: "클라우드 스토리지 비교: S3 vs Google Cloud Storage vs Azure Blob 측면에서 멀티클라우드 환경의 핵심 기준은 이그레스 비용 구조와 데이터 거주지(data residency) 지원이에요. 세 서비스 모두 리전 간 이그레스 비용이 발생하며, 특히 EU AI Act 등 규제 강화로 데이터 복제 옵션과 리전 지원 범위를 사전에 확인하는 것이 중요해요. 글로벌 리전 수는 Azure가 60개 이상으로 가장 넓어요."
 aliases:
   - "/tech/2026-03-03-클라우드-스토리지-비교-s3-vs-google-cloud-storage-vs-azure-b/"
+  - "/ko/tech/2026-03-03-클라우드-스토리지-비교-s3-vs-google-cloud-storage-vs-azure-b/"
 
 ---
 

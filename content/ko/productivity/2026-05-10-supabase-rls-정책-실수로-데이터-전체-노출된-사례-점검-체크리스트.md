@@ -21,6 +21,7 @@ faq:
     answer: "SELECT 정책만 설정하고 INSERT나 UPDATE 정책을 누락하면, 로그인하지 않은 사용자가 데이터를 삽입하거나 다른 사용자의 행을 덮어쓸 수 있는 심각한 보안 취약점이 생깁니다. 각 작업마다 auth.uid() = user_id 조건을 적용하되, INSERT와 UPDATE는 USING과 WITH CHECK를 함께 사용하는 것이 권장됩니다."
 aliases:
   - "/tech/2026-05-10-supabase-rls-정책-실수로-데이터-전체-노출된-사례-점검-체크리스트/"
+  - "/ko/tech/2026-05-10-supabase-rls-정책-실수로-데이터-전체-노출된-사례-점검-체크리스트/"
 
 ---
 

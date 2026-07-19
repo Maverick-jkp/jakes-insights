@@ -21,6 +21,7 @@ faq:
     answer: "Docker Compose 단일 서버 무중단 배포 Blue-Green 구현 nginx 설정 실전 예제처럼, 서버 한 대와 Docker Compose, nginx만으로도 무중단 배포 환경을 만들 수 있습니다. 두 개의 서버 클러스터나 AWS ALB 같은 추가 인프라 없이 동일 서버 내에서 컨테이너 두 개를 번갈아 사용하는 방식이라 비용 부담이 거의 없습니다. 1~3인 개발팀이나 비용을 최소화해야 하는 초기 스타트업에 실용적인 선택입니다."
 aliases:
   - "/tech/2026-05-03-docker-compose-단일-서버-무중단-배포-bluegreen-구현-nginx-설정-/"
+  - "/ko/tech/2026-05-03-docker-compose-단일-서버-무중단-배포-bluegreen-구현-nginx-설정-/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "Ollama Mistral 7B의 첫 토큰까지 걸리는 시간(TTFT)은 약 1.5~3초로, GPT-4o-mini의 0.5~1.5초보다 1.5~2배 느려요. 단, 모델이 메모리에 한 번 올라가면 이후 요청은 일정한 속도로 처리되며, 네트워크 상태에 따른 변동이 없다는 점이 장점이에요."
 aliases:
   - "/tech/2026-03-26-m3-맥북-16gb-ollama-mistral-7b-한국어-토큰-생성-속도-실측-gpt4o/"
+  - "/ko/tech/2026-03-26-m3-맥북-16gb-ollama-mistral-7b-한국어-토큰-생성-속도-실측-gpt4o/"
 
 ---
 

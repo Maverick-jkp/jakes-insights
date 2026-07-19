@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions 입문 가이드 CICD 자동화 처음 설정하는 법 관점에서 보면, GitHub 기반 프로젝트라면 Actions가 훨씬 빠르게 시작할 수 있는 선택입니다. Jenkins는 별도 서버 설치와 플러그인 설정이 필요한 반면, GitHub Actions는 YAML 파일 하나로 설정이 끝나고 GitHub 저장소와 네이티브로 통합되어 관리가 훨씬 단순합니다."
 aliases:
   - "/tech/2026-03-03-github-actions-입문-가이드-cicd-자동화-처음-설정하는-법/"
+  - "/ko/tech/2026-03-03-github-actions-입문-가이드-cicd-자동화-처음-설정하는-법/"
 
 ---
 

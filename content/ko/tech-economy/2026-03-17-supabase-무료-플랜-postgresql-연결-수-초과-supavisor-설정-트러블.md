@@ -21,6 +21,7 @@ faq:
     answer: "Supabase 무료 플랜 환경에서 Next.js와 Drizzle ORM을 함께 쓸 때는 Supavisor 포트 6543 URL을 사용하되, `max: 1`로 연결 풀 사이즈를 제한하는 것이 서버리스 환경에서 안전해요. Drizzle은 Prisma와 달리 별도의 pgbouncer 파라미터가 필요 없어 설정이 비교적 간단합니다."
 aliases:
   - "/tech/2026-03-17-supabase-무료-플랜-postgresql-연결-수-초과-supavisor-설정-트러블/"
+  - "/ko/tech/2026-03-17-supabase-무료-플랜-postgresql-연결-수-초과-supavisor-설정-트러블/"
 
 ---
 

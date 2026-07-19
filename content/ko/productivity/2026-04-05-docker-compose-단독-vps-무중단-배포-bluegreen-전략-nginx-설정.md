@@ -21,6 +21,7 @@ faq:
     answer: "단독 VPS 기반 Docker Compose blue-green 배포는 서버 한 대의 자원 한계가 명확하게 존재해요. 트래픽이 급증해서 단일 서버로 감당이 어려워지면 Docker Swarm이나 Kubernetes로 넘어가는 것을 고려해야 해요. 다만 월 $200 이하 규모의 서비스라면 이 구조가 비용과 운영 복잡도 면에서 충분히 실용적인 선택이에요."
 aliases:
   - "/tech/2026-04-05-docker-compose-단독-vps-무중단-배포-bluegreen-전략-nginx-설정/"
+  - "/ko/tech/2026-04-05-docker-compose-단독-vps-무중단-배포-bluegreen-전략-nginx-설정/"
 
 ---
 

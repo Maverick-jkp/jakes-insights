@@ -21,6 +21,7 @@ faq:
     answer: "Fly.io는 2024년에 무료 플랜을 폐지하여 처음부터 비용이 발생합니다. 가장 작은 shared-cpu-1x 인스턴스에 256MB 메모리 기준으로 월 약 1.94달러이며, 스토리지를 포함한 소규모 API 서버 운영 시 월 5~7달러 수준이 됩니다."
 aliases:
   - "/tech/2026-03-21-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-cloudflare-supabase/"
+  - "/ko/tech/2026-03-21-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-cloudflare-supabase/"
 
 ---
 

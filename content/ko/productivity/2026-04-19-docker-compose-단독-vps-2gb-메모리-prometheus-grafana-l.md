@@ -21,6 +21,7 @@ faq:
     answer: "Docker Compose 단독 VPS 2GB 메모리 Prometheus Grafana Loki 동시 운영 시 기본값 그대로 올리면 Prometheus 350~500MB, Grafana 200~350MB, Loki 300~450MB, Promtail 50~80MB로 합산 최소 900MB에서 피크 1.4GB까지 올라갑니다. 여기에 Spring Boot 같은 애플리케이션을 함께 올리면 2GB 한계를 즉시 넘어 OOM Killer가 개입하게 됩니다."
 aliases:
   - "/tech/2026-04-19-docker-compose-단독-vps-2gb-메모리-prometheus-grafana-l/"
+  - "/ko/tech/2026-04-19-docker-compose-단독-vps-2gb-메모리-prometheus-grafana-l/"
 
 ---
 

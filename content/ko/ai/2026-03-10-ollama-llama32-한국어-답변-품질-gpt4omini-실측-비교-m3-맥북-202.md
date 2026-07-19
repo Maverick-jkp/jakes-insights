@@ -21,6 +21,7 @@ faq:
     answer: "ollama llama3.2 한국어 품질을 GPT-4o-mini와 비교했을 때, 코드 설명 태스크는 Bllossom 3B가 예상보다 선전해서 두 모델 간 차이가 거의 없는 수준으로 나타났어요. '이 함수가 뭘 하는지 한국어로 설명해줘' 같은 구체적인 질문에서는 Bllossom이 GPT-4o-mini와 동등한 수준의 답변을 제공했어요."
 aliases:
   - "/tech/2026-03-10-ollama-llama32-한국어-답변-품질-gpt4omini-실측-비교-m3-맥북-202/"
+  - "/ko/tech/2026-03-10-ollama-llama32-한국어-답변-품질-gpt4omini-실측-비교-m3-맥북-202/"
 
 ---
 

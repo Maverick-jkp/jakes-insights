@@ -21,6 +21,7 @@ faq:
     answer: "`process.env.NODE_ENV` 설정이 제대로 되어 있지 않으면 개발 모드 경고 코드와 디버깅 유틸이 프로덕션 번들에 그대로 포함돼요. React 기준으로 개발 빌드는 약 140KB gzip인 반면 프로덕션 빌드는 약 45KB로 약 두 배 차이가 나기 때문에, 빌드 설정에서 NODE_ENV가 `production`으로 명확히 지정되어 있는지 반드시 확인해야 해요."
 aliases:
   - "/tech/2026-03-22-javascript-번들-비대화-원인-npm-패키지-문제-해결/"
+  - "/ko/tech/2026-03-22-javascript-번들-비대화-원인-npm-패키지-문제-해결/"
 
 ---
 

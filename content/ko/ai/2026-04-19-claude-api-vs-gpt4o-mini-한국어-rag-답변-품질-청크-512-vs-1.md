@@ -21,6 +21,7 @@ faq:
     answer: "RAGAS 프레임워크에서 한국어 RAG 품질을 측정할 때 주로 세 가지 지표를 사용해요. Faithfulness(답변이 검색 문서에 근거하는 정도), Answer Relevance(질문에 정확히 답하는 정도), Context Precision(검색된 청크 중 실제 유용한 청크 비율)입니다. 512 vs 1024 청크 사이즈 실험에서는 청크 사이즈가 클수록 Context Precision이 약 8-10% 낮아지지만 문맥 연속성이 필요한 질문에서의 완결성은 올라가는 트레이드오프가 확인됐어요."
 aliases:
   - "/tech/2026-04-19-claude-api-vs-gpt4o-mini-한국어-rag-답변-품질-청크-512-vs-1/"
+  - "/ko/tech/2026-04-19-claude-api-vs-gpt4o-mini-한국어-rag-답변-품질-청크-512-vs-1/"
 
 ---
 

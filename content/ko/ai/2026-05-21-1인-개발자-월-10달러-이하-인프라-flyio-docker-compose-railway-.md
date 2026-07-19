@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 인프라 옵션으로 Fly.io, Railway, Docker Compose 셀프호스팅 세 가지가 현실적인 선택지예요. Node.js 백엔드 + PostgreSQL 기준으로 Railway는 실질 3달러 이하, Fly.io는 5~8달러, VPS+Docker Compose는 4~6달러 수준이에요. AWS나 GCP를 그대로 쓰면 같은 구성에서도 월 수십 달러가 나올 수 있어, 트래픽이 적은 초기 프로젝트에는 세 옵션 중 하나를 선택하는 게 훨씬 효율적이에요."
 aliases:
   - "/tech/2026-05-21-1인-개발자-월-10달러-이하-인프라-flyio-docker-compose-railway-/"
+  - "/ko/tech/2026-05-21-1인-개발자-월-10달러-이하-인프라-flyio-docker-compose-railway-/"
 
 ---
 

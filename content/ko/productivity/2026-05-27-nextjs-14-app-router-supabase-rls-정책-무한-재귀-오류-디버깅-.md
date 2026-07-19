@@ -21,6 +21,7 @@ faq:
     answer: "RLS 정책을 수정하고 배포해도 Next.js 14의 fetch 캐시나 unstable_cache에 이전 쿼리 결과가 남아 있으면, 캐시가 만료될 때까지 변경된 정책이 실제로 평가되지 않아 오류가 지속되거나 반대로 수정 전 오류가 잠시 사라진 것처럼 보일 수 있습니다. 배포 직후에는 해당 캐시를 강제로 무효화하거나 force-dynamic 설정으로 캐시를 완전히 해제한 엔드포인트에서 정책 동작을 먼저 검증하는 것이 권장됩니다."
 aliases:
   - "/tech/2026-05-27-nextjs-14-app-router-supabase-rls-정책-무한-재귀-오류-디버깅-/"
+  - "/ko/tech/2026-05-27-nextjs-14-app-router-supabase-rls-정책-무한-재귀-오류-디버깅-/"
 
 ---
 

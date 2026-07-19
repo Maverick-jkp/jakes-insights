@@ -21,6 +21,7 @@ faq:
     answer: "1024 토큰 청크 환경에서는 Claude API가 GPT-4o mini보다 맥락 추론 성능이 더 좋은 패턴이 확인됐어요. Claude의 200K 컨텍스트 윈도우가 큰 청크를 여러 개 불러와도 처리하는 데 유리하게 작용하고, 모델-청크 조합이 달라지면 같은 질문에서 정답률이 최대 23%까지 벌어질 수 있어요."
 aliases:
   - "/tech/2026-05-12-claude-api-vs-gpt4o-mini-rag-파이프라인-청크-사이즈-512-vs-1/"
+  - "/ko/tech/2026-05-12-claude-api-vs-gpt4o-mini-rag-파이프라인-청크-사이즈-512-vs-1/"
 
 ---
 

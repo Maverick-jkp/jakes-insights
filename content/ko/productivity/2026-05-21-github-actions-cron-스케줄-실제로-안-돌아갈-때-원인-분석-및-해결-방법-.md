@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions cron 스케줄 실제로 안 돌아갈 때 원인 분석 및 해결 방법 정리에서 권장하는 방법은 workflow_dispatch 트리거를 함께 등록하는 것입니다. workflow_dispatch를 추가하면 수동으로 즉시 실행해 워크플로 자체의 동작을 검증할 수 있어, cron 표현식 문제인지 워크플로 로직 문제인지 빠르게 구분할 수 있습니다. 추가로 crontab.guru에서 표현식을 사전 검증하고, YAML 린터로 파일 구조 오류 여부를 확인하는 것도 필수입니다."
 aliases:
   - "/tech/2026-05-21-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-및-해결-방법-/"
+  - "/ko/tech/2026-05-21-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-및-해결-방법-/"
 
 ---
 

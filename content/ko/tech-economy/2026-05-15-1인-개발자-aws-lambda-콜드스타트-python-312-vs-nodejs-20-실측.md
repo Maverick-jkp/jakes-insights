@@ -21,6 +21,7 @@ faq:
     answer: "응답 속도가 사용자 경험에 직결되는 REST API나 GraphQL 엔드포인트라면 콜드스타트가 짧은 Node.js가 유리하고, 데이터 처리나 ML 모델 연동이 필요한 함수라면 Python 3.12가 현실적인 선택입니다. Python 3.12는 2025-2026년 기준 런타임 안정성 면에서도 탄탄한 위치에 있어, 개발 속도와 생태계 친숙도를 함께 고려하는 것이 좋습니다."
 aliases:
   - "/tech/2026-05-15-1인-개발자-aws-lambda-콜드스타트-python-312-vs-nodejs-20-실측/"
+  - "/ko/tech/2026-05-15-1인-개발자-aws-lambda-콜드스타트-python-312-vs-nodejs-20-실측/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "`cat /proc/cgroups` 명령으로 `memory` 항목의 값이 `1`인지 확인하면 됩니다. 일부 경량 Linux 빌드에서는 memory cgroup이 기본 비활성화되어 있어 Docker의 `mem_limit` 설정이 아예 적용되지 않는 경우가 있습니다. VPS 환경이라도 이 확인은 기본 사항이며, cgroup이 비활성화된 경우 커널 부팅 파라미터에 `cgroup_enable=memory`를 추가해야 `mem_limit`이 정상 동작합니다."
 aliases:
   - "/tech/2026-04-23-docker-compose-단독-vps-2gb-메모리-prometheus-grafana-같/"
+  - "/ko/tech/2026-04-23-docker-compose-단독-vps-2gb-메모리-prometheus-grafana-같/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "Neurons는 토큰 수가 아닌 계산량 기반의 Cloudflare 독자 요금 단위로, llama-3.1-8b-instruct 기준 입출력 토큰당 약 0.04 Neurons가 소비돼요. 입력 200토큰, 출력 300토큰 기준 요청당 약 60~80 Neurons가 소모되며, 무료 한도 초과 시 1,000 Neurons당 $0.011이 부과되므로 모델 선택과 프롬프트 길이 최적화가 비용 관리에 핵심이에요."
 aliases:
   - "/tech/2026-05-24-cloudflare-workers-ai-llama3-한국어-응답-속도-무료-할당량-실측-리/"
+  - "/ko/tech/2026-05-24-cloudflare-workers-ai-llama3-한국어-응답-속도-무료-할당량-실측-리/"
 
 ---
 

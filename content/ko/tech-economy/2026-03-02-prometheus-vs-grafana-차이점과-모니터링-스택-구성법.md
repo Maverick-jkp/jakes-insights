@@ -21,6 +21,7 @@ faq:
     answer: "Prometheus vs Grafana 차이점과 모니터링 스택 구성법의 핵심은 올바른 순서예요. node_exporter 등 Exporter 설치 → Prometheus 스크래핑 설정 → TSDB 저장 → Grafana에서 Prometheus를 데이터소스로 등록 → PromQL로 대시보드 패널 구성 순으로 진행해야 해요. 이 순서가 틀리면 Grafana에서 아무것도 표시되지 않으니 반드시 단계별로 확인하면서 진행하세요."
 aliases:
   - "/tech/2026-03-02-prometheus-vs-grafana-차이점과-모니터링-스택-구성법/"
+  - "/ko/tech/2026-03-02-prometheus-vs-grafana-차이점과-모니터링-스택-구성법/"
 
 ---
 

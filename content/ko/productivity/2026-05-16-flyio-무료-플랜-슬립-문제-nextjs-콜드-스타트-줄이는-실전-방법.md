@@ -21,6 +21,7 @@ faq:
     answer: "UptimeRobot 무료 플랜에서 5분 간격 HTTP 모니터링을 설정하면 Fly.io가 머신을 슬립 상태로 전환하기 전에 요청이 들어와 슬립을 방지할 수 있습니다. 다만 Fly.io 무료 플랜 슬립 문제를 해결하면서 무료 할당량도 아끼려면, UptimeRobot의 Maintenance Window 기능으로 접속자가 거의 없는 새벽 시간대는 핑을 제외하는 것이 효과적입니다."
 aliases:
   - "/tech/2026-05-16-flyio-무료-플랜-슬립-문제-nextjs-콜드-스타트-줄이는-실전-방법/"
+  - "/ko/tech/2026-05-16-flyio-무료-플랜-슬립-문제-nextjs-콜드-스타트-줄이는-실전-방법/"
 
 ---
 

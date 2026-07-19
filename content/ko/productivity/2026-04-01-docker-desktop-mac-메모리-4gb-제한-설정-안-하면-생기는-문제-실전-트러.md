@@ -21,6 +21,7 @@ faq:
     answer: "Docker Desktop 전체 메모리를 4GB로 설정해도 컨테이너별 제한을 따로 걸지 않으면 컨테이너 하나가 VM의 4GB를 모두 독점할 수 있어요. 두 가지 제한을 함께 사용하는 게 권장 패턴인데, Docker Desktop 설정은 맥 전체 안정성을 위한 것이고 docker-compose의 mem_limit 또는 docker run -m은 서비스 간 메모리 격리를 위한 것이에요. 실무에서는 4GB 제한 설정 안 하면 생기는 문제 실전 트러블슈팅 맥락처럼 두 레벨을 동시에 적용해야 예측 가능한 환경을 만들 수 있어요."
 aliases:
   - "/tech/2026-04-01-docker-desktop-mac-메모리-4gb-제한-설정-안-하면-생기는-문제-실전-트러/"
+  - "/ko/tech/2026-04-01-docker-desktop-mac-메모리-4gb-제한-설정-안-하면-생기는-문제-실전-트러/"
 
 ---
 

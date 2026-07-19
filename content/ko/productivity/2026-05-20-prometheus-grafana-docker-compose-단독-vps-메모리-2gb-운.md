@@ -21,6 +21,7 @@ faq:
     answer: "Prometheus Grafana Docker Compose 단독 VPS 메모리 2GB 운영 설정 삽질 기록 기준으로, Loki와 Promtail까지 추가하면 예상 메모리가 950MB 이상으로 올라가 권장하지 않습니다. 메모리 여유가 400MB 이하로 줄어들면 스왑이 과도하게 작동해 오히려 모니터링 데이터가 유실될 수 있으므로, 2GB 환경에서는 튜닝된 Prometheus + Grafana + cAdvisor 조합이 현실적인 상한선입니다."
 aliases:
   - "/tech/2026-05-20-prometheus-grafana-docker-compose-단독-vps-메모리-2gb-운/"
+  - "/ko/tech/2026-05-20-prometheus-grafana-docker-compose-단독-vps-메모리-2gb-운/"
 
 ---
 

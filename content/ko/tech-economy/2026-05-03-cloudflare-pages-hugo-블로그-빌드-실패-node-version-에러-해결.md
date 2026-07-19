@@ -21,6 +21,7 @@ faq:
     answer: "Hugo 모듈 관련 에러나 버전 불일치 문제가 발생할 경우, Cloudflare Pages 대시보드 환경변수에서 HUGO_VERSION을 0.145.0처럼 특정 버전으로 고정하는 것이 안전합니다. 이렇게 하면 Cloudflare Pages 빌드 환경에서 Hugo 버전으로 인한 예기치 않은 빌드 실패를 방지할 수 있습니다."
 aliases:
   - "/tech/2026-05-03-cloudflare-pages-hugo-블로그-빌드-실패-node-version-에러-해결/"
+  - "/ko/tech/2026-05-03-cloudflare-pages-hugo-블로그-빌드-실패-node-version-에러-해결/"
 
 ---
 

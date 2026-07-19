@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions Docker 이미지 빌드 캐시 Buildx 설정으로 CI 시간을 8분에서 90초로 줄이려면 `docker/build-push-action@v6`에 `cache-from: type=gha`와 `cache-to: type=gha,mode=max` 두 줄을 추가하는 것이 핵심입니다. v3 이후 Buildx가 자동 활성화되어 별도 설치 단계 없이 바로 적용 가능하며, Dockerfile의 레이어 순서(의존성 설치를 소스 복사보다 먼저 배치)까지 함께 최적화하면 소스코드 변경 시 의존성 레이어는 건드리지 않고 변경분만 빌드하는 구조가 완성됩니다."
 aliases:
   - "/tech/2026-03-09-github-actions-docker-이미지-빌드-캐시-buildx-설정-ci-시간-8분/"
+  - "/ko/tech/2026-03-09-github-actions-docker-이미지-빌드-캐시-buildx-설정-ci-시간-8분/"
 
 ---
 

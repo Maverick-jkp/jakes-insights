@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions cron 스케줄 실제로 안 될 때처럼 보이지만, 무료 플랜의 shared runner 큐 지연으로 실행이 늦어지는 경우도 많습니다. 트래픽이 몰리는 시간대에는 실제 실행 시각이 20~40분까지 늦어질 수 있으며, GitHub 공식 문서에도 cron은 'best-effort basis(최선 노력 방식)'로 실행된다고 명시되어 있어 정확한 타이밍이 필요한 작업에는 cron만 단독으로 사용하는 것을 권장하지 않습니다."
 aliases:
   - "/tech/2026-05-17-github-actions-cron-스케줄-실제로-안-될-때-원인-분석-hugo-블로그-자/"
+  - "/ko/tech/2026-05-17-github-actions-cron-스케줄-실제로-안-될-때-원인-분석-hugo-블로그-자/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "Fly.io에서 PgBouncer를 구성하는 방법은 기존 Postgres 앱 내부에 프로세스를 추가하는 방식과 별도의 전용 앱을 띄우는 방식 두 가지가 있습니다. Fly.io 커뮤니티에서는 같은 앱 내부에서 실행하는 방식을 권장하는데, 네트워크 홉이 줄고 무료 플랜에서 추가 앱을 띄울 필요가 없기 때문입니다. 핵심 설정은 pool_mode를 transaction으로, default_pool_size를 5로 지정하는 것이며 max_client_conn과 default_pool_size의 차이가 커넥션 절약 효과를 결정합니다."
 aliases:
   - "/tech/2026-05-17-flyio-무료-플랜-postgres-연결-수-초과-pgbouncer-설정-1인-개발자-트/"
+  - "/ko/tech/2026-05-17-flyio-무료-플랜-postgres-연결-수-초과-pgbouncer-설정-1인-개발자-트/"
 
 ---
 

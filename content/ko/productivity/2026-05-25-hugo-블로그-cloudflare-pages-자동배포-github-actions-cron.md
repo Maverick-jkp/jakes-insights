@@ -21,6 +21,7 @@ faq:
     answer: "워크플로우 yaml 파일이 위치한 브랜치와 Cloudflare Pages 대시보드에서 프로덕션으로 설정된 브랜치가 일치하는지 확인해야 해요. 예를 들어 워크플로우는 'master' 브랜치에 있는데 Cloudflare Pages가 'main' 브랜치를 바라보고 있으면, cron이 정상 실행되어도 Cloudflare Pages 입장에서는 변화가 없어 배포가 트리거되지 않아요."
 aliases:
   - "/tech/2026-05-25-hugo-블로그-cloudflare-pages-자동배포-github-actions-cron/"
+  - "/ko/tech/2026-05-25-hugo-블로그-cloudflare-pages-자동배포-github-actions-cron/"
 
 ---
 

@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 5달러 VPS Docker Compose 운영은 비용이 고정적이고 트래픽 변동이 적은 서비스에 적합하며, Fly.io는 멀티 리전 배포나 레이턴시가 중요한 서비스에, Railway는 빠른 프로토타이핑과 초기 트래픽이 매우 적은 단계에 각각 유리해요. 결국 DevOps 역량과 시간 여유가 있으면 VPS, 개발 속도와 편의성이 우선이라면 Fly.io가 가장 균형 잡힌 선택이에요."
 aliases:
   - "/tech/2026-05-01-1인-개발자-월-5달러-vps-docker-compose-운영-실제-비용-구조-flyio-/"
+  - "/ko/tech/2026-05-01-1인-개발자-월-5달러-vps-docker-compose-운영-실제-비용-구조-flyio-/"
 
 ---
 

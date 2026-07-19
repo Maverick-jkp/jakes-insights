@@ -21,6 +21,7 @@ faq:
     answer: "Next.js App Router의 route.ts에서 `return new Response(stream)`으로 스트림을 그대로 반환하면 청크 경계에서 한국어가 깨질 수 있어요. 이를 해결하려면 중간에 TransformStream 변환 레이어를 두거나, TextDecoder에 `{ stream: true }` 옵션을 적용해 불완전한 바이트 시퀀스를 버퍼링하도록 구성해야 합니다."
 aliases:
   - "/tech/2026-03-19-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
+  - "/ko/tech/2026-03-19-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
 
 ---
 

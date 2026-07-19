@@ -21,6 +21,7 @@ faq:
     answer: "Hugo는 기본적으로 publishDate가 미래인 포스트를 빌드에서 제외해요. 해당 포스트를 강제로 포함하려면 hugo --buildFuture 플래그를 붙여야 하지만, cron으로 예약 발행 날짜에 맞춰 자동 빌드하는 구조라면 오히려 플래그 없이 hugo만 실행해야 해당 시점 이전 콘텐츠만 정상 노출돼요."
 aliases:
   - "/tech/2026-05-04-hugo-블로그-cloudflare-pages-배포-github-actions-cron-트/"
+  - "/ko/tech/2026-05-04-hugo-블로그-cloudflare-pages-배포-github-actions-cron-트/"
 
 ---
 

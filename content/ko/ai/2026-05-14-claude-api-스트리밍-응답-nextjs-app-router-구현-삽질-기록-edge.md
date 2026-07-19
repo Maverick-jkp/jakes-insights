@@ -21,6 +21,7 @@ faq:
     answer: "Claude API 스트리밍 응답 Next.js App Router 구현 삽질 기록 edge runtime 주의사항에 따르면, `new Response(stream)` 반환 시 `Content-Type: text/event-stream` 헤더를 명시해야 해요. 이 헤더가 없으면 프론트엔드의 `EventSource`가 응답을 올바르게 파싱하지 못해요. headers 객체에 `'Content-Type': 'text/event-stream'`을 추가하는 것만으로 해결되는 경우가 많아요."
 aliases:
   - "/tech/2026-05-14-claude-api-스트리밍-응답-nextjs-app-router-구현-삽질-기록-edge/"
+  - "/ko/tech/2026-05-14-claude-api-스트리밍-응답-nextjs-app-router-구현-삽질-기록-edge/"
 
 ---
 

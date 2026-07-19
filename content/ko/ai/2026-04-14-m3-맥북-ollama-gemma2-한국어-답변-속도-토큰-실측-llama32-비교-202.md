@@ -21,6 +21,7 @@ faq:
     answer: "M3 맥북은 CPU·GPU·Neural Engine이 Unified Memory를 공유하는 구조 덕분에 Ollama가 Metal API로 모델을 가속할 때 큰 이점이 생깁니다. 같은 모델을 Windows PC에서 CPU로 실행하는 것과 비교하면 tok/s 기준으로 두 배에서 세 배까지 차이가 날 수 있습니다."
 aliases:
   - "/tech/2026-04-14-m3-맥북-ollama-gemma2-한국어-답변-속도-토큰-실측-llama32-비교-202/"
+  - "/ko/tech/2026-04-14-m3-맥북-ollama-gemma2-한국어-답변-속도-토큰-실측-llama32-비교-202/"
 
 ---
 

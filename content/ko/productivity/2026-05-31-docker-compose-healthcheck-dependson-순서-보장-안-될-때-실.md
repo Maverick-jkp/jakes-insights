@@ -21,6 +21,7 @@ faq:
     answer: "Compose 레벨에서 healthcheck + condition: service_healthy로 시작 순서를 제어하는 것과 별개로, 애플리케이션 코드 내에 DB 연결 재시도 로직을 추가하는 이중 방어 구조가 가장 안정적입니다. Compose 설정만으로는 네트워크 지연이나 예외적인 초기화 지연을 완전히 커버하기 어렵기 때문에 두 방식을 함께 사용하는 것이 프로덕션 환경에 적합합니다."
 aliases:
   - "/tech/2026-05-31-docker-compose-healthcheck-dependson-순서-보장-안-될-때-실/"
+  - "/ko/tech/2026-05-31-docker-compose-healthcheck-dependson-순서-보장-안-될-때-실/"
 
 ---
 

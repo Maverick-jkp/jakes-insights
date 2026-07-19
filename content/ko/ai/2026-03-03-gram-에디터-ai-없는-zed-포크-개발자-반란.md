@@ -21,6 +21,7 @@ faq:
     answer: "Zed는 VSCode가 사용하는 Electron(Chromium 기반) 대신 Rust와 자체 GPU 렌더링 프레임워크 GPUI를 써서 체감 속도 차이가 실제로 뚜렷한 편이에요. 다만 Zed에 AI Agent Panel이 추가되면서 초기 로딩과 일부 연산에서 지연이 생긴다는 커뮤니티 리포트도 있어, AI 레이어를 제거한 GRAM이 그 속도 이점을 더 순수하게 유지한다는 평가를 받고 있어요."
 aliases:
   - "/tech/2026-03-03-gram-에디터-ai-없는-zed-포크-개발자-반란/"
+  - "/ko/tech/2026-03-03-gram-에디터-ai-없는-zed-포크-개발자-반란/"
 
 ---
 

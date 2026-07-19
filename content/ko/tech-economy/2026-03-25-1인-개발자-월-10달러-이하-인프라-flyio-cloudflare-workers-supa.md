@@ -21,6 +21,7 @@ faq:
     answer: "1인 개발자 월 10달러 이하 인프라 Fly.io Cloudflare Workers Supabase 실제 비용 후기에서 비교한 데이터에 따르면, 동일 워크로드 기준 AWS EC2 t3.micro는 월 약 8~10달러인 반면 Fly.io 공유 CPU 머신은 월 1.94달러 수준이에요. AWS는 모르는 사이 청구서가 불어나는 구조인 반면, Fly.io·Cloudflare Workers·Supabase 조합은 무료에서 유료로 넘어가는 임계점이 명확해 비용 예측이 쉬운 것이 가장 큰 차이예요."
 aliases:
   - "/tech/2026-03-25-1인-개발자-월-10달러-이하-인프라-flyio-cloudflare-workers-supa/"
+  - "/ko/tech/2026-03-25-1인-개발자-월-10달러-이하-인프라-flyio-cloudflare-workers-supa/"
 
 ---
 

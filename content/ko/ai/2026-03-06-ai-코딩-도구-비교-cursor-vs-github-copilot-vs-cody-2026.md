@@ -21,6 +21,7 @@ faq:
     answer: "2026년 기준으로 여러 레포지터리를 동시에 검색하고 추론하는 크로스 레포 기능은 Cody(Sourcegraph)가 유일하게 제공해요. GitHub Copilot와 Cursor는 이 기능을 지원하지 않아요. 마이크로서비스 아키텍처를 운영하거나 레거시와 신규 레포가 혼재하는 팀 환경에서 특히 유용한 기능이에요."
 aliases:
   - "/tech/2026-03-06-ai-코딩-도구-비교-cursor-vs-github-copilot-vs-cody-2026/"
+  - "/ko/tech/2026-03-06-ai-코딩-도구-비교-cursor-vs-github-copilot-vs-cody-2026/"
 
 ---
 

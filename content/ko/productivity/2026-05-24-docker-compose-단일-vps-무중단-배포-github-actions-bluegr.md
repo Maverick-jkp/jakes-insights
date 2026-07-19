@@ -21,6 +21,7 @@ faq:
     answer: "하나의 docker-compose.yml에서 blue/green을 함께 관리하면 컨테이너 이름과 포트 충돌이 발생합니다. docker-compose.blue.yml과 docker-compose.green.yml을 별도 파일로 분리하거나 --project-name 옵션으로 프로젝트를 격리하면, blue는 8080 포트, green은 8081 포트를 독립적으로 사용할 수 있어 충돌 없이 두 환경을 동시에 운영할 수 있습니다."
 aliases:
   - "/tech/2026-05-24-docker-compose-단일-vps-무중단-배포-github-actions-bluegr/"
+  - "/ko/tech/2026-05-24-docker-compose-단일-vps-무중단-배포-github-actions-bluegr/"
 
 ---
 

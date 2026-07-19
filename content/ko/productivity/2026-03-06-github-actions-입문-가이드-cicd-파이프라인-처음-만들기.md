@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions 입문 가이드 CICD 파이프라인 처음 만들기에서 캐시는 `actions/setup-node@v4`에 `cache: 'npm'`을 추가하는 것만으로 자동 설정돼요. 더 세밀하게 제어하고 싶다면 `actions/cache@v4`와 `hashFiles('package-lock.json')`를 함께 사용하면 락파일 변경 여부를 기준으로 캐시가 자동 무효화되어 의존성 설치 시간을 크게 줄일 수 있어요."
 aliases:
   - "/tech/2026-03-06-github-actions-입문-가이드-cicd-파이프라인-처음-만들기/"
+  - "/ko/tech/2026-03-06-github-actions-입문-가이드-cicd-파이프라인-처음-만들기/"
 
 ---
 

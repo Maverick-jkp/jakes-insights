@@ -10,6 +10,7 @@ image: "/images/20260519-m3-맥북-docker-desktop-메모리-4gb-제.webp"
 technologies: ["Python", "Node.js", "FastAPI", "Docker", "Kubernetes"]
 aliases:
   - "/tech/2026-05-19-m3-맥북-docker-desktop-메모리-4gb-제한-실제-체감-성능-vs-8gb-할당/"
+  - "/ko/tech/2026-05-19-m3-맥북-docker-desktop-메모리-4gb-제한-실제-체감-성능-vs-8gb-할당/"
 
 ---
 

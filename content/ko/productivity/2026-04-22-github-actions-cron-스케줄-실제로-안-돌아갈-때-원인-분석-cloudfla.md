@@ -21,6 +21,7 @@ faq:
     answer: "GitHub Actions의 cron 표현식은 UTC 기준으로 동작하기 때문에 한국 시간(KST)을 그대로 입력하면 의도한 시간보다 9시간 늦게 실행돼요. 예를 들어 한국 시간 오전 9시에 실행하려면 UTC 기준인 '0 0 * * *'으로 설정해야 해요."
 aliases:
   - "/tech/2026-04-22-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-cloudfla/"
+  - "/ko/tech/2026-04-22-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-cloudfla/"
 
 ---
 

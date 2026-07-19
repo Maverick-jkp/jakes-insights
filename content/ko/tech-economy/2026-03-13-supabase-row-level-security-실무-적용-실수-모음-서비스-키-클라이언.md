@@ -21,6 +21,7 @@ faq:
     answer: "한 테이블에만 RLS를 적용하고 연관 테이블에는 적용하지 않으면, JOIN 시 RLS가 없는 테이블의 데이터가 필터링 없이 그대로 반환돼요. 예를 들어 orders 테이블에 RLS를 걸었더라도 products 테이블에 RLS가 없으면 JOIN을 통한 우회 접근이 가능해요. 비공개 데이터를 담은 모든 테이블에 빠짐없이 RLS 정책을 적용하는 것이 유일한 해결책이에요."
 aliases:
   - "/tech/2026-03-13-supabase-row-level-security-실무-적용-실수-모음-서비스-키-클라이언/"
+  - "/ko/tech/2026-03-13-supabase-row-level-security-실무-적용-실수-모음-서비스-키-클라이언/"
 
 ---
 

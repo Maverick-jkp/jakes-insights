@@ -21,6 +21,7 @@ faq:
     answer: "CI/CD 파이프라인처럼 빠른 반복 리뷰가 필요한 환경에서는 OpenAI GPT-4.1이 유리합니다. 평균 응답 시간이 약 1.2초로 Claude(1.9초)보다 빠르고 비용도 낮아, 커밋 단위 자동 체크에 적합합니다."
 aliases:
   - "/tech/2026-04-06-claude-api-vs-openai-api-한국어-코드-리뷰-품질-실험-1인-개발자-월-/"
+  - "/ko/tech/2026-04-06-claude-api-vs-openai-api-한국어-코드-리뷰-품질-실험-1인-개발자-월-/"
 
 ---
 

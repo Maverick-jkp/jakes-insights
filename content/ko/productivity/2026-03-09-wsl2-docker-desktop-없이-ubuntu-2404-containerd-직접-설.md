@@ -21,6 +21,7 @@ faq:
     answer: "containerd + nerdctl 조합은 Kubernetes와의 네이티브 CRI 연동, Docker CLI 호환성, 약 30~50MB의 낮은 메모리 사용량이 장점으로 K8s 기반 팀에 적합합니다. Podman은 데몬 프로세스 없이 각 컨테이너가 독립 프로세스로 실행되는 rootless 구조 덕분에 보안 요구사항이 높은 금융·공공 환경에서 선호되지만, docker-compose와의 완전한 호환성에서 일부 엣지케이스가 존재합니다."
 aliases:
   - "/tech/2026-03-09-wsl2-docker-desktop-없이-ubuntu-2404-containerd-직접-설/"
+  - "/ko/tech/2026-03-09-wsl2-docker-desktop-없이-ubuntu-2404-containerd-직접-설/"
 
 ---
 

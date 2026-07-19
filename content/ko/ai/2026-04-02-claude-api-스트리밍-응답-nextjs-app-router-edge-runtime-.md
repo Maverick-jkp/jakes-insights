@@ -21,6 +21,7 @@ faq:
     answer: "해당 글에서 소개한 핵심 패턴은 `export const runtime = 'edge'`를 선언한 Route Handler에서 `fetch`로 Claude API를 직접 호출한 뒤 `new Response(response.body, { headers: { 'Content-Type': 'text/event-stream' } })`로 반환하는 방식이에요. SDK를 배제하고 ReadableStream을 그대로 파이프하는 것이 Edge 환경에서 스트리밍이 동작하는 핵심 원리예요."
 aliases:
   - "/tech/2026-04-02-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
+  - "/ko/tech/2026-04-02-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
 
 ---
 

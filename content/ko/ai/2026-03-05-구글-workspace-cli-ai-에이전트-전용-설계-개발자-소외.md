@@ -21,6 +21,7 @@ faq:
     answer: "현재로서는 Claude Code나 Gemini CLI 같은 AI 에이전트를 매개로 Workspace CLI를 활용하는 패턴으로 전환하는 것이 현실적인 대응책입니다. 개발자가 Workspace를 직접 다루지 않고 AI 에이전트를 통해 활용하는 방식이 커뮤니티에서 더 풍부하게 공유되고 있으며, ProAgent AI 등에서 관련 사례를 참고할 수 있습니다. 다만 공식 마이그레이션 가이드가 부재한 상황이므로, Stack Overflow와 GitHub Discussions의 최신 스레드를 통해 변경된 인증 흐름과 권한 구조를 지속적으로 모니터링하는 것이 중요합니다."
 aliases:
   - "/tech/2026-03-05-구글-workspace-cli-ai-에이전트-전용-설계-개발자-소외/"
+  - "/ko/tech/2026-03-05-구글-workspace-cli-ai-에이전트-전용-설계-개발자-소외/"
 
 ---
 

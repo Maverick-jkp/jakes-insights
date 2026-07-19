@@ -21,6 +21,7 @@ faq:
     answer: "`@supabase/ssr` 패키지를 사용할 때 `middleware.ts`와 `utils/supabase/server.ts`를 분리하지 않고 섞어 쓰면 쿠키 처리 로직이 충돌해 세션 갱신이 불안정해집니다. Supabase 공식 문서는 미들웨어 전용 클라이언트와 서버 컴포넌트·Route Handler용 클라이언트를 별도 파일로 관리하는 구조를 권장하며, 이 분리 구조를 지켜야 각 환경에서 쿠키가 올바르게 읽히고 쓰입니다."
 aliases:
   - "/tech/2026-04-21-supabase-auth-nextjs-미들웨어-무한-리다이렉트-루프-해결-트러블슈팅/"
+  - "/ko/tech/2026-04-21-supabase-auth-nextjs-미들웨어-무한-리다이렉트-루프-해결-트러블슈팅/"
 
 ---
 

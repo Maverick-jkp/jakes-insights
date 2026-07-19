@@ -21,6 +21,7 @@ faq:
     answer: "Cursor AI는 VS Code 포크 기반의 전용 에디터이므로 기존 VS Code 플러그인, 키바인딩, 설정을 처음부터 다시 세팅해야 하는 초기 비용이 발생합니다. 팀 전체가 동시에 전환하지 않으면 JetBrains나 기타 IDE를 사용하는 팀원과 협업 환경이 맞지 않아 마찰이 생길 수 있습니다."
 aliases:
   - "/tech/2026-03-23-cursor-ai-vs-github-copilot-실무-2주-사용-비교-typescript/"
+  - "/ko/tech/2026-03-23-cursor-ai-vs-github-copilot-실무-2주-사용-비교-typescript/"
 
 ---
 

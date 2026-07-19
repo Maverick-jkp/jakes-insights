@@ -21,6 +21,7 @@ faq:
     answer: "`@supabase/supabase-js` 전체를 import하면 트리셰이킹 없이 200KB를 초과할 수 있어서, 필요한 모듈 경로만 명시적으로 import하는 방식으로 번들을 줄여야 해요. `esm.sh`에서 번들 사이즈를 사전에 확인할 수 있고, Supabase 공식 문서도 50KB 이하를 권장하며 이를 지키면 콜드 스타트를 최대 40~50% 단축할 수 있어요."
 aliases:
   - "/tech/2026-05-20-supabase-edge-function-콜드-스타트-줄이는-법-nextjs-14-실전-적/"
+  - "/ko/tech/2026-05-20-supabase-edge-function-콜드-스타트-줄이는-법-nextjs-14-실전-적/"
 
 ---
 

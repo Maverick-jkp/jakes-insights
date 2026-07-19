@@ -21,6 +21,7 @@ faq:
     answer: "Cursor AI는 VS Code 포크 기반의 독립 에디터라 기존 VS Code 환경에서 전환할 때 플러그인 재설정과 팀 개발 환경 통일 비용이 발생해요. 반면 GitHub Copilot은 VS Code·JetBrains 등 기존 IDE에 플러그인 형태로 바로 설치되기 때문에 팀 전체가 기존 환경을 유지하면서 도입하기가 훨씬 수월해요."
 aliases:
   - "/tech/2026-04-24-cursor-ai-vs-github-copilot-실무-코드리뷰-정확도-한국어-주석-프로젝/"
+  - "/ko/tech/2026-04-24-cursor-ai-vs-github-copilot-실무-코드리뷰-정확도-한국어-주석-프로젝/"
 
 ---
 

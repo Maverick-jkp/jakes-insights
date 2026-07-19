@@ -21,6 +21,7 @@ faq:
     answer: "Qdrant는 Rust로 개발되어 Python 런타임 오버헤드가 없고, HNSW 인덱스를 자체적으로 최적화했어요. 특히 Apple Silicon의 SIMD 명령어를 효율적으로 활용하는 구조라 M 시리즈 맥북에서 성능이 잘 나오며, payload 인덱스를 별도 관리해 메타데이터 필터링과 벡터 검색을 동시에 처리할 수 있어요."
 aliases:
   - "/tech/2026-05-17-weaviate-qdrant-chroma-로컬-벡터db-10만-벡터-검색-속도-비교-맥북-/"
+  - "/ko/tech/2026-05-17-weaviate-qdrant-chroma-로컬-벡터db-10만-벡터-검색-속도-비교-맥북-/"
 
 ---
 

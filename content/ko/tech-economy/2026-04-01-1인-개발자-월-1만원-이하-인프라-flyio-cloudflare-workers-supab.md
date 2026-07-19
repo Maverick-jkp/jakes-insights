@@ -21,6 +21,7 @@ faq:
     answer: "AWS 프리티어와 달리 Fly.io, Cloudflare Workers, Supabase는 12개월 후 자동 과금 전환 없이 사용량 기반으로만 비용이 청구되어 사이드 프로젝트 서버비를 크게 줄일 수 있습니다. 1인 개발자 월 1만원 이하 인프라로 Fly.io, Cloudflare Workers, Supabase 무료 플랜 조합을 실제 운영한 사례에서는 뉴스레터 구독 관리나 소규모 SaaS MVP를 월 청구 0원으로 운영한 경우도 있습니다. 스케일링 임계점은 대략 MAU 1,000명 수준으로, 그 이전까지는 세 서비스 조합만으로도 충분히 프로덕션 운영이 가능합니다."
 aliases:
   - "/tech/2026-04-01-1인-개발자-월-1만원-이하-인프라-flyio-cloudflare-workers-supab/"
+  - "/ko/tech/2026-04-01-1인-개발자-월-1만원-이하-인프라-flyio-cloudflare-workers-supab/"
 
 ---
 

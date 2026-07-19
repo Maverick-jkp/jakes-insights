@@ -21,6 +21,7 @@ faq:
     answer: "두 툴 모두 VS Code를 포크한 에디터라 기본 UI는 비슷하게 느껴져요. 핵심 차이는 에이전트 모드 완성도와 컨텍스트 유지 방식인데, Cursor는 GPT-4o·Claude 3.5 Sonnet 중 모델을 직접 선택할 수 있고 Windsurf는 자체 Cascade Flow 엔진을 사용해요. 일상적인 코딩보다 복잡한 리팩토링이나 대규모 코드베이스 작업에서 두 툴의 실제 사용감 차이가 뚜렷하게 드러나요."
 aliases:
   - "/tech/2026-04-18-cursor-ai-유료-vs-windsurf-무료-플랜-실제-코드-자동완성-품질-비교-2주/"
+  - "/ko/tech/2026-04-18-cursor-ai-유료-vs-windsurf-무료-플랜-실제-코드-자동완성-품질-비교-2주/"
 
 ---
 

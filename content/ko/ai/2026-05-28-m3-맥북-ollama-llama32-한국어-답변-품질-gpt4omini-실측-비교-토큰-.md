@@ -21,6 +21,7 @@ faq:
     answer: "M3 맥북에서 ollama 실행 시 llama3.2:3b의 첫 토큰 레이턴시는 약 0.2초입니다. 반면 GPT-4o-mini API는 네트워크 왕복 시간으로 인해 서울 기준 평균 500ms~1.5초가 소요되어, 체감 응답 속도는 로컬이 더 빠르게 느껴집니다."
 aliases:
   - "/tech/2026-05-28-m3-맥북-ollama-llama32-한국어-답변-품질-gpt4omini-실측-비교-토큰-/"
+  - "/ko/tech/2026-05-28-m3-맥북-ollama-llama32-한국어-답변-품질-gpt4omini-실측-비교-토큰-/"
 
 ---
 

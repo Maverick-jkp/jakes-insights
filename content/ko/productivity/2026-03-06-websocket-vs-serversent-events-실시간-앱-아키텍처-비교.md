@@ -19,6 +19,9 @@ faq:
     answer: "배달의민족은 MQTT 기반 주문 알림 시스템에서 방화벽 포트 차단과 WebView 비호환성 문제를 겪은 뒤 SSE로 전환했어요. 클라이언트→서버 통신은 이미 REST API가 담당하고 있었기 때문에 WebSocket을 추가하면 두 프로토콜을 병행 관리해야 하는 복잡도가 생기는 반면, SSE는 기존 HTTP 인프라와 자연스럽게 연결되는 장점이 있었어요. 구현은 Spring WebFlux + Coroutines 기반으로, Last-Event-ID 헤더를 활용해 재연결 시 누락 이벤트도 처리했어요."
   - question: "WebSocket vs Server-Sent Events 실시간 앱 아키텍처 비교에서 처리량·지연시간 성능 차이가 실제로 크게 나나요?"
     answer: "Timeplus 2024 벤치마크 기준으로 WebSocket과 SSE의 처리량·지연시간 차이는 사실상 무시할 수준이에요. 초당 10만 이벤트 환경에서 두 프로토콜 모두 초당 약 300만 이벤트 처리에 도달했고, 지연시간도 WebSocket 45ms, SSE 48ms로 3ms 차이에 불과해요. 성능보다는 메모리 효율, 인프라 호환성, 구현 복잡도가 실제 선택 기준이 돼요."
+aliases:
+  - "/tech/2026-03-06-websocket-vs-serversent-events-실시간-앱-아키텍처-비교/"
+
 ---
 
 실시간 앱 만들다가 습관처럼 WebSocket 고른 적 있죠? 그런데 ChatGPT는 SSE로 스트리밍하고, Shopify는 3,230억 건의 이벤트를 SSE로 처리했어요. "WebSocket이 기본값"이라는 전제, 이미 흔들리고 있어요.

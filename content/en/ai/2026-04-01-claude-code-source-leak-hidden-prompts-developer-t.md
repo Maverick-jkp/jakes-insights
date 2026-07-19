@@ -19,6 +19,9 @@ faq:
     answer: "The Claude Code source leak raised serious transparency concerns, particularly for developers using the tool in agentic workflows where the AI autonomously writes, tests, and edits code across multiple steps. The presence of undisclosed system prompts and behavioral flags means users were not fully informed about how the tool was making decisions on their behalf. Whether to continue using it depends on individual risk tolerance, but the incident has prompted broader conversations about transparency standards across all AI coding tools."
   - question: "what is undercover mode in Claude Code"
     answer: "The Claude Code source leak revealed an internal configuration flag labeled 'undercover mode,' though Anthropic had never publicly documented or disclosed its existence or purpose. Its discovery in the leaked source maps contributed to developer concerns about hidden behavioral logic in the tool, especially given its use in autonomous agentic coding contexts. Anthropic had not officially commented on the flag's intended function at the time the leak became public."
+aliases:
+  - "/tech/2026-04-01-claude-code-source-leak-hidden-prompts-developer-t/"
+
 ---
 
 Anthropic's agentic coding tool just had its source maps exposed — and the findings are stranger than most people expected.

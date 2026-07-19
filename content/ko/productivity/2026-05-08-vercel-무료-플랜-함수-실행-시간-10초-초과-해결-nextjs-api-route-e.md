@@ -19,6 +19,9 @@ faq:
     answer: "OpenAI나 Claude 같은 AI API를 Next.js API route에서 호출할 때 응답이 3~8초씩 걸려 10초 제한을 초과하는 경우, ReadableStream을 활용한 스트리밍 응답으로 해결할 수 있습니다. 스트리밍은 전체 처리가 끝나기 전에 응답 조각을 사용자에게 순차적으로 전송하므로 체감 대기 시간을 크게 줄이고 타임아웃 에러도 방지할 수 있습니다. Edge Runtime에서도 스트리밍이 완전히 지원되므로 AI API route는 Edge 전환과 스트리밍 적용을 함께 고려하는 것이 효과적입니다."
   - question: "Vercel Hobby 플랜 10초 제한 Pro 업그레이드 말고 해결책 있나요"
     answer: "Pro 업그레이드 없이 10초 제한을 우회하는 방법으로는 Edge Runtime 전환(30초로 연장), AI API route에 스트리밍 응답 적용, 무거운 작업을 Supabase Edge Functions나 외부 백그라운드 큐로 분리하는 세 가지 방식이 있습니다. 단순 JSON 처리나 외부 API 집계 route는 Edge Runtime 전환만으로도 충분히 해결되는 경우가 많습니다. 파일 파싱이나 이미지 처리처럼 복잡한 작업은 로직 자체를 분리하지 않으면 어떤 방법으로도 Hobby 플랜 안에서 해결하기 어렵습니다."
+aliases:
+  - "/tech/2026-05-08-vercel-무료-플랜-함수-실행-시간-10초-초과-해결-nextjs-api-route-e/"
+
 ---
 
 Vercel 무료 플랜에서 Next.js API route를 쓰다 보면 어느 순간 `FUNCTION_INVOCATION_TIMEOUT` 에러를 마주하게 돼요. 10초. 넘으면 그냥 죽어요. 그런데 이 제한이 2026년 현재 Solo 개발자와 스타트업 초기 팀에게 점점 더 큰 장벽이 되고 있거든요. AI API 호출, 외부 데이터 집계, 이미지 처리처럼 시간이 좀 걸리는 작업들이 늘었기 때문이에요. Edge Runtime으로 전환하면 진짜 해결이 될까요? 실측 데이터와 함께 따져볼게요.

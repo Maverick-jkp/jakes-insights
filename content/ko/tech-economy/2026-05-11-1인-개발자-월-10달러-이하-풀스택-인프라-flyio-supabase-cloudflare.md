@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 건 요청을 무료로 제공하며, Cloudflare Pages는 월 빌드 500회와 무제한 사이트를 지원해요. R2 스토리지도 10GB와 월 100만 건 읽기 요청이 무료라서, 1인 개발자 수준에서는 사실상 유료 전환이 거의 필요 없는 수준이에요."
   - question: "Fly.io Supabase Cloudflare 중 어떤 역할 분담으로 써야 해?"
     answer: "1인 개발자 월 10달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 후기를 보면, 프론트엔드는 Cloudflare Pages, DB와 인증은 Supabase, API 서버나 백엔드 앱은 Fly.io로 역할을 나누는 조합이 가장 효율적이에요. Cloudflare는 콜드 스타트가 없는 엣지 환경이라 프론트엔드와 API 캐싱에 적합하고, Supabase는 PostgreSQL·Auth·스토리지를 한 번에 해결해줘서 백엔드 개발 부담을 크게 줄여줘요."
+aliases:
+  - "/tech/2026-05-11-1인-개발자-월-10달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+
 ---
 
 매달 청구서 펼쳐보는 순간이 두려웠던 적 있죠? 사이드 프로젝트 하나 돌리는데 AWS 요금이 50달러 넘어가던 시절, 많은 1인 개발자들이 그 고통을 알아요. 그런데 지금, 상황이 꽤 달라졌어요.

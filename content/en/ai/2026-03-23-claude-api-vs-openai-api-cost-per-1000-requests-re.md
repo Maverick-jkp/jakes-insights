@@ -19,6 +19,9 @@ faq:
     answer: "Prompt caching is one of the most impactful cost levers available in 2026, capable of reducing effective input costs by up to 90% on workloads with repeated context like document Q&A or chatbots with long system prompts. Both Claude and GPT-4o support caching, but Claude's implementation provides a larger advantage when your base token rate is higher and context reuse is frequent."
   - question: "claude api vs openai api cost per 1000 requests real invoice comparison indie developer under 500k tokens per day"
     answer: "For indie developers processing under 500,000 tokens per day, the cost difference between Claude Sonnet 3.7 and GPT-4o is determined more by workload shape than by base pricing. High-context, repeated-prompt workloads favor Claude due to caching, while async batch jobs with minimal repeated context favor OpenAI's Batch API discount structure."
+aliases:
+  - "/tech/2026-03-23-claude-api-vs-openai-api-cost-per-1000-requests-re/"
+
 ---
 
 Last quarter, a solo developer building a customer support chatbot watched their OpenAI invoice climb to $340 for roughly 2 million tokens. Switching to Claude's Haiku tier for the same workload cut that bill to $48. That's not a rounding error — it's an 86% cost reduction, and it's exactly the kind of finding that shapes which API an indie developer bets their product on.

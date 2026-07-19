@@ -19,6 +19,9 @@ faq:
     answer: "Vercel's built-in usage alerts can be configured directly from the dashboard under your account's billing settings, and the setup takes less than two minutes with no third-party tools required. You can set thresholds that trigger email notifications before you reach your 100 GB monthly bandwidth ceiling, giving you time to optimize assets or temporarily limit traffic. This is considered the single most important step in any Vercel Hobby plan bandwidth management strategy."
   - question: "vercel hobby plan limits 2026 what happens when you exceed them"
     answer: "As of 2026, Vercel's Hobby plan includes 100 GB of bandwidth per month, and exceeding this limit typically results in upgrade prompts or deployment pauses rather than automatic overage billing. The behavior can catch developers off guard, especially after a project experiences a sudden traffic spike from viral exposure. Proactively optimizing images, enabling CDN caching, and monitoring usage through Vercel's alert system are the best ways to prevent hitting these limits unexpectedly."
+aliases:
+  - "/tech/2026-03-24-vercel-hobby-plan-bandwidth-limit-exceeded-unexpec/"
+
 ---
 
 A $0/month plan shouldn't generate a $200 surprise. Yet for developers who haven't read Vercel's fine print, that's exactly what happens.

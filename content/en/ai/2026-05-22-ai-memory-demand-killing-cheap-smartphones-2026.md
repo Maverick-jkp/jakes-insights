@@ -19,6 +19,9 @@ faq:
     answer: "AI accelerators like NVIDIA's H100 and H200 GPUs require massive amounts of high-bandwidth memory, which commands 5–8 times the price per gigabyte compared to standard mobile DRAM. Memory manufacturers shifted significant factory capacity toward producing AI memory because it is far more profitable, reducing the supply available for consumer devices like smartphones. The result is a supply chain collision where AI infrastructure investment directly drives up the cost of everyday consumer electronics."
   - question: "will budget Android phones under $200 disappear because of AI memory demand killing cheap smartphones 2026"
     answer: "The $100–$200 Android smartphone tier is under serious threat in 2026, with analysts describing AI memory demand killing cheap smartphones in 2026 as a structural market shift rather than a temporary pricing spike. Budget devices lack the profit margins to absorb rising memory costs the way flagship phones can, where a $30 increase in component costs barely affects pricing strategy. Whether the tier fully disappears depends on whether memory manufacturers expand capacity or allocate more production back to mobile DRAM in the next 6–12 months."
+aliases:
+  - "/tech/2026-05-22-ai-memory-demand-killing-cheap-smartphones-2026/"
+
 ---
 
 The budget smartphone market is collapsing. Not from lack of demand — from a RAM shortage that AI data centers created. And consumers are paying for it.

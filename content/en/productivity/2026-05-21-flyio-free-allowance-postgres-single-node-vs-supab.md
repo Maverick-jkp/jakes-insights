@@ -19,6 +19,9 @@ faq:
     answer: "Both platforms have costs that rarely appear in marketing materials, including egress bandwidth charges, backup storage, and connection pooling fees. On Fly.io, WAL logs and indexes can push a Postgres single node past the 3GB free storage limit, while Supabase caps free tier bandwidth at 5GB and database storage at 500MB. Factoring in these hidden costs is essential before choosing a platform for a hobby project that may scale unexpectedly."
   - question: "supabase vs fly.io postgres which is better for a hobby project in 2026"
     answer: "Supabase is generally the lower-friction option for hobby projects because it provides a fully managed Postgres instance without requiring Docker image maintenance or VM configuration. Fly.io offers more control and can be cost-effective if your project stays within the free allowance, but the unmanaged nature of its Postgres setup adds operational overhead. The best choice depends on whether you prioritize simplicity and managed infrastructure or flexibility and granular control over your database environment."
+aliases:
+  - "/tech/2026-05-21-flyio-free-allowance-postgres-single-node-vs-supab/"
+
 ---
 
 Starting a hobby project feels free—until the invoice arrives.

@@ -19,6 +19,9 @@ faq:
     answer: "UptimeRobot은 별도 코드 없이 GUI로 빠르게 설정할 수 있지만 GitHub 인프라만큼 안정성이 보장되지 않고 무료 플랜에서 SMS 알림 등 일부 기능이 제한됩니다. 반면 GitHub Actions는 이미 리포지토리를 사용하는 개발자라면 별도 계정 없이 기존 인프라 안에서 해결할 수 있어 Fly.io 무료 플랜 슬립 모드 방지 GitHub Actions cron 핑 실제 비용 0원 유지 방법으로 가장 현실적인 선택입니다."
   - question: "fly.toml auto_stop_machines false 설정하면 비용 발생하나요"
     answer: "`fly.toml`에서 `auto_stop_machines = false`를 지정하면 슬립 모드 없이 앱을 항상 실행 상태로 유지할 수 있는 근본적인 해결책입니다. 다만 이 옵션은 일부 플랜에서 추가 비용이 발생할 수 있어 반드시 본인 플랜 조건을 확인해야 하며, 비용 부담 없이 해결하려면 GitHub Actions cron 핑 방식이 더 안전한 대안입니다."
+aliases:
+  - "/tech/2026-03-13-flyio-무료-플랜-슬립-모드-방지-github-actions-cron-핑-실제-비용-0/"
+
 ---
 
 Fly.io 무료 플랜으로 앱을 올렸는데, 다음 날 접속하면 10초씩 멈추는 경험. 한 번쯤 해봤죠? 슬립 모드 때문이에요. 그런데 이걸 GitHub Actions cron 핑 하나로 완전히 막을 수 있어요. 추가 비용 없이.

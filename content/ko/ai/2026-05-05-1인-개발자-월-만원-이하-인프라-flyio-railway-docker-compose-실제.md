@@ -19,6 +19,9 @@ faq:
     answer: "Nginx, 앱 서버, PostgreSQL 컨테이너를 한 VPS에서 돌리는 기본 구성은 처음 설정에 반나절 정도 투자가 필요해요. GitHub Actions + SSH 스크립트로 배포 파이프라인을 직접 만들고, Certbot + cron으로 SSL 인증서 갱신도 직접 설정해야 하므로, Railway나 Fly.io 대비 초기 진입 난이도는 중간 수준이에요."
   - question: "1인 개발자 사이드 프로젝트 인프라 플랫폼 선택 기준 뭔가요"
     answer: "1인 개발자 월 만원 이하 인프라 Fly.io Railway Docker Compose 실제 청구 비용 6개월 후기에서는 플랫폼 선택의 핵심 변수로 '서버를 직접 관리할 시간이 있냐 없냐'를 꼽아요. 배포 편의성을 원하면 Railway(Git push 배포), 비용 최적화가 우선이면 VPS + Docker Compose, 그 중간이라면 Fly.io가 현실적인 선택지예요."
+aliases:
+  - "/tech/2026-05-05-1인-개발자-월-만원-이하-인프라-flyio-railway-docker-compose-실제/"
+
 ---
 
 부업 프로젝트 하나 올렸더니 첫 달 청구서가 $47이 나왔어요. "분명 무료 티어 썼는데?" 하고 계정을 뒤졌더니, 슬립 모드 해제 비용에 네트워크 이그레스 요금에 예상 못 했던 항목들이 줄줄이 나왔죠. 1인 개발자라면 한 번쯤 겪는 상황이에요.

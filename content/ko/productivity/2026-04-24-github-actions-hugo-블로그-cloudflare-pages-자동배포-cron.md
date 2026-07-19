@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages 설정에서 Deploy Hook URL을 생성한 뒤, GitHub Actions 워크플로우에서 curl -X POST 명령으로 해당 URL을 호출하면 커밋 없이도 빌드가 실행돼요. Deploy Hook URL은 외부에 노출되면 누구나 빌드를 트리거할 수 있어 보안 위험이 있으므로, 반드시 GitHub Secrets에 저장해서 사용해야 해요."
   - question: "GitHub Actions Hugo 블로그 Cloudflare Pages 자동배포 cron 스케줄 무시될 때 해결법 중 빈 커밋 방식 단점"
     answer: "빈 커밋 방식은 git commit --allow-empty로 실제 변경 없이 커밋을 만들어 푸시하는 방법으로, GitHub 60일 비활성화 문제와 Cloudflare 빌드 트리거 문제를 동시에 해결할 수 있어요. 다만 매일 실행하면 한 달에 30개씩 'trigger' 커밋이 쌓여 커밋 히스토리가 지저분해지는 단점이 있어요. 커밋 히스토리 오염이 신경 쓰인다면 Deploy Hook 직접 호출 방식이 더 적합해요."
+aliases:
+  - "/tech/2026-04-24-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
+
 ---
 
 cron 스케줄을 설정해놨는데 아무 일도 안 일어나는 거예요. 로그엔 아무것도 없고, 배포는 안 되고. 뭐가 잘못된 건지 찾을 수도 없죠.

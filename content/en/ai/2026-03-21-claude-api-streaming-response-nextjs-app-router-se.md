@@ -19,6 +19,9 @@ faq:
     answer: "The Edge runtime is recommended for Claude streaming in Next.js because it eliminates cold start delays that can add 800ms or more to response time. This matters especially because Claude's first token can arrive in approximately 180ms, meaning a slow runtime startup can negate the streaming benefit entirely."
   - question: "nextjs route handler vs server action for ai streaming which is better"
     answer: "Route Handlers are the correct choice for AI streaming use cases like Claude API integration because they support streaming `Response` objects natively, while server actions are designed for mutations and type-safe RPC and buffer responses by design. For long-running AI tasks that can take 30–60 seconds, Route Handlers with proper stream handling are the only production-viable option."
+aliases:
+  - "/tech/2026-03-21-claude-api-streaming-response-nextjs-app-router-se/"
+
 ---
 
 Streaming Claude responses through a Next.js App Router server action feels like it should just work.

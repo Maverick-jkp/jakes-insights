@@ -19,6 +19,9 @@ faq:
     answer: "ThinkShield is Lenovo's enterprise security framework, and it is being integrated with GrapheneOS as part of the Motorola partnership to target business and B2B deployments. The combination is designed to give enterprise customers both GrapheneOS's hardened OS protections and Lenovo's existing fleet management and security infrastructure. Motorola also announced companion features like Private Image Data for automatic metadata stripping and Moto Analytics for fleet-wide operational monitoring alongside this deal."
   - question: "is GrapheneOS safe for regular consumers or just security professionals"
     answer: "GrapheneOS is primarily used by journalists, security researchers, and privacy-conscious professionals who need the strongest available Android security protections. Its hardened memory allocators, stronger app sandboxing, and reduced attack surface make it significantly more secure than standard Android, but it has historically required technical comfort to use. The Motorola partnership signals a potential path toward broader consumer availability, though the current announcement focuses on enterprise deployments first."
+aliases:
+  - "/tech/2026-03-03-motorola-grapheneos-partnership-privacy-android-se/"
+
 ---
 
 On March 2, 2026, Motorola walked into MWC Barcelona and announced something that hadn't happened once in Android's 18-year history: a major OEM formally committing to ship GrapheneOS on a consumer device.

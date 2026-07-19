@@ -19,6 +19,9 @@ faq:
     answer: "Spot Instances can cut compute costs by up to 90% compared to on-demand pricing, but they come with a high operational risk — AWS can reclaim them with two minutes' notice. They work best for fault-tolerant workloads like batch processing, data pipelines, and CI/CD jobs, where an interruption doesn't break production. Small teams should avoid Spot Instances for production APIs or stateful workloads where an unexpected shutdown would cause an outage."
   - question: "does AWS Cost Explorer cost money to use"
     answer: "AWS Cost Explorer and Compute Optimizer are both free to activate and use for standard cost analysis and rightsizing recommendations. Compute Optimizer surfaces actionable EC2 rightsizing recommendations within approximately 14 days of activation, based on your actual usage patterns. The tools are built into the AWS console but are not enabled by default, so small teams need to manually activate them to start seeing recommendations."
+aliases:
+  - "/tech/2026-03-06-how-to-reduce-aws-costs-for-small-teams/"
+
 ---
 
 AWS bills have a way of quietly doubling between January and March. One month you're humming along, the next you're staring at an invoice that's somehow $2,000 higher than last quarter — and you have no idea which service ate the difference.

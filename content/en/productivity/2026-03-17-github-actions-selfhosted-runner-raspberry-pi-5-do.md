@@ -19,6 +19,9 @@ faq:
     answer: "Yes, the Raspberry Pi 5 with its 2.4GHz quad-core Cortex-A76 processor and up to 8GB LPDDR4X RAM is capable of handling real CI workloads including Docker builds. It also supports NVMe SSDs via a PCIe 2.0 slot, which largely eliminates I/O bottlenecks that affected earlier Pi models."
   - question: "github actions self-hosted runner raspberry pi 5 docker build time vs github hosted for multi-platform images"
     answer: "The Raspberry Pi 5 performance advantage over GitHub-hosted runners shrinks or disappears entirely when building large multi-platform Docker images. The Pi 5 is most competitive on single-platform ARM64 builds where persistent local layer caching provides the biggest speed benefit."
+aliases:
+  - "/tech/2026-03-17-github-actions-selfhosted-runner-raspberry-pi-5-do/"
+
 ---
 
 Build pipelines are silent tax collectors. Every minute of CI time is developer attention burned, and at scale, those minutes compound fast.

@@ -19,6 +19,9 @@ faq:
     answer: "Play Integrity API is Google's replacement for the deprecated SafetyNet API, designed to verify that an Android device is certified, unmodified, and running genuine Google software including Play Services. Because de-Googled Android distributions like CalyxOS and LineageOS without GApps cannot pass this certification check, services that rely on Play Integrity signals — including reCAPTCHA — treat those devices as untrustworthy. This means legitimate human users on privacy-focused Android builds are systematically failed by bot-detection systems that were never designed to verify device brand loyalty."
   - question: "which Android ROMs are affected by the reCAPTCHA lockout in 2026"
     answer: "The reCAPTCHA failures primarily affect de-Googled Android distributions including GrapheneOS, CalyxOS, and LineageOS installed without Google Apps (GApps). These builds share the common trait of not having Google Play Services present as a functional system component, which is now a silent hard requirement for passing reCAPTCHA v3 and enterprise challenges. Security researchers, journalists, and privacy-conscious enterprise users are among those most impacted, given these groups are the core audience for de-Googled Android."
+aliases:
+  - "/tech/2026-05-09-google-recaptcha-breaking-degoogled-android-users-/"
+
 ---
 
 Sometime in early May 2026, a quiet dependency change turned into a hard wall. Users running de-Googled Android distributions — GrapheneOS, CalyxOS, LineageOS without GApps, and similar privacy-focused builds — started hitting `reCAPTCHA` failures on sites and apps that had worked fine the week before. Not degraded experience. Complete lockout.

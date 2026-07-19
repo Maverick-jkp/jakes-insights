@@ -19,6 +19,9 @@ faq:
     answer: "Setting min_machines_running to 1 in your fly.toml configuration file prevents Fly.io from scaling your machine to zero, which completely eliminates cold start latency on Next.js API routes. However, this setting moves your deployment off the free tier since Fly.io only offers scale-to-zero behavior at no cost, meaning you will incur charges for keeping a machine persistently alive. For teams that need always-on behavior without paying, scheduled external pinging is the zero-cost alternative that keeps machines warm without changing billing tier."
   - question: "is Fly.io free tier reliable for production Next.js apps"
     answer: "Fly.io's free tier is generally not reliable for production Next.js applications that require consistent response times, due to the scale-to-zero cold start behavior that causes 2-8 second delays after periods of inactivity. The cold start problem is especially pronounced for Next.js compared to lighter runtimes because the framework's module graph takes significantly longer to initialize. Developers who need production reliability on a free tier often migrate to Render or Railway, which offer always-on free instances without cold start penalties, though they trade away Fly.io's Docker deployment flexibility."
+aliases:
+  - "/tech/2026-04-14-flyio-free-tier-cold-start-latency-fix-nextjs-api-/"
+
 ---
 
 Cold starts on Fly.io's free tier aren't a rumor. They're a documented, reproducible problem — and if your Next.js API routes are timing out in production, this is almost certainly why.

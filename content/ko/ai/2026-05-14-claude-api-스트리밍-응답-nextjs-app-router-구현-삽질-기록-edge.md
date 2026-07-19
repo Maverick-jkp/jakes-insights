@@ -19,6 +19,9 @@ faq:
     answer: "Pages Router는 `res.write()` + `res.end()` 패턴으로 Node.js `http.ServerResponse` 객체를 직접 다뤘지만, App Router의 Route Handler는 Web Standard API 기반의 `new Response(ReadableStream)` 방식으로 바뀌었어요. 검색으로 찾은 예제 코드가 어느 버전 기준인지 확인하지 않고 복붙하면 동작하지 않는 이유가 이 패러다임 차이 때문이에요."
   - question: "EventSource 스트리밍 응답 프론트엔드에서 파싱 안 될 때 확인할 것"
     answer: "Claude API 스트리밍 응답 Next.js App Router 구현 삽질 기록 edge runtime 주의사항에 따르면, `new Response(stream)` 반환 시 `Content-Type: text/event-stream` 헤더를 명시해야 해요. 이 헤더가 없으면 프론트엔드의 `EventSource`가 응답을 올바르게 파싱하지 못해요. headers 객체에 `'Content-Type': 'text/event-stream'`을 추가하는 것만으로 해결되는 경우가 많아요."
+aliases:
+  - "/tech/2026-05-14-claude-api-스트리밍-응답-nextjs-app-router-구현-삽질-기록-edge/"
+
 ---
 
 배포 당일, AI 채팅 기능이 완전히 먹통이 됐어요. 로컬에서 멀쩡하게 돌아가던 Claude API 스트리밍 응답이 Vercel에 올리자마자 30초 타임아웃으로 죽어버린 거예요. 원인은 단 하나—`runtime` 설정 두 줄이 빠져 있었던 거였어요.

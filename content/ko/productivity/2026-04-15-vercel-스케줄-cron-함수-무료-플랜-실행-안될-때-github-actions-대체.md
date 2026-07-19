@@ -19,6 +19,9 @@ faq:
     answer: "API 엔드포인트가 외부에 노출되므로 요청 헤더에 Authorization: Bearer 형태로 시크릿 토큰을 붙여 검증하는 방식을 사용해야 합니다. Vercel 환경 변수와 GitHub 레포의 Settings → Secrets에 동일한 CRON_SECRET 값을 등록해두면 코드에 하드코딩 없이 안전하게 관리할 수 있습니다. API 라우트에서 토큰이 일치하지 않으면 401 응답을 반환하도록 구현하면 무단 호출을 차단할 수 있습니다."
   - question: "Vercel 스케줄 cron 함수 무료 플랜 실행 안될 때 GitHub Actions 말고 다른 대안은"
     answer: "'Vercel 스케줄 cron 함수 무료 플랜 실행 안될 때 GitHub Actions 대체 구현 실전 후기'에서 다룬 GitHub Actions 방식 외에도 Vercel Pro 플랜으로 업그레이드($20/월)하는 방법이 있습니다. Pro 플랜은 설정 복잡도가 낮고 실행 정확도가 높으며 Vercel 대시보드에서 로그를 바로 확인할 수 있다는 장점이 있습니다. 이미 Pro 플랜을 사용 중이거나 정밀한 타이밍이 필요한 경우라면 Vercel 자체 cron을 그대로 쓰는 것이 더 나은 선택입니다."
+aliases:
+  - "/tech/2026-04-15-vercel-스케줄-cron-함수-무료-플랜-실행-안될-때-github-actions-대체/"
+
 ---
 
 Vercel 무료 플랜에서 cron 설정했는데 아무것도 안 돌아간 경험, 있으시죠? 로그도 없고, 에러도 없고, 그냥 조용히 아무 일도 일어나지 않는 그 상황. 알고 보면 플랜 제한 때문인데, 에러 메시지조차 없으니 처음엔 내 코드 문제인 줄 알고 한참 헤매게 돼요.

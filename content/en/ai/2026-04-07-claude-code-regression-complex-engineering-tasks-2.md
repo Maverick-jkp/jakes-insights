@@ -19,6 +19,9 @@ faq:
     answer: "Following the February 2026 Claude Code regression, engineering teams began evaluating competing agentic coding tools to fill the capability gap, though no alternative has fully replicated Claude Code's pre-regression performance on complex tasks. The regression created urgency around comparing available options, particularly for teams that had made Claude Code load-bearing infrastructure in senior engineering workflows. The article notes that competing tools haven't fully closed the gap left by the degraded Claude Code performance."
   - question: "is Claude Code regression fixed 2026 Anthropic response"
     answer: "As of the time of reporting, Anthropic had not fully resolved the February 2026 Claude Code regression affecting complex engineering tasks, though the article examines Anthropic's response trajectory for clues about near-term recovery. Engineers were still relying on prompt restructuring workarounds rather than a restored baseline capability. The situation was actively monitored by the engineering community given how widely Claude Code had been adopted into production workflows."
+aliases:
+  - "/tech/2026-04-07-claude-code-regression-complex-engineering-tasks-2/"
+
 ---
 
 Something broke in February 2026.

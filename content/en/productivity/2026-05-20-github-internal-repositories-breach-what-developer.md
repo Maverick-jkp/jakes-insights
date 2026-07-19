@@ -19,6 +19,9 @@ faq:
     answer: "Extension allowlisting is a policy that restricts developers to only installing pre-approved, verified VS Code extensions within an organization, drastically reducing the risk surface from third-party tooling. Without this policy in place, any developer on a team can silently introduce a malicious extension that has access to credentials, tokens, and internal systems stored in their development environment."
   - question: "what should my development team do after the GitHub VS Code extension breach"
     answer: "Teams should immediately audit all installed VS Code extensions across developer machines, removing anything unverified, unused, or from unknown publishers. Going forward, organizations should establish formal extension allowlisting policies and treat developer tooling with the same scrutiny applied to production software dependencies."
+aliases:
+  - "/tech/2026-05-20-github-internal-repositories-breach-what-developer/"
+
 ---
 
 A malicious VS Code extension just gave attackers access to GitHub's internal repositories. That sentence should stop you cold.

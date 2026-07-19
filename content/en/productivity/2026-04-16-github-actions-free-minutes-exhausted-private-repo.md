@@ -19,6 +19,9 @@ faq:
     answer: "A Raspberry Pi 4 with 4GB RAM is a viable self-hosted GitHub Actions runner for lightweight CI workloads including Node.js, Python, Go, and Rust builds. However, it is not well-suited for Docker-heavy workflows or toolchains that are incompatible with ARM architecture. The hardware cost is under $80 upfront, making it a cost-effective alternative to paid GitHub-hosted runner minutes for teams with compatible build requirements."
   - question: "how to stop paying for github actions minutes private repo"
     answer: "The most practical way to avoid per-minute charges for private repo GitHub Actions builds is to register a self-hosted runner on your own hardware, such as a Raspberry Pi 4. Self-hosted runners on the free GitHub plan are exempt from per-minute billing as of April 2026, effectively giving you unlimited CI minutes for the cost of the hardware and electricity. This approach is officially documented and production-tested, not a policy violation, though it works best for ARM-compatible, non-Docker-heavy workloads."
+aliases:
+  - "/tech/2026-04-16-github-actions-free-minutes-exhausted-private-repo/"
+
 ---
 
 The math stopped working somewhere around late 2025.

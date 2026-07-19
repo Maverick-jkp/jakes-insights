@@ -19,6 +19,9 @@ faq:
     answer: "보안 정책이 있는 기업 환경이라면 GitHub Copilot이 더 현실적인 선택입니다. Copilot은 기존 VS Code나 JetBrains 환경 그대로 쓸 수 있고, GitHub Enterprise와 연동이 쉬워 내부 승인을 받기도 수월합니다. Cursor는 별도 앱 설치와 IDE 전환 비용이 따르기 때문에 팀 온보딩 부담이 상대적으로 크게 작용할 수 있어요."
   - question: "Cursor AI vs GitHub Copilot 실무 한 달 사용 후기 자동완성 정확도 비용 비교 스타트업에는 어떤 게 맞나요"
     answer: "Cursor AI vs GitHub Copilot 실무 한 달 사용 후기 자동완성 정확도 비용 비교에 따르면, YC 포트폴리오 스타트업의 60% 이상이 Cursor를 선택하고 있습니다. Cursor의 Composer 기능이 'Next.js + Supabase로 로그인 페이지 만들어줘'처럼 자연어 한 줄로 여러 파일을 동시에 생성·수정해주기 때문에, 빠른 기능 개발이 필요한 소규모 팀에 특히 잘 맞습니다."
+aliases:
+  - "/tech/2026-05-02-cursor-ai-vs-github-copilot-실무-한-달-사용-후기-자동완성-정확도-/"
+
 ---
 
 팀장이 또 물어봐요. "그래서 우리 팀은 Cursor 써요, Copilot 써요?"

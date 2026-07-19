@@ -19,6 +19,9 @@ faq:
     answer: "3~5명 규모의 스타트업 초기 팀이라면 세팅이 빠르고 요금 부담이 적은 GitHub Copilot이 적합하며, 소규모 코드베이스에서는 두 도구 간 성능 차이가 크지 않습니다. 반면 10명 이상이거나 코드베이스가 5만 줄을 넘는 중규모 이상 팀이라면, 전체 레포를 인덱싱해 맥락을 파악하는 Cursor의 기능이 코드 리뷰 시간을 실질적으로 줄여주는 효과가 있습니다."
   - question: "GitHub Copilot vs Cursor IDE 실무 사용 후기 기업 보안 정책 호환성 어떤가요"
     answer: "GitHub Copilot vs Cursor IDE 실무 3개월 사용 후기 자동완성 품질 실제 코드 비교에서 보안 측면을 보면, Copilot은 GitHub Enterprise와의 연동이 잘 되어 있어 기업 보안 정책과의 호환성이 높습니다. Cursor는 자체 Privacy Mode를 제공하지만, 기존 기업 보안 인프라와의 통합 면에서는 Copilot 대비 초기 세팅 난이도가 상대적으로 높은 편입니다."
+aliases:
+  - "/tech/2026-05-22-github-copilot-vs-cursor-ide-실무-3개월-사용-후기-자동완성-품질-/"
+
 ---
 
 AI 코딩 도구를 3개월 쓰고 나서 느낀 건 하나예요. "다 비슷하겠지"라는 생각이 완전히 틀렸다는 것.

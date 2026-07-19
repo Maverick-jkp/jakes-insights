@@ -19,6 +19,9 @@ faq:
     answer: "The most effective production strategy from the Claude API prompt caching cost reduction experiment involves engineering for cache reuse rather than simply enabling caching, and combining caching with batching for maximum savings. Placing large, stable content like system prompts or repeated context at the beginning of your prompt structure improves hit rates. Monitoring cache hit frequency and aligning request cadence with the 5-minute TTL window are also essential for sustained savings."
   - question: "what is the cache write cost penalty for Claude API prompt caching"
     answer: "Writing to the Claude API prompt cache costs 25% more than standard input token pricing, meaning the upfront cost is higher than a regular request. This premium means you need a sufficiently high cache hit rate to break even and generate net savings. Teams that don't account for this write cost often underestimate how frequently content needs to be reused before caching becomes profitable."
+aliases:
+  - "/tech/2026-05-21-claude-api-prompt-caching-cost-reduction-experimen/"
+
 ---
 
 Prompt caching cut one production team's Claude API costs by 60%. That's not a marketing claim — it's a documented outcome from a DEV Community case study on real workloads. But that number hides something important: chunk size determines whether you hit 60% savings or 6%.

@@ -19,6 +19,9 @@ faq:
     answer: "Anthropic SDK의 stream() 메서드는 내부적으로 SSE 포맷을 사용하는데, App Router의 StreamingTextResponse 유틸과 함께 쓰면 헤더가 충돌해요. 이 경우 StreamingTextResponse 대신 Web API의 Response 객체를 직접 생성해서 반환하는 방식으로 우회하면 충돌 없이 안정적으로 동작해요."
   - question: "Claude API 토큰 사용량 줄이는 방법 반복 컨텍스트 최소화"
     answer: "CLAUDE.md 파일로 프로젝트 컨텍스트를 미리 구조화해두면 매 API 호출마다 반복적으로 보내는 시스템 프롬프트 토큰을 줄일 수 있어요. 실무 경험 기준으로 API 호출당 토큰이 30% 이상 감소한다고 알려져 있으며, 대화가 길어질수록 누적 비용 절감 효과가 커져요."
+aliases:
+  - "/tech/2026-04-10-claude-api-스트리밍-응답-nextjs-app-router-서버-컴포넌트-구현-삽질/"
+
 ---
 
 처음엔 금방 될 것 같았어요. Claude API 스트리밍 응답을 Next.js App Router에 붙이는 작업. 공식 문서도 있고, 예제도 있고. 그런데 실제로 해보니 열 개 넘는 삽질을 거쳤어요. App Router가 표준이 된 지금, 이 구현 패턴을 제대로 이해하면 시간을 절반은 아낄 수 있어요.

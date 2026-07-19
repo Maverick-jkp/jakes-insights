@@ -19,6 +19,9 @@ faq:
     answer: "Yes, latency above 500ms measurably degrades conversational AI user experience because humans naturally take only 300–500ms between conversational turns. When response time reaches three seconds, Google research shows that 40% of users abandon the interaction entirely. This is why sub-500ms has become the accepted baseline benchmark for production voice agents in 2026."
   - question: "how much does INT8 quantization reduce LLM inference latency"
     answer: "Converting LLM inference from FP32 to INT8 quantization has been shown in production benchmarks to reduce inference time from 800ms to 220ms — a 73% improvement on identical hardware. This makes model quantization one of the highest-leverage optimizations available in any sub-500ms voice agent latency build from scratch in 2026. Unlike hardware upgrades, quantization delivers major latency gains without significant infrastructure cost increases."
+aliases:
+  - "/tech/2026-03-03-sub500ms-voice-agent-latency-build-from-scratch-20/"
+
 ---
 
 Voice AI crossed a quiet threshold in early 2026: production systems can now hit sub-500ms end-to-end response times without specialized hardware. That number matters more than it sounds.

@@ -19,6 +19,9 @@ faq:
     answer: "Python 가상환경 설정법: venv vs conda 차이점과 사용법에서 핵심 차이 중 하나가 바로 협업 방식이에요. venv는 pip freeze > requirements.txt로 패키지 목록을 저장해서 공유하고, conda는 conda env export > environment.yml 파일로 환경 전체를 공유해요. conda의 environment.yml은 Python 버전까지 포함되기 때문에 환경 재현성이 더 높아요."
   - question: "conda 너무 무거운데 가벼운 대안 없나요"
     answer: "Anaconda 대신 Miniconda를 사용하면 conda 엔진만 설치되고 나머지 패키지는 필요할 때만 추가하는 방식으로 운영할 수 있어요. Anaconda가 4GB 이상의 공간을 차지하는 반면 Miniconda는 약 400MB 수준이라 10분의 1 정도예요. 현재 많은 ML 개발자들이 'Miniconda + conda-forge' 조합을 표준 셋업으로 사용하는 추세예요."
+aliases:
+  - "/tech/2026-03-07-python-가상환경-설정법-venv-vs-conda-차이점과-사용법/"
+
 ---
 
 파이썬 프로젝트를 시작하면 꼭 이 질문이 나와요. "가상환경은 `venv` 써요, `conda` 써요?" 근처 개발자한테 물어봐도 "그냥 쓰던 거 써요"라는 답이 대부분이죠. 2025년 Stack Overflow 설문에서도 Python 사용자의 40% 이상이 어떤 도구를 선택할지 확신하지 못한다고 답했어요. 2026년에도 여전히 헷갈리는 이유가 있어요.

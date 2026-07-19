@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare D1 SQLite cold start latency ranges from 12–25ms on the first query after a worker has been idle. Subsequent queries within the same worker lifecycle drop to 6–10ms as the database warms up."
   - question: "cloudflare kv eventual consistency vs d1 strong consistency difference"
     answer: "Cloudflare KV uses an eventual consistency model, meaning writes can take up to 60 seconds to propagate globally across all edge locations. D1 SQLite offers strong consistency within a single region by default, making it more reliable for use cases where data accuracy immediately after a write is critical."
+aliases:
+  - "/tech/2026-05-18-cloudflare-workers-kv-vs-d1-sqlite-read-latency-co/"
+
 ---
 
 KV clocked sub-5ms reads in warm-cache scenarios. D1 SQLite hit 12–25ms on the first query after a cold start. The gap sounds small until you're running 50,000 requests per hour and every millisecond compounds.

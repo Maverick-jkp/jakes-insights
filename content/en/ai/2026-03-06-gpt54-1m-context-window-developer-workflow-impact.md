@@ -19,6 +19,9 @@ faq:
     answer: "Once context size is no longer a limiting factor with GPT-5.4, the primary bottleneck in AI-assisted development shifts from context management to output quality control. Developers need to focus less on orchestrating token limits and more on reviewing and validating the model's responses at scale."
   - question: "is GPT-5.4 1 million token context window actually usable or too slow"
     answer: "Unlike earlier 1M-context models such as Gemini 1.5 Pro at launch, GPT-5.4 delivers speed improvements that make large-context queries practical for everyday developer use rather than just technically possible. Early access developers report that coherence and response quality hold up significantly better past the 200K token mark compared to previous long-context models."
+aliases:
+  - "/tech/2026-03-06-gpt54-1m-context-window-developer-workflow-impact/"
+
 ---
 
 The context window just stopped being a constraint.

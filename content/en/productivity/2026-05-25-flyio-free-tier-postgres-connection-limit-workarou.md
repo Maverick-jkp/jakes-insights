@@ -19,6 +19,9 @@ faq:
     answer: "Besides PgBouncer, two other main workarounds exist for Fly.io's Postgres connection limits: upgrading to a larger instance with more RAM (a 512 MB machine costs around $3.19/month), or migrating to a managed database platform like Neon or Supabase that handles connection pooling at the platform layer. The best option depends on your app's connection pattern and how much operational overhead you're willing to manage."
   - question: "why does fly.io postgres run out of connections phoenix liveview"
     answer: "Phoenix LiveView applications are especially prone to hitting Fly.io's Postgres connection limits because LiveView's persistent WebSocket model keeps database connections open longer than a standard HTTP request/response cycle. Combined with the free tier's 25-connection ceiling on 256 MB instances, even modest traffic can exhaust available connections quickly. This makes Phoenix LiveView apps one of the most commonly affected use cases in the fly.io free tier postgres connection limit workaround pgbouncer discussions throughout 2025."
+aliases:
+  - "/tech/2026-05-25-flyio-free-tier-postgres-connection-limit-workarou/"
+
 ---
 
 Fly.io's free tier hits a wall fast. The managed Postgres offering caps connections at 25 per instance on the smallest `shared-cpu-1x` machines — and if you're running a Phoenix or Rails app with even modest traffic, you'll breach that ceiling before your first coffee.

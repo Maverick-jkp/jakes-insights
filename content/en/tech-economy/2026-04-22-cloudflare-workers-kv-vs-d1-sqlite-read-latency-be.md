@@ -19,6 +19,9 @@ faq:
     answer: "Yes, D1 SQLite cold starts in 2025 and 2026 are meaningfully faster than the initial 2023 release. Cloudflare's ongoing improvements to their SQLite-at-edge architecture, including read replica support across multiple regions and better cold start initialization, contributed to these gains."
   - question: "cloudflare D1 vs KV eventual consistency difference explained"
     answer: "Cloudflare KV uses an eventual consistency model where writes propagate globally within roughly 60 seconds, meaning edge caches may briefly serve stale data. D1 SQLite, built on Cloudflare's Durable Objects infrastructure, offers relational data integrity without that same eventual consistency trade-off, making it better suited for data that requires accuracy over raw read speed."
+aliases:
+  - "/tech/2026-04-22-cloudflare-workers-kv-vs-d1-sqlite-read-latency-be/"
+
 ---
 
 Most edge storage decisions get made on vibes. Someone read a blog post in 2023, decided KV is "fast" and D1 is "for databases," and shipped accordingly. The actual read latency data tells a more complicated story — and it matters more now than it did two years ago.

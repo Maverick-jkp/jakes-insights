@@ -19,6 +19,9 @@ faq:
     answer: "Cursor uses a Composer feature that gives the AI awareness of your entire codebase, allowing it to execute coordinated changes across routers, schemas, dependencies, and test fixtures simultaneously. GitHub Copilot has narrowed this gap with Copilot Workspace (generally available since late 2025), but Cursor still holds an advantage in greenfield FastAPI projects with complex domain models that span many files."
   - question: "Why did teams switch back from Cursor to GitHub Copilot for FastAPI microservices?"
     answer: "Some backend teams have returned to GitHub Copilot due to its deeper VS Code integration and GitHub Actions awareness, which provides a measurable edge in CI/CD-heavy workflows. The decision often comes down to workflow priorities — teams focused on deployment pipelines and GitHub ecosystem tooling tend to favor Copilot, while those prioritizing large-scale refactoring lean toward Cursor."
+aliases:
+  - "/tech/2026-04-13-cursor-ide-vs-github-copilot-real-world-python-fas/"
+
 ---
 
 Six months ago, a backend team at a mid-sized SaaS company quietly switched from GitHub Copilot to Cursor for their FastAPI microservices work. Three sprints later, they switched back. The reason wasn't cost. It wasn't features. It was *how* each tool handled production-grade Python — dependency injection patterns, Pydantic v2 schema generation, async route handlers — the stuff that separates a working prototype from code you'd actually ship.

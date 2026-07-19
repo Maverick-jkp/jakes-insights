@@ -19,6 +19,9 @@ faq:
     answer: "When Claude returns multiple tool calls in a single streaming response, the SSE stream delivers interleaved `content_block_delta` events each tagged with an `index` key identifying which tool use block they belong to. Your Python code must maintain a separate JSON buffer for each `index` value and only parse a given buffer after its corresponding `content_block_stop` event fires. Failing to track buffers by index will cause tool argument data from different tools to get mixed together, producing corrupted or unparseable JSON."
   - question: "input_json_delta event claude streaming what does it mean"
     answer: "The `input_json_delta` event type is part of Claude's `content_block_delta` SSE events and carries a partial string fragment of a tool call's input arguments JSON. Each fragment is meaningless on its own and must be concatenated with all preceding fragments for the same content block before attempting to parse. Anthropic's official platform documentation at platform.claude.com specifies this behavior, but it is a common source of bugs when developers assume each delta event contains independently valid JSON."
+aliases:
+  - "/tech/2026-05-10-claude-api-tool-use-streaming-partial-json-parse-e/"
+
 ---
 
 Streaming tool calls from Claude's API breaks in ways that catch engineers completely off guard. The `tool_use` content block arrives as fragmented JSON across dozens of SSE events — and if your Python parser assumes a complete object at each chunk, you're looking at silent data loss or cascading `JSONDecodeError` failures in production.

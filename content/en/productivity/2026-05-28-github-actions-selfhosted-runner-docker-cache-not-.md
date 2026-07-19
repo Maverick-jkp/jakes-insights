@@ -19,6 +19,9 @@ faq:
     answer: "A Mac Mini M4, priced around $599 at release in late 2024, delivers sustained multi-core performance that outpaces GitHub's standard ubuntu-latest runners on CPU-bound workloads. The trade-off is upfront hardware cost and maintenance overhead versus paying for GitHub Actions compute minutes, making it cost-effective primarily for teams with consistent, high-volume CI load. However, teams must account for Docker caching issues specific to ARM64 macOS hosts, which can cause 40-60% build time regressions if not properly addressed."
   - question: "does github documentation cover docker cache issues on arm64 macos runners"
     answer: "As of May 2026, GitHub's official documentation does not explicitly address ARM64 macOS host differences for Docker layer caching on self-hosted runners. This leaves teams to diagnose the problem through community reports, runner logs, and third-party setup guides rather than official guidance. The silence in official docs is part of why the issue often goes undetected, since cache failures on ARM64 Mac Mini runners tend to surface as slow builds rather than clear error messages."
+aliases:
+  - "/tech/2026-05-28-github-actions-selfhosted-runner-docker-cache-not-/"
+
 ---
 
 Build pipelines breaking silently on ARM64 is expensive. If you've recently moved CI workloads to a Mac Mini M-series runner, there's a good chance you've hit the `github actions self-hosted runner docker cache not working arm64 mac mini fix` problem without fully understanding why it's happening.

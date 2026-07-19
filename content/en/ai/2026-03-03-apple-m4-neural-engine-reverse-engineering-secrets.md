@@ -19,6 +19,9 @@ faq:
     answer: "There is no official API to directly force ANE execution in CoreML, as Apple's compiler makes routing decisions internally without developer control. The most reliable approach is to restructure your model around ANE-preferred patterns such as channel-first tensor layouts and 1×1 convolution operations, which reverse engineering of the M4 ANE has confirmed are architectural requirements rather than optional suggestions. You can verify ANE utilization after the fact using Apple's Instruments tool, but without model restructuring, workloads frequently fall back silently to CPU or GPU."
   - question: "Apple Neural Engine 38 TOPS M4 how to actually use it for ML inference"
     answer: "The M4 Neural Engine is capable of 38 TOPS of ML throughput but most developers fail to access it because Apple provides almost no low-level documentation on how the hardware routes or executes workloads. Community reverse engineering has revealed that standard PyTorch or CoreML models often need to be significantly restructured around ANE-specific operation patterns before the hardware will accept them. Without these optimizations, models silently execute on CPU or GPU instead, resulting in worse performance and higher power consumption."
+aliases:
+  - "/tech/2026-03-03-apple-m4-neural-engine-reverse-engineering-secrets/"
+
 ---
 
 Apple ships tens of millions of M4-class devices every year. Each one contains a Neural Engine capable of 38 TOPS of ML throughput. And most developers are getting zero of it — not because the hardware fails, but because Apple tells you almost nothing about how it actually works.

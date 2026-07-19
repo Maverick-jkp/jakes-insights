@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions cron 스케줄은 SLA가 없는 베스트에포트 방식으로 동작하기 때문에 고트래픽 시간대에는 1시간 이상 지연되거나 간헐적으로 건너뛰는 경우가 있어요. 이 경우 githubstatus.com에서 Actions 서비스 상태를 먼저 확인하고, 핵심 배포 작업은 push 트리거 기반으로 전환한 뒤 cron은 예약 콘텐츠 처리 같은 비중요 작업에만 사용하는 구조로 바꾸는 것이 현실적인 해결책이에요."
   - question: "Hugo 블로그 GitHub Pages 자동 배포 cron 설정 올바른 방법"
     answer: "Hugo 블로그 자동 배포 트러블슈팅에서 GitHub Actions cron 스케줄이 실제로 안 돌아갈 때 가장 먼저 확인해야 할 건 워크플로 파일 위치예요. `.github/workflows/deploy.yml` 파일이 반드시 리포지토리의 default branch(보통 main)에 있어야 schedule 트리거가 동작해요. 또한 배포 단계에서 권한 오류가 발생한다면 워크플로에 `permissions: contents: write` 설정을 추가해야 해요."
+aliases:
+  - "/tech/2026-05-08-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-hugo-블로그/"
+
 ---
 
 Hugo 블로그 자동 배포 설정해놓고 다음날 아침에 확인하면, 어젯밤 예약한 빌드가 그냥 건너뛰어져 있어요. "분명히 설정했는데?" 싶은 그 상황, 꽤 많은 개발자들이 겪거든요.

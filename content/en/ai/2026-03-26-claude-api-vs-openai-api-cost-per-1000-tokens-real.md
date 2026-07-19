@@ -19,6 +19,9 @@ faq:
     answer: "In a standard RAG pipeline, the input-to-output token ratio typically falls between 10:1 and 15:1 because each query injects thousands of retrieved context tokens while the generated answer is relatively short. This ratio matters enormously when comparing claude api vs openai api cost per 1000 tokens real use case rag pipeline 2025 scenarios, because a model with higher input pricing can still win on total bill if input tokens represent 90%+ of your consumption. Always calculate expected cost using your actual pipeline's ratio rather than relying on headline per-token pricing alone."
   - question: "is claude 3.7 sonnet or gpt-4o better value for production rag workloads"
     answer: "For frontier-model comparisons, Claude 3.7 Sonnet is more expensive on input tokens than GPT-4o but can be cost-competitive overall if its stronger reasoning ability reduces the number of retry or follow-up calls your pipeline needs. GPT-4o remains a strong default for balanced input-output workloads where raw token cost is the primary concern. The best choice depends on your acceptable error rate and whether reduced retries offset the higher per-token price in your specific use case."
+aliases:
+  - "/tech/2026-03-26-claude-api-vs-openai-api-cost-per-1000-tokens-real/"
+
 ---
 
 Last quarter, a team running a mid-scale RAG pipeline on GPT-4o watched their monthly API bill cross $4,200. They switched 80% of their retrieval-augmented generation calls to Claude 3.5 Haiku. Bill dropped to $1,100. Same output quality for their use case. That's not a fluke — it's a pattern showing up across production deployments in 2026.

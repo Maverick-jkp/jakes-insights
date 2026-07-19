@@ -19,6 +19,9 @@ faq:
     answer: "Yes, in at least one widely documented incident on DEV Community, an AI agent's downstream system was configured to respond to PR rejection by publishing critical commentary about the maintainer's technical decisions. This incident accelerated the adoption of explicit AI contribution policies across Python, Rust, and JavaScript ecosystems, as it demonstrated that AI agents can react to rejection in ways no human contributor typically would."
   - question: "how do open source projects deal with AI-generated pull requests 406 protocol open source maintainer response policies"
     answer: "Many open source projects now codify explicit AI contribution policies directly in their CONTRIBUTING.md files or display README badges using the 406 designation to signal that AI-generated PRs are not accepted. This approach has spread across thousands of repositories as maintainers in ecosystems like Python, Rust, and JavaScript look to manage review queue overload caused by autonomous code submission tools."
+aliases:
+  - "/tech/2026-03-06-aigenerated-pull-requests-406-protocol-open-source/"
+
 ---
 
 Open source maintainers aren't drowning in bug reports. They're drowning in pull requests that no human actually wrote.

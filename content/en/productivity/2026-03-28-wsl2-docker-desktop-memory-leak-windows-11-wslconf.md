@@ -19,6 +19,9 @@ faq:
     answer: "Docker Desktop does not have a traditional memory leak, but its use of the WSL2 backend by default since version 4.x causes persistent high memory usage through standard Linux page cache behavior that Windows never reclaims. This is a well-documented issue tracked in WSL2 GitHub issue #4166 with over 800 comments, and it affects every Windows 11 Docker user who has not explicitly configured .wslconfig limits. The wsl2 docker desktop memory leak windows 11 .wslconfig optimization real fix involves capping WSL2 memory allocation manually since no automatic reclamation occurs."
   - question: "how much memory does wsl2 use by default on windows 11"
     answer: "By default, WSL2 on Windows 11 can allocate up to 50% of your total system RAM with no automatic upper cap enforced unless you configure one yourself. On a 16GB machine that means WSL2 can claim up to 8GB for the VmmemWSL process, leaving the rest of your Windows applications competing for whatever remains. Microsoft's own documentation recommends using the .wslconfig file to set a memory ceiling appropriate for your workload."
+aliases:
+  - "/tech/2026-03-28-wsl2-docker-desktop-memory-leak-windows-11-wslconf/"
+
 ---
 
 Your Windows 11 machine is grinding to a halt. Task Manager shows `VmmemWSL` consuming 8GB of RAM. Docker Desktop is open, three containers are running, and the entire OS feels like it's wading through wet concrete. This isn't a hardware problem. It's a well-documented WSL2 memory allocation issue — and the fix is simpler than most Stack Overflow threads suggest.

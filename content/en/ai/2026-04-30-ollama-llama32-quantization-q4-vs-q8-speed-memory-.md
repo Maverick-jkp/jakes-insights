@@ -19,6 +19,9 @@ faq:
     answer: "The M3 Pro largely eliminates the thermal throttling issues that affected earlier Apple Silicon chips like the M1 Pro during local LLM inference. Its 18-core GPU and 150GB/s unified memory bandwidth handle Llama 3.2 3B inference without the sustained heat buildup that caused performance degradation on older hardware."
   - question: "what is q4_K_M quantization ollama llama3.2 quantization q4 vs q8 speed memory MacBook M3 Pro benchmark 2025"
     answer: "In the context of ollama llama3.2 quantization q4 vs q8 speed memory MacBook M3 Pro benchmark 2025 comparisons, q4_K_M is a 4-bit quantization format where the 'K_M' designation means attention key layers retain slightly higher precision than standard 4-bit. This mixed-precision approach helps preserve model quality while still delivering the memory and speed benefits of 4-bit weight storage."
+aliases:
+  - "/tech/2026-04-30-ollama-llama32-quantization-q4-vs-q8-speed-memory-/"
+
 ---
 
 Running a 3B parameter model locally felt impossible two years ago. Today it's a lunch-break setup on a MacBook. But the real question isn't *whether* you can run Llama 3.2 on Apple Silicon — it's *which* quantization level actually makes sense for your workflow.

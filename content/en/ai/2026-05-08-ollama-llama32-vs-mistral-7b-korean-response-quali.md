@@ -19,6 +19,9 @@ faq:
     answer: "For Korean-language tasks requiring grammatical accuracy, formal register, or complex sentence structure, Mistral 7B running via Ollama is the stronger choice on a MacBook M3 16GB. If your workflow prioritizes low latency or real-time interaction over linguistic precision, Llama 3.2 3B is the more practical option."
   - question: "ollama llama3.2 vs mistral 7b korean response quality benchmark macbook m3 16gb honorifics accuracy"
     answer: "According to the ollama llama3.2 vs mistral 7b korean response quality benchmark macbook m3 16gb analysis, Mistral 7B's larger parameter count produces measurably fewer structural errors in nuanced Korean output, including honorific systems like 존댓말 vs 반말 and topic-comment syntax. Llama 3.2 3B handles simple Korean queries acceptably but struggles with formal or structurally complex Korean text."
+aliases:
+  - "/tech/2026-05-08-ollama-llama32-vs-mistral-7b-korean-response-quali/"
+
 ---
 
 Running local LLMs for Korean-language tasks used to mean choosing between accuracy and speed. On the MacBook M3 16GB, that tradeoff looks very different in 2026 — and the numbers tell a story worth examining.

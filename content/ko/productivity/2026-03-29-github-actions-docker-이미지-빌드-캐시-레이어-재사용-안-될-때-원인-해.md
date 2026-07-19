@@ -19,6 +19,9 @@ faq:
     answer: "COPY . .를 의존성 설치 명령어보다 앞에 배치하면 소스 파일이 1줄만 바뀌어도 해당 레이어 이하 전체가 무효화되어 npm install이나 pip install이 매번 새로 실행됩니다. 해결책은 COPY package.json package-lock.json ./처럼 의존성 파일만 먼저 복사하고 RUN npm install을 실행한 뒤, 그 다음에 COPY . .로 나머지 소스를 복사하는 순서로 Dockerfile을 작성하는 것입니다. 이 방법만으로도 빌드 시간이 10분에서 1-2분으로 단축되는 경우가 많습니다."
   - question: "GitHub Actions Docker 이미지 빌드 캐시 레이어 재사용 안 될 때 캐시 히트 여부 확인하는 방법"
     answer: "docker buildx build --progress=plain 옵션으로 빌드를 실행하면 출력 로그에서 CACHED 키워드가 포함된 라인 수를 통해 캐시 레이어 재사용률을 바로 확인할 수 있습니다. CACHED 라인이 거의 없다면 캐시가 제대로 작동하지 않는 것이므로 Dockerfile 레이어 순서와 cache-key 설정을 점검해야 합니다. GitHub Actions 워크플로우 로그에서도 동일하게 확인할 수 있어 별도 도구 없이 빠르게 진단이 가능합니다."
+aliases:
+  - "/tech/2026-03-29-github-actions-docker-이미지-빌드-캐시-레이어-재사용-안-될-때-원인-해/"
+
 ---
 
 CI/CD 파이프라인에서 Docker 빌드가 10분씩 걸린다면, 높은 확률로 캐시가 제대로 작동하지 않는 거예요. 설정은 다 해놨는데 매번 처음부터 빌드되는 그 답답함, 맞죠?

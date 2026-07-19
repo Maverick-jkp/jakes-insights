@@ -19,6 +19,9 @@ faq:
     answer: "5명 이하 스타트업 초기 팀이라면 Copilot을 먼저 사용하는 것이 합리적입니다. 코드베이스가 작을 때는 멀티파일 맥락 차이가 크게 드러나지 않고, VS Code 플러그인 형태라 별도 환경 설정 없이 1~2일 내 온보딩이 가능합니다. 반면 10명 이상의 TypeScript 헤비 팀이라면 Cursor 전환을 검토할 시점으로, 온보딩 3~5일 비용이 리팩터링 효율 개선으로 돌아옵니다."
   - question: "GitHub Copilot Cursor 자동완성 수락률 비교 실제 수치 있나요"
     answer: "GitHub Copilot Cursor 실무 3개월 병행 사용 TypeScript 풀스택 자동완성 수락률 비교 솔직 리뷰에서 측정한 결과, 전체 평균 수락률은 Cursor 약 38%, GitHub Copilot 약 27%였습니다. 작업 유형별로는 단순 함수에서 Copilot 41% 대 Cursor 35%, 멀티파일 리팩터링에서 Cursor 42% 대 Copilot 21%로 상황에 따라 역전되는 구조입니다."
+aliases:
+  - "/tech/2026-04-06-github-copilot-cursor-실무-3개월-병행-사용-typescript-풀스택-/"
+
 ---
 
 팀장이 슬랙으로 물어봐요. "그래서 Copilot이에요, Cursor예요?"

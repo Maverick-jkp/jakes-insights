@@ -19,6 +19,9 @@ faq:
     answer: "At 10,000 monthly active users, Supabase's $25/month Pro plan typically covers the full workload with no overages, including auth, storage, and bandwidth. PlanetScale at equivalent usage lands between $39–$59/month, and unlike Supabase, does not bundle auth, file storage, or edge functions into that cost."
   - question: "is Supabase Pro plan worth it for solo developers compared to PlanetScale"
     answer: "Supabase's $25/month Pro plan is widely considered better value for solo developers because it bundles authentication, file storage, and edge functions alongside the database. Replacing those features separately with third-party services would typically cost $60–$100/month, making the total infrastructure cost comparison heavily favor Supabase over PlanetScale."
+aliases:
+  - "/tech/2026-05-29-supabase-vs-planetscale-pricing-after-free-tier-re/"
+
 ---
 
 The two most popular managed database platforms for indie developers both yanked their free tiers — but the real-world billing math tells very different stories depending on what you're building.

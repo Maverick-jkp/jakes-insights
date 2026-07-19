@@ -19,6 +19,9 @@ faq:
     answer: "On a 2GB VPS, PostgreSQL's shared_buffers should be capped at 256MB rather than blindly following the common '25% of RAM' advice, which was written for dedicated database servers with much larger memory pools. The default 128MB is actually acceptable for constrained instances, and overshooting it steals memory from Node.js and Nginx causing cascading instability."
   - question: "why does my vps app crash at 2am with no traffic spike"
     answer: "This pattern is typically caused by slow memory pressure accumulation rather than a sudden traffic event — the OOM killer fires once baseline memory usage from Node.js, PostgreSQL, Nginx, and kernel file cache fills the remaining RAM. Misconfigured swap size, incorrect swappiness values, or uncapped Node.js heap limits are the most common root causes on 2GB VPS instances running production stacks."
+aliases:
+  - "/tech/2026-03-21-vps-2gb-ram-nginx-postgres-node-app-swap-memory-tu/"
+
 ---
 
 A 2GB RAM VPS costs roughly $6–12/month on DigitalOcean, Hetzner, or Vultr in 2026. Thousands of solo developers and small teams run production workloads on exactly this spec. Most of them hit the same wall: the app runs fine for a week, then starts swapping to death at 2 AM on a Tuesday.

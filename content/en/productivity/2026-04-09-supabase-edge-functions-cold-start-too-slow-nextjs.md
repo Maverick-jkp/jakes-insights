@@ -19,6 +19,9 @@ faq:
     answer: "Next.js App Router's built-in fetch cache can absorb the impact of Supabase Edge Function cold starts by serving cached responses for repeated identical requests without hitting the edge function at all. This only works reliably when cache keys are stable and revalidation intervals are correctly configured for your use case. For routes where data freshness requirements allow caching, this is one of the lowest-effort mitigations available without changing your backend architecture."
   - question: "should I use nextjs route handlers instead of supabase edge functions for production"
     answer: "For latency-critical, user-facing endpoints, migrating logic from Supabase Edge Functions to Next.js Route Handlers running on Vercel's Node.js runtime eliminates Deno-based cold starts entirely. The trade-off is losing the global edge distribution that Supabase Edge Functions provide, but for many production apps the consistent low latency of Node.js runtime outweighs geographic distribution benefits. The pattern most teams are adopting is a hybrid model where Supabase Edge Functions handle async and background work while Route Handlers serve real-time user requests."
+aliases:
+  - "/tech/2026-04-09-supabase-edge-functions-cold-start-too-slow-nextjs/"
+
 ---
 
 Cold starts are killing response times. If you're running Supabase Edge Functions behind a Next.js App Router application in 2026, you've almost certainly hit the wall: a function that should respond in 80ms takes 600ms on first invocation, and your users feel every millisecond of it.

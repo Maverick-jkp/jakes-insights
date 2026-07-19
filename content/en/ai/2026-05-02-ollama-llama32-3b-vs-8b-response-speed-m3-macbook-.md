@@ -19,6 +19,9 @@ faq:
     answer: "For coding tasks, the 8B model is generally the better choice despite being slower, as it produces measurably fewer hallucinated API calls and syntax errors compared to the 3B model. The quality improvement changes the effective cost-per-output calculation, making the speed tradeoff worthwhile for development workflows."
   - question: "ollama llama3.2 3b vs 8b response speed M3 MacBook 16GB RAM benchmark 2025 which model is better"
     answer: "Neither model is universally better — the right choice depends entirely on your use case. Llama 3.2 3B wins for throughput-sensitive applications like chat interfaces and autocomplete, while the 8B model is superior for tasks requiring structured output quality, code generation, or multi-step reasoning on M3 MacBook hardware."
+aliases:
+  - "/tech/2026-05-02-ollama-llama32-3b-vs-8b-response-speed-m3-macbook-/"
+
 ---
 
 Running local LLMs on Apple Silicon isn't a weekend experiment anymore. The question of Ollama Llama 3.2 3B vs 8B response speed on an M3 MacBook with 16GB RAM has become one of the most-searched queries among developers choosing their daily AI stack in 2026 — and the performance gap between these two models is smaller, and more nuanced, than most people expect.

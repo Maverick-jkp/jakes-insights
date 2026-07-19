@@ -19,6 +19,9 @@ faq:
     answer: "According to Sonatype's 2025 State of the Software Supply Chain report, npm package compromise detection in enterprise environments averages 209 days, giving attackers months of undetected access to developer credentials and systems. This long detection window makes supply chain attacks especially damaging, as malicious packages can spread across dozens of developer environments before any alert is triggered. Automated dependency monitoring tools can significantly reduce this detection gap."
   - question: "what steps should developers take immediately after the Bitwarden CLI npm supply chain attack"
     answer: "Developers should immediately switch to using 'npm ci' with lockfile integrity enforcement rather than standard 'npm install' to ensure cryptographic verification of installed packages. Teams should also audit all existing dependencies for suspicious postinstall hooks and review environment variable access patterns in their CI/CD pipelines. Rotating any credentials or secrets that may have been exposed during the window of compromise is also a critical step."
+aliases:
+  - "/tech/2026-04-24-bitwarden-cli-supply-chain-attack-npm-developer-ri/"
+
 ---
 
 A legitimate, trusted npm package got hijacked to steal developer credentials. Not a zero-day exploit. Not a phishing campaign. A supply chain attack targeting the tools engineers run every day.

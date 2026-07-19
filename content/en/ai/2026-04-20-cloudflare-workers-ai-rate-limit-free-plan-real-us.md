@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare does not publish an official fixed Neurons-per-token conversion rate, but community benchmarking shows text generation models like Llama and Mistral consume roughly 10–50+ Neurons per request depending on prompt length and model size. Larger, more capable models with wider context windows tend to consume significantly more Neurons, which has increased average per-request costs compared to earlier 2024 usage patterns."
   - question: "is cloudflare workers ai free plan good enough for production in 2025 2026"
     answer: "The cloudflare workers ai rate limit free plan real usage report data shows that the free tier is insufficient for most production workloads, as any application exceeding roughly 300–500 LLM inference calls per day will reliably exhaust the 10,000 daily Neuron budget. The free tier works well for development, testing, or very low-volume applications, but teams with consistent traffic should budget for the paid plan."
+aliases:
+  - "/tech/2026-04-20-cloudflare-workers-ai-rate-limit-free-plan-real-us/"
+
 ---
 
 The Cloudflare Workers AI free plan looks generous on paper. Dig into actual usage patterns, and the limits hit faster than the documentation implies.

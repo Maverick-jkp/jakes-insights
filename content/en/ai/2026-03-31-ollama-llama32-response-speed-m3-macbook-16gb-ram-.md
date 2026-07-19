@@ -19,6 +19,9 @@ faq:
     answer: "The ollama llama3.2 response speed M3 MacBook 16GB RAM benchmark 2025 results show local inference is now a legitimate production consideration, not just an enthusiast hobby. Engineers are actively comparing local M3 inference against cloud API costs, particularly for privacy-sensitive workloads and offline development environments where the hardware is already available."
   - question: "how does ollama use Metal on Apple Silicon for LLM inference"
     answer: "Ollama uses Apple's Metal GPU compute API as its backend on Apple Silicon, delivering near-native inference speeds without requiring manual configuration like CUDA setup on other platforms. The Metal backend matured significantly through 2024, making Ollama one of the easiest ways to run models like Llama 3.2 at full M3 performance."
+aliases:
+  - "/tech/2026-03-31-ollama-llama32-response-speed-m3-macbook-16gb-ram-/"
+
 ---
 
 Running a capable LLM locally used to mean a workstation GPU, 64GB of RAM, and a lot of patience. That changed fast. The benchmark data for Llama 3.2 on an M3 MacBook with 16GB RAM tells a different story — one where a standard developer laptop handles inference that would've required cloud credits just 18 months ago.

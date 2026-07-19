@@ -19,6 +19,9 @@ faq:
     answer: "Cursor AI vs GitHub Copilot 실무 코드리뷰 정확도 한국어 주석 프로젝트 실사용 비교 2025 관점에서 보면, Cursor Pro는 월 $20로 GitHub Copilot Individual($10)의 두 배 가격이에요. 다만 멀티파일 에이전트 편집(Composer)과 모델 선택 자유도가 Cursor의 핵심 차별점이라, 한국어 코드베이스 중심의 개인 개발자나 스타트업이라면 가격 차이만큼의 생산성 향상을 체감할 수 있어요."
   - question: "기존 VS Code 쓰던 팀이 Cursor AI로 전환하면 불편한 점 있나요"
     answer: "Cursor AI는 VS Code 포크 기반의 독립 에디터라 기존 VS Code 환경에서 전환할 때 플러그인 재설정과 팀 개발 환경 통일 비용이 발생해요. 반면 GitHub Copilot은 VS Code·JetBrains 등 기존 IDE에 플러그인 형태로 바로 설치되기 때문에 팀 전체가 기존 환경을 유지하면서 도입하기가 훨씬 수월해요."
+aliases:
+  - "/tech/2026-04-24-cursor-ai-vs-github-copilot-실무-코드리뷰-정확도-한국어-주석-프로젝/"
+
 ---
 
 한국 개발팀의 절반 이상이 지금 AI 코딩 도구를 쓰고 있어요. 근데 그 도구가 "영어로만 잘 작동한다"면? 실무 현장에서 진짜 중요한 건 PR 리뷰 정확도와 한국어 주석 처리 능력이에요. 그래서 직접 비교해봤어요.

@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions cron 스케줄이 실제로 안 돌아갈 때 원인 분석 및 우회 방법 중 가장 신뢰도 높은 방법은 외부 스케줄러로 workflow_dispatch를 트리거하는 방식이에요. AWS EventBridge, Google Cloud Scheduler, 또는 무료로 사용 가능한 cron-job.org 같은 서비스가 지정 시각에 GitHub REST API를 호출하면 초 단위 정확도로 워크플로를 실행할 수 있어요. 워크플로에 'on: workflow_dispatch'를 추가하고 기존 schedule도 백업용으로 함께 유지하는 구성이 실무에서 가장 널리 쓰여요."
   - question: "GitHub Actions cron 지연 줄이는 방법"
     answer: "매 시간 정각(0분)과 30분에는 전 세계 수십만 개 리포지토리의 트리거가 동시에 몰려 GitHub 인프라 부하가 높아져요. '0 9 * * *' 대신 '7 9 * * *'처럼 정각을 살짝 비켜가는 것만으로도 지연을 줄일 수 있으며, GitHub 엔지니어링 팀도 비공식적으로 권장하는 방법이에요. 단, GitHub는 scheduled workflow에 SLA를 제공하지 않으므로 정확한 실행 시각이 중요한 작업이라면 외부 스케줄러를 사용하는 것이 근본적인 해결책이에요."
+aliases:
+  - "/tech/2026-04-03-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-및-우회-방법/"
+
 ---
 
 오전 9시에 돌아야 할 배치 작업이 9시 40분에 시작됐어요. 로그를 뒤져봤는데 워크플로 자체는 멀쩡해요. 내 설정 문제인지, GitHub 문제인지조차 모르겠는 상황. GitHub Actions cron을 쓰는 팀이라면 한 번쯤 겪는 일이에요.

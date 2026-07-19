@@ -19,6 +19,9 @@ faq:
     answer: "Cache write tokens cost 25 tokens per million for Claude Sonnet models as a one-time premium, after which all subsequent reads on that cached prefix drop to approximately 10% of the standard input rate. The write cost is charged only once per cache window, so the more requests that hit the same cached prefix, the faster you recover the write premium and start saving."
   - question: "can you combine claude prompt caching with batch api for more savings"
     answer: "Yes, combining Anthropic's prompt caching with their Batch API can reduce costs by over 80% compared to standard synchronous API calls on eligible workloads. This stacking approach works best for non-latency-sensitive tasks where both the input reuse discount and the batch processing discount can be applied simultaneously."
+aliases:
+  - "/tech/2026-05-12-claude-api-prompt-caching-cost-reduction-real-usag/"
+
 ---
 
 My API bill dropped 68% last quarter. Same workload, same Claude models, same production traffic. The only change was enabling prompt caching.

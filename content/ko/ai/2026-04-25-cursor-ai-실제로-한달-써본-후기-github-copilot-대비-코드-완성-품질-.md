@@ -19,6 +19,9 @@ faq:
     answer: "네, GitHub Copilot은 VS Code, JetBrains, Vim 등 기존 IDE에 플러그인 형태로 설치해 그대로 사용할 수 있어요. 반면 Cursor AI는 VS Code 기반이지만 자체 에디터를 별도로 설치해야 하는 구조적 차이가 있어서, 기존 개발 환경을 바꾸고 싶지 않다면 Copilot이 더 유리해요."
   - question: "Cursor AI 무료로 써볼 수 있나요?"
     answer: "Cursor AI는 2주 무료 체험 티어를 제공하고 있어요. GitHub Copilot도 월 2,000회 코드 완성을 무료로 제공하는 무료 티어가 있으니, 두 도구 모두 유료 결제 전에 직접 사용해보고 본인 개발 스타일에 맞는 쪽을 선택하는 게 좋아요."
+aliases:
+  - "/tech/2026-04-25-cursor-ai-실제로-한달-써본-후기-github-copilot-대비-코드-완성-품질-/"
+
 ---
 
 월 $20 내고 AI 코딩 도구를 쓰는데, 정말 돈값을 하고 있을까요?

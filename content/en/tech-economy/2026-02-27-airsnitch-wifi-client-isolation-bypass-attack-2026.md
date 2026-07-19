@@ -19,6 +19,9 @@ faq:
     answer: "As of late February 2026, there is no single patch that fully closes the AirSnitch client isolation bypass exposure, and firmware updates from affected vendors remain inconsistent. The issue is considered a protocol-level concern rather than a single-vendor bug, meaning a layered defense approach is recommended. Organizations are advised to implement both network-level and endpoint-level controls rather than waiting for a unified fix."
   - question: "how does client isolation bypass enable man in the middle attacks"
     answer: "A client isolation bypass attack like AirSnitch allows an attacker on the same Wi-Fi network to redirect traffic through the access point itself, effectively using the AP as an unwitting relay between devices. This enables machine-in-the-middle attacks where the attacker can intercept or manipulate communications between two devices that should be isolated from each other. The attack is particularly dangerous because affected devices and users have no straightforward way to detect the interception is occurring."
+aliases:
+  - "/tech/2026-02-27-airsnitch-wifi-client-isolation-bypass-attack-2026/"
+
 ---
 
 Client isolation has been the quiet bedrock of Wi-Fi security for years. AirSnitch just cracked it open.

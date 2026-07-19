@@ -19,6 +19,9 @@ faq:
     answer: "Yes, D1's pricing is based on rows read rather than requests, so a single query scanning 50,000 rows costs significantly more than 50,000 individual KV reads. Proper indexing is critical with D1 to keep row scan counts low and prevent unexpected bills at scale."
   - question: "cloudflare KV write costs too high saas alternative options"
     answer: "If your SaaS writes frequently — such as updating user activity timestamps on every request — KV's $5 per million writes can add up quickly and become prohibitively expensive. In high-write scenarios, D1 or restructuring your writes to batch updates may offer better cost efficiency depending on your total row write volume."
+aliases:
+  - "/tech/2026-05-03-cloudflare-workers-kv-vs-d1-sqlite-cost-comparison/"
+
 ---
 
 Most small SaaS founders pick between Cloudflare KV and D1 SQLite based on instinct, not numbers. That instinct shows up on your bill later.

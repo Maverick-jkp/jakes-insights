@@ -19,6 +19,9 @@ faq:
     answer: "Both platforms advertise free tiers but carry hidden costs — in the Fly.io free tier vs Railway free tier hobby project actual monthly cost breakdown, neither platform stays truly free once you add a custom domain, static IP, or persistent database. Fly.io's per-resource billing surprises developers with IPv4 and egress charges, while Railway's costs scale predictably against its credit system."
   - question: "what replaced Heroku free tier best alternative 2025 for hobby projects"
     answer: "Fly.io and Railway are among the most popular Heroku free tier replacements, both absorbing significant developer migration after Heroku ended its free tier in November 2022. When comparing the Fly.io free tier vs Railway free tier hobby project actual monthly cost breakdown, Railway's flat-rate credit model tends to feel more familiar to developers used to Heroku's simple pricing structure."
+aliases:
+  - "/tech/2026-03-27-flyio-free-tier-vs-railway-free-tier-hobby-project/"
+
 ---
 
 Deploying a side project used to mean paying $5/month minimum, no questions asked. Now both Fly.io and Railway offer free tiers — but the actual cost when your project wakes up at 3am and starts chewing through resources? That's a different number entirely.

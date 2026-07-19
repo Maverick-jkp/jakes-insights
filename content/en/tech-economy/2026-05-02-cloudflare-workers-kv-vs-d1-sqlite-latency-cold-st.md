@@ -19,6 +19,9 @@ faq:
     answer: "You should choose Cloudflare KV over D1 when your app needs fast key-value lookups for data like session tokens, feature flags, or cached content that changes infrequently. If your app requires relational queries, ACID transactions, or structured data relationships, D1 SQLite is the better fit despite its higher cold-start latency."
   - question: "is Cloudflare D1 eventually consistent like KV"
     answer: "No, Cloudflare D1 is not eventually consistent — it supports full ACID transactions, making it reliable for relational and transactional data. Cloudflare KV, by contrast, is eventually consistent with writes taking up to 60 seconds to propagate globally, which makes it unsuitable for real-time relational data needs."
+aliases:
+  - "/tech/2026-05-02-cloudflare-workers-kv-vs-d1-sqlite-latency-cold-st/"
+
 ---
 
 Cloudflare Workers forces the storage decision early. And if you pick wrong, you're not just dealing with slow reads — you're rebuilding your entire data model six weeks in.

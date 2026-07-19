@@ -19,6 +19,9 @@ faq:
     answer: "In late February 2026, OpenAI announced an expanded deal with the U.S. Department of Defense reportedly worth hundreds of millions of dollars, covering AI tools for defense applications. OpenAI publicly framed the contract around national security, responsible deployment, and U.S. competitiveness against China."
   - question: "what does the Dario Amodei OpenAI military deal dispute Anthropic mean for the AI industry?"
     answer: "The dispute signals that AI companies will face increasing pressure to publicly define their limits around military deployment as government contracts grow larger and more visible. It also suggests that internal tensions between safety priorities and commercial growth are beginning to spill into public view, marking a shift away from the industry's previously polite governance debates."
+aliases:
+  - "/tech/2026-03-05-dario-amodei-openai-military-deal-dispute-anthropi/"
+
 ---
 
 The Dario Amodei–OpenAI military deal dispute just turned into something uglier than a typical competitor spat. On March 4, 2026, Anthropic's CEO circulated an internal memo calling OpenAI's Pentagon announcement messaging "mendacious" — and "straight up lies." That's not diplomatic language. That's a CEO putting his frustration in writing, and it tells you something important about where AI's biggest ethical fault line sits right now.

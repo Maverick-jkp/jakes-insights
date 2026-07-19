@@ -19,6 +19,9 @@ faq:
     answer: "Grafana's memory footprint can be reduced by disabling `GF_RENDERING_SERVER_URL` and turning off plugin preloading, which are unnecessary on low-resource instances. The Grafana Docker image includes a full Node.js runtime that consumes 150–200MB at idle, so avoiding optional features keeps usage closer to that baseline. Combining this with a Docker Compose `mem_limit` directive ensures the container cannot spike beyond a defined threshold."
   - question: "prometheus tsdb retention memory 1gb vps out of memory"
     answer: "The default Prometheus TSDB retention of 15 days stores a large volume of memory-mapped files that can push usage past 600MB on busy hosts, which is unsustainable on a 1GB VPS. Setting `--storage.tsdb.retention.time=7d` combined with `--storage.tsdb.retention.size=512MB` caps heap growth at a predictable level. This single change is often the most impactful fix for OOM issues in small Prometheus deployments."
+aliases:
+  - "/tech/2026-04-08-prometheus-grafana-docker-compose-single-vps-1gb-r/"
+
 ---
 
 Running a full monitoring stack on a single 1GB VPS sounds ambitious. It is. But with the right configuration, it's absolutely achievable — and plenty of production setups do exactly this.

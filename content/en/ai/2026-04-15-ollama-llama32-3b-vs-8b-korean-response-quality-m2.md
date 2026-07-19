@@ -19,6 +19,9 @@ faq:
     answer: "For most Korean production use cases, Llama 3.2 3B is generally not recommended due to its weak grammatical accuracy and poor honorific handling. The ollama llama3.2 3b vs 8b korean response quality M2 MacBook benchmark 2025 findings suggest the 3B is only viable for low-stakes Korean tasks where speed matters more than linguistic precision."
   - question: "ollama 0.5 update M2 MacBook performance improvement korean LLM"
     answer: "Ollama version 0.5, released in late 2025, introduced smarter memory management on Apple Silicon that better leverages the M2's unified memory pool without requiring manual configuration. M2 users reported approximately 30% throughput improvement over version 0.4, making local Korean LLM deployment significantly more practical without any hardware changes."
+aliases:
+  - "/tech/2026-04-15-ollama-llama32-3b-vs-8b-korean-response-quality-m2/"
+
 ---
 
 Korean honorific accuracy dropping from 78% to 51% isn't a minor quality dip. It's the difference between a tool your users trust and one that embarrasses them in front of customers.

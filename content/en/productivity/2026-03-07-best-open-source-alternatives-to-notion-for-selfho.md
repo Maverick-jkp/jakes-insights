@@ -19,6 +19,9 @@ faq:
     answer: "AppFlowy is a strong self-hosted alternative to Notion, particularly for engineering teams, and reached 50,000 GitHub stars by mid-2025. Its 0.7 release in late 2025 added offline-first sync, making it one of the most mature options among the best open source alternatives to Notion for self-hosting."
   - question: "why are teams moving away from Notion to self-hosted tools"
     answer: "Teams are leaving Notion primarily due to rising costs, data residency concerns, and vendor lock-in risks. By 2026, Notion's Plus plan costs $16/user/month, and growing GDPR enforcement against U.S.-based SaaS vendors has pushed privacy-conscious teams toward self-hosted, open source alternatives."
+aliases:
+  - "/tech/2026-03-07-best-open-source-alternatives-to-notion-for-selfho/"
+
 ---
 
 ## The Privacy Reckoning Pushing Teams Off Notion

@@ -8,6 +8,9 @@ tags: ["subtopic-data", "Fly.io \ubb34\ub8cc \ud50c\ub79c PostgreSQL \uc5f0\uacb
 description: "Fly.io 무료 플랜 PostgreSQL은 max_connections 25개 한도로 앱 확장 시 too many connections 오류가 발생합니다. PgBouncer 설정으로 수백 개 연결을 실제 DB 연결 몇 개로 줄이는 실전 해결법을 다룹니"
 image: "/images/20260325-flyio-무료-플랜-postgresql-연결-초과-오.webp"
 technologies: ["Python", "Next.js", "Node.js", "PostgreSQL", "Supabase"]
+aliases:
+  - "/tech/2026-03-25-flyio-무료-플랜-postgresql-연결-초과-오류-pgbouncer-설정-실전-해결/"
+
 ---
 
 Fly.io로 사이드 프로젝트를 돌리다 갑자기 앱이 먹통이 됐어요. 로그를 열면 `too many connections`나 `connection reset by peer` 오류만 잔뜩 쌓여 있고요. 무료 플랜 PostgreSQL의 연결 한도는 생각보다 훨씬 낮아요. 그리고 이 문제, 2026년 현재도 Fly.io 커뮤니티에서 가장 많이 올라오는 질문 중 하나예요.

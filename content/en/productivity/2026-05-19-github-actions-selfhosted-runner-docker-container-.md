@@ -19,6 +19,9 @@ faq:
     answer: "You can limit memory for a Docker container in GitHub Actions by passing the --memory flag in your Docker run command (e.g., --memory=4g) or by setting resource limits in your Docker Compose configuration. For self-hosted runners, also consider reducing the MAX_CONCURRENT_JOBS setting on the runner daemon to prevent multiple jobs from exhausting host memory simultaneously."
   - question: "how to stop OOM killer from killing docker containers on linux"
     answer: "To prevent the Linux OOM killer from terminating Docker containers, you should add swap space to give the kernel more memory headroom before it resorts to killing processes. Additionally, setting explicit memory limits per container ensures the OOM killer has a predictable boundary to work with, and monitoring tools like dmesg or /var/log/syslog can confirm whether OOM kills are actually occurring."
+aliases:
+  - "/tech/2026-05-19-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 Exit code 137. Two numbers that've killed more CI pipelines than any misconfigured YAML ever will. If your GitHub Actions self-hosted runner is dropping Docker containers with this code, the diagnosis is almost always the same: the Linux kernel OOM killer stepped in and terminated your process because memory ran out.

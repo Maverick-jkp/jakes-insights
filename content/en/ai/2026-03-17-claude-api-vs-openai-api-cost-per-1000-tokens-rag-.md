@@ -19,6 +19,9 @@ faq:
     answer: "Prompt caching significantly changes the cost math for RAG pipelines because the same system prompts and retrieved document chunks repeat across thousands of requests. Both Anthropic and OpenAI introduced caching by early 2026, with Anthropic offering cache reads at $0.30 per million tokens and OpenAI offering cached GPT-4o Mini inputs at $0.075 per million tokens."
   - question: "is claude 3.5 sonnet worth the higher price compared to gpt-4o for complex tasks"
     answer: "Claude 3.5 Sonnet is priced at $3 per million input tokens and is positioned as Anthropic's quality benchmark, while GPT-4o still holds a performance edge on complex synthesis tasks where answer accuracy affects user retention. For most RAG pipeline architectures, the decision comes down to which pipeline stage you're pricing — frontier models are harder to justify on high-volume retrieval stages but may pay off on final generation where quality is measurable."
+aliases:
+  - "/tech/2026-03-17-claude-api-vs-openai-api-cost-per-1000-tokens-rag-/"
+
 ---
 
 Token pricing used to be a footnote in engineering discussions. In 2026, it's a line item that CFOs are circling in red.

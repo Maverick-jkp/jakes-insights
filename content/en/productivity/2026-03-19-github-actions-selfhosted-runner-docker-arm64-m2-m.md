@@ -19,6 +19,9 @@ faq:
     answer: "Yes, GitHub officially confirmed self-hosted runner support for Apple Silicon (M1/M2) in August 2022, and Docker Desktop runs on ARM64 macOS. However, there is a gap between official support and out-of-the-box functionality, particularly around Docker socket permissions. Teams frequently lose hours to the permission denied error even on fully supported hardware configurations."
   - question: "why use M2 Mac as github actions self-hosted runner instead of cloud"
     answer: "M2 Macs deliver approximately 2x the performance-per-watt compared to comparable Intel Xeon configurations, making them cost-effective for CI/CD workloads. They are especially attractive for long-running pipelines involving mobile builds, Rust compilation, or other native ARM64 workloads. AWS also made EC2 Mac instances running on M2 Mac mini hardware generally available, giving teams a cloud-hosted Apple Silicon option."
+aliases:
+  - "/tech/2026-03-19-github-actions-selfhosted-runner-docker-arm64-m2-m/"
+
 ---
 
 The error appears without warning: `permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock`. Build fails. Pipeline stops. The M2 Mac you spun up as a self-hosted runner — because Apple Silicon's performance-per-watt ratio is genuinely hard to argue with — becomes a roadblock instead of an asset.

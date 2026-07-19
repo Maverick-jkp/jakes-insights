@@ -19,6 +19,9 @@ faq:
     answer: "No, PlanetScale discontinued its free Hobby plan in April 2024, making it a paid-only product. This effectively removes it from consideration for zero-budget or hobby projects, despite its strong technical features like Vitess-backed sharding and database branching."
   - question: "what happens when you hit the connection limit on supabase free tier"
     answer: "When you exceed Supabase's free tier connection pool of roughly 60 connections, new requests will receive a 'too many clients' error, which can crash or stall your application under concurrent load. Upgrading to a paid Supabase plan unlocks up to 500 direct connections, or you can mitigate the issue by optimizing connection reuse in your application code."
+aliases:
+  - "/tech/2026-04-10-supabase-vs-planetscale-vs-neon-postgres-free-tier/"
+
 ---
 
 Picked the wrong free-tier database and watched your hobby project crawl to a halt at 25 concurrent users? That exact scenario plays out constantly. The Supabase vs PlanetScale vs Neon Postgres free tier connection limit question isn't theoretical — it's the difference between a clean demo and a "too many clients" error at the worst possible moment.

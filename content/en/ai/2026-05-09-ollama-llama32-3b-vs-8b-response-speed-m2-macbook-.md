@@ -19,6 +19,9 @@ faq:
     answer: "For real-time use cases like Korean chat assistants or autocomplete, the 3B model's speed advantage makes it the better choice on 8GB hardware despite its lower output quality. However, for tasks like document summarization or translation where coherence matters more than latency, the 8B model's improved handling of Korean morphological boundaries justifies its slower throughput — provided no memory swapping occurs."
   - question: "does running ollama on m2 macbook use gpu or cpu for inference"
     answer: "On M2 MacBooks, Ollama leverages Apple's unified memory architecture, which allows model weights to be passed directly to the Neural Engine without requiring a separate VRAM pool as discrete GPU setups do. This shared CPU/GPU memory design gives the M2 a real efficiency advantage for local LLM inference, though the 8GB total memory limit still creates meaningful constraints when running larger models."
+aliases:
+  - "/tech/2026-05-09-ollama-llama32-3b-vs-8b-response-speed-m2-macbook-/"
+
 ---
 
 Running local LLMs on consumer hardware used to mean choosing between speed and quality. The M2 MacBook shifted that equation — but only if you match the model size to your actual workload.

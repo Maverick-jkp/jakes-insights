@@ -19,6 +19,9 @@ faq:
     answer: "Supabase Row Level Security 설정 실수 실제 데이터 노출 사례 점검 체크리스트에 따르면, auth.uid() 비교 누락, Policy 범위 오설정, service_role 키 노출 세 가지가 전체 RLS 사고의 70% 이상을 차지해요(Vibe App Scanner 2025년 감사 리포트 기준). 특히 컬럼명을 잘못 참조하는 실수는 Policy가 항상 false를 반환하거나 의도치 않은 데이터를 허용하는 결과로 이어질 수 있습니다."
   - question: "Supabase SELECT Policy만 설정하면 INSERT UPDATE DELETE도 막히나요"
     answer: "아니요, Supabase에서 SELECT Policy는 읽기 접근만 제어하며 INSERT, UPDATE, DELETE는 별도의 Policy를 각각 설정해야 해요. SELECT만 막고 나머지를 설정하지 않으면 인증 여부와 관계없이 쓰기 작업이 전체 허용되는 높은 위험 상태가 됩니다."
+aliases:
+  - "/tech/2026-04-19-supabase-row-level-security-설정-실수-실제-데이터-노출-사례-점검-/"
+
 ---
 
 DB 스키마를 public으로 열어둔 채 배포한 적 있나요? Supabase를 쓰는 팀 중 상당수가 Row Level Security(RLS) 설정 실수로 사용자 데이터를 통째로 노출하고 있어요. 그것도 모르는 채로.

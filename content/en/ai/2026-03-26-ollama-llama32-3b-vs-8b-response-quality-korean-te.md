@@ -19,6 +19,9 @@ faq:
     answer: "When comparing ollama llama3.2 3b vs 8b response quality korean text generation macbook m2 8gb scenarios, the memory difference is significant — the 3B model uses around 2GB at runtime while the 8B model uses 5.5-6GB. On an 8GB unified memory MacBook M2, this means the 8B model consumes roughly 70-75% of your total available memory before any other application is open. The 3B model leaves far more headroom and delivers more stable, consistent inference performance."
   - question: "why does korean text stress ai models more than english"
     answer: "Korean text is more demanding for AI models than English due to its morphological complexity, honorific layering, and frequent mixing of Hangul and Latin characters. These linguistic properties stress model capacity in ways that standard English-language benchmarks do not capture, meaning a model can score well on leaderboards but still struggle with Korean coherence. This is why real-world testing like ollama llama3.2 3b vs 8b response quality korean text generation macbook m2 8gb evaluations matters more than relying on published benchmark scores alone."
+aliases:
+  - "/tech/2026-03-26-ollama-llama32-3b-vs-8b-response-quality-korean-te/"
+
 ---
 
 On an 8GB M2 MacBook, choosing between Llama3.2 3B and 8B for Korean text generation isn't a benchmark question. It's a memory management question — and the answer depends entirely on what else is running on your machine.

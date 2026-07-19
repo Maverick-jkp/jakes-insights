@@ -19,6 +19,9 @@ faq:
     answer: "Without optimization, Supabase Edge Function cold starts typically range from 300–800ms on the first request to a given region. Heavily optimized functions with bundled imports and minimal top-level initialization can achieve cold starts under 150ms. The wide range exists because cold start time is driven more by import graph size and code structure than by the underlying compute hardware."
   - question: "does supabase --no-verify-jwt flag improve edge function performance"
     answer: "Yes, the --no-verify-jwt flag removes Supabase's JWT verification step from the function invocation path, which reduces perceived latency even when isolate initialization time stays the same. It is best used for internal or trusted-caller functions where you handle authentication separately or do not need it at all. Combined with other Deno deploy optimization steps like dependency bundling, it contributes to a meaningfully faster overall response time."
+aliases:
+  - "/tech/2026-04-25-supabase-edge-function-cold-start-latency-reduce-d/"
+
 ---
 
 Cold starts on Supabase Edge Functions can add 300–800ms to your first request. That's often the difference between a smooth UX and a user bouncing off your product entirely.

@@ -19,6 +19,9 @@ faq:
     answer: "Studying the Microsoft DOS earliest source code and what it reveals is still relevant today because architectural decisions made in 1981, particularly around the FAT filesystem and interrupt-driven I/O, continue to influence embedded systems in automotive, IoT, and medical devices. The release also provides OS educators with a real, inspectable primary source instead of relying solely on theoretical textbook descriptions. Engineers can trace a direct lineage from this 4,000-line kernel to modern operating system design principles."
   - question: "what is the difference between MS-DOS and QDOS (86-DOS)"
     answer: "QDOS, also known as 86-DOS, was written by Tim Paterson at Seattle Computer Products in roughly four months starting in 1980 to serve as an OS for their 8086-based hardware. Microsoft licensed 86-DOS in December 1980 and then purchased full rights in July 1981, adapting it into what became PC-DOS 1.0 for IBM's first personal computer. The newly open-sourced DOS 1.00 code allows developers to directly examine how closely Microsoft's version tracked Paterson's original work."
+aliases:
+  - "/tech/2026-05-24-microsoft-dos-earliest-source-code-open-source-wha/"
+
 ---
 
 The code that launched a trillion-dollar industry is now public.

@@ -19,6 +19,9 @@ faq:
     answer: "Prompt caching works by adding a cache_control parameter to a designated portion of your prompt, which signals Anthropic's servers to store that prefix server-side for up to five minutes. Each time a subsequent request references that cached prefix within the TTL window, the cache timer resets and you are billed at the discounted cache read rate instead of the standard input rate. If no request accesses the cache within five minutes, the entry expires and the next call pays the higher cache write rate again."
   - question: "when does claude prompt caching not save money and cost more instead"
     answer: "Prompt caching increases costs rather than reducing them when applications make stateless or one-shot API calls that never reuse the same prompt prefix, because every request pays the 25% cache write premium with no offsetting cache reads. Low-volume workloads where cache entries regularly expire before being accessed again face the same problem. Teams should calculate their expected cache hit rate before enabling caching, since a hit rate below roughly 20% per session results in a net cost increase."
+aliases:
+  - "/tech/2026-03-29-claude-api-prompt-caching-cost-reduction-real-invo/"
+
 ---
 
 My API bill dropped 73% in six weeks. Same usage volume, same models — just prompt caching switched on.

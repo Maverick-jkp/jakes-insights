@@ -19,6 +19,9 @@ faq:
     answer: "Cgroup misconfiguration between the Raspberry Pi OS host and the Docker engine is a common cause of runner registration failures that can appear unrelated to their actual root cause. The Raspberry Pi 5 running a 64-bit OS may need cgroup v2 explicitly enabled in the boot configuration, and Docker must be configured to match the host's cgroup driver. Ensuring both the host and Docker daemon use the same cgroup version resolves most privilege-related runner startup failures."
   - question: "is raspberry pi 5 good enough for github actions ci cd docker builds"
     answer: "The Raspberry Pi 5's Cortex-A76 cores running at 2.4GHz and up to 8GB RAM make it a genuinely viable option for lightweight CI/CD workloads in 2026, with Geekbench 6 single-core scores around 940 — roughly 2.3x the performance of the Raspberry Pi 4. It is particularly cost-effective for teams exceeding GitHub's free tier of 2,000 hosted runner minutes per month on private repositories. However, ARM64 Docker image compatibility gaps for niche build tools and older language versions remain a practical constraint to evaluate before committing to this setup."
+aliases:
+  - "/tech/2026-04-01-github-actions-selfhosted-runner-docker-arm64-rasp/"
+
 ---
 
 Build pipelines on a $80 Raspberry Pi 5 sound compelling — until hour three, when your Docker container refuses to pull images and your runner reports offline for the fourth time.

@@ -8,6 +8,9 @@ tags: ["subtopic-ai", "claude", "api", "openai", "GPT"]
 description: "Claude vs OpenAI API costs can swing 40–60% in a real-world RAG app. See which wins on price per 1M tokens in 2025."
 image: "/images/20260409-claude-api-vs-openai-api-cost-.webp"
 technologies: ["Claude", "GPT", "OpenAI", "Anthropic", "Go"]
+aliases:
+  - "/tech/2026-04-09-claude-api-vs-openai-api-cost-per-1m-tokens-real-w/"
+
 ---
 
 Running a RAG pipeline at scale will drain your budget faster than almost any other LLM workload. Token counts stack up relentlessly—retrieval chunks, system prompts, conversation history, structured outputs—and the difference between picking Claude or GPT-4o can swing your monthly bill by 40–60% without changing a single line of application logic.

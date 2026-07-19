@@ -19,6 +19,9 @@ faq:
     answer: "For Korean-language developer workloads on Mac M3, the right choice depends on the task type and available memory. The 8B model is better for long-form Korean content generation, while 3B is competitive on short Q&A and classification tasks and offers nearly double the token throughput, making it more practical for interactive applications."
   - question: "does llama 3.2 support korean language"
     answer: "Yes, Meta's Llama 3.2 models, released in October 2024, include Korean in their training data and feature explicit multilingual instruction tuning across both the 3B and 8B variants. This makes them usable for Korean-language tasks within standard toolchains like Ollama without requiring a Korea-specific fine-tuned model."
+aliases:
+  - "/tech/2026-03-25-ollama-llama32-3b-vs-8b-response-quality-korean-be/"
+
 ---
 
 Running local LLMs on Apple Silicon has crossed a real threshold. The Mac M3's unified memory architecture means you can run Llama 3.2 models that would've required a dedicated GPU rig two years ago — right in your terminal, no cloud bills, no API rate limits. But which model actually makes sense for Korean-language workloads? That question has a less obvious answer than most benchmarks suggest.

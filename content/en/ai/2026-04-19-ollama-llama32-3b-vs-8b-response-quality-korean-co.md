@@ -19,6 +19,9 @@ faq:
     answer: "On a MacBook M3, Llama 3.2 3B generates approximately 35–45 tokens per second, while the 8B model averages 18–25 tokens per second. Both speeds are fast enough for interactive use, meaning neither model will feel frustratingly slow during normal coding sessions."
   - question: "can macbook m3 8gb run llama 3.2 8b with ollama"
     answer: "Running Llama 3.2 8B on a MacBook M3 with only 8GB of RAM is not recommended, as the model alone requires 5.5–6.5GB, leaving almost no headroom for the operating system and other applications. For 8GB M3 machines, the Llama 3.2 3B model is considered the practical ceiling when using Ollama for tasks including Korean coding work."
+aliases:
+  - "/tech/2026-04-19-ollama-llama32-3b-vs-8b-response-quality-korean-co/"
+
 ---
 
 Running local LLMs on a MacBook M3 used to be a patience exercise. Slow inference, constant RAM pressure, swap files grinding your machine to a halt. That changed fast — and now the real question isn't *whether* you can run a local model, it's *which one* you should run and what you're actually giving up by choosing wrong.

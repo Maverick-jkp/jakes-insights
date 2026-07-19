@@ -19,6 +19,9 @@ faq:
     answer: "Korean's agglutinative grammar allows a single verb stem to encode tense, formality, negation, and aspect simultaneously, which small models trained predominantly on English data tend to flatten or mishandle. This results in Korean output that is technically readable but tonally inconsistent, grammatically awkward, or prone to drifting toward simplified sentence structures as conversation length increases."
   - question: "is ollama llama3.2 3b vs 1b Korean response quality benchmark MacBook M2 8GB worth running for Korean chatbot development"
     answer: "For Korean chatbot development, the ollama llama3.2 3b vs 1b Korean response quality benchmark on MacBook M2 8GB clearly favors the 3B model, which maintains honorific consistency and grammatical accuracy across multi-turn conversations. The 1B model is only recommended for speed-constrained prototyping, as its Korean output quality degrades noticeably with longer context windows."
+aliases:
+  - "/tech/2026-03-20-ollama-llama32-3b-vs-1b-korean-response-quality-be/"
+
 ---
 
 Running local LLMs for non-English tasks is harder than most tutorials admit. Korean presents a specific stress test — morphological complexity, honorific layering, and mixed-script handling (Hangul + Hanja + loanwords) expose model weaknesses that English benchmarks simply don't catch. So when you're deciding between `llama3.2:1b` and `llama3.2:3b` on a MacBook M2 with 8GB RAM, the question isn't just "which is faster" — it's whether the quality gap justifies the memory cost.

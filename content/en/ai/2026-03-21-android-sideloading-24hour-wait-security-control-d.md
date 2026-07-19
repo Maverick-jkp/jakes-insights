@@ -19,6 +19,9 @@ faq:
     answer: "Yes, the 24-hour waiting period applies to all unverified APKs with no developer exception, which creates real friction for legitimate development and testing workflows. Developers who previously relied on quick APK installs to iterate or distribute apps outside the Play Store will now face mandatory delays. This has raised concerns about Google's growing platform control and its impact on the openness Android was known for."
   - question: "is Android still more open than iOS for installing apps in 2026"
     answer: "Android still technically allows sideloading, while iOS restricts it for most users outside of EU markets where the Digital Markets Act forced limited exceptions. However, the new 24-hour wait policy means Android's openness calculus has changed significantly, adding a structural barrier that didn't previously exist. The gap between the two platforms on this issue has narrowed, though Android remains more permissive overall."
+aliases:
+  - "/tech/2026-03-21-android-sideloading-24hour-wait-security-control-d/"
+
 ---
 
 Google just made sideloading harder.

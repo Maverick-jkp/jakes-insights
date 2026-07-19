@@ -19,6 +19,9 @@ faq:
     answer: "Low cache hit rates in GitHub Actions are often caused by ephemeral hosted runners discarding Docker layers after each run, which can be addressed by using a self-hosted runner with persistent local storage or configuring registry-based cache-to/cache-from targets. A Raspberry Pi 5 with an NVMe drive is one cost-effective self-hosted option that retains Docker layer cache indefinitely across runs without size caps or expiration limits."
   - question: "self-hosted runner vs github hosted runner cost comparison docker workflows"
     answer: "For Docker-heavy workflows, self-hosted runners can dramatically reduce costs because persistent storage eliminates the need to rebuild cached layers from scratch on every run, cutting per-minute billed time on GitHub-hosted infrastructure. The economic case for self-hosting becomes strongest when teams have frequent pushes and complex Docker builds where cache hit rate directly translates to billable minutes saved."
+aliases:
+  - "/tech/2026-05-18-github-actions-selfhosted-runner-raspberry-pi-5-do/"
+
 ---
 
 Build times don't lie.

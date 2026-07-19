@@ -19,6 +19,9 @@ faq:
     answer: "As of early 2026, GPT-4o costs $5/million input tokens while Claude 3.5 Sonnet costs $3/million, meaning a weekend of heavy API usage on OpenAI can noticeably outpace Claude's equivalent cost. For solo developers on personal budgets, this difference can realistically translate to tens of dollars per month depending on workflow volume."
   - question: "can claude handle complex nested json schemas for tool calling better than openai"
     answer: "Anthropic's tool use implementation is noted for handling deeply nested JSON schemas more cleanly than OpenAI's function calling, which is a practical advantage when building complex multi-tool agents. OpenAI has addressed some schema reliability issues through its native structured outputs feature, but Claude still holds an edge for intricate schema definitions."
+aliases:
+  - "/tech/2026-04-22-claude-api-function-calling-vs-openai-tool-use-lat/"
+
 ---
 
 Last year, a solo developer dropped OpenAI mid-project — not because of quality, but because a weekend's worth of API calls cost him $47. That's a real budget constraint for independent builders shipping on personal credit cards.

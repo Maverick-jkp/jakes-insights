@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Grafana contributes 200–300MB by default due to eagerly loaded plugins and bundled data source connectors, many of which are unnecessary on a single-user monitoring setup. Disabling unused plugins and turning off anonymous auth can reclaim roughly 150MB, which is significant on a memory-constrained 1GB VPS."
   - question: "how much RAM does Prometheus and Grafana use together on a cheap VPS"
     answer: "On a default Docker Compose installation, Prometheus and Grafana together can exceed 900MB within hours, which is enough to trigger the OOM killer on a 1GB VPS once host OS overhead is factored in. With proper storage retention tuning and plugin trimming, the combined footprint can be reduced to under 400MB, making the stack viable on budget servers from providers like Hetzner, DigitalOcean, or Vultr."
+aliases:
+  - "/tech/2026-03-31-prometheus-grafana-docker-compose-vps-1gb-ram-oom-/"
+
 ---
 
 A $5 VPS. Docker Compose. Prometheus eating 700MB by 3am, Grafana taking the rest, and the kernel quietly killing everything.

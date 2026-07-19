@@ -19,6 +19,9 @@ faq:
     answer: "pnpm에서 `node_modules`를 캐시할 때 해시 대상 파일을 `package.json`으로 잡으면, lockfile이 바뀌지 않아도 실제 의존성 버전이 달라질 수 있어 캐시는 히트하지만 빌드가 깨지는 최악의 상황이 생겨요. pnpm은 반드시 `pnpm-lock.yaml`을 해시 대상으로 사용하고, `--frozen-lockfile` 옵션을 함께 적용해야 안전합니다. npm·yarn berry와 캐시 경로 및 해시 대상 파일이 모두 다르므로 패키지 매니저에 맞는 설정을 별도로 확인하세요."
   - question: "GitHub Actions Docker 빌드 캐시 type=gha vs S3 어떤 게 나은가요"
     answer: "500MB 이상의 큰 Docker 레이어에서는 S3 외부 캐시가 복원 속도가 최대 40% 빠르지만, 설정 복잡도가 높아서 팀 규모가 작으면 `type=gha` 방식이 훨씬 실용적이에요. `type=gha`는 GitHub Actions 캐시 스토리지에 바로 저장되므로 별도 인프라 없이 빠르게 적용할 수 있습니다. 레이어 크기와 팀 운영 역량을 함께 고려해 선택하는 게 좋아요."
+aliases:
+  - "/tech/2026-05-18-github-actions-캐시-미스-원인-docker-layer-nodemodules-모/"
+
 ---
 
 CI 파이프라인이 매번 5분씩 걸려요. 캐시를 설정했는데도 매번 새로 내려받고 있고요. 이 현상, 생각보다 많은 팀이 겪고 있어요.

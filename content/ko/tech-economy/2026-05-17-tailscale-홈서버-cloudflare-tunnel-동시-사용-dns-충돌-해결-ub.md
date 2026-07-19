@@ -19,6 +19,9 @@ faq:
     answer: "`resolvectl status` 명령으로 현재 DNS 상태를 확인하고, `resolvectl dns tailscale0`으로 Tailscale이 주입한 DNS를, `ss -tlnp | grep cloudflared`로 cloudflared가 점유한 포트를 확인할 수 있습니다. `tailscale0` 인터페이스에 `100.100.100.100`이 잡혀 있으면서 다른 네트워크 인터페이스에도 별도 DNS가 설정되어 있다면 충돌 가능 상태로 봐야 합니다."
   - question: "Tailscale 홈서버 Cloudflare Tunnel 동시 사용 DNS 충돌 해결 Ubuntu 24.04 Split DNS vs MagicDNS 완전 비활성화 어느 게 나은가요"
     answer: "Tailscale 홈서버 Cloudflare Tunnel 동시 사용 DNS 충돌 해결 Ubuntu 24.04 실전 가이드에 따르면 Split DNS 방식이 더 권장됩니다. MagicDNS를 완전히 끄면 Tailscale 내부 도메인을 수동으로 관리해야 해 유지보수 부담이 커지는 반면, Split DNS는 한 번 설정해두면 두 도구가 각자 역할을 간섭 없이 수행하고 보안상 포트를 외부에 노출하지 않아도 됩니다."
+aliases:
+  - "/tech/2026-05-17-tailscale-홈서버-cloudflare-tunnel-동시-사용-dns-충돌-해결-ub/"
+
 ---
 
 홈서버에 Tailscale 깔고 Cloudflare Tunnel도 연결했는데, 갑자기 내부 서비스가 안 열리는 상황 겪어봤나요? DNS가 꼬여서 `100.x.x.x` 주소로 접속이 안 되거나, 터널로 연결한 도메인이 엉뚱한 곳으로 가는 경우 — 저도 처음엔 이유를 몰라서 3시간 넘게 헤맸어요. 이 가이드는 Ubuntu 24.04 기준으로, 두 도구를 동시에 쓸 때 생기는 DNS 충돌 패턴과 해결 방법을 실제 설정 파일 기반으로 정리했어요.

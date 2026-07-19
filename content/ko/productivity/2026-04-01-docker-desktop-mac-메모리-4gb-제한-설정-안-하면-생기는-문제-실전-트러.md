@@ -19,6 +19,9 @@ faq:
     answer: "로컬 맥에서 Docker 메모리 제한 없이 개발하면 8GB 이상을 자유롭게 쓰지만, GitHub Actions 기본 러너는 RAM이 2GB 수준이라 동일한 컨테이너가 OOM으로 종료돼요. Docker Desktop Mac 메모리 4GB 제한 설정 안 하면 생기는 문제 실전 트러블슈팅에서 지적하듯, 로컬에서 미리 메모리 제한을 걸고 테스트했으면 CI 배포 전에 잡을 수 있는 버그예요. docker-compose의 mem_limit으로 로컬 환경을 CI 환경과 비슷하게 맞춰두는 것이 재현성 확보에 효과적이에요."
   - question: "Docker Desktop 전체 메모리 제한하면 컨테이너별로 따로 설정 안 해도 되나요"
     answer: "Docker Desktop 전체 메모리를 4GB로 설정해도 컨테이너별 제한을 따로 걸지 않으면 컨테이너 하나가 VM의 4GB를 모두 독점할 수 있어요. 두 가지 제한을 함께 사용하는 게 권장 패턴인데, Docker Desktop 설정은 맥 전체 안정성을 위한 것이고 docker-compose의 mem_limit 또는 docker run -m은 서비스 간 메모리 격리를 위한 것이에요. 실무에서는 4GB 제한 설정 안 하면 생기는 문제 실전 트러블슈팅 맥락처럼 두 레벨을 동시에 적용해야 예측 가능한 환경을 만들 수 있어요."
+aliases:
+  - "/tech/2026-04-01-docker-desktop-mac-메모리-4gb-제한-설정-안-하면-생기는-문제-실전-트러/"
+
 ---
 
 맥에서 Docker 쓰다가 갑자기 팬이 미친 듯 돌아가거나 브라우저가 멈춘 적 있죠? 범인은 십중팔구 Docker가 메모리를 무제한으로 가져가는 거예요. 기본값으로 두면 Docker Desktop은 호스트 맥 RAM을 절반까지 쓸 수 있는데, 이 설정 하나 모르고 지나쳤다가 하루 종일 삽질하는 팀들이 꽤 많아요.

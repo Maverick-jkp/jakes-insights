@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Prometheus is memory-intensive by design because its TSDB time-series database keeps recent data in RAM to serve fast queries. On a default configuration with a 15-second scrape interval, Prometheus can consume between 500MB and 700MB on its own before you factor in Grafana or the OS. Running it on a vps 2gb ram prometheus grafana docker compose swap memory tuning production setup requires explicit memory limits and swap tuning to prevent it from consuming all available resources."
   - question: "is 2gb ram enough for self hosted grafana and prometheus monitoring stack"
     answer: "2GB RAM is enough for a Prometheus and Grafana monitoring stack, but only with deliberate configuration and memory budgeting rather than default settings. The OS, Docker daemon, Prometheus, Grafana, and Node Exporter together can consume 1.1GB to 1.4GB at idle, which leaves limited headroom for scraping targets and query load. With container memory limits in Docker Compose and proper swap configuration, a 2GB VPS can hold up under real production conditions."
+aliases:
+  - "/tech/2026-04-25-vps-2gb-ram-prometheus-grafana-docker-compose-swap/"
+
 ---
 
 A 2GB RAM VPS shouldn't be able to run a full Prometheus + Grafana monitoring stack in production. Most tutorials skip that part. The ones that don't usually end with "just upgrade your server." Neither of those answers works when you're trying to run a lean Docker Compose setup that holds up under real load.

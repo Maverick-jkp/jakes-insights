@@ -19,6 +19,9 @@ faq:
     answer: "Use a ReadableStream with TransformStream inside a Next.js App Router route handler, and ensure you have `export const runtime = 'nodejs'` set in the file. This pattern, combined with the Node.js runtime, is the recommended approach for Claude API streaming in Next.js App Router as of 2026."
   - question: "Vercel serverless function timeout limit for AI chatbot Next.js"
     answer: "Vercel's timeout limits vary by plan: 10 seconds on Hobby, 60 seconds on Pro, and up to 900 seconds on Enterprise for Node.js serverless functions. The Claude API streaming response Next.js App Router edge runtime timeout fix requires upgrading from the Hobby plan if your prompts consistently need more than 10 seconds to complete."
+aliases:
+  - "/tech/2026-03-27-claude-api-streaming-response-nextjs-app-router-ed/"
+
 ---
 
 Your Claude API streaming works flawlessly on localhost. You push to Vercel. Requests start dying at exactly 10 seconds. That's not a coincidence — it's the edge runtime timeout, and it catches nearly every team building AI features in Next.js App Router for the first time.

@@ -19,6 +19,9 @@ faq:
     answer: "60초를 초과하는 작업은 API Route에서 직접 처리하지 않고, 큐 패턴을 활용해 작업을 분리하는 구조를 설계해야 합니다. API Route는 작업 접수 후 즉시 202 Accepted를 반환하고, 실제 처리는 Upstash QStash나 Inngest 같은 외부 큐 워커에 위임하면 Vercel 실행 시간 제한 자체에 걸릴 일이 없어집니다. 클라이언트는 폴링이나 웹훅 방식으로 처리 결과를 수신하도록 구현하면 됩니다."
   - question: "Vercel 무료 플랜 LLM API 스트리밍 타임아웃 문제 해결"
     answer: "Vercel 무료 플랜 Edge Function에서 LLM 스트리밍을 프록시하면 전체 연결 유지 시간이 실행 시간에 포함되어 25초 한도에 빠르게 걸립니다. 이 문제는 'export const runtime = nodejs'로 Node.js Serverless Function으로 전환하고 ReadableStream을 활용해 스트리밍 응답을 구현하면 최대 60초까지 연결을 유지할 수 있습니다. 응답이 더 길어질 가능성이 있다면 큐 패턴을 결합해 백그라운드에서 처리하는 구조를 고려하는 것이 좋습니다."
+aliases:
+  - "/tech/2026-03-20-vercel-무료-플랜-edge-function-실행-시간-제한-우회-nextjs-api-/"
+
 ---
 
 Vercel 무료 플랜으로 사이드 프로젝트 배포하다가 "Function exceeded maximum duration" 오류 만난 적 있죠? 처음엔 코드 버그인 줄 알고 한참 뒤졌는데, 알고 보면 플랫폼 제한이에요. Vercel 무료 플랜(Hobby tier)의 Edge Function 실행 시간은 **최대 25초**. 이 한계에 부딪히면 선택지가 생각보다 넉넉하지 않아요.

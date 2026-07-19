@@ -19,6 +19,9 @@ faq:
     answer: "2026년 기준 `shared-cpu-1x` 256MB Machine을 한 달 내내 켜두면 약 $1.94이며, 512MB 사양은 약 $3.83입니다. 콜드스타트로 인한 사용자 이탈 비용과 비교하면 소규모 서비스 팀에게는 충분히 합리적인 선택입니다."
   - question: "Fly.io 단독 서버 Next.js 배포 콜드스타트 시간 줄이는 실전 설정 요약"
     answer: "Fly.io 단독 서버 Next.js 배포 콜드스타트 시간 줄이는 실전 설정은 크게 세 가지로 구성됩니다: `min_machines_running = 1`로 Machine 상시 가동, `output: 'standalone'`과 멀티스테이지 Dockerfile로 이미지 경량화, 그리고 헬스체크 타이밍 여유 있게 조정입니다. 애플리케이션 코드를 크게 수정하지 않아도 `fly.toml` 한 파일로 대부분의 콜드스타트 문제를 해결할 수 있습니다."
+aliases:
+  - "/tech/2026-04-11-flyio-단독-서버-nextjs-배포-콜드스타트-시간-줄이는-실전-설정/"
+
 ---
 
 로컬에선 멀쩡했는데, Fly.io에 올리니까 첫 요청마다 화면이 6~8초씩 멈춰요. 콜드스타트 문제예요. 그리고 이건 Fly.io Machines 위에서 Next.js 쓰는 팀이라면 거의 다 겪는 일이에요.

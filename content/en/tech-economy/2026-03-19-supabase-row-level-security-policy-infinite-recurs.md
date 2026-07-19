@@ -19,6 +19,9 @@ faq:
     answer: "A 500 API error combined with query hangs in Supabase often points to an infinite recursion in an RLS policy rather than an application-level bug. The stack trace will reference a Postgres policy, and the root cause is usually a policy sub-query that reads from the same table it is protecting. Checking whether any policy on the affected table contains a SELECT referencing that same table is the fastest way to diagnose this issue."
   - question: "security definer function supabase rls fix infinite recursion"
     answer: "A SECURITY DEFINER function runs with the privileges of the function's owner rather than the calling user, which means RLS policies are bypassed when the function executes its internal queries. Wrapping a self-referencing lookup inside such a function and calling it from the policy's USING clause breaks the recursion loop safely. This is the most widely documented pattern for resolving the supabase row level security policy infinite recursion error debug example in complex multi-role setups."
+aliases:
+  - "/tech/2026-03-19-supabase-row-level-security-policy-infinite-recurs/"
+
 ---
 
 The `infinite recursion detected in policy for relation` error has become one of the most searched Postgres error strings among Supabase developers in 2026 — and it's almost always caused by the same structural mistake that's surprisingly easy to make.

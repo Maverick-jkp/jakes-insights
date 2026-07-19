@@ -19,6 +19,9 @@ faq:
     answer: "For memory-constrained local Docker environments, Qdrant is generally the better choice since it uses significantly less RAM at 1 million vectors and offers simpler on-disk configuration via memmap_threshold. Weaviate is worth the higher memory cost if your workload requires its advanced built-in ML features or multi-tenancy support."
   - question: "how to reduce weaviate docker memory usage at scale"
     answer: "Weaviate v1.24+ introduced memory-mapped storage options that can meaningfully reduce RAM consumption compared to older versions, making 2023 benchmarks unreliable for current deployments. Configuring on-disk vector storage and tuning HNSW index parameters are the most impactful steps for reducing Weaviate's memory footprint in local Docker setups."
+aliases:
+  - "/tech/2026-05-15-weaviate-vs-qdrant-local-docker-1-million-vectors-/"
+
 ---
 
 Running a vector database locally sounds simple — until you spin up a container with 1 million embeddings and watch your dev machine's RAM evaporate in real time.

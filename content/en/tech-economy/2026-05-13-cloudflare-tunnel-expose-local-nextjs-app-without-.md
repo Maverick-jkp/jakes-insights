@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare's free tier includes full Tunnel access with no data transfer caps for self-hosted personal projects, according to Cloudflare's official pricing page. This makes it a cost-effective alternative to paid reverse proxy services or VPS hosting just to expose a home lab application publicly."
   - question: "how long does it take to set up Cloudflare Tunnel for a Next.js app"
     answer: "A Next.js app running on localhost:3000 can typically be tunneled to a public domain in under 10 minutes with zero firewall or router configuration changes required. The cloudflared daemon handles the connection automatically, and Cloudflare routes incoming traffic through the tunnel to your local service."
+aliases:
+  - "/tech/2026-05-13-cloudflare-tunnel-expose-local-nextjs-app-without-/"
+
 ---
 
 Running a Next.js app on a Raspberry Pi at home is easy. Making it publicly accessible without opening your router to the internet — that's where most developers get stuck.

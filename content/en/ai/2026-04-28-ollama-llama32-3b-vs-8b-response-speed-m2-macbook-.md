@@ -19,6 +19,9 @@ faq:
     answer: "According to an ollama llama3.2 3b vs 8b response speed M2 MacBook 16GB RAM benchmark, the right choice depends on your use case rather than specs alone. The 3B model is ideal for fast, interactive tasks, while the 8B model is better suited for quality-critical workflows where you can tolerate slower responses and reduced memory availability for other apps."
   - question: "does ollama use Metal GPU acceleration on Apple Silicon Mac"
     answer: "Yes, Ollama has supported a Metal backend since version 0.1.26, which routes inference compute through the GPU cores on Apple Silicon chips. The M2's unified memory architecture with 100 GB/s bandwidth means both CPU and GPU share the same memory pool, making it more efficient for local LLM inference compared to discrete GPU setups."
+aliases:
+  - "/tech/2026-04-28-ollama-llama32-3b-vs-8b-response-speed-m2-macbook-/"
+
 ---
 
 Running local LLMs stopped being a niche experiment sometime around late 2024. By April 2026, Ollama has crossed 10 million downloads, and the Llama 3.2 family sits at the center of most developer setups. The real question isn't *whether* to run it locally — it's *which* model size actually makes sense for your hardware.

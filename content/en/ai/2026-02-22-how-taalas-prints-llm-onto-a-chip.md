@@ -19,6 +19,9 @@ faq:
     answer: "No, Taalas chips are architecturally incapable of training AI models because the weights are permanently encoded into the physical silicon and cannot be updated or rewritten. The chip is designed exclusively for inference on a single, fixed, already-trained model version. Any updates to the underlying model would require a completely new chip to be manufactured."
   - question: "what happens to Taalas chip when the AI model becomes outdated"
     answer: "Because each Taalas chip is hardcoded to a specific model version, it carries zero residual value once that model is superseded by a newer or better-performing version. This model obsolescence risk is considered the primary economic downside of the approach, as the physical chip cannot be reprogrammed or reused for a different model. The business case therefore depends heavily on deploying chips against models with long, stable production lifespans."
+aliases:
+  - "/tech/2026-02-22-how-taalas-prints-llm-onto-a-chip/"
+
 ---
 
 Taalas just raised $169 million to do something most chip engineers considered a category error: permanently bake a specific LLM into silicon. Not "optimized for AI workloads." Not "runs transformers efficiently." Literally hard-wired — weights, architecture, and all — into the physical transistor layout of a custom ASIC.

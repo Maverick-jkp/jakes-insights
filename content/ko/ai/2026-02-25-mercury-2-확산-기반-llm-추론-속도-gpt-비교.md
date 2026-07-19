@@ -19,6 +19,9 @@ faq:
     answer: "확산 기반 LLM은 긴 문맥 처리와 지시 따르기(instruction-following) 일관성 측면에서 Transformer 대비 아직 약점이 있어요. 때문에 범용 GPT 모델의 완전한 대체재보다는 실시간 코파일럿이나 코드 리뷰 같은 특화 워크플로우에 먼저 적합한 선택지로 평가받고 있어요."
   - question: "Inception Labs Mercury 2 API 비용 기존 모델보다 저렴한가"
     answer: "Inception Labs는 Mercury 2가 추론 속도 향상과 함께 추론 비용도 대폭 낮아졌다고 밝혔어요. 구조적으로 Transformer의 KV Cache 메모리와 순차 연산 병목이 확산 모델에서는 다르게 작동해 배치 처리 시 GPU 효율이 높아지기 때문이며, 구체적인 달러/토큰 단가는 공개 API 출시 후 검증이 필요해요."
+aliases:
+  - "/tech/2026-02-25-mercury-2-확산-기반-llm-추론-속도-gpt-비교/"
+
 ---
 
 추론 모델이 느리다는 건 이미 알려진 문제예요. OpenAI o1이 나왔을 때 사람들이 먼저 느낀 건 정확도가 아니라 "왜 이렇게 오래 걸리지?"였거든요. 그런데 2026년 2월 24일, Inception Labs가 Mercury 2를 공개하면서 이 방정식이 흔들리기 시작했어요. 기존 속도 최적화 LLM 대비 5배 빠른 추론, 그리고 그걸 가능하게 한 건 Transformer가 아닌 *확산(Diffusion) 기반 아키텍처*라는 점이에요. 속도와 추론 품질, 둘 다 포기하지 않겠다는 선언인 셈이에요.

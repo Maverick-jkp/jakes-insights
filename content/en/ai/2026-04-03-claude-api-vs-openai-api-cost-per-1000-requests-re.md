@@ -19,6 +19,9 @@ faq:
     answer: "Both platforms offer significant batch pricing discounts for asynchronous workloads — OpenAI's Batch API can cut costs by up to 50%, and Claude offers comparable batch discounts. Additionally, both providers now support prompt caching with discounts of 50–90% on repeated context, which often has a larger impact on final costs than the base per-token rate comparison alone."
   - question: "claude api vs openai api cost per 1000 requests real app production comparison 2025 which is better for input heavy workloads"
     answer: "For input-heavy workloads, Claude 3.5 Sonnet holds a clear cost advantage in a real app production comparison, with input token pricing 40% lower than GPT-4o ($3.00 vs. $5.00 per million tokens). Since document summarization, RAG pipelines, and long-context tasks tend to skew heavily toward input tokens, these workload types benefit most from switching to Claude over OpenAI."
+aliases:
+  - "/tech/2026-04-03-claude-api-vs-openai-api-cost-per-1000-requests-re/"
+
 ---
 
 Running LLM APIs at scale isn't cheap. And the difference between picking Claude and GPT-4o can swing your monthly bill by 40–60% once you hit serious request volumes.

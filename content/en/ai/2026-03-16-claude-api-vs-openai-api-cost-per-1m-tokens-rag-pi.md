@@ -19,6 +19,9 @@ faq:
     answer: "GPT-4o is cheaper on a raw per-token basis at $2.50 per 1M input tokens and $10.00 per 1M output tokens, compared to Claude 3.7 Sonnet's $3.00 input and $15.00 output. However, for RAG pipelines with high cache hit rates on repeated context, Claude becomes significantly cheaper on input costs due to its 90% caching discount, so the right answer depends on your specific workload's cache hit rate and output volume."
   - question: "what does a typical rag pipeline api call cost in tokens"
     answer: "A typical production RAG API call includes a system prompt of 500–2,000 tokens, retrieved document chunks of 1,000–8,000 tokens, a user query of 50–300 tokens, and generated output of 200–800 tokens, meaning input tokens heavily dominate the total cost. This input-heavy profile makes RAG pipelines especially sensitive to input token pricing and caching discounts rather than output token rates."
+aliases:
+  - "/tech/2026-03-16-claude-api-vs-openai-api-cost-per-1m-tokens-rag-pi/"
+
 ---
 
 Most cost comparisons between Claude and OpenAI stop at the pricing page. That's useless for production RAG pipelines, where real token usage looks nothing like the sanitized examples in documentation.

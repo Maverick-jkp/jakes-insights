@@ -19,6 +19,9 @@ faq:
     answer: "`USING (user_id = (SELECT auth.uid()))`처럼 서브쿼리로 감싸면 PostgreSQL 쿼리 플래너가 이를 상수로 인식하지 못해 매 행마다 함수를 평가하는 비효율이 발생해요. 반면 `USING (user_id = auth.uid())`로 직접 호출하면 플래너가 해당 값을 상수로 처리해 인덱스를 정상적으로 활용할 수 있어요. 테이블 규모가 클수록 이 차이는 극명하게 나타나며, 단순 수정만으로 쿼리 시간이 절반 이하로 줄어드는 경우도 있어요."
   - question: "Next.js App Router Supabase RLS 적용 후 쿼리 느려졌을 때 cookies() API 중복 호출 문제"
     answer: "Next.js App Router Supabase RLS 적용 후 쿼리 느려졌을 때 원인 중 하나로 `cookies()` API를 여러 서버 컴포넌트에서 중복 호출하는 패턴이 있어요. 이 경우 세션 파싱이 요청마다 반복되어 평균 쿼리 시간이 2-4배 늘어날 수 있어요. `createServerClient`를 `cache()`로 감싼 유틸 함수로 일원화하면 `cookies()` 호출도 자연스럽게 요청당 한 번으로 줄어들어요."
+aliases:
+  - "/tech/2026-04-25-nextjs-app-router-supabase-rls-적용-후-쿼리-느려졌을-때-원인-분/"
+
 ---
 
 RLS를 켰더니 쿼리가 세 배 느려졌어요. 로그를 보니 인증 토큰 검증이 매 요청마다 반복되고 있었죠. Next.js App Router와 Supabase를 함께 쓰는 개발팀이라면 한 번쯤 마주치는 문제예요.

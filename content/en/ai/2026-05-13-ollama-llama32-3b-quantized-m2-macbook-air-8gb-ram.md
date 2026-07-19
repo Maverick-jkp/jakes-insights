@@ -19,6 +19,9 @@ faq:
     answer: "The Q4_K_M quantization format retains roughly 97–98% of benchmark performance compared to the full precision model, according to measurements from the llama.cpp repository. The K-quant method is smarter than naive integer rounding because it applies different bit depths to different layers based on their precision sensitivity, protecting the most critical attention layers."
   - question: "what tasks can you actually run with ollama on M2 MacBook Air 8GB in 2025"
     answer: "The ollama llama3.2 3B quantized M2 MacBook Air 8GB RAM inference speed benchmark 2025 data suggests this setup is production-viable for single-turn tasks like summarization, text classification, code completion, and structured output generation under roughly 2,000 tokens of context. It is not recommended for workloads requiring larger context windows or tasks that genuinely need a larger parameter model."
+aliases:
+  - "/tech/2026-05-13-ollama-llama32-3b-quantized-m2-macbook-air-8gb-ram/"
+
 ---
 
 Local AI inference crossed a quiet threshold in late 2025. The 8GB M2 MacBook Air — Apple's entry-level machine, the one students and indie developers buy — started running production-quality language models fast enough to use in real workflows. Not "technically works" fast. Actually fast.

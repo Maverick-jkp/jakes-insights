@@ -19,6 +19,9 @@ faq:
     answer: "HNSW indexing on Supabase pgvector is worth enabling if your free-tier instance has sufficient memory, as it dramatically reduces query latency and brings performance much closer to Pinecone's dedicated architecture at 10k embeddings. The tradeoff is that HNSW consumes additional memory that Supabase's free plan may not reliably provide, potentially causing degradation under concurrent database load. For solo developers, testing with and without HNSW under realistic query conditions before committing to either platform is the most reliable way to make this architectural decision."
   - question: "when should solo developer upgrade from supabase pgvector to pinecone"
     answer: "Solo developers should consider switching to Pinecone when their vector collection grows beyond 100k vectors, when they have strict sub-30ms p99 latency requirements, or when concurrent PostgreSQL queries are noticeably degrading vector search performance on a shared Supabase instance. At 10k embeddings, the operational simplicity of keeping everything in Supabase typically outweighs Pinecone's raw speed advantage. The decision becomes clearer at scale, where Pinecone's purpose-built architecture has a structural edge that pgvector on shared compute cannot match without a paid plan upgrade."
+aliases:
+  - "/tech/2026-03-17-supabase-pgvector-vs-pinecone-free-tier-10k-embedd/"
+
 ---
 
 Solo developers building RAG pipelines in early 2026 keep hitting the same fork in the road: Supabase pgvector or Pinecone's free tier? At 10k embeddings, the tradeoff isn't obvious — and picking wrong means either slamming into a free tier wall at the worst possible moment or running a Postgres instance that's heavier than your actual use case demands.

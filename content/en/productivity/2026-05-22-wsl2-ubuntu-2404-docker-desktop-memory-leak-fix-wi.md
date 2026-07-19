@@ -19,6 +19,9 @@ faq:
     answer: "You can limit WSL2 memory usage by creating or editing a .wslconfig file in your Windows user profile directory and setting a hard memory cap, such as 'memory=6GB', under the [wsl2] section. This prevents Docker Desktop and Ubuntu from collectively consuming nearly all available RAM on 16GB systems, keeping Windows processes responsive."
   - question: "docker desktop wsl2 backend vs hyper-v backend memory usage comparison"
     answer: "Docker Desktop defaults to the WSL2 backend, which spawns additional WSL distros like docker-desktop alongside your Ubuntu instance, compounding memory ballooning issues on Windows 11. The WSL2 backend pre-allocates large memory regions inside the VM that are not released back to Windows even when containers are idle, making memory pressure significantly worse than older Hyper-V backend configurations on 16GB systems."
+aliases:
+  - "/tech/2026-05-22-wsl2-ubuntu-2404-docker-desktop-memory-leak-fix-wi/"
+
 ---
 
 Your machine has 16GB of RAM. Docker Desktop is running three modest containers. Task Manager shows WSL2 consuming 12GB and climbing.

@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages의 기본 Hugo 버전은 2026년 기준 0.54.0으로, 로컬에서 최신 Hugo 버전으로 구성한 테마나 shortcode와 버전이 맞지 않으면 에러 메시지 없이 빈 페이지가 렌더링됩니다. Cloudflare Pages 대시보드의 Settings → Environment Variables에서 'HUGO_VERSION' 환경 변수를 로컬과 동일한 버전으로 명시하면 해결됩니다."
   - question: "GitHub Actions cron 무료 플랜 실행 시간 지연 얼마나 되나요"
     answer: "GitHub Actions cron 스케줄 실제로 안 될 때처럼 보이지만, 무료 플랜의 shared runner 큐 지연으로 실행이 늦어지는 경우도 많습니다. 트래픽이 몰리는 시간대에는 실제 실행 시각이 20~40분까지 늦어질 수 있으며, GitHub 공식 문서에도 cron은 'best-effort basis(최선 노력 방식)'로 실행된다고 명시되어 있어 정확한 타이밍이 필요한 작업에는 cron만 단독으로 사용하는 것을 권장하지 않습니다."
+aliases:
+  - "/tech/2026-05-17-github-actions-cron-스케줄-실제로-안-될-때-원인-분석-hugo-블로그-자/"
+
 ---
 
 오전 9시가 지났는데 Cloudflare Pages는 조용해요. 로그를 뒤져봐도 실패 메시지조차 없고요. GitHub Actions cron 스케줄이 실제로 안 될 때, 단순한 문법 오류가 아닌 경우가 꽤 많아요.

@@ -19,6 +19,9 @@ faq:
     answer: "@anthropic-ai/sdk v0.20 이후 버전부터 Edge 환경을 일부 지원하기 시작했지만, ReadableStream 처리 방식의 차이로 인해 청크 손실이 간헐적으로 발생할 수 있어 완전한 지원이 아닙니다. Anthropic SDK는 Node.js 네이티브 API를 기반으로 설계되었기 때문에, 안정적인 스트리밍을 위해서는 Node Runtime 환경에서 사용하는 것을 권장합니다."
   - question: "Next.js AI 스트리밍 edge runtime 유지하면서 안정성 높이는 방법"
     answer: "Vercel Edge Network의 이점을 포기하지 않으면서 Claude 스트리밍 안정성을 확보하려면 하이브리드 구조가 현실적인 선택입니다. Claude API를 호출하는 Route Handler는 Node Runtime으로 설정하고, CDN 캐싱이나 인증 처리 같은 경량 작업만 Edge Runtime에 맡기는 방식입니다. 실제로 Next.js 공식 문서도 2026년 초부터 AI 스트리밍 예시의 기본 Runtime을 Node로 명시하기 시작했습니다."
+aliases:
+  - "/tech/2026-05-28-nextjs-app-router-edge-runtime-claude-스트리밍-응답-지연-원/"
+
 ---
 
 Claude API로 스트리밍 응답을 구현했는데, 첫 토큰이 나오기까지 3-5초씩 걸린다면? Edge Runtime을 쓰고 있을 가능성이 높아요.

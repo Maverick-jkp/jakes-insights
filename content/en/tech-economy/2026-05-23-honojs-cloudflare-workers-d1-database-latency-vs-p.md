@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare D1 is viable for production SaaS but requires architectural adjustments, particularly adding caching layers and minimizing sequential queries to stay under acceptable response times. For read-heavy workloads with a primarily US-based audience, PlanetScale Solo's 5–15ms query latency can be the simpler choice, while global audiences may actually benefit more from D1's edge-distributed approach."
   - question: "hono.js cloudflare workers d1 database latency vs planetscale solo saas comparison for global users"
     answer: "The core finding in a hono.js cloudflare workers d1 database latency vs planetscale solo saas comparison is that this is an architectural decision, not just a speed contest — D1 distributes data globally near users, while PlanetScale anchors queries to a single AWS us-east-1 region. Global SaaS audiences will experience significantly higher latency with PlanetScale as geographic distance from us-east-1 increases, whereas D1's edge replication is designed specifically to reduce that problem."
+aliases:
+  - "/tech/2026-05-23-honojs-cloudflare-workers-d1-database-latency-vs-p/"
+
 ---
 
 Solo SaaS builders are chasing sub-100ms response times on $20/month budgets. The stack that looked obvious six months ago — Hono.js on Cloudflare Workers with D1 — is producing 500ms+ API responses in production. That's not a configuration mistake. It's an architectural constraint worth understanding before you commit.

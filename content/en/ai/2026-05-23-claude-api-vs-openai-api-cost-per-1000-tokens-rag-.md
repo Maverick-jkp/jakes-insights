@@ -19,6 +19,9 @@ faq:
     answer: "For high-volume RAG workloads in 2025, Claude 3.5 Haiku offers a cost edge on output tokens while OpenAI's GPT-4o mini wins on input token pricing, and both providers now offer context caching that can reduce costs by 50-90% for repeated context blocks. Teams already integrated with Azure or AWS Bedrock may favor OpenAI due to lower operational overhead despite the per-token differences."
   - question: "does context caching reduce openai or anthropic api costs for rag"
     answer: "Yes, both Anthropic and OpenAI introduced context caching mechanisms that can cut costs by 50-90% when the same context blocks are reused across multiple requests. This feature is particularly valuable in RAG pipelines where system prompts or frequently retrieved documents are repeatedly included in requests."
+aliases:
+  - "/tech/2026-05-23-claude-api-vs-openai-api-cost-per-1000-tokens-rag-/"
+
 ---
 
 The numbers look simple on the pricing page. They're not simple in production.

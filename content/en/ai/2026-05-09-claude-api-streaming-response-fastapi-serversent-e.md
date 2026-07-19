@@ -19,6 +19,9 @@ faq:
     answer: "Streaming does not change the actual token costs for Claude API — input and output tokens are billed at the same rate regardless of whether you stream. However, in a claude api streaming response fastapi server-sent events token cost calculation real project, the risk is inaccurate token accounting, since naive per-chunk counting can undercount output tokens by 15% or more, which compounds significantly at production scale."
   - question: "how to track token usage in claude streaming response python"
     answer: "To accurately track token usage in a Claude streaming response, use Anthropic's Python SDK stream() context manager and listen specifically for the message_stop or final message_delta event, which contains the complete input_tokens and output_tokens counts. Avoid calculating costs by counting individual text deltas mid-stream, as those chunks do not carry reliable token metadata."
+aliases:
+  - "/tech/2026-05-09-claude-api-streaming-response-fastapi-serversent-e/"
+
 ---
 
 Streaming responses changed how we build AI features. Not in some abstract way — in the very concrete sense that users stopped abandoning chat windows after 8 seconds of staring at a spinner.

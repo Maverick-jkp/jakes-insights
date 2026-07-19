@@ -19,6 +19,9 @@ faq:
     answer: "PostgreSQL의 기본 shared_buffers 값인 128MB는 4GB 이상 서버를 기준으로 한 권장값이므로, 1GB 서버에서는 64MB로 낮추면 단독 메모리 점유를 약 35% 줄일 수 있습니다. 추가로 max_connections를 기본값 100에서 20으로 낮추면 connection당 5~10MB씩 추가로 절감되어 소규모 서비스 환경에서는 충분한 성능을 유지하면서 안정성을 높일 수 있습니다."
   - question: "1GB RAM VPS에서 Docker Compose 단일 서버 RAM 1GB Nginx Postgres Node 동시 운영할 때 메모리 배분 기준"
     answer: "1GB RAM 서버에서 Linux 커널과 OS 기본 프로세스에 약 100MB, Docker 데몬에 약 100~150MB가 선점되어 실제 컨테이너에 배분 가능한 메모리는 700~750MB 수준입니다. Nginx 64MB, Postgres 256MB, Node 300MB로 총 620MB를 배분하면 남은 여유분으로 OS와 Docker 데몬 오버헤드를 감당할 수 있어 안정적인 운영이 가능합니다."
+aliases:
+  - "/tech/2026-05-07-docker-compose-단일-서버-ram-1gb-nginx-postgres-node-동/"
+
 ---
 
 월 5달러짜리 VPS 하나. 거기다 서비스를 올렸는데 새벽 3시에 서버가 뻗었어요. 로그를 보면 딱 이 메시지예요. `Killed process — Out of Memory`. RAM 1GB짜리 단일 서버에서 Docker Compose로 Nginx, Postgres, Node를 동시에 돌리다 보면 꼭 한 번씩 만나는 상황이죠.

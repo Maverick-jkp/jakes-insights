@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 3B uses approximately 2.1GB of RAM when running through Ollama in q4_K_M quantization on an M2 MacBook Air. This lightweight footprint makes it well-suited for 8GB unified memory systems, leaving enough room for macOS, a browser, and a code editor to run concurrently without memory pressure."
   - question: "best local LLM for MacBook Air M2 8GB RAM 2025"
     answer: "For an M2 MacBook Air with 8GB RAM, Llama 3.2 3B running through Ollama is widely recommended as the most balanced option, offering fast token generation speeds of 45–55 tokens per second while using only around 2.1GB of RAM. Mistral 7B is a viable alternative if output quality is the top priority, but its higher memory usage leaves little room for multitasking on an 8GB system."
+aliases:
+  - "/tech/2026-05-07-ollama-mistral-7b-vs-llama32-3b-m2-macbook-air-8gb/"
+
 ---
 
 Running local LLMs on consumer hardware isn't experimental anymore. By early 2026, over 40% of developers surveyed by Stack Overflow report running at least one local model for daily coding tasks — and the MacBook Air M2 with 8GB RAM has become the de facto baseline machine for this workflow. That makes the `ollama mistral 7b vs llama3.2 3b M2 MacBook Air 8GB RAM response time comparison` one of the most practically relevant benchmarks in the local AI space right now.

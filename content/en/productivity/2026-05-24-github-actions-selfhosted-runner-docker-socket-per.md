@@ -19,6 +19,9 @@ faq:
     answer: "Adding the runner user to the docker group is the fastest fix but carries a significant security risk: docker group membership is effectively root-equivalent on that host, meaning a compromised workflow could control the entire machine. Rootless Docker is slower to configure but isolates daemon privileges properly, making it the better choice for production or compliance-sensitive environments."
   - question: "docker in docker vs docker group for github actions self hosted runner"
     answer: "Docker-in-Docker (DinD) runs an isolated Docker daemon per job, which improves security isolation compared to sharing the host daemon via the docker group, but adds complexity and notable performance overhead. For most teams, rootless Docker strikes the better balance between security and simplicity, while DinD is best suited for scenarios where strict per-job daemon isolation is a hard requirement."
+aliases:
+  - "/tech/2026-05-24-github-actions-selfhosted-runner-docker-socket-per/"
+
 ---
 
 The error hits fast. You spin up a self-hosted GitHub Actions runner, your workflow fires, and Docker throws `permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock`. Dead stop.

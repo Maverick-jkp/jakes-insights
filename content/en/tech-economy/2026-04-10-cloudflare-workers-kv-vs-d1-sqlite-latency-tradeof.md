@@ -19,6 +19,9 @@ faq:
     answer: "Yes, hybrid architectures combining KV and D1 are an emerging best practice for SaaS teams building on Cloudflare Workers. The typical pattern is to use D1 as the primary relational data store and layer KV on top as a fast edge cache, giving you both SQL expressiveness and sub-millisecond read performance for frequently accessed data."
   - question: "how does cloudflare D1 read replication affect latency in 2025"
     answer: "Since D1 reached general availability in late 2024, Cloudflare added regional read replication across 12+ locations, which meaningfully reduced the latency gap compared to earlier beta performance. However, typical D1 query execution still runs 5–20 ms, so for latency-critical paths in a small SaaS app, KV caching remains a recommended complement rather than a replacement."
+aliases:
+  - "/tech/2026-04-10-cloudflare-workers-kv-vs-d1-sqlite-latency-tradeof/"
+
 ---
 
 Read-latency numbers don't lie. Cloudflare Workers KV clocks **under 1 ms** for cached reads at its nearest edge node. D1 SQLite hovers around **5–20 ms** for typical query execution—sometimes climbing higher on cold starts. For a small SaaS app running entirely on Cloudflare's edge, that gap shapes everything.

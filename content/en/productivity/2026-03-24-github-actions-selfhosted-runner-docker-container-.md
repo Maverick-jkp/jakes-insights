@@ -19,6 +19,9 @@ faq:
     answer: "To prevent the Linux OOM Killer from terminating your Docker container, you need to either increase available memory on the host, raise the container's memory limit in your Docker run configuration, or reduce the memory footprint of your application and base image. You can verify OOM kills by checking kernel logs with 'dmesg | grep -i kill' or 'journalctl -k | grep oom' after a failure. On GitHub Actions self-hosted runners specifically, also check host-level cgroup limits since these can silently override Docker-level memory settings."
   - question: "github actions self-hosted runner vs hosted runner memory limits"
     answer: "GitHub-hosted runners for ubuntu-latest provide approximately 7GB of RAM per job managed entirely by GitHub, making OOM-related exit code 137 failures rare in that environment. Self-hosted runners run on your own infrastructure, meaning memory availability depends on your host configuration and any cgroup constraints you have in place. This difference is why exit code 137 disproportionately affects self-hosted runner workflows, particularly those running memory-intensive Docker containers on shared or under-provisioned hosts."
+aliases:
+  - "/tech/2026-03-24-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 Your CI pipeline failed. Again. The error log shows `exit code 137`, and the container just stopped. No stack trace. No clear error message. Just silence and a failed build.

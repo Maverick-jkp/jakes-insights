@@ -19,6 +19,9 @@ faq:
     answer: "CSS Cascade Layers (`@layer`) let you explicitly control the order in which styles are applied, solving the same specificity conflicts that originally made Tailwind attractive. The feature has been supported in all major browsers since 2022, meaning you can achieve Tailwind-style specificity management in plain CSS with no framework required."
   - question: "is there a moving away from Tailwind CSS structured CSS guide that doesn't require rewriting the whole app?"
     answer: "Yes — a component-by-component migration approach is specifically designed to avoid a full rewrite, letting you replace Tailwind utility classes one component at a time while the rest of the app continues functioning normally. The target architecture uses a file-based CSS system built on native features like custom properties and cascade layers, which have broad browser support and no build-tool requirements."
+aliases:
+  - "/tech/2026-05-17-moving-away-from-tailwind-css-structured-css-guide/"
+
 ---
 
 Tailwind CSS adoption exploded over the past four years — but 2026 is showing a clear counter-trend. Developers who've shipped production apps with Tailwind are quietly stepping back, reporting that class soup in JSX, brittle refactors, and a growing disconnect from actual CSS fundamentals finally tipped the scales. This guide is for engineers who've hit that wall. By the end, you'll have a concrete, file-based CSS architecture you can drop into an existing project — no framework required.

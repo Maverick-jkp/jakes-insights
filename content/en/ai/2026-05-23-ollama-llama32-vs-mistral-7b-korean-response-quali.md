@@ -19,6 +19,9 @@ faq:
     answer: "Yes, both Llama 3.2 3B and Mistral 7B fit comfortably within 16GB of unified memory on M3 MacBooks when using Q4 quantization through Ollama. The M3's unified memory architecture with up to 300GB/s bandwidth makes running these models locally practical without any external GPU hardware."
   - question: "ollama llama3.2 vs mistral 7b korean response quality macbook m3 benchmark 2025 honorifics accuracy"
     answer: "Korean AI developer communities have reported recurring issues with Llama 3.2 3B hallucinating honorific forms, which is a significant problem since incorrect honorifics in Korean professional contexts carry the same weight as major etiquette errors in formal English communication. Mistral 7B demonstrates stronger performance on Korean grammatical coherence, making it the safer choice for customer-facing Korean language applications."
+aliases:
+  - "/tech/2026-05-23-ollama-llama32-vs-mistral-7b-korean-response-quali/"
+
 ---
 
 Running local LLMs on Apple Silicon has gotten genuinely practical. But for Korean-language tasks specifically, the model choice matters far more than most benchmarks reveal.

@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions Hugo 블로그 Cloudflare Pages 자동배포 cron 실행 안 될 때 트러블슈팅 관점에서 가장 권장되는 방법은 `schedule`과 `push` 트리거를 함께 쓰는 이중 구성이에요. push 이벤트가 저장소 활동으로 인정되어 60일 비활성화 정책을 자연스럽게 방지하고, cron이 지연되거나 실패해도 글을 올리는 순간 즉시 배포가 트리거돼요. 단일 cron만 사용하면 실패 시 대안이 없지만, 이중 트리거 구성은 안정성이 훨씬 높아요."
   - question: "Cloudflare Pages 무료 플랜 빌드 횟수 제한 초과 방지하는 방법"
     answer: "Cloudflare Pages 무료 플랜은 빌드당 최대 20분, 월 500회 빌드 제한이 있어서 cron 주기를 설계할 때 이 수치를 먼저 확인해야 해요. 예를 들어 매시간 실행하면 월 약 720회로 제한을 초과할 수 있으므로, 매일 1회 또는 매주 단위로 cron 주기를 설정하는 것이 안전해요. push 트리거를 함께 쓰는 이중 구성은 빌드 횟수를 더 소비할 수 있으므로, 실제 글 발행 빈도와 월 빌드 제한을 함께 고려해서 주기를 결정해야 해요."
+aliases:
+  - "/tech/2026-05-16-github-actions-hugo-블로그-cloudflare-pages-자동배포-cron/"
+
 ---
 
 cron 스케줄을 설정했는데 아무것도 실행되지 않아요. 워크플로우 파일은 완벽한데, GitHub Actions는 침묵합니다.

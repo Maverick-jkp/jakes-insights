@@ -19,6 +19,9 @@ faq:
     answer: "The Hacker News thread from February 2026 attracted hundreds of comments and signaled that the BSD community views AI-assisted driver development as a legitimate near-term workflow rather than a novelty. The discussion highlighted broader concerns about FreeBSD's hardware compatibility gap, particularly for consumer laptops, and whether AI could meaningfully address it."
   - question: "how do you use AI to write a FreeBSD device driver?"
     answer: "The process involves providing the AI with precise context including hardware specifications, the target kernel's API documentation, and iterative debugging feedback rather than expecting a single correct output. Varankin's approach demonstrated that the engineer's role shifts from writing code to accurately framing the problem and guiding the AI through successive refinements."
+aliases:
+  - "/tech/2026-02-24-freebsd-aiwritten-wifi-driver-macbook-realworld-re/"
+
 ---
 
 FreeBSD's hardware support has always been its awkward footnote. The OS is rock-solid for servers. ZFS, jails, network performance — all excellent. But consumer laptops? That's where things get messy. Broadcom WiFi chips, in particular, have been a pain point for years. Linux has `brcmfmac`. FreeBSD doesn't.

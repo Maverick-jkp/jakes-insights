@@ -19,6 +19,9 @@ faq:
     answer: "Bill C-22 requires telecom operators and service providers to maintain built-in technical interception capabilities, effectively mandating backdoor infrastructure that enables government surveillance. Security engineers widely regard such mandatory backdoors as systemic vulnerabilities because any access point built for government use can potentially be exploited by malicious actors as well."
   - question: "What happened to Bill C-26 in Canada?"
     answer: "Bill C-26 was tabled in 2022 but never passed, facing opposition from the Canadian Civil Liberties Association, Privacy Commissioner Philippe Dufresne, and constitutional critics over its broad ministerial powers and surveillance provisions. In March 2026, the government introduced Bill C-22, which effectively carries forward C-26's controversial warrantless metadata access provisions under a restructured two-part framework."
+aliases:
+  - "/tech/2026-03-16-canada-bill-c26-metadata-surveillance-warrantless-/"
+
 ---
 
 Canadian lawmakers just handed security agencies a new toolkit. Bill C-26 is dead. Bill C-22 is replacing it — and the privacy tradeoffs buried inside it deserve serious scrutiny from anyone building software, running infrastructure, or storing user data under Canadian jurisdiction.

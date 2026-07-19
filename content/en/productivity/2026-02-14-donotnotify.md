@@ -19,6 +19,9 @@ faq:
     answer: "Yes, DoNotNotify became open source after community pressure, with the developer releasing roughly 90% AI-generated code to GitHub and submitting it to F-Droid. This made it one of the first major FOSS projects to transparently acknowledge AI-assisted development."
   - question: "how to block specific notifications on android without blocking app"
     answer: "You can use content-filtering apps like DoNotNotify that analyze notification text and titles to block specific messages while allowing others through. This solves Android's built-in limitation that only lets you enable or disable all notifications from an app at once."
+aliases:
+  - "/tech/2026-02-14-donotnotify/"
+
 ---
 
 Your phone buzzes. It's your banking app. Again. Not about suspicious activity. A promotional offer. The third one this week.

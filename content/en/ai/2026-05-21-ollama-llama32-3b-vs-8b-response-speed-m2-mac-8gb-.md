@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 3B uses approximately 2.5-3GB of unified memory under Ollama with default Q4_K_M quantization. This leaves comfortable headroom on an 8GB M2 Mac for the operating system and active applications, allowing the full model to stay in memory without swapping."
   - question: "ollama llama3.2 3b vs 8b response speed M2 Mac which is better for everyday use"
     answer: "For everyday tasks like chat, text classification, and short-form content generation on an M2 Mac with 8GB RAM, the Llama 3.2 3B model is the practical choice due to its 2-3x speed advantage and stable memory footprint. The 8B model is only worth the performance trade-off if your workflow regularly involves complex reasoning, coding, or long-document summarization where output quality differences become noticeable."
+aliases:
+  - "/tech/2026-05-21-ollama-llama32-3b-vs-8b-response-speed-m2-mac-8gb-/"
+
 ---
 
 Running local LLMs got meaningfully faster in 2025. The question isn't whether Ollama works on an M2 MacBook — it does — but which Llama 3.2 model size actually fits your hardware without turning your laptop into a hand warmer.

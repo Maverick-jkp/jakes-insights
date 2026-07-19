@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions cron 스케줄이 실제로 안 돌아갈 때 가장 현실적인 대안은 Cron-job.org에서 GitHub API로 HTTP POST를 보내 repository_dispatch 이벤트로 워크플로우를 트리거하는 방식입니다. 초 단위 정확도가 필요하다면 Cloudflare Workers cron을 사용하면 되며, 무료 티어가 하루 10만 요청이라 일반적인 cron 용도로 충분합니다. 두 방식 모두 GitHub 큐 지연에서 완전히 자유롭지만, GitHub PAT 관리와 외부 서비스 의존성이 추가된다는 트레이드오프가 있습니다."
   - question: "Supabase 프리 티어 자동 paused 방지하는 방법"
     answer: "Supabase 프리 티어는 일정 기간 활동이 없으면 프로젝트가 paused 상태가 되는데, GitHub Actions cron으로 주기적 ping을 설정해도 60일 비활성화 정책 때문에 워크플로우 자체가 멈출 수 있습니다. Cron-job.org 무료 플랜에서 7일마다 repository_dispatch 이벤트를 트리거하도록 설정하면 GitHub의 비활성화 정책과 Supabase paused 문제를 동시에 해결할 수 있습니다. 이 방식은 외부 서비스 의존성이 생기지만 비용이 들지 않아 개인 프로젝트에 적합합니다."
+aliases:
+  - "/tech/2026-04-28-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-및-대안/"
+
 ---
 
 `schedule: cron: '0 9 * * *'` 설정해놨는데 9시가 아니라 11시에 돌거나, 아예 안 돌아가는 경우 있죠? 로그엔 에러도 없고, 워크플로우는 멀쩡해 보이는데 타이밍만 엉망인 그 상황이요.

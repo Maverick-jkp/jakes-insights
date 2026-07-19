@@ -19,6 +19,9 @@ faq:
     answer: "Frameworks with thinner documentation coverage face a structural disadvantage when developers use AI coding tools like Claude Code for project scaffolding, regardless of their actual technical quality. Because the model's recommendations reflect training data distribution, niche or newer frameworks are less likely to be suggested even when they might be the better fit."
   - question: "should developers trust Claude Code for stack decisions on new projects"
     answer: "Developers should cross-check Claude Code's framework recommendations against independent benchmarks and project-specific requirements rather than accepting them at face value. The tool's suggestions may reflect documentation popularity and training data biases rather than the most suitable technical choice for a given use case."
+aliases:
+  - "/tech/2026-02-27-claude-code-framework-preference-bias-developer-ma/"
+
 ---
 
 Something quietly strange is happening inside AI-assisted development workflows. Claude Code—Anthropic's agentic coding tool—doesn't just write code. It recommends frameworks. And those recommendations aren't always neutral.

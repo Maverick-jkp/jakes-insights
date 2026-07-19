@@ -19,6 +19,9 @@ faq:
     answer: "You can avoid timeouts by either switching your route handler from Edge to Node.js runtime using 'export const runtime = nodejs', or by implementing a hybrid architecture where Edge handles routing and a separate Node.js serverless function manages the Claude streaming connection. Both approaches are valid claude api streaming response next.js app router edge runtime timeout workarounds depending on your performance requirements."
   - question: "how to connect Anthropic SDK AsyncIterable to ReadableStream in edge runtime"
     answer: "The Anthropic SDK returns streaming responses as an AsyncIterable of MessageStreamEvents, which must be explicitly bridged to the Web Streams API ReadableStream supported by Edge Runtime. Missing any step in this conversion can cause silent connection drops with no useful client-side error message, making careful stream construction essential."
+aliases:
+  - "/tech/2026-04-04-claude-api-streaming-response-nextjs-app-router-ed/"
+
 ---
 
 Edge functions promised low latency and global distribution. What they didn't advertise was a hard ceiling that'll break your Claude integration in production.

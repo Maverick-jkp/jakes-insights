@@ -19,6 +19,9 @@ faq:
     answer: "Supabase 무료 플랜 프로젝트 일시정지 방지 cron 핑 자동화 실전 설정 기준으로 5~6일 간격이 가장 현실적입니다. 7일 정지 정책을 확실히 피하려면 5일 이하 간격을 권장하며, 내장 Cron의 경우 DB가 정지되면 cron 자체도 실행되지 않으므로 여유 있는 간격 설정이 중요합니다."
   - question: "Supabase pg_net으로 REST API 핑 보내는 방법"
     answer: "pg_net 확장이 활성화된 경우 'SELECT net.http_get(url := 'https://[project-ref].supabase.co/rest/v1/', headers := '{'apikey': '[anon-key]'}'::jsonb)'와 같이 SQL로 REST API 엔드포인트에 직접 GET 요청을 보낼 수 있습니다. 이 방법은 DB뿐 아니라 API 레이어까지 함께 깨우지만, anon key가 코드에 포함되므로 Row Level Security(RLS) 설정이 반드시 되어 있어야 합니다."
+aliases:
+  - "/tech/2026-04-12-supabase-무료-플랜-프로젝트-일시정지-방지-cron-핑-자동화-실전-설정/"
+
 ---
 
 어렵게 만든 사이드 프로젝트가 월요일 아침마다 접속 불가 상태로 변해 있던 적 있으세요? Supabase 무료 플랜의 7일 비활동 자동 정지 정책 때문인데, 해결책은 생각보다 단순해요.

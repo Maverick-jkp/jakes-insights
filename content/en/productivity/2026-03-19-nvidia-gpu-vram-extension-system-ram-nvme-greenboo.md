@@ -19,6 +19,9 @@ faq:
     answer: "NVMe storage used as GPU memory overflow is dramatically slower than VRAM, with modern Gen5 drives offering around 14 GB/s sequential read speed versus 1,000+ GB/s internal VRAM bandwidth on an RTX 4090. This makes NVMe the least desirable tier in a VRAM extension setup, as the latency significantly impacts LLM inference speed. System RAM via PCIe is a middle ground at roughly 64 GB/s, making it a less painful overflow tier than NVMe for workloads that spill only moderately beyond VRAM capacity."
   - question: "what hardware is GreenBoost compatible with for Nvidia GPU VRAM extension"
     answer: "GreenBoost targets both consumer Nvidia GPU hardware and prosumer configurations including DGX Spark and GB10 setups, running on Linux. The Nvidia GPU VRAM extension system RAM NVMe GreenBoost approach is designed for users who need to run models larger than their VRAM can hold, such as 70B+ parameter LLMs on single-GPU workstations. It works alongside the existing Nvidia driver stack, intercepting memory allocation requests that exceed available VRAM."
+aliases:
+  - "/tech/2026-03-19-nvidia-gpu-vram-extension-system-ram-nvme-greenboo/"
+
 ---
 
 Running a 70B parameter model on a single GPU isn't a hardware problem anymore. It's a memory problem.

@@ -19,6 +19,9 @@ faq:
     answer: "The most reliable way to prevent failures on long-running jobs is to use ephemeral runner patterns, where each job runs in its own container lifecycle and is discarded afterward. Persistent runners accumulate environment state over time, leading to hard-to-diagnose failures, especially on home server setups with variable network reliability. Proper runner process management and monitoring are also essential to catch and recover from dropped connections or stalled processes."
   - question: "github actions self-hosted runner docker arm64 mac mini home server setup pitfalls runner label misconfiguration fix"
     answer: "Misconfigured runner labels are one of the top causes of first-time setup failures in a github actions self-hosted runner docker arm64 mac mini home server setup, often causing jobs to queue indefinitely or route to the wrong runner. Labels in your workflow YAML must exactly match the labels assigned to the runner during registration, including case sensitivity. Auditing both your workflow files and the runner configuration in GitHub's Settings panel is the fastest way to diagnose label mismatch issues."
+aliases:
+  - "/tech/2026-03-11-github-actions-selfhosted-runner-docker-arm64-mac-/"
+
 ---
 
 Running your own GitHub Actions infrastructure sounds great on paper. In practice, the setup pitfalls will eat your weekend if you're not prepared.

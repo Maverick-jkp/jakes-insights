@@ -19,6 +19,9 @@ faq:
     answer: "Yes, OpenAI charges input tokens for every tool or function schema injected into an API request, even if the model doesn't end up calling that tool. This means if you define multiple tools in your system prompt or request body, those schema tokens are billed on every single call in your conversation loop."
   - question: "claude haiku vs gpt-4o mini cost for tool use 2025 2026"
     answer: "As of Q1 2026 benchmarks, Claude 3.5 Haiku is priced at $0.80 per million input tokens and $4.00 per million output tokens, making it competitive with or cheaper than GPT-4o mini for reasoning-heavy and tool-intensive tasks. Claude 3.5 Haiku was specifically positioned by Anthropic as their fastest and most cost-effective model for tool-heavy pipelines, giving solo developers a strong option for budget-conscious agentic projects."
+aliases:
+  - "/tech/2026-05-25-claude-api-tool-use-vs-openai-function-calling-lat/"
+
 ---
 
 Last month, a solo developer watched their API bill nearly double overnight. They'd built an agentic workflow using OpenAI's function calling, hit unexpected token overhead on every tool invocation, and the fix required switching to Claude's tool use — not because one API is universally better, but because the cost profile is completely different depending on how you structure calls.

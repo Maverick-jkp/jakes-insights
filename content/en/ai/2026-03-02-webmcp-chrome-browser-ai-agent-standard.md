@@ -19,6 +19,9 @@ faq:
     answer: "Yes, SaaS companies that implement WebMCP tool definitions early are expected to gain significant discoverability advantages in AI-agent workflows, comparable to how early OpenGraph adopters dominated social media previews between 2011 and 2013. WebMCP also gives product teams explicit control over what AI agents can access through capability declarations, rather than leaving that to the agents themselves. With Chrome prototyping a native WebMCP host as of early 2026, the adoption window for first-mover advantage is narrow."
   - question: "is WebMCP available in Chrome now and when will it be ready for developers"
     answer: "As of early 2026, Chrome is actively prototyping a native WebMCP host implementation, meaning the standard is in development but not yet fully released for production use. The prototype aims to make any website capable of exposing AI-accessible tools without requiring a separate backend integration. Developers and product teams are advised to prepare their WebMCP tool definitions within the next 90 days to be positioned ahead of broader rollout."
+aliases:
+  - "/tech/2026-03-02-webmcp-chrome-browser-ai-agent-standard/"
+
 ---
 
 The browser is becoming the new API layer. WebMCP — the Web Model Context Protocol — is Chrome's bid to make every website natively accessible to AI agents without scraping, without custom integrations, and without the fragile hacks developers have been shipping for the past two years.

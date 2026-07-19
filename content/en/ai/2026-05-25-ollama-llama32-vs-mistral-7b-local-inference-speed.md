@@ -19,6 +19,9 @@ faq:
     answer: "Running Llama 3.2 3B with Ollama on an M3 Pro in 2025, you can expect approximately 55–65 tokens per second with Metal acceleration enabled. This speed advantage over larger models like Mistral 7B makes Llama 3.2 3B a strong choice for latency-sensitive tasks such as real-time chat or document summarization."
   - question: "should i use llama 3.2 or mistral 7b for local rag pipeline on macbook m3 pro"
     answer: "The choice between Llama 3.2 and Mistral 7B for a local RAG pipeline on an M3 Pro depends on whether your bottleneck is latency or output quality. Llama 3.2 3B is faster and more efficient for high-throughput retrieval tasks, while Mistral 7B's stronger reasoning and instruction-following capabilities make it better suited for RAG pipelines that require accurate, nuanced responses."
+aliases:
+  - "/tech/2026-05-25-ollama-llama32-vs-mistral-7b-local-inference-speed/"
+
 ---
 
 Running LLMs locally isn't experimental anymore. By mid-2026, a MacBook M3 Pro sits comfortably in thousands of engineering workflows as a genuine inference machine — no cloud API, no latency tax, no per-token billing. The question shifted from *can* you run models locally to *which* model runs best for your specific workload.

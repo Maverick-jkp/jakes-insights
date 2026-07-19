@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 3B running via Ollama is the better choice for latency-sensitive tasks like autocomplete and chat interfaces on an 8GB M2 MacBook, with a first-token latency of approximately 0.3 seconds compared to Mistral 7B's 0.8 seconds. Its smaller 2.1GB memory footprint also means it runs stably alongside other applications without thermal throttling."
   - question: "does ollama llama3.2 vs mistral 7b response speed M2 MacBook 8GB RAM benchmark change with longer prompts"
     answer: "Yes, both models slow down with longer prompts, but Mistral 7B is more significantly affected due to memory pressure on 8GB systems. Llama 3.2 3B drops modestly from ~42 tokens/sec to ~38 tokens/sec on prompts over 1,000 tokens, while Mistral 7B falls more sharply from ~24 tokens/sec to ~17 tokens/sec under the same conditions."
+aliases:
+  - "/tech/2026-03-28-ollama-llama32-vs-mistral-7b-response-speed-m2-mac/"
+
 ---
 
 Running local LLMs on consumer hardware isn't a research experiment anymore. It's a daily workflow decision for thousands of developers. The question that keeps coming up: in an **ollama llama3.2 vs mistral 7b response speed M2 MacBook 8GB RAM benchmark**, which model actually wins where it matters?

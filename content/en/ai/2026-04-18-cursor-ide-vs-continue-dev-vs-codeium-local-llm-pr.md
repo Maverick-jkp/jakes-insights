@@ -19,6 +19,9 @@ faq:
     answer: "Local LLMs like DeepSeek Coder V2 running through Ollama now reach approximately 85 to 90 percent of GPT-4o code quality on HumanEval benchmarks, based on community benchmarks published in early 2026. This means teams can achieve near-flagship model performance while keeping all code inference entirely on their own hardware."
   - question: "is codeium windsurf self-hosted worth it for enterprise teams"
     answer: "Codeium, now rebranded as Windsurf, does offer a self-hosted enterprise tier that keeps code within your own infrastructure, but the minimum seat requirements and infrastructure complexity make it practical only for teams of roughly 50 engineers or more. Smaller teams or those needing a faster setup are better served by Continue.dev with a locally hosted model like Ollama."
+aliases:
+  - "/tech/2026-04-18-cursor-ide-vs-continue-dev-vs-codeium-local-llm-pr/"
+
 ---
 
 Most AI coding tools send your code to someone else's server. That single fact is reshaping how engineering teams choose their tooling in 2026.

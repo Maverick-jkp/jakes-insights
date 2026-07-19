@@ -19,6 +19,9 @@ faq:
     answer: "현재 setHTML()과 Sanitizer API를 안정적으로 지원하는 브라우저는 Firefox 148이 사실상 유일하며, Chrome과 Edge는 실험적 플래그가 필요하고 Safari는 아직 미지원 상태입니다. 이 격차를 해소하려면 setHTML() 지원 여부를 런타임에 감지해 지원되는 환경에서는 setHTML()을 쓰고, 그렇지 않은 환경에서는 DOMPurify를 폴백으로 유지하는 조건부 처리 방식이 현실적인 대안입니다."
   - question: "textContent innerHTML 대신 쓰면 XSS 막을 수 있나요"
     answer: "textContent는 입력값을 HTML이 아닌 순수 텍스트로 처리하기 때문에 파싱 자체가 발생하지 않아 XSS를 방지할 수 있습니다. 다만 이 방식은 HTML 태그 자체가 필요 없는 단순 텍스트 출력 상황에만 적용 가능하며, 서식 있는 HTML을 동적으로 삽입해야 하는 경우에는 setHTML()이나 DOMPurify를 활용한 sanitize 처리가 필요합니다."
+aliases:
+  - "/tech/2026-02-25-innerhtml-보안-취약점-sethtml-firefox-마이그레이션/"
+
 ---
 
 웹 개발자라면 `innerHTML` 한 번도 안 써본 사람 없죠. 딱 한 줄로 HTML을 동적으로 바꿀 수 있는데, 이게 지난 20년간 XSS(크로스사이트 스크립팅) 공격의 가장 흔한 진입로였어요. OWASP에 따르면 XSS는 2026년 현재도 웹 취약점 Top 3 안에 꾸준히 드는 문제예요.

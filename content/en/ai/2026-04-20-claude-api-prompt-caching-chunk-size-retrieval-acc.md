@@ -19,6 +19,9 @@ faq:
     answer: "Claude's prompt caching works by charging 25% more per token on cache writes but reducing cache reads to just 10% of the standard input token price. For applications that repeatedly send large context blocks — like document review or multi-turn research agents — this pricing model significantly lowers costs when cache hit rates are high. Static system prompts typically achieve over 90% cache hit rates, while dynamic RAG contexts require careful chunk size tuning to see similar savings."
   - question: "langchain RecursiveCharacterTextSplitter default settings too small for claude caching"
     answer: "Yes, LangChain's RecursiveCharacterTextSplitter defaults to 1,000 characters with 200-character overlap, which translates to roughly 220–280 tokens per chunk. Claude's prompt caching minimum threshold is 1,024 tokens, so these default settings produce chunks that are consistently too small to trigger caching. Teams need to customize their splitter configuration — increasing chunk size substantially — to make Claude API prompt caching work effectively in LangChain pipelines."
+aliases:
+  - "/tech/2026-04-20-claude-api-prompt-caching-chunk-size-retrieval-acc/"
+
 ---
 
 Prompt caching on the Claude API sounds straightforward until you actually run experiments with LangChain and discover that chunk size decisions make or break your retrieval accuracy — sometimes by 40% or more.

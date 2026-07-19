@@ -19,6 +19,9 @@ faq:
     answer: "By 2025, over 70% of Fortune 500 engineering teams had at least one AI coding tool in active production use, according to the GitHub State of the Octoverse 2025 report, and AI coding tools production outages real causes are increasingly being flagged in post-mortems across multiple companies. The core issue is that enterprise deployment practices and CI/CD pipelines have not evolved fast enough to account for the specific failure signatures that AI-generated code produces."
   - question: "how to prevent production outages from AI generated code"
     answer: "Preventing AI-related production outages requires updating code review standards to specifically evaluate context-sensitive logic, such as rate limiting, multi-service dependencies, and system-specific constraints, rather than relying on processes designed for human-authored code. Engineering teams should also prioritize documentation practices that capture the intent behind AI-generated implementations, so on-call engineers can quickly understand and debug unfamiliar logic during incidents."
+aliases:
+  - "/tech/2026-03-10-ai-coding-tools-production-outages-real-causes/"
+
 ---
 
 Production went down. Engineers scrambled. And somewhere in the post-mortem, someone quietly noted the deploy contained AI-generated code.

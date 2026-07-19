@@ -19,6 +19,9 @@ faq:
     answer: "Using ollama on an M2 MacBook Air with 8GB RAM, inference speed varies significantly by model size. Llama 3.2 3B reaches approximately 55–75 tokens per second, while a larger model like Mistral 7B runs at around 25–38 tokens per second, both using default Q4_K_M quantization."
   - question: "does llama 3.2 3b produce good enough output quality compared to mistral 7b"
     answer: "Mistral 7B produces noticeably stronger output on complex reasoning tasks thanks to its sliding window attention architecture and larger parameter count. However, for common developer tasks like code suggestions, shell scripting, and quick Q&A, Llama 3.2 3B delivers coherent and useful output that is sufficient for most interactive workflows, making it the practical choice on memory-constrained hardware."
+aliases:
+  - "/tech/2026-04-10-ollama-llama32-3b-vs-mistral-7b-m2-macbook-air-8gb/"
+
 ---
 
 Running a local LLM on 8GB of unified memory isn't a compromise anymore. It's a deliberate engineering choice — and the model you pick determines whether your terminal feels instant or sluggish.

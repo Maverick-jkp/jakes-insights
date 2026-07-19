@@ -19,6 +19,9 @@ faq:
     answer: "`COPY . .`으로 소스 전체를 먼저 복사한 뒤 `RUN npm install`을 실행하면, 소스 코드 한 줄만 변경되어도 그 이후 레이어가 전부 무효화됩니다. 올바른 순서는 `package.json`만 먼저 복사하고 의존성 설치를 완료한 후 나머지 소스를 복사하는 것으로, 이 구조를 지켜야 캐시 히트율이 실질적으로 높아집니다."
   - question: "fly deploy remote-only 캐시 GitHub Actions 직접 빌드 차이점"
     answer: "`fly deploy --remote-only`는 빌드를 Fly.io 원격 빌더에 위임해 설정이 가장 단순하고 Fly.io가 이전 빌드 캐시를 일정 기간 자동 유지해주지만, 캐시 보존 기간이 Fly.io 정책에 종속되고 빌드 로그 가시성이 낮습니다. 반면 GitHub Actions에서 직접 빌드하고 GHA Cache나 GHCR을 활용하면 캐시 만료 시점과 저장 위치를 직접 제어할 수 있어 중·대형 팀 환경에 더 적합합니다."
+aliases:
+  - "/tech/2026-05-13-flyio-docker-배포-빌드-캐시-안되는-문제-github-actions-연동-해결법/"
+
 ---
 
 배포 버튼 누를 때마다 5분씩 기다리고 있죠. 코드 한 줄 바꿨을 뿐인데.

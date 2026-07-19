@@ -19,6 +19,9 @@ faq:
     answer: "GitHub's runner registration tokens have a hard 60-minute expiration window, which silently breaks unattended Docker-based runner bootstrap scripts if the container takes too long to start or the token is reused. This means any automated setup script that generates a token and later attempts to register the runner after the window has passed will fail without a clear error message. The fix is to generate a fresh token immediately before runner registration runs, ideally as part of the container entrypoint logic."
   - question: "are ARM64 docker images available for CI tools like node python maven on raspberry pi"
     answer: "Most Docker Official Images including node, python, and maven publish multi-arch manifests that include linux/arm64 variants, so they work natively on Raspberry Pi 5 without QEMU emulation. However, many third-party and enterprise CI tool images do not publish ARM64 variants, which can cause silent fallback to emulation that runs 3–5x slower or fails outright. Always verify that your specific CI image has an arm64 manifest using 'docker manifest inspect' before building your pipeline around it."
+aliases:
+  - "/tech/2026-05-04-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 Running CI/CD on a Raspberry Pi 5 sounds elegant on paper — cheap hardware, low power draw, ARM64 native builds. The reality involves a surprising number of sharp edges that can cost hours of debugging time before a single workflow succeeds.

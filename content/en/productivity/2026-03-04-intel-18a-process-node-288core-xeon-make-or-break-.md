@@ -19,6 +19,9 @@ faq:
     answer: "The Intel 288-core Xeon 6+ is not a monolithic die but a multi-chip configuration using Foveros Direct die-to-die bonding at a 10-micron pitch, according to Tom's Hardware reporting from February 2026. This chiplet-based approach significantly changes the yield calculus, as Intel only needs individual dies to be defect-free rather than one massive single piece of silicon. Foveros Direct 3D packaging is central to making a 288-core design manufacturable at leading-edge process nodes."
   - question: "why does Intel need 18A to succeed for its foundry business"
     answer: "Intel Foundry, part of Pat Gelsinger's IDM 2.0 strategy announced in 2021, requires 18A to demonstrate competitive yield and performance in order to attract and retain external customers such as Qualcomm and Microsoft, both of which have reportedly engaged in test chip programs tied to this node. Without a credible 18A result, there is little reason for fabless chip designers to choose Intel Foundry over the established and proven TSMC supply chain. The Intel 18A process node 288-core Xeon make or break moment is therefore as much about winning external foundry revenue as it is about Intel's own server products."
+aliases:
+  - "/tech/2026-03-04-intel-18a-process-node-288core-xeon-make-or-break-/"
+
 ---
 
 Intel just bet the company on a single silicon node. And the clock is running.

@@ -19,6 +19,9 @@ faq:
     answer: "`USING` 절은 SELECT와 DELETE 시 어떤 행에 접근할 수 있는지를 제어하고, `WITH CHECK` 절은 INSERT와 UPDATE 시 어떤 데이터를 쓸 수 있는지를 제어해요. `WITH CHECK`를 생략하면 읽기는 본인 데이터만 보이더라도 다른 사람의 user_id로 데이터를 삽입하는 게 가능해지므로, 쓰기 작업이 있는 정책에는 반드시 함께 작성해야 해요."
   - question: "Supabase RLS 정책 설정 실수 보안 취약점 점검 체크리스트 배포 전에 뭘 확인해야 해"
     answer: "Supabase RLS 정책 설정 실수 보안 취약점 실제 사례 점검 체크리스트에 따르면, 배포 전에는 `pg_tables`에서 `rowsecurity`가 false인 테이블이 없는지 확인하고, 모든 테이블에 실제 정책이 존재하는지 반드시 점검해야 해요. 특히 service_role 키가 프론트엔드 코드나 Git 저장소에 포함되어 있지 않은지도 함께 확인하는 것이 핵심이에요."
+aliases:
+  - "/tech/2026-03-22-supabase-rls-정책-설정-실수-보안-취약점-실제-사례-점검-체크리스트/"
+
 ---
 
 데이터베이스를 열어놓고 잠근 척하는 거, 알고 계세요?

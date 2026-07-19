@@ -19,6 +19,9 @@ faq:
     answer: "Adding the runner user to the docker group is the simplest github actions self-hosted runner docker socket permission denied ubuntu 22.04 fix, but it carries a meaningful security trade-off: docker group membership is effectively equivalent to root access on the host machine. For teams with stricter security requirements, rootless Docker is the safer alternative, though it requires more configuration. If your runner handles untrusted code or pull request workflows from forks, rootless Docker or strong job isolation is strongly recommended."
   - question: "ubuntu 22.04 docker socket permissions different from ubuntu 20.04"
     answer: "Ubuntu 22.04 ships with stricter AppArmor profiles for Docker and sets the Docker socket permissions to 660 with docker group ownership by default, which is tighter than Ubuntu 20.04's defaults. This means workarounds that functioned on 20.04 without explicit group configuration often fail silently or break entirely on 22.04. Teams migrating self-hosted runners from 20.04 to 22.04 should treat Docker socket permissions as a required infrastructure configuration step rather than an optional fix."
+aliases:
+  - "/tech/2026-05-03-github-actions-selfhosted-runner-docker-socket-per/"
+
 ---
 
 The error hits mid-pipeline, everything stops, and the message is maddeningly terse: `permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock`. If you're running GitHub Actions with a self-hosted runner on Ubuntu 22.04, this isn't a rare edge case — it's practically a rite of passage.

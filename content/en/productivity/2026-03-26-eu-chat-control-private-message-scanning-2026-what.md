@@ -19,6 +19,9 @@ faq:
     answer: "In September 2024, the European Parliament voted to block untargeted mass scanning, significantly restricting the original Chat Control proposal. However, the Council of the EU has continued pushing revised versions of the mandate, meaning the proposal remained legally active and contested as of March 2026."
   - question: "is EU Chat Control still happening in 2026"
     answer: "As of March 2026, the EU Chat Control proposal is still technically active but remains heavily contested, caught in political deadlock between the European Parliament and the Council of the EU. Privacy advocates, cryptographers, and civil liberties groups continue to oppose it, and no final regulation has been passed into law."
+aliases:
+  - "/tech/2026-03-26-eu-chat-control-private-message-scanning-2026-what/"
+
 ---
 
 The EU's attempt to mandate mass scanning of private messages just hit its biggest obstacle yet — and if you're building anything with end-to-end encryption, you need to understand exactly what's at stake.

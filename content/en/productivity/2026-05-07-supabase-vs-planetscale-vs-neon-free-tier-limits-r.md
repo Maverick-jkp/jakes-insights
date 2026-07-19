@@ -19,6 +19,9 @@ faq:
     answer: "Both Neon and Supabase offer 0.5GB of free storage, but they differ significantly on compute: Neon provides autoscaling compute between 0.25 and 2 vCPU with a scale-to-zero model, while Supabase includes shared compute but pauses the entire project after 7 days of inactivity. Supabase's free tier also bundles extras like auth, storage, and edge functions, making it more feature-rich for full-stack applications."
   - question: "what is the best free postgres database for low traffic apps"
     answer: "Neon is widely considered the best free Postgres option for low-traffic or intermittent workloads because its autoscale-to-zero compute model means you are not paying for idle time and there is no project pause policy. A full supabase vs planetscale vs neon free tier limits real app usage breakdown confirms that Neon's free tier is the most developer-friendly for apps that receive only occasional traffic, while Supabase is a stronger choice when you need built-in auth and storage alongside your database."
+aliases:
+  - "/tech/2026-05-07-supabase-vs-planetscale-vs-neon-free-tier-limits-r/"
+
 ---
 
 PlanetScale killed its free tier in March 2024. That single decision sent thousands of developers scrambling to Supabase and Neon overnight — and the landscape has reshuffled enough that anything you learned from a 2023 tutorial is probably wrong now.

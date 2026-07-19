@@ -19,6 +19,9 @@ faq:
     answer: "A hybrid approach combining semantic chunking with dynamic context assembly and overlap buffers is the most effective strategy, closing about 85% of the quality gap compared to full-context calls at just 25–35% of the cost. This outperforms naive fixed-size chunking, which risks losing coherence across document boundaries and can cause significant quality degradation."
   - question: "does Claude Opus 4.6 actually work well with large context windows or should I chunk my documents"
     answer: "Claude Opus 4.6 maintains strong cross-document reasoning up to approximately 400K tokens according to Anthropic's internal benchmarks, but quality degrades measurably beyond that range. For most production workflows, structured chunking is recommended because costs drop 60–80% and a well-designed chunking strategy recovers the majority of the quality difference."
+aliases:
+  - "/tech/2026-03-18-claude-api-context-window-cost-optimization-chunki/"
+
 ---
 
 Stuffing 800K tokens into a single Claude API call sounds powerful. The bill at month-end tells a different story.

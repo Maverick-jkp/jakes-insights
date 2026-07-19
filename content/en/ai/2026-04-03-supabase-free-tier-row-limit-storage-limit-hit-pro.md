@@ -19,6 +19,9 @@ faq:
     answer: "Supabase's free tier includes 1GB of file storage and 2GB of egress bandwidth per month, both of which can be exhausted quickly in media-heavy production apps. For example, an e-commerce app serving product images to just 300 daily visitors can burn through the 2GB egress cap in under two weeks, often before the row limit is ever reached."
   - question: "supabase free tier row limit storage limit hit production app migration strategy how to avoid downtime"
     answer: "To avoid downtime when executing a supabase free tier row limit storage limit hit production app migration strategy, you should proactively monitor your row count, storage usage, and egress bandwidth before hitting hard ceilings rather than reacting after failures occur. Upgrading to Supabase Pro resolves most constraints, but a clean migration also requires reviewing your schema, storage buckets, and edge function invocations at the same time to prevent overlooked bottlenecks."
+aliases:
+  - "/tech/2026-04-03-supabase-free-tier-row-limit-storage-limit-hit-pro/"
+
 ---
 
 The moment your app logs start throwing `row limit exceeded` errors in production is a bad morning. Worse when the migration strategy you needed was never planned—because you assumed you'd deal with it later.

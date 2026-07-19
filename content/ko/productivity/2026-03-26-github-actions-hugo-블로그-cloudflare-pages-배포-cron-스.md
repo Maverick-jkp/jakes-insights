@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions에서 Hugo 빌드를 완료했더라도 Cloudflare Pages에 자동으로 배포되지는 않습니다. Cloudflare Pages 대시보드의 Settings → Builds & Deployments → Deploy Hooks에서 URL을 생성한 뒤, 워크플로 마지막 단계에 'curl -X POST '${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}'' 한 줄을 추가해야 실제 배포가 트리거됩니다. 이 훅 호출 없이는 빌드 결과물이 Cloudflare Pages에 전달되지 않습니다."
   - question: "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 스케줄 무시될 때 workflow_dispatch 같이 쓰는 이유"
     answer: "GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 스케줄이 무시될 때 해결법 중 하나로 workflow_dispatch를 함께 설정하면 스케줄이 멈춘 상황에서도 버튼 클릭 한 번으로 워크플로를 즉시 실행해 문제를 바로 재현하고 디버깅할 수 있습니다. 또한 cron과 workflow_dispatch를 병행하면 60일 비활성화 정책을 우회하는 빈 커밋 자동화 없이도 수동 실행으로 저장소 활동을 유지하는 데 도움이 됩니다. yaml 파일에 'workflow_dispatch:' 한 줄만 추가하면 적용됩니다."
+aliases:
+  - "/tech/2026-03-26-github-actions-hugo-블로그-cloudflare-pages-배포-cron-스/"
+
 ---
 
 Hugo 블로그 예약 발행 설정해뒀는데, 정해진 시간에 글이 안 올라온 적 있죠? 설정은 완벽해 보이는데 GitHub Actions가 그냥 조용히 멈춰 있는 거예요. 2026년에도 이 문제로 이슈 트래커 뒤지는 개발자들이 꽤 많아요.

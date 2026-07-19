@@ -19,6 +19,9 @@ faq:
     answer: "For a bootstrapped founder building a relational SaaS product with user accounts, subscriptions, or audit logs, D1 SQLite is the stronger default choice due to its full SQL support, strong consistency, and generous free tier. KV is better reserved for specific use cases like caching, feature flags, or session tokens where eventual consistency is acceptable and read speed is the top priority."
   - question: "is cloudflare kv eventually consistent and does it matter for saas apps"
     answer: "Yes, Cloudflare KV is eventually consistent, meaning writes can take up to roughly 60 seconds to propagate across all 300+ edge locations globally. For SaaS applications where data accuracy matters — such as user permissions, billing status, or account settings — this eventual consistency can cause real bugs, making D1's strong consistency model a safer architectural choice."
+aliases:
+  - "/tech/2026-03-21-cloudflare-workers-kv-vs-d1-sqlite-latency-cost-co/"
+
 ---
 
 Picking the wrong data layer at $50 MRR is annoying. Picking it at $5,000 MRR costs you a full weekend of migrations. The Cloudflare Workers KV vs D1 SQLite latency and cost comparison for small SaaS isn't a theoretical debate — it's a decision that directly shapes your architecture, your bill, and your users' experience.

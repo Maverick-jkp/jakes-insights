@@ -19,6 +19,9 @@ faq:
     answer: "The right choice depends on your workload structure — output-heavy pipelines tend to favor Claude due to lower input costs, while teams with existing OpenAI tooling or ecosystem dependencies may still favor GPT-4o despite the higher input token price. At 10 million input tokens per month, the $2 per million pricing gap translates to roughly $20,000 annually, making this a genuine budget decision rather than a minor technical preference."
   - question: "does claude have a larger context window than gpt-4o"
     answer: "Yes, Claude 3.7 Sonnet supports a 200,000 token context window compared to GPT-4o's 128,000 token limit. This difference is particularly significant for document processing, long-form code review, and any pipeline that needs to handle large inputs in a single API call."
+aliases:
+  - "/tech/2026-04-01-claude-api-vs-openai-api-cost-per-token-real-proje/"
+
 ---
 
 The same document summarization pipeline. Same prompts, same input data, same output expectations. Claude's invoice came in 31% lower. That gap is why this analysis exists.

@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions multiplies actual runtime against free minutes at different rates depending on the operating system: Linux consumes minutes at 1x, Windows at 2x, and macOS at 10x. This means a 10-minute macOS job counts as 100 minutes against your free tier, making OS choice one of the most impactful decisions for managing your monthly Actions budget. Switching from macOS to Linux runners where possible is one of the fastest ways to extend your free minutes before hitting the limit."
   - question: "is self hosted runner still free on github actions after 2026 pricing change"
     answer: "After GitHub's December 2025 pricing update, self-hosted runners are no longer unconditionally free for private repository users, as per-minute charges now apply in certain plan tiers. However, under specific account configurations, a self-hosted runner on your own VPS can still eliminate GitHub-side billing entirely. It's important to review your specific plan tier against the updated GitHub Actions pricing documentation to confirm whether your setup qualifies for zero-cost self-hosted runner usage."
+aliases:
+  - "/tech/2026-04-03-github-actions-free-minutes-limit-exceeded-private/"
+
 ---
 
 Private repo CI/CD just got more expensive. GitHub's December 2025 pricing announcement—rolling out through Q1 2026—changes the math for every team running Actions on private repositories, and the backlash across the `community` discussions forum has been loud.

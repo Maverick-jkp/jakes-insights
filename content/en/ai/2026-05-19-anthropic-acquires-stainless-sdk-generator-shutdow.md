@@ -19,6 +19,9 @@ faq:
     answer: "Developers building integrations against OpenAI and other affected AI provider APIs may find that the underlying SDKs they rely on lose active maintenance and updates as Stainless winds down third-party services. Teams should audit which of their SDK dependencies were Stainless-generated and begin evaluating alternative SDK tooling or migration paths as soon as possible."
   - question: "alternatives to Stainless SDK generator after shutdown"
     answer: "With Stainless shutting down third-party access following the Anthropic acquisition, developers are exploring alternatives such as Speakeasy, Fern, and LibLab for automated SDK generation from OpenAPI specs. Some teams are also considering manually maintained SDK clients or contributing to open-source SDK generation projects to reduce dependency on any single vendor."
+aliases:
+  - "/tech/2026-05-19-anthropic-acquires-stainless-sdk-generator-shutdow/"
+
 ---
 
 Anthropic just pulled off one of 2026's most calculated infrastructure moves. On May 18, 2026, Anthropic acquired Stainless — the SDK generation platform that OpenAI, Google, and dozens of other AI companies depended on to ship client libraries — and almost immediately announced it would shut down third-party access. That's not a product acquisition. That's a supply chain play.

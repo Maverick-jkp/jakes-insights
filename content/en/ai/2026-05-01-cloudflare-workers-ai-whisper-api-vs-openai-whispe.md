@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Workers AI routes Whisper requests to the nearest edge datacenter in its global network, while OpenAI routes through centralized US-based infrastructure. This makes Cloudflare meaningfully faster for users and applications located outside North America, where the geographic distance to OpenAI's servers adds noticeable latency."
   - question: "how much does openai whisper api cost per month for 10000 minutes"
     answer: "Running 10,000 audio minutes per month through OpenAI's Whisper API costs approximately $60 per month based on their $0.006 per audio minute pricing. By comparison, the same volume through Cloudflare Workers AI — as highlighted in the cloudflare workers ai whisper api vs openai whisper accuracy cost comparison real test — would cost around $6, representing a significant ongoing saving for high-volume use cases."
+aliases:
+  - "/tech/2026-05-01-cloudflare-workers-ai-whisper-api-vs-openai-whispe/"
+
 ---
 
 Speech-to-text costs sneak up fast. Run 10,000 audio minutes through OpenAI's Whisper API each month, and you're looking at a $60 bill — every month, indefinitely. Cloudflare's Workers AI now serves the same underlying Whisper model at roughly a tenth of that price, and the question is everywhere in developer forums: which one actually holds up in production?

@@ -19,6 +19,9 @@ faq:
     answer: "엔터프라이즈 고객사를 상대하는 B2B SaaS 스타트업에는 Azure가 가장 유리해요. Azure AD(Microsoft Entra ID)를 통해 고객사 직원 계정을 별도 SSO 설정 없이 바로 연동할 수 있어서, Microsoft 365와 Active Directory를 사용하는 대기업 IT 환경과의 마찰을 크게 줄여줘요. 이는 엔터프라이즈 온보딩 속도를 실질적으로 단축시키는 요인이에요."
   - question: "AWS vs GCP vs Azure 클라우드 서비스 비교: 스타트업 선택 기준으로 봤을 때 비용은 어디가 제일 저렴한가요?"
     answer: "AWS vs GCP vs Azure 클라우드 서비스 비교: 스타트업 선택 기준에 따르면, 인스턴스 단가만 보면 GCP e2-medium이 월 약 $25로 AWS t3.medium($30), Azure B2ms($38)보다 저렴해 보여요. 하지만 네트워크 아웃바운드 트래픽, 스토리지 I/O 과금 방식을 합산하면 실제 청구액은 달라지며, FinOps Foundation 2025년 보고서에서도 예상치 못한 비용의 주범 1위로 네트워크 아웃바운드 트래픽을 꼽았어요."
+aliases:
+  - "/tech/2026-03-08-aws-vs-gcp-vs-azure-클라우드-서비스-비교-스타트업-선택-기준/"
+
 ---
 
 클라우드 선택 실수 하나로 연간 수천만 원이 날아가요. Flexera의 2025 State of the Cloud 리포트에 따르면, 스타트업 클라우드 비용 낭비의 절반 가까이가 "처음에 잘못 고른" 데서 시작돼요.

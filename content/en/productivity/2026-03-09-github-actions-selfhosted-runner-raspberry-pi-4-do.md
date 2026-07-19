@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Docker BuildKit — which became the default build engine in Docker 23.0 (released early 2023) — uses significantly more memory than the legacy builder because it runs parallel build workers and aggressive layer caching. On ARM64 hardware like the Raspberry Pi 4, this amplified memory pressure is especially problematic when combined with a self-hosted GitHub Actions runner. Tuning BuildKit's parallelism flags is a key part of any github actions self-hosted runner raspberry pi 4 docker build memory crash fix."
   - question: "raspberry pi 4 ci cd docker builds homelab self-hosted runner worth it"
     answer: "The Raspberry Pi 4 is increasingly popular for homelab CI/CD pipelines due to its low power draw (around 3-5W under load), low cost, and native ARM64 support for modern Docker images. However, it requires careful tuning to run GitHub Actions self-hosted runners with Docker builds reliably, particularly on the 4GB model where memory headroom is tight. Teams willing to invest time in runner and Docker daemon configuration can make it work as a cost-effective alternative to GitHub's hosted runners for low-throughput workflows."
+aliases:
+  - "/tech/2026-03-09-github-actions-selfhosted-runner-raspberry-pi-4-do/"
+
 ---
 
 Your Pi 4 has 4GB of RAM. Your Docker build needs 4GB of RAM. The math doesn't work — and the OOM killer agrees.

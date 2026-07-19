@@ -19,6 +19,9 @@ faq:
     answer: "Wordfence and Sucuri both provide file integrity monitoring that compares your installed plugin files against known clean versions and alerts you to unauthorized changes. Setting up outbound firewall rules to block unexpected external connections from your server adds a second layer of defense by preventing compromised plugins from communicating with attacker-controlled servers."
   - question: "can WordPress org repository be trusted to catch malicious plugin updates"
     answer: "No, the WordPress.org plugin repository does not perform mandatory code review on every update that developers push, meaning malicious code can reach your site through an official update. Site owners cannot outsource trust to the marketplace and must implement their own auditing and monitoring practices to stay protected."
+aliases:
+  - "/tech/2026-04-14-wordpress-plugin-supply-chain-attack-how-to-protec/"
+
 ---
 
 I spent three hours investigating a client's compromised WordPress site before finding the culprit — a plugin they'd trusted for two years, now owned by someone else, quietly phoning home to a C2 server. That's the WordPress plugin supply chain attack in a nutshell. It doesn't care how careful you've been.

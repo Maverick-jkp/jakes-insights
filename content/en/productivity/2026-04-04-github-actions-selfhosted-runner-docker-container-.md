@@ -19,6 +19,9 @@ faq:
     answer: "Flaky tests or intermittent CI failures are often misdiagnosed symptoms of OOM kills caused by Docker memory limits being set too low. When the Linux kernel kills a runner process due to memory pressure, the failure can look like a network timeout or test flakiness rather than an out-of-memory error, making it difficult to diagnose."
   - question: "github actions runner virtual memory too high docker"
     answer: "The GitHub Actions runner process consumes 1-2GB of virtual memory (VSZ) even at idle due to how the .NET runtime pre-allocates address space, a behavior documented in GitHub issue #3796. This is not a memory leak but rather expected .NET runtime behavior, and it becomes a problem specifically when Docker container memory limits are enforced without accounting for swap."
+aliases:
+  - "/tech/2026-04-04-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 Your CI pipeline didn't fail because of bad code. It got murdered by the Linux kernel. That distinction matters more than most teams realize.

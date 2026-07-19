@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Apple Silicon's unified memory architecture significantly changes the Q4 vs Q8 decision compared to x86 or discrete GPU setups. The M3 Pro's 150GB/s shared memory bandwidth means inference performance is primarily a memory bandwidth and model size story, allowing Ollama to stream model weights directly to the Neural Engine without a PCIe bottleneck or separate VRAM ceiling."
   - question: "should I use Q4 or Q8 for llama 3.2 1B model in ollama"
     answer: "For the Llama 3.2 1B model specifically, the speed gap between Q4 and Q8 quantization narrows significantly, making the difference largely irrelevant for most chat applications. Both quantizations run fast enough on M3 Pro hardware that the choice should be driven by output quality needs rather than speed concerns."
+aliases:
+  - "/tech/2026-04-24-ollama-llama32-quantization-q4-vs-q8-inference-spe/"
+
 ---
 
 Running a 3B language model locally at 80+ tokens per second on a laptop isn't a future promise anymore. It's Thursday afternoon on your M3 Pro.

@@ -19,6 +19,9 @@ faq:
     answer: "Supabase의 service_role 키는 RLS를 완전히 우회하기 때문에 절대 클라이언트 사이드나 프론트엔드에 노출해서는 안 됩니다. 이 키는 백엔드 서버의 관리자 작업 전용으로만 사용해야 하며, 프론트엔드에 노출될 경우 모든 RLS 정책이 무력화되어 전체 데이터베이스가 무방비 상태가 됩니다."
   - question: "Supabase Row Level Security 실무 적용 멀티테넌트 SaaS 설계 할 때 기존 테이블 마이그레이션 순서 어떻게 되나요"
     answer: "'Supabase Row Level Security 실무 적용 멀티테넌트 SaaS 설계 삽질 후기 2025'에 따르면, 기존 테이블에 RLS를 적용할 때는 tenant_id 컬럼 추가 및 데이터 채우기 → tenant_id 인덱스 생성 → RLS 활성화 및 정책 작성 → 다른 테넌트 JWT로 직접 쿼리 날려 격리 검증 순서로 진행해야 합니다. 특히 인덱스를 RLS 활성화보다 먼저 만들어야 정책 적용 직후 발생할 수 있는 성능 문제를 예방할 수 있습니다."
+aliases:
+  - "/tech/2026-05-25-supabase-row-level-security-실무-적용-멀티테넌트-saas-설계-삽질/"
+
 ---
 
 프로덕션 배포 직전에 테넌트 A 데이터가 테넌트 B 화면에 뜨는 걸 발견했어요. 식은땀이 나더라고요. Supabase RLS를 "대충 켜놓으면 되겠지"라고 생각했던 게 문제였어요.

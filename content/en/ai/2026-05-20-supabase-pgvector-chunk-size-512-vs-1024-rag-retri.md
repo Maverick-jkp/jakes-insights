@@ -19,6 +19,9 @@ faq:
     answer: "Supabase pgvector's ivfflat and hnsw index types behave differently at scale depending on vector density, which is directly controlled by your chunk size. Smaller 512-token chunks produce more vectors overall, increasing index build time, but improve query recall because each vector carries a tighter semantic signal. The right index choice depends on both your chunk size and the total scale of your vector store."
   - question: "best chunk size for Supabase pgvector RAG in 2024 2025"
     answer: "According to Supabase pgvector chunk size 512 vs 1024 RAG retrieval accuracy real experiment results, the data leans toward 512 tokens for most developer-facing use cases, covering roughly 350–400 words of English prose per chunk. However, there is no universal winner — the optimal chunk size depends on your specific document type and query patterns, so testing both on your own dataset is recommended."
+aliases:
+  - "/tech/2026-05-20-supabase-pgvector-chunk-size-512-vs-1024-rag-retri/"
+
 ---
 
 Chunk size is one of those RAG decisions that feels arbitrary until you run the numbers. The difference between 512 and 1024 tokens isn't just storage overhead — it reshapes retrieval precision in ways that compound hard across production systems.

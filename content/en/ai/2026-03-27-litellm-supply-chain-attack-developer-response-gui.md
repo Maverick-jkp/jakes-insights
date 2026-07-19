@@ -19,6 +19,9 @@ faq:
     answer: "Audit your environment by checking installed package versions and reviewing your requirements.txt, lock files, and CI/CD logs for any reference to LiteLLM version 1.82.8. You should also inspect outbound network request logs from your build runners and developer machines during the exposure window, as the malicious code triggered anomalous external requests that can help confirm compromise."
   - question: "LiteLLM supply chain attack developer response guide tools to prevent AI package attacks"
     answer: "The recommended toolset from the LiteLLM supply chain attack developer response guide includes pip-audit for vulnerability scanning, GitGuardian for detecting exposed secrets, and strict hash-pinning via requirements.txt for integrity verification. These controls work together to catch malicious packages before they land in production, particularly important for AI/ML tooling that handles sensitive LLM provider credentials."
+aliases:
+  - "/tech/2026-03-27-litellm-supply-chain-attack-developer-response-gui/"
+
 ---
 
 A malicious package slipped into PyPI under the LiteLLM name in early 2025 — and if your team was running version 1.82.8, you were exposed. This tutorial walks you through exactly what happened, how to assess your exposure, and the concrete steps to harden your dependency pipeline so it doesn't happen again.

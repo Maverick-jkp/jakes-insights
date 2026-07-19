@@ -19,6 +19,9 @@ faq:
     answer: "Re-pulling Docker images will not fix unexpected exit code errors on M-series Mac self-hosted runners because image incompatibility is not the root cause. The actual problem is SIGTERM propagation failure during container teardown on ARM64 Darwin, introduced by a runner process lifecycle change in version 2.327.0. The correct fix targets process signal handling through environment variable overrides and Docker runtime flags, not image tags or image architecture."
   - question: "how to configure RUNNER_GRACEFUL_STOP_TIMEOUT for docker on apple m1 m2 mac self-hosted runner"
     answer: "RUNNER_GRACEFUL_STOP_TIMEOUT is an environment variable that controls how long the GitHub Actions runner agent waits before forcefully terminating job processes, and overriding it is a key workaround for ARM64 Docker exit code issues on M-series Macs. It should be set in the runner's environment before starting the run.sh process, paired with the Docker --init flag to ensure proper signal forwarding inside containers. This combination stabilizes container exits on ARM64 Darwin by giving Docker enough time to handle SIGTERM correctly before the runner proceeds with teardown."
+aliases:
+  - "/tech/2026-03-13-github-actions-selfhosted-runner-docker-arm64-mser/"
+
 ---
 
 Build pipelines don't fail quietly. When a GitHub Actions self-hosted runner on an M-series Mac starts throwing unexpected exit codes from Docker containers, the failure is loud, cryptic, and time-consuming to untangle. Hundreds of engineering teams discovered this the hard way after runner version 2.327.0 shipped in late 2025.

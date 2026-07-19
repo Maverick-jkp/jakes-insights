@@ -19,6 +19,9 @@ faq:
     answer: "For interactive coding assistants where response latency matters, Llama 3.2 3B is generally the better choice on an M2 MacBook with 16GB RAM due to its faster token generation speed. However, if your workflow involves long-form reasoning or larger context windows, Mistral 7B may produce higher-quality outputs despite being slower."
   - question: "ollama llama3.2 vs mistral 7b response speed benchmark M2 MacBook 16GB RAM 2025 which one to use"
     answer: "The right choice depends on your primary use case: Llama 3.2 3B is the better default for speed-sensitive tasks like chat and code completion on constrained M2 hardware, while Mistral 7B is preferable for tasks requiring stronger reasoning or handling longer contexts. For most developers using a 16GB M2 MacBook as their daily driver, Llama 3.2 3B offers the more practical day-to-day experience."
+aliases:
+  - "/tech/2026-04-14-ollama-llama32-vs-mistral-7b-response-speed-benchm/"
+
 ---
 
 Running local LLMs on an M2 MacBook with 16GB RAM isn't a theoretical exercise anymore — it's a daily workflow for thousands of developers. The question isn't *whether* it works. It's which model is actually faster in practice.

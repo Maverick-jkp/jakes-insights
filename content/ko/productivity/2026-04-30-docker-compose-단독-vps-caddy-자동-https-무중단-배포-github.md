@@ -19,6 +19,9 @@ faq:
     answer: "이 에러는 대부분 `sudo usermod -aG docker $USER` 명령으로 사용자를 docker 그룹에 추가한 뒤 로그아웃·재접속을 하지 않아 그룹 변경이 적용되지 않은 경우에 발생해요. VPS에 재접속하거나 `newgrp docker` 명령을 실행해 세션에 그룹 변경을 즉시 반영하면 해결됩니다. GitHub Actions 워크플로우에서 SSH 접속 후 동일 에러가 난다면 배포 스크립트 실행 계정에 docker 그룹이 올바르게 설정되어 있는지 확인하세요."
   - question: "사이드 프로젝트 배포 Kubernetes 대신 Docker Compose 써도 되나요"
     answer: "월 $20 수준의 단일 VPS에서 운영하는 사이드 프로젝트라면 Kubernetes는 관리 오버헤드 대비 실익이 거의 없어요. Docker Compose는 로컬 개발 환경과 프로덕션 환경의 구성 파일을 거의 그대로 공유할 수 있어서 환경 간 차이로 인한 문제가 줄고, GitHub Actions 무료 플랜(퍼블릭 레포 무제한, 프라이빗 월 2,000분)과 조합하면 추가 비용 없이 자동 배포 파이프라인을 구축할 수 있습니다."
+aliases:
+  - "/tech/2026-04-30-docker-compose-단독-vps-caddy-자동-https-무중단-배포-github/"
+
 ---
 
 Nginx 설정 파일 씨름하다 하루 날려본 적 있죠? 저도 그랬어요.

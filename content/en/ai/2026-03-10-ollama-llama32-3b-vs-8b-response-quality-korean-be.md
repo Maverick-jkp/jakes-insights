@@ -19,6 +19,9 @@ faq:
     answer: "Running via Ollama on MacBook M3 16GB, the Llama 3.2 3B model generates tokens roughly twice as fast as the 8B model at comparable quantization levels. This speed advantage makes the 3B a practical choice for real-time or latency-sensitive Korean-language applications. However, for production Korean NLP work requiring grammatical accuracy, the 8B's quality improvements generally outweigh the speed trade-off."
   - question: "llama 3.2 8b vs dedicated korean language models like exaone performance comparison"
     answer: "Llama 3.2 8B is a general-purpose multilingual model and trails behind dedicated Korean models like LG AI Research's EXAONE 3.0 on Korean-specific language tasks. The Hugging Face community noted in early 2025 that Llama 3.2's Korean performance is competitive against other general-purpose international models of similar size, but specialized Korean models hold a clear advantage. For high-accuracy Korean NLP work, dedicated models remain the stronger option despite the convenience of running Llama 3.2 locally via Ollama."
+aliases:
+  - "/tech/2026-03-10-ollama-llama32-3b-vs-8b-response-quality-korean-be/"
+
 ---
 
 Running local LLMs on MacBook M3 16GB costs nothing in cloud fees — but it costs you something in decision-making. Specifically: which model do you actually deploy for Korean-language work?

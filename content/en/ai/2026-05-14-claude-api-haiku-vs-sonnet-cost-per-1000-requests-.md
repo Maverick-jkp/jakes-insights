@@ -19,6 +19,9 @@ faq:
     answer: "As of May 2026, Claude Haiku 3.5 is priced at $0.80 per million input tokens and $4.00 per million output tokens, while Claude Sonnet 4.5 costs $3.00 per million input tokens and $15.00 per million output tokens. A SaaS app processing 500,000 monthly requests would pay roughly $376/month on Haiku versus $1,400/month on Sonnet for identical traffic volume."
   - question: "when does it make sense to pay for sonnet over haiku in production apps"
     answer: "Sonnet's higher cost is justified when task failure carries real downstream consequences, such as errors that trigger expensive processes or require human review. In the claude api haiku vs sonnet cost per 1000 requests real world app comparison, Sonnet proves its value specifically for multi-step reasoning and nuanced content generation where accuracy directly impacts product quality or business outcomes."
+aliases:
+  - "/tech/2026-05-14-claude-api-haiku-vs-sonnet-cost-per-1000-requests-/"
+
 ---
 
 Last quarter, a fintech startup cut their Claude API bill by 61% without changing a single line of product logic. The only change? Routing classification tasks to Haiku instead of Sonnet.

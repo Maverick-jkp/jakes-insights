@@ -19,6 +19,9 @@ faq:
     answer: "Apple Silicon uses a unified memory architecture where the CPU and GPU share the same physical memory pool, eliminating the PCIe bandwidth bottleneck that slows down traditional discrete GPU setups. When llama.cpp added Metal backend support in late 2023, this architectural advantage translated into 3–5x faster tokens-per-second performance compared to similarly priced Intel workstations on 7B models."
   - question: "what is the best local LLM setup for M3 Pro 18GB in 2025"
     answer: "The recommended setup for an M3 Pro 18GB is running Llama 3.2 via Ollama, which handles model deployment automatically without requiring manual llama.cpp compilation or GGUF file management. The ollama llama3.2 response speed benchmark Apple Silicon M3 Pro 18GB RAM 2025 results show the 3B model offers the best performance, while the 8B model remains usable — larger models beyond 8B require quantization due to the 18GB memory limit."
+aliases:
+  - "/tech/2026-05-29-ollama-llama32-response-speed-benchmark-apple-sili/"
+
 ---
 
 Running a capable LLM locally used to mean either a beefy NVIDIA workstation or cloud API bills that compound quietly until you notice them. The M3 Pro with 18GB unified memory changed that calculation. Benchmarks from the `llama.cpp` community (GitHub Discussion #4167) and hands-on testing documented by Local AI Master show Llama 3.2 on Apple Silicon delivering production-viable response speeds — no GPU rental required.

@@ -19,6 +19,9 @@ faq:
     answer: "For low-memory servers like a 1GB VPS, a global scrape interval of 30s is recommended over the popular 15s default. You can still use per-job overrides to scrape latency-sensitive or SLO-tracked targets at 15s, keeping memory usage manageable while retaining granularity where it actually matters."
   - question: "how much memory does Prometheus use with 15s vs 30s scrape interval"
     answer: "The Prometheus scrape interval 15s vs 30s memory usage difference on a single VPS with 1GB RAM is significant enough to cause instability, with 15s consuming roughly 40–60% more memory than 30s on an equivalent target set. The increase stems from the TSDB head block retaining approximately twice as many samples per series across its 2-hour window when scraping at the shorter interval."
+aliases:
+  - "/tech/2026-03-27-prometheus-scrape-interval-15s-vs-30s-memory-usage/"
+
 ---
 
 Running Prometheus on a 1GB VPS costs you nothing upfront — until your monitoring stack OOM-kills itself at 2 AM during a traffic spike, and you wake up to zero visibility into what just happened.

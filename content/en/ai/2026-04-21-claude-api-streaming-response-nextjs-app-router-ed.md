@@ -19,6 +19,9 @@ faq:
     answer: "Vercel's Edge Runtime has limited compatibility with the Anthropic Node.js SDK's streaming functionality because it doesn't support the full Node.js API surface, including the stream primitives the SDK uses internally. Vercel's own documentation confirms these limitations, and the recommended workaround for the claude api streaming response nextjs app router edge runtime timeout fix is to explicitly configure your route handler to use the Node.js runtime instead."
   - question: "nextjs route handler export const runtime nodejs vs edge which is faster for claude api"
     answer: "Edge Runtime offers faster cold starts and geographic distribution, but these advantages are outweighed for Claude API streaming by its 25-30 second timeout limit and incomplete Node.js API support. Node.js Runtime has slightly higher cold start latency but provides the reliability and stream compatibility needed for AI responses that can run 30-90 seconds depending on output length."
+aliases:
+  - "/tech/2026-04-21-claude-api-streaming-response-nextjs-app-router-ed/"
+
 ---
 
 Streaming AI responses hit a wall most developers don't see coming until production. The `claude api streaming response nextjs app router edge runtime timeout fix` isn't a niche problem — it's one of the most-searched deployment headaches for teams shipping AI features in 2026, and the root cause is almost never what you'd expect.

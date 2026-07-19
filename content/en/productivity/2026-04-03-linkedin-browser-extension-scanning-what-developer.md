@@ -19,6 +19,9 @@ faq:
     answer: "Browser extension fingerprinting operates entirely within standard browser capabilities, making it technically legal in many jurisdictions, though it raises significant informed consent and data privacy concerns. The practice reflects a broader industry pattern of browser environment harvesting that regulators and privacy advocates have increasingly scrutinized but not uniformly prohibited."
   - question: "can websites detect what extensions you have installed in Chrome or Firefox"
     answer: "Yes, websites can detect installed browser extensions through techniques like resource-timing analysis and DOM behavior observation, which have been documented by security researchers since at least 2014. Both Chrome and Firefox have introduced partial mitigations over the years, but extension detection remains viable through multiple vectors without requiring any special access or user interaction."
+aliases:
+  - "/tech/2026-04-03-linkedin-browser-extension-scanning-what-developer/"
+
 ---
 
 LinkedIn got caught doing something that most security engineers would flag immediately in a code review. The platform was scanning users' browsers for installed extensions — silently, without explicit consent, and at a scale that caught the attention of the security research community in early 2026.

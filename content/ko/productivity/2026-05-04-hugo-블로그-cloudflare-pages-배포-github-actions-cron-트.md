@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare API 토큰에 Cloudflare Pages:Edit 권한이 빠져 있거나, CLOUDFLARE_ACCOUNT_ID 환경 변수가 누락된 경우 wrangler가 에러 없이 종료되면서도 실제 배포가 이루어지지 않아요. GitHub Actions 워크플로우의 env 블록에 CF_API_TOKEN과 CF_ACCOUNT_ID 두 값을 모두 설정했는지 반드시 확인해 보세요."
   - question: "Hugo publishDate 미래 날짜 포스트가 빌드 후에도 블로그에 안 나타남"
     answer: "Hugo는 기본적으로 publishDate가 미래인 포스트를 빌드에서 제외해요. 해당 포스트를 강제로 포함하려면 hugo --buildFuture 플래그를 붙여야 하지만, cron으로 예약 발행 날짜에 맞춰 자동 빌드하는 구조라면 오히려 플래그 없이 hugo만 실행해야 해당 시점 이전 콘텐츠만 정상 노출돼요."
+aliases:
+  - "/tech/2026-05-04-hugo-블로그-cloudflare-pages-배포-github-actions-cron-트/"
+
 ---
 
 GitHub Actions `schedule` 트리거를 설정했는데 빌드가 멈췄어요. 로그엔 아무것도 없고, 워크플로우는 그냥 조용히 실행이 안 돼요. Hugo 블로그를 Cloudflare Pages에 배포하는 파이프라인에서 이 문제를 겪는 개발자가 꽤 늘었어요. 단순한 설정 실수처럼 보이지만, 실제로는 GitHub, Cloudflare, Hugo가 맞물리는 구조적인 문제예요.

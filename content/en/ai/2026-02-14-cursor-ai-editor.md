@@ -19,6 +19,9 @@ faq:
     answer: "Yes, non-programmers have successfully built functional applications using Cursor AI through natural language prompts. There are documented cases including an 8-year-old creating a working Harry Potter chat game, demonstrating the tool's accessibility beyond traditional developers."
   - question: "why did OpenAI try to buy Cursor AI"
     answer: "OpenAI attempted to acquire Anysphere (Cursor's parent company) in April 2025 after Cursor reached a $9 billion valuation, viewing it as a threat to their position in the developer ecosystem. When that acquisition failed, OpenAI immediately explored buying rival editor Windsurf instead, highlighting Cursor's strategic importance in AI-powered development tools."
+aliases:
+  - "/tech/2026-02-14-cursor-ai-editor/"
+
 ---
 
 # The Real Story Behind Cursor AI's $9 Billion Valuation

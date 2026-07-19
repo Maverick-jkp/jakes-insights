@@ -19,6 +19,9 @@ faq:
     answer: "The root cause combines three factors: Docker's inaccurate memory accounting on Apple Silicon due to the macOS virtualization layer, gaps in ARC's ephemeral pod lifecycle management that miss unclean termination signals, and default resource limits that are too low for real ARM64 workloads. These individual mismatches compound into a recurring OOM-kill and stuck-pod cycle. The problem became widespread as M2 Mac minis grew popular as self-hosted runner hardware through 2023 and 2024."
   - question: "does cgroup v2 fix GitHub Actions runner OOM kill on Apple Silicon Docker"
     answer: "Enforcing cgroup v2 is one of three recommended steps to resolve OOM-kill issues with GitHub Actions runners on Docker and Apple Silicon. It improves memory accounting accuracy between the Docker VM and the container runtime, reducing the frequency of unexpected OOM events. However, cgroup v2 alone is not sufficient and should be combined with explicit Kubernetes memory limits and ARC pod cleanup hooks for a complete fix."
+aliases:
+  - "/tech/2026-05-02-github-actions-selfhosted-runner-docker-arm64-m2-m/"
+
 ---
 
 Build pipelines die quietly. No fanfare, no obvious error — just a runner that stops responding, a pod stuck in `Running` state, and a CI queue that never clears. If you're running GitHub Actions self-hosted runners on Docker with ARM64 and an M2 Mac, that scenario is probably familiar. The memory leak pattern hitting this specific stack has become one of the more frustrating infrastructure problems in 2026, and the fix isn't where most teams look first.

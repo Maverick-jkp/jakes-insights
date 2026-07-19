@@ -19,6 +19,9 @@ faq:
     answer: "The right platform depends primarily on your data access pattern rather than your framework preference. Cloudflare Workers with D1 wins for raw cold start performance and global data locality on read-heavy workloads, while Vercel Edge Functions are better suited for teams prioritizing developer experience and deep Next.js integration."
   - question: "what is the difference between cloudflare d1 and vercel postgres for edge deployments"
     answer: "Cloudflare D1 is a globally replicated SQLite database built to run directly alongside Workers across 200+ edge locations, optimizing for low-latency reads close to users. Vercel's Postgres integration is better suited for write-heavy applications where strong consistency matters more than geographic data locality."
+aliases:
+  - "/tech/2026-03-26-cloudflare-workers-vs-vercel-edge-functions-cold-s/"
+
 ---
 
 Cold starts killed your product once. Don't let them do it again.

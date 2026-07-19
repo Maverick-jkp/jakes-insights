@@ -19,6 +19,9 @@ faq:
     answer: "As of Q1 2026, Claude Sonnet 3.7 is priced at $3.00 per million input tokens while GPT-4o costs $5.00 per million input tokens, according to official Anthropic and OpenAI pricing pages. This represents a 40% difference on input tokens, though the effective cost gap narrows or widens depending on your output token volume."
   - question: "is OpenAI Batch API cheaper than Claude API for high volume requests"
     answer: "OpenAI's Batch API reduces costs by 50% compared to standard real-time API calls, which can make it more competitive against or even cheaper than Claude for non-realtime, high-volume workloads. For applications that require real-time responses, Claude Sonnet generally maintains a 30–35% cost advantage over standard GPT-4o pricing."
+aliases:
+  - "/tech/2026-05-06-claude-api-vs-openai-api-cost-per-1000-requests-re/"
+
 ---
 
 Last quarter, a production chatbot processing 50 million tokens monthly switched from GPT-4o to Claude Sonnet. Monthly API spend dropped by roughly 40%. That's not a rounding error — that's a budget line item that gets CFO attention.

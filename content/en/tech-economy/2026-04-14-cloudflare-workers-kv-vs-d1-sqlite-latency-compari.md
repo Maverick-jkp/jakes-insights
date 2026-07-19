@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare D1 SQLite write latency ranges from approximately 20–80ms on small datasets, according to Cloudflare's own benchmark documentation. This is because all writes are routed to a single primary region rather than being distributed globally. For small projects under 10,000 daily active users, this latency is generally acceptable and rarely becomes the primary bottleneck."
   - question: "Cloudflare D1 database size limit and limitations"
     answer: "Cloudflare D1 supports up to 500MB per database and runs on a SQLite engine, making it suitable for small to mid-sized relational workloads at the edge. It supports standard SQL queries and can serve reads from regional replicas close to the user. The main limitation to plan for is that all writes go to a single primary region, which adds latency compared to fully distributed solutions."
+aliases:
+  - "/tech/2026-04-14-cloudflare-workers-kv-vs-d1-sqlite-latency-compari/"
+
 ---
 
 If you're building a small edge function and you've stared at the Cloudflare docs trying to decide between KV and D1, the choice looks simple on the surface. It isn't.

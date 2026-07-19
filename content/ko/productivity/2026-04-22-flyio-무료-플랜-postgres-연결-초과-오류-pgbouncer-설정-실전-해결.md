@@ -19,6 +19,9 @@ faq:
     answer: "Fly.io는 배포 시 롤링 업데이트 방식을 사용하기 때문에 기존 인스턴스와 새 인스턴스가 동시에 실행되는 순간이 발생해요. 이 순간 DB 연결 수가 일시적으로 두 배까지 늘어나 25개 한도를 쉽게 초과할 수 있어요. PgBouncer를 통해 실제 DB 연결 수를 평소에 10개 이하로 유지해두면 이런 배포 순간에도 연결 초과 오류를 피할 수 있어요."
   - question: "Fly.io 무료 플랜 Postgres 연결 초과 오류 PgBouncer 설정 실전 해결 후 연결 상태 확인하는 방법"
     answer: "fly postgres connect -a <앱이름> 명령으로 Postgres에 접속한 뒤, SELECT count(*), state FROM pg_stat_activity GROUP BY state; 쿼리로 현재 연결 수와 상태를 확인할 수 있어요. Fly.io 무료 플랜 Postgres 연결 초과 오류를 PgBouncer 설정으로 실전 해결한 후에는 실제 DB 연결 수가 default_pool_size로 설정한 값(예: 10개) 이하로 유지되는지 이 쿼리로 검증하는 것이 좋아요."
+aliases:
+  - "/tech/2026-04-22-flyio-무료-플랜-postgres-연결-초과-오류-pgbouncer-설정-실전-해결/"
+
 ---
 
 배포 직후 앱이 죽었어요. 로그를 보니 `too many clients already`. 접속자는 열 명도 안 됐는데.

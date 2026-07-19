@@ -19,6 +19,9 @@ faq:
     answer: "Fly.io는 shared-cpu-1x 256MB 메모리 VM을 3개까지 무료로 제공하며, 유료 전환 시 월 1.94달러부터 시작합니다. Node.js Express 서버를 shared-cpu-1x에 올리면 동시 접속 50명까지 무리 없이 처리할 수 있고, 비활성 VM을 자동으로 내리지 않아 24시간 운영 비용 예측이 가능합니다."
   - question: "소규모 앱 백엔드 스택 Fly.io Supabase Railway Neon 중 뭐가 나은가요"
     answer: "1인 개발자 Fly.io Cloudflare Workers Supabase 월 5달러 이하 스택 실제 운영 후기 기준으로, 커스텀 백엔드가 필요하고 비용을 최소화하려면 Fly.io + Supabase 조합이 유리합니다. Railway + Neon은 Git push 배포 편의성이 높아 PostgreSQL 중심 앱에 적합하지만, 무료 용량과 트래픽 한도 면에서 Fly.io + Supabase 조합보다 제한적입니다."
+aliases:
+  - "/tech/2026-04-08-1인-개발자-flyio-cloudflare-workers-supabase-월-5달러-이하-/"
+
 ---
 
 부업 앱이 월 4.87달러로 돌아가고 있어요. 월간 활성 사용자 800명 수준인데, 서버 비용보다 도메인 비용이 더 나와요.

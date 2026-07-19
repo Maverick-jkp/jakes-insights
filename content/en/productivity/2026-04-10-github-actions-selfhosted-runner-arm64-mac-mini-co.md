@@ -19,6 +19,9 @@ faq:
     answer: "An M2 Mac mini priced at around $599 and amortized over three years costs roughly $0.004 per minute in hardware alone, making it significantly cheaper than GitHub-hosted macOS runners at $0.08 per minute. However, a self-hosted ARM64 Mac mini setup is only cost-effective if your team generates enough build volume to justify the operational overhead of maintaining physical hardware."
   - question: "github actions self-hosted runner arm64 mac mini cost vs github hosted minutes breakeven point"
     answer: "When comparing github actions self-hosted runner arm64 mac mini cost vs github hosted minutes, the breakeven calculation depends on total monthly build minutes consumed by your team. At $0.08 per GitHub-hosted minute versus roughly $0.009 per minute all-in for a self-hosted Mac mini, teams running several hundred or more macOS build minutes per month will typically see meaningful savings, though GitHub's proposed new self-hosted runner fees could shift that threshold higher."
+aliases:
+  - "/tech/2026-04-10-github-actions-selfhosted-runner-arm64-mac-mini-co/"
+
 ---
 
 Build costs just got complicated.

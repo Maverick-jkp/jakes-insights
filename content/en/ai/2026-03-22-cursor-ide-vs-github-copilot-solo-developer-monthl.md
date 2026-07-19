@@ -19,6 +19,9 @@ faq:
     answer: "For most solo developers coding 4–6 hours per day on standard feature work, the 500 fast request limit in Cursor Pro is rarely hit. The ceiling becomes a real concern mainly for developers running automated scripts or doing intensive refactoring sprints rather than typical day-to-day development."
   - question: "cursor ide vs github copilot solo developer monthly cost productivity real comparison agentic editing"
     answer: "Cursor's agentic editing architecture, shipped in late 2024, is its primary productivity differentiator over GitHub Copilot, enabling faster multi-file task completion by an estimated 30–40%. GitHub Copilot added multi-file edits and workspace agents through 2025, but the two tools represent fundamentally different philosophies — Cursor prioritizes agentic workflows while Copilot prioritizes deep GitHub ecosystem integration."
+aliases:
+  - "/tech/2026-03-22-cursor-ide-vs-github-copilot-solo-developer-monthl/"
+
 ---
 
 The cost gap between these two tools isn't the story. The productivity gap is.

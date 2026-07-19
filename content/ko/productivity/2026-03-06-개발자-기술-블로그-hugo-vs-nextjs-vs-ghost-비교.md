@@ -19,6 +19,9 @@ faq:
     answer: "Ghost는 셀프 호스팅과 유료 Ghost Pro 플랜 두 가지 방식을 모두 지원해요. 셀프 호스팅은 서버 비용만 들고 소프트웨어 자체는 오픈소스라 무료이지만, 커스텀 기능 추가 시 코드 레벨 제약이 있다는 점을 감안해야 해요."
   - question: "기술 블로그 Hugo Next.js Ghost 중 SEO에 유리한 건 어느 것인가요"
     answer: "개발자 기술 블로그 Hugo vs Next.js vs Ghost 비교에서 SEO 측면으로 보면 Hugo와 Next.js 모두 정적 HTML을 출력하기 때문에 AI 검색 엔진(Perplexity, Google SGE) 인용에 유리한 구조예요. Ghost도 SEO 설정이 내장돼 있지만, 정적 HTML 기반이 아닌 자체 서버 방식이라 Hugo·Next.js와 아키텍처 차이가 있어요."
+aliases:
+  - "/tech/2026-03-06-개발자-기술-블로그-hugo-vs-nextjs-vs-ghost-비교/"
+
 ---
 
 기술 블로그를 시작하려는 개발자가 가장 먼저 막히는 건 코드가 아니에요. "어디에 쓸 것인가"죠. Hugo, Next.js, Ghost. 세 가지 모두 훌륭하다는 건 알겠는데, 막상 선택하려니 기준이 없어요. 2026년 현재, 이 세 도구는 각자 다른 방향으로 진화했어요. 선택 기준도 예전과 달라졌고요.

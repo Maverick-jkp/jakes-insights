@@ -19,6 +19,9 @@ faq:
     answer: "Legal experts suggest that enforcement actions against individual open source contributors would be 'jurisdictionally complex,' making it difficult to hold volunteer developers directly liable. However, organizations and entities that host Linux distribution infrastructure physically located in California face much clearer legal exposure under AB 1043. As of early 2026, no formal enforcement actions had been taken, but the risk is considered real enough that advocacy groups like the EFF have accelerated their activity around the issue."
   - question: "when does California AB 1043 OS age verification go into effect and is there enough time to comply"
     answer: "California AB 1043 takes effect on January 1, 2027, giving the technology industry roughly ten months from mid-2026 to achieve compliance. For large companies like Apple and Microsoft, the deadline is tight but potentially workable given their existing account infrastructure and engineering resources. For the Linux and open source community, however, the timeline is widely considered insufficient to complete the kind of architectural overhaul that true compliance would require."
+aliases:
+  - "/tech/2026-02-28-california-os-age-verification-law-linux-open-sour/"
+
 ---
 
 California Assembly Bill 1043 passed quietly. Its consequences are not quiet at all.

@@ -19,6 +19,9 @@ faq:
     answer: "Deploying PgBouncer as a sidecar on Fly.io is the most cost-effective connection pooling solution for solo developers working within free-tier constraints in 2025. It intercepts database connections from your application and maintains a smaller pool of real Postgres connections, keeping you safely under the 20–30 connection ceiling."
   - question: "fly.io postgres alternatives with connection pooling free tier 2025"
     answer: "Neon and Supabase are the two most commonly compared alternatives to Fly.io Postgres for solo developers dealing with the fly.io free tier postgres connection limit workaround solo developer 2025 problem, as both offer built-in connection pooling on their free tiers. This makes them worth evaluating if deploying and managing PgBouncer yourself adds more complexity than your project warrants."
+aliases:
+  - "/tech/2026-03-09-flyio-free-tier-postgres-connection-limit-workarou/"
+
 ---
 
 If you've ever watched your hobby project crash with `too many connections` at 3am, you know exactly how this feels. The Fly.io free tier Postgres connection limit problem is still very much alive in 2026 — and the stakes have quietly shifted.

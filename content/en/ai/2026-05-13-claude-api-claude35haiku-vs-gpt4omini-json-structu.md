@@ -19,6 +19,9 @@ faq:
     answer: "Claude-3-5-haiku supports native JSON mode with schema validation enforced through tool use, as documented in Anthropic's API documentation updated in Q1 2026. GPT-4o-mini achieves equivalent structured output enforcement via the response_format parameter with JSON Schema, using the syntax response_format: {type: 'json_schema'}."
   - question: "Claude API claude-3-5-haiku vs GPT-4o-mini JSON structured output accuracy real test which model should I use for production pipelines"
     answer: "The decision should be based on your schema complexity rather than token cost alone: use claude-3-5-haiku for agentic pipelines or data extraction tasks involving deeply nested schemas with 3+ levels, and consider gpt-4o-mini for simpler flat schemas where its cost advantage is meaningful at scale. Choosing the wrong model based purely on price can cost more in engineering time spent debugging silent data corruption or malformed payloads than the token savings justify."
+aliases:
+  - "/tech/2026-05-13-claude-api-claude35haiku-vs-gpt4omini-json-structu/"
+
 ---
 
 JSON extraction failures don't announce themselves politely. They show up at 2 AM as malformed payloads crashing your pipeline, or as silent data corruption that takes three sprints to untangle.

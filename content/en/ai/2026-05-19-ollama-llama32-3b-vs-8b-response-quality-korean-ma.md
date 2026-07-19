@@ -19,6 +19,9 @@ faq:
     answer: "Korean is a morphologically rich, agglutinative language that demands stronger token-level reasoning to maintain grammatical coherence, which is why Korean benchmarks reveal differences that pure English tests miss. In this specific dimension, the 8B model shows a clear advantage over the 3B, though the 3B remains functional for structured Korean outputs."
   - question: "is llama 3.2 3b just a smaller version of 8b"
     answer: "No, Meta designed the Llama 3.2 3B as a distinct model trained with efficiency in mind for edge and on-device deployment, not simply a scaled-down version of the 8B. This means the 3B has different trade-offs baked in from the start, which explains why it performs competitively on many everyday tasks despite its smaller size."
+aliases:
+  - "/tech/2026-05-19-ollama-llama32-3b-vs-8b-response-quality-korean-ma/"
+
 ---
 
 Running a local LLM on Apple Silicon used to feel like settling. Not anymore.

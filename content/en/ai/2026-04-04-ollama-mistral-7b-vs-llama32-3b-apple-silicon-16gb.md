@@ -19,6 +19,9 @@ faq:
     answer: "Running through Ollama with Q4_K_M quantization, Mistral 7B uses approximately 4.8GB of unified memory at peak, while Llama 3.2 3B uses around 2.1GB. On a 16GB Apple Silicon Mac, this 2.7GB difference is meaningful if you're also running a browser, Docker containers, or local dev servers alongside your LLM."
   - question: "best local llm for 16gb macbook pro ollama 2026"
     answer: "According to an ollama mistral 7b vs llama3.2 3b apple silicon 16gb ram token speed comparison, both models rank among the top local LLM picks in 2026, but for different use cases. Llama 3.2 3B is the better choice for most local dev workflows due to its faster speed and lower memory footprint, while Mistral 7B suits users who prioritize output quality and can tolerate higher resource usage."
+aliases:
+  - "/tech/2026-04-04-ollama-mistral-7b-vs-llama32-3b-apple-silicon-16gb/"
+
 ---
 
 Running local LLMs on a 16GB MacBook isn't a compromise anymore — it's a legitimate workflow. But the Mistral 7B vs Llama 3.2 3B question keeps surfacing in dev Slack channels because the answer isn't obvious. These models don't just differ in size. They trade performance in ways that matter depending on what you're actually building.

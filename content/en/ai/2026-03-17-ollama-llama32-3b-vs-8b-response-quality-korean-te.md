@@ -19,6 +19,9 @@ faq:
     answer: "Korean is an agglutinative language where morphemes stack onto verb stems, particles encode grammatical roles, and honorific levels reshape entire sentence structures. Smaller models like the 3B have fewer parameters to track these complex dependencies, leading to measurable grammatical compression failures that the 8B model handles significantly better."
   - question: "best llama model size for korean text generation on apple silicon macbook"
     answer: "Based on the ollama llama3.2 3b vs 8b response quality korean text macbook air m2 benchmark, the 8B model is the recommended minimum for Korean text generation on Apple Silicon. The MacBook Air M2's unified memory architecture makes running the 8B model practical, as it only requires around 5GB of the available unified memory pool."
+aliases:
+  - "/tech/2026-03-17-ollama-llama32-3b-vs-8b-response-quality-korean-te/"
+
 ---
 
 Running local LLMs on Apple Silicon isn't a hobbyist experiment anymore. It's a real infrastructure decision — and if your workflow involves Korean text, the wrong model choice will cost you more time fixing broken output than you ever saved on inference speed.

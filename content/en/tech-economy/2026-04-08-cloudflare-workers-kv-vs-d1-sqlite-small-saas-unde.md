@@ -19,6 +19,9 @@ faq:
     answer: "Workers KV delivers single-digit millisecond read latency from Cloudflare's global edge network, making it faster for pure read operations than D1 in most cases. D1 SQLite trades some of that raw read speed for full SQL flexibility, transactions, and stronger consistency guarantees. For most small SaaS workloads under 100K daily requests, D1's latency is acceptable and its query flexibility eliminates significant application-level complexity."
   - question: "can cloudflare D1 replace workers KV for feature flags and session tokens"
     answer: "Workers KV was originally designed for exactly these use cases — feature flags, session tokens, and configuration data — and still excels at them due to its sub-10ms global read latency. D1 can technically store this data but lacks the same edge-cached read performance that KV provides across 300+ global locations. If your feature flags or session reads are high-frequency and latency-sensitive, KV remains the better primitive for those specific workloads."
+aliases:
+  - "/tech/2026-04-08-cloudflare-workers-kv-vs-d1-sqlite-small-saas-unde/"
+
 ---
 
 Building a small SaaS on Cloudflare Workers means choosing between two very different storage primitives — and that choice has real cost and latency consequences that aren't obvious from the docs alone.

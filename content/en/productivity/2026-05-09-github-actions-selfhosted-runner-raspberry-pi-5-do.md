@@ -19,6 +19,9 @@ faq:
     answer: "As of May 2026, GitHub's hosted runners still do not offer native ARM64 compute, meaning linux/arm64 Docker builds run through QEMU emulation on the default ubuntu-latest runner. This makes self-hosted solutions like a Raspberry Pi 5 an attractive alternative for teams building ARM-targeted workloads such as AWS Graviton deployments or Apple Silicon containers. The hardware cost of roughly $80 compares favorably to ongoing per-minute costs for emulated cloud builds."
   - question: "how to apply the github actions self-hosted runner raspberry pi 5 docker build arm64 cache miss fix with a local registry"
     answer: "The github actions self-hosted runner raspberry pi 5 docker build arm64 cache miss fix using a local registry involves running a local Docker registry on the Pi and configuring BuildKit to push and pull cache layers to it between workflow runs. This ensures BuildKit has an explicit, persistent cache source it can resolve across separate job executions, which the default local layer store does not provide. Combined with DOCKER_BUILDKIT=1 and a named cache volume, this approach restores the fast warm-cache build times you would expect from native ARM64 hardware."
+aliases:
+  - "/tech/2026-05-09-github-actions-selfhosted-runner-raspberry-pi-5-do/"
+
 ---
 
 Build pipelines on ARM64 hardware are fast — until they aren't. A Raspberry Pi 5 running a GitHub Actions self-hosted runner should fly through Docker builds. Instead, many teams hit a wall: cache misses on every single run, rebuilding layers from scratch, watching 8-minute builds that should be 90 seconds.

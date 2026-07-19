@@ -19,6 +19,9 @@ faq:
     answer: "Docker Compose v3 스펙에서는 mem_limit 대신 deploy.resources.limits.memory 방식으로 메모리 상한을 지정합니다. docker compose up (v2 CLI) 명령어를 사용할 때 deploy.resources 설정이 정상 동작하며, reservations 값으로 최소 보장 메모리도 함께 설정할 수 있어요. 둘 다 지정하지 않으면 OOM Killer가 어떤 컨테이너를 먼저 종료할지 예측이 불가능해집니다."
   - question: "Prometheus tsdb wal-compression 옵션 효과 있나요"
     answer: "--storage.tsdb.wal-compression은 Prometheus 2.11 버전 이후 지원되는 옵션으로, WAL 파일 크기를 평균 35~50% 줄여줍니다. Prometheus Grafana Docker Compose VPS 메모리 2GB 이하 OOM 없이 안정화 설정을 구성할 때 retention.time, retention.size와 함께 이 플래그를 추가하면 메모리와 디스크 사용량을 동시에 절감할 수 있어요. 설정 변경 후 수 시간 내에 메모리 점유 감소 효과를 확인할 수 있습니다."
+aliases:
+  - "/tech/2026-03-10-prometheus-grafana-docker-compose-vps-메모리-2gb-이하-o/"
+
 ---
 
 월 5달러짜리 VPS에 모니터링 스택 올렸다가 새벽 3시에 OOM Killer 알림 받아본 적 있나요? Prometheus와 Grafana를 Docker Compose로 구성하면 편리하지만, 메모리 2GB 이하 환경에서 기본 설정 그대로 두면 며칠 안에 서버가 뻗어요. DigitalOcean, Hetzner, Vultr 같은 곳의 2GB 인스턴스가 월 4~6달러까지 내려오면서, 인디 개발자와 소규모 팀이 모니터링 스택을 직접 운영하다 OOM을 겪었다는 사례가 Reddit r/selfhosted와 GitHub Issues에서 눈에 띄게 늘었거든요.

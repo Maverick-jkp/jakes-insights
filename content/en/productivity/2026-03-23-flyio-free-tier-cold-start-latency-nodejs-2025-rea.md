@@ -19,6 +19,9 @@ faq:
     answer: "The most common cause is the free tier's auto-suspend behavior, which puts your machine to sleep after around 5 minutes of inactivity and forces a cold start on the next incoming request. Node.js apps with large dependency trees, Prisma, or heavy middleware like TypeScript compiled builds can add an additional 800ms to 1.2 seconds of initialization time on top of the VM resume delay."
   - question: "how to reduce cold start time on fly.io node.js app"
     answer: "You can minimize cold start impact by reducing your app's dependency tree, deferring database connection initialization, and keeping your bundle size small to speed up require() resolution. For production use, upgrading to a paid Fly.io tier and setting auto_stop_machines to 'off' eliminates cold starts entirely, starting at approximately $1.94 per month."
+aliases:
+  - "/tech/2026-03-23-flyio-free-tier-cold-start-latency-nodejs-2025-rea/"
+
 ---
 
 Cold starts on Fly.io's free tier aren't theoretical. They're killing real user sessions, and the numbers are worse than most developers expect.

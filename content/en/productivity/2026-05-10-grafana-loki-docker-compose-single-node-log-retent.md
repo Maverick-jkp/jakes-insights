@@ -19,6 +19,9 @@ faq:
     answer: "Loki supports per-tenant retention overrides through the `limits_config` block, allowing you to keep critical application logs longer while applying shorter retention to verbose debug streams. This prevents high-priority logs from being deleted too early without inflating overall storage usage across all log streams."
   - question: "how to monitor loki disk usage before it fills up grafana loki docker compose single node log retention disk full fix"
     answer: "Loki exposes built-in metrics like `loki_ingester_chunks_stored_total` and `loki_compactor_deleted_series_total` that you can use to track storage pressure proactively. Scraping these metrics and setting Grafana alerts on them lets you catch disk growth trends before they cause an outage on your single-node deployment."
+aliases:
+  - "/tech/2026-05-10-grafana-loki-docker-compose-single-node-log-retent/"
+
 ---
 
 Disk full. Two words that end on-call shifts fast.

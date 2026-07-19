@@ -19,6 +19,9 @@ faq:
     answer: "Virtual tours have become a critical factor in the home buying process, with 62% of U.S. buyers citing them as the single most influential purchase factor. This makes accurate 3D and AI-powered property representation a high-stakes technical challenge for real estate professionals and developers. Inaccurate or misleading virtual representations can erode buyer confidence and complicate transactions."
   - question: "how does zillow use ai for home valuations"
     answer: "Zillow's Zestimate, which launched in 2006 as a basic regression model, has evolved by 2026 into a sophisticated neural-network-based pricing system that processes vast amounts of property and market data. The platform now applies AI across its entire product, including personalized search ranking and automated price modeling. This evolution reflects the broader industry shift from simple data tools to deeply integrated AI real estate infrastructure."
+aliases:
+  - "/tech/2026-02-21-ai-real-estate/"
+
 ---
 
 Real estate has always been a data problem disguised as a relationship business. In 2026, that disguise is gone.

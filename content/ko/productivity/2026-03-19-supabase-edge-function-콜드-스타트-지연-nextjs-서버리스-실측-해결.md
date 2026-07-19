@@ -19,6 +19,9 @@ faq:
     answer: "SDK invoke 방식은 인증과 직렬화를 자동으로 처리해줘 편리하지만, SDK 번들이 Deno 모듈 로드 시 추가 초기화 비용을 발생시켜 콜드 스타트가 600~1,200ms로 fetch 직접 호출(400~600ms)보다 최대 두 배 가까이 느려요. 단순 API 호출이라면 fetch 직접 호출이 번들 크기와 콜드 스타트 모두에서 유리해요."
   - question: "Supabase Edge Function 콜드 스타트 지연 Next.js 서버리스 실측 해결 방법 번들 최적화 어떻게 하나요"
     answer: "Supabase Edge Function 콜드 스타트 지연 Next.js 서버리스 실측 해결 방법 중 번들 최적화는 전체 패키지를 import하는 대신 필요한 기능만 가져오거나 fetch를 직접 사용하는 방식으로 적용해요. Deno 런타임은 함수 초기화 시 의존성 모듈을 전부 로드하는 구조라, import 범위를 줄이는 것만으로도 초기화 시간을 눈에 띄게 단축할 수 있어요."
+aliases:
+  - "/tech/2026-03-19-supabase-edge-function-콜드-스타트-지연-nextjs-서버리스-실측-해결/"
+
 ---
 
 Supabase Edge Function을 Next.js에 붙여 쓰는 팀이 늘면서, 첫 API 호출이 1초 이상 걸리는 경험을 호소하는 사례가 눈에 띄게 많아졌어요. 뜬구름 잡는 이론 말고, 실측 데이터 기반으로 얘기해 볼게요.

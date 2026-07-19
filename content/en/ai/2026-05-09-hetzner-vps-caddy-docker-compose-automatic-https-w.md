@@ -19,6 +19,9 @@ faq:
     answer: "The hetzner vps caddy docker compose automatic https wildcard subdomain per tenant saas setup 2025 approach costs roughly 90% less than an equivalent AWS setup using Application Load Balancer and ACM. AWS ALB plus ACM overhead typically runs $300–$800 per month, while a Hetzner CX22 instance costs under €4 per month. This cost difference makes Hetzner a popular choice for early-stage SaaS products that need production-grade HTTPS and multi-tenant subdomain routing without the cloud overhead."
   - question: "do I need kubernetes for per tenant subdomain routing docker compose enough"
     answer: "For SaaS products with fewer than 500 tenants, Docker Compose is generally sufficient for per-tenant subdomain routing and eliminates the operational complexity of Kubernetes. Docker Compose provides container isolation, health checks, restart policies, and network segmentation from a single configuration file. Kubernetes becomes more justified as tenant count, scaling requirements, or orchestration complexity grows beyond what Compose can efficiently manage."
+aliases:
+  - "/tech/2026-05-09-hetzner-vps-caddy-docker-compose-automatic-https-w/"
+
 ---
 
 Running a multi-tenant SaaS on a €4/month Hetzner CX22 instance sounds absurd until you realize the infrastructure doing $50K MRR at some shops costs less than a Netflix subscription monthly.

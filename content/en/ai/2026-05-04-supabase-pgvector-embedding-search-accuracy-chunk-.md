@@ -19,6 +19,9 @@ faq:
     answer: "Smaller chunk sizes produce more total vectors from the same document corpus, and Supabase pgvector's HNSW index build time scales non-linearly with chunk count — meaning going from 512 to 256 tokens roughly doubles your vector count but can increase index build time disproportionately. Most teams discover this scaling issue too late in production, making it an important factor to test before choosing a chunk strategy."
   - question: "why does large chunk size hurt embedding search quality"
     answer: "Large chunks like 1024 tokens force the embedding model to compress more semantic content into a fixed-dimension vector, which degrades the fidelity of the resulting representation. Models like OpenAI's text-embedding-3-small use 1536 dimensions, and at 1024 tokens the vector has to simultaneously represent too many concepts, making cosine similarity less reliable at matching the user's actual query intent."
+aliases:
+  - "/tech/2026-05-04-supabase-pgvector-embedding-search-accuracy-chunk-/"
+
 ---
 
 Chunk size is the single most consequential decision in a RAG pipeline. Get it wrong, and your vector search returns contextually irrelevant results — regardless of how well you've configured everything else. After running a structured test across a 50,000-document corpus using Supabase pgvector with `text-embedding-3-small`, the results were clear enough to be actionable. And surprising enough to warrant a detailed writeup.

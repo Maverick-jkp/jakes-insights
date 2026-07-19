@@ -19,6 +19,9 @@ faq:
     answer: "1인 개발자 사이드 프로젝트 월 5달러 이하 인프라의 표준 패턴은 Cloudflare Pages에 React/Next.js 프론트엔드를 배포하고, Fly.io는 백엔드 API만 담당하며, Supabase가 DB·인증·파일 스토리지·실시간 구독을 처리하는 3레이어 분리 구조입니다. 이 구성으로 인증, 데이터베이스, 실시간 기능, 엣지 캐싱을 단일 프로젝트에서 모두 무료로 커버할 수 있습니다."
   - question: "인디 SaaS MVP 최소 비용으로 만들 수 있는 기술 스택 추천"
     answer: "월 100~500명 유저 규모의 인디 SaaS MVP라면 Fly.io + Supabase + Cloudflare 조합이 검증된 선택입니다. Supabase의 Row Level Security로 멀티테넌트 데이터 격리가 즉시 가능하고, Stripe 연동도 Fly.io에서 충분히 소화되며, 경쟁 스택인 Render + PlanetScale 조합 대비 월 7달러 이상 절감됩니다."
+aliases:
+  - "/tech/2026-03-26-1인-개발자-사이드-프로젝트-월-5달러-이하-인프라-flyio-supabase-cloudf/"
+
 ---
 
 사이드 프로젝트 하나를 AWS에 올렸다가 월 40달러 청구서를 받은 적 있죠? 그 순간 "이거 계속 운영해야 하나..." 고민하게 되는 거, 저도 알아요.

@@ -19,6 +19,9 @@ faq:
     answer: "Grafana typically uses 200–350MB of RAM in a default Docker deployment, with spikes during dashboard renders. You can significantly reduce its footprint by enabling anonymous access, disabling server-side image rendering, and removing unused data sources at startup. These changes are especially important when running a full monitoring stack on a 2GB VPS where every megabyte counts."
   - question: "minimum VPS size to run prometheus grafana node exporter docker compose"
     answer: "A 2GB VPS is the common entry-level choice for self-hosted Prometheus and Grafana, but it requires deliberate memory tuning to run stably. With default settings, the combined stack including Node Exporter and OS overhead can push 1.8GB, leaving almost no buffer. After tuning the scrape interval, applying mem_limit constraints, and trimming Grafana's features, the stack can run reliably within 1.4GB on a 2GB instance."
+aliases:
+  - "/tech/2026-04-19-prometheus-grafana-docker-compose-2gb-vps-memory-o/"
+
 ---
 
 A 2GB VPS costs around $6–$12/month in 2026. It's the default entry point for self-hosted monitoring. And it's exactly the size where a default `docker compose up` with Prometheus and Grafana will eat your RAM, trigger the OOM killer at 3 AM, and leave you staring at a blank dashboard wondering what happened.

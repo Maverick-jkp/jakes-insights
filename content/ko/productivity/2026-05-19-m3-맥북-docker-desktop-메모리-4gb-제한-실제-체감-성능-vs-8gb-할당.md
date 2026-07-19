@@ -8,6 +8,9 @@ tags: ["subtopic-devtools", "docker", "desktop", "/uba54/ubaa8/ub9ac", "Python"]
 description: "M3 맥북 Docker Desktop 4GB vs 8GB 메모리 할당 실측 비교. 컨테이너 3개 이상 실행 시 OOM Kill 원인 분석과 8GB 설정으로 기동 시간 40% 단축한 실제 데이터를 확인하세요."
 image: "/images/20260519-m3-맥북-docker-desktop-메모리-4gb-제.webp"
 technologies: ["Python", "Node.js", "FastAPI", "Docker", "Kubernetes"]
+aliases:
+  - "/tech/2026-05-19-m3-맥북-docker-desktop-메모리-4gb-제한-실제-체감-성능-vs-8gb-할당/"
+
 ---
 
 컨테이너 세 개 띄웠는데 갑자기 OOM Kill이 날아왔어요. 로그 확인해보니 Docker VM이 메모리를 다 잡아먹고 있었죠. M3 맥북 사용자라면 한 번쯤 겪어봤을 장면이에요.

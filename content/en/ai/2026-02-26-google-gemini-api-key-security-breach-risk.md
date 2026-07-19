@@ -19,6 +19,9 @@ faq:
     answer: "To reduce your Google Gemini API key security breach risk, immediately rotate any keys that may have been exposed and apply API key restrictions in the Google Cloud Console, such as limiting by IP or referrer. Set up billing alerts so you are notified of unexpected usage spikes that could signal unauthorized access. Never store Gemini keys in client-side code, public repositories, or unencrypted environment files."
   - question: "is a leaked Google Gemini API key the same risk as a leaked AWS key"
     answer: "Yes — since Google's 2026 billing model change, an exposed Gemini API key carries direct financial consequences comparable to leaking an AWS access key with billing permissions or a Stripe secret key. Previously, most Google API keys caused limited damage because usage was free-tiered or rate-limited, but Gemini keys are now directly tied to billing accounts. Developers who learned API security on older Google services need to update their threat model accordingly."
+aliases:
+  - "/tech/2026-02-26-google-gemini-api-key-security-breach-risk/"
+
 ---
 
 Something shifted quietly in early 2026, and most developers missed it.

@@ -19,6 +19,9 @@ faq:
     answer: "Startup race conditions between Postgres and app containers are a leading cause of 'works locally, fails in CI' bugs in multi-container stacks. CI environments and cloud platforms trigger cold container starts constantly, making the timing window where Postgres isn't yet ready much more likely to cause failures. Implementing the `pg_isready` healthcheck pattern with `condition: service_healthy` eliminates this class of bug in both local and CI environments."
   - question: "docker compose restart policy vs healthcheck for postgres startup"
     answer: "Restart policies like `restart: on-failure` let your app retry after crashing, but they don't prevent the crash or guarantee Postgres is ready before the next attempt. Healthchecks with `condition: service_healthy` proactively hold the app container from starting until Postgres passes readiness checks, avoiding crashes entirely. For production deployments, healthchecks are the more reliable and predictable approach, though restart policies can serve as an additional safety net."
+aliases:
+  - "/tech/2026-04-10-docker-compose-healthcheck-postgres-ready-before-a/"
+
 ---
 
 Production deployments still fail in 2026 because developers trust `depends_on` without healthchecks. That's the whole problem — and it's more widespread than most engineering teams want to admit.

@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 요청까지 제공되며, 월 5달러 Paid Plan으로 업그레이드하면 하루 1,000만 요청까지 처리할 수 있어요. MAU 5,000명 이하 서비스라면 Free Plan으로도 충분하다는 것이 실제 개발자들의 중론이고, Cloudflare Pages를 함께 사용하면 프론트엔드 배포 비용은 무제한 무료예요."
   - question: "2025년 Fly.io Supabase Cloudflare 조합 vs AWS 비용 비교"
     answer: "1인 개발자 월 15달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 내역 2025 기준으로, MAU 100명 서비스에서 AWS는 월 25~35달러인 반면 이 조합은 월 0~5달러로 운영 가능해요. MAU 1,000명 기준에서도 AWS가 35~50달러인 데 비해 Fly.io + Supabase + Cloudflare 조합은 5~14달러 수준으로 유지되어 초기 스타트업이나 사이드 프로젝트에 실질적인 비용 절감 효과를 제공해요."
+aliases:
+  - "/tech/2026-05-13-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+
 ---
 
 사이드 프로젝트를 AWS에 올렸다가 첫 달 청구서 보고 멈춘 적 있죠? EC2 + RDS + CloudFront 조합이면 트래픽이 거의 없어도 월 60달러는 기본이에요. 그런데 지금은 이야기가 완전히 달라졌어요.

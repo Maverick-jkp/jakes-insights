@@ -19,6 +19,9 @@ faq:
     answer: "Cursor Pro는 월 $20, GitHub Copilot Individual은 월 $10으로 두 배 차이가 나요. cursor AI vs GitHub Copilot 실제 코드 품질 비교 중급 개발자 한 달 사용 후기 기준으로, 복잡한 신규 기능 개발이나 대규모 리팩토링이 주 업무라면 $10 차이는 충분히 정당화되지만, 단순 자동완성 위주 작업이라면 Copilot으로도 충분해요."
   - question: "JetBrains 쓰는데 cursor AI 도입 가능한가요"
     answer: "Cursor는 VS Code를 포크한 독립 에디터라서 JetBrains 계열 플러그인을 그대로 가져오지 못하는 경우가 종종 발생해요. 팀 전체가 JetBrains 환경을 유지해야 한다면 GitHub Copilot이 훨씬 현실적인 선택이며, 에디터 전환 비용이 Cursor의 성능 이점을 상쇄할 수 있어요."
+aliases:
+  - "/tech/2026-04-10-cursor-ai-vs-github-copilot-실제-코드-품질-비교-중급-개발자-한-달/"
+
 ---
 
 팀원이 물어봐요. "요즘 Cursor 쓰세요, Copilot 쓰세요?" 그냥 유행 얘기 같아 보이죠. 근데 실제로 이 선택이 하루 코딩 시간을 꽤 바꿔놓더라고요. 그래서 직접 한 달 동안 두 도구를 중급 개발자 시점에서 나란히 써봤어요. PR 리뷰, 신규 기능 개발, 디버깅 세 가지 시나리오 기준으로요.

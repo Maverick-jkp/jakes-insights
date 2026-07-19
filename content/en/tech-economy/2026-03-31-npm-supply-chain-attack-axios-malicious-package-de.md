@@ -19,6 +19,9 @@ faq:
     answer: "Tools like Socket.dev, 'npm audit', and StepSecurity's GitHub Actions hardening are specifically designed to flag suspicious or compromised packages before they enter your build. Socket.dev in particular analyzes package behavior and network activity, which is how the Axios attack was identified and reported in 2026. Integrating these tools into your CI pipeline adds an automated layer of protection that manual code review alone cannot provide."
   - question: "should I use npm ci instead of npm install in production"
     answer: "Yes, 'npm ci' is strongly recommended over 'npm install' in CI and production environments because it installs dependencies strictly from the lockfile, preventing unexpected version updates. Using 'npm install' with range specifiers like '^' or '~' can silently pull in updated transitive dependencies, which is exactly how the Axios supply chain attack reached affected projects. Treating 'npm ci' as non-negotiable in automated pipelines is one of the simplest and most effective supply chain security practices available."
+aliases:
+  - "/tech/2026-03-31-npm-supply-chain-attack-axios-malicious-package-de/"
+
 ---
 
 A trusted HTTP library used by millions of projects was quietly compromised — and most developers didn't notice until the damage was done. The Axios npm package was hit by a supply chain attack that injected a remote access Trojan into published versions, exposing any project that auto-updated. This tutorial walks through exactly what happened, how attackers pulled it off, and the concrete steps you can take today to protect your own dependencies.

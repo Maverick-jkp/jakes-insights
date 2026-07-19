@@ -19,6 +19,9 @@ faq:
     answer: "1인 개발자 월 15달러 이하 풀스택 인프라로 주목받는 Fly.io, Supabase, Cloudflare 조합의 실제 청구서는 월 $5~12 수준인 반면, 동급 규모의 AWS EC2+RDS+CloudFront 기본 구성은 월 $60~80이 청구됩니다. 즉 AWS 대비 약 70~85% 비용 절감이 가능합니다."
   - question: "Cloudflare Workers 무료 플랜 한도 초과하면 얼마"
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 요청까지 제공되며, 한도를 초과하거나 안정적인 운영이 필요하면 월 $5 유료 플랜으로 무제한 요청 처리가 가능합니다. CDN 대역폭은 유료 플랜에서도 별도 과금이 없어 트래픽 비용 예측이 쉽습니다."
+aliases:
+  - "/tech/2026-04-15-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+
 ---
 
 월 15달러. 도메인 하나 사는 값이에요. 그런데 이 돈으로 DB·서버·CDN을 모두 굴리는 1인 개발자들이 실제로 있어요.

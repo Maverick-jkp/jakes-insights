@@ -19,6 +19,9 @@ faq:
     answer: "In fly.io free tier cold start latency Python FastAPI real world measurement 2025 comparisons, Render's free tier and Railway's Starter plan show comparable cold start profiles to Fly.io. However, each platform carries different trade-offs in compute allocation, idle timeout behavior, and pricing once you exceed free usage limits."
   - question: "why is my fastapi app on fly.io so slow on first request"
     answer: "The slow first request on Fly.io's free tier is caused by scale-to-zero behavior, where idle Machines are stopped and must fully restart when new traffic arrives. Python FastAPI apps are particularly affected because the Python interpreter, Uvicorn server, and any startup lifecycle events all add to the cold start time before the first response is returned."
+aliases:
+  - "/tech/2026-03-17-flyio-free-tier-cold-start-latency-python-fastapi-/"
+
 ---
 
 Cold starts are the quiet killer of hobby projects.

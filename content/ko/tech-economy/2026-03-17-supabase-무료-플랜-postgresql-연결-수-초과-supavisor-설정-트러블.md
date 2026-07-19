@@ -19,6 +19,9 @@ faq:
     answer: "Prisma는 기본적으로 Prepared Statement를 사용하는데, Supavisor 트랜잭션 모드에서는 이를 지원하지 않아 에러가 발생해요. DATABASE_URL에 `?pgbouncer=true&connection_limit=1`을 추가하면 Prisma가 Prepared Statement를 비활성화하고 연결 수를 제한해 풀러와 호환되도록 동작합니다. 또한 schema.prisma에 `directUrl`을 별도로 설정해야 `prisma migrate` 명령이 정상 실행돼요."
   - question: "Supabase 무료 플랜 Next.js 트러블슈팅 Drizzle ORM 연결 풀 설정 방법"
     answer: "Supabase 무료 플랜 환경에서 Next.js와 Drizzle ORM을 함께 쓸 때는 Supavisor 포트 6543 URL을 사용하되, `max: 1`로 연결 풀 사이즈를 제한하는 것이 서버리스 환경에서 안전해요. Drizzle은 Prisma와 달리 별도의 pgbouncer 파라미터가 필요 없어 설정이 비교적 간단합니다."
+aliases:
+  - "/tech/2026-03-17-supabase-무료-플랜-postgresql-연결-수-초과-supavisor-설정-트러블/"
+
 ---
 
 Next.js 앱을 배포했는데 DB가 갑자기 응답을 멈췄어요. 에러 메시지를 열어보면 `remaining connection slots are reserved`. 무료 플랜인데 연결 수가 넘쳤다는 거죠. 그런데 이 문제, 사실 Supabase의 한계가 아니라 연결 방식의 오해에서 비롯돼요.

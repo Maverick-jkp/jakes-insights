@@ -19,6 +19,9 @@ faq:
     answer: "If your Next.js 14 middleware reads the Supabase session cookie but never refreshes the token, downstream server components receive unauthenticated requests and may repeatedly attempt to re-authenticate. This mismatch between middleware and server component auth state is one of the top causes of the nextjs 14 app router supabase row level security policy infinite loop debug scenario. The fix is to update middleware to both read and actively refresh the session using the `@supabase/ssr` helpers."
   - question: "how to tell if supabase RLS is causing performance issues in next.js app"
     answer: "The clearest signal of an RLS-related performance issue in a Next.js app is finding an unusually high number of repeated Supabase auth or database calls in your request logs for a single page load. Unlike a hard error, RLS infinite loops or misconfigured policies often fail silently, making the app feel functional while hammering the database. Enabling Supabase query logging and monitoring request counts per page load is the most reliable way to detect the problem early."
+aliases:
+  - "/tech/2026-05-24-nextjs-14-app-router-supabase-row-level-security-p/"
+
 ---
 
 # Debugging the Next.js 14 App Router + Supabase RLS Infinite Loop: What the Data Shows in 2026

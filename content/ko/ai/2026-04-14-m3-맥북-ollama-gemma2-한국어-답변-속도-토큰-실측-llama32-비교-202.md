@@ -19,6 +19,9 @@ faq:
     answer: "Gemma2 2B는 약 3.1GB, Llama 3.2 3B는 약 2.8GB, Llama 3.2 1B는 약 1.4GB의 메모리를 사용해요. 세 모델 모두 메모리 차이가 크지 않아 24GB RAM 기준에서는 여유롭게 실행되며, 모델 선택 기준은 메모리보다 한국어 답변 품질이나 속도 우선순위에 맞추는 것이 적절합니다."
   - question: "Windows PC vs 맥북 M3 ollama 속도 비교"
     answer: "M3 맥북은 CPU·GPU·Neural Engine이 Unified Memory를 공유하는 구조 덕분에 Ollama가 Metal API로 모델을 가속할 때 큰 이점이 생깁니다. 같은 모델을 Windows PC에서 CPU로 실행하는 것과 비교하면 tok/s 기준으로 두 배에서 세 배까지 차이가 날 수 있습니다."
+aliases:
+  - "/tech/2026-04-14-m3-맥북-ollama-gemma2-한국어-답변-속도-토큰-실측-llama32-비교-202/"
+
 ---
 
 로컬 LLM을 맥북에서 처음 켜본 날, 터미널에 `ollama run llama3.2`를 치고 기다리면서 든 생각이 있어요. "한국어로 물어보면 얼마나 빨리 답해줄까?"

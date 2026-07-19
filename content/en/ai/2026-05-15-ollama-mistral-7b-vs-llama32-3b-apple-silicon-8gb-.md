@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 3B uses approximately 2.0GB of memory when running in Ollama with Q4_K_M quantization on Apple Silicon. This makes it the better choice for 8GB MacBooks running multiple active applications simultaneously, as it leaves significantly more memory headroom than Mistral 7B."
   - question: "best local llm for apple silicon 8gb ram ollama 2024 2025"
     answer: "The best choice depends on your use case: Llama 3.2 3B is ideal for speed-sensitive workloads like real-time completions or running alongside other apps, while Mistral 7B is better suited for accuracy-demanding tasks like coding or reasoning. As shown in the ollama mistral 7b vs llama3.2 3b apple silicon 8gb ram throughput benchmark, both models are viable on 8GB M-series hardware, but they serve different priorities."
+aliases:
+  - "/tech/2026-05-15-ollama-mistral-7b-vs-llama32-3b-apple-silicon-8gb-/"
+
 ---
 
 Running local LLMs on a MacBook with 8GB unified memory felt genuinely painful eighteen months ago. Today, it's a legitimate production workflow for thousands of developers. The question isn't whether you *can* run models locally on Apple Silicon anymore — it's which model actually delivers on the throughput-versus-quality trade-off when memory is your hard constraint.

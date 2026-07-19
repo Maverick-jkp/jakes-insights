@@ -19,6 +19,9 @@ faq:
     answer: "EC2 t3.medium instances with 4 GB of RAM are particularly vulnerable to OOM conditions when running concurrent Docker builds through GitHub Actions self-hosted runners. Without explicit resource constraints configured at the runner and Docker daemon level, parallel jobs can consume 100% of available RAM within minutes. Adding memory limits to the Docker daemon config and setting service-level constraints on the runner process are the primary mitigations."
   - question: "does switching to self-hosted runners on EC2 save money compared to GitHub hosted runners"
     answer: "Self-hosted runners on EC2 reserved instances can reduce CI costs by 40-60% compared to GitHub-hosted runners, which bill per minute of usage. However, the cost savings come with the trade-off that resource governance, including memory limits and OOM protection, becomes entirely your responsibility. Teams that don't configure explicit memory constraints on their self-hosted runners often encounter unexpected job failures that can offset the operational savings."
+aliases:
+  - "/tech/2026-05-29-github-actions-selfhosted-runner-docker-memory-lim/"
+
 ---
 
 Your CI pipeline dies at 2 AM. The logs say `Killed`. No stack trace. No warning. Just a dead job and a confused on-call engineer staring at a failure they didn't know they had.

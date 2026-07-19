@@ -19,6 +19,9 @@ faq:
     answer: "Fly.io Managed Postgres on a shared-cpu-1x instance with 256 MB of RAM defaults to max_connections = 25, set automatically by PostgreSQL at startup based on available memory. This limit is not arbitrary — PostgreSQL reserves roughly 400–600 bytes of shared memory per connection slot, so increasing the value on a 256 MB VM risks out-of-memory crashes. Upgrading to a larger VM size will raise this default."
   - question: "does fly.io free tier postgres support more than 25 connections"
     answer: "The free-tier Fly.io Postgres instance is capped at 25 connections due to the memory constraints of the 256 MB shared VM, and simply raising max_connections risks crashing the instance with an OOM kill. Rather than increasing the limit, the recommended solution is adding a connection pooler like PgBouncer in front of Postgres, which allows many app threads to share a small number of real database connections. Upgrading to a paid Fly.io plan with more RAM is the other option, as larger VMs automatically get higher max_connections defaults."
+aliases:
+  - "/tech/2026-04-23-flyio-free-tier-postgres-connection-pool-exhausted/"
+
 ---
 
 Fly.io's free tier attracts thousands of indie developers and early-stage teams every month. But there's a specific failure mode that keeps hitting newcomers hard: connection pool exhaustion on Postgres, often at the worst possible time — during a demo, a launch, or a production spike.

@@ -19,6 +19,9 @@ faq:
     answer: "Both Mistral 7B and Llama 3.2 3B run comfortably on a MacBook M3 with 16GB RAM using Ollama, which leverages Apple Silicon's unified memory architecture and Metal GPU offloading. Ollama's improved memory management for Apple Silicon, introduced in version 0.5, makes running quantized models like these practical without a dedicated GPU."
   - question: "ollama mistral 7b vs llama3.2 3b which model should developers use for daily coding on mac"
     answer: "For daily coding workflows on a Mac, the ollama mistral 7b vs llama3.2 3b english coding task benchmark macbook m3 16gb ram findings suggest using Llama 3.2 3B as the default for most interactive coding assistance due to its speed and lower memory usage. Developers should switch to Mistral 7B for longer, more complex debugging or reasoning tasks where its deeper parameter capacity provides a meaningful accuracy advantage."
+aliases:
+  - "/tech/2026-04-18-ollama-mistral-7b-vs-llama32-3b-english-coding-tas/"
+
 ---
 
 Running local LLMs on Apple Silicon has gone from hobbyist experiment to legitimate production workflow. As of April 2026, the Ollama ecosystem has over 80 million monthly pulls on Docker Hub (Ollama, March 2026), and the two models sitting at the top of the "practical daily driver" shortlist are Mistral 7B and Llama 3.2 3B. Both run comfortably on a MacBook M3 with 16GB RAM. Both handle English coding tasks without complaint. But they're not interchangeable—and picking the wrong one wastes tokens, time, or both.

@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages' built-in Git integration connects via OAuth and handles deploys independently of GitHub Actions, which means your scheduled Actions workflows cannot trigger it directly. To use time-based deploys, you must generate a Cloudflare Pages Deploy Hook URL and have your GitHub Actions workflow send an HTTP request to that endpoint. These are two separate deployment paths that do not share the same trigger mechanism."
   - question: "how to schedule automatic Hugo site rebuilds on Cloudflare Pages without pushing code"
     answer: "The correct approach is to combine a Cloudflare Pages Deploy Hook with a GitHub Actions workflow using both schedule and workflow_dispatch triggers. The scheduled workflow sends a POST request to the Deploy Hook URL, which tells Cloudflare Pages to rebuild the site without requiring a new Git commit. This pattern supports use cases like refreshing external API data, updating Hugo data files, or keeping timestamps current on a content-heavy static site."
+aliases:
+  - "/tech/2026-04-13-hugo-cloudflare-pages-github-actions-deploy-cron-j/"
+
 ---
 
 Your Hugo site deploys fine when you push code manually. But the scheduled cron job? Silent. Nothing. The site stays stale while your content rots.

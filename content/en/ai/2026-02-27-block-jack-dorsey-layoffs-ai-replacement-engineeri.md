@@ -19,6 +19,9 @@ faq:
     answer: "Companies like Block are eliminating generalist engineering and operations roles where AI coding tools such as GitHub Copilot Workspace, Cursor, and Claude have closed the productivity gap. Goldman Sachs projected AI could automate 25–30% of tasks across industries, and 2025–2026 has seen that materialize at scale across fintech and tech companies."
   - question: "how does the Block layoff affect other tech and engineering companies?"
     answer: "Block's restructuring is widely seen as a signal that the 'AI replaces headcount' thesis has moved from speculation to boardroom execution at major companies. Analysts warn that engineering organizations that don't audit their team structures for AI automation potential in 2026 risk being outpaced by competitors achieving twice the output with half the staff."
+aliases:
+  - "/tech/2026-02-27-block-jack-dorsey-layoffs-ai-replacement-engineeri/"
+
 ---
 
 Jack Dorsey just cut 40% of Block's workforce—and immediately announced he's hiring senior AI engineers to replace them. That's not a cost-cutting move. That's a strategic declaration.

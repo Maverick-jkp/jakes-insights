@@ -19,6 +19,9 @@ faq:
     answer: "Slowdowns during off-peak hours are a classic cold start symptom — when a function hasn't been invoked recently, the runtime isolate is no longer warm and must reinitialize before serving the request. On Supabase Edge Functions, this can add anywhere from 150ms to 600ms of latency, which is noticeable in latency-sensitive features like real-time chat or live UI updates. Reducing your function's bundle size and keeping traffic consistent are the most effective ways to minimize this behavior."
   - question: "do vercel edge functions have cold starts like supabase"
     answer: "Yes, Vercel Edge Functions do experience cold starts, but they are generally shorter than Supabase's — typically under 100ms — because Vercel pre-warms isolates across a large global network of points of presence. Supabase Edge Functions, which run on Deno Deploy infrastructure, can take 150–600ms to cold start depending on function size and regional proximity. Both platforms see cold start times decrease significantly once a function is receiving regular traffic."
+aliases:
+  - "/tech/2026-05-16-supabase-edge-functions-cold-start-latency-reduce-/"
+
 ---
 
 Cold start latency killed a real-time feature at a company running Supabase Edge Functions. Their function was waking up in 400ms during off-peak hours — slow enough to visibly lag a chat UI. That number is fixable. But the fix depends entirely on understanding *why* edge functions cold-start the way they do, and how that compares to Vercel's approach.

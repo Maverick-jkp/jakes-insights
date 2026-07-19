@@ -19,6 +19,9 @@ faq:
     answer: "트래픽이 불규칙하거나 급증 가능성이 있는 프로젝트에는 Cloudflare Workers가 가장 안전합니다. 전 세계 300개 이상 엣지 서버에서 자동으로 처리되기 때문에 별도 스케일링 설정 없이도 트래픽 급증을 버텨냅니다. Docker Compose + VPS 방식은 서버 스펙이 고정이라 갑작스러운 트래픽에 취약하고, Fly.io는 자동 스케일링을 지원하지만 그만큼 비용도 함께 올라갑니다."
   - question: "Fly.io Cloudflare Workers Docker Compose 실제 청구서 비교했을 때 풀스택 앱 추천 스택은"
     answer: "1인 개발자 월 10달러 이하 인프라를 Fly.io, Cloudflare Workers, Docker Compose 실제 청구서 기준으로 비교하면, 풀스택 앱에는 Fly.io가 가장 균형적입니다. Docker 이미지를 그대로 push하면 되고 PostgreSQL 포함 최소 구성 기준 월 4~6달러로 10달러 이하를 유지할 수 있습니다. 다만 장기적으로 여러 서비스를 운영할 계획이라면 Hetzner VPS + Docker Compose가 고정 비용으로 더 유리합니다."
+aliases:
+  - "/tech/2026-04-19-1인-개발자-월-10달러-이하-인프라-flyio-cloudflare-workers-dock/"
+
 ---
 
 매달 청구서 열 때 심장이 쫄깃해지죠. 사이드 프로젝트 하나 올려놨을 뿐인데 월말에 30달러, 50달러가 찍혀 있는 상황. 2026년 현재, 클라우드 가격은 계속 오르는데 1인 개발자 예산은 그대로예요. 그래서 세 가지 구성을 직접 테스트하고 실제 청구서를 비교해봤어요. Fly.io, Cloudflare Workers, VPS 위에서 돌리는 Docker Compose — 어떤 선택이 월 10달러 이하를 현실적으로 지킬 수 있을까요?

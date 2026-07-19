@@ -19,6 +19,9 @@ faq:
     answer: "Yes, as of early 2026 WireGuard has native support across Linux, macOS, Windows, iOS, and Android. Most major cloud providers also run Linux kernels that support WireGuard out of the box, and the client app ecosystem has matured significantly. WireGuard peers automatically reconnect after network changes, making it particularly reliable for mobile devices and remote work use cases."
   - question: "WireGuard VPN not connecting through corporate or hotel firewall"
     answer: "WireGuard uses UDP for all traffic, which means it will fail to connect on networks that block UDP entirely, such as some corporate or hotel firewalls. In these cases, workarounds like tunneling WireGuard over TCP or using a different port may be required. This is a known limitation to plan for before relying on WireGuard in restrictive network environments."
+aliases:
+  - "/tech/2026-02-28-how-to-set-up-a-selfhosted-vpn-with-wireguard/"
+
 ---
 
 Running your traffic through a commercial VPN means trusting a company you can't audit. Their privacy policy is a legal document, not a technical guarantee. With WireGuard, you own the server, the keys, and the logs — or the complete absence of them.

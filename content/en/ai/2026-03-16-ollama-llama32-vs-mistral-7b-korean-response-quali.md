@@ -19,6 +19,9 @@ faq:
     answer: "Yes, a base MacBook M3 with 16GB unified memory can run quantized 7B models like Mistral 7B through Ollama without swapping to disk. The unified memory architecture gives M3 machines a measurable throughput advantage over Windows laptops with 8GB discrete VRAM, particularly during memory-intensive operations like KV-cache processing."
   - question: "ollama llama3.2 vs mistral 7b korean honorific accuracy comparison"
     answer: "According to the ollama llama3.2 vs mistral 7b korean response quality benchmark macbook m3 2025 analysis, neither model scores above 78% accuracy on informal-to-formal Korean honorific conversion tasks. This represents a critical gap for developers building production customer service applications that require consistent and culturally appropriate Korean language output."
+aliases:
+  - "/tech/2026-03-16-ollama-llama32-vs-mistral-7b-korean-response-quali/"
+
 ---
 
 Running local LLMs for non-English tasks is a different beast entirely. The question of how Llama 3.2 stacks up against Mistral 7B for Korean response quality on MacBook M3 keeps surfacing in developer forums — and the answer isn't as obvious as model parameter counts suggest.

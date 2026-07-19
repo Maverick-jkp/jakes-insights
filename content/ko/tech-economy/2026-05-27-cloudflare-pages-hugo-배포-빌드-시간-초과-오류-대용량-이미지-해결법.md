@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Images를 사용해 이미지를 빌드 파이프라인 외부로 분리하면 빌드 시간을 최대 80% 단축할 수 있습니다. Hugo 템플릿에서는 이미지 URL만 참조하고 실제 변환은 Cloudflare 엣지에서 요청 시점에 처리되므로, 빌드 시 이미지 처리 부하가 거의 사라집니다. 다만 Cloudflare Images는 월 $5부터 비용이 발생하므로 중대형 사이트에 적합합니다."
   - question: "Cloudflare Pages Hugo 빌드 시간 초과 오류 해결 플랜 업그레이드로 되나요?"
     answer: "Cloudflare Pages Hugo 배포 빌드 시간 초과 오류 대용량 이미지 해결법으로 Pro 플랜 업그레이드(월 $20)를 고려할 수 있지만, 이는 빌드 시간 한도만 늘려줄 뿐 근본적인 해결책이 아닙니다. 이미지가 계속 늘어나면 동일한 문제가 반복되기 때문에, 이미지 사전 최적화나 외부 CDN 분리처럼 빌드 파이프라인 자체의 부하를 줄이는 방법이 장기적으로 더 효과적입니다."
+aliases:
+  - "/tech/2026-05-27-cloudflare-pages-hugo-배포-빌드-시간-초과-오류-대용량-이미지-해결법/"
+
 ---
 
 Hugo로 정적 사이트를 만들다 보면 어느 순간 Cloudflare Pages 배포가 갑자기 멈춰버리는 상황을 맞닥뜨려요. 빌드 로그 마지막 줄에는 `Build exceeded maximum allowed duration`이라는 메시지만 남고요. 문제는 코드가 아니에요. 대부분 이미지 때문이에요.

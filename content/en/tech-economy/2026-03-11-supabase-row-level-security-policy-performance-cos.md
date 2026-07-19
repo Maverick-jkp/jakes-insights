@@ -19,6 +19,9 @@ faq:
     answer: "Enabling RLS on a high-traffic Supabase table without carefully optimized policies can cut query throughput by 40–60%, and the overhead compounds further when PgBouncer's transaction mode interferes with session-level policy evaluation. The impact is minimal at small scale but becomes significant for applications with tens of thousands of daily active users or high query volume."
   - question: "supavisor vs pgbouncer supabase which one to use with row level security"
     answer: "Supavisor, which became Supabase's recommended default connection pooler in 2024, supports session mode that preserves session-level state between transactions — making it compatible with Supabase's standard JWT-based RLS patterns. PgBouncer in transaction mode does not preserve this state, which causes RLS policies relying on current_setting() to fail silently or behave incorrectly in production."
+aliases:
+  - "/tech/2026-03-11-supabase-row-level-security-policy-performance-cos/"
+
 ---
 
 Enabling RLS on a busy Supabase table can cut query throughput by 40–60% if the policies aren't written carefully — and that number gets worse when PgBouncer enters the picture.

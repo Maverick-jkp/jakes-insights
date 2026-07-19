@@ -19,6 +19,9 @@ faq:
     answer: "Microsoft introduced the mandatory account requirement in Windows 11 Home to drive deeper integration with cloud services like OneDrive, improve device recovery options, and strengthen Windows Hello authentication. Critics argue the real motivation was ecosystem lock-in and cloud monetization rather than genuine security or usability improvements. Enterprise IT departments and privacy-focused users have been particularly vocal opponents of the policy."
   - question: "will Microsoft remove the mandatory account requirement from Windows 11"
     answer: "As of early 2026, no official change has been announced, but a Microsoft VP has publicly hinted that the mandatory Microsoft account requirement during Windows 11 setup is under internal review. Reporting from Windows Central confirms that employees inside Microsoft are actively lobbying to reverse the policy. While nothing is confirmed, the internal pressure represents the strongest signal yet that a change could be coming for Home edition users."
+aliases:
+  - "/tech/2026-03-28-windows-11-mandatory-microsoft-account-removal-ins/"
+
 ---
 
 Microsoft's own employees are pushing back against one of Windows 11's most contested design decisions. Internal pressure to drop the mandatory Microsoft account requirement during setup has reached the point where a company VP is publicly hinting at change — and that signal matters more than it might seem.

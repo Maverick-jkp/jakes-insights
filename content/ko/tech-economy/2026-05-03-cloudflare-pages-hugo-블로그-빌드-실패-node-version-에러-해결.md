@@ -19,6 +19,9 @@ faq:
     answer: "빌드는 성공했지만 CSS나 JS가 깨져 보이는 경우, 이전 빌드 캐시가 남아 꼬이는 문제일 가능성이 높습니다. 빌드 커맨드를 hugo --gc --minify로 변경하면 캐시를 정리하면서 빌드하므로 이 문제를 예방할 수 있습니다."
   - question: "Cloudflare Pages Hugo HUGO_VERSION 환경변수 설정 방법"
     answer: "Hugo 모듈 관련 에러나 버전 불일치 문제가 발생할 경우, Cloudflare Pages 대시보드 환경변수에서 HUGO_VERSION을 0.145.0처럼 특정 버전으로 고정하는 것이 안전합니다. 이렇게 하면 Cloudflare Pages 빌드 환경에서 Hugo 버전으로 인한 예기치 않은 빌드 실패를 방지할 수 있습니다."
+aliases:
+  - "/tech/2026-05-03-cloudflare-pages-hugo-블로그-빌드-실패-node-version-에러-해결/"
+
 ---
 
 배포 버튼 한 번 눌렀을 뿐인데, 빌드 로그 맨 마지막 줄에 빨간 글씨가 떠요. `Error: The engine "node" is incompatible with this module.` 혹은 그냥 `Build failed`. Hugo 정적 사이트를 Cloudflare Pages에 올리는 건 5분짜리 일처럼 보이지만, node 버전 하나 잘못 맞으면 하루를 날릴 수 있어요.

@@ -17,6 +17,9 @@ faq:
     answer: "Windows Protected Print Mode is Microsoft's upcoming feature that will eventually eliminate third-party printer drivers entirely in favor of standardized Microsoft IPP class drivers. This is part of a phased rollout that began in January 2026 and will progressively restrict third-party driver support until they're completely replaced."
   - question: "how to fix printer driver not found windows update"
     answer: "If Windows Update can't find your printer driver after January 2026, it's likely because Microsoft stopped distributing legacy V3 and V4 drivers. You'll need to check if your printer supports IPP, download drivers directly from the manufacturer's website, or consider using open-source alternatives like CUPS or Gutenprint for older printer models."
+aliases:
+  - "/tech/2026-02-14-printer-driver/"
+
 ---
 
 # Body Content

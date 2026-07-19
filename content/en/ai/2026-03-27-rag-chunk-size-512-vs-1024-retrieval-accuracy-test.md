@@ -19,6 +19,9 @@ faq:
     answer: "According to the LangCopilot document chunking benchmark from October 2025, semantic chunking strategies can deliver up to 70% accuracy improvements over fixed-size chunking in RAG systems. However, fixed-size 512-token chunks remained the most consistent and reliable baseline across diverse document types, making them a safe default when semantic chunking is not feasible."
   - question: "best chunk overlap settings for RAG LangChain RecursiveCharacterTextSplitter"
     answer: "A typical overlap range of 50-100 tokens is commonly used with LangChain's RecursiveCharacterTextSplitter to preserve context across chunk boundaries. Overlap settings compound the effects of chunk size and embedding model choice, meaning all three parameters need to be evaluated together rather than in isolation for optimal RAG retrieval accuracy."
+aliases:
+  - "/tech/2026-03-27-rag-chunk-size-512-vs-1024-retrieval-accuracy-test/"
+
 ---
 
 Chunk size is the most under-tested parameter in most RAG pipelines. Most engineers pick 512 or 1024 tokens, ship it, and never look back — yet the difference between them can swing retrieval accuracy by 20-40% depending on your document type and embedding model.

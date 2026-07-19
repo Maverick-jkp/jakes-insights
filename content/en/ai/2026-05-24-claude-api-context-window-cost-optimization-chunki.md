@@ -19,6 +19,9 @@ faq:
     answer: "Claude's API re-sends the full conversation history as input tokens with every new message, meaning costs compound dramatically over multi-turn sessions. A 10-turn conversation on a 50K-token document can cost roughly 55x the first call rather than 10x, because each turn includes all prior context. Managing this accumulation through chunking or context pruning is essential for keeping production costs under control."
   - question: "how to reduce Claude API token costs in production"
     answer: "The most effective way to reduce Claude API token costs is to implement a deliberate chunking strategy rather than loading full context on every call. Options include sliding window chunking, embedding-based retrieval (RAG) to fetch only relevant document sections, and hierarchical summarization for long reasoning tasks. Teams that treat chunking as a cost architecture decision rather than a performance tweak typically see 3-5x reductions in API spend on the same workloads."
+aliases:
+  - "/tech/2026-05-24-claude-api-context-window-cost-optimization-chunki/"
+
 ---
 
 Last quarter, a production pipeline was burning $4,200/month on Claude API calls — not because the use case was expensive, but because nobody had thought carefully about context window management. The actual cost floor, after proper chunking, landed closer to $900.

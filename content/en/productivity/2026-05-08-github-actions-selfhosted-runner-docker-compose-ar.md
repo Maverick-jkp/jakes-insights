@@ -19,6 +19,9 @@ faq:
     answer: "Applying chmod patches does not fix the root cause of the github actions self-hosted runner docker compose arm64 m2 mac permission denied error and only masks the symptom temporarily. The underlying issue is a file ownership mismatch between the runner process UID on the host and the user UID inside the Docker container. A proper fix requires explicitly aligning the UID and GID values so the runner's post-v2.332.0 ownership checks pass correctly."
   - question: "github actions container job cannot write to GITHUB_ENV self-hosted runner apple silicon"
     answer: "When a GitHub Actions container job cannot write to GITHUB_ENV on a self-hosted runner running on Apple Silicon, the cause is typically a UID mismatch between the Docker container user and the host runner process, made worse by runner v2.332.0's stricter ownership enforcement. Docker Desktop on M2 Macs introduces a separate UID namespace through its Linux VM layer, making this conflict more frequent than on x86 machines. Resolving it requires aligning the container user's UID and GID with those of the runner process on the host."
+aliases:
+  - "/tech/2026-05-08-github-actions-selfhosted-runner-docker-compose-ar/"
+
 ---
 
 The `permission denied` error on a GitHub Actions self-hosted runner isn't random. It's structural—and on ARM64 M2 Macs running Docker Compose, it's hitting teams hard enough that the GitHub Actions runner issue tracker logged over 200 thread replies on a single bug report (actions/runner #4302) before a patch shipped.

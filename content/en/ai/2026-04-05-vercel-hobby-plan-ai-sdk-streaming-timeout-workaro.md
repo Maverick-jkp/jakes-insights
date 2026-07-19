@@ -19,6 +19,9 @@ faq:
     answer: "To fix the Vercel 10-second timeout affecting AI chat streaming, you can add `export const runtime = 'edge'` to your Next.js Route Handler to switch from the serverless runtime to the Edge Runtime, which handles long-lived streaming connections differently. Alternatively, you can upgrade to Vercel Pro, which raises the function timeout to 300 seconds. For free-tier projects, routing requests through a self-hosted inference endpoint is another viable option."
   - question: "does vercel hobby plan support AI SDK v5 streaming with GPT-4o"
     answer: "Vercel's Hobby plan technically allows AI SDK v5 streaming with GPT-4o, but the 10-second serverless function timeout means responses are frequently cut off before completion. GPT-4o's median response latency for a 500-token completion is around 8–12 seconds, which straddles the Hobby timeout boundary. Developers need to implement a workaround or upgrade to Vercel Pro to reliably stream longer AI responses."
+aliases:
+  - "/tech/2026-04-05-vercel-hobby-plan-ai-sdk-streaming-timeout-workaro/"
+
 ---
 
 The Vercel Hobby plan's 10-second function timeout has killed more AI streaming demos than any bug ever could. And with AI SDK v5 now shipping server-sent events through Next.js App Router by default, that ceiling hits faster than ever.

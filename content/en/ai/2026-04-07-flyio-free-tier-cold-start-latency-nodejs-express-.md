@@ -19,6 +19,9 @@ faq:
     answer: "For low-traffic side projects where occasional latency spikes are acceptable, Fly.io's free tier wins on cost since Railway has no permanently free compute option as of 2025. However, for anything user-facing with consistent traffic patterns, Railway's predictability and absence of cold starts justifies the $5/month minimum spend. The decision comes down to your tolerance for 1.8s–4.2s cold start delays versus your budget."
   - question: "how to avoid cold starts on fly.io free tier node.js"
     answer: "On Fly.io's free tier, cold starts cannot be fully eliminated because the platform's VM-based architecture is designed to scale machines to zero when idle, and this behavior is tied to the free compute model itself. The only reliable way to avoid cold starts on Fly.io is to upgrade to a paid plan that keeps at least one Machine running at all times. Workarounds like ping services that artificially keep apps awake may violate terms of service and do not address the underlying architecture."
+aliases:
+  - "/tech/2026-04-07-flyio-free-tier-cold-start-latency-nodejs-express-/"
+
 ---
 
 Cold starts have ended more side projects than bad code ever did.

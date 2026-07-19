@@ -19,6 +19,9 @@ faq:
     answer: "Valve discontinued the Steam Controller in 2019 but released the CAD files in 2026 to support the active modding community that never stopped using the device. The move transforms the existing Valve Steam Controller CAD files open source hardware mod community from improvising without blueprints into a documented, remixable hardware platform."
   - question: "Is the Steam Controller mod community still active in 2026?"
     answer: "Yes, the Steam Controller mod community has remained active even years after the controller's 2019 discontinuation, with modders sharing replacement shells, battery modifications, and Bluetooth upgrade kits on platforms like Printables and GitHub. The official CAD file release gives this community a precise, documented foundation to build on instead of relying on reverse-engineered measurements."
+aliases:
+  - "/tech/2026-05-07-valve-steam-controller-cad-files-open-source-hardw/"
+
 ---
 
 Valve just handed modders the keys. And for once, that's not hyperbole.

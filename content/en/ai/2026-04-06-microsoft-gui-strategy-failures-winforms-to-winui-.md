@@ -19,6 +19,9 @@ faq:
     answer: "Yes, parts of the Windows 11 Settings panel still use WPF, and Microsoft continues using WinForms in some areas, directly contradicting official guidance that developers should migrate to WinUI 3. This inconsistency in Microsoft's own first-party apps significantly undermines developer confidence in the recommended framework."
   - question: "Microsoft GUI strategy failures WinForms to WinUI developer cost why are developers moving to Electron"
     answer: "Microsoft's pattern of deprecating GUI frameworks on roughly an 8–10 year cycle has eroded developer trust, making cross-platform alternatives like Electron more attractive despite their performance trade-offs. When developers face 6–18 months of migration effort every decade with no guarantee of long-term framework support, investing in a cross-platform solution becomes a rational business decision."
+aliases:
+  - "/tech/2026-04-06-microsoft-gui-strategy-failures-winforms-to-winui-/"
+
 ---
 
 Microsoft has shipped at least six distinct Windows UI frameworks since 1992. Every single one has been deprecated, abandoned, or quietly sidelined. That's not a rough patch — that's a pattern.

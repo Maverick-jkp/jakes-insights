@@ -19,6 +19,9 @@ faq:
     answer: "In Next.js 14 App Router, you can switch an API route from the Edge Runtime to the Node.js runtime by adding a single named export to your route file: export const runtime = 'nodejs'. This tells Next.js to use the Node.js runtime for that specific route handler, removing the 25-second wall-clock limit that causes the Claude API streaming response Next.js 14 app router edge function timeout fix to become necessary in the first place. This change only affects the specific route file where it is declared, leaving other routes on their default runtime."
   - question: "what is an idle stream timeout and how is it different from a wall clock timeout in Next.js"
     answer: "A wall-clock timeout kills a function after a fixed total duration regardless of what it is doing, while an idle stream timeout drops a connection specifically when no bytes have been written to the stream for a set interval, typically 10-15 seconds. These are two distinct failure modes, and fixing one does not automatically fix the other, which is why generic advice about edge function timeouts often fails to fully resolve Claude API streaming issues. Addressing idle stream timeouts requires explicit keep-alive strategies, such as periodically flushing data to the client to reset the inactivity timer."
+aliases:
+  - "/tech/2026-05-20-claude-api-streaming-response-nextjs-14-app-router/"
+
 ---
 
 Edge functions are fast. They're also brutally unforgiving when you're streaming long AI responses.

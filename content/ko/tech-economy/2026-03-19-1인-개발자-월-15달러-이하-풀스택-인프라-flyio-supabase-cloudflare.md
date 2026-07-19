@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare R2는 S3와 달리 이그레스(데이터 전송) 비용이 없어, S3에서 발생하는 GB당 0.09달러 비용을 완전히 절감할 수 있습니다. 무료 플랜 기준 월 10GB 스토리지와 100만 건 Class A 작업이 포함되어 있어요. 이미지나 파일을 많이 서빙하는 앱이라면 R2로 전환만 해도 비용이 눈에 띄게 줄어듭니다."
   - question: "Fly.io Supabase Cloudflare 조합 언제 갈아타야 하나"
     answer: "1인 개발자 월 15달러 이하 풀스택 인프라 Fly.io Supabase Cloudflare 실제 비용 내역 기준으로, MAU 5,000명을 초과하거나 Supabase DB가 500MB를 넘기 시작하면 비용이 급격히 오를 수 있습니다. 특히 Supabase Pro 플랜(월 25달러) 전환 시점과 Fly.io 크레딧 초과 구간을 사전에 파악해 두는 것이 예상치 못한 청구를 막는 핵심입니다."
+aliases:
+  - "/tech/2026-03-19-1인-개발자-월-15달러-이하-풀스택-인프라-flyio-supabase-cloudflare/"
+
 ---
 
 서버 비용 때문에 사이드 프로젝트를 접어본 적 있나요? Fly.io, Supabase, Cloudflare 세 가지만 잘 조합하면 1인 개발자도 월 15달러 이하로 프로덕션 수준의 풀스택 인프라를 돌릴 수 있어요.

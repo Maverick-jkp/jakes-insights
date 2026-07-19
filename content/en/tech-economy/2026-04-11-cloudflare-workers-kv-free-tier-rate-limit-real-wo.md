@@ -19,6 +19,9 @@ faq:
     answer: "The paid Workers plan at $5/month shifts KV limits from daily to monthly, offering 10 million reads and 1 million writes per month instead of the free tier's 100,000 reads and 1,000 writes per day. This distinction is critical for apps with uneven traffic distribution, since a single busy day won't exhaust your entire monthly quota."
   - question: "is cloudflare workers kv eventually consistent and how long does it take"
     answer: "Yes, Cloudflare Workers KV is eventually consistent by design, with write propagation taking up to 60 seconds globally according to Cloudflare's own documentation. Reads are served from local edge PoPs with sub-5ms latency, but writes go through a central coordination layer before reaching all regions, making KV unsuitable for use cases requiring strong consistency."
+aliases:
+  - "/tech/2026-04-11-cloudflare-workers-kv-free-tier-rate-limit-real-wo/"
+
 ---
 
 The free tier looked generous on paper. Ten million KV reads per day, one million writes, and zero dollars. Then production traffic hit, and the `429` errors started.

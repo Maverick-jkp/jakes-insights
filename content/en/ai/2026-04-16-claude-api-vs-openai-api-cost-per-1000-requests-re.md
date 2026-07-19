@@ -19,6 +19,9 @@ faq:
     answer: "Based on a claude api vs openai api cost per 1000 requests real app json extraction task comparison 2025, Claude 3.5 Sonnet justifies its premium specifically on complex schemas where extraction failures compound at scale. On simpler extraction tasks, GPT-4o is actually cheaper on output-heavy workloads since GPT-4o is priced at $10 per million output tokens versus Sonnet's $15."
   - question: "claude api vs openai api cost per 1000 requests real app json extraction task comparison 2025 token pricing breakdown"
     answer: "As of Q1 2026, Claude 3.5 Haiku costs $0.80 input / $4.00 output per million tokens, GPT-4o mini costs $0.15 input / $0.60 output, Claude 3.5 Sonnet costs $3 input / $15 output, and GPT-4o costs $2.50 input / $10 output. For JSON extraction specifically, the output-to-input token ratio of your workload is the critical variable that determines which model is actually cheapest."
+aliases:
+  - "/tech/2026-04-16-claude-api-vs-openai-api-cost-per-1000-requests-re/"
+
 ---
 
 Running 50 million API calls per month changes how you think about pricing. A 0.3¢ difference per 1,000 tokens stops being academic math and starts being a $150,000 annual line item.

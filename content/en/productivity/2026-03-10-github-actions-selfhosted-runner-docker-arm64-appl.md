@@ -19,6 +19,9 @@ faq:
     answer: "AWS EC2 Mac instances running M1 or M2 hardware reproduce the same Docker socket permission denied error as physical Apple Silicon Macs when used as GitHub Actions self-hosted runners. The root cause is identical: the GitHub Actions runner process user does not have access to /var/run/docker.sock because macOS does not configure a docker group automatically during Docker Desktop installation. Applying the same fixes used on local Apple Silicon machines, such as adding the runner user to the docker group, resolves the issue on EC2 Mac instances as well."
   - question: "process usr bin docker failed with exit code 1 github actions self-hosted runner"
     answer: "The error 'The process /usr/bin/docker failed with exit code 1' in GitHub Actions self-hosted runner logs typically indicates a Docker socket permission problem rather than a bug in Docker itself or your docker-compose configuration. The runner process does not have the necessary Unix permissions to communicate with the Docker daemon via /var/run/docker.sock. Resolving the socket permission mismatch by adjusting user group membership or socket ownership will fix this error and restore the pipeline."
+aliases:
+  - "/tech/2026-03-10-github-actions-selfhosted-runner-docker-arm64-appl/"
+
 ---
 
 The error hits mid-pipeline and kills your build instantly: `The process '/usr/bin/docker' failed with exit code 1`. No stack trace. No obvious cause. Just a dead CI run on hardware that cost you real money.

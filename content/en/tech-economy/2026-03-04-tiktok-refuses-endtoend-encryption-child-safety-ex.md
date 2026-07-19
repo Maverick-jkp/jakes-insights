@@ -19,6 +19,9 @@ faq:
     answer: "TikTok's refusal to implement end-to-end encryption using the child safety excuse sets a dangerous policy precedent that governments in the EU, UK, and US are already citing to justify anti-encryption legislation targeting other platforms. This means TikTok's position could weaken encryption standards across the broader tech industry, not just on TikTok itself."
   - question: "how do WhatsApp and Signal handle child safety with end-to-end encryption"
     answer: "WhatsApp, Signal, and Apple iMessage all use end-to-end encryption while still addressing child safety through methods like on-device abuse detection and hashed-image scanning that don't require reading message content on servers. This directly contradicts TikTok's argument that E2EE and child safety are mutually exclusive, since these platforms demonstrate both goals can coexist."
+aliases:
+  - "/tech/2026-03-04-tiktok-refuses-endtoend-encryption-child-safety-ex/"
+
 ---
 
 TikTok has 1.7 billion monthly active users as of early 2026. Every direct message they send is readable by TikTok, law enforcement, and anyone else with the right access credentials. The platform's explicit refusal to add end-to-end encryption — citing child safety — raises a question security engineers can't ignore: is this principled policy, or a convenient justification for keeping backdoors open?

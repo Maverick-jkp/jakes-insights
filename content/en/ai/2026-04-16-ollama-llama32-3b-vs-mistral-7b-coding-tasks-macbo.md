@@ -19,6 +19,9 @@ faq:
     answer: "For the ollama llama3.2 3b vs mistral 7b coding tasks macbook air m2 8gb speed accuracy tradeoff, the task type is the deciding factor: Llama 3.2 3B's faster response time makes it the better choice for real-time autocomplete and generating short code snippets, while Mistral 7B's higher accuracy makes it preferable for multi-file refactoring and architectural questions. Since Ollama makes switching between models straightforward, many developers keep both installed and choose based on the complexity of the task at hand."
   - question: "can you run mistral 7b and llama 3.2 3b with ollama at the same time on 8gb mac"
     answer: "Running both models simultaneously on an 8GB MacBook Air M2 is not practical, as Mistral 7B alone occupies ~4.1GB and Llama 3.2 3B adds another ~2GB, which would exceed available memory when combined with OS and application overhead. However, Ollama's model management makes it easy to switch between models on demand, so the recommended approach is to run one at a time and select the appropriate model based on your current task."
+aliases:
+  - "/tech/2026-04-16-ollama-llama32-3b-vs-mistral-7b-coding-tasks-macbo/"
+
 ---
 
 Running local LLMs on consumer hardware used to be a weekend experiment. Now it's a workflow decision with real consequences.

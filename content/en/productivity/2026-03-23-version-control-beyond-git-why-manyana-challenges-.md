@@ -19,6 +19,9 @@ faq:
     answer: "The main barrier to adopting alternatives isn't technical correctness — it's ecosystem lock-in. Git has over two decades of institutional muscle memory behind it, plus deep integration with platforms like GitHub and GitLab and the entire CI/CD toolchain industry."
   - question: "version control beyond Git why Manyana challenges everything you know — is it worth switching"
     answer: "As covered in 'version control beyond Git: why Manyana challenges everything you know,' Manyana enters a growing conversation alongside alternatives like Jujutsu and Sapling, but adoption curves are still early. Teams dealing with large-scale monorepos or distributed collaboration pain points have the most to gain from watching its development, though ecosystem maturity remains a significant practical barrier."
+aliases:
+  - "/tech/2026-03-23-version-control-beyond-git-why-manyana-challenges-/"
+
 ---
 
 Git shipped in 2005. Twenty-one years later, it's the default — so embedded in developer workflow that questioning it feels almost absurd. Manyana makes the case for questioning it anyway.

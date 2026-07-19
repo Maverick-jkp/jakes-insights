@@ -19,6 +19,9 @@ faq:
     answer: "네, Vercel AI SDK의 StreamingTextResponse를 사용하면 멀티바이트 문자 경계 처리를 SDK 내부에서 담당하기 때문에 별도의 TextDecoder 설정 없이도 한국어 깨짐 문제가 해결돼요. Claude API와 Next.js를 연동하는 프로젝트라면 SDK 도입이 스트림 처리 코드를 단순화하는 데도 도움이 됩니다."
   - question: "Edge Runtime에서 ReadableStream 직접 return할 때 한국어 깨지는 문제 해결 방법"
     answer: "Next.js App Router의 route.ts에서 `return new Response(stream)`으로 스트림을 그대로 반환하면 청크 경계에서 한국어가 깨질 수 있어요. 이를 해결하려면 중간에 TransformStream 변환 레이어를 두거나, TextDecoder에 `{ stream: true }` 옵션을 적용해 불완전한 바이트 시퀀스를 버퍼링하도록 구성해야 합니다."
+aliases:
+  - "/tech/2026-03-19-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
+
 ---
 
 스트리밍이 멀쩡히 작동하는데, 한국어만 나오면 글자가 깨져요. `안녕`이 `ìøëíø` 같은 문자열로 변하죠. 처음 이 버그를 마주친 개발자들은 대부분 Claude API 탓을 먼저 해요. 실제 원인은 전혀 다른 곳에 있는데도요.

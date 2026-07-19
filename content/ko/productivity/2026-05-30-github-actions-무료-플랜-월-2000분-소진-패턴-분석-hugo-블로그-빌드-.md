@@ -19,6 +19,9 @@ faq:
     answer: "on.push.paths 옵션을 사용해 content/, themes/, config.toml 등 Hugo 빌드에 실제로 영향을 주는 경로만 트리거 대상으로 지정할 수 있어요. README.md 수정이나 .github/ 설정 변경처럼 Hugo와 무관한 파일 변경은 빌드를 건너뛰게 되어 불필요한 실행을 30~50%까지 줄일 수 있습니다. branches 옵션과 함께 main 브랜치만 타겟하면 트리거 범위를 더욱 효과적으로 좁힐 수 있어요."
   - question: "GitHub Actions self-hosted 러너 Hugo 블로그에 쓸 만한가요"
     answer: "월 빌드 횟수가 200회를 넘어서면 self-hosted 러너를 고려하는 것이 합리적이에요. self-hosted 러너는 GitHub Actions 분 차감이 없고 캐시가 7일 만료 없이 영구 유지되어 빌드 속도도 더 일관되게 유지할 수 있습니다. 다만 서버 비용과 러너 직접 관리가 필요하므로, 빌드 횟수가 적은 소규모 블로그라면 트리거·캐시 최적화만으로도 충분한 경우가 많아요."
+aliases:
+  - "/tech/2026-05-30-github-actions-무료-플랜-월-2000분-소진-패턴-분석-hugo-블로그-빌드-/"
+
 ---
 
 Hugo 블로그를 GitHub Actions로 배포하다 보면 어느 날 갑자기 "Usage limit reached" 메시지를 마주치게 돼요. 월 2,000분이면 충분할 것 같았는데, 실제로는 생각보다 훨씬 빨리 바닥이 나거든요.

@@ -19,6 +19,9 @@ faq:
     answer: "PyPy's current stable line, PyPy 7.3.x, targets CPython 3.10 semantics, making it three major versions behind CPython which reached 3.13 with 3.14 in beta as of 2026. This compatibility gap means packages relying on Python 3.11 or newer features — including stdlib additions and newer typing constructs — do not run cleanly on PyPy without workarounds. This version lag is one of the primary reasons the PyPy unmaintained warning uv Python package manager 2026 users are seeing gets triggered during dependency resolution."
   - question: "how many developers maintain PyPy project"
     answer: "PyPy has historically had fewer than ten active contributors according to the project's GitHub contributor graph, making it a very small team compared to CPython which benefits from hundreds of contributors and a formally governed release cycle through the Python Steering Council. This small contributor base directly affects release frequency and the speed at which PyPy can close compatibility gaps with newer CPython versions. The limited maintainer bandwidth is one of the key signals that uv's resolver uses to surface its unmaintained warning."
+aliases:
+  - "/tech/2026-03-08-pypy-unmaintained-warning-uv-python-package-manage/"
+
 ---
 
 PyPy's unmaintained warning in `uv` isn't noise. It's a signal worth understanding before it becomes a blocker.

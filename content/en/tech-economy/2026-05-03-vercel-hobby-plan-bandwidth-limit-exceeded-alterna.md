@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages, Railway, and Fly.io are the most production-ready low-cost alternatives to Vercel for Next.js App Router deployments in 2025, each with full or near-full support for Server Components and Edge Runtime. For teams comfortable with DevOps, self-hosting on affordable VPS providers like Hetzner or DigitalOcean offers even greater cost control, typically running a comparable workload for a few dollars per month."
   - question: "does cloudflare pages support nextjs app router server components 2025"
     answer: "Cloudflare Pages supports Next.js App Router including Server Components in 2025, making it one of the most credible free-tier alternatives when a vercel hobby plan bandwidth limit exceeded alternative deployment nextjs app router 2025 situation forces a migration. However, like other non-Vercel platforms, there may be minor trade-offs in certain edge cases around specific Next.js features that rely on deep Vercel-native integration."
+aliases:
+  - "/tech/2026-05-03-vercel-hobby-plan-bandwidth-limit-exceeded-alterna/"
+
 ---
 
 Your Next.js app just hit Vercel's bandwidth ceiling. The dashboard shows "limit exceeded." Traffic's still coming in.

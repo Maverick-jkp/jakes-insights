@@ -19,6 +19,9 @@ faq:
     answer: "Hugo 블로그 Cloudflare Pages GitHub Actions 자동배포 cron 트리거 안 될 때 해결법으로 가장 효과적인 방법은 workflow_dispatch를 schedule과 함께 설정하는 것입니다. 이렇게 하면 Actions 탭에서 'Run workflow' 버튼으로 수동 실행이 가능해져 레포 활성 상태를 유지하기 쉽고, cron이 정상 작동하는지 즉시 검증할 수 있습니다."
   - question: "GitHub Actions cron 대신 Cloudflare Pages Deploy Hook 외부 cron 쓰는 게 나은가요"
     answer: "발행 신뢰성이 중요하다면 cron-job.org 같은 외부 cron 서비스로 Cloudflare Pages Deploy Hook을 직접 호출하는 방식이 GitHub Actions cron보다 안정적입니다. GitHub Actions cron은 60일 비활성화 위험과 수십 분의 best-effort 지연이 있는 반면, Deploy Hook 방식은 GitHub 의존도를 낮추고 무료로 높은 신뢰성을 확보할 수 있습니다."
+aliases:
+  - "/tech/2026-05-23-hugo-블로그-cloudflare-pages-github-actions-자동배포-cron/"
+
 ---
 
 GitHub Actions cron을 믿고 잠자리에 들었는데, 다음 날 아침 예약 포스트가 하나도 발행되지 않았어요. 그 허탈함, 겪어본 사람만 알죠.

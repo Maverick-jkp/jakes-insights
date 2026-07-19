@@ -19,6 +19,9 @@ faq:
     answer: "You cannot increase the Edge Runtime timeout on Vercel beyond 30 seconds, but you can switch to Node.js runtime which supports up to 800 seconds on Pro and Enterprise plans. In your Next.js 14 App Router Route Handler, replace `export const runtime = 'edge'` with `export const runtime = 'nodejs'` to unlock longer execution durations. This trade-off means losing the global CDN distribution of Edge functions but gaining the execution time needed for AI streaming use cases."
   - question: "vercel edge runtime vs nodejs runtime for ai streaming which to use"
     answer: "Node.js runtime is the correct choice for AI streaming use cases like Claude API integrations, since it supports execution durations up to 800 seconds on Vercel Pro and Enterprise plans. Edge Runtime is designed for short, fast responses and its 30-second limit makes it incompatible with long-form AI generation tasks. While Edge Runtime offers lower latency through global CDN deployment, that advantage is outweighed by silent stream truncation failures in production AI applications."
+aliases:
+  - "/tech/2026-05-27-claude-api-streaming-response-nextjs-14-app-router/"
+
 ---
 
 Edge functions were supposed to be fast. Turns out, "fast" and "long-running" don't mix well when you're streaming AI responses through Vercel's infrastructure.

@@ -19,6 +19,9 @@ faq:
     answer: "Responsible disclosure typically involves notifying the software vendor privately and allowing time for a patch before going public with vulnerability details. The banned researcher published working Windows zero-day exploits without prior coordination with Microsoft, and their disclosures were reportedly characterized as retaliatory rather than following standard responsible disclosure ethics."
   - question: "GitHub bans security researcher zero-day disclosure conflict of interest Microsoft ownership"
     answer: "GitHub has been owned by Microsoft since 2018, creating an inherent conflict of interest when moderating security disclosures that directly target Microsoft products like Windows. Critics argue this dual identity makes it difficult for GitHub to act as a neutral platform for security research, since moderation decisions can appear to protect the parent company rather than enforce policy consistently."
+aliases:
+  - "/tech/2026-05-29-github-bans-security-researcher-zeroday-disclosure/"
+
 ---
 
 The line between responsible disclosure and platform policy just got significantly murkier. GitHub's decision to ban a security researcher who published unpatched Windows zero-day exploits has ignited a firestorm across the cybersecurity community — and the chilling effect on disclosure practices is now front and center for anyone who works in infosec.

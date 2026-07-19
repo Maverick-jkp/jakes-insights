@@ -19,6 +19,9 @@ faq:
     answer: "Use a traditional relational database when your queries rely on structured, exact-match conditions like order lookups or user records — SQL databases remain unmatched for ACID-compliant, predictable workloads. Choose a vector database when your application needs to understand meaning, context, or similarity, such as semantic search, recommendation engines, or AI-powered retrieval. Many production systems use both together, with SQL handling hard filters and vector databases handling similarity search."
   - question: "how fast is vector database search at scale"
     answer: "Modern vector databases using Approximate Nearest Neighbor (ANN) algorithms like HNSW can search billions of vectors in under 100 milliseconds, a threshold that keyword-based indexes like Elasticsearch's BM25 cannot match for semantic queries. The trade-off is that ANN returns approximate rather than perfectly exact results, which is an acceptable accuracy compromise for most AI retrieval use cases. Performance can degrade, however, when combining semantic similarity search with strict metadata filters simultaneously."
+aliases:
+  - "/tech/2026-03-07-what-is-vector-database-and-how-does-it-work/"
+
 ---
 
 Vector databases quietly became the infrastructure backbone of modern AI. Pinecone crossed 10,000 enterprise customers in late 2025. Weaviate raised $50M Series B specifically citing demand from RAG (Retrieval-Augmented Generation) deployments. Something clearly shifted — and it happened faster than most engineering teams expected.

@@ -19,6 +19,9 @@ faq:
     answer: "Setting the min-machines value to 1 in your Fly.io configuration completely eliminates cold starts by keeping at least one machine running at all times, but this setting moves your app outside the free tier. Free tier workarounds include using an external ping service to keep the machine warm or restructuring your app to avoid the Nginx reverse proxy, which adds extra initialization time during cold starts."
   - question: "is fly.io free tier good for fastapi python production apps"
     answer: "Fly.io's free tier is not suitable for user-facing production traffic with a FastAPI Python app due to cold start latency that can exceed 30–60 seconds after periods of inactivity. It remains a reasonable choice for internal tools, demos, or low-traffic projects where occasional cold starts are acceptable and stakeholder expectations can be managed accordingly."
+aliases:
+  - "/tech/2026-03-16-flyio-free-tier-cold-start-latency-fastapi-python-/"
+
 ---
 
 Cold starts killed the demo. That's the short version of what happens when you deploy a FastAPI app on Fly.io's free tier, walk away for 20 minutes, and then show it to a stakeholder. The first request hangs. Five seconds pass. Then ten. Then the client-side timeout fires, and you're explaining why your "production-ready" API just failed on the first click.

@@ -19,6 +19,9 @@ faq:
     answer: "Some companies in 2026 are intentionally posting open roles not to fill headcount, but to benchmark AI tool performance against human candidates. This practice contributes to inflated job posting numbers while actual hiring has significantly slowed, making the market even harder for job seekers to navigate."
   - question: "which tech jobs are most at risk from AI layoffs in 2026"
     answer: "Entry-level and mid-level software developer roles are the most directly affected by AI-driven automation in 2026, compressing the traditional career pipeline for software engineers. Knowledge workers broadly, including data analysts and software engineers, are being disproportionately impacted compared to previous economic downturns like 2008."
+aliases:
+  - "/tech/2026-03-07-tech-employment-worse-than-2008-recession-ai-layof/"
+
 ---
 
 The numbers coming out of Silicon Valley right now don't lie. Tech employment in 2026 is tracking worse than the 2008 financial crisis by several key metrics — and for developer jobs specifically, the structural shift driven by AI layoffs may be permanent.

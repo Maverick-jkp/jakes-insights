@@ -19,6 +19,9 @@ faq:
     answer: "기본적인 앱 단위 허용·차단 방식과 Connection Map은 macOS 버전과 거의 동일하지만, 커널 연동은 리눅스의 Netfilter Queue(nfqueue) 방식으로 별도 구현됐어요. Rule Groups 일부 기능이 아직 제한적이고 시스템 트레이 통합이 데스크탑 환경마다 다르게 동작하는 점은 macOS 버전과의 차이로 남아 있어요."
   - question: "Little Snitch 리눅스 버전 오픈소스인가요 가격은"
     answer: "커널 연동 레이어 등 핵심 컴포넌트는 GitHub 저장소(obdev/littlesnitch-linux)에 오픈소스로 공개되어 있지만, 앱 전체가 무료는 아니에요. macOS 라이선스와는 별개로 구매해야 하며, 정확한 가격은 공식 사이트에서 확인해야 해요."
+aliases:
+  - "/tech/2026-04-09-리눅스-네트워크-감시-도구-little-snitch-출시-실제-써보니/"
+
 ---
 
 맥 전용이라는 공식이 깨졌어요. 2026년 4월, Objective Development가 macOS에서만 쓸 수 있던 네트워크 방화벽 앱 Little Snitch를 리눅스에 공식 출시했거든요. 개발자 커뮤니티 반응은 즉각적이었어요. Reddit의 r/linux 스레드에는 "10년을 기다렸다"는 댓글이 달렸고, OMG! Ubuntu는 이를 당일 톱 기사로 다뤘어요. 리눅스 네트워크 감시 도구 시장에서 그만큼 오래, 그리고 강하게 원했던 도구가 드디어 나온 거예요.

@@ -19,6 +19,9 @@ faq:
     answer: "Running Loki, Promtail, and Grafana together on a 1GB host consumes roughly 600–750MB at idle, which leaves less than 300MB of headroom before the OS OOM killer starts terminating containers. The default Grafana Labs Docker Compose reference configurations are designed for developer laptops and assume available memory, making them unsuitable for 1GB production VMs without tuning."
   - question: "loki chunk_target_size and max_chunk_age settings for low memory server"
     answer: "Setting chunk_target_size to 256KB (down from the 1.5MB default) and max_chunk_age to 1m forces Loki to flush in-memory log chunks to disk more frequently, significantly reducing memory pressure. These two settings are considered the single biggest lever for reducing Loki's memory footprint on memory-constrained servers."
+aliases:
+  - "/tech/2026-05-05-grafana-loki-docker-compose-single-node-log-ingest/"
+
 ---
 
 Running Grafana Loki on a $5/month VPS sounds like a win. Until your container gets OOM-killed at 3am and you're staring at a 6-hour log gap you can't explain.

@@ -19,6 +19,9 @@ faq:
     answer: "Next.js App Router uses the Web Streams API natively, so a `route.ts` file returning a `Response` with a `ReadableStream` body will stream chunks to the client as they arrive without buffering. You bridge Claude's async iterable stream from the Anthropic SDK to a `ReadableStream`, and must ensure your route is configured with the correct runtime and response headers. For the claude api streaming response nextjs app router edge function timeout fix, setting `runtime = 'edge'` alone is not enough — you also need to handle the execution timeout limit deliberately."
   - question: "why are Claude 3.5 and 3.7 streaming responses slower and longer than Claude 2"
     answer: "Claude 3.5 and 3.7 models generate longer, more structured outputs than earlier versions, with average response lengths for `claude-3-5-sonnet` increasing roughly 30% compared to Claude 2 based on Anthropic's Q1 2026 usage benchmarks. More tokens in the response means longer streaming durations, which increases the likelihood of hitting deployment timeout limits. This is a key reason why the claude api streaming response nextjs app router edge function timeout fix has become one of the most-searched deployment issues for teams building AI features in 2026."
+aliases:
+  - "/tech/2026-05-01-claude-api-streaming-response-nextjs-app-router-ed/"
+
 ---
 
 Streaming responses from Claude work beautifully in local dev. Then you deploy to Vercel, hit the 10-second edge function timeout, and watch your chatbot die mid-sentence. This pattern has become one of the most-searched deployment issues in 2026 for teams building AI features on Next.js.

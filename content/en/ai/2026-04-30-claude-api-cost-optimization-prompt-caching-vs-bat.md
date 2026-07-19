@@ -19,6 +19,9 @@ faq:
     answer: "For a chatbot with consistent system prompts and steady user traffic, prompt caching is typically the better choice because the same large prompt prefix gets read back at $0.30/million tokens instead of $3.00/million on every user turn. The Batch API is better suited for background jobs like bulk document processing or offline analysis where a 24-hour turnaround is acceptable."
   - question: "Claude 3.5 Sonnet batch API pricing vs standard pricing 2025"
     answer: "According to Anthropic's official pricing documentation, Claude 3.5 Sonnet standard input costs $3.00 per million tokens and output costs $15.00 per million tokens. The Batch API cuts both rates by 50%, bringing input to $1.50/million and output to $7.50/million, making it highly cost-effective for large, non-time-sensitive workloads."
+aliases:
+  - "/tech/2026-04-30-claude-api-cost-optimization-prompt-caching-vs-bat/"
+
 ---
 
 My Claude API bill dropped 71% in six weeks. Not from switching models or cutting features — from finally understanding when to use prompt caching versus the Batch API, and stopping the habit of treating them as interchangeable.

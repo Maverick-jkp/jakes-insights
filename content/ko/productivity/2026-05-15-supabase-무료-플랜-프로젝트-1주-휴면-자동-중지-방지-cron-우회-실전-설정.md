@@ -19,6 +19,9 @@ faq:
     answer: "Supabase 무료 플랜 프로젝트 1주 휴면 자동 중지 방지 cron 우회 실전 설정에서 코드 없이 가장 빠르게 적용할 수 있는 외부 서비스는 cron-job.org나 UptimeRobot이에요. 대시보드에서 Supabase REST 엔드포인트 URL을 등록하고 6일 이하 주기로 설정하면, 별도 코드 작성 없이 휴면을 완전히 방지할 수 있어요."
   - question: "Supabase pg_cron Edge Function 조합으로 휴면 방지 가능한가요"
     answer: "Supabase의 pg_cron 확장과 Edge Function을 조합하면 외부 서비스 없이 DB 내부에서 self-healing 루프를 구성할 수 있어요. 다만 이 방식은 GitHub Actions나 외부 cron 서비스에 비해 설정 복잡도가 높아서, 간단한 사이드 프로젝트라면 GitHub Actions 방식이 더 실용적이에요."
+aliases:
+  - "/tech/2026-05-15-supabase-무료-플랜-프로젝트-1주-휴면-자동-중지-방지-cron-우회-실전-설정/"
+
 ---
 
 Supabase 무료 플랜 프로젝트, 한동안 안 건드렸다가 API 호출이 전부 실패한 경험 있으시죠? 정확히는 **7일 연속 비활성 상태**가 되면 프로젝트가 자동으로 pause돼요. 사이드 프로젝트 하나 믿고 있다가 당황스러운 상황, 충분히 막을 수 있어요. 그리고 생각보다 간단해요.

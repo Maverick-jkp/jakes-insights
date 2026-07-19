@@ -19,6 +19,9 @@ faq:
     answer: "Yes, a MacBook Air M2 with 8GB unified memory can comfortably run both Llama 3.2 1B and 3B models locally using Ollama. Both models fit within the 8GB memory envelope in 4-bit quantized form, and Ollama leverages Apple Silicon's Metal GPU acceleration for significantly better throughput than CPU-only inference."
   - question: "why does llama 3.2 1b struggle with korean language tasks"
     answer: "Korean is morphologically complex and uses agglutinative grammar, which exposes weaknesses in smaller models that are less noticeable on simple English prompts. The 1B model frequently mishandles Korean grammatical particles and honorific registers, issues that the 3B model handles with noticeably greater accuracy due to its larger parameter count."
+aliases:
+  - "/tech/2026-03-23-ollama-llama32-3b-vs-1b-response-quality-korean-qa/"
+
 ---
 
 Running local LLMs on consumer hardware has crossed a real threshold. A MacBook Air M2 with 8GB unified memory can now host surprisingly capable models — and the Llama 3.2 lineup from Meta is the clearest proof. But "capable" covers a lot of ground, especially when the task shifts from English to Korean Q&A.

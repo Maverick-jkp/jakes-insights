@@ -19,6 +19,9 @@ faq:
     answer: "License plate reader networks like Flock Safety operate legally in most U.S. jurisdictions, but they face growing legal scrutiny under state public records laws rather than traditional privacy statutes. The core issue is that private vendors store surveillance data on their own infrastructure, while public records obligations require cities to produce that data upon request — regardless of vendor contract limitations. Legal firms like Gibbs Mura LLP are actively pursuing class action litigation targeting Flock Safety's data practices, signaling an accelerating legal landscape around LPR networks in 2026."
   - question: "what happens to surveillance camera data when a city uses a private vendor like Flock Safety"
     answer: "When a city contracts with a private vendor like Flock Safety, the surveillance data is typically stored on the vendor's own infrastructure rather than city-controlled servers. Flock Safety contracts generally set data retention periods of around 30 days for standard footage, but these vendor terms do not override a city's obligations under state public records laws. This structural conflict between private vendor architecture and municipal legal accountability was the central cause of the Everett, Washington Flock camera network shutdown in February 2026."
+aliases:
+  - "/tech/2026-03-02-flock-camera-network-shut-down-public-records-ruli/"
+
 ---
 
 A court ruling forced the city of Everett, Washington to pause its entire Flock Safety license plate reader network in February 2026. Not a hack. Not budget cuts. A public records dispute.

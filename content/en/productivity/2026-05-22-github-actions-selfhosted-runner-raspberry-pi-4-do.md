@@ -19,6 +19,9 @@ faq:
     answer: "You can register a Raspberry Pi 4 as a GitHub Actions self-hosted runner by installing the runner software, authenticating it with a personal access token, and tagging jobs with 'self-hosted' in your workflow YAML. Containerizing the runner using Docker on the Pi provides environment isolation and simplifies cleanup between jobs, and Docker Buildx supports ARM cross-compilation for broader build compatibility."
   - question: "what are the limitations of using raspberry pi as a ci build server"
     answer: "The main limitations of using a Raspberry Pi as a CI build server are its ARM Cortex-A72 processor's lower single-threaded throughput and slower storage I/O compared to x86 server hardware, resulting in Docker build times 3–5x slower than cloud-hosted alternatives. It also introduces maintenance overhead for hardware and network reliability that cloud-hosted runners handle automatically."
+aliases:
+  - "/tech/2026-05-22-github-actions-selfhosted-runner-raspberry-pi-4-do/"
+
 ---
 
 Build times tell the truth.

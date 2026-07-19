@@ -19,6 +19,9 @@ faq:
     answer: "Harvard researchers demonstrated in late 2024 that a third-party app called I-XRAY could perform real-time facial recognition using footage from Meta Ray-Ban smart glasses, identifying individuals from public data sources in under 30 seconds. This proof-of-concept highlighted how Meta AI smart glasses privacy, workers, surveillance, and data systems could be exploited beyond Meta's own platform."
   - question: "are Meta smart glasses legal under EU AI Act 2025"
     answer: "The EU AI Act came into full enforcement in August 2025 and created explicit legal obligations for processing biometric data, including incidental facial capture from wearable cameras. Meta's current smart glasses data pipeline may not fully satisfy these requirements, creating potential compliance exposure for both Meta and businesses operating in EU jurisdictions."
+aliases:
+  - "/tech/2026-03-03-meta-ai-smart-glasses-privacy-workers-surveillance/"
+
 ---
 
 Workers reviewing footage captured by Meta Ray-Ban smart glasses have said something that should make anyone pause: *"We see everything."* That's not a marketing slogan. That's a direct quote from the people processing your data.

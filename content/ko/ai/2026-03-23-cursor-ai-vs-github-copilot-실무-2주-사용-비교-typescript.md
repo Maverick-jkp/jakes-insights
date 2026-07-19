@@ -19,6 +19,9 @@ faq:
     answer: "Cursor AI는 @codebase 커맨드로 프로젝트 전체를 컨텍스트로 활용하기 때문에 Next.js 14 App Router의 PageProps, generateMetadata 리턴 타입 등을 상대적으로 정확하게 처리했습니다. tsconfig.json과 next.config.ts를 함께 읽어 파일 간 타입을 자동으로 맞춰주는 덕분에, 수동으로 파일을 여러 번 전환해야 하는 작업이 줄어들었습니다."
   - question: "GitHub Copilot에서 Cursor AI로 전환할 때 단점이나 주의사항"
     answer: "Cursor AI는 VS Code 포크 기반의 전용 에디터이므로 기존 VS Code 플러그인, 키바인딩, 설정을 처음부터 다시 세팅해야 하는 초기 비용이 발생합니다. 팀 전체가 동시에 전환하지 않으면 JetBrains나 기타 IDE를 사용하는 팀원과 협업 환경이 맞지 않아 마찰이 생길 수 있습니다."
+aliases:
+  - "/tech/2026-03-23-cursor-ai-vs-github-copilot-실무-2주-사용-비교-typescript/"
+
 ---
 
 2주 동안 같은 TypeScript/Next.js 프로젝트에 두 도구를 번갈아 써봤어요. 결론부터 말하면, 생산성 차이가 "있다"가 아니라 **어떤 작업이냐에 따라 방향이 완전히 달라졌어요.**

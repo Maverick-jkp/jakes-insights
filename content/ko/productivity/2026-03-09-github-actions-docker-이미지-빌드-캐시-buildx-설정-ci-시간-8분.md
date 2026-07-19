@@ -19,6 +19,9 @@ faq:
     answer: "단일 팀이나 소규모 프로젝트라면 추가 비용 없이 설정이 간단한 `type=gha` (GitHub Actions Cache) 방식이 적합하고, 여러 브랜치나 팀원 간 캐시를 공유해야 한다면 GHCR 같은 레지스트리에 캐시 태그를 별도로 저장하는 `type=registry` 방식이 유리합니다. GitHub Actions Cache는 리포지토리당 10GB 제한이 있어 이미지가 크면 오래된 캐시가 자동 삭제될 수 있다는 점도 선택 시 고려해야 합니다."
   - question: "GitHub Actions Docker 이미지 빌드 캐시 Buildx 설정 CI 시간 8분에서 90초로 줄인 방법 실제 워크플로우 예시"
     answer: "GitHub Actions Docker 이미지 빌드 캐시 Buildx 설정으로 CI 시간을 8분에서 90초로 줄이려면 `docker/build-push-action@v6`에 `cache-from: type=gha`와 `cache-to: type=gha,mode=max` 두 줄을 추가하는 것이 핵심입니다. v3 이후 Buildx가 자동 활성화되어 별도 설치 단계 없이 바로 적용 가능하며, Dockerfile의 레이어 순서(의존성 설치를 소스 복사보다 먼저 배치)까지 함께 최적화하면 소스코드 변경 시 의존성 레이어는 건드리지 않고 변경분만 빌드하는 구조가 완성됩니다."
+aliases:
+  - "/tech/2026-03-09-github-actions-docker-이미지-빌드-캐시-buildx-설정-ci-시간-8분/"
+
 ---
 
 CI 파이프라인이 8분씩 걸리면 하루에 열 번만 배포해도 80분을 날리는 셈이에요. 팀 전체로 곱하면 얘기가 달라지죠.

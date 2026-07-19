@@ -19,6 +19,9 @@ faq:
     answer: "Both platforms now offer significant batch processing discounts, with OpenAI's Batch API providing 50% off standard pricing and Anthropic offering similar reductions through Claude's batching feature. For high-volume workloads that don't require real-time responses, these discounts can cut costs roughly in half compared to the headline per-token rates."
   - question: "does context window size affect api costs claude vs openai"
     answer: "Yes — context window size directly impacts total token consumption and therefore overall API costs. Claude 3.5 Sonnet's 200K context window means teams can avoid complex document chunking workarounds, which reduces the total number of tokens sent per request and lowers effective costs beyond what the raw per-token pricing suggests."
+aliases:
+  - "/tech/2026-03-11-claude-api-vs-openai-api-cost-per-token-real-proje/"
+
 ---
 
 Last quarter, a mid-sized SaaS team switched their document processing pipeline from GPT-4o to Claude 3.5 Sonnet. Monthly API spend dropped 31%. Quality stayed the same. That single decision funded two additional engineering sprints.

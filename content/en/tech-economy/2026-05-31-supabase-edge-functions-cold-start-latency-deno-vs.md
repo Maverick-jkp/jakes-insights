@@ -19,6 +19,9 @@ faq:
     answer: "Deno Deploy is the global edge network powering Supabase Edge Functions, running V8 isolates across 35+ regions rather than traditional server processes. This architecture reduces cold start times to roughly 150–300ms on average and cuts geographic latency by 40–60% compared to single-region deployments, according to Deno Deploy's published infrastructure specs."
   - question: "should I use supabase edge functions or vercel serverless for production in 2025"
     answer: "The supabase edge functions cold start latency deno vs vercel serverless real world test 2025 data suggests Supabase Edge Functions are the better choice for latency-sensitive use cases like authentication, thanks to lower cold start times and a globally distributed runtime. For teams already deeply invested in the Node.js and npm ecosystem, Vercel's Edge Runtime offers a middle ground that closes much of the cold start gap while preserving familiar tooling."
+aliases:
+  - "/tech/2026-05-31-supabase-edge-functions-cold-start-latency-deno-vs/"
+
 ---
 
 Cold starts don't announce themselves. They just quietly destroy user trust at the worst possible moment.

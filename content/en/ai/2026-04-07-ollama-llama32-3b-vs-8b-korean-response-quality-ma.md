@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 3B is well-suited for Korean preprocessing, classification, and short-form generation tasks where low latency is the priority over linguistic depth. For more complex tasks like multi-turn Korean dialogue or formal writing, the 8B model delivers noticeably better output quality."
   - question: "ollama llama3.2 3b vs 8b korean response quality macbook air m2 benchmark 2025 token speed comparison"
     answer: "In real-world benchmarks on a MacBook Air M2, Llama 3.2 3B generates Korean text at 28–35 tokens per second, while the 8B model runs at 12–18 tokens per second. This roughly 2x speed difference makes the 3B model preferable for latency-sensitive applications, while the 8B is better when output quality is the priority."
+aliases:
+  - "/tech/2026-04-07-ollama-llama32-3b-vs-8b-korean-response-quality-ma/"
+
 ---
 
 Running local LLMs on consumer hardware has shifted from experiment to daily workflow for most developers. The question isn't *whether* it works anymore — it's which model size actually delivers usable output for non-English tasks on the hardware most of us already own.

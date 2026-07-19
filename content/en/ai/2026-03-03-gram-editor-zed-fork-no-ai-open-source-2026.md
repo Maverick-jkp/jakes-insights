@@ -19,6 +19,9 @@ faq:
     answer: "According to Stack Overflow's 2025 Developer Survey, 28% of respondents either don't use AI coding tools or actively choose not to, citing trust and accuracy concerns. This documented segment helps explain why a project like the GRAM editor Zed fork no AI open source 2026 release is gaining traction despite launching into a market dominated by AI-first editors like Cursor and Copilot-integrated VS Code."
   - question: "Can GRAM editor be used in air-gapped or secure environments?"
     answer: "Yes, GRAM is specifically designed for environments where AI connectivity and telemetry are unacceptable, making it suitable for air-gapped or highly regulated workplaces. Its fully open-source codebase means security teams can audit every line of code that interacts with proprietary software, providing a level of transparency that commercial AI editors do not currently offer."
+aliases:
+  - "/tech/2026-03-03-gram-editor-zed-fork-no-ai-open-source-2026/"
+
 ---
 
 The open-source editor space just got more interesting. GRAM, a Zed fork stripped of all AI features, launched into a developer ecosystem that's almost universally sprinting *toward* AI integration — and it's gaining traction anyway.

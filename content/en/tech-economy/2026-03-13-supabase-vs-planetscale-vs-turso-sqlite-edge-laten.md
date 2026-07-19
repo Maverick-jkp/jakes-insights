@@ -19,6 +19,9 @@ faq:
     answer: "Among the three platforms in this comparison, Supabase offers the most feature-complete free tier in 2025 and 2026, covering authentication, file storage, realtime subscriptions, and Postgres in a single plan. Turso also has a free tier suitable for experimentation, while PlanetScale no longer offers a free plan at all following its March 2024 pricing overhaul."
   - question: "what is turso database and how does edge sqlite replication work"
     answer: "Turso is a database platform built on libSQL, an open-source fork of SQLite, that replicates your data to edge nodes globally using Fly.io infrastructure. Unlike a CDN, these are actual live SQLite database replicas that serve reads locally to users, which is why Turso can achieve sub-20ms read latency worldwide. This architecture makes it especially well-suited for read-heavy applications with users spread across multiple regions."
+aliases:
+  - "/tech/2026-03-13-supabase-vs-planetscale-vs-turso-sqlite-edge-laten/"
+
 ---
 
 Database choice used to be boring. Pick Postgres, call it a day.

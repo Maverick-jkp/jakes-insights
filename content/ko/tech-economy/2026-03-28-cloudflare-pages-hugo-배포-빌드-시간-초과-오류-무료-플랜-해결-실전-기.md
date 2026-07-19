@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages Hugo 배포 빌드 시간 초과 오류 무료 플랜 해결 실전 기록에 따르면, Hugo 버전을 명시하지 않으면 기본값인 0.54.0이 적용돼요. 최신 Hugo 테마 대부분이 0.90 이상을 요구하기 때문에, 테마 렌더링 실패와 에러 루프가 반복되다 타임아웃으로 이어지는 패턴이 발생해요. 환경변수에 HUGO_VERSION 값을 명시하는 것으로 간단히 해결할 수 있어요."
   - question: "GitHub Actions로 Cloudflare Pages Hugo 배포하면 빌드 속도 빨라지나요"
     answer: "GitHub Actions를 통해 빌드를 GitHub 서버에서 수행한 뒤 결과물만 Cloudflare Pages에 업로드하는 방식을 사용하면 빌드 속도를 크게 개선할 수 있어요. 'fetch-depth: 1' 옵션으로 Git 히스토리 클론 깊이를 직접 제어할 수 있어 타임아웃 위험이 줄어들며, 워크플로 파일을 한 번만 설정하면 이후 유지보수 부담도 거의 없어요."
+aliases:
+  - "/tech/2026-03-28-cloudflare-pages-hugo-배포-빌드-시간-초과-오류-무료-플랜-해결-실전-기/"
+
 ---
 
 Hugo 블로그 첫 배포, 20분 기다렸더니 "Build timeout" 에러가 뜬 적 있나요? 무료 플랜 쓰는 개발자라면 한 번쯤 겪는 상황이에요. 원인을 모르면 몇 시간씩 헤매게 되는 함정이기도 하고요.

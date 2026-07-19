@@ -19,6 +19,9 @@ faq:
     answer: "Unpredictable serverless billing on platforms like Vercel, Render, and Railway became a pain point after high-profile billing surprises went viral in late 2024, with modest SaaS apps seeing costs swing between $40–120/month. Hetzner's flat-rate pricing model eliminates that unpredictability, and mature tooling like Docker Compose makes self-hosted production setups accessible without requiring full-time infrastructure management."
   - question: "what causes out of memory errors on hetzner cx22 docker production server"
     answer: "The most common cause of OOM kills on a Hetzner CX22 production server is not application code but unconfigured database buffer settings and log accumulation inside long-running containers. Setting explicit memory limits in your Docker Compose file for each service, especially databases like PostgreSQL, is the primary defense against 2am OOM incidents."
+aliases:
+  - "/tech/2026-04-20-hetzner-cx22-docker-compose-nginx-ssl-memory-usage/"
+
 ---
 
 The Hetzner CX22 runs 12 production services for under €4/month. Most developers still pay 5-10x that on DigitalOcean or AWS for the same workload.

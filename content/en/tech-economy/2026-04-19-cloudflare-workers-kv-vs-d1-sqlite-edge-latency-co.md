@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare D1 has a 10GB per-database size limit, making it unsuitable for large datasets, and complex JOIN queries can push latency into the 80–120ms range. D1 also has less production hardening than KV, having only reached general availability in mid-2024, meaning edge cases are still being discovered in real-world workloads."
   - question: "is cloudflare KV eventually consistent and does it matter for saas"
     answer: "Yes, Cloudflare Workers KV uses an eventual consistency model, meaning writes may not be immediately visible across all edge locations. For transactional SaaS data such as user accounts, billing state, or inventory, this makes KV unsuitable, as stale reads can cause real data integrity problems rather than just minor inconveniences."
+aliases:
+  - "/tech/2026-04-19-cloudflare-workers-kv-vs-d1-sqlite-edge-latency-co/"
+
 ---
 
 The choice between Cloudflare Workers KV and D1 SQLite is quietly becoming one of the most consequential architectural decisions a small SaaS team can make. Get it wrong and you're chasing latency regressions at 2am. Get it right and your app feels instant to users across 300+ Cloudflare edge locations — without managing a single server.

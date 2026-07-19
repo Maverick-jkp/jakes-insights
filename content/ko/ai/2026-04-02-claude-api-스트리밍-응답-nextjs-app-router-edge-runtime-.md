@@ -19,6 +19,9 @@ faq:
     answer: "Nielsen Norman Group의 2024년 연구에 따르면 스트리밍 방식으로 AI 응답을 출력할 때 동일한 콘텐츠 대비 사용자 만족도가 최대 40% 높아지는 것으로 나타났어요. 사용자는 2~3초의 공백 대기보다 텍스트가 즉시 흘러나오는 방식을 명확히 선호하기 때문에 프로덕션 AI 기능에서 스트리밍은 사실상 기본 요구사항이 됐어요."
   - question: "Claude API 스트리밍 응답 Next.js App Router Edge Runtime 적용 삽질 후기 route handler 예제 코드"
     answer: "해당 글에서 소개한 핵심 패턴은 `export const runtime = 'edge'`를 선언한 Route Handler에서 `fetch`로 Claude API를 직접 호출한 뒤 `new Response(response.body, { headers: { 'Content-Type': 'text/event-stream' } })`로 반환하는 방식이에요. SDK를 배제하고 ReadableStream을 그대로 파이프하는 것이 Edge 환경에서 스트리밍이 동작하는 핵심 원리예요."
+aliases:
+  - "/tech/2026-04-02-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
+
 ---
 
 처음 세 가지를 한꺼번에 붙이면 일주일이면 될 줄 알았어요. 실제로는 3개월이 걸렸고, 중간에 두 번 갈아엎었어요.

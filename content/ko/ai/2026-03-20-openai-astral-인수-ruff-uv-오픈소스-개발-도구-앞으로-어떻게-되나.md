@@ -19,6 +19,9 @@ faq:
     answer: "black, flake8, isort 등 PSF와 커뮤니티가 관리하는 독립 도구들이 존재하며 여전히 안정적으로 유지되고 있어요. 다만 Rust 기반인 Ruff 대비 성능 격차가 크기 때문에 현실적으로 완전한 대체재를 찾기는 쉽지 않은 상황이에요."
   - question: "OpenAI Astral 인수 Ruff uv 오픈소스 개발 도구 Python 생태계 영향"
     answer: "가장 빠르게 성장하는 Python 개발 도구 두 개가 동시에 OpenAI 손에 들어가면서, Microsoft(pyright, GitHub Copilot)와 함께 두 빅테크가 Python 개발 환경의 양쪽 끝을 사실상 장악하는 구도가 형성되고 있어요. PSF나 독립 커뮤니티 프로젝트가 이 속도를 따라잡기 어렵다는 점에서 생태계 다양성 측면의 우려가 제기되고 있어요."
+aliases:
+  - "/tech/2026-03-20-openai-astral-인수-ruff-uv-오픈소스-개발-도구-앞으로-어떻게-되나/"
+
 ---
 
 매일 쓰는 Python 도구가 OpenAI 손에 넘어갔어요. 기쁘게 받아들여야 할까요, 아니면 경계해야 할까요?

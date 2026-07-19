@@ -19,6 +19,9 @@ faq:
     answer: "The '#CancelChatGPT' movement is a user-led backlash campaign that went mainstream within 48 hours of OpenAI announcing its formal AI agreement with the U.S. Department of War in late February 2026. Protesters spread across social platforms objecting to OpenAI's military partnership, particularly given the agency's politically charged rebranding from 'Department of Defense.' The movement reflects broader public anxiety about AI companies partnering with defense and surveillance institutions."
   - question: "how is the OpenAI Pentagon deal changing AI industry relationships with the military?"
     answer: "The OpenAI Department of War AI agreement controversy has exposed a structural divide between leading AI labs on how they handle government defense contracts. While OpenAI moved forward with formal military partnerships, Anthropic's public refusal of a comparable deal signals that major AI companies are now taking visibly different ethical stances. Analysts and enterprise buyers are already factoring this split into AI procurement decisions, suggesting the divide will have lasting competitive consequences."
+aliases:
+  - "/tech/2026-03-01-openai-department-of-war-ai-agreement-controversy/"
+
 ---
 
 OpenAI signed a formal agreement with the U.S. Department of Defense — recently rebranded the Department of War — in late February 2026. The backlash was immediate. The "#CancelChatGPT" movement went mainstream within 48 hours. Sam Altman entered damage-control mode. Anthropic publicly refused a comparable deal and watched its brand equity climb without spending a dollar on marketing.

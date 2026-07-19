@@ -19,6 +19,9 @@ faq:
     answer: "You can run your own accuracy comparison using LangChain's RecursiveCharacterTextSplitter with chunk_size set to 512 or 1024, storing vectors in separate Supabase pgvector tables and comparing cosine similarity scores against a set of test queries. Measuring retrieval precision on short factual queries versus summarization tasks will reveal which chunk size fits your specific workload."
   - question: "how does HNSW indexing in supabase pgvector affect chunk size choice"
     answer: "Supabase's pgvector HNSW indexing support, introduced in pgvector 0.7.x, reduced approximate nearest-neighbor query times by 30–60% on large collections, shifting the main bottleneck from query latency to retrieval quality. This improvement made chunk size a more critical engineering decision, since faster queries exposed how much fragmented or overly dense chunks were hurting accuracy."
+aliases:
+  - "/tech/2026-04-07-supabase-pgvector-embedding-search-chunk-size-512-/"
+
 ---
 
 Picked 512 tokens. Regretted it.

@@ -19,6 +19,9 @@ faq:
     answer: "Using Q4_K_M quantization in Ollama, the Llama 3.2 8B model requires approximately 4.7GB for model weights plus 0.5GB of Ollama runtime overhead, totaling around 5.2GB at inference. This leaves very little headroom on an 8GB system once macOS consumes its typical 2–3GB at idle."
   - question: "ollama llama3.2 3b vs 8b response speed M2 MacBook 8GB RAM which is faster for daily use"
     answer: "The ollama llama3.2 3b vs 8b response speed M2 MacBook 8GB RAM actual test shows the 3B model is more than twice as fast, delivering 38–42 tokens/sec compared to the 8B's 14–18 tokens/sec under real working conditions. For most daily tasks, the 3B's speed advantage combined with its lower memory footprint of roughly 2.3GB makes it the more reliable choice on an 8GB machine."
+aliases:
+  - "/tech/2026-03-18-ollama-llama32-3b-vs-8b-response-speed-m2-macbook-/"
+
 ---
 
 Running local LLMs on 8GB of RAM sounds straightforward until you're watching macOS grind through memory pressure warnings mid-response. That's the gap between benchmark conditions and actual daily use — and it's what most published comparisons quietly ignore.

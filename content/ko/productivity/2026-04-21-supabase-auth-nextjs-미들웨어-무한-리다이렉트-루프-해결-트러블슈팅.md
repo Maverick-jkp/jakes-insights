@@ -19,6 +19,9 @@ faq:
     answer: "Supabase Auth Next.js 미들웨어 무한 리다이렉트 루프 트러블슈팅을 할 때 가장 빠른 방법은 미들웨어 상단에 `console.log(request.nextUrl.pathname)`을 추가해 어느 경로에서 반복 실행되는지 먼저 확인하는 것입니다. 루프가 발생하는 경로가 특정되면, 해당 경로가 공개 경로 예외 처리에 포함됐는지와 `matcher` 설정이 올바른지 순서대로 점검하면 원인을 빠르게 좁힐 수 있습니다."
   - question: "Supabase ssr 패키지 middleware.ts와 server.ts 분리해야 하는 이유"
     answer: "`@supabase/ssr` 패키지를 사용할 때 `middleware.ts`와 `utils/supabase/server.ts`를 분리하지 않고 섞어 쓰면 쿠키 처리 로직이 충돌해 세션 갱신이 불안정해집니다. Supabase 공식 문서는 미들웨어 전용 클라이언트와 서버 컴포넌트·Route Handler용 클라이언트를 별도 파일로 관리하는 구조를 권장하며, 이 분리 구조를 지켜야 각 환경에서 쿠키가 올바르게 읽히고 쓰입니다."
+aliases:
+  - "/tech/2026-04-21-supabase-auth-nextjs-미들웨어-무한-리다이렉트-루프-해결-트러블슈팅/"
+
 ---
 
 배포 직전, 로그인 페이지가 무한으로 새로고침되는 걸 봤을 때의 그 느낌. 생각보다 많은 개발자가 겪는 문제예요. Supabase Auth를 Next.js 미들웨어와 함께 쓸 때 발생하는 무한 리다이렉트 루프는, App Router가 표준이 되면서 더 자주 보고되고 있어요.

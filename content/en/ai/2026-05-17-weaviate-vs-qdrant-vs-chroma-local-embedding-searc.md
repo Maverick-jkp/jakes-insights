@@ -19,6 +19,9 @@ faq:
     answer: "For local AI workflows using tools like Ollama or LM Studio on a consumer laptop, Qdrant is the recommended choice at 100K vector scale based on this benchmark, offering the best raw query latency with minimal memory overhead. Chroma remains the easiest to set up but requires careful indexing configuration to stay performant at this scale."
   - question: "do weaviate qdrant and chroma all support HNSW indexing"
     answer: "Yes, all three databases — Weaviate, Qdrant, and Chroma — support HNSW (Hierarchical Navigable Small World) indexing for approximate nearest neighbor search. However, their default HNSW configurations differ significantly, and those defaults have a major practical impact on query latency, especially on laptop hardware at 100K vector scale."
+aliases:
+  - "/tech/2026-05-17-weaviate-vs-qdrant-vs-chroma-local-embedding-searc/"
+
 ---
 
 Running vector search on a laptop sounds like a niche problem. It's not.

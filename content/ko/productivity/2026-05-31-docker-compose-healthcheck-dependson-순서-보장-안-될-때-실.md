@@ -19,6 +19,9 @@ faq:
     answer: "Docker Compose healthcheck depends_on 순서 보장 안 될 때 실제 원인과 해결법의 핵심은 depends_on 단독 사용이 컨테이너 시작 타이밍에만 의존하기 때문에 재실행 시 결과가 달라질 수 있다는 점입니다. Last9의 2025년 분석에 따르면 컨테이너 간 의존성 오류의 약 60%가 depends_on 단독 사용에서 비롯되며, condition: service_healthy와 healthcheck를 조합해 사용해야 일관된 시작 순서를 보장할 수 있습니다."
   - question: "docker compose 앱 컨테이너 db 연결 실패 재시도 설정 방법"
     answer: "Compose 레벨에서 healthcheck + condition: service_healthy로 시작 순서를 제어하는 것과 별개로, 애플리케이션 코드 내에 DB 연결 재시도 로직을 추가하는 이중 방어 구조가 가장 안정적입니다. Compose 설정만으로는 네트워크 지연이나 예외적인 초기화 지연을 완전히 커버하기 어렵기 때문에 두 방식을 함께 사용하는 것이 프로덕션 환경에 적합합니다."
+aliases:
+  - "/tech/2026-05-31-docker-compose-healthcheck-dependson-순서-보장-안-될-때-실/"
+
 ---
 
 `depends_on`을 분명히 설정했는데, DB가 준비되기도 전에 앱 컨테이너가 먼저 켜지고 연결 실패 에러가 떴어요. 그리고 `docker compose up`을 다시 실행했더니 이번엔 멀쩡히 동작하고요. 처음엔 단순한 타이밍 문제라고 넘겼다가 배포 환경에서 같은 증상으로 서비스 장애를 겪고 나서야 제대로 파고드는 경우가 많아요.

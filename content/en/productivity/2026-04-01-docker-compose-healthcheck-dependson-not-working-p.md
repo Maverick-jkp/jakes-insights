@@ -19,6 +19,9 @@ faq:
     answer: "In Docker, 'healthy' simply means the healthcheck command returned exit code 0 at some point — it's a container runtime concept with no awareness of Postgres internals. 'Ready' means Postgres has completed initialization and recovery and is fully accepting TCP connections, which can lag several seconds behind the 'healthy' status."
   - question: "pg_isready returns success but connection refused docker compose"
     answer: "This happens because the naive `pg_isready` invocation without explicit `-h localhost` flags may check the Unix socket instead of the TCP port your app is trying to connect on, returning a false positive. Specifying `pg_isready -h localhost -U youruser -d yourdb` forces a TCP check and eliminates this ambiguity, which is a key part of the docker compose healthcheck depends_on not working postgres ready race condition fix."
+aliases:
+  - "/tech/2026-04-01-docker-compose-healthcheck-dependson-not-working-p/"
+
 ---
 
 PostgreSQL starts. Docker says it's healthy. Your app crashes anyway.

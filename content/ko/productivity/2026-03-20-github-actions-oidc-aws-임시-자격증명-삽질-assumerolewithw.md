@@ -19,6 +19,9 @@ faq:
     answer: "`StringEquals`는 정확한 문자열 일치만 허용하며 와일드카드(`*`)가 작동하지 않습니다. 반면 `StringLike`는 와일드카드 패턴 매칭을 지원하므로 여러 브랜치나 경로를 유연하게 허용할 때 사용합니다. 와일드카드를 포함한 값을 `StringEquals`에 넣으면 조건이 절대 매칭되지 않아 403 에러가 발생합니다."
   - question: "GitHub Actions OIDC environment 사용할 때 신뢰 정책 sub 형식이 다른가요"
     answer: "네, 워크플로에서 `environment`를 지정하면 GitHub OIDC 토큰의 `sub` 클레임이 `repo:org/repo:environment:production` 형태로 생성됩니다. 브랜치 기반 조건인 `ref:refs/heads/main` 형식과는 완전히 다르기 때문에 신뢰 정책의 Condition도 실제 사용 방식에 맞게 별도로 작성해야 합니다. 환경 기반과 브랜치 기반을 혼용할 경우 `StringLike`와 와일드카드를 활용하되 보안 범위를 최소화하는 것이 좋습니다."
+aliases:
+  - "/tech/2026-03-20-github-actions-oidc-aws-임시-자격증명-삽질-assumerolewithw/"
+
 ---
 
 `AssumeRoleWithWebIdentity` 에러 앞에서 두 시간째 멈춰있다면, 이 글이 그 삽질을 끝내 줄 거예요.

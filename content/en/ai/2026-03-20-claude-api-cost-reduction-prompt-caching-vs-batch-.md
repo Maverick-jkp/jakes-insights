@@ -19,6 +19,9 @@ faq:
     answer: "No, the Batch API is not suitable for real-time or low-latency applications because it processes requests asynchronously and returns results within 24 hours. For interactive, real-time use cases, prompt caching is the only viable Claude cost-reduction option."
   - question: "claude api cost reduction prompt caching vs batch api real project comparison for document processing pipelines"
     answer: "For bulk document processing pipelines, the Batch API typically wins because it delivers a flat 50% discount on both input and output tokens across all requests. However, if documents share a large repeated system prompt or context, combining prompt caching with the Batch API can maximize savings further."
+aliases:
+  - "/tech/2026-03-20-claude-api-cost-reduction-prompt-caching-vs-batch-/"
+
 ---
 
 Last quarter, a production RAG pipeline cut its Claude API bill from $4,200/month to $890/month. Same workload. No model downgrade. Just two features most developers still haven't properly benchmarked side-by-side.

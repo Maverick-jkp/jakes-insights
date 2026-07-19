@@ -19,6 +19,9 @@ faq:
     answer: "Running Llama 3.2 3B through Ollama with Q4_K_M quantization uses approximately 2.0–2.2GB of RAM, which fits comfortably within an 8GB unified memory system. This leaves sufficient headroom to run other applications simultaneously without triggering memory pressure or swap usage."
   - question: "ollama llama3.2 3b vs 8b response speed Mac M2 8GB RAM benchmark which model is better for local AI development"
     answer: "For M2 Mac users with 8GB RAM, the best model depends on your use case — the 3B model is the safer default due to its lower memory footprint and 2–3× faster token generation speed, making it better suited for interactive, latency-sensitive workflows. The 8B model is worth the performance tradeoff only if your tasks require stronger reasoning and you can tolerate slower responses with limited RAM headroom."
+aliases:
+  - "/tech/2026-05-27-ollama-llama32-3b-vs-8b-response-speed-mac-m2-8gb-/"
+
 ---
 
 Running local LLMs on an M2 MacBook with 8GB unified memory isn't a theoretical exercise anymore — it's how thousands of developers are shipping AI-assisted tools in 2026. But the model size decision is where most people get it wrong.

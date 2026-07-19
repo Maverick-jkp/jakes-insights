@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Workers AI provides 10,000 neurons free daily, and Whisper Large consumes approximately 1,000 neurons per minute of audio, meaning developers get roughly 10 free minutes of transcription per day. This free tier is notably more generous than what AWS Transcribe offers and is often overlooked in direct pricing comparisons."
   - question: "should I use Cloudflare Workers AI or AWS Transcribe for my transcription pipeline"
     answer: "The right choice depends on your accuracy requirements, audio volume, and need for compliance features like speaker diarization or medical vocabulary, all of which AWS Transcribe supports but Cloudflare currently does not. For cost-sensitive, high-volume workloads that do not require enterprise features, Cloudflare Workers AI can reduce spend by 3–4x compared to AWS Transcribe at standard rates."
+aliases:
+  - "/tech/2026-05-19-cloudflare-workers-ai-whisper-transcription-cost-p/"
+
 ---
 
 Speech-to-text pricing just got messy.

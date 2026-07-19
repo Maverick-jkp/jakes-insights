@@ -19,6 +19,9 @@ faq:
     answer: "Hugo 블로그 자동 배포 시 빌드는 성공했지만 사이트가 바뀌지 않는다면 빌드 결과물이 올바른 브랜치에 push됐는지, GitHub Pages 설정에서 해당 브랜치를 소스로 지정했는지 확인해야 해요. GITHUB_TOKEN 권한이 부족하거나 브랜치 보호 규칙으로 인해 push 단계에서 403 오류가 발생하는 경우도 많으니 워크플로 로그의 git push 단계를 중점적으로 살펴보세요."
   - question: "Hugo GitHub Actions git submodule 테마 빌드 실패 해결"
     answer: "Hugo 블로그 자동 배포에서 테마를 Git Submodule로 관리할 때 checkout 단계에 'submodules: true' 옵션을 빠뜨리면 테마 디렉토리가 비어서 빌드가 실패해요. actions/checkout@v4 사용 시 with 옵션에 'submodules: true'와 'fetch-depth: 0'을 함께 추가하면 정상적으로 테마를 포함해 빌드할 수 있어요."
+aliases:
+  - "/tech/2026-04-01-github-actions-cron-스케줄-실제-실행-안될-때-원인-분석-hugo-블로그-/"
+
 ---
 
 Hugo 블로그 정성껏 만들었는데, cron 스케줄 설정해놓고 아무것도 안 일어나본 적 있죠? 설정은 분명 맞는 것 같은데 배포가 안 된다면, 원인은 생각보다 여러 곳에 숨어 있어요.

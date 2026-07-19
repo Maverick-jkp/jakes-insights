@@ -19,6 +19,9 @@ faq:
     answer: "A two-second exit with no error output typically means the container's main process completed successfully from Docker's perspective — the runner registered but found no persistent run loop to enter. The correct pattern requires `run.sh` as the ENTRYPOINT in your Dockerfile, not just `config.sh`, since `run.sh` is the blocking listener that keeps the container alive. If fixing the entrypoint doesn't help, check that your registration token and required environment variables are correctly passed to the container."
   - question: "how to keep github actions self-hosted runner container running in Docker"
     answer: "To keep a self-hosted runner container running, your Dockerfile ENTRYPOINT must call `run.sh`, which is the persistent listener loop that waits for and processes workflow jobs. Using `config.sh` alone or as a CMD instruction will cause the container to exit immediately after registration because Docker terminates when PID 1 exits. GitHub Actions documentation specifies this ENTRYPOINT pattern as a requirement, not a recommendation, particularly for runner versions v2.314 and later."
+aliases:
+  - "/tech/2026-05-11-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 The runner registers fine. The workflow triggers. Then nothing — the container exits in under two seconds, no logs, no error output. If you've spent an afternoon debugging this exact scenario, you're not alone. The **github actions self-hosted runner docker container exits immediately fix** is one of the most searched CI/CD troubleshooting queries in 2026, and the root cause is almost never what you'd expect.

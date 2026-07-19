@@ -19,6 +19,9 @@ faq:
     answer: "Any column referenced directly in your RLS policy USING clause, such as user_id, must have its own index or Postgres may perform a sequential scan regardless of other indexes on the table. The pg_explain output will show a Filter row with high row estimates as a clear signal that the policy column needs indexing."
   - question: "how much performance overhead does enabling RLS add in Supabase Postgres"
     answer: "RLS itself has minimal overhead when policies are written correctly and supporting indexes exist, but poorly optimized policies can turn a 4ms query into one exceeding 1,800ms in production. The key factor is whether the Postgres query planner can use indexes to satisfy the policy predicate rather than scanning the entire table."
+aliases:
+  - "/tech/2026-04-21-supabase-row-level-security-policy-performance-slo/"
+
 ---
 
 RLS looked harmless on the dashboard. Then a production query went from 4ms to 1,800ms overnight — and `pg_explain` showed exactly why.

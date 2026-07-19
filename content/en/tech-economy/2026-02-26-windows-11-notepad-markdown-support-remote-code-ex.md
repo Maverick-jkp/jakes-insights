@@ -19,6 +19,9 @@ faq:
     answer: "Microsoft released a fix for CVE-2026-20841 as part of its February 2026 patch cycle, and applying the latest Windows 11 updates will remediate the vulnerability. Enterprise environments should prioritize patch deployment, as rollout lag means a significant number of systems may still be exposed even after the official fix was made available."
   - question: "why did adding Markdown to Notepad cause a security vulnerability"
     answer: "Notepad historically handled only plain text, meaning it had a minimal attack surface, but adding Markdown rendering — particularly support for images — turned it into a content renderer capable of processing external or complex inputs. Security researchers and analysts note that Microsoft's feature additions outpaced the corresponding security review process, which is a recognized pattern where upgrading simple tools with rich content rendering creates unexpected and serious attack vectors."
+aliases:
+  - "/tech/2026-02-26-windows-11-notepad-markdown-support-remote-code-ex/"
+
 ---
 
 A text editor shipped a remote code execution vulnerability. Let that sink in.

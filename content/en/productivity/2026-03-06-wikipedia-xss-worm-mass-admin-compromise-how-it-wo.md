@@ -19,6 +19,9 @@ faq:
     answer: "Yes, as demonstrated by the Wikipedia XSS worm mass admin compromise, attackers can fully hijack admin sessions without phishing, brute force, or credential theft of any kind. The exploit lived entirely inside the browser, using malicious JavaScript to take over authenticated sessions as admins naturally browsed the platform. This makes stored XSS particularly dangerous on collaborative platforms where admin activity is frequent and content is user-generated."
   - question: "why are collaborative platforms like Wikipedia vulnerable to XSS worms"
     answer: "Collaborative platforms face a fundamental security tension where their core feature — allowing anyone to contribute content — is also their primary attack surface for XSS injection. MediaWiki uses content sanitization to strip raw HTML, but edge cases in template rendering, gadget systems, and extension code have historically introduced parser bypass vulnerabilities. Once a stored XSS payload slips through sanitization, the platform's own content distribution mechanism becomes the worm's propagation engine."
+aliases:
+  - "/tech/2026-03-06-wikipedia-xss-worm-mass-admin-compromise-how-it-wo/"
+
 ---
 
 A self-propagating XSS worm tore through Wikipedia in early 2026, forcing the platform into read-only mode after admin accounts fell faster than moderators could respond. No credentials were phished. No brute-force attack. The exploit lived entirely inside the browser — and that's exactly what made it so effective.

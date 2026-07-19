@@ -19,6 +19,9 @@ faq:
     answer: "service_role 키는 RLS를 완전히 우회하기 때문에 재귀 오류를 즉시 회피할 수 있지만, 클라이언트에 절대 노출되어서는 안 되며 반드시 서버 사이드 환경에서만 사용해야 합니다. 관리자 전용 서버 작업처럼 제한된 목적에는 적합하지만, 일반 사용자 데이터 접근에 이 방식을 사용하면 RLS 자체가 무력화되므로 Security Definer 함수 방식을 먼저 검토하는 것이 보안상 올바른 선택입니다."
   - question: "Supabase RLS 정책 변경 후 프로덕션 배포했는데 여전히 오류 나는 이유"
     answer: "RLS 정책을 수정하고 배포해도 Next.js 14의 fetch 캐시나 unstable_cache에 이전 쿼리 결과가 남아 있으면, 캐시가 만료될 때까지 변경된 정책이 실제로 평가되지 않아 오류가 지속되거나 반대로 수정 전 오류가 잠시 사라진 것처럼 보일 수 있습니다. 배포 직후에는 해당 캐시를 강제로 무효화하거나 force-dynamic 설정으로 캐시를 완전히 해제한 엔드포인트에서 정책 동작을 먼저 검증하는 것이 권장됩니다."
+aliases:
+  - "/tech/2026-05-27-nextjs-14-app-router-supabase-rls-정책-무한-재귀-오류-디버깅-/"
+
 ---
 
 배포 직전에 콘솔에 `infinite recursion detected in policy for relation` 오류가 떴다면? 멘붕이죠. Next.js 14 App Router와 Supabase RLS가 얽힌 이 오류는 2026년 현재도 풀스택 개발자들이 가장 자주 마주치는 장애 중 하나예요. Supabase GitHub Discussions 기준으로 2025년 한 해만 해당 키워드로 올라온 이슈가 340건을 넘겼거든요. 단순 설정 실수로 보이지만, App Router의 서버 컴포넌트 캐싱 구조와 얽히면 재현 자체가 힘들 정도로 복잡해져요.

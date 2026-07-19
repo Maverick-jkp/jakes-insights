@@ -19,6 +19,9 @@ faq:
     answer: "No, Vercel Edge Runtime does not support Node.js built-ins or native modules, and enforces a hard 4MB code size limit per function. This restricted API surface is intentional, as it enables faster V8 isolate recycling and lower cold start latency compared to more permissive runtimes like Supabase Edge Functions."
   - question: "how do I accurately measure cold start latency for edge functions in production"
     answer: "Accurate cold start measurement requires real invocation patterns rather than synthetic benchmarks, accounting for variables like geographic region, payload size, and invocation frequency. Community projects like `edge-runtime-benchmarks` on GitHub provide real-world telemetry data, and replicating their methodology — measuring first-invocation latency across multiple regions — gives results closer to actual production p99 numbers."
+aliases:
+  - "/tech/2026-04-20-supabase-edge-functions-cold-start-latency-real-me/"
+
 ---
 
 Cold starts aren't a minor inconvenience. For latency-sensitive APIs, a 400ms spike on first invocation can tank your p99 numbers and break SLA commitments.

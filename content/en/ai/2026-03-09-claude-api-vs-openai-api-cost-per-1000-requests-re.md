@@ -19,6 +19,9 @@ faq:
     answer: "The right choice depends on your input-to-output token ratio, latency needs, and whether your workload can be processed asynchronously. When evaluating the claude api vs openai api cost per 1000 requests real benchmark small startup 2025 scenario, Claude wins for real-time input-heavy tasks, while OpenAI's batch API discount makes it competitive for non-time-sensitive workloads."
   - question: "how much can switching from openai to claude save a startup per month"
     answer: "Startups spending $3,000–$8,000 per month on LLM inference can typically save 20–60% by switching to Claude for input-heavy workloads, which translates to hundreds or thousands of dollars monthly. One real example cited in startup benchmarks shows approximately $600/month in savings just from lower input token pricing at 1,000 requests per day."
+aliases:
+  - "/tech/2026-03-09-claude-api-vs-openai-api-cost-per-1000-requests-re/"
+
 ---
 
 Six months ago, a small document-processing startup got their OpenAI bill. $4,200 for the month. User count hadn't changed. Token usage had crept up as they added longer context windows to improve accuracy. That bill triggered a hard conversation: was GPT-4o actually worth it, or had they just defaulted to the most familiar option?

@@ -19,6 +19,9 @@ faq:
     answer: "Tools like Socket.dev, Aikido Security, and pnpm's built-in lockfile integrity checks each address different parts of the npm supply chain threat model, but none of them replace foundational security controls. Socket.dev focuses on detecting malicious package behavior, Aikido provides broader supply chain monitoring, and lockfile integrity checks prevent silent dependency tampering. Following a comprehensive NPM supply chain attack prevention checklist for open source maintainers — covering tokens, pipeline signing, and dependency hygiene — is still required alongside any automated tooling."
   - question: "how do npm supply chain attacks start — stolen tokens or malicious code"
     answer: "Token compromise, not direct package code tampering, is the leading initial attack vector for npm supply chain breaches. Tokens are most commonly stolen from CI environments or dotfiles accidentally committed to public repositories, giving attackers publish rights without ever needing to touch the source code directly. Once a valid token is obtained, attackers can inject malicious code into a release or, as seen in 2025, use automated worms to propagate across every package the compromised account has publish access to."
+aliases:
+  - "/tech/2026-05-12-npm-supply-chain-attack-prevention-checklist-for-o/"
+
 ---
 
 The April 2025 npm worm didn't ask for permission. It found a compromised token, injected malicious code, mapped the account's publish access across the dependency graph, and spread to 160+ packages — including TanStack and Mistral's npm presence — faster than any human incident response team could react.

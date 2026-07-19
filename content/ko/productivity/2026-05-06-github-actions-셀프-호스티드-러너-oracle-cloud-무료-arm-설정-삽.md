@@ -19,6 +19,9 @@ faq:
     answer: "ARM64 환경에서 `linux/amd64`로 고정된 Docker 베이스 이미지를 사용하는 Action은 QEMU 에뮬레이션으로 느리게 돌아가거나 아예 실패할 수 있습니다. 해결책은 Dockerfile에서 `--platform linux/arm64`를 명시하거나, multi-arch를 지원하는 이미지로 교체하는 것입니다. 서드파티 Action 사용 시에도 ARM64 지원 여부를 미리 확인하는 것이 좋습니다."
   - question: "GitHub Actions 무료 플랜 2000분 초과 시 셀프 호스티드 러너 비용 비교"
     answer: "GitHub Actions 기본 제공 Linux 러너는 월 2,000분 초과 시 분당 $0.008이 과금되어, 하루 100분씩 30일 사용하면 월 $24, 연간 $288에 달합니다. GitHub Actions 셀프 호스티드 러너 Oracle Cloud 무료 ARM 설정 삽질 기록에 따르면, Oracle Cloud의 Ampere A1 인스턴스(4 OCPU, 24GB RAM)를 활용하면 빌드 비용을 실질적으로 $0에 수렴시킬 수 있습니다. 다만 초기 설정 시간과 보안 관리 등 운영 유지 비용은 별도로 고려해야 합니다."
+aliases:
+  - "/tech/2026-05-06-github-actions-셀프-호스티드-러너-oracle-cloud-무료-arm-설정-삽/"
+
 ---
 
 월 $0. 이 숫자 하나로 많은 개발자가 Oracle Cloud Free Tier ARM 인스턴스에 눈독을 들이기 시작했어요.

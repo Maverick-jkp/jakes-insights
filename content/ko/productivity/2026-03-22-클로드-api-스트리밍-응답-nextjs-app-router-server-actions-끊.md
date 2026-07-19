@@ -19,6 +19,9 @@ faq:
     answer: "app/api/chat/route.ts에서 Anthropic SDK의 client.messages.stream()으로 스트림을 생성한 뒤, content_block_delta 이벤트의 텍스트 청크를 ReadableStream으로 감싸 Response 객체로 반환하면 됩니다. 클라이언트에서는 fetch 호출 후 response.body.getReader()로 스트림을 읽으면 청크 단위로 실시간 수신이 가능합니다."
   - question: "클로드 API 스트리밍 응답 Next.js App Router Server Actions 끊김 현상 해결 시 TTFB 얼마나 줄어드나"
     answer: "클로드 API 스트리밍 응답 Next.js App Router Server Actions 끊김 현상을 Route Handler 전환으로 해결하면, 첫 청크까지 걸리는 시간(TTFB)이 평균 6~10초에서 0.8~1.2초로 단축되는 사례가 다수 보고되고 있습니다. 이는 JSON 직렬화 버퍼링 단계가 제거되어 Claude API의 SSE 청크가 클라이언트에 즉시 전달되기 때문입니다."
+aliases:
+  - "/tech/2026-03-22-클로드-api-스트리밍-응답-nextjs-app-router-server-actions-끊/"
+
 ---
 
 클로드 API를 Next.js App Router에 붙이고 나서 첫 응답까지 8~12초를 기다린 적 있으세요? Server Actions 위에서 스트리밍을 시도했더니 청크가 뚝뚝 끊기거나, 아예 전체 응답이 다 완성된 뒤에야 한 번에 화면에 뿌려지는 경험이요. 2026년 현재 Next.js 15 + Anthropic Claude API 조합을 쓰는 팀의 절반 이상이 이 문제로 시간을 날리고 있어요.

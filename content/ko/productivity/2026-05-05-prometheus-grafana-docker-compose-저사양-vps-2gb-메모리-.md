@@ -19,6 +19,9 @@ faq:
     answer: "기본값인 15d를 7d로 줄이면 TSDB 인덱스 크기와 디스크 I/O가 절반 수준으로 감소하고, 그에 따라 메모리 사용량도 눈에 띄게 줄어요. 2GB VPS에서 기본값 15d를 그대로 두면 Prometheus 단독으로 600–800MB를 차지해서 Grafana가 뜨는 순간 OOM이 발생하는 패턴이 반복돼요."
   - question: "Docker Compose 모니터링 스택 2GB RAM 실제 메모리 사용량"
     answer: "최적화 설정 기준으로 Prometheus 350–450MB, Grafana 180–220MB, Node Exporter 20–30MB, Docker 데몬과 커널 300–400MB로 총 850MB–1.1GB 수준이에요. 실제 서비스 컨테이너가 500MB를 추가로 사용해도 전체가 1.6GB 수준이라 스왑 없이도 운영 가능하지만, 보험용 스왑 512MB는 걸어두는 게 안전해요."
+aliases:
+  - "/tech/2026-05-05-prometheus-grafana-docker-compose-저사양-vps-2gb-메모리-/"
+
 ---
 
 아침에 일어났더니 Grafana가 죽어있어요. Prometheus도 조용히 사라져 있고요. 로그 확인하면 딱 이 메시지예요. `OOM Killed`. 저도 세 번 겪었어요.

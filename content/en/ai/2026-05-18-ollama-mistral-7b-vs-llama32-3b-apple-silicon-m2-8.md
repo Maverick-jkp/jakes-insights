@@ -19,6 +19,9 @@ faq:
     answer: "Mistral 7B's larger parameter count generally produces higher quality outputs for code generation and complex instruction-following tasks compared to Llama 3.2 3B. However, when comparing ollama mistral 7b vs llama3.2 3b on apple silicon m2 8gb ram, the inference speed and memory trade-offs often make Llama 3.2 3B the more practical choice unless output quality is the top priority."
   - question: "how fast is ollama on apple silicon m2 macbook air"
     answer: "Ollama's performance on Apple Silicon M2 improved significantly with v0.3 in mid-2025, which brought more consistent GPU layer offloading via Apple's Metal Performance Shaders backend. On an 8GB M2 MacBook Air, smaller models like Llama 3.2 3B can reach 55–75 tokens per second, while larger models like Mistral 7B run closer to 25–40 tokens per second."
+aliases:
+  - "/tech/2026-05-18-ollama-mistral-7b-vs-llama32-3b-apple-silicon-m2-8/"
+
 ---
 
 Running local LLMs on an M2 MacBook with 8GB unified memory used to feel like a compromise. It isn't anymore — but only if you pick the right model.

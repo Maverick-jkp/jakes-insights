@@ -19,6 +19,9 @@ faq:
     answer: "Use prompt caching when your requests repeatedly send the same large system prompt, document, or conversation history, since cache reads cost 90% less than standard input pricing. Use the Batch API when your workload is asynchronous and latency-insensitive, such as nightly data pipelines or bulk document processing, where the flat 50% discount applies regardless of whether context is repeated."
   - question: "how much does claude 3.5 sonnet prompt caching cost per million tokens"
     answer: "On Claude 3.5 Sonnet, writing to the prompt cache costs $0.30 per million tokens and reading from the cache costs $0.03 per million tokens, compared to the standard input price of $3.00 per million tokens. This makes prompt caching particularly valuable for large, frequently reused system prompts, effectively making repeated context nearly free after the initial cache write."
+aliases:
+  - "/tech/2026-05-11-claude-api-cost-optimization-prompt-caching-vs-bat/"
+
 ---
 
 API bills have a way of ambushing you. One week you're prototyping, the next you're staring at a $4,000 invoice wondering where it went wrong.

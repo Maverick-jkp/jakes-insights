@@ -19,6 +19,9 @@ faq:
     answer: "Content-Type 헤더에 charset=utf-8을 명시하지 않으면 브라우저가 인코딩 방식을 자체적으로 추측하게 되어 잘못된 인코딩으로 한국어를 렌더링할 수 있습니다. Claude API 스트리밍 응답을 Next.js App Router Edge Runtime에서 한국어 깨짐 없이 처리하려면 반드시 text/event-stream; charset=utf-8 형태로 헤더를 설정해야 합니다."
   - question: "Vercel Edge Runtime TransformStream TextDecoderStream 어떤 걸 써야 하나"
     answer: "일반적인 스트리밍 상황에서는 Web Standard API인 TextDecoderStream이 코드가 단순하고 Edge Runtime과 완전히 호환되어 권장됩니다. 다만 청크를 직접 파싱하거나 변환 로직이 복잡한 경우에는 TransformStream과 수동 디코딩 조합이 더 유연하게 대응할 수 있으며, Vercel Edge Network 기준으로 두 방법 모두 안정적으로 동작합니다."
+aliases:
+  - "/tech/2026-03-09-claude-api-스트리밍-응답-nextjs-app-router-edge-runtime-/"
+
 ---
 
 Next.js App Router로 Claude API 스트리밍을 붙였는데, 한국어가 `?`나 `▯`로 깨져서 나왔어요. 로컬에서는 멀쩡한데 Vercel에 배포하면 터지는 그 패턴, 맞죠? 원인은 생각보다 명확해요. Edge Runtime의 인코딩 처리 방식 때문이에요.

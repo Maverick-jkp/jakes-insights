@@ -19,6 +19,9 @@ faq:
     answer: "By default, Grafana ships with alerting workers, image rendering daemons, and plugin managers all enabled, which pushes its memory usage to around 250MB at baseline. Disabling these unnecessary background processes through environment variables can drop that floor to approximately 80MB, making it much more suitable for low-memory hosts. For a basic dashboard setup on a 1-2GB VPS, none of those default background features are typically required."
   - question: "how to set memory limits for prometheus and grafana in docker compose"
     answer: "In your Docker Compose file, you can add a mem_limit value under each service definition to cap how much RAM each container is allowed to consume. This prevents a single runaway container, such as an untuned Prometheus instance during a scrape spike, from exhausting host memory and killing other services. Setting these limits is considered a critical safety measure when running a monitoring stack on a 2GB VPS alongside other applications."
+aliases:
+  - "/tech/2026-04-02-prometheus-grafana-docker-compose-low-memory-under/"
+
 ---
 
 Running a full observability stack on a $6/month VPS sounds reckless. It isn't — if you know which knobs to turn.

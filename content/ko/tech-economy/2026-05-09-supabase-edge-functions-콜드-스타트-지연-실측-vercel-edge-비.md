@@ -19,6 +19,9 @@ faq:
     answer: "네, 소규모 SaaS처럼 트래픽이 간헐적인 환경에서는 함수가 일정 시간 호출되지 않으면 인스턴스가 종료되어 콜드 스타트 빈도가 높아집니다. 특히 새벽 비활성 구간 후 오전에 요청이 몰리거나 웹훅 기반으로 간헐 실행되는 패턴일수록 체감 지연이 커질 수 있어요."
   - question: "Supabase Edge Functions Vercel Edge 무료 티어 요청 한도 차이"
     answer: "Supabase Edge Functions 콜드 스타트 지연 실측 Vercel Edge 비교 자료 기준으로, Supabase 무료 티어는 월 500만 건, Vercel Edge는 월 100만 건의 요청을 처리할 수 있습니다. 다만 두 플랫폼 모두 트래픽이 간헐적일수록 콜드 스타트 빈도가 높아져 단순 요청 수 외에 실제 체감 성능도 함께 고려해야 합니다."
+aliases:
+  - "/tech/2026-05-09-supabase-edge-functions-콜드-스타트-지연-실측-vercel-edge-비/"
+
 ---
 
 첫 번째 API 호출이 700ms를 넘겼어요. 배포 직후 발생한 일이고, 원인은 콜드 스타트였어요.

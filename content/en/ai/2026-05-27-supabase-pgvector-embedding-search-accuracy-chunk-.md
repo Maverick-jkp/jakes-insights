@@ -19,6 +19,9 @@ faq:
     answer: "Supabase's native pgvector cosine distance operator (`<=>`) makes it straightforward to benchmark different overlap configurations side-by-side within the same PostgreSQL instance, without requiring external vector database infrastructure. You can index both chunk sets using `ivfflat` or `hnsw` and run identical queries against each to directly compare retrieval precision."
   - question: "why does RAG retrieval return incomplete answers even when search looks accurate"
     answer: "A common cause is poor chunking strategy — specifically, key concepts that span two consecutive chunks where neither chunk alone contains enough semantic signal to surface the relevant content. Increasing chunk overlap (e.g., from 50 to 200 tokens) ensures that boundary context is repeated across chunks, reducing the chance that a critical idea is split and lost during vector search retrieval."
+aliases:
+  - "/tech/2026-05-27-supabase-pgvector-embedding-search-accuracy-chunk-/"
+
 ---
 
 Chunk overlap is one of those RAG parameters that looks trivial on paper but quietly wrecks retrieval accuracy when you get it wrong. A controlled experiment comparing 50-token vs 200-token chunk overlap in a Supabase pgvector embedding search pipeline shows retrieval precision differences of 15–30 percentage points depending on document type — a gap wide enough to matter in production.

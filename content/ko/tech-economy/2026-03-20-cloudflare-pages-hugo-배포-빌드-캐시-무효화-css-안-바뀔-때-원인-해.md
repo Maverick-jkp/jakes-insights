@@ -19,6 +19,9 @@ faq:
     answer: "Hugo 템플릿에서 `{{ $style := resources.Get 'css/main.css' | fingerprint }}`와 같이 `fingerprint` 함수를 사용하면 파일 내용이 바뀔 때마다 URL 해시값도 자동으로 변경돼요. 브라우저는 URL이 달라지면 항상 새 파일을 요청하기 때문에, 브라우저 캐시로 인해 CSS 변경사항이 반영 안 되는 문제를 근본적으로 해결할 수 있어요."
   - question: "Hugo 배포 CSS 문제 가장 빠르게 해결하는 조합"
     answer: "빌드 명령어를 `hugo --gc --minify`로 설정하고, Cloudflare Pages의 자동 캐시 퍼지가 정상 작동하는지 확인하는 것이 가장 현실적인 조합이에요. 이 두 가지만 적용해도 대부분의 CSS 안 바뀌는 현상은 해결되며, 브라우저 캐시 문제까지 잡으려면 Hugo의 fingerprint 기능을 추가로 적용하면 돼요."
+aliases:
+  - "/tech/2026-03-20-cloudflare-pages-hugo-배포-빌드-캐시-무효화-css-안-바뀔-때-원인-해/"
+
 ---
 
 Hugo로 스타일 수정했는데 배포하고 나서도 화면이 그대로인 거, 맞죠? 원인은 대부분 하나예요 — 캐시가 이전 파일을 붙잡고 있는 거예요.

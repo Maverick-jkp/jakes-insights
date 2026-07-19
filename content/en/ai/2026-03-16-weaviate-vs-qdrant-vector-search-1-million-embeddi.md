@@ -19,6 +19,9 @@ faq:
     answer: "A single-node deployment running 1 million embeddings can run on approximately a $200/month VPS or an AWS m5.2xlarge, making the database choice a significant long-term infrastructure decision. Teams that pick the wrong database at this scale risk production latency issues that can translate into roughly $40,000 per year in unnecessary infrastructure costs when scaling up."
   - question: "why is qdrant faster than weaviate vector search"
     answer: "Qdrant was built from the ground up in Rust with low latency as its primary design constraint, while Weaviate originated as a knowledge graph in 2019 and evolved into a vector search engine written in Go. The Rust vs. Go architectural difference, combined with Qdrant's advanced quantization options, accounts for most of the measurable performance delta in benchmark testing."
+aliases:
+  - "/tech/2026-03-16-weaviate-vs-qdrant-vector-search-1-million-embeddi/"
+
 ---
 
 Picking the wrong vector database at scale doesn't just slow your queries — it tanks your entire inference pipeline. At 1 million embeddings on a single node, the performance gap between Weaviate and Qdrant stops being theoretical and starts showing up in production latency.

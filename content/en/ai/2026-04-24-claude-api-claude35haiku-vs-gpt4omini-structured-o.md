@@ -19,6 +19,9 @@ faq:
     answer: "According to this claude api claude-3-5-haiku vs gpt-4o-mini structured output json mode accuracy comparison, the pricing gap between the two models is now less than $0.50 per million tokens, making cost a secondary consideration. Developers are advised to base their model selection on accuracy and reliability requirements rather than price, since production failures from malformed JSON will quickly erase any cost savings."
   - question: "when should I use claude 3.5 haiku instead of gpt-4o mini for json extraction"
     answer: "Claude 3.5 Haiku is the stronger choice when you need prompt-driven flexibility, high language quality, or performance on reasoning-heavy multi-step tasks within agentic workflows. However, for strict schema-constrained extraction pipelines where invalid JSON is unacceptable, GPT-4o mini's native constrained decoding provides harder guarantees that Claude's instruction-following approach cannot match architecturally."
+aliases:
+  - "/tech/2026-04-24-claude-api-claude35haiku-vs-gpt4omini-structured-o/"
+
 ---
 
 Structured output failures in production cost real money. A malformed JSON response from a cheap model doesn't just break a parse — it breaks a pipeline, triggers a retry loop, and quietly inflates your API costs by 20-40% before you even notice.

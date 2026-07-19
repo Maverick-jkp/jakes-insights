@@ -19,6 +19,9 @@ faq:
     answer: "F-Droid, an alternative app store that distributes thousands of open-source Android apps, has stated that Google's mandatory developer identity verification policy is structurally incompatible with how it operates, since it does not collect developer identity information. If enforced, the policy could represent an existential threat to F-Droid's ability to continue distributing apps within the Android ecosystem."
   - question: "is Google Android developer registration policy similar to Apple App Store rules"
     answer: "Google's mandatory developer identity verification policy mirrors tighter developer account verification steps Apple introduced for the App Store in 2023-2024, but the backlash has been significantly stronger for Google. This is because Android, unlike iOS, was built on an open-source foundation and has always supported independent and alternative app distribution, making identity mandates a more fundamental shift for the platform."
+aliases:
+  - "/tech/2026-02-27-google-mandatory-android-developer-registration-op/"
+
 ---
 
 Google's mandatory Android developer registration policy has ignited one of the more pointed industry revolts of early 2026. The backlash isn't just developer noise — it signals a structural tension between platform control and the open ecosystem Android was built on.

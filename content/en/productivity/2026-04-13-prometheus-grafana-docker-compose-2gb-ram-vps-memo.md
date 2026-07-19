@@ -19,6 +19,9 @@ faq:
     answer: "The OOM killer typically targets Grafana and Prometheus on memory-constrained servers because their default Docker Compose configurations have no memory limits set, allowing them to consume all available RAM. Setting `mem_limit` in your Docker Compose file, reducing Prometheus retention size, and disabling Grafana's analytics reporting are the most effective fixes. These changes are part of a broader Prometheus Grafana Docker Compose 2GB RAM VPS memory OOM crash fix configuration approach that keeps the stack stable around the clock."
   - question: "does Grafana use a lot of memory in Docker"
     answer: "Yes, Grafana's Docker container typically uses 200–400MB of RAM depending on dashboard complexity, active plugins, and background processes like alerting evaluation. Features like analytics reporting and plugin auto-updates add an additional 50–120MB of background memory overhead that can be disabled to reduce usage. On a memory-constrained host such as a 2GB VPS, disabling these features is an important step in any Prometheus Grafana Docker Compose memory optimization."
+aliases:
+  - "/tech/2026-04-13-prometheus-grafana-docker-compose-2gb-ram-vps-memo/"
+
 ---
 
 The OOM killer fired at 3:47 AM. Grafana was gone. Prometheus held on for another six minutes, then it too vanished. The Docker Compose stack — the one managing production monitoring — had eaten itself alive on a $6/month VPS with 2GB RAM.

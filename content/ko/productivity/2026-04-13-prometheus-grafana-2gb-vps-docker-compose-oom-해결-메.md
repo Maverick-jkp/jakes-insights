@@ -19,6 +19,9 @@ faq:
     answer: "Prometheus Grafana 2GB VPS Docker Compose OOM 해결 메모리 최적화 설정 삽질 기록에 따르면, `grafana-image-renderer` 플러그인은 400~600MB를 추가로 점유해 Grafana 전체 메모리를 700~900MB까지 끌어올립니다. PDF 내보내기가 꼭 필요하지 않다면 해당 플러그인을 제거하는 것만으로 400MB 이상을 즉시 확보할 수 있습니다."
   - question: "Prometheus 대신 VictoriaMetrics 쓰면 메모리 얼마나 절약됨"
     answer: "VictoriaMetrics는 동일한 데이터 기준으로 Prometheus 대비 메모리를 절반 이하로 사용하는 대안입니다. 2GB VPS처럼 리소스가 제한된 환경에서 Prometheus의 메모리 최적화만으로 한계를 느낀다면 VictoriaMetrics로 교체하는 것이 근본적인 해결책이 될 수 있습니다."
+aliases:
+  - "/tech/2026-04-13-prometheus-grafana-2gb-vps-docker-compose-oom-해결-메/"
+
 ---
 
 RAM 2GB짜리 VPS에 모니터링 스택 올렸다가 서버가 통째로 뻗은 경험, 저만 있는 건 아닐 거예요. Prometheus + Grafana + Node Exporter를 Docker Compose로 올리면 얼핏 깔끔해 보이는데, 기본 설정 그대로 두면 메모리가 조용히 차오르다 OOM Killer가 프로세스를 통째로 날려버려요.

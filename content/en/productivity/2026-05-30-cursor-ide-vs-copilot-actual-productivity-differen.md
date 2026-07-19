@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Cursor was architecturally designed from the start to read your entire codebase rather than just the currently open file, which is a core distinction from how GitHub Copilot originally operated. This whole-codebase context is what enables Cursor's multi-file editing features and makes it particularly effective for refactoring and larger projects."
   - question: "github copilot vs cursor which is better for refactoring and test generation"
     answer: "Cursor holds a clear advantage for refactoring and test generation tasks, largely due to its Composer feature that handles multi-file edits within a single context window — something Copilot cannot match at the individual plan level. The productivity difference between the two tools is most pronounced on these architectural tasks and narrows considerably on routine, repetitive coding work."
+aliases:
+  - "/tech/2026-05-30-cursor-ide-vs-copilot-actual-productivity-differen/"
+
 ---
 
 Three months. Two tools. One honest accounting of where the productivity gains actually showed up — and where they didn't.

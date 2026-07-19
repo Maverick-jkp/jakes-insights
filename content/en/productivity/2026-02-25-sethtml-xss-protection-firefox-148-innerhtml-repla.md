@@ -19,6 +19,9 @@ faq:
     answer: "DOMPurify is a widely used JavaScript library that sanitizes HTML in userland, while setHTML() is a native browser API that performs sanitization at the platform level before DOM insertion. The native approach removes the dependency on a third-party library and ensures sanitization cannot be accidentally bypassed or left out of a build. setHTML() uses the standardized Sanitizer API spec, aiming to provide consistent, browser-enforced protection across implementations."
   - question: "how much does XSS cost companies and can new browser APIs like setHTML fix it"
     answer: "Cross-site scripting attacks cost organizations an estimated $4.6 billion annually according to Cybersecurity Ventures' 2025 Web Security Report, making it the top vulnerability class per OWASP's 2025 Top 10. Native APIs like setHTML() aim to remove an entire category of XSS vulnerability by making safe DOM manipulation the default rather than an optional practice. Historical precedent from Content-Security-Policy adoption suggests impact is real but gradual, with CSP-enabled sites seeing a 60% drop in XSS rates after its introduction."
+aliases:
+  - "/tech/2026-02-25-sethtml-xss-protection-firefox-148-innerhtml-repla/"
+
 ---
 
 Cross-site scripting attacks cost organizations an estimated $4.6 billion annually, according to Cybersecurity Ventures' 2025 Web Security Report. Firefox 148, released in February 2026, ships a native answer to one of the most persistent root causes: `innerHTML`. The new `setHTML()` API doesn't just patch a vulnerability. It rethinks how browsers should handle untrusted HTML at the API level, making safe DOM manipulation the default rather than an afterthought.

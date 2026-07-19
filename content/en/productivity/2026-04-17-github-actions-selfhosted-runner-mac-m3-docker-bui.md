@@ -19,6 +19,9 @@ faq:
     answer: "When using docker/build-push-action on ARM64 runners, cache keys must explicitly include the target platform (linux/arm64) to avoid collisions with AMD64 cache entries stored in the same registry. Without platform differentiation in the cache key, BuildKit may attempt to reuse incompatible cache layers and fall back to a full rebuild with no warning. Adding the platform as part of the cache-from and cache-to configuration arguments is the recommended fix."
   - question: "self-hosted mac runner docker build much slower than expected ci cache issue"
     answer: "If Docker builds on a self-hosted Mac M3 CI runner are taking 8 to 12 minutes longer than expected, the most likely cause is that Docker layer caching is silently failing rather than a performance issue with the hardware itself. M3 runners are fast for native ARM64 workloads, but misconfigured BuildKit settings or missing platform-specific cache keys cause full rebuilds on every run. Auditing the DOCKER_BUILDKIT environment variable and the cache-from/cache-to registry configuration is the recommended first debugging step."
+aliases:
+  - "/tech/2026-04-17-github-actions-selfhosted-runner-mac-m3-docker-bui/"
+
 ---
 
 Build pipelines don't lie. When Docker layer caching silently breaks on Apple Silicon self-hosted runners, you pay for it in minutes — sometimes 8 to 12 extra minutes per build — and the failure message rarely points you to the actual cause.

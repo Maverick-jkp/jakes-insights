@@ -19,6 +19,9 @@ faq:
     answer: "For enterprises and developers building on Claude, Anthropic's revised safety policy creates real uncertainty about what 'safety' means as a product guarantee going forward. The original Responsible Scaling Policy gave businesses a concrete, auditable reason to choose Claude over competitors, arguing Anthropic would not ship dangerous capabilities just to keep pace. With the competitive caveat now in place, that differentiator is weakened and buyers may need to reassess their assumptions about Claude's safety standards."
   - question: "is Anthropic still a safety focused AI company after the 2026 policy update"
     answer: "Anthropic's identity as a safety-first AI lab has been significantly complicated by its February 2026 policy revision, which critics argue subordinates safety timelines to competitive dynamics. The company was founded specifically on the premise that it would not rush deployments just because competitors did, a commitment now qualified by the new caveat. Whether Anthropic remains meaningfully more safety-focused than rivals is now an open question, with the burden of oversight shifting increasingly toward regulators and the public."
+aliases:
+  - "/tech/2026-02-25-anthropic-safety-pledge-dropped-ai-race-pressure/"
+
 ---
 
 Anthropic built its entire brand on being the "safety-first" AI lab. That brand just cracked.

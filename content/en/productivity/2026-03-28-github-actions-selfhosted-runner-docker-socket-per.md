@@ -19,6 +19,9 @@ faq:
     answer: "When you install the GitHub Actions runner on Ubuntu 22.04, the dedicated runner user (commonly named 'github-runner' or 'actions-runner') is not automatically added to the 'docker' group, even if Docker is already installed. You need to manually run 'sudo usermod -aG docker <runner-user>' and then restart the runner service for the permission change to apply."
   - question: "rootless docker github actions self-hosted runner socket path ubuntu"
     answer: "When running rootless Docker on Ubuntu 22.04, the daemon socket is not located at the default /var/run/docker.sock path but instead at a user-specific path like /run/user/<UID>/docker.sock. Most GitHub Actions self-hosted runner setup guides skip this configuration, so you need to explicitly set the DOCKER_HOST environment variable in your runner environment to point to the correct socket path."
+aliases:
+  - "/tech/2026-03-28-github-actions-selfhosted-runner-docker-socket-per/"
+
 ---
 
 The error hits mid-pipeline and kills your entire CI job: `permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock`. If you've set up a GitHub Actions self-hosted runner on Ubuntu 22.04 and tried running Docker-based jobs, you've almost certainly seen this. It's one of the most common failure points teams run into after migrating away from GitHub-hosted runners.

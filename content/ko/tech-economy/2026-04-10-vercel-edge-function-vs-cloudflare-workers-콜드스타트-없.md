@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 요청을 지원하고, CPU 시간은 요청당 10ms로 제한됩니다. 반면 Vercel Edge Function 무료 플랜은 월 50만 엣지 실행을 허용하므로, 트래픽 패턴이 일별로 고른지 월별로 집중되는지에 따라 비용 효율이 달라집니다."
   - question: "엣지 함수에서 jsonwebtoken 같은 npm 패키지 못 쓰는 이유"
     answer: "엣지 런타임은 완전한 Node.js 환경이 아니라 Web API 표준을 따르기 때문에, Node.js 내장 `crypto` 모듈에 의존하는 `jsonwebtoken` 같은 패키지는 그대로 동작하지 않습니다. 이 경우 Web Crypto API 기반의 대체 라이브러리로 교체하거나, Cloudflare Workers의 `nodejs_compat` 플래그를 활용하는 방식으로 리팩토링이 필요합니다."
+aliases:
+  - "/tech/2026-04-10-vercel-edge-function-vs-cloudflare-workers-콜드스타트-없/"
+
 ---
 
 엣지 함수를 처음 써본 개발자들이 공통으로 하는 말이 있어요. "콜드스타트가 없다고 했는데, 왜 첫 요청이 이렇게 느리죠?" Vercel Edge Function과 Cloudflare Workers는 둘 다 "콜드스타트 없음"을 내세우지만, 그 이유가 달라요. 같은 결론처럼 보여도 내부 구조가 다르면 실제 성능과 제약도 달라지는 셈이에요.

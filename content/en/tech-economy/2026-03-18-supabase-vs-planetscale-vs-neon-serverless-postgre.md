@@ -19,6 +19,9 @@ faq:
     answer: "PlanetScale is MySQL-compatible under the hood, powered by Vitess, and is not a PostgreSQL database — a critical distinction for teams whose stack assumes Postgres-compatible behavior or extensions. This is a key reason why including PlanetScale in a supabase vs planetscale vs neon serverless postgres cold start latency comparison 2025 requires careful framing, as its serverless driver runs over HTTP rather than TCP and targets edge runtimes like Cloudflare Workers."
   - question: "which serverless database should I use for Vercel edge functions in 2025"
     answer: "PlanetScale's serverless driver is specifically designed for edge environments like Vercel Edge Functions and Cloudflare Workers because it runs over HTTP rather than requiring a traditional TCP connection. However, if your project requires PostgreSQL compatibility, Neon is generally the recommended choice for edge workloads, as it also offers an HTTP-compatible driver and maintains a generous free tier."
+aliases:
+  - "/tech/2026-03-18-supabase-vs-planetscale-vs-neon-serverless-postgre/"
+
 ---
 
 Cold starts have quietly become the most argued-about metric in serverless database selection. Pick the wrong platform and your API's p99 latency looks like a network blip — or a full second of unexplained lag your users blame on "the internet."

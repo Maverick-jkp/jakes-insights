@@ -19,6 +19,9 @@ faq:
     answer: "For latency-sensitive, real-time applications like live preview generation, Cloudflare Workers AI is the stronger choice due to its edge architecture delivering sub-200ms inference times. However, if your application requires access to fine-tuned or niche models, Replicate's vast model catalog makes it the more practical option despite higher latency."
   - question: "what are the cold start times for replicate API image generation"
     answer: "Replicate's cold start times for image generation typically range from 800ms to 3 seconds, because models run inside Docker containers that must be spun up on GPU-backed cloud instances. This makes Replicate less suitable for use cases requiring consistent, low-latency responses compared to edge-based alternatives like Cloudflare Workers AI."
+aliases:
+  - "/tech/2026-03-19-cloudflare-workers-ai-vs-replicate-api-latency-cos/"
+
 ---
 
 Running image generation at scale means one decision towers above the rest: where does inference actually happen? Edge or cloud? Cloudflare Workers AI puts the compute milliseconds from your users. Replicate puts a massive model catalog at your fingertips. Both claims sound compelling until you look at the numbers.

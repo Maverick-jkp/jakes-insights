@@ -19,6 +19,9 @@ faq:
     answer: "Grafana's memory footprint can be significantly reduced by disabling unused plugins and setting GF_DATABASE_WAL=false when using the default SQLite database. Targeting around 150MB RSS for the Grafana container is achievable on constrained hosts with these configuration changes."
   - question: "victoriametrics vs prometheus low memory vps which is better 2025"
     answer: "VictoriaMetrics can reduce memory usage by 3–7x compared to a default Prometheus deployment, making it attractive for prometheus grafana docker compose single vps 1gb ram low memory tuning in 2025. However, it introduces additional operational complexity, so for simple setups scraping only a handful of targets, a properly tuned Prometheus configuration may be the more practical choice."
+aliases:
+  - "/tech/2026-05-16-prometheus-grafana-docker-compose-single-vps-1gb-r/"
+
 ---
 
 Most monitoring guides assume you have RAM to burn. A 1GB VPS doesn't.

@@ -19,6 +19,9 @@ faq:
     answer: "Node Exporter exposes over 1,000 metrics by default in 2026, but most use cases only require a fraction of those collectors. You can disable unused collectors using the --no-collector.<name> flag (e.g., --no-collector.wifi, --no-collector.infiniband) to reduce the number of active time series Prometheus has to store and index. Filtering collectors this way can cut memory pressure by 30–60% depending on your specific workload."
   - question: "can you run prometheus grafana node exporter on a 2gb vps without upgrading"
     answer: "Yes, engineers running this stack on $6–$12/month VPS instances from providers like DigitalOcean, Hetzner, and Vultr consistently report stable operation after tuning the default configuration. The key changes are applying Docker Compose memory limits, shortening TSDB retention periods, and reducing Node Exporter's active metric count. The prometheus node exporter docker compose 2gb vps high memory usage fix does not require a plan upgrade — it requires adjusting settings that are simply not optimized for constrained environments out of the box."
+aliases:
+  - "/tech/2026-04-05-prometheus-node-exporter-docker-compose-2gb-vps-hi/"
+
 ---
 
 Running Prometheus, Node Exporter, and Grafana on a 2GB VPS sounds reasonable until you watch free memory crater from 800MB to under 100MB within a few hours of standing up the stack. That's not a rare edge case. It's a predictable failure mode that hits almost every engineer who deploys this setup without touching the defaults first.

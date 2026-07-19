@@ -19,6 +19,9 @@ faq:
     answer: "Zig is a low-level systems language that offers C-level memory control without garbage collection, compiles to tiny binaries, and allows zero-overhead calls to C code. Bun originally used Zig because these characteristics made it ideal for building a high-performance JavaScript runtime that could squeeze maximum speed out of every operation."
   - question: "should teams running Bun in production worry about the Bun JavaScript runtime rewritten in Rust from Zig"
     answer: "Teams running Bun in production should not be alarmed by the Bun JavaScript runtime rewritten in Rust from Zig, as the migration is designed to improve long-term maintainability rather than change runtime behavior. The rewrite is expected to enhance stability and reduce low-level bugs, making production deployments more reliable over time."
+aliases:
+  - "/tech/2026-05-05-bun-javascript-runtime-rewritten-in-rust-from-zig-/"
+
 ---
 
 Bun launched in 2022 promising to be the fastest JavaScript runtime on the planet. It delivered — benchmarks showed Bun running server-side JavaScript 3x faster than Node.js in common HTTP workloads, and its npm install times were genuinely shocking. The foundation? Zig. A low-level systems language so raw and unforgiving that most developers haven't even heard of it.

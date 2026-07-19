@@ -19,6 +19,9 @@ faq:
     answer: "All three platforms — Fly.io, Render, and Railway — stop free tier machines during inactivity, so cold starts are a shared limitation across the board. The fly.io free tier cold start latency node.js express real benchmark data shows Fly.io falling in the 1.8–4.2 second range, making direct comparisons on identical criteria important before choosing a platform for user-facing projects."
   - question: "is fly.io free tier good enough for a production node.js app?"
     answer: "For hobby projects and low-traffic internal APIs, Fly.io's free tier is manageable if you implement a keep-alive strategy to reduce how often cold starts occur. For any user-facing product with real retention or SLA expectations, cold start latencies in the 2–4 second range are likely to hurt user experience and should push you toward a paid always-on configuration."
+aliases:
+  - "/tech/2026-03-13-flyio-free-tier-cold-start-latency-nodejs-express-/"
+
 ---
 
 Cold starts on Fly.io's free tier will cost you users. The number is roughly 3 seconds at median — and that's not a rounding error you can ignore.

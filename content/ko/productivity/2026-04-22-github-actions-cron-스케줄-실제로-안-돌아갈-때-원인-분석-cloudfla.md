@@ -19,6 +19,9 @@ faq:
     answer: "Workers용 API 토큰과 Pages용 API 토큰은 필요한 권한 스코프가 달라서, Workers용 토큰으로 Pages 배포를 시도하면 명확한 오류 없이 조용히 실패해요. Cloudflare 대시보드에서 API 토큰에 'Cloudflare Pages: Edit' 권한이 포함되어 있는지 반드시 확인해야 해요."
   - question: "GitHub Actions cron 표현식 한국 시간으로 설정하면 안 되는 이유"
     answer: "GitHub Actions의 cron 표현식은 UTC 기준으로 동작하기 때문에 한국 시간(KST)을 그대로 입력하면 의도한 시간보다 9시간 늦게 실행돼요. 예를 들어 한국 시간 오전 9시에 실행하려면 UTC 기준인 '0 0 * * *'으로 설정해야 해요."
+aliases:
+  - "/tech/2026-04-22-github-actions-cron-스케줄-실제로-안-돌아갈-때-원인-분석-cloudfla/"
+
 ---
 
 GitHub Actions cron 설정했는데 안 돌아가죠? yml 문법은 멀쩡한데 워크플로우가 그냥 조용히 죽어있는 상황, 생각보다 훨씬 흔해요. Cloudflare Pages 배포까지 연동해놨다면 원인이 두 레이어에 걸쳐 있어서 진단이 더 복잡해지고요.

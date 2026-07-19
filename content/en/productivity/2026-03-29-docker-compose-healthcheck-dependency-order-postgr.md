@@ -19,6 +19,9 @@ faq:
     answer: "Docker Compose's built-in healthcheck with `condition: service_healthy` is generally preferred over wrapper scripts like `wait-for-it.sh` for production environments. Wrapper scripts are a valid fallback but add maintenance overhead and require modifying your container's entrypoint. Proper healthcheck configuration is more declarative, integrates natively with Compose's dependency ordering, and is easier to maintain long-term."
   - question: "how to fix postgres not ready connection refused docker compose production"
     answer: "The root cause is that `depends_on` without a health condition starts your app container before Postgres finishes initializing. The docker compose healthcheck dependency order postgres not ready fix production solution is to define a `healthcheck` on your Postgres service using `pg_isready` and set `condition: service_healthy` in your app's `depends_on` block. You should also adjust `start_period` and `retries` values to account for slower initialization times in real production environments."
+aliases:
+  - "/tech/2026-03-29-docker-compose-healthcheck-dependency-order-postgr/"
+
 ---
 
 Your container starts. Postgres is "up." Your app crashes anyway.

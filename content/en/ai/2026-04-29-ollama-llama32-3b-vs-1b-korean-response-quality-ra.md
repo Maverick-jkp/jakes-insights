@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 has limited but present Korean language support — Meta's official model card lists the training corpus as multilingual but does not explicitly include Korean, meaning it appears as a lower-frequency language in the training data. This directly impacts output fidelity, with the 3B variant handling Korean morpheme complexity significantly better than the 1B variant due to its larger embedding space."
   - question: "best local llm for korean on macbook air m2 with 8gb ram"
     answer: "Based on the ollama llama3.2 3b vs 1b korean response quality ram usage macbook air m2 test, Llama 3.2 3B is the minimum viable option for Korean language tasks on an M2 Air with 8GB RAM. It uses only about 2.0–2.4 GB of RAM while delivering meaningfully better grammatical coherence and vocabulary accuracy compared to the 1B model, and runs fully on the M2's GPU via Ollama's Metal backend without any CPU offloading."
+aliases:
+  - "/tech/2026-04-29-ollama-llama32-3b-vs-1b-korean-response-quality-ra/"
+
 ---
 
 Running local LLMs for non-English tasks is a different beast than English benchmarks suggest. Korean NLP sits at the intersection of multilingual model capacity and on-device memory constraints — two factors that diverge sharply between the 1B and 3B parameter variants of Llama 3.2. This question keeps surfacing in developer communities, and the answer isn't obvious until you test it yourself.

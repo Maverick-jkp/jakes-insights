@@ -19,6 +19,9 @@ faq:
     answer: "Zero-knowledge proof (ZKP) systems are considered a technically credible solution to the age verification data privacy surveillance trap IEEE researchers identified, as they can confirm age without exposing underlying identity data. However, as of early 2026, fewer than a handful of production deployments of ZKP-based age verification exist, meaning mainstream adoption remains very limited. Until ZKP systems scale, most platforms continue relying on identity-exposing verification methods by default."
   - question: "what data do age verification companies collect from users"
     answer: "Age verification vendors typically collect government-issued ID documents, credit card information, or biometric data to confirm a user's age for online platforms. Unlike the platforms themselves, these third-party verification companies often operate outside the regulatory frameworks designed to protect user privacy, creating an additional unaccountable layer of data collection. The information gathered can create persistent, linkable user profiles that extend beyond the original verification purpose."
+aliases:
+  - "/tech/2026-02-24-age-verification-data-privacy-surveillance-trap-ie/"
+
 ---
 
 Age verification sounds reasonable on paper. Protect kids online — who could argue with that? But the IEEE's analysis tells a more uncomfortable story: the technical mechanisms required to verify age don't just confirm someone's birth year. They create persistent identity infrastructure that functions, in practice, like surveillance.

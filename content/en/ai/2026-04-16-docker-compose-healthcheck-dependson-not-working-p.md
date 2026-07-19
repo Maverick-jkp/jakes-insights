@@ -19,6 +19,9 @@ faq:
     answer: "The docker compose healthcheck depends_on not working postgres container startup race condition fix involves configuring a `pg_isready`-based healthcheck on the Postgres service and setting `condition: service_healthy` in your dependent service's `depends_on` block. This eliminates non-deterministic connection failures in CI/CD pipelines and can reduce failed startup attempts from dozens of retries to near-zero. Without this fix, pipelines may pass or fail inconsistently depending on hardware speed and database size."
   - question: "difference between service_started and service_healthy in docker compose depends_on"
     answer: "`service_started` only waits for the container's entrypoint process to launch, meaning your dependent service starts regardless of whether the dependency is actually ready to serve requests. `service_healthy` holds the dependent container until the dependency passes its configured healthcheck, confirming it is fully operational. For databases like Postgres, `service_healthy` is the correct choice to prevent startup race conditions."
+aliases:
+  - "/tech/2026-04-16-docker-compose-healthcheck-dependson-not-working-p/"
+
 ---
 
 Your app crashes on startup. Postgres logs show it's running. The connection still fails. Every time.

@@ -19,6 +19,9 @@ faq:
     answer: "16GB 통합 메모리는 llama3.2 3B 모델(약 2.5GB 점유)과 8B 모델(약 5.8GB 점유)을 모두 여유롭게 실행할 수 있는 기준선입니다. Apple Silicon 구조상 CPU와 GPU가 메모리를 공유하기 때문에 16GB면 7B 모델까지는 시스템 성능 저하 없이 안정적으로 동작합니다."
   - question: "M3 MacBook Pro 16GB ollama llama3.2 한국어 답변 품질 실측 GPT-4o-mini 대비 2025 비용 차이"
     answer: "로컬에서 llama3.2를 실행하면 API 비용이 월 0원으로 GPT-4o-mini의 사용량 기반 과금과 대비됩니다. 또한 데이터가 외부 서버로 전송되지 않아 프라이버시 보호가 필요한 워크플로우나 반복적인 배치 작업에서 로컬 추론이 실질적인 경제적 이점을 제공합니다."
+aliases:
+  - "/tech/2026-04-10-m3-macbook-pro-16gb-ollama-llama32-한국어-답변-품질-실측-gp/"
+
 ---
 
 로컬 AI가 "써볼 만한 수준"이 됐다는 말, 얼마나 믿으세요?

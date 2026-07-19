@@ -19,6 +19,9 @@ faq:
     answer: "Loki의 chunk_idle_period를 기본 30분에서 3분으로 줄이면 인메모리 청크를 훨씬 빠르게 플러시해 메모리 점유를 크게 낮출 수 있습니다. 소규모 환경에서는 WAL을 비활성화(wal.enabled: false)하는 것도 효과적인데, 재시작 시 최대 3분 치 로그 유실 가능성을 감수하면 안정적으로 180~250MB 선에서 운영할 수 있습니다."
   - question: "Docker Compose 단독 VPS 2GB 메모리 Prometheus Grafana Loki 동시 운영할 때 기본 메모리 얼마나 필요한가요"
     answer: "Docker Compose 단독 VPS 2GB 메모리 Prometheus Grafana Loki 동시 운영 시 기본값 그대로 올리면 Prometheus 350~500MB, Grafana 200~350MB, Loki 300~450MB, Promtail 50~80MB로 합산 최소 900MB에서 피크 1.4GB까지 올라갑니다. 여기에 Spring Boot 같은 애플리케이션을 함께 올리면 2GB 한계를 즉시 넘어 OOM Killer가 개입하게 됩니다."
+aliases:
+  - "/tech/2026-04-19-docker-compose-단독-vps-2gb-메모리-prometheus-grafana-l/"
+
 ---
 
 2GB VPS에 모니터링 스택 올렸다가 서버가 통째로 죽어본 적 있으세요?

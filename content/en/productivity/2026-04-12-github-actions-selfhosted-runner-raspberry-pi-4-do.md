@@ -19,6 +19,9 @@ faq:
     answer: "Yes, the Raspberry Pi 4 runs 64-bit ARM natively using the BCM2711 SoC, making it capable of building linux/arm64 Docker images without QEMU emulation. However, its limited memory bandwidth and default Docker BuildKit behavior make it significantly slower than cloud-based alternatives for production CI/CD pipelines. It works best when properly configured with registry-mode caching to avoid repeated cache misses."
   - question: "how much does arm64 docker build slow down on raspberry pi 4 compared to normal"
     answer: "Community reports from 2025 document build times jumping from approximately 4 minutes to 55 minutes after migrating Docker builds to ARM64 self-hosted runners on Raspberry Pi 4 hardware. The Raspberry Pi 4's memory bandwidth is roughly 8–10 times lower than a modern cloud runner, making layer-heavy multi-stage builds disproportionately affected by cache misses. Proper BuildKit cache configuration can recover most of that lost time without hardware changes."
+aliases:
+  - "/tech/2026-04-12-github-actions-selfhosted-runner-raspberry-pi-4-do/"
+
 ---
 
 Build times jumped from 4 minutes to 55 minutes overnight. No code changes. No infrastructure updates. Just a switch to ARM64 runners—and suddenly everything crawled.

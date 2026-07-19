@@ -19,6 +19,9 @@ faq:
     answer: "OpenAI enters a defense AI space where Palantir, Anduril, and Microsoft (through Azure Government Secret) already hold established positions. Microsoft's existing government cloud infrastructure actually helped OpenAI build credibility for federal deployments, though deploying directly on classified Department of War networks represents a distinct step beyond Microsoft's existing clearances."
   - question: "what are the concerns about AI being deployed on classified military networks?"
     answer: "The deployment raises unresolved questions around AI governance, model auditability, and oversight frameworks — particularly given that commercial AI has never previously operated at the highest security classification levels. Critics and industry observers are focused on how accountability and transparency can be maintained when AI systems operate inside classified infrastructure with limited external visibility."
+aliases:
+  - "/tech/2026-02-28-openai-department-of-war-classified-ai-deployment/"
+
 ---
 
 OpenAI just deployed its AI models on the U.S. Department of War's classified network. That's not speculation — Reuters and Bloomberg both confirmed it on February 28, 2026. And if you work anywhere near defense tech, enterprise AI, or government contracting, this shifts the calculus significantly.

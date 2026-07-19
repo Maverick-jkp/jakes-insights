@@ -19,6 +19,9 @@ faq:
     answer: "Structured output using Claude's tool_use feature is significantly more reliable than prompt-based JSON extraction, with production data suggesting roughly a 3:1 improvement in error rates based on an analysis of 10,000 API calls. Prompt-based extraction depends on Claude following formatting instructions consistently, whereas tool use enforces schema constraints at the API level. For production agentic pipelines, tool use is the recommended approach for structured data output."
   - question: "how to fix additionalProperties false not working in claude tool schema"
     answer: "When using 'additionalProperties: false' inside a Claude tool definition, combining it with 'anyOf' or 'oneOf' can produce unexpected behavior due to how Anthropic's schema processor interprets these combinations. The safest fix is to explicitly declare 'type' fields on all nested objects and avoid complex composition keywords alongside strict property constraints. Testing schemas in isolation against the Claude API directly — rather than relying only on local validators — is the most reliable debugging approach."
+aliases:
+  - "/tech/2026-03-19-claude-api-tool-use-json-schema-validation-error-d/"
+
 ---
 
 A Claude API tool use JSON schema validation error can silently break your entire agentic pipeline — and the default error messages tell you almost nothing useful. The pattern is consistent across production Claude integrations shipped in early 2026: developers hit schema validation failures not because their JSON is malformed, but because of subtle mismatches between how they *think* Claude interprets schemas and how it *actually* does.

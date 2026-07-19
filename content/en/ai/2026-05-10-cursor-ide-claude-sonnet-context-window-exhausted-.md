@@ -19,6 +19,9 @@ faq:
     answer: "Cursor's Max Mode does unlock larger context limits that help with monorepo context exhaustion, but it costs approximately 10–20x more tokens per session compared to standard mode, making it financially unsustainable for daily engineering use on large codebases. Most teams report better results combining free workarounds like .cursorignore scoping and workspace splitting rather than relying on Max Mode as their primary solution."
   - question: "does cursor 1.2 make context window exhaustion worse for monorepos"
     answer: "Yes, the Cursor 1.2 update released in mid-2025 tightened rate limits for Claude Sonnet on standard plan accounts, which caused teams that previously managed longer sessions to hit context limits faster than before. Engineers running Nx, Turborepo, or Bazel monorepos reported the sharpest increase in context exhaustion frequency after this update due to those tools' deeply nested dependency graphs."
+aliases:
+  - "/tech/2026-05-10-cursor-ide-claude-sonnet-context-window-exhausted-/"
+
 ---
 
 Context exhaustion mid-session isn't a bug. It's an architectural collision between how Claude Sonnet handles memory and how large monorepos are structured — and in 2026, it's actively slowing down engineering teams at scale.

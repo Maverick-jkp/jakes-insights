@@ -19,6 +19,9 @@ faq:
     answer: "1인 개발자 월 5달러 이하 풀스택 앱 배포 Fly.io Railway Render 실제 비용 후기 2025 분석에 따르면, 핵심은 DB를 호스팅 플랫폼에서 분리하는 것이에요. Fly.io나 Render에 앱 서버만 올리고, 데이터베이스는 Supabase 또는 PlanetScale 무료 티어를 활용하면 전체 운영 비용을 월 $5 이하로 유지할 수 있어요."
   - question: "Fly.io 무료 크레딧 PostgreSQL 같이 쓰면 비용 얼마 나와"
     answer: "Fly.io는 매달 $5 크레딧을 제공하지만, 자체 PostgreSQL 인스턴스를 연결하면 DB 비용만 월 $2.5 안팎이 소진돼요. 남은 크레딧으로 앱 서버(shared-cpu-1x + 256MB RAM 기준 월 $1.94)를 돌리면 빠듯하게 맞지만, 트래픽이 늘면 egress 비용이 추가로 발생할 수 있어요."
+aliases:
+  - "/tech/2026-03-24-1인-개발자-월-5달러-이하-풀스택-앱-배포-flyio-railway-render-실제-비/"
+
 ---
 
 월 5달러. 커피 한 잔 값이에요.

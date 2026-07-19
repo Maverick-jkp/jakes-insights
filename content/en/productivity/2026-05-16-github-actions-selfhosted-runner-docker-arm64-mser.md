@@ -19,6 +19,9 @@ faq:
     answer: "Docker on Apple Silicon runs inside a lightweight Linux VM using Apple's Virtualization Framework, which allocates a shared memory pool across all containers rather than dedicated per-container limits. When multiple parallel CI jobs run on high-performance M3 Pro or Max machines, total container memory demand can spike unexpectedly, making the default runner memory allocation dangerously optimistic compared to Linux-native environments."
   - question: "actions-runner-controller pod stuck running after oomkill how to resolve"
     answer: "The stuck Running state occurs because the Kubernetes status update from the OOMKilled container can lag or fail entirely under memory pressure, a failure mode documented in ARC issue #4155. Setting explicit memory limits on runner containers and enabling ephemeral mode are the two most reliable mitigations, as they either prevent the OOMKill from occurring or ensure the pod is cleanly replaced after each job."
+aliases:
+  - "/tech/2026-05-16-github-actions-selfhosted-runner-docker-arm64-mser/"
+
 ---
 
 Memory leaks on self-hosted GitHub Actions runners aren't new. But on ARM64 M-series Macs running Docker containers, they're hitting teams hard enough to stall CI pipelines for hours.

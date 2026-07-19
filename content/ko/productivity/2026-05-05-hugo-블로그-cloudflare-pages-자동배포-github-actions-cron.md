@@ -19,6 +19,9 @@ faq:
     answer: "GitHub는 60일 이상 커밋이 없는 레포의 schedule 이벤트를 자동으로 비활성화해요. 재활성화하려면 레포의 Actions 탭에서 해당 워크플로우를 찾아 Enable 버튼을 클릭하면 바로 적용돼요."
   - question: "Hugo 블로그 Cloudflare Pages 자동배포 GitHub Actions cron 트리거 안 될 때 해결 가장 안정적인 방법"
     answer: "Cloudflare Pages API Deploy Hook을 GitHub Actions에서 직접 호출하는 방법이 가장 안정적으로 권장돼요. 빈 커밋 푸시 방식보다 Git 히스토리가 깔끔하게 유지되고, Cloudflare 대시보드에서 빌드 로그를 일관되게 확인할 수 있어요."
+aliases:
+  - "/tech/2026-05-05-hugo-블로그-cloudflare-pages-자동배포-github-actions-cron/"
+
 ---
 
 설정은 다 맞는 것 같은데 스케줄 배포가 아무것도 안 돼요. `schedule` 이벤트까지 넣었는데 Cloudflare Pages는 조용합니다. 이 문제로 시간을 버리는 개발자가 생각보다 많아요.

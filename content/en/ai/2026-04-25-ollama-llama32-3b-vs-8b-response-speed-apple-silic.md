@@ -19,6 +19,9 @@ faq:
     answer: "For structured output tasks like JSON extraction and code completion, the 8B model's accuracy advantage is large enough to justify its slower speed in most production pipelines. The 3B model is better suited for latency-sensitive tasks where response speed matters more than output precision."
   - question: "does ollama use Metal GPU acceleration on Apple Silicon for llama models"
     answer: "Yes, Ollama's native Apple Silicon support includes a Metal backend that has been shipping since late 2024, giving both Llama 3.2 3B and 8B models proper GPU acceleration via macOS Metal Performance Shaders. This means neither model falls back to slower CPU inference, which is a key factor in the ollama llama3.2 3b vs 8b response speed apple silicon 16gb ram benchmark results."
+aliases:
+  - "/tech/2026-04-25-ollama-llama32-3b-vs-8b-response-speed-apple-silic/"
+
 ---
 
 Running a local LLM that feels instant versus one that makes you wait 4 seconds per sentence isn't a minor UX difference — it's the line between a tool you reach for and one you avoid.

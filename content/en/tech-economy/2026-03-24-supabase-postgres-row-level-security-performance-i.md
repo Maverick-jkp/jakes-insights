@@ -19,6 +19,9 @@ faq:
     answer: "By default, auth.uid() is evaluated once for every row scanned during a query, which becomes expensive at high row counts. Rewriting the policy to use (select auth.uid()) as a subquery forces Postgres to evaluate the function a single time per query, which can dramatically reduce execution time on tables with 100K or more rows."
   - question: "at what row count does supabase RLS start causing performance problems"
     answer: "Most teams do not notice RLS overhead at 1K–10K rows because query times remain acceptably fast regardless of policy quality. The supabase postgres row level security performance impact 100k rows benchmark is the point where unoptimized policies — particularly those with unindexed columns or per-row function calls — produce latency measurable in seconds rather than milliseconds."
+aliases:
+  - "/tech/2026-03-24-supabase-postgres-row-level-security-performance-i/"
+
 ---
 
 RLS sounds safe. It can also quietly destroy your query performance. At 100K rows, the difference between a well-tuned and a poorly-configured Row Level Security policy isn't milliseconds — it's seconds.

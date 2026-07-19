@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare KV is eventually consistent, meaning writes can take up to 60 seconds to propagate across all edge locations according to Cloudflare's documentation. This makes it unreliable for relational or transactional data, and many teams end up misusing it as a makeshift database by shoehorning structured data into key-value namespaces."
   - question: "cloudflare workers kv vs d1 sqlite latency comparison which is faster for read heavy saas"
     answer: "In a cloudflare workers kv vs d1 sqlite latency comparison, KV wins on raw read speed with cached reads under 10ms, but D1's ~12ms median read latency is fast enough for the vast majority of read-heavy SaaS use cases. The practical decision should be driven by your data model — if you need relational queries, D1's slight latency tradeoff is well worth the added expressiveness."
+aliases:
+  - "/tech/2026-03-23-cloudflare-workers-kv-vs-d1-sqlite-latency-compari/"
+
 ---
 
 Picking the wrong data layer costs you users. A 200ms read that could've been 8ms doesn't sound catastrophic until your churn data starts telling a different story.

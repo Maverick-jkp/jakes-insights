@@ -19,6 +19,9 @@ faq:
     answer: "Fail2Ban is a security tool that monitors log files for repeated failed login attempts and automatically bans the offending IP addresses using firewall rules. It is particularly effective against SSH brute-force attacks, which are among the most common threats to beginner-deployed servers. In most production environments, Fail2Ban reduces automated attack noise by over 90%, according to commonly reported benchmarks."
   - question: "is UFW good enough for how to secure a Linux server for beginners"
     answer: "UFW (Uncomplicated Firewall) is a solid starting point for beginners because it provides a simplified interface for managing iptables rules without requiring deep networking knowledge. It lets you allow only the specific ports your server needs, such as SSH, HTTP, and HTTPS, and block everything else by default. While UFW alone is not a complete security solution, it is a critical layer when combined with SSH hardening, Fail2Ban, and regular patching."
+aliases:
+  - "/tech/2026-03-07-how-to-secure-a-linux-server-for-beginners/"
+
 ---
 
 A fresh Ubuntu 22.04 server, handed to a junior dev with zero hardening applied. Within 48 hours, it was mining cryptocurrency for someone in Eastern Europe. One problem caused it: the server was configured exactly the way most beginner-deployed servers are — wide open, default settings, no protection.

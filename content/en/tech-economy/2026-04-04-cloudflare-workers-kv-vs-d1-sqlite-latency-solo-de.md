@@ -19,6 +19,9 @@ faq:
     answer: "As of 2026, Cloudflare's free tier gives KV 100,000 reads per day and D1 5 million row reads per day, which heavily favors D1 for data-heavy side projects with relational queries. KV's free tier makes more sense when your access pattern relies on frequently repeated lookups for the same keys, keeping the cache hit rate high and costs low."
   - question: "is cloudflare D1 eventually consistent like KV"
     answer: "No, Cloudflare D1 provides strongly consistent reads, which is a key difference from KV's eventual consistency model. KV achieves its global speed by caching reads at edge nodes, which means writes can take time to propagate, whereas D1 executes SQL queries at a regional data center ensuring data is always up to date."
+aliases:
+  - "/tech/2026-04-04-cloudflare-workers-kv-vs-d1-sqlite-latency-solo-de/"
+
 ---
 
 Picking the wrong storage layer on a Cloudflare Workers project doesn't just hurt performance. It quietly drains your free tier, then your wallet, once traffic picks up. KV and D1 solve genuinely different problems—and most solo developers conflate them because both live inside the Workers ecosystem.

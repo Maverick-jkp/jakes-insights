@@ -19,6 +19,9 @@ faq:
     answer: "OAuth 2.0은 '무엇을 할 수 있는가'를 다루는 인가(authorization) 프레임워크로, 사용자가 누구인지는 직접 다루지 않습니다. OIDC(OpenID Connect)는 OAuth 2.0 위에 얹는 인증(authentication) 레이어로, '누구인가'에 해당하는 사용자 신원 정보를 ID Token 형태로 추가로 제공합니다. Okta, Azure AD 같은 기업 ID 시스템과 연동하는 B2B 엔터프라이즈 환경에서는 OAuth 2.0과 OIDC를 함께 쓰는 것이 사실상 표준입니다."
   - question: "2026년 기준 API 인증 방식 비교할 때 mTLS 단점이 뭔가요"
     answer: "API 인증 방식 비교 OAuth JWT mTLS API Key 2026 관점에서 mTLS는 클라이언트와 서버 양쪽 모두 인증서를 제시하는 방식으로 보안 수준이 가장 높지만, 핸드셰이크 과정에서 측정 가능한 수준의 레이턴시가 발생합니다. 또한 인증서 발급·갱신·폐기를 관리하는 PKI 인프라 운영 비용이 추가되기 때문에, 주로 성능보다 보안이 우선인 내부 마이크로서비스 간 통신에 한정해 적용하는 것이 일반적입니다."
+aliases:
+  - "/tech/2026-03-06-api-인증-방식-비교-oauth-jwt-mtls-api-key-2026/"
+
 ---
 
 API 인증 방식 선택, 팀에서 계속 미루고 있지 않나요?

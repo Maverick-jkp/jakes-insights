@@ -19,6 +19,9 @@ faq:
     answer: "Yes, small teams are disproportionately impacted by supabase row level security policy performance degradation because they typically prototype with RLS enabled but skip the query plan analysis step that would catch issues before production. Teams with fewer than five engineers rarely have a dedicated DBA to audit EXPLAIN ANALYZE output, meaning degradation often goes unnoticed until the table grows to tens of thousands of rows. Larger teams are more likely to run real query benchmarks and load testing before shipping."
   - question: "what index should I add for supabase RLS policy on user_id column"
     answer: "You should add a standard btree index on the user_id column (or whichever column your RLS policy compares against auth.uid()) using CREATE INDEX ON your_table (user_id). This allows PostgreSQL to perform an index seek instead of a full table scan when evaluating the RLS WHERE clause appended to every query. Without this index, performance degradation compounds significantly as row count grows past roughly 50,000 rows."
+aliases:
+  - "/tech/2026-05-28-supabase-row-level-security-policy-performance-deg/"
+
 ---
 
 Enabling RLS on a Supabase table and watching your query latency jump 3-8x isn't a fringe experience — it's documented behavior that hits small teams hardest because they're usually the last to run proper benchmarks before shipping.

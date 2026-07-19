@@ -19,6 +19,9 @@ faq:
     answer: "Fly.io's fly-proxy adds 12–18ms of routing overhead per warm request, which is competitive with Render's free tier but slower than Railway's always-on hobby tier. However, all three platforms impose some form of cold start or suspension behavior on free tiers, making image size and startup optimization important regardless of which platform you choose."
   - question: "what does fly.io free tier include in 2025 and is it enough for a node.js api"
     answer: "Fly.io's free tier includes 3 shared-cpu-1x VMs with 256MB RAM each, 3GB persistent storage, and 160GB of outbound data transfer per month with no credit card required. This is sufficient for low-traffic Node.js APIs, but machine suspension after 5 minutes of inactivity is unavoidable without upgrading to a paid plan."
+aliases:
+  - "/tech/2026-03-29-flyio-free-tier-cold-start-latency-nodejs-api-real/"
+
 ---
 
 Cold starts hit you at the worst possible moment. Your API sits quiet for six minutes, someone finally hits an endpoint, and the response time jumps from 80ms to 3.8 seconds. No error. No crash. Just infrastructure doing exactly what it was designed to do — and that behavior determines whether your free-tier deployment is actually usable for anything real.

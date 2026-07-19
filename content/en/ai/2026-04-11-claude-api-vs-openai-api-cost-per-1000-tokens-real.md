@@ -19,6 +19,9 @@ faq:
     answer: "Which API saves more money depends entirely on your input-to-output token ratio — Claude wins on pipelines that consume far more tokens than they generate, while cost differences become negligible on generation-heavy tasks where both platforms charge around $15 per million output tokens. At high volumes like 100 million tokens per month, a 40% input cost difference can translate to roughly $4,000 in monthly savings."
   - question: "how much does conversation history add to api costs"
     answer: "Conversation history, system prompts, and retry logic can add 30–60% to your effective API costs beyond what base token rates suggest, according to production cost analyses. This overhead applies to both Claude and OpenAI APIs, making efficient context management one of the highest-leverage ways to reduce your actual bill."
+aliases:
+  - "/tech/2026-04-11-claude-api-vs-openai-api-cost-per-1000-tokens-real/"
+
 ---
 
 Running a production AI feature for six months teaches you one thing fast: the gap between "cheap" and "expensive" APIs is completely invisible until your AWS bill arrives.

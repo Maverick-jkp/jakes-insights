@@ -19,6 +19,9 @@ faq:
     answer: "Yes, the Llama 3.2 8B model fits entirely in RAM on a 16GB M2 MacBook without requiring GPU offloading, according to Ollama's official documentation. The M2's unified memory architecture makes this possible and gives Apple Silicon a practical advantage over x86 machines with discrete GPUs when running mid-sized local LLMs."
   - question: "ollama llama3.2 3b vs 8b response quality korean benchmark M2 MacBook short tasks classification"
     answer: "For constrained short-form Korean tasks such as text classification and information extraction, the performance gap between Llama 3.2 3B and 8B narrows considerably in ollama llama3.2 3b vs 8b response quality korean benchmark M2 MacBook testing, with the 3B model often coming within 10–15% of the 8B's output quality. This makes the faster 3B model a practical choice for production workflows where task complexity is low and response speed is a priority."
+aliases:
+  - "/tech/2026-04-01-ollama-llama32-3b-vs-8b-response-quality-korean-be/"
+
 ---
 
 Running local LLMs has shifted from hobby to production workflow for a growing number of developers. But when the task is Korean-language generation — not just English — the model size question gets genuinely complicated.

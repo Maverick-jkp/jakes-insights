@@ -19,6 +19,9 @@ faq:
     answer: "Amazon's experience shows that deploying AI coding assistants at scale without updating review culture introduces systemic risk, even in world-class engineering organizations. The key lesson is that AI tools accelerate deployment velocity faster than traditional review processes can handle, meaning governance frameworks need to evolve in parallel with tool adoption. Other engineering orgs are now watching Amazon's policy closely as a model for how to implement human oversight without abandoning AI-assisted development entirely."
   - question: "Are AI coding tools like GitHub Copilot safe to use in production environments?"
     answer: "AI coding tools can be used safely in production environments, but Amazon's 2026 outages demonstrate that they require stronger human oversight than many organizations currently apply. These tools are trained to produce plausible, syntactically correct code but do not understand the specific failure modes or dependency chains of your particular system. Implementing structured review policies, similar to Amazon's senior engineer sign-off requirement, is increasingly considered a best practice for high-stakes production environments."
+aliases:
+  - "/tech/2026-03-11-amazon-genai-outages-senior-engineer-signoff-polic/"
+
 ---
 
 Amazon's retail business went dark multiple times in early 2026 — and AI-generated code was a primary suspect. That's not a rumor. It's the conclusion that pushed Amazon to mandate senior engineer sign-off on all AI-assisted code before it touches production systems.

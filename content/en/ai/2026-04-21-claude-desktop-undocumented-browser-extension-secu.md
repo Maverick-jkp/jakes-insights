@@ -19,6 +19,9 @@ faq:
     answer: "Anthropic has not publicly disclosed what data the Claude Desktop browser extensions collect or transmit, which is central to the security concern. Browser extensions operating at the privilege level described can potentially access session cookies, page content, and other browsing data. The absence of any official changelog entry, privacy policy update, or documentation makes it impossible to verify the scope of data access."
   - question: "how to remove browser extensions installed by Claude Desktop"
     answer: "Users can manually check for and remove extensions installed by Claude Desktop by navigating to their browser's extensions or add-ons manager and looking for any Anthropic or Claude-related entries. It is also recommended to audit Chromium-based browsers beyond Chrome, as researchers reported the extensions were dropped across multiple Chromium browsers. Until Anthropic provides official documentation, users handling sensitive or proprietary data should consider uninstalling Claude Desktop entirely pending clarification."
+aliases:
+  - "/tech/2026-04-21-claude-desktop-undocumented-browser-extension-secu/"
+
 ---
 
 Anthropic's Claude Desktop silently installs browser extensions without user consent. That's not a bug report — it's a confirmed behavior now drawing scrutiny from security researchers and covered by The Register as of April 20, 2026.

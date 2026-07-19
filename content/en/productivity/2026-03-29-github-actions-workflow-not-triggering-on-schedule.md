@@ -19,6 +19,9 @@ faq:
     answer: "GitHub automatically disables scheduled workflows on repositories that have had no activity for 60 or more days, with no warning or notification. To re-enable the schedule, you need to either push a new commit to the repository or manually trigger a workflow run. This policy was introduced in 2022 and commonly affects teams running infrequent jobs like quarterly compliance scripts or archival tools."
   - question: "github actions cron daylight saving time timezone not adjusting"
     answer: "GitHub Actions cron expressions do not automatically adjust for Daylight Saving Time because the platform only supports UTC and has no timezone field in the schedule block. This means your job will shift by one hour relative to local time twice a year unless you manually update your cron expression. Using the github actions workflow not triggering on schedule cron UTC offset fix approach — recalculating your UTC offset each time DST changes — is currently the only reliable solution."
+aliases:
+  - "/tech/2026-03-29-github-actions-workflow-not-triggering-on-schedule/"
+
 ---
 
 Scheduled workflows silently failing is one of the most frustrating debugging experiences in CI/CD. No red run. No notification. Just a job that didn't execute — and the culprit is almost always the same: UTC offset confusion combined with GitHub's documented-but-ignored delay behavior.

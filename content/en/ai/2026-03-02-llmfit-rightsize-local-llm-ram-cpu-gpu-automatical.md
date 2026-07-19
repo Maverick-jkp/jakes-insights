@@ -19,6 +19,9 @@ faq:
     answer: "LLMfit is available as a Rust-based CLI tool on crates.io, meaning you can install it using the standard Cargo package manager with a single command. Once installed, running 'llmfit' automatically detects your hardware and outputs a ranked list of compatible models. No manual benchmarking or configuration is required to get a usable recommendation."
   - question: "can I run a 13B LLM on 16GB RAM"
     answer: "Whether a 13B model runs on 16GB RAM depends heavily on the quantization format used. A Q4_K_M GGUF version of a 13B model can run in approximately 10GB, making 16GB workable, while an FP16 version requires closer to 28GB and would fail. Automated tools that analyze your specific hardware configuration, like LLMfit, can tell you exactly which formats and model sizes are viable before you download anything."
+aliases:
+  - "/tech/2026-03-02-llmfit-rightsize-local-llm-ram-cpu-gpu-automatical/"
+
 ---
 
 Running a local LLM shouldn't require a spreadsheet, three Reddit threads, and a prayer. Yet that's exactly what most developers deal with before pulling down a model. LLMfit changes that equation by automatically analyzing your RAM, CPU, and GPU specs and telling you exactly which models will actually run—before you waste 45 minutes on a download that OOMs at inference time.

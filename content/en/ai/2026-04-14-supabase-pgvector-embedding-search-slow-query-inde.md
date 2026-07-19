@@ -19,6 +19,9 @@ faq:
     answer: "The `probes` parameter in IVFFlat controls how many vector clusters are searched at query time — a low value speeds up queries but reduces accuracy, while a high value increases recall but adds latency. Wrong default values for `probes` (and `ef_search` in HNSW) are responsible for the majority of slow query complaints seen in Supabase community forums. Tuning these two parameters is the highest-impact optimization step for anyone troubleshooting pgvector embedding search performance."
   - question: "when did Supabase add HNSW index support for pgvector"
     answer: "HNSW index support was added to pgvector in version 0.5.0, released in October 2023, and became the recommended default over IVFFlat in most performance guides by mid-2024. Supabase made pgvector a first-class feature in 2023, but early documentation and tutorials defaulted to IVFFlat since it was the only index type available at the time. Most Supabase projects running pgvector 0.7.x as of 2026 support both index types."
+aliases:
+  - "/tech/2026-04-14-supabase-pgvector-embedding-search-slow-query-inde/"
+
 ---
 
 Your Supabase embedding search is slow. You added an index. It's still slow. Or worse — it got slower on your 50k-row table.

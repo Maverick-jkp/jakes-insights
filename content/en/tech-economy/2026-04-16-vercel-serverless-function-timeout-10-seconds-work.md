@@ -19,6 +19,9 @@ faq:
     answer: "No — Vercel Edge Functions actually have a shorter or equal timeout cap compared to serverless functions depending on your plan. Edge Functions are hard-limited to 30 seconds maximum regardless of whether you're on Hobby, Pro, or Enterprise, meaning they won't rescue you from timeout issues on long-running tasks. Serverless functions on Enterprise can reach up to 900 seconds, making them the better choice for extended workloads."
   - question: "how does streaming response help with vercel serverless function timeout 10 seconds workaround nextjs app router 2025"
     answer: "Streaming responses help bypass the vercel serverless function timeout 10 seconds workaround challenge in Next.js App Router by sending data to the client incrementally rather than waiting for the full response to complete before responding. This keeps the HTTP connection alive and delivers partial results — like LLM token output — without the function needing to stay open for the entire computation. It's considered a better architectural pattern, not just a workaround, because it also improves perceived performance for end users."
+aliases:
+  - "/tech/2026-04-16-vercel-serverless-function-timeout-10-seconds-work/"
+
 ---
 
 Vercel's default serverless function timeout is 10 seconds on the Hobby plan — and it kills more production apps than most engineers expect. If you're building AI features, processing webhooks, or running any async pipeline in Next.js App Router, you've almost certainly hit this wall.

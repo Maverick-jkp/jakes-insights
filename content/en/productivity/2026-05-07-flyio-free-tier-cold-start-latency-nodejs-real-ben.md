@@ -19,6 +19,9 @@ faq:
     answer: "Fly.io free tier cold starts are significantly faster than Render's free tier, which can take 30–50 seconds to spin up a sleeping service. In the fly.io free tier cold start latency node.js real benchmark 2025 data, Fly.io sits in a middle-performance position — slower than a paid always-on plan like Railway's $5/month Hobby tier, but much faster than Render at zero cost."
   - question: "how to reduce node.js cold start time on fly.io"
     answer: "You can reduce Node.js cold start time on Fly.io by keeping your require() dependency chains flat and pre-compiling TypeScript before deployment, which can shave 200–400ms off startup time without any infrastructure changes. These code-level optimizations are especially valuable on free tier shared-CPU-1x machines where compute resources are limited."
+aliases:
+  - "/tech/2026-05-07-flyio-free-tier-cold-start-latency-nodejs-real-ben/"
+
 ---
 
 Cold starts are the silent performance tax every developer pays on free-tier hosting. On Fly.io's free tier, that tax can hit **800ms to 3+ seconds** for a sleeping Node.js machine — and knowing exactly when and why that happens is the difference between a demo that impresses and one that embarrasses.

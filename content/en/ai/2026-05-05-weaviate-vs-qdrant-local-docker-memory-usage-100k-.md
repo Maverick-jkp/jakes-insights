@@ -19,6 +19,9 @@ faq:
     answer: "Self-hosting either Weaviate or Qdrant on Docker can dramatically reduce costs compared to managed services like Pinecone, with Qdrant's published benchmarks suggesting near-zero infrastructure cost for 1M monthly queries on a single mid-tier VM versus $50-200/month on managed tiers. The weaviate vs qdrant local docker memory usage 100k vectors embedding search latency comparison has become a practical resource planning question as more teams shift from managed to self-hosted vector databases in 2026."
   - question: "why is qdrant more memory efficient than weaviate"
     answer: "Qdrant is built in Rust, which eliminates the overhead of a JVM runtime and garbage collector pauses that affect Weaviate's memory consumption. Qdrant also uses memory-mapped storage, allowing it to keep idle RAM usage minimal, while Weaviate's Java-based architecture requires a larger baseline memory allocation regardless of active query load."
+aliases:
+  - "/tech/2026-05-05-weaviate-vs-qdrant-local-docker-memory-usage-100k-/"
+
 ---
 
 Running a vector database locally shouldn't require a PhD in infrastructure. But pick the wrong one for your workload, and you'll burn hours debugging memory spikes or watching search latency creep past acceptable thresholds.

@@ -19,6 +19,9 @@ faq:
     answer: "Evaluation set contamination occurs when benchmark test data is exposed to a model's training data, allowing it to effectively 'memorize' correct answers rather than demonstrate genuine reasoning ability. As of early 2026, this remains a persistent and underreported problem across major public AI benchmarks. It disproportionately benefits smaller models that can be fine-tuned aggressively on narrow benchmark patterns without significant capability trade-offs."
   - question: "how should enterprise teams evaluate AI agents beyond public leaderboards"
     answer: "Enterprise teams should treat public leaderboard scores as a starting point rather than a final decision, and build a second layer of internal evaluation using tasks representative of their specific use cases. Given the documented problem of AI agent benchmark manipulation how small models break leaderboards, scores from benchmarks like SWE-bench may not translate to production performance. Running controlled internal tests with disclosed scaffolding conditions provides a far more reliable basis for architecture and procurement decisions."
+aliases:
+  - "/tech/2026-04-12-ai-agent-benchmark-manipulation-how-small-models-b/"
+
 ---
 
 Small models are cracking top-10 positions on SWE-bench — and it's rarely because they're better.

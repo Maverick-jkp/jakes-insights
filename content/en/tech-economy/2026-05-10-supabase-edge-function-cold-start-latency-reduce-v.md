@@ -19,6 +19,9 @@ faq:
     answer: "For latency-critical paths like auth middleware, Cloudflare Workers is the strongest performer in a supabase edge function cold start latency reduce vercel vs cloudflare workers comparison, delivering sub-5ms cold starts. Supabase Edge Functions are the weakest choice for auth use cases, as a 300–800ms cold start adds visible delay to every user's first request after any idle period."
   - question: "what is a cold start in edge functions and why does it matter"
     answer: "A cold start is the initialization delay that occurs when an edge function has been idle and needs to boot up before it can handle a request. Cold starts matter because they add latency directly visible to end users — for example, a 600ms cold start on an auth function delays every user's first request, and on platforms like Supabase this can range from 300–800ms."
+aliases:
+  - "/tech/2026-05-10-supabase-edge-function-cold-start-latency-reduce-v/"
+
 ---
 
 Cold start latency is killing user experience in edge-deployed apps. If your Supabase Edge Function takes 400–800ms to wake up, you've already lost the race — and where you deploy matters more than most teams realize.

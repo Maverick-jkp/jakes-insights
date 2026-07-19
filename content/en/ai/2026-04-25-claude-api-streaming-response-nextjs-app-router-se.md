@@ -19,6 +19,9 @@ faq:
     answer: "Edge Runtime is generally recommended for claude api streaming response nextjs app router server component implementation, showing 40-60% lower cold-start times compared to Node.js runtime according to Vercel's 2025 Edge Network benchmarks. Lower cold-start times directly improve the time-to-first-token metric, which is the most user-perceptible latency in AI streaming applications."
   - question: "how does app router server components prevent api key exposure when using claude"
     answer: "React Server Components in the App Router execute exclusively on the server, meaning your Anthropic API key never gets bundled into client-side JavaScript or exposed in browser network requests. This closes a critical security gap that was common in Pages Router implementations, where API keys could be inadvertently leaked through client-side code."
+aliases:
+  - "/tech/2026-04-25-claude-api-streaming-response-nextjs-app-router-se/"
+
 ---
 
 Streaming latency kills AI products. Not bad models — bad delivery. A response that takes 4 seconds to render the first token loses users at roughly the same rate as one that simply fails, according to Google's 2024 Web Vitals research on perceived performance. The claude api streaming response nextjs app router server component implementation pattern has become the production standard for teams shipping Claude-powered features in 2026, and the architectural decisions you make here have measurable downstream effects on retention, cost, and developer velocity.

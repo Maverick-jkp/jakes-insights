@@ -19,6 +19,9 @@ faq:
     answer: "As of the initial reports in April 2026, a fix was not straightforward — Phoronix specifically noted it 'may not be easy,' suggesting no simple patch was waiting in the queue. Developers affected by the Linux 7.0 PostgreSQL performance regression developer impact should monitor upstream kernel and PostgreSQL mailing lists for updates."
   - question: "should I upgrade to Ubuntu 26.04 LTS if I run PostgreSQL in production?"
     answer: "You should evaluate carefully before upgrading, as Ubuntu 26.04 LTS ships with Linux 7.0, which has a documented ~50% PostgreSQL throughput regression under certain workloads. Running benchmarks against your specific workload on Linux 7.0 before committing to an upgrade is strongly recommended."
+aliases:
+  - "/tech/2026-04-05-linux-70-postgresql-performance-regression-develop/"
+
 ---
 
 PostgreSQL throughput dropping 50% after a kernel upgrade. That's not a configuration error. That's a regression that should terrify any team running Postgres in production.

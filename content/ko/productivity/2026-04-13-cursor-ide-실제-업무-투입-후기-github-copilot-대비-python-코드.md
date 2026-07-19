@@ -19,6 +19,9 @@ faq:
     answer: "Cursor Composer는 여러 파일을 동시에 수정할 수 있는 멀티파일 편집 기능으로, GitHub Copilot에는 없는 Cursor만의 핵심 차별점이에요. 예를 들어 FastAPI 라우터를 새로 추가할 때 라우터·스키마·서비스 레이어 파일을 한 번에 수정안으로 제시해주며, 이 덕분에 반복 작업에서 체감 속도가 25~40% 빠르다는 응답이 많아요."
   - question: "Cursor IDE 실제 업무 투입 후기 GitHub Copilot 대비 Python 코드 품질 생산성 비교 결론이 뭔가요"
     answer: "Cursor IDE 실제 업무 투입 후기 GitHub Copilot 대비 Python 코드 품질 생산성 비교의 핵심 결론은 '더 좋은 도구'보다 '팀 워크플로우에 맞는 도구'가 생산성을 결정한다는 거예요. 맥락이 복잡한 Python 백엔드 프로젝트라면 Cursor가 유리하지만, 비용·기존 환경·팀 적응 비용까지 함께 고려해야 해요."
+aliases:
+  - "/tech/2026-04-13-cursor-ide-실제-업무-투입-후기-github-copilot-대비-python-코드/"
+
 ---
 
 6개월 전만 해도 팀의 절반이 GitHub Copilot을 쓰고 있었어요. 그러다 Cursor IDE가 입소문을 타기 시작했죠. "진짜 다르다"는 말이 워낙 많아서, 직접 Python 백엔드 프로젝트에 두 도구를 동시에 투입해봤어요. 결과는... 예상을 꽤 벗어났어요.

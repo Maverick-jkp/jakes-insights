@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions의 cron 트리거는 UTC 기준으로 동작하므로 한국 시간(KST)에서 9시간을 빼서 입력해야 합니다. 예를 들어 KST 오전 9시에 실행하려면 cron 표현식을 '0 0 * * *'으로 설정하면 되고, 워크플로우 내 빌드 명령에도 TZ='Asia/Seoul'을 명시해 Hugo가 올바른 시간대로 포스트를 판단하도록 해주는 것이 좋습니다."
   - question: "GitHub Actions Hugo 블로그 Cloudflare Pages 자동 배포 cron 실행 안 될 때 Cloudflare Deploy Hook 연동 방법"
     answer: "Cloudflare Pages 대시보드에서 Settings → Builds & Deployments → Deploy Hooks 메뉴로 이동해 Hook URL을 생성한 뒤, 해당 URL을 GitHub Secrets에 CF_DEPLOY_HOOK으로 저장합니다. GitHub Actions 워크플로우에서 curl -X POST '${{ secrets.CF_DEPLOY_HOOK }}' 명령을 실행하면 새 커밋 없이도 Cloudflare Pages 빌드를 직접 트리거할 수 있어 cron 기반 자동 배포를 더 안정적으로 운영할 수 있습니다."
+aliases:
+  - "/tech/2026-05-20-github-actions-hugo-블로그-cloudflare-pages-자동-배포-cro/"
+
 ---
 
 어젯밤 예약해둔 포스팅이 오늘 아침에도 올라와 있지 않아요. GitHub Actions 워크플로우 탭을 열면 마지막 실행 기록이 며칠 전 그대로. cron 스케줄은 맞게 써놨는데, 아무 일도 안 일어났죠. Hugo 블로그를 GitHub Actions로 자동 배포하고 Cloudflare Pages와 연결해둔 분들이라면 한 번쯤 겪는 상황이에요.

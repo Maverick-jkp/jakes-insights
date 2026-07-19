@@ -19,6 +19,9 @@ faq:
     answer: "When AI writes software faster than humans can review it, testing alone creates a verification bottleneck because it only covers anticipated scenarios. Formal verification tools such as TLA+, Coq, and Lean can fill this gap by mathematically proving correctness, as demonstrated in Amazon's S3 and DynamoDB protocols. The most promising near-term solution is AI-assisted formal verification, where models generate both code and corresponding correctness proofs simultaneously."
   - question: "what are the limitations of formal verification tools like Lean Coq TLA+"
     answer: "Tools like Lean, Coq, and TLA+ are highly effective within narrow, well-defined domains but currently require significant human expertise and effort to apply broadly. They don't yet scale easily to full-stack or general systems code without substantial manual work, limiting their widespread adoption. This gap between their theoretical power and practical usability is one of the central challenges in verifying AI-generated code at scale."
+aliases:
+  - "/tech/2026-03-04-when-ai-writes-software-who-verifies-correctness-f/"
+
 ---
 
 AI is writing more production code than ever. The verification gap — proving that code is actually *correct* — hasn't been solved. And that's becoming a serious problem.

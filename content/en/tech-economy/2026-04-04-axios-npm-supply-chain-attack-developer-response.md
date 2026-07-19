@@ -19,6 +19,9 @@ faq:
     answer: "Following the axios npm supply chain attack, developer adoption of supply chain hardening tools like Socket.dev and OpenSSF Scorecard increased measurably, along with a surge in CI pipeline audits. Version pinning and artifact integrity verification are recommended baseline practices to reduce exposure to similar publish-layer compromises."
   - question: "why does npm keep having supply chain security problems"
     answer: "npm's trust model is built on package name reputation rather than cryptographic provenance, meaning it authenticates the publisher's credentials rather than verifying the build artifact itself. If credentials are stolen through phishing, leaked CI secrets, or session token theft, an attacker can publish malicious code as a legitimate maintainer with no additional friction or verification."
+aliases:
+  - "/tech/2026-04-04-axios-npm-supply-chain-attack-developer-response/"
+
 ---
 
 One of the most downloaded JavaScript packages in existence—over 5 million installs per week—spent several hours in March 2026 quietly dropping a Remote Access Trojan onto developer machines worldwide. That's what the axios npm supply chain attack revealed about how fragile the ecosystem actually is when a high-value target gets hit at exactly the right layer.

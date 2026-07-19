@@ -19,6 +19,9 @@ faq:
     answer: "`actions/cache@v4`를 사용해 의존성 캐싱을 설정하면 빌드 시간을 절반 이하로 줄일 수 있어요. `hashFiles('**/package-lock.json')`을 캐시 키로 지정하면 `package-lock.json`이 변경될 때만 캐시를 새로 생성하므로 불필요한 패키지 재다운로드를 방지할 수 있어요."
   - question: "GitHub Actions에서 AWS 시크릿 키 안전하게 관리하는 방법"
     answer: "OIDC 인증을 사용하면 AWS 시크릿 키를 저장소에 직접 저장하지 않아도 AWS 리소스에 접근할 수 있어 보안상 훨씬 안전해요. GitHub Actions 입문 CI CD 자동화 가이드에서도 OIDC 인증 방식을 권장하고 있으며, 시크릿 키 노출 위험을 근본적으로 차단할 수 있는 방법이에요."
+aliases:
+  - "/tech/2026-03-06-github-actions-입문-ci-cd-자동화-가이드/"
+
 ---
 
 배포하는 데 2시간 걸렸는데, 나중에 보니 그냥 YAML 파일 하나면 됐던 얘기예요. 이 가이드를 읽고 나면 그런 일 없을 거예요.

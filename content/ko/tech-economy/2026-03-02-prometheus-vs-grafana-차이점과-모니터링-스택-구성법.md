@@ -19,6 +19,9 @@ faq:
     answer: "Prometheus의 Alertmanager와 Grafana 자체 알림 기능을 동시에 켜놓으면 같은 이벤트에 알림이 두 번 발생해요. 이 문제를 해결하려면 Alertmanager와 Grafana Alerting 중 하나만 선택해서 사용하는 것이 좋아요."
   - question: "Prometheus Grafana 모니터링 스택 구성법 순서 어떻게 되나요"
     answer: "Prometheus vs Grafana 차이점과 모니터링 스택 구성법의 핵심은 올바른 순서예요. node_exporter 등 Exporter 설치 → Prometheus 스크래핑 설정 → TSDB 저장 → Grafana에서 Prometheus를 데이터소스로 등록 → PromQL로 대시보드 패널 구성 순으로 진행해야 해요. 이 순서가 틀리면 Grafana에서 아무것도 표시되지 않으니 반드시 단계별로 확인하면서 진행하세요."
+aliases:
+  - "/tech/2026-03-02-prometheus-vs-grafana-차이점과-모니터링-스택-구성법/"
+
 ---
 
 서버 하나가 조용히 죽어가는 걸 3시간 뒤에야 알게 된 적, 있죠? 원인은 대부분 같아요. "모니터링은 있는데, 제대로 연결이 안 돼 있다." Prometheus와 Grafana, 두 도구가 뭔지는 알겠는데 각자 뭘 해야 하는지 헷갈린다면 — 이 글이 그 혼란을 정리해줄게요.

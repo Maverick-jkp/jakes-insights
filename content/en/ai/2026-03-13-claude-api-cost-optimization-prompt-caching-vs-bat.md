@@ -19,6 +19,9 @@ faq:
     answer: "For high-volume workloads where each request shares a large system prompt, combining prompt caching with batch processing can dramatically reduce costs — one real-world example saw monthly bills drop from $18,000 to four-figure totals. The optimal strategy depends on request structure: shared context favors caching, while fully independent requests benefit most from batching."
   - question: "when should I use claude batch api vs prompt caching"
     answer: "Use prompt caching when your requests share a large, repeated system prompt or context block, since cached reads cost 90% less than standard input pricing. Choose the Batch API when processing large volumes of independent requests that don't share context and where a 24-hour response delay is acceptable."
+aliases:
+  - "/tech/2026-03-13-claude-api-cost-optimization-prompt-caching-vs-bat/"
+
 ---
 
 Last quarter, an AI team at a mid-sized SaaS company watched their Anthropic invoice climb past $18,000/month — up from $4,200 just six months earlier. Same workload, roughly. Same model. The difference? They'd scaled without thinking about *how* they were calling the API.

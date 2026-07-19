@@ -19,6 +19,9 @@ faq:
     answer: "Weaviate can technically run on a 1GB RAM Docker setup, but it is tight — the default compose file uses 300–400MB just for module initialization before a single vector is loaded. On budget instances like an AWS t3.micro or Hetzner CX11, this leaves little headroom and risks out-of-memory errors around 50K vectors."
   - question: "weaviate vs chromadb local docker compose 1gb ram embedding search latency comparison for ci cd pipelines"
     answer: "For CI/CD pipelines constrained to 1GB RAM, the weaviate vs chromadb local docker compose 1gb ram embedding search latency comparison clearly favors ChromaDB due to its sub-5-second startup time and lower idle memory footprint. Weaviate's 18-second cold start and heavier resource usage make it impractical in automated pipeline environments where spin-up speed and memory limits matter."
+aliases:
+  - "/tech/2026-05-31-weaviate-vs-chromadb-local-docker-compose-1gb-ram-/"
+
 ---
 
 Running a vector database on a single machine with 1GB of RAM sounds like a recipe for pain. The Weaviate vs ChromaDB local Docker Compose 1GB RAM embedding search latency comparison keeps surfacing in Slack threads and GitHub issues — because more teams are prototyping AI search locally before committing to cloud costs.

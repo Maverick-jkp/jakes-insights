@@ -19,6 +19,9 @@ faq:
     answer: "Facebook Marketplace and Facebook Groups retain no viable competitor alternatives, creating what analysts call 'functional lock-in' that keeps monthly active user numbers elevated even as the social layer of the platform deteriorates. Users who rely on these tools for buying, selling, or community organizing have few practical places to go, regardless of how degraded the broader feed experience becomes."
   - question: "will meta fix the facebook is cooked problem with AI slop"
     answer: "There is currently very little financial pressure on Meta to reform the user experience, since revenue grew from $134 billion in 2023 to $164.5 billion in 2024. As long as engagement-driven advertising revenue continues to climb, the platform's incentive structure actually rewards the algorithm behavior that enables spam rather than punishing it."
+aliases:
+  - "/tech/2026-02-22-facebook-is-cooked/"
+
 ---
 
 Meta's flagship platform has 3.07 billion monthly active users and generated $164.5 billion in revenue in 2024. By almost every financial metric, it's thriving. Spend 10 minutes on Facebook today, though, and something feels fundamentally broken. The feed is choked with AI-generated images of wounded veterans asking for prayers, fake historical photos, and fictional plants with fabricated care instructions. Real friends? Nearly invisible.

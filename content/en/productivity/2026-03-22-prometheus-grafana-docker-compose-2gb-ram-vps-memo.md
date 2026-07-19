@@ -19,6 +19,9 @@ faq:
     answer: "A default Prometheus deployment typically consumes between 800MB and 1.2GB of RAM on its own, depending on the number of scrape targets and the retention period configured. This is because Prometheus loads its entire TSDB index into memory and defaults to keeping 15 days of metrics data. On a 2GB VPS also running Grafana and other services, this leaves almost no memory headroom before the Linux OOM killer fires."
   - question: "how to stop grafana from using too much memory in docker"
     answer: "Grafana's memory footprint is primarily driven by the number of concurrent dashboard queries and installed plugins, both of which can be controlled through environment variables in your Docker Compose file. Reducing the number of active dashboards, limiting concurrent users, and removing unused plugins are the most effective steps to lower Grafana's RAM consumption. Combining these changes with hard `mem_limit` values in Docker Compose prevents Grafana from contributing to OOM kill events on memory-constrained servers."
+aliases:
+  - "/tech/2026-03-22-prometheus-grafana-docker-compose-2gb-ram-vps-memo/"
+
 ---
 
 The OOM killer doesn't care about your uptime targets. One morning your monitoring stack is gone — containers dead, logs full of `Killed` entries, and your entire observability pipeline offline on the machine that's supposed to be watching everything else.

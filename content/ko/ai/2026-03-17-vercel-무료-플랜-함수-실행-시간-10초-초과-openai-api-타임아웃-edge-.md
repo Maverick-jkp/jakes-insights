@@ -19,6 +19,9 @@ faq:
     answer: "Render 무료 플랜의 Web Service는 실행 시간 제한이 없어 Vercel 무료 플랜 함수 실행 시간 10초 초과 OpenAI API 타임아웃 Edge Runtime 우회 전략의 대안으로 활용할 수 있습니다. Vercel 앱에서 Render 서버로 요청을 보내고 Render가 OpenAI를 호출하는 프록시 구조로 Vercel 제약을 완전히 우회합니다. 단, Render 무료 인스턴스는 15분 비활동 후 슬립 상태로 전환되어 콜드 스타트가 최대 50초까지 걸릴 수 있다는 새로운 UX 문제가 생깁니다."
   - question: "Vercel Edge Runtime 단점 Node.js API 사용 제한 어떤 것들이 있나요"
     answer: "Edge Runtime은 V8 Isolate 기반으로 동작해 fs, crypto 일부, 일부 npm 패키지를 사용할 수 없습니다. Vercel 공식 문서에 따르면 fetch, ReadableStream, TextEncoder 등 Web API 표준만 안정적으로 지원됩니다. 따라서 파일 시스템 접근이나 Node.js 전용 모듈이 필요한 기능은 Edge Runtime으로 마이그레이션하기 어렵습니다."
+aliases:
+  - "/tech/2026-03-17-vercel-무료-플랜-함수-실행-시간-10초-초과-openai-api-타임아웃-edge-/"
+
 ---
 
 Vercel 무료 플랜에 Next.js 앱 올리고 OpenAI 붙였는데 `504 Gateway Timeout` 뜬 적 있죠? 원인은 단순해요. Vercel Hobby 플랜의 함수 실행 시간 한도는 **10초**인데, GPT-4o 같은 무거운 모델은 그 이상 걸리는 경우가 많거든요.

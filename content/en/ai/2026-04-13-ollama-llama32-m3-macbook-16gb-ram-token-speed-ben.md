@@ -19,6 +19,9 @@ faq:
     answer: "M3 MacBook Pro users consistently report 60–80 tokens/sec running 3B-parameter models through Ollama, while M1 users running the same models typically achieve only 30–45 tokens/sec. This performance gap comes down to memory bandwidth, with the M3 Pro offering around 150 GB/s compared to the M1's lower throughput, which is the primary bottleneck for LLM inference."
   - question: "when should I use GPT-4o-mini instead of running Llama 3.2 locally with ollama"
     answer: "GPT-4o-mini holds clear advantages over local Llama 3.2 inference when your use case requires context windows larger than 32K tokens or involves serving multiple users simultaneously through an API. For single-user development workloads with standard context needs, the ollama llama3.2 M3 MacBook 16GB RAM token speed benchmark vs GPT-4o-mini 2025 data suggests local inference is a genuine production-ready alternative."
+aliases:
+  - "/tech/2026-04-13-ollama-llama32-m3-macbook-16gb-ram-token-speed-ben/"
+
 ---
 
 Running a capable LLM locally at 60+ tokens/sec on a $1,299 laptop — zero API costs, full data privacy — has shifted from a niche experiment to a genuine production consideration. The question of how Ollama's Llama 3.2 performs on an M3 MacBook with 16GB RAM against GPT-4o-mini isn't academic anymore. Developers are making real infrastructure decisions based on this data.

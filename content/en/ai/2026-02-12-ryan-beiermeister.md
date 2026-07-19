@@ -17,6 +17,9 @@ faq:
     answer: "ChatGPT's 'Adult Mode' was a proposed feature at OpenAI that sparked internal controversy in early 2026 due to concerns it could enable harmful content. The feature became the center of a high-profile termination case when senior policy executive Ryan Beiermeister opposed it and was subsequently fired after filing a discrimination complaint."
   - question: "openai discrimination case 2026"
     answer: "In February 2026, OpenAI fired senior policy executive Ryan Beiermeister after she filed a discrimination complaint following her opposition to a controversial feature. The case revealed structural tensions at AI companies between commercialization pressures and internal safety review processes, mirroring previous controversies including the chaotic removal of CEO Sam Altman in 2023."
+aliases:
+  - "/tech/2026-02-12-ryan-beiermeister/"
+
 ---
 
 # The Ryan Beiermeister Case: What Really Happened at OpenAI in 2026

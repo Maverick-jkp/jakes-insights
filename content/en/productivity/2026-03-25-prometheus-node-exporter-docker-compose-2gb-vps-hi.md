@@ -19,6 +19,9 @@ faq:
     answer: "A default Docker Compose stack running Prometheus, Grafana, and Node Exporter consumes between 600MB and 1.1GB of RAM at idle depending on scrape intervals and dashboard complexity. On a 2GB VPS already running Ubuntu 22.04 and an application process, this can leave as little as 400MB of free headroom. This tight margin puts the server at risk of OOM kills, particularly under load spikes."
   - question: "docker compose monitoring stack OOM killer killing app process instead of prometheus"
     answer: "Linux's OOM killer prioritizes terminating processes based on memory scores, and it does not distinguish between your critical application and your monitoring stack. On a 2GB VPS, a bloated default Prometheus configuration can consume enough memory to push the system into OOM territory, where the killer may terminate your app rather than Prometheus itself. Tuning TSDB retention and disabling unused collectors reduces this risk by lowering Prometheus's overall memory footprint."
+aliases:
+  - "/tech/2026-03-25-prometheus-node-exporter-docker-compose-2gb-vps-hi/"
+
 ---
 
 Running Prometheus, Node Exporter, and Grafana on a 2GB VPS sounds manageable — until your server starts swapping at 3 AM and your monitoring stack is the thing being monitored for being too heavy. This happens more than people admit, and the fix requires understanding exactly what's consuming memory and why Docker Compose default configurations are optimized for convenience, not constrained environments.

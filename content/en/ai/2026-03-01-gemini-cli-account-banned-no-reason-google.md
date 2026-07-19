@@ -19,6 +19,9 @@ faq:
     answer: "No, Google does not publicly disclose API throughput thresholds for its consumer Gemini subscription tiers, which is a core reason the February 2026 ban wave caught so many developers off guard. Consumer subscriptions are implicitly designed for human-speed interaction, but the specific limits that trigger enforcement action remain undocumented. Developers using Gemini CLI for production automation are at the highest risk because programmatic usage generates throughput profiles far outside typical consumer behavior."
   - question: "should I use Gemini CLI for production workflows after Google account ban wave"
     answer: "Using Gemini CLI with consumer subscription credentials for production-grade automation carries significant risk following Google's February 2026 enforcement actions. Batch processing and automated scripting generate usage patterns that differ substantially from the human-speed interaction consumer tiers are designed for, making these accounts primary targets for suspension. Developers with production dependencies on Gemini should consider migrating to Vertex AI, which uses explicit metered billing and provides clearer usage governance."
+aliases:
+  - "/tech/2026-03-01-gemini-cli-account-banned-no-reason-google/"
+
 ---
 
 Something strange started happening in late February 2026. Developers woke up to find their Google AI Pro and Ultra subscriptions suspended — no warning email, no violation notice, no appeal pathway. Just a ban. The specific trigger? Using `gemini-cli` with what Google internally categorizes as excessive API throughput, though the company never published those thresholds publicly.

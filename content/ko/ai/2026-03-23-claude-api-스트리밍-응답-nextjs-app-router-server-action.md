@@ -19,6 +19,9 @@ faq:
     answer: "async function* 제너레이터는 Node.js Runtime에서만 안정적으로 동작하며, Edge Runtime에서는 청크가 버퍼링되어 스트리밍 효과가 사라져요. Vercel 배포 시 runtime 설정을 명시하지 않으면 환경에 따라 동작이 달라지기 때문에, 반드시 'nodejs' 또는 'edge'를 명확히 지정해야 예측 가능한 동작을 보장할 수 있어요."
   - question: "Claude API stream true 옵션 Next.js에서 공식 문서에 없는 이유"
     answer: "Next.js 공식 문서는 ai 패키지의 streamText와 Route Handler를 조합한 클라이언트 훅(useChat) 기반 접근만 권장하고 있어, Server Action과 Claude API stream 옵션을 직접 조합하는 방법은 2026년 현재도 공식적으로 다루어지지 않는 회색지대예요. 실제 프로젝트에서 Server Action 스트리밍이 필요한 경우에는 커뮤니티 사례나 직접 삽질을 통해 구현 패턴을 찾아야 하는 상황이에요."
+aliases:
+  - "/tech/2026-03-23-claude-api-스트리밍-응답-nextjs-app-router-server-action/"
+
 ---
 
 처음엔 간단해 보였어요. Claude API에서 스트리밍 응답 받아서 화면에 뿌려주는 거잖아요. 근데 실제로 Next.js App Router의 Server Action에서 구현하려니 삽질이 시작됐죠. `ReadableStream`이 직렬화 안 된다는 에러, `async generator`가 중간에 끊기는 현상, 그리고 Vercel 배포 환경에서만 터지는 타임아웃까지. 이 글은 그 삽질의 기록이자, 결국 돌아가게 만든 최종 코드예요.

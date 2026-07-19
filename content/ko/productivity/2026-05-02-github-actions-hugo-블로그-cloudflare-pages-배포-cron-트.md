@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages의 GitHub 연동 자동 빌드와 GitHub Actions의 wrangler 배포가 동시에 활성화되면 두 곳에서 빌드가 시작되어 배포 중복이나 실패가 발생할 수 있어요. 해결책은 Cloudflare Pages 설정에서 자동 빌드 옵션을 끄고 GitHub Actions에서만 배포를 제어하는 방식으로 일원화하는 거예요. GitHub Actions Hugo 블로그 Cloudflare Pages 배포 cron 트리거 안될 때 해결법을 찾는 분들이 자주 놓치는 원인 중 하나예요."
   - question: "GitHub Actions 레포지토리 오래되면 cron 자동 비활성화 재활성화 방법"
     answer: "GitHub은 레포지토리에 60일 이상 커밋이 없으면 스케줄 워크플로우를 자동으로 비활성화해요. 별도 알림 없이 조용히 꺼지기 때문에 인지하기 어렵고, GitHub Actions 탭에 접속하면 배너 형태로 안내가 표시돼요. 해당 배너에서 직접 워크플로우를 다시 활성화하거나, 레포지토리에 커밋을 추가하면 스케줄이 재개돼요."
+aliases:
+  - "/tech/2026-05-02-github-actions-hugo-블로그-cloudflare-pages-배포-cron-트/"
+
 ---
 
 Hugo 블로그를 Cloudflare Pages에 자동 배포하도록 설정했는데, cron 스케줄이 아무 반응 없이 조용히 실패하는 상황. 로그도 없고, 에러도 없고. 그냥 아무 일도 일어나지 않는 것처럼 보이죠. 실제로 이 문제는 GitHub Actions의 구조적 특성에서 비롯되는데, 알고 나면 어이없을 만큼 간단한 이유예요.

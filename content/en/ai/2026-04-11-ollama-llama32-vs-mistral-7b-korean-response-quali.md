@@ -19,6 +19,9 @@ faq:
     answer: "According to the ollama llama3.2 vs mistral 7b korean response quality benchmark 2025 analysis, Llama 3.2 shows measurably better context retention for Korean RAG pipelines involving long documents, while Mistral 7B excels at short-form classification tasks. Mistral 7B also has a hardware efficiency advantage due to its sliding window attention architecture, making it faster for real-time applications on constrained hardware."
   - question: "why do Korean companies prefer local LLM deployment over API in 2025"
     answer: "Korean companies like Kakao and Naver are increasingly evaluating local LLM deployments to reduce API costs and keep sensitive data on-premises rather than sending it to external providers. The acceleration of Korean AI adoption by early 2026 has made the performance differences between models like Llama 3.2 and Mistral 7B increasingly critical for production decisions."
+aliases:
+  - "/tech/2026-04-11-ollama-llama32-vs-mistral-7b-korean-response-quali/"
+
 ---
 
 Running local LLMs for Korean-language tasks sounds simple until the first production failure. The quality gap between models isn't subtle — it's the difference between a response your users trust and one they immediately flag as broken.

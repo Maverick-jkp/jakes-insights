@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Cloudflare KV uses an eventually consistent model where write propagation across the full edge network can take up to 60 seconds. This makes KV unsuitable for use cases that require immediately consistent data after a write, such as inventory or financial transactions."
   - question: "is cloudflare D1 production ready in 2025 2026 for edge functions"
     answer: "Cloudflare D1 exited beta and reached general availability in late 2025, with databases now supporting up to 10GB and global read replication across multiple regions. These improvements significantly narrowed D1's latency disadvantage compared to KV for read-heavy workloads, making it a viable production option."
+aliases:
+  - "/tech/2026-05-12-cloudflare-workers-kv-storage-vs-d1-sqlite-latency/"
+
 ---
 
 Edge functions live or die by milliseconds. Pick the wrong storage layer and a 2ms computation becomes a 180ms round-trip — and that's before your cold start tax hits.

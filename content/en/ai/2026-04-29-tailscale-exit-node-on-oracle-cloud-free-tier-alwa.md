@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Oracle's Always Free ARM Ampere A1 instance works well as a tailscale exit node, but there are several setup pitfalls to avoid including forgetting to enable IP forwarding with sysctl, missing the FORWARD iptables rule that allows traffic routing, and not accounting for Oracle's instance reclamation policy for low-activity VMs. Addressing all three layers — firewall, kernel routing, and instance activity — is required for a stable long-term setup."
   - question: "how to enable IP forwarding for tailscale exit node on ubuntu arm64"
     answer: "IP forwarding is disabled by default on Ubuntu ARM64 instances, including those on Oracle Cloud, and must be manually enabled for a Tailscale exit node to route traffic correctly. You can enable it by adding 'net.ipv4.ip_forward=1' and 'net.ipv6.conf.all.forwarding=1' to /etc/sysctl.conf and running 'sudo sysctl -p' to apply the changes."
+aliases:
+  - "/tech/2026-04-29-tailscale-exit-node-on-oracle-cloud-free-tier-alwa/"
+
 ---
 
 Running a personal VPN exit node for zero dollars sounds like a trap. Oracle's Always Free ARM instances and Tailscale together make it technically real — but the gap between "it works" and "it actually *stays* working" is where most setups quietly collapse.

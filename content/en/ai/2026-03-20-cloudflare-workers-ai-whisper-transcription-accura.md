@@ -19,6 +19,9 @@ faq:
     answer: "For real-time or near-real-time use cases like live captioning and voice interfaces, Cloudflare Workers AI has a clear latency advantage because it runs inference across a global edge network of 300+ data centers, bypassing centralized data center routing. This edge deployment reduces round-trip latency meaningfully compared to OpenAI's centralized API, making Cloudflare the preferred choice for streaming and live transcription pipelines."
   - question: "difference between cloudflare whisper and openai whisper model"
     answer: "OpenAI's Whisper API uses the full whisper-1 model, which maps to Whisper large-v2 under the hood, running on traditional GPU infrastructure. Cloudflare Workers AI runs a quantized version of Whisper optimized for edge hardware, which trades some raw accuracy for faster inference and global distribution across its network."
+aliases:
+  - "/tech/2026-03-20-cloudflare-workers-ai-whisper-transcription-accura/"
+
 ---
 
 ## The Race for Affordable, Fast Transcription

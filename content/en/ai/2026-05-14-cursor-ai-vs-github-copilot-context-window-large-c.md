@@ -19,6 +19,9 @@ faq:
     answer: "For multi-file refactoring on large codebases, Cursor currently has an advantage because its whole-repo indexing is a mature, core feature rather than a recently rolled-out addition. GitHub Copilot's workspace agent began broader rollout in late 2025 and is still maturing as of mid-2026, meaning its multi-file capabilities aren't consistently available across all plans. Teams doing frequent cross-file architectural work tend to see more reliable results with Cursor."
   - question: "cursor ai vs github copilot context window large codebase real usage difference for small projects"
     answer: "For small projects under roughly 50,000 lines, the context window difference between Cursor and GitHub Copilot is minimal and unlikely to affect day-to-day output quality. Both tools perform similarly on single-file tasks, autocomplete, and simple multi-file edits at smaller scales. The performance gap described in cursor ai vs github copilot context window large codebase real usage difference comparisons primarily applies to larger monorepos and enterprise-scale codebases."
+aliases:
+  - "/tech/2026-05-14-cursor-ai-vs-github-copilot-context-window-large-c/"
+
 ---
 
 Most developers pick an AI coding tool based on autocomplete feel or pricing. That's a mistake when you're working in a 200,000-line monorepo and your tool quietly drops half the codebase from its awareness window.

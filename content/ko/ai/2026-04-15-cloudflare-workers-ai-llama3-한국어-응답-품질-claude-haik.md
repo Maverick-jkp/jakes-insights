@@ -19,6 +19,9 @@ faq:
     answer: "Claude Haiku 3.5의 출력 비용은 1M 토큰당 $4.00인 반면, Cloudflare Workers AI Llama 3 8B는 약 $0.27로 약 15배 차이가 납니다. 출력량이 많은 챗봇 서비스 기준으로 월 단위 수백만 원 이상의 비용 격차가 발생할 수 있어, 사용 패턴에 따라 모델 선택이 인프라 비용 구조 전체를 바꿀 수 있습니다."
   - question: "엣지 AI 한국 사용자 응답 속도 Cloudflare Workers AI 빠른가요"
     answer: "Cloudflare의 전 세계 320개 이상 PoP 덕분에 아시아-태평양 지역 사용자 기준 평균 60~80ms 더 빠른 응답을 제공하는 경우가 많습니다. Llama 3 8B 기준 한국에서의 평균 지연은 80~120ms로, Claude Haiku의 150~250ms보다 유리하며, 지연 시간이 UX에 민감한 서비스에서 엣지 추론의 실질적인 이점으로 작용합니다."
+aliases:
+  - "/tech/2026-04-15-cloudflare-workers-ai-llama3-한국어-응답-품질-claude-haik/"
+
 ---
 
 엣지에서 LLM을 돌리는 게 현실적인 선택지가 된 지 꽤 됐어요. 그런데 막상 한국어 서비스에 붙이려 하면 같은 고민이 생기죠. "Cloudflare Workers AI에 올려둔 Llama 3가 Claude Haiku보다 정말 많이 떨어질까? 아니면 비용 차이를 생각하면 충분히 쓸 만할까?" 2026년 현재, 엣지 AI 인프라가 빠르게 성숙하면서 이 질문의 답이 더 복잡해졌어요. 데이터로 직접 뜯어볼게요.

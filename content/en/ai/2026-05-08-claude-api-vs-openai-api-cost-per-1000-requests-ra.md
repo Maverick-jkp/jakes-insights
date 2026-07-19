@@ -19,6 +19,9 @@ faq:
     answer: "RAG pipelines are token-intensive by design because each request includes a system prompt, multiple retrieved document chunks (often 800–2,000 tokens each), the user query, and the model response. At mid-scale volumes, teams have reported monthly bills exceeding $4,200, with the cost spread between providers potentially reaching tens of thousands of dollars annually for functionally identical output."
   - question: "gpt-4o mini vs claude haiku cost comparison for production rag 2025 2026"
     answer: "Claude 3.5 Haiku is priced at $0.25 per million input tokens and $1.25 per million output tokens according to Anthropic's published rate card, making it competitive with or cheaper than GPT-4o mini in input-heavy RAG workloads. However, a mid-sprint model swap without a proper token cost audit — as many teams discovered — can cause monthly costs to spike unexpectedly, so benchmarking against your actual query and retrieval patterns is essential."
+aliases:
+  - "/tech/2026-05-08-claude-api-vs-openai-api-cost-per-1000-requests-ra/"
+
 ---
 
 Last quarter, a team running a mid-scale RAG pipeline watched their monthly AI API bill climb past $4,200 — with no clear explanation of why. Same query volume, same document corpus. The culprit? A model swap from Claude Haiku to GPT-4o mid-sprint, made without a proper token cost audit.

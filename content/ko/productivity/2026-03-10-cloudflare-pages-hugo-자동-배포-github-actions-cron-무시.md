@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions의 cron 표현식은 UTC 기준으로 동작하며, 한국 표준시(KST)는 UTC+9입니다. 예를 들어 KST 오전 9시에 배포하려면 cron 표현식을 `0 0 * * *`으로 설정해야 합니다. 또한 GitHub Actions 스케줄은 트래픽에 따라 최대 15~30분의 지연이 발생할 수 있으므로 정각 배포가 필수인 경우 여유 시간을 고려해야 합니다."
   - question: "Hugo 블로그 자동 배포 더미 커밋 방식 문제점"
     answer: "더미 커밋 방식은 의미 없는 파일 변경을 반복해서 저장소 히스토리를 오염시키고, 장기적으로 유지보수 부담이 높아집니다. Cloudflare Pages Hugo 자동 배포 환경에서는 GitHub Actions cron과 Deploy Hook을 조합하는 방식이 저장소를 오염시키지 않으면서 설정 복잡도도 낮아 대부분의 케이스에 권장됩니다. 빌드 환경을 직접 제어해야 하는 경우에만 Actions에서 직접 빌드하고 배포하는 방식을 선택하면 됩니다."
+aliases:
+  - "/tech/2026-03-10-cloudflare-pages-hugo-자동-배포-github-actions-cron-무시/"
+
 ---
 
 cron 표현식도 맞고, 워크플로우 파일도 문법 오류 없어 보이는데 Cloudflare Pages 배포가 뚝 끊겼어요. GitHub Actions 스케줄 설정을 분명히 했는데 왜 안 되는 건지 감이 안 잡히는 상황, 겪어봤죠?

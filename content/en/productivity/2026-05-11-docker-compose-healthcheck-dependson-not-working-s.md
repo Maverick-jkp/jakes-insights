@@ -19,6 +19,9 @@ faq:
     answer: "The native Docker Compose healthcheck combined with depends_on condition: service_healthy is the recommended modern approach and requires no external dependencies or custom scripts. Scripts like wait-for-it.sh are considered a legacy workaround from when Docker Compose lacked built-in condition support. The native solution is cleaner, more portable, and directly supported in the Compose specification."
   - question: "docker compose postgres container ready before api starts healthcheck setup"
     answer: "To ensure your API waits for PostgreSQL to be fully ready, add a healthcheck block to your postgres service using pg_isready as the test command, and set depends_on in your API service with 'condition: service_healthy'. You must also include a 'start_period' value in the healthcheck to prevent health checks from failing prematurely before PostgreSQL finishes initializing, especially on slower storage environments like CI."
+aliases:
+  - "/tech/2026-05-11-docker-compose-healthcheck-dependson-not-working-s/"
+
 ---
 
 Most engineers hit this wall within their first week of containerizing a real app. The database container is "up," the API crashes anyway, and `depends_on` is sitting there doing absolutely nothing useful.

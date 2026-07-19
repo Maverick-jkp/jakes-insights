@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Copilot's context is largely limited to the currently open file and some imported symbols, which creates problems for FastAPI projects where features typically span multiple interconnected files. This limitation means Copilot can produce broken code when asked to implement changes like authentication middleware that requires edits across routers, schemas, dependencies, and config simultaneously."
   - question: "can cursor or copilot help with async python fastapi debugging"
     answer: "Neither Cursor nor GitHub Copilot fully solves async Python debugging in FastAPI projects, and both tools require the developer to independently understand asyncio patterns. While both assistants can help with code generation and refactoring, async debugging remains an area where developer knowledge is still essential regardless of which AI tool you choose."
+aliases:
+  - "/tech/2026-03-21-cursor-ide-vs-copilot-for-solo-backend-developer-p/"
+
 ---
 
 Switched from Copilot to Cursor six months ago. Switched back for two weeks to compare. The difference wasn't subtle.

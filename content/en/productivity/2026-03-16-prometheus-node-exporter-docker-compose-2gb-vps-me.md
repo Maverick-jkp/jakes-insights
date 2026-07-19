@@ -19,6 +19,9 @@ faq:
     answer: "The most impactful optimizations for a low resource prometheus node exporter docker compose 2gb vps memory optimization low resource setup are reducing TSDB retention time, increasing scrape intervals from 15 to 60 seconds, and enforcing container memory limits with both mem_limit and memswap_limit in Docker Compose. These changes combined can bring total stack memory usage from 600–900MB down to under 350MB. This approach is particularly relevant for budget VPS tiers at providers like Hetzner, DigitalOcean, and Vultr where 2–4GB RAM nodes are the norm."
   - question: "what is mem_limit in docker compose and why does it matter for prometheus"
     answer: "mem_limit in Docker Compose sets a hard ceiling on how much RAM a container can use, preventing any single container from consuming the host's entire memory pool. For Prometheus specifically, this is critical because TSDB write flushes can cause temporary memory spikes that, without limits, can OOM-kill other containers running on the same host. Setting both mem_limit and memswap_limit for each container in your monitoring stack is the most important guardrail against crashes on memory-constrained servers."
+aliases:
+  - "/tech/2026-03-16-prometheus-node-exporter-docker-compose-2gb-vps-me/"
+
 ---
 
 Running a full Prometheus stack on a 2GB VPS is, by default, a slow-motion disaster. The stock configuration consumes 600–900MB of RAM before you've scraped a single metric. But with a properly structured Docker Compose setup, you can run a prometheus node exporter docker compose 2gb vps memory optimization low resource setup that actually fits your hardware — and still leaves meaningful headroom for the workloads you're trying to monitor.

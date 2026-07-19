@@ -19,6 +19,9 @@ faq:
     answer: "Teams that mandate the same code review standards for AI-generated output as for human-written code experience 40% fewer AI-related production incidents, according to a 2025 Stripe engineering blog post. The key principle is treating AI output as a first draft requiring full human scrutiny rather than a pre-reviewed solution. Establishing explicit review checklists for AI-generated code helps counteract the over-trust that builds when engineers repeatedly see plausible-looking results."
   - question: "real examples of AI coding tools causing production outages"
     answer: "One documented example involves a senior fintech engineer who used GitHub Copilot and GPT-4 to write a database migration script that locked a critical table during peak hours, causing four hours of downtime. In the post-mortem, the engineer admitted he hadn't reviewed the generated SQL carefully because he assumed the AI had already validated it. This incident illustrates the core risk explored in discussions of AI psychosis in tech companies: engineers delegating judgment to tools that produce confident but unverified outputs."
+aliases:
+  - "/tech/2026-05-16-ai-psychosis-in-tech-companies-how-llm-dependency-/"
+
 ---
 
 Six months ago, a senior backend engineer at a mid-sized fintech company pushed a database migration script to production. He'd used GitHub Copilot and GPT-4 to write it. Neither tool flagged that the script would lock a critical table during peak hours. The outage cost four hours of downtime. When the post-mortem happened, the engineer admitted he hadn't read the generated SQL carefully — "the AI had reviewed it," he said.

@@ -19,6 +19,9 @@ faq:
     answer: "The CSS checkbox hack uses HTML checkboxes combined with the :checked pseudo-class and sibling selectors to track and change state purely within CSS. By chaining these stateful elements together with complex selector rules, developers can create logic gates and memory-like structures without any JavaScript. This is one of the core techniques that makes something as complex as an X86 CPU emulator written in CSS possible, however improbable it sounds."
   - question: "can you run real programs in a CSS only emulator"
     answer: "Yes, the CSS x86 emulator described is not a toy demo — it actually boots DOS and runs real programs entirely within a browser using pure CSS. It works by exploiting CSS's Turing complete properties through checkbox hacks, sibling selectors, and recursive rules to replicate x86 CPU behavior. While it runs much slower than JavaScript or WebAssembly-based emulators, it proves that browser-native computation is not limited to traditional scripting languages."
+aliases:
+  - "/tech/2026-02-24-x86-cpu-emulator-written-in-css-how-is-this-even-p/"
+
 ---
 
 Someone built an x86 CPU emulator in CSS. No JavaScript. No WebAssembly. Pure CSS — the same language you use to change a button's color or add a drop shadow. It boots DOS. It runs real programs.

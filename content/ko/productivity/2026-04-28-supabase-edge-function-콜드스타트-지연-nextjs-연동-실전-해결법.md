@@ -19,6 +19,9 @@ faq:
     answer: "Next.js Route Handler에서 Edge Function 응답에 revalidate와 cache: 'force-cache' 옵션을 적용하면 사용자는 항상 캐시된 응답을 받고, 백그라운드에서만 실제 Edge Function이 호출되는 구조가 만들어져요. 이렇게 하면 사용자 입장에서는 콜드스타트 지연이 보이지 않고, 캐시 갱신 시점에 자동으로 워밍 효과까지 생겨서 일석이조예요. revalidate 주기를 너무 길게 잡으면 데이터 신선도가 떨어지므로 서비스 특성에 맞게 조정이 필요해요."
   - question: "Supabase Edge Function에서 npm 패키지 import 할 때 주의할 점"
     answer: "Supabase Edge Function은 Deno 환경에서 실행되므로 npm: prefix로 무거운 패키지를 불러오면 콜드스타트 시 모듈 전체를 로드해야 해서 지연이 커져요. 특히 Edge Function 내부에서 @supabase/supabase-js 전체를 다시 import하는 건 이미 Supabase 서버 환경 안에서 실행되기 때문에 불필요한 무게를 더하는 행위예요. 필요한 모듈만 선택적으로 import하고, 외부 패키지 대신 Deno 표준 라이브러리를 우선 사용하는 것이 콜드스타트 최적화의 기본 원칙이에요."
+aliases:
+  - "/tech/2026-04-28-supabase-edge-function-콜드스타트-지연-nextjs-연동-실전-해결법/"
+
 ---
 
 Next.js 앱에 Supabase Edge Function을 붙였는데, 첫 요청이 **2~4초씩 걸린다**는 이슈를 겪고 있다면 아직 해결 가능한 부분이 많이 남아 있어요.

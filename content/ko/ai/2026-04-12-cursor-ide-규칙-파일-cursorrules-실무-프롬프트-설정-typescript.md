@@ -19,6 +19,9 @@ faq:
     answer: "규칙이 50줄 이하인 소규모 프로젝트나 빠르게 시작해야 하는 경우라면 단일 `.cursorrules` 파일이 간편해요. 반면 규칙이 100줄을 넘거나 팀 단위로 협업하는 중·대규모 프로젝트라면 `.cursor/rules/` 디렉토리 구조가 파일별 담당자 분리와 Git 충돌 최소화 면에서 유리하며, Cursor 0.43 버전 이후로 안정적으로 지원돼요."
   - question: "Next.js App Router cursorrules 설정 예시"
     answer: "App Router 관련 규칙으로는 `pages/` 디렉토리 사용 금지, Server Component에서 직접 데이터 페칭, 클라이언트 컴포넌트 최상단에 `'use client'` 명시, Server Action은 `'use server'` 지시문과 함께 별도 파일로 분리하는 내용을 넣으면 돼요. AI가 학습 데이터에 Pages Router 패턴이 많이 섞여 있어서 명시하지 않으면 구형 패턴을 생성하는 경우가 있기 때문에, 이 규칙들을 `.cursorrules`에 적어두는 것이 중요해요."
+aliases:
+  - "/tech/2026-04-12-cursor-ide-규칙-파일-cursorrules-실무-프롬프트-설정-typescript/"
+
 ---
 
 코드 리뷰 때마다 AI가 엉뚱한 스타일로 코드를 뱉어내서 손을 봐야 했던 적, 있죠? 2026년 현재, Cursor IDE를 쓰는 팀이 급격히 늘면서 `.cursorrules` 파일 설정이 개발 생산성을 가르는 핵심 변수로 떠오르고 있어요.

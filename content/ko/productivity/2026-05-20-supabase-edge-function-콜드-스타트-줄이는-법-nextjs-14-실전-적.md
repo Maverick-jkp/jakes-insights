@@ -19,6 +19,9 @@ faq:
     answer: "Vercel Cron Jobs나 GitHub Actions scheduled workflow로 5분마다 헬스체크 엔드포인트를 호출하는 패턴이 일반적으로 쓰여요. Next.js 14 프로젝트라면 `vercel.json`에 crons 설정을 추가해 주기적으로 함수를 깨워두면 콜드 스타트를 사실상 없앨 수 있지만, Vercel Cron은 Pro 플랜 이상에서만 지원돼요."
   - question: "Supabase Edge Function 콜드 스타트 줄이는 법 Next.js 14 실전 적용 후기 번들 크기 최적화 방법"
     answer: "`@supabase/supabase-js` 전체를 import하면 트리셰이킹 없이 200KB를 초과할 수 있어서, 필요한 모듈 경로만 명시적으로 import하는 방식으로 번들을 줄여야 해요. `esm.sh`에서 번들 사이즈를 사전에 확인할 수 있고, Supabase 공식 문서도 50KB 이하를 권장하며 이를 지키면 콜드 스타트를 최대 40~50% 단축할 수 있어요."
+aliases:
+  - "/tech/2026-05-20-supabase-edge-function-콜드-스타트-줄이는-법-nextjs-14-실전-적/"
+
 ---
 
 API 응답이 첫 요청에서만 유독 느린 경험, 분명 있었을 거예요. 원인은 대부분 하나예요. 콜드 스타트.

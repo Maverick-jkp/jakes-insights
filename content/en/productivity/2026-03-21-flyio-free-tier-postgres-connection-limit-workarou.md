@@ -19,6 +19,9 @@ faq:
     answer: "Because Fly.io provisions Postgres as a standard Fly app rather than a fully managed service, you have full control of the VM stack and can attach PgBouncer as a sidecar on the same machine at no additional cost. This is the community's preferred fly.io free tier postgres connection limit workaround for solo developers in 2025, as it requires no extra infrastructure spending and can multiply effective connection capacity several times over."
   - question: "fly.io managed postgres cost vs free tier upgrade options 2025"
     answer: "As of early 2026, upgrading to Fly.io's managed Postgres tier starts at approximately $17 per month, which is one of three viable options for solo developers outgrowing the free tier. The other two options are implementing a PgBouncer sidecar (free) or migrating to Supabase's free connection pooler, each suited to different stages of a project's growth."
+aliases:
+  - "/tech/2026-03-21-flyio-free-tier-postgres-connection-limit-workarou/"
+
 ---
 
 Solo developers keep hitting the same wall. They pick Fly.io for its generous free tier, deploy a Postgres database, and then watch their hobby project die with `too many connections` errors at roughly 25 active connections. The fix isn't obvious — and the official docs don't make it easy to find.

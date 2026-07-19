@@ -19,6 +19,9 @@ faq:
     answer: "When comparing the ollama llama3.2 3b vs 1b korean response quality benchmark on macbook m3 hardware, the active RAM difference between the two models is approximately 800MB to 1.2GB. For most Korean-language workloads, this relatively small memory delta does not justify choosing the 1B model, since the 3B version delivers significantly better grammatical accuracy and honorific register consistency."
   - question: "does llama 3.2 support korean language natively"
     answer: "Yes, Meta's Llama 3.2 release in September 2024 explicitly lists Korean among its supported languages with dedicated pre-training data included. Both the 1B and 3B variants share the same architecture and tokenizer, meaning the quality difference in Korean output comes down to parameter count and attention head depth rather than language coverage."
+aliases:
+  - "/tech/2026-04-22-ollama-llama32-3b-vs-1b-korean-response-quality-be/"
+
 ---
 
 Running local LLMs for non-English languages used to mean accepting garbage output. The question of whether Llama 3.2 3B actually outperforms 1B for Korean — specifically on MacBook M3 hardware — cuts right to it. Does the size difference matter, or is 1B good enough?

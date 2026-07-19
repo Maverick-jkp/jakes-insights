@@ -19,6 +19,9 @@ faq:
     answer: "Teams running 30,000+ GitHub Actions minutes monthly on macOS runners can spend significantly more than the $599 cost of a Mac mini M4 in just a few billing cycles, since macOS hosted runners bill at $0.08/minute on the Teams plan. The github actions self-hosted runner arm64 mac mini m4 docker build speed test data suggests mid-size engineering orgs shipping 50+ PRs per day are the strongest candidates for this cost shift."
   - question: "how to avoid arm64 vs x86 docker build mismatches in CI pipelines"
     answer: "The most effective solution is running a native ARM64 self-hosted runner, such as a Mac mini M4, so CI builds match the architecture developers use locally on Apple Silicon Macs. This eliminates cross-compilation requirements and architecture-specific build failures that can appear inconsistently when x86 CI infrastructure builds ARM64-targeted container images."
+aliases:
+  - "/tech/2026-04-18-github-actions-selfhosted-runner-arm64-mac-mini-m4/"
+
 ---
 
 Build times matter. Not in a vague "developer experience" way — in a real dollars-per-minute way, especially when you're burning GitHub-hosted runner minutes at scale.

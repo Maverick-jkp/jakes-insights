@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages Hugo 자동배포 GitHub Actions cron 미작동 원인 해결 후기에서 소개한 가장 안정적인 방법은 Cloudflare Pages API의 deployments 엔드포인트를 curl로 직접 호출하는 방식이에요. CF_ACCOUNT_ID, CF_PROJECT_NAME, CF_API_TOKEN을 GitHub Secrets에 저장하고 workflow에서 POST 요청을 보내면 빈 커밋 없이 깔끔하게 배포를 트리거할 수 있으며, 다만 계정당 월 500회 무료 배포 한도를 고려해야 해요."
   - question: "Cloudflare Pages 빈 커밋으로 배포 트리거하는 방식 단점"
     answer: "빈 커밋 방식은 git commit --allow-empty로 push 이벤트를 만들어 Cloudflare Pages 빌드를 유발하는 가장 단순한 방법이지만, 자동화가 반복될수록 의미 없는 커밋이 레포지터리 히스토리에 계속 쌓여 지저분해지는 단점이 있어요. 장기 운영 프로젝트라면 Cloudflare Pages API를 직접 호출하는 방식이 더 권장돼요."
+aliases:
+  - "/tech/2026-04-20-cloudflare-pages-hugo-자동배포-github-actions-cron-미작동/"
+
 ---
 
 GitHub Actions cron을 설정해놨는데 Cloudflare Pages가 멀쩡히 안 올라가는 상황. 처음엔 내 실수인 줄 알았어요. 그런데 아니더라고요.

@@ -19,6 +19,9 @@ faq:
     answer: "Vercel Serverless Function은 실행시간이 무료 플랜 기준 10초로 제한되지만, Edge Runtime은 타임아웃 제한이 없어 Claude 같은 LLM 호출에 적합합니다. 다만 Edge Runtime은 메모리 상한이 128MB이고 `fs`, `path` 같은 Node.js 전용 모듈을 사용할 수 없다는 제약이 있으므로, 파일 입출력이 필요 없는 순수 API 호출 용도라면 Edge Runtime이 유리합니다."
   - question: "Vercel 무료 플랜 함수 실행시간 10초 초과 Claude API 스트리밍 우회 실전 코드에서 SSE 헤더 설정 왜 필요한가요?"
     answer: "Vercel 무료 플랜 함수 실행시간 10초 초과 Claude API 스트리밍 우회 실전 코드에서 `Content-Type: text/event-stream`과 `Cache-Control: no-cache`, `Connection: keep-alive` 헤더는 브라우저와 서버 간 SSE 연결을 유지하는 데 필수입니다. 이 헤더가 없으면 중간 프록시나 브라우저가 응답을 버퍼링해 스트리밍 효과가 사라지고, 결국 전체 응답 완료까지 기다리는 블로킹 방식과 동일하게 동작해 타임아웃 문제가 재발합니다."
+aliases:
+  - "/tech/2026-05-01-vercel-무료-플랜-함수-실행시간-10초-초과-claude-api-스트리밍-우회-실전-/"
+
 ---
 
 Serverless 함수가 10초 안에 응답을 못 내면 Vercel Hobby 플랜은 바로 504를 뱉어요. Claude API 같은 LLM 호출은 평균 응답 시간이 15~40초 사이거든요. 그러니까 Vercel 무료 플랜에 Claude를 붙이는 순간, 이 조합은 기본적으로 타임아웃 머신이 되는 거예요. 근데 스트리밍으로 이걸 우회하는 방식이 개발자 커뮤니티에서 빠르게 퍼지고 있어요. 코드 수준에서 뜯어볼게요.

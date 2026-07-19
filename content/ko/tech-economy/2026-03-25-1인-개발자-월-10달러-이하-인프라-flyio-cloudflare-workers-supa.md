@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 요청, 월 환산 약 300만 요청을 제공해 개인 서비스 초기 단계에서는 오히려 남는 수준이에요. 비용이 발생하는 구간은 KV 쓰기가 하루 1,000회를 초과할 때로, 쓰기가 잦은 실시간 기능을 Workers KV에 의존하는 구조에서 유료 전환이 발생해요. API 게이트웨이나 엣지 로직 용도로만 사용한다면 사실상 0달러로 운영이 가능해요."
   - question: "AWS 대신 Fly.io Supabase 조합 쓰는 이유 비용 비교"
     answer: "1인 개발자 월 10달러 이하 인프라 Fly.io Cloudflare Workers Supabase 실제 비용 후기에서 비교한 데이터에 따르면, 동일 워크로드 기준 AWS EC2 t3.micro는 월 약 8~10달러인 반면 Fly.io 공유 CPU 머신은 월 1.94달러 수준이에요. AWS는 모르는 사이 청구서가 불어나는 구조인 반면, Fly.io·Cloudflare Workers·Supabase 조합은 무료에서 유료로 넘어가는 임계점이 명확해 비용 예측이 쉬운 것이 가장 큰 차이예요."
+aliases:
+  - "/tech/2026-03-25-1인-개발자-월-10달러-이하-인프라-flyio-cloudflare-workers-supa/"
+
 ---
 
 사이드 프로젝트를 AWS에 올렸다가 첫 달 청구서 보고 멈칫한 적 있죠? 월 10달러 이하로 실제 서비스를 운영하는 게 가능할까요? Fly.io, Cloudflare Workers, Supabase를 조합해 실제로 굴리는 1인 개발자들이 꽤 있어요. 이 조합이 정말 말이 되는지, 어디서 지갑이 열리는지 데이터 기반으로 풀어볼게요.

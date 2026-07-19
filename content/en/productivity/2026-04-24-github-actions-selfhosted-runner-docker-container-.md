@@ -19,6 +19,9 @@ faq:
     answer: "Ubuntu 20.04 used cgroup v1 by default, while 22.04 switched to cgroup v2, which introduced different memory accounting behavior that amplifies memory accumulation from orphaned containers. Teams migrating self-hosted runner infrastructure from 20.04 to 22.04 often encounter this issue for the first time because the same Docker and runner configuration behaves differently under cgroup v2."
   - question: "does restarting the github actions runner process free memory from docker containers"
     answer: "Restarting the runner process alone does not reliably free memory because the accumulation is tied to orphaned overlay filesystems and zombie container processes at the kernel and Docker daemon level. A proper github actions self-hosted runner docker container memory leak ubuntu 22.04 fix requires daemon-level cleanup and cgroup v2 enforcement, not just runner process restarts."
+aliases:
+  - "/tech/2026-04-24-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 Your CI pipeline ran fine for three weeks. Then memory usage climbed to 98%, jobs started hanging, and the runner process became unresponsive. Not a fluke. Not bad luck.

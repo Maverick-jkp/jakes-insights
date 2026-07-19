@@ -19,6 +19,9 @@ faq:
     answer: "A default Express.js app using the pg library creates a pool of 10 connections per process by default. If you run two Fly.io machines for the same service, that's already 20 active database connections before a single user request is handled. Adding background workers, migration scripts, or a staging environment pointing at the same database can push you past Fly's free tier limit of 25 connections almost immediately."
   - question: "pgbouncer fly.io free tier postgresql connection pool exhausted fix 2025 setup"
     answer: "PgBouncer configured in transaction mode is the standard solution for the fly.io free tier PostgreSQL connection pool exhausted problem, and it can reduce your active database connections by 80–90%. You need to wire it up yourself since Fly's managed Postgres service does not include PgBouncer by default — the most common approach is deploying it as a sidecar alongside your app. Once configured, hundreds of application-level connections can share just a handful of real PostgreSQL connections, keeping you well under the 25-connection ceiling."
+aliases:
+  - "/tech/2026-04-25-flyio-free-tier-postgresql-connection-pool-exhaust/"
+
 ---
 
 Your Fly.io app is humming along. Then a deploy restarts your server, traffic spikes, or a background worker kicks in — and suddenly every request returns `FATAL: remaining connection slots are reserved for non-replication superuser connections`. The app is dead. The database is fine. Fly.io's free tier just has a hard ceiling of 25 connections, and you hit it.

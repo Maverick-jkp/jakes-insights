@@ -8,6 +8,9 @@ tags: ["subtopic-devtools", "\ud504\ub85c\uadf8\ub7a8", "\uc560\ub4dc\uc6e8\uc5b
 description: "JSON Formatter 등 크롬 확장 프로그램이 자동 업데이트와 제3자 인수로 애드웨어·스파이웨어로 전환되는 구조적 위협. 2024년 말부터 반복 보고된 실제 사례와 브라우저 트래픽 탈취 방"
 image: "/images/20260411-크롬-확장-프로그램-애드웨어-변환-json-format.webp"
 technologies: ["Go"]
+aliases:
+  - "/tech/2026-04-11-크롬-확장-프로그램-애드웨어-변환-json-formatter-보안-위협/"
+
 ---
 
 2026년 4월, 수백만 명의 개발자가 매일 쓰는 크롬 확장 프로그램이 조용히 스파이웨어가 되고 있어요.

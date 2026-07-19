@@ -19,6 +19,9 @@ faq:
     answer: "When done correctly, prompt compression techniques can reduce input tokens by 20-40% without meaningfully degrading output quality. The key is removing redundant phrasing, formatting fluff, and repeated instructions rather than stripping semantic content that Claude actually needs. Teams should measure output quality benchmarks before and after compression to confirm the tradeoff is acceptable for their specific use case."
   - question: "claude api cost optimization reduce tokens system prompt caching agentic workflows"
     answer: "Agentic workflows make claude api cost optimization reduce tokens system prompt caching even more critical in a real project because multi-step tasks cause Claude to call itself or sub-agents repeatedly, stacking context tokens on every hop. Without caching and context management, costs can multiply faster than in simple single-turn integrations. Implementing strict context window discipline — trimming conversation history and caching stable instructions — is essential before scaling any agentic deployment."
+aliases:
+  - "/tech/2026-05-30-claude-api-cost-optimization-reduce-tokens-system-/"
+
 ---
 
 Seven months into running a production Claude integration, the monthly API bill had crept past $2,400. After one week of targeted token work, it dropped to $840. No feature cuts. No model downgrade.

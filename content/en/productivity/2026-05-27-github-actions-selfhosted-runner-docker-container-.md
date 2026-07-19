@@ -19,6 +19,9 @@ faq:
     answer: "OOM (out-of-memory) kills during GitHub Actions pipelines on self-hosted runners are typically caused by persistent runner containers accumulating memory across multiple job executions over time. The runner process does not fully reset between jobs, causing memory usage to grow until the container hits its limit and crashes. Switching to ephemeral single-job containers that are destroyed after each run is the most reliable way to prevent mid-pipeline OOM kills."
   - question: "should I use persistent or ephemeral containers for github actions self-hosted runners"
     answer: "Ephemeral containers are strongly recommended for GitHub Actions self-hosted runners because persistent containers accumulate memory across job runs, eventually causing crashes. With ephemeral runners, a new container is spun up for each job and destroyed afterward, eliminating memory buildup entirely. While persistent containers have lower startup overhead, the operational cost of memory-related failures at scale makes ephemeral containers the better architectural choice for most teams."
+aliases:
+  - "/tech/2026-05-27-github-actions-selfhosted-runner-docker-container-/"
+
 ---
 
 Memory leaks in containerized CI/CD runners aren't new. But in 2026, they're actively killing engineering velocity at scale — and most teams are still treating symptoms instead of fixing the root cause.

@@ -19,6 +19,9 @@ faq:
     answer: "No, D1 SQLite and KV handle consistency very differently. KV is eventually consistent by design, with writes propagating across edge locations within roughly 60 seconds, while D1 uses a primary-replica model that routes all writes through a single primary, offering stronger consistency guarantees for relational data."
   - question: "cloudflare KV read latency vs D1 read latency numbers"
     answer: "Cloudflare KV regularly achieves sub-5ms read latency on cache-hit paths because reads are served directly from the nearest edge location without touching an origin. D1 SQLite read latency sits around 10–25ms at the p50 level, varying by region and database size, due to its primary-replica architecture."
+aliases:
+  - "/tech/2026-04-18-cloudflare-workers-kv-vs-d1-sqlite-latency-real-be/"
+
 ---
 
 Pick the wrong storage layer on Cloudflare Workers and you'll pay for it in milliseconds — and at scale, that compounds fast. The KV vs D1 SQLite debate exploded on engineering forums late last year, and for good reason: D1 hit general availability with meaningfully better read performance than many teams expected, while KV's eventual consistency model kept tripping up developers who assumed it behaved like a traditional cache.

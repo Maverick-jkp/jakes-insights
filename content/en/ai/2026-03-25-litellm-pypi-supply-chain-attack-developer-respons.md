@@ -19,6 +19,9 @@ faq:
     answer: "NVIDIA's developer community issued an emergency advisory recommending that teams immediately pin to LiteLLM version 1.82.6 following the discovery of the compromised 1.82.8 release in March 2026. Any project running pip install litellm without a version pin may have automatically pulled the malicious version during the window it was available on PyPI."
   - question: "why are PyPI packages vulnerable to supply chain attacks"
     answer: "PyPI does not cryptographically verify publisher identity in a way that prevents account compromise, meaning a bad actor who gains access to a maintainer's credentials can publish a malicious package version that gets pulled automatically by any project without pinned dependencies. High-popularity libraries like LiteLLM, which crossed 10,000 GitHub stars and became a standard component in AI production stacks, are especially attractive targets because a single compromised version can reach thousands of pipelines simultaneously."
+aliases:
+  - "/tech/2026-03-25-litellm-pypi-supply-chain-attack-developer-respons/"
+
 ---
 
 A malicious package slipped into one of the AI ecosystem's most-used LLM gateway libraries in early March 2026. The LiteLLM PyPI supply chain attack that followed shows exactly how fragile the dependency chain underneath most AI stacks actually is.

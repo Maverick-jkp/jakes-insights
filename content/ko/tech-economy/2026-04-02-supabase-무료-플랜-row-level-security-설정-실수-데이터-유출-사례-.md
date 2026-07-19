@@ -19,6 +19,9 @@ faq:
     answer: "Supabase Dashboard의 Table Editor에서 테이블 목록을 보면 각 테이블의 RLS 상태를 한눈에 확인할 수 있고, 열린 자물쇠 아이콘이 표시되면 비활성화 상태예요. SQL Editor에서 pg_tables를 조회해 rowsecurity = false인 테이블을 직접 확인하는 방법도 있어요."
   - question: "Supabase 무료 플랜 Row Level Security 설정 실수 데이터 유출 사례 방지 가이드 프로덕션 배포 전 체크리스트"
     answer: "프로덕션 배포 전에는 모든 public 테이블의 RLS 활성화 여부를 SQL 쿼리로 점검하고, SELECT뿐 아니라 INSERT, UPDATE, DELETE 정책이 각각 존재하는지 확인해야 해요. 가장 확실한 예방법은 배포 전에 anon 역할로 직접 쿼리를 테스트해서 의도치 않은 접근이 가능한지 검증하는 습관을 들이는 거예요."
+aliases:
+  - "/tech/2026-04-02-supabase-무료-플랜-row-level-security-설정-실수-데이터-유출-사례-/"
+
 ---
 
 Supabase로 사이드 프로젝트 만들다가 갑자기 이런 순간이 와요.

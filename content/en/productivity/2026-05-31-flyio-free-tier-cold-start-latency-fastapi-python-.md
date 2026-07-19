@@ -19,6 +19,9 @@ faq:
     answer: "Fly.io free tier cold start latency for FastAPI Python apps actual measurement 2025 data shows Fly.io performs better than Render's free tier, which spins down after just 15 minutes of inactivity and can produce even longer cold starts. However, Fly.io lags behind Railway's always-on hobby plan for workloads where low latency is critical."
   - question: "does 256mb ram affect python cold start time on fly.io"
     answer: "Yes, RAM allocation has a significant impact on Python cold start performance on Fly.io. Machines running with 256MB RAM experience boot times roughly 40–60% longer than 512MB configurations because the OS, Python interpreter, and application are all competing for the same limited memory pool from the moment the container wakes up."
+aliases:
+  - "/tech/2026-05-31-flyio-free-tier-cold-start-latency-fastapi-python-/"
+
 ---
 
 Free hosting sounds great until your API takes 8 seconds to respond because it's been asleep. That's the real cost of cold starts — and on Fly.io's free tier, it's a number worth measuring carefully before you commit.

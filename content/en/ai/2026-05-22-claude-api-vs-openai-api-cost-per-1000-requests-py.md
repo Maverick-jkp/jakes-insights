@@ -19,6 +19,9 @@ faq:
     answer: "Both Anthropic and OpenAI offer 50% discounts on batch processing for asynchronous workloads, which significantly changes the cost math for non-real-time applications. If your use case can tolerate delayed responses, batch mode is one of the most impactful ways to cut AI inference costs on either platform."
   - question: "how much does it cost to run 2 million ai api requests per month in production"
     answer: "At production scale of 2 million monthly requests, AI inference becomes a significant budget line item — real-world cases have shown monthly bills reaching $12,000 or more depending on model choice and token usage patterns. Switching models without any architecture changes has been documented to reduce costs by over 40%, making model selection a critical financial decision at this volume."
+aliases:
+  - "/tech/2026-05-22-claude-api-vs-openai-api-cost-per-1000-requests-py/"
+
 ---
 
 Last quarter, a production Python service processing 2 million requests monthly saw its AI inference bill drop 41% after a single model swap. No architecture changes. No prompt compression. Just a different API endpoint.

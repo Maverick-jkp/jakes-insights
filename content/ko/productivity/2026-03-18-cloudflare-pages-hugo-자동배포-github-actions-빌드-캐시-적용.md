@@ -19,6 +19,9 @@ faq:
     answer: "Go 기반 Hugo 모듈을 사용하는 경우 go.sum 파일의 해시값을 캐시 키로 사용해야 해요. path는 /tmp/hugo_cache_modules로 설정하고, key는 hugo-modules-${{ hashFiles('**/go.sum') }} 형식으로 지정하며 restore-keys에 hugo-modules- 접두사를 fallback으로 추가하는 게 표준 패턴이에요."
   - question: "Cloudflare Pages Hugo 자동배포 GitHub Actions 빌드 캐시 cron 스케줄 설정 시 주의사항"
     answer: "Cloudflare Pages Hugo 자동배포 GitHub Actions 빌드 캐시 적용 시간 단축 실전 구성에서 cron 스케줄 빌드를 함께 사용할 경우 캐시 만료 정책을 7일로 설정하는 것이 권장돼요. 만료 기간이 너무 길면 stale 캐시로 인한 빌드 실패가 발생할 수 있고, 너무 짧으면 캐시 히트율이 낮아져 시간 단축 효과가 줄어들어요."
+aliases:
+  - "/tech/2026-03-18-cloudflare-pages-hugo-자동배포-github-actions-빌드-캐시-적용/"
+
 ---
 
 푸시 한 번에 4분 30초가 걸렸어요. 로컬에서 Hugo로 빌드하면 8초인데, GitHub Actions에서 Cloudflare Pages까지 연결하면 왜 이렇게 오래 걸리는 걸까요? 이유는 단순해요. 설정이 잘못되면 매 빌드마다 Hugo 바이너리를 새로 내려받고, npm 의존성을 다시 설치하고, 캐시를 하나도 못 쓰는 상태가 되거든요. 이 글은 그 문제를 데이터로 파악하고, 빌드 캐시를 제대로 붙였을 때 시간이 어떻게 바뀌는지 실제 수치로 정리한 기록이에요.

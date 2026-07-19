@@ -19,6 +19,9 @@ faq:
     answer: "Using the Anthropic Python SDK with `stream=True` and tools enabled, you must track the `content_block_start` event to detect a `tool_use` block, then concatenate every subsequent `partial_json` field from `content_block_delta` events into a single string. Only after receiving `content_block_stop` should you pass the accumulated string to `json.loads()` for safe, error-free parsing. This pattern works consistently across Claude 3.5 and Claude 3.7 models."
   - question: "ijson vs json.loads for parsing streaming claude tool responses python"
     answer: "For claude api tool use streaming response partial json parse python, `ijson` offers incremental parsing and is non-blocking, making it better suited for high-throughput or latency-sensitive agent workloads compared to the synchronous `json.loads()`. However, a simpler and often sufficient approach is plain string accumulation — collecting all `input_json_delta` chunks and calling `json.loads()` once at `content_block_stop`. `ijson` adds the most value when tool input payloads are very large or when you need to start processing nested fields before the full response arrives."
+aliases:
+  - "/tech/2026-04-05-claude-api-tool-use-streaming-response-partial-jso/"
+
 ---
 
 Streaming tool calls from Claude's API sounds straightforward. Until your Python parser chokes on a half-delivered JSON payload at 2am and your on-call rotation lights up.

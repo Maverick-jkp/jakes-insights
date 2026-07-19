@@ -19,6 +19,9 @@ faq:
     answer: "Vercel AI SDK vs LangChain.js 스트리밍 응답 실제 번들 사이즈 비교 Next.js 14 적용기에 따르면, 단순 챗봇이나 스트리밍 UI가 목적이라면 Vercel AI SDK가 코드량도 적고 번들도 가볍습니다. 멀티스텝 에이전트, RAG 파이프라인, 메모리 관리 같은 복잡한 워크플로가 필요한 경우에는 LangChain.js의 추상화 레이어가 더 적합합니다."
   - question: "Vercel AI SDK useChat 훅 사용법 Next.js App Router"
     answer: "Vercel AI SDK의 useChat 훅은 Next.js App Router와 네이티브 통합되어 있으며, Route Handler에서 streamText와 toDataStreamResponse()를 조합하면 약 10줄의 코드로 스트리밍 챗봇을 구현할 수 있습니다. OpenAI, Anthropic, Google Gemini 등 주요 모델은 provider만 교체하면 동일한 코드 구조로 사용 가능합니다."
+aliases:
+  - "/tech/2026-05-25-vercel-ai-sdk-vs-langchainjs-스트리밍-응답-실제-번들-사이즈-비교-/"
+
 ---
 
 Next.js 14 프로젝트에 AI를 붙이려는 순간, 대부분의 개발자가 같은 질문 앞에서 멈춰요. "Vercel AI SDK로 가야 해, LangChain.js로 가야 해?"

@@ -19,6 +19,9 @@ faq:
     answer: "For customer support bots, which tend to be output-heavy due to generated responses, GPT-4o-mini's lower output token cost of $0.60 per million gives it a clear cost advantage over Claude 3 Haiku's $1.25 per million output tokens. Both models are positioned as high-throughput, low-latency options suitable for this use case, but the pricing difference becomes a meaningful budget line item at scale."
   - question: "what replaced gpt-3.5-turbo for cheap fast api inference in 2025"
     answer: "Claude 3 Haiku and GPT-4o-mini emerged as the dominant replacements for GPT-3.5-turbo in the affordable, high-throughput tier of AI inference. Both models, released in 2024, offer frontier-adjacent reasoning quality at a fraction of premium model costs, making them the go-to choices for teams running production workloads that need solid comprehension without GPT-4-level spend."
+aliases:
+  - "/tech/2026-04-08-claude-api-claude3haiku-vs-gpt4omini-cost-per-toke/"
+
 ---
 
 Token costs are eating engineering budgets alive.

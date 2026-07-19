@@ -19,6 +19,9 @@ faq:
     answer: "Based on MacBook Pro M5 Pro Max benchmark real-world performance data, the chip's strongest gains appear in multi-core and GPU-accelerated workloads rather than single-core throughput. This means engineers running parallelized build systems, ML training jobs, or video rendering pipelines will see more noticeable improvements than those on lighter, single-threaded tasks. For most standard development workflows, the performance uplift over M4 Pro is unlikely to be dramatic in day-to-day use."
   - question: "did Apple redesign the MacBook Pro for the M5 generation"
     answer: "No — Apple kept the MacBook Pro chassis, Liquid Retina XDR display, port selection, and battery largely unchanged from the M4 generation when it shipped the M5 Pro and M5 Max in March 2026. There is no new thermal design or display upgrade accompanying the chip refresh. This means the M5 generation's value proposition rests entirely on chip-level performance improvements rather than any hardware redesign."
+aliases:
+  - "/tech/2026-03-04-macbook-pro-m5-pro-max-benchmark-realworld-perform/"
+
 ---
 
 Apple shipped the M5 Pro and M5 Max in early March 2026. The marketing claims are bold — but what do the actual benchmark numbers look like for engineers and technical teams making purchasing decisions this quarter?

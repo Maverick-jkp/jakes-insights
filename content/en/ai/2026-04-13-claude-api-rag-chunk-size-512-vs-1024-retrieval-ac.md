@@ -19,6 +19,9 @@ faq:
     answer: "The key finding from 2025 RAG optimization research is that there is no universally optimal chunk size — the right value is workload-specific, making offline evaluation before production deployment essential. For factoid Q&A tasks, 512 tokens with 10–20% overlap is consistently the stronger choice, while long-form document tasks may favor 1024 tokens. Running a quick benchmark on your own dataset before committing to either value is the recommended approach."
   - question: "what happens when RAG chunk size is too large for Claude API"
     answer: "When chunk size is too large, two problems compound each other: embedding models produce degraded vector representations for sequences exceeding their training limits (typically around 512 tokens), and retrieved passages contain too much irrelevant surrounding text. This means the Claude API receives poor-quality context, increasing hallucinations even though the relevant information may technically be present in the retrieved chunk."
+aliases:
+  - "/tech/2026-04-13-claude-api-rag-chunk-size-512-vs-1024-retrieval-ac/"
+
 ---
 
 Chunk size broke our RAG pipeline. Not dramatically — just quietly, consistently, returning wrong answers. After switching from 1024 to 512 tokens, retrieval accuracy jumped 18 percentage points on our internal Q&A benchmark. That number forced a serious re-examination of assumptions.

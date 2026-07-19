@@ -19,6 +19,9 @@ faq:
     answer: "SentinelOne 기술 분석에 따르면 쿠버네티스 디버깅에 걸리는 평균 시간은 Docker 단독 환경 대비 세 배 이상이에요. kubectl describe pod, kubectl logs, kubectl get events 순으로 확인하고도 원인이 불분명하면 노드 수준까지 내려가야 하는 경우도 있어요. 반면 Docker Compose는 `docker compose logs -f app` 한 줄로 바로 로그를 확인할 수 있어 1인 개발자의 디버깅 피로도가 훨씬 낮아요."
   - question: "DAU 1만 이하 서비스 쿠버네티스 도입 필요한가요"
     answer: "Docker Compose 단독 VPS 배포 vs 쿠버네티스 1인 개발자 실제 운영 난이도 비교 관점에서 DAU 1만 이하라면 Docker Compose가 압도적으로 유리하다는 결론이 나와요. CNCF 연간 리포트 기준 K8s를 프로덕션에 도입한 기업의 중앙값 팀 규모는 50명 이상으로, 1인 개발자가 쿠버네티스를 쓰는 건 트럭으로 편의점 배달을 가는 것과 비슷한 오버스펙이에요. 멀티 노드 분산, 무중단 배포가 반드시 필요해지는 시점이나 팀 규모가 커질 때 K8s 전환을 검토하는 것이 현실적이에요."
+aliases:
+  - "/tech/2026-04-09-docker-compose-단독-vps-배포-vs-쿠버네티스-1인-개발자-실제-운영-난이도/"
+
 ---
 
 VPS 한 대로 서비스를 굴리고 있다면, 한 번쯤 이 질문 앞에서 멈춰봤을 거예요. "그냥 Docker Compose면 되는 거 아닌가? 근데 쿠버네티스 써야 스케일 되는 거 아닌가?" 2026년 현재, 이 질문의 답이 예전보다 훨씬 명확해졌어요.

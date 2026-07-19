@@ -19,6 +19,9 @@ faq:
     answer: "Groq 무료 티어는 일 최대 14,400 요청에 TTFT 200~500ms로 Cloudflare Workers AI보다 응답 속도가 빠르고 요청 한도도 넉넉한 편이에요. 다만 Cloudflare Workers AI는 Workers 서버리스 환경에 AI 추론이 내장되어 있어 별도 배포 인프라 없이 바로 사용할 수 있다는 구조적 장점이 있어요."
   - question: "Cloudflare Workers AI Neurons 요금 계산 방법 알려주세요"
     answer: "Neurons는 토큰 수가 아닌 계산량 기반의 Cloudflare 독자 요금 단위로, llama-3.1-8b-instruct 기준 입출력 토큰당 약 0.04 Neurons가 소비돼요. 입력 200토큰, 출력 300토큰 기준 요청당 약 60~80 Neurons가 소모되며, 무료 한도 초과 시 1,000 Neurons당 $0.011이 부과되므로 모델 선택과 프롬프트 길이 최적화가 비용 관리에 핵심이에요."
+aliases:
+  - "/tech/2026-05-24-cloudflare-workers-ai-llama3-한국어-응답-속도-무료-할당량-실측-리/"
+
 ---
 
 서버 없이 AI를 붙이고 싶은 개발자라면 Cloudflare Workers AI를 한 번쯤 봤을 거예요. 그런데 막상 쓰려고 하면 이런 질문이 남아요. "한국어로도 잘 돼요?", "무료로 얼마나 쓸 수 있어요?" 제대로 답해주는 데이터가 없었거든요. 2026년 5월 기준, 실제 테스트 데이터와 공식 문서를 바탕으로 정리해봤어요.

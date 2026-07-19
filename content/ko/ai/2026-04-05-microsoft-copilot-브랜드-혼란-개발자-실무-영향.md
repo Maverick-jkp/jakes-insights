@@ -19,6 +19,9 @@ faq:
     answer: "Microsoft Copilot 브랜드 혼란의 개발자 실무 영향은 크게 세 가지입니다. 첫째, 같은 'Copilot'을 언급해도 개발자와 PM이 서로 다른 제품을 떠올려 스프린트 중간에 방향이 어긋나는 커뮤니케이션 오류가 발생합니다. 둘째, 라이선스 구매 단계에서 제품 확인에 시간이 낭비되고, 셋째로 팀 온보딩 시 어떤 Copilot을 써야 하는지 파악하는 데 추가 비용이 생깁니다."
   - question: "2026년 Microsoft Copilot 멀티모델 전략이 뭔가요?"
     answer: "2026년 4월 Microsoft가 발표한 멀티모델 전략은 하나의 Copilot 인터페이스 안에서 GPT-4o, Gemini, Grok 같은 외부 AI 모델을 골라 사용할 수 있게 한 것입니다. 엔터프라이즈 시장에서의 경쟁력을 높이려는 포석이지만, '지금 Copilot이 어떤 모델로 돌아가는 거야?'라는 새로운 불확실성이 추가되면서 기존 Microsoft Copilot 브랜드 혼란을 더욱 심화시켰다는 평가를 받고 있습니다."
+aliases:
+  - "/tech/2026-04-05-microsoft-copilot-브랜드-혼란-개발자-실무-영향/"
+
 ---
 
 같은 이름, 다른 제품. Microsoft는 지금 'Copilot'이라는 단어 하나에 열 개가 넘는 도구를 묶어놨어요.

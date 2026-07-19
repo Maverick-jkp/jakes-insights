@@ -19,6 +19,9 @@ faq:
     answer: "mem_limit를 명시하지 않으면 Docker가 컨테이너에 호스트 메모리를 제한 없이 할당할 수 있어, 과부하 시 단일 컨테이너가 전체 서버 메모리를 점유해 호스트 전체가 다운될 수 있습니다. Docker Compose의 `deploy.resources.limits.memory` 항목으로 Prometheus는 512M, Grafana는 256M, cAdvisor는 128M로 각각 상한을 지정하는 것이 권장됩니다."
   - question: "2GB VPS에서 Prometheus Grafana Loki 같이 올려도 되나요"
     answer: "Prometheus Grafana Docker Compose 단독 VPS 메모리 2GB 운영 설정 삽질 기록 기준으로, Loki와 Promtail까지 추가하면 예상 메모리가 950MB 이상으로 올라가 권장하지 않습니다. 메모리 여유가 400MB 이하로 줄어들면 스왑이 과도하게 작동해 오히려 모니터링 데이터가 유실될 수 있으므로, 2GB 환경에서는 튜닝된 Prometheus + Grafana + cAdvisor 조합이 현실적인 상한선입니다."
+aliases:
+  - "/tech/2026-05-20-prometheus-grafana-docker-compose-단독-vps-메모리-2gb-운/"
+
 ---
 
 모니터링 스택 올리다가 서버 날려본 적 있으세요?

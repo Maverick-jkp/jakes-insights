@@ -19,6 +19,9 @@ faq:
     answer: "Forgejo and GitLab Community Edition are the leading self-hosted GitHub alternatives for open source projects in 2026. Forgejo can run on a minimal $6 per month VPS and handles hundreds of contributors, while GitLab CE is better suited to larger organizations needing more features. Self-hosting gives projects full control over their infrastructure, which is especially important for European public sector organizations responding to the EU's Cyber Resilience Act."
   - question: "do I have to fully migrate away from GitHub or can I use both"
     answer: "You do not need to fully migrate — many teams mirror their repositories across GitHub and an alternative platform simultaneously. This approach reduces platform lock-in while preserving GitHub's discoverability and large contributor audience. It is considered a practical middle ground that avoids an all-or-nothing decision while still building independence from a single corporate platform."
+aliases:
+  - "/tech/2026-04-29-github-alternatives-for-open-source-projects-2026/"
+
 ---
 
 GitHub hosts over 420 million repositories as of early 2026. That number sounds like a monopoly. But something's shifting underneath it.

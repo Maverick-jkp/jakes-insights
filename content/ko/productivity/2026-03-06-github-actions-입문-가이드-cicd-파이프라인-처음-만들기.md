@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions에서 job은 기본적으로 병렬로 실행되는데, `needs` 키워드를 사용하면 `test → build → deploy`처럼 순서를 강제할 수 있어요. 예를 들어 `deploy` job에 `needs: [build]`를 추가하면 build가 성공한 후에만 deploy가 실행돼요."
   - question: "GitHub Actions 입문 가이드 CICD 파이프라인 처음 만들기에서 의존성 캐시 설정하는 법"
     answer: "GitHub Actions 입문 가이드 CICD 파이프라인 처음 만들기에서 캐시는 `actions/setup-node@v4`에 `cache: 'npm'`을 추가하는 것만으로 자동 설정돼요. 더 세밀하게 제어하고 싶다면 `actions/cache@v4`와 `hashFiles('package-lock.json')`를 함께 사용하면 락파일 변경 여부를 기준으로 캐시가 자동 무효화되어 의존성 설치 시간을 크게 줄일 수 있어요."
+aliases:
+  - "/tech/2026-03-06-github-actions-입문-가이드-cicd-파이프라인-처음-만들기/"
+
 ---
 
 코드 짜고 나서 배포까지 손으로 하고 있다면, 이 글이 딱 맞아요.

@@ -19,6 +19,9 @@ faq:
     answer: "Vercel Edge Runtime의 최대 실행 시간은 Hobby와 Pro 플랜 모두 동일하게 30초로 고정되어 있어요. 이는 설정으로 늘릴 수 없는 하드 리밋이라 Claude 3.5 Sonnet, Claude 3.7 같은 긴 reasoning 모델을 사용할 때 타임아웃 문제가 발생하는 근본 원인이에요."
   - question: "Next.js App Router Edge Runtime vs Node.js Runtime Claude API 스트리밍 타임아웃 차이 실험에서 어떤 런타임 쓰는 게 좋음?"
     answer: "AI 스트리밍 워크로드에는 Node.js Runtime이 적합하고, 짧은 응답이나 인증·A/B 테스트처럼 빠른 응답이 중요한 경우에는 Edge Runtime이 유리해요. Claude API처럼 응답 생성에 수십 초 이상 걸릴 수 있는 작업은 Edge Runtime의 30초 제한에 걸릴 수 있으므로 Node.js Runtime에 maxDuration을 설정하는 방식을 권장해요."
+aliases:
+  - "/tech/2026-03-27-nextjs-app-router-edge-runtime-vs-nodejs-runtime-c/"
+
 ---
 
 AI 챗봇에 메시지를 보냈는데, 30초쯤 지나서 응답이 뚝 끊겨본 적 있죠? 원인이 런타임 설정 한 줄이었다면 믿어지나요?

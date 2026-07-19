@@ -19,6 +19,9 @@ faq:
     answer: "The right choice depends on your specific bottleneck — whether that's compute latency, database proximity, or ecosystem integration rather than raw cold start numbers alone. For teams already using Supabase's Postgres database, co-locating logic in Edge Functions can reduce total round-trip latency by 30–60ms per request by eliminating an extra network hop."
   - question: "what is a realistic cold start time for Vercel serverless functions in 2025"
     answer: "Independent 2024 benchmark data from Measured.dev shows Vercel serverless functions on Node.js runtimes experiencing cold starts ranging from 100ms to 800ms, with the wide range depending on bundle size, deployment region, and runtime version. Vercel's newer Edge Runtime is a separate option that performs significantly better, achieving sub-25ms cold starts using V8 isolate technology."
+aliases:
+  - "/tech/2026-05-13-supabase-edge-functions-cold-start-latency-vs-verc/"
+
 ---
 
 Cold starts used to be a footnote in serverless discussions. Now they're a billing line item and a user experience problem rolled into one.

@@ -19,6 +19,9 @@ faq:
     answer: "Chunk size impacts retrieval accuracy differently across vector stores because of their underlying search architectures. Pinecone's approximate nearest neighbor index and pgvector's exact search handle semantic density at different chunk sizes in distinct ways, meaning the accuracy tradeoffs between 512 and 1024 tokens are not identical across the two systems."
   - question: "should I use Supabase pgvector or Pinecone for my RAG application in 2025"
     answer: "If your dataset is under 500K vectors and your application already runs on Postgres, Supabase pgvector offers real operational cost savings and is a competitive choice. For higher query volumes or datasets exceeding that threshold, Pinecone's managed infrastructure delivers significantly lower latency and better retrieval accuracy at scale, making it the stronger option despite higher cost."
+aliases:
+  - "/tech/2026-04-30-supabase-pgvector-vs-pinecone-rag-retrieval-accura/"
+
 ---
 
 Chunk size is one of those RAG configuration choices that looks boring until you see a 23% accuracy gap show up in your evals. That's not a rounding error — that's the difference between a chatbot that answers correctly and one that confidently hallucinates.

@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Fly.io free tier machines automatically suspend after approximately 5 minutes of inactivity, which triggers a VM resumption event on the next incoming request rather than a full container reinitialization. For Next.js App Router applications, this suspension behavior produces measurable cold start latency in the 1,200ms–2,800ms range, though warm requests after resumption perform well under 180ms p99."
   - question: "is Fly.io free tier good enough for a real Next.js app in 2025?"
     answer: "For projects with under 500 daily active users, Fly.io free tier delivers warm-request p99 latency under 180ms, which is genuinely competitive with paid tiers on other platforms. The main tradeoff is cold start latency from VM suspension, but this can be largely mitigated with a cron ping strategy, making the free tier viable for small production Next.js App Router applications."
+aliases:
+  - "/tech/2026-05-29-flyio-free-tier-cold-start-latency-nextjs-app-rout/"
+
 ---
 
 Cold starts kill user retention. A 2023 Google/Deloitte study found that a 100ms delay in mobile load time correlates with a 1% drop in conversion — and serverless cold starts routinely add 800ms–3,000ms on the first request. So when developers started moving Next.js App Router projects to Fly.io's free tier in 2025–2026, the obvious question became: how bad is the cold start problem, actually?

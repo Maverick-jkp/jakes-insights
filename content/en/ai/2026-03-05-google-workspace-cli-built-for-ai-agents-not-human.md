@@ -19,6 +19,9 @@ faq:
     answer: "Agent-native Google Workspace workflows require service account delegation and fine-grained OAuth scopes rather than the interactive consent flows built for human users. Traditional OAuth popups are incompatible with autonomous pipelines where no human is in the loop for individual task execution. Properly scoped service accounts are considered the real bottleneck to unlocking reliable, production-grade agentic Workspace integrations."
   - question: "should engineering teams adopt agent-native Google Workspace tooling now"
     answer: "According to analysis of the tooling, engineering teams that adopt agent-native Workspace CLI tooling early will build compounding workflow advantages as autonomous agent pipelines become a deployment expectation at mid-to-large organizations. However, geographic API coverage gaps outside North America remain a real adoption blocker teams should evaluate before committing. Given that AI-assisted workflows now touch over 55% of enterprise repositories per GitHub's Octoverse 2025 Report, early adoption carries meaningful competitive weight."
+aliases:
+  - "/tech/2026-03-05-google-workspace-cli-built-for-ai-agents-not-human/"
+
 ---
 
 Something quiet happened in early 2026 that most engineering teams missed. Google Workspace — historically a suite designed around human clicks, menus, and OAuth popups — started shipping tooling explicitly described as a **Google Workspace CLI built for AI agents not humans**. Not "also compatible with automation." Not "supports API access." Built *for* agents as the primary consumer.

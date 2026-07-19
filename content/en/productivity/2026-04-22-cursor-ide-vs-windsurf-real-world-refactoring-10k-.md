@@ -19,6 +19,9 @@ faq:
     answer: "Based on the cursor ide vs windsurf real world refactoring 10k line python codebase accuracy test, Cursor generated only 4 hallucinated import path errors per 50 operations compared to Windsurf's 11, making it meaningfully more reliable for large-codebase scenarios. This gap became especially apparent during cross-module refactors involving circular imports and service layer extractions."
   - question: "should I use cursor or windsurf for django codebase refactoring in 2026"
     answer: "For a Django or Django-adjacent codebase with complex cross-module dependencies, Cursor is the stronger pick due to its larger context window and lower rate of import path errors during large-scale refactoring. However, Windsurf may be preferable if your work is focused on isolated components or new modules, where its speed advantage and Flow state feature provide a smoother workflow."
+aliases:
+  - "/tech/2026-04-22-cursor-ide-vs-windsurf-real-world-refactoring-10k-/"
+
 ---
 
 Six weeks ago, I ran both tools against the same messy 10,000-line Python monolith. The accuracy gap was larger than expected—and it wasn't the tool most engineers assume would win.

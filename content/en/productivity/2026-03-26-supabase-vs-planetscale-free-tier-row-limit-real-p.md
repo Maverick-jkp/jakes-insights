@@ -19,6 +19,9 @@ faq:
     answer: "Migrating from PlanetScale to Supabase is non-trivial because PlanetScale runs on Vitess, a MySQL-compatible system, while Supabase uses PostgreSQL — the two are not drop-in compatible and require full schema rewrites. Teams should budget meaningful development time for query rewrites, data type adjustments, and testing before switching production workloads."
   - question: "what are the limitations of Supabase free tier for real projects?"
     answer: "The most common issue developers encounter with Supabase's free tier in real project scenarios is the automatic database pause that activates after 7 days of inactivity. Beyond that, the 500MB storage ceiling is the main constraint, and projects exceeding it need to upgrade to the $25/month Pro plan to continue running without disruption."
+aliases:
+  - "/tech/2026-03-26-supabase-vs-planetscale-free-tier-row-limit-real-p/"
+
 ---
 
 The database hosting market shifted hard in 2024. PlanetScale killed its free tier in March 2024, and the developer fallout was immediate — thousands of projects scrambling for alternatives, with Supabase absorbing the bulk of that migration traffic. Two years later, the supabase vs planetscale free tier row limit real project migration experience is still shaping how teams pick their backend stack.

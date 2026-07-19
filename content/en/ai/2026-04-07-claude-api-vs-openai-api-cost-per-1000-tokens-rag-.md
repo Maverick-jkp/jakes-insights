@@ -19,6 +19,9 @@ faq:
     answer: "For RAG pipelines, input token pricing matters far more because context stuffing creates ratios where input tokens can outpace output tokens 10-to-1 or worse. The output cost difference between Claude and OpenAI becomes almost negligible compared to the cumulative input cost at scale."
   - question: "gpt-4o vs claude 3.5 sonnet price difference 2026"
     answer: "As of 2026, GPT-4o is priced at $2.50 per million input tokens and $10.00 per million output tokens, while Claude 3.5 Sonnet is $3.00 input and $15.00 output — making OpenAI about 17% cheaper on input and 33% cheaper on output at the flagship tier. The two providers have converged significantly in pricing but still behave differently depending on your specific workload shape."
+aliases:
+  - "/tech/2026-04-07-claude-api-vs-openai-api-cost-per-1000-tokens-rag-/"
+
 ---
 
 The math hit me before the insight did. Three months of API invoices, same RAG workload, same document corpus — and my monthly bill swung by over 40% just from switching providers. No architecture changes. No traffic spikes. Just tokens, priced differently.

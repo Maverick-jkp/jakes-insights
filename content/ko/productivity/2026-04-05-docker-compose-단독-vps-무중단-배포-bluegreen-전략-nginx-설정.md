@@ -19,6 +19,9 @@ faq:
     answer: "새 버전 컨테이너(green)가 실행됐다고 해서 애플리케이션이 바로 요청을 받을 수 있는 상태는 아니에요. 헬스체크를 통과한 것을 확인한 뒤에 Nginx 트래픽을 전환해야 사용자가 실패 응답을 받지 않아요. Docker Compose 단독 VPS 무중단 배포 blue-green 전략 nginx 설정 실전 가이드에서는 `docker compose up -d --no-deps --build`로 컨테이너를 올린 뒤 헬스체크 통과 여부를 확인하고 전환하는 순서를 권장해요."
   - question: "트래픽이 늘어나면 이 방식으로 감당이 안 되나요?"
     answer: "단독 VPS 기반 Docker Compose blue-green 배포는 서버 한 대의 자원 한계가 명확하게 존재해요. 트래픽이 급증해서 단일 서버로 감당이 어려워지면 Docker Swarm이나 Kubernetes로 넘어가는 것을 고려해야 해요. 다만 월 $200 이하 규모의 서비스라면 이 구조가 비용과 운영 복잡도 면에서 충분히 실용적인 선택이에요."
+aliases:
+  - "/tech/2026-04-05-docker-compose-단독-vps-무중단-배포-bluegreen-전략-nginx-설정/"
+
 ---
 
 배포 버튼을 누르는 순간이 제일 떨려요. 서비스가 10초라도 죽으면 바로 슬랙 알림이 쏟아지거든요. 그런데 Kubernetes 같은 무거운 도구 없이, 단독 VPS에서 Docker Compose만으로 무중단 배포를 만들 수 있어요. 셸 스크립트 하나면 충분해요.

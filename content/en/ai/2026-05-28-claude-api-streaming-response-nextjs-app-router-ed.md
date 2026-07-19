@@ -19,6 +19,9 @@ faq:
     answer: "The main limitations of Edge Runtime for Claude API streaming are a 30-second execution timeout and a restricted API surface that excludes file I/O and native Node.js modules. This means long-form generation tasks using Claude's extended thinking mode, which can exceed 30 seconds, must instead use Node.js runtime or a background job pattern."
   - question: "nextjs edge runtime vs nodejs runtime cold start streaming api"
     answer: "Cold-start times are the primary reason Edge Runtime outperforms Node.js serverless for streaming APIs, with measured times dropping from around 800ms down to under 180ms after switching runtimes. Node.js serverless functions spin up a full runtime environment per invocation, while Edge Runtime uses lightweight V8 isolates that initialize much faster."
+aliases:
+  - "/tech/2026-05-28-claude-api-streaming-response-nextjs-app-router-ed/"
+
 ---
 
 Measured cold-start times for Claude API streaming in Next.js dropped from 800ms to under 180ms after switching to Edge Runtime. That single infrastructure decision changes everything about perceived app performance.

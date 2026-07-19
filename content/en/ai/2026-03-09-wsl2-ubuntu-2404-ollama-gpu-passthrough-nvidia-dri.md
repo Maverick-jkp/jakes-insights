@@ -19,6 +19,9 @@ faq:
     answer: "When nvidia-smi detects the GPU but CUDA fails in WSL2 Ubuntu 24.04, it typically means the libcuda.so stub library has been corrupted, usually by installing NVIDIA drivers directly inside the WSL2 environment. Ubuntu 24.04's kernel 6.8 changed how the CUDA stub library maps to the Windows-side driver, making it more sensitive to this misconfiguration than previous Ubuntu versions. Removing any NVIDIA driver packages installed inside WSL2 and relying solely on the Windows host driver (version 560+) resolves the issue."
   - question: "minimum nvidia driver version for wsl2 ubuntu 24.04 cuda 12"
     answer: "As of early 2026, NVIDIA driver version 560 or higher on the Windows host is the minimum required for stable CUDA 12.x passthrough to WSL2 running Ubuntu 24.04. Older driver versions can cause the GPU passthrough to fail or produce driver mismatch errors even when nvidia-smi appears to detect the GPU correctly. Keeping the Windows host driver up to date is one of the most important steps when troubleshooting the WSL2 Ubuntu 24.04 Ollama GPU passthrough NVIDIA driver mismatch error."
+aliases:
+  - "/tech/2026-03-09-wsl2-ubuntu-2404-ollama-gpu-passthrough-nvidia-dri/"
+
 ---
 
 The setup looked perfect on paper. WSL2 running Ubuntu 24.04, Ollama installed, NVIDIA RTX 4090 sitting idle — and a `nvidia-smi` inside WSL2 throwing back a driver version mismatch error that killed GPU passthrough entirely. This specific failure pattern has become one of the most common blockers for engineers running local LLMs on Windows in early 2026, and the fix isn't obvious unless you understand *why* the WSL2 driver architecture works the way it does.

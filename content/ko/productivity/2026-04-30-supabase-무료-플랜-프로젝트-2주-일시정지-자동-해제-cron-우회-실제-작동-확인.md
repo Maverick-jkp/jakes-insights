@@ -19,6 +19,9 @@ faq:
     answer: "이미 일시정지된 Supabase 프로젝트는 DB 자체가 꺼진 상태라 pg_cron이 실행되지 않으므로 내부 cron만으로는 자동 재시작이 불가능해요. Uptime Robot이나 Cron-job.org에서 Supabase REST API 엔드포인트로 주기적인 HTTP 요청을 보내면 프로젝트를 깨울 수 있어요."
   - question: "GitHub Actions cron으로 Supabase 프로젝트 살려두기 신뢰할 수 있나요"
     answer: "GitHub Actions의 schedule 트리거는 무료이지만 퍼블릭 저장소의 경우 GitHub이 임의로 실행을 지연하거나 건너뛸 수 있어 신뢰도가 중간 수준이에요. Supabase 무료 플랜 프로젝트 2주 일시정지 자동 해제 cron 우회 실제 작동 확인 방법을 고려할 때, 안정적인 운용을 원한다면 Uptime Robot이나 Cron-job.org처럼 전용 모니터링 서비스를 사용하는 것이 더 권장돼요."
+aliases:
+  - "/tech/2026-04-30-supabase-무료-플랜-프로젝트-2주-일시정지-자동-해제-cron-우회-실제-작동-확인/"
+
 ---
 
 무료로 백엔드 쓰다가 갑자기 API가 먹통이 됐을 때, 그 황당함 알죠? Supabase 무료 플랜을 쓰는 개발자라면 한 번쯤 맞닥뜨리는 상황이에요. 열심히 만들어놓은 프로젝트, 2주 뒤 접속해보니 DB가 완전히 멈춰있는 거예요.

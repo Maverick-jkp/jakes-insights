@@ -19,6 +19,9 @@ faq:
     answer: "`app/api/ping/route.ts` 파일을 생성하고 `export async function GET() { return new Response('ok', { status: 200 }); }` 코드만 추가하면 돼요. DB 쿼리나 렌더링 없이 단순히 응답만 반환하기 때문에 컨테이너를 깨워두는 용도로 사용해도 앱에 부담이 없어요."
   - question: "Cold Start 지연 줄이는 방법 Next.js 스트리밍"
     answer: "Cold Start 자체를 없애기 어렵다면 Next.js App Router의 Suspense와 스트리밍 렌더링을 활용해 체감 지연을 줄이는 방법이 현실적인 대안이에요. 데이터가 느리게 로드되는 영역에 스켈레톤 UI를 적용하면 페이지 자체는 빠르게 표시되고 데이터만 나중에 채워지는 방식으로 사용자 경험을 개선할 수 있어요."
+aliases:
+  - "/tech/2026-05-07-flyio-무료-플랜-슬립-모드-nextjs-첫-응답-지연-해결-실전-설정/"
+
 ---
 
 무료로 Next.js 앱을 배포했는데, 첫 방문자가 8~15초를 기다려야 한다면? 그게 바로 Fly.io 무료 플랜 슬립 모드가 만드는 현실이에요.

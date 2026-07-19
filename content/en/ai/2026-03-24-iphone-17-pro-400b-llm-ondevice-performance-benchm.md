@@ -19,6 +19,9 @@ faq:
     answer: "Unlike cloud-based AI inference, the iPhone 17 Pro 400B LLM on-device performance benchmark demonstrates zero round-trip API latency since all computation happens locally on the device. This also means sensitive data never leaves the phone, which is a significant advantage for privacy-conscious users and industries with strict data sovereignty requirements."
   - question: "what quantization does iPhone 17 Pro use to run 400B parameter LLM"
     answer: "The iPhone 17 Pro uses 4-bit or lower quantization to run a 400-billion parameter LLM on-device, which reduces the model's memory footprint from roughly 1.6 TB (in FP32) down to approximately 200–250 GB. This level of compression is essential to make SSD-based weight-streaming viable on a consumer smartphone."
+aliases:
+  - "/tech/2026-03-24-iphone-17-pro-400b-llm-ondevice-performance-benchm/"
+
 ---
 
 Apple's iPhone 17 Pro just did something that required a server rack 18 months ago. Running a 400-billion parameter LLM locally on a smartphone — not in the cloud, not offloaded to a data center — is the kind of milestone that quietly rewrites assumptions about where AI inference actually lives.

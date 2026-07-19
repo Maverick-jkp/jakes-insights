@@ -19,6 +19,9 @@ faq:
     answer: "The Google Chrome silent AI model install without consent raises significant compliance concerns under Article 13 of the EU AI Act, which mandates transparency requirements for AI-enabled software and took full effect in August 2025. Regulators are actively enforcing these rules, and a 4 GB undisclosed install with no opt-out mechanism sits squarely within the scope of those transparency obligations."
   - question: "do Firefox and Safari also install AI models silently like Chrome"
     answer: "No, Firefox and Safari have not deployed on-device AI models of equivalent size without explicit user consent, representing a clear divergence in disclosure practices from Chrome. This makes Chrome's approach an outlier among major browsers rather than an industry-wide standard."
+aliases:
+  - "/tech/2026-05-06-google-chrome-silent-ai-model-install-without-cons/"
+
 ---
 
 Chrome pushed a 4 GB AI model to over a billion devices without asking. No prompt. No toggle. No opt-out. Just a background process quietly consuming disk space while users remained completely unaware.

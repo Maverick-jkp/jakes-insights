@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Pages의 Build Hook URL을 생성한 뒤, GitHub Actions 워크플로우에서 'curl -X POST' 명령으로 해당 URL에 요청을 보내면 빌드가 트리거돼요. 이 방식은 GitHub Actions cron 단독 사용보다 안정적이고, API 응답으로 성공·실패 여부를 명시적으로 확인할 수 있어 디버깅도 쉬워요."
   - question: "Hugo 블로그 Cloudflare Pages 자동배포 GitHub Actions cron 스케줄 안될 때 브랜치 설정 확인하는 법"
     answer: "워크플로우 yaml 파일이 위치한 브랜치와 Cloudflare Pages 대시보드에서 프로덕션으로 설정된 브랜치가 일치하는지 확인해야 해요. 예를 들어 워크플로우는 'master' 브랜치에 있는데 Cloudflare Pages가 'main' 브랜치를 바라보고 있으면, cron이 정상 실행되어도 Cloudflare Pages 입장에서는 변화가 없어 배포가 트리거되지 않아요."
+aliases:
+  - "/tech/2026-05-25-hugo-블로그-cloudflare-pages-자동배포-github-actions-cron/"
+
 ---
 
 cron 스케줄을 걸어놨는데 아무것도 안 올라와 있어요. 로그도 깨끗하고, 에러도 없어요. 그냥 아무 일도 안 일어난 거예요.

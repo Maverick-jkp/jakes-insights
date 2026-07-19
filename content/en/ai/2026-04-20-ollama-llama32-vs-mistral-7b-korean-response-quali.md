@@ -19,6 +19,9 @@ faq:
     answer: "The key tokenizer difference in the ollama llama3.2 vs mistral 7b korean response quality benchmark on mac m3 is that Llama 3.2 includes dedicated Korean vocabulary entries in its tokenizer, which reduces Hangul token fragmentation and produces more grammatically accurate output. Mistral 7B's tokenizer was not optimized for Korean, leading to inefficient character-level splitting that degrades response quality."
   - question: "best local LLM for korean language apps on apple silicon 2026"
     answer: "For Korean-language application development on Apple Silicon in 2026, Llama 3.2 3B running via Ollama is generally the recommended choice due to its superior Korean fluency, faster inference speed, and reduced code-switching errors. Developers who prioritize complex reasoning tasks may still consider Mistral 7B, but should expect lower Korean output consistency in conversational contexts."
+aliases:
+  - "/tech/2026-04-20-ollama-llama32-vs-mistral-7b-korean-response-quali/"
+
 ---
 
 Running local LLMs on Apple Silicon has shifted from hobbyist experiment to legitimate production workflow. But when Korean language quality enters the equation, the model choice matters far more than most developers realize.

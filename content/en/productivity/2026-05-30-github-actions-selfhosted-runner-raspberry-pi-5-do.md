@@ -19,6 +19,9 @@ faq:
     answer: "You can register a Raspberry Pi 5 as a GitHub Actions self-hosted runner in under 30 minutes using GitHub's official runner package for ARM64. The Pi 5's BCM2712 Cortex-A76 processor runs natively on ARM64, and pairing it with an NVMe SSD via a PCIe hat significantly improves disk I/O performance compared to older SD card setups."
   - question: "why do github hosted runners have slow docker builds"
     answer: "GitHub-hosted runners are ephemeral and start completely fresh on every run, meaning there is no persistent Docker layer cache, no pre-pulled base images, and no previously compiled dependencies available. A Docker-heavy workflow can spend 3–4 minutes just on image pulls and layer reconstruction before any actual build or test work begins."
+aliases:
+  - "/tech/2026-05-30-github-actions-selfhosted-runner-raspberry-pi-5-do/"
+
 ---
 
 Build times are the silent tax on every engineering team's productivity. A Reddit thread from early 2026 caught attention across the DevOps community: a team reported cutting their GitHub Actions build times by 6x after switching to self-hosted runners. The hardware driving that result? A Raspberry Pi 5.

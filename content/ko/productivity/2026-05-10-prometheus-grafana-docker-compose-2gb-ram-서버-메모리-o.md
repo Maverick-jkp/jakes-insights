@@ -19,6 +19,9 @@ faq:
     answer: "scrape_interval을 기본 15s에서 30s로 변경하면 단위 시간당 수집 샘플 수가 절반으로 줄어들어 인메모리 헤드 블록 크기도 함께 감소합니다. 모니터링 정밀도를 일부 포기하는 트레이드오프가 있지만, 2GB RAM 환경에서는 retention 기간 축소(15d → 7d)와 함께 적용하면 메모리를 약 30~40% 줄이는 효과를 기대할 수 있습니다."
   - question: "Grafana 메모리 사용량 줄이는 방법"
     answer: "Grafana는 기본적으로 200~300MB를 소비하며, GF_RENDERING_SERVER_URL 같은 플러그인을 로드하면 추가로 100~200MB가 더 필요합니다. 2GB RAM 서버에서는 Docker Compose의 mem_limit을 256m으로 제한하고 불필요한 플러그인을 최소화하는 것이 Prometheus Grafana Docker Compose 2GB RAM 서버 메모리 OOM 방지를 위한 현실적인 설정값입니다."
+aliases:
+  - "/tech/2026-05-10-prometheus-grafana-docker-compose-2gb-ram-서버-메모리-o/"
+
 ---
 
 서버가 갑자기 멈췄어요. 로그를 보니 `OOM killer`가 Prometheus 프로세스를 죽인 거더라고요. 2GB RAM 서버에 Prometheus + Grafana + Docker Compose 올렸다가 메모리가 터지는 건, 2026년에도 여전히 흔한 패턴이에요. 문제는 공식 문서가 이 부분을 너무 얕게 다룬다는 거예요.

@@ -19,6 +19,9 @@ faq:
     answer: "Docker is not obsolete — the Dockerfile syntax has continued to evolve, and BuildKit (the default backend since Docker Engine 23.0 in February 2023) significantly improved build performance, keeping many teams on the platform. The real divide in the ecosystem is between teams who want to own and control their build layer versus teams who want to abstract it away completely with tools like Buildpacks."
   - question: "Docker containers 10 years later what actually replaced Dockerfile for slow CI build times?"
     answer: "Slow CI builds caused by brittle layer caching — where invalidating one early layer triggers a full rebuild — pushed teams toward BuildKit, which improved caching significantly, as well as alternative tools with smarter dependency management. Teams with large dependency trees were routinely facing 15–20 minute clean builds under the traditional Dockerfile model, making faster alternatives a practical necessity."
+aliases:
+  - "/tech/2026-03-08-docker-containers-10-years-later-what-actually-rep/"
+
 ---
 
 Docker turned ten in March 2024. Two years on, the ecosystem looks nothing like what Solomon Hykes shipped in 2013.

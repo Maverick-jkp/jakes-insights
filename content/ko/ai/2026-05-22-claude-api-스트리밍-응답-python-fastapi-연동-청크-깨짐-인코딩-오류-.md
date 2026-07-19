@@ -19,6 +19,9 @@ faq:
     answer: "Nginx가 SSE 응답을 자체 버퍼에 모았다가 일괄 전송하는 것이 원인입니다. FastAPI 응답 헤더에 'X-Accel-Buffering: no'를 추가하면 Nginx 버퍼링이 비활성화되어 청크가 실시간으로 클라이언트에 전달됩니다."
   - question: "UnicodeDecodeError Claude 스트리밍 UTF-8 멀티바이트 경계 잘림 원인"
     answer: "한국어 글자 하나는 UTF-8로 3바이트인데, TCP 패킷 분할 시 이 바이트 경계를 무시하고 청크가 잘릴 수 있습니다. 잘린 바이트를 즉시 디코딩하면 UnicodeDecodeError가 발생하거나 알 수 없는 문자로 치환되며, 청크 완전성 검증 로직을 서버 측에 추가하는 것이 근본적인 해결책입니다."
+aliases:
+  - "/tech/2026-05-22-claude-api-스트리밍-응답-python-fastapi-연동-청크-깨짐-인코딩-오류-/"
+
 ---
 
 FastAPI로 Claude API를 붙였는데 한국어가 깨져서 나왔던 경험, 맞죠? SSE 스트림을 열었는데 `ì •ë³´`처럼 나오거나, 청크가 절반만 오거나. 2026년 현재 Claude API 스트리밍 응답을 FastAPI에 연동하는 개발자가 늘면서, 이 패턴의 오류 레포트도 같이 늘고 있어요.

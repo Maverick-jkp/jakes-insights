@@ -19,6 +19,9 @@ faq:
     answer: "Both are growing, but for different use cases. Public cloud remains dominant for workloads that require high scalability, while private cloud adoption grew 18% in 2025, largely driven by regulatory pressure in financial services and healthcare. Organizations are increasingly running multi-cloud and hybrid strategies rather than committing exclusively to one deployment model."
   - question: "cloud computing basics for beginners where to start"
     answer: "Start by understanding the three service models (IaaS, PaaS, SaaS) and the difference between public, private, and hybrid cloud deployments, as these structural concepts underpin virtually every cloud decision. Cloud computing basics aren't just introductory material — getting them right is now considered a strategic differentiator given the complexity added by AI workloads, edge deployments, and multi-cloud environments. AWS, Microsoft Azure, and Google Cloud collectively hold 65% of the global market, so most practical learning resources will center on one of these three platforms."
+aliases:
+  - "/tech/2026-02-23-cloud-computing-basics/"
+
 ---
 
 The global cloud market crossed $900 billion in annual spend in 2025, according to Gartner's infrastructure services forecast. That number would've sounded absurd a decade ago. Today it's just Tuesday.

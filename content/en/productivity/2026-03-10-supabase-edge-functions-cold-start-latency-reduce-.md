@@ -19,6 +19,9 @@ faq:
     answer: "Bundle size is one of the most direct drivers of cold start duration in Supabase Edge Functions because every top-level import adds parse and compile time before the first request is served. Avoiding full ORMs, using tree-shakeable libraries, and lazy-loading non-critical dependencies are the most effective bundle optimization strategies for production deployments."
   - question: "does supabase edge function region affect cold start latency"
     answer: "Yes, region configuration significantly affects perceived latency even when function boot time itself is fast. If your edge function deploys globally but your Supabase database is hosted in a single region like us-east-1, users in distant locations like Frankfurt will experience slow query round-trips that feel indistinguishable from a cold start delay."
+aliases:
+  - "/tech/2026-03-10-supabase-edge-functions-cold-start-latency-reduce-/"
+
 ---
 
 Cold starts still kill user experience. A 400–800ms delay on a serverless function invocation doesn't sound catastrophic until it's the first thing a user hits after clicking "Log in." Then it's noticeable. And it compounds.

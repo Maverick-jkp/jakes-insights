@@ -19,6 +19,9 @@ faq:
     answer: "The Microsoft Claude Code cancellation signals a broader enterprise reckoning with agentic AI economics and the risks of deploying powerful tools without proper cost guardrails in place. Enterprises that roll out agentic AI broadly before establishing multi-model governance and budget controls risk facing the same abrupt cancellation scenario. The incident underscores that 'figure out costs later' is no longer a viable strategy for enterprise AI procurement."
   - question: "what is Claude Code and why does it use so many tokens"
     answer: "Claude Code is an agentic coding tool from Anthropic, available in general availability since early 2025, that goes beyond autocomplete by autonomously reading codebases, writing files, running terminal commands, and iterating on tasks across multiple steps. This autonomous looping architecture is inherently token-intensive, as a single task can involve processing dozens of files and multiple iterative cycles. The gap between token consumption estimates for standard chat AI and actual agentic workloads is what caught Microsoft and many other enterprises off guard."
+aliases:
+  - "/tech/2026-05-23-microsoft-cancels-claude-code-licenses-developer-w/"
+
 ---
 
 Microsoft just pulled the plug on its internal Claude Code licenses. Not a quiet sunset. A hard stop, after costs spiraled past acceptable thresholds.

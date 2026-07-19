@@ -19,6 +19,9 @@ faq:
     answer: "GitHub issue #3796 in the runner repository documents disproportionate virtual memory consumption by the Actions runner process on ARM64 systems, with reports accumulating since 2024. The behavior affects any .NET-based runner process on ARM64, not exclusively Docker deployments, because it originates from how the .NET CLR manages virtual address space on Apple Silicon. While there is no single upstream fix, configuration-level workarounds at the Docker and runner environment layers can significantly reduce the practical memory impact."
   - question: "self hosted github actions runner m2 mac vs managed runners like namespace depot actuated"
     answer: "Self-hosted GitHub Actions runners on M2 Macs offer cost advantages at scale compared to managed ARM64 providers like Namespace.so, Depot, and Actuated, which charge per-minute pricing that becomes expensive under heavy CI load. However, self-hosted ARM64 runners on Apple Silicon require active configuration work, particularly around github actions self hosted runner docker arm64 m2 mac memory usage optimization, to remain stable and cost-efficient. Managed alternatives remove that configuration burden but are generally more economical only for teams with lower or unpredictable build volumes."
+aliases:
+  - "/tech/2026-04-06-github-actions-self-hosted-runner-docker-arm64-m2-/"
+
 ---
 
 Build pipelines on Apple Silicon have a dirty secret.

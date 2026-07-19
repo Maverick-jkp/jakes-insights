@@ -19,6 +19,9 @@ faq:
     answer: "Running Llama 3.2 11B on a 16GB unified memory MacBook M3 essentially requires Q4 quantization just to fit the model within available RAM. The ollama llama3.2 quantization q4 vs q8 mac m3 inference speed benchmark 2025 data shows that higher quantizations like Q8_0 become near-impractical at the 11B parameter scale on base M3 hardware with 16GB memory."
   - question: "what is the default quantization when you run ollama pull llama3.2"
     answer: "When you run 'ollama pull llama3.2', Ollama defaults to the Q4_K_M quantization format for Llama 3.2. According to the ollama llama3.2 quantization q4 vs q8 mac m3 inference speed benchmark 2025 findings, this default is well-chosen for M-series Mac users since Q4_K_M offers the best balance of inference speed, memory efficiency, and output quality."
+aliases:
+  - "/tech/2026-05-12-ollama-llama32-quantization-q4-vs-q8-mac-m3-infere/"
+
 ---
 
 Running local LLMs on a base M3 MacBook Pro costs you roughly 2x inference speed the moment you choose the wrong quantization format. That's not a minor performance hit — it's the difference between a workflow that feels snappy and one that makes your laptop sound like a jet engine while you wait.

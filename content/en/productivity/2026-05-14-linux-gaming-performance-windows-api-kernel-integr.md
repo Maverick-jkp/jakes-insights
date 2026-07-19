@@ -19,6 +19,9 @@ faq:
     answer: "The ntsync integration in Linux 6.14 significantly closes the remaining performance gap between native Windows gaming and Linux-via-Proton, particularly for CPU-bound and synchronization-heavy titles. While graphics translation via DXVK and VKD3D-Proton has been competitive since around 2020, ntsync addresses what was the last major architectural bottleneck in Wine-based gaming."
   - question: "difference between esync fsync and ntsync Linux Wine gaming"
     answer: "esync (introduced around 2018) and fsync (developed around 2019–2020) were workaround solutions that used Linux eventfd objects and futexes respectively to partially improve Windows synchronization emulation in Wine. ntsync, merged into Linux 6.14 in February 2026, is a dedicated kernel driver that implements actual Windows NT sync semantics natively, making it a proper solution rather than an emulation workaround and delivering substantially better performance."
+aliases:
+  - "/tech/2026-05-14-linux-gaming-performance-windows-api-kernel-integr/"
+
 ---
 
 Linux gaming just crossed a threshold that seemed implausible three years ago. The kernel itself now speaks Windows NT natively — and benchmarks are backing that claim up hard.

@@ -19,6 +19,9 @@ faq:
     answer: "`force-cache`와 `revalidatePath()` 또는 `revalidateTag()`를 조합하면 캐시 히트율이 사실상 100%에 근접하여 콜드 스타트의 영향이 거의 사라집니다. 이 방식은 콘텐츠 업데이트 시점에만 수동으로 캐시를 무효화하므로 데이터 신선도와 성능을 동시에 확보할 수 있습니다. 콘텐츠 변경 빈도가 낮은 페이지에 특히 적합한 전략입니다."
   - question: "Vercel Fluid Compute 콜드 스타트 개선 효과 있나요 모든 플랜 적용되나요"
     answer: "Next.js 14 App Router Vercel Edge 함수 콜드 스타트 해결 ISR 설정 실측 후기에 따르면 2026년 Vercel의 Fluid Compute 모드는 Edge 워커 재사용 방식을 변경하여 콜드 스타트 발생 빈도 자체를 낮추는 효과가 있습니다. 다만 모든 플랜에 적용되지는 않으므로, 현재 플랜에서 Fluid Compute 지원 여부를 Vercel 공식 문서에서 확인한 후 도입 여부를 판단하는 것이 좋습니다."
+aliases:
+  - "/tech/2026-04-17-nextjs-14-app-router-vercel-edge-함수-콜드-스타트-해결-isr-/"
+
 ---
 
 배포 직후 첫 요청이 3-4초씩 걸렸던 경험, 한 번쯤 겪어봤죠? 정확히 그게 `Next.js 14 App Router`와 `Vercel Edge 함수` 조합에서 가장 많이 나오는 불만이에요.

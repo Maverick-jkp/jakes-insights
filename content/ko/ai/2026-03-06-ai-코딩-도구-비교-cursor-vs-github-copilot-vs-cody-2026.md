@@ -19,6 +19,9 @@ faq:
     answer: "세 도구 중 가장 저렴한 유료 플랜은 Cody Pro로 월 $9예요. Cursor는 월 $20, GitHub Copilot는 월 $10로 그 다음 순이에요. Cody는 무료 티어에서도 Claude 3.5 Sonnet, Gemini 2.0 Flash, GPT-4o-mini를 조건 없이 사용할 수 있어 비용 대비 성능 면에서 강점이 있어요."
   - question: "여러 레포지터리 동시에 분석할 수 있는 AI 코딩 도구 있나요?"
     answer: "2026년 기준으로 여러 레포지터리를 동시에 검색하고 추론하는 크로스 레포 기능은 Cody(Sourcegraph)가 유일하게 제공해요. GitHub Copilot와 Cursor는 이 기능을 지원하지 않아요. 마이크로서비스 아키텍처를 운영하거나 레거시와 신규 레포가 혼재하는 팀 환경에서 특히 유용한 기능이에요."
+aliases:
+  - "/tech/2026-03-06-ai-코딩-도구-비교-cursor-vs-github-copilot-vs-cody-2026/"
+
 ---
 
 "어떤 AI 코딩 도구 쓰고 있어요?"

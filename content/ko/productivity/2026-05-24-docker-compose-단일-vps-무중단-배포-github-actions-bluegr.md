@@ -19,6 +19,9 @@ faq:
     answer: "blue/green 컨테이너가 동시에 실행되는 순간 메모리 사용량이 두 배로 치솟아 단일 VPS 환경에서 OOM(Out of Memory) 이 발생할 수 있습니다. 배포 전 스왑 메모리 설정을 반드시 구성해두고, Nginx 전환이 완료된 직후 구 컨테이너를 즉시 제거하는 순서를 스크립트에 명시해야 합니다."
   - question: "docker-compose blue green 배포 포트 충돌 해결 방법"
     answer: "하나의 docker-compose.yml에서 blue/green을 함께 관리하면 컨테이너 이름과 포트 충돌이 발생합니다. docker-compose.blue.yml과 docker-compose.green.yml을 별도 파일로 분리하거나 --project-name 옵션으로 프로젝트를 격리하면, blue는 8080 포트, green은 8081 포트를 독립적으로 사용할 수 있어 충돌 없이 두 환경을 동시에 운영할 수 있습니다."
+aliases:
+  - "/tech/2026-05-24-docker-compose-단일-vps-무중단-배포-github-actions-bluegr/"
+
 ---
 
 배포 버튼 누른 순간 서비스가 30초 동안 터진 적 있죠? 단일 VPS 환경에서 `docker compose up`만 했다가 실서비스 사용자들에게 502 폭탄을 날려본 사람이라면, 이 글이 딱 맞아요.

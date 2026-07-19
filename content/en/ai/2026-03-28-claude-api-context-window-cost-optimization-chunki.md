@@ -19,6 +19,9 @@ faq:
     answer: "Yes, the 1M token extended context window available in enterprise API configurations is significantly more expensive to use at scale because input tokens are priced per call, not per session. Developers are advised to treat it as a specialized power tool rather than a default setting, using structured chunking strategies for most production workloads instead."
   - question: "why did my Claude API bill increase so much without adding more features"
     answer: "A common cause is switching to full conversation history passing, where every API call includes the entire prior conversation as context — a pattern that compounds costs non-linearly as conversations grow longer. As documented in the claude api context window cost optimization chunking strategy real experiment, teams often don't notice this scaling problem until a surprising billing cycle reveals costs have grown 200–400% with no corresponding increase in workload complexity."
+aliases:
+  - "/tech/2026-03-28-claude-api-context-window-cost-optimization-chunki/"
+
 ---
 
 Last quarter, a production API bill jumped 340% in six weeks. The codebase hadn't grown. The team hadn't hired. The only change? They'd switched from manual context management to passing full conversation histories into every Claude API call.

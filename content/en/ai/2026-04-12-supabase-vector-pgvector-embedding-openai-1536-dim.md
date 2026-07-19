@@ -19,6 +19,9 @@ faq:
     answer: "For tables under 10,000 rows, skipping the pgvector index entirely and relying on sequential scans is often the fastest approach. Index overhead — especially with high-dimensional vectors like OpenAI's 1536-dimension embeddings — can cost more than the search savings it provides at small table sizes. This is a common oversight in tutorials focused on large-scale deployments."
   - question: "supabase vector pgvector embedding openai 1536 dimension query latency optimization small table probes ef_search settings"
     answer: "When optimizing supabase vector pgvector embedding openai 1536 dimension query latency on small tables, tuning `probes` for IVFFlat or `ef_search` for HNSW at query time — not just at index creation — is one of the most underused performance levers available. Supabase's documentation recommends setting `probes` to approximately sqrt(lists) as a starting baseline, so a 100-list index would use probes = 10. Adjusting these parameters per query based on your recall vs. latency tradeoff can dramatically improve response times without any schema changes."
+aliases:
+  - "/tech/2026-04-12-supabase-vector-pgvector-embedding-openai-1536-dim/"
+
 ---
 
 Query times were clocking 800ms on a table with fewer than 50,000 rows. Same OpenAI `text-embedding-3-small` embeddings. Same 1536-dimension vectors. The only difference after the fix? 12ms. That 65x gap isn't from hardware or scale — it's from misunderstanding how `pgvector` actually works on small tables in Supabase.

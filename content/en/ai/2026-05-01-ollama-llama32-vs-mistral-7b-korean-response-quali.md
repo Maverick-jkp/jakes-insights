@@ -19,6 +19,9 @@ faq:
     answer: "Korean is morphologically complex, agglutinative, and written in Hangul, which most Western-trained tokenizers handle poorly by breaking Korean words into inefficient fragments that burn extra tokens and degrade response coherence. Models trained on corpora that are 90% or more English and European languages struggle significantly with Korean compared to their English performance, making training data composition a critical factor when evaluating local LLMs for Korean tasks."
   - question: "best local LLM for korean language tasks on mac mini 2025"
     answer: "According to the ollama llama3.2 vs mistral 7b korean response quality benchmark apple silicon 2025 findings, Llama 3.2 3B is the stronger choice for Korean-language tasks on a Mac mini, particularly for users with 4GB of unified memory. However, the right decision also depends on whether you need Korean text generation versus comprehension, your latency tolerance, and available memory, as Mistral 7B remains competitive for English-language reasoning tasks."
+aliases:
+  - "/tech/2026-05-01-ollama-llama32-vs-mistral-7b-korean-response-quali/"
+
 ---
 
 Running local LLMs used to require a dedicated GPU rig, a weekend of CUDA troubleshooting, and genuine tolerance for pain. Apple Silicon killed that entirely. Now a $600 Mac mini can run a capable 7B model with a single terminal command.

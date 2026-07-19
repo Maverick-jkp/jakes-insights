@@ -19,6 +19,9 @@ faq:
     answer: "Open-source app stores like F-Droid face an existential distribution threat on certified Android devices under Google's new verification policy, since apps distributed outside of verified channels would be blocked on the vast majority of Android devices. F-Droid is a free, open-source app repository that distributes apps Google does not carry, and the new policy removes sideloading as a practical workaround for developers and users who rely on alternative distribution channels. Only users running alternative Android builds like LineageOS or GrapheneOS would remain unaffected."
   - question: "Can you still sideload apps on Android after the 2026 verification deadline?"
     answer: "After Google's verification enforcement begins in 2026, sideloaded apps on certified Android devices will still need to come from verified developers who have completed Google's identity and payment verification process, meaning unrestricted sideloading effectively ends on mainstream Android hardware. Users who want to avoid these restrictions would need to switch to alternative Android builds like LineageOS or GrapheneOS, which are not subject to Google's certified device requirements. This represents a major structural change to how Android app distribution has historically worked."
+aliases:
+  - "/tech/2026-02-22-keep-android-open/"
+
 ---
 
 Google's March 2026 developer verification deadline is weeks away. And the developer community is pushing back hard.

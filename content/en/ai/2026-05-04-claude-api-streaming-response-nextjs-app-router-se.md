@@ -19,6 +19,9 @@ faq:
     answer: "Anthropic's API returns usage metadata — including input_tokens, output_tokens, cache_read_input_tokens, and cache_creation_input_tokens — at the end of each stream, which must be captured before the stream closes. The most reliable approach is building a cost tracker at the middleware layer rather than the component layer, so token attribution logic isn't duplicated across routes and metadata is never lost due to early component rendering."
   - question: "does prompt caching reduce claude api streaming costs"
     answer: "Yes, prompt caching on Claude 3.5 Sonnet and Claude 3 Haiku can reduce repeat-context input token costs by up to 90%, according to Anthropic's official documentation. This makes caching a high-impact optimization for streaming applications that frequently send similar system prompts or context, and the savings are trackable via the cache_read_input_tokens field in Anthropic's usage metadata."
+aliases:
+  - "/tech/2026-05-04-claude-api-streaming-response-nextjs-app-router-se/"
+
 ---
 
 Streaming LLM responses in production sounds straightforward. It isn't.

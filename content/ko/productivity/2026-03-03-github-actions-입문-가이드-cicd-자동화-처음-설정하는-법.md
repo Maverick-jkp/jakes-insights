@@ -19,6 +19,9 @@ faq:
     answer: "`act`라는 도구를 사용하면 커밋 없이 로컬 환경에서 워크플로우를 미리 실행해볼 수 있습니다. 매번 커밋을 올려가며 디버깅할 필요가 없어지기 때문에 개발 초기 단계에서 파이프라인을 빠르게 검증하는 데 특히 유용합니다."
   - question: "CI/CD 자동화 처음 설정할 때 GitHub Actions vs Jenkins 뭐가 더 나은가요"
     answer: "GitHub Actions 입문 가이드 CICD 자동화 처음 설정하는 법 관점에서 보면, GitHub 기반 프로젝트라면 Actions가 훨씬 빠르게 시작할 수 있는 선택입니다. Jenkins는 별도 서버 설치와 플러그인 설정이 필요한 반면, GitHub Actions는 YAML 파일 하나로 설정이 끝나고 GitHub 저장소와 네이티브로 통합되어 관리가 훨씬 단순합니다."
+aliases:
+  - "/tech/2026-03-03-github-actions-입문-가이드-cicd-자동화-처음-설정하는-법/"
+
 ---
 
 매번 서버에 직접 접속해서 `git pull`하고 `npm install`하고... 이 반복, 질리죠? GitHub Actions를 쓰면 코드를 push하는 순간 테스트, 빌드, 배포까지 자동으로 돌아가요. 지금 GitHub 저장소의 절반 이상이 이미 Actions를 쓰고 있어요. 처음 설정이 낯설게 느껴질 뿐, 막상 해보면 생각보다 빨리 됩니다.

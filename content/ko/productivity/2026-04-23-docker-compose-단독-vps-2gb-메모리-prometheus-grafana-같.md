@@ -19,6 +19,9 @@ faq:
     answer: "Grafana는 기동 시 SQLite 메타데이터 처리와 플러그인 초기화로 기본 약 250–400MB를 점유하며, 대시보드 패널이 많을수록 백엔드 쿼리가 동시에 실행돼 피크 사용량이 500MB를 넘기도 합니다. 불필요한 플러그인을 비활성화하는 것만으로 초기 기동 메모리를 80–120MB 줄일 수 있으며, docker-compose.yml에 `mem_limit: 300m`을 설정해 상한을 강제하는 것이 권장됩니다. 2GB 환경에서는 컨테이너별 메모리 상한, 스크래핑 간격 조정, 스왑 설정을 묶어서 적용해야 안정적인 운영이 가능합니다."
   - question: "Docker memory cgroup 작동 안 할 때 확인 방법"
     answer: "`cat /proc/cgroups` 명령으로 `memory` 항목의 값이 `1`인지 확인하면 됩니다. 일부 경량 Linux 빌드에서는 memory cgroup이 기본 비활성화되어 있어 Docker의 `mem_limit` 설정이 아예 적용되지 않는 경우가 있습니다. VPS 환경이라도 이 확인은 기본 사항이며, cgroup이 비활성화된 경우 커널 부팅 파라미터에 `cgroup_enable=memory`를 추가해야 `mem_limit`이 정상 동작합니다."
+aliases:
+  - "/tech/2026-04-23-docker-compose-단독-vps-2gb-메모리-prometheus-grafana-같/"
+
 ---
 
 2GB VPS에서 Docker Compose로 서비스를 올리다 갑자기 컨테이너가 통째로 죽는 경험, 분명 있을 거예요. 로그엔 `Killed`라는 한 단어만 남고. 범인은 OOM Killer — 커널이 메모리 한계를 넘어섰다고 판단해 프로세스를 강제 종료하는 리눅스의 최후 수단이에요. Prometheus와 Grafana를 모니터링 목적으로 추가하는 순간, 이 일이 유독 자주 벌어져요.

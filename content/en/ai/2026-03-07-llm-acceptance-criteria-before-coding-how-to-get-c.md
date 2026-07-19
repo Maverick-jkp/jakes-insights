@@ -19,6 +19,9 @@ faq:
     answer: "Vibe coding is a term coined in 2025 describing the practice of trusting AI-generated code without systematic verification, relying on the output looking correct rather than confirming it is correct. While this approach can work for throwaway scripts, it is unreliable for production code because AI agents optimize for plausibility, not logical accuracy. Teams using this method at scale have reported production incidents caused by subtle bugs that bypassed code review."
   - question: "does writing acceptance criteria before prompting an AI coding agent actually improve code quality"
     answer: "Yes, research and practitioner experience confirm that structured prompting with predefined acceptance criteria outperforms both ad-hoc prompting and post-generation review for catching logic errors in AI-generated code. Defining criteria upfront forces the model to address edge cases and explicit requirements it would otherwise skip. This workflow is especially effective when criteria are injected at the system-prompt level in tools like Cursor, Aider, or Claude Code."
+aliases:
+  - "/tech/2026-03-07-llm-acceptance-criteria-before-coding-how-to-get-c/"
+
 ---
 
 AI agents write plausible code, not correct code. That distinction cost a full sprint last quarter. The agent produced a working-looking authentication module that passed a quick manual review — but silently dropped refresh token validation under specific race conditions. Production caught it. Code review didn't.

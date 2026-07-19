@@ -19,6 +19,9 @@ faq:
     answer: "Sequential scans in pgvector become noticeably slow past roughly 100,000 rows, with query times degrading linearly as data grows. A table with 200,000 rows can already see 800ms response times without an index, making indexing essential well before reaching production scale. Most teams don't catch this during development because test datasets are too small to expose the problem."
   - question: "pgvector partial index problem asynchronous embedding inserts"
     answer: "When embeddings are backfilled asynchronously after row insertion — a common pattern with OpenAI or Cohere embedding jobs — rows with null vector values fall outside the pgvector index. This causes partial sequential scans on those unindexed rows, which can undermine the performance gains from indexing entirely. The fix is to enforce a NOT NULL constraint on the vector column so every row is guaranteed to be covered by the index."
+aliases:
+  - "/tech/2026-05-19-supabase-pgvector-embedding-search-slow-query-opti/"
+
 ---
 
 Your vector search works fine at 10,000 rows. Then production hits 2 million embeddings and queries crawl past 8 seconds. That's the wall most teams hit with Supabase pgvector, and it's almost always an index problem — not a hardware problem.

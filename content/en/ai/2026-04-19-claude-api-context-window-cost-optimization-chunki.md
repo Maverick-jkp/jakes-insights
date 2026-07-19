@@ -19,6 +19,9 @@ faq:
     answer: "Teams that implemented structured chunking with retrieval pipelines saved 40–65% on API costs for document-heavy workloads, according to IntuitionLabs' 2025 token optimization analysis. At scale — such as 10,000 queries per day — this represents substantial savings since full-document injection charges tokens whether the model needs them or not."
   - question: "why does passing full documents to Claude API cost so much"
     answer: "Claude charges per input token on every request, meaning a 150-page PDF passed in full costs the same regardless of whether the answer is on page 2 or page 147. Most production implementations burn 30–60% more tokens than necessary because the entire document is injected rather than only the relevant segments."
+aliases:
+  - "/tech/2026-04-19-claude-api-context-window-cost-optimization-chunki/"
+
 ---
 
 API bills have a way of arriving before you've figured out why they're so high. For teams running Claude at scale in 2026, the context window is usually the culprit — and chunking strategy is the lever nobody's pulling hard enough.

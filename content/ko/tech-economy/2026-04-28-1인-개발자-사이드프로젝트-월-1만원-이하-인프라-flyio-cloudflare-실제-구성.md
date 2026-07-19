@@ -19,6 +19,9 @@ faq:
     answer: "1인 개발자 사이드프로젝트 월 1만원 이하 인프라 Fly.io Cloudflare 실제 구성 후기에서는 Neon Free Tier(Postgres 0.5GB 무료)와 Turso(SQLite, 9GB 무료)를 현실적인 선택지로 추천해요. Fly.io 무료 머신 위에 Postgres를 직접 올리는 것도 가능하지만 256MB RAM 부족 문제가 생길 수 있어서 외부 무료 DB 서비스를 함께 쓰는 게 낫다고 해요."
   - question: "Cloudflare Workers로 백엔드 API 대체 가능한가요"
     answer: "Cloudflare Workers 무료 플랜은 하루 10만 요청을 제공해서 간단한 폼 처리나 API 로직은 충분히 커버할 수 있어요. 데이터 저장이 필요하면 Cloudflare KV(무료 10만 읽기/일)나 R2(무료 10GB/월)를 함께 쓰면 별도 서버 없이 정적 사이트 + 서버리스 API 구성을 비용 0원으로 만들 수 있어요."
+aliases:
+  - "/tech/2026-04-28-1인-개발자-사이드프로젝트-월-1만원-이하-인프라-flyio-cloudflare-실제-구성/"
+
 ---
 
 사이드프로젝트를 AWS에 올렸다가 월 7만원 청구서를 받고 조용히 서버를 내린 적 있으시죠? 저도요.

@@ -19,6 +19,9 @@ faq:
     answer: "Firefox began integrating Rust into specific components around 2017 through its Quantum rewrite but never committed to replacing its full engine, making it a partial adoption rather than a clean break. Ladybird is attempting a complete C++-to-Rust engine rewrite using AI-assisted porting tools, which is a far more ambitious approach that no major independent browser has attempted before at this scale."
   - question: "Does rewriting a browser in Rust make it completely secure?"
     answer: "Rewriting a browser engine in Rust significantly reduces memory safety vulnerabilities such as buffer overflows and use-after-free bugs, but does not eliminate all security risks. Logic errors, race conditions in asynchronous code, and intentional use of 'unsafe' Rust blocks can still introduce exploitable vulnerabilities even in a fully Rust-based codebase."
+aliases:
+  - "/tech/2026-02-24-ladybird-browser-rust-migration-aiassisted-porting/"
+
 ---
 
 The Ladybird browser project just announced it's rewriting its entire C++ engine in Rust — and it's leaning on AI to get there faster. That combination is either a smart engineering shortcut or a reliability minefield, depending on how you look at it.

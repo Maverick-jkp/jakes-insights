@@ -19,6 +19,9 @@ faq:
     answer: "Next.js API route 같은 Serverless 환경은 함수 호출마다 새 연결을 열 수 있어 동시 요청 20개만 들어와도 연결이 20개 생성됩니다. PgBouncer Transaction 모드를 앞단에 두면 이 연결 요청을 5개 이내로 압축해 Postgres에 전달하므로 Fly.io 무료 플랜 Postgres 연결 수 초과 문제를 효과적으로 방지할 수 있습니다. 1인 개발자 트러블슈팅 관점에서는 PgBouncer 설정과 함께 DATABASE_URL을 PgBouncer 포트(6432)로 변경하는 것만으로 즉각적인 효과를 볼 수 있습니다."
   - question: "Fly.io PgBouncer 설정 방법 별도 앱 vs 같은 앱 내부"
     answer: "Fly.io에서 PgBouncer를 구성하는 방법은 기존 Postgres 앱 내부에 프로세스를 추가하는 방식과 별도의 전용 앱을 띄우는 방식 두 가지가 있습니다. Fly.io 커뮤니티에서는 같은 앱 내부에서 실행하는 방식을 권장하는데, 네트워크 홉이 줄고 무료 플랜에서 추가 앱을 띄울 필요가 없기 때문입니다. 핵심 설정은 pool_mode를 transaction으로, default_pool_size를 5로 지정하는 것이며 max_client_conn과 default_pool_size의 차이가 커넥션 절약 효과를 결정합니다."
+aliases:
+  - "/tech/2026-05-17-flyio-무료-플랜-postgres-연결-수-초과-pgbouncer-설정-1인-개발자-트/"
+
 ---
 
 배포는 됐어요. 그런데 앱이 안 뜨죠.

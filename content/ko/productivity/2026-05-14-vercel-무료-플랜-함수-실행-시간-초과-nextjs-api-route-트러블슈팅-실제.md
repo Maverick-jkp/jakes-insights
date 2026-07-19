@@ -19,6 +19,9 @@ faq:
     answer: "Vercel Serverless Function 환경에서 Prisma를 사용할 때 전역 싱글턴 패턴을 적용하지 않으면 요청마다 새로운 DB 연결을 생성하며 1-3초가 낭비됩니다. Vercel 무료 플랜 함수 실행 시간 초과 Next.js API route 트러블슈팅 실제 사례에서도 DB 연결 풀 미구성이 타임아웃의 주요 원인으로 지목되며, PrismaClient를 전역 싱글턴으로 관리하는 것으로 해결할 수 있습니다."
   - question: "Vercel Edge Runtime Serverless Function 차이점 뭔가요"
     answer: "Serverless Function은 Node.js 런타임 기반으로 콜드 스타트가 1-2초 발생하고 Hobby 플랜 기준 최대 10초 실행 제한이 있습니다. Edge Runtime은 V8 기반으로 동작해 콜드 스타트가 거의 없고 응답 속도가 빠르지만, Node.js 전용 API나 일부 npm 패키지를 사용할 수 없다는 제약이 있습니다."
+aliases:
+  - "/tech/2026-05-14-vercel-무료-플랜-함수-실행-시간-초과-nextjs-api-route-트러블슈팅-실제/"
+
 ---
 
 배포는 잘 됐어요. 로컬에서도 멀쩡히 돌아가요. 그런데 Vercel에 올리니까 딱 10초 만에 `Task timed out` 에러가 터졌어요. 그것도 프로덕션에서요.

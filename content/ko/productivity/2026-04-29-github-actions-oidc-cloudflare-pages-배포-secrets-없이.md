@@ -19,6 +19,9 @@ faq:
     answer: "OIDC 방식에서 발급되는 JWT 토큰은 워크플로우 실행 시마다 새로 생성되고 수분 내에 만료되기 때문에 유출되더라도 즉각적인 피해가 없어요. 반면 기존 장기 API 토큰은 한 번 유출되면 만료 전까지 전체 배포 권한이 탈취되고, 여러 리포지토리에 공유된 경우 피해 범위가 더 넓어져요. 또한 팀원 퇴사나 토큰 만료 시마다 자격증명을 교체해야 하는 관리 부담도 사라져요."
   - question: "Cloudflare Pages OIDC silent failure 디버깅 방법"
     answer: "GitHub Actions OIDC Cloudflare Pages 배포 secrets 없이 설정하는 법 삽질 기록에 따르면 OIDC 설정 오류 시 에러 없이 조용히 실패하는 silent failure가 발생할 수 있어요. 디버깅 시 가장 먼저 확인할 사항은 permissions 블록의 id-token: write 누락 여부, wrangler-action 버전이 v3.4.0 이상인지, 그리고 Cloudflare 대시보드에서 해당 리포지토리와 브랜치에 대한 OIDC 신뢰 설정이 올바르게 되어 있는지 순서로 점검하는 게 효율적이에요."
+aliases:
+  - "/tech/2026-04-29-github-actions-oidc-cloudflare-pages-배포-secrets-없이/"
+
 ---
 
 `CLOUDFLARE_API_TOKEN`을 GitHub Secrets에 넣고, 6개월마다 토큰 만료 걱정하고, 팀원이 퇴사할 때마다 자격증명 교체하던 시절이 있었어요. 그 과정에서 CI/CD 파이프라인 하나를 운영하는 데 드는 보안 관리 비용이 얼마나 큰지 체감했죠. GitHub Actions OIDC와 Cloudflare Pages를 연결하면 이 번거로움을 통째로 없앨 수 있어요. 삽질 기록까지 포함해서 정리해봤어요.

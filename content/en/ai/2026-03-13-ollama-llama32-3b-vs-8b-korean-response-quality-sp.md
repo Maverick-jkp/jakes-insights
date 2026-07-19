@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Llama 3.2 significantly improved Korean language handling by updating its BPE tokenizer vocabulary to cover Hangul jamo combinations more efficiently. This reduced the average tokens-per-Korean-word from approximately 3.2 to 1.8, which means faster generation speeds and better use of the context window for Korean text."
   - question: "ollama llama3.2 3b vs 8b korean response quality speed tradeoff macbook m3 16gb for formal korean writing"
     answer: "For formal Korean writing tasks on a MacBook M3 16GB, the Llama 3.2 8B model is the clear winner in the ollama llama3.2 3b vs 8b korean response quality speed tradeoff macbook m3 16gb comparison, with consistent advantages in coherence, honorific accuracy, and register. The 3B model's speed advantage becomes less relevant when output quality is critical, particularly for professional or client-facing Korean content."
+aliases:
+  - "/tech/2026-03-13-ollama-llama32-3b-vs-8b-korean-response-quality-sp/"
+
 ---
 
 Running local LLMs for Korean-language tasks has a concrete bottleneck: the Llama 3.2 3B vs 8B decision hits differently when your hardware ceiling is 16GB unified memory. Choose wrong, and you're either waiting 8 seconds per token or getting responses that'd embarrass a middle schooler's Korean tutor.

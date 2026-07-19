@@ -19,6 +19,9 @@ faq:
     answer: "Ubuntu 20.04 and 22.04 defaulted to cgroup v1 or hybrid mode, while Ubuntu 24.04 ships with pure cgroup v2 enabled by default as of its April 2024 release. This is a significant behavioral change for Docker-based CI runners because cgroup v1 applied memory limits more predictably, triggering clean OOMKills when containers exceeded their memory allocation. Teams migrating CI infrastructure to Ubuntu 24.04 in 2026 on AWS, GCP, or Azure will encounter this difference immediately on fresh VM provisioning."
   - question: "how to revert cgroup v2 to cgroup v1 ubuntu 24.04 docker"
     answer: "To revert Ubuntu 24.04 from cgroup v2 to cgroup v1, you can add the kernel boot parameter `systemd.unified_cgroup_hierarchy=0` to your GRUB configuration, which forces the system back to cgroup v1 mode. Alternatively, you can configure the Docker daemon to use a cgroupfs driver compatible with v1 behavior, or update your runner controller to handle cgroup v2 memory accounting correctly. The right approach depends on whether you control the host OS, are running in Kubernetes, or need a solution that doesn't require kernel-level changes."
+aliases:
+  - "/tech/2026-04-25-github-actions-selfhosted-runner-docker-memory-lim/"
+
 ---
 
 Memory limits that silently hang instead of killing. Runners that freeze indefinitely. CI/CD pipelines that worked perfectly on Ubuntu 22.04 but collapse the moment you upgrade. If you're running GitHub Actions self-hosted runners with Docker on Ubuntu 24.04, you've likely already hit this wall.

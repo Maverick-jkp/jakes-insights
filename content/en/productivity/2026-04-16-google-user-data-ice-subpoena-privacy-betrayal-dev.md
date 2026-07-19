@@ -19,6 +19,9 @@ faq:
     answer: "Developers looking to reduce subpoena risk can replace Google services with self-hosted or end-to-end encrypted tools such as Supabase self-hosted instead of Firebase, Nextcloud instead of Google Workspace, and Proton for encrypted communications. These alternatives eliminate the third-party compliance surface that centralized platforms like Google introduce by design."
   - question: "what is data minimization and how does it protect user privacy from government requests"
     answer: "Data minimization means collecting only the data your app genuinely needs, storing it encrypted, and deleting it on a scheduled basis so there is less information available to hand over if a subpoena arrives. Security experts consider it the most durable privacy protection available to developers because data that does not exist cannot be disclosed."
+aliases:
+  - "/tech/2026-04-16-google-user-data-ice-subpoena-privacy-betrayal-dev/"
+
 ---
 
 Google handed user location data to ICE after explicitly promising not to. If you build on Google's APIs, store user data in Firebase, or rely on Google Workspace — your users' data was implicated in that decision. This guide covers what happened, why it matters for developers specifically, and the concrete steps you can take to stop being an accidental compliance liability for your users.

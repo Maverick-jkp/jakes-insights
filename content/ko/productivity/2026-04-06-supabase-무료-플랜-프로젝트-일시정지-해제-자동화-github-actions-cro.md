@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions의 cron 문법은 '분 시 일 월 요일' 순서로 작성해요. 예를 들어 `0 9 * * 1`은 매주 월요일 UTC 오전 9시에 실행되고, `0 9 * * 1,4`는 월요일과 목요일 두 번 실행돼요. GitHub Actions의 schedule 트리거는 UTC 기준으로 동작하므로, 한국 시간(KST)으로 맞추려면 9시간을 빼서 계산해야 해요."
   - question: "Supabase 무료 플랜 일시정지 해제 자동화 GitHub Actions vs Uptime Robot 어떤 게 나아요"
     answer: "Supabase 무료 플랜 프로젝트 일시정지 해제 자동화 방법 중 GitHub Actions cron 설정은 별도 외부 서비스 의존 없이 리포지토리 하나로 완결되어 안정성과 관리 편의성 면에서 가장 우수해요. Uptime Robot 같은 외부 서비스도 무료로 사용 가능하지만, 해당 서비스 자체의 장애나 정책 변경에 영향을 받을 수 있어요. 이미 GitHub을 사용하는 개발자라면 GitHub Actions 방식이 설정 난이도도 낮고 추가 계정 관리도 필요 없어 더 실용적인 선택이에요."
+aliases:
+  - "/tech/2026-04-06-supabase-무료-플랜-프로젝트-일시정지-해제-자동화-github-actions-cro/"
+
 ---
 
 사이드 프로젝트 잠깐 손 놨다가 Supabase 대시보드 열었더니 "Project paused" 떠 있던 경험, 개발자라면 한 번쯤 있을 거예요. Supabase 무료 플랜은 7일간 API 요청이 없으면 프로젝트를 자동으로 일시정지해요. 매번 수동으로 해제하는 건 번거롭고, 어느 순간 깜빡하면 서비스가 통째로 멈추죠. GitHub Actions cron 설정 하나면 이 문제를 깔끔하게 해결할 수 있어요.

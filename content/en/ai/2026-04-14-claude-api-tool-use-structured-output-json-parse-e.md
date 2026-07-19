@@ -19,6 +19,9 @@ faq:
     answer: "Setting `tool_choice: {'type': 'tool', 'name': 'your_function'}` in the Claude API provides the strongest schema adherence guarantee available, as it forces the model to respond using the specified tool rather than generating free-form prose or markdown-wrapped JSON. This approach replaced the older prompt-engineering method of asking the model to 'respond only with valid JSON,' which succeeded only 85-90% of the time."
   - question: "Claude API structured output JSON parse error handling Python real example vs prompt engineering JSON"
     answer: "Prompt-engineering JSON from Claude (e.g., instructing it to respond only in JSON) was unreliable, producing errors from trailing commas, embedded prose, or markdown fences, especially with long contexts or complex schemas. The tool use API with forced tool choice moves schema enforcement closer to the model's generation process, making structured output substantially more reliable while still requiring Python-side error handling for edge cases."
+aliases:
+  - "/tech/2026-04-14-claude-api-tool-use-structured-output-json-parse-e/"
+
 ---
 
 Most production AI integrations break not because of bad prompts, but because of one JSON parse error at 2 AM that nobody anticipated. If you're building with the Claude API and expecting structured output, that's the failure mode worth understanding.

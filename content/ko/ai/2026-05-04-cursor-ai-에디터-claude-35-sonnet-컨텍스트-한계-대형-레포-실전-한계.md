@@ -8,6 +8,9 @@ tags: ["subtopic-ai", "cursor", "\uc5d0\ub514\ud130", "claude", "Anthropic"]
 description: "Cursor AI에서 Claude 3.5 Sonnet을 쓸 때 유효 컨텍스트가 200K가 아닌 10K~40K로 줄어드는 이유와, 대형 레포에서 AI가 맥락을 잃는 실제 원인을 분석합니다."
 image: "/images/20260504-cursor-ai-에디터-claude-35-sonnet.webp"
 technologies: ["Claude", "Anthropic", "VS Code", "Cursor"]
+aliases:
+  - "/tech/2026-05-04-cursor-ai-에디터-claude-35-sonnet-컨텍스트-한계-대형-레포-실전-한계/"
+
 ---
 
 대형 레포지토리에서 Cursor AI를 열면 이런 일이 생겨요. AI가 엉뚱한 파일을 참조하거나, 이미 수정한 코드를 되돌리거나, 갑자기 맥락을 잃어버린 것 같은 답변을 내놓는 거예요. Cursor가 나쁜 도구여서가 아니에요. Claude 3.5 Sonnet의 컨텍스트 윈도우가 실제 대형 레포 환경에서 어떻게 작동하는지 이해하면, 이 현상이 꽤 자연스럽게 보여요. 2026년 현재, AI 에디터를 팀 단위로 도입하는 기업이 빠르게 늘면서 이 문제는 단순 불편을 넘어 개발 생산성 설계의 핵심 변수가 됐어요.

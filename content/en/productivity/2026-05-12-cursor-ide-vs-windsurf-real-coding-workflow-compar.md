@@ -19,6 +19,9 @@ faq:
     answer: "Windsurf's Cascade agent is an agentic AI loop built as the primary interaction model of the IDE, rather than a feature added onto a chat panel like Cursor's Composer. In practice, Cascade completes multi-step coding tasks with fewer back-and-forth interactions, which translates to roughly 20–35% lower token spend on equivalent tasks compared to Cursor's Composer in agent mode."
   - question: "cursor ide vs windsurf real coding workflow comparison context window token cost solo dev 2026 pricing"
     answer: "As of 2026, Cursor Pro costs $20/month but caps the number of fast requests, while Windsurf Pro costs $15/month and includes unlimited usage of the Cascade base model. For solo developers doing sustained daily coding work, this pricing difference combined with Windsurf's lower token burn rate makes it the more economical long-term choice."
+aliases:
+  - "/tech/2026-05-12-cursor-ide-vs-windsurf-real-coding-workflow-compar/"
+
 ---
 
 Seven months ago, a context window overflow wiped out two hours of refactoring mid-session. One moment Cursor was mid-flow through a complex API restructure. The next — gone. That single incident triggered a methodical six-week comparison between Cursor and Windsurf across real production workflows. The results weren't what I expected.

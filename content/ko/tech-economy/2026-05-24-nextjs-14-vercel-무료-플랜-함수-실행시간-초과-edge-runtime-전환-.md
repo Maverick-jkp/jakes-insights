@@ -19,6 +19,9 @@ faq:
     answer: "Vercel Edge Runtime은 V8 기반으로 Node.js 전용 API를 지원하지 않기 때문에 Prisma, TypeORM, pg, mysql2 같은 전통적인 Node.js DB 드라이버는 Edge Runtime에서 동작하지 않아요. DB 연결이 필요한 로직은 Edge Runtime 대신 Serverless Function을 유지하거나 Edge 호환 드라이버로 교체해야 해요."
   - question: "Vercel 무료 플랜에서 OpenAI 스트리밍 10초 제한 우회하는 방법"
     answer: "Edge Runtime과 ReadableStream을 조합해 응답을 스트리밍 방식으로 전환하면 실질적으로 10초 벽을 우회할 수 있어요. 응답이 완전히 끝날 때까지 기다리는 구조가 아니라 토큰이 하나씩 클라이언트로 전달되는 구조로 바뀌기 때문에, Vercel Hobby 플랜의 Edge Function 25초 제한 안에서 LLM 응답을 처리할 수 있어요."
+aliases:
+  - "/tech/2026-05-24-nextjs-14-vercel-무료-플랜-함수-실행시간-초과-edge-runtime-전환-/"
+
 ---
 
 Vercel 무료 플랜을 쓰다가 갑자기 `504 Gateway Timeout`을 만난 적 있으세요? 10초 제한. 그 벽 앞에서 많은 사이드 프로젝트가 멈춰요. Next.js 14 기반 프로젝트에서 이 문제는 개발자 커뮤니티의 단골 이슈예요. 그리고 그 해법으로 Edge Runtime 전환 실험이 활발하게 시도되고 있죠.

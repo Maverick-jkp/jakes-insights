@@ -19,6 +19,9 @@ faq:
     answer: "Anthropic's annualized revenue grew from approximately $300 million at the end of 2024 to over $2 billion in early 2026, representing roughly 6x growth in 12 months according to Sacra's tracking data. This growth trajectory signals genuine enterprise demand rather than experimental usage. The company also raised over $10 billion across multiple funding rounds between 2023 and 2025, reflecting strong investor confidence in retention and expansion revenue."
   - question: "Anthropic OpenAI product-market fit developer dependency risk is building on one AI API too risky"
     answer: "Building exclusively on a single AI provider's API carries measurable risk because switching costs compound quickly once integrations reach the prompt engineering and fine-tuning layers, with migration typically taking 3–6 months. Both Anthropic and OpenAI have transitioned from experimental tools to critical infrastructure for thousands of production applications, making dependency a live strategic concern rather than a theoretical one. Teams should weigh this lock-in risk against the performance and cost trade-offs of maintaining multi-provider flexibility."
+aliases:
+  - "/tech/2026-05-28-anthropic-openai-productmarket-fit-developer-depen/"
+
 ---
 
 Two AI companies are now generating billions in recurring revenue. That changes everything.

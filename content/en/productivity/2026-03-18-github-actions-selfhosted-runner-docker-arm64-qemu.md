@@ -19,6 +19,9 @@ faq:
     answer: "Native ARM64 runners outperform QEMU emulation by approximately 5-10x on GitHub Actions, with real-world build times dropping from 30-45 minutes under emulation to under 5 minutes natively for most Node.js and Go workloads. GitHub introduced hosted ARM64 runners in public beta in late 2024, priced at $0.008 per minute, providing a managed alternative to self-hosted infrastructure. Self-hosted runners on AWS Graviton3 or Apple M-series hardware offer similar native performance gains without relying on GitHub-managed infrastructure."
   - question: "how to build multi-arch docker images in github actions without qemu"
     answer: "You can build multi-arch Docker images in GitHub Actions without QEMU by using a build matrix that provisions separate native runners for each target architecture, such as one x86_64 runner and one ARM64 runner running in parallel. Each runner builds its architecture-specific image natively, and the images are then combined into a single multi-arch manifest using docker buildx imagetools. This pattern eliminates emulation overhead entirely and is significantly faster and cheaper than the traditional docker/setup-qemu-action approach."
+aliases:
+  - "/tech/2026-03-18-github-actions-selfhosted-runner-docker-arm64-qemu/"
+
 ---
 
 Your ARM64 Docker builds are timing out. And if they're not timing out yet, they're consuming 5x more runner minutes than they should.

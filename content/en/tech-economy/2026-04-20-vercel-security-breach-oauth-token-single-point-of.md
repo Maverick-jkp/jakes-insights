@@ -19,6 +19,9 @@ faq:
     answer: "The recommended structural fix is replacing long-lived OAuth tokens with short-lived, scoped credentials using OIDC federation, similar to approaches used by AWS IAM and GitHub Actions. Teams should also audit token scopes, enforce strict rotation policies, and avoid storing broad-access credentials in CI/CD pipeline environments."
   - question: "is the Vercel OAuth token vulnerability a problem with other cloud platforms too"
     answer: "Yes, security analysts noted that the April 2026 Vercel breach reflects an industry-wide structural weakness in how developer tooling handles OAuth authentication, not a flaw unique to Vercel. Any platform relying on broadly scoped, long-lived OAuth tokens in deployment pipelines faces similar single-point-of-failure risks."
+aliases:
+  - "/tech/2026-04-20-vercel-security-breach-oauth-token-single-point-of/"
+
 ---
 
 A single compromised OAuth token. That's all it took to expose Vercel's infrastructure to unauthorized access in April 2026 — and the incident has forced a hard conversation about how modern deployment platforms handle authentication at scale.

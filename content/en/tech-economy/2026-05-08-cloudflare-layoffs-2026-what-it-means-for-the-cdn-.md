@@ -19,6 +19,9 @@ faq:
     answer: "Enterprise customers relying on Cloudflare for DDoS protection, Zero Trust networking, or edge computing should monitor whether service quality and support responsiveness change following the reduction of roughly 20% of the workforce. The layoffs also create competitive pressure that may push rivals like Akamai and AWS CloudFront to offer more aggressive pricing or enhanced features to capture accounts that reassess their vendor relationships."
   - question: "Are other CDN and security companies planning layoffs in 2026?"
     answer: "While Cloudflare is the most prominent example so far, the same underlying forces — AI reducing operational overhead and longer enterprise sales cycles — are affecting every major CDN and security platform. The key distinction analysts are watching is whether competitors like Fastly and Akamai restructure proactively or are eventually forced into similar cuts under financial pressure."
+aliases:
+  - "/tech/2026-05-08-cloudflare-layoffs-2026-what-it-means-for-the-cdn-/"
+
 ---
 
 On May 7, 2026, Cloudflare cut 1,100 employees — roughly 20% of its entire workforce — and its stock dropped 18% the same day. That's not a routine restructuring. That's a structural signal about where infrastructure companies think the industry is heading.

@@ -19,6 +19,9 @@ faq:
     answer: "Cloudflare Durable Objects are a better fit than Workers KV for write-heavy workloads or use cases that require strong consistency, since KV is designed for high-read, low-write scenarios with eventual consistency. KV's distributed caching model means writes do not immediately propagate to all edge nodes, which can cause stale reads in rapidly changing data scenarios. If your application needs real-time coordination or transactional guarantees, Durable Objects or Cloudflare D1 are architecturally more appropriate."
   - question: "cloudflare workers kv storage cold start latency edge function python alternative 2025 best practices"
     answer: "To minimize latency in 2025, teams should account for KV cache miss costs by pre-warming frequently accessed keys or structuring reads to tolerate the initial 20-60ms regional round-trip. For Python workloads, adopting the native Python Workers support with the uv toolchain avoids the performance penalties of older WebAssembly-based approaches. Choosing the right storage primitive — KV for read-heavy caching, Durable Objects for consistency — is as important as cold start optimization when designing edge functions."
+aliases:
+  - "/tech/2026-04-09-cloudflare-workers-kv-storage-cold-start-latency-e/"
+
 ---
 
 Cold start latency was supposed to be a solved problem at the edge. It isn't.

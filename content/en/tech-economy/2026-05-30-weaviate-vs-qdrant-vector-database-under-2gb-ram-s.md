@@ -19,6 +19,9 @@ faq:
     answer: "According to the CallSphere AI Vector Database Benchmarks 2026 report, Qdrant delivers p99 ANN query latency under 10ms on commodity hardware, outpacing Weaviate in raw single-node throughput at equivalent resource constraints. This performance advantage is especially significant when evaluating weaviate vs qdrant vector database under 2gb ram single server self-hosted performance, where Qdrant's lower memory overhead leaves more resources available for query processing."
   - question: "when should I choose weaviate over qdrant for self-hosted deployment"
     answer: "Weaviate is the better choice when you need its native module ecosystem, including built-in text2vec integration, generative AI modules, and hybrid BM25+vector search, and your server has more than 2GB of available RAM. If your deployment is resource-constrained or requires pure vector search performance on a budget single server, Qdrant is the more pragmatic option."
+aliases:
+  - "/tech/2026-05-30-weaviate-vs-qdrant-vector-database-under-2gb-ram-s/"
+
 ---
 
 Running a vector database on a 2GB server used to be an edge case. In 2026, it's the default starting point for solo developers, bootstrapped startups, and edge deployments that can't justify a cloud bill for every prototype. And that's exactly why the **Weaviate vs Qdrant on under-2GB single-server self-hosted** question keeps surfacing in every infrastructure Slack channel worth following.

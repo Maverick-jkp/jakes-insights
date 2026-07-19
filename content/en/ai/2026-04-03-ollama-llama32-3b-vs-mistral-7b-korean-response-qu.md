@@ -19,6 +19,9 @@ faq:
     answer: "On Apple Silicon using Ollama's Metal backend, Llama 3.2 3B is approximately 1.8x faster than Mistral 7B for inference. This is a much smaller gap than the 3x+ speed difference seen on CPU-only Linux setups, thanks to Apple Silicon's unified memory architecture benefiting both models."
   - question: "should I use mistral 7b or llama 3.2 3b for Korean language tasks on mac"
     answer: "If Korean output quality is the top priority and you have sufficient RAM, Mistral 7B is the stronger choice based on the ollama llama3.2 3b vs mistral 7b korean response quality apple silicon benchmark findings. However, if you are limited to a base M1 or M2 Mac with 8GB RAM or need faster inference, Llama 3.2 3B offers a practical trade-off with acceptable Korean language performance."
+aliases:
+  - "/tech/2026-04-03-ollama-llama32-3b-vs-mistral-7b-korean-response-qu/"
+
 ---
 
 Running local LLMs on Apple Silicon has gone from hobbyist experiment to legitimate production workflow. But when Korean language quality is the deciding factor, the model choice gets complicated fast — and the usual "bigger is better" logic doesn't always hold.

@@ -19,6 +19,9 @@ faq:
     answer: "No, Fly.io's managed Postgres does not ship with a connection pooler enabled by default. Unlike traditional managed database services, Fly's Postgres is a container running on a VM you own and operate, and PgBouncer must be added manually or deployed as a separate instance. The lowest-friction approach for solo developers is to enable PgBouncer on the same Fly app machine rather than provisioning an additional dedicated VM."
   - question: "fly.io postgres max connections 256mb ram free tier 2025"
     answer: "On Fly.io's free tier, a single-node Postgres instance running on a 256 MB shared-CPU VM defaults to approximately 25 maximum connections. This is because each Postgres connection consumes roughly 5–10 MB of working memory, so the low RAM ceiling directly limits how many concurrent connections the database can safely handle. Upgrading to a larger VM increases the connection ceiling, but enabling PgBouncer is typically the free alternative for developers hitting this limit."
+aliases:
+  - "/tech/2026-04-15-flyio-free-tier-postgres-connection-limit-workarou/"
+
 ---
 
 Fly.io's free tier Postgres caps at 25 connections. A single Next.js app with Prisma can blow through that before your first real user shows up.

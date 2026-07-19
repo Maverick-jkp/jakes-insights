@@ -19,6 +19,9 @@ faq:
     answer: "Zero Trust is a security model that eliminates automatic trust for any user or device, requiring continuous verification before granting access to systems or data. It directly addresses the modern attack pattern where criminals use stolen credentials to log in rather than hack in. IBM's research shows organizations with mature Zero Trust deployments save an average of $1.76 million per breach, making it one of the most financially validated security frameworks available."
   - question: "why are supply chain attacks increasing and how do you defend against them"
     answer: "Supply chain attacks have surged because attackers found it more efficient to compromise a widely-used software vendor or open-source package than to breach individual targets directly — one infected component can affect thousands of organizations simultaneously. Sonatype reported a 633% increase in attacks targeting upstream open-source components between 2021 and 2023. Defending against this requires vetting third-party vendors, monitoring software dependencies, and applying Zero Trust principles so that even trusted integrations have limited access to critical systems."
+aliases:
+  - "/tech/2026-02-22-cybersecurity-best-practices/"
+
 ---
 
 The average cost of a data breach hit **$4.88 million** in 2024, according to IBM's Cost of a Data Breach Report. By early 2026, that number is still climbing — and organizations that haven't updated their security posture are running exposed.

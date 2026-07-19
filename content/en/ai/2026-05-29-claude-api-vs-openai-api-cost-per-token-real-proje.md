@@ -19,6 +19,9 @@ faq:
     answer: "Yes, both Anthropic and OpenAI offer prompt caching that significantly reduces costs for production applications with consistent system prompts or repeated context. Anthropic's prompt caching prices cached input tokens at 90% off the base rate on Claude 3.5 Sonnet, making it especially valuable for high-volume apps that reuse large prompt prefixes across thousands of daily requests."
   - question: "what is the annual cost difference between Claude and GPT-4o at 10000 requests per day?"
     answer: "At 10,000 daily requests, a 2x pricing difference between Claude and GPT-4o on input tokens can translate to tens of thousands of dollars in annual savings depending on your average prompt length and input-to-output ratio. For input-heavy use cases like summarization or retrieval-augmented generation, Claude 3.5 Sonnet's $3.00 versus GPT-4o's $5.00 per million input tokens compounds into a substantial budget delta over a full year."
+aliases:
+  - "/tech/2026-05-29-claude-api-vs-openai-api-cost-per-token-real-proje/"
+
 ---
 
 At 10,000 daily requests, a 2x pricing difference between Claude and GPT-4o isn't a footnote in your budget — it's the difference between a product that scales and one that doesn't.

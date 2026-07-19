@@ -19,6 +19,9 @@ faq:
     answer: "If your GitHub Actions job times out silently on a Mac self-hosted runner, the likely cause is Docker Desktop's virtualization layer interfering with the runner's process-health checks on ARM64 hardware. Proven fixes include replacing Docker Desktop with Colima, switching to native ARM64 runner binaries, or restructuring your pipeline to use ephemeral containers differently to reduce VM interaction. GitHub has not released an official fix for this specific ARM64 Docker interaction as of April 2026, so community workarounds remain the primary solution."
   - question: "is it worth using apple silicon mac mini as github actions self-hosted runner in 2026"
     answer: "Apple Silicon Mac Minis and Mac Studios can reduce CI/CD compute costs by 60–70% compared to cloud runners for heavy build workloads, making them financially attractive as self-hosted GitHub Actions runners. However, teams should be aware of the github actions self-hosted runner docker arm64 apple silicon timeout issue workaround requirement, as Docker-based pipelines can experience silent failures without proper configuration. With the right setup — such as using Colima instead of Docker Desktop or native ARM64 binaries — the hardware performs reliably and the cost savings hold up."
+aliases:
+  - "/tech/2026-04-23-github-actions-selfhosted-runner-docker-arm64-appl/"
+
 ---
 
 Build pipelines don't fail loudly. They just stop.

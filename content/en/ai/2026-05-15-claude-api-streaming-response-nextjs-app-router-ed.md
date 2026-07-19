@@ -19,6 +19,9 @@ faq:
     answer: "Yes, deploying Claude API streaming on Vercel's edge network can meaningfully reduce latency, particularly for users far from origin servers—for example, users in Singapore hitting a us-east-1 server can experience 180–250ms of overhead before the first token even arrives. Running a claude api streaming response nextjs app router edge runtime latency test shows this overhead is significantly reduced by routing requests through 200+ globally distributed edge Points of Presence."
   - question: "serverless vs edge runtime for LLM streaming which is better"
     answer: "Edge runtime outperforms serverless Node.js for LLM streaming primarily in cold start speed (5ms vs. 300–900ms) and geographic latency reduction for internationally distributed users. However, serverless Node.js functions offer fewer API constraints and no response size cap, making them preferable when your users are concentrated near a single region or when you require Node.js-specific modules."
+aliases:
+  - "/tech/2026-05-15-claude-api-streaming-response-nextjs-app-router-ed/"
+
 ---
 
 Running AI inference at the edge seemed theoretical two years ago. Now it's a production decision with measurable trade-offs.

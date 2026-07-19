@@ -19,6 +19,9 @@ faq:
     answer: "Yes, Anthropic's Claude was used to assist in migrating Bun's codebase from Zig to Rust, accelerating the rewrite through late 2025 and into 2026. This makes Bun one of the first large-scale JavaScript runtime rewrites to be partly driven by LLM-assisted tooling."
   - question: "is Bun safe to use in production after the Rust rewrite"
     answer: "Bun's Rust rewrite is specifically aimed at improving production reliability by eliminating memory safety issues like use-after-free patterns and buffer mishandling that appeared under concurrent load in the Zig version. Early 2026 data shows reduced crash frequency, though the migration is still ongoing and teams should monitor stability updates before fully committing."
+aliases:
+  - "/tech/2026-05-10-bun-javascript-runtime-rust-rewrite-performance-be/"
+
 ---
 
 Bun's decision to migrate its core from Zig to Rust isn't a minor refactor. It's a foundational bet that could reshape JavaScript runtime performance benchmarks in 2026 — and the early data is worth examining closely.

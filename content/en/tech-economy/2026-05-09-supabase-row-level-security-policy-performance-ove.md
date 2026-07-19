@@ -19,6 +19,9 @@ faq:
     answer: "The auth.uid() function called inside Supabase RLS policies does add measurable overhead under pgbench load testing, but PostgreSQL 15+ caching strategies significantly reduce this cost. For most indie hackers, missing indexes on policy columns are a far larger performance problem than the auth.uid() call itself."
   - question: "can I skip row level security on supabase for better performance"
     answer: "Skipping RLS on Supabase is not a safe tradeoff — because Supabase exposes your PostgreSQL database directly through PostgREST, RLS is your primary authorization layer, and disabling it means every authenticated user can query every row. The performance overhead from RLS is largely fixable through proper indexing, making it unnecessary to sacrifice security for speed."
+aliases:
+  - "/tech/2026-05-09-supabase-row-level-security-policy-performance-ove/"
+
 ---
 
 Enabling RLS on a Supabase table and watching your query latency spike 3-5x is a rite of passage for indie hackers. The real question: is that overhead permanent, fixable, or mostly a misread benchmark?

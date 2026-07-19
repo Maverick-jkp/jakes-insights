@@ -19,6 +19,9 @@ faq:
     answer: "Yes, as of early 2026, Obsidian released a headless sync client in open beta that allows vault syncing entirely from the command line without a running desktop or Electron app. Prior to this, users had to rely on unsupported workarounds like pointing rclone at Obsidian's backend or keeping a full desktop session alive, which was resource-intensive and unreliable. The new standalone CLI binary is designed specifically for always-on server and NAS deployments."
   - question: "rclone Obsidian Sync alternative for home server 2025"
     answer: "Using rclone pointed at Obsidian's S3-compatible backend was a popular but unofficial and unsupported workaround before the headless CLI client launched in early 2026. Syncthing is another common alternative that is fully self-hosted and free, though neither option provides the native conflict resolution that Obsidian Sync offers. With the arrival of the official Obsidian Sync headless client CLI server NAS setup option, most engineers now have a supported path that eliminates the need for these workarounds."
+aliases:
+  - "/tech/2026-03-01-obsidian-sync-headless-client-cli-server-nas-setup/"
+
 ---
 
 Obsidian's headless sync client landed in open beta in early 2026 — and the developer community noticed immediately. The Hacker News thread hit 200+ comments within 48 hours. Engineers running self-hosted NAS boxes and headless Linux servers finally had a real path to keeping their vaults in sync without a GUI.

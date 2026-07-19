@@ -19,6 +19,9 @@ faq:
     answer: "Next.js Route Handler에서 SSE 스트리밍을 구현할 때는 Content-Type을 text/event-stream으로, Cache-Control은 no-cache로, Connection은 keep-alive로 설정해야 해요. 이 헤더 조합이 없으면 브라우저가 응답을 스트림이 아닌 일반 HTTP 응답으로 처리해서 버퍼링이 발생할 수 있어요."
   - question: "Claude API anthropic.messages.stream 클라이언트 fetch로 읽는 방법"
     answer: "서버에서 Claude API의 stream.toReadableStream()을 Response로 반환하면, 클라이언트에서는 fetch()로 해당 엔드포인트를 호출한 뒤 response.body를 ReadableStream으로 읽으면 돼요. 이렇게 하면 서버에서 토큰이 생성되는 즉시 청크 단위로 받아서 화면에 실시간으로 표시할 수 있어요."
+aliases:
+  - "/tech/2026-04-16-claude-api-스트리밍-응답-nextjs-14-app-router-서버-액션-적용-시/"
+
 ---
 
 스트리밍 붙였는데 토큰이 뚝뚝 끊겨요. 아니면 아예 응답이 안 오거나.

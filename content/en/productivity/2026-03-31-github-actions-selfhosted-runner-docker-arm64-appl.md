@@ -19,6 +19,9 @@ faq:
     answer: "Running the GitHub Actions runner process under a personal macOS user account causes both security risks and reliability problems, particularly because macOS permission models were not designed for unattended CI workloads. The correct pattern is to create a dedicated service account and configure the runner as a launchd service, which ensures the runner starts automatically and operates with properly scoped permissions."
   - question: "how to set up GitHub Actions self-hosted runner on Apple Silicon Mac for Docker builds"
     answer: "Setting up a GitHub Actions self-hosted runner on Apple Silicon for Docker requires explicitly pinning image platforms in your workflows, using a dedicated service account rather than a personal login, and verifying that your CI container images publish native linux/arm64 manifests rather than only amd64 variants. Many workflows written before 2023 contain hardcoded architecture assumptions that must be updated when migrating to arm64 Apple Silicon runners."
+aliases:
+  - "/tech/2026-03-31-github-actions-selfhosted-runner-docker-arm64-appl/"
+
 ---
 
 Setting up a GitHub Actions self-hosted runner on Apple Silicon sounds straightforward. It isn't. The architecture mismatches, permission errors, and silent emulation fallbacks catch teams off guard at every layer — often surfacing at 2 AM during a prod deploy when you least want a debugging session.

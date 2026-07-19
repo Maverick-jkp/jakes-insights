@@ -19,6 +19,9 @@ faq:
     answer: "Llama 3.2 3B in Q4_K_M quantization uses approximately 2.0GB of memory when running via Ollama on a Mac. This is significantly lighter than the 8B model's ~4.7GB footprint, leaving plenty of headroom on a 16GB M3 system for other applications running simultaneously."
   - question: "is ollama llama3.2 3b vs 8b response speed mac m3 16gb benchmark worth running for production use"
     answer: "Both models are viable for production use on Mac M3 16GB hardware, and the choice comes down to your specific workload rather than hardware limitations. The 3B model suits latency-sensitive applications like chat interfaces or autocomplete, while the 8B model is better suited for tasks requiring deeper reasoning, code generation, or document summarization where quality outweighs speed."
+aliases:
+  - "/tech/2026-05-24-ollama-llama32-3b-vs-8b-response-speed-mac-m3-16gb/"
+
 ---
 
 Running local LLMs on consumer hardware used to mean compromise. Slow inference, constant swap thrashing, models that barely fit in memory. On a Mac M3 with 16GB unified memory in 2026, that's no longer the reality.

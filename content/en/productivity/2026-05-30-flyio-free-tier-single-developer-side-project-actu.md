@@ -19,6 +19,9 @@ faq:
     answer: "Based on a fly.io free tier single developer side project actual monthly bill breakdown 2025 analysis, Fly.io typically costs $15–25/month for a realistic stack while Railway and Render offer more predictable flat-rate pricing. However, Fly.io's edge deployment model and infrastructure density make it technically superior for latency-sensitive workloads despite the less predictable billing."
   - question: "how does fly.io free tier work across multiple projects same account"
     answer: "Fly.io's free allowances are shared across your entire organization, not allocated per project or per repository. If you run two or three side projects under one account, they all split the same pool of free compute hours, storage, and bandwidth, meaning multi-project developers exhaust the free tier much faster than expected."
+aliases:
+  - "/tech/2026-05-30-flyio-free-tier-single-developer-side-project-actu/"
+
 ---
 
 Most developers assume "free tier" means zero dollars. Fly.io's pricing structure makes that assumption expensive.

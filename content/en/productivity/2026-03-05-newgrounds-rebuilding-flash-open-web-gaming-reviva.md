@@ -19,6 +19,9 @@ faq:
     answer: "Newgrounds stands out from other Flash-era platforms by preserving its entire library through the Ruffle emulator rather than migrating or abandoning old content. As of 2026, it hosts the largest active repository of preserved Flash content on the open web, driven by community contributions rather than corporate infrastructure."
   - question: "can you still play Flash games in any browser in 2026"
     answer: "No major browser natively supports Flash Player in 2026, but Flash games are still playable through emulation layers like Ruffle on platforms such as Newgrounds. The trade-off is a real performance gap compared to native Flash playback, and not all games run correctly depending on which version of ActionScript they were built with."
+aliases:
+  - "/tech/2026-03-05-newgrounds-rebuilding-flash-open-web-gaming-reviva/"
+
 ---
 
 Flash died on December 31, 2020. Adobe pulled the plug, browsers followed, and an entire era of internet culture vanished overnight. But Newgrounds didn't die with it. Five years later, the platform's ongoing effort to preserve and rebuild its Flash library is one of the more technically interesting stories in browser gaming — and in 2026, it's gaining real traction.

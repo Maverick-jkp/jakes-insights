@@ -19,6 +19,9 @@ faq:
     answer: "Node Exporter itself has a very small memory footprint, typically consuming only 15–25MB even with default collectors enabled. The Prometheus server process is almost always the real source of memory pressure in a monitoring stack. Disabling unused Node Exporter collectors has minimal impact compared to tuning Prometheus TSDB retention and adding Docker Compose memory limits."
   - question: "can you run prometheus and grafana on a 1gb vps digitalocean hetzner"
     answer: "Yes, a full Prometheus, Node Exporter, and Grafana stack can run on a $6/month DigitalOcean Droplet or a Hetzner CX11 with 1GB RAM, but only with explicit tuning from the start. The Linux kernel and SSH consume 150–200MB at idle, so containers must stay within roughly 800MB combined. With Docker Compose memory limits and reduced Prometheus TSDB retention, the stack can run stably within 650MB of container memory."
+aliases:
+  - "/tech/2026-05-14-prometheus-node-exporter-docker-compose-single-vps/"
+
 ---
 
 Running a full Prometheus stack on a 1GB VPS sounds like a bad idea. It isn't — but only if you tune it correctly from day one.

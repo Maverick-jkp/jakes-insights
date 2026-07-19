@@ -19,6 +19,9 @@ faq:
     answer: "Touch ID is not included in the base $599 MacBook Neo and requires a $100 upgrade to the $699 tier. The $699 model also doubles storage from 256GB to 512GB, making the upgrade meaningful if either feature is important to the buyer."
   - question: "MacBook Neo 599 dollar specs hidden trade-offs vs MacBook Air M5"
     answer: "Compared to the MacBook Air M5, the MacBook Neo 599 dollar specs hidden trade-offs include half the GPU cores (5 vs 10), half the base RAM (8GB vs 16GB with no upgrade path), a downgraded two-speaker audio system, and a display without P3 wide color or True Tone. The $500 price difference between the two models reflects these substantial cuts across nearly every hardware category."
+aliases:
+  - "/tech/2026-03-06-macbook-neo-599-dollar-specs-hidden-tradeoffs/"
+
 ---
 
 Apple's most affordable MacBook ever ships March 11. The price is real. So are the cuts.

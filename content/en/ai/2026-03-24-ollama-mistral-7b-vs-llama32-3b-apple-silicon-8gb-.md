@@ -19,6 +19,9 @@ faq:
     answer: "When a model exceeds your available unified memory on an 8GB MacBook, macOS begins swapping memory to disk, which can crash inference speeds from around 35 tokens/second down to approximately 4 tokens/second. This is why the ollama mistral 7b vs llama3.2 3b apple silicon 8gb ram token speed comparison matters — Llama 3.2 3B's smaller 2.3GB footprint leaves far more headroom and avoids this performance cliff."
   - question: "should I run mistral 7b or llama 3.2 3b locally on apple silicon"
     answer: "The best choice depends on your primary use case: Llama 3.2 3B is the better option if you need low latency for chat applications or agentic loops, while Mistral 7B is preferable when output quality matters more than speed, such as for single-shot code or text generation. On an 8GB Mac specifically, Llama 3.2 3B also offers safer memory headroom, reducing the risk of performance-killing memory swaps."
+aliases:
+  - "/tech/2026-03-24-ollama-mistral-7b-vs-llama32-3b-apple-silicon-8gb-/"
+
 ---
 
 Running local LLMs on an 8GB MacBook has shifted from experiment to everyday workflow for thousands of developers. But choosing the wrong model costs you either speed or quality — and on constrained RAM, that trade-off is sharp.

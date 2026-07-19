@@ -19,6 +19,9 @@ faq:
     answer: "Coolify is a leading open-source self-hosting platform that can replicate most Fly.io workflows, making it a popular choice following the Fly.io free tier hobby plan shutdown. However, it requires meaningful upfront setup time and ongoing maintenance, so it works best for developers comfortable managing their own infrastructure."
   - question: "fly.io vs self-hosting which is cheaper for small apps"
     answer: "For developers running multiple small apps, self-hosting on a provider like Hetzner is significantly cheaper at scale, while Fly.io wins on operational simplicity since it handles infrastructure management for you. Fly.io's paid entry point starts around $5/month per machine, meaning three to four hobby apps can easily reach $15–25/month, whereas a single Hetzner server can host all of them for under €5/month."
+aliases:
+  - "/tech/2026-04-30-flyio-free-tier-hobby-plan-shutdown-alternative-se/"
+
 ---
 
 Fly.io killed its free tier in late 2024. No soft landing, no grandfathered plans — just a billing requirement and a deadline. For thousands of developers running hobby projects and early-stage apps, that decision forced a real question: pay up, or figure something else out.

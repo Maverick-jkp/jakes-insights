@@ -19,6 +19,9 @@ faq:
     answer: "The right choice depends entirely on your use case: the 3B model is ideal for speed-sensitive applications like real-time chat or coding assistants, while the 8B model is better suited for tasks requiring higher language accuracy, especially in non-English languages like Korean. Both models run well on M3 MacBooks with 16GB unified memory without requiring disk swapping."
   - question: "how fast is ollama on MacBook M3 16GB tokens per second"
     answer: "On a MacBook M3 with 16GB unified memory, Ollama achieves approximately 55–75 tokens/second with Llama 3.2 3B and 25–35 tokens/second with Llama 3.2 8B at 4-bit quantization, according to community benchmarks from r/ollama in 2026. The M3's memory bandwidth of around 100 GB/s enables reasonable inference speeds for models up to 8B parameters without performance-killing memory swaps."
+aliases:
+  - "/tech/2026-03-11-ollama-llama32-3b-vs-8b-response-speed-macbook-m3-/"
+
 ---
 
 Running a local LLM that's both fast *and* accurate in a non-English language is harder than it sounds. On a MacBook M3 with 16GB unified memory, the choice between Llama 3.2 3B and 8B isn't just a size debate — it's a real engineering trade-off with measurable consequences.

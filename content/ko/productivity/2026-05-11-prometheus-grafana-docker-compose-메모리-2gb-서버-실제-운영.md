@@ -19,6 +19,9 @@ faq:
     answer: "Grafana 자체보다 플러그인이 메모리의 주범으로, 특히 grafana-image-renderer 플러그인은 단독으로 150~300MB를 소비하므로 PDF 리포트가 불필요하다면 설치하지 않는 것이 좋습니다. 추가로 GF_LOG_LEVEL을 warn으로 설정하고 analytics 기능을 비활성화하면 CPU와 메모리를 함께 절약할 수 있어, 플러그인 최소화 시 150~200MB 수준으로 운영이 가능합니다."
   - question: "2GB 서버에서 Prometheus Grafana 같이 돌리면 OOM 나는 이유"
     answer: "Prometheus Grafana Docker Compose를 2GB 서버에서 기본 설정으로 실행하면 OS가 300~400MB를 사용하고, Prometheus가 최대 1GB, Grafana가 200MB 이상을 소비해 실질 가용 메모리인 1.6GB를 초과하기 쉽습니다. 이를 방지하려면 Prometheus 500MB, Grafana 250MB, Node Exporter 30MB 이하로 컨테이너별 메모리 상한을 설정하는 최적화가 필수입니다."
+aliases:
+  - "/tech/2026-05-11-prometheus-grafana-docker-compose-메모리-2gb-서버-실제-운영/"
+
 ---
 
 메모리 2GB 서버에 Prometheus랑 Grafana 올렸다가 OOM으로 컨테이너가 죽어버린 적 있으시죠? 기본 설정 그대로 올리면 1.5GB는 금방 사라져요. 나머지 500MB로 실제 앱까지 돌리는 건 거의 불가능하고요.

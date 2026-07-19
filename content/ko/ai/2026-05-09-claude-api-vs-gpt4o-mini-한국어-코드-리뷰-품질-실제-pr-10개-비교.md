@@ -19,6 +19,9 @@ faq:
     answer: "Claude API vs GPT-4o mini를 실제 PR 10개로 비교한 결과를 바탕으로 하면, 단순 스타일·포맷 리뷰는 저렴한 GPT-4o mini를, 복잡한 비즈니스 로직 검증이나 엣지 케이스 탐지는 Claude API를 쓰는 하이브리드 구조가 비용 대비 품질 균형점으로 권장돼요. 이렇게 역할을 나누면 전체 비용을 낮추면서도 중요한 오류를 놓치지 않을 수 있어요."
   - question: "AI 코드 리뷰 노이즈 불필요한 지적 GPT-4o mini Claude 중 어느 쪽이 적나요"
     answer: "PR당 평균 불필요 지적 수는 GPT-4o mini가 3.2개, Claude 3.5 Haiku가 1.8개로 Claude 쪽이 노이즈가 적었어요. GPT-4o mini는 팀에서 이미 ESLint 룰로 허용한 패턴처럼 맥락을 고려하지 않은 지적을 더 자주 내놓는 경향이 있어요."
+aliases:
+  - "/tech/2026-05-09-claude-api-vs-gpt4o-mini-한국어-코드-리뷰-품질-실제-pr-10개-비교/"
+
 ---
 
 PR 머지 직전에 리뷰어가 "이 코드 뭐가 문제야?"라고 물었을 때, AI가 뭐라고 답하느냐가 팀의 속도를 결정해요. 그래서 직접 실제 PR 열 개를 들고 Claude API와 GPT-4o mini 앞에 앉혔어요. 품질 비교뿐 아니라 2026년 현재 실제 비용까지 계산했고요.

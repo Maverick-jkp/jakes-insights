@@ -19,6 +19,9 @@ faq:
     answer: "The liability question remains largely unanswered, with only 18% of hospitals having established clear protocols for determining responsibility when AI-assisted decisions lead to adverse patient outcomes. This represents a major gap as AI systems become more integrated into clinical decision-making."
   - question: "how much are hospitals spending on ai"
     answer: "Healthcare AI spending reached $14.6 billion in 2025, with billions more being poured into AI infrastructure. However, this rapid investment is happening while fundamental questions about accuracy, liability, and clinical integration remain unanswered."
+aliases:
+  - "/tech/2026-02-13-ai-in-healthcare/"
+
 ---
 
 # The Healthcare AI Reality Check: What 2026 Data Actually Reveals

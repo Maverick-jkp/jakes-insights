@@ -19,6 +19,9 @@ faq:
     answer: "The CJS version of lodash (~72KB gzipped) often sneaks into projects through transitive dependencies several levels deep in the dependency graph, meaning you pay for the full library even if you only use one method like debounce. While lodash-es, the ESM rewrite, tree-shakes correctly down to only the methods you import, thousands of projects still indirectly depend on the original CJS build without realizing it."
   - question: "how to fix JavaScript bundle bloat from npm packages"
     answer: "The solution isn't simply using fewer packages, but instead identifying which packages survive tree-shaking by auditing your bundle with tools like Bundlephobia or webpack bundle analyzer. Prioritizing ESM-native packages with proper 'sideEffects: false' manifests and restructuring your imports to be more explicit can dramatically reduce dead code in your final bundle."
+aliases:
+  - "/tech/2026-03-22-javascript-bundle-bloat-atomic-packages-performanc/"
+
 ---
 
 Bundle sizes keep growing. According to HTTP Archive's 2025 Web Almanac, the median JavaScript payload on mobile devices crossed 500KB transferred — and that's *after* compression. The actual parse-and-execute weight is closer to 1.8MB. That number matters because every kilobyte of JavaScript costs parse time, main thread blocking, and ultimately, user drop-off. The atomic package pattern — pulling in hundreds of tiny, single-purpose `npm` modules — looked like clean architecture two years ago. In 2026, it's one of the biggest contributors to bundle bloat that teams are finally starting to measure seriously.

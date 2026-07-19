@@ -19,6 +19,9 @@ faq:
     answer: "월 $10-20짜리 싱글 VPS에서도 Docker Compose 단독 VPS 무중단 배포 blue-green 전환 nginx reload 실전 스크립트 패턴을 적용하면 Kubernetes 없이 99.9% 업타임 달성이 가능해요. kubeconfig나 Helm chart 없이 YAML 두 개와 셸 스크립트만으로 구성되기 때문에 1인 개발자나 소규모 팀이 당일 바로 적용할 수 있어요."
   - question: "blue green 배포 헬스체크 실패하면 자동 롤백 어떻게 하나요"
     answer: "새 버전 컨테이너를 올린 뒤 일정 시간(예: 30초) 동안 `/health` 엔드포인트에 HTTP 200이 오지 않으면 배포 스크립트에서 해당 Compose 서비스를 `docker compose down`으로 내리고 `exit 1`로 종료하면 돼요. nginx upstream은 아직 기존 버전 포트를 바라보고 있는 상태이므로 별도 롤백 명령 없이 자동으로 이전 버전이 트래픽을 계속 처리하게 돼요."
+aliases:
+  - "/tech/2026-03-18-docker-compose-단독-vps-무중단-배포-bluegreen-전환-nginx-re/"
+
 ---
 
 배포 버튼을 누르는 순간, 5초 동안 503 에러가 뜨는 상황. 트래픽이 많지 않아도 찜찜하죠. 그렇다고 Kubernetes 클러스터를 올리기엔 VPS 한 대짜리 프로젝트에서 오버스펙이에요. Docker Compose 단독 VPS 환경에서 무중단 배포를 구현하는 방법, 지금 정리해볼게요.

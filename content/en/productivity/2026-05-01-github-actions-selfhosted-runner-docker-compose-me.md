@@ -19,6 +19,9 @@ faq:
     answer: "Exit code 137 in a GitHub Actions Docker Compose workflow means the container process was forcibly killed by the Linux OOM (Out of Memory) killer because the system ran out of available RAM. This is especially common on 2GB VPS hosts running a self-hosted runner, where available memory is already thin before containers launch. Fixing it requires adding explicit per-service memory limits in your Docker Compose configuration to prevent any single container from consuming all host memory."
   - question: "how much RAM does github actions self-hosted runner use on ubuntu"
     answer: "A GitHub Actions self-hosted runner daemon on Ubuntu typically consumes 200–300MB of RAM when actively processing a job, on top of the 300–500MB Ubuntu itself uses at idle. Combined with the Docker daemon adding another 100–150MB, total baseline consumption on a 2GB VPS reaches roughly 600–950MB before any containers start. This leaves a relatively small and unpredictable memory budget for Docker Compose workloads without careful resource planning."
+aliases:
+  - "/tech/2026-05-01-github-actions-selfhosted-runner-docker-compose-me/"
+
 ---
 
 A 2GB VPS running GitHub Actions sounds like a smart budget move — until Docker Compose quietly consumes everything and your runner dies mid-pipeline with a cryptic exit code 137. This is fixable. But only if you understand exactly where the limits are before you hit them.

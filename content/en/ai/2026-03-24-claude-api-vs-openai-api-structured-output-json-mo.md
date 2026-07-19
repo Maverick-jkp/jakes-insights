@@ -19,6 +19,9 @@ faq:
     answer: "Anthropic launched first-class native structured outputs on the Claude API in early 2026, announced via the Claude Developer Platform Reddit community. Before this, the recommended workaround for structured data with Claude was using tool use — defining schemas as tool parameters — which worked but added token overhead and prompt engineering complexity."
   - question: "claude api vs openai api structured output json mode reliability test 2025 nested schema performance"
     answer: "A structured output comparison study published on Medium found that Claude 3.5 Sonnet outperformed GPT-4o on semantic accuracy for complex nested schemas, even though OpenAI's implementation has stricter syntactic enforcement. This suggests that for use cases involving deeply nested or complex JSON structures, Claude may produce more meaningfully correct outputs despite OpenAI's stronger grammar-level constraints."
+aliases:
+  - "/tech/2026-03-24-claude-api-vs-openai-api-structured-output-json-mo/"
+
 ---
 
 Structured outputs broke production pipelines last year. Not because the models were bad — because developers assumed JSON mode meant *guaranteed* JSON. It doesn't. And the gap between Claude and OpenAI's implementations is wider than most engineering teams realize until something fails at 2 AM.

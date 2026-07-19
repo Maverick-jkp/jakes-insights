@@ -19,6 +19,9 @@ faq:
     answer: "GitHub Actions self-hosted runners on macOS must run as a non-root, interactive user, which conflicts with most default launchd service configurations. Registering the runner under a standard user account and carefully configuring the launchd plist to match that user context is required for the runner process to function correctly."
   - question: "is it worth running github actions self-hosted runner on m2 mac mini to save costs"
     answer: "GitHub's hosted macOS runners cost approximately $0.08 per minute as of April 2026, making a $700 M2 Mac mini ROI-positive within roughly 4-6 months of moderate CI usage. Beyond cost savings, native arm64 builds on Apple Silicon are also faster than emulated alternatives, provided architecture mismatches are properly avoided during the github actions self-hosted runner docker arm64 m2 mac setup pitfalls configuration process."
+aliases:
+  - "/tech/2026-04-08-github-actions-selfhosted-runner-docker-arm64-m2-m/"
+
 ---
 
 Running CI/CD on an M2 Mac sounds like a smart cost move — until your Docker container silently pulls an `amd64` image on an `arm64` host and your builds start producing artifacts that crash in production.

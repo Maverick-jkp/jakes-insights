@@ -19,6 +19,9 @@ faq:
     answer: "이 에러는 Cloudflare Pages의 기본 Hugo 버전(0.54.0)이 너무 낮아서 최신 Hugo 함수를 인식하지 못할 때 발생해요. 로컬 환경에서는 최신 Hugo 버전으로 빌드되기 때문에 문제없이 동작하지만, Cloudflare Pages 환경에서는 버전 gap으로 인해 동일한 코드가 실패하는 거예요. Environment Variables에서 HUGO_VERSION을 로컬과 동일한 버전으로 지정하면 해결돼요."
   - question: "cloudflare pages 빌드 로그 exit code 1만 나오고 에러 메시지 없을 때"
     answer: "에러 메시지 없이 exit code 1만 출력되는 경우는 Git 서브모듈 누락이나 빌드 커맨드 오탈자가 원인인 경우가 많아요. cloudflare pages hugo 배포 빌드 실패 exit code 1 원인 찾기 삽질 후기에 따르면 서브모듈 문제는 특히 아무 설명 없이 빌드가 종료되는 패턴을 보여요. Cloudflare Pages Known Issues 공식 문서에서 서브모듈 관련 제한사항을 확인하고, 빌드 커맨드 오탈자도 함께 점검해보는 것이 좋아요."
+aliases:
+  - "/tech/2026-05-22-cloudflare-pages-hugo-배포-빌드-실패-exit-code-1-원인-찾기-삽/"
+
 ---
 
 배포 버튼을 눌렀는데 빌드 로그 마지막 줄에 `exit code: 1`이 찍히는 순간, 머릿속이 하얘지죠. 에러 메시지는 짧고, 원인은 다섯 개쯤 되고, 검색 결과는 2019년 스택오버플로우. Cloudflare Pages와 Hugo 조합은 2026년 기준 정적 사이트 배포의 사실상 표준 스택이 됐지만, 빌드 실패 이슈는 여전히 개발자들을 괴롭히고 있어요.

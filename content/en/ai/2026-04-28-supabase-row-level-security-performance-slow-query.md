@@ -19,6 +19,9 @@ faq:
     answer: "Yes, RLS policies can prevent the query planner from using indexes when the policy expression contains STABLE functions like auth.uid(), because Postgres cannot accurately estimate selectivity for those expressions. This often causes the planner to fall back to a sequential scan even when an index on the filtered column exists. Rewriting policies to use (select auth.uid()) typically restores proper index usage."
   - question: "what does rows removed by filter mean in postgres explain analyze output"
     answer: "Rows Removed by Filter in EXPLAIN ANALYZE output shows how many rows were scanned and then discarded by a filter condition before being returned. A high number relative to rows actually returned indicates the query is doing far more work than necessary, often pointing to a missing index or, in the context of supabase row level security performance slow query pgexplain real example, a policy expression that is preventing efficient row filtering."
+aliases:
+  - "/tech/2026-04-28-supabase-row-level-security-performance-slow-query/"
+
 ---
 
 A production Postgres query that ran in 4ms without RLS took 340ms after enabling it. Same table. Same index. Same data. The difference was a policy that looked completely innocent.

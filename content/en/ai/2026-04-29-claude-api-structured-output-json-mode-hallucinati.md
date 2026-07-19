@@ -19,6 +19,9 @@ faq:
     answer: "According to the claude api structured output json mode hallucination rate vs openai gpt-4o-mini experiment findings, the best choice depends on task type — Claude performs better on extraction tasks with nested schemas, while GPT-4o-mini is more cost-effective for classification tasks with small enum sets. Schema complexity is identified as the single biggest predictor of which model degrades faster, outweighing raw benchmark scores."
   - question: "does json mode guarantee accurate output in OpenAI and Anthropic APIs"
     answer: "Both OpenAI and Anthropic now claim near-100% schema conformance through constrained decoding, but this only guarantees structural validity — not that the field values are correct or truthful. The real risk in production pipelines is semantic hallucination, where a model confidently returns valid JSON containing invented or wrong values that can silently corrupt databases and downstream systems."
+aliases:
+  - "/tech/2026-04-29-claude-api-structured-output-json-mode-hallucinati/"
+
 ---
 
 Structured JSON output broke in production last quarter. Not because the code was wrong — because the model lied confidently inside a valid schema. That's the problem engineers are finally measuring in 2026, and the numbers between Claude API and GPT-4o-mini are more divergent than most teams expect.

@@ -19,6 +19,9 @@ faq:
     answer: "Yes, a leaked tax return is one of the most valuable documents for identity thieves because it contains your SSN, income details, employer information, and banking data in a single file. Fraudsters can use this information to file a fake tax return in your name and redirect your IRS refund, a crime that has cost U.S. taxpayers an estimated $5.5 billion in fraudulent refunds in recent years. If your tax return was exposed in a breach, report it to the IRS Identity Protection unit and request an Identity Protection PIN."
   - question: "why do gig economy platforms like Fiverr collect tax documents from freelancers"
     answer: "Freelance platforms like Fiverr are legally required to collect tax identification documents, such as W-9 forms in the U.S., to comply with IRS 1099-K reporting requirements and international KYC (know your customer) payment regulations. This means millions of freelancers across 160+ countries must submit highly sensitive financial documents just to receive payments. The core problem is that these platforms collect government-level sensitive data but often lack the enterprise-grade security infrastructure needed to protect it."
+aliases:
+  - "/tech/2026-04-15-fiverr-data-breach-public-files-tax-returns-expose/"
+
 ---
 
 A misconfigured cloud storage bucket. Millions of files. Tax returns sitting in the open.

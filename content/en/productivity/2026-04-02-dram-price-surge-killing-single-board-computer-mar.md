@@ -19,6 +19,9 @@ faq:
     answer: "Yes, the DRAM price surge killing the single board computer market in 2026 disproportionately impacts education programs because they rely on sub-$100 entry-level boards and cannot negotiate volume contracts the way enterprise buyers can. Rising prices threaten coding curricula, embedded Linux courses, and maker-focused STEM initiatives that were built around affordable ARM hardware."
   - question: "what are alternatives to buying new SBCs with high prices in 2026"
     answer: "As new SBC prices climb due to DRAM cost increases, hobbyists and developers are increasingly turning to the second-hand market and extending the product cycles of boards they already own. Buying used Raspberry Pi 4B or Orange Pi units from resellers has emerged as a cost-effective workaround while DRAM spot prices remain elevated."
+aliases:
+  - "/tech/2026-04-02-dram-price-surge-killing-single-board-computer-mar/"
+
 ---
 
 Memory prices just broke something the maker community spent a decade building.

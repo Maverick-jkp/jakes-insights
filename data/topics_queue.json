@@ -44700,7 +44700,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.826901",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -44725,7 +44725,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:32:23.351537+00:00"
     },
     {
       "id": "2980-ko-ai-Kimi-K3-오픈소스-AI-3조-파",
@@ -44766,7 +44768,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.826932",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -44791,7 +44793,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:21:49.254905+00:00"
     },
     {
       "id": "2982-ko-tech-economy-AI가-이제-자기-전용-컴퓨터까지-가",
@@ -44799,7 +44803,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.826944",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -44824,7 +44828,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:13:13.304202+00:00"
     },
     {
       "id": "2983-ko-side-income-Ahrefs-월-구독-끊고-무료-오픈",
@@ -44832,7 +44838,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.826957",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -44857,7 +44863,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:24:30.351178+00:00"
     },
     {
       "id": "2984-ko-tech-economy-온라인-쇼핑-할인-가격-믿어도-되나,",
@@ -44865,7 +44873,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.826975",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -44890,7 +44898,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:36:09.189593+00:00"
     },
     {
       "id": "2985-en-ai-Will-AI-replace-grap",
@@ -44898,7 +44908,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.827020",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -44922,7 +44932,9 @@
           "source": "aiera.blog"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:27:14.938040+00:00"
     },
     {
       "id": "2986-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -44962,7 +44974,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.827049",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -44986,7 +44998,9 @@
           "source": "developersmatrix.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:15:56.149216+00:00"
     },
     {
       "id": "2988-en-buying-guide-iPhone-17-vs-Samsung",
@@ -45149,7 +45163,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.827123",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -45173,7 +45187,9 @@
           "source": "myview23394.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:19:32.349821+00:00"
     },
     {
       "id": "2994-ko-buying-guide-노션-AI-vs-클로바노트-메모-생산",
@@ -45181,7 +45197,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.827133",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -45205,7 +45221,9 @@
           "source": "www.airepoto.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:39:15.689312+00:00"
     },
     {
       "id": "2995-ko-tech-economy-챗GPT로-만든-콘텐츠-저작권-문제-",
@@ -45213,7 +45231,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-19T09:07:14.827144",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -45237,7 +45255,9 @@
           "source": "nuggetsnote.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-19T11:09:05.321798+00:00",
+      "completed_at": "2026-07-19T11:30:02.225714+00:00"
     },
     {
       "id": "2996-ko-tech-economy-유튜브-알고리즘-요즘-왜-이상해졌나-",

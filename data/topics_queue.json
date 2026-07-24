@@ -46228,7 +46228,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.973985",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -46248,7 +46248,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T11:44:52.804241+00:00"
     },
     {
       "id": "3061-en-buying-guide-on-device-dictation-",
@@ -46256,7 +46258,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974037",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -46276,7 +46278,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T11:56:39.908997+00:00"
     },
     {
       "id": "3062-en-productivity-AI-tools-that-replac",
@@ -46317,7 +46321,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974101",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -46342,7 +46346,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T11:47:33.996111+00:00"
     },
     {
       "id": "3064-ko-tech-economy-AI-에이전트-앱-일반인도-쓸-수-있",
@@ -46383,7 +46389,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974158",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -46408,7 +46414,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T12:00:19.638099+00:00"
     },
     {
       "id": "3066-ko-tech-economy-맥북-메뉴바-앱으로-데이터-사용량-관",
@@ -46416,7 +46424,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974186",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -46441,7 +46449,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T12:13:17.214312+00:00"
     },
     {
       "id": "3067-en-ai-Is-Notion-AI-worth-p",
@@ -46449,7 +46459,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974343",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -46473,7 +46483,9 @@
           "source": "speakwiseapp.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T11:50:09.170565+00:00"
     },
     {
       "id": "3068-en-ai-Are-AI-generated-ima",
@@ -46535,7 +46547,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974507",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -46559,7 +46571,9 @@
           "source": "mystory45815.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T11:53:54.512836+00:00"
     },
     {
       "id": "3071-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
@@ -46567,7 +46581,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974532",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -46591,7 +46605,9 @@
           "source": "m.dcinside.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T12:03:33.344652+00:00"
     },
     {
       "id": "3072-ko-side-income-직장인이-AI로-부수입-만드는-현실적",
@@ -46631,7 +46647,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974580",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -46655,7 +46671,9 @@
           "source": "karuru1007.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T12:06:54.477408+00:00"
     },
     {
       "id": "3074-ko-ai-클로드-AI-무료로-쓰는-법과-유료-",
@@ -46663,7 +46681,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-24T09:24:28.974604",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -46687,7 +46705,9 @@
           "source": "clor.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-24T11:42:06.670106+00:00",
+      "completed_at": "2026-07-24T12:10:13.046463+00:00"
     }
   ]
 }

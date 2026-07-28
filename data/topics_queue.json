@@ -47507,7 +47507,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231697",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47532,7 +47532,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:08:15.495079+00:00"
     },
     {
       "id": "3132-en-ai-ChatGPT-for-everythi",
@@ -47573,7 +47575,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231757",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47598,7 +47600,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:23:26.272826+00:00"
     },
     {
       "id": "3134-en-tech-economy-AI-customer-support-",
@@ -47606,7 +47610,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231774",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47615,7 +47619,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:11:07.878077+00:00"
     },
     {
       "id": "3135-ko-ai-맥-음성-AI-에이전트-실제로-쓸-만",
@@ -47656,7 +47662,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231806",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47676,7 +47682,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:02:26.349001+00:00"
     },
     {
       "id": "3137-ko-tech-economy-AI로-책-쓰기,-내-글-스타일이-살",
@@ -47684,7 +47692,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231817",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47709,7 +47717,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:14:40.042708+00:00"
     },
     {
       "id": "3138-ko-side-income-AI-에이전트로-부업-만들기,-비개발",
@@ -47717,7 +47727,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231834",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47742,7 +47752,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:05:19.848686+00:00"
     },
     {
       "id": "3139-ko-tech-economy-AI-고객-상담-챗봇,-직원을-진짜-",
@@ -47750,7 +47762,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231849",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -47775,7 +47787,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:18:16.622799+00:00"
     },
     {
       "id": "3140-en-ai-Best-AI-tools-for-fr",
@@ -47783,7 +47797,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231893",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -47807,7 +47821,9 @@
           "source": "asrify.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:20:51.146566+00:00"
     },
     {
       "id": "3141-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -47847,7 +47863,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.231938",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -47871,7 +47887,9 @@
           "source": "mashable.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:25:50.631980+00:00"
     },
     {
       "id": "3143-en-tech-economy-Why-does-Spotify-kee",
@@ -48034,7 +48052,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-28T09:39:05.232042",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -48058,7 +48076,9 @@
           "source": "devocean.sk.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-28T11:58:33.274975+00:00",
+      "completed_at": "2026-07-28T12:29:07.308471+00:00"
     },
     {
       "id": "3149-ko-tech-economy-유튜브-알고리즘이-이상해진-이유-20",

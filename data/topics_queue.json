@@ -48231,7 +48231,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426199",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -48240,7 +48240,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T11:57:15.947987+00:00"
     },
     {
       "id": "3168-en-ai-AI-memory-across-app",
@@ -48281,7 +48283,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426266",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -48290,7 +48292,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T11:54:30.018807+00:00"
     },
     {
       "id": "3170-ko-ai-Claude-Code-한-달-써본-솔",
@@ -48331,7 +48335,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426318",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -48340,7 +48344,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T12:01:19.281813+00:00"
     },
     {
       "id": "3172-ko-tech-economy-맥-받아쓰기-앱,-개인정보-안-새는-",
@@ -48348,7 +48354,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426351",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -48373,7 +48379,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T12:11:32.424674+00:00"
     },
     {
       "id": "3173-ko-tech-economy-AI가-내-모든-앱에서-나를-기억한다",
@@ -48381,7 +48389,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426379",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -48390,7 +48398,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T12:04:33.607813+00:00"
     },
     {
       "id": "3174-en-ai-Will-AI-replace-mark",
@@ -48430,7 +48440,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426507",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -48454,7 +48464,9 @@
           "source": "learn.g2.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T12:13:45.085189+00:00"
     },
     {
       "id": "3176-en-ai-How-to-make-money-wi",
@@ -48494,7 +48506,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426599",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -48518,7 +48530,9 @@
           "source": "lib.guides.umd.edu"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T12:16:22.261683+00:00"
     },
     {
       "id": "3178-ko-ai-ChatGPT-유료-구독-2026년에",
@@ -48606,7 +48620,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-07-30T09:34:07.426733",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -48630,7 +48644,9 @@
           "source": "blogger0408.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-07-30T11:51:24.899909+00:00",
+      "completed_at": "2026-07-30T12:08:07.721034+00:00"
     },
     {
       "id": "3182-ko-buying-guide-토스-vs-카카오뱅크-AI-금융-기능",

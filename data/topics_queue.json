@@ -49049,7 +49049,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.259662",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49074,7 +49074,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:08:43.551748+00:00"
     },
     {
       "id": "3238-en-side-income-AI-faceless-video-ge",
@@ -49132,7 +49134,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.259753",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49141,7 +49143,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T12:58:28.152628+00:00"
     },
     {
       "id": "3241-ko-ai-ChatGPT-메모리-기능-꺼야-할까",
@@ -49149,7 +49153,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.259772",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49169,7 +49173,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:11:56.391193+00:00"
     },
     {
       "id": "3242-ko-tech-economy-스마트글라스로-수어를-음성으로-변환,",
@@ -49177,7 +49183,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.259789",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49186,7 +49192,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:21:57.837928+00:00"
     },
     {
       "id": "3243-ko-ai-Qwen3-무료-모델,-Claude-",
@@ -49194,7 +49202,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.259806",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49214,7 +49222,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:02:21.134885+00:00"
     },
     {
       "id": "3244-ko-tech-economy-AI-피트니스-코치-앱,-헬스장-PT",
@@ -49222,7 +49232,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.259827",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49231,7 +49241,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:15:16.820086+00:00"
     },
     {
       "id": "3245-en-ai-How-to-make-money-wi",
@@ -49287,7 +49299,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.260145",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -49311,7 +49323,9 @@
           "source": "www.pandasecurity.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:25:04.399554+00:00"
     },
     {
       "id": "3248-ko-ai-ChatGPT-유료-결제-2026년에",
@@ -49351,7 +49365,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.260207",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -49375,7 +49389,9 @@
           "source": "findskill.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:06:10.370023+00:00"
     },
     {
       "id": "3250-ko-ai-직장인-퇴근-후-ChatGPT로-부업",
@@ -49447,7 +49463,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-03T10:45:38.260317",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -49471,7 +49487,9 @@
           "source": "brunch.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-03T12:55:15.582488+00:00",
+      "completed_at": "2026-08-03T13:18:47.920972+00:00"
     }
   ]
 }

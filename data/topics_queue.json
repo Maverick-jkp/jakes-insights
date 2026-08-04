@@ -49303,7 +49303,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443027",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49328,7 +49328,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:04:52.296960+00:00"
     },
     {
       "id": "3254-en-tech-economy-AI-coding-assistant-",
@@ -49369,7 +49371,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443102",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49394,7 +49396,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:07:23.791695+00:00"
     },
     {
       "id": "3256-en-ai-self-correcting-OCR-",
@@ -49435,7 +49439,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443145",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49460,7 +49464,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:10:49.561816+00:00"
     },
     {
       "id": "3258-ko-tech-economy-회사에서-GPT-도입했다가-한-달-만",
@@ -49468,7 +49474,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443161",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49483,7 +49489,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:14:18.340607+00:00"
     },
     {
       "id": "3259-ko-ai-내-목소리-데이터-클라우드-AI에-보",
@@ -49491,7 +49499,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443177",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49516,7 +49524,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:26:44.294987+00:00"
     },
     {
       "id": "3260-ko-tech-economy-AI-캘린더-비서-앱-직장인이-실제로",
@@ -49524,7 +49534,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443202",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49549,7 +49559,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:30:20.970104+00:00"
     },
     {
       "id": "3261-ko-side-income-바이브-코딩으로-부업-시작하려는-직장",
@@ -49557,7 +49569,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443220",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -49582,7 +49594,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:17:51.273794+00:00"
     },
     {
       "id": "3262-en-ai-Will-AI-replace-grap",
@@ -49590,7 +49604,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443260",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -49614,7 +49628,9 @@
           "source": "genimager.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:32:47.568589+00:00"
     },
     {
       "id": "3263-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -49686,7 +49702,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443388",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -49710,7 +49726,9 @@
           "source": "www.mercor.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:20:42.312071+00:00"
     },
     {
       "id": "3266-ko-ai-ChatGPT-유료-플랜-2026년에",
@@ -49718,7 +49736,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-04T09:41:20.443405",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -49742,7 +49760,9 @@
           "source": "emotionte.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-04T12:02:12.159343+00:00",
+      "completed_at": "2026-08-04T12:23:47.660654+00:00"
     },
     {
       "id": "3267-ko-side-income-직장인이-AI로-부업하는-현실적인-방",

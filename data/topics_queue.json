@@ -51146,102 +51146,6 @@
       "completed_at": "2026-08-09T10:46:47.902032+00:00"
     },
     {
-      "id": "3340-en-ai-Will-AI-replace-grap",
-      "keyword": "Will AI replace graphic designers or just change their job",
-      "category": "ai",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-08-09T07:56:25.145029",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "직업 불안 — 디자이너 또는 디자이너를 고용하는 사람이 AI 충격을 알고 싶음",
-      "angle": "공포 조장 없이 현실적 변화 시나리오와 디자이너가 살아남는 방법 제시",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Will AI Replace Graphic Designers? | Coursera",
-          "url": "https://www.coursera.org/articles/will-ai-replace-graphic-designers",
-          "source": "www.coursera.org"
-        },
-        {
-          "title": "Is AI Replacing Graphic Design Jobs?",
-          "url": "https://obu.edu/stories/blog/2026/06/will-ai-replace-graphic-design-jobs.php",
-          "source": "obu.edu"
-        },
-        {
-          "title": "Will AI Replace Graphic Designers? The Fear vs. The Facts | Clutch.co",
-          "url": "https://clutch.co/resources/will-ai-replace-graphic-designers",
-          "source": "clutch.co"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "3341-en-buying-guide-Notion-AI-vs-Obsidia",
-      "keyword": "Notion AI vs Obsidian for non-technical note takers 2026",
-      "category": "buying-guide",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-08-09T07:56:25.145057",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "비교 결정 — 노트 앱 갈아타기를 고민하는 비개발자 직장인·학생",
-      "angle": "코드·플러그인 얘기 없이 일상 업무·공부 용도로 어느 쪽이 편한지 솔직 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Notion vs Obsidian: 1 Clear Winner in 7 Tests [2026]",
-          "url": "https://tech-insider.org/notion-vs-obsidian-2026/",
-          "source": "tech-insider.org"
-        },
-        {
-          "title": "Best AI Note-Taking Apps 2026: Notion AI vs Obsidian + 4 | alfred_",
-          "url": "https://get-alfred.ai/blog/best-ai-note-taking-apps",
-          "source": "get-alfred.ai"
-        },
-        {
-          "title": "Notion vs Obsidian – All Features Compared (2026)",
-          "url": "https://productive.io/blog/notion-vs-obsidian/",
-          "source": "productive.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "3342-en-ai-How-to-make-money-wi",
-      "keyword": "How to make money with AI art without coding skills in 2026",
-      "category": "ai",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-08-09T07:56:25.145076",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "부업 탐색 — AI 이미지로 실제 수익을 낼 수 있는지 방법을 찾는 일반인",
-      "angle": "Midjourney·Adobe Firefly 등 노코드 도구로 Etsy·Shutterstock 판매 루트 안내",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Make Money With AI in 2026 (Realistic Ways That Don’t Require Coding)",
-          "url": "https://medium.com/freelancers-hub/how-to-make-money-with-ai-in-2026-realistic-ways-that-dont-require-coding-488625b7e47c",
-          "source": "medium.com"
-        },
-        {
-          "title": "How to Make Money with AI in 2026: 12 Proven Ideas",
-          "url": "https://emergent.sh/learn/how-to-make-money-with-ai",
-          "source": "emergent.sh"
-        },
-        {
-          "title": "How to Make Money with AI in 2026 (No Coding, No Investment)",
-          "url": "https://talentsforai.com/blog/how-to-make-money-with-ai/",
-          "source": "talentsforai.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "3343-en-ai-Are-AI-chatbots-safe",
       "keyword": "Are AI chatbots safe to use for work emails and documents",
       "category": "ai",
@@ -51310,70 +51214,6 @@
       "completed_at": "2026-08-09T10:50:30.442154+00:00"
     },
     {
-      "id": "3345-ko-tech-economy-마케터-일자리-AI가-진짜-없애고-있",
-      "keyword": "마케터 일자리 AI가 진짜 없애고 있나 2026 실제 사례",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-08-09T07:56:25.145171",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "직업 불안 — 마케팅 직군 종사자가 자신의 커리어에 AI가 미치는 영향을 알고 싶음",
-      "angle": "공포 조장 대신 실제 채용 데이터·현직자 인터뷰 기반으로 변화 현실 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI 일자리 위협 2026 현실 | 내 직업 대체될 확률과 살아남는 직종 분석",
-          "url": "https://ayoteralab.tistory.com/entry/AI-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%9C%84%ED%98%91-2026-%ED%98%84%EC%8B%A4-%EB%82%B4-%EC%A7%81%EC%97%85-%EB%8C%80%EC%B2%B4%EB%90%A0-%ED%99%95%EB%A5%A0%EA%B3%BC-%EC%82%B4%EC%95%84%EB%82%A8%EB%8A%94-%EC%A7%81%EC%A2%85-%EB%B6%84%EC%84%9D",
-          "source": "ayoteralab.tistory.com"
-        },
-        {
-          "title": "AI가 불러온 노동 재편, 미래는 기회인가 위기인가 - 얼리어답터뉴스 - 얼리어답터신문",
-          "url": "https://www.eanews.kr/news/947386",
-          "source": "www.eanews.kr"
-        },
-        {
-          "title": "마케터 직무 없앤 데이터라이즈…AI에이전트 25개의 실험[CMTS26]",
-          "url": "https://www.bloter.net/news/articleView.html?idxno=662985",
-          "source": "www.bloter.net"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "3346-ko-buying-guide-노션-AI-vs-클로드-업무-메모-어",
-      "keyword": "노션 AI vs 클로드 업무 메모 어느 쪽이 더 편할까",
-      "category": "buying-guide",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-08-09T07:56:25.145185",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "비교 결정 — 업무 노트·회의록 정리에 어떤 AI 도구를 써야 할지 고민하는 직장인",
-      "angle": "기능 나열 아닌 실제 회의록·보고서 작성 시나리오로 두 도구 직접 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "클로드 사용법 완벽 정리: ChatGPT·Gemini 비교부터 갈아타기까지 - 시리얼",
-          "url": "https://sireal.co/blog/how-to/generation-ai/laude-guide-chatgpt-gemini-compare-switch",
-          "source": "sireal.co"
-        },
-        {
-          "title": "저는 Claude Code로 Notion을 직접 운영합니다. CRM, 프로젝트 관리, 지식 베이스까지 전부요. 대부분 \"AI로 노션 자동화\" 하면 Zapier나 Make 먼저 떠올",
-          "url": "https://www.threads.com/@aipreneur_j/post/DV2Inf4iXzt/%EC%A0%80%EB%8A%94-claude-code%EB%A1%9C-notion%EC%9D%84-%EC%A7%81%EC%A0%91-%EC%9A%B4%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4crm-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC-%EC%A7%80%EC%8B%9D-%EB%B2%A0%EC%9D%B4%EC%8A%A4%EA%B9%8C%EC%A7%80-%EC%A0%84%EB%B6%80%EC%9A%94%EB%8C%80%EB%B6%80%EB%B6%84-ai%EB%A1%9C-%EB%85%B8%EC%85%98-%EC%9E%90%EB%8F%99%ED%99%94-%ED%95%98%EB%A9%B4-zapier?hl=ko",
-          "source": "www.threads.com"
-        },
-        {
-          "title": "직장인과 프리랜서를 위한 업무 자동화 툴 추천: 노션 AI vs 파이썬 완벽 비교 가이드 :: 중년디지털노마드",
-          "url": "https://dijiteolnomadeuibagu.tistory.com/entry/%EC%A7%81%EC%9E%A5%EC%9D%B8%EA%B3%BC-%ED%94%84%EB%A6%AC%EB%9E%9C%EC%84%9C%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%97%85%EB%AC%B4-%EC%9E%90%EB%8F%99%ED%99%94-%ED%88%B4-%EC%B6%94%EC%B2%9C-%EB%85%B8%EC%85%98-AI-vs-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%99%84%EB%B2%BD-%EB%B9%84%EA%B5%90-%EA%B0%80%EC%9D%B4%EB%93%9C",
-          "source": "dijiteolnomadeuibagu.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "3347-ko-ai-회사-자료-ChatGPT에-붙여넣어도",
       "keyword": "회사 자료 ChatGPT에 붙여넣어도 괜찮을까 보안 문제",
       "category": "ai",
@@ -51408,33 +51248,710 @@
       "completed_at": "2026-08-09T11:06:53.764926+00:00"
     },
     {
-      "id": "3348-ko-tech-economy-Suno-AI로-음악-만들어서-수익-",
-      "keyword": "Suno AI로 음악 만들어서 수익 내는 방법 가능한가",
+      "id": "3348-en-tech-economy-AI-coding-agent-that",
+      "keyword": "AI coding agent that rewrites itself: is it safe to use?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.285815",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Non-developer users want to know if self-improving AI coding tools are reliable and safe before adopting them",
+      "angle": "Risk-vs-reward breakdown for general tech users curious about autonomous AI agents",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub - JuliusBrussee/caveman: 🪨 why use many token when few token do trick — Claude Code skill tha",
+          "url": "https://github.com/juliusbrussee/caveman",
+          "source": "github.com"
+        },
+        {
+          "title": "Prime Agent: The Open-Source AI Coding Agent That Learns | byteiota",
+          "url": "https://byteiota.com/prime-agent-open-source-ai-coding-harness/",
+          "source": "byteiota.com"
+        },
+        {
+          "title": "Technological singularity - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Technological_singularity",
+          "source": "en.wikipedia.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3349-en-ai-fine-tune-your-own-A",
+      "keyword": "fine-tune your own AI model on a laptop: is it actually possible in 2025?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.285903",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "General tech users who assumed AI training required expensive cloud compute want to know if cheap local fine-tuning is real",
+      "angle": "Demystifying AI model training for non-developers with accessible framing",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Open Source LLMs (August 2026) | Thunder Compute",
+          "url": "https://www.thundercompute.com/blog/best-open-source-llms",
+          "source": "www.thundercompute.com"
+        },
+        {
+          "title": "Why Fine-Tuning Is No Longer Your First Choice for Custom AI? | by Veera RS | Aug, 2026 | Towards AI",
+          "url": "https://pub.towardsai.net/why-fine-tuning-is-no-longer-your-first-choice-for-custom-ai-ddd69c23298f",
+          "source": "pub.towardsai.net"
+        },
+        {
+          "title": "Best PC Build for Local AI in 2026: Top 5 Powerhouse Rigs - Build My PC",
+          "url": "https://buildmypconline.us/build-guides-for-custom-pcs/best-pc-build-for-local-ai/",
+          "source": "buildmypconline.us"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3350-en-ai-AI-group-voice-call-",
+      "keyword": "AI group voice call with six AI minds: gimmick or genuinely useful?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.285943",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Curious general users want an honest take before investing time in a novel AI interaction format",
+      "angle": "Hands-on experiential review framing for a format that has almost no existing coverage",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Every AI feature in Google Pixel phones, ranked from genuinely useful to pure gimmick",
+          "url": "https://www.makeuseof.com/every-ai-feature-in-google-pixel-phones-ranked-from-genuinely-useful-to-pure-gimmick/",
+          "source": "www.makeuseof.com"
+        },
+        {
+          "title": "The best AI voice agents in 2026 | Product Hunt",
+          "url": "https://www.producthunt.com/categories/ai-voice-agents",
+          "source": "www.producthunt.com"
+        },
+        {
+          "title": "OpenAI researcher quits to build mind-reading AI that gives humans a ‘sixth sense’",
+          "url": "https://www.uniladtech.com/news/ai/openai-researcher-quits-build-ai-mind-reading-powers-298199-20260806",
+          "source": "www.uniladtech.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3351-en-ai-Mac-menu-bar-apps-fo",
+      "keyword": "Mac menu bar apps for focus: do offline minimalist tools beat AI apps?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.285978",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Mac users frustrated with bloated AI tools are looking for lean, distraction-free alternatives",
+      "angle": "Counter-narrative comparison: minimalism vs AI-heavy productivity tools for everyday users",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Productivity Apps for Mac 2026: 12 Tested Picks",
+          "url": "https://www.chronoid.app/blog/best-productivity-apps-for-mac",
+          "source": "www.chronoid.app"
+        },
+        {
+          "title": "The Best AI Apps for Mac in 2026: 21 AI Tools for Productivity and Creativity",
+          "url": "https://timingapp.com/blog/best-ai-apps-for-mac/",
+          "source": "timingapp.com"
+        },
+        {
+          "title": "The 10 Best macOS Productivity Apps for 2026 (Tested by a ...",
+          "url": "https://www.chunkapp.net/en/blog/best-macos-productivity-apps-2026",
+          "source": "www.chunkapp.net"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3352-en-ai-AI-agent-goes-rogue:",
+      "keyword": "AI agent goes rogue: what the gym hacking story tells us about AI autonomy risks",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286012",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "General users alarmed by viral story want context on how autonomous AI agents can overstep and what it means for everyday use",
+      "angle": "Explainer-plus-opinion piece grounding a viral incident in broader AI autonomy conversation",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "AI assistant hacks gym website in first known Australian autonomous cyber attack - ABC News",
+          "url": "https://www.abc.net.au/news/2026-08-10/ai-assistant-hacks-gym-website-aus-cyber-attack/107007986",
+          "source": "www.abc.net.au"
+        },
+        {
+          "title": "AI assistant hacks gym website in first known Australian autonomous cyber attack - United States New",
+          "url": "https://www.newsbeep.com/us/808657/",
+          "source": "www.newsbeep.com"
+        },
+        {
+          "title": "AI assistant hacks gym booking system in first known Australian autonomous cyberattack - BusinessTod",
+          "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/ai-assistant-hacks-gym-booking-system-in-first-known-australian-autonomous-cyberattack-548259-2026-08-10",
+          "source": "www.businesstoday.in"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3353-ko-productivity-AI-에이전트-혼자-해킹까지,-내-업",
+      "keyword": "AI 에이전트 혼자 해킹까지, 내 업무 대신 맡겨도 괜찮을까",
+      "category": "productivity",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286042",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "바이럴 뉴스를 접한 일반 직장인이 AI 에이전트를 업무에 도입했을 때의 리스크를 실감하고 싶어 검색",
+      "angle": "해외 실제 사례를 바탕으로 AI 자율 행동의 위험성을 일반인 눈높이로 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "아무도 감시하지 않는 AI 에이전트의 보안 위기 | ITWorld",
+          "url": "https://www.itworld.co.kr/article/4205492/%EC%95%84%EB%AC%B4%EB%8F%84-%EA%B0%90%EC%8B%9C%ED%95%98%EC%A7%80-%EC%95%8A%EB%8A%94-ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%9D%98-%EB%B3%B4%EC%95%88-%EC%9C%84%EA%B8%B0.html",
+          "source": "www.itworld.co.kr"
+        },
+        {
+          "title": "[기획] 9초 만에 회사 DB 삭제한 AI… “AI 에이전트, 책임은 누구에게” < 법조계 < 법조기사 < 기사본문 - 법조신문",
+          "url": "https://news.koreanbar.or.kr/news/articleView.html?idxno=35989",
+          "source": "news.koreanbar.or.kr"
+        },
+        {
+          "title": "한달새 벌써 네 번 뚫렸다…AI ‘해킹사고’ 왜 계속되나 [디브리핑] - 헤럴드경제",
+          "url": "https://biz.heraldcorp.com/article/10835082",
+          "source": "biz.heraldcorp.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3354-ko-tech-economy-AI-코딩-도구-비용-절감-진짜-되나",
+      "keyword": "AI 코딩 도구 비용 절감 진짜 되나, 개발자 아니어도 쓸 만한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286069",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 코딩 도구 구독을 고민 중인 비개발자 직장인이 실제 효용을 확인하려고 검색",
+      "angle": "개발자가 아닌 마케터, 기획자 관점에서 AI 코딩 도구의 실질적 가성비를 따져보는 비교 글",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 비용 급증에코딩 AI 툴 직접 만들어 쓴다",
+          "url": "https://bbs.ruliweb.com/news/board/1003/read/2352734",
+          "source": "bbs.ruliweb.com"
+        },
+        {
+          "title": "AI编程工具真能帮不懂代码的人开发App吗？职高生5个月做120个、90%有付费用户|成本|数据|苹果|迭代|测试_新浪新闻",
+          "url": "https://k.sina.com.cn/article_7879995960_1d5af323806801lfo8.html?from=tech",
+          "source": "k.sina.com.cn"
+        },
+        {
+          "title": "AI 가격 비교, 직접 써보니 뭐가 덜 아까울까? :: 슈가의 작고 큰 지식",
+          "url": "https://sugar-family.tistory.com/1810",
+          "source": "sugar-family.tistory.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3355-ko-tech-economy-AI로-내-건강-점수-매기기,-웨어러",
+      "keyword": "AI로 내 건강 점수 매기기, 웨어러블 데이터 분석 앱 써볼 만한가",
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-08-09T07:56:25.145211",
+      "created_at": "2026-08-10T08:29:41.286102",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "부업 탐색 — AI 음악 생성 도구로 실제 수입을 낼 수 있는지 궁금한 일반인·크리에이터",
-      "angle": "음악 전공 없는 일반인이 Suno로 유튜브BGM·라이선스 판매를 시도한 현실 후기 중심",
+      "keyword_type": "trend",
+      "search_intent": "웨어러블 기기를 쓰는 일반인이 AI 건강 분석 앱의 신뢰성과 실용성을 판단하기 위해 검색",
+      "angle": "일반 사용자 시각에서 웨어러블 AI 건강 앱의 실효성과 개인정보 리스크를 함께 따져보는 후기",
       "competition_level": "low",
       "references": [
         {
-          "title": "r/SunoAI on Reddit: My Experience Using Suno AI for Music Creation and Monetization",
-          "url": "https://www.reddit.com/r/SunoAI/comments/1r0px95/my_experience_using_suno_ai_for_music_creation/",
+          "title": "모니터 대신 환자에 집중…병·의원 400곳이 택한 AI 차트 서비스 | 유니콘팩토리",
+          "url": "https://view.nate.com/economy/view/400424/",
+          "source": "view.nate.com"
+        },
+        {
+          "title": "WHOOP 5.0 스마트밴드 몇 달 사용후기｜가민 서카·Polar Loop·헬리오 스트랩 비교 - 노랗IT월드",
+          "url": "https://yellowit.co.kr/it-review/whoop-%EC%8A%A4%EB%A7%88%ED%8A%B8%EB%B0%B4%EB%93%9C-%EC%82%AC%EC%9A%A9%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A1%9C-%EA%B1%B4%EA%B0%95%EC%9D%84-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94/",
+          "source": "yellowit.co.kr"
+        },
+        {
+          "title": "‎AI 칼로리 계산기: 사진 식단 기록 앱 - App Store",
+          "url": "https://apps.apple.com/us/app/ai-%EC%B9%BC%EB%A1%9C%EB%A6%AC-%EA%B3%84%EC%82%B0%EA%B8%B0-%EC%82%AC%EC%A7%84-%EC%8B%9D%EB%8B%A8-%EA%B8%B0%EB%A1%9D/id6754836296?l=ko",
+          "source": "apps.apple.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3356-ko-tech-economy-AI-녹음기-MagSafe-앱-진짜-",
+      "keyword": "AI 녹음기 MagSafe 앱 진짜 회의록 자동 정리 되나, 직장인 솔직 후기",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286134",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "회의가 많은 직장인이 AI 녹음 앱의 실제 업무 적용 가능성을 알고 싶어 검색",
+      "angle": "개발자 리뷰가 아닌 회의 많은 일반 직장인의 실용성 중심 체험 후기 형식",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "‎티로 Tiro - 가장 정확한 AI 회의록 앱 - App Store",
+          "url": "https://apps.apple.com/us/app/%ED%8B%B0%EB%A1%9C-tiro-%EA%B0%80%EC%9E%A5-%EC%A0%95%ED%99%95%ED%95%9C-ai-%ED%9A%8C%EC%9D%98%EB%A1%9D/id6503079839?l=ko&platform=ipad",
+          "source": "apps.apple.com"
+        },
+        {
+          "title": "Tiro | Perfectly crafted meeting notes — beyond language barriers",
+          "url": "https://tiro.ooo/",
+          "source": "tiro.ooo"
+        },
+        {
+          "title": "휴대폰에 붙여 쓰는 카드형 AI 녹음기... 요약, 번역, 메일 발송도-경제ㅣ한국일보",
+          "url": "https://www.hankookilbo.com/news/article/A2026072722150003868",
+          "source": "www.hankookilbo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3357-ko-ai-내-노트북으로-AI-모델-직접-학습,",
+      "keyword": "내 노트북으로 AI 모델 직접 학습, 실제로 해보면 어떻게 되나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286166",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI에 관심 있는 비개발자 일반인이 직접 AI를 만질 수 있는지 진입 장벽을 확인하려고 검색",
+      "angle": "기술 장벽 해소 관점에서 비개발자도 AI 파인튜닝을 시도할 수 있는지 솔직하게 풀어주는 입문 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "내 컴퓨터에 공짜로 설치하는 초고성능 로컬 AI: 대용량 오픈소스 모델 다운로드 및 허깅페이스 세팅 가이드",
+          "url": "https://edisonforest.tistory.com/entry/install-local-ai-ollama-huggingface",
+          "source": "edisonforest.tistory.com"
+        },
+        {
+          "title": "노트북LM 사용자 지침, 어떻게 채워야 진짜 내 업무 파트너가 될까요? - ProB AI 연구소",
+          "url": "https://prob.co.kr/notebooklm-custom-instructions-guide/",
+          "source": "prob.co.kr"
+        },
+        {
+          "title": "인공지능 - 나무위키",
+          "url": "https://namu.wiki/w/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5",
+          "source": "namu.wiki"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "3358-en-ai-How-AI-is-changing-m",
+      "keyword": "How AI is changing marketing jobs in 2026 — should you be worried",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286260",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "직업 불안감 해소 — 마케터가 자신의 일자리가 AI로 대체될까 궁금해서 검색",
+      "angle": "공포 조장 아닌 현실적 분석 — 실제로 없어진 업무 vs 새로 생긴 업무 사례 중심",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How AI is Changing the Future of Marketing Careers | National University",
+          "url": "https://www.nu.edu/blog/ai-changing-marketing-careers/",
+          "source": "www.nu.edu"
+        },
+        {
+          "title": "How AI Is Changing Digital Marketing Jobs in 2026",
+          "url": "https://progbiz.io/blog/ai-impact-on-digital-marketing-jobs-2026",
+          "source": "progbiz.io"
+        },
+        {
+          "title": "AI Will Shape the Future of Marketing - Professional & Executive Development | Harvard DCE",
+          "url": "https://professional.dce.harvard.edu/blog/ai-will-shape-the-future-of-marketing/",
+          "source": "professional.dce.harvard.edu"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3359-en-buying-guide-Notion-vs-Obsidian-v",
+      "keyword": "Notion vs Obsidian vs Apple Notes: which note app is worth paying for",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286292",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구매 결정 — 노트 앱 구독료를 내야 할지 고민하는 직장인·학생",
+      "angle": "기술 지식 없이 일상 메모·업무 정리에 실제로 어떤 앱이 맞는지 사용자 관점 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Notion vs Obsidian vs Apple Notes. 60 Day Test, Honest Answer. | by Nadia Okafor | Medium",
+          "url": "https://justtalkingtech.medium.com/notion-vs-obsidian-vs-apple-notes-60-day-test-honest-answer-e358da3212af",
+          "source": "justtalkingtech.medium.com"
+        },
+        {
+          "title": "Obsidian vs Apple Notes (2026): Which Note App Wins for You?",
+          "url": "https://www.atlasworkspace.ai/blog/obsidian-vs-apple-notes",
+          "source": "www.atlasworkspace.ai"
+        },
+        {
+          "title": "Notion vs Evernote vs Obsidian: 6 Note Apps Ranked (2026) | Unstar",
+          "url": "https://unstar.app/blog/notion-evernote-obsidian-apple-notes-onenote-note-taking-apps-ranked-2026",
+          "source": "unstar.app"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3360-en-ai-Can-you-actually-mak",
+      "keyword": "Can you actually make money selling AI art in 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286341",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "부업 가능성 탐색 — AI 그림으로 돈 벌 수 있는지 현실적으로 알고 싶은 일반인",
+      "angle": "성공 사례보다 실패 이유와 법적 리스크(저작권)까지 균형 있게 다루는 솔직 후기 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Sell AI Generated Art Legally and Profitably: The Ultimate 2026 Creator's Guide",
+          "url": "https://financialbinder.com/how-to-sell-ai-generated-art/",
+          "source": "financialbinder.com"
+        },
+        {
+          "title": "Selling AI-Generated Art Online in 2026: Platforms, Earnings & Legal Landscape | EarnifyHub",
+          "url": "https://earnifyhub.com/make-money-online/sell-ai-generated-art-online-2026",
+          "source": "earnifyhub.com"
+        },
+        {
+          "title": "How to Sell AI Art: 25+ Best Platforms for Beginners to Make Money in 2026 - MoneyPantry",
+          "url": "https://moneypantry.com/sell-ai-art/",
+          "source": "moneypantry.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3361-en-buying-guide-MacBook-Air-M4-vs-Wi",
+      "keyword": "MacBook Air M4 vs Windows laptop for everyday non-tech users 2026",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286375",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구매 결정 — 코딩 안 하는 일반 사용자가 맥북과 윈도우 노트북 중 어떤 걸 살지 고민",
+      "angle": "스펙 숫자 없이 실제 일상 사용(문서, 영상, 카페 작업) 기준으로 어떤 쪽이 더 편한지 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "MacBook Air vs Windows laptops: Which one makes more sense in 2026? | Mint",
+          "url": "https://www.livemint.com/gadgets-and-appliances/macbook-air-vs-windows-laptops-which-one-makes-more-sense-in-2026-11780568343543.html",
+          "source": "www.livemint.com"
+        },
+        {
+          "title": "Best Laptops for College in 2026 | The Tech Showdown",
+          "url": "https://thetechshowdown.com/blog/best-laptops-for-college-2026",
+          "source": "thetechshowdown.com"
+        },
+        {
+          "title": "Is the MacBook Air (M4) worth it in 2026?",
+          "url": "https://tech.sportskeeda.com/laptops/is-macbook-air-m4-worth-2026",
+          "source": "tech.sportskeeda.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3362-en-ai-Why-does-every-app-h",
+      "keyword": "Why does every app have an AI button now — and do any of them actually work",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286408",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "궁금증/회의감 — AI 기능이 넘쳐나는데 실제로 쓸 만한 게 있는지 피로감을 느끼는 일반 사용자",
+      "angle": "AI 피로감을 인정하며 진짜 유용한 앱 내 AI 기능 vs 마케팅용 껍데기를 솔직하게 구분",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Why Every App Suddenly Has an AI Button | by Shahadilh | Medium",
+          "url": "https://medium.com/@shahadilh18/why-every-app-suddenly-has-an-ai-button-dcdcfe1a181c",
+          "source": "medium.com"
+        },
+        {
+          "title": "Every app on my phone has decided I need AI, and none of them bothered to ask - Digital Trends",
+          "url": "https://www.digitaltrends.com/computing/every-app-on-my-phone-has-decided-i-need-ai-and-none-of-them-bothered-to-ask/",
+          "source": "www.digitaltrends.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3363-ko-ai-ChatGPT-유료-플랜-2026년에",
+      "keyword": "ChatGPT 유료 플랜 2026년에도 돈 낼 가치 있나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286433",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구독 결정 — 월 2만원짜리 ChatGPT Plus를 계속 써야 할지 갱신 전에 검색하는 직장인·학생",
+      "angle": "무료 버전과 실제 차이를 일반인 사용 사례(이메일 작성, 요약, 번역)로 비교, 2026 기준 업데이트 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "챗GPT 유료 가격 총정리(2026) 최신 요금제 비교",
+          "url": "https://emotionte.com/%EC%B1%97gpt-%EC%9C%A0%EB%A3%8C-%EA%B0%80%EA%B2%A9-%EC%B4%9D%EC%A0%95%EB%A6%AC-%EC%B5%9C%EC%8B%A0-%EC%9A%94%EA%B8%88%EC%A0%9C-%EA%B8%B0%EB%8A%A5-%EB%B9%84%EA%B5%90/",
+          "source": "emotionte.com"
+        },
+        {
+          "title": "챗지피티 무료 vs 유료 차이, 2026 GPT 요금제 가격 비교 - AI가 궁금할 땐, 캐럿 블로그",
+          "url": "https://carat.im/blog/chatgpt-pricing-plans-comparison",
+          "source": "carat.im"
+        },
+        {
+          "title": "ChatGPT 가격비교: 어떤 플랜이 가장 적합할까요? （2026）",
+          "url": "https://www.gamsgo.com/ko/blog/chatgpt-pricing",
+          "source": "www.gamsgo.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3364-ko-tech-economy-AI가-디자이너-직업-없애고-있나-—",
+      "keyword": "AI가 디자이너 직업 없애고 있나 — 현직자 솔직 이야기",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286457",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "직업 불안 및 진로 탐색 — 디자인 업계 종사자나 지망생이 AI 영향이 실제로 어느 정도인지 궁금해서 검색",
+      "angle": "공포 마케팅 없이 실제로 대체된 업무와 살아남은 영역을 현직자 인터뷰·사례 중심으로 균형 있게 서술",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ai기술로 인해, 사라진 직종들은 어떤 것들이 있나요? ㅣ 궁금할 땐, 아하!",
+          "url": "https://www.a-ha.io/questions/49da24177478d606b7e3f43a669cf10b",
+          "source": "www.a-ha.io"
+        },
+        {
+          "title": "시각디자인 직무에서 AI 영향과 전망이 궁금합니다 | 취업 Q&A",
+          "url": "https://www.jobkorea.co.kr/User/Qstn/AnswerWrite?qstnNo=155189",
+          "source": "www.jobkorea.co.kr"
+        },
+        {
+          "title": "AI 시대, 디자이너는 무엇으로 살아남는가",
+          "url": "https://brunch.co.kr/@ultra0034/167",
+          "source": "brunch.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3365-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
+      "keyword": "갤럭시 S25 vs 아이폰 16 AI 기능 실제 비교 일반인 관점",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286481",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구매 결정 — 스마트폰 교체 시점에 AI 기능 차이가 실생활에 의미 있는지 궁금한 일반 소비자",
+      "angle": "벤치마크 숫자 대신 통화 요약·사진 편집·번역 같은 실제 일상 시나리오로 두 기기 AI 경험 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Apple Intelligence vs Galaxy AI 🤖 | 6개월 직접 비교 — 어느 AI가 더 일상에 남았나",
+          "url": "https://calvin-hs.tistory.com/149",
+          "source": "calvin-hs.tistory.com"
+        },
+        {
+          "title": "갤럭시 vs 아이폰 2026년 비교 — 솔직히 뭘 사야 할까? :: Frank의 세상 이야기",
+          "url": "https://idea9329.tistory.com/1909",
+          "source": "idea9329.tistory.com"
+        },
+        {
+          "title": "갤럭시 S25와 아이폰 16 성능 차이 알아보기 | 폰사와 정보마당",
+          "url": "https://www.phonesawa.co.kr/board/ps_info/18913",
+          "source": "www.phonesawa.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3366-ko-ai-노션-AI-3개월-써본-직장인-솔직-",
+      "keyword": "노션 AI 3개월 써본 직장인 솔직 후기 — 진짜 생산성 올라가나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286505",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구독 결정 및 정보 탐색 — 노션 AI 추가 구독료를 낼지 고민 중인 사무직·프리랜서",
+      "angle": "마케팅 문구 아닌 반복 업무(회의록 정리, 기획서 초안)에서 실제로 시간이 얼마나 줄었는지 수치·사례 중심 후기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "노션 AI 사용 후기",
+          "url": "https://brunch.co.kr/@playmylife/4",
+          "source": "brunch.co.kr"
+        },
+        {
+          "title": "일잘러가 노션AI로 생산성 높이는 방법 (2026) : 노션 사용법 가이드 | 기초부터 활용법과 단축키까지 | 공여사들",
+          "url": "https://gongysd.com/notion-guide/?bmode=view&idx=168004390",
+          "source": "gongysd.com"
+        },
+        {
+          "title": "\"노션으로 생산성 50% 향상! 29세 직장인의 실제 성공 사례\"",
+          "url": "https://ssseung73.tistory.com/215",
+          "source": "ssseung73.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3367-ko-side-income-AI로-부업하는-현실적인-방법-202",
+      "keyword": "AI로 부업하는 현실적인 방법 2026 — 직장인이 실제로 해본 것들",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286530",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "부업 아이디어 탐색 — 퇴근 후 AI 툴로 월 부수입을 만들 수 있는지 현실적 방법을 찾는 직장인",
+      "angle": "블로그 수익, 번역 보정, 썸네일 제작 등 실제 시도한 부업별 현실적인 수익과 소요 시간을 솔직하게 공개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 부업 추천 TOP 7 (2026) 직장인 비교 가이드 :: 평범한 기록",
+          "url": "https://sunny-njae.tistory.com/142",
+          "source": "sunny-njae.tistory.com"
+        },
+        {
+          "title": "💰 부업으로 월 100만원 더 버는 법! 직장인이 실천 가능한 현실적 방법 (2026 완전판)",
+          "url": "https://zooearth.tistory.com/entry/%F0%9F%92%B0-%EB%B6%80%EC%97%85%EC%9C%BC%EB%A1%9C-%EC%9B%94-100%EB%A7%8C%EC%9B%90-%EB%8D%94-%EB%B2%84%EB%8A%94-%EB%B2%95-%EC%A7%81%EC%9E%A5%EC%9D%B8%EC%9D%B4-%EC%8B%A4%EC%B2%9C-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%98%84%EC%8B%A4%EC%A0%81-%EB%B0%A9%EB%B2%95-2026-%EC%99%84%EC%A0%84%ED%8C%90",
+          "source": "zooearth.tistory.com"
+        },
+        {
+          "title": "AI로 월 100만원 더 벌기? 2026년 현실적인 부업 루트 3가지 (재능 없어도 가능)",
+          "url": "https://thinkweek.tistory.com/145",
+          "source": "thinkweek.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3368-ko-tech-economy-유튜브-알고리즘이-이상해진-이유-20",
+      "keyword": "유튜브 알고리즘이 이상해진 이유 2026 — 왜 보던 영상이랑 전혀 다른 게 뜨지",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286555",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "궁금증 해소 — 유튜브 추천이 갑자기 이상해졌다고 느끼는 일반 사용자가 이유를 찾아 검색",
+      "angle": "알고리즘 변화를 전문 용어 없이 설명하고, 추천 흐름을 내 입맛대로 되돌리는 실용 팁까지 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "유튜브 알고리즘이 이상해요 - YouTube 커뮤니티",
+          "url": "https://support.google.com/youtube/thread/430392144/%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%B4-%EC%9D%B4%EC%83%81%ED%95%B4%EC%9A%94?hl=ko",
+          "source": "support.google.com"
+        },
+        {
+          "title": "r/NewTubers on Reddit: Has anyone's algorithms been weird since the 10.01.2026",
+          "url": "https://www.reddit.com/r/NewTubers/comments/1qdn772/has_anyones_algorithms_been_weird_since_the/",
           "source": "www.reddit.com"
         },
         {
-          "title": "Suno - 나무위키",
-          "url": "https://namu.wiki/w/Suno",
-          "source": "namu.wiki"
+          "title": "2026 유튜브 알고리즘의 변화 | 비주얼센터 | 시각언어연구소 Lab",
+          "url": "https://visual.center/posts/36",
+          "source": "visual.center"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "3369-ko-buying-guide-토스-vs-카카오뱅크-2026-—-A",
+      "keyword": "토스 vs 카카오뱅크 2026 — AI 기능·혜택 실제로 어디가 더 낫나",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-08-10T08:29:41.286580",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "비교 결정 — 주거래 앱을 바꿀지 고민 중인 20~40대가 두 서비스의 실질 차이를 검색",
+      "angle": "금리·수수료 비교는 이미 많으니, AI 지출 분석·챗봇 상담·자동 저축 기능의 실사용 경험 차이에 초점",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[금융 서비스 비교] 카카오뱅크 vs 토스: 신용카드 추천 기능",
+          "url": "https://velog.io/@aabb510/%EA%B8%88%EC%9C%B5-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%B9%84%EA%B5%90-%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-vs-%ED%86%A0%EC%8A%A4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C",
+          "source": "velog.io"
         },
         {
-          "title": "Suno AI 음악으로 수익화하는 방법: 유튜브, 음원 발매, 틱톡 수익 구조 정리",
-          "url": "https://www.mybiznow.kr/suno-ai-%EC%9D%8C%EC%95%85%EC%9C%BC%EB%A1%9C-%EC%88%98%EC%9D%B5%ED%99%94%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/",
-          "source": "www.mybiznow.kr"
+          "title": "토스뱅크 vs 카카오뱅크 직장인 주거래 통장 비교 :: 월급이 모자라서 AI랑 부업 시작했습니다",
+          "url": "https://myjob-ai.tistory.com/34",
+          "source": "myjob-ai.tistory.com"
+        },
+        {
+          "title": "2026 전세 대출 갈아타기 앱 비교 분석 | 카카오뱅크 vs 토스 vs 핀다 어디가 더 쌀까?",
+          "url": "https://blogforeveryone.tistory.com/20",
+          "source": "blogforeveryone.tistory.com"
         }
       ],
       "content_type_hint": "GUIDE"

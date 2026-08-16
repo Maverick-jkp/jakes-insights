@@ -53117,7 +53117,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216241",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53142,7 +53142,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:51:39.918063+00:00"
     },
     {
       "id": "3446-en-tech-economy-AI-construction-cost",
@@ -53150,7 +53152,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216281",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53175,7 +53177,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:37:57.086230+00:00"
     },
     {
       "id": "3447-en-ai-ChatGPT-as-your-only",
@@ -53183,7 +53187,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216305",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53208,7 +53212,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:24:57.823057+00:00"
     },
     {
       "id": "3448-en-productivity-Markdown-first-docum",
@@ -53249,7 +53255,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216349",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53274,7 +53280,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:40:42.450337+00:00"
     },
     {
       "id": "3450-ko-ai-ChatGPT-한-달-쓰다-친구처럼-",
@@ -53282,7 +53290,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216374",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53307,7 +53315,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:28:54.637208+00:00"
     },
     {
       "id": "3451-ko-tech-economy-AI-웨어러블-건강-점수-앱,-진짜-",
@@ -53348,7 +53358,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216413",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53373,7 +53383,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:43:58.375743+00:00"
     },
     {
       "id": "3453-ko-side-income-AI-부업-도구로-월-수익-올린-사람",
@@ -53381,7 +53393,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216432",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53406,7 +53418,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:33:01.763164+00:00"
     },
     {
       "id": "3454-en-ai-Will-AI-replace-mark",
@@ -53478,7 +53492,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216527",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -53502,7 +53516,9 @@
           "source": "getimg.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:35:11.613856+00:00"
     },
     {
       "id": "3457-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -53542,7 +53558,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216563",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -53566,7 +53582,9 @@
           "source": "www.mercor.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:46:37.357466+00:00"
     },
     {
       "id": "3459-ko-ai-ChatGPT-유료-플랜-진짜-가치-",
@@ -53734,7 +53752,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-16T07:34:01.216713",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -53758,7 +53776,9 @@
           "source": "investor-js.blogspot.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-16T10:22:33.857613+00:00",
+      "completed_at": "2026-08-16T10:49:24.554416+00:00"
     }
   ]
 }

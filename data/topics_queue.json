@@ -53464,7 +53464,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398517",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53489,7 +53489,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:52:40.966470+00:00"
     },
     {
       "id": "3466-en-tech-economy-autonomous-QA-tools:",
@@ -53497,7 +53499,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398554",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53517,7 +53519,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:55:58.496873+00:00"
     },
     {
       "id": "3467-en-tech-economy-self-hosted-email-se",
@@ -53525,7 +53529,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398576",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53550,7 +53554,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:38:33.226278+00:00"
     },
     {
       "id": "3468-en-tech-economy-AI-healthspan-score-",
@@ -53591,7 +53597,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398615",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53616,7 +53622,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:42:21.721069+00:00"
     },
     {
       "id": "3470-ko-ai-ChatGPT-계정-다른-나라-로그인",
@@ -53624,7 +53632,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398633",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53644,7 +53652,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:45:50.110606+00:00"
     },
     {
       "id": "3471-ko-tech-economy-AI-학습-도구-대학생이-진짜-쓸-만",
@@ -53652,7 +53662,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398685",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53677,7 +53687,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:59:35.484272+00:00"
     },
     {
       "id": "3472-ko-side-income-내-작업물-회사에서-인정-못-받는-이",
@@ -53685,7 +53697,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398708",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -53710,7 +53722,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:49:45.787257+00:00"
     },
     {
       "id": "3473-en-ai-Will-AI-replace-mark",
@@ -53878,7 +53892,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398873",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -53902,7 +53916,9 @@
           "source": "design.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T10:35:43.397001+00:00"
     },
     {
       "id": "3479-ko-ai-노션-AI-유료-전환-가치-있나-한-",
@@ -53910,7 +53926,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-17T07:55:58.398924",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -53934,7 +53950,9 @@
           "source": "winspec.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-17T10:31:41.160820+00:00",
+      "completed_at": "2026-08-17T11:03:28.814739+00:00"
     },
     {
       "id": "3480-ko-tech-economy-유튜브-알고리즘이-이상해진-이유와-내",

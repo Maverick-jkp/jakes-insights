@@ -55648,7 +55648,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172160",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55657,7 +55657,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:55:37.267608+00:00"
     },
     {
       "id": "3579-en-side-income-AI-coding-agents-for",
@@ -55665,7 +55667,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172220",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55685,7 +55687,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:46:07.421718+00:00"
     },
     {
       "id": "3580-ko-buying-guide-ChatGPT-Pro-월-20만원-실",
@@ -55693,7 +55697,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172250",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55718,7 +55722,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:40:28.523800+00:00"
     },
     {
       "id": "3581-ko-ai-Claude-Academy-무료-AI",
@@ -55759,7 +55765,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172306",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55784,7 +55790,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:58:55.095414+00:00"
     },
     {
       "id": "3583-ko-side-income-AI-코딩-에이전트로-앱-만들기,-비",
@@ -55792,7 +55800,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172335",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55817,7 +55825,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:49:37.810640+00:00"
     },
     {
       "id": "3584-ko-productivity-AI-통합-검색-도구,-직장인-생산성",
@@ -55825,7 +55835,7 @@
       "category": "productivity",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172370",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55834,7 +55844,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T11:03:08.794111+00:00"
     },
     {
       "id": "3585-en-ai-How-to-make-money-wi",
@@ -55842,7 +55854,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172530",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -55866,7 +55878,9 @@
           "source": "sidehustleschool.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:52:46.405165+00:00"
     },
     {
       "id": "3586-en-buying-guide-iPhone-17-vs-Samsung",
@@ -55906,7 +55920,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172591",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -55930,7 +55944,9 @@
           "source": "redescuela.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T11:05:44.549486+00:00"
     },
     {
       "id": "3588-ko-tech-economy-AI가-디자이너-일자리-대체할까-20",
@@ -56056,7 +56072,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-24T08:00:23.172789",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -56080,7 +56096,9 @@
           "source": "clickup.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-24T10:37:12.808063+00:00",
+      "completed_at": "2026-08-24T10:43:24.573787+00:00"
     }
   ]
 }

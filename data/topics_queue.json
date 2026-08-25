@@ -55890,7 +55890,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202050",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -55915,7 +55915,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:38:26.130015+00:00"
     },
     {
       "id": "3594-en-ai-offline-photo-search",
@@ -55989,7 +55991,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202160",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56014,7 +56016,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:35:36.616778+00:00"
     },
     {
       "id": "3597-ko-tech-economy-AI-회의-도구-봇-없이-쓰는-거-진",
@@ -56022,7 +56026,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202184",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56047,7 +56051,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:42:15.162856+00:00"
     },
     {
       "id": "3598-ko-ai-Claude-사용량-제한-갑자기-막히",
@@ -56154,7 +56160,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202285",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56179,7 +56185,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:46:10.483423+00:00"
     },
     {
       "id": "3602-en-ai-How-AI-is-changing-m",
@@ -56219,7 +56227,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202369",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -56243,7 +56251,9 @@
           "source": "everhour.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:48:38.917735+00:00"
     },
     {
       "id": "3604-en-ai-Are-AI-generated-ima",
@@ -56347,7 +56357,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202450",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -56371,7 +56381,9 @@
           "source": "www.howtogeek.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:54:29.538892+00:00"
     },
     {
       "id": "3608-ko-ai-ChatGPT-유료-플랜-진짜-쓸-만",
@@ -56539,7 +56551,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-25T07:46:38.202562",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -56563,7 +56575,9 @@
           "source": "gongysd.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-25T10:32:25.082728+00:00",
+      "completed_at": "2026-08-25T10:51:52.299483+00:00"
     },
     {
       "id": "3614-ko-tech-economy-유튜브-알고리즘이-이상해진-이유-20",

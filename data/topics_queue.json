@@ -56750,7 +56750,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.244743",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56775,7 +56775,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:28:40.889120+00:00"
     },
     {
       "id": "3646-en-tech-economy-MacBook-notch-hacks-",
@@ -56783,7 +56785,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.244800",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56808,7 +56810,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:10:14.664235+00:00"
     },
     {
       "id": "3647-en-side-income-AI-agent-builders-fo",
@@ -56844,7 +56848,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.244871",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56869,7 +56873,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:13:16.034524+00:00"
     },
     {
       "id": "3649-en-tech-economy-Kobo-running-apps-in",
@@ -56877,7 +56883,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.244901",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -56902,7 +56908,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:31:30.941855+00:00"
     },
     {
       "id": "3650-ko-tech-economy-AI가-내-직업을-대체할까,-빌-게이",
@@ -56976,7 +56984,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.244987",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -57001,7 +57009,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:35:05.265049+00:00"
     },
     {
       "id": "3653-ko-ai-Slack에-AI-팀원-추가하면-실제",
@@ -57009,7 +57019,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.245015",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -57029,7 +57039,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:16:36.001412+00:00"
     },
     {
       "id": "3654-en-ai-How-AI-is-changing-m",
@@ -57069,7 +57081,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.245133",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -57093,7 +57105,9 @@
           "source": "get-alfred.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:19:06.129026+00:00"
     },
     {
       "id": "3656-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -57101,7 +57115,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.245209",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -57125,7 +57139,9 @@
           "source": "windowsnews.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:37:26.771643+00:00"
     },
     {
       "id": "3657-en-tech-economy-Why-does-Spotify-kee",
@@ -57229,7 +57245,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.245343",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -57253,7 +57269,9 @@
           "source": "idea9329.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:22:22.820840+00:00"
     },
     {
       "id": "3661-ko-ai-직장인이-퇴근-후-ChatGPT로-부",
@@ -57325,7 +57343,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-08-28T19:20:33.245414",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -57344,7 +57362,9 @@
           "source": "brunch.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-08-28T21:07:13.109227+00:00",
+      "completed_at": "2026-08-28T21:25:51.779999+00:00"
     },
     {
       "id": "3664-ko-tech-economy-유튜브가-자꾸-이상한-영상을-추천하는",

@@ -58103,7 +58103,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177378",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -58128,7 +58128,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:43:46.663930+00:00"
     },
     {
       "id": "3707-en-tech-economy-read-later-apps-with",
@@ -58136,7 +58138,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177416",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -58161,7 +58163,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T15:06:34.588550+00:00"
     },
     {
       "id": "3708-en-ai-open-source-GPU-comp",
@@ -58169,7 +58173,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177443",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -58194,7 +58198,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:46:45.593860+00:00"
     },
     {
       "id": "3709-en-ai-ChatGPT-loneliness-u",
@@ -58235,7 +58241,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177481",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -58260,7 +58266,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:50:50.901134+00:00"
     },
     {
       "id": "3711-ko-ai-ChatGPT로-외로움-달랜다는-사람",
@@ -58268,7 +58276,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177498",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -58293,7 +58301,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:37:14.608988+00:00"
     },
     {
       "id": "3712-ko-tech-economy-GPU-클라우드-비용-비교,-얼마나-",
@@ -58362,7 +58372,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177552",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -58371,7 +58381,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:53:51.639287+00:00"
     },
     {
       "id": "3715-en-ai-Best-AI-tools-for-fr",
@@ -58379,7 +58391,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177610",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -58403,7 +58415,9 @@
           "source": "www.themodernfreelancer.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:56:43.224822+00:00"
     },
     {
       "id": "3716-en-buying-guide-Apple-Intelligence-v",
@@ -58603,7 +58617,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177747",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -58627,7 +58641,9 @@
           "source": "ayoteralab.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:40:45.889535+00:00"
     },
     {
       "id": "3723-ko-buying-guide-노션-AI-vs-클로바노트-—-회의록",
@@ -58635,7 +58651,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177772",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -58659,7 +58675,9 @@
           "source": "toollog.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T14:59:54.652500+00:00"
     },
     {
       "id": "3724-ko-ai-Midjourney로-만든-이미지-S",
@@ -58667,7 +58685,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-01T12:26:58.177808",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -58691,7 +58709,9 @@
           "source": "namu.wiki"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-01T14:33:26.708268+00:00",
+      "completed_at": "2026-09-01T15:03:33.492999+00:00"
     }
   ]
 }

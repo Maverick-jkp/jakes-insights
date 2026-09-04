@@ -59067,7 +59067,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530379",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -59076,7 +59076,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:27:47.150163+00:00"
     },
     {
       "id": "3759-ko-ai-GPT-6-출시,-지금-ChatGPT",
@@ -59084,7 +59086,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530396",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -59109,7 +59111,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:05:14.568351+00:00"
     },
     {
       "id": "3760-ko-ai-Gemini-3.8-Flash-써봤나",
@@ -59117,7 +59121,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530411",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -59137,7 +59141,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:12:37.142859+00:00"
     },
     {
       "id": "3761-ko-ai-AI가-내-일정-잡아준다,-캘린더-A",
@@ -59145,7 +59151,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530423",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -59170,7 +59176,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:31:45.699622+00:00"
     },
     {
       "id": "3762-ko-ai-MCP-서버가-뭔데-다들-난리야,-A",
@@ -59178,7 +59186,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530453",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -59187,7 +59195,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:15:57.692937+00:00"
     },
     {
       "id": "3763-en-ai-Best-AI-tools-for-fr",
@@ -59195,7 +59205,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530489",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -59219,7 +59229,9 @@
           "source": "www.guideflow.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:19:07.286919+00:00"
     },
     {
       "id": "3764-en-ai-Will-AI-replace-mark",
@@ -59259,7 +59271,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530539",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -59283,7 +59295,9 @@
           "source": "cybersecuritynews.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:34:49.388984+00:00"
     },
     {
       "id": "3766-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -59355,7 +59369,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530581",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -59379,7 +59393,9 @@
           "source": "kindoflegacy.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:08:39.500571+00:00"
     },
     {
       "id": "3769-ko-tech-economy-AI가-디자이너-일자리-빼앗을까-—-",
@@ -59483,7 +59499,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530624",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -59502,7 +59518,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:22:15.933390+00:00"
     },
     {
       "id": "3773-ko-ai-클로드-AI-한국어-실력-—-Chat",
@@ -59510,7 +59528,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-04T12:02:42.530648",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -59534,7 +59552,9 @@
           "source": "my-blog.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-04T14:02:03.346495+00:00",
+      "completed_at": "2026-09-04T14:25:23.209957+00:00"
     }
   ]
 }

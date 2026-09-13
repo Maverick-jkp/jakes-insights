@@ -61844,7 +61844,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975453",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -61853,7 +61853,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:34:38.312429+00:00"
     },
     {
       "id": "3915-en-ai-private-AI-meeting-n",
@@ -61911,7 +61913,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975527",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -61936,7 +61938,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:09:27.297119+00:00"
     },
     {
       "id": "3918-ko-productivity-AI-회의록-앱-진짜-보안되나,-클로",
@@ -61961,7 +61965,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975565",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -61986,7 +61990,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:22:41.532738+00:00"
     },
     {
       "id": "3920-ko-side-income-AI로-홈페이지-만들기,-2025년에",
@@ -61994,7 +62000,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975589",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62019,7 +62025,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:38:35.534343+00:00"
     },
     {
       "id": "3921-ko-ai-AI-검색-시대에-내-브랜드-노출되고",
@@ -62044,7 +62052,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975650",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62052,7 +62060,9 @@
       "angle": "비개발자 직장인·프리랜서가 실제로 시도할 수 있는 구체적 사례 중심 가이드",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:12:02.893968+00:00"
     },
     {
       "id": "3923-en-tech-economy-Why-does-Spotify-kee",
@@ -62092,7 +62102,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975687",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62116,7 +62126,9 @@
           "source": "guptadeepak.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:25:04.450866+00:00"
     },
     {
       "id": "3925-en-ai-Will-AI-replace-mark",
@@ -62140,7 +62152,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975724",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62164,7 +62176,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:27:56.913643+00:00"
     },
     {
       "id": "3927-ko-tech-economy-AI가-디자이너-일자리-없앨까-202",
@@ -62172,7 +62186,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975777",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62196,7 +62210,9 @@
           "source": "ayoteralab.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:15:15.927215+00:00"
     },
     {
       "id": "3928-ko-ai-노션-AI-한-달-써본-직장인-솔직-",
@@ -62204,7 +62220,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975829",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62223,7 +62239,9 @@
           "source": "winspec.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:31:23.334936+00:00"
     },
     {
       "id": "3929-ko-tech-economy-유튜브가-이상한-영상만-추천하는-이유",
@@ -62263,7 +62281,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-13T12:37:28.975859",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62287,7 +62305,9 @@
           "source": "vivoldi.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-13T14:05:41.324460+00:00",
+      "completed_at": "2026-09-13T14:18:48.999726+00:00"
     }
   ]
 }

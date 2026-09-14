@@ -62118,7 +62118,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187071",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62143,7 +62143,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:14:30.550152+00:00"
     },
     {
       "id": "3932-en-tech-economy-AI-PR-testing-tools:",
@@ -62184,7 +62186,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187137",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62209,7 +62211,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:28:01.424186+00:00"
     },
     {
       "id": "3934-ko-tech-economy-AI가-내-이메일-대신-써준다고?-슬",
@@ -62217,7 +62221,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187158",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62242,7 +62246,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:32:03.786965+00:00"
     },
     {
       "id": "3935-ko-ai-AI에-감정-털어놓는-사람들,-Cha",
@@ -62250,7 +62256,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187177",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62275,7 +62281,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:18:15.553769+00:00"
     },
     {
       "id": "3936-ko-ai-Perplexity-하이브리드-컴퓨팅",
@@ -62316,7 +62324,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187211",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62341,7 +62349,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:35:35.951815+00:00"
     },
     {
       "id": "3938-en-ai-How-AI-is-changing-m",
@@ -62381,7 +62391,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187280",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62405,7 +62415,9 @@
           "source": "techjacksolutions.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:38:13.390519+00:00"
     },
     {
       "id": "3940-en-buying-guide-iPhone-17-vs-Samsung",
@@ -62445,7 +62457,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187376",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62469,7 +62481,9 @@
           "source": "sidehustleschool.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:21:37.615705+00:00"
     },
     {
       "id": "3942-ko-ai-ChatGPT-유료-플랜-월-3만원-",
@@ -62573,7 +62587,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187451",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62597,7 +62611,9 @@
           "source": "shawn125.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:25:14.777113+00:00"
     },
     {
       "id": "3946-ko-ai-노션-AI-3개월-써본-솔직-후기-—",
@@ -62605,7 +62621,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187466",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62629,7 +62645,9 @@
           "source": "brunch.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:41:11.340721+00:00"
     },
     {
       "id": "3947-ko-buying-guide-카카오톡-AI-기능-vs-네이버-AI",
@@ -62669,7 +62687,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-14T13:45:59.187498",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -62693,7 +62711,9 @@
           "source": "wikidocs.net"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-14T16:11:37.337237+00:00",
+      "completed_at": "2026-09-14T16:44:41.131675+00:00"
     }
   ]
 }

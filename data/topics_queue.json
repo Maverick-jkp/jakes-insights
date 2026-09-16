@@ -62837,7 +62837,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351138",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62857,7 +62857,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T14:49:02.302714+00:00"
     },
     {
       "id": "3969-en-tech-economy-Appwrite-2.0-open-so",
@@ -62898,7 +62900,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351182",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62907,7 +62909,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T14:52:40.478600+00:00"
     },
     {
       "id": "3971-ko-ai-ChatGPT-대화-한도-초과,-작업",
@@ -62915,7 +62919,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351200",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62940,7 +62944,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T14:42:24.070062+00:00"
     },
     {
       "id": "3972-ko-ai-OpenAI-에이전트-API-출시,-",
@@ -62948,7 +62954,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351216",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -62973,7 +62979,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T14:45:47.426812+00:00"
     },
     {
       "id": "3973-ko-side-income-AI로-부업-자동화,-실제로-수익-낸",
@@ -62981,7 +62989,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351233",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63001,7 +63009,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T14:56:21.447030+00:00"
     },
     {
       "id": "3974-en-ai-Side-income-ideas-us",
@@ -63169,7 +63179,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351460",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -63188,7 +63198,9 @@
           "source": "vivia2020.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T15:00:16.512842+00:00"
     },
     {
       "id": "3980-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-실제",
@@ -63196,7 +63208,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-16T12:30:22.351493",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -63220,7 +63232,9 @@
           "source": "www.newstomato.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-16T14:38:42.582235+00:00",
+      "completed_at": "2026-09-16T15:04:05.373832+00:00"
     }
   ]
 }

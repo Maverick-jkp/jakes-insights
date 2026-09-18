@@ -63325,7 +63325,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442516",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63350,7 +63350,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:20:55.748295+00:00"
     },
     {
       "id": "3999-en-ai-Windows-games-on-Mac",
@@ -63358,7 +63360,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442539",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63383,7 +63385,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:11:10.124381+00:00"
     },
     {
       "id": "4000-en-side-income-OpenAI-Codex-cost-re",
@@ -63424,7 +63428,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442577",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63449,7 +63453,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:14:48.836224+00:00"
     },
     {
       "id": "4002-ko-tech-economy-맥에서-윈도우-게임-하는-법-2025",
@@ -63457,7 +63463,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442594",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63477,7 +63483,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:17:54.127228+00:00"
     },
     {
       "id": "4003-ko-buying-guide-AI-고객-응대-도구-결제-값어치-하",
@@ -63485,7 +63493,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442609",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63510,7 +63518,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:24:37.481703+00:00"
     },
     {
       "id": "4004-ko-tech-economy-음성-받아쓰기-앱-2025,-직장인이",
@@ -63518,7 +63528,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442631",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63543,7 +63553,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:32:25.625807+00:00"
     },
     {
       "id": "4005-ko-ai-ChatGPT에-감정-생기는-것-같다",
@@ -63551,7 +63563,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-18T12:08:59.442678",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63576,7 +63588,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-18T14:08:06.801933+00:00",
+      "completed_at": "2026-09-18T14:28:31.520294+00:00"
     },
     {
       "id": "4006-en-buying-guide-Notion-AI-vs-Obsidia",

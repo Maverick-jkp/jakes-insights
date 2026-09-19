@@ -63532,7 +63532,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990010",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63557,7 +63557,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T13:53:29.167845+00:00"
     },
     {
       "id": "4007-en-tech-economy-AI-meeting-notetaker",
@@ -63565,7 +63567,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990061",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63590,7 +63592,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T14:05:57.861759+00:00"
     },
     {
       "id": "4008-en-side-income-AI-ad-management-too",
@@ -63659,7 +63663,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990117",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63684,7 +63688,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T13:46:24.799417+00:00"
     },
     {
       "id": "4011-ko-ai-GPT-6-영상-업로드-기능,-일반인",
@@ -63692,7 +63698,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990134",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63712,7 +63718,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T13:50:23.586703+00:00"
     },
     {
       "id": "4012-ko-tech-economy-AI-회의-녹음-요약-앱,-한국어-지",
@@ -63720,7 +63728,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990148",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63745,7 +63753,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T13:56:51.295606+00:00"
     },
     {
       "id": "4013-ko-ai-OpenAI,-Anthropic,-G",
@@ -63819,7 +63829,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990205",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63844,7 +63854,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T14:00:28.906713+00:00"
     },
     {
       "id": "4016-en-ai-Best-AI-image-genera",
@@ -63948,7 +63960,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990389",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -63972,7 +63984,9 @@
           "source": "www.pcmag.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T14:03:20.950173+00:00"
     },
     {
       "id": "4020-ko-ai-ChatGPT-유료-구독-월-3만원-",
@@ -64076,7 +64090,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-19T11:51:52.990555",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -64100,7 +64114,9 @@
           "source": "www.newstomato.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-19T13:43:22.174379+00:00",
+      "completed_at": "2026-09-19T14:08:48.692511+00:00"
     }
   ]
 }

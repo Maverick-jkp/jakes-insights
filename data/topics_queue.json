@@ -63871,7 +63871,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593399",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63896,7 +63896,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:05:25.994965+00:00"
     },
     {
       "id": "4027-en-tech-economy-Steam-library-on-a-w",
@@ -63904,7 +63906,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593412",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63929,7 +63931,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:25:59.443463+00:00"
     },
     {
       "id": "4028-en-ai-ChatGPT-image-genera",
@@ -63970,7 +63974,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593438",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -63995,7 +63999,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:08:53.759211+00:00"
     },
     {
       "id": "4030-ko-tech-economy-에버노트-대신-쓸-노트-앱,-2025",
@@ -64003,7 +64009,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593448",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -64028,7 +64034,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:12:34.984884+00:00"
     },
     {
       "id": "4031-ko-ai-ChatGPT-이미지-생성-오류-사례",
@@ -64036,7 +64044,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593464",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -64061,7 +64069,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:02:30.380920+00:00"
     },
     {
       "id": "4032-ko-tech-economy-AI-회의록-자동-생성,-한국어로도-",
@@ -64069,7 +64079,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593476",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -64094,7 +64104,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:16:41.727668+00:00"
     },
     {
       "id": "4033-en-ai-How-AI-is-changing-m",
@@ -64166,7 +64178,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593527",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -64190,7 +64202,9 @@
           "source": "pixelforgeai.dev"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:19:24.284823+00:00"
     },
     {
       "id": "4036-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -64294,7 +64308,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593615",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -64318,7 +64332,9 @@
           "source": "www.yna.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:23:08.171030+00:00"
     },
     {
       "id": "4040-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
@@ -64390,7 +64406,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593646",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -64414,7 +64430,9 @@
           "source": "karuru1007.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:29:03.306763+00:00"
     },
     {
       "id": "4043-ko-tech-economy-AI로-만든-이미지-SNS에-올려도-",
@@ -64454,7 +64472,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-20T12:06:52.593664",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -64473,7 +64491,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-20T13:58:58.321596+00:00",
+      "completed_at": "2026-09-20T14:32:12.477049+00:00"
     }
   ]
 }

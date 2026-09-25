@@ -65461,7 +65461,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320610",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -65481,7 +65481,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:13:50.930439+00:00"
     },
     {
       "id": "4111-en-tech-economy-AI-reads-terms-and-c",
@@ -65522,7 +65524,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320652",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -65547,7 +65549,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:16:43.807814+00:00"
     },
     {
       "id": "4113-en-side-income-AR-Yu-Gi-Oh-with-Cha",
@@ -65588,7 +65592,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320690",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -65608,7 +65612,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:04:52.085358+00:00"
     },
     {
       "id": "4115-ko-tech-economy-AI-에이전트가-전화-대신-해준다:-",
@@ -65616,7 +65622,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320707",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -65641,7 +65647,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:20:09.691100+00:00"
     },
     {
       "id": "4116-ko-tech-economy-약관-읽어주는-AI,-개인정보-보호-",
@@ -65649,7 +65657,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320728",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -65674,7 +65682,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:23:54.308462+00:00"
     },
     {
       "id": "4117-ko-tech-economy-Meta-VR-안경-100g,-재택-",
@@ -65748,7 +65758,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320804",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -65772,7 +65782,9 @@
           "source": "www.ama.org"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:07:24.131289+00:00"
     },
     {
       "id": "4120-en-ai-Best-AI-tools-for-fr",
@@ -65876,7 +65888,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.320929",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -65900,7 +65912,9 @@
           "source": "macpaw.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:26:28.581259+00:00"
     },
     {
       "id": "4124-ko-tech-economy-AI-때문에-디자이너-직업-없어지나-",
@@ -65940,7 +65954,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.321033",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -65964,7 +65978,9 @@
           "source": "www.airepoto.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:29:59.146769+00:00"
     },
     {
       "id": "4126-ko-ai-직장인-AI-부업-현실적으로-월-얼마",
@@ -65972,7 +65988,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.321064",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -65996,7 +66012,9 @@
           "source": "thinkweek.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:10:58.107102+00:00"
     },
     {
       "id": "4127-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
@@ -66004,7 +66022,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-09-25T12:39:04.321086",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -66028,7 +66046,9 @@
           "source": "idea9329.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-09-25T15:01:37.004726+00:00",
+      "completed_at": "2026-09-25T15:33:20.175011+00:00"
     },
     {
       "id": "4128-ko-tech-economy-유튜브-알고리즘이-요즘-이상한-이유-",

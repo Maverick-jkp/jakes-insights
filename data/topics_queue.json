@@ -67296,7 +67296,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.491876",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -67321,7 +67321,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T16:57:21.060535+00:00"
     },
     {
       "id": "4205-en-ai-ChatGPT-Pro-$500-pla",
@@ -67446,7 +67448,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492120",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -67471,7 +67473,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:07:08.157785+00:00"
     },
     {
       "id": "4211-en-ai-Best-AI-tools-for-fr",
@@ -67479,7 +67483,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492238",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67503,7 +67507,9 @@
           "source": "getflowedge.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:10:07.739599+00:00"
     },
     {
       "id": "4212-en-ai-How-to-make-money-wi",
@@ -67511,7 +67517,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492305",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67519,7 +67525,9 @@
       "angle": "실제 수익 사례(콘텐츠 제작·번역·자동화 대행 등) 중심으로 시작 단계별 가이드",
       "competition_level": "low",
       "references": [],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:00:05.314160+00:00"
     },
     {
       "id": "4213-en-buying-guide-iPhone-17-vs-Samsung",
@@ -67527,7 +67535,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492368",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67551,7 +67559,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:18:09.575138+00:00"
     },
     {
       "id": "4214-ko-ai-ChatGPT-유료-플랜-2026년에",
@@ -67559,7 +67569,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492395",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67583,7 +67593,9 @@
           "source": "emotionte.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:03:28.380240+00:00"
     },
     {
       "id": "4215-ko-tech-economy-AI-때문에-마케터-일자리-줄어드나-",
@@ -67671,7 +67683,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492490",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67695,7 +67707,9 @@
           "source": "winspec.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:13:05.658260+00:00"
     },
     {
       "id": "4219-ko-tech-economy-유튜브-알고리즘-2026-왜-이상한-",
@@ -67703,7 +67717,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492512",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67722,7 +67736,9 @@
           "source": "namu.wiki"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:21:18.643701+00:00"
     },
     {
       "id": "4220-ko-buying-guide-Midjourney-vs-Adobe-",
@@ -67730,7 +67746,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-01T14:19:32.492538",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -67754,7 +67770,9 @@
           "source": "elitenuggets.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-01T16:54:24.575788+00:00",
+      "completed_at": "2026-10-01T17:15:57.018038+00:00"
     }
   ]
 }

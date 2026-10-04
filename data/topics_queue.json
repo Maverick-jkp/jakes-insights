@@ -68225,7 +68225,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421410",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68250,7 +68250,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:16:58.194407+00:00"
     },
     {
       "id": "4263-en-ai-ChatGPT-Spaces:-what",
@@ -68258,7 +68260,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421478",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68283,7 +68285,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:19:38.710105+00:00"
     },
     {
       "id": "4264-en-tech-economy-self-hosted-media-se",
@@ -68291,7 +68295,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421507",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68316,7 +68320,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:29:20.833999+00:00"
     },
     {
       "id": "4265-en-buying-guide-open-source-email-pl",
@@ -68324,7 +68330,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421534",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68349,7 +68355,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:32:16.714609+00:00"
     },
     {
       "id": "4266-ko-ai-Gemini-4-Argon-출시,-C",
@@ -68423,7 +68431,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421602",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68448,7 +68456,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:23:15.513844+00:00"
     },
     {
       "id": "4269-ko-ai-MCP-서버가-뭔지-몰랐는데-AI-에",
@@ -68456,7 +68466,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421630",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68481,7 +68491,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:14:13.526848+00:00"
     },
     {
       "id": "4270-en-tech-economy-AI-image-tools-for-n",
@@ -68585,7 +68597,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.421856",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -68609,7 +68621,9 @@
           "source": "us.maktar.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:35:06.287701+00:00"
     },
     {
       "id": "4274-ko-ai-ChatGPT-유료-플랜-한-달-써본",
@@ -68804,7 +68818,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-04T13:06:53.422011",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -68828,7 +68842,9 @@
           "source": "m.blog.naver.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-04T15:10:32.073863+00:00",
+      "completed_at": "2026-10-04T15:26:30.499593+00:00"
     }
   ]
 }

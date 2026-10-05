@@ -68503,7 +68503,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.825818",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68528,7 +68528,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:31:01.303853+00:00"
     },
     {
       "id": "4282-en-ai-LLM-routing-tools:-s",
@@ -68536,7 +68538,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.825871",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68561,7 +68563,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:19:57.611600+00:00"
     },
     {
       "id": "4283-en-ai-AI-legal-tools:-can-",
@@ -68569,7 +68573,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.825907",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68589,7 +68593,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:22:24.279585+00:00"
     },
     {
       "id": "4284-en-side-income-AI-video-tools-that-",
@@ -68597,7 +68603,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.825942",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68606,7 +68612,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:33:48.817281+00:00"
     },
     {
       "id": "4285-en-ai-OpenAI-safety-resear",
@@ -68664,7 +68672,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.826029",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68689,7 +68697,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:09:59.857402+00:00"
     },
     {
       "id": "4288-ko-side-income-AI로-영상-만들어서-SNS-부업,-",
@@ -68697,7 +68707,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.826060",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68706,7 +68716,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:13:13.119332+00:00"
     },
     {
       "id": "4289-ko-ai-OpenAI-안전-연구원-해고,-Ch",
@@ -68779,7 +68791,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.826184",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -68803,7 +68815,9 @@
           "source": "www.reddit.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:25:10.141599+00:00"
     },
     {
       "id": "4292-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -68811,7 +68825,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.826218",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -68835,7 +68849,9 @@
           "source": "www.atlasworkspace.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:27:48.908960+00:00"
     },
     {
       "id": "4293-en-buying-guide-Google-Pixel-9-vs-iP",
@@ -68875,7 +68891,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.826314",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -68894,7 +68910,9 @@
           "source": "community.spotify.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:36:09.687784+00:00"
     },
     {
       "id": "4295-ko-ai-ChatGPT-유료-플랜-월-2만원-",
@@ -68998,7 +69016,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-05T15:40:33.826422",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -69022,7 +69040,9 @@
           "source": "it-think3333.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-05T19:05:44.003846+00:00",
+      "completed_at": "2026-10-05T19:16:52.738812+00:00"
     },
     {
       "id": "4299-ko-ai-노션-AI-유료-기능-한-달-써본-후",

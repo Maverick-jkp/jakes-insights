@@ -68807,7 +68807,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681261",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68832,7 +68832,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:51:18.088036+00:00"
     },
     {
       "id": "4300-en-ai-OpenAI-safety-resear",
@@ -68901,7 +68903,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681438",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -68926,7 +68928,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:35:33.977737+00:00"
     },
     {
       "id": "4303-ko-tech-economy-AI가-내-아이폰을-직접-조작한다,-",
@@ -69000,7 +69004,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681530",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69025,7 +69029,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:54:28.775387+00:00"
     },
     {
       "id": "4306-ko-tech-economy-클로드-코드-한-달-써본-후기,-비개",
@@ -69033,7 +69039,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681564",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69058,7 +69064,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:42:04.283196+00:00"
     },
     {
       "id": "4307-en-ai-Will-AI-replace-grap",
@@ -69194,7 +69202,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681796",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -69218,7 +69226,9 @@
           "source": "brimcove.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:44:58.850138+00:00"
     },
     {
       "id": "4312-ko-ai-ChatGPT-유료-플랜-2026년에",
@@ -69226,7 +69236,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681824",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -69250,7 +69260,9 @@
           "source": "emotionte.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:38:30.016249+00:00"
     },
     {
       "id": "4313-ko-tech-economy-AI-때문에-마케터-직업-없어지나-실",
@@ -69290,7 +69302,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.681904",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -69309,7 +69321,9 @@
           "source": "vivia2020.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:48:21.697704+00:00"
     },
     {
       "id": "4315-ko-buying-guide-갤럭시-S25-vs-아이폰-16-일반",
@@ -69381,7 +69395,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-06T14:02:05.682019",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -69405,7 +69419,9 @@
           "source": "tali.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-06T16:31:59.506482+00:00",
+      "completed_at": "2026-10-06T16:57:48.925265+00:00"
     }
   ]
 }

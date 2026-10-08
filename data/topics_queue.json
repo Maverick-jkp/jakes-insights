@@ -69448,7 +69448,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-08T14:27:36.946771",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69457,7 +69457,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-08T17:23:57.004710+00:00",
+      "completed_at": "2026-10-08T17:26:55.115403+00:00"
     },
     {
       "id": "4334-en-side-income-SOC-2-compliance-wit",
@@ -69465,7 +69467,7 @@
       "category": "side-income",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-08T14:27:36.946807",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69490,7 +69492,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-08T17:23:57.004710+00:00",
+      "completed_at": "2026-10-08T17:33:21.968506+00:00"
     },
     {
       "id": "4335-ko-ai-Claude-구글-독스-연동,-직장인",
@@ -69548,7 +69552,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-08T14:27:36.946890",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69573,7 +69577,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-08T17:23:57.004710+00:00",
+      "completed_at": "2026-10-08T17:30:07.474699+00:00"
     },
     {
       "id": "4338-ko-ai-OpenAI-수학-문제-논란,-AI가",
@@ -69581,7 +69587,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-08T14:27:36.946924",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69590,7 +69596,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-08T17:23:57.004710+00:00",
+      "completed_at": "2026-10-08T17:36:57.699305+00:00"
     },
     {
       "id": "4339-ko-side-income-LLM-라우터란-무엇인가,-AI-AP",
@@ -69598,7 +69606,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-08T14:27:36.946950",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -69618,7 +69626,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-08T17:23:57.004710+00:00",
+      "completed_at": "2026-10-08T17:40:56.356326+00:00"
     },
     {
       "id": "4340-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -69813,7 +69823,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-08T14:27:36.947339",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -69837,7 +69847,9 @@
           "source": "gongysd.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-08T17:23:57.004710+00:00",
+      "completed_at": "2026-10-08T17:43:52.693863+00:00"
     },
     {
       "id": "4347-ko-buying-guide-토스-vs-카카오뱅크-vs-네이버페이",

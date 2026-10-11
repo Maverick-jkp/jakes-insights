@@ -70245,7 +70245,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-11T13:52:16.123697",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -70270,7 +70270,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-11T16:10:06.341830+00:00",
+      "completed_at": "2026-10-11T16:12:33.817253+00:00"
     },
     {
       "id": "4381-en-ai-OpenAI-unreleased-mo",
@@ -70344,7 +70346,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-11T13:52:16.123784",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -70369,7 +70371,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-11T16:10:06.341830+00:00",
+      "completed_at": "2026-10-11T16:16:11.170187+00:00"
     },
     {
       "id": "4384-ko-ai-로컬-AI-개인-컴퓨터,-클라우드-A",
@@ -70377,7 +70381,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-11T13:52:16.123799",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -70402,7 +70406,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-11T16:10:06.341830+00:00",
+      "completed_at": "2026-10-11T16:20:03.866365+00:00"
     },
     {
       "id": "4385-ko-ai-OpenAI-신형-AI-수학-문제-풀",
@@ -70443,7 +70449,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-11T13:52:16.123826",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -70468,7 +70474,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-11T16:10:06.341830+00:00",
+      "completed_at": "2026-10-11T16:23:13.123337+00:00"
     },
     {
       "id": "4387-en-ai-Best-AI-tools-for-fr",
@@ -70476,7 +70484,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-11T13:52:16.123877",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -70500,7 +70508,9 @@
           "source": "www.zemith.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-11T16:10:06.341830+00:00",
+      "completed_at": "2026-10-11T16:25:51.745848+00:00"
     },
     {
       "id": "4388-en-buying-guide-Midjourney-vs-Adobe-",
@@ -70540,7 +70550,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-11T13:52:16.123909",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -70564,7 +70574,9 @@
           "source": "www.gobluemedia.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-11T16:10:06.341830+00:00",
+      "completed_at": "2026-10-11T16:28:45.634021+00:00"
     },
     {
       "id": "4390-en-tech-economy-Why-does-Spotify-kee",

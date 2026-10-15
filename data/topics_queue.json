@@ -71289,7 +71289,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.515771",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -71314,7 +71314,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T14:55:18.701332+00:00"
     },
     {
       "id": "4433-en-ai-human-approval-layer",
@@ -71322,7 +71324,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.515849",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -71347,7 +71349,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T14:44:37.060711+00:00"
     },
     {
       "id": "4434-en-ai-AI-video-editing-by-",
@@ -71383,7 +71387,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.515898",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -71408,7 +71412,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T14:49:02.744591+00:00"
     },
     {
       "id": "4436-ko-ai-AI-법률-검토-서비스-진짜-믿어도-",
@@ -71416,7 +71422,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.515915",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -71441,7 +71447,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T14:58:46.131063+00:00"
     },
     {
       "id": "4437-ko-ai-말로-영상-편집하는-AI-툴-진짜-쓸",
@@ -71449,7 +71457,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.515931",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -71474,7 +71482,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T15:02:27.846014+00:00"
     },
     {
       "id": "4438-ko-buying-guide-ChatGPT-한-달-결제-진짜-값어",
@@ -71515,7 +71525,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.515972",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -71535,7 +71545,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T15:05:49.721388+00:00"
     },
     {
       "id": "4440-en-ai-Can-you-make-money-s",
@@ -71575,7 +71587,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.516082",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -71599,7 +71611,9 @@
           "source": "www.pocket-lint.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T15:08:38.586283+00:00"
     },
     {
       "id": "4442-en-buying-guide-Notion-vs-Obsidian-v",
@@ -71671,7 +71685,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.516135",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -71695,7 +71709,9 @@
           "source": "www.hankyung.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T14:52:38.204571+00:00"
     },
     {
       "id": "4445-ko-buying-guide-토스-vs-카카오뱅크-vs-네이버페이",
@@ -71703,7 +71719,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-15T12:32:21.516242",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -71727,7 +71743,9 @@
           "source": "www.mobiinside.co.kr"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-15T14:41:38.045763+00:00",
+      "completed_at": "2026-10-15T15:12:07.231450+00:00"
     }
   ]
 }

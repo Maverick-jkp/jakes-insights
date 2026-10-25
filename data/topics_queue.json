@@ -74234,34 +74234,6 @@
       "completed_at": "2026-10-24T13:54:36.000230+00:00"
     },
     {
-      "id": "4571-en-ai-OpenAI-guardrails-ge",
-      "keyword": "OpenAI guardrails getting worse: are ChatGPT's restrictions going too far in 2025?",
-      "category": "ai",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-24T11:55:10.945453",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Frustrated ChatGPT user looking to confirm their experience is shared and to find alternatives",
-      "angle": "User frustration audit: what kinds of requests are now blocked and what tools don't have these limits",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Guardrails Issue, completely restrictive without reason - ChatGPT - OpenAI Developer Community",
-          "url": "https://community.openai.com/t/guardrails-issue-completely-restrictive-without-reason/1408302",
-          "source": "community.openai.com"
-        },
-        {
-          "title": "Bypassing ChatGPT Image Safeguards Through Memory Manipulation - Mindgard",
-          "url": "https://mindgard.ai/blog/bypassing-image-safeguards-in-chatgpt",
-          "source": "mindgard.ai"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4572-en-tech-economy-AI-caught-cheating-i",
       "keyword": "AI caught cheating in job interviews: what actually happens and how companies detect it",
       "category": "tech-economy",
@@ -74362,39 +74334,6 @@
       "completed_at": "2026-10-24T14:04:29.497755+00:00"
     },
     {
-      "id": "4575-ko-ai-맥북에서-쓰는-로컬-AI,-클라우드-",
-      "keyword": "맥북에서 쓰는 로컬 AI, 클라우드 ChatGPT 대비 실제로 얼마나 쓸 만한가",
-      "category": "ai",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-24T11:55:10.945543",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "개인정보 유출이 걱정되는 직장인이 클라우드 AI 없이 사용 가능한 맥 로컬 AI 도구를 찾아 검색",
-      "angle": "비개발자 직장인 관점에서 로컬 AI의 실용성 한계와 ChatGPT 유지 여부 판단 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI하려면 PC 뭘 사야 하죠? 클라우드 vs 에이전트 vs 로컬LLM 총정리 - YouTube",
-          "url": "https://www.youtube.com/watch?v=QVXWn7_Uw2w",
-          "source": "www.youtube.com"
-        },
-        {
-          "title": "Local AI vs cloud AI: Why keeping your AI on your device can be the better option | TechRadar",
-          "url": "https://www.techradar.com/pro/local-ai-vs-cloud-ai-why-keeping-your-ai-on-your-device-can-be-the-better-option",
-          "source": "www.techradar.com"
-        },
-        {
-          "title": "Local AI Costs: Is Running AI at Home Worth It? | Stork.AI",
-          "url": "https://www.stork.ai/blog/the-local-ai-dream-has-a-7000-problem",
-          "source": "www.stork.ai"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4576-ko-ai-Canva-AI-이미지-생성-기능-생",
       "keyword": "Canva AI 이미지 생성 기능 생겼다, 이제 진짜 Adobe 안 써도 되나",
       "category": "ai",
@@ -74430,39 +74369,6 @@
       "completed_at": "2026-10-24T14:15:14.630938+00:00"
     },
     {
-      "id": "4577-ko-ai-면접에서-ChatGPT-쓰다-걸렸다,",
-      "keyword": "면접에서 ChatGPT 쓰다 걸렸다, 실제로 어떻게 들키고 어떤 결과 생기나",
-      "category": "ai",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-10-24T11:55:10.945582",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "취업 준비생이 면접 AI 활용의 위험성을 실제 사례로 확인하고 적절한 사용 기준을 찾기 위해 검색",
-      "angle": "취준생 관점에서 AI 면접 활용의 현실적 위험 수위와 들키지 않는 범위의 활용법 구분",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "“챗GPT 써봤다고? 뭘 만들었는데?”…AI 시대 취업법",
-          "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02112326645615216",
-          "source": "edaily.co.kr"
-        },
-        {
-          "title": "AI가 이력서 쓰고 면접까지 준비하는 시대, 기업은 사람을 어떻게 검증할까 : 신간 '제3의 면접, 평판조회'",
-          "url": "https://www.huffingtonpost.kr/article/261390",
-          "source": "www.huffingtonpost.kr"
-        },
-        {
-          "title": "Introducing ChatGPT | OpenAI",
-          "url": "https://openai.com/index/chatgpt/",
-          "source": "openai.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4578-en-ai-Will-AI-replace-grap",
       "keyword": "Will AI replace graphic designers or just change the job",
       "category": "ai",
@@ -74495,38 +74401,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-10-24T13:51:42.942875+00:00",
       "completed_at": "2026-10-24T14:18:15.256557+00:00"
-    },
-    {
-      "id": "4579-en-ai-How-to-make-money-wi",
-      "keyword": "How to make money with AI art without coding skills",
-      "category": "ai",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-24T11:55:10.945681",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "기술 배경 없이 AI 이미지 생성 도구로 부수입을 내고 싶은 일반인의 실행 방법 탐색",
-      "angle": "Midjourney/Canva AI 등 비개발자가 접근 가능한 도구로 실제로 수익을 낼 수 있는 플랫폼과 방법을 단계별 안내",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Make Money with AI (2026)",
-          "url": "https://www.finder.com/make-money-online/how-to-make-money-with-ai",
-          "source": "www.finder.com"
-        },
-        {
-          "title": "How to make money with AI: tap into the digital gold rush",
-          "url": "https://www.wix.com/blog/how-to-make-money-with-ai",
-          "source": "www.wix.com"
-        },
-        {
-          "title": "How to Make Money with AI | ImagineArt",
-          "url": "https://www.imagine.art/blogs/how-to-make-money-with-ai",
-          "source": "www.imagine.art"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "4580-en-tech-economy-Is-your-smart-TV-spy",
@@ -74597,65 +74471,6 @@
       "completed_at": "2026-10-24T14:07:51.464882+00:00"
     },
     {
-      "id": "4582-ko-tech-economy-AI가-마케터-일자리를-빼앗을까-20",
-      "keyword": "AI가 마케터 일자리를 빼앗을까 2026 현실",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-24T11:55:10.945747",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "마케팅 직군 종사자 또는 취준생이 AI로 인한 커리어 위협을 실제 데이터와 사례 기반으로 이해하려는 목적",
-      "angle": "불안감을 자극하지 않고, 실제로 어떤 마케팅 업무가 자동화되고 있고 어떤 역량이 살아남는지 현실적으로 서술",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI 일자리 위협 2026 현실 | 내 직업 대체될 확률과 살아남는 직종 분석",
-          "url": "https://ayoteralab.tistory.com/entry/AI-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%9C%84%ED%98%91-2026-%ED%98%84%EC%8B%A4-%EB%82%B4-%EC%A7%81%EC%97%85-%EB%8C%80%EC%B2%B4%EB%90%A0-%ED%99%95%EB%A5%A0%EA%B3%BC-%EC%82%B4%EC%95%84%EB%82%A8%EB%8A%94-%EC%A7%81%EC%A2%85-%EB%B6%84%EC%84%9D",
-          "source": "ayoteralab.tistory.com"
-        },
-        {
-          "title": "AI 일자리 대체 완전 가이드 — 마케터가 AI에 대체되지 않고 살아남는 2026년 핵심 생존 전략",
-          "url": "https://blog.oneplan.co.kr/ai-job-survival-marketer-2026/",
-          "source": "blog.oneplan.co.kr"
-        },
-        {
-          "title": "기술적 실업 - 나무위키",
-          "url": "https://namu.wiki/w/%EA%B8%B0%EC%88%A0%EC%A0%81%20%EC%8B%A4%EC%97%85",
-          "source": "namu.wiki"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4583-ko-buying-guide-갤럭시-S26-vs-아이폰-17-카메",
-      "keyword": "갤럭시 S26 vs 아이폰 17 카메라 일반인 솔직 비교",
-      "category": "buying-guide",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-24T11:55:10.945762",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "스마트폰 교체를 앞둔 일반 소비자가 스펙이 아닌 실사용 기준으로 두 기기를 비교하려는 구매 결정 목적",
-      "angle": "카메라 스펙 숫자 대신 일상 사진(음식, 여행, 야간) 상황에서 어떤 차이가 나는지 비개발자 언어로 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "갤럭시 S26 울트라 아이폰 17 프로 카메라 비교 (2026년 실사용 리뷰) :: 슬기로운 생.활.",
-          "url": "https://vivia2020.tistory.com/239",
-          "source": "vivia2020.tistory.com"
-        },
-        {
-          "title": "아이폰 17 vs 갤럭시 S26 — 6개월 실사용 비교 2026 완전판",
-          "url": "https://www.pageoneworks.com/article/iphone-galaxy-comparison-2026",
-          "source": "www.pageoneworks.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4584-ko-ai-직장인-AI-부업-월-50만원-가능한",
       "keyword": "직장인 AI 부업 월 50만원 가능한 현실적인 방법",
       "category": "ai",
@@ -74722,6 +74537,382 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-10-24T13:51:42.942875+00:00",
       "completed_at": "2026-10-24T14:21:37.277119+00:00"
+    },
+    {
+      "id": "4586-en-ai-1Password-for-AI-age",
+      "keyword": "1Password for AI agents: is it actually safe to let bots log in for you?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878658",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "User heard AI can now access their accounts and wants to know if it is secure before enabling it",
+      "angle": "Security-skeptic perspective: what could go wrong when AI meets password managers",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Secure Agentic AI: Authentication & Access Control | 1Password",
+          "url": "https://1password.com/solutions/agentic-ai",
+          "source": "1password.com"
+        },
+        {
+          "title": "1Password lets AI agents use your passwords without seeing them | The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
+          "source": "www.theverge.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4587-en-ai-OpenAI-overprotectiv",
+      "keyword": "OpenAI overprotective guardrails: why ChatGPT keeps refusing normal requests",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878695",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Frustrated user wants validation and workarounds after ChatGPT refused a reasonable task",
+      "angle": "User-frustration audit: documenting real refusal cases and what alternatives exist",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Guardrails Issue, completely restrictive without reason - ChatGPT - OpenAI Developer Community",
+          "url": "https://community.openai.com/t/guardrails-issue-completely-restrictive-without-reason/1408302",
+          "source": "community.openai.com"
+        },
+        {
+          "title": "Additional safety checks for biological and cybersecurity requests in ChatGPT, Codex, and the API | ",
+          "url": "https://help.openai.com/en/articles/20001326-additional-safety-checks-for-biological-and-cybersecurity-requests-in-chatgpt-codex-and-the-api",
+          "source": "help.openai.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4588-en-tech-economy-AI-agent-workspace-t",
+      "keyword": "AI agent workspace tools in 2025: what AgentGrid and similar apps actually do for regular users",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878722",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Non-technical user who keeps hearing about AI agents wants a plain-English explanation of real-world use",
+      "angle": "Demystification guide: explaining AI agent tools without jargon for marketers and office workers",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "OpenAI Dots in ChatGPT: Access, Setup & Hands-On Guide",
+          "url": "https://animaapp.com/blog/agentic/openai-dots/",
+          "source": "animaapp.com"
+        },
+        {
+          "title": "10 Top Agentic AI Tools Transforming Enterprise Businesses",
+          "url": "https://www.moveworks.com/us/en/resources/blog/agentic-ai-tools-for-business",
+          "source": "www.moveworks.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4589-ko-tech-economy-AI-에이전트에게-비밀번호-맡겨도-되",
+      "keyword": "AI 에이전트에게 비밀번호 맡겨도 되나, 1Password 신기능 솔직 분석",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878744",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 자동화 도구를 쓰려다 보안 우려가 생겨서 실제 위험성을 검색하는 직장인",
+      "angle": "보안 회의론 관점: AI 에이전트 자동 로그인이 가져올 실질적 위험 시나리오 점검",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "1Password, '1Password for Agents' 출시 — AI 에이전트가 비밀번호 없이 로그인 대행, Claude Duet·OpenAI Dots·Meta Muse 연동",
+          "url": "https://github.com/roomedia/ax-trend/issues/3488",
+          "source": "github.com"
+        },
+        {
+          "title": "1Password가 제시하는 AI 에이전트 로그인 방식: 비밀번호 노출 없는 자격 증명 대행의 원리와 한계 - TILNOTE",
+          "url": "https://tilnote.io/en/pages/6adb326b5793f2d389a0eff1",
+          "source": "tilnote.io"
+        },
+        {
+          "title": "1Password for Agents Keeps Your Passwords Hidden From AI - MacRumors",
+          "url": "https://www.macrumors.com/2026/10/22/1password-for-agents/",
+          "source": "www.macrumors.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4590-ko-ai-ChatGPT-갑자기-거절-많아진-이",
+      "keyword": "ChatGPT 갑자기 거절 많아진 이유, 직장인 실사용 한계 정리",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878763",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ChatGPT가 업무 요청을 거절해서 당혹스러운 사용자가 원인과 대안을 찾는 중",
+      "angle": "실사용자 불만 기록: 어떤 요청이 막히는지, Claude나 Gemini로 대체 가능한지 비교",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "ChatGPT Not Working? Why It Happens and How to Fix It",
+          "url": "https://technologyripple.com/2026/10/chatgpt-not-working/",
+          "source": "technologyripple.com"
+        },
+        {
+          "title": "Why Is ChatGPT So Slow? Free Step-by-Step Fix-It Wizard",
+          "url": "https://howtoai.com/why-is-chatgpt-slow/",
+          "source": "howtoai.com"
+        },
+        {
+          "title": "Why Is ChatGPT So Slow? We Timed a Long Chat to Find Out",
+          "url": "https://www.atlascloud.ai/blog/tips/why-is-chatgpt-so-slow",
+          "source": "www.atlascloud.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4591-ko-ai-Canva-AI-이미지-생성-기능,-",
+      "keyword": "Canva AI 이미지 생성 기능, 디자이너 아닌 사람도 실제로 쓸 만한가",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878784",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "SNS 콘텐츠나 업무 자료에 AI 이미지를 써보고 싶은 비디자이너가 가장 쉬운 도구를 찾는 중",
+      "angle": "실용 비교: 카드뉴스, 인스타그램 피드, PPT 이미지 제작 기준으로 Canva AI와 미드저니 결과 비교",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "캔바, 첫 자체 이미지 생성 모델 '캔바 크래프트' 공개 < 서비스・소프트웨어 < IT < 기사본문 - 디지털포커스",
+          "url": "https://www.digitalfocus.news/news/articleView.html?idxno=24649",
+          "source": "www.digitalfocus.news"
+        },
+        {
+          "title": "캔바, 프론티어급 이미지 모델 '크래프트' 공개…디자인 아레나 4위 올라 < 산업일반 < AI산업 < 기사본문 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=216589",
+          "source": "www.aitimes.com"
+        },
+        {
+          "title": "예쁜 그림이 아닌 '진짜 디자인'을 만드는 AI, Canva Craft의 등장 - TILNOTE",
+          "url": "https://tilnote.io/en/pages/6adb49fd075cb5263d9b286b",
+          "source": "tilnote.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4592-ko-side-income-AI-에이전트-부업-도구로-쓰기,-실",
+      "keyword": "AI 에이전트 부업 도구로 쓰기, 실제로 수익 나는 구조가 있나",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878801",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 자동화 도구로 부업 수입을 만들고 싶은 직장인이 실제 수익 모델을 찾는 중",
+      "angle": "수익화 현실 점검: AI 에이전트를 이용해 외주, 콘텐츠 제작, 데이터 처리 부업이 가능한지 사례 중심으로 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Selling Shovels to Robots: Where the Real Money in the AI-Agent Economy Is (and Isn’t) | by Mojtaba ",
+          "url": "https://ai.plainenglish.io/selling-shovels-to-robots-where-the-real-money-in-the-ai-agent-economy-is-and-isnt-7b91b1ad4ca3?gi=a5993aab6e51",
+          "source": "ai.plainenglish.io"
+        },
+        {
+          "title": "Stop Building AI Agents for Tasks a Simple Script Could Do | How To Profit AI®",
+          "url": "https://archive.li/J4hvz",
+          "source": "archive.li"
+        },
+        {
+          "title": "Make your AI agent pay for itself (and this week's biggest AI news) - YouTube",
+          "url": "https://www.youtube.com/watch?v=tqpOfHS5-VY",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4593-en-tech-economy-Why-does-Spotify-kee",
+      "keyword": "Why does Spotify keep recommending the same songs in 2026",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878936",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "알고리즘에 갇힌 느낌을 받은 사용자가 이유와 해결책을 궁금해하며 검색",
+      "angle": "알고리즘 작동 원리를 일반인 언어로 설명하고 취향 리셋 방법을 실용적으로 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Why Spotify Keeps Playing the Same Songs (And 7 Ways to Break the Loop)",
+          "url": "https://trending.fm/blog/why-spotify-plays-same-songs/",
+          "source": "trending.fm"
+        },
+        {
+          "title": "Why Spotify Shuffle Feels Repetitive Again in 2026 - Inspire Fusion",
+          "url": "https://www.inspirefusion.com/why-spotify-shuffle-feels-repetitive-2026/",
+          "source": "www.inspirefusion.com"
+        },
+        {
+          "title": "Why does Spotify keep recommending the same artists? | by Bianca | Medium",
+          "url": "https://medium.com/@biancarosa2/why-does-spotify-keep-recommending-the-same-artists-3c81273e15da",
+          "source": "medium.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4594-ko-ai-ChatGPT-유료-플랜-진짜-쓸-만",
+      "keyword": "ChatGPT 유료 플랜 진짜 쓸 만한가 2026 솔직 후기",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878956",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "월 구독료를 낼지 말지 망설이는 직장인·대학생이 실제 사용 경험 기반 판단 근거를 찾는 중",
+      "angle": "개발자 관점 배제, 업무·과제·일상에서 유료와 무료 차이가 체감되는 순간을 중심으로 솔직 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "챗지피티 무료 vs 유료 차이, 2026 GPT 요금제 가격 비교 - AI가 궁금할 땐, 캐럿 블로그",
+          "url": "https://carat.im/blog/chatgpt-pricing-plans-comparison",
+          "source": "carat.im"
+        },
+        {
+          "title": "ChatGPT 요금제 비교 2026: 무료·Plus·Pro 차이 정리 :: Daily AI Lab",
+          "url": "https://fuerte.tistory.com/337",
+          "source": "fuerte.tistory.com"
+        },
+        {
+          "title": "2026년, ChatGPT 유료(Plus) 결제 고민 끝내드립니다. - Jaykee 블로그",
+          "url": "https://itgit.co.kr/chatgpt-plus-free-vs-paid-2026-review/",
+          "source": "itgit.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4595-ko-tech-economy-AI가-디자이너-일자리-빼앗을까-20",
+      "keyword": "AI가 디자이너 일자리 빼앗을까 2026 현실",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878972",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "디자이너 또는 디자인 지망생이 커리어 위협 여부와 대응 방향을 현실적으로 파악하려는 중",
+      "angle": "실제 AI 도구 도입 사례를 근거로 대체되는 작업 vs 살아남는 역량을 현직자 시선에서 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "기술적 실업 - 나무위키",
+          "url": "https://namu.wiki/w/%EA%B8%B0%EC%88%A0%EC%A0%81%20%EC%8B%A4%EC%97%85",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "디자이너 90%가 사라진다? 2026년 AI 시대 크리에이터 생존 마스터플랜 - artcopost",
+          "url": "https://artcopost.com/%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%82%AC%EB%9D%BC%EC%A7%84%EB%8B%A4-2026%EB%85%84-ai-%EC%8B%9C%EB%8C%80-%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0-%EC%83%9D%EC%A1%B4/",
+          "source": "artcopost.com"
+        },
+        {
+          "title": "Hiring in the Age of AI in Design",
+          "url": "https://designbuddies.substack.com/p/design-hiring",
+          "source": "designbuddies.substack.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4596-ko-buying-guide-갤럭시-S25-vs-아이폰-16-카메",
+      "keyword": "갤럭시 S25 vs 아이폰 16 카메라 일상 비교 비전문가 관점",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.878987",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "스마트폰 교체를 앞두고 스펙표가 아닌 실생활 사진 품질 차이를 알고 싶은 일반 소비자",
+      "angle": "카페·여행·셀피 등 한국인의 일상 촬영 상황별로 두 기기 결과물을 직관적으로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "갤럭시 S25 FE vs 아이폰 16e 가격·카메라·배터리 비교 2026",
+          "url": "https://technotekorea.com/galaxy-s25-fe-iphone-16e-comparison-2026/",
+          "source": "technotekorea.com"
+        },
+        {
+          "title": "갤럭시 vs 아이폰 2026년 비교 — 솔직히 뭘 사야 할까? :: Frank의 세상 이야기",
+          "url": "https://idea9329.tistory.com/1909",
+          "source": "idea9329.tistory.com"
+        },
+        {
+          "title": "아이폰 16보다 갤럭시S25 더 좋은 5가지 이유 완벽정리 - 자동차 금융 가이드",
+          "url": "https://carfinance.co.kr/%EC%95%84%EC%9D%B4%ED%8F%B0-16%EB%B3%B4%EB%8B%A4-%EA%B0%A4%EB%9F%AD%EC%8B%9Cs25-%EB%8D%94-%EC%A2%8B%EC%9D%80-5%EA%B0%80%EC%A7%80-%EC%9D%B4%EC%9C%A0-%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/",
+          "source": "carfinance.co.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4597-ko-buying-guide-토스-vs-카카오뱅크-어떤-게-더-편",
+      "keyword": "토스 vs 카카오뱅크 어떤 게 더 편할까 2026 기능 비교",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-10-25T12:25:27.879039",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "두 앱 중 주거래 계좌를 선택하거나 갈아탈지 고민하는 사람이 실사용 차이를 비교 중",
+      "angle": "송금·저축·지출관리·AI 기능을 일반 사용자 시각에서 비교, 라이프스타일별 추천으로 마무리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "토스 vs 카카오뱅크 고유가지원금 신청 비교: 혜택 더 좋은 곳은 어디? - groundche",
+          "url": "https://groundche.com/toss-vs-kakaobank-gounga/",
+          "source": "groundche.com"
+        },
+        {
+          "title": "인터넷전문은행 3사 비교 2026 - 카카오뱅크 vs 토스뱅크 vs 케이뱅크 장단점 총정리",
+          "url": "https://moneychanger.tistory.com/50",
+          "source": "moneychanger.tistory.com"
+        },
+        {
+          "title": "토스 카카오뱅크 케이뱅크 비교 - 인터넷은행 어디가 좋은가",
+          "url": "https://tali.kr/internet-bank-comparison",
+          "source": "tali.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

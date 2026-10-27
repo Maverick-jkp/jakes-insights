@@ -75092,7 +75092,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083297",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75101,7 +75101,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T15:54:20.687222+00:00"
     },
     {
       "id": "4617-en-ai-OpenAI-math-and-phys",
@@ -75142,7 +75144,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083341",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75151,7 +75153,9 @@
       "competition_level": "medium",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T15:57:05.425257+00:00"
     },
     {
       "id": "4619-en-ai-AI-financial-admin-t",
@@ -75192,7 +75196,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083371",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75217,7 +75221,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T15:49:02.086552+00:00"
     },
     {
       "id": "4621-ko-tech-economy-AI가-수학·과학-발견까지-한다면-내",
@@ -75258,7 +75264,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083403",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75278,7 +75284,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T15:59:55.408865+00:00"
     },
     {
       "id": "4623-ko-ai-ChatGPT-외로움-해결-앱으로-쓰",
@@ -75286,7 +75294,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083438",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75311,7 +75319,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T16:03:30.785386+00:00"
     },
     {
       "id": "4624-ko-tech-economy-n8n-자동화-챗봇-비개발자도-만들-",
@@ -75319,7 +75329,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083459",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75328,7 +75338,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T16:10:39.144921+00:00"
     },
     {
       "id": "4625-en-buying-guide-Galaxy-S25-vs-iPhone",
@@ -75336,7 +75348,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083553",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -75360,7 +75372,9 @@
           "source": "comparia.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T16:13:14.692687+00:00"
     },
     {
       "id": "4626-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -75400,7 +75414,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083623",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -75424,7 +75438,9 @@
           "source": "talentsforai.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T15:51:26.405735+00:00"
     },
     {
       "id": "4628-ko-ai-ChatGPT-유료-플랜-2026년에",
@@ -75560,7 +75576,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083694",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -75584,7 +75600,9 @@
           "source": "congtti.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T16:07:03.403831+00:00"
     },
     {
       "id": "4633-ko-buying-guide-토스-vs-카카오뱅크-vs-네이버페이",
@@ -75592,7 +75610,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-27T13:03:55.083705",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -75616,7 +75634,9 @@
           "source": "www.fnnews.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-27T15:45:55.855344+00:00",
+      "completed_at": "2026-10-27T16:16:59.907981+00:00"
     }
   ]
 }

@@ -75690,7 +75690,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.736981",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75715,7 +75715,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:43:35.866450+00:00"
     },
     {
       "id": "4652-en-ai-Is-ChatGPT-getting-t",
@@ -75789,7 +75791,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737074",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75814,7 +75816,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:46:31.413800+00:00"
     },
     {
       "id": "4655-en-ai-Real-time-AI-call-as",
@@ -75822,7 +75826,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737097",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75842,7 +75846,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T17:03:01.979809+00:00"
     },
     {
       "id": "4656-ko-ai-ChatGPT-대화-스타일-바뀐-이유",
@@ -75883,7 +75889,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737140",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75908,7 +75914,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:49:53.498096+00:00"
     },
     {
       "id": "4658-ko-ai-ChatGPT-유료-플랜-한도-통합,",
@@ -75949,7 +75957,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737185",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -75974,7 +75982,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T17:06:32.710662+00:00"
     },
     {
       "id": "4660-ko-side-income-AI-코딩-에이전트에게-내-앱-직접-",
@@ -75982,7 +75992,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737203",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76007,7 +76017,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:53:46.687163+00:00"
     },
     {
       "id": "4661-en-tech-economy-How-does-Instagram-a",
@@ -76047,7 +76059,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737418",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -76071,7 +76083,9 @@
           "source": "macpaw.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:56:26.862803+00:00"
     },
     {
       "id": "4663-ko-ai-ChatGPT-유료-플랜-월-3만원-",
@@ -76079,7 +76093,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737436",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -76103,7 +76117,9 @@
           "source": "www.gamsgo.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:36:43.124070+00:00"
     },
     {
       "id": "4664-ko-tech-economy-AI-때문에-마케터-일자리-줄어드나-",
@@ -76111,7 +76127,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737452",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -76135,7 +76151,9 @@
           "source": "www.forbes.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:40:37.773778+00:00"
     },
     {
       "id": "4665-ko-side-income-직장인-퇴근-후-AI로-부수입-만드는",
@@ -76175,7 +76193,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-10-30T13:55:49.737578",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -76199,7 +76217,9 @@
           "source": "savvykr.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-10-30T16:33:20.819246+00:00",
+      "completed_at": "2026-10-30T16:59:28.962821+00:00"
     }
   ]
 }

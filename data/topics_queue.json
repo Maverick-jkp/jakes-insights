@@ -76166,39 +76166,6 @@
       "completed_at": "2026-10-31T15:51:26.279107+00:00"
     },
     {
-      "id": "4671-ko-ai-ChatGPT-거짓말-갑자기-늘었다,",
-      "keyword": "ChatGPT 거짓말 갑자기 늘었다, AI 믿어도 되나",
-      "category": "ai",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-10-31T13:26:34.227886",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "ChatGPT 사용 중 이상한 답변을 받은 사용자가 원인과 대처법을 검색",
-      "angle": "비개발자 직장인 관점에서 AI 할루시네이션이 실제 업무에 미치는 영향과 대처법",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "교묘하게 거짓말하는 AI... \"그게 창의성의 비결이자 매력포인트\"-라이프ㅣ한국일보",
-          "url": "https://www.hankookilbo.com/news/article/A2026102711160000227",
-          "source": "www.hankookilbo.com"
-        },
-        {
-          "title": "“AI 말만 믿었다 큰 코 다쳐”… AI가 보여주는 ‘환각’에 속지 않으려면? - 코메디닷컴",
-          "url": "https://kormedi.com/2892905/",
-          "source": "kormedi.com"
-        },
-        {
-          "title": "의사보다 챗GPT 믿고 처방약 끊은 30대 여성의 비극",
-          "url": "https://www.chosun.com/economy/science/2026/10/28/U7CMPSHOCRC35DNQSJVT5YWHX4/",
-          "source": "www.chosun.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4672-ko-ai-AI가-내-문서를-마음대로-삭제한다,",
       "keyword": "AI가 내 문서를 마음대로 삭제한다, 몰랐던 AI 전처리의 진실",
       "category": "ai",
@@ -76338,102 +76305,6 @@
       "completed_at": "2026-10-31T16:00:59.921608+00:00"
     },
     {
-      "id": "4676-en-buying-guide-MacBook-Air-M4-vs-Wi",
-      "keyword": "MacBook Air M4 vs Windows laptop for non-tech users 2026",
-      "category": "buying-guide",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-31T13:26:34.228107",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "노트북 교체를 앞둔 일반 직장인·대학생이 운영체제·브랜드 선택을 위해 검색",
-      "angle": "스펙 표 대신 '실제 하루 업무에서 어떤 차이가 나는가' 시나리오 중심 비교 — 코딩 무관, 오피스·크리에이티브 작업 위주",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "MacBook vs Windows Laptop: Which Should You Buy in 2026?",
-          "url": "https://www.shamimtechreview.com/macbook-vs-windows-laptop/",
-          "source": "www.shamimtechreview.com"
-        },
-        {
-          "title": "macOS vs Windows 2026: Tested Speed, Battery, Price [Guide]",
-          "url": "https://tech-insider.org/macos-vs-windows-2026/",
-          "source": "tech-insider.org"
-        },
-        {
-          "title": "Mac vs PC 2026: Which Should You Buy? | aversusb | A Versus B",
-          "url": "https://www.aversusb.net/blog/mac-vs-pc-2026-which-should-you-buy",
-          "source": "www.aversusb.net"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4677-en-ai-Are-AI-art-tools-goi",
-      "keyword": "Are AI art tools going to replace graphic designers",
-      "category": "ai",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-10-31T13:26:34.228135",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "디자이너 또는 디자이너 지망생이 직업 미래에 대해 불안감·궁금증으로 검색",
-      "angle": "실제 디자인 에이전시·프리랜서 사례를 통해 '대체'보다 '업무 비중 변화'를 보여주는 현실적 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Will AI Replace Graphic Designers? | Coursera",
-          "url": "https://www.coursera.org/articles/will-ai-replace-graphic-designers",
-          "source": "www.coursera.org"
-        },
-        {
-          "title": "Will AI Replace Graphic Designers? The Fear vs. The Facts | Clutch.co",
-          "url": "https://clutch.co/resources/will-ai-replace-graphic-designers",
-          "source": "clutch.co"
-        },
-        {
-          "title": "Is AI Replacing Graphic Design Jobs?",
-          "url": "https://obu.edu/stories/blog/2026/06/will-ai-replace-graphic-design-jobs.php",
-          "source": "obu.edu"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4678-en-buying-guide-Notion-vs-Obsidian-f",
-      "keyword": "Notion vs Obsidian for everyday note taking 2026",
-      "category": "buying-guide",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-10-31T13:26:34.228163",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "노트 앱 선택을 고민하는 직장인·대학생이 어떤 앱이 자신에게 맞는지 비교 결정",
-      "angle": "개발자 기능(플러그인 등) 배제, 일상 메모·프로젝트 관리·일정 관리 시나리오 중심으로 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Obsidian vs Notion: Honest comparison in 2026 (I tried both)",
-          "url": "https://www.productivetemply.com/blog/notion-vs-obsidian",
-          "source": "www.productivetemply.com"
-        },
-        {
-          "title": "Notion vs Obsidian: No Single Winner Overall [2026]",
-          "url": "https://tech-insider.org/notion-vs-obsidian-2026/",
-          "source": "tech-insider.org"
-        },
-        {
-          "title": "Notion vs Obsidian – All Features Compared (2026)",
-          "url": "https://productive.io/blog/notion-vs-obsidian/",
-          "source": "productive.io"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4679-ko-ai-ChatGPT-유료-구독-2026년에",
       "keyword": "ChatGPT 유료 구독 2026년에도 가치 있을까",
       "category": "ai",
@@ -76466,38 +76337,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-10-31T15:37:47.728331+00:00",
       "completed_at": "2026-10-31T15:48:09.005684+00:00"
-    },
-    {
-      "id": "4680-ko-tech-economy-AI가-디자이너-직업을-진짜로-대체할",
-      "keyword": "AI가 디자이너 직업을 진짜로 대체할까 2026 현실",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-10-31T13:26:34.228246",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "디자이너 또는 디자인 취업 준비생이 직업 미래에 대한 불안감·궁금증으로 검색",
-      "angle": "국내 디자인 에이전시·스타트업 채용 트렌드와 실제 디자이너 인터뷰를 통해 '대체'가 아닌 '역할 재편' 시각으로 서술",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI 때문에 디자이너 직업 사라질까, 2026년 실제 현장 이야기 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-17-ai-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%A7%81%EC%97%85-%EC%82%AC%EB%9D%BC%EC%A7%88%EA%B9%8C-%EC%8B%A4%EC%A0%9C-%ED%98%84%EC%9E%A5-%EC%9D%B4%EC%95%BC%EA%B8%B0-2026/",
-          "source": "jakeinsight.com"
-        },
-        {
-          "title": "디자이너 90%가 사라진다? 2026년 AI 시대 크리에이터 생존 마스터플랜 - artcopost",
-          "url": "https://artcopost.com/%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%82%AC%EB%9D%BC%EC%A7%84%EB%8B%A4-2026%EB%85%84-ai-%EC%8B%9C%EB%8C%80-%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0-%EC%83%9D%EC%A1%B4/",
-          "source": "artcopost.com"
-        },
-        {
-          "title": "Will AI Replace Designers? Creative Jobs and AI in 2026 | Zarif Automates",
-          "url": "https://www.zarifautomates.com/blog/will-ai-replace-designers",
-          "source": "www.zarifautomates.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "4681-ko-ai-노션-AI-실제로-써보니-솔직-후기-",
@@ -76534,65 +76373,575 @@
       "completed_at": "2026-10-31T16:04:28.241654+00:00"
     },
     {
-      "id": "4682-ko-tech-economy-유튜브-알고리즘-2026-왜-이상한-",
-      "keyword": "유튜브 알고리즘 2026 왜 이상한 영상만 추천할까",
+      "id": "4682-en-ai-ChatGPT-token-limit:",
+      "keyword": "ChatGPT token limit: is Plus still worth paying for",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.411799",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users are alarmed by OpenAI's new token-based metering and want to know if their subscription still makes financial sense",
+      "angle": "Practical cost-per-use breakdown for a non-developer ChatGPT Plus subscriber",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "ChatGPT Usage Limits 2026: Free, Plus and Pro Message Caps",
+          "url": "https://www.ai-toolbox.co/chatgpt-management-and-productivity/chatgpt-limits-messages-tokens-rate-2026",
+          "source": "www.ai-toolbox.co"
+        },
+        {
+          "title": "Pricing | ChatGPT Learn",
+          "url": "https://learn.chatgpt.com/docs/pricing",
+          "source": "learn.chatgpt.com"
+        },
+        {
+          "title": "ChatGPT Pricing October 2026: Plans, API Cost, and Is It Worth It?",
+          "url": "https://geotoolbox.ai/blog/chatgpt-pricing",
+          "source": "geotoolbox.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4683-en-tech-economy-Screen-Studio-4.0-re",
+      "keyword": "Screen Studio 4.0 review: best screen recorder for Mac in 2025",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.411854",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Mac users making tutorial or demo videos are comparing paid recorders before buying",
+      "angle": "Feature-by-feature comparison for a non-developer creative who records occasional demos",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "12 Best Screen Recording Software for 2026, by OS and Job",
+          "url": "https://saascrmreview.com/best-screen-recording-software/",
+          "source": "saascrmreview.com"
+        },
+        {
+          "title": "Top 11 Screen Recorders for Mac [2026] - Filmora",
+          "url": "https://filmora.wondershare.com/screen-recorder/screen-record-on-mac.html",
+          "source": "filmora.wondershare.com"
+        },
+        {
+          "title": "Screen Studio Pricing (2026): $29/mo or $9/mo Billed Yearly",
+          "url": "https://screenforge.co/blog/screen-studio-alternative-screenforge-comparison/",
+          "source": "screenforge.co"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4684-en-tech-economy-AI-coding-agents-for",
+      "keyword": "AI coding agents for non-developers: what can they actually do for you",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.411894",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Non-technical users are curious whether the wave of AI coding tools has anything useful for them",
+      "angle": "Honest explainer for marketers, designers, and students who keep hearing about coding agents",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI coding agents for non-developers: what they do and where they fail",
+          "url": "https://www.masaischool.com/blog/ai-coding-agents-for-non-developers/",
+          "source": "www.masaischool.com"
+        },
+        {
+          "title": "31 Best AI Coding Agents in 2026 — Agentic.ai",
+          "url": "https://agentic.ai/best/coding-agents",
+          "source": "agentic.ai"
+        },
+        {
+          "title": "Best Free AI Coding Agents in 2026 (Open Source, BYOK, No Subscription) | Admix Blog",
+          "url": "https://admix.software/blog/best-free-ai-coding-agents",
+          "source": "admix.software"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4685-ko-ai-ChatGPT-토큰제로-바뀐다는데,-",
+      "keyword": "ChatGPT 토큰제로 바뀐다는데, 플러스 구독 계속 유지해야 하나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.411928",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ChatGPT Plus 사용자들이 정책 변경 이후 구독 유지 여부를 결정하려고 검색",
+      "angle": "일반 직장인·대학생 관점에서 토큰제 전환이 실제 사용 패턴에 미치는 영향 분석",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "2026 챗GPT 해지방법 3가지, 앱만 지우면 계속 결제돼요 결제처별 총정리",
+          "url": "https://groundche.com/chatgpt-cancel-subscription-guide/",
+          "source": "groundche.com"
+        },
+        {
+          "title": "2026 챗GPT 구글플레이 해지 바로가기｜정기결제 취소 3단계·앱 삭제·환불 신청·이중결제 해결",
+          "url": "https://www.make2t.kr/2026/10/2026-chatgpt-google-play-subscription-cancel-guide.html",
+          "source": "www.make2t.kr"
+        },
+        {
+          "title": "ChatGPT 구독 취소·환불 방법 2026 — Plus 해지하고 요금 안 나가게 하는 법 | HowtoAI",
+          "url": "https://www.how-toai.com/blog/chatgpt-subscription-cancel-refund-2026",
+          "source": "www.how-toai.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4686-ko-tech-economy-AI-에이전트가-영상-편집까지-다-해",
+      "keyword": "AI 에이전트가 영상 편집까지 다 해준다는데, 유튜버가 직접 써봤다",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.411960",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "영상 제작 부담을 줄이고 싶은 1인 크리에이터·마케터가 AI 도구 도입 전 실제 사례를 찾는 중",
+      "angle": "비개발자 크리에이터 시각에서 품질·시간 절약·비용을 균형 있게 평가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI가 광고를 다 해준다고? 이미지 제작부터 광고 셋팅까지, 제가 한번 직접 써봤습니다 - YouTube",
+          "url": "https://www.youtube.com/watch?v=FklB2MrJEws",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "촬영본 없어도 숏폼 완성…피카디, 문장 하나로 영상 만드는 '피카에이전트' 공개 < AI·빅데이터 < 기사본문 - 한국데이터경제신문",
+          "url": "https://www.dataeconomy.co.kr/news/articleView.html?idxno=43596",
+          "source": "www.dataeconomy.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4687-ko-ai-코딩-모르는-직장인도-AI-코딩-에이",
+      "keyword": "코딩 모르는 직장인도 AI 코딩 에이전트 써볼 수 있나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.411995",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "비개발자 직장인·대학생이 AI 코딩 에이전트 열풍 속에서 본인이 활용할 수 있는지 탐색 중",
+      "angle": "마케터·기획자·디자이너 관점에서 실제 사용 시나리오와 한계를 정직하게 소개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "웹 개발 강사가 추천하는 Claude Code 강의 — 코드 말고 '일'을 시키는 AI 에이전트 만들기",
+          "url": "https://alikerock.tistory.com/entry/%EC%9B%B9-%EA%B0%9C%EB%B0%9C-%EA%B0%95%EC%82%AC%EA%B0%80-%EC%B6%94%EC%B2%9C%ED%95%98%EB%8A%94-Claude-Code-%EA%B0%95%EC%9D%98-%E2%80%94-%EC%BD%94%EB%93%9C-%EB%A7%90%EA%B3%A0-%EC%9D%BC%EC%9D%84-%EC%8B%9C%ED%82%A4%EB%8A%94-AI-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0",
+          "source": "alikerock.tistory.com"
+        },
+        {
+          "title": "AI 에이전트, 진작 만들어볼걸… | 구독자 무료 자료 제공, 클로드로 ai 에이전트 만들기 활용법 총정리 - YouTube",
+          "url": "https://www.youtube.com/watch?v=urlbNkusl1Q",
+          "source": "www.youtube.com"
+        },
+        {
+          "title": "바이브 코딩 - 나무위키",
+          "url": "https://namu.wiki/w/%EB%B0%94%EC%9D%B4%EB%B8%8C%20%EC%BD%94%EB%94%A9",
+          "source": "namu.wiki"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4688-ko-tech-economy-스크롤-중독에서-벗어나려는-직장인이-",
+      "keyword": "스크롤 중독에서 벗어나려는 직장인이 실제로 효과 본 디지털 습관 도구",
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-10-31T13:26:34.228358",
+      "created_at": "2026-11-01T14:08:20.412028",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "유튜브 추천 피드가 이상하다고 느끼는 일반 사용자의 궁금증·불만 해소 검색",
-      "angle": "알고리즘 작동 방식을 비전문가 언어로 설명하고, 추천 피드를 스스로 개선하는 실용 팁으로 마무리",
+      "keyword_type": "trend",
+      "search_intent": "스마트폰 과사용으로 일상과 업무가 무너졌다고 느끼는 사람이 실질적 해결책을 찾는 중",
+      "angle": "의지력 훈련보다 환경 설계에 초점 — 실제 사용자가 검증한 앱·설정·루틴 소개",
       "competition_level": "low",
       "references": [
         {
-          "title": "유튜브 알고리즘은 왜 같은 것만 추천할까, AI와 인터넷도 경험에 갇힌다 | 장르없음",
-          "url": "https://rensestory44.tistory.com/1398",
-          "source": "rensestory44.tistory.com"
+          "title": "Why Can't I Stop Scrolling? Habit, Boredom, Reward, and Stopping Cues | Psychology by Bogdanova",
+          "url": "https://psychologybybogdanova.com/publications/why-cant-i-stop-scrolling-habit-boredom-reward-and-stopping-cues/",
+          "source": "psychologybybogdanova.com"
         },
         {
-          "title": "유튜브 알고리즘 - 나무위키",
-          "url": "https://namu.wiki/w/%EC%9C%A0%ED%8A%9C%EB%B8%8C%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98",
-          "source": "namu.wiki"
+          "title": "7장 디지털 문해력: 지금 당장 스크롤을 멈춰야 하는 이유 · Issue #1889 · jongfeel/BookReview · GitHub",
+          "url": "https://github.com/jongfeel/BookReview/issues/1889",
+          "source": "github.com"
         },
         {
-          "title": "[알쓸신기] ⑮ \"하나만 더 보고 자야지\" 하다가 새벽 2시…유튜브 쇼츠 알고리즘 뭐길래 - 디지털데일리",
-          "url": "https://m.ddaily.co.kr/page/view/2026070916234092162",
-          "source": "m.ddaily.co.kr"
+          "title": "Analog Hobbies: A Better Alternative to Scrolling",
+          "url": "https://www.hercampus.com/school/cincinnati/analog-hobbies-a-better-alternative-to-scrolling/",
+          "source": "www.hercampus.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4689-ko-ai-Ideogram-AI-이미지-편집-기",
+      "keyword": "Ideogram AI 이미지 편집 기능 업데이트, 디자인 모르는 사람도 쓸 만한가",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412071",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 이미지 생성 도구를 비교 중인 마케터·대학생이 Ideogram 신기능의 실용성을 확인하려는 중",
+      "angle": "비디자이너가 Canva AI, Adobe Firefly와 비교했을 때 Ideogram 정밀 편집의 실제 차이를 평가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "로고 생성 넘어 SVG 편집 파일로...이디오그램, 벡터 AI로 디자인 실무 공략 < AI기술 < 기사본문 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=216679",
+          "source": "www.aitimes.com"
+        },
+        {
+          "title": "AI Vector Generator: Ready-to-use SVG Artwork | Ideogram",
+          "url": "https://ideogram.ai/models/vector/",
+          "source": "ideogram.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4690-en-buying-guide-Notion-AI-vs-ChatGPT",
+      "keyword": "Notion AI vs ChatGPT for work tasks: which one actually saves time",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412177",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "업무 생산성 도구를 고르면서 Notion AI와 ChatGPT 중 어디에 돈을 쓸지 비교하려는 사람",
+      "angle": "스타트업 직원·사무직 관점, 실제 업무 시나리오(회의록, 기획서, 요약)로 양쪽을 직접 비교하는 솔직 리뷰 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Notion AI vs ChatGPT: Which Is Better for Work? (2026)",
+          "url": "https://techjacksolutions.com/ai-tools/notion-ai/notion-ai-vs-chatgpt/",
+          "source": "techjacksolutions.com"
+        },
+        {
+          "title": "Notion AI vs ChatGPT: Which Fits Your Work? | Coursiv Blog",
+          "url": "https://coursiv.io/blog/notion-ai-vs-chatgpt",
+          "source": "coursiv.io"
+        },
+        {
+          "title": "Notion AI vs ChatGPT for Work: Which One Actually Saves More Time? | AI Productivity Hub",
+          "url": "https://aiproductivityhub.co/blog/notion-ai-vs-chatgpt-work/",
+          "source": "aiproductivityhub.co"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "4683-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-실제",
-      "keyword": "토스 vs 카카오뱅크 AI 기능 실제로 다른 점",
+      "id": "4691-en-buying-guide-MacBook-Air-M4-vs-Wi",
+      "keyword": "MacBook Air M4 vs Windows laptop for everyday non-technical users 2026",
       "category": "buying-guide",
-      "lang": "ko",
+      "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-10-31T13:26:34.228389",
+      "created_at": "2026-11-01T14:08:20.412283",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "주거래 앱을 고민하는 20~40대가 AI 기반 금융 기능 차이를 비교하려는 탐색·결정 검색",
-      "angle": "지출 분석·챗봇 상담·맞춤 추천 등 실생활 금융 시나리오별로 두 앱의 AI 기능 차이를 비교 — 금융 전문 용어 없이 서술",
+      "search_intent": "개발자가 아닌 일반 사용자가 새 노트북 구매를 앞두고 맥북과 윈도우 중 고민하는 상황",
+      "angle": "코딩·영상편집 제외, 오피스 업무·줌 미팅·AI 도구 사용 같은 일상 업무 기준으로 비교하는 친근한 톤",
       "competition_level": "low",
       "references": [
         {
-          "title": "[금융 서비스 비교] 카카오뱅크 vs 토스: 신용카드 추천 기능",
-          "url": "https://velog.io/@aabb510/%EA%B8%88%EC%9C%B5-%EC%84%9C%EB%B9%84%EC%8A%A4-%EB%B9%84%EA%B5%90-%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-vs-%ED%86%A0%EC%8A%A4-%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C-%EC%B6%94%EC%B2%9C",
-          "source": "velog.io"
+          "title": "MacBook vs Windows Laptop: Which Should You Buy in 2026?",
+          "url": "https://www.shamimtechreview.com/macbook-vs-windows-laptop/",
+          "source": "www.shamimtechreview.com"
         },
         {
-          "title": "'AI뱅크'로 달리는 인터넷은행...기술주도권 경쟁 치열 - 전자신문",
-          "url": "https://www.etnews.com/20251215000252",
-          "source": "www.etnews.com"
+          "title": "MacBook Air vs Windows laptops: Which one makes more sense in 2026? | Mint",
+          "url": "https://www.livemint.com/gadgets-and-appliances/macbook-air-vs-windows-laptops-which-one-makes-more-sense-in-2026-11780568343543.html",
+          "source": "www.livemint.com"
         },
         {
-          "title": "토스뱅크 vs 카카오뱅크 직장인 주거래 통장 비교 :: 월급이 모자라서 AI랑 부업 시작했습니다",
-          "url": "https://myjob-ai.tistory.com/34",
-          "source": "myjob-ai.tistory.com"
+          "title": "macOS vs Windows 2026: Tested Speed, Battery, Price [Guide]",
+          "url": "https://tech-insider.org/macos-vs-windows-2026/",
+          "source": "tech-insider.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4692-en-tech-economy-Why-does-my-Instagra",
+      "keyword": "Why does my Instagram algorithm feel broken in 2026 — what actually changed",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412322",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "인스타그램 피드가 이상하게 느껴져서 알고리즘 변화를 이해하고 싶은 일반 사용자·크리에이터",
+      "angle": "기술 용어 없이, '내 피드에 왜 모르는 사람 게시물이 뜨지?' 같은 사용자 경험에서 출발해 알고리즘 변화를 해석하는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/InstagramMarketing on Reddit: What’s Going on With Instagram in 2026? Algorithm Changes, Reach Dro",
+          "url": "https://www.reddit.com/r/InstagramMarketing/comments/1rev1fz/whats_going_on_with_instagram_in_2026_algorithm/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Why Does My Instagram Feed Feel So Algorithmically Weird in 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/tech-economy/2026-08-07-instagram-feed-feel-so-algorithmically-weird-2026/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "Instagram Algorithm Changes: 2026 Update",
+          "url": "https://goso.io/instagram-updates/instagram-algorithm-change-2026/",
+          "source": "goso.io"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4693-ko-ai-ChatGPT-유료-구독-한-달-써본",
+      "keyword": "ChatGPT 유료 구독 한 달 써본 솔직 후기 — 일반 직장인 관점",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412357",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ChatGPT Plus 결제가 실제로 가치 있는지 구매 전에 실사용 후기를 찾는 직장인",
+      "angle": "개발자가 아닌 기획·마케팅·사무직 직장인 시점에서 한 달 사용 후 달라진 점과 실망한 점을 솔직하게 쓰는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT(챗지피티) 유료 결제 고민 중이라면? Go vs Plus 한 달 내돈내산 솔직 후기 (장단점 비교) | 키나1004 : 네이버 블로그",
+          "url": "https://m.blog.naver.com/kinaart1004/224358233012?recommendCode=2&recommendTrackingCode=2",
+          "source": "m.blog.naver.com"
+        },
+        {
+          "title": "ChatGPT 무료 유료 차이, 직접 써본 Plus 후기 (2026년 7월) - 노마드툴박스 | NomadToolbox",
+          "url": "https://bymodi.com/chatgpt-free-vs-plus/",
+          "source": "bymodi.com"
+        },
+        {
+          "title": "직장인 ChatGPT vs 클로드 유료 구독 비교, 2026년엔 이게 정답입니다 :: 슬기로운 생.활.",
+          "url": "https://vivia2020.tistory.com/203",
+          "source": "vivia2020.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4694-ko-tech-economy-AI가-내-디자이너-직업을-대체할까-",
+      "keyword": "AI가 내 디자이너 직업을 대체할까 — 2026년 현실",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412385",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "디자이너로 일하면서 AI 때문에 커리어가 위협받을까 걱정돼 실제 상황을 파악하려는 사람",
+      "angle": "현직 디자이너 눈높이에서 미드저니·어도비 AI가 실제 업무에서 대체한 부분과 못 대체하는 부분을 구분해 주는 현실적 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 때문에 디자이너 직업 사라질까, 2026년 실제 현장 이야기 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-17-ai-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%A7%81%EC%97%85-%EC%82%AC%EB%9D%BC%EC%A7%88%EA%B9%8C-%EC%8B%A4%EC%A0%9C-%ED%98%84%EC%9E%A5-%EC%9D%B4%EC%95%BC%EA%B8%B0-2026/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "디자이너 90%가 사라진다? 2026년 AI 시대 크리에이터 생존 마스터플랜 - artcopost",
+          "url": "https://artcopost.com/%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%82%AC%EB%9D%BC%EC%A7%84%EB%8B%A4-2026%EB%85%84-ai-%EC%8B%9C%EB%8C%80-%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0-%EC%83%9D%EC%A1%B4/",
+          "source": "artcopost.com"
+        },
+        {
+          "title": "AI 일자리 위협 2026 현실 | 내 직업 대체될 확률과 살아남는 직종 분석",
+          "url": "https://ayoteralab.tistory.com/entry/AI-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%9C%84%ED%98%91-2026-%ED%98%84%EC%8B%A4-%EB%82%B4-%EC%A7%81%EC%97%85-%EB%8C%80%EC%B2%B4%EB%90%A0-%ED%99%95%EB%A5%A0%EA%B3%BC-%EC%82%B4%EC%95%84%EB%82%A8%EB%8A%94-%EC%A7%81%EC%A2%85-%EB%B6%84%EC%84%9D",
+          "source": "ayoteralab.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4695-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
+      "keyword": "갤럭시 S25 vs 아이폰 16 AI 기능 실제로 써보니 차이점",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412412",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "스마트폰 교체를 앞두고 갤럭시와 아이폰의 AI 기능 차이를 실제 사용 관점에서 비교하려는 소비자",
+      "angle": "사진 편집·번역·통화 요약 등 일상 시나리오별로 두 폰의 AI 기능 체감 차이를 비기너 톤으로 비교하는 글",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "갤럭시 S25 vs 아이폰 16, 6개월 써보니 매일 쓴 AI 기능이 달랐다 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-10-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%95%84%EC%9D%B4%ED%8F%B0-16-ai-%EA%B8%B0%EB%8A%A5-%EC%8B%A4%EC%A0%9C-%EB%B9%84%EA%B5%90-%EC%9D%BC%EB%B0%98%EC%9D%B8-%EA%B4%80%EC%A0%90/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "아이폰 16보다 갤럭시S25 더 좋은 5가지 이유 완벽정리 - 자동차 금융 가이드",
+          "url": "https://carfinance.co.kr/%EC%95%84%EC%9D%B4%ED%8F%B0-16%EB%B3%B4%EB%8B%A4-%EA%B0%A4%EB%9F%AD%EC%8B%9Cs25-%EB%8D%94-%EC%A2%8B%EC%9D%80-5%EA%B0%80%EC%A7%80-%EC%9D%B4%EC%9C%A0-%EC%99%84%EB%B2%BD%EC%A0%95%EB%A6%AC/",
+          "source": "carfinance.co.kr"
+        },
+        {
+          "title": "Galaxy S25 vs iPhone 16 🔥 Full Comparison | Camera, Battery & Performance - YouTube",
+          "url": "https://www.youtube.com/watch?v=FoDGP0mIayk",
+          "source": "www.youtube.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4696-ko-side-income-AI로-부업하는-현실적인-방법-202",
+      "keyword": "AI로 부업하는 현실적인 방법 2026 — 직장인이 실제로 돈 번 사례",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412468",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI를 활용해 부수입을 만들고 싶은 직장인·대학생이 실현 가능한 방법을 찾는 상황",
+      "angle": "블로그 수익화·전자책·AI 이미지 판매 등 실제 수익이 난 사례 중심으로 현실적 기대치를 잡아주는 솔직한 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 부업 현실 2026 — 월 50만원 진짜 가능? 4가지 유형 현실 점검 | HowtoAI",
+          "url": "https://www.how-toai.com/blog/ai-side-job-reality-review-2026",
+          "source": "www.how-toai.com"
+        },
+        {
+          "title": "2026 직장인 부업 추천 7가지: AI 시대에도 실제로 남는 일 | 와플보드",
+          "url": "https://waffleboard.io/blog/office-worker-side-hustles-2026",
+          "source": "waffleboard.io"
+        },
+        {
+          "title": "2026년 AI로 부수입 만드는 현실적인 방법 5가지라이프너드",
+          "url": "https://korlifenerd.com/ai-side-income-realistic-guide-2026/",
+          "source": "korlifenerd.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4697-ko-buying-guide-클로드-vs-챗GPT-vs-제미나이-",
+      "keyword": "클로드 vs 챗GPT vs 제미나이 한국어 실력 비교 2026",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412524",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 작업에 어떤 AI가 가장 자연스러운지 직접 비교해서 하나를 고르려는 사람",
+      "angle": "이메일 작성·보고서 요약·아이디어 브레인스토밍 같은 실무 태스크로 세 AI를 한국어 품질 기준만으로 비교하는 실용 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 챗봇 비교: 챗GPT·클로드·제미나이 2026 | 비젠소프트",
+          "url": "https://www.vizensoft.com/about/itinsight/read?no=813",
+          "source": "www.vizensoft.com"
+        },
+        {
+          "title": "챗GPT·제미나이·클로드 비교 (2026) - 나에게 맞는 AI 고르기 - 교풀(Gyopool)",
+          "url": "https://www.gyopool.com/blog/chatgpt-gemini-claude-comparison-2026",
+          "source": "www.gyopool.com"
+        },
+        {
+          "title": "클로드 vs 챗GPT vs 제미나이, 2026년 코딩 실력 승자는? (비개발자 추천까지)",
+          "url": "https://lone-m.tistory.com/entry/%ED%81%B4%EB%A1%9C%EB%93%9C-vs-%EC%B1%97GPT-vs-%EC%A0%9C%EB%AF%B8%EB%82%98%EC%9D%B4-2026%EB%85%84-%EC%BD%94%EB%94%A9-%EC%8B%A4%EB%A0%A5-%EC%8A%B9%EC%9E%90%EB%8A%94-%EB%B9%84%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%B6%94%EC%B2%9C%EA%B9%8C%EC%A7%80",
+          "source": "lone-m.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4698-ko-ai-노션-AI-진짜-쓸-만한가-—-유료-",
+      "keyword": "노션 AI 진짜 쓸 만한가 — 유료 전환 전에 알아야 할 것",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412556",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "노션 AI 유료 기능이 가치 있는지 결제 전에 실사용 정보를 찾는 사람",
+      "angle": "노션을 이미 무료로 쓰는 직장인·학생 관점에서 유료 AI 기능이 실제로 업무를 얼마나 바꿔주는지 체험 중심으로 쓰는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "노션 AI 어디까지 쓸 수 있을까?｜기능·요금·활용법 정리 - 윈스펙 커뮤니티",
+          "url": "https://winspec.co.kr/community/lecture/131202503",
+          "source": "winspec.co.kr"
+        },
+        {
+          "title": "노션 AI 무료로 어디까지 쓸까 — 2026 요금 개편 총정리 (에이전트까지)",
+          "url": "https://duckssi.tistory.com/219",
+          "source": "duckssi.tistory.com"
+        },
+        {
+          "title": "노션 AI 사용법 2026 — 무료로 어디까지 될까? 요금제 총정리 :: on:기록",
+          "url": "https://arkelab.com/86",
+          "source": "arkelab.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4699-ko-tech-economy-유튜브-알고리즘이-이상해진-이유-20",
+      "keyword": "유튜브 알고리즘이 이상해진 이유 2026 — 내 피드가 달라진 진짜 원인",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-01T14:08:20.412584",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "최근 유튜브 추천 영상이 취향과 달라졌다고 느끼며 이유를 궁금해하는 일반 사용자",
+      "angle": "기술 설명 최소화, '왜 갑자기 관심 없는 영상만 뜨지?' 같은 사용자 경험에서 출발해 알고리즘 변화를 쉽게 풀어주는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/NewTubers on Reddit: Has anyone's algorithms been weird since the 10.01.2026",
+          "url": "https://www.reddit.com/r/NewTubers/comments/1qdn772/has_anyones_algorithms_been_weird_since_the/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "2026 유튜브 알고리즘의 변화 | 비주얼센터 | 시각언어연구소 Lab",
+          "url": "https://visual.center/posts/36",
+          "source": "visual.center"
+        },
+        {
+          "title": "🎬유튜브 알고리즘 완벽 분석! 조회수 올리는 영상 제작 전략 2026",
+          "url": "https://zooearth.tistory.com/entry/%F0%9F%8E%AC%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%99%84%EB%B2%BD-%EB%B6%84%EC%84%9D-%EC%A1%B0%ED%9A%8C%EC%88%98-%EC%98%AC%EB%A6%AC%EB%8A%94-%EC%98%81%EC%83%81-%EC%A0%9C%EC%9E%91-%EC%A0%84%EB%9E%B5-2026",
+          "source": "zooearth.tistory.com"
         }
       ],
       "content_type_hint": "GUIDE"

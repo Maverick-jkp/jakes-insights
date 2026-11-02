@@ -76718,7 +76718,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200508",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76738,7 +76738,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:09:50.184738+00:00"
     },
     {
       "id": "4700-en-side-income-AI-writes-code-but-y",
@@ -76812,7 +76814,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200610",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76837,7 +76839,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:03:06.803134+00:00"
     },
     {
       "id": "4703-en-ai-AI-mind-mapping-tool",
@@ -76845,7 +76849,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200636",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76870,7 +76874,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:27:06.030391+00:00"
     },
     {
       "id": "4704-ko-ai-AI-에이전트-한계-직접-겪어봤다:-",
@@ -76906,7 +76912,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200678",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76931,7 +76937,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:13:51.674633+00:00"
     },
     {
       "id": "4706-ko-side-income-AI-코딩-도구-비개발자도-쓸-수-있",
@@ -76939,7 +76947,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200705",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76964,7 +76972,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:06:46.763995+00:00"
     },
     {
       "id": "4707-ko-ai-AI-마인드맵-도구-실제로-쓸-만한가",
@@ -76972,7 +76982,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200727",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -76997,7 +77007,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:30:24.951838+00:00"
     },
     {
       "id": "4708-ko-side-income-SEO-자동화-AI-도구-진짜-효과-",
@@ -77005,7 +77017,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200747",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77030,7 +77042,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:17:22.264691+00:00"
     },
     {
       "id": "4709-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -77070,7 +77084,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.200869",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -77094,7 +77108,9 @@
           "source": "flowstep.ai"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:20:39.048457+00:00"
     },
     {
       "id": "4711-en-ai-Are-AI-generated-ima",
@@ -77230,7 +77246,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.201000",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -77254,7 +77270,9 @@
           "source": "hoonnsol.tistory.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:23:49.872466+00:00"
     },
     {
       "id": "4716-ko-buying-guide-토스-vs-카카오뱅크-2026-—-직",
@@ -77262,7 +77280,7 @@
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-02T16:55:13.201087",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -77286,7 +77304,9 @@
           "source": "choojongbum.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-02T19:59:57.423023+00:00",
+      "completed_at": "2026-11-02T20:33:54.491701+00:00"
     }
   ]
 }

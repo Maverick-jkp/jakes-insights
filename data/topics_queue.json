@@ -77745,7 +77745,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402091",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77770,7 +77770,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:16:10.830050+00:00"
     },
     {
       "id": "4747-en-ai-ChatGPT-leaked-inter",
@@ -77778,7 +77780,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402118",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77803,7 +77805,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T17:55:58.696417+00:00"
     },
     {
       "id": "4748-en-tech-economy-AI-tools-replacing-n",
@@ -77844,7 +77848,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402148",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77869,7 +77873,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:19:20.897134+00:00"
     },
     {
       "id": "4750-ko-tech-economy-AI-에이전트-도구-진짜-쓸-만한가-",
@@ -77877,7 +77883,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402163",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77902,7 +77908,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:09:31.574150+00:00"
     },
     {
       "id": "4751-ko-ai-ChatGPT-내부-프롬프트-유출-나",
@@ -77910,7 +77918,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402177",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77935,7 +77943,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T17:59:33.914665+00:00"
     },
     {
       "id": "4752-ko-ai-오프라인-AI-앱-아이폰-개인정보-진",
@@ -77943,7 +77953,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402194",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -77968,7 +77978,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:22:57.507034+00:00"
     },
     {
       "id": "4753-ko-productivity-AI가-내-직장-업무를-대신한다면-나",
@@ -77976,7 +77988,7 @@
       "category": "productivity",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402209",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -78001,7 +78013,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:03:29.923534+00:00"
     },
     {
       "id": "4754-ko-tech-economy-AI-구독-여러-개-쓰는-게-낭비일까",
@@ -78009,7 +78023,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402222",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -78034,7 +78048,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:13:11.754878+00:00"
     },
     {
       "id": "4755-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -78074,7 +78090,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402320",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -78098,7 +78114,9 @@
           "source": "emergent.sh"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:06:11.089967+00:00"
     },
     {
       "id": "4757-ko-ai-ChatGPT-유료-플랜-월-3만원-",
@@ -78199,7 +78217,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-05T15:15:39.402435",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -78213,7 +78231,9 @@
           "source": "jakeinsight.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-05T17:52:38.947872+00:00",
+      "completed_at": "2026-11-05T18:26:12.915229+00:00"
     },
     {
       "id": "4762-ko-buying-guide-클로드-vs-챗GPT-한국어-글쓰기-",

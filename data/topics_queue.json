@@ -80051,39 +80051,6 @@
       "completed_at": "2026-11-12T18:28:26.855371+00:00"
     },
     {
-      "id": "4857-ko-side-income-AI로-GTM-전략-자동화,-스타트업",
-      "keyword": "AI로 GTM 전략 자동화, 스타트업 마케터 실제로 써봤더니",
-      "category": "side-income",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-12T15:51:44.237916",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "스타트업 마케터, 1인 창업자가 AI GTM 도구의 실용성과 직업 대체 가능성을 동시에 파악하려 검색",
-      "angle": "도구 소개보다 '이걸 쓰면 마케터 역할이 어떻게 바뀌나'에 집중한 직업 영향 + 실사용 후기 혼합",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI for GTM: How to Design Workflows That Are Safe to Operate -",
-          "url": "https://consultevo.com/ai-for-gtm-workflow-design/",
-          "source": "consultevo.com"
-        },
-        {
-          "title": "Top 10 AI Marketing Experts Automating Growth in 2026",
-          "url": "https://www.data-mania.com/blog/ai-marketing-experts-automating-growth/",
-          "source": "www.data-mania.com"
-        },
-        {
-          "title": "AI Marketing Automation: What to Automate, What Not To",
-          "url": "https://gauravphogat.com/ai-marketing-automation/",
-          "source": "gauravphogat.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4858-en-ai-Are-AI-art-generator",
       "keyword": "Are AI art generators killing freelance illustrators in 2026",
       "category": "ai",
@@ -80118,102 +80085,6 @@
       "completed_at": "2026-11-12T18:31:30.418438+00:00"
     },
     {
-      "id": "4859-en-ai-Best-AI-tools-for-sm",
-      "keyword": "Best AI tools for small business owners who hate tech jargon 2026",
-      "category": "ai",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-12T15:51:44.237974",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "소규모 사업자가 기술 배경 없이도 바로 쓸 수 있는 AI 도구를 찾는 중",
-      "angle": "스펙·API 설명 없이 '이걸 쓰면 뭐가 편해지나'만 중심으로 쓴 사장님 관점 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "7 Free AI Tools for Small Business Owners Who Hate Tech",
-          "url": "https://smartworkflowlab.com/blog/free-ai-tools-small-business/",
-          "source": "smartworkflowlab.com"
-        },
-        {
-          "title": "10 AI Tools for Small Business Owners 2026 - CatDoes",
-          "url": "https://catdoes.com/blog/10-ai-tools-for-small-business-owners-2026",
-          "source": "catdoes.com"
-        },
-        {
-          "title": "10 Best AI Tools for Small Business Owners in 2026: No-Code Setup Guide | MindStudio",
-          "url": "https://www.mindstudio.ai/blog/best-ai-tools-small-business-owners-2026",
-          "source": "www.mindstudio.ai"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4860-en-ai-Is-ChatGPT-Plus-wort",
-      "keyword": "Is ChatGPT Plus worth $20 a month in 2026 — honest review",
-      "category": "ai",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-12T15:51:44.237985",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "무료 버전 쓰다 유료 결제 고민하는 일반 사용자가 비용 대비 가치 판단",
-      "angle": "개인 사용자·직장인 기준 실제 사용 시나리오로 돈값 하는지 솔직하게 판단",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Is ChatGPT Plus Worth It in 2026? An Honest $20/mo Breakdown",
-          "url": "https://academy.techpresso.co/reviews/is-chatgpt-plus-worth-it",
-          "source": "academy.techpresso.co"
-        },
-        {
-          "title": "Is ChatGPT Plus Worth It in 2026? An Honest Yes, With Limits",
-          "url": "https://christopheralarcon.com/blog/is-chatgpt-plus-worth-it",
-          "source": "christopheralarcon.com"
-        },
-        {
-          "title": "Is ChatGPT Plus Worth It in 2026? An Honest Breakdown",
-          "url": "https://www.izzedo.chat/blog/is-chatgpt-plus-worth-it",
-          "source": "www.izzedo.chat"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4861-en-ai-How-to-make-side-inc",
-      "keyword": "How to make side income with AI tools in 2026 — no coding needed",
-      "category": "ai",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-12T15:51:44.237996",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "코딩 없이 AI로 부수입을 만들고 싶은 직장인·대학생이 현실적 방법 탐색",
-      "angle": "실제 수익화 가능한 방법만 추려 코드 없이 시작할 수 있는 단계별 소개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Make Money with AI in 2026: 12 Proven Ideas",
-          "url": "https://emergent.sh/learn/how-to-make-money-with-ai",
-          "source": "emergent.sh"
-        },
-        {
-          "title": "Best AI Side Hustles to Start in 2026 | Mercor",
-          "url": "https://www.mercor.com/resources/experts/best-ai-side-hustles/",
-          "source": "www.mercor.com"
-        },
-        {
-          "title": "How to Make Money With AI in 2026 (Realistic Ways That Don’t Require Coding)",
-          "url": "https://medium.com/freelancers-hub/how-to-make-money-with-ai-in-2026-realistic-ways-that-dont-require-coding-488625b7e47c",
-          "source": "medium.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4862-ko-ai-ChatGPT-유료-플랜-진짜-쓸-만",
       "keyword": "ChatGPT 유료 플랜 진짜 쓸 만한가 2026 솔직 후기",
       "category": "ai",
@@ -80236,33 +80107,6 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-11-12T17:56:59.003914+00:00",
       "completed_at": "2026-11-12T18:13:54.443681+00:00"
-    },
-    {
-      "id": "4863-ko-tech-economy-AI가-디자이너-일자리-없앨까-202",
-      "keyword": "AI가 디자이너 일자리 없앨까 2026 현직자 현실 이야기",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-12T15:51:44.238016",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "디자이너 또는 디자인 지망생이 직업 존속 여부에 대한 현실적 정보 탐색",
-      "angle": "공포 조장 아닌 실제 현직 디자이너 사례 중심으로 변화 방향을 담담하게 짚어주는 글",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI가 디자이너 일자리 없애고 있나, 현직자 솔직 얘기 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-08-ai%EA%B0%80-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%97%86%EC%95%A0%EA%B3%A0-%EC%9E%88%EB%82%98-%ED%98%84%EC%A7%81%EC%9E%90-%EC%86%94%EC%A7%81-%EC%96%98%EA%B8%B0/",
-          "source": "jakeinsight.com"
-        },
-        {
-          "title": "AI 시대, 디자이너의 일은 정말 사라질까? 냉정하게 정리한 현실과 준비법",
-          "url": "https://caresser.tistory.com/255",
-          "source": "caresser.tistory.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "4864-ko-ai-직장인-AI-부업-현실적으로-얼마-벌",
@@ -80294,44 +80138,476 @@
       "completed_at": "2026-11-12T18:17:48.700192+00:00"
     },
     {
-      "id": "4865-ko-ai-노션-AI-한-달-써본-솔직-후기-비",
-      "keyword": "노션 AI 한 달 써본 솔직 후기 비개발자 관점",
+      "id": "4865-en-ai-Claude-Meetings-AI:-",
+      "keyword": "Claude Meetings AI: is it worth adding AI to your work calls?",
       "category": "ai",
-      "lang": "ko",
-      "priority": 7,
+      "lang": "en",
+      "priority": 8,
       "status": "pending",
-      "created_at": "2026-11-12T15:51:44.238042",
+      "created_at": "2026-11-13T15:11:54.025711",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "노션 AI 구독을 고민하는 직장인·학생이 실제 비개발자 경험담을 탐색",
-      "angle": "기능 나열 아닌 '실제 업무에서 뭐가 편해졌고 뭐가 실망이었나' 사용기 톤",
+      "keyword_type": "trend",
+      "search_intent": "User wants to know if AI meeting assistants justify the cost before subscribing",
+      "angle": "Honest comparison of AI meeting tools for non-developers who sit in a lot of Zoom calls",
       "competition_level": "low",
       "references": [
         {
-          "title": "노션 AI 한 달 써봤더니 — 비개발자 마케터의 솔직 사용 후기 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/ai/2026-08-29-%EB%85%B8%EC%85%98-ai-%ED%95%9C-%EB%8B%AC-%EC%8D%A8%EB%B4%A4%EB%8D%94%EB%8B%88-%EB%B9%84%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%A7%88%EC%BC%80%ED%84%B0%EC%9D%98-%EC%86%94%EC%A7%81-%EC%82%AC%EC%9A%A9-%ED%9B%84%EA%B8%B0/",
+          "title": "Claude Meetings Explained: AI Joins Your Calls",
+          "url": "https://aiera.blog/claude-meetings-explained/",
+          "source": "aiera.blog"
+        },
+        {
+          "title": "Claude Meetings: Anthropic's AI Now Joins Your Video Calls",
+          "url": "https://blog.eif.am/claude-meetings-ai-video-calls/",
+          "source": "blog.eif.am"
+        },
+        {
+          "title": "What Anthropic Claude Meetings Means for Enterprises — UC Today",
+          "url": "https://uctoday.com/what-anthropic-claude-meetings-means-for-enterprises",
+          "source": "uctoday.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4866-en-tech-economy-WHOOP-social-network",
+      "keyword": "WHOOP social network: is sharing real health data with friends a good idea?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025775",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Current WHOOP users curious or skeptical about the new social feature",
+      "angle": "Privacy-first take on health data sharing for fitness-conscious but non-technical users",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Whoop just launched a social network | TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/whoop-just-launched-a-social-network/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "Whoop's New 'Verifiably Human' Social Network Feature Lets You Share Health Data - CNET",
+          "url": "https://www.cnet.com/tech/mobile/whoop-users-now-share-health-data-new-social-network-feature/",
+          "source": "www.cnet.com"
+        },
+        {
+          "title": "WHOOP Humans lets 3 million members share health data with friends",
+          "url": "https://ppc.land/whoop-humans-lets-3-million-members-share-health-data-with-friends/",
+          "source": "ppc.land"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4867-en-tech-economy-Kairos-personal-anal",
+      "keyword": "Kairos personal analytics app: can one app really track your health, money and social life?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025814",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Self-improvement minded user evaluating whether an all-in-one life analytics app is worth the effort",
+      "angle": "Skeptical but open-minded review for people who have tried and abandoned tracking apps before",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Best Budgeting Apps of 2026: Tested And Ranked – Forbes Advisor",
+          "url": "https://www.forbes.com/advisor/banking/best-budgeting-apps/",
+          "source": "www.forbes.com"
+        },
+        {
+          "title": "Kairos - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kairos",
+          "source": "en.wikipedia.org"
+        },
+        {
+          "title": "Best Calorie Tracking Apps of 2026: A Roundup of What Works — The Review Bench",
+          "url": "https://thereviewbench.com/reviews/best-calorie-tracking-apps-2026-roundup/",
+          "source": "thereviewbench.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4868-en-ai-ChatGPT-sending-unso",
+      "keyword": "ChatGPT sending unsolicited messages: what it means and should you be worried?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025850",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Casual ChatGPT user alarmed by unexpected AI behavior and looking for a plain-English explanation",
+      "angle": "Calm, fact-based explainer for non-technical users who felt surprised or unsettled by the experience",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "How to use AI and ChatGPT to avoid falling victim to fraud or scams - ABC7 New York",
+          "url": "https://abc7ny.com/post/how-use-ai-chatgpt-avoid-falling-victim-fraud-scams/20018402/",
+          "source": "abc7ny.com"
+        },
+        {
+          "title": "ChatGPT Security Flaw: What Happened and What Users Need to Know About Private Chats and Malware Ris",
+          "url": "https://gadgetsnow.indiatimes.com/tech-news/chatgpt-security-flaw-what-happened-and-what-users-need-to-know-about-private-chats-and-malware-risks/articleshow/135675637.cms",
+          "source": "gadgetsnow.indiatimes.com"
+        },
+        {
+          "title": "What Do Women Think When Guys Rely on AI to Flirt?",
+          "url": "https://www.esquire.com/lifestyle/sex/a74076291/ai-chatbots-flirting-texts/",
+          "source": "www.esquire.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4869-ko-ai-Claude-미팅-AI-직장인-써볼-",
+      "keyword": "Claude 미팅 AI 직장인 써볼 만한가, 화상회의 AI 비교",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025879",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "재택·하이브리드 근무 직장인이 AI 회의 도구 도입 전에 실사용 후기를 찾는 상황",
+      "angle": "개발자가 아닌 일반 직장인 관점에서 실무에 진짜 도움이 되는지 체크리스트 형식으로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "회의 참석에 업무 처리까지…직장 동료 된 클로드 < Tech < Industry < 기사본문 - 포춘코리아",
+          "url": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54719",
+          "source": "www.fortunekorea.co.kr"
+        },
+        {
+          "title": "Anthropic targets workplace collaboration with Claude Meetings – Computerworld",
+          "url": "https://www.computerworld.com/article/4247466/anthropic-targets-workplace-collaboration-with-claude-meetings.html",
+          "source": "www.computerworld.com"
+        },
+        {
+          "title": "Introducing Claude Meetings, now in beta | Claude by Anthropic",
+          "url": "https://claude.com/resources/articles/claude-meetings",
+          "source": "claude.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4870-ko-tech-economy-구글-픽셀-태그-출시,-갤럭시-사용자",
+      "keyword": "구글 픽셀 태그 출시, 갤럭시 사용자 에어태그 대신 살 만한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025904",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "안드로이드 사용자가 분실 방지 태그 구매 전 에어태그와 성능 차이를 비교하려는 상황",
+      "angle": "갤럭시 중심 국내 안드로이드 사용자 시각에서 실사용 비교, 에어태그 대비 무엇이 부족하고 무엇이 나은지",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "구글 픽셀 태그 11월 11일 출시…29.99달러에 NFC·버튼 갖춰 에어태그에 도전장 | 위키트리",
+          "url": "https://www.wikitree.co.kr/articles/1173903",
+          "source": "www.wikitree.co.kr"
+        },
+        {
+          "title": "Pixel Tag, Google's $30 Android-ready answer to Apple's AirTag, is now available | TechCrunch",
+          "url": "https://techcrunch.com/2026/11/10/pixel-tag-googles-30-android-ready-answer-to-apples-airtag-is-now-available/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "Google's Pixel Tag is finally here, and it has one clever trick Apple's AirTag doesn't - Digital Tre",
+          "url": "https://www.digitaltrends.com/phones/googles-pixel-tag-is-finally-here-and-it-has-one-clever-trick-apples-airtag-doesnt/",
+          "source": "www.digitaltrends.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4871-ko-ai-ChatGPT가-혼자-먼저-말을-걸었",
+      "keyword": "ChatGPT가 혼자 먼저 말을 걸었다, AI가 갑자기 달라진 이유",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025932",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "ChatGPT를 쓰다가 갑자기 AI가 먼저 메시지를 보내서 당황한 사용자가 이유를 찾는 상황",
+      "angle": "비개발자가 이해할 수 있는 언어로 AI의 proactive 기능 변화를 설명하고 개인정보 측면도 짚어주는 글",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT - 나무위키",
+          "url": "https://namu.wiki/w/ChatGPT",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "My ChatGPT is acting weird - Bugs - OpenAI Developer Community",
+          "url": "https://community.openai.com/t/my-chatgpt-is-acting-weird/1414065",
+          "source": "community.openai.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4872-ko-tech-economy-WHOOP-헬스-소셜-네트워크,-건강",
+      "keyword": "WHOOP 헬스 소셜 네트워크, 건강 데이터 친구에게 공유해도 되나",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025963",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "웨어러블 기기 사용자 혹은 WHOOP 구매 고려자가 소셜 기능의 개인정보 위험을 판단하려는 상황",
+      "angle": "건강 데이터 프라이버시에 민감한 한국 사용자 관점에서 SNS 연동 기능의 득실을 현실적으로 따져보는 글",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Whoop's New 'Verifiably Human' Social Network Feature Lets You Share Health Data - CNET",
+          "url": "https://www.cnet.com/tech/mobile/whoop-users-now-share-health-data-new-social-network-feature/",
+          "source": "www.cnet.com"
+        },
+        {
+          "title": "Whoop just launched a social network | TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/whoop-just-launched-a-social-network/",
+          "source": "techcrunch.com"
+        },
+        {
+          "title": "WHOOP Humans lets 3 million members share health data with friends",
+          "url": "https://ppc.land/whoop-humans-lets-3-million-members-share-health-data-with-friends/",
+          "source": "ppc.land"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4873-ko-tech-economy-AI로-내-삶-전체-분석하는-앱,-편",
+      "keyword": "AI로 내 삶 전체 분석하는 앱, 편리한가 아니면 과한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.025989",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "자기관리에 관심 있지만 앱 피로도가 있는 직장인·대학생이 올인원 AI 분석 앱의 실효성을 확인하려는 상황",
+      "angle": "앱을 깔고 며칠 쓰다 포기한 경험이 있는 일반인 관점에서 AI 생활 분석 앱이 실제로 행동 변화를 만드는지 검증",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI Personal Mentor: Purpose – Align with What Matters",
+          "url": "https://purpose.app/",
+          "source": "purpose.app"
+        },
+        {
+          "title": "AI Life Coach: We Tested The 3 Best Apps in 2026 | Saner.AI",
+          "url": "https://www.saner.ai/blogs/best-ai-life-coach",
+          "source": "www.saner.ai"
+        },
+        {
+          "title": "<사주 상담비 10만 원 아끼고 내 운명 흐름 3분 만에 정밀 분석하는 생성형 AI 프롬프트 7가지 활용법> - TILNOTE",
+          "url": "https://tilnote.io/en/pages/6af64abb92f7070ddf9604b4",
+          "source": "tilnote.io"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4874-en-buying-guide-Notion-AI-vs-ChatGPT",
+      "keyword": "Notion AI vs ChatGPT for work tasks — which saves more time",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.026103",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "이미 Notion 쓰는 직장인이 ChatGPT 추가 구독이 필요한지 비교 결정",
+      "angle": "회의록 정리·이메일 초안·프로젝트 계획 등 실제 사무 작업별 1:1 비교 — 구독료 가성비 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Notion AI vs ChatGPT: Which Is Better for Work? (2026)",
+          "url": "https://techjacksolutions.com/ai-tools/notion-ai/notion-ai-vs-chatgpt/",
+          "source": "techjacksolutions.com"
+        },
+        {
+          "title": "Notion AI vs ChatGPT: Which Fits Your Work? | Coursiv Blog",
+          "url": "https://coursiv.io/blog/notion-ai-vs-chatgpt",
+          "source": "coursiv.io"
+        },
+        {
+          "title": "Notion AI vs ChatGPT for Work: Which One Actually Saves More Time? | AI Productivity Hub",
+          "url": "https://aiproductivityhub.co/blog/notion-ai-vs-chatgpt-work/",
+          "source": "aiproductivityhub.co"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4875-en-ai-How-to-make-money-wi",
+      "keyword": "How to make money with AI side hustle in 2026 — realistic options",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.026160",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI로 부수입을 원하지만 어디서 시작해야 할지 모르는 일반 직장인·대학생의 실행 탐색",
+      "angle": "과장된 '월 1,000만 원' 클릭베이트 없이 — 실제로 시작 가능한 5가지 방법과 현실적인 수익 범위",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI Side Hustles in 2026: Ideas and Skills You Need",
+          "url": "https://blog.udemy.com/how-to-use-ai-for-side-hustles/",
+          "source": "blog.udemy.com"
+        },
+        {
+          "title": "AI Side Hustles: How Real People Are Making Money with AI in 2026 | Side Hustle School",
+          "url": "https://sidehustleschool.com/guides/ai-side-hustles/",
+          "source": "sidehustleschool.com"
+        },
+        {
+          "title": "Best AI Side Hustles to Start in 2026 | Mercor",
+          "url": "https://www.mercor.com/resources/experts/best-ai-side-hustles/",
+          "source": "www.mercor.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4876-ko-ai-ChatGPT-유료-플랜-2026년에",
+      "keyword": "ChatGPT 유료 플랜 2026년에도 가치 있나 — 솔직 비교",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.026212",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "무료로 쓰다가 유료 전환을 고민하는 직장인·대학생의 구독 결정",
+      "angle": "월 2만 원 아까운지 아닌지 — 무료 vs Plus vs 무료 Claude 비교로 실사용자 관점에서 답 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT 유료 플랜 2026년에도 진짜 쓸 만한가 — 6개 플랜 비교 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-08-23-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-2026%EB%85%84%EC%97%90%EB%8F%84-%EC%A7%84%EC%A7%9C-%EC%93%B8-%EB%A7%8C%ED%95%9C%EA%B0%80/",
           "source": "jakeinsight.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "4866-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-실생",
-      "keyword": "토스 vs 카카오뱅크 AI 기능 실생활 비교 2026",
+      "id": "4877-ko-tech-economy-AI가-마케터-일자리-없앨까-—-20",
+      "keyword": "AI가 마케터 일자리 없앨까 — 2026년 현실 사례",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.026233",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "마케터·홍보 직군이 커리어 불안에서 현실을 파악하려 검색",
+      "angle": "공포 조장 대신 실제 기업 사례 — 어떤 마케팅 업무가 줄었고 어떤 역할이 오히려 커졌는지 균형 있게",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI가 마케터 일을 빼앗고 있을까 2026 현실: 사라지는 직무와 살아남는 역할 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-15-ai%EA%B0%80-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9D%84-%EB%B9%BC%EC%95%97%EA%B3%A0-%EC%9E%88%EC%9D%84%EA%B9%8C-2026-%ED%98%84%EC%8B%A4/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4878-ko-ai-노션-AI-한-달-써본-후기-—-직장",
+      "keyword": "노션 AI 한 달 써본 후기 — 직장인 솔직 사용기",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.026279",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "노션 AI 추가 구독이 실제로 도움이 되는지 결정 전에 타인의 경험을 찾는 직장인",
+      "angle": "개발자 아닌 기획자·마케터 시점의 솔직 후기 — 잘 된 것·실망한 것 양쪽 다 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "노션 AI 한 달 써본 직장인 솔직 후기 — 월 $15 가성비 분석 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-09-01-%EB%85%B8%EC%85%98-ai-%ED%95%9C-%EB%8B%AC-%EC%8D%A8%EB%B3%B8-%EC%A7%81%EC%9E%A5%EC%9D%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0-%EA%B0%80%EC%84%B1%EB%B9%84-%EB%B6%84%EC%84%9D/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4879-ko-side-income-직장인이-AI로-부업하는-현실적인-방",
+      "keyword": "직장인이 AI로 부업하는 현실적인 방법 5가지 2026",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-13T15:11:54.026337",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "본업 외 수입을 원하는 직장인·대학생이 AI를 활용한 부업 가능성 탐색",
+      "angle": "과장 없이 실제 시작 가능한 방법 — 블로그 수익화, AI 번역, 콘텐츠 제작 등 단계별 현실적 가이드",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[현실적 부업] 2026년 AI로 월 부수입 만드는 5가지 전략 (직장인 필독)",
+          "url": "https://kyun0218.tistory.com/342",
+          "source": "kyun0218.tistory.com"
+        },
+        {
+          "title": "직장인 AI로 부업 시작하는 현실적인 방법 2026: 퇴근 후 두 시간으로 월 50만 원 버는 루트 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/side-income/2026-08-18-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai%EB%A1%9C-%EB%B6%80%EC%97%85-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EB%B0%A9%EB%B2%95-2026/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "AI로 부업하기: ChatGPT 활용해서 월 100만원 추가 수입 만드는 법 | N잡노트 블로그",
+          "url": "https://njobnote.com/blog/ai-side-hustle-chatgpt",
+          "source": "njobnote.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4880-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-비교",
+      "keyword": "토스 vs 카카오뱅크 AI 기능 비교 — 어느 쪽이 더 똑똑해졌나",
       "category": "buying-guide",
       "lang": "ko",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-11-12T15:51:44.238059",
+      "created_at": "2026-11-13T15:11:54.026389",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "핀테크 앱 선택 또는 메인 앱 전환을 고민하는 직장인이 AI 기능 차이 비교",
-      "angle": "금융 전문 용어 없이 소비 관리·알림·챗봇 등 실생활 기능 차이를 중심으로 비교",
+      "search_intent": "두 앱을 모두 쓰는 일반 사용자가 금융 AI 기능 차이와 실용성을 비교",
+      "angle": "소비 분석·자동 저축·챗봇 상담 등 실제 금융 생활 시나리오별 비교 — 어느 쪽이 더 쓸 만한지 결론 제시",
       "competition_level": "low",
       "references": [
         {
-          "title": "토스 vs 카카오뱅크 AI 금융 기능 실사용 비교 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-08-%ED%86%A0%EC%8A%A4-%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-ai-%EA%B8%88%EC%9C%B5-%EA%B8%B0%EB%8A%A5-2026-%EC%8B%A4%EC%82%AC%EC%9A%A9-%EB%B9%84%EA%B5%90/",
+          "title": "토스 vs 카카오뱅크 AI 금융 기능, 어느 쪽이 더 편할까 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-13-%ED%86%A0%EC%8A%A4-%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-ai-%EA%B8%88%EC%9C%B5-%EA%B8%B0%EB%8A%A5-%EC%96%B4%EB%8A%90-%EC%AA%BD%EC%9D%B4-%EB%8D%94-%ED%8E%B8%ED%95%A0%EA%B9%8C/",
           "source": "jakeinsight.com"
         }
       ],

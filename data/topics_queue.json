@@ -80208,105 +80208,6 @@
       "completed_at": "2026-11-13T17:53:23.085578+00:00"
     },
     {
-      "id": "4867-en-tech-economy-Kairos-personal-anal",
-      "keyword": "Kairos personal analytics app: can one app really track your health, money and social life?",
-      "category": "tech-economy",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-13T15:11:54.025814",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Self-improvement minded user evaluating whether an all-in-one life analytics app is worth the effort",
-      "angle": "Skeptical but open-minded review for people who have tried and abandoned tracking apps before",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Best Budgeting Apps of 2026: Tested And Ranked – Forbes Advisor",
-          "url": "https://www.forbes.com/advisor/banking/best-budgeting-apps/",
-          "source": "www.forbes.com"
-        },
-        {
-          "title": "Kairos - Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Kairos",
-          "source": "en.wikipedia.org"
-        },
-        {
-          "title": "Best Calorie Tracking Apps of 2026: A Roundup of What Works — The Review Bench",
-          "url": "https://thereviewbench.com/reviews/best-calorie-tracking-apps-2026-roundup/",
-          "source": "thereviewbench.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "4868-en-ai-ChatGPT-sending-unso",
-      "keyword": "ChatGPT sending unsolicited messages: what it means and should you be worried?",
-      "category": "ai",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-13T15:11:54.025850",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Casual ChatGPT user alarmed by unexpected AI behavior and looking for a plain-English explanation",
-      "angle": "Calm, fact-based explainer for non-technical users who felt surprised or unsettled by the experience",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "How to use AI and ChatGPT to avoid falling victim to fraud or scams - ABC7 New York",
-          "url": "https://abc7ny.com/post/how-use-ai-chatgpt-avoid-falling-victim-fraud-scams/20018402/",
-          "source": "abc7ny.com"
-        },
-        {
-          "title": "ChatGPT Security Flaw: What Happened and What Users Need to Know About Private Chats and Malware Ris",
-          "url": "https://gadgetsnow.indiatimes.com/tech-news/chatgpt-security-flaw-what-happened-and-what-users-need-to-know-about-private-chats-and-malware-risks/articleshow/135675637.cms",
-          "source": "gadgetsnow.indiatimes.com"
-        },
-        {
-          "title": "What Do Women Think When Guys Rely on AI to Flirt?",
-          "url": "https://www.esquire.com/lifestyle/sex/a74076291/ai-chatbots-flirting-texts/",
-          "source": "www.esquire.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "4869-ko-ai-Claude-미팅-AI-직장인-써볼-",
-      "keyword": "Claude 미팅 AI 직장인 써볼 만한가, 화상회의 AI 비교",
-      "category": "ai",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-13T15:11:54.025879",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "재택·하이브리드 근무 직장인이 AI 회의 도구 도입 전에 실사용 후기를 찾는 상황",
-      "angle": "개발자가 아닌 일반 직장인 관점에서 실무에 진짜 도움이 되는지 체크리스트 형식으로 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "회의 참석에 업무 처리까지…직장 동료 된 클로드 < Tech < Industry < 기사본문 - 포춘코리아",
-          "url": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54719",
-          "source": "www.fortunekorea.co.kr"
-        },
-        {
-          "title": "Anthropic targets workplace collaboration with Claude Meetings – Computerworld",
-          "url": "https://www.computerworld.com/article/4247466/anthropic-targets-workplace-collaboration-with-claude-meetings.html",
-          "source": "www.computerworld.com"
-        },
-        {
-          "title": "Introducing Claude Meetings, now in beta | Claude by Anthropic",
-          "url": "https://claude.com/resources/articles/claude-meetings",
-          "source": "claude.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4870-ko-tech-economy-구글-픽셀-태그-출시,-갤럭시-사용자",
       "keyword": "구글 픽셀 태그 출시, 갤럭시 사용자 에어태그 대신 살 만한가",
       "category": "tech-economy",
@@ -80510,50 +80411,6 @@
       "completed_at": "2026-11-13T17:41:01.499517+00:00"
     },
     {
-      "id": "4876-ko-ai-ChatGPT-유료-플랜-2026년에",
-      "keyword": "ChatGPT 유료 플랜 2026년에도 가치 있나 — 솔직 비교",
-      "category": "ai",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-13T15:11:54.026212",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "무료로 쓰다가 유료 전환을 고민하는 직장인·대학생의 구독 결정",
-      "angle": "월 2만 원 아까운지 아닌지 — 무료 vs Plus vs 무료 Claude 비교로 실사용자 관점에서 답 제시",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "ChatGPT 유료 플랜 2026년에도 진짜 쓸 만한가 — 6개 플랜 비교 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/ai/2026-08-23-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-2026%EB%85%84%EC%97%90%EB%8F%84-%EC%A7%84%EC%A7%9C-%EC%93%B8-%EB%A7%8C%ED%95%9C%EA%B0%80/",
-          "source": "jakeinsight.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4877-ko-tech-economy-AI가-마케터-일자리-없앨까-—-20",
-      "keyword": "AI가 마케터 일자리 없앨까 — 2026년 현실 사례",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-13T15:11:54.026233",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "마케터·홍보 직군이 커리어 불안에서 현실을 파악하려 검색",
-      "angle": "공포 조장 대신 실제 기업 사례 — 어떤 마케팅 업무가 줄었고 어떤 역할이 오히려 커졌는지 균형 있게",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI가 마케터 일을 빼앗고 있을까 2026 현실: 사라지는 직무와 살아남는 역할 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-15-ai%EA%B0%80-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9D%84-%EB%B9%BC%EC%95%97%EA%B3%A0-%EC%9E%88%EC%9D%84%EA%B9%8C-2026-%ED%98%84%EC%8B%A4/",
-          "source": "jakeinsight.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4878-ko-ai-노션-AI-한-달-써본-후기-—-직장",
       "keyword": "노션 AI 한 달 써본 후기 — 직장인 솔직 사용기",
       "category": "ai",
@@ -80578,38 +80435,6 @@
       "completed_at": "2026-11-13T17:50:21.626937+00:00"
     },
     {
-      "id": "4879-ko-side-income-직장인이-AI로-부업하는-현실적인-방",
-      "keyword": "직장인이 AI로 부업하는 현실적인 방법 5가지 2026",
-      "category": "side-income",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-13T15:11:54.026337",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "본업 외 수입을 원하는 직장인·대학생이 AI를 활용한 부업 가능성 탐색",
-      "angle": "과장 없이 실제 시작 가능한 방법 — 블로그 수익화, AI 번역, 콘텐츠 제작 등 단계별 현실적 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "[현실적 부업] 2026년 AI로 월 부수입 만드는 5가지 전략 (직장인 필독)",
-          "url": "https://kyun0218.tistory.com/342",
-          "source": "kyun0218.tistory.com"
-        },
-        {
-          "title": "직장인 AI로 부업 시작하는 현실적인 방법 2026: 퇴근 후 두 시간으로 월 50만 원 버는 루트 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/side-income/2026-08-18-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai%EB%A1%9C-%EB%B6%80%EC%97%85-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EB%B0%A9%EB%B2%95-2026/",
-          "source": "jakeinsight.com"
-        },
-        {
-          "title": "AI로 부업하기: ChatGPT 활용해서 월 100만원 추가 수입 만드는 법 | N잡노트 블로그",
-          "url": "https://njobnote.com/blog/ai-side-hustle-chatgpt",
-          "source": "njobnote.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4880-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-비교",
       "keyword": "토스 vs 카카오뱅크 AI 기능 비교 — 어느 쪽이 더 똑똑해졌나",
       "category": "buying-guide",
@@ -80632,6 +80457,455 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-11-13T17:31:49.176030+00:00",
       "completed_at": "2026-11-13T18:04:38.562447+00:00"
+    },
+    {
+      "id": "4881-en-buying-guide-AI-coding-cost:-is-C",
+      "keyword": "AI coding cost: is CodeMesh worth it for non-developers?",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972278",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users paying for GitHub Copilot or Cursor want to know if they can get the same results for less money",
+      "angle": "Cost-vs-value comparison for everyday digital workers, not just engineers",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "CodeMesh：将 AI 编程成本降低 90% · QMReader",
+          "url": "https://rss.qiaomu.ai/articles/codemesh-%E5%B0%86-ai-%E7%BC%96%E7%A8%8B%E6%88%90%E6%9C%AC%E9%99%8D%E4%BD%8E-90--92aea274ef74",
+          "source": "rss.qiaomu.ai"
+        },
+        {
+          "title": "How to Use AI for Coding If You're Not a Developer (2026 Guide)",
+          "url": "https://www.uselearnai.com/blog/how-to-use-ai-for-coding-non-developers-2026",
+          "source": "www.uselearnai.com"
+        },
+        {
+          "title": "AI Coding Plan Comparison 2026: Prices, Limits, and Features",
+          "url": "https://www.scriptbyai.com/ai-coding-plan-comparison/",
+          "source": "www.scriptbyai.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4882-en-ai-Gemini-Robotics-2.5:",
+      "keyword": "Gemini Robotics 2.5: what does Google's robot AI mean for everyday jobs?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972321",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "General audience curious about how advanced robotics AI translates from lab demos to real-world job impact",
+      "angle": "Plain-language explainer aimed at office workers and service industry employees, not robotics engineers",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Gemini Robotics 2.5: Accelerating Physical Intelligence — Google DeepMind",
+          "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+          "source": "deepmind.google"
+        },
+        {
+          "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\" - Ars Technica",
+          "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+          "source": "arstechnica.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4883-en-ai-ChatGPT-for-business",
+      "keyword": "ChatGPT for businesses: is it actually useful for small business owners?",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972345",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Small business owners and marketers want to know if they need to optimize for ChatGPT the same way they did for Google SEO",
+      "angle": "Non-technical business owner perspective on what ChatGPT business listings mean for discoverability and marketing spend",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "Best Practices For Smart Business Owners Wanting To Make Optimal Use Of OpenAI’s New ‘Businesses In ",
+          "url": "https://www.forbes.com/sites/lanceeliot/2026/11/13/best-practices-for-smart-business-owners-wanting-to-make-optimal-use-of-openais-new-businesses-in-chatgpt/",
+          "source": "www.forbes.com"
+        },
+        {
+          "title": "ChatGPT’s New Business Hub: What It Is and What It Means for Small Businesses | Patrick Iverson",
+          "url": "https://patrickiverson.com/wordpress-development/chatgpt-business-hub-small-business/",
+          "source": "patrickiverson.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4884-en-tech-economy-Blender-5.3-Gaussian",
+      "keyword": "Blender 5.3 Gaussian splats: what does this mean for 3D beginners?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972366",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Designers, marketers, and content creators wondering whether new Blender features lower the barrier to entry for 3D and AI-generated visuals",
+      "angle": "Non-technical explainer focused on what Gaussian splat technology enables for creators without a 3D background",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Blender 5.3: Splat Happens, and Everything Else Gets Better | DIGITAL PRODUCTION",
+          "url": "https://digitalproduction.com/2026/11/11/blender-5-3-splat-happens-and-everything-else-gets-better/",
+          "source": "digitalproduction.com"
+        },
+        {
+          "title": "Blender 5.3 imports and edits Gaussian Splats | heise online",
+          "url": "https://www.heise.de/en/news/Blender-5-3-imports-and-edits-Gaussian-Splats-11520011.html",
+          "source": "www.heise.de"
+        },
+        {
+          "title": "Blender 5.3 Ships Native Gaussian Splatting — Here’s What Changed | byteiota",
+          "url": "https://byteiota.com/blender-5-3-ships-native-gaussian-splatting-heres-what-changed/",
+          "source": "byteiota.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4885-ko-tech-economy-AI-코딩-비용-90%-절감-가능한가",
+      "keyword": "AI 코딩 비용 90% 절감 가능한가, 직장인도 쓸 수 있나",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972385",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "GitHub Copilot이나 Cursor 등 AI 코딩 도구를 쓰는 비개발자 직장인이 대안이 있는지 검색",
+      "angle": "개발자가 아닌 마케터, 기획자, 대학생 관점에서 AI 코딩 도구의 실제 가성비 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "<외주 개발비 300만 원 아끼고 클로드로 15분 만에 웹사이트 완성하는 3가지 방법> - TILNOTE",
+          "url": "https://tilnote.io/en/pages/6af3a3b73f50d40607ec2725",
+          "source": "tilnote.io"
+        },
+        {
+          "title": "AWS Technologist: How to Strategically Cut AI Coding Costs by Up to 80%",
+          "url": "https://theaiinnovator.com/aws-technologist-how-to-strategically-cut-ai-coding-costs-by-up-to-80/",
+          "source": "theaiinnovator.com"
+        },
+        {
+          "title": "Spotify's Claude Code Token Trick, Tested: The Real Savings",
+          "url": "https://www.aibyaakash.com/p/spotifys-90-trick",
+          "source": "www.aibyaakash.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4886-ko-ai-구글-Gemini-로보틱스-2.5,-",
+      "keyword": "구글 Gemini 로보틱스 2.5, 내 직업에 진짜 영향 주나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972403",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 자동화 뉴스에 불안감을 느끼는 일반 직장인이 자신의 직업 안전성을 확인하려고 검색",
+      "angle": "로봇공학 전문가 아닌 일반인 눈높이에서 Gemini Robotics 2.5가 실제로 어떤 직종에 영향을 미치는지 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\" - Ars Technica",
+          "url": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+          "source": "arstechnica.com"
+        },
+        {
+          "title": "구글, '제미나이 로보틱스 2.5' 공개…공장 작업 성공률 96% < AI기술 < 기사본문 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=217274",
+          "source": "www.aitimes.com"
+        },
+        {
+          "title": "구글, ‘제미나이 로보틱스 2.5’ 공개…휴머노이드 로봇 손재주·작업 신뢰성 대폭 향상 < 기술 < 인공지능 < 기사본문 - 로봇신문",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49525",
+          "source": "www.irobotnews.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4887-ko-side-income-ChatGPT-비즈니스-등록-기능,-",
+      "keyword": "ChatGPT 비즈니스 등록 기능, 내 가게 올려야 하나",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972419",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "자영업자, 1인 사업자, 프리랜서가 ChatGPT를 통한 신규 고객 유입 가능성을 알아보려고 검색",
+      "angle": "네이버 플레이스나 구글 마이비즈니스처럼 ChatGPT 비즈니스 등록이 한국 소상공인에게 의미 있는지 현실적으로 따져보는 관점",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT에 내 매장을 등록? 가이드!",
+          "url": "https://news.aikoreacommunity.com/businesses-in-chatgpt-beta-korea-seller-profile-agent/",
+          "source": "news.aikoreacommunity.com"
+        },
+        {
+          "title": "Introducing Businesses in ChatGPT | OpenAI",
+          "url": "https://openai.com/index/introducing-businesses-chatgpt/",
+          "source": "openai.com"
+        },
+        {
+          "title": "Setting up your business on ChatGPT | OpenAI Help Center",
+          "url": "https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt",
+          "source": "help.openai.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4888-ko-tech-economy-AI-회의록-앱,-봇-없이-쓸-수-있",
+      "keyword": "AI 회의록 앱, 봇 없이 쓸 수 있나 2025 비교",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972441",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "재택근무자, 팀장, 프리랜서가 AI 회의록의 필요성은 느끼지만 봇 참여에 대한 팀 내 거부감 때문에 대안을 검색",
+      "angle": "봇 참여 방식과 로컬 기반 AI 회의록 방식을 직장인 관점에서 비교하고 어떤 상황에 뭘 써야 하는지 안내",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "실시간 음성 번역 AI 5종 비교 (2026년) - 티로 블로그",
+          "url": "https://tiro.ooo/ko/blog/real-time-voice-translation-ai",
+          "source": "tiro.ooo"
+        },
+        {
+          "title": "Best AI Meeting Note Taker: 9 Tools Compared on Price, Privacy and Bots (2026)",
+          "url": "https://bestaimeetingnotetaker.com/",
+          "source": "bestaimeetingnotetaker.com"
+        },
+        {
+          "title": "AI Note Taker Without a Bot: 10 Tools Compared (2026) - Reline",
+          "url": "https://www.reline.so/blog/ai-meeting-notes-without-bot",
+          "source": "www.reline.so"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4889-ko-side-income-ChatGPT로-게임-만들기,-비개발",
+      "keyword": "ChatGPT로 게임 만들기, 비개발자도 진짜 가능한가",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972459",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "코딩 비전공자, 직장인, 대학생이 AI를 활용해 사이드 프로젝트를 시작하거나 수익화할 수 있는지 현실적인 가능성을 확인하려는 검색",
+      "angle": "실제 Reddit 사례를 바탕으로 비개발자가 ChatGPT로 게임이나 간단한 앱을 만드는 과정의 현실적 한계와 가능성을 함께 보여주는 관점",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[영상] “코딩 하나도 모르는데 이걸 만들었다고?”…나흘 만에 ‘대작’ 뚝딱 만든 비결은 | 서울경제",
+          "url": "https://m.sedaily.com/article/20114263",
+          "source": "m.sedaily.com"
+        },
+        {
+          "title": "\"코딩 하나도 모르는데 이걸 만들었다고?\"…나흘 만에 '대작' 뚝딱 만든 비결은 : 네이트 뉴스",
+          "url": "https://m.news.nate.com/view/20261113n30503",
+          "source": "m.news.nate.com"
+        },
+        {
+          "title": "이제 3D게임도 채팅으로 만들고 모델링 하는 1인 개발 시대가 왔습니다 - YouTube",
+          "url": "https://www.youtube.com/watch?v=ddpQcE1krlU",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4890-en-buying-guide-MacBook-Air-M4-vs-Wi",
+      "keyword": "MacBook Air M4 vs Windows laptop under $1000 for college students 2026",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972593",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "대학 입학·신학기를 앞두고 예산 내에서 맥북과 윈도우 노트북 중 무엇이 더 나은지 구매 결정을 내리려는 의도",
+      "angle": "코딩 없이 문서 작성·영상 편집·강의 녹화 등 대학생 실사용 시나리오 중심으로 비교 — 가성비 & AI 기능 포함",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "MacBook Air M4 vs Windows Laptop for Students and Remote Workers 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/buying-guide/2026-07-28-macbook-air-m4-windows-laptop-students-remote/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "Best Laptops for College Students in 2026 - TopChoicesLab",
+          "url": "https://topchoiceslab.com/guides/best-laptops-for-college.php",
+          "source": "topchoiceslab.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4891-en-tech-economy-Why-does-YouTube-kee",
+      "keyword": "Why does YouTube keep recommending videos I don't like in 2026",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972614",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "유튜브 추천 알고리즘이 자신의 취향과 맞지 않는다고 느끼는 일반 사용자가 그 이유와 해결책을 찾으려는 의도",
+      "angle": "알고리즘 작동 원리를 비전문가도 이해할 수 있게 풀어주고, 실제로 추천을 개선할 수 있는 간단한 설정 팁까지 제공",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "r/youtube on Reddit: YouTube keeps recommending videos I've already watched -- a LOT",
+          "url": "https://www.reddit.com/r/youtube/comments/1thngti/youtube_keeps_recommending_videos_ive_already/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "Stop getting bad YouTube recommendations with 4 simple steps - Engadget",
+          "url": "https://www.engadget.com/2242780/how-to-get-better-youtube-recommendations/",
+          "source": "www.engadget.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4892-ko-ai-ChatGPT-유료-플랜-월-2만원-",
+      "keyword": "ChatGPT 유료 플랜 월 2만원 진짜 쓸 가치 있나 2026",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972630",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ChatGPT Plus 구독을 고민 중인 직장인·학생이 무료 버전과 비교해 돈을 낼 만큼 실질적 차이가 있는지 판단하려는 의도",
+      "angle": "개발자가 아닌 일반 직장인·대학생의 실제 사용 사례(문서 요약, 번역, 아이디어 발상)를 기준으로 솔직한 후기 형식",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT 유료 플랜 월 2만원 진짜 가치 있나 2026: Free·Go·Plus·Pro 요금제 비교 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-08-08-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-%EC%9B%94-2%EB%A7%8C%EC%9B%90-%EC%A7%84%EC%A7%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%82%98-2026/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4893-ko-side-income-AI로-월-부수입-50만원-만들기-현",
+      "keyword": "AI로 월 부수입 50만원 만들기 현실적인 방법 2026",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972645",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "직장을 다니면서 AI를 활용해 현실적인 부업 수입을 만들고 싶은 사람이 구체적인 방법을 찾으려는 의도",
+      "angle": "과도한 성공 사례가 아닌 실제로 시작 가능한 블로그 수익화·AI 번역·프롬프트 판매 등 5가지 방법을 단계별로 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026년 AI로 부수입 만드는 현실적인 방법 5가지라이프너드",
+          "url": "https://korlifenerd.com/ai-side-income-realistic-guide-2026/",
+          "source": "korlifenerd.com"
+        },
+        {
+          "title": "[현실적 부업] 2026년 AI로 월 부수입 만드는 5가지 전략 (직장인 필독)",
+          "url": "https://kyun0218.tistory.com/342",
+          "source": "kyun0218.tistory.com"
+        },
+        {
+          "title": "직장인 AI로 부업 시작하는 현실적인 방법 2026: 퇴근 후 두 시간으로 월 50만 원 버는 루트 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/side-income/2026-08-18-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai%EB%A1%9C-%EB%B6%80%EC%97%85-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EB%B0%A9%EB%B2%95-2026/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4894-ko-tech-economy-AI-때문에-마케터-일자리-없어지나-",
+      "keyword": "AI 때문에 마케터 일자리 없어지나 실제 현장 이야기 2026",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972677",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "마케터 또는 마케팅 직종을 준비 중인 사람이 AI로 인한 직업 변화를 현실적으로 파악하고 대비하려는 의도",
+      "angle": "공포 조장 없이 실제 국내 마케팅 에이전시·인하우스 팀의 사례를 바탕으로 사라지는 역할과 살아남는 역할을 균형 있게 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 때문에 마케터 일자리 없어질까 2026 현실적 답변: 사라지는 게 아니라 분리된다 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-18-ai-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%97%86%EC%96%B4%EC%A7%88%EA%B9%8C-2026-%ED%98%84%EC%8B%A4%EC%A0%81-%EB%8B%B5%EB%B3%80/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4895-ko-tech-economy-유튜브-알고리즘이-이상해진-이유-20",
+      "keyword": "유튜브 알고리즘이 이상해진 이유 2026 — 내 추천 피드 왜 이러나",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-11-14T14:01:03.972727",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "유튜브 추천 영상이 자신의 취향과 달라졌다고 느끼는 일반 사용자가 원인과 해결 방법을 찾으려는 의도",
+      "angle": "알고리즘 변화를 비전문가 언어로 설명하고, 추천 피드를 직접 개선할 수 있는 실용적인 설정 팁 3~5가지를 제공하는 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "유튜브 알고리즘이 내 취향을 못 맞추는 이유 2026: 구조와 리셋 방법 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-13-%EC%9C%A0%ED%8A%9C%EB%B8%8C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%EC%9D%B4-%EB%82%B4-%EC%B7%A8%ED%96%A5%EC%9D%84-%EB%AA%BB-%EB%A7%9E%EC%B6%94%EB%8A%94-%EC%9D%B4%EC%9C%A0-2026/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "r/NewTubers on Reddit: Has anyone's algorithms been weird since the 10.01.2026",
+          "url": "https://www.reddit.com/r/NewTubers/comments/1qdn772/has_anyones_algorithms_been_weird_since_the/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "[유튜브 꿀팁] 알고리즘 초기화 안 될 때 추천 피드 100% 클린하게 바꾸는 법 (2026최신) : 네이버 블로그",
+          "url": "https://m.blog.naver.com/you365day/224378880626",
+          "source": "m.blog.naver.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

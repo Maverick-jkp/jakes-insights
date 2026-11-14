@@ -80464,7 +80464,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972278",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -80489,7 +80489,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:30:27.112270+00:00"
     },
     {
       "id": "4882-en-ai-Gemini-Robotics-2.5:",
@@ -80525,7 +80527,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972345",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -80545,7 +80547,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:33:25.759860+00:00"
     },
     {
       "id": "4884-en-tech-economy-Blender-5.3-Gaussian",
@@ -80553,7 +80557,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972366",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -80578,7 +80582,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:43:18.482108+00:00"
     },
     {
       "id": "4885-ko-tech-economy-AI-코딩-비용-90%-절감-가능한가",
@@ -80652,7 +80658,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972419",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -80677,7 +80683,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:36:25.109208+00:00"
     },
     {
       "id": "4888-ko-tech-economy-AI-회의록-앱,-봇-없이-쓸-수-있",
@@ -80685,7 +80693,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972441",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -80710,7 +80718,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:46:24.233195+00:00"
     },
     {
       "id": "4889-ko-side-income-ChatGPT로-게임-만들기,-비개발",
@@ -80718,7 +80728,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972459",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -80743,7 +80753,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:40:21.892216+00:00"
     },
     {
       "id": "4890-en-buying-guide-MacBook-Air-M4-vs-Wi",
@@ -80778,7 +80790,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 6,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972614",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -80797,7 +80809,9 @@
           "source": "www.engadget.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:48:28.837881+00:00"
     },
     {
       "id": "4892-ko-ai-ChatGPT-유료-플랜-월-2만원-",
@@ -80805,7 +80819,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-14T14:01:03.972630",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -80819,7 +80833,9 @@
           "source": "jakeinsight.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-14T16:24:08.341832+00:00",
+      "completed_at": "2026-11-14T16:27:25.248042+00:00"
     },
     {
       "id": "4893-ko-side-income-AI로-월-부수입-50만원-만들기-현",

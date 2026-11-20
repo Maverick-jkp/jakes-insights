@@ -82054,34 +82054,6 @@
       "completed_at": "2026-11-19T19:13:14.162499+00:00"
     },
     {
-      "id": "4958-ko-tech-economy-HeyGen-아바타-6-직장인이-써볼",
-      "keyword": "HeyGen 아바타 6 직장인이 써볼 만한가",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-19T16:25:44.703723",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "유튜브나 사내 발표 영상을 만들어야 하는 직장인·마케터가 직접 촬영 없이 쓸 수 있는 AI 아바타 도구를 찾는 중",
-      "angle": "개발자가 아닌 일반 직장인 관점에서 HeyGen 아바타가 실무에 쓸 만한 완성도인지 솔직하게 평가",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "HeyGen Avatar 6: AI Avatar Model That Looks Like You",
-          "url": "https://www.heygen.com/models/heygen-avatar-6",
-          "source": "www.heygen.com"
-        },
-        {
-          "title": "Avatar 6 - HeyGen Documentation",
-          "url": "https://developers.heygen.com/docs/models/avatar-6",
-          "source": "developers.heygen.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "4959-ko-tech-economy-AI-회의록-자동-정리-앱-무료로-써",
       "keyword": "AI 회의록 자동 정리 앱 무료로 써도 괜찮나",
       "category": "tech-economy",
@@ -82185,54 +82157,6 @@
       "completed_at": "2026-11-19T18:58:01.080712+00:00"
     },
     {
-      "id": "4963-en-buying-guide-Notion-AI-vs-Obsidia",
-      "keyword": "Notion AI vs Obsidian for non-techies 2026",
-      "category": "buying-guide",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-19T16:25:44.703929",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "노트/지식 관리 앱을 고르려는 일반 직장인·학생이 어느 쪽이 본인에게 맞는지 비교",
-      "angle": "코딩 없이 쓸 수 있는지, 진입장벽은 어떤지를 기준으로 비개발자 시각에서 솔직 비교",
-      "competition_level": "low",
-      "references": [],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "4964-en-ai-How-to-make-side-inc",
-      "keyword": "How to make side income with AI tools in 2026 (no coding)",
-      "category": "ai",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-19T16:25:44.703979",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "코딩 없이 AI를 활용해 부수입을 올리고 싶은 직장인·대학생이 구체적인 방법을 탐색",
-      "angle": "실제로 수익을 낸 사례(콘텐츠 제작, 번역, 자동화 판매 등) 중심으로 단계별 현실적 가이드",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "9 AI Side Hustle Ideas That Actually Pay in 2026 (No Coding Required) | AI Money Tools",
-          "url": "https://www.aimoneytools.net/blog/ai-side-hustle",
-          "source": "www.aimoneytools.net"
-        },
-        {
-          "title": "How to Make Money with AI in 2026: 12 Proven Ideas",
-          "url": "https://emergent.sh/learn/how-to-make-money-with-ai",
-          "source": "emergent.sh"
-        },
-        {
-          "title": "Best AI Side Hustles to Start in 2026 | Mercor",
-          "url": "https://www.mercor.com/resources/experts/best-ai-side-hustles/",
-          "source": "www.mercor.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4965-en-ai-Are-AI-art-generator",
       "keyword": "Are AI art generators like Midjourney legal for commercial use",
       "category": "ai",
@@ -82262,55 +82186,450 @@
       "completed_at": "2026-11-19T19:19:10.185106+00:00"
     },
     {
-      "id": "4966-ko-side-income-직장인이-퇴근-후-AI로-부업하는-현",
-      "keyword": "직장인이 퇴근 후 AI로 부업하는 현실적인 방법 5가지",
-      "category": "side-income",
-      "lang": "ko",
-      "priority": 9,
+      "id": "4966-en-tech-economy-AI-agent-undo-button",
+      "keyword": "AI agent undo button: why autonomous tools need a rollback feature",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
       "status": "pending",
-      "created_at": "2026-11-19T16:25:44.704073",
+      "created_at": "2026-11-20T15:59:11.104911",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "코딩 모르는 직장인이 AI를 활용해 부수입을 올릴 구체적인 방법을 찾는 것",
-      "angle": "실제로 국내에서 가능한 방법(블로그 수익화, 스마트스토어 상세페이지 제작 대행 등) 중심 현실 체크 포함",
+      "keyword_type": "trend",
+      "search_intent": "Users who have started using AI agents for real tasks and are worried about irreversible errors",
+      "angle": "Non-developer perspective on AI agent safety: what rollback means in plain English",
       "competition_level": "low",
       "references": [
         {
-          "title": "퇴근 후 2시간으로 월 50만 원 버는 현실적인 부업 5가지",
-          "url": "https://rinrinrin16.tistory.com/101",
-          "source": "rinrinrin16.tistory.com"
+          "title": "Agents Need an Undo Button, Not More Approval Prompts | Quaspar",
+          "url": "https://quaspar.com/resources/agents-need-an-undo-button",
+          "source": "quaspar.com"
         },
         {
-          "title": "직장인 AI로 부업 시작하는 현실적인 방법 2026: 퇴근 후 두 시간으로 월 50만 원 버는 루트 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/side-income/2026-08-18-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai%EB%A1%9C-%EB%B6%80%EC%97%85-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EB%B0%A9%EB%B2%95-2026/",
+          "title": "Rollback Explained: Can You Undo a Bad AI Release? - DEV Community",
+          "url": "https://dev.to/nixonperinchery/rollback-explained-can-you-undo-a-bad-ai-release-fci",
+          "source": "dev.to"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4967-en-tech-economy-Scam-link-checker-to",
+      "keyword": "Scam link checker tools 2025: are free options actually reliable?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.104971",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Everyday users who received a suspicious text or email and want to verify it quickly",
+      "angle": "Comparison of free vs paid scam detection tools from a non-technical user standpoint",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "ScamAdvisory - Check suspicious links, emails, phone numbers and companies",
+          "url": "https://scamadvisory.net/",
+          "source": "scamadvisory.net"
+        },
+        {
+          "title": "Scammer website checker: how to tell if a site is legit - DEV Community",
+          "url": "https://dev.to/hackerme/scammer-website-checker-how-to-tell-if-a-site-is-legit-4kl2",
+          "source": "dev.to"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4968-en-tech-economy-AI-companion-apps-fo",
+      "keyword": "AI companion apps for chronic illness: helpful support or false hope?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.104995",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "People managing chronic conditions looking for digital support tools beyond basic symptom trackers",
+      "angle": "Honest evaluation of AI health companion apps for non-medical users: emotional support vs. clinical limits",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Mayo Clinic Press author Q&A: Can AI make health care more human? - Mayo Clinic Press",
+          "url": "https://mcpress.mayoclinic.org/living-well/mayo-clinic-press-author-qa-can-ai-make-health-care-more-human/",
+          "source": "mcpress.mayoclinic.org"
+        },
+        {
+          "title": "Best AI Therapy Apps of 2026",
+          "url": "https://www.choosingtherapy.com/best-ai-therapy-apps/",
+          "source": "www.choosingtherapy.com"
+        },
+        {
+          "title": "AI Companions vs Chatbots for Emotional Support: Safety Guide",
+          "url": "https://www.itechguides.com/ai-for-emotional-support-how-to-choose-a-safer-approach/",
+          "source": "www.itechguides.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4969-en-tech-economy-Real-time-YouTube-fa",
+      "keyword": "Real-time YouTube fact checker tools: do browser extensions actually work?",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105016",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Users concerned about misinformation on YouTube who want a passive tool that flags false claims automatically",
+      "angle": "Media literacy tool review for general digital consumers, not academics or journalists",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Fact Check Tools Recents",
+          "url": "https://toolbox.google.com/factcheck/",
+          "source": "toolbox.google.com"
+        },
+        {
+          "title": "Free AI fact checker, with sources · Actually",
+          "url": "https://actuallyai.app/fact-checker/",
+          "source": "actuallyai.app"
+        },
+        {
+          "title": "Best YouTube Region Restriction Checker Tools Compared",
+          "url": "https://randomtopicgenerator.org/best-you-tube-region-restriction-checker-tools/",
+          "source": "randomtopicgenerator.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4970-ko-tech-economy-AI-에이전트-실수-되돌리기,-일반인",
+      "keyword": "AI 에이전트 실수 되돌리기, 일반인도 알아야 할 이유",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105037",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 자동화 도구를 써보거나 써볼 예정인 직장인·대학생이 '혹시 잘못되면 어떡하지'를 검색",
+      "angle": "개발자가 아닌 일반 사용자 관점에서 AI 에이전트 안전성을 쉽게 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Put the Human Gate Where Mistakes Go Public - SD Times",
+          "url": "https://sdtimes.com/ai-agents/put-the-human-gate-where-mistakes-go-public/",
+          "source": "sdtimes.com"
+        },
+        {
+          "title": "Your AI Agent Completed 4 of 5 Steps. Who Is Responsible for the Damage? - DEV Community",
+          "url": "https://dev.to/katul1512/your-ai-agent-completed-4-of-5-steps-who-is-responsible-for-the-damage-1kg5",
+          "source": "dev.to"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4971-ko-tech-economy-의심-링크-무료-검사-사이트,-진짜-",
+      "keyword": "의심 링크 무료 검사 사이트, 진짜 믿어도 될까",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105054",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "택배·금융 사칭 문자를 받은 일반인이 링크를 클릭하기 전에 확인하고 싶어 검색",
+      "angle": "보안 전문 지식 없는 일반인 기준으로 무료 도구의 실제 신뢰도와 한계를 솔직하게 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Link & Website Scam Checker - Is This Website Safe? | ScamAdvisory",
+          "url": "https://scamadvisory.net/link-checker/",
+          "source": "scamadvisory.net"
+        },
+        {
+          "title": "센티파이 | 링크모아 링크모음 최신 바로가기",
+          "url": "https://sentifi.com/",
+          "source": "sentifi.com"
+        },
+        {
+          "title": "UFO 슬롯 체험 가이드 – 프라그마틱 PG 노리밋 무료슬롯 게임 ...",
+          "url": "https://ufoholic.com/",
+          "source": "ufoholic.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4972-ko-tech-economy-유튜브-보면서-실시간-팩트체크,-실제",
+      "keyword": "유튜브 보면서 실시간 팩트체크, 실제로 얼마나 정확한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105070",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "유튜브에서 뉴스·정치·건강 콘텐츠를 자주 보는 일반인이 가짜 정보 걱정으로 검색",
+      "angle": "미디어 리터러시 도구를 일반 시청자 관점에서 실용성 위주로 평가",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Realtime YouTube Live Subscriber Counter 🔥 — Livecounts.io",
+          "url": "https://livecounts.io/youtube-live-subscriber-counter",
+          "source": "livecounts.io"
+        },
+        {
+          "title": "수능 AI 부정행위 때문에 만점자 4배 증가? '거짓' - 오마이뉴스",
+          "url": "https://www.ohmynews.com/NWS_Web/OhmyFact/at_pg.aspx?CNTN_CD=A0003285403&PAGE_CD=ET001&BLCK_NO=1&CMPT_CD=T0016",
+          "source": "www.ohmynews.com"
+        },
+        {
+          "title": "Is YouTube Down Right Now? Check Server Status & Outages | VeePN",
+          "url": "https://veepn.com/is-it-down/youtube/",
+          "source": "veepn.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4973-ko-ai-만성-질환-AI-앱,-실제로-도움이-",
+      "keyword": "만성 질환 AI 앱, 실제로 도움이 되나 아니면 그냥 챗봇인가",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105092",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "당뇨·고혈압·자가면역질환 등 만성 질환을 가진 본인 또는 가족이 디지털 관리 도구를 찾아 검색",
+      "angle": "의료 전문가가 아닌 환자·보호자 관점에서 AI 건강 앱의 현실적 한계와 활용법 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Ψυχική υγεία: Μπορούν οι εφαρμογές και η τεχνητή νοημοσύνη να αντικαταστήσουν τον ψυχολόγο; - Πρωινή",
+          "url": "https://proini.news/psychiki-ygeia-boroun-oi-efarmoges-kai-i-techniti-noimosyni-na-antikatastisoun-ton-psychologo/",
+          "source": "proini.news"
+        },
+        {
+          "title": "\"마음 힘들수록 AI에 고민 털어놓는다\"?정신건강 고위험군 20.7% 이용 : 네이트 뉴스",
+          "url": "https://m.news.nate.com/view/20261118n24812",
+          "source": "m.news.nate.com"
+        },
+        {
+          "title": "Can Artificial Intelligence help with mental health issues?",
+          "url": "https://health.yahoo.com/treatments/mental-health-therapy/articles/artificial-intelligence-help-mental-health-050336898.html",
+          "source": "health.yahoo.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4974-ko-tech-economy-계정-없이-쓰는-여행-계획-앱,-친구",
+      "keyword": "계정 없이 쓰는 여행 계획 앱, 친구들과 단체 여행 준비에 진짜 쓸 만한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105111",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "친구·동기·가족과 여름 또는 연말 여행을 계획 중인 사람이 협업 도구를 검색",
+      "angle": "앱 설치나 가입 없이 쓸 수 있는 단체 여행 계획 도구를 일반 여행자 기준으로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Wanderlog - Trip Planner App - Apps on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.wanderlog.android&hl=en_US",
+          "source": "play.google.com"
+        },
+        {
+          "title": "Best Free Trip Planning Apps for 2025: My Hands-On Tests | Faroway Blog",
+          "url": "https://www.faroway.ai/blog/best-free-trip-planning-app-2025",
+          "source": "www.faroway.ai"
+        },
+        {
+          "title": "Best Travel Planning Apps 2026: What Each App Is Best At",
+          "url": "https://nomadpoint.app/blog/best-travel-planning-apps",
+          "source": "nomadpoint.app"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4975-en-buying-guide-Notion-AI-vs-Obsidia",
+      "keyword": "Notion AI vs Obsidian for non-technical users 2026",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105184",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "노트·지식관리 앱을 선택하려는 일반 직장인·학생이 어떤 앱이 자신에게 맞는지 비교",
+      "angle": "코딩 모르는 일반인 관점. 설정 복잡도·학습 곡선·실제 사용 시나리오를 솔직하게 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Notion AI vs Obsidian for Non-Technical Note Takers 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/buying-guide/2026-08-29-notion-ai-obsidian-non-technical-note-takers-2026/",
           "source": "jakeinsight.com"
         },
         {
-          "title": "AI로 시작하는 직장인 부업 5선 — 퇴근 후 1시간으로 월 수익 만들기 (2026)",
-          "url": "https://ppsu.tistory.com/entry/AI%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EC%A7%81%EC%9E%A5%EC%9D%B8-%EB%B6%80%EC%97%85-5%EC%84%A0-%E2%80%94-%ED%87%B4%EA%B7%BC-%ED%9B%84-1%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%EC%9B%94-%EC%88%98%EC%9D%B5-%EB%A7%8C%EB%93%A4%EA%B8%B0-2026",
-          "source": "ppsu.tistory.com"
+          "title": "Notion vs Obsidian (2026): Which Knowledge Tool Wins?",
+          "url": "https://www.atlasworkspace.ai/blog/notion-vs-obsidian",
+          "source": "www.atlasworkspace.ai"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "4967-ko-buying-guide-토스-vs-카카오뱅크-AI-기능-비교",
-      "keyword": "토스 vs 카카오뱅크 AI 기능 비교 — 2026년 어느 쪽이 더 똑똑해졌나",
-      "category": "buying-guide",
-      "lang": "ko",
-      "priority": 8,
+      "id": "4976-en-ai-How-to-make-money-wi",
+      "keyword": "How to make money with AI side hustle no coding required 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 9,
       "status": "pending",
-      "created_at": "2026-11-19T16:25:44.704124",
+      "created_at": "2026-11-20T15:59:11.105258",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "주거래 금융 앱을 고르거나 두 앱의 AI 차이가 궁금한 20~40대 직장인·대학생",
-      "angle": "소비 분석, 챗봇 상담, 맞춤 추천 등 실생활 금융 기능 기준으로 비개발자 시각에서 체감 차이 비교",
+      "search_intent": "코딩 없이 AI를 활용해 부수입을 만들고 싶은 직장인·대학생이 현실적인 방법을 찾음",
+      "angle": "실제로 수익이 발생한 사례(AI 콘텐츠 판매, 프롬프트 패키지, AI 보조 프리랜싱 등) 중심. 과장 없는 현실적 톤",
       "competition_level": "low",
       "references": [
         {
-          "title": "토스 vs 카카오뱅크 AI 기능 실제로 뭐가 다를까 2026 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-18-%ED%86%A0%EC%8A%A4-%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-ai-%EA%B8%B0%EB%8A%A5-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C-2026/",
+          "title": "Make Money With AI in 2026: 21 Practical Methods | OHSC",
+          "url": "https://www.oxfordhomestudy.com/OHSC-Blog/make-money-with-ai",
+          "source": "www.oxfordhomestudy.com"
+        },
+        {
+          "title": "How to Make Money With AI in 2026 (Realistic Ways That Don’t Require Coding)",
+          "url": "https://medium.com/freelancers-hub/how-to-make-money-with-ai-in-2026-realistic-ways-that-dont-require-coding-488625b7e47c",
+          "source": "medium.com"
+        },
+        {
+          "title": "Best AI Side Hustles to Start in 2026 | Mercor",
+          "url": "https://www.mercor.com/resources/experts/best-ai-side-hustles/",
+          "source": "www.mercor.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4977-en-ai-Are-AI-generated-ima",
+      "keyword": "Are AI-generated images safe to use for my business in 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105287",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "소셜미디어·마케팅·상품 판매에 AI 이미지를 쓰려는 사람이 저작권·법적 리스크를 확인하려 함",
+      "angle": "변호사 말투 아닌 실무자 관점. '이 경우는 괜찮고 이 경우는 위험하다'는 실용적 가이드. 2026년 최신 판례 반영",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Thinking of Using AI Images for Business? Read This First",
+          "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/ai-images-for-business-what-to-know",
+          "source": "www.bitdefender.com"
+        },
+        {
+          "title": "Are AI-generated images legal to use for business in 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/ai/2026-09-02-ai-generated-images-legal-use-business-2026/",
           "source": "jakeinsight.com"
+        },
+        {
+          "title": "Can I use AI-generated images for my business? | Harrison Pensa LLP",
+          "url": "https://www.harrisonpensa.com/ai-generated-images/",
+          "source": "www.harrisonpensa.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4978-ko-ai-ChatGPT-유료-플랜-월-3만원-",
+      "keyword": "ChatGPT 유료 플랜 월 3만원 진짜 가치 있나 2026 직장인 솔직 후기",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105315",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "ChatGPT Plus 구독을 고민 중인 직장인·학생이 실제 사용 후기를 보고 결제 여부를 결정하려 함",
+      "angle": "개발자 아닌 일반 직장인 관점. 하루 실사용 시나리오(이메일, 보고서, 아이디어 정리 등)를 기준으로 가성비 판단",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT 유료 플랜 한 달 써본 솔직 후기 — 월 3만 원 진짜 가치 있나 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-08-19-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%95%9C-%EB%8B%AC-%EC%8D%A8%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0-%EC%A7%84%EC%A7%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%82%98-2026/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4979-ko-tech-economy-AI가-마케터-일자리를-대체하고-있다",
+      "keyword": "AI가 마케터 일자리를 대체하고 있다는 게 사실일까 2026",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105338",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "마케팅 종사자 또는 마케팅 직종을 준비하는 취준생이 직업 미래를 현실적으로 파악하려 함",
+      "angle": "공포 조장 없이 실제 국내 마케팅 현장 사례 중심. 없어지는 업무 vs 오히려 필요해지는 역량을 구분해 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI가 마케터 일을 빼앗고 있을까 2026 현실: 사라지는 직무와 살아남는 역할 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-15-ai%EA%B0%80-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9D%84-%EB%B9%BC%EC%95%97%EA%B3%A0-%EC%9E%88%EC%9D%84%EA%B9%8C-2026-%ED%98%84%EC%8B%A4/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "Will Marketing Be Replaced by AI? What the 2026 Data Shows | Extern",
+          "url": "https://www.extern.com/post/will-ai-replace-marketing-jobs-guide",
+          "source": "www.extern.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4980-ko-side-income-코딩-모르는-직장인이-AI로-부업하는",
+      "keyword": "코딩 모르는 직장인이 AI로 부업하는 현실적인 방법 2026",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-20T15:59:11.105382",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "코딩 없이 AI를 활용해 월급 외 수입을 만들고 싶은 평범한 직장인이 실현 가능한 방법을 찾음",
+      "angle": "과장된 성공담 아닌 소소하지만 실제 가능한 방법(AI 활용 번역·콘텐츠 제작·자료 정리 외주 등) 중심. 시작 허들 낮게",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "직장인 AI 부업, 코딩 몰라도 가능한 현실적인 방법 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-08-23-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai-%EB%B6%80%EC%97%85-%EC%BD%94%EB%94%A9-%EB%AA%B0%EB%9D%BC%EB%8F%84-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%A9%EB%B2%95-2026/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "AI 에이전트 부업 4가지 — 코딩 없이 월 수익 만드는 2026 실전 가이드",
+          "url": "https://ai.kqwer.com/2026/05/ai-agent-side-hustle-guide-2026.html",
+          "source": "ai.kqwer.com"
         }
       ],
       "content_type_hint": "GUIDE"

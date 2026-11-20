@@ -82191,7 +82191,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.104911",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82211,7 +82211,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:35:28.805102+00:00"
     },
     {
       "id": "4967-en-tech-economy-Scam-link-checker-to",
@@ -82219,7 +82221,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.104971",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82239,7 +82241,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:38:16.897258+00:00"
     },
     {
       "id": "4968-en-tech-economy-AI-companion-apps-fo",
@@ -82247,7 +82251,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.104995",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82272,7 +82276,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:50:15.905049+00:00"
     },
     {
       "id": "4969-en-tech-economy-Real-time-YouTube-fa",
@@ -82280,7 +82286,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105016",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82305,7 +82311,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:40:46.325435+00:00"
     },
     {
       "id": "4970-ko-tech-economy-AI-에이전트-실수-되돌리기,-일반인",
@@ -82313,7 +82321,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105037",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82333,7 +82341,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:26:24.384210+00:00"
     },
     {
       "id": "4971-ko-tech-economy-의심-링크-무료-검사-사이트,-진짜-",
@@ -82341,7 +82351,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105054",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82366,7 +82376,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:29:48.492047+00:00"
     },
     {
       "id": "4972-ko-tech-economy-유튜브-보면서-실시간-팩트체크,-실제",
@@ -82374,7 +82386,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105070",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82399,7 +82411,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:44:12.127213+00:00"
     },
     {
       "id": "4973-ko-ai-만성-질환-AI-앱,-실제로-도움이-",
@@ -82407,7 +82421,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105092",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82432,7 +82446,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:47:58.403202+00:00"
     },
     {
       "id": "4974-ko-tech-economy-계정-없이-쓰는-여행-계획-앱,-친구",
@@ -82440,7 +82456,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105111",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82465,7 +82481,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:53:22.658861+00:00"
     },
     {
       "id": "4975-en-buying-guide-Notion-AI-vs-Obsidia",
@@ -82500,7 +82518,7 @@
       "category": "ai",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-20T15:59:11.105258",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -82524,7 +82542,9 @@
           "source": "www.mercor.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-20T18:22:17.164798+00:00",
+      "completed_at": "2026-11-20T18:32:31.396368+00:00"
     },
     {
       "id": "4977-en-ai-Are-AI-generated-ima",

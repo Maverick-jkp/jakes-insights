@@ -82486,33 +82486,6 @@
       "completed_at": "2026-11-20T18:53:22.658861+00:00"
     },
     {
-      "id": "4975-en-buying-guide-Notion-AI-vs-Obsidia",
-      "keyword": "Notion AI vs Obsidian for non-technical users 2026",
-      "category": "buying-guide",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-20T15:59:11.105184",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "노트·지식관리 앱을 선택하려는 일반 직장인·학생이 어떤 앱이 자신에게 맞는지 비교",
-      "angle": "코딩 모르는 일반인 관점. 설정 복잡도·학습 곡선·실제 사용 시나리오를 솔직하게 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Notion AI vs Obsidian for Non-Technical Note Takers 2026 | Jake's Insights",
-          "url": "https://jakeinsight.com/buying-guide/2026-08-29-notion-ai-obsidian-non-technical-note-takers-2026/",
-          "source": "jakeinsight.com"
-        },
-        {
-          "title": "Notion vs Obsidian (2026): Which Knowledge Tool Wins?",
-          "url": "https://www.atlasworkspace.ai/blog/notion-vs-obsidian",
-          "source": "www.atlasworkspace.ai"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "4976-en-ai-How-to-make-money-wi",
       "keyword": "How to make money with AI side hustle no coding required 2026",
       "category": "ai",
@@ -82547,109 +82520,423 @@
       "completed_at": "2026-11-20T18:32:31.396368+00:00"
     },
     {
-      "id": "4977-en-ai-Are-AI-generated-ima",
-      "keyword": "Are AI-generated images safe to use for my business in 2026",
-      "category": "ai",
+      "id": "4977-en-tech-economy-antidetect-browser-f",
+      "keyword": "antidetect browser free open source: is AnyProfile safe to use",
+      "category": "tech-economy",
       "lang": "en",
       "priority": 7,
       "status": "pending",
-      "created_at": "2026-11-20T15:59:11.105287",
+      "created_at": "2026-11-21T15:11:00.143735",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "소셜미디어·마케팅·상품 판매에 AI 이미지를 쓰려는 사람이 저작권·법적 리스크를 확인하려 함",
-      "angle": "변호사 말투 아닌 실무자 관점. '이 경우는 괜찮고 이 경우는 위험하다'는 실용적 가이드. 2026년 최신 판례 반영",
+      "keyword_type": "trend",
+      "search_intent": "Users managing multiple accounts want to know if a free open-source antidetect browser is safe and reliable compared to paid options",
+      "angle": "Compare free vs paid antidetect browsers for non-technical users running multiple social or ad accounts",
       "competition_level": "low",
       "references": [
         {
-          "title": "Thinking of Using AI Images for Business? Read This First",
-          "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/ai-images-for-business-what-to-know",
-          "source": "www.bitdefender.com"
+          "title": "Review and Testing of the Free Fury Antidetect Browser - CPA.RIP",
+          "url": "https://cpa.rip/en/services/fury/",
+          "source": "cpa.rip"
         },
         {
-          "title": "Are AI-generated images legal to use for business in 2026 | Jake's Insights",
-          "url": "https://jakeinsight.com/ai/2026-09-02-ai-generated-images-legal-use-business-2026/",
-          "source": "jakeinsight.com"
+          "title": "GitHub - aliasmode/aliasmode: Free, open-source antidetect browser with its own open-source Firefox ",
+          "url": "https://github.com/aliasmode/aliasmode",
+          "source": "github.com"
         },
         {
-          "title": "Can I use AI-generated images for my business? | Harrison Pensa LLP",
-          "url": "https://www.harrisonpensa.com/ai-generated-images/",
-          "source": "www.harrisonpensa.com"
+          "title": "Best Antidetect Browsers for 2026 - Proxyway",
+          "url": "https://proxyway.com/best/antidetect-browsers",
+          "source": "proxyway.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
     },
     {
-      "id": "4978-ko-ai-ChatGPT-유료-플랜-월-3만원-",
-      "keyword": "ChatGPT 유료 플랜 월 3만원 진짜 가치 있나 2026 직장인 솔직 후기",
-      "category": "ai",
-      "lang": "ko",
+      "id": "4978-en-tech-economy-AI-email-client-for-",
+      "keyword": "AI email client for Mac: is Glassmail worth switching from Apple Mail",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.143811",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Mac users overwhelmed by email are evaluating whether a privacy-first AI email client is a meaningful upgrade",
+      "angle": "Real-world productivity test for non-developers: does local AI email actually beat default apps",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4979-en-tech-economy-AI-agent-tools-2025:",
+      "keyword": "AI agent tools 2025: can non-developers actually use them",
+      "category": "tech-economy",
+      "lang": "en",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-11-20T15:59:11.105315",
+      "created_at": "2026-11-21T15:11:00.143853",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "ChatGPT Plus 구독을 고민 중인 직장인·학생이 실제 사용 후기를 보고 결제 여부를 결정하려 함",
-      "angle": "개발자 아닌 일반 직장인 관점. 하루 실사용 시나리오(이메일, 보고서, 아이디어 정리 등)를 기준으로 가성비 판단",
+      "keyword_type": "trend",
+      "search_intent": "Non-technical users curious about AI agents want to know if these tools work for them without engineering knowledge",
+      "angle": "Plain-language breakdown of AI agent tools aimed at marketers, freelancers, and students — not engineers",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "10 Free AI Agents to Simplify Your Workflow - Kimi",
+          "url": "https://www.kimi.ai/resources/free-ai-agents",
+          "source": "www.kimi.ai"
+        },
+        {
+          "title": "No-Code Agent Builders: 15 Best Platforms for 2027",
+          "url": "https://monday.com/blog/ai-agents/no-code-agent-builders/",
+          "source": "monday.com"
+        },
+        {
+          "title": "AI agents without engineers: why the next era of AI belongs to non-technical teams",
+          "url": "https://thenextweb.com/news/ai-agents-without-engineers-non-technical-teams",
+          "source": "thenextweb.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4980-en-ai-text-to-speech-AI-20",
+      "keyword": "text to speech AI 2025: which one actually sounds human",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.143888",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Content creators and marketers shopping for a TTS tool want a straight comparison before spending money",
+      "angle": "Side-by-side listening comparison for YouTubers, podcasters, and social media creators — no technical jargon",
+      "competition_level": "medium",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4981-en-tech-economy-AI-job-interview-pra",
+      "keyword": "AI job interview practice app: does it actually improve your chances",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.143925",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Job seekers in a competitive market are looking for any realistic tool to improve interview performance before high-stakes interviews",
+      "angle": "Honest assessment from a job seeker perspective: what AI interview prep can and cannot do for you",
       "competition_level": "low",
       "references": [
         {
-          "title": "ChatGPT 유료 플랜 한 달 써본 솔직 후기 — 월 3만 원 진짜 가치 있나 2026 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/ai/2026-08-19-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-%ED%95%9C-%EB%8B%AC-%EC%8D%A8%EB%B3%B8-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0-%EC%A7%84%EC%A7%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%82%98-2026/",
-          "source": "jakeinsight.com"
+          "title": "Best AI Interview Practice Tools (2026) - JobsAICopilot",
+          "url": "https://jobsaicopilot.com/best-ai-interview-practice-tools/",
+          "source": "jobsaicopilot.com"
+        },
+        {
+          "title": "Are AI Interviews Real? What to Expect and How to Prepare",
+          "url": "https://aina-tech.io/blog/are-ai-interviews-real",
+          "source": "aina-tech.io"
+        },
+        {
+          "title": "10 Best AI Mock Interview Platforms in 2026",
+          "url": "https://mocklingo.com/blogs/10-best-ai-mock-interview-platforms-in-2026",
+          "source": "mocklingo.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
     },
     {
-      "id": "4979-ko-tech-economy-AI가-마케터-일자리를-대체하고-있다",
-      "keyword": "AI가 마케터 일자리를 대체하고 있다는 게 사실일까 2026",
+      "id": "4982-ko-tech-economy-AI-이메일-앱-맥-로컬-처리-개인정",
+      "keyword": "AI 이메일 앱 맥 로컬 처리 개인정보 안전한가",
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
       "status": "pending",
-      "created_at": "2026-11-20T15:59:11.105338",
+      "created_at": "2026-11-21T15:11:00.143957",
       "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "마케팅 종사자 또는 마케팅 직종을 준비하는 취준생이 직업 미래를 현실적으로 파악하려 함",
-      "angle": "공포 조장 없이 실제 국내 마케팅 현장 사례 중심. 없어지는 업무 vs 오히려 필요해지는 역량을 구분해 설명",
+      "keyword_type": "trend",
+      "search_intent": "맥 사용자가 AI 이메일 앱의 개인정보 처리 방식에 불안함을 느끼고 로컬 처리 여부를 직접 확인하려 검색",
+      "angle": "개발자가 아닌 일반 직장인 관점에서 로컬 AI 이메일 앱이 실제로 안전한지, 기존 애플 메일과 비교",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4983-ko-tech-economy-AI-에이전트-직장인-실제로-써보면-",
+      "keyword": "AI 에이전트 직장인 실제로 써보면 어떤가 2025",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.143987",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 에이전트라는 말을 뉴스에서 계속 보지만 비개발자인 자신에게 실제로 의미가 있는지 판단하려는 직장인",
+      "angle": "마케터, 기획자, 대학생 같은 비개발자가 AI 에이전트를 쓸 때 실제로 얻는 것과 한계를 솔직하게 정리",
       "competition_level": "low",
       "references": [
         {
-          "title": "AI가 마케터 일을 빼앗고 있을까 2026 현실: 사라지는 직무와 살아남는 역할 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-15-ai%EA%B0%80-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9D%84-%EB%B9%BC%EC%95%97%EA%B3%A0-%EC%9E%88%EC%9D%84%EA%B9%8C-2026-%ED%98%84%EC%8B%A4/",
+          "title": "[AI리더의 서가] 일하는 AI 에이전트 설계하는 사람 < AI리더의 서가 < 기사본문 - AI타임스",
+          "url": "https://www.aitimes.com/news/articleView.html?idxno=217287",
+          "source": "www.aitimes.com"
+        },
+        {
+          "title": "Anthropic Managed Agents 워크숍 2026: 무료 공개 자료로 도입 전 확인할 6가지 | QJC",
+          "url": "https://qjc.app/blog/anthropic-managed-agents-guide",
+          "source": "qjc.app"
+        },
+        {
+          "title": "AI 에이전트가 뭐예요? 코딩 없이 만든 제 AI 직원 8명을 보여 드릴게요 - YouTube",
+          "url": "https://www.youtube.com/watch?v=bnZWGpG6jf4",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4984-ko-tech-economy-AI-목소리-변환-앱-자연스러운가-콘",
+      "keyword": "AI 목소리 변환 앱 자연스러운가 콘텐츠 제작자 비교",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144022",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "유튜브나 릴스를 만들고 싶은 1인 크리에이터가 AI 나레이션 도구에 돈 쓰기 전 실제 품질을 확인하려 검색",
+      "angle": "실제 유튜브 나레이션 사례를 기준으로 AI TTS 도구를 비전문가 귀로 직접 비교 — 가격 대비 자연스러움 중심",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4985-ko-tech-economy-AI-면접-연습-앱-취업-준비생-실제",
+      "keyword": "AI 면접 연습 앱 취업 준비생 실제 도움 되나",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144051",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "취업 준비 중인 대학생이나 이직 준비자가 AI 면접 연습 앱이 실제 면접에 도움이 되는지 결제 전 확인하려 검색",
+      "angle": "취업 준비생 관점에서 AI 면접 연습의 실제 효과와 한계를 솔직하게 — 광고성 후기 말고 현실적인 사용기",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "취준생 절반 이상 “면접관은 사람이어야”...AI 면접 외면받는 이유",
+          "url": "https://www.insight.co.kr/news/582577",
+          "source": "www.insight.co.kr"
+        },
+        {
+          "title": "[취업뉴스] 취준생 70% “AI로 면접 연습해볼 것”… 실전 면접은 ‘사람과 소통’ 선호 < 취업/채용 < 리크루트 < 기사본문 - 아웃소싱타임스",
+          "url": "https://www.outsourcing.co.kr/news/articleView.html?idxno=204347",
+          "source": "www.outsourcing.co.kr"
+        },
+        {
+          "title": "\"실전은 사람, 연습은 AI\"… Z세대 구직자 70% AI 면접 연습에 긍정적 < no_feed < 라이프 < 뉴스 < 기사본문 - 뉴스탭",
+          "url": "https://www.newstap.co.kr/news/articleView.html?idxno=337786",
+          "source": "www.newstap.co.kr"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4986-ko-tech-economy-GitHub-Actions-느린-문제",
+      "keyword": "GitHub Actions 느린 문제 해결 비개발자도 이해하는 CI 속도 비교",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144082",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "소규모 팀이나 프리랜서 개발자가 GitHub Actions 속도 문제를 직접 느끼고 대안이나 최적화 방법을 찾으려 검색",
+      "angle": "대형 엔터프라이즈 말고 소규모 팀이나 사이드 프로젝트 기준으로 CI 속도 문제를 현실적으로 비교",
+      "competition_level": "low",
+      "references": [],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "4987-en-ai-Are-AI-generated-ima",
+      "keyword": "Are AI-generated images safe to use for commercial projects in 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144307",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "법적 불안 해소 — Midjourney·DALL-E 등으로 만든 이미지를 상업적으로 쓰려는 마케터·디자이너가 저작권 리스크를 확인하려 검색",
+      "angle": "변호사 말투 아닌 실무자 언어로 — 플랫폼별 이용약관 차이와 실제로 주의해야 할 상황 중심 설명",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Can You Use AI and ChatGPT Images Commercially in 2026",
+          "url": "https://blog.kaboompics.com/can-you-use-ai-generated-images-for-commercial-use/",
+          "source": "blog.kaboompics.com"
+        },
+        {
+          "title": "Are AI Generated Images Legal to Use for Commercial Projects in 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/ai/2026-08-24-ai-generated-images-legal-use-commercial-projects-3/",
           "source": "jakeinsight.com"
         },
         {
-          "title": "Will Marketing Be Replaced by AI? What the 2026 Data Shows | Extern",
-          "url": "https://www.extern.com/post/will-ai-replace-marketing-jobs-guide",
-          "source": "www.extern.com"
+          "title": "Can You Use AI-Generated Images Commercially? 14 Generators Compared (October, 2026)",
+          "url": "https://journal.everypixel.com/ai-generated-images-commercial-use",
+          "source": "journal.everypixel.com"
         }
       ],
       "content_type_hint": "GUIDE"
     },
     {
-      "id": "4980-ko-side-income-코딩-모르는-직장인이-AI로-부업하는",
-      "keyword": "코딩 모르는 직장인이 AI로 부업하는 현실적인 방법 2026",
+      "id": "4988-ko-ai-ChatGPT-유료-플랜-2026년에",
+      "keyword": "ChatGPT 유료 플랜 2026년에도 쓸 만한가 솔직 후기",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144336",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구독 결정 — 월 2만원 이상의 ChatGPT Plus 구독을 갱신하거나 처음 결제할지 망설이는 직장인·대학생이 실제 가치를 확인하려 검색",
+      "angle": "개발자가 아닌 일반 사무직·마케터 관점에서 무료와 유료의 체감 차이를 솔직하게 — 돈 내고 쓴 사람의 현실 후기 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT 유료 플랜 2026년에도 진짜 쓸 만한가 — 6개 플랜 비교 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-08-23-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-2026%EB%85%84%EC%97%90%EB%8F%84-%EC%A7%84%EC%A7%9C-%EC%93%B8-%EB%A7%8C%ED%95%9C%EA%B0%80/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4989-ko-tech-economy-AI가-마케터-일자리-대체할까-202",
+      "keyword": "AI가 마케터 일자리 대체할까 2026 실제 사례",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144395",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "직업 불안 해소 — 마케터 또는 마케팅 지망생이 AI 때문에 자신의 직무가 사라질지 현실적으로 판단하려 검색",
+      "angle": "공포 조장 아닌 현실 직시 — 실제로 AI가 대체한 마케팅 업무 vs 여전히 사람이 해야 하는 업무를 사례 중심으로 균형 있게 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 때문에 마케터 직업 없어지나 실제 사례로 보면 사라지는 역할과 남는 역할 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-28-ai-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%A7%81%EC%97%85-%EC%97%86%EC%96%B4%EC%A7%80%EB%82%98-%EC%8B%A4%EC%A0%9C-%EC%82%AC%EB%A1%80%EB%A1%9C-%EB%B3%B4%EB%A9%B4/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4990-ko-side-income-직장인이-AI로-월-부수입-버는-현실",
+      "keyword": "직장인이 AI로 월 부수입 버는 현실적인 방법 5가지",
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
       "status": "pending",
-      "created_at": "2026-11-20T15:59:11.105382",
+      "created_at": "2026-11-21T15:11:00.144457",
       "retry_count": 0,
       "keyword_type": "evergreen",
-      "search_intent": "코딩 없이 AI를 활용해 월급 외 수입을 만들고 싶은 평범한 직장인이 실현 가능한 방법을 찾음",
-      "angle": "과장된 성공담 아닌 소소하지만 실제 가능한 방법(AI 활용 번역·콘텐츠 제작·자료 정리 외주 등) 중심. 시작 허들 낮게",
+      "search_intent": "부업 탐색 — 본업을 유지하면서 AI를 활용해 추가 수입을 만들고 싶은 20-40대 직장인이 실현 가능한 방법을 찾으려 검색",
+      "angle": "과장 없이 현실적으로 — 각 방법의 시작 난이도·초기 투자·월 예상 수익을 직접 해본 사람 톤으로 정리",
       "competition_level": "low",
       "references": [
         {
-          "title": "직장인 AI 부업, 코딩 몰라도 가능한 현실적인 방법 2026 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/ai/2026-08-23-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai-%EB%B6%80%EC%97%85-%EC%BD%94%EB%94%A9-%EB%AA%B0%EB%9D%BC%EB%8F%84-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%A9%EB%B2%95-2026/",
+          "title": "[현실적 부업] 2026년 AI로 월 부수입 만드는 5가지 전략 (직장인 필독)",
+          "url": "https://kyun0218.tistory.com/342",
+          "source": "kyun0218.tistory.com"
+        },
+        {
+          "title": "코딩 모르는 직장인이 AI로 부수입 만드는 방법 5가지 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/side-income/2026-08-08-%EC%BD%94%EB%94%A9-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EC%A7%81%EC%9E%A5%EC%9D%B8%EC%9D%B4-ai%EB%A1%9C-%EB%B6%80%EC%88%98%EC%9E%85-%EB%A7%8C%EB%93%9C%EB%8A%94-%EB%B0%A9%EB%B2%95-5%EA%B0%80%EC%A7%80/",
           "source": "jakeinsight.com"
         },
         {
-          "title": "AI 에이전트 부업 4가지 — 코딩 없이 월 수익 만드는 2026 실전 가이드",
-          "url": "https://ai.kqwer.com/2026/05/ai-agent-side-hustle-guide-2026.html",
-          "source": "ai.kqwer.com"
+          "title": "AI 부업 현실 수익 공개 — 크몽 라이팅·영상편집·프롬프트 컨설팅·번역·SEO 블로그 비교",
+          "url": "https://ai.cyrus25.com/2026/05/ai-side-hustle-100-monthly-income-5-verified-methods-2026.html",
+          "source": "ai.cyrus25.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4991-ko-buying-guide-노션-AI-vs-클로드-노트-정리-뭐",
+      "keyword": "노션 AI vs 클로드 노트 정리 뭐가 더 편한가",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144483",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "도구 비교 선택 — 회의록·공부 노트·아이디어 정리에 AI를 활용하고 싶은 직장인·학생이 어떤 도구가 더 맞는지 판단하려 검색",
+      "angle": "기능 나열 말고 실제 사용 시나리오 비교 — 같은 회의록을 두 도구로 정리해보고 체감 차이를 솔직하게 서술",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "노션 AI vs 클로바노트 — 회의록 정리에 뭐가 더 편한가: 녹음·후처리 단계별 비교 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/buying-guide/2026-09-01-%EB%85%B8%EC%85%98-ai-%ED%81%B4%EB%A1%9C%EB%B0%94%EB%85%B8%ED%8A%B8-%ED%9A%8C%EC%9D%98%EB%A1%9D-%EC%A0%95%EB%A6%AC%EC%97%90-%EB%AD%90%EA%B0%80-%EB%8D%94-%ED%8E%B8%ED%95%9C%EA%B0%80/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "Notion AI vs Claude for Writing and Notes (2026)",
+          "url": "https://nodifytech.com/notion-ai-vs-claude-writing-notes/",
+          "source": "nodifytech.com"
+        },
+        {
+          "title": "Claude vs Notion AI (2026): Which Should You Pick?",
+          "url": "https://agentarius.ai/ai-guide/compare/claude-vs-notion-ai",
+          "source": "agentarius.ai"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "4992-ko-tech-economy-미드저니로-만든-이미지-상업적으로-써",
+      "keyword": "미드저니로 만든 이미지 상업적으로 써도 되나 2026 저작권",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-21T15:11:00.144508",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "법적 불안 해소 — AI 이미지를 SNS 광고나 상품 판매에 쓰려는 마케터·소상공인이 저작권 리스크를 확인하려 검색",
+      "angle": "어려운 법률 용어 없이 — '이 경우엔 괜찮다/이 경우엔 위험하다' 형식으로 실무자가 바로 적용할 수 있게 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 광고 이미지, 저작권 문제없이 쓰는 법 | 플로우웍스",
+          "url": "https://flowworks.io/blog/ai-image-commercial-use",
+          "source": "flowworks.io"
+        },
+        {
+          "title": "AI 이미지 상업적 이용: 2026 저작권 가이드 및 안전 사용법 - AI가 궁금할 땐, 캐럿 블로그",
+          "url": "https://carat.im/blog/ai-image-commercial-use-guide",
+          "source": "carat.im"
+        },
+        {
+          "title": "AI 이미지 생성해서 판매하면 저작권 문제 없나 2026: 한국 법·플랫폼 조건 정리 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-07-ai-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%83%9D%EC%84%B1%ED%95%B4%EC%84%9C-%ED%8C%90%EB%A7%A4%ED%95%98%EB%A9%B4-%EC%A0%80%EC%9E%91%EA%B6%8C-%EB%AC%B8%EC%A0%9C-%EC%97%86%EB%82%98-2026/",
+          "source": "jakeinsight.com"
         }
       ],
       "content_type_hint": "GUIDE"

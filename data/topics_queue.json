@@ -82525,7 +82525,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.143735",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82550,7 +82550,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:35:51.143286+00:00"
     },
     {
       "id": "4978-en-tech-economy-AI-email-client-for-",
@@ -82558,7 +82560,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.143811",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82567,7 +82569,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:23:28.996559+00:00"
     },
     {
       "id": "4979-en-tech-economy-AI-agent-tools-2025:",
@@ -82575,7 +82579,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.143853",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82600,7 +82604,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:11:06.088969+00:00"
     },
     {
       "id": "4980-en-ai-text-to-speech-AI-20",
@@ -82625,7 +82631,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.143925",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82650,7 +82656,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:14:09.131348+00:00"
     },
     {
       "id": "4982-ko-tech-economy-AI-이메일-앱-맥-로컬-처리-개인정",
@@ -82658,7 +82666,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.143957",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82667,7 +82675,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:27:02.212303+00:00"
     },
     {
       "id": "4983-ko-tech-economy-AI-에이전트-직장인-실제로-써보면-",
@@ -82675,7 +82685,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.143987",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82700,7 +82710,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:17:32.307473+00:00"
     },
     {
       "id": "4984-ko-tech-economy-AI-목소리-변환-앱-자연스러운가-콘",
@@ -82708,7 +82720,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.144022",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82717,7 +82729,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:29:45.891577+00:00"
     },
     {
       "id": "4985-ko-tech-economy-AI-면접-연습-앱-취업-준비생-실제",
@@ -82725,7 +82739,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.144051",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82750,7 +82764,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:20:45.818734+00:00"
     },
     {
       "id": "4986-ko-tech-economy-GitHub-Actions-느린-문제",
@@ -82758,7 +82774,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.144082",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -82767,7 +82783,9 @@
       "competition_level": "low",
       "references": [],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:38:24.358295+00:00"
     },
     {
       "id": "4987-en-ai-Are-AI-generated-ima",
@@ -82915,7 +82933,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-21T15:11:00.144508",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -82939,7 +82957,9 @@
           "source": "jakeinsight.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-21T17:08:19.440433+00:00",
+      "completed_at": "2026-11-21T17:33:09.325739+00:00"
     }
   ]
 }

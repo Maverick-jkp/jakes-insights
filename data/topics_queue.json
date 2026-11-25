@@ -83136,7 +83136,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.215842",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -83161,7 +83161,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:16:42.432293+00:00"
     },
     {
       "id": "5008-en-tech-economy-AI-video-generation-",
@@ -83169,7 +83171,7 @@
       "category": "tech-economy",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.215867",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -83194,7 +83196,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:04:05.030708+00:00"
     },
     {
       "id": "5009-en-ai-Canva-AI-agent-integ",
@@ -83235,7 +83239,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.215911",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -83260,7 +83264,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:07:50.099751+00:00"
     },
     {
       "id": "5011-ko-side-income-AI-경쟁사-분석-무료-도구-실제로-",
@@ -83301,7 +83307,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.215945",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -83326,7 +83332,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T19:50:35.345041+00:00"
     },
     {
       "id": "5013-ko-ai-Canva-AI-에이전트-업데이트-디",
@@ -83334,7 +83342,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.215967",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -83359,7 +83367,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T19:53:48.217067+00:00"
     },
     {
       "id": "5014-ko-tech-economy-AI-보안-프라이버시-도구-일반인도-",
@@ -83367,7 +83377,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.215987",
       "retry_count": 0,
       "keyword_type": "trend",
@@ -83392,7 +83402,9 @@
         }
       ],
       "expiry_days": 3,
-      "content_type_hint": "BREAKING"
+      "content_type_hint": "BREAKING",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:11:27.016349+00:00"
     },
     {
       "id": "5015-en-ai-Will-AI-replace-grap",
@@ -83491,7 +83503,7 @@
       "category": "buying-guide",
       "lang": "en",
       "priority": 8,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.216099",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -83515,7 +83527,9 @@
           "source": "stepphase.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:13:55.976725+00:00"
     },
     {
       "id": "5019-ko-tech-economy-AI가-마케터-일자리-없애고-있나-—",
@@ -83523,7 +83537,7 @@
       "category": "tech-economy",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.216150",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -83537,7 +83551,9 @@
           "source": "jakeinsight.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T19:57:19.742747+00:00"
     },
     {
       "id": "5020-ko-buying-guide-클로드-vs-ChatGPT-한국어-글",
@@ -83567,7 +83583,7 @@
       "category": "side-income",
       "lang": "ko",
       "priority": 9,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.216180",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -83591,7 +83607,9 @@
           "source": "jakeinsight.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:00:49.428256+00:00"
     },
     {
       "id": "5022-ko-ai-노션-AI-한-달-써봤더니-—-비개발",
@@ -83599,7 +83617,7 @@
       "category": "ai",
       "lang": "ko",
       "priority": 7,
-      "status": "pending",
+      "status": "completed",
       "created_at": "2026-11-25T17:52:52.216226",
       "retry_count": 0,
       "keyword_type": "evergreen",
@@ -83613,7 +83631,9 @@
           "source": "jakeinsight.com"
         }
       ],
-      "content_type_hint": "GUIDE"
+      "content_type_hint": "GUIDE",
+      "reserved_at": "2026-11-25T19:47:21.320160+00:00",
+      "completed_at": "2026-11-25T20:20:40.376312+00:00"
     }
   ]
 }

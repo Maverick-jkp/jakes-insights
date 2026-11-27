@@ -83459,56 +83459,6 @@
       "completed_at": "2026-11-26T19:36:48.706626+00:00"
     },
     {
-      "id": "5024-en-ai-AI-agent-memory-loss",
-      "keyword": "AI agent memory loss problem: Claude-Mem and cross-device continuity explained",
-      "category": "ai",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-26T17:37:19.959906",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "AI power users frustrated by losing conversation context and agent memory when changing devices",
-      "angle": "Non-technical explainer on AI memory persistence: why it breaks, what tools solve it, and who actually needs it",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "5025-en-tech-economy-private-email-servic",
-      "keyword": "private email services 2025: is Kagi Mail worth switching from Gmail",
-      "category": "tech-economy",
-      "lang": "en",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-26T17:37:19.959925",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "Privacy-conscious users reconsidering Gmail after news about data tracking and AI training on emails",
-      "angle": "Practical guide for non-technical users: what private email actually means, what you give up, and whether the switch makes sense",
-      "competition_level": "medium",
-      "references": [
-        {
-          "title": "Google search alternative Kagi launches Gmail rival - Ars Technica",
-          "url": "https://arstechnica.com/gadgets/2026/11/google-search-alternative-kagi-launches-gmail-rival/",
-          "source": "arstechnica.com"
-        },
-        {
-          "title": "Kagi Mail Launches Privacy-Focused Email Service to Challenge Gmail",
-          "url": "https://www.techtimes.com/articles/331591/20261126/kagi-mail-launches-privacy-focused-email-service-challenge-gmail.htm",
-          "source": "www.techtimes.com"
-        },
-        {
-          "title": "The company behind Kagi Search just launched a privacy-first Gmail rival",
-          "url": "https://www.howtogeek.com/kagi-mail-public-beta/",
-          "source": "www.howtogeek.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "5026-ko-tech-economy-AI-에이전트-기억-초기화-문제,-디",
       "keyword": "AI 에이전트 기억 초기화 문제, 디바이스 바꿀 때마다 대화 처음부터 해야 하나",
       "category": "tech-economy",
@@ -83579,39 +83529,6 @@
       "completed_at": "2026-11-26T19:30:14.818313+00:00"
     },
     {
-      "id": "5028-ko-tech-economy-지메일-개인정보-걱정된다면,-2025",
-      "keyword": "지메일 개인정보 걱정된다면, 2025년 프라이버시 이메일 서비스 비교",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-26T17:37:19.959990",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "빅테크 개인정보 이슈에 민감해진 직장인·프리랜서가 이메일 서비스 전환을 고민할 때",
-      "angle": "지메일 vs 프라이버시 이메일 — 한국 일반 사용자 기준으로 실제로 갈아타야 하는지 현실적으로 따져보기",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "Private Email Services: 7 Best for Privacy in 2026 - EmailAlias.io",
-          "url": "https://emailalias.io/blog/best-private-email-service/",
-          "source": "emailalias.io"
-        },
-        {
-          "title": "14 Best Private Email Services - End-to-End Encrypted 2026",
-          "url": "https://forwardemail.net/en/blog/best-private-email-service",
-          "source": "forwardemail.net"
-        },
-        {
-          "title": "Best Free Email in 2026: Top Free Email Services Compared",
-          "url": "https://atomicmail.io/blog/best-free-email-comparison?640686c3_page=4",
-          "source": "atomicmail.io"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "5029-ko-tech-economy-안-쓰는-구형-스마트폰-활용법,-스트",
       "keyword": "안 쓰는 구형 스마트폰 활용법, 스트림덱 대신 쓰는 방법 진짜 되나",
       "category": "tech-economy",
@@ -83645,77 +83562,6 @@
       "content_type_hint": "BREAKING",
       "reserved_at": "2026-11-26T19:26:22.908065+00:00",
       "completed_at": "2026-11-26T19:43:21.298499+00:00"
-    },
-    {
-      "id": "5030-ko-ai-AI-번역-내-글투-그대로-살아있나,",
-      "keyword": "AI 번역 내 글투 그대로 살아있나, 작가·작가 지망생이 알아야 할 AI 번역 현실",
-      "category": "ai",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-26T17:37:19.960043",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "자신의 콘텐츠나 글을 해외에 소개하고 싶은 작가·블로거·크리에이터가 AI 번역 품질을 판단하려 할 때",
-      "angle": "AI 번역의 문체 보존 능력을 일반 작가·콘텐츠 제작자 관점에서 현실적으로 평가",
-      "competition_level": "low",
-      "references": [],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "5031-en-ai-How-to-make-side-inc",
-      "keyword": "How to make side income with AI tools in 2026 — no coding required",
-      "category": "ai",
-      "lang": "en",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-26T17:37:19.960176",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "부업 진입 — 코딩·디자인 전문 기술 없이 AI로 돈 버는 현실적 방법을 찾는 직장인·대학생",
-      "angle": "과장 없이 실현 가능한 방법 5가지(카피라이팅·번역·썸네일·챗봇 셋업·리포트 대행) 구체적 수익 범위 포함",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How to Make Money with AI in 2026: 12 Proven Ideas",
-          "url": "https://emergent.sh/learn/how-to-make-money-with-ai",
-          "source": "emergent.sh"
-        },
-        {
-          "title": "9 AI Side Hustle Ideas That Actually Pay in 2026 (No Coding Required) | AI Money Tools",
-          "url": "https://www.aimoneytools.net/blog/ai-side-hustle",
-          "source": "www.aimoneytools.net"
-        },
-        {
-          "title": "How to make money with AI: The complete guide for 2026 - GoDaddy Blog",
-          "url": "https://www.godaddy.com/resources/skills/how-to-make-money-with-ai",
-          "source": "www.godaddy.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "5032-ko-tech-economy-AI가-디자이너-일자리-대체할까-—-",
-      "keyword": "AI가 디자이너 일자리 대체할까 — 현직자 실제 이야기 2026",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-26T17:37:19.960204",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "직업 불안 해소·현실 파악 — 디자이너 본인 또는 디자인 지망생이 AI 영향을 현실적으로 알고 싶음",
-      "angle": "현직 그래픽·UI 디자이너 사례 중심. '뺏긴다/안 뺏긴다' 이분법 아닌 '어떤 업무가 줄고 어떤 역할이 남나' 실용 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI가 디자이너 일자리 없애고 있나, 현직자 솔직 얘기 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-08-ai%EA%B0%80-%EB%94%94%EC%9E%90%EC%9D%B4%EB%84%88-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%97%86%EC%95%A0%EA%B3%A0-%EC%9E%88%EB%82%98-%ED%98%84%EC%A7%81%EC%9E%90-%EC%86%94%EC%A7%81-%EC%96%98%EA%B8%B0/",
-          "source": "jakeinsight.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
     },
     {
       "id": "5033-ko-ai-직장인-부업으로-AI-활용하는-현실적",
@@ -83774,6 +83620,469 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-11-26T19:26:22.908065+00:00",
       "completed_at": "2026-11-26T19:46:15.906448+00:00"
+    },
+    {
+      "id": "5035-en-tech-economy-AI-coding-assistant-",
+      "keyword": "AI coding assistant that explains itself: is it better for beginners than GitHub Copilot",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570814",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Beginners and career-switchers who want AI coding help but worry about not actually learning",
+      "angle": "Honest look at whether AI coding tools help or hurt learning for non-developers entering tech",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub Copilot vs Cursor: Which AI Coding Assistant Is Better in 2026? | TechShack",
+          "url": "https://techshack.io/github-copilot-vs-cursor-ai-coding-assistant-2026/",
+          "source": "techshack.io"
+        },
+        {
+          "title": "AI Tools for Web Development in 2026: Editors, Agents and App Builders Compared - DEV Community",
+          "url": "https://dev.to/nilesharma0108/ai-tools-for-web-development-in-2026-editors-agents-and-app-builders-compared-28ho",
+          "source": "dev.to"
+        },
+        {
+          "title": "Best AI for coding in 2026 | Find your AI coding tool | Founderz",
+          "url": "https://founderz.com/blog/best-ai-for-coding/",
+          "source": "founderz.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5036-en-tech-economy-AI-camera-compositio",
+      "keyword": "AI camera composition app for iPhone: does it actually make your photos better",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570856",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Casual iPhone photographers and content creators wondering if AI can replace photography learning",
+      "angle": "Real-use test perspective: does AI composition guidance help everyday users or only look good in demos",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Halide Mark III - Pro Camera - App Store - Apple",
+          "url": "https://apps.apple.com/us/app/halide-mark-iii-pro-camera/id885697368",
+          "source": "apps.apple.com"
+        },
+        {
+          "title": "VWFNDR + MBL, the no-heavy-processing camera app, jumps from Pixel 11 Pro to iPhone 18 Pro - PhoneAr",
+          "url": "https://www.phonearena.com/news/vwfndr--mbl-the-no-heavy-processing-camera-app-jumps-from-pixel-11-pro-to-iphone-18-pro_id185002",
+          "source": "www.phonearena.com"
+        },
+        {
+          "title": "9 Best Camera Apps for iPhone in 2026 (Manual, RAW and Video)",
+          "url": "https://expertphotography.com/best-iphone-camera-app",
+          "source": "expertphotography.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5037-en-side-income-AI-LinkedIn-agent-fo",
+      "keyword": "AI LinkedIn agent for personal branding: does it actually sound like you",
+      "category": "side-income",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570875",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Freelancers, consultants, and job seekers building a personal brand on LinkedIn without time to write daily",
+      "angle": "Authenticity test: comparing AI-generated LinkedIn content vs human-written posts in engagement and voice",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "The Best AI Tools for Personal Branding in 2026: A Complete Guide",
+          "url": "https://getbeacon.1humanleft.com/blog/ai-personal-branding-tools",
+          "source": "getbeacon.1humanleft.com"
+        },
+        {
+          "title": "9 Best LinkedIn AI Tools in 2026 for Outreach & Content Creation",
+          "url": "https://www.salesforge.ai/blog/linkedin-ai-tools",
+          "source": "www.salesforge.ai"
+        },
+        {
+          "title": "Can Your AI Agent Sound Like You? Introducing ASPECT – The Science Channel",
+          "url": "https://www.thesciencechannel.org/can-your-ai-agent-sound-like-you-introducing-aspect/",
+          "source": "www.thesciencechannel.org"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5038-en-ai-cheapest-GPU-cloud-a",
+      "keyword": "cheapest GPU cloud access for AI side projects: is gpyou actually reliable",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570893",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI hobbyists, indie hackers, and students who need GPU access on a tight budget for personal AI projects",
+      "angle": "Plain-English explainer on GPU cloud rental options for non-engineers who just want to run AI models cheaply",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "gpyou: The OpenRouter for compute for the cheapest GPU in stock | Product Hunt",
+          "url": "https://www.producthunt.com/products/gpyou",
+          "source": "www.producthunt.com"
+        },
+        {
+          "title": "gpyou Review 2026: Affordable GPU Compute Platform | GAX Online",
+          "url": "https://gaxonline.com/rankings/devtools/gpyou/",
+          "source": "gaxonline.com"
+        },
+        {
+          "title": "Cloud GPU Rental Prices: Compare 95 Providers (2026)",
+          "url": "https://getdeploying.com/gpus",
+          "source": "getdeploying.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5039-ko-tech-economy-AI로-제품-영상-만들기,-소규모-사",
+      "keyword": "AI로 제품 영상 만들기, 소규모 사업자도 가능한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570912",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "스마트스토어, 쿠팡 등에서 제품을 판매하는 소상공인이 AI 영상 도구 도입을 검토할 때",
+      "angle": "비개발자 소상공인 관점에서 AI 영상 도구의 실제 사용 경험과 비용 대비 효과 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How small brands can get product videos made with AI, and the five checks I run before anything ship",
+          "url": "https://dev.to/aivideoauditor/how-small-brands-can-get-product-videos-made-with-ai-and-the-five-checks-i-run-before-anything-lm0",
+          "source": "dev.to"
+        },
+        {
+          "title": "How Can Small Businesses Use AI Video Generators?",
+          "url": "https://www.findarticles.com/how-can-small-businesses-use-ai-video-generators/",
+          "source": "www.findarticles.com"
+        },
+        {
+          "title": "How AI Video Tools Can Help Small Businesses Work Smarter",
+          "url": "https://www.techloy.com/how-ai-video-tools-can-help-small-businesses-work-smarter/",
+          "source": "www.techloy.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5040-ko-side-income-AI가-내-LinkedIn-대신-써준",
+      "keyword": "AI가 내 LinkedIn 대신 써준다면, 팔로워가 알아챌까",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570925",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "LinkedIn 퍼스널 브랜딩을 시작하고 싶지만 매일 글 쓸 시간이 없는 직장인·프리랜서",
+      "angle": "AI 생성 LinkedIn 콘텐츠의 진짜 한계와 활용 가능한 현실적 활용법",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "LinkedIn just started burying AI-generated comments, and in testing their views dropped by more than",
+          "url": "https://richardensjr.substack.com/p/linkedin-just-started-burying-ai",
+          "source": "richardensjr.substack.com"
+        },
+        {
+          "title": "GitHub - sergebulaev/linkedin-skills: Claude skills for LinkedIn. 12 Claude Code and Codex skills th",
+          "url": "https://github.com/sergebulaev/linkedin-skills",
+          "source": "github.com"
+        },
+        {
+          "title": "AI가 글을 대신 써주는 시대, 왜 말 잘하는 사람이 뜰까? (해담경제연구소 어예진 소장) - YouTube",
+          "url": "https://www.youtube.com/watch?v=LivyGdY2LQM",
+          "source": "www.youtube.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5041-ko-tech-economy-AI-코딩-도구,-코딩-모르는-직장인",
+      "keyword": "AI 코딩 도구, 코딩 모르는 직장인도 써볼 만한가 2026",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570940",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "코딩을 배우고 싶지만 시간이 없고 AI 도구로 단기간에 뭔가 만들어보고 싶은 비개발자",
+      "angle": "비개발자가 AI 코딩 도구로 실제 무언가를 만들 수 있는지 현실적 한계 솔직 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "10 Best AI for Coding in 2026 (Compared) | Dupple",
+          "url": "https://dupple.com/learn/best-ai-for-coding",
+          "source": "dupple.com"
+        },
+        {
+          "title": "Best AI Coding Tools & Assistants in 2026 | Toolradar",
+          "url": "https://toolradar.com/best/ai-coding",
+          "source": "toolradar.com"
+        },
+        {
+          "title": "Best AI for coding in 2026 | Find your AI coding tool | Founderz",
+          "url": "https://founderz.com/blog/best-ai-for-coding/",
+          "source": "founderz.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5042-ko-tech-economy-앱-아이디어-채팅으로-설명하면-바로-",
+      "keyword": "앱 아이디어 채팅으로 설명하면 바로 만들어준다는 AI, 실제로 써보니",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.570960",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "앱 아이디어는 있지만 개발 비용이 없는 비개발자가 AI로 직접 앱을 만들 수 있는지 확인하려 할 때",
+      "angle": "비개발자가 AI 앱 빌더로 실제 앱을 만드는 과정의 현실적 한계와 가능성 솔직 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "[바이브코딩] 딱 맞는 앱이 없어서…AI로 직접 만들어 쓰는 사람들 - 데일리팝",
+          "url": "http://www.dailypop.kr/news/articleView.html?idxno=104958",
+          "source": "www.dailypop.kr"
+        },
+        {
+          "title": "ChatGPT - 나무위키",
+          "url": "https://namu.wiki/w/ChatGPT",
+          "source": "namu.wiki"
+        },
+        {
+          "title": "10 UI Design Tools for Creating Better Interfaces",
+          "url": "https://www.kimi.ai/resources/ui-design-tools",
+          "source": "www.kimi.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5043-en-ai-How-to-make-money-wi",
+      "keyword": "How to make money with AI side projects in 2026 — beginner guide",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571047",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "코딩 모르는 일반인이 AI 활용해 부수입을 만들고 싶어 현실적인 방법 탐색",
+      "angle": "개발 없이 가능한 실제 수익 사례(프롬프트 판매, AI 콘텐츠, 자동화 에이전시) 위주",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "How to Start Your First AI Side Hustle in 2026: A Beginner's Step-by-Step Guide to Earning $500-$5,0",
+          "url": "https://developersmatrix.com/blog/ai-side-hustles-2026-make-money",
+          "source": "developersmatrix.com"
+        },
+        {
+          "title": "How to Make Money With AI Side Hustles in 2026 for Beginners | Jake's Insights",
+          "url": "https://jakeinsight.com/ai/2026-08-24-make-money-ai-side-hustles-2026-beginners/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "10 Real AI Side Hustles Making $500+/Month in 2026 | Full Guide",
+          "url": "https://www.hustletoai.com/blog/how-to-make-money-with-ai-2/ai-side-hustles-2026-129",
+          "source": "www.hustletoai.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5044-en-ai-Is-it-legal-to-sell-",
+      "keyword": "Is it legal to sell AI-generated art on Etsy in 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571078",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "AI 이미지로 부업 시작하려는 사람이 저작권·플랫폼 정책 위반 여부를 확인하려는 의도",
+      "angle": "법적 현황을 비전문가 언어로 정리 + 플랫폼별 현재 정책 요약",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "What is Etsy’s stance on AI creations?",
+          "url": "https://www.etsy.com/seller-handbook/article/1275449912004",
+          "source": "www.etsy.com"
+        },
+        {
+          "title": "Can You Sell AI Art on Etsy? 2026 Policy Guide | XHBT®",
+          "url": "https://www.xhbt.org/open-calls/etsys-ai-art-policy-2026-complete-guide",
+          "source": "www.xhbt.org"
+        },
+        {
+          "title": "Etsy AI Policy 2026: Rules for AI Images, Digital & POD Sellers",
+          "url": "https://veonib.com/explore/etsy-new-ai-policy-2026-new-rules-for-ai-images-digital-products-printify-pod-se-2",
+          "source": "veonib.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5045-ko-buying-guide-ChatGPT-유료-vs-무료-202",
+      "keyword": "ChatGPT 유료 vs 무료 2026 — 직장인이면 돈 내는 게 맞을까",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571092",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "월 $20 결제를 망설이는 직장인이 본인 업무에 유료가 의미 있는지 판단하려는 구매 결정",
+      "angle": "마케터·기획자·사무직 직장인 관점에서 무료와 유료 차이를 실제 사용 사례로 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "ChatGPT 유료 플랜 월 3만원 가치 있나: 2026 무료 vs Plus 솔직 비교 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-09-10-chatgpt-%EC%9C%A0%EB%A3%8C-%ED%94%8C%EB%9E%9C-%EC%9B%94-3%EB%A7%8C%EC%9B%90-%EC%A7%84%EC%A7%9C-%EA%B0%80%EC%B9%98-%EC%9E%88%EB%82%98-2026-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "ChatGPT 무료 vs Plus 차이 2026｜월 20달러 내야 할까? :: 모나랩 | M잡러 돈·도구 실험",
+          "url": "https://monass.tistory.com/136",
+          "source": "monass.tistory.com"
+        },
+        {
+          "title": "챗GPT 무료 vs 유료, 결제할 만한 차이는? :: 쵸코쿠키의 연습장",
+          "url": "https://jjeongil.tistory.com/3631",
+          "source": "jjeongil.tistory.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5046-ko-tech-economy-AI-때문에-마케터-일자리-없어질까-",
+      "keyword": "AI 때문에 마케터 일자리 없어질까 — 2026 현실 정리",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571105",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "마케터 혹은 취준생이 AI 대체 가능성을 직업 선택·이직 기준으로 판단하려는 불안 검색",
+      "angle": "과장된 위기론도 낙관론도 아닌 실제 채용 데이터·현직자 반응 기반 현실적 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 때문에 마케터 일자리 없어질까 2026 현실적 답변: 사라지는 게 아니라 분리된다 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-18-ai-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%97%86%EC%96%B4%EC%A7%88%EA%B9%8C-2026-%ED%98%84%EC%8B%A4%EC%A0%81-%EB%8B%B5%EB%B3%80/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5047-ko-buying-guide-클로드-vs-챗GPT-한국어-글쓰기-",
+      "keyword": "클로드 vs 챗GPT 한국어 글쓰기 — 블로그 쓸 때 뭐가 나은가",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571117",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "한국어 콘텐츠 제작자가 두 AI 중 한국어 품질이 더 나은 것을 찾는 실용적 비교",
+      "angle": "블로그 글·SNS 카피·보고서 작성 등 실제 작업별로 한국어 출력 품질 직접 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "클로드 AI vs 챗GPT 블로그 포스팅 이미지생성 차이점 성능 비교 목적별로 어떤 AI가 더 나을까 – moonkong.co.kr",
+          "url": "https://moonkong.co.kr/claude-ai-vs-chatgpt-comparison-2026/",
+          "source": "moonkong.co.kr"
+        },
+        {
+          "title": "클로드 vs ChatGPT 한국어 글쓰기, 어떤 게 더 자연스러운가 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-11-%ED%81%B4%EB%A1%9C%EB%93%9C-chatgpt-%ED%95%9C%EA%B5%AD%EC%96%B4-%EA%B8%80%EC%93%B0%EA%B8%B0-%EC%96%B4%EB%96%A4-%EA%B2%8C-%EB%8D%94-%EC%9E%90%EC%97%B0%EC%8A%A4%EB%9F%AC%EC%9A%B4%EA%B0%80/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "챗GPT 클로드 비교: 쇼핑몰·블로그 운영자를 위한 2026년 AI 선택 가이드",
+          "url": "http://awz.kr/chatgpt-claude-comparison/",
+          "source": "awz.kr"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5048-ko-side-income-코딩-모르는-직장인이-AI로-부업하는",
+      "keyword": "코딩 모르는 직장인이 AI로 부업하는 현실적인 방법 2026",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571144",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "비개발자 직장인이 AI를 활용한 실질적 부수입 경로를 찾는 탐색 의도",
+      "angle": "자동화 블로그·AI 번역·프롬프트 판매 등 실제 수익 경로를 현실적 난이도와 함께 소개",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "직장인 AI 부업, 코딩 몰라도 가능한 현실적인 방법 2026 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/ai/2026-08-23-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai-%EB%B6%80%EC%97%85-%EC%BD%94%EB%94%A9-%EB%AA%B0%EB%9D%BC%EB%8F%84-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%A9%EB%B2%95-2026/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "AI 에이전트 부업 4가지 — 코딩 없이 월 수익 만드는 2026 실전 가이드",
+          "url": "https://ai.kqwer.com/2026/05/ai-agent-side-hustle-guide-2026.html",
+          "source": "ai.kqwer.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5049-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
+      "keyword": "갤럭시 S25 vs 아이폰 16 AI 기능 — 일반인은 뭘 살까",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-27T17:18:46.571156",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "폰 교체를 앞둔 일반 소비자가 AI 기능 차이가 실생활에 의미 있는지 판단하려는 구매 비교",
+      "angle": "스펙 나열 없이 사진 보정·통화 요약·AI 비서 등 일상 시나리오 중심으로 쉽게 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "갤럭시 S25 vs 아이폰 16 AI 기능 일반인 비교 — 6개월 실사용 후 어떤 게 실제로 더 편한가 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-19-%EA%B0%A4%EB%9F%AD%EC%8B%9C-s25-%EC%95%84%EC%9D%B4%ED%8F%B0-16-ai-%EA%B8%B0%EB%8A%A5-%EC%9D%BC%EB%B0%98%EC%9D%B8-%EB%B9%84%EA%B5%90-%EC%96%B4%EB%96%A4-%EA%B2%8C-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%EB%8D%94-%ED%8E%B8%ED%95%9C%EA%B0%80/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }

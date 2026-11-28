@@ -83727,72 +83727,6 @@
       "completed_at": "2026-11-27T19:38:13.058482+00:00"
     },
     {
-      "id": "5038-en-ai-cheapest-GPU-cloud-a",
-      "keyword": "cheapest GPU cloud access for AI side projects: is gpyou actually reliable",
-      "category": "ai",
-      "lang": "en",
-      "priority": 7,
-      "status": "pending",
-      "created_at": "2026-11-27T17:18:46.570893",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "AI hobbyists, indie hackers, and students who need GPU access on a tight budget for personal AI projects",
-      "angle": "Plain-English explainer on GPU cloud rental options for non-engineers who just want to run AI models cheaply",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "gpyou: The OpenRouter for compute for the cheapest GPU in stock | Product Hunt",
-          "url": "https://www.producthunt.com/products/gpyou",
-          "source": "www.producthunt.com"
-        },
-        {
-          "title": "gpyou Review 2026: Affordable GPU Compute Platform | GAX Online",
-          "url": "https://gaxonline.com/rankings/devtools/gpyou/",
-          "source": "gaxonline.com"
-        },
-        {
-          "title": "Cloud GPU Rental Prices: Compare 95 Providers (2026)",
-          "url": "https://getdeploying.com/gpus",
-          "source": "getdeploying.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
-      "id": "5039-ko-tech-economy-AI로-제품-영상-만들기,-소규모-사",
-      "keyword": "AI로 제품 영상 만들기, 소규모 사업자도 가능한가",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-27T17:18:46.570912",
-      "retry_count": 0,
-      "keyword_type": "trend",
-      "search_intent": "스마트스토어, 쿠팡 등에서 제품을 판매하는 소상공인이 AI 영상 도구 도입을 검토할 때",
-      "angle": "비개발자 소상공인 관점에서 AI 영상 도구의 실제 사용 경험과 비용 대비 효과 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "How small brands can get product videos made with AI, and the five checks I run before anything ship",
-          "url": "https://dev.to/aivideoauditor/how-small-brands-can-get-product-videos-made-with-ai-and-the-five-checks-i-run-before-anything-lm0",
-          "source": "dev.to"
-        },
-        {
-          "title": "How Can Small Businesses Use AI Video Generators?",
-          "url": "https://www.findarticles.com/how-can-small-businesses-use-ai-video-generators/",
-          "source": "www.findarticles.com"
-        },
-        {
-          "title": "How AI Video Tools Can Help Small Businesses Work Smarter",
-          "url": "https://www.techloy.com/how-ai-video-tools-can-help-small-businesses-work-smarter/",
-          "source": "www.techloy.com"
-        }
-      ],
-      "expiry_days": 3,
-      "content_type_hint": "BREAKING"
-    },
-    {
       "id": "5040-ko-side-income-AI가-내-LinkedIn-대신-써준",
       "keyword": "AI가 내 LinkedIn 대신 써준다면, 팔로워가 알아챌까",
       "category": "side-income",
@@ -84000,87 +83934,6 @@
       "completed_at": "2026-11-27T19:32:39.967222+00:00"
     },
     {
-      "id": "5046-ko-tech-economy-AI-때문에-마케터-일자리-없어질까-",
-      "keyword": "AI 때문에 마케터 일자리 없어질까 — 2026 현실 정리",
-      "category": "tech-economy",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-27T17:18:46.571105",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "마케터 혹은 취준생이 AI 대체 가능성을 직업 선택·이직 기준으로 판단하려는 불안 검색",
-      "angle": "과장된 위기론도 낙관론도 아닌 실제 채용 데이터·현직자 반응 기반 현실적 분석",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "AI 때문에 마케터 일자리 없어질까 2026 현실적 답변: 사라지는 게 아니라 분리된다 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-18-ai-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EC%97%86%EC%96%B4%EC%A7%88%EA%B9%8C-2026-%ED%98%84%EC%8B%A4%EC%A0%81-%EB%8B%B5%EB%B3%80/",
-          "source": "jakeinsight.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "5047-ko-buying-guide-클로드-vs-챗GPT-한국어-글쓰기-",
-      "keyword": "클로드 vs 챗GPT 한국어 글쓰기 — 블로그 쓸 때 뭐가 나은가",
-      "category": "buying-guide",
-      "lang": "ko",
-      "priority": 8,
-      "status": "pending",
-      "created_at": "2026-11-27T17:18:46.571117",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "한국어 콘텐츠 제작자가 두 AI 중 한국어 품질이 더 나은 것을 찾는 실용적 비교",
-      "angle": "블로그 글·SNS 카피·보고서 작성 등 실제 작업별로 한국어 출력 품질 직접 비교",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "클로드 AI vs 챗GPT 블로그 포스팅 이미지생성 차이점 성능 비교 목적별로 어떤 AI가 더 나을까 – moonkong.co.kr",
-          "url": "https://moonkong.co.kr/claude-ai-vs-chatgpt-comparison-2026/",
-          "source": "moonkong.co.kr"
-        },
-        {
-          "title": "클로드 vs ChatGPT 한국어 글쓰기, 어떤 게 더 자연스러운가 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/buying-guide/2026-08-11-%ED%81%B4%EB%A1%9C%EB%93%9C-chatgpt-%ED%95%9C%EA%B5%AD%EC%96%B4-%EA%B8%80%EC%93%B0%EA%B8%B0-%EC%96%B4%EB%96%A4-%EA%B2%8C-%EB%8D%94-%EC%9E%90%EC%97%B0%EC%8A%A4%EB%9F%AC%EC%9A%B4%EA%B0%80/",
-          "source": "jakeinsight.com"
-        },
-        {
-          "title": "챗GPT 클로드 비교: 쇼핑몰·블로그 운영자를 위한 2026년 AI 선택 가이드",
-          "url": "http://awz.kr/chatgpt-claude-comparison/",
-          "source": "awz.kr"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
-      "id": "5048-ko-side-income-코딩-모르는-직장인이-AI로-부업하는",
-      "keyword": "코딩 모르는 직장인이 AI로 부업하는 현실적인 방법 2026",
-      "category": "side-income",
-      "lang": "ko",
-      "priority": 9,
-      "status": "pending",
-      "created_at": "2026-11-27T17:18:46.571144",
-      "retry_count": 0,
-      "keyword_type": "evergreen",
-      "search_intent": "비개발자 직장인이 AI를 활용한 실질적 부수입 경로를 찾는 탐색 의도",
-      "angle": "자동화 블로그·AI 번역·프롬프트 판매 등 실제 수익 경로를 현실적 난이도와 함께 소개",
-      "competition_level": "low",
-      "references": [
-        {
-          "title": "직장인 AI 부업, 코딩 몰라도 가능한 현실적인 방법 2026 | Jake's Insights",
-          "url": "https://jakeinsight.com/ko/ai/2026-08-23-%EC%A7%81%EC%9E%A5%EC%9D%B8-ai-%EB%B6%80%EC%97%85-%EC%BD%94%EB%94%A9-%EB%AA%B0%EB%9D%BC%EB%8F%84-%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%B0%A9%EB%B2%95-2026/",
-          "source": "jakeinsight.com"
-        },
-        {
-          "title": "AI 에이전트 부업 4가지 — 코딩 없이 월 수익 만드는 2026 실전 가이드",
-          "url": "https://ai.kqwer.com/2026/05/ai-agent-side-hustle-guide-2026.html",
-          "source": "ai.kqwer.com"
-        }
-      ],
-      "content_type_hint": "GUIDE"
-    },
-    {
       "id": "5049-ko-buying-guide-갤럭시-S25-vs-아이폰-16-AI",
       "keyword": "갤럭시 S25 vs 아이폰 16 AI 기능 — 일반인은 뭘 살까",
       "category": "buying-guide",
@@ -84103,6 +83956,504 @@
       "content_type_hint": "GUIDE",
       "reserved_at": "2026-11-27T19:22:05.139455+00:00",
       "completed_at": "2026-11-27T19:47:29.043871+00:00"
+    },
+    {
+      "id": "5050-en-buying-guide-Claude-Code-agents:-",
+      "keyword": "Claude Code agents: are AI coding tools worth it for non-developers",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344102",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Non-technical users want to know if AI agent tools are approachable before spending money",
+      "angle": "Honest evaluation of Claude Code tools from a non-developer perspective",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Claude Code vs Codex: Which AI Coding Agent Fits Your Team? | Arcforma",
+          "url": "https://arcforma.ai/blog/claude-code-vs-codex",
+          "source": "arcforma.ai"
+        },
+        {
+          "title": "Codex vs Claude Code: A Complete Workflow and Selection Guide for AI Coding Agents - KongchangAI",
+          "url": "https://kongchang.com/en/articles/codex-vs-claude-code-a-complete-workflow-and-selection-guide-for-ai-coding-agents",
+          "source": "kongchang.com"
+        },
+        {
+          "title": "AI Coding Agents in 2026: The 12 Best Compared and Priced",
+          "url": "https://the-aischool.com/guides/best-ai-coding-agents",
+          "source": "the-aischool.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5051-en-ai-Microsoft-Decision-1",
+      "keyword": "Microsoft Decision 1.1 model: what it means for everyday AI users",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344142",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "General audience wants a plain-English explanation of what a 'decision model' is and why it matters",
+      "angle": "Demystify enterprise AI for everyday readers — real-world scenarios where this affects them",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Microsoft Decision-1.1 Officially Released: A Faster, More Accurate Decision Model - KongchangAI",
+          "url": "https://kongchang.com/en/articles/microsoft-decision-1-1-officially-released-a-faster-more-accurate-decision-model",
+          "source": "kongchang.com"
+        },
+        {
+          "title": "Microsoft Decision 1.1: Price, Benchmark & How It Works | Sumus",
+          "url": "https://sumus.im/blog/microsoft-decision-1-1",
+          "source": "sumus.im"
+        },
+        {
+          "title": "New Microsoft AI Models: Nov 2026 Guide - DEV Community",
+          "url": "https://dev.to/yardphantom/new-microsoft-ai-models-nov-2026-guide-2jnj",
+          "source": "dev.to"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5052-en-tech-economy-open-source-Datadog-",
+      "keyword": "open-source Datadog alternative: is Dex Telemetry worth switching to",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344165",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Small teams and indie developers searching for cost-effective monitoring after Datadog price shock",
+      "angle": "Cost-first framing — who actually saves money switching and who does not",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Dex Telemetry - Open-source Datadog for analytics | ProductCool",
+          "url": "https://www.productcool.com/product/dex-telemetry",
+          "source": "www.productcool.com"
+        },
+        {
+          "title": "Datadog Alternatives (2026): 8 Tools Without Per-Host Pricing",
+          "url": "https://maple.dev/alternatives/datadog/",
+          "source": "maple.dev"
+        },
+        {
+          "title": "Dex Telemetry: Open-source Datadog for analytics | Prori",
+          "url": "https://prori.ai/products/dex-telemetry--1d1a6a17-0818-4073-a5dd-f706e245943a",
+          "source": "prori.ai"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5053-en-side-income-TikTok-SEO-for-small",
+      "keyword": "TikTok SEO for small business: does it actually drive sales in 2025",
+      "category": "side-income",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344186",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "Non-technical small business owners and freelancers want to know if TikTok SEO is a real growth channel",
+      "angle": "Practical guide with realistic expectations — not every business benefits equally",
+      "competition_level": "medium",
+      "references": [
+        {
+          "title": "TikTok SEO Guide 2026",
+          "url": "https://metricool.com/tiktok-seo/",
+          "source": "metricool.com"
+        },
+        {
+          "title": "TikTok Shop lets sellers suggest 5 searches under creators' videos",
+          "url": "https://ppc.land/tiktok-shop-lets-sellers-suggest-5-searches-under-creators-videos/",
+          "source": "ppc.land"
+        },
+        {
+          "title": "TikTok Shop Statistics (2026) – Revenue & Sales Data",
+          "url": "https://www.demandsage.com/tiktok-shop-statistics/",
+          "source": "www.demandsage.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5054-ko-tech-economy-AI-에이전트-도구,-비개발자도-써볼",
+      "keyword": "AI 에이전트 도구, 비개발자도 써볼 만한가 2025",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344204",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI에 관심 있는 직장인·마케터가 에이전트 툴이 자신에게도 의미 있는지 판단하려는 목적",
+      "angle": "코딩 없이 AI 에이전트를 활용하는 현실적인 범위와 한계를 솔직하게 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "<구글 60페이지 가이드북으로 나만의 AI 에이전트 구축해 업무 시간 80% 줄이는 3가지 방법> - TILNOTE",
+          "url": "https://tilnote.io/en/pages/6b0ac0a56e5e406799c40052",
+          "source": "tilnote.io"
+        },
+        {
+          "title": "feat: 에이전트 스킬·MCP 트렌드의 비개발자 관점 번역·비교 콘텐츠 파이프라인 확장 · Issue #51 · Dobbymin/alkok-be · GitHub",
+          "url": "https://github.com/Dobbymin/alkok-be/issues/51",
+          "source": "github.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5055-ko-ai-Microsoft-AI-의사결정-모델",
+      "keyword": "Microsoft AI 의사결정 모델, 직장인 업무에 뭐가 달라지나",
+      "category": "ai",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344226",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "AI 뉴스를 접한 일반 직장인이 자신의 일과 어떤 관련이 있는지 궁금해서 검색",
+      "angle": "기술 설명보다 '이게 나한테 어떤 의미인지'에 집중한 일반인 향 해설",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Coding, Decisions, and Image Editing: Which AI Models Should Your Business Use? | Microsoft Communit",
+          "url": "https://techcommunity.microsoft.com/blog/azuredevcommunityblog/coding-decisions-and-image-editing-which-ai-models-should-your-business-use/4575684",
+          "source": "techcommunity.microsoft.com"
+        },
+        {
+          "title": "Microsoft-Decision-1.1 - Microsoft's decision model: calibrated, 2x faster, now GA | ProductCool",
+          "url": "https://www.productcool.com/product/microsoft-decision-1-1",
+          "source": "www.productcool.com"
+        },
+        {
+          "title": "Microsoft Decision-1.1 Officially Released: A Faster, More Accurate Decision Model - KongchangAI",
+          "url": "https://kongchang.com/en/articles/microsoft-decision-1-1-officially-released-a-faster-more-accurate-decision-model",
+          "source": "kongchang.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5056-ko-tech-economy-GitHub-레포-AI로-분석,-개발",
+      "keyword": "GitHub 레포 AI로 분석, 개발 모르는 사람도 쓸 수 있나",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344244",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "비개발자 직군(기획자, 마케터, 학생)이 GitHub를 업무에 활용할 수 있는지 탐색",
+      "angle": "GitHub 접근 장벽을 AI가 낮춰줄 수 있는지 현실적으로 테스트하는 관점",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "GitHub - repowise-dev/repowise: Codebase intelligence for AI and humans: code health scores, auto-ge",
+          "url": "https://github.com/repowise-dev/repowise",
+          "source": "github.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5057-ko-tech-economy-티끌-같던-Datadog-비용,-오픈",
+      "keyword": "티끌 같던 Datadog 비용, 오픈소스 대안으로 진짜 절약 가능한가",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344266",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "스타트업 실무자나 개인 개발자가 Datadog 비용 대비 대안을 찾아보는 맥락",
+      "angle": "비용 절감 실현 가능성을 중심으로 — 어떤 팀에 맞고 어떤 팀엔 안 맞는지 솔직 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Datadog Alternatives (2026): 8 Tools Without Per-Host Pricing",
+          "url": "https://maple.dev/alternatives/datadog/",
+          "source": "maple.dev"
+        },
+        {
+          "title": "Datadog Competitors in 2026: 10 Best Alternatives Ranked",
+          "url": "https://openobserve.ai/blog/datadog-competitors/",
+          "source": "openobserve.ai"
+        },
+        {
+          "title": "Why Your $8000/Month Datadog Bill Could Be Replaced by One Go Binary | by Ark Protocol | Nov, 2026 |",
+          "url": "https://medium.com/@ArkProtocol1/why-your-8000-month-datadog-bill-could-be-replaced-by-one-go-binary-700d3d32ec6e",
+          "source": "medium.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5058-ko-side-income-AI-자동화-마케팅-도구,-혼자-창업",
+      "keyword": "AI 자동화 마케팅 도구, 혼자 창업하는 사람한테 진짜 쓸모 있나",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344285",
+      "retry_count": 0,
+      "keyword_type": "trend",
+      "search_intent": "부업 또는 1인 창업을 준비 중인 직장인이 AI 마케팅 자동화 도구의 현실 효과를 검색",
+      "angle": "과장된 마케팅 카피를 걷어내고 실제 운영 경험 기반의 솔직한 평가 제시",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "2026년, 시도해 볼 만한 AI 마케팅 자동화 도구 10가지 - Kimi AI",
+          "url": "https://www.kimi.ai/resources/ai-marketing-automation-tools",
+          "source": "www.kimi.ai"
+        },
+        {
+          "title": "AI로 날개 단 ‘1인 창업 시대’ 직원·전문가 역할까지 인공지능이 척척 - 스포츠경향",
+          "url": "https://sports.khan.co.kr/article/202611230523003/",
+          "source": "sports.khan.co.kr"
+        },
+        {
+          "title": "AI로 날개 단 '1인 창업 시대' 직원·전문가 역할까지 인공지능이 척척 : 네이트 뉴스",
+          "url": "https://m.news.nate.com/view/20261123n01395",
+          "source": "m.news.nate.com"
+        }
+      ],
+      "expiry_days": 3,
+      "content_type_hint": "BREAKING"
+    },
+    {
+      "id": "5059-en-ai-Best-AI-tools-for-fr",
+      "keyword": "Best AI tools for freelancers to make more money in 2026",
+      "category": "ai",
+      "lang": "en",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344343",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "실용 정보 — 프리랜서가 AI로 작업 속도·수입을 늘리고 싶어 검색",
+      "angle": "실제 수익과 연결되는 도구 위주, 과장 없이 솔직한 실무자 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "7 Best AI Tools for Freelancers in 2026: My Honest Review of What’s Actually Worth It | by Ayeshha |",
+          "url": "https://medium.com/@ayeshha2398/7-best-ai-tools-for-freelancers-in-2026-my-honest-review-of-whats-actually-worth-it-324b888e285b",
+          "source": "medium.com"
+        },
+        {
+          "title": "Best AI Tools for Freelancers 2026 — Enterprise DNA",
+          "url": "https://enterprisedna.co/resources/blog/best-ai-tools-freelancers-2026/",
+          "source": "enterprisedna.co"
+        },
+        {
+          "title": "The Best AI Tools for Freelancers in 2026",
+          "url": "https://ai-pro.org/learn-ai/articles/top-ai-tools-freelancers-2026",
+          "source": "ai-pro.org"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5060-en-buying-guide-iPhone-17-vs-Samsung",
+      "keyword": "iPhone 17 vs Samsung Galaxy S25 camera: which is actually better",
+      "category": "buying-guide",
+      "lang": "en",
+      "priority": 7,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344364",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구매 결정 — 스마트폰 교체 시점에 카메라 품질을 기준으로 비교하려는 일반 소비자",
+      "angle": "스펙 나열 없이 실제 사진·영상 결과물 중심, 비전문가가 이해할 수 있는 언어로",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "iPhone 17 vs Samsung Galaxy S25 – Full Comparison (Which One Should You Buy?)",
+          "url": "https://techsolution.blog/reviews/iphone-17-vs-samsung-galaxy-s25-full-comparison/",
+          "source": "techsolution.blog"
+        },
+        {
+          "title": "r/samsunggalaxy on Reddit: I have the base S25, and my sister just got the iPhone 17. I've compared ",
+          "url": "https://www.reddit.com/r/samsunggalaxy/comments/1pwtcgq/i_have_the_base_s25_and_my_sister_just_got_the/",
+          "source": "www.reddit.com"
+        },
+        {
+          "title": "iPhone 17 vs Samsung Galaxy S25: Honest Comparison 2026",
+          "url": "https://stepphase.com/tech-news/iphone-17-vs-samsung-galaxy-s25-review/",
+          "source": "stepphase.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5061-en-tech-economy-Why-does-Google-Maps",
+      "keyword": "Why does Google Maps feel less accurate than it used to in 2026",
+      "category": "tech-economy",
+      "lang": "en",
+      "priority": 6,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344418",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "불만·의문 — 구글맵 품질 저하를 체감한 일반 사용자가 이유를 궁금해하며 검색",
+      "angle": "알고리즘·광고·AI 변화를 비전문가 언어로 풀어내는 탐구 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "Why Does Google Maps Feel Less Accurate in 2026 and What to Use Instead | Jake's Insights",
+          "url": "https://jakeinsight.com/tech-economy/2026-08-25-google-maps-feel-less-accurate-2026-use-instead/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "Google Maps has a big problem, and it's getting worse in 2026",
+          "url": "https://www.androidpolice.com/google-maps-has-a-big-problem-and-its-getting-worse-in-2026/",
+          "source": "www.androidpolice.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5062-ko-tech-economy-AI-때문에-마케터-일자리-진짜-줄어",
+      "keyword": "AI 때문에 마케터 일자리 진짜 줄어드나 2026 현실",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344452",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "직업 불안 — 마케팅 직군 종사자나 취준생이 미래 고용 가능성을 걱정하며 검색",
+      "angle": "과장된 위기론도, 무조건 괜찮다는 위로도 아닌 실제 채용 데이터·사례 기반 현실 분석",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI가 마케터 일을 빼앗고 있을까 2026 현실: 사라지는 직무와 살아남는 역할 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-15-ai%EA%B0%80-%EB%A7%88%EC%BC%80%ED%84%B0-%EC%9D%BC%EC%9D%84-%EB%B9%BC%EC%95%97%EA%B3%A0-%EC%9E%88%EC%9D%84%EA%B9%8C-2026-%ED%98%84%EC%8B%A4/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5063-ko-buying-guide-갤럭시-S25-vs-아이폰-16-카메",
+      "keyword": "갤럭시 S25 vs 아이폰 16 카메라 일반인이 쓰기엔 뭐가 나을까",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344472",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "구매 결정 — 스마트폰 바꾸려는 일반인이 카메라 기준으로 어느 쪽이 나은지 비교하려 검색",
+      "angle": "스펙 수치 없이 일상 사진·SNS 업로드 기준으로 실제 체감 차이 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "아이폰16 vs 갤럭시S25 카메라 비교",
+          "url": "https://itdoo.kr/%EC%95%84%EC%9D%B4%ED%8F%B016-vs-%EA%B0%A4%EB%9F%AD%EC%8B%9Cs25-%EC%B9%B4%EB%A9%94%EB%9D%BC-%EB%B9%84%EA%B5%90-30%EB%8C%80-%EC%A7%81%EC%9E%A5%EC%9D%B8%EC%9D%98-%ED%98%84%EB%AA%85%ED%95%9C-%EC%84%A0/",
+          "source": "itdoo.kr"
+        },
+        {
+          "title": "Samsung Galaxy S25 vs. iPhone 16 | Back Market",
+          "url": "https://www.backmarket.com/en-us/c/samsung/samsung-galaxy-s25-series-vs-iphone-16-series-comparison",
+          "source": "www.backmarket.com"
+        },
+        {
+          "title": "Samsung Galaxy S25 vs iPhone 16 - Which One Offers Better Value?",
+          "url": "https://www.phonebunch.com/news/samsung-galaxy-s25-vs-iphone-16-best-value_9696.html",
+          "source": "www.phonebunch.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5064-ko-side-income-직장인이-AI로-월-부수입-버는-현실",
+      "keyword": "직장인이 AI로 월 부수입 버는 현실적인 방법 2026",
+      "category": "side-income",
+      "lang": "ko",
+      "priority": 9,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344487",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "실용 정보 — 본업 유지하면서 AI 활용해 소득을 늘리고 싶은 사무직이 구체적 방법을 검색",
+      "angle": "과대 포장 없이 실제로 시작 가능한 방법 5가지, 초보자도 이해하는 단계별 톤",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI로 부업하는 현실적인 방법 2026 직장인 사례와 수익 비교 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/side-income/2026-08-09-ai%EB%A1%9C-%EB%B6%80%EC%97%85%ED%95%98%EB%8A%94-%ED%98%84%EC%8B%A4%EC%A0%81%EC%9D%B8-%EB%B0%A9%EB%B2%95-2026-%EC%A7%81%EC%9E%A5%EC%9D%B8-%EC%82%AC%EB%A1%80/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5065-ko-buying-guide-노션-AI-vs-클로드-노트-정리할-",
+      "keyword": "노션 AI vs 클로드 노트 정리할 때 뭐가 더 편할까",
+      "category": "buying-guide",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344500",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "비교 결정 — 노션 쓰는 사람이 AI 기능 추가 구독과 별도 AI 도구 중 뭘 쓸지 고민하며 검색",
+      "angle": "실제 회의록·아이디어 정리 시나리오 기반, 비개발자 직장인이 공감할 수 있는 비교",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "노션 AI vs 클로드, 업무 메모 정리엔 어떤 게 더 편할까 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/buying-guide/2026-09-10-%EB%85%B8%EC%85%98-ai-%ED%81%B4%EB%A1%9C%EB%93%9C-ai-%EC%97%85%EB%AC%B4-%EB%A9%94%EB%AA%A8-%EC%A0%95%EB%A6%AC-%EC%96%B4%EB%96%A4-%EA%B2%8C-%EB%8D%94-%ED%8E%B8%ED%95%9C%EA%B0%80/",
+          "source": "jakeinsight.com"
+        },
+        {
+          "title": "Notion AI vs Claude for Writing and Notes (2026)",
+          "url": "https://nodifytech.com/notion-ai-vs-claude-writing-notes/",
+          "source": "nodifytech.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
+    },
+    {
+      "id": "5066-ko-tech-economy-미드저니로-만든-이미지-팔아도-법적으",
+      "keyword": "미드저니로 만든 이미지 팔아도 법적으로 문제없나 2026",
+      "category": "tech-economy",
+      "lang": "ko",
+      "priority": 8,
+      "status": "pending",
+      "created_at": "2026-11-28T16:01:47.344514",
+      "retry_count": 0,
+      "keyword_type": "evergreen",
+      "search_intent": "법적 궁금증·불안 — AI 이미지로 수익 내고 싶지만 저작권 위반이 걱정돼 검색",
+      "angle": "법률 용어 없이 실제 한국에서 판매 시 주의할 점을 실용적으로 정리",
+      "competition_level": "low",
+      "references": [
+        {
+          "title": "AI 이미지 생성해서 판매하면 저작권 문제 없나 2026: 한국 법·플랫폼 조건 정리 | Jake's Insights",
+          "url": "https://jakeinsight.com/ko/tech-economy/2026-08-07-ai-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%83%9D%EC%84%B1%ED%95%B4%EC%84%9C-%ED%8C%90%EB%A7%A4%ED%95%98%EB%A9%B4-%EC%A0%80%EC%9E%91%EA%B6%8C-%EB%AC%B8%EC%A0%9C-%EC%97%86%EB%82%98-2026/",
+          "source": "jakeinsight.com"
+        }
+      ],
+      "content_type_hint": "GUIDE"
     }
   ]
 }
